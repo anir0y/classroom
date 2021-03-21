@@ -1,0 +1,72 @@
+---
+title: "Vulnerable Apps, Servers, and Websites!"
+date: 2021-03-21T21:23:22+05:30
+lastmod: 2021-03-21T21:23:22+05:30
+author: Animesh Roy
+avatar: /img/avatar.jpeg
+authorlink: https://anir0y.in
+cover: /img/cover.jpg
+categories:
+  - Labs
+tags:
+  - vuln labs
+draft: false
+---
+
+## overview 
+> The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).
+
+---
+## Learning Platforms and VMs
+- [VulnHub](https://www.vulnhub.com)
+- [Hack the Box](https://www.hackthebox.eu/)
+- [TryHackMe](https://tryhackme.com/)
+- [eLearn Security](https://www.elearnsecurity.com/)
+- [PentesterLab](https://pentesterlab.com/)
+
+---
+
+- [bWAPP ](https://sourceforge.net/projects/bwapp/files/bWAPP)
+- [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)
+- [Damn Small Vulnerable Web](https://github.com/stamparm/DSVW)
+- [Damn Vulnerable ARM Router (DVAR)](http://blog.exploitlab.net/2018/01/dvar-damn-vulnerable-arm-router.html)
+- [Damn Vulnerable iOS Application (DVIA)](http://damnvulnerableiosapp.com)
+- [Damn Vulnerable Web App (DVWA)](https://github.com/ethicalhack3r/DVWA)
+- [Damn Vulnerable Web Services](https://github.com/snoopysecurity/dvws)
+- [Damn Vulnerable WordPress](https://github.com/vavkamil/dvwp)
+- [DOMXSS](http://www.domxss.com/domxss/)
+- [Extreme Vulnerable Node Application(XVNA)](https://github.com/vegabird/xvna)
+- [Game of Hacks](http://www.gameofhacks.com)
+- [Gruyere](https://google-gruyere.appspot.com)
+- [Hack This Site](https://www.hackthissite.org)
+- [Hack This](https://www.hackthis.co.uk)
+- [Hack Yourself first](https://hack-yourself-first.com/)
+- [Hackazon ](https://github.com/rapid7/hackazon)
+- [HellBound Hackers](https://www.hellboundhackers.org)
+- [Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat)
+- [Metasploitable2 ](https://community.rapid7.com/docs/DOC-1875)
+- [Metasploitable3 ](https://blog.rapid7.com/2016/11/15/test-your-might-with-the-shiny-new-metasploitable3/)
+- [Over The Wire Wargames](http://overthewire.org/wargames)
+- [OWASP  Juice Shop ](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
+- [OWASP Mutillidae II](https://sourceforge.net/projects/mutillidae)
+- [Peruggia](https://sourceforge.net/projects/peruggia)
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+- [RootMe](https://www.root-me.org)
+- [Samurai Web Testing Framework](http://www.samurai-wtf.org/)
+- [Server-Side Request Forgery (SSRF) vulnerable Lab](https://github.com/incredibleindishell/SSRF_Vulnerable_Lab)
+- [Snyk exploit-workshop](https://github.com/snyk/exploit-workshop)
+- [Try2Hack](http://www.try2hack.nl)
+- [Vicnum](http://vicnum.ciphertechs.com)
+- [Vulnerable Single Sign-On (SSO)](https://github.com/dogangcr/vulnerable-sso)
+- [Web Security Dojo](https://www.mavensecurity.com/resources/web-security-dojo)
+- [WebGoat](https://github.com/WebGoat/WebGoat)
+- [XXE Lab](https://github.com/jbarone/xxelab)
+
+---
+
+## WebSploit Labs
+- [WebSploit Labs (created and maintained by Omar Ωr Santos)](https://websploit.org)
+- [Mayhem - vulnerable container created by Omar Ωr for Mayhem 2020](https://websploit.org)
+- [RTOV-Hackme - vulnerable container created by Omar Ωr for DEF CON 27](https://websploit.org)
+- [RTV-Safemode - vulnerable container created by Omar Ωr for DEF CON Safemode](https://websploit.org)
+
