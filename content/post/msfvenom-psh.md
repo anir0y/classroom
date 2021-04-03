@@ -73,4 +73,4 @@ PS C:\PENTEST>
 ```
 
  ## Summary: 
- The the generated ps1 can be saved to disk, and is not detected as a virus , and runs succesfull creating a shell, but it can’t run with defender enabled on my windows 10 box.
+ The the generated ps1 can be saved to disk, and is not detected as a virus , and runs succesfull creating a shell, but it can’t run with defender enabled on  windows 10 box.
