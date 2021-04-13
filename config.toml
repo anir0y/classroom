@@ -6,7 +6,7 @@ theme = "dream"
 
 copyright = "YOU CAN RESUE MY CONTENT"
 
-googleAnalytics = "G-NZBEX7RBNF"
+#googleAnalytics = "G-NZBEX7RBNF"
 #disqusShortname = ""
 enableRobotsTXT = true
 hasCJKLanguage = true
