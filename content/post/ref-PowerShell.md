@@ -294,3 +294,11 @@ It includes a command-line shell and an associated scripting language.
 * [WSLab](https://github.com/microsoft/WSLab) - Windows Server rapid lab deployment scripts.
 * [PoshBot](https://github.com/poshbotio/PoshBot) - Powershell-based bot framework.
 * [PoShKeePass](https://github.com/PSKeePass/PoShKeePass) - Module for working with [KeePass](https://keepass.info) databases.
+
+
+<script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = 'anir0y-21';
+      var aax_src='302';
+    </script>
+<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
