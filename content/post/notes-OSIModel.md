@@ -10,6 +10,7 @@ categories:
   - Classroom
 tags:
   - notes
+  - OSI
   
 draft: true
 ---
