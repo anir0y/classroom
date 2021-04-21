@@ -12,7 +12,7 @@ tags:
   - notes
   - OSI
   
-draft: true
+draft: false
 ---
 
 # OSI Model OverView
