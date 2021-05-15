@@ -21,16 +21,21 @@ description: Try Hack ME Room {RoomID} walkthough
 ---
 ## {roomID}
 <script src="https://tryhackme.com/badge/434937"></script>  
-## Room [Subscription Only](https://tryhackme.com/room/{roomID})
----
-
-## TASK : 
 
 ---
-## Flags
-|Questions | Flag | 
-|---|---|
-|Question|Ans|
+
+
+## TASK ID : 
+
+---
+### Flags
+|id|Questions | Flag | 
+|-|---|---|
+|-|Question|`Ans`|
+
+### Explantion
+
+#### Flag 
 ---
 
 
