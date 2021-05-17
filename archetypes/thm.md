@@ -23,17 +23,10 @@ description: Try Hack ME Room {RoomID} walkthough
 <script src="https://tryhackme.com/badge/434937"></script>  
 
 ---
-## Solutins 
 
-|Task|Flag ID| Link|
-|-|-|--|
-|task|1|[Flag](#ID)|
-
----
 
 ## TASK ID : 
 
----
 ### task.question
 #### Question
 
