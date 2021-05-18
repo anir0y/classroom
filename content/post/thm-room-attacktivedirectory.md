@@ -14,7 +14,7 @@ tags:
   - rooms
   - thm
 
-draft: true
+draft: false
 description: Try Hack Me Room Attacktive Directorysolved by Animesh Roy. this is a walkthough. read more...
 
 ---
