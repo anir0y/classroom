@@ -25,13 +25,15 @@ description: Try Hack Me Room {replace} solved by Animesh Roy. this is a walktho
 |<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
 
 <!-- Amazon Ads-->
+
 <script type="text/javascript" language="javascript">
       var aax_size='300x250';
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
 <!-- Amazon Ads-->
+---
 
 ## Task 
 
@@ -61,12 +63,14 @@ description: Try Hack Me Room {replace} solved by Animesh Roy. this is a walktho
 
 -->
 
+
 <!-- Amazon Ads-->
+
 <script type="text/javascript" language="javascript">
       var aax_size='300x250';
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
 <!-- Amazon Ads-->
 ---
