@@ -1,5 +1,5 @@
 ---
-title: Thm Room Sysmon
+title: Try Hack Me Room Room Sysmon
 date: 2021-05-15T23:36:09+05:30
 lastmod: 2021-05-15T23:36:09+05:30
 author: Animesh Roy

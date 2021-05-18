@@ -1,5 +1,5 @@
 ---
-title: Thm Room Splunk
+title: Try Hack Me Room Room Splunk
 date: 2021-05-18T00:28:31+05:30
 lastmod: 2021-05-18T00:28:31+05:30
 author: Animesh Roy
@@ -19,7 +19,7 @@ description: Try Hack ME Room Splunk walkthough by Animesh Roy
 ---
 
 ---
-## {roomID}
+## Splunk
 <script src="https://tryhackme.com/badge/434937"></script>  
 
 ---
