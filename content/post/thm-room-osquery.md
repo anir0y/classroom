@@ -54,7 +54,16 @@ Refer to the documentation on the Osquery daemon (osqueryd) information and all 
 Schema is [here](https://osquery.io/schema/)
 
 ---
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3526678290068011"
+     data-ad-slot="1939553774"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 ---
 ## TASK 3 : Interacting with the Osquery Shell
 
