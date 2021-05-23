@@ -26,7 +26,7 @@ Domino's India, which is owned by Jubilant FoodWorks has apparently fallen victi
 ![](https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/omdfhadpryptysxd_1618997536.jpeg)
 Image Credits: Pixabay/Twitter - @dominos_india
 
-
+---
 
 <!-- Amazon Ads-->
 
