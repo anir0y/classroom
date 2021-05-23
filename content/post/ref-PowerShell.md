@@ -25,32 +25,34 @@ It includes a command-line shell and an associated scripting language.
 
 ## Contents
 
-* [API Wrapper](#api-wrapper)
-* [Blogs](#blogs)
-* [Books](#books)
-* [Build Tools](#build-tools)
-* [Code and Package Repositories](#code-and-package-repositories)
-* [Commandline Productivity](#commandline-productivity)
-* [Communities](#communities)
-* [Data](#data)
-* [Documentation Helper](#documentation-helper)
-* [Editors and IDEs](#editors-and-ides)
-* [Frameworks](#frameworks)
-* [Interactive Learning](#interactive-learning)
-* [Logging](#logging)
-* [Module Development Templates](#module-development-templates)
-* [Package Managers](#package-managers)
-* [Parallel Processing](#parallel-processing)
-* [Podcasts](#podcasts)
-* [Security](#security)
-* [SharePoint](#sharepoint)
-* [SQL Server](#sql-server)
-* [Testing](#testing)
-* [Themes](#themes)
-* [UI](#ui)
-* [Videos](#videos)
-* [Webserver](#webserver)
-* [Misc](#misc)
+- [Awesome PowerShell](#awesome-powershell)
+  - [Contents](#contents)
+  - [API Wrapper](#api-wrapper)
+  - [Blogs](#blogs)
+  - [Books](#books)
+  - [Build Tools](#build-tools)
+  - [Code and Package Repositories](#code-and-package-repositories)
+  - [Commandline Productivity](#commandline-productivity)
+  - [Communities](#communities)
+  - [Data](#data)
+  - [Documentation Helper](#documentation-helper)
+  - [Editors and IDEs](#editors-and-ides)
+  - [Frameworks](#frameworks)
+  - [Interactive Learning](#interactive-learning)
+  - [Logging](#logging)
+  - [Module Development Templates](#module-development-templates)
+  - [Package Managers](#package-managers)
+  - [Parallel Processing](#parallel-processing)
+  - [Podcasts](#podcasts)
+  - [Security](#security)
+  - [SharePoint](#sharepoint)
+  - [SQL Server](#sql-server)
+  - [Testing](#testing)
+  - [Themes](#themes)
+  - [UI](#ui)
+  - [Videos](#videos)
+  - [Webserver](#webserver)
+  - [Misc](#misc)
 
 ## API Wrapper
 
@@ -301,4 +303,4 @@ It includes a command-line shell and an associated scripting language.
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>

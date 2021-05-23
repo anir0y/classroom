@@ -614,4 +614,4 @@ Mode                LastWriteTime         Length Name
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>

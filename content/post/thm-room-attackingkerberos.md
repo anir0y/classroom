@@ -115,7 +115,7 @@ The main ticket that you will see is a ticket-granting ticket these can come in 
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
 <!-- Amazon Ads-->
 
 ---
@@ -565,6 +565,6 @@ Know that you have the knowledge needed to attack Kerberos I encourage you to co
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
 <!-- Amazon Ads-->
 ---

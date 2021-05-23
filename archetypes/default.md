@@ -31,7 +31,7 @@ description: Try Hack Me Room {replace} solved by Animesh Roy. this is a walktho
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
 <!-- Amazon Ads-->
 ---
 
@@ -71,6 +71,7 @@ description: Try Hack Me Room {replace} solved by Animesh Roy. this is a walktho
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
 <!-- Amazon Ads-->
+
 ---

@@ -31,7 +31,7 @@ description: Try Hack Me Room Attacktive Directorysolved by Animesh Roy. this is
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
 
 <!-- Amazon Ads-->
 
@@ -346,6 +346,6 @@ Run `evil-winrm` with `administrator` hash and copy the flags
       var aax_pubname = 'anir0y-21';
       var aax_src='302';
     </script>
-<script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
 <!-- Amazon Ads-->
 ---
