@@ -38,11 +38,16 @@ description: Try Hack Me Room {replace} solved by Animesh Roy. this is a walktho
 ## Task 
 
 ### Flags Task.1
-|||
-|:---:|:---|
-|Question|Goes here|
-
-#### Explanation
+|Flag ID|Questions|Ans|
+|-|:---:|:---|
+|1|Question|Goes here|
+|2|Question|Goes here|
+|3|Question|Goes here|
+|4|Question|Goes here|
+|5|Question|Goes here|
+|6|Question|Goes here|
+|7|Question|Goes here|
+|8|Question|Goes here|
 
 
 
