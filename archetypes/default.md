@@ -4,7 +4,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 author: Animesh Roy
 avatar: /img/avatar.jpeg
-authorlink: https://anir0y.in
+authorlink: https://bit.ly/34sGFiK
 cover: /img/blog.png
 
 categories:
@@ -40,14 +40,14 @@ description: Try Hack Me Room {replace} solved by Animesh Roy. this is a walktho
 ### Flags Task.1
 |Flag ID|Questions|Ans|
 |-|:---:|:---|
-|1|Question|Goes here|
-|2|Question|Goes here|
-|3|Question|Goes here|
-|4|Question|Goes here|
-|5|Question|Goes here|
-|6|Question|Goes here|
-|7|Question|Goes here|
-|8|Question|Goes here|
+|1|Question|`ans`|
+|2|Question|`ans`|
+|3|Question|`ans`|
+|4|Question|`ans`|
+|5|Question|`ans`|
+|6|Question|`ans`|
+|7|Question|`ans`|
+|8|Question|`ans`|
 
 
 
@@ -60,11 +60,25 @@ description: Try Hack Me Room {replace} solved by Animesh Roy. this is a walktho
 <!-- ## Task 
 
 ### Flags Task.1
-|||
-|:---:|:---|
-|Question|Goes here|
+|Flag ID|Questions|Ans|
+|-|:---:|:---|
+|1|Question|`ans`|
+|2|Question|`ans`|
+|3|Question|`ans`|
+|4|Question|`ans`|
+|5|Question|`ans`|
+|6|Question|`ans`|
+|7|Question|`ans`|
+|8|Question|`ans`|
 
-#### Explanation
+### Flag-x.x
+> 
+>
+>
+
+ans:
+
+![]()
 
 -->
 
