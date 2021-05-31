@@ -15,7 +15,7 @@ tags:
   - thm
 
 draft: true
-description: Try Hack Me Room {replace} solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room {replace} solved by Animesh Roy. this is a walkthough. read more...
 
 ---
 # ROOM-NAME
