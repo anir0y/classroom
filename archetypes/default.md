@@ -18,14 +18,11 @@ draft: true
 description: TryHackMe Room {replace} solved by Animesh Roy. this is a walkthough. read more...
 
 ---
-# ROOM-NAME
+## ROOM-NAME
 
-|Profile|Support|
-|:-----|-----:|
-|<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
 
+---
 <!-- Amazon Ads-->
-
 <script type="text/javascript" language="javascript">
       var aax_size='300x250';
       var aax_pubname = 'anir0y-21';
@@ -35,54 +32,36 @@ description: TryHackMe Room {replace} solved by Animesh Roy. this is a walkthoug
 <!-- Amazon Ads-->
 ---
 
+
+
+---
+<!-- 
 ## Task 
 
-### Flags Task.1
-|Flag ID|Questions|Ans|
-|-|:---:|:---|
-|1|Question|`ans`|
-|2|Question|`ans`|
-|3|Question|`ans`|
-|4|Question|`ans`|
-|5|Question|`ans`|
-|6|Question|`ans`|
-|7|Question|`ans`|
-|8|Question|`ans`|
-
-
-
-
-
-
-
-
----
-<!-- ## Task 
-
-### Flags Task.1
-|Flag ID|Questions|Ans|
-|-|:---:|:---|
-|1|Question|`ans`|
-|2|Question|`ans`|
-|3|Question|`ans`|
-|4|Question|`ans`|
-|5|Question|`ans`|
-|6|Question|`ans`|
-|7|Question|`ans`|
-|8|Question|`ans`|
-
-### Flag-x.x
-> 
->
->
-
-ans:
-
-![]()
+|Flag-ID|question|
+|:--|---|
+|1||
+|||
+|2||
+|||
+|3||
+|||
+|4||
+|||
+|5||
+|||
+|6||
+|||
+|7||
+|||
+|8||
+|||
+|9||
+|||
+|10||
+|||
 
 -->
-
-
 <!-- Amazon Ads-->
 
 <script type="text/javascript" language="javascript">
@@ -92,5 +71,7 @@ ans:
     </script>
 <script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
 <!-- Amazon Ads-->
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 ---
