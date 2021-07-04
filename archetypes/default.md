@@ -6,6 +6,7 @@ author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
 cover: /img/blog.png
+#cover: /img/thm.gif # for tryhackMe
 
 categories:
   - TryHackMe
