@@ -23,7 +23,7 @@ description: TryHackMe Room Crisis solved by Animesh Roy. this is a walkthough. 
 
 |Room Name| |
 |---|---|
-|Crisis|[![crisis](https://tryhackme-images.s3.amazonaws.com/room-icons/be6532386459feb00480cb5d56e788c5.png)](https://tryhackme.com/jr/crisis)|
+|Crisis|[![crisis](https://tryhackme-images.s3.amazonaws.com/room-icons/be6532386459feb00480cb5d56e788c5.png)](https://ktryhackme.com/jr/crisis)|
 |Dev| [@anir0y](https://anir0y.in)|
 |Tools required| [Wireshark](https://wireshark.org)|
 |Join Room| [Crisis](tryhackme.com/jr/crisis)|
