@@ -15,7 +15,7 @@ tags:
   - rooms
   - thm
 
-draft: true
+draft: false
 description: TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthough. read more... Learn about function hooking in Linux and have fun hooking functions
 
 ---
