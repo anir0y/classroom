@@ -5,3 +5,7 @@ img[alt=crisis] { width: 200px; }
 img[alt=tmux] { width: 200px;}
 
 img[alt=logo] { width: 200px;}
+
+img[alt=img] { 
+    width: 90%;
+} 
