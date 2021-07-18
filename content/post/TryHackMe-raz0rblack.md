@@ -5,8 +5,8 @@ lastmod: 2021-07-18T19:31:05+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/blog.png
-#cover: /img/thm.gif # for tryhackMe
+#cover: /img/blog.png
+cover: /img/thm.gif # for tryhackMe
 
 categories:
   - TryHackMe
@@ -14,9 +14,11 @@ tags:
   - tryhackme
   - rooms
   - thm
+  - RazorBlack
 
 draft: false
-description: TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who's the boss ??
+
 
 ---
 
