@@ -1,13 +1,178 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><title>TryHackMe Ffuf | Classroom</title><link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon><meta name=author content="Animesh Roy"><meta name=description content="TryHackMe Room ffuf solved by Animesh Roy. this is a walkthough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing..."><script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script><link rel=canonical href=https://classroom.anir0y.in/post/tryhackme-ffuf/><meta property="og:title" content="TryHackMe Ffuf"><meta property="og:description" content="TryHackMe Room ffuf solved by Animesh Roy. this is a walkthough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing..."><meta property="og:type" content="article"><meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-ffuf/"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-07-17T02:49:02+05:30"><meta property="article:modified_time" content="2021-07-17T02:49:02+05:30"><meta name=twitter:card content="summary"><meta name=twitter:title content="TryHackMe Ffuf"><meta name=twitter:description content="TryHackMe Room ffuf solved by Animesh Roy. this is a walkthough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing..."><link rel=stylesheet href=/css/semantic.min.css><link rel=stylesheet href=/css/icomoon.css><link rel=stylesheet href=/css/OverlayScrollbars.min.css><link rel=stylesheet href=/css/github-markdown.css><link rel=stylesheet href=/css/site.css><link rel=stylesheet href=/css/custom.css><style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style><link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css><link rel=stylesheet href=/css/custom.css></head><body class=default><nav class="ui secondary menu dream-menu"><div class=item><i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i></div><div class=item><i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i></div><div class=item><i class="large link icon theme-switch" onclick=themeSwitch()></i></div><div class=item><i class="large link search icon" onclick=toggleSearch()></i></div></nav><div class=flip-container><div class=flipper><section class=front><div class=dream-max-width><div class="ui relaxed grid dream-grid dream-grid-single" style=flex-direction:row-reverse><aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside"><div class="ui segment toc"><nav id=TableOfContents><ul><li><a href=#overview>overview</a></li><li><a href=#task-01-introduction>task 01: Introduction</a><ul><li><a href=#summary>Summary</a></li><li><a href=#install-ffuf>Install ffuf</a></li><li><a href=#install-seclists>Install SecLists</a></li></ul></li><li><a href=#task-02-basics>task 02: Basics</a><ul><li><a href=#21>2.1</a></li></ul></li><li><a href=#task-03-finding-pages-and-directories>task 03: Finding pages and directories</a><ul><li><a href=#31>3.1</a></li><li><a href=#32>3.2</a></li><li><a href=#33>3.3</a></li><li><a href=#34>3.4</a></li></ul></li><li><a href=#task-04-using-filters>task 04: Using filters</a><ul><li><a href=#41>4.1</a></li><li><a href=#42>4.2</a></li><li><a href=#43>4.3</a></li></ul></li><li><a href=#task-05-fuzzing-parameters>task 05: Fuzzing parameters</a><ul><li><a href=#51>5.1</a></li><li><a href=#52>5.2</a></li><li><a href=#53>5.3</a></li></ul></li><li><a href=#task-06-finding-vhosts-and-subdomains>task 06: Finding vhosts and subdomains</a><ul><li><a href=#61>6.1</a></li></ul></li><li><a href=#task-07-proxifying-ffuf-traffic>Task 07: Proxifying ffuf traffic</a></li><li><a href=#task-08-reviewing-the-options>Task 08: Reviewing the options</a><ul><li><a href=#81>8.1</a></li><li><a href=#82>8.2</a></li><li><a href=#83>8.3</a></li><li><a href=#84>8.4</a></li><li><a href=#85>8.5</a></li><li><a href=#86>8.6</a></li><li><a href=#87>8.7</a></li></ul></li></ul></nav></div><div class="ui segment actions"><button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
-<i class="save icon"></i></button>
-<a href="https://twitter.com/intent/tweet?text=TryHackMe%20Ffuf&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-ffuf%2f" class="ui circular twitter icon button"><i class="twitter icon"></i></a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-ffuf%2f" class="ui circular facebook icon button"><i class="facebook icon"></i></a></div></aside><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img><section class="ui top attached segment"><header><h1 class="ui large header">TryHackMe Ffuf<div class="sub header">@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>TryHackMe Ffuf | Classroom</title>
+<link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
+<meta name=author content="Animesh Roy">
+<meta name=description content="TryHackMe Room ffuf solved by Animesh Roy. this is a walkthough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing...">
+<script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script>
+<script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script>
+<link rel=canonical href=https://classroom.anir0y.in/post/tryhackme-ffuf/>
+<meta property="og:title" content="TryHackMe Ffuf">
+<meta property="og:description" content="TryHackMe Room ffuf solved by Animesh Roy. this is a walkthough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing...">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-ffuf/"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-07-17T02:49:02+05:30">
+<meta property="article:modified_time" content="2021-07-17T02:49:02+05:30">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="TryHackMe Ffuf">
+<meta name=twitter:description content="TryHackMe Room ffuf solved by Animesh Roy. this is a walkthough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing...">
+<link rel=stylesheet href=/css/semantic.min.css>
+<link rel=stylesheet href=/css/icomoon.css>
+<link rel=stylesheet href=/css/OverlayScrollbars.min.css>
+<link rel=stylesheet href=/css/github-markdown.css>
+<link rel=stylesheet href=/css/site.css>
+<link rel=stylesheet href=/css/custom.css>
+<style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style>
+<link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css>
+<link rel=stylesheet href=/css/custom.css>
+</head>
+<body class=default>
+<nav class="ui secondary menu dream-menu">
+<div class=item>
+<i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+</div>
+<div class=item>
+<i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i>
+</div>
+<div class=item>
+<i class="large link icon theme-switch" onclick=themeSwitch()></i>
+</div>
+<div class=item>
+<i class="large link search icon" onclick=toggleSearch()></i>
+</div>
+</nav>
+<div class=flip-container>
+<div class=flipper>
+<section class=front>
+<div class=dream-max-width>
+<div class="ui relaxed grid dream-grid dream-grid-single" style=flex-direction:row-reverse>
+<aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+<div class="ui segment toc">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#overview>overview</a></li>
+<li><a href=#task-01-introduction>task 01: Introduction</a>
+<ul>
+<li><a href=#summary>Summary</a></li>
+<li><a href=#install-ffuf>Install ffuf</a></li>
+<li><a href=#install-seclists>Install SecLists</a></li>
+</ul>
+</li>
+<li><a href=#task-02-basics>task 02: Basics</a>
+<ul>
+<li><a href=#21>2.1</a></li>
+</ul>
+</li>
+<li><a href=#task-03-finding-pages-and-directories>task 03: Finding pages and directories</a>
+<ul>
+<li><a href=#31>3.1</a></li>
+<li><a href=#32>3.2</a></li>
+<li><a href=#33>3.3</a></li>
+<li><a href=#34>3.4</a></li>
+</ul>
+</li>
+<li><a href=#task-04-using-filters>task 04: Using filters</a>
+<ul>
+<li><a href=#41>4.1</a></li>
+<li><a href=#42>4.2</a></li>
+<li><a href=#43>4.3</a></li>
+</ul>
+</li>
+<li><a href=#task-05-fuzzing-parameters>task 05: Fuzzing parameters</a>
+<ul>
+<li><a href=#51>5.1</a></li>
+<li><a href=#52>5.2</a></li>
+<li><a href=#53>5.3</a></li>
+</ul>
+</li>
+<li><a href=#task-06-finding-vhosts-and-subdomains>task 06: Finding vhosts and subdomains</a>
+<ul>
+<li><a href=#61>6.1</a></li>
+</ul>
+</li>
+<li><a href=#task-07-proxifying-ffuf-traffic>Task 07: Proxifying ffuf traffic</a></li>
+<li><a href=#task-08-reviewing-the-options>Task 08: Reviewing the options</a>
+<ul>
+<li><a href=#81>8.1</a></li>
+<li><a href=#82>8.2</a></li>
+<li><a href=#83>8.3</a></li>
+<li><a href=#84>8.4</a></li>
+<li><a href=#85>8.5</a></li>
+<li><a href=#86>8.6</a></li>
+<li><a href=#87>8.7</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div class="ui segment actions">
+<button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
+<i class="save icon"></i>
+</button>
+<a href="https://twitter.com/intent/tweet?text=TryHackMe%20Ffuf&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-ffuf%2f" class="ui circular twitter icon button">
+<i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-ffuf%2f" class="ui circular facebook icon button">
+<i class="facebook icon"></i>
+</a>
+</div>
+</aside>
+<div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img>
+<section class="ui top attached segment">
+<header>
+<h1 class="ui large header">TryHackMe Ffuf<div class="sub header">
+@
 <a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a>
 |
 Saturday, Jul 17, 2021
 | 18 minutes read
 | Update at
-Saturday, Jul 17, 2021</div></h1></header><article class=main><h2 id=overview>overview</h2><table><thead><tr><th>fuff</th><th></th></tr></thead><tbody><tr><td></td><td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/b197813dc74d88fa2a6df2c128ff155c.png alt=logo></td></tr><tr><td>room</td><td><a href=https://tryhackme.com/room/ffuf>Link</a></td></tr></tbody></table><hr><h2 id=task-01-introduction>task 01: Introduction</h2><h3 id=summary>Summary</h3><p>ffuf stands for Fuzz Faster U Fool. It&rsquo;s a tool used for web enumeration, fuzzing, and directory brute forcing.</p><h3 id=install-ffuf>Install ffuf</h3><p>ffuf is already included in the following Linux distributions:</p><ul><li>BlackArch</li><li>Pentoo</li><li>Kali</li><li>Parrot</li></ul><h3 id=install-seclists>Install SecLists</h3><p>SecLists is a collection of multiple types of lists used during security assessments. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.</p><h2 id=task-02-basics>task 02: Basics</h2><p>The Help page can be displayed using <code>ffuf -h</code> and it will be useful as we will use a lot of options.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Fuzz Faster U Fool - v1.3.0-dev
+Saturday, Jul 17, 2021
+</div>
+</h1>
+</header>
+<article class=main><h2 id=overview>overview</h2>
+<table>
+<thead>
+<tr>
+<th>fuff</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/b197813dc74d88fa2a6df2c128ff155c.png alt=logo></td>
+</tr>
+<tr>
+<td>room</td>
+<td><a href=https://tryhackme.com/room/ffuf>Link</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id=task-01-introduction>task 01: Introduction</h2>
+<h3 id=summary>Summary</h3>
+<p>ffuf stands for Fuzz Faster U Fool. It&rsquo;s a tool used for web enumeration, fuzzing, and directory brute forcing.</p>
+<h3 id=install-ffuf>Install ffuf</h3>
+<p>ffuf is already included in the following Linux distributions:</p>
+<ul>
+<li>BlackArch</li>
+<li>Pentoo</li>
+<li>Kali</li>
+<li>Parrot</li>
+</ul>
+<h3 id=install-seclists>Install SecLists</h3>
+<p>SecLists is a collection of multiple types of lists used during security assessments. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.</p>
+<h2 id=task-02-basics>task 02: Basics</h2>
+<p>The Help page can be displayed using <code>ffuf -h</code> and it will be useful as we will use a lot of options.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Fuzz Faster U Fool - v1.3.0-dev
 
 HTTP OPTIONS:
   -H                  Header <span style=color:#e6db74>`</span><span style=color:#e6db74>&#34;Name: Value&#34;</span><span style=color:#e6db74>`</span>, separated by colon. Multiple -H flags are accepted.
@@ -73,7 +238,14 @@ OUTPUT OPTIONS:
   -od                 Directory path to store matched results to.
   -of                 Output file format. Available formats: json, ejson, html, md, csv, ecsv <span style=color:#f92672>(</span>or, <span style=color:#e6db74>&#39;all&#39;</span> <span style=color:#66d9ef>for</span> all formats<span style=color:#f92672>)</span> <span style=color:#f92672>(</span>default: json<span style=color:#f92672>)</span>
   -or                 Don<span style=color:#e6db74>&#39;t create the output file if we don&#39;</span>t have results <span style=color:#f92672>(</span>default: false<span style=color:#f92672>)</span>
-</code></pre></div><p>At a minimum we&rsquo;re required to supply two options: -u to specify an URL and -w to specify a wordlist. The default keyword FUZZ is used to tell ffuf where the wordlist entries will be injected. We can append it to the end of the URL like so:</p><p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt</code></p><p>You could also use any custom keyword instead of <code>FUZZ</code>, you just need to define it like this <code>wordlist.txt:KEYWORD</code>.</p><p><code>ffuf -u http://10.10.62.131/NORAJ -w /usr/share/seclists/Discovery/Web-Content/big.txt:NORAJ</code></p><h3 id=21>2.1</h3><p>What is the first file you found with a 200 status code?</p><p>command I ran:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/big.txt 
+</code></pre></div><p>At a minimum we&rsquo;re required to supply two options: -u to specify an URL and -w to specify a wordlist. The default keyword FUZZ is used to tell ffuf where the wordlist entries will be injected. We can append it to the end of the URL like so:</p>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt</code></p>
+<p>You could also use any custom keyword instead of <code>FUZZ</code>, you just need to define it like this <code>wordlist.txt:KEYWORD</code>.</p>
+<p><code>ffuf -u http://10.10.62.131/NORAJ -w /usr/share/seclists/Discovery/Web-Content/big.txt:NORAJ</code></p>
+<h3 id=21>2.1</h3>
+<p>What is the first file you found with a 200 status code?</p>
+<p>command I ran:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/big.txt 
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\ </span>      
        /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/       
@@ -104,7 +276,20 @@ external                <span style=color:#f92672>[</span>Status: 301, Size: 314
 robots.txt              <span style=color:#f92672>[</span>Status: 200, Size: 26, Words: 3, Lines: 2<span style=color:#f92672>]</span>
 server-status           <span style=color:#f92672>[</span>Status: 403, Size: 292, Words: 21, Lines: 11<span style=color:#f92672>]</span>
 :: Progress: <span style=color:#f92672>[</span>20473/20473<span style=color:#f92672>]</span> :: Job <span style=color:#f92672>[</span>1/1<span style=color:#f92672>]</span> :: <span style=color:#ae81ff>3717</span> req/sec :: Duration: <span style=color:#f92672>[</span>0:00:10<span style=color:#f92672>]</span> :: Errors: <span style=color:#ae81ff>0</span> ::
-</code></pre></div><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=task-03-finding-pages-and-directories>task 03: Finding pages and directories</h2><p>One approach you could take would be to start enumerating with a generic list of files such as raft-medium-files-lowercase.txt.</p><blockquote><p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt</code></p></blockquote><p>However, using a large generic wordlist containing irrelevant file extensions is not very efficient.</p><p>Instead, we can usually assume <code>index.&lt;extension></code> is the default page on most websites so we can try common extensions for just the index page. With this method, we can usually determine what programming language or languages the site uses.</p><p>For example, we can append the extension after index.</p><pre><code>head /usr/share/seclists/Discovery/Web-Content/web-extensions.txt                                                            
+</code></pre></div><hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=task-03-finding-pages-and-directories>task 03: Finding pages and directories</h2>
+<p>One approach you could take would be to start enumerating with a generic list of files such as raft-medium-files-lowercase.txt.</p>
+<blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt</code></p>
+</blockquote>
+<p>However, using a large generic wordlist containing irrelevant file extensions is not very efficient.</p>
+<p>Instead, we can usually assume <code>index.&lt;extension></code> is the default page on most websites so we can try common extensions for just the index page. With this method, we can usually determine what programming language or languages the site uses.</p>
+<p>For example, we can append the extension after index.</p>
+<pre><code>head /usr/share/seclists/Discovery/Web-Content/web-extensions.txt                                                            
 .asp
 .aspx
 .bat
@@ -115,7 +300,21 @@ server-status           <span style=color:#f92672>[</span>Status: 403, Size: 292
 .com
 .dll
 .exe
-</code></pre><blockquote><p><code>ffuf -u http://10.10.62.131/indexFUZZ -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt</code></p></blockquote><p>Now that we know the extensions supported we can try a list of generic words (without of extension) and apply the extensions we know works (found from Q2) + some common ones like <code>.txt</code>.</p><p>We&rsquo;ll exclude the 4 letter extensions from this wordlist as it will result in many false positives.</p><blockquote><p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -e .php,.txt</code></p></blockquote><p>Directory names are not always dependent on the type of environment you&rsquo;re enumerating and is often a good starting point before attempting to fuzz for files. If we wanted to fuzz directories we only need to provide a wordlist.</p><blockquote><p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt</code></p></blockquote><h3 id=31>3.1</h3><p>What text file did you find?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-files-lowercase.txt
+</code></pre><blockquote>
+<p><code>ffuf -u http://10.10.62.131/indexFUZZ -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt</code></p>
+</blockquote>
+<p>Now that we know the extensions supported we can try a list of generic words (without of extension) and apply the extensions we know works (found from Q2) + some common ones like <code>.txt</code>.</p>
+<p>We&rsquo;ll exclude the 4 letter extensions from this wordlist as it will result in many false positives.</p>
+<blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -e .php,.txt</code></p>
+</blockquote>
+<p>Directory names are not always dependent on the type of environment you&rsquo;re enumerating and is often a good starting point before attempting to fuzz for files. If we wanted to fuzz directories we only need to provide a wordlist.</p>
+<blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt</code></p>
+</blockquote>
+<h3 id=31>3.1</h3>
+<p>What text file did you find?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-files-lowercase.txt
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\ </span>      
        /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/       
@@ -129,7 +328,9 @@ server-status           <span style=color:#f92672>[</span>Status: 403, Size: 292
 
 robots.txt              <span style=color:#f92672>[</span>Status: 200, Size: 26, Words: 3, Lines: 2<span style=color:#f92672>]</span>
 ...<span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>...
-</code></pre></div><h3 id=32>3.2</h3><p>What two file extensions were found for the index page?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/indexFUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
+</code></pre></div><h3 id=32>3.2</h3>
+<p>What two file extensions were found for the index page?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/indexFUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
 
 ...<span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>...
 ________________________________________________
@@ -137,7 +338,9 @@ ________________________________________________
 .phps                   <span style=color:#f92672>[</span>Status: 403, Size: 289, Words: 21, Lines: 11<span style=color:#f92672>]</span>
 .php                    <span style=color:#f92672>[</span>Status: 302, Size: 0, Words: 1, Lines: 1<span style=color:#f92672>]</span>
 
-</code></pre></div><h3 id=33>3.3</h3><p>What page has a size of 4840?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -e .php,.txt
+</code></pre></div><h3 id=33>3.3</h3>
+<p>What page has a size of 4840?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -e .php,.txt
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\ </span>      
        /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/       
@@ -152,14 +355,23 @@ ________________________________________________
 ...<span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>...
 about.php               <span style=color:#f92672>[</span>Status: 200, Size: 4840, Words: 331, Lines: 109<span style=color:#f92672>]</span>
 ...<span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>...
-</code></pre></div><h3 id=34>3.4</h3><p>How many directories are there?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
+</code></pre></div><h3 id=34>3.4</h3>
+<p>How many directories are there?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
 ...<span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>...
 docs                    <span style=color:#f92672>[</span>Status: 301, Size: 310, Words: 20, Lines: 10<span style=color:#f92672>]</span>
 config                  <span style=color:#f92672>[</span>Status: 301, Size: 312, Words: 20, Lines: 10<span style=color:#f92672>]</span>
 external                <span style=color:#f92672>[</span>Status: 301, Size: 314, Words: 20, Lines: 10<span style=color:#f92672>]</span>
 server-status           <span style=color:#f92672>[</span>Status: 403, Size: 292, Words: 21, Lines: 11<span style=color:#f92672>]</span>
 ...<span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>...
-</code></pre></div><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=task-04-using-filters>task 04: Using filters</h2><p>Remember the command we ran for Q1 of Task 3?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>$ ffuf -u http://MACHINE_IP/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt
+</code></pre></div><hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=task-04-using-filters>task 04: Using filters</h2>
+<p>Remember the command we ran for Q1 of Task 3?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>$ ffuf -u http://MACHINE_IP/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\
 </span><span style=color:#ae81ff></span>       /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/
@@ -206,12 +418,27 @@ wp-forum.phps           <span style=color:#f92672>[</span>Status: 403, Size: 293
 .htc                    <span style=color:#f92672>[</span>Status: 403, Size: 284, Words: 21, Lines: 11<span style=color:#f92672>]</span>
 :: Progress: <span style=color:#f92672>[</span>16243/16243<span style=color:#f92672>]</span> :: Job <span style=color:#f92672>[</span>1/1<span style=color:#f92672>]</span> :: <span style=color:#ae81ff>1690</span> req/sec :: Duration: <span style=color:#f92672>[</span>0:00:13<span style=color:#f92672>]</span> :: Errors: <span style=color:#ae81ff>0</span> ::
 </code></pre></div><p>We had a lot of output but not much was useful.
-For example, a 403 HTTP status code indicates that we&rsquo;re forbidden to access the requested resource. Let&rsquo;s hide responses with 403 status codes for now. We can accomplish this by using filters.</p><p>By adding <code>-fc 403</code> (filter code) we&rsquo;ll hide from the output all 403 HTTP status codes.</p><blockquote><p>q1</p><p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc 403</code></p></blockquote><p>Sometimes you might want to filter out multiple status codes such as 500, 302, 301, 401, etc. For instance, if you know you want to see 200 status code responses, you could use <code>-mc 200</code> (match code) instead of having a long list of filtered codes.</p><blockquote><p>Q2</p><p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -mc 200</code></p></blockquote><p>Sometimes it might be beneficial to see what requests the server doesn&rsquo;t handle by matching for HTTP 500 Internal Server Error response codes (<code>-mc 500</code>). Finding irregularities in behavior could help better understand how the web app works.</p><p>There are other filters and matchers. For example, you could encounter entries with a 200 status code with a response size of zero. eg. <code>functions.php</code> or <code>inc/myfile.php</code>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>$ ffuf -u http://MACHINE_IP/config/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc <span style=color:#ae81ff>403</span>
+For example, a 403 HTTP status code indicates that we&rsquo;re forbidden to access the requested resource. Let&rsquo;s hide responses with 403 status codes for now. We can accomplish this by using filters.</p>
+<p>By adding <code>-fc 403</code> (filter code) we&rsquo;ll hide from the output all 403 HTTP status codes.</p>
+<blockquote>
+<p>q1</p>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc 403</code></p>
+</blockquote>
+<p>Sometimes you might want to filter out multiple status codes such as 500, 302, 301, 401, etc. For instance, if you know you want to see 200 status code responses, you could use <code>-mc 200</code> (match code) instead of having a long list of filtered codes.</p>
+<blockquote>
+<p>Q2</p>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -mc 200</code></p>
+</blockquote>
+<p>Sometimes it might be beneficial to see what requests the server doesn&rsquo;t handle by matching for HTTP 500 Internal Server Error response codes (<code>-mc 500</code>). Finding irregularities in behavior could help better understand how the web app works.</p>
+<p>There are other filters and matchers. For example, you could encounter entries with a 200 status code with a response size of zero. eg. <code>functions.php</code> or <code>inc/myfile.php</code>.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>$ ffuf -u http://MACHINE_IP/config/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc <span style=color:#ae81ff>403</span>
 ...
 .                       <span style=color:#f92672>[</span>Status: 200, Size: 1165, Words: 76, Lines: 18<span style=color:#f92672>]</span>
 config.inc.php          <span style=color:#f92672>[</span>Status: 200, Size: 0, Words: 1, Lines: 1<span style=color:#f92672>]</span>
 :: Progress: <span style=color:#f92672>[</span>16243/16243<span style=color:#f92672>]</span> :: Job <span style=color:#f92672>[</span>1/1<span style=color:#f92672>]</span> :: <span style=color:#ae81ff>1732</span> req/sec :: Duration: <span style=color:#f92672>[</span>0:00:13<span style=color:#f92672>]</span> :: Errors: <span style=color:#ae81ff>0</span> ::
-</code></pre></div><p>Unless we have a LFI (local file inclusion) this kind of files aren&rsquo;t interesting, so we can use <code>-fs 0</code> (filter size).</p><p>Here are all filters and matchers:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ ffuf -h
+</code></pre></div><p>Unless we have a LFI (local file inclusion) this kind of files aren&rsquo;t interesting, so we can use <code>-fs 0</code> (filter size).</p>
+<p>Here are all filters and matchers:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ ffuf -h
 ...
 MATCHER OPTIONS:
   -mc                 Match HTTP status codes, or <span style=color:#e6db74>&#34;all&#34;</span> <span style=color:#66d9ef>for</span> everything. <span style=color:#f92672>(</span>default: 200,204,301,302,307,401,403,405<span style=color:#f92672>)</span>
@@ -226,7 +453,14 @@ FILTER OPTIONS:
   -fr                 Filter regexp
   -fs                 Filter HTTP response size. Comma separated list of sizes and ranges
   -fw                 Filter by amount of words in response. Comma separated list of word counts and ranges
-</code></pre></div><p>We often see there are false positives with files beginning with a dot (eg. .htgroups,.php, etc.). They throw a 403 Forbidden error, however those files don&rsquo;t actually exist. It&rsquo;s tempting to use <code>-fc 403</code> but this could hide valuable files we don&rsquo;t have access to yet. So instead we can use a regexp to match all files beginning with a dot</p><blockquote><p>Q3</p><p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fr '/\..*'</code></p></blockquote><h3 id=41>4.1</h3><p>After applying the fc filter, how many results were returned?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc <span style=color:#ae81ff>403</span>
+</code></pre></div><p>We often see there are false positives with files beginning with a dot (eg. .htgroups,.php, etc.). They throw a 403 Forbidden error, however those files don&rsquo;t actually exist. It&rsquo;s tempting to use <code>-fc 403</code> but this could hide valuable files we don&rsquo;t have access to yet. So instead we can use a regexp to match all files beginning with a dot</p>
+<blockquote>
+<p>Q3</p>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fr '/\..*'</code></p>
+</blockquote>
+<h3 id=41>4.1</h3>
+<p>After applying the fc filter, how many results were returned?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc <span style=color:#ae81ff>403</span>
 
 
 index.php               <span style=color:#f92672>[</span>Status: 302, Size: 0, Words: 1, Lines: 1<span style=color:#f92672>]</span>
@@ -241,7 +475,9 @@ login.php               <span style=color:#f92672>[</span>Status: 200, Size: 152
 setup.php               <span style=color:#f92672>[</span>Status: 200, Size: 4066, Words: 308, Lines: 123<span style=color:#f92672>]</span>
 security.php            <span style=color:#f92672>[</span>Status: 302, Size: 0, Words: 1, Lines: 1<span style=color:#f92672>]</span>
 :: Progress: <span style=color:#f92672>[</span>16243/16243<span style=color:#f92672>]</span> :: Job <span style=color:#f92672>[</span>1/1<span style=color:#f92672>]</span> :: <span style=color:#ae81ff>147</span> req/sec :: Duration: <span style=color:#f92672>[</span>0:00:04<span style=color:#f92672>]</span> :: Errors: <span style=color:#ae81ff>0</span> ::
-</code></pre></div><h3 id=42>4.2</h3><p>After applying the mc filter, how many results were returned?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-files-lowercase.txt -mc <span style=color:#ae81ff>200</span>
+</code></pre></div><h3 id=42>4.2</h3>
+<p>After applying the mc filter, how many results were returned?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-files-lowercase.txt -mc <span style=color:#ae81ff>200</span>
 
 favicon.ico             <span style=color:#f92672>[</span>Status: 200, Size: 1406, Words: 5, Lines: 2<span style=color:#f92672>]</span>
 robots.txt              <span style=color:#f92672>[</span>Status: 200, Size: 26, Words: 3, Lines: 2<span style=color:#f92672>]</span>
@@ -249,7 +485,9 @@ php.ini                 <span style=color:#f92672>[</span>Status: 200, Size: 148
 about.php               <span style=color:#f92672>[</span>Status: 200, Size: 4840, Words: 331, Lines: 109<span style=color:#f92672>]</span>
 setup.php               <span style=color:#f92672>[</span>Status: 200, Size: 4066, Words: 308, Lines: 123<span style=color:#f92672>]</span>
 login.php               <span style=color:#f92672>[</span>Status: 200, Size: 1523, Words: 89, Lines: 77<span style=color:#f92672>]</span>
-</code></pre></div><h3 id=43>4.3</h3><p>Which valuable file would have been hidden if you used -fc 403 instead of -fr?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists//Discovery/Web-Content/raft-medium-files-lowercase.txt -fr <span style=color:#e6db74>&#39;/\..*&#39;</span>
+</code></pre></div><h3 id=43>4.3</h3>
+<p>Which valuable file would have been hidden if you used -fc 403 instead of -fr?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists//Discovery/Web-Content/raft-medium-files-lowercase.txt -fr <span style=color:#e6db74>&#39;/\..*&#39;</span>
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\ </span>      
        /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/       
@@ -261,15 +499,40 @@ login.php               <span style=color:#f92672>[</span>Status: 200, Size: 152
        v1.3.1
 ________________________________________________
 wp-forum.phps           <span style=color:#f92672>[</span>Status: 403, Size: 292, Words: 21, Lines: 11<span style=color:#f92672>]</span>
-</code></pre></div><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=task-05-fuzzing-parameters>task 05: Fuzzing parameters</h2><p>Discovering a vulnerable parameter could lead to file inclusion, path disclosure, XSS, SQL injection, or even command injection. Since ffuf allows you to put the keyword anywhere we can use it to fuzz for parameters.</p><blockquote><p>Command for Q1</p></blockquote><pre><code> $ ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -fw 39
+</code></pre></div><hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=task-05-fuzzing-parameters>task 05: Fuzzing parameters</h2>
+<p>Discovering a vulnerable parameter could lead to file inclusion, path disclosure, XSS, SQL injection, or even command injection. Since ffuf allows you to put the keyword anywhere we can use it to fuzz for parameters.</p>
+<blockquote>
+<p>Command for Q1</p>
+</blockquote>
+<pre><code> $ ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -fw 39
  $ ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -fw 39
-</code></pre><p>Now that we found a parameter accepting integer values we&rsquo;ll start fuzzing values.</p><p>At this point, we could generate a wordlist and save a file containing integers. To cut out a step we can use -w - which tells ffuf to read a wordlist from stdout. This will allow us to generate a list of integers with a command of our choice then pipe the output to ffuf. Below is a list of 5 different ways to generate numbers 0 - 255.</p><blockquote><p>Commands for Q2</p></blockquote><pre><code> $ ruby -e '(0..255).each{|i| puts i}' | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
+</code></pre>
+<p>Now that we found a parameter accepting integer values we&rsquo;ll start fuzzing values.</p>
+<p>At this point, we could generate a wordlist and save a file containing integers. To cut out a step we can use -w - which tells ffuf to read a wordlist from stdout. This will allow us to generate a list of integers with a command of our choice then pipe the output to ffuf. Below is a list of 5 different ways to generate numbers 0 - 255.</p>
+<blockquote>
+<p>Commands for Q2</p>
+</blockquote>
+<pre><code> $ ruby -e '(0..255).each{|i| puts i}' | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
  $ ruby -e 'puts (0..255).to_a' | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
  $ for i in {0..255}; do echo $i; done | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
  $ seq 0 255 | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
  $ cook '[0-255]' | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
-</code></pre><p>We can also use ffuf for wordlist-based brute-force attacks, for example, trying passwords on an authentication page.</p><blockquote><p>Command for Q3</p></blockquote><pre><code> $ ffuf -u http://10.10.71.46/sqli-labs/Less-11/ -c -w /usr/share/seclists/Passwords/Leaked-Databases/hak5.txt -X POST -d 'uname=Dummy&amp;passwd=FUZZ&amp;submit=Submit' -fs 1435 -H 'Content-Type: application/x-www-form-urlencoded'
-</code></pre><p>Here we have to use the POST method (specified with <code>-X</code>) and to give the POST data (with <code>-d</code>) where we include the <code>FUZZ</code> keyword in place of the password.</p><p>We also have to specify a custom header<code> -H 'Content-Type: application/x-www-form-urlencoded'</code> because ffuf doesn&rsquo;t set this content-type header automatically as curl does.</p><h3 id=51>5.1</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ ffuf -u <span style=color:#e6db74>&#39;http://10.10.71.46/sqli-labs/Less-1/?FUZZ=1&#39;</span> -c -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -fw <span style=color:#ae81ff>39</span>
+</code></pre>
+<p>We can also use ffuf for wordlist-based brute-force attacks, for example, trying passwords on an authentication page.</p>
+<blockquote>
+<p>Command for Q3</p>
+</blockquote>
+<pre><code> $ ffuf -u http://10.10.71.46/sqli-labs/Less-11/ -c -w /usr/share/seclists/Passwords/Leaked-Databases/hak5.txt -X POST -d 'uname=Dummy&amp;passwd=FUZZ&amp;submit=Submit' -fs 1435 -H 'Content-Type: application/x-www-form-urlencoded'
+</code></pre>
+<p>Here we have to use the POST method (specified with <code>-X</code>) and to give the POST data (with <code>-d</code>) where we include the <code>FUZZ</code> keyword in place of the password.</p>
+<p>We also have to specify a custom header<code> -H 'Content-Type: application/x-www-form-urlencoded'</code> because ffuf doesn&rsquo;t set this content-type header automatically as curl does.</p>
+<h3 id=51>5.1</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ ffuf -u <span style=color:#e6db74>&#39;http://10.10.71.46/sqli-labs/Less-1/?FUZZ=1&#39;</span> -c -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -fw <span style=color:#ae81ff>39</span>
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\ </span>      
        /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/       
@@ -283,7 +546,9 @@ ________________________________________________
 
 id                      <span style=color:#f92672>[</span>Status: 200, Size: 721, Words: 37, Lines: 29<span style=color:#f92672>]</span>
 ________________________________________________
-</code></pre></div><h3 id=52>5.2</h3><p>What is the highest valid id?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ruby -e <span style=color:#e6db74>&#39;(0..255).each{|i| puts i}&#39;</span> | ffuf -u <span style=color:#e6db74>&#39;http://10.10.71.46/sqli-labs/Less-1/?id=FUZZ&#39;</span> -c -w - -fw <span style=color:#ae81ff>33</span>
+</code></pre></div><h3 id=52>5.2</h3>
+<p>What is the highest valid id?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ruby -e <span style=color:#e6db74>&#39;(0..255).each{|i| puts i}&#39;</span> | ffuf -u <span style=color:#e6db74>&#39;http://10.10.71.46/sqli-labs/Less-1/?id=FUZZ&#39;</span> -c -w - -fw <span style=color:#ae81ff>33</span>
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\ </span>      
        /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/       
@@ -311,7 +576,9 @@ ________________________________________________
 <span style=color:#ae81ff>14</span>                      <span style=color:#f92672>[</span>Status: 200, Size: 725, Words: 37, Lines: 29<span style=color:#f92672>]</span>
 :: Progress: <span style=color:#f92672>[</span>256/256<span style=color:#f92672>]</span> :: Job <span style=color:#f92672>[</span>1/1<span style=color:#f92672>]</span> :: <span style=color:#ae81ff>16</span> req/sec :: Duration: <span style=color:#f92672>[</span>0:00:04<span style=color:#f92672>]</span> :: Errors: <span style=color:#ae81ff>0</span> ::
 ________________________________________________
-</code></pre></div><h3 id=53>5.3</h3><p>What is Dummy&rsquo;s password?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># ffuf -u http://10.10.71.46/sqli-labs/Less-11/ -c -w Tools/wordlists/SecLists/Passwords/Leaked-Databases/hak5.txt -X POST -d &#39;uname=Dummy&amp;passwd=FUZZ&amp;submit=Submit&#39; -fs 1435 -H &#39;Content-Type: application/x-www-form-urlencoded&#39;</span>
+</code></pre></div><h3 id=53>5.3</h3>
+<p>What is Dummy&rsquo;s password?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># ffuf -u http://10.10.71.46/sqli-labs/Less-11/ -c -w Tools/wordlists/SecLists/Passwords/Leaked-Databases/hak5.txt -X POST -d &#39;uname=Dummy&amp;passwd=FUZZ&amp;submit=Submit&#39; -fs 1435 -H &#39;Content-Type: application/x-www-form-urlencoded&#39;</span>
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\ </span>      
        /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/       
@@ -325,18 +592,42 @@ ________________________________________________
 p@ssword                <span style=color:#f92672>[</span>Status: 200, Size: 1526, Words: 100, Lines: 50<span style=color:#f92672>]</span>
 :: Progress: <span style=color:#f92672>[</span>2351/2351<span style=color:#f92672>]</span> :: Job <span style=color:#f92672>[</span>1/1<span style=color:#f92672>]</span> :: <span style=color:#ae81ff>3743</span> req/sec :: Duration: <span style=color:#f92672>[</span>0:00:04<span style=color:#f92672>]</span> :: Errors: <span style=color:#ae81ff>0</span> ::
 ________________________________________________
-</code></pre></div><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=task-06-finding-vhosts-and-subdomains>task 06: Finding vhosts and subdomains</h2><p>ffuf may not be as efficient as specialized tools when it comes to subdomain enumeration but it&rsquo;s possible to do.</p><blockquote><p>Command for Q1</p><p><code>$ ffuf -u http://FUZZ.tryhackme.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt</code></p></blockquote><p>Some subdomains might not be resolvable by the DNS server you&rsquo;re using and are only resolvable from within the target&rsquo;s local network by their private DNS servers. So some virtual hosts (vhosts) may exist with private subdomains so the previous command doesn&rsquo;t find them. To try finding private subdomains we&rsquo;ll have to use the Host HTTP header as these requests might be accepted by the web server.
-Note: virtual hosts (vhosts) is the name used by Apache httpd but for Nginx the right term is Server Blocks</p><p>Compare the results you obtain with direct subdomain enumeration and with vhost enumeration:</p><blockquote><p>Commands for Q2</p><p><code>$ ffuf -u http://FUZZ.google.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -fs 0</code>
-<code>$ ffuf -u http://google.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.google.com' -fs 0</code></p></blockquote><p>For example there is a subdomain aol.google.com you can&rsquo;t find it with direct subdomain enumeration (1st command) but that you can find with vhost enumeration (2nd command).</p><p>We can use drill or dig to find the IP address of the root domain:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ drill google.com
+</code></pre></div><hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=task-06-finding-vhosts-and-subdomains>task 06: Finding vhosts and subdomains</h2>
+<p>ffuf may not be as efficient as specialized tools when it comes to subdomain enumeration but it&rsquo;s possible to do.</p>
+<blockquote>
+<p>Command for Q1</p>
+<p><code>$ ffuf -u http://FUZZ.tryhackme.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt</code></p>
+</blockquote>
+<p>Some subdomains might not be resolvable by the DNS server you&rsquo;re using and are only resolvable from within the target&rsquo;s local network by their private DNS servers. So some virtual hosts (vhosts) may exist with private subdomains so the previous command doesn&rsquo;t find them. To try finding private subdomains we&rsquo;ll have to use the Host HTTP header as these requests might be accepted by the web server.
+Note: virtual hosts (vhosts) is the name used by Apache httpd but for Nginx the right term is Server Blocks</p>
+<p>Compare the results you obtain with direct subdomain enumeration and with vhost enumeration:</p>
+<blockquote>
+<p>Commands for Q2</p>
+<p><code>$ ffuf -u http://FUZZ.google.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -fs 0</code>
+<code>$ ffuf -u http://google.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.google.com' -fs 0</code></p>
+</blockquote>
+<p>For example there is a subdomain aol.google.com you can&rsquo;t find it with direct subdomain enumeration (1st command) but that you can find with vhost enumeration (2nd command).</p>
+<p>We can use drill or dig to find the IP address of the root domain:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ drill google.com
 ...
 google.com.     <span style=color:#ae81ff>104</span>     IN      A       216.58.204.110
 ...
-</code></pre></div><p>If you enter this domain directly in your web browser or with curl, you won&rsquo;t be able to resolve it:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ curl https://aol.google.com
+</code></pre></div><p>If you enter this domain directly in your web browser or with curl, you won&rsquo;t be able to resolve it:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ curl https://aol.google.com
 curl: <span style=color:#f92672>(</span>6<span style=color:#f92672>)</span> Could not resolve host: aol.google.com
-</code></pre></div><p>But now if you add it in <code>/etc/hosts</code> or force the resolution with curl you&rsquo;ll be able to browse it:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>$ curl --resolve aol.google.com:443:216.58.198.206 https://aol.google.com
+</code></pre></div><p>But now if you add it in <code>/etc/hosts</code> or force the resolution with curl you&rsquo;ll be able to browse it:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>$ curl --resolve aol.google.com:443:216.58.198.206 https://aol.google.com
 &lt;!doctype html&gt;&lt;html itemscope<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span> itemtype<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;http://schema.org/WebPage&#34;</span> lang<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;fr&#34;</span>&gt;
 ...
-</code></pre></div><p>Here the aol subdomain is not very interesting as it&rsquo;s an alias for <a href=http://www.google.com>www.google.com</a> and other subdomains are redirecting aliases. However, you shouldn&rsquo;t discount this enumeration technique as it may lead to discovering content that wasn&rsquo;t meant to be accessed externally.</p><h3 id=61>6.1</h3><p>What is THMs private CDN subdomain?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># ffuf -u http://FUZZ.tryhackme.com -c -w Tools/wordlists/SecLists//Discovery/DNS/subdomains-top1million-5000.txt </span>
+</code></pre></div><p>Here the aol subdomain is not very interesting as it&rsquo;s an alias for <a href=http://www.google.com>www.google.com</a> and other subdomains are redirecting aliases. However, you shouldn&rsquo;t discount this enumeration technique as it may lead to discovering content that wasn&rsquo;t meant to be accessed externally.</p>
+<h3 id=61>6.1</h3>
+<p>What is THMs private CDN subdomain?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># ffuf -u http://FUZZ.tryhackme.com -c -w Tools/wordlists/SecLists//Discovery/DNS/subdomains-top1million-5000.txt </span>
 
         /<span style=color:#e6db74>&#39;___\  /&#39;</span>___<span style=color:#ae81ff>\ </span>          /<span style=color:#960050;background-color:#1e0010>&#39;</span>___<span style=color:#ae81ff>\ </span>      
        /<span style=color:#ae81ff>\ \_</span>_/ /<span style=color:#ae81ff>\ \_</span>_/  __  __  /<span style=color:#ae81ff>\ \_</span>_/       
@@ -352,14 +643,22 @@ ________________________________________________
 assets                  <span style=color:#f92672>[</span>Status: 301, Size: 183, Words: 6, Lines: 8<span style=color:#f92672>]</span>
 ...
 ________________________________________________
-</code></pre></div><p>What is the private domain you can find with vhost enumeration but not with direct subdomain enumeration?</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># based on Hint, google.com is the domain to scan</span>
+</code></pre></div><p>What is the private domain you can find with vhost enumeration but not with direct subdomain enumeration?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># based on Hint, google.com is the domain to scan</span>
 <span style=color:#75715e># ffuf -u http://FUZZ.google.com -c -w Tools/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -fs 0 -v </span>
 ...
 dev                   <span style=color:#f92672>[</span>Status: 301, Size: 223, Words: 9, Lines: 7<span style=color:#f92672>]</span>
 ...
-</code></pre></div><hr><h2 id=task-07-proxifying-ffuf-traffic>Task 07: Proxifying ffuf traffic</h2><p>Whether it' for <a href=https://blog.raw.pm/en/state-of-the-art-of-network-pivoting-in-2019/>network pivoting</a> or for using BurpSuite plugins you can send all the ffuf traffic through a web proxy (HTTP or SOCKS5).</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.71.46/ -c -w /usr/share/seclists/Discovery/Web-Content/common.txt -x http://127.0.0.1:8080
-</code></pre></div><p>It&rsquo;s also possible to send only matches to your proxy for replaying:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>ffuf -u http://FUZZ.tryhackme.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -replay-proxy http://127.0.0.1:8080
-</code></pre></div><hr><h2 id=task-08-reviewing-the-options>Task 08: Reviewing the options</h2><p>As you start to use ffuf more, some options will prove to be very useful depending on your situation. For example, <code>-ic</code> allows you to ignore comments in wordlists that such as headers, copyright notes, comments, etc</p><pre><code class=language-powrshell data-lang=powrshell>$ head /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt                                                            
+</code></pre></div><hr>
+<h2 id=task-07-proxifying-ffuf-traffic>Task 07: Proxifying ffuf traffic</h2>
+<p>Whether it' for <a href=https://blog.raw.pm/en/state-of-the-art-of-network-pivoting-in-2019/>network pivoting</a> or for using BurpSuite plugins you can send all the ffuf traffic through a web proxy (HTTP or SOCKS5).</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ffuf -u http://10.10.71.46/ -c -w /usr/share/seclists/Discovery/Web-Content/common.txt -x http://127.0.0.1:8080
+</code></pre></div><p>It&rsquo;s also possible to send only matches to your proxy for replaying:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>ffuf -u http://FUZZ.tryhackme.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -replay-proxy http://127.0.0.1:8080
+</code></pre></div><hr>
+<h2 id=task-08-reviewing-the-options>Task 08: Reviewing the options</h2>
+<p>As you start to use ffuf more, some options will prove to be very useful depending on your situation. For example, <code>-ic</code> allows you to ignore comments in wordlists that such as headers, copyright notes, comments, etc</p>
+<pre><code class=language-powrshell data-lang=powrshell>$ head /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt                                                            
 # directory-list-2.3-medium.txt
 #
 # Copyright 2007 James Fisher
@@ -370,75 +669,339 @@ dev                   <span style=color:#f92672>[</span>Status: 301, Size: 223, 
 # or send a letter to Creative Commons, 171 Second Street,
 # Suite 300, San Francisco, California, 94105, USA.
 #
-</code></pre><p><code>ffuf -u http://10.10.71.46/FUZZ -c -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -ic -fs 0</code></p><p>We&rsquo;ve only reviewed a small subset of the useful features and options ffuf has to offer for fuzzing.
-Use <code>ffuf -h</code> to discover the other options that might be useful for you and to answer the remaining questions in this task</p><h3 id=81>8.1</h3><p>How do you save the output to a markdown file (ffuf.md)?</p><pre><code> of md -o ffuf.md
-</code></pre><h3 id=82>8.2</h3><p>How do you re-use a raw http request file?</p><pre><code> -request
-</code></pre><h3 id=83>8.3</h3><p>How do you strip comments from a wordlist?</p><pre><code> -ic
-</code></pre><h3 id=84>8.4</h3><p>How would you read a wordlist from STDIN?</p><pre><code> -w -
-</code></pre><h3 id=85>8.5</h3><p>How do you print full URLs and redirect locations?</p><pre><code> -v
-</code></pre><h3 id=86>8.6</h3><p>What option would you use to follow redirects?</p><pre><code> -r
-</code></pre><h3 id=87>8.7</h3><p>How do you enable colorized output?</p><pre><code> -c
-</code></pre><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script></article></section></div></div><footer class="ui basic center aligned segment" style=background-color:transparent><p>© 2010 - 2021 Classroom</p></footer></div></section><section class=back><div class=dream-max-width><header class="ui basic very padded segment dream-header"><div class="ui small circular image"><img src=/img/avatar.jpeg></div><div class=content><h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div></h1><article class="ui horizontal list"><a class=item href=/categories><i class="th list icon" title="All Categories"></i></a>
-<a class=item href=/tags><i class="tags icon" title="All Tags"></i></a></article><article class=dream-tags><a class="ui label" href=/tags/autopsy/ title=autopsy>autopsy</a>
-<a class="ui label" href=/tags/backdoor/ title=backdoor>backdoor</a>
-<a class="ui label" href=/tags/bash/ title=bash>bash</a>
-<a class="ui label" href=/tags/cheatsheet/ title=cheatsheet>cheatsheet</a>
-<a class="ui label" href=/tags/config/ title=config>config</a>
-<a class="ui label" href=/tags/couch/ title=couch>couch</a>
-<a class="ui label" href=/tags/crisis/ title=Crisis>Crisis</a>
-<a class="ui label" href=/tags/dominos/ title=dominos>dominos</a>
-<a class="ui label" href=/tags/empire/ title=Empire>Empire</a>
-<a class="ui label" href=/tags/encryption/ title=encryption>encryption</a>
-<a class="ui label" href=/tags/ffuf/ title=ffuf>ffuf</a>
-<a class="ui label" href=/tags/forensic/ title=forensic>forensic</a>
-<a class="ui label" href=/tags/gitandcrumpets/ title=gitandcrumpets>gitandcrumpets</a>
-<a class="ui label" href=/tags/gnupg/ title=gnupg>gnupg</a>
-<a class="ui label" href=/tags/hackpark/ title=HackPark>HackPark</a>
-<a class="ui label" href=/tags/hydra/ title=hydra>hydra</a>
-<a class="ui label" href=/tags/inclusion/ title=inclusion>inclusion</a>
-<a class="ui label" href=/tags/internship/ title=Internship>Internship</a>
-<a class="ui label" href=/tags/interview/ title=interview>interview</a>
-<a class="ui label" href=/tags/kenobi/ title=kenobi>kenobi</a>
-<a class="ui label" href=/tags/lab/ title=lab>lab</a>
-<a class="ui label" href=/tags/leaks/ title=leaks>leaks</a>
-<a class="ui label" href=/tags/linux/ title=Linux>Linux</a>
-<a class="ui label" href=/tags/memory/ title=memory>memory</a>
-<a class="ui label" href=/tags/metamorphosis/ title=Metamorphosis>Metamorphosis</a>
-<a class="ui label" href=/tags/metasploit/ title=metasploit>metasploit</a>
-<a class="ui label" href=/tags/mobile/ title=Mobile>Mobile</a>
-<a class="ui label" href=/tags/msf/ title=msf>msf</a>
-<a class="ui label" href=/tags/msfvenom/ title=msfvenom>msfvenom</a>
-<a class="ui label" href=/tags/notes/ title=notes>notes</a>
-<a class="ui label" href=/tags/osi/ title=OSI>OSI</a>
-<a class="ui label" href=/tags/osi-model/ title="OSI Model">OSI Model</a>
-<a class="ui label" href=/tags/pentesting/ title=Pentesting>Pentesting</a>
-<a class="ui label" href=/tags/pgp/ title=PGP>PGP</a>
-<a class="ui label" href=/tags/pip/ title=pip>pip</a>
-<a class="ui label" href=/tags/pip2/ title=pip2>pip2</a>
-<a class="ui label" href=/tags/post-exploitation/ title=Post-Exploitation>Post-Exploitation</a>
-<a class="ui label" href=/tags/powershell/ title=powershell>powershell</a>
-<a class="ui label" href=/tags/putty/ title=putty>putty</a>
-<a class="ui label" href=/tags/python/ title=python>python</a>
-<a class="ui label" href=/tags/razorblack/ title=RazorBlack>RazorBlack</a>
-<a class="ui label" href=/tags/redteaming/ title=redteaming>redteaming</a>
-<a class="ui label" href=/tags/ref/ title=Ref>Ref</a>
-<a class="ui label" href=/tags/rooms/ title=rooms>rooms</a>
-<a class="ui label" href=/tags/rootme/ title=RootMe>RootMe</a>
-<a class="ui label" href=/tags/rpwebscanning/ title=rpwebscanning>rpwebscanning</a>
-<a class="ui label" href=/tags/script/ title=script>script</a>
-<a class="ui label" href=/tags/scripting/ title=Scripting>Scripting</a>
-<a class="ui label" href=/tags/simple-ctf/ title="Simple CTF">Simple CTF</a>
-<a class="ui label" href=/tags/splunk/ title=splunk>splunk</a>
-<a class="ui label" href=/tags/stego/ title=stego>stego</a>
-<a class="ui label" href=/tags/sysmon/ title=sysmon>sysmon</a>
-<a class="ui label" href=/tags/thefindcommand/ title=Thefindcommand>Thefindcommand</a>
-<a class="ui label" href=/tags/thm/ title=thm>thm</a>
-<a class="ui label" href=/tags/tmux/ title=tmux>tmux</a>
-<a class="ui label" href=/tags/tools/ title=tools>tools</a>
-<a class="ui label" href=/tags/tryhackme/ title=tryhackme>tryhackme</a>
-<a class="ui label" href=/tags/vapt/ title=vapt>vapt</a>
-<a class="ui label" href=/tags/volatility/ title=Volatility>Volatility</a>
-<a class="ui label" href=/tags/vuln-labs/ title="vuln labs">vuln labs</a>
-<a class="ui label" href=/tags/vulnversity/ title=Vulnversity>Vulnversity</a>
-<a class="ui label" href=/tags/web-scanning/ title="web scanning">web scanning</a>
-<a class="ui label" href=/tags/wireshark/ title=wireshark>wireshark</a></article></div></header><div class="ui relaxed grid dream-grid dream-back"><div class="sixteen wide mobile eight wide tablet four wide computer column dream-column"><article class="ui segment"><h3 class="ui header">Social Links</h3><nav class="ui secondary menu dream-menu dream-socials"><div class=item><a href=/index.xml><i class="large rss square icon" title=RSS></i></a></div><div class=item><a href=mailto:classroom@anir0y.in><i class="large mail icon" title=Email></i></a></div><div class=item><a href=https://twitter.com/anir0y target=_blank><i class="large twitter icon" title=Twitter></i></a></div><div class=item><a href=https://facebook.com/anir0yofficial target=_blank><i class="large facebook icon" title=Facebook></i></a></div><div class=item><a href=https://instagram.com/anir0yofficial target=_blank><i class="large instagram icon" title=Instagram></i></a></div><div class=item><a href=https://www.linkedin.com/in/anir0y target=_blank><i class="large linkedin icon" title=Linkedin></i></a></div><div class=item><a href=https://github.com/anir0y target=_blank><i class="large github icon" title=GitHub></i></a></div></nav></article></div><div class="sixteen wide mobile eight wide tablet four wide computer column dream-column"><article class="ui segment">YOU CAN RESUE MY CONTENT</article></div></div></div></section></div></div><script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script><script src=/js/jquery.min.js></script><script src=/js/semantic.min.js></script><script src=/js/jquery.overlayScrollbars.min.js></script><script src=/js/header.js></script><script src=/js/main.js></script><script src=/js/theme.js></script><script src=/js/html2canvas.min.js></script><script src=/js/post.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script><script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script><div class="ui inverted segment" id=dream-search><div class="ui search"><div class="ui transparent input"><input class=prompt type=text placeholder=Search></div><div class=results></div></div></div><script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script><script src=/js/search.js></script></body></html>
+</code></pre><p><code>ffuf -u http://10.10.71.46/FUZZ -c -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -ic -fs 0</code></p>
+<p>We&rsquo;ve only reviewed a small subset of the useful features and options ffuf has to offer for fuzzing.
+Use <code>ffuf -h</code> to discover the other options that might be useful for you and to answer the remaining questions in this task</p>
+<h3 id=81>8.1</h3>
+<p>How do you save the output to a markdown file (ffuf.md)?</p>
+<pre><code> of md -o ffuf.md
+</code></pre>
+<h3 id=82>8.2</h3>
+<p>How do you re-use a raw http request file?</p>
+<pre><code> -request
+</code></pre>
+<h3 id=83>8.3</h3>
+<p>How do you strip comments from a wordlist?</p>
+<pre><code> -ic
+</code></pre>
+<h3 id=84>8.4</h3>
+<p>How would you read a wordlist from STDIN?</p>
+<pre><code> -w -
+</code></pre>
+<h3 id=85>8.5</h3>
+<p>How do you print full URLs and redirect locations?</p>
+<pre><code> -v
+</code></pre>
+<h3 id=86>8.6</h3>
+<p>What option would you use to follow redirects?</p>
+<pre><code> -r
+</code></pre>
+<h3 id=87>8.7</h3>
+<p>How do you enable colorized output?</p>
+<pre><code> -c
+</code></pre>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script>
+</article>
+</section>
+</div>
+</div>
+<footer class="ui basic center aligned segment" style=background-color:transparent>
+<p>© 2010 - 2021 Classroom</p>
+</footer>
+</div>
+</section>
+<section class=back>
+<div class=dream-max-width>
+<header class="ui basic very padded segment dream-header">
+<div class="ui small circular image">
+<img src=/img/avatar.jpeg>
+</div>
+<div class=content>
+<h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div>
+</h1>
+<article class="ui horizontal list">
+<a class=item href=/categories>
+<i class="th list icon" title="All Categories"></i>
+</a>
+<a class=item href=/tags>
+<i class="tags icon" title="All Tags"></i>
+</a>
+</article>
+<article class=dream-tags>
+<a class="ui label" href=/tags/autopsy/ title=autopsy>
+autopsy
+</a>
+<a class="ui label" href=/tags/backdoor/ title=backdoor>
+backdoor
+</a>
+<a class="ui label" href=/tags/baron-samedit/ title="Baron Samedit">
+Baron Samedit
+</a>
+<a class="ui label" href=/tags/bash/ title=bash>
+bash
+</a>
+<a class="ui label" href=/tags/cheatsheet/ title=cheatsheet>
+cheatsheet
+</a>
+<a class="ui label" href=/tags/config/ title=config>
+config
+</a>
+<a class="ui label" href=/tags/couch/ title=couch>
+couch
+</a>
+<a class="ui label" href=/tags/crisis/ title=Crisis>
+Crisis
+</a>
+<a class="ui label" href=/tags/dominos/ title=dominos>
+dominos
+</a>
+<a class="ui label" href=/tags/empire/ title=Empire>
+Empire
+</a>
+<a class="ui label" href=/tags/encryption/ title=encryption>
+encryption
+</a>
+<a class="ui label" href=/tags/ffuf/ title=ffuf>
+ffuf
+</a>
+<a class="ui label" href=/tags/forensic/ title=forensic>
+forensic
+</a>
+<a class="ui label" href=/tags/gitandcrumpets/ title=gitandcrumpets>
+gitandcrumpets
+</a>
+<a class="ui label" href=/tags/gnupg/ title=gnupg>
+gnupg
+</a>
+<a class="ui label" href=/tags/hackpark/ title=HackPark>
+HackPark
+</a>
+<a class="ui label" href=/tags/hydra/ title=hydra>
+hydra
+</a>
+<a class="ui label" href=/tags/inclusion/ title=inclusion>
+inclusion
+</a>
+<a class="ui label" href=/tags/internship/ title=Internship>
+Internship
+</a>
+<a class="ui label" href=/tags/interview/ title=interview>
+interview
+</a>
+<a class="ui label" href=/tags/kenobi/ title=kenobi>
+kenobi
+</a>
+<a class="ui label" href=/tags/lab/ title=lab>
+lab
+</a>
+<a class="ui label" href=/tags/leaks/ title=leaks>
+leaks
+</a>
+<a class="ui label" href=/tags/linux/ title=Linux>
+Linux
+</a>
+<a class="ui label" href=/tags/memory/ title=memory>
+memory
+</a>
+<a class="ui label" href=/tags/metamorphosis/ title=Metamorphosis>
+Metamorphosis
+</a>
+<a class="ui label" href=/tags/metasploit/ title=metasploit>
+metasploit
+</a>
+<a class="ui label" href=/tags/mobile/ title=Mobile>
+Mobile
+</a>
+<a class="ui label" href=/tags/msf/ title=msf>
+msf
+</a>
+<a class="ui label" href=/tags/msfvenom/ title=msfvenom>
+msfvenom
+</a>
+<a class="ui label" href=/tags/notes/ title=notes>
+notes
+</a>
+<a class="ui label" href=/tags/osi/ title=OSI>
+OSI
+</a>
+<a class="ui label" href=/tags/osi-model/ title="OSI Model">
+OSI Model
+</a>
+<a class="ui label" href=/tags/pentesting/ title=Pentesting>
+Pentesting
+</a>
+<a class="ui label" href=/tags/pgp/ title=PGP>
+PGP
+</a>
+<a class="ui label" href=/tags/pip/ title=pip>
+pip
+</a>
+<a class="ui label" href=/tags/pip2/ title=pip2>
+pip2
+</a>
+<a class="ui label" href=/tags/post-exploitation/ title=Post-Exploitation>
+Post-Exploitation
+</a>
+<a class="ui label" href=/tags/powershell/ title=powershell>
+powershell
+</a>
+<a class="ui label" href=/tags/putty/ title=putty>
+putty
+</a>
+<a class="ui label" href=/tags/python/ title=python>
+python
+</a>
+<a class="ui label" href=/tags/razorblack/ title=RazorBlack>
+RazorBlack
+</a>
+<a class="ui label" href=/tags/redteaming/ title=redteaming>
+redteaming
+</a>
+<a class="ui label" href=/tags/ref/ title=Ref>
+Ref
+</a>
+<a class="ui label" href=/tags/rooms/ title=rooms>
+rooms
+</a>
+<a class="ui label" href=/tags/rootme/ title=RootMe>
+RootMe
+</a>
+<a class="ui label" href=/tags/rpwebscanning/ title=rpwebscanning>
+rpwebscanning
+</a>
+<a class="ui label" href=/tags/script/ title=script>
+script
+</a>
+<a class="ui label" href=/tags/scripting/ title=Scripting>
+Scripting
+</a>
+<a class="ui label" href=/tags/simple-ctf/ title="Simple CTF">
+Simple CTF
+</a>
+<a class="ui label" href=/tags/splunk/ title=splunk>
+splunk
+</a>
+<a class="ui label" href=/tags/stego/ title=stego>
+stego
+</a>
+<a class="ui label" href=/tags/sysmon/ title=sysmon>
+sysmon
+</a>
+<a class="ui label" href=/tags/thefindcommand/ title=Thefindcommand>
+Thefindcommand
+</a>
+<a class="ui label" href=/tags/thm/ title=thm>
+thm
+</a>
+<a class="ui label" href=/tags/tmux/ title=tmux>
+tmux
+</a>
+<a class="ui label" href=/tags/tools/ title=tools>
+tools
+</a>
+<a class="ui label" href=/tags/tryhackme/ title=tryhackme>
+tryhackme
+</a>
+<a class="ui label" href=/tags/vapt/ title=vapt>
+vapt
+</a>
+<a class="ui label" href=/tags/volatility/ title=Volatility>
+Volatility
+</a>
+<a class="ui label" href=/tags/vuln-labs/ title="vuln labs">
+vuln labs
+</a>
+<a class="ui label" href=/tags/vulnversity/ title=Vulnversity>
+Vulnversity
+</a>
+<a class="ui label" href=/tags/web-scanning/ title="web scanning">
+web scanning
+</a>
+<a class="ui label" href=/tags/wireshark/ title=wireshark>
+wireshark
+</a>
+</article>
+</div>
+</header>
+<div class="ui relaxed grid dream-grid dream-back">
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+<h3 class="ui header">Social Links</h3>
+<nav class="ui secondary menu dream-menu dream-socials">
+<div class=item>
+<a href=/index.xml>
+<i class="large rss square icon" title=RSS></i>
+</a>
+</div>
+<div class=item>
+<a href=mailto:classroom@anir0y.in>
+<i class="large mail icon" title=Email></i>
+</a>
+</div>
+<div class=item>
+<a href=https://twitter.com/anir0y target=_blank>
+<i class="large twitter icon" title=Twitter></i>
+</a>
+</div>
+<div class=item>
+<a href=https://facebook.com/anir0yofficial target=_blank>
+<i class="large facebook icon" title=Facebook></i>
+</a>
+</div>
+<div class=item>
+<a href=https://instagram.com/anir0yofficial target=_blank>
+<i class="large instagram icon" title=Instagram></i>
+</a>
+</div>
+<div class=item>
+<a href=https://www.linkedin.com/in/anir0y target=_blank>
+<i class="large linkedin icon" title=Linkedin></i>
+</a>
+</div>
+<div class=item>
+<a href=https://github.com/anir0y target=_blank>
+<i class="large github icon" title=GitHub></i>
+</a>
+</div>
+</nav>
+</article>
+</div>
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+YOU CAN RESUE MY CONTENT
+</article>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script>
+<script src=/js/jquery.min.js></script>
+<script src=/js/semantic.min.js></script>
+<script src=/js/jquery.overlayScrollbars.min.js></script>
+<script src=/js/header.js></script>
+<script src=/js/main.js></script>
+<script src=/js/theme.js></script>
+<script src=/js/html2canvas.min.js></script>
+<script src=/js/post.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script>
+<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script>
+<div class="ui inverted segment" id=dream-search>
+<div class="ui search">
+<div class="ui transparent input">
+<input class=prompt type=text placeholder=Search>
+</div>
+<div class=results></div>
+</div>
+</div>
+<script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script>
+<script src=/js/search.js></script>
+</body>
+</html>

@@ -1,19 +1,132 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><title>Notes Gnupg | Classroom</title><link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon><meta name=author content="Animesh Roy"><meta name=description content><script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script><link rel=canonical href=https://classroom.anir0y.in/post/notes-gnupg/><meta property="og:title" content="Notes Gnupg"><meta property="og:description" content="How To Use GPG to Encrypt and Sign Messages Introduction GPG, or GNU Privacy Guard, is a public key cryptography implementation. This allows for the secure transmission of information between parties and can be used to verify that the origin of a message is genuine.
-In this guide, we will discuss how GPG works and how to implement it. We will be using an Ubuntu 16.04 server for this demonstration, but will include instructions for other distributions as well."><meta property="og:type" content="article"><meta property="og:url" content="https://classroom.anir0y.in/post/notes-gnupg/"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-04-13T16:57:30+05:30"><meta property="article:modified_time" content="2021-04-13T16:57:30+05:30"><meta name=twitter:card content="summary"><meta name=twitter:title content="Notes Gnupg"><meta name=twitter:description content="How To Use GPG to Encrypt and Sign Messages Introduction GPG, or GNU Privacy Guard, is a public key cryptography implementation. This allows for the secure transmission of information between parties and can be used to verify that the origin of a message is genuine.
-In this guide, we will discuss how GPG works and how to implement it. We will be using an Ubuntu 16.04 server for this demonstration, but will include instructions for other distributions as well."><link rel=stylesheet href=/css/semantic.min.css><link rel=stylesheet href=/css/icomoon.css><link rel=stylesheet href=/css/OverlayScrollbars.min.css><link rel=stylesheet href=/css/github-markdown.css><link rel=stylesheet href=/css/site.css><link rel=stylesheet href=/css/custom.css><style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style><link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css><link rel=stylesheet href=/css/custom.css></head><body class=default><nav class="ui secondary menu dream-menu"><div class=item><i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i></div><div class=item><i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i></div><div class=item><i class="large link icon theme-switch" onclick=themeSwitch()></i></div><div class=item><i class="large link search icon" onclick=toggleSearch()></i></div></nav><div class=flip-container><div class=flipper><section class=front><div class=dream-max-width><div class="ui relaxed grid dream-grid dream-grid-single" style=flex-direction:row-reverse><aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside"><div class="ui segment toc"><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#how-public-key-encryption-works>How Public Key Encryption Works</a></li><li><a href=#ensure-that-only-the-intended-party-can-read>Ensure That Only the Intended Party Can Read</a></li><li><a href=#validate-the-identity-of-the-sender>Validate the Identity of the Sender</a></li><li><a href=#set-up-gpg-keys>Set Up GPG Keys</a></li><li><a href=#create-a-revocation-certificate>Create a Revocation Certificate</a></li><li><a href=#how-to-import-other-users-public-keys>How To Import Other Users’ Public Keys</a></li><li><a href=#how-to-verify-and-sign-keys>How To Verify and Sign Keys</a><ul><li><a href=#verify-the-other-persons-identity>Verify the Other Person’s Identity</a></li></ul></li><li><a href=#sign-their-key>Sign Their Key</a></li><li><a href=#how-to-make-your-public-key-highly-available>How To Make Your Public Key Highly Available</a></li><li><a href=#decrypt-messages>Decrypt Messages</a></li><li><a href=#key-maintenance>Key Maintenance</a></li><li><a href=#conclusion>Conclusion</a></li></ul></nav></div><div class="ui segment actions"><button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
-<i class="save icon"></i></button>
-<a href="https://twitter.com/intent/tweet?text=Notes%20Gnupg&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fnotes-gnupg%2f" class="ui circular twitter icon button"><i class="twitter icon"></i></a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fnotes-gnupg%2f" class="ui circular facebook icon button"><i class="facebook icon"></i></a></div></aside><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img><section class="ui top attached segment"><header><h1 class="ui large header">Notes Gnupg<div class="sub header">@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Notes Gnupg | Classroom</title>
+<link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
+<meta name=author content="Animesh Roy">
+<meta name=description content>
+<script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script>
+<script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script>
+<link rel=canonical href=https://classroom.anir0y.in/post/notes-gnupg/>
+<meta property="og:title" content="Notes Gnupg">
+<meta property="og:description" content="How To Use GPG to Encrypt and Sign Messages Introduction GPG, or GNU Privacy Guard, is a public key cryptography implementation. This allows for the secure transmission of information between parties and can be used to verify that the origin of a message is genuine.
+In this guide, we will discuss how GPG works and how to implement it. We will be using an Ubuntu 16.04 server for this demonstration, but will include instructions for other distributions as well.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://classroom.anir0y.in/post/notes-gnupg/"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-04-13T16:57:30+05:30">
+<meta property="article:modified_time" content="2021-04-13T16:57:30+05:30">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Notes Gnupg">
+<meta name=twitter:description content="How To Use GPG to Encrypt and Sign Messages Introduction GPG, or GNU Privacy Guard, is a public key cryptography implementation. This allows for the secure transmission of information between parties and can be used to verify that the origin of a message is genuine.
+In this guide, we will discuss how GPG works and how to implement it. We will be using an Ubuntu 16.04 server for this demonstration, but will include instructions for other distributions as well.">
+<link rel=stylesheet href=/css/semantic.min.css>
+<link rel=stylesheet href=/css/icomoon.css>
+<link rel=stylesheet href=/css/OverlayScrollbars.min.css>
+<link rel=stylesheet href=/css/github-markdown.css>
+<link rel=stylesheet href=/css/site.css>
+<link rel=stylesheet href=/css/custom.css>
+<style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style>
+<link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css>
+<link rel=stylesheet href=/css/custom.css>
+</head>
+<body class=default>
+<nav class="ui secondary menu dream-menu">
+<div class=item>
+<i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+</div>
+<div class=item>
+<i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i>
+</div>
+<div class=item>
+<i class="large link icon theme-switch" onclick=themeSwitch()></i>
+</div>
+<div class=item>
+<i class="large link search icon" onclick=toggleSearch()></i>
+</div>
+</nav>
+<div class=flip-container>
+<div class=flipper>
+<section class=front>
+<div class=dream-max-width>
+<div class="ui relaxed grid dream-grid dream-grid-single" style=flex-direction:row-reverse>
+<aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+<div class="ui segment toc">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#how-public-key-encryption-works>How Public Key Encryption Works</a></li>
+<li><a href=#ensure-that-only-the-intended-party-can-read>Ensure That Only the Intended Party Can Read</a></li>
+<li><a href=#validate-the-identity-of-the-sender>Validate the Identity of the Sender</a></li>
+<li><a href=#set-up-gpg-keys>Set Up GPG Keys</a></li>
+<li><a href=#create-a-revocation-certificate>Create a Revocation Certificate</a></li>
+<li><a href=#how-to-import-other-users-public-keys>How To Import Other Users’ Public Keys</a></li>
+<li><a href=#how-to-verify-and-sign-keys>How To Verify and Sign Keys</a>
+<ul>
+<li><a href=#verify-the-other-persons-identity>Verify the Other Person’s Identity</a></li>
+</ul>
+</li>
+<li><a href=#sign-their-key>Sign Their Key</a></li>
+<li><a href=#how-to-make-your-public-key-highly-available>How To Make Your Public Key Highly Available</a></li>
+<li><a href=#decrypt-messages>Decrypt Messages</a></li>
+<li><a href=#key-maintenance>Key Maintenance</a></li>
+<li><a href=#conclusion>Conclusion</a></li>
+</ul>
+</nav>
+</div>
+<div class="ui segment actions">
+<button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
+<i class="save icon"></i>
+</button>
+<a href="https://twitter.com/intent/tweet?text=Notes%20Gnupg&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fnotes-gnupg%2f" class="ui circular twitter icon button">
+<i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fnotes-gnupg%2f" class="ui circular facebook icon button">
+<i class="facebook icon"></i>
+</a>
+</div>
+</aside>
+<div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img>
+<section class="ui top attached segment">
+<header>
+<h1 class="ui large header">Notes Gnupg<div class="sub header">
+@
 <a href=https://anir0y.in target=_blank>Animesh Roy</a>
 |
 Tuesday, Apr 13, 2021
 | 11 minutes read
 | Update at
-Tuesday, Apr 13, 2021</div></h1></header><article class=main><h1 id=how-to-use-gpg-to-encrypt-and-sign-messages>How To Use GPG to Encrypt and Sign Messages</h1><h2 id=introduction>Introduction</h2><p>GPG, or GNU Privacy Guard, is a public key cryptography implementation. This allows for the secure transmission of information between parties and can be used to verify that the origin of a message is genuine.</p><p>In this guide, we will discuss how GPG works and how to implement it. We will be using an Ubuntu 16.04 server for this demonstration, but will include instructions for other distributions as well.</p><h2 id=how-public-key-encryption-works>How Public Key Encryption Works</h2><p>A problem that many users face is how to communicate securely and validate the identity of the party they are talking to. Many schemes that attempt to answer this question require, at least at some point, the transfer of a password or other identifying credentials, over an insecure medium.</p><h2 id=ensure-that-only-the-intended-party-can-read>Ensure That Only the Intended Party Can Read</h2><p>To get around this issue, GPG relies on a security concept known as public key encryption. The idea is that you can split the encrypting and decrypting stages of the transmission into two separate pieces. That way, you can freely distribute the encrypting portion, as long as you secure the decrypting portion.</p><p>This would allow for a one-way message transfer that can be created and encrypted by anyone, but only be decrypted by the designated user (the one with the private decrypting key). If both of the parties create public/private key pairs and give each other their public encrypting keys, they can both encrypt messages to each other.</p><p>So in this scenario, each party has their own private key and the other user’s public key.</p><h2 id=validate-the-identity-of-the-sender>Validate the Identity of the Sender</h2><p>Another benefit of this system is that the sender of a message can “sign” the message with their private key. The public key that the receiver has can be used to verify that the signature is actually being sent by the indicated user</p><h2 id=set-up-gpg-keys>Set Up GPG Keys</h2><p>GPG is installed by default in most distributions.</p><p>If for any reason GPG is not installed, on Ubuntu and Debian, you can update the local repo index and install it by typing:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get update
+Tuesday, Apr 13, 2021
+</div>
+</h1>
+</header>
+<article class=main><h1 id=how-to-use-gpg-to-encrypt-and-sign-messages>How To Use GPG to Encrypt and Sign Messages</h1>
+<h2 id=introduction>Introduction</h2>
+<p>GPG, or GNU Privacy Guard, is a public key cryptography implementation. This allows for the secure transmission of information between parties and can be used to verify that the origin of a message is genuine.</p>
+<p>In this guide, we will discuss how GPG works and how to implement it. We will be using an Ubuntu 16.04 server for this demonstration, but will include instructions for other distributions as well.</p>
+<h2 id=how-public-key-encryption-works>How Public Key Encryption Works</h2>
+<p>A problem that many users face is how to communicate securely and validate the identity of the party they are talking to. Many schemes that attempt to answer this question require, at least at some point, the transfer of a password or other identifying credentials, over an insecure medium.</p>
+<h2 id=ensure-that-only-the-intended-party-can-read>Ensure That Only the Intended Party Can Read</h2>
+<p>To get around this issue, GPG relies on a security concept known as public key encryption. The idea is that you can split the encrypting and decrypting stages of the transmission into two separate pieces. That way, you can freely distribute the encrypting portion, as long as you secure the decrypting portion.</p>
+<p>This would allow for a one-way message transfer that can be created and encrypted by anyone, but only be decrypted by the designated user (the one with the private decrypting key). If both of the parties create public/private key pairs and give each other their public encrypting keys, they can both encrypt messages to each other.</p>
+<p>So in this scenario, each party has their own private key and the other user’s public key.</p>
+<h2 id=validate-the-identity-of-the-sender>Validate the Identity of the Sender</h2>
+<p>Another benefit of this system is that the sender of a message can “sign” the message with their private key. The public key that the receiver has can be used to verify that the signature is actually being sent by the indicated user</p>
+<h2 id=set-up-gpg-keys>Set Up GPG Keys</h2>
+<p>GPG is installed by default in most distributions.</p>
+<p>If for any reason GPG is not installed, on Ubuntu and Debian, you can update the local repo index and install it by typing:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get update
 sudo apt-get install gnupg
-</code></pre></div><p>On CentOS, you can install GPG by typing:</p><pre><code>sudo yum install gnupg2
-</code></pre><p>To begin using GPG to encrypt your communications, you need to create a key pair. You can do this by issuing the following command:</p><pre><code>gpg --gen-key
-</code></pre><p>This will take you through a few questions that will configure your keys:</p><pre><code>Please select what kind of key you want: (1) RSA and RSA (default)
+</code></pre></div><p>On CentOS, you can install GPG by typing:</p>
+<pre><code>sudo yum install gnupg2
+</code></pre><p>To begin using GPG to encrypt your communications, you need to create a key pair. You can do this by issuing the following command:</p>
+<pre><code>gpg --gen-key
+</code></pre><p>This will take you through a few questions that will configure your keys:</p>
+<pre><code>Please select what kind of key you want: (1) RSA and RSA (default)
 
 What keysize do you want? 4096
 Key is valid for? 1y (expires after 1 year. If you are just testing, you may want to create a short-lived key the first time by using a number like “3” instead.)
@@ -23,28 +136,63 @@ Email address: your_email@address.com
 Comment: Optional comment that will be visible in your signature
 Change (N)ame, ©omment, (E)mail or (O)kay/(Q)uit? O
 Enter passphrase: Enter a secure passphrase here (upper &amp; lower case, digits, symbols)
-</code></pre><p>At this point, gpg will generate the keys using entropy. Entropy describes the amount of unpredictability and nondeterminism that exists in a system. GPG needs this entropy to generate a secure set of keys.</p><h2 id=create-a-revocation-certificate>Create a Revocation Certificate</h2><p>You need to have a way of invalidating your key pair in case there is a security breach or in case you lose your secret key. There is an easy way of doing this with the GPG software.</p><p>This should be done as soon as you make the key pair, not when you need it. This revocation key must be generated ahead of time and kept in a secure, separate location in case your computer is compromised or inoperable. To generate a revocation key, type:</p><pre><code>gpg --output ~/revocation.crt --gen-revoke your_email@address.com
-</code></pre><p>You will be asked to confirm the revocation key creation and then prompted for the reason that it is being revoked. This information will be visible to other users if the revocation is used in the future. You can choose any of the available options, but since this is being done ahead of time, you won’t have the specifics. Often, it is a good idea to create a revocation certificate for each of the likely scenarios for maximum flexibility.</p><p>Afterwards, you will then be asked to supply a comment and finally, to confirm the selections. Before creating the revocation certificate, you will need to enter your GPG key’s passphrase to confirm your identity. The revocation certificate will be written to the file specified by the &ndash;output flag (revocation.crt in our example):</p><pre><code>Output
+</code></pre><p>At this point, gpg will generate the keys using entropy. Entropy describes the amount of unpredictability and nondeterminism that exists in a system. GPG needs this entropy to generate a secure set of keys.</p>
+<h2 id=create-a-revocation-certificate>Create a Revocation Certificate</h2>
+<p>You need to have a way of invalidating your key pair in case there is a security breach or in case you lose your secret key. There is an easy way of doing this with the GPG software.</p>
+<p>This should be done as soon as you make the key pair, not when you need it. This revocation key must be generated ahead of time and kept in a secure, separate location in case your computer is compromised or inoperable. To generate a revocation key, type:</p>
+<pre><code>gpg --output ~/revocation.crt --gen-revoke your_email@address.com
+</code></pre><p>You will be asked to confirm the revocation key creation and then prompted for the reason that it is being revoked. This information will be visible to other users if the revocation is used in the future. You can choose any of the available options, but since this is being done ahead of time, you won’t have the specifics. Often, it is a good idea to create a revocation certificate for each of the likely scenarios for maximum flexibility.</p>
+<p>Afterwards, you will then be asked to supply a comment and finally, to confirm the selections. Before creating the revocation certificate, you will need to enter your GPG key’s passphrase to confirm your identity. The revocation certificate will be written to the file specified by the &ndash;output flag (revocation.crt in our example):</p>
+<pre><code>Output
 Revocation certificate created.
 
 Please move it to a medium which you can hide away; if Mallory gets
 access to this certificate he can use it to make your key unusable.
 It is smart to print this certificate and store it away, just in case
 your media become unreadable.  But have some caution:  The print system of your machine might store the data and make it available to others!
-</code></pre><p>You should immediately restrict the permissions on the generated certificate file in order to prevent unauthorized access:</p><pre><code>chmod 600 ~/revocation.crt
-</code></pre><p>The revocation certificate must be kept secure so that other users cannot revoke your key. As the message states, you should consider backing the certificate up to other machines and printing it out, as long as you can secure it properly.</p><h2 id=how-to-import-other-users-public-keys>How To Import Other Users’ Public Keys</h2><p>GPG would be pretty useless if you could not accept other public keys from people you wished to communicate with.</p><p>You can import someone’s public key in a variety of ways. If you’ve obtained a public key from someone in a text file, GPG can import it with the following command:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --import name_of_pub_key_file
-</code></pre></div><p>There is also the possibility that the person you are wishing to communicate with has uploaded their key to a public key server. These key servers are used to house people’s public keys from all over the world.</p><p>A popular key server that syncs its information with a variety of other servers is the MIT public key server. You can search for people by their name or email address by going here in your web browser:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>https://keyserver.ububtu.com/
-</code></pre></div><p>You can also search the key server from within GPG by typing the following:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --keyserver keyserver.ububtu.com  --search-keys search_parameters
-</code></pre></div><p>You can use this method of searching by name or email address. You can import keys that you find by following the prompts.</p><h2 id=how-to-verify-and-sign-keys>How To Verify and Sign Keys</h2><p>While you can freely distribute your generated public key file and people can use this to contact you in a secure way, it is important to be able to trust that the key belongs to who you think it does during the initial public key transmission.</p><h3 id=verify-the-other-persons-identity>Verify the Other Person’s Identity</h3><p>How do you know that the person giving you the public key is who they say they are? In some cases, this may be simple. You may be sitting right next to the person with your laptops both open and exchanging keys. This should be a pretty secure way of identifying that you are receiving the correct, legitimate key.</p><p>But there are many other circumstances where such personal contact is not possible. You may not know the other party personally, or you may be separated by physical distance. If you never want to communicate over insecure channels, verification of the public key could be problematic.</p><p>Luckily, instead of verifying the entire public keys of both parties, you can simply compare the “fingerprint” derived from these keys. This will give you a reasonable assurance that you both are using the same public key information.</p><p>You can get the fingerprint of a public key by typing:</p><pre><code>gpg --fingerprint your_email@address.com
-</code></pre><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Output
+</code></pre><p>You should immediately restrict the permissions on the generated certificate file in order to prevent unauthorized access:</p>
+<pre><code>chmod 600 ~/revocation.crt
+</code></pre><p>The revocation certificate must be kept secure so that other users cannot revoke your key. As the message states, you should consider backing the certificate up to other machines and printing it out, as long as you can secure it properly.</p>
+<h2 id=how-to-import-other-users-public-keys>How To Import Other Users’ Public Keys</h2>
+<p>GPG would be pretty useless if you could not accept other public keys from people you wished to communicate with.</p>
+<p>You can import someone’s public key in a variety of ways. If you’ve obtained a public key from someone in a text file, GPG can import it with the following command:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --import name_of_pub_key_file
+</code></pre></div><p>There is also the possibility that the person you are wishing to communicate with has uploaded their key to a public key server. These key servers are used to house people’s public keys from all over the world.</p>
+<p>A popular key server that syncs its information with a variety of other servers is the MIT public key server. You can search for people by their name or email address by going here in your web browser:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>https://keyserver.ububtu.com/
+</code></pre></div><p>You can also search the key server from within GPG by typing the following:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --keyserver keyserver.ububtu.com  --search-keys search_parameters
+</code></pre></div><p>You can use this method of searching by name or email address. You can import keys that you find by following the prompts.</p>
+<h2 id=how-to-verify-and-sign-keys>How To Verify and Sign Keys</h2>
+<p>While you can freely distribute your generated public key file and people can use this to contact you in a secure way, it is important to be able to trust that the key belongs to who you think it does during the initial public key transmission.</p>
+<h3 id=verify-the-other-persons-identity>Verify the Other Person’s Identity</h3>
+<p>How do you know that the person giving you the public key is who they say they are? In some cases, this may be simple. You may be sitting right next to the person with your laptops both open and exchanging keys. This should be a pretty secure way of identifying that you are receiving the correct, legitimate key.</p>
+<p>But there are many other circumstances where such personal contact is not possible. You may not know the other party personally, or you may be separated by physical distance. If you never want to communicate over insecure channels, verification of the public key could be problematic.</p>
+<p>Luckily, instead of verifying the entire public keys of both parties, you can simply compare the “fingerprint” derived from these keys. This will give you a reasonable assurance that you both are using the same public key information.</p>
+<p>You can get the fingerprint of a public key by typing:</p>
+<pre><code>gpg --fingerprint your_email@address.com
+</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Output
 pub   4096R/311B1F84 2013-10-04
       Key fingerprint <span style=color:#f92672>=</span> CB9E C70F <span style=color:#ae81ff>2421</span> AF06 7D72  F980 <span style=color:#ae81ff>8287</span> 6A15 311B 1F84
 uid                  Test User &lt;test.user@address.com&gt;
 sub   4096R/8822A56A 2021-13-04
-</code></pre></div><p>This will produce a much more manageable string of numbers to compare. You can compare this string with the person themselves, or with someone else who has access to that person.</p><h2 id=sign-their-key>Sign Their Key</h2><p>Signing a key tells your software that you trust the key that you have been provided with and that you have verified that it is associated with the person in question.</p><p>To sign a key that you’ve imported, simply type:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --sign-key email@example.com
-</code></pre></div><p>When you sign the key, it means you verify that you trust the person is who they claim to be. This can help other people decide whether to trust that person too. If someone trusts you, and they see that you’ve signed this person’s key, they may be more likely to trust their identity too.</p><p>You should allow the person whose key you are signing to take advantage of your trusted relationship by sending them back the signed key. You can do this by typing:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --output ~/signed.key --export --armor email@example.com
-</code></pre></div><p>You’ll have to type in your passphrase again. Afterwards, their public key, signed by you, will be displayed. Send them this, so that they can benefit from gaining your “stamp of approval” when interacting with others.</p><p>When they receive this new, signed key, they can import it, adding the signing information you’ve generated into their GPG database. They can do this by typing:</p><pre><code>gpg --import ~/signed.key
-</code></pre><p>They can now demonstrate to other people that you trust that their identity is correct.</p><h2 id=how-to-make-your-public-key-highly-available>How To Make Your Public Key Highly Available</h2><p>Because of the way that public key encryption is designed, there is not anything malicious that can happen if unknown people have your public key.</p><p>With this in mind, it may be beneficial to make your public key publicly available. People can then find your information to send you messages securely from your very first interaction.</p><p>You can send anyone your public key by requesting it from the GPG system:</p><pre><code>gpg --output ~/mygpg.key --armor --export your_email@address.com
+</code></pre></div><p>This will produce a much more manageable string of numbers to compare. You can compare this string with the person themselves, or with someone else who has access to that person.</p>
+<h2 id=sign-their-key>Sign Their Key</h2>
+<p>Signing a key tells your software that you trust the key that you have been provided with and that you have verified that it is associated with the person in question.</p>
+<p>To sign a key that you’ve imported, simply type:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --sign-key email@example.com
+</code></pre></div><p>When you sign the key, it means you verify that you trust the person is who they claim to be. This can help other people decide whether to trust that person too. If someone trusts you, and they see that you’ve signed this person’s key, they may be more likely to trust their identity too.</p>
+<p>You should allow the person whose key you are signing to take advantage of your trusted relationship by sending them back the signed key. You can do this by typing:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --output ~/signed.key --export --armor email@example.com
+</code></pre></div><p>You’ll have to type in your passphrase again. Afterwards, their public key, signed by you, will be displayed. Send them this, so that they can benefit from gaining your “stamp of approval” when interacting with others.</p>
+<p>When they receive this new, signed key, they can import it, adding the signing information you’ve generated into their GPG database. They can do this by typing:</p>
+<pre><code>gpg --import ~/signed.key
+</code></pre><p>They can now demonstrate to other people that you trust that their identity is correct.</p>
+<h2 id=how-to-make-your-public-key-highly-available>How To Make Your Public Key Highly Available</h2>
+<p>Because of the way that public key encryption is designed, there is not anything malicious that can happen if unknown people have your public key.</p>
+<p>With this in mind, it may be beneficial to make your public key publicly available. People can then find your information to send you messages securely from your very first interaction.</p>
+<p>You can send anyone your public key by requesting it from the GPG system:</p>
+<pre><code>gpg --output ~/mygpg.key --armor --export your_email@address.com
 </code></pre><pre><code>Output
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v1.4.11 (GNU/Linux)
@@ -56,82 +204,343 @@ EpD+8cDK4DuLlLdn1x0q41VUsznXrnMpQedRmAL9f9bL6pbLTJhaKeorTokTvdn6
 JBU9xmavTM71PfV6Pkh4j1pfWImXc1D8dS+jcvKeXInBfm2XZsfOCesk12YnK3Nc
 u1Xe1lxzSt7Cegum4S/YuxmYoh462oGZ7FA4Cr2lvAPVpO9zmgQ8JITXiqYg2wB3
 . . .
-</code></pre><p>You can then send this file to the other party over an appropriate medium.</p><p>If you want to publish your key to a key server, you can do it manually through the forms available on most of the server sites.</p><p>Another option is to do this through the GPG interface. Look up your key ID by typing:</p><pre><code>gpg --list-keys your_email@address.com
-</code></pre><p>The highlighted portion in the output below is the key ID (look for the pub along the left-hand column if you’re uncertain about which one to use). It is a short way to reference the key to the internal software.</p><pre><code>Output
+</code></pre><p>You can then send this file to the other party over an appropriate medium.</p>
+<p>If you want to publish your key to a key server, you can do it manually through the forms available on most of the server sites.</p>
+<p>Another option is to do this through the GPG interface. Look up your key ID by typing:</p>
+<pre><code>gpg --list-keys your_email@address.com
+</code></pre><p>The highlighted portion in the output below is the key ID (look for the pub along the left-hand column if you’re uncertain about which one to use). It is a short way to reference the key to the internal software.</p>
+<pre><code>Output
 pub   4096R/311B1F84 2013-10-04
 uid                  Test User &lt;test.user@address.com&gt;
 sub   4096R/8822A56A 2013-10-04
 To upload your key to a certain key server, you can then use this syntax:
 
 gpg --send-keys --keyserver keyserver.ububtu.com key_id
-</code></pre><p>The key will be uploaded to the specified server. Afterwards, it will likely be distributed to other key servers around the world.</p><p>Encrypt and Decrypt Messages with GPG
-You can easily encrypt and decrypt messages after you have shared your keys with the other party.</p><p>Encrypt Messages
-You can encrypt messages using the “–encrypt” flag for GPG. The basic syntax would be:</p><pre><code>gpg --encrypt --sign --armor -r person@email.com name_of_file
-</code></pre><p>This encrypts the message using the recipient’s public key, signs it with your own private key to guarantee that it is coming from you, and outputs the message in a text format instead of raw bytes. The filename will be the same as the input filename, but with an .asc extension.</p><p>You should include a second “-r” recipient with your own email address if you want to be able to read the encrypted message. This is because the message will be encrypted with each person’s public key, and will only be able to be decrypted with the associated private key.</p><p>So if it was only encrypted with the other party’s public key, you would not be able to view the message again, unless you somehow obtained their private key. Adding yourself as a second recipient encrypts the message two separate times, one for each recipient.</p><h2 id=decrypt-messages>Decrypt Messages</h2><p>When you receive a message, simply call GPG on the message file:</p><pre><code>gpg file_name.asc
-</code></pre><p>The software will prompt you as necessary.</p><p>If instead of a file, you have the message as a raw text stream, you can copy and paste it after typing gpg without any arguments. You can press “CTRL-D” to signify the end of the message and GPG will decrypt it for you.</p><h2 id=key-maintenance>Key Maintenance</h2><p>There are a number of procedures that you may need to use on a regular basis to manage your key database.</p><p>To list your available GPG keys that you have from other people, you can issue this command:</p><pre><code>gpg --list-keys
-</code></pre><p>Your key information can become outdated if you are relying on information pulled from public key servers. You do not want to be relying on revoked keys, because that would mean you are trusting potentially compromised keys.</p><p>You can update the key information by issuing:</p><pre><code>gpg --refresh-keys
-</code></pre><p>This will fetch new information from the key servers.</p><p>You can pull information from a specific key server by using:</p><pre><code>gpg --keyserver key_server --refresh-keys
-</code></pre><p>You may receive error messages if any of your keys cannot be found on the key server.</p><h2 id=conclusion>Conclusion</h2><p>Using GPG correctly can help you secure your communications with different people. This is extremely helpful, especially when dealing with sensitive information, but also when dealing with regular, everyday messaging.</p><p>Because of the way that certain encrypted communications can be flagged by monitoring programs, it is recommended to use encryption for everything, not just “secret” data. That will make it more difficult for people to know when you are sending important data or just sending a friendly hello</p></article></section></div></div><footer class="ui basic center aligned segment" style=background-color:transparent><p>© 2010 - 2021 Classroom</p></footer></div></section><section class=back><div class=dream-max-width><header class="ui basic very padded segment dream-header"><div class="ui small circular image"><img src=/img/avatar.jpeg></div><div class=content><h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div></h1><article class="ui horizontal list"><a class=item href=/categories><i class="th list icon" title="All Categories"></i></a>
-<a class=item href=/tags><i class="tags icon" title="All Tags"></i></a></article><article class=dream-tags><a class="ui label" href=/tags/autopsy/ title=autopsy>autopsy</a>
-<a class="ui label" href=/tags/backdoor/ title=backdoor>backdoor</a>
-<a class="ui label" href=/tags/bash/ title=bash>bash</a>
-<a class="ui label" href=/tags/cheatsheet/ title=cheatsheet>cheatsheet</a>
-<a class="ui label" href=/tags/config/ title=config>config</a>
-<a class="ui label" href=/tags/couch/ title=couch>couch</a>
-<a class="ui label" href=/tags/crisis/ title=Crisis>Crisis</a>
-<a class="ui label" href=/tags/dominos/ title=dominos>dominos</a>
-<a class="ui label" href=/tags/empire/ title=Empire>Empire</a>
-<a class="ui label" href=/tags/encryption/ title=encryption>encryption</a>
-<a class="ui label" href=/tags/ffuf/ title=ffuf>ffuf</a>
-<a class="ui label" href=/tags/forensic/ title=forensic>forensic</a>
-<a class="ui label" href=/tags/gitandcrumpets/ title=gitandcrumpets>gitandcrumpets</a>
-<a class="ui label" href=/tags/gnupg/ title=gnupg>gnupg</a>
-<a class="ui label" href=/tags/hackpark/ title=HackPark>HackPark</a>
-<a class="ui label" href=/tags/hydra/ title=hydra>hydra</a>
-<a class="ui label" href=/tags/inclusion/ title=inclusion>inclusion</a>
-<a class="ui label" href=/tags/internship/ title=Internship>Internship</a>
-<a class="ui label" href=/tags/interview/ title=interview>interview</a>
-<a class="ui label" href=/tags/kenobi/ title=kenobi>kenobi</a>
-<a class="ui label" href=/tags/lab/ title=lab>lab</a>
-<a class="ui label" href=/tags/leaks/ title=leaks>leaks</a>
-<a class="ui label" href=/tags/linux/ title=Linux>Linux</a>
-<a class="ui label" href=/tags/memory/ title=memory>memory</a>
-<a class="ui label" href=/tags/metamorphosis/ title=Metamorphosis>Metamorphosis</a>
-<a class="ui label" href=/tags/metasploit/ title=metasploit>metasploit</a>
-<a class="ui label" href=/tags/mobile/ title=Mobile>Mobile</a>
-<a class="ui label" href=/tags/msf/ title=msf>msf</a>
-<a class="ui label" href=/tags/msfvenom/ title=msfvenom>msfvenom</a>
-<a class="ui label" href=/tags/notes/ title=notes>notes</a>
-<a class="ui label" href=/tags/osi/ title=OSI>OSI</a>
-<a class="ui label" href=/tags/osi-model/ title="OSI Model">OSI Model</a>
-<a class="ui label" href=/tags/pentesting/ title=Pentesting>Pentesting</a>
-<a class="ui label" href=/tags/pgp/ title=PGP>PGP</a>
-<a class="ui label" href=/tags/pip/ title=pip>pip</a>
-<a class="ui label" href=/tags/pip2/ title=pip2>pip2</a>
-<a class="ui label" href=/tags/post-exploitation/ title=Post-Exploitation>Post-Exploitation</a>
-<a class="ui label" href=/tags/powershell/ title=powershell>powershell</a>
-<a class="ui label" href=/tags/putty/ title=putty>putty</a>
-<a class="ui label" href=/tags/python/ title=python>python</a>
-<a class="ui label" href=/tags/razorblack/ title=RazorBlack>RazorBlack</a>
-<a class="ui label" href=/tags/redteaming/ title=redteaming>redteaming</a>
-<a class="ui label" href=/tags/ref/ title=Ref>Ref</a>
-<a class="ui label" href=/tags/rooms/ title=rooms>rooms</a>
-<a class="ui label" href=/tags/rootme/ title=RootMe>RootMe</a>
-<a class="ui label" href=/tags/rpwebscanning/ title=rpwebscanning>rpwebscanning</a>
-<a class="ui label" href=/tags/script/ title=script>script</a>
-<a class="ui label" href=/tags/scripting/ title=Scripting>Scripting</a>
-<a class="ui label" href=/tags/simple-ctf/ title="Simple CTF">Simple CTF</a>
-<a class="ui label" href=/tags/splunk/ title=splunk>splunk</a>
-<a class="ui label" href=/tags/stego/ title=stego>stego</a>
-<a class="ui label" href=/tags/sysmon/ title=sysmon>sysmon</a>
-<a class="ui label" href=/tags/thefindcommand/ title=Thefindcommand>Thefindcommand</a>
-<a class="ui label" href=/tags/thm/ title=thm>thm</a>
-<a class="ui label" href=/tags/tmux/ title=tmux>tmux</a>
-<a class="ui label" href=/tags/tools/ title=tools>tools</a>
-<a class="ui label" href=/tags/tryhackme/ title=tryhackme>tryhackme</a>
-<a class="ui label" href=/tags/vapt/ title=vapt>vapt</a>
-<a class="ui label" href=/tags/volatility/ title=Volatility>Volatility</a>
-<a class="ui label" href=/tags/vuln-labs/ title="vuln labs">vuln labs</a>
-<a class="ui label" href=/tags/vulnversity/ title=Vulnversity>Vulnversity</a>
-<a class="ui label" href=/tags/web-scanning/ title="web scanning">web scanning</a>
-<a class="ui label" href=/tags/wireshark/ title=wireshark>wireshark</a></article></div></header><div class="ui relaxed grid dream-grid dream-back"><div class="sixteen wide mobile eight wide tablet four wide computer column dream-column"><article class="ui segment"><h3 class="ui header">Social Links</h3><nav class="ui secondary menu dream-menu dream-socials"><div class=item><a href=/index.xml><i class="large rss square icon" title=RSS></i></a></div><div class=item><a href=mailto:classroom@anir0y.in><i class="large mail icon" title=Email></i></a></div><div class=item><a href=https://twitter.com/anir0y target=_blank><i class="large twitter icon" title=Twitter></i></a></div><div class=item><a href=https://facebook.com/anir0yofficial target=_blank><i class="large facebook icon" title=Facebook></i></a></div><div class=item><a href=https://instagram.com/anir0yofficial target=_blank><i class="large instagram icon" title=Instagram></i></a></div><div class=item><a href=https://www.linkedin.com/in/anir0y target=_blank><i class="large linkedin icon" title=Linkedin></i></a></div><div class=item><a href=https://github.com/anir0y target=_blank><i class="large github icon" title=GitHub></i></a></div></nav></article></div><div class="sixteen wide mobile eight wide tablet four wide computer column dream-column"><article class="ui segment">YOU CAN RESUE MY CONTENT</article></div></div></div></section></div></div><script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script><script src=/js/jquery.min.js></script><script src=/js/semantic.min.js></script><script src=/js/jquery.overlayScrollbars.min.js></script><script src=/js/header.js></script><script src=/js/main.js></script><script src=/js/theme.js></script><script src=/js/html2canvas.min.js></script><script src=/js/post.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script><script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script><div class="ui inverted segment" id=dream-search><div class="ui search"><div class="ui transparent input"><input class=prompt type=text placeholder=Search></div><div class=results></div></div></div><script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script><script src=/js/search.js></script></body></html>
+</code></pre><p>The key will be uploaded to the specified server. Afterwards, it will likely be distributed to other key servers around the world.</p>
+<p>Encrypt and Decrypt Messages with GPG
+You can easily encrypt and decrypt messages after you have shared your keys with the other party.</p>
+<p>Encrypt Messages
+You can encrypt messages using the “–encrypt” flag for GPG. The basic syntax would be:</p>
+<pre><code>gpg --encrypt --sign --armor -r person@email.com name_of_file
+</code></pre><p>This encrypts the message using the recipient’s public key, signs it with your own private key to guarantee that it is coming from you, and outputs the message in a text format instead of raw bytes. The filename will be the same as the input filename, but with an .asc extension.</p>
+<p>You should include a second “-r” recipient with your own email address if you want to be able to read the encrypted message. This is because the message will be encrypted with each person’s public key, and will only be able to be decrypted with the associated private key.</p>
+<p>So if it was only encrypted with the other party’s public key, you would not be able to view the message again, unless you somehow obtained their private key. Adding yourself as a second recipient encrypts the message two separate times, one for each recipient.</p>
+<h2 id=decrypt-messages>Decrypt Messages</h2>
+<p>When you receive a message, simply call GPG on the message file:</p>
+<pre><code>gpg file_name.asc
+</code></pre><p>The software will prompt you as necessary.</p>
+<p>If instead of a file, you have the message as a raw text stream, you can copy and paste it after typing gpg without any arguments. You can press “CTRL-D” to signify the end of the message and GPG will decrypt it for you.</p>
+<h2 id=key-maintenance>Key Maintenance</h2>
+<p>There are a number of procedures that you may need to use on a regular basis to manage your key database.</p>
+<p>To list your available GPG keys that you have from other people, you can issue this command:</p>
+<pre><code>gpg --list-keys
+</code></pre><p>Your key information can become outdated if you are relying on information pulled from public key servers. You do not want to be relying on revoked keys, because that would mean you are trusting potentially compromised keys.</p>
+<p>You can update the key information by issuing:</p>
+<pre><code>gpg --refresh-keys
+</code></pre><p>This will fetch new information from the key servers.</p>
+<p>You can pull information from a specific key server by using:</p>
+<pre><code>gpg --keyserver key_server --refresh-keys
+</code></pre><p>You may receive error messages if any of your keys cannot be found on the key server.</p>
+<h2 id=conclusion>Conclusion</h2>
+<p>Using GPG correctly can help you secure your communications with different people. This is extremely helpful, especially when dealing with sensitive information, but also when dealing with regular, everyday messaging.</p>
+<p>Because of the way that certain encrypted communications can be flagged by monitoring programs, it is recommended to use encryption for everything, not just “secret” data. That will make it more difficult for people to know when you are sending important data or just sending a friendly hello</p>
+</article>
+</section>
+</div>
+</div>
+<footer class="ui basic center aligned segment" style=background-color:transparent>
+<p>© 2010 - 2021 Classroom</p>
+</footer>
+</div>
+</section>
+<section class=back>
+<div class=dream-max-width>
+<header class="ui basic very padded segment dream-header">
+<div class="ui small circular image">
+<img src=/img/avatar.jpeg>
+</div>
+<div class=content>
+<h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div>
+</h1>
+<article class="ui horizontal list">
+<a class=item href=/categories>
+<i class="th list icon" title="All Categories"></i>
+</a>
+<a class=item href=/tags>
+<i class="tags icon" title="All Tags"></i>
+</a>
+</article>
+<article class=dream-tags>
+<a class="ui label" href=/tags/autopsy/ title=autopsy>
+autopsy
+</a>
+<a class="ui label" href=/tags/backdoor/ title=backdoor>
+backdoor
+</a>
+<a class="ui label" href=/tags/baron-samedit/ title="Baron Samedit">
+Baron Samedit
+</a>
+<a class="ui label" href=/tags/bash/ title=bash>
+bash
+</a>
+<a class="ui label" href=/tags/cheatsheet/ title=cheatsheet>
+cheatsheet
+</a>
+<a class="ui label" href=/tags/config/ title=config>
+config
+</a>
+<a class="ui label" href=/tags/couch/ title=couch>
+couch
+</a>
+<a class="ui label" href=/tags/crisis/ title=Crisis>
+Crisis
+</a>
+<a class="ui label" href=/tags/dominos/ title=dominos>
+dominos
+</a>
+<a class="ui label" href=/tags/empire/ title=Empire>
+Empire
+</a>
+<a class="ui label" href=/tags/encryption/ title=encryption>
+encryption
+</a>
+<a class="ui label" href=/tags/ffuf/ title=ffuf>
+ffuf
+</a>
+<a class="ui label" href=/tags/forensic/ title=forensic>
+forensic
+</a>
+<a class="ui label" href=/tags/gitandcrumpets/ title=gitandcrumpets>
+gitandcrumpets
+</a>
+<a class="ui label" href=/tags/gnupg/ title=gnupg>
+gnupg
+</a>
+<a class="ui label" href=/tags/hackpark/ title=HackPark>
+HackPark
+</a>
+<a class="ui label" href=/tags/hydra/ title=hydra>
+hydra
+</a>
+<a class="ui label" href=/tags/inclusion/ title=inclusion>
+inclusion
+</a>
+<a class="ui label" href=/tags/internship/ title=Internship>
+Internship
+</a>
+<a class="ui label" href=/tags/interview/ title=interview>
+interview
+</a>
+<a class="ui label" href=/tags/kenobi/ title=kenobi>
+kenobi
+</a>
+<a class="ui label" href=/tags/lab/ title=lab>
+lab
+</a>
+<a class="ui label" href=/tags/leaks/ title=leaks>
+leaks
+</a>
+<a class="ui label" href=/tags/linux/ title=Linux>
+Linux
+</a>
+<a class="ui label" href=/tags/memory/ title=memory>
+memory
+</a>
+<a class="ui label" href=/tags/metamorphosis/ title=Metamorphosis>
+Metamorphosis
+</a>
+<a class="ui label" href=/tags/metasploit/ title=metasploit>
+metasploit
+</a>
+<a class="ui label" href=/tags/mobile/ title=Mobile>
+Mobile
+</a>
+<a class="ui label" href=/tags/msf/ title=msf>
+msf
+</a>
+<a class="ui label" href=/tags/msfvenom/ title=msfvenom>
+msfvenom
+</a>
+<a class="ui label" href=/tags/notes/ title=notes>
+notes
+</a>
+<a class="ui label" href=/tags/osi/ title=OSI>
+OSI
+</a>
+<a class="ui label" href=/tags/osi-model/ title="OSI Model">
+OSI Model
+</a>
+<a class="ui label" href=/tags/pentesting/ title=Pentesting>
+Pentesting
+</a>
+<a class="ui label" href=/tags/pgp/ title=PGP>
+PGP
+</a>
+<a class="ui label" href=/tags/pip/ title=pip>
+pip
+</a>
+<a class="ui label" href=/tags/pip2/ title=pip2>
+pip2
+</a>
+<a class="ui label" href=/tags/post-exploitation/ title=Post-Exploitation>
+Post-Exploitation
+</a>
+<a class="ui label" href=/tags/powershell/ title=powershell>
+powershell
+</a>
+<a class="ui label" href=/tags/putty/ title=putty>
+putty
+</a>
+<a class="ui label" href=/tags/python/ title=python>
+python
+</a>
+<a class="ui label" href=/tags/razorblack/ title=RazorBlack>
+RazorBlack
+</a>
+<a class="ui label" href=/tags/redteaming/ title=redteaming>
+redteaming
+</a>
+<a class="ui label" href=/tags/ref/ title=Ref>
+Ref
+</a>
+<a class="ui label" href=/tags/rooms/ title=rooms>
+rooms
+</a>
+<a class="ui label" href=/tags/rootme/ title=RootMe>
+RootMe
+</a>
+<a class="ui label" href=/tags/rpwebscanning/ title=rpwebscanning>
+rpwebscanning
+</a>
+<a class="ui label" href=/tags/script/ title=script>
+script
+</a>
+<a class="ui label" href=/tags/scripting/ title=Scripting>
+Scripting
+</a>
+<a class="ui label" href=/tags/simple-ctf/ title="Simple CTF">
+Simple CTF
+</a>
+<a class="ui label" href=/tags/splunk/ title=splunk>
+splunk
+</a>
+<a class="ui label" href=/tags/stego/ title=stego>
+stego
+</a>
+<a class="ui label" href=/tags/sysmon/ title=sysmon>
+sysmon
+</a>
+<a class="ui label" href=/tags/thefindcommand/ title=Thefindcommand>
+Thefindcommand
+</a>
+<a class="ui label" href=/tags/thm/ title=thm>
+thm
+</a>
+<a class="ui label" href=/tags/tmux/ title=tmux>
+tmux
+</a>
+<a class="ui label" href=/tags/tools/ title=tools>
+tools
+</a>
+<a class="ui label" href=/tags/tryhackme/ title=tryhackme>
+tryhackme
+</a>
+<a class="ui label" href=/tags/vapt/ title=vapt>
+vapt
+</a>
+<a class="ui label" href=/tags/volatility/ title=Volatility>
+Volatility
+</a>
+<a class="ui label" href=/tags/vuln-labs/ title="vuln labs">
+vuln labs
+</a>
+<a class="ui label" href=/tags/vulnversity/ title=Vulnversity>
+Vulnversity
+</a>
+<a class="ui label" href=/tags/web-scanning/ title="web scanning">
+web scanning
+</a>
+<a class="ui label" href=/tags/wireshark/ title=wireshark>
+wireshark
+</a>
+</article>
+</div>
+</header>
+<div class="ui relaxed grid dream-grid dream-back">
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+<h3 class="ui header">Social Links</h3>
+<nav class="ui secondary menu dream-menu dream-socials">
+<div class=item>
+<a href=/index.xml>
+<i class="large rss square icon" title=RSS></i>
+</a>
+</div>
+<div class=item>
+<a href=mailto:classroom@anir0y.in>
+<i class="large mail icon" title=Email></i>
+</a>
+</div>
+<div class=item>
+<a href=https://twitter.com/anir0y target=_blank>
+<i class="large twitter icon" title=Twitter></i>
+</a>
+</div>
+<div class=item>
+<a href=https://facebook.com/anir0yofficial target=_blank>
+<i class="large facebook icon" title=Facebook></i>
+</a>
+</div>
+<div class=item>
+<a href=https://instagram.com/anir0yofficial target=_blank>
+<i class="large instagram icon" title=Instagram></i>
+</a>
+</div>
+<div class=item>
+<a href=https://www.linkedin.com/in/anir0y target=_blank>
+<i class="large linkedin icon" title=Linkedin></i>
+</a>
+</div>
+<div class=item>
+<a href=https://github.com/anir0y target=_blank>
+<i class="large github icon" title=GitHub></i>
+</a>
+</div>
+</nav>
+</article>
+</div>
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+YOU CAN RESUE MY CONTENT
+</article>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script>
+<script src=/js/jquery.min.js></script>
+<script src=/js/semantic.min.js></script>
+<script src=/js/jquery.overlayScrollbars.min.js></script>
+<script src=/js/header.js></script>
+<script src=/js/main.js></script>
+<script src=/js/theme.js></script>
+<script src=/js/html2canvas.min.js></script>
+<script src=/js/post.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script>
+<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script>
+<div class="ui inverted segment" id=dream-search>
+<div class="ui search">
+<div class="ui transparent input">
+<input class=prompt type=text placeholder=Search>
+</div>
+<div class=results></div>
+</div>
+</div>
+<script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script>
+<script src=/js/search.js></script>
+</body>
+</html>

