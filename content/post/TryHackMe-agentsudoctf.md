@@ -23,7 +23,7 @@ description: TryHackMe Room Agent Sudo, You found a secret server located under 
 ## OverView
 
 |||
-|---|---|
+|:---:|:---:|
 | <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
 |Agent Sudo|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/aedc6b66c222e15ff740c282a0c3f44e.png)|
 | _Room [Subscription Required]_| [Agent Sudo]()|
