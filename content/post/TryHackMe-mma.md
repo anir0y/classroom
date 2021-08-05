@@ -25,7 +25,7 @@ description: TryHackMe Room Mobile Malware Analysis solved by Animesh Roy. this 
 |---|---|
 | <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
 |Mobile Malware Analysis|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/1a8af49f6135843b36f1378812034155.png)|
-| <b> Room [Subscription Required] </b>| [Mobile Malware Analysis](https://tryhackme.com/room/mma)|
+| <b> Room [FREE ROOM] </b>| [Mobile Malware Analysis](https://tryhackme.com/room/mma)|
 
 ## task 01: Introduction
 
