@@ -14,7 +14,7 @@ tags:
   - rooms
   - thm
 
-draft: true
+draft: false
 description: TryHackMe Room Hacking with PowerShell solved by Animesh Roy. this is a walkthough. read more...
 
 ---
