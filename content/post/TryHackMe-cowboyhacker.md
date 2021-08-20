@@ -143,6 +143,7 @@ You were boasting on and on about your elite hacker skills in the bar and a few 
   
      ![img](https://i.imgur.com/VqPz7Vu.png)
   
+![footer](https://i.imgur.com/rCDF5u6.png)
 
 ---
 <!-- Google Ads -->
