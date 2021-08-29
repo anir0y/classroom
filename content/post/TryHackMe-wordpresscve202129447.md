@@ -201,18 +201,22 @@ php -S IP 80
   ![img](https://i.imgur.com/iggMqNW.png)
 
 * use `wordpress` DB and see all tables:
+  
   ![img](https://i.imgur.com/SMOtGmz.png)
 
 * let's read the `user tables`:
+  
   ![img](https://i.imgur.com/gbw4kx3.png)
 
 * read the flag:
+  
   ![img](https://i.imgur.com/6oaqpYk.png)
   
 ### 2.8: Based on the results of #7, What is the password in plaint text?
 
 * save the hash in your machine
 * run John:
+  
   ![img](https://i.imgur.com/gemkNe3.png)
 
 ### 2.9: Compromise the machine and locate flag.txt
@@ -229,15 +233,19 @@ php -S IP 80
 * seems we can't edit `themes`
 * let's try with `plugins`
 * we can edit `plugins`:
+  
   ![img](https://i.imgur.com/po7TwWx.png)
 
 * let's call that page and get the backdoor call:
+  
   ![img](https://i.imgur.com/Y3aLJo9.png)
 
 * find the `flag.txt`
+  
   ![img](https://i.imgur.com/K26N7sZ.png)
 
 * read the file:
+  
   ![img](https://i.imgur.com/IXLTBTw.png)
 
 
