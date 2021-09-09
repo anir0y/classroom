@@ -237,7 +237,7 @@ Least Possible Hashs:
 <li>
 <p>we will be using <code>hashcat</code> to crack the password! first let&rsquo;s find the <a href="https://hashcat.net/wiki/doku.php?id=example_hashes">mode</a>. we&rsquo;re looking for <code>SHA-512</code>
 We can see that the code for SHA-512 is 1700 which we can use to crack the hash but apparently this does not work. Now, if we recall then in the SSH backdoor code, there was a hardcoded salt involved. We need to add this salt value to the hash as:</p>
-<pre><code>&lt;hash_value&gt;:&lt;salt&gt;
+<pre tabindex=0><code>&lt;hash_value&gt;:&lt;salt&gt;
 </code></pre></li>
 <li>
 <p>visit the <code>github</code> website again and copy the hash! then run this:</p>

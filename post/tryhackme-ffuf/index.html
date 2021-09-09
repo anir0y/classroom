@@ -289,7 +289,7 @@ server-status           <span style=color:#f92672>[</span>Status: 403, Size: 292
 <p>However, using a large generic wordlist containing irrelevant file extensions is not very efficient.</p>
 <p>Instead, we can usually assume <code>index.&lt;extension></code> is the default page on most websites so we can try common extensions for just the index page. With this method, we can usually determine what programming language or languages the site uses.</p>
 <p>For example, we can append the extension after index.</p>
-<pre><code>head /usr/share/seclists/Discovery/Web-Content/web-extensions.txt                                                            
+<pre tabindex=0><code>head /usr/share/seclists/Discovery/Web-Content/web-extensions.txt                                                            
 .asp
 .aspx
 .bat
@@ -658,7 +658,7 @@ dev                   <span style=color:#f92672>[</span>Status: 301, Size: 223, 
 </code></pre></div><hr>
 <h2 id=task-08-reviewing-the-options>Task 08: Reviewing the options</h2>
 <p>As you start to use ffuf more, some options will prove to be very useful depending on your situation. For example, <code>-ic</code> allows you to ignore comments in wordlists that such as headers, copyright notes, comments, etc</p>
-<pre><code class=language-powrshell data-lang=powrshell>$ head /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt                                                            
+<pre tabindex=0><code class=language-powrshell data-lang=powrshell>$ head /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt                                                            
 # directory-list-2.3-medium.txt
 #
 # Copyright 2007 James Fisher

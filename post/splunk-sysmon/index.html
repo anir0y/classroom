@@ -85,9 +85,9 @@ Thursday, Mar 11, 2021
 </header>
 <article class=main><h1 id=configure-your-splunk-universal-forwarder-to-send-sysmon-logs-to-splunk>Configure your Splunk Universal forwarder to send Sysmon logs to Splunk</h1>
 <p>Okay locate your input.conf file and edit with your favorite text editor. It should be located somewhere similar to this</p>
-<pre><code>C:\Program Files\SplunkUniversalForwarder\etc\apps\SplunkUniversalForwarder\local\inputs.conf
+<pre tabindex=0><code>C:\Program Files\SplunkUniversalForwarder\etc\apps\SplunkUniversalForwarder\local\inputs.conf
 </code></pre><p>and add the following</p>
-<pre><code>[WinEventLog://Microsoft-Windows-Sysmon/Operational]
+<pre tabindex=0><code>[WinEventLog://Microsoft-Windows-Sysmon/Operational]
 checkpointInterval = 5
 current_only = 0
 disabled = 0

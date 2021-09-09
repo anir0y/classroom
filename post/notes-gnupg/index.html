@@ -122,11 +122,11 @@ Tuesday, Apr 13, 2021
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get update
 sudo apt-get install gnupg
 </code></pre></div><p>On CentOS, you can install GPG by typing:</p>
-<pre><code>sudo yum install gnupg2
+<pre tabindex=0><code>sudo yum install gnupg2
 </code></pre><p>To begin using GPG to encrypt your communications, you need to create a key pair. You can do this by issuing the following command:</p>
-<pre><code>gpg --gen-key
+<pre tabindex=0><code>gpg --gen-key
 </code></pre><p>This will take you through a few questions that will configure your keys:</p>
-<pre><code>Please select what kind of key you want: (1) RSA and RSA (default)
+<pre tabindex=0><code>Please select what kind of key you want: (1) RSA and RSA (default)
 
 What keysize do you want? 4096
 Key is valid for? 1y (expires after 1 year. If you are just testing, you may want to create a short-lived key the first time by using a number like “3” instead.)
@@ -140,10 +140,10 @@ Enter passphrase: Enter a secure passphrase here (upper &amp; lower case, digits
 <h2 id=create-a-revocation-certificate>Create a Revocation Certificate</h2>
 <p>You need to have a way of invalidating your key pair in case there is a security breach or in case you lose your secret key. There is an easy way of doing this with the GPG software.</p>
 <p>This should be done as soon as you make the key pair, not when you need it. This revocation key must be generated ahead of time and kept in a secure, separate location in case your computer is compromised or inoperable. To generate a revocation key, type:</p>
-<pre><code>gpg --output ~/revocation.crt --gen-revoke your_email@address.com
+<pre tabindex=0><code>gpg --output ~/revocation.crt --gen-revoke your_email@address.com
 </code></pre><p>You will be asked to confirm the revocation key creation and then prompted for the reason that it is being revoked. This information will be visible to other users if the revocation is used in the future. You can choose any of the available options, but since this is being done ahead of time, you won’t have the specifics. Often, it is a good idea to create a revocation certificate for each of the likely scenarios for maximum flexibility.</p>
 <p>Afterwards, you will then be asked to supply a comment and finally, to confirm the selections. Before creating the revocation certificate, you will need to enter your GPG key’s passphrase to confirm your identity. The revocation certificate will be written to the file specified by the &ndash;output flag (revocation.crt in our example):</p>
-<pre><code>Output
+<pre tabindex=0><code>Output
 Revocation certificate created.
 
 Please move it to a medium which you can hide away; if Mallory gets
@@ -151,7 +151,7 @@ access to this certificate he can use it to make your key unusable.
 It is smart to print this certificate and store it away, just in case
 your media become unreadable.  But have some caution:  The print system of your machine might store the data and make it available to others!
 </code></pre><p>You should immediately restrict the permissions on the generated certificate file in order to prevent unauthorized access:</p>
-<pre><code>chmod 600 ~/revocation.crt
+<pre tabindex=0><code>chmod 600 ~/revocation.crt
 </code></pre><p>The revocation certificate must be kept secure so that other users cannot revoke your key. As the message states, you should consider backing the certificate up to other machines and printing it out, as long as you can secure it properly.</p>
 <h2 id=how-to-import-other-users-public-keys>How To Import Other Users’ Public Keys</h2>
 <p>GPG would be pretty useless if you could not accept other public keys from people you wished to communicate with.</p>
@@ -170,7 +170,7 @@ your media become unreadable.  But have some caution:  The print system of your 
 <p>But there are many other circumstances where such personal contact is not possible. You may not know the other party personally, or you may be separated by physical distance. If you never want to communicate over insecure channels, verification of the public key could be problematic.</p>
 <p>Luckily, instead of verifying the entire public keys of both parties, you can simply compare the “fingerprint” derived from these keys. This will give you a reasonable assurance that you both are using the same public key information.</p>
 <p>You can get the fingerprint of a public key by typing:</p>
-<pre><code>gpg --fingerprint your_email@address.com
+<pre tabindex=0><code>gpg --fingerprint your_email@address.com
 </code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Output
 pub   4096R/311B1F84 2013-10-04
       Key fingerprint <span style=color:#f92672>=</span> CB9E C70F <span style=color:#ae81ff>2421</span> AF06 7D72  F980 <span style=color:#ae81ff>8287</span> 6A15 311B 1F84
@@ -186,14 +186,14 @@ sub   4096R/8822A56A 2021-13-04
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg --output ~/signed.key --export --armor email@example.com
 </code></pre></div><p>You’ll have to type in your passphrase again. Afterwards, their public key, signed by you, will be displayed. Send them this, so that they can benefit from gaining your “stamp of approval” when interacting with others.</p>
 <p>When they receive this new, signed key, they can import it, adding the signing information you’ve generated into their GPG database. They can do this by typing:</p>
-<pre><code>gpg --import ~/signed.key
+<pre tabindex=0><code>gpg --import ~/signed.key
 </code></pre><p>They can now demonstrate to other people that you trust that their identity is correct.</p>
 <h2 id=how-to-make-your-public-key-highly-available>How To Make Your Public Key Highly Available</h2>
 <p>Because of the way that public key encryption is designed, there is not anything malicious that can happen if unknown people have your public key.</p>
 <p>With this in mind, it may be beneficial to make your public key publicly available. People can then find your information to send you messages securely from your very first interaction.</p>
 <p>You can send anyone your public key by requesting it from the GPG system:</p>
-<pre><code>gpg --output ~/mygpg.key --armor --export your_email@address.com
-</code></pre><pre><code>Output
+<pre tabindex=0><code>gpg --output ~/mygpg.key --armor --export your_email@address.com
+</code></pre><pre tabindex=0><code>Output
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
@@ -207,9 +207,9 @@ u1Xe1lxzSt7Cegum4S/YuxmYoh462oGZ7FA4Cr2lvAPVpO9zmgQ8JITXiqYg2wB3
 </code></pre><p>You can then send this file to the other party over an appropriate medium.</p>
 <p>If you want to publish your key to a key server, you can do it manually through the forms available on most of the server sites.</p>
 <p>Another option is to do this through the GPG interface. Look up your key ID by typing:</p>
-<pre><code>gpg --list-keys your_email@address.com
+<pre tabindex=0><code>gpg --list-keys your_email@address.com
 </code></pre><p>The highlighted portion in the output below is the key ID (look for the pub along the left-hand column if you’re uncertain about which one to use). It is a short way to reference the key to the internal software.</p>
-<pre><code>Output
+<pre tabindex=0><code>Output
 pub   4096R/311B1F84 2013-10-04
 uid                  Test User &lt;test.user@address.com&gt;
 sub   4096R/8822A56A 2013-10-04
@@ -221,25 +221,25 @@ gpg --send-keys --keyserver keyserver.ububtu.com key_id
 You can easily encrypt and decrypt messages after you have shared your keys with the other party.</p>
 <p>Encrypt Messages
 You can encrypt messages using the “–encrypt” flag for GPG. The basic syntax would be:</p>
-<pre><code>gpg --encrypt --sign --armor -r person@email.com name_of_file
+<pre tabindex=0><code>gpg --encrypt --sign --armor -r person@email.com name_of_file
 </code></pre><p>This encrypts the message using the recipient’s public key, signs it with your own private key to guarantee that it is coming from you, and outputs the message in a text format instead of raw bytes. The filename will be the same as the input filename, but with an .asc extension.</p>
 <p>You should include a second “-r” recipient with your own email address if you want to be able to read the encrypted message. This is because the message will be encrypted with each person’s public key, and will only be able to be decrypted with the associated private key.</p>
 <p>So if it was only encrypted with the other party’s public key, you would not be able to view the message again, unless you somehow obtained their private key. Adding yourself as a second recipient encrypts the message two separate times, one for each recipient.</p>
 <h2 id=decrypt-messages>Decrypt Messages</h2>
 <p>When you receive a message, simply call GPG on the message file:</p>
-<pre><code>gpg file_name.asc
+<pre tabindex=0><code>gpg file_name.asc
 </code></pre><p>The software will prompt you as necessary.</p>
 <p>If instead of a file, you have the message as a raw text stream, you can copy and paste it after typing gpg without any arguments. You can press “CTRL-D” to signify the end of the message and GPG will decrypt it for you.</p>
 <h2 id=key-maintenance>Key Maintenance</h2>
 <p>There are a number of procedures that you may need to use on a regular basis to manage your key database.</p>
 <p>To list your available GPG keys that you have from other people, you can issue this command:</p>
-<pre><code>gpg --list-keys
+<pre tabindex=0><code>gpg --list-keys
 </code></pre><p>Your key information can become outdated if you are relying on information pulled from public key servers. You do not want to be relying on revoked keys, because that would mean you are trusting potentially compromised keys.</p>
 <p>You can update the key information by issuing:</p>
-<pre><code>gpg --refresh-keys
+<pre tabindex=0><code>gpg --refresh-keys
 </code></pre><p>This will fetch new information from the key servers.</p>
 <p>You can pull information from a specific key server by using:</p>
-<pre><code>gpg --keyserver key_server --refresh-keys
+<pre tabindex=0><code>gpg --keyserver key_server --refresh-keys
 </code></pre><p>You may receive error messages if any of your keys cannot be found on the key server.</p>
 <h2 id=conclusion>Conclusion</h2>
 <p>Using GPG correctly can help you secure your communications with different people. This is extremely helpful, especially when dealing with sensitive information, but also when dealing with regular, everyday messaging.</p>

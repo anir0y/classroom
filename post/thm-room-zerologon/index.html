@@ -257,7 +257,7 @@ MAX_ATTEMPTS <span style=color:#f92672>=</span> <span style=color:#ae81ff>2000</
    <span style=color:#f92672>[</span>out<span style=color:#f92672>]</span> PNETLOGON_CREDENTIAL ServerChallenge
  <span style=color:#f92672>)</span>;
 </code></pre></div><p>Lines 8 sets up a try except (we&rsquo;ll see the rest of that in the next few lines), but in line 9 is where we actually attempt to exploit the Zero Logon vulnerability, this would be Figure 1, Step 3. This section requires a fair bit more information, per the Microsoft Documentation for NetrServerAuthenticate3, the following is required:</p>
-<pre><code>NTSTATUS NetrServerAuthenticate3(
+<pre tabindex=0><code>NTSTATUS NetrServerAuthenticate3(
    [in, unique, string] LOGONSRV_HANDLE PrimaryName,
    [in, string] wchar_t* AccountName,
    [in] NETLOGON_SECURE_CHANNEL_TYPE SecureChannelType,
