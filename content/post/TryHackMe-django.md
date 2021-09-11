@@ -6,6 +6,7 @@ author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
 cover: /img/Django.gif # for tryhackMe
+simg: /img/Django.gif 
 
 categories:
   - TryHackMe

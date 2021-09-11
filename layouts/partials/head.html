@@ -11,7 +11,21 @@
 <!-- Site Author & Description -->
 <meta name="author" content="{{ .Site.Params.author }}"  />
 <meta name="description" content="{{ .Description | plainify }}" />
-<!--tart-->
+
+<!--CUSTOM HEADER-->
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<!-- FB -->
+<meta property="og:image" content="{{ .Params.simg }}" >
+<!-- Twitter -->
+<meta property="twitter:image" content="{{ .Params.simg }}">
+<!--END-->
+
+<!--start-->
 <script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <!--End-->

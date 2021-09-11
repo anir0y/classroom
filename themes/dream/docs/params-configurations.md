@@ -18,11 +18,11 @@
 
   images = [""]
 
-  author = "g1eny0ung"
-  description = "g1eny0ung 的生活记录～"
+  author = "anir0y"
+  description = "anir0y "
   avatar = "/me/yy.jpg"
-  headerTitle = "g1eny0ung 的博客"
-  motto = "与其感慨路难行，不如马上出发。"
+  headerTitle = "anir0y "
+  motto = ""
   # categoriesLimitInHeader = 6 # deprecated
   # headerBottomText = "" # deprecated
 
@@ -30,21 +30,21 @@
 
   rss = true
 
-  utterancesRepo = "g1eny0ung/g1eny0ung.github.io"
+  utterancesRepo = "anir0y/anir0y.github.io"
 
   # valine = true
   # LEANCLOUD_APP_ID = ""
   # LEANCLOUD_APP_KEY = ""
 
   email = "g1enyy0ung@gmail.com"
-  twitter = "g1eny0ung"
-  facebook = "g1eny0ung"
+  twitter = "anir0y"
+  facebook = "anir0y"
   instagram = "g1enyy0ung"
   # mastodon = ""
-  linkedin = "钺杨g1eny0ung"
-  github = "g1eny0ung"
-  stackoverflow = "5676489/g1eny0ung"
-  codepen = "g1eny0ung"
+  linkedin = "钺杨anir0y"
+  github = "anir0y"
+  stackoverflow = "5676489/anir0y"
+  codepen = "anir0y"
 
   siteStartYear = 2016
 
@@ -117,7 +117,7 @@ Set the inverted color in 404 page, usually use with dark `background` or `backg
 
 ### dark404Button = true
 
-> Note: after <https://github.com/g1eny0ung/hugo-theme-dream/commit/b07d6e22183bad58a8498429bc49fca77082533c>, this param is deprecated. If you are using the latest version of dream, you can safely ignore this param.
+> Note: after <https://github.com/anir0y/hugo-theme-dream/commit/b07d6e22183bad58a8498429bc49fca77082533c>, this param is deprecated. If you are using the latest version of dream, you can safely ignore this param.
 
 Set the dark button in 404 page, usually use with dark `background` or `backgroundImage`.
 
@@ -125,25 +125,25 @@ Set the dark button in 404 page, usually use with dark `background` or `backgrou
 
 See <https://gohugo.io/templates/internal/#open-graph>.
 
-### author = "g1eny0ung"
+### author = "anir0y"
 
 The author field will be used as:
 
-- `<meta name="author" content="g1eny0ung" />`
+- `<meta name="author" content="anir0y" />`
 - Header
 - Post Summary
 
-### description = "g1eny0ung 的生活记录～"
+### description = "anir0y 的生活记录～"
 
 The description field will be used as:
 
-- `<meta name="description" content="g1eny0ung 的生活记录～" />`
+- `<meta name="description" content="anir0y 的生活记录～" />`
 
 ### avatar = "/me/yy.jpg"
 
 Used in Header.
 
-### headerTitle = "g1eny0ung 的博客"
+### headerTitle = "anir0y 的博客"
 
 Dream was originally intended to be used only as a blog theme. But with continuous development, people also use Dream in other places.
 
@@ -175,7 +175,7 @@ Add text at the bottom of the footer, support html. This is usually used as a de
 
 Enable RSS.
 
-### utterancesRepo = "g1eny0ung/g1eny0ung.github.io"
+### utterancesRepo = "anir0y/anir0y.github.io"
 
 Utterances is a lightweight comments widget built on GitHub Issues. By setting `utterancesRepo`, you can use it on every post page.
 
@@ -198,14 +198,14 @@ View <https://valine.js.org/en/quickstart> to get more details.
 ### Social Links
 
 `email = "g1enyy0ung@gmail.com"`<br />
-`twitter = "g1eny0ung"`<br />
-`facebook = "g1eny0ung"`<br />
+`twitter = "anir0y"`<br />
+`facebook = "anir0y"`<br />
 `instagram = "g1enyy0ung"`<br />
 `# mastodon = ""`<br />
-`linkedin = "钺杨g1eny0ung"`<br />
-`github = "g1eny0ung"`<br />
-`stackoverflow = "5676489/g1eny0ung"`<br />
-`codepen = "g1eny0ung"`
+`linkedin = "钺杨anir0y"`<br />
+`github = "anir0y"`<br />
+`stackoverflow = "5676489/anir0y"`<br />
+`codepen = "anir0y"`
 
 All of these social links will be showed on about page `layouts/partials/back.html` and header `layouts/partials/header.html`.
 
