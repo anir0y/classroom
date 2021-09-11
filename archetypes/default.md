@@ -5,8 +5,8 @@ lastmod: {{ .Date }}
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/blog.png
-#cover: /img/thm.gif # for tryhackMe
+cover: /img/thm.gif # for tryhackMe
+simg: /img/blog.png
 
 categories:
   - TryHackMe
@@ -16,7 +16,7 @@ tags:
   - thm
 
 draft: true
-description: TryHackMe Room {replace} solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room {ROOM_NAME} solved by Animesh Roy. this is a walkthough. read more...
 
 ---
 
@@ -26,7 +26,7 @@ description: TryHackMe Room {replace} solved by Animesh Roy. this is a walkthoug
 |---|---|
 | <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
 |ROOM_NAME|![logo](http)|
-| <b> Room [Subscription Required] </b>| [ROOM_NAME]()|
+| <b> ROOM_NAME [Subscription Required] </b>| [ROOM_NAME]()|
 
 
 ---
