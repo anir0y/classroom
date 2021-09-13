@@ -1,17 +1,16 @@
 <!doctype html><html lang=en>
 <head>
-<meta name=generator content="Hugo 0.88.1">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>Home | Classroom</title>
+<title>TryHackMe | Classroom</title>
 <link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
 <meta name=author content="Animesh Roy">
 <meta name=description content>
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:url" content="https://classroom.anir0y.in/categories/tryhackme/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/">
+<meta property="twitter:url" content="https://classroom.anir0y.in/categories/tryhackme/">
 <meta property="og:image" content="https://classroom.anir0y.in">
 <meta property="twitter:image" content="https://classroom.anir0y.in">
 <script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
@@ -19,13 +18,13 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script>
 <script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script>
-<link rel=canonical href=https://classroom.anir0y.in/>
-<meta property="og:title" content="Classroom">
+<link rel=canonical href=https://classroom.anir0y.in/categories/tryhackme/>
+<meta property="og:title" content="TryHackMe">
 <meta property="og:description" content>
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:url" content="https://classroom.anir0y.in/categories/tryhackme/">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Classroom">
+<meta name=twitter:title content="TryHackMe">
 <meta name=twitter:description content>
 <link rel=stylesheet href=/css/semantic.min.css>
 <link rel=stylesheet href=/css/icomoon.css>
@@ -287,255 +286,25 @@ wireshark
 <div class="ui relaxed grid dream-grid">
 <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
 <article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/tryhackme-rrootme/>
-<img src=/img/thm.gif alt="TryHackMe RootMe">
+<a class=image href=https://classroom.anir0y.in/post/thm-room-zerologon/>
+<img src=/img/thm.gif alt="Try Hack ME Room Zerologon">
 </a>
 <div class=content>
 <h2 class="ui medium header">
-<a href=/post/tryhackme-rrootme/>TryHackMe RootMe</a>
+<a href=/post/thm-room-zerologon/>Try Hack ME Room Zerologon</a>
 </h2>
 <div class=meta>
-<p class=date>Tuesday, Jul 6, 2021</p>
+<p class=date>Monday, May 10, 2021</p>
 </div>
 <div class=description>
-RootMe Task 01: Deploy the Room Task 02: Reconnaissance 2.1 Scan the machine, how many ports are open?
-run the command: nmap -sC -sV -oN nmap MACHINE_IP
-2.2 What version of Apache is running?
-Ans is in task 2.1 output result. use cat nmap to see the output file.
-2.3 Find directories on the web server using the GoBuster tool.
-gobuster dir -u 10.10.71.82 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-2.4 What is the hidden directory?
+Zero Logon - The Zero Day Angle Room Subscription Only About The vulnerability - On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.
+Zero Logon is a purely statistics based attack that abuses a feature within MS-NRPC (Microsoft NetLogon Remote Protocol), MS-NRPC is a critical authentication component of Active Directory that handles authentication for User and Machine accounts.
 </div>
 </div>
 <div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
+<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://anir0y.in target=_blank>Animesh Roy</a></div>
 <div class=reading-time>
-<i class="clock icon"></i>3 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/>
-<img src=/img/thm.gif alt="TryHackMe Gitandcrumpets">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/tryhackme-gitandcrumpets/>TryHackMe Gitandcrumpets</a>
-</h2>
-<div class=meta>
-<p class=date>Sunday, Jul 4, 2021</p>
-</div>
-<div class=description>
-Git and Crumpets Our devs have been clamoring for some centralized version control, so the admin came through. Rumour has it that they included a few countermeasures&mldr;
-Task 01: Start the VM Task 02: Git the flags user I tried running nmap, no luck
-being impatatient, I ran a quick curl commnad curl -s 10.10.x.y to see what&rsquo;s up.
-got this output.
-let&rsquo;s setup DNS record, edit /etc/hosts file.
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>3 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/tryhackme-postexploit/>
-<img src=/img/thm.gif alt="TryHackMe Postexploit">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/tryhackme-postexploit/>TryHackMe Postexploit</a>
-</h2>
-<div class=meta>
-<p class=date>Sunday, Jul 4, 2021</p>
-</div>
-<div class=description>
-Post-Exploitation Basics Learn the basics of post-exploitation and maintaining access with mimikatz, bloodhound, powerview and msfvenom
-Task 01: Introduction This room will be related to very real world applications and will most likely not help with any ctfs however this room will give you great starting knowledge of how to approach a network after you have gained a shell on a machine.
-Task 02: Enumeration w/ Powerview Powerview is a powerful powershell script from powershell empire that can be used for enumerating a domain after you have already gained a shell in the system.
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>5 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/tryhackme-hydra/>
-<img src=/img/thm.gif alt="TryHackMe Hydra">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/tryhackme-hydra/>TryHackMe Hydra</a>
-</h2>
-<div class=meta>
-<p class=date>Saturday, Jul 3, 2021</p>
-</div>
-<div class=description>
-Hydra Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website&rsquo;s credentials.
-Task 01: Hydra Introduction Hydra is a brute force online password cracking program; a quick system login password &lsquo;hacking&rsquo; tool.
-Installing Hydra If you&rsquo;re using Kali Linux, hydra is pre-installed. Otherwise you can download it here: https://github.com/vanhauser-thc/thc-hydra
-Task 02: Using Hydra Hydra Commands The options we pass into Hydra depends on which service (protocol) we&rsquo;re attacking.
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>3 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/pip2-install/>
-<img src=/img/blog.png alt="python pip2 Install">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/pip2-install/>python pip2 Install</a>
-</h2>
-<div class=meta>
-<p class=date>Saturday, Jul 3, 2021</p>
-</div>
-<div class=description>
-PIP 2 installation in last few weeks I&rsquo;ve seen people are asking for how to install pip2 in latest Kali linux, here is the answer. once installation is done, you can find it as pip2 and then you can use it to install pip2 i.e. python 2.7 modules.
-how to? download the script and run here is how:
-wget https://gist.githubusercontent.com/anir0y/a20246e26dcb2ebf1b44a0e1d989f5d1/raw/a9908e5dd147f0b6eb71ec51f9845fafe7fb8a7f/pip2%2520install -O run.sh chmod +x run.sh #wget will save the output as run.
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>1 minute read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/thm-room-ice/>
-<img src=/img/thm.gif alt="TryHackMe Room Ice">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/thm-room-ice/>TryHackMe Room Ice</a>
-</h2>
-<div class=meta>
-<p class=date>Tuesday, Jun 29, 2021</p>
-</div>
-<div class=description>
-ICE Deploy & hack into a Windows machine, exploiting a very poorly secured media server.
-task 01: Connect Nothing to do just follow the instructions.
-Task 02: Recon Things you should know https://nmap.org/book/synscan.html https://nmap.org/book/man-port-scanning-techniques.html for this lab: nmap -sS -p- TARGET_IP
-task 2.1 Deploy the machine! This may take up to three minutes to start.
-Task 2.2 Launch a scan against our target machine, I recommend using a SYN scan set to scan all ports on the machine.
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>10 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/thm-room-hackpark/>
-<img src=/img/thm.gif alt="TryHackMe Room Hackpark">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/thm-room-hackpark/>TryHackMe Room Hackpark</a>
-</h2>
-<div class=meta>
-<p class=date>Saturday, Jun 19, 2021</p>
-</div>
-<div class=description>
-HackPark Room link : HackPark
-task 01: Deploy the vulnerable Windows machine This room will cover brute-forcing an accounts credentials, handling public exploits, using the Metasploit framework and privilege escalation on Windows.
-Flags Flag-ID question 1 Deploy the machine and access its web server. 2 Whats the name of the clown displayed on the homepage? download the img and do a reverse Image search ans is PENNYWISE task 02: Using Hydra to brute-force a login 1 : find the directory using gobuster
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>5 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/thm-room-kenobi/>
-<img src=/img/thm.gif alt="TryHackME Room Kenobi">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/thm-room-kenobi/>TryHackME Room Kenobi</a>
-</h2>
-<div class=meta>
-<p class=date>Thursday, Jun 10, 2021</p>
-</div>
-<div class=description>
-kenobi Task 01 : Deploy the vulnerable machine Flag-ID question 1 Make sure you&rsquo;re connected to our network and deploy the machine 2 Scan the machine with nmap, how many ports are open? Task 02: Enumerating Samba for shares cheat sheet nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse [IP] smbclient //&lt;ip>/anonymous smbget -R smb://&lt;ip>/anonymous #recursive download files nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>2 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/thm-room-vulnversity/>
-<img src=/img/thm.gif alt="TryHackMe Room Vulnversity">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/thm-room-vulnversity/>TryHackMe Room Vulnversity</a>
-</h2>
-<div class=meta>
-<p class=date>Wednesday, Jun 9, 2021</p>
-</div>
-<div class=description>
-Vulnversity TASK 01: Deploy the machine TASK 02: Reconnaissance Tools
-Nmap CheatSheet Flags Flag ID Questions 1 There are many nmap &ldquo;cheatsheets&rdquo; online that you can use too. N\A 2 Scan the box, how many ports are open? 3 What version of the squid proxy is running on the machine?
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>5 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/thm-room-webfundamentals/>
-<img src=/img/thm.gif alt="Thm Room Web Fundamentals">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/thm-room-webfundamentals/>Thm Room Web Fundamentals</a>
-</h2>
-<div class=meta>
-<p class=date>Tuesday, Jun 8, 2021</p>
-</div>
-<div class=description>
-Web Fundamentals Task 01: Introduction and objectives Flags 1: n/a Task 02: How do we load websites? Flags 2 Flag ID Questions Ans 1 What request verb is used to retrieve page content? GET 2 What port do web servers normally listen on? 80 3 What&rsquo;s responsible for making websites look fancy? CSS Task 03: More HTTP - Verbs and request formats HTTP response status codes
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>2 minutes read</div>
+<i class="clock icon"></i>18 minutes read</div>
 </div>
 </article>
 </div>
@@ -543,17 +312,8 @@ Web Fundamentals Task 01: Introduction and objectives Flags 1: n/a Task 02: How 
 <article class="ui center aligned attached segment card dream-card">
 <div class=content>
 <div class="ui medium header">
-<a href=/page/3/ title="Previous page">
+<a href=/categories/tryhackme/page/5/ title="Previous page">
 Previous page
-</a>
-</div>
-</div>
-</article>
-<article class="ui center aligned attached segment card dream-card">
-<div class=content>
-<div class="ui medium header">
-<a href=/page/5/ title="Next page">
-Next page
 </a>
 </div>
 </div>
