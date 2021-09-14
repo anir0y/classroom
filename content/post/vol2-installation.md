@@ -66,6 +66,20 @@ pip2 install pycrypto
 pip2 install distorm3
 ```
 
+<!-- Google Ads -->
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3526678290068011"
+     data-ad-slot="7160066188"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+
 ## If you’re using it temporarily, you can simply clone the repo and run vol.py. Otherwise, you can run the python installer:
 
 ```bash
