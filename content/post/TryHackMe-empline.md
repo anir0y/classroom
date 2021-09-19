@@ -15,7 +15,7 @@ tags:
   - rooms
   - thm
 
-draft: true
+draft: false
 description: TryHackMe Room {Empline} solved by Animesh Roy. this is a walkthough. read more...
 
 ---
