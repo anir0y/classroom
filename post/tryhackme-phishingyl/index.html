@@ -1,0 +1,849 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Try Hack Me Phishing | Classroom</title>
+<link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
+<meta name=author content="Animesh Roy">
+<meta name=description content="TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more...">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-phishingyl/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-phishingyl/">
+<meta property="og:image" content="https://classroom.anir0y.in/img/phishing.png">
+<meta property="twitter:image" content="https://classroom.anir0y.in/img/phishing.png">
+<script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script>
+<script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script>
+<link rel=canonical href=https://classroom.anir0y.in/post/tryhackme-phishingyl/>
+<meta property="og:title" content="Try Hack Me Phishing">
+<meta property="og:description" content="TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more...">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-phishingyl/"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-11-16T18:51:09+05:30">
+<meta property="article:modified_time" content="2021-11-16T18:51:09+05:30">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Try Hack Me Phishing">
+<meta name=twitter:description content="TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more...">
+<link rel=stylesheet href=/css/semantic.min.css>
+<link rel=stylesheet href=/css/icomoon.css>
+<link rel=stylesheet href=/css/OverlayScrollbars.min.css>
+<link rel=stylesheet href=/css/github-markdown.css>
+<link rel=stylesheet href=/css/site.css>
+<link rel=stylesheet href=/css/custom.css>
+<style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style>
+<link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css>
+<link rel=stylesheet href=/css/custom.css>
+</head>
+<body class=default>
+<nav class="ui secondary menu dream-menu">
+<div class=item>
+<i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+</div>
+<div class=item>
+<i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i>
+</div>
+<div class=item>
+<i class="large link icon theme-switch" onclick=themeSwitch()></i>
+</div>
+<div class=item>
+<i class="large link search icon" onclick=toggleSearch()></i>
+</div>
+</nav>
+<div class=flip-container>
+<div class=flipper>
+<section class=front>
+<div class=dream-max-width>
+<div class="ui relaxed grid dream-grid dream-grid-single" style=flex-direction:row-reverse>
+<aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+<div class="ui segment toc">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#overview>OverView</a></li>
+<li><a href=#task-01-brief>Task 01: Brief</a></li>
+<li><a href=#task-02--intro-to-phishing-attacks>Task 02: Intro To Phishing Attacks</a>
+<ul>
+<li><a href=#answer-the-questions-below>Answer the questions below</a></li>
+</ul>
+</li>
+<li><a href=#task-03-writing-convincing-phishing-emails>TASK 03: Writing Convincing Phishing Emails</a>
+<ul>
+<li><a href=#3-answer-the-questions-below>3 Answer the questions below</a></li>
+</ul>
+</li>
+<li><a href=#task-04-phishing-infrastructure>TASK 04: Phishing Infrastructure</a>
+<ul>
+<li><a href=#4-answer-the-questions-below>4 Answer the questions below</a></li>
+</ul>
+</li>
+<li><a href=#task-05-using-gophish>TASK 05: Using GoPhish</a>
+<ul>
+<li><a href=#5-answer-the-questions-below>5 Answer the questions below</a></li>
+</ul>
+</li>
+<li><a href=#task-06-droppers>TASK 06: Droppers</a>
+<ul>
+<li><a href=#6-answer-the-questions-below>6 Answer the questions below</a></li>
+</ul>
+</li>
+<li><a href=#task-07-choosing-a-phishing-domain>TASK 07: Choosing A Phishing Domain</a>
+<ul>
+<li><a href=#7-answer-the-questions-below>7 Answer the questions below</a></li>
+</ul>
+</li>
+<li><a href=#task-08---using-ms-office-in-phishing>Task 08 : Using MS Office In Phishing</a>
+<ul>
+<li><a href=#8-answer-the-questions-below>8 Answer the questions below</a></li>
+</ul>
+</li>
+<li><a href=#task-09-using-browser-exploits>TASK 09: Using Browser Exploits</a>
+<ul>
+<li><a href=#9-answer-the-questions-below>9 Answer the questions below</a></li>
+</ul>
+</li>
+<li><a href=#task-10-phishing-practical>TASK 10: Phishing Practical</a>
+<ul>
+<li><a href=#10-answer-the-questions-below>10 Answer the questions below</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div class="ui segment actions">
+<button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
+<i class="save icon"></i>
+</button>
+<a href="https://twitter.com/intent/tweet?text=Try%20Hack%20Me%20Phishing&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-phishingyl%2f" class="ui circular twitter icon button">
+<i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-phishingyl%2f" class="ui circular facebook icon button">
+<i class="facebook icon"></i>
+</a>
+</div>
+</aside>
+<div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img>
+<section class="ui top attached segment">
+<header>
+<h1 class="ui large header">Try Hack Me Phishing<div class="sub header">
+@
+<a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a>
+|
+Tuesday, Nov 16, 2021
+| 16 minutes read
+| Update at
+Tuesday, Nov 16, 2021
+</div>
+</h1>
+</header>
+<article class=main><h2 id=overview>OverView</h2>
+<p>Learn what phishing is and why it&rsquo;s important to a red team engagement. You will set up phishing infrastructure, write a convincing phishing email and try to trick your target into opening your email in a real-world simulation.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><script src=https://tryhackme.com/badge/434937></script></td>
+<td><a class=twitter-follow-button href=https://twitter.com/anir0y data-size=large> Follow @anir0y<a></td>
+</tr>
+<tr>
+<td>Phishing</td>
+<td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/91fc6ef91a824bf0c1d830fbdfab96be.png alt=logo></td>
+</tr>
+<tr>
+<td><b> Phishing [Subscription Required] </b></td>
+<td><a href=https://tryhackme.com/room/phishingyl>Phishing</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id=task-01-brief>Task 01: Brief</h2>
+<p>This room will take you through what phishing is, how it&rsquo;s performed, some valuable tools and why it&rsquo;s an essential part of a Red Team engagement.</p>
+<h2 id=task-02--intro-to-phishing-attacks>Task 02: Intro To Phishing Attacks</h2>
+<p>Before you learn what phishing is, you&rsquo;ll need to understand the term social engineering. Social engineering is the psychological manipulation of people into performing or divulging information by exploiting weaknesses in human nature. These &ldquo;weaknesses&rdquo; can be curiosity, jealously, greed and even kindness and the willingness to help someone. Phishing is a source of social engineering delivered through email to trick someone into either revealing personal information, credentials or even executing malicious code on their computer.</p>
+<p>These emails will usually appear to come from a trusted source, whether that&rsquo;s a person or a business. They include content that tries to tempt or trick people into downloading software, opening attachments, or following links to a bogus website.</p>
+<p>A term you&rsquo;ll come across and the type of phishing campaign a red team would participate in is spear-phishing, as with throwing a physical spear; you&rsquo;d have a target to aim at, the same can be said with spear-phishing in that you&rsquo;re targeting an individual, business or organisation rather than just anybody as mass. This is an effective form of phishing for a red team engagement as they are bespoke to the target it makes them hard to detect by technology such as spam filters, antivirus and firewalls.</p>
+<p>A red team could be contracted to solely carry out a phishing assessment to see whether a business is vulnerable to this type of attack or can also be part of a broader scale assessment and used to gain access to computer systems or services.</p>
+<p>Some other methods of phishing through other mediums are smishing which is phishing through SMS messages, and vishing which is performed through phone calls.</p>
+<p>Example Scenario:</p>
+<p>The below example scenario shows how an employee of a company could be tricked into revealing their credentials.</p>
+<ol>
+<li>
+<p>The attacker locates the physical location of the target business.</p>
+</li>
+<li>
+<p>The attacker then looks for nearby food suppliers and discovers a company called Ultimate Cookies!</p>
+</li>
+<li>
+<p>The Attacker registers the domain name ultimate-cookies.thm</p>
+</li>
+<li>
+<p>The attacker then crafts an email to their target, tempting them with an offer of receiving some free cookies if they sign up to the website. Because the victim has heard of this local company, they are more likely to trust it.</p>
+</li>
+<li>
+<p>The victim then follows the link in the email to the fake website created by the attacker and registers online. To keep things simple, the victim reuses the same password for all their online accounts.</p>
+</li>
+<li>
+<p>The attacker now has the victim&rsquo;s email address and password and can log onto the victim&rsquo;s company email account. The attacker could now have access to private company information and also have somewhere to launch another phishing attack against other employees.</p>
+</li>
+</ol>
+<p><img src=/img/20896253d9efcc8ed2f72412dda8790f.png alt=img></p>
+<h3 id=answer-the-questions-below>Answer the questions below</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.1</td>
+<td>What type of psychological manipulation is phishing part of?</td>
+<td><code>social engineering</code></td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>What type of phishing campaign do red teams get involved in?</td>
+<td><code>spear-phishing</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h2 id=task-03-writing-convincing-phishing-emails>TASK 03: Writing Convincing Phishing Emails</h2>
+<p>We have three things to work with regarding phishing emails: the sender&rsquo;s email address, the subject and the content.</p>
+<p><strong>The Senders Address:</strong></p>
+<p>Ideally, the sender&rsquo;s address would be from a domain name that spoofs a significant brand, a known contact, or a coworker. See the Choosing A Phishing Domain task below for more information on this.</p>
+<p>To find what brands or people a victim interacts with, you can employ OSINT (Open Source Intelligence) tactics. For example:</p>
+<p>Observe their social media account for any brands or friends they talk to.
+Searching Google for the victim&rsquo;s name and rough location for any reviews the victim may have left about local businesses or brands.
+Looking at the victim&rsquo;s business website to find suppliers.
+Looking at LinkedIn to find coworkers of the victim.
+The Subject:</p>
+<p>You should set the subject to something quite urgent, worrying, or piques the victim&rsquo;s curiosity, so they do not ignore it and act on it quickly.</p>
+<p>Examples of this could be:</p>
+<ul>
+<li>Your account has been compromised.</li>
+<li>Your package has been dispatched/shipped.</li>
+<li>Staff payroll information (do not forward!)</li>
+<li>Your photos have been published.</li>
+</ul>
+<p><strong>The Content:</strong></p>
+<p>If impersonating a brand or supplier, it would be pertinent to research their standard email templates and branding (style, logo&rsquo;s images, signoffs etc.) and make your content look the same as theirs, so the victim doesn&rsquo;t expect anything. If impersonating a contact or coworker, it could be beneficial to contact them; first, they may have some branding in their template, have a particular email signature or even something small such as how they refer to themselves, for example, someone might have the name Dorothy and their email is <a href=mailto:dorothy@company.thm>dorothy@company.thm</a>. Still, in their signature, it might say &ldquo;Best Regards, Dot&rdquo;. Learning these somewhat small things can sometimes have quite dramatic psychological effects on the victim and convince them more to open and act on the email.</p>
+<p>If you&rsquo;ve set up a spoof website to harvest data or distribute malware, the links to this should be disguised using the anchor text and changing it either to some text which says &ldquo;Click Here&rdquo; or changing it to a correct looking link that reflects the business you are spoofing, for example:</p>
+<p><code>&lt;a href="http://spoofsite.thm">Click Here&lt;/a></code></p>
+<p><code>&lt;a href="http://spoofsite.thm">https://onlinebank.thm&lt;/a></code></p>
+<h3 id=3-answer-the-questions-below>3 Answer the questions below</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1</td>
+<td>What tactic can be used to find brands or people a victim interacts with?</td>
+<td><code>OSINT</code></td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>What should be changed on an HTML anchor tag to disguise a link?</td>
+<td><code>anchor text</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id=task-04-phishing-infrastructure>TASK 04: Phishing Infrastructure</h2>
+<p>A certain amount of infrastructure will need to be put in place to launch a successful phishing campaign.</p>
+<p><strong>Domain Name:</strong></p>
+<p>You&rsquo;ll need to register either an authentic-looking domain name or one that mimics the identity of another domain. See task 5 for details on how to create the perfect domain name.</p>
+<p><strong>SSL/TLS Certificates:</strong></p>
+<p>Creating SSL/TLS certificates for your chosen domain name will add an extra layer of authenticity to the attack.</p>
+<p><strong>Email Server/Account:</strong></p>
+<p>You&rsquo;ll need to either set up an email server or register with an SMTP email provider.</p>
+<p><strong>DNS Records:</strong></p>
+<p>Setting up DNS Records such as SPF, DKIM, DMARC will improve the deliverability of your emails and make sure they&rsquo;re getting into the inbox rather than the spam folder.</p>
+<p>**Web Server:
+**
+You&rsquo;ll need to set up webservers or purchase web hosting from a company to host your phishing websites. Adding SSL/TLS to the websites will give them an extra layer of authenticity.</p>
+<p><strong>Analytics:</strong></p>
+<p>When a phishing campaign is part of a red team engagement, keeping analytics information is more important. You&rsquo;ll need something to keep track of the emails that have been sent, opened or clicked. You&rsquo;ll also need to combine it with information from your phishing websites for which users have supplied personal information or downloaded software.</p>
+<p><strong>Automation And Useful Software:</strong></p>
+<p>Some of the above infrastructures can be quickly automated by using the below tools.</p>
+<p><strong>GoPhish - (Open-Source Phishing Framework)</strong> - getgophish.com</p>
+<p>GoPhish is a web-based framework to make setting up phishing campaigns more straightforward. GoPhish allows you to store your SMTP server settings for sending emails, has a web-based tool for creating email templates using a simple WYSIWYG (What You See Is What You Get) editor. You can also schedule when emails are sent and have an analytics dashboard that shows how many emails have been sent, opened or clicked.</p>
+<p>The Next task will talk you through how to launch a phishing campaign using this software.</p>
+<p><strong>SET - (Social Engineering Toolkit)</strong> - trustedsec.com</p>
+<p>The Social Engineering Toolkit contains a multitude of tools, but some of the important ones for phishing are the ability to create spear-phishing attacks and deploy fake versions of common websites to trick victims into entering their credentials.</p>
+<p><img src=/img/phish-2.png alt=img></p>
+<h3 id=4-answer-the-questions-below>4 Answer the questions below</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.1</td>
+<td>What part of a red team infrastructure can make a website look more authentic?</td>
+<td><code>ssl/tls certificate</code></td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>What protocol has TXT records that can improve email deliverability?</td>
+<td><code>DNS</code></td>
+</tr>
+<tr>
+<td>4.3</td>
+<td>What tool can automate a phishing campaign and include analytics?</td>
+<td><code>gophish</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id=task-05-using-gophish>TASK 05: Using GoPhish</h2>
+<p>This task will take you through setting up GoPhish, sending a phishing campaign and capturing user credentials from a spoof website.</p>
+<p>Firstly launch the virtual machine by clicking the green Start Machine button on the right; once loaded, click the following URL to open the GoPhish login page <a href=https://LAB_WEB_URL.p.thmlabs.com:8443>https://LAB_WEB_URL.p.thmlabs.com:8443</a> (if you receive an Nginx error, wait another 30 seconds and try again).</p>
+<p><img src=/img/06640644e0ff4b3f12fd96bce6c7a9ca.png alt=GoPhish class=center>></img></p>
+<p>You should be able to log in with the username: <code>admin</code> and password: <code>tryhackme</code></p>
+<p><strong>Sending Profiles:</strong></p>
+<p>Sending profiles are the connection details required to actually send your Phishing emails; this is just simply an SMTP server that you have access to. Click the Sending Profiles link on the left-hand menu and then click the &ldquo;New Profile&rdquo; button.</p>
+<p>Next, add in the following information as per the screenshot below:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Name: Local Server
+
+From: noreply@redteam.thm
+
+Host: 127.0.0.1:25
+</code></pre></div><p><img src=/img/2552180eb55c121e0268614de1fd522d.png alt=gophish-tryhackme class=center></img></p>
+<p>Then click Save Profile.</p>
+<p><strong>Landing Pages:</strong></p>
+<p>Next, we&rsquo;re going to set up the landing page; this is the website that the Phishing email is going to direct the victim to; this page is usually a spoof of a website the victim is familiar with.</p>
+<p>Click the Landing Pages link on the left-hand menu and then click the &ldquo;New Page&rdquo; button.</p>
+<p>Give the Landing Page the name ACME Login, next in the HTML box; you&rsquo;ll need to press the Source button to allow us to enter the HTML code as shown below:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;en&#34;</span>&gt;
+&lt;<span style=color:#f92672>head</span>&gt;
+    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style=color:#f92672>title</span>&gt;ACME IT SUPPORT - Admin Panel&lt;/<span style=color:#f92672>title</span>&gt;
+    &lt;<span style=color:#f92672>style</span>&gt;
+        <span style=color:#f92672>body</span> { <span style=color:#66d9ef>font-family</span>: <span style=color:#e6db74>&#34;Ubuntu&#34;</span>, <span style=color:#66d9ef>monospace</span>; <span style=color:#66d9ef>text-align</span>: <span style=color:#66d9ef>center</span> }
+        <span style=color:#f92672>div</span>.<span style=color:#a6e22e>login-form</span> { <span style=color:#66d9ef>margin</span>:<span style=color:#66d9ef>auto</span>; <span style=color:#66d9ef>width</span>:<span style=color:#ae81ff>300</span><span style=color:#66d9ef>px</span>; <span style=color:#66d9ef>border</span>:<span style=color:#ae81ff>1</span><span style=color:#66d9ef>px</span> <span style=color:#66d9ef>solid</span> <span style=color:#ae81ff>#ececec</span>; <span style=color:#66d9ef>padding</span>:<span style=color:#ae81ff>10</span><span style=color:#66d9ef>px</span>;<span style=color:#66d9ef>text-align</span>: <span style=color:#66d9ef>left</span>;<span style=color:#66d9ef>font-size</span>:<span style=color:#ae81ff>13</span><span style=color:#66d9ef>px</span>;}
+        <span style=color:#f92672>div</span>.<span style=color:#a6e22e>login-form</span> <span style=color:#f92672>div</span> <span style=color:#f92672>input</span> { <span style=color:#66d9ef>margin-bottom</span>:<span style=color:#ae81ff>7</span><span style=color:#66d9ef>px</span>;}
+        <span style=color:#f92672>div</span>.<span style=color:#a6e22e>login-form</span> <span style=color:#f92672>input</span> { <span style=color:#66d9ef>width</span>:<span style=color:#ae81ff>280</span><span style=color:#66d9ef>px</span>;}
+        <span style=color:#f92672>div</span>.<span style=color:#a6e22e>login-form</span> <span style=color:#f92672>div</span>:<span style=color:#a6e22e>last-child</span> { <span style=color:#66d9ef>text-align</span>: <span style=color:#66d9ef>center</span>; }
+        <span style=color:#f92672>div</span>.<span style=color:#a6e22e>login-form</span> <span style=color:#f92672>div</span>:<span style=color:#a6e22e>last-child</span> <span style=color:#f92672>input</span> { <span style=color:#66d9ef>width</span>:<span style=color:#ae81ff>100</span><span style=color:#66d9ef>px</span>;}
+    &lt;/<span style=color:#f92672>style</span>&gt;
+&lt;/<span style=color:#f92672>head</span>&gt;
+&lt;<span style=color:#f92672>body</span>&gt;
+    &lt;<span style=color:#f92672>h2</span>&gt;ACME IT SUPPORT&lt;/<span style=color:#f92672>h2</span>&gt;
+    &lt;<span style=color:#f92672>h3</span>&gt;Admin Panel&lt;/<span style=color:#f92672>h3</span>&gt;
+    &lt;<span style=color:#f92672>form</span> <span style=color:#a6e22e>method</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;post&#34;</span>&gt;
+        &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;login-form&#34;</span>&gt;
+            &lt;<span style=color:#f92672>div</span>&gt;Username:&lt;/<span style=color:#f92672>div</span>&gt;
+            &lt;<span style=color:#f92672>div</span>&gt;&lt;<span style=color:#f92672>input</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;username&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+            &lt;<span style=color:#f92672>div</span>&gt;Password:&lt;/<span style=color:#f92672>div</span>&gt;
+            &lt;<span style=color:#f92672>div</span>&gt;&lt;<span style=color:#f92672>input</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;password&#34;</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;password&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+            &lt;<span style=color:#f92672>div</span>&gt;&lt;<span style=color:#f92672>input</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;submit&#34;</span> <span style=color:#a6e22e>value</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Login&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+        &lt;/<span style=color:#f92672>div</span>&gt;
+    &lt;/<span style=color:#f92672>form</span>&gt;
+&lt;/<span style=color:#f92672>body</span>&gt;
+&lt;/<span style=color:#f92672>html</span>&gt;
+</code></pre></div><p>Click the Source button again, and you should see a login box with username and password fields as per the image below, also click the Capture Submitted Data box and then also the Capture Passwords box and then click the Save Page button.</p>
+<p><img src=/img/c46147f57dbac7f8ae02d2b44e0ed088.png alt=gophish-tryhackme class=center></img></p>
+<p><strong>Email Templates:</strong></p>
+<p>This is the design and content of the email you&rsquo;re going to actually send to the victim; it will need to be persuasive and contain a link to your landing page to enable us to capture the victim&rsquo;s username and password. Click the Email Templates link on the left-hand menu and then click the New Template button. Give the template the name Email 1, the subject New Message Received, click the HTML tab, and then the Source button to enable HTML editor mode. In the contents write a persuasive email that would convince the user to click the link, the link text will need to be set to <a href=https://admin.acmeitsupport.thm>https://admin.acmeitsupport.thm</a>, but the actual link will need to be set to {{.URL}} which will get changed to our spoofed landing page when the email gets sent, you can do this by highlighting the link text and then clicking the link button on the top row of icons, make sure to set the protocol dropdown to <other>.</p>
+<p><img src=/img/84f89f412b27060f51575e861c8dd1e6.png alt=gophish-tryhackme class=center></img></p>
+<p>Your email should look similar to the screenshot below. Click Save Template once complete.</p>
+<p><img src=/img/66c60935fa89bf7517c4bdc194cce3d4.png alt=gophish-tryhackme class=center></img></p>
+<p><strong>Users & Groups</strong></p>
+<p>This is where we can store the email addresses of our intended targets. Click the Users & Groups link on the left-hand menu and then click the New Group button. Give the group the name Targets and then add the following email addresses:</p>
+<p><a href=mailto:martin@acmeitsupport.thm>martin@acmeitsupport.thm</a>
+<a href=mailto:brian@acmeitsupport.thm>brian@acmeitsupport.thm</a>
+<a href=mailto:accounts@acmeitsupport.thm>accounts@acmeitsupport.thm</a></p>
+<p>Click the Save Template button; once completed, it should look like the below screenshot:</p>
+<p><img src=/img/ea9aa63c0ba57459b05628da47f1a9a3.png alt=gophish-tryhackme class=center></img></p>
+<p><strong>Campaigns</strong></p>
+<p>Now it&rsquo;s time to send your first emails; click the Campaigns link on the left-hand menu and then click the New Campaign button. Set the following values for the inputs, as per the screenshot below:</p>
+<p>Name: Campaign One</p>
+<p>Email Template: Email 1</p>
+<p>Landing Page: ACME Login</p>
+<p>URL: http://MACHINE_IP</p>
+<p>Launch Date: For this lab set it to 2 days ago just to make sure there is no complication with different timezones, in a real operation this would be set correctly.</p>
+<p>Sending Profile: Local Server</p>
+<p>Groups: Targets</p>
+<p>Once completed, click the Launch Campaign button, which will produce an Are You Sure prompt where you can just press the Launch button.</p>
+<p><img src=/img/e70ffbbe29b1d8cd4085e66350300e59.png alt=gophish-tryhackme class=center></img></p>
+<p>You&rsquo;ll then be redirected to the results page of the campaign.</p>
+<p><strong>Results</strong></p>
+<p>The results page gives us an idea of how the phishing campaign is performing by letting us know how many emails have been delivered, opened, clicked and how many users have submitted data to our spoof website.</p>
+<p>You&rsquo;ll see at the bottom of the screen a breakdown for each email address; you&rsquo;ll notice that both Martin&rsquo;s and Brian&rsquo;s email has been sent successfully, but the account&rsquo;s email has resulted in an error</p>
+<p><img src=/img/ca6b76d74516da1db95ccebebf7d9423.png alt=gophish-tryhackme class=center></img></p>
+<p>We can dig in the error more by clicking the dropdown arrow next to the account&rsquo;s row, and by viewing the details or the error, we can see an error message saying the user is unknown.</p>
+<p><img src=/img/282f9bc37ff6fac45a87348e75ea1205.png alt=gophish-tryhackme class=center></img></p>
+<p>After a minute and providing you&rsquo;ve followed the instructions correctly, you should see the status of brian change to Submitted Data.</p>
+<p><img src=/img/437e3dd0c50de7b7c2bf45cb07eb57dc.png alt=gophish-tryhackme class=center></img></p>
+<p>Expanding Brian&rsquo;s details and then viewing the details for the submitted data, you should be able to see Brian&rsquo;s username and password, which will help you answer the question below.</p>
+<p><img src=/img/68c81327e142c55eece9d0c2ed02794d.png alt=gophish-tryhackme class=center></img></p>
+<h3 id=5-answer-the-questions-below>5 Answer the questions below</h3>
+<p><strong>Follow the instuctions</strong></p>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<h2 id=task-06-droppers>TASK 06: Droppers</h2>
+<p>Droppers are software that phishing victims tend to be tricked into downloading and running on their system. The dropper may advertise itself as something useful or legitimate such as a codec to view a certain video or software to open a specific file.</p>
+<p>The droppers are not usually malicious themselves, so they tend to pass antivirus checks. Once installed, the intended malware is either unpacked or downloaded from a server and installed onto the victim&rsquo;s computer. The malicious software usually connects back to the attacker&rsquo;s infrastructure. The attacker can take control of the victim&rsquo;s computer, which can further explore and exploit the local network.</p>
+<h3 id=6-answer-the-questions-below>6 Answer the questions below</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.1</td>
+<td>Do droppers tend to be malicious?</td>
+<td><code>Nay</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id=task-07-choosing-a-phishing-domain>TASK 07: Choosing A Phishing Domain</h2>
+<p>Choosing the right Phishing domain to launch your attack from is essential to ensure you have the psychological edge over your target. A red team engagement can use some of the below methods for choosing the perfect domain name.</p>
+<p><strong>Expired Domains:</strong></p>
+<p>Although not essential, buying a domain name with some history may lead to better scoring of your domain when it comes to spam filters. Spam filters have a tendency to not trust brand new domain names compared to ones with some history</p>
+<p><strong>Typosquatting:</strong></p>
+<p>Typosquatting is when a registered domain looks very similar to the target domain you&rsquo;re trying to impersonate. Here are some of the common methods:</p>
+<ul>
+<li>Misspelling: goggle.com Vs google.com</li>
+<li>Additional Period: go.ogle.com Vs google.com</li>
+<li>Switching numbers for letters: g00gle.com Vs google.com</li>
+<li>Phrasing: googles.com Vs google.com</li>
+<li>Additional Word: googleresults.com Vs google.com</li>
+</ul>
+<p>These changes might look unrealistic, but at a glance, the human brain tends to fill in the blanks and see what it wants to see, i.e. the correct domain name.</p>
+<p><strong>TLD Alternatives:</strong></p>
+<p>A TLD (Top Level Domain) is the .com .net .co.uk .org .gov e.t.c part of a domain name, there are 100&rsquo;s of variants of TLD&rsquo;s now. A common trick for choosing a domain would be to use the same name but with a different TLD. For example, register tryhackme.co.uk to impersonate tryhackme.com.</p>
+<p><strong>IDN Homograph Attack/Script Spoofing:</strong></p>
+<p>Originally domain names were made up of Latin characters a-z and 0-9, but in 1998, IDN (internationalized domain name) was implemented to support language-specific script or alphabet from other languages such as Arabic, Chinese, Cyrillic, Hebrew and more. An issue that arises from the IDN implementation is that different letters from different languages can actually appear identical. For example, Unicode character U+0430 (Cyrillic small letter a) looks identical to Unicode character U+0061 (Latin small letter a) used in English, enabling attackers to register a domain name that looks almost identical to another.</p>
+<p><img src=/img/2e6059e320a8ddb30107c4ccc9bcec1a.png alt=gophish-tryhackme class=center></img></p>
+<h3 id=7-answer-the-questions-below>7 Answer the questions below</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7.1</td>
+<td>What is better, using an expired or new domain? (old/new)</td>
+<td><code>OLD</code></td>
+</tr>
+<tr>
+<td>7.2</td>
+<td>What is the term used to describe registering a similar domain name with a spelling error?</td>
+<td><code>Typosquatting</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id=task-08---using-ms-office-in-phishing>Task 08 : Using MS Office In Phishing</h2>
+<p>Often during phishing campaigns, a Microsoft Office document (typically Word, Excel or PowerPoint) will be included as an attachment. Office documents can contain macros; macros do have a legitimate use but can also be used to run computer commands that can cause malware to be installed onto the victim&rsquo;s computer or connect back to an attacker&rsquo;s network and allow the attacker to take control of the victim&rsquo;s computer.</p>
+<p>Take, for example, the following scenario:</p>
+<p>A staff member working for Acme IT Support receives an email from human resources with an excel spreadsheet called &ldquo;Staff_Salaries.xlsx&rdquo; intended to go to the boss but somehow ended up in the staff members inbox instead.</p>
+<p>What really happened was that an attacker spoofed the human resources email address and crafted a psychologically tempting email perfectly aimed to tempt the staff member into opening the attachment.</p>
+<p>Once the staff member opened the attachment and enabled the macros, their computer was compromised.</p>
+<h3 id=8-answer-the-questions-below>8 Answer the questions below</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8.1</td>
+<td>What can Microsoft Office documents contain, which, when executed can run computer commands?</td>
+<td><code>macros</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id=task-09-using-browser-exploits>TASK 09: Using Browser Exploits</h2>
+<p>Another method of gaining control over a victim&rsquo;s computer could be through browser exploits; this is when there is a vulnerability against a browser itself (Internet Explorer/Edge, Firefox, Chrome, Safari, etc.), which allows the attacker to run remote commands on the victim&rsquo;s computer.</p>
+<p>Browser exploits aren&rsquo;t usually a common path to follow in a red team engagement unless you have prior knowledge of old technology being used on-site. Many browsers are kept up to date, hard to exploit due to how browsers are developed, and the exploits are often worth a lot of money if reported back to the developers.</p>
+<p>That being said, it can happen, and as previously mentioned, it could be used to target old technologies on-site because possibly the browser software cannot be updated due to incompatibility with commercial software/hardware, which can happen quite often in big institutions such as education, government and especially health care.</p>
+<p>Usually, the victim would receive an email, convincing them to visit a particular website set up by the attacker. Once the victim is on the site, the exploit works against the browser, and now the attacker can perform any commands they wish on the victim&rsquo;s computer.</p>
+<p>An example of this is CVE-2021-40444 from September 2021, which is a vulnerability found in Microsoft systems that allowed the execution of code just from visiting a website.</p>
+<h3 id=9-answer-the-questions-below>9 Answer the questions below</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9.1</td>
+<td>Which recent CVE caused remote code execution?</td>
+<td><code>CVE-2021-40444</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id=task-10-phishing-practical>TASK 10: Phishing Practical</h2>
+<p>Now that you&rsquo;ve learnt what goes into a phishing email campaign, let&rsquo;s see if you&rsquo;re able to spot them! Click the green &ldquo;View Site&rdquo; button to launch the Phishing Test website. Examine each email, including where it&rsquo;s from, its links and attachments and decide whether you think the email is safe or not.</p>
+<h3 id=10-answer-the-questions-below>10 Answer the questions below</h3>
+<p><strong>Follow the instructions</strong></p>
+<hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script>
+</article>
+</section>
+</div>
+</div>
+<footer class="ui basic center aligned segment" style=background-color:transparent>
+<p>© 2010 - 2021 Classroom</p>
+</footer>
+</div>
+</section>
+<section class=back>
+<div class=dream-max-width>
+<header class="ui basic very padded segment dream-header">
+<div class="ui small circular image">
+<img src=/img/avatar.jpeg>
+</div>
+<div class=content>
+<h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div>
+</h1>
+<article class="ui horizontal list">
+<a class=item href=/categories>
+<i class="th list icon" title="All Categories"></i>
+</a>
+<a class=item href=/tags>
+<i class="tags icon" title="All Tags"></i>
+</a>
+</article>
+<article class=dream-tags>
+<a class="ui label" href=/tags/agent-sudo/ title="Agent Sudo">
+Agent Sudo
+</a>
+<a class="ui label" href=/tags/autopsy/ title=autopsy>
+autopsy
+</a>
+<a class="ui label" href=/tags/backdoor/ title=backdoor>
+backdoor
+</a>
+<a class="ui label" href=/tags/baron-samedit/ title="Baron Samedit">
+Baron Samedit
+</a>
+<a class="ui label" href=/tags/bash/ title=bash>
+bash
+</a>
+<a class="ui label" href=/tags/cheatsheet/ title=cheatsheet>
+cheatsheet
+</a>
+<a class="ui label" href=/tags/config/ title=config>
+config
+</a>
+<a class="ui label" href=/tags/couch/ title=couch>
+couch
+</a>
+<a class="ui label" href=/tags/crisis/ title=Crisis>
+Crisis
+</a>
+<a class="ui label" href=/tags/dominos/ title=dominos>
+dominos
+</a>
+<a class="ui label" href=/tags/empire/ title=Empire>
+Empire
+</a>
+<a class="ui label" href=/tags/encryption/ title=encryption>
+encryption
+</a>
+<a class="ui label" href=/tags/ffuf/ title=ffuf>
+ffuf
+</a>
+<a class="ui label" href=/tags/forensic/ title=forensic>
+forensic
+</a>
+<a class="ui label" href=/tags/gitandcrumpets/ title=gitandcrumpets>
+gitandcrumpets
+</a>
+<a class="ui label" href=/tags/gnupg/ title=gnupg>
+gnupg
+</a>
+<a class="ui label" href=/tags/hackpark/ title=HackPark>
+HackPark
+</a>
+<a class="ui label" href=/tags/hydra/ title=hydra>
+hydra
+</a>
+<a class="ui label" href=/tags/inclusion/ title=inclusion>
+inclusion
+</a>
+<a class="ui label" href=/tags/internal/ title=internal>
+internal
+</a>
+<a class="ui label" href=/tags/internship/ title=Internship>
+Internship
+</a>
+<a class="ui label" href=/tags/interview/ title=interview>
+interview
+</a>
+<a class="ui label" href=/tags/kenobi/ title=kenobi>
+kenobi
+</a>
+<a class="ui label" href=/tags/lab/ title=lab>
+lab
+</a>
+<a class="ui label" href=/tags/leaks/ title=leaks>
+leaks
+</a>
+<a class="ui label" href=/tags/linux/ title=Linux>
+Linux
+</a>
+<a class="ui label" href=/tags/memory/ title=memory>
+memory
+</a>
+<a class="ui label" href=/tags/metamorphosis/ title=Metamorphosis>
+Metamorphosis
+</a>
+<a class="ui label" href=/tags/metasploit/ title=metasploit>
+metasploit
+</a>
+<a class="ui label" href=/tags/mobile/ title=Mobile>
+Mobile
+</a>
+<a class="ui label" href=/tags/msf/ title=msf>
+msf
+</a>
+<a class="ui label" href=/tags/msfvenom/ title=msfvenom>
+msfvenom
+</a>
+<a class="ui label" href=/tags/notes/ title=notes>
+notes
+</a>
+<a class="ui label" href=/tags/openvas/ title=openvas>
+openvas
+</a>
+<a class="ui label" href=/tags/osi/ title=OSI>
+OSI
+</a>
+<a class="ui label" href=/tags/osi-model/ title="OSI Model">
+OSI Model
+</a>
+<a class="ui label" href=/tags/overpass-2/ title="Overpass 2">
+Overpass 2
+</a>
+<a class="ui label" href=/tags/pentesting/ title=Pentesting>
+Pentesting
+</a>
+<a class="ui label" href=/tags/pgp/ title=PGP>
+PGP
+</a>
+<a class="ui label" href=/tags/pip/ title=pip>
+pip
+</a>
+<a class="ui label" href=/tags/pip2/ title=pip2>
+pip2
+</a>
+<a class="ui label" href=/tags/post-exploitation/ title=Post-Exploitation>
+Post-Exploitation
+</a>
+<a class="ui label" href=/tags/powershell/ title=powershell>
+powershell
+</a>
+<a class="ui label" href=/tags/putty/ title=putty>
+putty
+</a>
+<a class="ui label" href=/tags/python/ title=python>
+python
+</a>
+<a class="ui label" href=/tags/razorblack/ title=RazorBlack>
+RazorBlack
+</a>
+<a class="ui label" href=/tags/redteaming/ title=redteaming>
+redteaming
+</a>
+<a class="ui label" href=/tags/ref/ title=Ref>
+Ref
+</a>
+<a class="ui label" href=/tags/relevant/ title=Relevant>
+Relevant
+</a>
+<a class="ui label" href=/tags/rooms/ title=rooms>
+rooms
+</a>
+<a class="ui label" href=/tags/rootme/ title=RootMe>
+RootMe
+</a>
+<a class="ui label" href=/tags/rpwebscanning/ title=rpwebscanning>
+rpwebscanning
+</a>
+<a class="ui label" href=/tags/script/ title=script>
+script
+</a>
+<a class="ui label" href=/tags/scripting/ title=Scripting>
+Scripting
+</a>
+<a class="ui label" href=/tags/simple-ctf/ title="Simple CTF">
+Simple CTF
+</a>
+<a class="ui label" href=/tags/splunk/ title=splunk>
+splunk
+</a>
+<a class="ui label" href=/tags/stego/ title=stego>
+stego
+</a>
+<a class="ui label" href=/tags/super-spam/ title=Super-Spam>
+Super-Spam
+</a>
+<a class="ui label" href=/tags/sweettoothinc/ title=sweettoothinc>
+sweettoothinc
+</a>
+<a class="ui label" href=/tags/sysmon/ title=sysmon>
+sysmon
+</a>
+<a class="ui label" href=/tags/thefindcommand/ title=Thefindcommand>
+Thefindcommand
+</a>
+<a class="ui label" href=/tags/thm/ title=thm>
+thm
+</a>
+<a class="ui label" href=/tags/tmux/ title=tmux>
+tmux
+</a>
+<a class="ui label" href=/tags/tools/ title=tools>
+tools
+</a>
+<a class="ui label" href=/tags/tryhackme/ title=tryhackme>
+tryhackme
+</a>
+<a class="ui label" href=/tags/vapt/ title=vapt>
+vapt
+</a>
+<a class="ui label" href=/tags/volatility/ title=Volatility>
+Volatility
+</a>
+<a class="ui label" href=/tags/vuln-labs/ title="vuln labs">
+vuln labs
+</a>
+<a class="ui label" href=/tags/vulnversity/ title=Vulnversity>
+Vulnversity
+</a>
+<a class="ui label" href=/tags/web-scanning/ title="web scanning">
+web scanning
+</a>
+<a class="ui label" href=/tags/wireshark/ title=wireshark>
+wireshark
+</a>
+</article>
+</div>
+</header>
+<div class="ui relaxed grid dream-grid dream-back">
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+<h3 class="ui header">Social Links</h3>
+<nav class="ui secondary menu dream-menu dream-socials">
+<div class=item>
+<a href=/index.xml>
+<i class="large rss square icon" title=RSS></i>
+</a>
+</div>
+<div class=item>
+<a href=mailto:classroom@anir0y.in>
+<i class="large mail icon" title=Email></i>
+</a>
+</div>
+<div class=item>
+<a href=https://twitter.com/anir0y target=_blank>
+<i class="large twitter icon" title=Twitter></i>
+</a>
+</div>
+<div class=item>
+<a href=https://facebook.com/anir0yofficial target=_blank>
+<i class="large facebook icon" title=Facebook></i>
+</a>
+</div>
+<div class=item>
+<a href=https://instagram.com/anir0yofficial target=_blank>
+<i class="large instagram icon" title=Instagram></i>
+</a>
+</div>
+<div class=item>
+<a href=https://www.linkedin.com/in/anir0y target=_blank>
+<i class="large linkedin icon" title=Linkedin></i>
+</a>
+</div>
+<div class=item>
+<a href=https://github.com/anir0y target=_blank>
+<i class="large github icon" title=GitHub></i>
+</a>
+</div>
+</nav>
+</article>
+</div>
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+YOU CAN RESUE MY CONTENT
+</article>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script>
+<script src=/js/jquery.min.js></script>
+<script src=/js/semantic.min.js></script>
+<script src=/js/jquery.overlayScrollbars.min.js></script>
+<script src=/js/header.js></script>
+<script src=/js/main.js></script>
+<script src=/js/theme.js></script>
+<script src=/js/html2canvas.min.js></script>
+<script src=/js/post.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script>
+<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script>
+<div class="ui inverted segment" id=dream-search>
+<div class="ui search">
+<div class="ui transparent input">
+<input class=prompt type=text placeholder=Search>
+</div>
+<div class=results></div>
+</div>
+</div>
+<script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script>
+<script src=/js/search.js></script>
+</body>
+</html>

@@ -461,11 +461,8 @@ Tip !! &ldquo;adb backup&rdquo; command can also be used for extracting applicat
 <code>cy# function printMethods(className, isa) { var count = new new Type("I"); var classObj = (isa != undefined) ? objc_getClass(className)->isa : objc_getClass(className); var methods = class_copyMethodList(classObj, count); var methodsArray = []; for(var i = 0; i &lt; *count; i++) { var method = methods[i]; methodsArray.push({selector:method_getName(method), implementation:method_getImplementation(method)}); } free(methods); return methodsArray; }</code></li>
 </ul>
 </li>
-<li>
-<ul>
+<li></li>
 <li><code>cy# printMethods("&lt;classname>")</code></li>
-</ul>
-</li>
 <li>Prints out all the instance variables
 <ul>
 <li><code>cy# a=#0x15d0db80</code></li>
