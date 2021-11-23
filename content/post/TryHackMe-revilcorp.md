@@ -13,7 +13,7 @@ categories:
 tags:
   - tryhackme
 
-draft: true
+draft: false
 description: TryHackMe Room {REvil Corp} solved by Animesh Roy. this is a walkthough. read more...
 
 ---
