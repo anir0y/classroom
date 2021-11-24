@@ -72,7 +72,7 @@ basic nmap returns `2 open ports`
 * Virtual Hosting:
 
      ```bash
-     curl -I 10.10.204.106                                                                          130 ⨯
+     curl -I 10.10.204.106                                                                
      HTTP/1.1 302 Found
      Date: Wed, 24 Nov 2021 10:45:02 GMT
      Server: Apache/2.4.29 (Ubuntu)
@@ -204,7 +204,6 @@ ref to [Sqlmap](#sqlmap)
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <!-- END -->
-
 
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
