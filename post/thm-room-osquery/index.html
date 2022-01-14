@@ -380,6 +380,8 @@ I found the ans by running this: <code>select * from shell_history;</code> and l
 <p>it;s the zip. I just bruteforeced it. <br>
 I guess my way isn&rsquo;t intended. correct me <a href=mailto:classroom@anir0y.in>here</a>.</p>
 <p><img src=https://i.imgur.com/6dlQi2d.png alt></p>
+<h4 id=solution-provided-by-georg>solution provided by <strong>Georg</strong></h4>
+<p><code>osquery> select path,filename,md5 from file join hash using (path) where path like "/home/%%/%" ;</code></p>
 <h3 id=flags-86>Flags 8.6</h3>
 <h4 id=there-is-a-file-that-is-categorized-as-malicious-in-one-of-the-home-directories-query-the-yara-table-to-find-this-file-use-the-sigfile-which-is-saved-in-varosqueryyarascanneryara-which-file-is-it>There is a file that is categorized as malicious in one of the home directories. Query the Yara table to find this file. Use the sigfile which is saved in &lsquo;/var/osquery/yara/scanner.yara&rsquo;. Which file is it?</h4>
 <p>being a lame person I ran yara directly.
@@ -459,7 +461,7 @@ query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
 </div>
 </div>
 <footer class="ui basic center aligned segment" style=background-color:transparent>
-<p>© 2010 - 2021 Classroom</p>
+<p>© 2010 - 2022 Classroom</p>
 </footer>
 </div>
 </section>
