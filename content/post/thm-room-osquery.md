@@ -335,6 +335,11 @@ it;s the zip. I just bruteforeced it.
 
 ![](https://i.imgur.com/6dlQi2d.png)
 
+#### solution provided by **Georg**
+
+`osquery> select path,filename,md5 from file join hash using (path) where path like "/home/%%/%" ;`
+
+
 ### Flags 8.6
 #### There is a file that is categorized as malicious in one of the home directories. Query the Yara table to find this file. Use the sigfile which is saved in '/var/osquery/yara/scanner.yara'. Which file is it?
 being a lame person I ran yara directly. 
