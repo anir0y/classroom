@@ -15,7 +15,7 @@ tags:
   - ceh0821
 
 
-draft: true
+draft: false
 description: installation of NFS & Enumeation using Various tools. 
 
 ---
