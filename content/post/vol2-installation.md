@@ -101,7 +101,7 @@ sudo python setup.py install
  Usage: Volatility - A memory forensics analysis platform.
  ```
 
-## use can use this automated script: [Download](https://gist.github.com/anir0y/5ca6b6356f769d80e0ff12221b3b259b)
+## You can use this automated script: [bash script](https://gist.github.com/anir0y/5ca6b6356f769d80e0ff12221b3b259b)
 
 <script src="https://gist.github.com/anir0y/5ca6b6356f769d80e0ff12221b3b259b.js"></script>
 
