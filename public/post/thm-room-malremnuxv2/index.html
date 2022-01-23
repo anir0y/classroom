@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TryHackMe Writeup REMnux - The Redux | Classroom</title>
+
+    
+<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+<meta name="author" content="Animesh Roy"  />
+<meta name="description" content="TryHackMe Room REMnux - The Redux solved by Animesh Roy. this is a walkthough. read more..." />
+
+
+
+<title>Animesh Roy | Classroom Posts</title>
+<meta name="title" content="Animesh Roy | Blogs & Writeups">
+<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://classroom.anir0y.in/post/thm-room-malremnuxv2/">
+
+<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZBEX7RBNF');
+</script>
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "6gp5990ghr");
+</script>
+
+
+<link rel="canonical" href="https://classroom.anir0y.in/post/thm-room-malremnuxv2/" />
+
+
+<meta property="og:title" content="TryHackMe Writeup REMnux - The Redux" />
+<meta property="og:description" content="TryHackMe Room REMnux - The Redux solved by Animesh Roy. this is a walkthough. read more..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/thm-room-malremnuxv2/" />
+<meta property="article:published_time" content="2021-06-01T09:49:05+05:30" />
+<meta property="article:modified_time" content="2021-06-01T09:49:05+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TryHackMe Writeup REMnux - The Redux"/>
+<meta name="twitter:description" content="TryHackMe Room REMnux - The Redux solved by Animesh Roy. this is a walkthough. read more..."/>
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.ui.button),
+  .inverted a:not(.ui.button):hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: #fff;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#task-01-introduction">Task 01: introduction</a></li>
+    <li><a href="#task-02-2-deploy">Task 02: 2. Deploy</a></li>
+    <li><a href="#task-03-analysing-malicious-pdfs">Task 03: Analysing Malicious PDF&rsquo;s</a>
+      <ul>
+        <li><a href="#flag-31">Flag-3.1</a></li>
+        <li><a href="#flag-32">Flag-3.2</a></li>
+        <li><a href="#flag-33">Flag-3.3</a></li>
+        <li><a href="#flag-34">Flag-3.4</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-04-analysing-malicious-microsoft-office-macros">Task 04: Analysing Malicious Microsoft Office Macros</a>
+      <ul>
+        <li><a href="#flag-41">FLag-4.1</a></li>
+        <li><a href="#flag-42">FLag-4.2</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-05-i-hope-you-packed-your">Task 05: I Hope You Packed Your</a>
+      <ul>
+        <li><a href="#flag-5">Flag-5</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-06-hows-your-memory">task 06: How&rsquo;s Your Memory?</a>
+      <ul>
+        <li><a href="#flag-6--na">Flag-6:  <code>N\A</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#task-07-finishing-up">Task 07: Finishing Up</a>
+      <ul>
+        <li><a href="#flag-7-na">Flag-7: <code>N\A</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#task-08-references--further-reading-material">Task 08: References &amp; Further Reading Material</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Writeup%20REMnux%20-%20The%20Redux&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-malremnuxv2%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-malremnuxv2%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">TryHackMe Writeup REMnux - The Redux<div class="sub header">
+            @
+            
+              
+                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
+              
+            
+
+            | 
+                Tuesday, Jun 1, 2021
+              
+
+            | 14minuteRead
+
+            | Update at
+              
+                Tuesday, Jun 1, 2021
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><h1 id="remnux---the-redux">REMnux - The Redux</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Profile</th>
+<th style="text-align:right">Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><script src="https://tryhackme.com/badge/434937"></script></td>
+<td style="text-align:right"><a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a></td>
+</tr>
+</tbody>
+</table>
+<!-- Amazon Ads-->
+<script type="text/javascript" language="javascript">
+      var aax_size='300x250';
+      var aax_pubname = 'anir0y-21';
+      var aax_src='302';
+    </script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<!-- Amazon Ads-->
+<hr>
+<h2 id="task-01-introduction">Task 01: introduction</h2>
+<p><strong>Welcome to the redux of REMnux.</strong></p>
+<p>Since the release of the previous REMnux room, REMnux has had substantial changes, rendering the previous room outdated and impossible to complete.</p>
+<p>I have taken the opportunity to recreate the room covering REMnux from scratch, taking a very different approach to ensure you get to use all the facilities that make REMnux unique.</p>
+<p><strong>How Have I Designed This Room Differently?</strong></p>
+<p>I&rsquo;ve now re-designed the content for this room to get you as hands-on with REMnux and its tools as possible&hellip;gone are the days of reading cheatsheets for tasks; it&rsquo;s time for you to get stuck in and see what REMnux is really about. This room isn&rsquo;t designed with point-farming in mind, instead, I hope to give you enough guidance throughout the room that results in you developing a curiosity in exploring the topics &amp; resources I introduce you to in your own time.</p>
+<p>You will be doing the following:</p>
+<ul>
+<li>Identifying and analysing malicious payloads of various formats embedded in PDF&rsquo;s, EXE&rsquo;s and Microsoft Office Macros (the most common method that malware developers use to spread malware today)</li>
+<li>Learning how to identify obfuscated code and packed files - and in turn - analyse these.</li>
+<li>Analysing the memory dump of a PC that became infected with the Jigsaw ransomware in the real-world using Volatility.</li>
+</ul>
+<p>I have attached some useful material about some of the topics covered in the room, alongside some cheatsheets and related articles that you can browse at your leisure at the end of the room.</p>
+<hr>
+<h2 id="task-02-2-deploy">Task 02: 2. Deploy</h2>
+<p>Nothing to do here</p>
+<p><img src="https://media.tenor.com/images/785f74ac0466d62e60c051a6ea108242/tenor.gif" alt=""></p>
+<hr>
+<h2 id="task-03-analysing-malicious-pdfs">Task 03: Analysing Malicious PDF&rsquo;s</h2>
+<p><strong>A Blast From the Past</strong></p>
+<p>We&rsquo;re back at this old chestnut, analysing malicious PDF files. In the previous room, you were analysing a PDF file for potential javascript code. PDF&rsquo;s are capable of containing many more types of code that can be executed without the user&rsquo;s knowledge. This includes:</p>
+<ul>
+<li>Javascript</li>
+<li>python</li>
+<li>Executables</li>
+<li>Powershell Executables</li>
+</ul>
+<p>Not only will this task be covering Javascript embeds (like we did previously), but also analysing embedded executables.</p>
+<p><strong>Looking for Embedded Javascript</strong></p>
+<p>We previously discussed how easily javascript can be embedded into a PDF file, whereupon opening is executed unbeknownst to the user. Javascript, much like other languages that we come on to discover in Task 4, provide a great way of creating a foothold, where additional malware can be downloaded and executed.</p>
+<p><img src="https://i.imgur.com/16r4ZtR.png" alt=""></p>
+<p>Looks like the Cooctus Clan just wanted to say hey - it&rsquo;s a good thing that they&rsquo;re nice people!</p>
+<p><strong>Practical</strong></p>
+<p>We&rsquo;ll be using <code>peepdfto</code> begin a precursory analysis of a PDF file to determine the presence of Javascript. If there is, we will extract this Javascript code (without executing it) for our inspection.</p>
+<p>We can simply do <code>peepdf demo_notsuspicious.pdf</code>:</p>
+<p><img src="https://i.imgur.com/yBhDeYi.png" alt=""></p>
+<p>Note the output confirming that there&rsquo;s Javascript present, but also how it is executed? OpenAction will execute the code when the PDF is launched.</p>
+<p>To extract this Javascript, we can use <code>peepdf</code>&rsquo;s &ldquo;extract&rdquo; module. This requires a few steps to set up but is fairly trivial.</p>
+<p>The following command will create a script file for <code>peepdf</code> to use</p>
+<ol>
+<li>
+<p><code>echo 'extract js &gt; javascript-from-demo_notsuspicious.pdf' &gt; extracted_javascript.txt</code>
+<img src="https://i.imgur.com/hYUwXuu.png" alt=""></p>
+<p>The script will extract all javascript via <code>extract js</code> and pipe <code>&gt;</code> the contents into &ldquo;javascript-from-demo_notsuspicious.pdf&rdquo;
+We now need to tell <code>peepdf</code> the name of the script (extracted_javascript.txt) and the PDF file that we want to extract from (demo_notsuspicious.pdf):</p>
+</li>
+<li>
+<p><code>peepdf -s extracted_javascript.txt demo_notsuspicious.pdf</code>
+Remembering that the Javascript will output into a file called &ldquo;javascript-from-demo_nonsuspicious.pdf&rdquo; because of our script.</p>
+</li>
+</ol>
+<p>To recap: &ldquo;extracted_javascript.txt&rdquo; (highlighted in red) is our script, where &ldquo;demo_notsuspicious.pdf&rdquo; (highlighted in green) is the original PDF file that we think is malicious.
+<img src="https://i.imgur.com/0q0dt9I.png" alt="">
+You will see an output, in this case, a file named &ldquo;javascript-from-demo_notsuspicious&rdquo; (highlighted in yellow). This file now contains our extracted Javascript, we can simply <code>cat</code> this to see the contents.
+<img src="https://i.imgur.com/zSLNeKV.png" alt=""></p>
+<p>As it turns out, the PDF file we have analysed contains the javascript code of <code>app.alert(&quot;All your Cooctus are belong to us!&quot;)</code></p>
+<p><strong>Practical</strong></p>
+<p>We have used peepdf to:</p>
+<ol>
+<li>Look for the presence of Javascript</li>
+<li>Extract any contained Javascript for us to read without it being executed.</li>
+</ol>
+<p><img src="https://i.imgur.com/gI35CYV.png" alt=""></p>
+<p>The commands to do so have been used above, you may have to implement them differently, proceed to answer questions 1 - 4 before moving onto the next section</p>
+<p><strong>Executables</strong></p>
+<p>Of course not only can Javascript be embedded, by executables can be very much too.</p>
+<p>The &ldquo;advert.pdf&rdquo; actually has an embedded executable. Looking at the extracted Javascript, we can see the following Javascript snippet:</p>
+<p><img src="https://i.imgur.com/HkaEbdF.png" alt=""></p>
+<p>This tells us that when the PDF is opened, the user will be asked to save an attachment:</p>
+<p><img src="https://i.imgur.com/2ABomDi.png" alt=""></p>
+<p>Although PDF attachments can be ZIP files or images, in this case, it is another PDF&hellip;Or is it? Well, let&rsquo;s save the file and see what happens. Uh oh&hellip;At least that we get a warning that something is trying to execute, but hey, Karen from HR wouldn&rsquo;t send you a dodgy email, right? It&rsquo;s probably a false alarm.</p>
+<p><img src="https://i.imgur.com/daoeGoL.png" alt=""></p>
+<p>Ah&hellip;Well, turns out it was. We just got a reverse shell from the Windows PC to my attack machine.</p>
+<p><img src="https://i.imgur.com/o9mP0CA.png" alt=""></p>
+<p>It&rsquo;s now obvious (albeit too late for them) that the &ldquo;pdf&rdquo; that gets saved isn&rsquo;t a PDF. Let&rsquo;s open it up in a hex editor.</p>
+<p><img src="https://i.imgur.com/CSypGSC.png" alt=""></p>
+<p>Well well well, looks like we have an executable. Let&rsquo;s investigate further by looking at the strings.</p>
+<p><img src="https://i.imgur.com/lVmoupA.png" alt=""></p>
+<p>It looks like we have our attacker&rsquo;s IP and port!</p>
+<p><img src="https://i.imgur.com/wthxQE3.png" alt=""></p>
+<h3 id="flag-31">Flag-3.1</h3>
+<blockquote>
+<p>How many types of categories of &ldquo;Suspicious elements&rdquo; are there in &ldquo;notsuspicious.pdf&rdquo;</p>
+<p><code>3</code>
+<img src="https://i.imgur.com/AsEMzbp.png" alt=""></p>
+</blockquote>
+<h3 id="flag-32">Flag-3.2</h3>
+<blockquote>
+<p>Use peepdf to extract the javascript from &ldquo;notsuspicious.pdf&rdquo;. What is the flag?</p>
+</blockquote>
+<p><img src="https://i.imgur.com/vfecjOD.png" alt=""></p>
+<h3 id="flag-33">Flag-3.3</h3>
+<blockquote>
+<p>How many types of categories of &ldquo;Suspicious elements&rdquo; are there in &ldquo;advert.pdf&rdquo;</p>
+</blockquote>
+<p>run this <code>peepdf advert.pdf</code>
+<img src="https://i.imgur.com/H5Mk3Zi.png" alt=""></p>
+<h3 id="flag-34">Flag-3.4</h3>
+<blockquote>
+<p>Now use peepdf to extract the javascript from &ldquo;advert.pdf&rdquo;. What is the value of &ldquo;cName&rdquo;?</p>
+</blockquote>
+<p><img src="https://i.imgur.com/DR6Q6cX.png" alt=""></p>
+<hr>
+<h2 id="task-04-analysing-malicious-microsoft-office-macros">Task 04: Analysing Malicious Microsoft Office Macros</h2>
+<p><strong>The Change in Focus from APT&rsquo;s</strong></p>
+<p>Malware infection via malicious macros (or scripts within Microsoft Office products such as Word and Excel) are some of the most successful attacks to date.</p>
+<p>For example, current APT campaigns such as Emotet, QuickBot infect users by sending seemingly legitimate documents attached to emails i.e. an invoice for business. However, once opened, execute malicious code without the user knowing. This malicious code is often used in what&rsquo;s known as a &ldquo;dropper attack&rdquo;, where additional malicious programs are downloaded onto the host.</p>
+<p>Take the document file below as an example: <br>
+<img src="https://i.imgur.com/ciosaCD.png" alt=""></p>
+<p>Looks perfectly okay, right? Well in actual fact, this word document has just downloaded a ransomware file from a malicious IP address in the background, with not much more than this snippet of code:</p>
+<p><img src="https://i.imgur.com/DQxSeHt.png" alt=""></p>
+<p>I have programmed the script to show a pop-up for demonstration purposes. However, in real life, this would be done without any popup.</p>
+<p><img src="https://i.imgur.com/SVT0kOZ.png" alt=""></p>
+<p>Luckily for me, this EXE is safe. Unfortunately in the real-world, this EXE could start encrypting my files.</p>
+<p>Thankfully Anti-Viruses these days are pretty reliable on picking up that sort of activity when it is left in plaintext. The following example uses two-stages to execute an obfuscated payload code.</p>
+<ol>
+<li>The macro starts once edit permissions (&ldquo;Enable Edit&rdquo; or &ldquo;Enable Content&rdquo;)have enabled edit mode on the Word document</li>
+<li>The macro executes the payload stored in the text within the document.</li>
+</ol>
+<p>The downside to this? You need a large amount of text to be contained within the page, users will be suspicious and not proceed with editing the document.</p>
+<p><img src="https://i.imgur.com/5Td2ywE.png" alt=""></p>
+<p>Although, just put on your steganography hat&hellip;Authors can just remove the borders from the text box and make the text white. The macro doesn&rsquo;t need the text to be visible to the user, it just needs to exist on the page.</p>
+<p><img src="https://i.imgur.com/DMhsuTd.png" alt=""></p>
+<p>See? Not so suspicious now.</p>
+<p><strong>Practical</strong></p>
+<p>First, we will analyse a suspicious Microsoft Office Word document together. We can simply use REMnux&rsquo;s <code>vmonkey</code> which is a parser engine that is capable of analysing visual basic macros without executing (opening the document).</p>
+<p>By using <code>vmonkey DefinitelyALegitInvoice.doc</code>. vmonkey has detected potentially malicious visual basic code within a macro.</p>
+<p><img src="https://i.imgur.com/jooSji9.png" alt=""></p>
+<p>Now it&rsquo;s your turn, analyse the two Microsoft Office document&rsquo;s (.doc) files located within &ldquo;/home/remnux/Tasks/4&rdquo; to answer the questions attached to this task.</p>
+<h3 id="flag-41">FLag-4.1</h3>
+<blockquote>
+<p>What is the name of the Macro for &ldquo;DefinitelyALegitInvoice.doc&rdquo;</p>
+</blockquote>
+<p><img src="https://i.imgur.com/kg7OPYT.png" alt=""></p>
+<h3 id="flag-42">FLag-4.2</h3>
+<blockquote>
+<p>What is the URL the Macro in &ldquo;Taxes2020.doc&rdquo; would try to launch?</p>
+</blockquote>
+<p><img src="https://i.imgur.com/d3eIk2i.png" alt=""></p>
+<hr>
+<h2 id="task-05-i-hope-you-packed-your">Task 05: I Hope You Packed Your</h2>
+<p><strong>But first: Entropy 101</strong></p>
+<p>There&rsquo;s a reason why I&rsquo;ve waited until now to discuss file entropy in the malware series.</p>
+<p>REMnux provides a nice range of command-line tools that allow for bulk or semi-automated classification and static analysis. File entropy is very indicative of the suspiciousness of a file and is a prominent characteristic that these tools look for within a Portable Executable (PE).</p>
+<p>At it&rsquo;s very simplest, file entropy is a rating that scores how random the data within a PE file is. With a scale of 0 to 8. 0 meaning the less &ldquo;randomness&rdquo; of the data in the file, where a scoring towards 8 indicates this data is more &ldquo;random&rdquo;.</p>
+<p>For example, files that are encrypted will have a very high entropy score. Where files that have large chunks of the same data such as &ldquo;1&rsquo;s&rdquo; will have a low entropy score</p>
+<p><strong>Okay&hellip;so?</strong></p>
+<p>Malware authors use techniques such as encryption or packing (we&rsquo;ll come onto this next) to obfuscate their code and to attempt to bypass anti-virus. Because of this, these files will have high entropy. If an analyst had 1,000 files, they could rank the files by their entropy scoring, of course, the files with the higher entropy should be analysed first.</p>
+<p><img src="https://i.imgur.com/4lgx8FM.png" alt=""></p>
+<p>Whereas however, this file would have a high entropy because there&rsquo;s no pattern to the data - it&rsquo;s a lot more random in comparison.</p>
+<p><img src="https://i.imgur.com/kX0JcNy.png" alt=""></p>
+<p><strong>Packing and Unpacking</strong></p>
+<p>We&rsquo;ll start with a bit of theory (so bare with me here) on how packing works and why it&rsquo;s used. Packer&rsquo;s use an executable as a source and output&rsquo;s it to another executable. This executable will have had some modifications made depending on the packer. For example, the new executable could be compressed and/or obfuscated by using mathematics.</p>
+<p>Legitimate software developers use packing to reduce the size of their applications and to ultimately protect their work from being stolen. It is, however, a double-edged sword, malware authors reap the benefits of packing to make the reverse engineering and detection of the code hard to impossible.</p>
+<p>Executables have what&rsquo;s called an entry point. When launched, this entry point is simply the location of the first pieces of code to be executed within the file - as illustrated below:</p>
+<p><img src="https://i.imgur.com/gZgqg2n.png" alt="">
+(Sikorski and Honig, 2012)</p>
+<p>When an executable is packed, it must unpack itself before any code can execute. Because of this, packers change the entry point from the original location to what&rsquo;s called the &ldquo;Unpacking Stub&rdquo;.<br>
+<img src="https://i.imgur.com/zKEDArl.png" alt="">
+(Sikorski and Honig, 2012)</p>
+<p>The &ldquo;Unpacking Stub&rdquo; will begin to unpack the executable into its original state. Once the program is fully unpacked, the entry point will now relocate back to its normal place to begin executing code</p>
+<p><img src="https://i.imgur.com/o3dRrTh.png" alt="">
+(Sikorski and Honig, 2012)</p>
+<p>It is only at this point can an analyst begin to understand what the executable is doing as it is now in it&rsquo;s true, original form.</p>
+<p><strong>Determining if an Executable is Packed</strong></p>
+<p>Don&rsquo;t worry, learning how to manually unpack an executable is out-of-scope for this pathway. We have a few tools at our arsenal that should do a sufficient job for most of the samples we come across in the wild.</p>
+<p>Packed files have a few characteristics that may indicate whether or not they are packed:</p>
+<ul>
+<li>Remember about file entropy? Packed files will have a high entropy!</li>
+<li>There are very few &ldquo;Imports&rdquo;, packed files may only have &ldquo;GetProcAddress&rdquo; and &ldquo;LoadLibrary&rdquo;.</li>
+<li>The executable may have sections named after certain packers such as UPX.</li>
+</ul>
+<p><strong>Demonstration</strong></p>
+<p>I have two copies of my application, one not packed and another has been packed.</p>
+<p>Below we can see that this copy has 34 imports, so a noticeable amount and the imports are quite revealing in what we can expect the application to do:</p>
+<p><img src="https://i.imgur.com/HdG2Gol.png" alt=""></p>
+<p>Whereas the other copy only presents us with 6 imports.</p>
+<p><img src="https://i.imgur.com/5TZ8pa5.png" alt=""></p>
+<p>We can verify that this was packed using UPX via tools such as <a href="https://www.aldeid.com/wiki/PEiD">PEID</a>, or by manually comparing the executables sections and filesize differences.</p>
+<p><img src="https://i.imgur.com/jgp7geN.png" alt=""></p>
+<p>Look at that entropy! 7.526 out of 8! Also, note the name of the sections. UPX0 and the entry point being at UPX1&hellip;that&rsquo;s our packer.</p>
+<p><img src="https://i.imgur.com/BKlrTA0.png" alt=""></p>
+<h3 id="flag-5">Flag-5</h3>
+<p><img src="https://i.imgur.com/3qrihQX.png" alt=""></p>
+<hr>
+<h2 id="task-06-hows-your-memory">task 06: How&rsquo;s Your Memory?</h2>
+<p><em>If you&rsquo;ve had enough of hearing about entropy and packing - I don&rsquo;t blame you, me too</em>.</p>
+<p><strong>Memory Forensics</strong></p>
+<p>You are going to be analysing the memory dump I&rsquo;ve taken of a Windows 7 PC that has been infected with the Jigsaw Ransomware. This memory dump can be found in &ldquo;/home/remnux/Tasks/6/Win7-Jigsaw.raw&rdquo;.</p>
+<p><img src="https://i.imgur.com/hzhY3OC.png" alt=""></p>
+<p><strong>A Volatility Crash Course</strong>  <br>
+<strong>Understanding our Memory Dump</strong></p>
+<p>It goes without saying that every operating system will store data in different places, and this is no different when data is stored within memory. Volatility is unable to assume what the operating system that we have created a memory dump is, and in turn, where to look for things and what commands can be executed. For example, <code>hivelist</code> is used for Windows registry and will not work on a Linux memory dump.</p>
+<p>Whilst Volatility can&rsquo;t assume, it can guess. Here&rsquo;s where profiles come into play. In other scenarios, we would use the <code>imageinfo</code> plugin to help determine what profile is most suitable with the syntax of <code>volatility -f Win7-Jigsaw.raw imageinfo</code>. However, this could take hours to complete on a large memory dump on an Instance like that attached to the room. So instead, I have provided it for you.</p>
+<p><em>Please note that volatility will take a few minutes for commands to complete.</em></p>
+<p><img src="https://i.imgur.com/vSyKXJl.png" alt=""></p>
+<p>Profile <code>Win7SP1x64</code> is the first suggested and just happens to be the correct OS version.</p>
+<p><strong>Beginning our Investigation</strong></p>
+<p><strong>Viewing What Processes Were Running at Infection</strong></p>
+<p><em>&ldquo;A process, in the simplest terms, is an executing program.&rdquo; (<a href="https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads">Processes and Threads - Win32 apps, 2018</a>)</em></p>
+<p>Processes range from every-day applications such as your browser to system services and other inner-workings.</p>
+<p>Specifically, we need to identify the malicious processes to get an understanding of how the malware works and to also build a picture of Indicators of Compromise (IoC). We can list the processes that were running via <code>pslist</code>:</p>
+<p><code>volatility -f Win7-Jigsaw.raw --profile=Win7SP1x64 pslist</code></p>
+<p>Note how you can see Google Chrome within the process because the application was running at the time of the memory dump.</p>
+<p><img src="https://i.imgur.com/pZwWizH.png" alt=""></p>
+<p><strong>Needles in Haystacks</strong></p>
+<p>Luckily we&rsquo;ve got quite a shortlist of processes here, so we can start to narrow down between the system processes and any applications.</p>
+<p>It can be daunting at first in trying to decide on what&rsquo;s worthy of investigating. As your seat time in malware analysis increases, you&rsquo;ll be able to pick out abnormalities. In this case, it&rsquo;s process &ldquo;drpbx.exe&rdquo; with a PID of 3704.</p>
+<p><strong>What Can We Do With This?</strong></p>
+<p>Now that we&rsquo;ve identified the abnormal process, we can begin to dump this specifically and begin analysing. As the application will be unpacked and/or in it&rsquo;s most revealing state, it is perfect for analysis.</p>
+<p><strong>Peeking Behind the Curtain</strong></p>
+<p>Even without analysing, we can start to understand what sort of interaction the process is capable of with the operating system. DLL&rsquo;s are structured very similarly to executables, however, they cannot be directly executed. Moreover, multiple applications can interact with a DLL all at the same time. We can list the DLL&rsquo;s that &ldquo;drpbx.exe&rdquo; references with dlllist:</p>
+<p><strong>All the DLL&rsquo;S</strong></p>
+<p>Again, it&rsquo;s easy to become overwhelmed at trying to figure out what&rsquo;s of significance. It only comes with time, experience and research into what Windows DLL&rsquo;s do what.</p>
+<p><img src="https://i.imgur.com/S7aICI0.png" alt=""></p>
+<p>What stands out initially is the &ldquo;CRYPTBASE.dll&rdquo;</p>
+<p><img src="https://i.imgur.com/r1qtrXJ.png" alt=""></p>
+<p>This DLL is a Windows library that allows applications to use cryptography. Whilst many use it legitimately, i.e. HTTPS, let&rsquo;s assume that we didn&rsquo;t know that the host was infected with ransomware specifically, we&rsquo;d need to start investigating the process further. However, that is not for here. We&rsquo;ve found enough evidence to suspect ransomware through memory forensics &amp; research.</p>
+<h3 id="flag-6--na">Flag-6:  <code>N\A</code></h3>
+<hr>
+<h2 id="task-07-finishing-up">Task 07: Finishing Up</h2>
+<p>I encourage you to go back through the tasks and use alternate tools to that which I used, all located within the attached REMnux box. Malicious macros within Microsoft Office documents are very successful and dangerous vehicles for malware authors to weaponise. Whilst macros have legitimate purposes in MS Office documents, rampant APT campaigns such as Emotet, Ryuk and Qakbot exploit these as droppers.</p>
+<p>For a bonus challenge, spend some more time in getting familiar with Volatility. Are there any more additional indicators of compromise within the Windows 7 memory dump that we briefly analyzed?</p>
+<h3 id="flag-7-na">Flag-7: <code>N\A</code></h3>
+<hr>
+<h2 id="task-08-references--further-reading-material">Task 08: References &amp; Further Reading Material</h2>
+<p><strong>References</strong></p>
+<p><strong>Task 1</strong></p>
+<p>Zeltser Security Corp., 2020. REMnux (image) Retrieved from: <a href="https://remnux.org/">https://remnux.org/</a></p>
+<p><strong>Task 5</strong></p>
+<p>Sikorski, M. and Honig, A., 2012. Practical Malware Analysis. San Francisco: No Starch Press, pp.386-387.</p>
+<p><strong>Task 6</strong></p>
+<p>Docs.microsoft.com. 2018. Processes And Threads - Win32 Apps. Retrieved from: <a href="https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads">https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads</a></p>
+<p><strong>Additional Reading</strong></p>
+<ul>
+<li>
+<p><a href="https://fsec404.github.io/blog/Shanon-entropy/">A Look At Entropy Analysis</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=BMFCdAGxVN4">[BlackHat 2019] Investigating Malware Using Memory Forensics (Video)</a></p>
+</li>
+<li>
+<p><a href="https://www.avira.com/en/blog/malware-threat-report-q2-2020-statistics-and-trends">Malware Threat Report - Q2 2020 (Avira)</a></p>
+</li>
+<li>
+<p><a href="https://api.semanticscholar.org/CorpusID:212680542%20(P.%20Singh,%20S.%20Tapaswi,%20S.Gupta)">Malware Detection in PDF and Office Documents: A survey</a></p>
+</li>
+</ul>
+<p><strong>Cheatsheets</strong></p>
+<ul>
+<li>
+<p><a href="https://docs.remnux.org/">REMnux 7.0 Documentation</a></p>
+</li>
+<li>
+<p><a href="https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf">Volatility 2.4. Windows &amp; Linux Profile Cheatsheets</a></p>
+</li>
+</ul>
+<hr>
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<hr>
+</article>
+    </section>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2010 - 2022 Classroom</p>
+              
+
+              
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
+        Agent Sudo
+      </a>
+    
+      <a class="ui label" href="/tags/autopsy/" title="autopsy">
+        autopsy
+      </a>
+    
+      <a class="ui label" href="/tags/backdoor/" title="backdoor">
+        backdoor
+      </a>
+    
+      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
+        Baron Samedit
+      </a>
+    
+      <a class="ui label" href="/tags/bash/" title="bash">
+        bash
+      </a>
+    
+      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
+        ceh0821
+      </a>
+    
+      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
+        cheatsheet
+      </a>
+    
+      <a class="ui label" href="/tags/config/" title="config">
+        config
+      </a>
+    
+      <a class="ui label" href="/tags/couch/" title="couch">
+        couch
+      </a>
+    
+      <a class="ui label" href="/tags/crisis/" title="Crisis">
+        Crisis
+      </a>
+    
+      <a class="ui label" href="/tags/dominos/" title="dominos">
+        dominos
+      </a>
+    
+      <a class="ui label" href="/tags/empire/" title="Empire">
+        Empire
+      </a>
+    
+      <a class="ui label" href="/tags/encryption/" title="encryption">
+        encryption
+      </a>
+    
+      <a class="ui label" href="/tags/ffuf/" title="ffuf">
+        ffuf
+      </a>
+    
+      <a class="ui label" href="/tags/forensic/" title="forensic">
+        forensic
+      </a>
+    
+      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
+        gitandcrumpets
+      </a>
+    
+      <a class="ui label" href="/tags/gnupg/" title="gnupg">
+        gnupg
+      </a>
+    
+      <a class="ui label" href="/tags/hackpark/" title="HackPark">
+        HackPark
+      </a>
+    
+      <a class="ui label" href="/tags/hydra/" title="hydra">
+        hydra
+      </a>
+    
+      <a class="ui label" href="/tags/inclusion/" title="inclusion">
+        inclusion
+      </a>
+    
+      <a class="ui label" href="/tags/internal/" title="internal">
+        internal
+      </a>
+    
+      <a class="ui label" href="/tags/internship/" title="Internship">
+        Internship
+      </a>
+    
+      <a class="ui label" href="/tags/interview/" title="interview">
+        interview
+      </a>
+    
+      <a class="ui label" href="/tags/kenobi/" title="kenobi">
+        kenobi
+      </a>
+    
+      <a class="ui label" href="/tags/lab/" title="lab">
+        lab
+      </a>
+    
+      <a class="ui label" href="/tags/leaks/" title="leaks">
+        leaks
+      </a>
+    
+      <a class="ui label" href="/tags/linux/" title="Linux">
+        Linux
+      </a>
+    
+      <a class="ui label" href="/tags/memory/" title="memory">
+        memory
+      </a>
+    
+      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
+        Metamorphosis
+      </a>
+    
+      <a class="ui label" href="/tags/metasploit/" title="metasploit">
+        metasploit
+      </a>
+    
+      <a class="ui label" href="/tags/mobile/" title="Mobile">
+        Mobile
+      </a>
+    
+      <a class="ui label" href="/tags/msf/" title="msf">
+        msf
+      </a>
+    
+      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
+        msfvenom
+      </a>
+    
+      <a class="ui label" href="/tags/nfs/" title="nfs">
+        nfs
+      </a>
+    
+      <a class="ui label" href="/tags/notes/" title="notes">
+        notes
+      </a>
+    
+      <a class="ui label" href="/tags/openvas/" title="openvas">
+        openvas
+      </a>
+    
+      <a class="ui label" href="/tags/osi/" title="OSI">
+        OSI
+      </a>
+    
+      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
+        OSI Model
+      </a>
+    
+      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
+        Overpass 2
+      </a>
+    
+      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
+        Pentesting
+      </a>
+    
+      <a class="ui label" href="/tags/pgp/" title="PGP">
+        PGP
+      </a>
+    
+      <a class="ui label" href="/tags/pip/" title="pip">
+        pip
+      </a>
+    
+      <a class="ui label" href="/tags/pip2/" title="pip2">
+        pip2
+      </a>
+    
+      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
+        Post-Exploitation
+      </a>
+    
+      <a class="ui label" href="/tags/powershell/" title="powershell">
+        powershell
+      </a>
+    
+      <a class="ui label" href="/tags/putty/" title="putty">
+        putty
+      </a>
+    
+      <a class="ui label" href="/tags/python/" title="python">
+        python
+      </a>
+    
+      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
+        RazorBlack
+      </a>
+    
+      <a class="ui label" href="/tags/redteaming/" title="redteaming">
+        redteaming
+      </a>
+    
+      <a class="ui label" href="/tags/ref/" title="Ref">
+        Ref
+      </a>
+    
+      <a class="ui label" href="/tags/relevant/" title="Relevant">
+        Relevant
+      </a>
+    
+      <a class="ui label" href="/tags/rocket/" title="rocket">
+        rocket
+      </a>
+    
+      <a class="ui label" href="/tags/rooms/" title="rooms">
+        rooms
+      </a>
+    
+      <a class="ui label" href="/tags/rootme/" title="RootMe">
+        RootMe
+      </a>
+    
+      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
+        rpwebscanning
+      </a>
+    
+      <a class="ui label" href="/tags/script/" title="script">
+        script
+      </a>
+    
+      <a class="ui label" href="/tags/scripting/" title="Scripting">
+        Scripting
+      </a>
+    
+      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
+        Simple CTF
+      </a>
+    
+      <a class="ui label" href="/tags/splunk/" title="splunk">
+        splunk
+      </a>
+    
+      <a class="ui label" href="/tags/stego/" title="stego">
+        stego
+      </a>
+    
+      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
+        Super-Spam
+      </a>
+    
+      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
+        sweettoothinc
+      </a>
+    
+      <a class="ui label" href="/tags/sysmon/" title="sysmon">
+        sysmon
+      </a>
+    
+      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
+        Thefindcommand
+      </a>
+    
+      <a class="ui label" href="/tags/thm/" title="thm">
+        thm
+      </a>
+    
+      <a class="ui label" href="/tags/tmux/" title="tmux">
+        tmux
+      </a>
+    
+      <a class="ui label" href="/tags/tools/" title="tools">
+        tools
+      </a>
+    
+      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
+        tryhackme
+      </a>
+    
+      <a class="ui label" href="/tags/vapt/" title="vapt">
+        vapt
+      </a>
+    
+      <a class="ui label" href="/tags/volatility/" title="Volatility">
+        Volatility
+      </a>
+    
+      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
+        vuln labs
+      </a>
+    
+      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
+        Vulnversity
+      </a>
+    
+      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
+        web scanning
+      </a>
+    
+      <a class="ui label" href="/tags/wireshark/" title="wireshark">
+        wireshark
+      </a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <div class="item">
+    <a href="/index.xml">
+      <i class="large rss square icon" title="RSS"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="mailto:classroom@anir0y.in">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://twitter.com/anir0y" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://facebook.com/anir0yofficial" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://instagram.com/anir0yofficial" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+  <div class="item">
+    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://github.com/anir0y" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      YOU CAN RESUE MY CONTENT
+    </article>
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+
+
+
+<script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "tomorrow"
+    var darkTheme = "tomorrow-night"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
+
+
+
+
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Try Hack Me Web Scanning | Classroom</title>
+
+    
+<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+<meta name="author" content="Animesh Roy"  />
+<meta name="description" content="TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthough. read more..." />
+
+
+
+<title>Animesh Roy | Classroom Posts</title>
+<meta name="title" content="Animesh Roy | Blogs & Writeups">
+<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-rpwebscanning/">
+
+<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZBEX7RBNF');
+</script>
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "6gp5990ghr");
+</script>
+
+
+<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-rpwebscanning/" />
+
+
+<meta property="og:title" content="Try Hack Me Web Scanning" />
+<meta property="og:description" content="TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthough. read more..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-rpwebscanning/" />
+<meta property="article:published_time" content="2021-07-14T14:00:45+05:30" />
+<meta property="article:modified_time" content="2021-07-14T14:00:45+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Try Hack Me Web Scanning"/>
+<meta name="twitter:description" content="TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthough. read more..."/>
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.ui.button),
+  .inverted a:not(.ui.button):hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: #fff;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#task-01-pull-the-lever-kronk">Task 01: Pull the lever, Kronk</a></li>
+    <li><a href="#task-02-im-supposed-to-scan-with-that">Task 02: &hellip;I&rsquo;m supposed to scan with that?</a>
+      <ul>
+        <li><a href="#help">help</a></li>
+        <li><a href="#21">2.1</a></li>
+        <li><a href="#22">2.2</a></li>
+        <li><a href="#23">2.3</a></li>
+        <li><a href="#24">2.4</a></li>
+        <li><a href="#25">2.5</a></li>
+        <li><a href="#26">2.6</a></li>
+        <li><a href="#27">2.7</a></li>
+        <li><a href="#28">2.8</a></li>
+        <li><a href="#29">2.9</a></li>
+        <li><a href="#210">2.10</a></li>
+        <li><a href="#211">2.11</a></li>
+        <li><a href="#212">2.12</a></li>
+        <li><a href="#213">2.13</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-03-zip-zap">Task 03: Zip ZAP</a>
+      <ul>
+        <li><a href="#31">3.1</a></li>
+        <li><a href="#32">3.2</a></li>
+        <li><a href="#33">3.3</a></li>
+        <li><a href="#34">3.4</a></li>
+        <li><a href="#35">3.5</a></li>
+        <li><a href="#36">3.6</a></li>
+        <li><a href="#37">3.7</a></li>
+        <li><a href="#38">3.8</a></li>
+        <li><a href="#39">3.9</a></li>
+        <li><a href="#310">3.10</a></li>
+        <li><a href="#311">3.11</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=Try%20Hack%20Me%20Web%20Scanning&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-rpwebscanning%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-rpwebscanning%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">Try Hack Me Web Scanning<div class="sub header">
+            @
+            
+              
+                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
+              
+            
+
+            | 
+                Wednesday, Jul 14, 2021
+              
+
+            | 8minuteRead
+
+            | Update at
+              
+                Wednesday, Jul 14, 2021
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><h2 id="overview">Overview</h2>
+<p>Learn the basics of automated web scanning!</p>
+<p>Web scanning represents one of the core constructs of modern pen testing. Quite simply, most of what we interact with on a daily basis is the internet, and therein there is a multitude of ever-widening number of vulnerabilities. Within this room, we will investigate two of the most common scanners: Nikto and Zap.</p>
+<table>
+<thead>
+<tr>
+<th>Web Scanning</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"></td>
+<td><a href="https://tryhackme.com/room/rpwebscanning"><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"></a></td>
+</tr>
+<tr>
+<td>Solved by</td>
+<td><a href="https://anir0y.in">@anir0y</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="task-01-pull-the-lever-kronk">Task 01: Pull the lever, Kronk</h2>
+<hr>
+<h2 id="task-02-im-supposed-to-scan-with-that">Task 02: &hellip;I&rsquo;m supposed to scan with that?</h2>
+<p>A short quiz over the various switches used with Nikto as well as a quick scan against our target. All you&rsquo;ll need for this is the help menu for nikto. Include all parts of the switch unless otherwise specified, this includes</p>
+<h3 id="help">help</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ip-10-10-80-133:~# nikto -H
+
+   Options:
+       -ask+               Whether to ask about submitting updates
+                               yes   Ask about each <span style="color:#f92672">(</span>default<span style="color:#f92672">)</span>
+                               no    Dont ask, dont send
+                               auto  Dont ask, just send
+       -Cgidirs+           Scan these CGI dirs: <span style="color:#e6db74">&#34;none&#34;</span>, <span style="color:#e6db74">&#34;all&#34;</span>, or values like <span style="color:#e6db74">&#34;/cgi/ /cgi-a/&#34;</span>
+       -config+            Use this config file
+       -Display+           Turn on/off display outputs:
+                               <span style="color:#ae81ff">1</span>     Show redirects
+                               <span style="color:#ae81ff">2</span>     Show cookies received
+                               <span style="color:#ae81ff">3</span>     Show all 200/OK responses
+                               <span style="color:#ae81ff">4</span>     Show URLs which require authentication
+                               D     Debug output
+                               E     Display all HTTP errors
+                               P     Print progress to STDOUT
+                               S     Scrub output of IPs and hostnames
+                               V     Verbose output
+       -dbcheck           Check database and other key files <span style="color:#66d9ef">for</span> syntax errors
+       -evasion+          Encoding technique:
+                               <span style="color:#ae81ff">1</span>     Random URI encoding <span style="color:#f92672">(</span>non-UTF8<span style="color:#f92672">)</span>
+                               <span style="color:#ae81ff">2</span>     Directory self-reference <span style="color:#f92672">(</span>/./<span style="color:#f92672">)</span>
+                               <span style="color:#ae81ff">3</span>     Premature URL ending
+                               <span style="color:#ae81ff">4</span>     Prepend long random string
+                               <span style="color:#ae81ff">5</span>     Fake parameter
+                               <span style="color:#ae81ff">6</span>     TAB as request spacer
+                               <span style="color:#ae81ff">7</span>     Change the <span style="color:#66d9ef">case</span> of the URL
+                               <span style="color:#ae81ff">8</span>     Use Windows directory separator <span style="color:#f92672">(</span><span style="color:#ae81ff">\)</span>
+                               A     Use a carriage <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>0x0d<span style="color:#f92672">)</span> as a request spacer
+                               B     Use binary value 0x0b as a request spacer
+        -Format+           Save file <span style="color:#f92672">(</span>-o<span style="color:#f92672">)</span> format:
+                               csv   Comma-separated-value
+                               htm   HTML Format
+                               msf+  Log to Metasploit
+                               nbe   Nessus NBE format
+                               txt   Plain text
+                               xml   XML Format
+                               <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> not specified the format will be taken from the file extension passed to -output<span style="color:#f92672">)</span>
+       -Help              Extended help information
+       -host+             Target host
+       -IgnoreCode        Ignore Codes--treat as negative responses
+       -id+               Host authentication to use, format is id:pass or id:pass:realm
+       -key+              Client certificate key file
+       -list-plugins      List all available plugins, perform no testing
+       -maxtime+          Maximum testing time per host
+       -mutate+           Guess additional file names:
+                               <span style="color:#ae81ff">1</span>     Test all files with all root directories
+                               <span style="color:#ae81ff">2</span>     Guess <span style="color:#66d9ef">for</span> password file names
+                               <span style="color:#ae81ff">3</span>     Enumerate user names via Apache <span style="color:#f92672">(</span>/~user type requests<span style="color:#f92672">)</span>
+                               <span style="color:#ae81ff">4</span>     Enumerate user names via cgiwrap <span style="color:#f92672">(</span>/cgi-bin/cgiwrap/~user type requests<span style="color:#f92672">)</span>
+                               <span style="color:#ae81ff">5</span>     Attempt to brute force sub-domain names, assume that the host name is the parent domain
+                               <span style="color:#ae81ff">6</span>     Attempt to guess directory names from the supplied dictionary file
+       -mutate-options    Provide information <span style="color:#66d9ef">for</span> mutates
+       -nointeractive     Disables interactive features
+       -nolookup          Disables DNS lookups
+       -nossl             Disables the use of SSL
+       -no404             Disables nikto attempting to guess a <span style="color:#ae81ff">404</span> page
+       -output+           Write output to this file <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;.&#39;</span> <span style="color:#66d9ef">for</span> auto-name<span style="color:#f92672">)</span>
+       -Pause+            Pause between tests <span style="color:#f92672">(</span>seconds, integer or float<span style="color:#f92672">)</span>
+       -Plugins+          List of plugins to run <span style="color:#f92672">(</span>default: ALL<span style="color:#f92672">)</span>
+       -port+             Port to use <span style="color:#f92672">(</span>default 80<span style="color:#f92672">)</span>
+       -RSAcert+          Client certificate file
+       -root+             Prepend root value to all requests, format is /directory
+       -Save              Save positive responses to this directory <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;.&#39;</span> <span style="color:#66d9ef">for</span> auto-name<span style="color:#f92672">)</span>
+       -ssl               Force ssl mode on port
+       -Tuning+           Scan tuning:
+                               <span style="color:#ae81ff">1</span>     Interesting File / Seen in logs
+                               <span style="color:#ae81ff">2</span>     Misconfiguration / Default File
+                               <span style="color:#ae81ff">3</span>     Information Disclosure
+                               <span style="color:#ae81ff">4</span>     Injection <span style="color:#f92672">(</span>XSS/Script/HTML<span style="color:#f92672">)</span>
+                               <span style="color:#ae81ff">5</span>     Remote File Retrieval - Inside Web Root
+                               <span style="color:#ae81ff">6</span>     Denial of Service
+                               <span style="color:#ae81ff">7</span>     Remote File Retrieval - Server Wide
+                               <span style="color:#ae81ff">8</span>     Command Execution / Remote Shell
+                               <span style="color:#ae81ff">9</span>     SQL Injection
+                               <span style="color:#ae81ff">0</span>     File Upload
+                               a     Authentication Bypass
+                               b     Software Identification
+                               c     Remote Source Inclusion
+                               x     Reverse Tuning Options <span style="color:#f92672">(</span>i.e., include all except specified<span style="color:#f92672">)</span>
+       -timeout+          Timeout <span style="color:#66d9ef">for</span> requests <span style="color:#f92672">(</span>default <span style="color:#ae81ff">10</span> seconds<span style="color:#f92672">)</span>
+       -Userdbs           Load only user databases, not the standard databases
+                               all   Disable standard dbs and load only user dbs
+                               tests Disable only db_tests and load udb_tests
+       -until             Run <span style="color:#66d9ef">until</span> the specified time or duration
+       -update            Update databases and plugins from CIRT.net
+       -useproxy          Use the proxy defined in nikto.conf
+       -Version           Print plugin and database versions
+       -vhost+            Virtual host <span style="color:#f92672">(</span><span style="color:#66d9ef">for</span> Host header<span style="color:#f92672">)</span>
+   		+ requires a value
+
+</code></pre></div><h3 id="21">2.1</h3>
+<p>First and foremost, what switch do we use to set the target host?</p>
+<ul>
+<li><code>-h</code> ; nikto -h (h is for host)</li>
+<li>ref <a href="#help">help</a></li>
+</ul>
+<h3 id="22">2.2</h3>
+<p>Websites don&rsquo;t always properly redirect to their secure transport port and can sometimes have different issues depending on the manner in which they are scanned. How do we disable secure transport?</p>
+<ul>
+<li><code>-nossl</code></li>
+<li>ref <a href="#help">help</a></li>
+</ul>
+<h3 id="23">2.3</h3>
+<p>How about the opposite, how do we force secure transport?</p>
+<ul>
+<li><code>-ssl</code></li>
+<li>ref <a href="#help">help</a></li>
+</ul>
+<h3 id="24">2.4</h3>
+<p>What if we want to set a specific port to scan?</p>
+<ul>
+<li><code>-p</code> or <code>-port</code></li>
+<li>ref <a href="#help">help</a></li>
+</ul>
+<h3 id="25">2.5</h3>
+<p>As the web is constantly evolving, so is Nikto. A database of vulnerabilities represents a core component to this web scanner, how do we verify that this database is working and free from error?</p>
+<ul>
+<li><code>-dbcheck</code></li>
+<li>ref <a href="#help">help</a></li>
+</ul>
+<h3 id="26">2.6</h3>
+<p>If instructed to, Nikto will attempt to guess and test both files within directories as well as usernames. Which switch and numerical value do we use to set Nikto to enumerate usernames in Apache? Keep in mind, this option is deprecated in favor of plugins, however, it&rsquo;s still a great option to be aware of for situational usage.</p>
+<ul>
+<li><code>-mutate 3</code>
+<img src="https://i.imgur.com/3k7Jk7L.png" alt="nikto-plugin"></li>
+</ul>
+<h3 id="27">2.7</h3>
+<p>Suppose we know the username and password for a web forum, how do we set Nikto to do a credentialed check? Suppose the username is admin and the password is PrettyAwesomePassword1234</p>
+<ul>
+<li><code>-id admin:PrettyAwesomePassword1234</code></li>
+<li>ref <a href="#help">here</a></li>
+</ul>
+<h3 id="28">2.8</h3>
+<p>Let&rsquo;s scan our target machine, what web server do we discover and what version is it?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.10.147.152
++ Target Hostname:    ip-10-10-147-152.eu-west-1.compute.internal
++ Target Port:        <span style="color:#ae81ff">80</span>
++ Start Time:         2021-07-14 09:57:30 <span style="color:#f92672">(</span>GMT1<span style="color:#f92672">)</span>
+---------------------------------------------------------------------------
++ Server: Apache/2.4.7 <span style="color:#f92672">(</span>Ubuntu<span style="color:#f92672">)</span>
++ Cookie PHPSESSID created without the httponly flag
++ Retrieved x-powered-by header: PHP/5.5.9-1ubuntu4.26
++ The anti-clickjacking X-Frame-Options header is not present.
++ Root page / redirects to: login.php
++ No CGI Directories found <span style="color:#f92672">(</span>use <span style="color:#e6db74">&#39;-C all&#39;</span> to force check all possible dirs<span style="color:#f92672">)</span>
++ Server leaks inodes via ETags, header found with file /robots.txt, fields: 0x1a 0x5775a354caa9f 
++ File/dir <span style="color:#e6db74">&#39;/&#39;</span> in robots.txt returned a non-forbidden or redirect HTTP code <span style="color:#f92672">(</span>302<span style="color:#f92672">)</span>
++ <span style="color:#e6db74">&#34;robots.txt&#34;</span> contains <span style="color:#ae81ff">1</span> entry which should be manually viewed.
++ OSVDB-3268: /config/: Directory indexing found.
++ /config/: Configuration information may be available remotely.
++ OSVDB-3268: /docs/: Directory indexing found.
++ OSVDB-3233: /icons/README: Apache default file found.
++ /login.php: Admin login page/section found.
++ <span style="color:#ae81ff">6544</span> items checked: <span style="color:#ae81ff">0</span> error<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> and <span style="color:#ae81ff">11</span> item<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> reported on remote host
++ End Time:           2021-07-14 09:57:39 <span style="color:#f92672">(</span>GMT1<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#ae81ff">9</span> seconds<span style="color:#f92672">)</span>
+---------------------------------------------------------------------------
++ <span style="color:#ae81ff">1</span> host<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> tested
+</code></pre></div><h3 id="29">2.9</h3>
+<p>This box is vulnerable to very poor directory control due to it&rsquo;s web server version, what directory is indexed that really shouldn&rsquo;t be?</p>
+<ul>
+<li><code>config</code></li>
+<li>ref to <a href="#28">2.8</a></li>
+</ul>
+<h3 id="210">2.10</h3>
+<p>Nikto scans can take a while to fully complete, which switch do we set in order to limit the scan to end at a certain time?</p>
+<ul>
+<li><code>-until</code> <a href="#help">ref</a></li>
+</ul>
+<h3 id="211">2.11</h3>
+<p>But wait, there&rsquo;s more! How do we list all of the plugins are available?</p>
+<ul>
+<li><code>-list-plugins</code> <a href="#help">ref</a></li>
+</ul>
+<h3 id="212">2.12</h3>
+<p>On the flip-side of the database, plugins represent another core component to Nikto. Which switch do we use to instruct Nikto to use plugin checks to find out of date software on the target host? Keep in mind that when testing this command we need to specify the host we intend to run this against. For submitting your answer, use only the base command with the out of date option.</p>
+<ul>
+<li><code>Plugins outdated</code></li>
+<li>a google search helps</li>
+</ul>
+<h3 id="213">2.13</h3>
+<p>Finally, what if we&rsquo;d like to use our plugins to run a series of standard tests against the target host?</p>
+<ul>
+<li><code>Plugins tests</code></li>
+<li>nikto <a href="#help">help</a></li>
+</ul>
+<hr>
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<hr>
+<h2 id="task-03-zip-zap">Task 03: Zip ZAP</h2>
+<p>A brief quiz and tutorial over using the OWASP Zap Scanner</p>
+<h3 id="31">3.1</h3>
+<h3 id="32">3.2</h3>
+<p>Launch ZAP, what option to we set in order to specify what we are attacking?</p>
+<ul>
+<li><code>URL to attack</code></li>
+<li>zap Menu</li>
+</ul>
+<h3 id="33">3.3</h3>
+<h3 id="34">3.4</h3>
+<p>ZAP will discover a file that typically contains pages which well-behaved web indexing engines will read in order to know which sections of a site to avoid. What is the name of this file? (Lucky for us, our scanner isn&rsquo;t what we would call &lsquo;well-behaved&rsquo;!)</p>
+<ul>
+<li><code>robots.txt</code>
+<img src="https://i.imgur.com/kBXdeDB.png" alt="zap"></li>
+</ul>
+<h3 id="35">3.5</h3>
+<p>One entry is included in the disallow section of this file, what is it?</p>
+<ul>
+<li>
+<p><code>/</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">root@ip-10-10-80-133:~# curl 10.10.147.152/robots.txt ; echo 
+User-agent: *
+Disallow: /
+</code></pre></div></li>
+</ul>
+<h3 id="36">3.6</h3>
+<p>ZAP will find a directory that contains images for our application, what is the path for that directory? (This is what will follows the name/ip of the website)</p>
+<ul>
+<li><img src="https://i.imgur.com/gHeEHyQ.png" alt="img"></li>
+</ul>
+<h3 id="37">3.7</h3>
+<p>This website doesn&rsquo;t force a secure connection by default and ZAP isn&rsquo;t pleased with it. Which related cookie is ZAP upset about?</p>
+<ul>
+<li>img
+<img src="https://i.imgur.com/XHvY0uw.png" alt="httponly"></li>
+</ul>
+<h3 id="38">3.8</h3>
+<p>Featured in various rooms on TryHackMe, Cross-Site Scripting is a vicious attack that is becoming ever more common on the open web. What Alert does ZAP produce to let us know that this site is vulnerable to XSS? Note, there are often a couple warnings produced for this, look for one more so directly related to the web client.</p>
+<ul>
+<li><code>Web Browser XSS Protection Not Enabled</code></li>
+</ul>
+<h3 id="39">3.9</h3>
+<p>The ZAP proxy spider represents the component responsible for &lsquo;crawling&rsquo; the site. What site is found to be out of scope?</p>
+<ul>
+<li><code>http://wwww.dvwa.co.uk</code></li>
+</ul>
+<h3 id="310">3.10</h3>
+<p>ZAP will use primarily two methods in order to scan a website, which of these two HTTP methods requests content?</p>
+<ul>
+<li><code>GET</code></li>
+</ul>
+<h3 id="311">3.11</h3>
+<p>Which option attempts to submit content to the website?</p>
+<ul>
+<li><code>POST</code></li>
+</ul>
+<hr>
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<!-- EOF -->
+</article>
+    </section>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2010 - 2022 Classroom</p>
+              
+
+              
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
+        Agent Sudo
+      </a>
+    
+      <a class="ui label" href="/tags/autopsy/" title="autopsy">
+        autopsy
+      </a>
+    
+      <a class="ui label" href="/tags/backdoor/" title="backdoor">
+        backdoor
+      </a>
+    
+      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
+        Baron Samedit
+      </a>
+    
+      <a class="ui label" href="/tags/bash/" title="bash">
+        bash
+      </a>
+    
+      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
+        ceh0821
+      </a>
+    
+      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
+        cheatsheet
+      </a>
+    
+      <a class="ui label" href="/tags/config/" title="config">
+        config
+      </a>
+    
+      <a class="ui label" href="/tags/couch/" title="couch">
+        couch
+      </a>
+    
+      <a class="ui label" href="/tags/crisis/" title="Crisis">
+        Crisis
+      </a>
+    
+      <a class="ui label" href="/tags/dominos/" title="dominos">
+        dominos
+      </a>
+    
+      <a class="ui label" href="/tags/empire/" title="Empire">
+        Empire
+      </a>
+    
+      <a class="ui label" href="/tags/encryption/" title="encryption">
+        encryption
+      </a>
+    
+      <a class="ui label" href="/tags/ffuf/" title="ffuf">
+        ffuf
+      </a>
+    
+      <a class="ui label" href="/tags/forensic/" title="forensic">
+        forensic
+      </a>
+    
+      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
+        gitandcrumpets
+      </a>
+    
+      <a class="ui label" href="/tags/gnupg/" title="gnupg">
+        gnupg
+      </a>
+    
+      <a class="ui label" href="/tags/hackpark/" title="HackPark">
+        HackPark
+      </a>
+    
+      <a class="ui label" href="/tags/hydra/" title="hydra">
+        hydra
+      </a>
+    
+      <a class="ui label" href="/tags/inclusion/" title="inclusion">
+        inclusion
+      </a>
+    
+      <a class="ui label" href="/tags/internal/" title="internal">
+        internal
+      </a>
+    
+      <a class="ui label" href="/tags/internship/" title="Internship">
+        Internship
+      </a>
+    
+      <a class="ui label" href="/tags/interview/" title="interview">
+        interview
+      </a>
+    
+      <a class="ui label" href="/tags/kenobi/" title="kenobi">
+        kenobi
+      </a>
+    
+      <a class="ui label" href="/tags/lab/" title="lab">
+        lab
+      </a>
+    
+      <a class="ui label" href="/tags/leaks/" title="leaks">
+        leaks
+      </a>
+    
+      <a class="ui label" href="/tags/linux/" title="Linux">
+        Linux
+      </a>
+    
+      <a class="ui label" href="/tags/memory/" title="memory">
+        memory
+      </a>
+    
+      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
+        Metamorphosis
+      </a>
+    
+      <a class="ui label" href="/tags/metasploit/" title="metasploit">
+        metasploit
+      </a>
+    
+      <a class="ui label" href="/tags/mobile/" title="Mobile">
+        Mobile
+      </a>
+    
+      <a class="ui label" href="/tags/msf/" title="msf">
+        msf
+      </a>
+    
+      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
+        msfvenom
+      </a>
+    
+      <a class="ui label" href="/tags/nfs/" title="nfs">
+        nfs
+      </a>
+    
+      <a class="ui label" href="/tags/notes/" title="notes">
+        notes
+      </a>
+    
+      <a class="ui label" href="/tags/openvas/" title="openvas">
+        openvas
+      </a>
+    
+      <a class="ui label" href="/tags/osi/" title="OSI">
+        OSI
+      </a>
+    
+      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
+        OSI Model
+      </a>
+    
+      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
+        Overpass 2
+      </a>
+    
+      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
+        Pentesting
+      </a>
+    
+      <a class="ui label" href="/tags/pgp/" title="PGP">
+        PGP
+      </a>
+    
+      <a class="ui label" href="/tags/pip/" title="pip">
+        pip
+      </a>
+    
+      <a class="ui label" href="/tags/pip2/" title="pip2">
+        pip2
+      </a>
+    
+      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
+        Post-Exploitation
+      </a>
+    
+      <a class="ui label" href="/tags/powershell/" title="powershell">
+        powershell
+      </a>
+    
+      <a class="ui label" href="/tags/putty/" title="putty">
+        putty
+      </a>
+    
+      <a class="ui label" href="/tags/python/" title="python">
+        python
+      </a>
+    
+      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
+        RazorBlack
+      </a>
+    
+      <a class="ui label" href="/tags/redteaming/" title="redteaming">
+        redteaming
+      </a>
+    
+      <a class="ui label" href="/tags/ref/" title="Ref">
+        Ref
+      </a>
+    
+      <a class="ui label" href="/tags/relevant/" title="Relevant">
+        Relevant
+      </a>
+    
+      <a class="ui label" href="/tags/rocket/" title="rocket">
+        rocket
+      </a>
+    
+      <a class="ui label" href="/tags/rooms/" title="rooms">
+        rooms
+      </a>
+    
+      <a class="ui label" href="/tags/rootme/" title="RootMe">
+        RootMe
+      </a>
+    
+      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
+        rpwebscanning
+      </a>
+    
+      <a class="ui label" href="/tags/script/" title="script">
+        script
+      </a>
+    
+      <a class="ui label" href="/tags/scripting/" title="Scripting">
+        Scripting
+      </a>
+    
+      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
+        Simple CTF
+      </a>
+    
+      <a class="ui label" href="/tags/splunk/" title="splunk">
+        splunk
+      </a>
+    
+      <a class="ui label" href="/tags/stego/" title="stego">
+        stego
+      </a>
+    
+      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
+        Super-Spam
+      </a>
+    
+      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
+        sweettoothinc
+      </a>
+    
+      <a class="ui label" href="/tags/sysmon/" title="sysmon">
+        sysmon
+      </a>
+    
+      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
+        Thefindcommand
+      </a>
+    
+      <a class="ui label" href="/tags/thm/" title="thm">
+        thm
+      </a>
+    
+      <a class="ui label" href="/tags/tmux/" title="tmux">
+        tmux
+      </a>
+    
+      <a class="ui label" href="/tags/tools/" title="tools">
+        tools
+      </a>
+    
+      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
+        tryhackme
+      </a>
+    
+      <a class="ui label" href="/tags/vapt/" title="vapt">
+        vapt
+      </a>
+    
+      <a class="ui label" href="/tags/volatility/" title="Volatility">
+        Volatility
+      </a>
+    
+      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
+        vuln labs
+      </a>
+    
+      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
+        Vulnversity
+      </a>
+    
+      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
+        web scanning
+      </a>
+    
+      <a class="ui label" href="/tags/wireshark/" title="wireshark">
+        wireshark
+      </a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <div class="item">
+    <a href="/index.xml">
+      <i class="large rss square icon" title="RSS"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="mailto:classroom@anir0y.in">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://twitter.com/anir0y" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://facebook.com/anir0yofficial" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://instagram.com/anir0yofficial" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+  <div class="item">
+    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://github.com/anir0y" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      YOU CAN RESUE MY CONTENT
+    </article>
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+
+
+
+<script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "tomorrow"
+    var darkTheme = "tomorrow-night"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
+
+
+
+
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
+
+    
+
+    
+  </body>
+</html>

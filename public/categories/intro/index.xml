@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intro on Classroom</title>
+    <link>https://classroom.anir0y.in/categories/intro/</link>
+    <description>Recent content in intro on Classroom</description>
+    <generator>Anir0ry : Blog v1.0(Based on Hugo)</generator>
+    <language>en</language>
+    <copyright>YOU CAN RESUE MY CONTENT</copyright>
+    <lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/intro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to  Vapt</title>
+      <link>https://classroom.anir0y.in/post/intro-vapt/</link>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/intro-vapt/</guid>
+      <description>Vulnerability Assessment and Penetration Testing (VAPT) Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.
+Vulnerability Assessment focuses on internal organizational security, while Penetration Testing focuses on external real-world risk.
+What is Vulnerability Assessment (VA)? A Vulnerability Assessment is a rapid automated review of network devices, servers and systems to identify key vulnerabilities and configuration issues that an attacker may be able to take advantage off.</description>
+    </item>
+    
+  </channel>
+</rss>

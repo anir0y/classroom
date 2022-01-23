@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Try Hack ME Room Malstrings | Classroom</title>
+
+    
+<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+<meta name="author" content="Animesh Roy"  />
+<meta name="description" content="Try Hack Me Room MALware Strings solved by Animesh Roy. this is a walkthough. read more..." />
+
+
+
+<title>Animesh Roy | Classroom Posts</title>
+<meta name="title" content="Animesh Roy | Blogs & Writeups">
+<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://classroom.anir0y.in/post/thm-room-malstrings/">
+
+<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZBEX7RBNF');
+</script>
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "6gp5990ghr");
+</script>
+
+
+<link rel="canonical" href="https://classroom.anir0y.in/post/thm-room-malstrings/" />
+
+
+<meta property="og:title" content="Try Hack ME Room Malstrings" />
+<meta property="og:description" content="Try Hack Me Room MALware Strings solved by Animesh Roy. this is a walkthough. read more..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/thm-room-malstrings/" />
+<meta property="article:published_time" content="2021-05-31T00:21:19+05:30" />
+<meta property="article:modified_time" content="2021-05-31T00:21:19+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Try Hack ME Room Malstrings"/>
+<meta name="twitter:description" content="Try Hack Me Room MALware Strings solved by Animesh Roy. this is a walkthough. read more..."/>
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.ui.button),
+  .inverted a:not(.ui.button):hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: #fff;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#task-01-what-are-strings">Task 01: What are &ldquo;strings&rdquo;?</a>
+      <ul>
+        <li><a href="#mp-strings">MP: Strings</a></li>
+        <li><a href="#flag-11">Flag-1.1</a></li>
+        <li><a href="#flag-12">Flag-1.2</a></li>
+        <li><a href="#flag-13">Flag-1.3</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-02-practical-extracting-strings-from-an-application">Task 02: Practical: Extracting &ldquo;strings&rdquo; From an Application</a>
+      <ul>
+        <li><a href="#flag-21">Flag-2.1</a></li>
+        <li><a href="#flag-22">Flag-2.2</a></li>
+        <li><a href="#flag-23">Flag-2.3</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-03-strings-in-the-context-of-malware">Task 03: Strings in the Context of Malware</a>
+      <ul>
+        <li><a href="#flag-31">Flag-3.1</a></li>
+        <li><a href="#flag-32">Flag-3.2</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-04-practical-finding-bitcoin-addresses-in-ransomware-deploy">Task 04: Practical: Finding Bitcoin Addresses in Ransomware (Deploy!)</a>
+      <ul>
+        <li><a href="#flag-41">Flag-4.1</a></li>
+        <li><a href="#flag-42">Flag-4.2</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-05-summary">Task 05: Summary</a>
+      <ul>
+        <li><a href="#flag-5">Flag-5</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=Try%20Hack%20ME%20Room%20Malstrings&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-malstrings%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-malstrings%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">Try Hack ME Room Malstrings<div class="sub header">
+            @
+            
+              
+                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
+              
+            
+
+            | 
+                Monday, May 31, 2021
+              
+
+            | 7minuteRead
+
+            | Update at
+              
+                Monday, May 31, 2021
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><h1 id="mal-strings">MAL: Strings</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Profile</th>
+<th style="text-align:right">Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><script src="https://tryhackme.com/badge/434937"></script></td>
+<td style="text-align:right"><a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a></td>
+</tr>
+</tbody>
+</table>
+<!-- Amazon Ads-->
+<script type="text/javascript" language="javascript">
+      var aax_size='300x250';
+      var aax_pubname = 'anir0y-21';
+      var aax_src='302';
+    </script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
+<!-- Amazon Ads-->
+<hr>
+<h2 id="task-01-what-are-strings">Task 01: What are &ldquo;strings&rdquo;?</h2>
+<h3 id="mp-strings">MP: Strings</h3>
+<h4 id="what-are-strings">What are &ldquo;strings&rdquo;?</h4>
+<p>From a programming perspective, &ldquo;strings&rdquo; is the term given for data handled by an application. At a broader view, these pieces of data are used to store information such as text to numerical values.</p>
+<p>For example, let&rsquo;s say we have an application such as a calculator. A user will have to input two numerical values (e.g. 1 and 5) combined with an operator (e.g. + or plus) addition in this case. These values will be stored as &ldquo;strings&rdquo;.</p>
+<p>However &ldquo;strings&rdquo; can be stored within the application itself - where no input is necessary from the user. For example, using the example of usernames and passwords is a great representation of the many types of information that may be stored as a &ldquo;string&rdquo;.</p>
+<h4 id="why-are-strings-important">Why are &ldquo;strings&rdquo; important?</h4>
+<p>We&rsquo;re all security-minded people here and know that writing down passwords isn&rsquo;t a very smart thing to do. However, developers are not quite so likeminded and often leave credentials in applications which are often essential i.e. An application that server needs to know the IP address of it. Arguably, an IP address is trivial in comparison to the sensitivity of a password - but both would be stored as strings.</p>
+<p>There are a plethora of examples of companies storing sensitive information such as passwords within their applications. For example, Intellian, a satellite-communications focused company had the disclosure of their &ldquo;Aptus Web 1.24&rdquo; application retaining a default passcode of “12345678”.</p>
+<p>Illustrated below is an example of an Android Application containing sensitive credentials within strings:</p>
+<p><img src="https://1.bp.blogspot.com/-itNHMN1O9J8/Xi2olyvRRfI/AAAAAAAAGtk/LEY9xXheHJgBs4TUdhQsEzUGunvVH3BmwCEwYBhgL/s640/2_hardcoded_pass.png" alt=""></p>
+<p>(Credit: <a href="https://www.blogger.com/profile/01349805697841422503">Ezequiel., Skullarmy</a>)</p>
+<p>Time for a bit of research to solve the questions below:</p>
+<h3 id="flag-11">Flag-1.1</h3>
+<blockquote>
+<p>What is the name of the account that had the passcode of &ldquo;12345678&rdquo; in the intellian example discussed above?</p>
+<p><code>intellian</code></p>
+</blockquote>
+<p>I searched this product name on google and found it’s default username and password. <br>
+<img src="https://i.imgur.com/keVrtdy.png" alt=""></p>
+<h3 id="flag-12">Flag-1.2</h3>
+<blockquote>
+<p>What is the CVE entry disclosed by the company &ldquo;Teradata&rdquo; in their &ldquo;Viewpoint&rdquo; Application that has a password within a string?</p>
+<p><code>CVE-2019-6499</code></p>
+</blockquote>
+<p>quick read: <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-6499">https://nvd.nist.gov/vuln/detail/CVE-2019-6499</a></p>
+<h3 id="flag-13">Flag-1.3</h3>
+<blockquote>
+<p>According to OWASP&rsquo;s list of &ldquo;Top Ten IoT&rdquo; vulnerabilities, name the ranking this vulnerability would fall within, represented as text.</p>
+<p><code>one</code></p>
+</blockquote>
+<p>According to OWASP’s list of “Top Ten IoT” vulnerabilities, name the ranking this vulnerability would fall within, represented as text.
+read: <a href="https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf">https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf</a></p>
+<hr>
+<h2 id="task-02-practical-extracting-strings-from-an-application">Task 02: Practical: Extracting &ldquo;strings&rdquo; From an Application</h2>
+<p><strong>Download the material attached to the task.</strong></p>
+<p>It is a little console program I have written in c++ for this example that replicates a login prompt.</p>
+<p><img src="https://i.imgur.com/3PQghBl.png" alt=""></p>
+<p>As displayed above, if you were to execute this on Windows you&rsquo;d be greeted with a prompt asking for a Username and password. The problem is, we don&rsquo;t know what the credentials are but we want to get in! Let&rsquo;s have a look into how the application understands what usernames and passwords are right and wrong.</p>
+<p>Load up a terminal and use the command <code>strings &lt;filename&gt;</code> replacing <filename> with the name and path of the downloaded file attached to this Task i.e. <code>strings /home/kali/Downloads/LoginForm.exe</code></p>
+<p>You will see a lot of text appear - and might be cut things out! Rather than just printing the output to the terminal, perhaps we should save it to a file? You can &ldquo;pipe&rdquo; (or direct) the output to a file.</p>
+<p><img src="https://i.imgur.com/ge2sGB4.png" alt=""></p>
+<p>Now that we have stored the output into a file, we can do all sorts - filter it, sort it, search it! That&rsquo;s what you&rsquo;ll need to do. Open it in a text editor - either via terminal using nano, vi or Kali&rsquo;s installed GUI text editor Mousepad</p>
+<p><img src="https://i.imgur.com/Azkt3su.png" alt=""></p>
+<p>Looking through the file will show mostly garbage, but all you need is one golden nugget! You will be able to answer the following questions with this information. Think, what looks most likely a username and password?</p>
+<h3 id="flag-21">Flag-2.1</h3>
+<blockquote>
+<p>What is the correct username required by the &ldquo;LoginForm&rdquo;?</p>
+<p><code>cmnatic</code></p>
+</blockquote>
+<h3 id="flag-22">Flag-2.2</h3>
+<blockquote>
+<p>What is the required password to authenticate with?</p>
+<p><code>TryHackMeMerchWhen</code></p>
+</blockquote>
+<h3 id="flag-23">Flag-2.3</h3>
+<blockquote>
+<p>What is the &ldquo;hidden&rdquo; THM{} flag?</p>
+<p><code>THM{Not_So_Hidden_Flag}</code></p>
+</blockquote>
+<h4 id="ans-of-all-3-questions">Ans of all 3 questions.</h4>
+<p><img src="https://i.imgur.com/vCU5igb.png" alt=""></p>
+<hr>
+<h2 id="task-03-strings-in-the-context-of-malware">Task 03: Strings in the Context of Malware</h2>
+<p>Great, developers can be lazy - they leave passwords in applications as we have previously discussed. How does that relate to us as a malware analyst? Well&hellip;</p>
+<p>We&rsquo;ve discovered that even professional developers can &ldquo;slip up&rdquo; a few times, malware authors are still developers at the end of the day.</p>
+<p>But more specifically, malware types such as botnets and ransomware rely upon information being stored within strings I.e. IP Addresses so that they are able to &ldquo;call home&rdquo; and connect to their &ldquo;Command and Control&rdquo; (C&amp;C) server.</p>
+<p>A famous example is the &ldquo;Wannacry&rdquo; ransomware. The &ldquo;killswitch&rdquo; was a domain that was discovered as a value contained within a string.</p>
+<p>As we will later come on to discover, building a picture of the various stages a piece of malware proceeds through is essential to prevent further infection. Information such as who the software communicates to I.e. IP Addresses such as in the case of a botnet, or the payment address in the instances of ransomware is prevalent in building this picture.</p>
+<h3 id="flag-31">Flag-3.1</h3>
+<blockquote>
+<p>What is the key term to describe a server that Botnets recieve instructions from?</p>
+<p><code>Command and Control</code></p>
+</blockquote>
+<p>Read the statement of <a href="#task-03-strings-in-the-context-of-malware">Task 03</a></p>
+<h3 id="flag-32">Flag-3.2</h3>
+<blockquote>
+<p>Name the discussed example malware that uses &ldquo;strings&rdquo; to store the bitcoin wallet addresses for payment</p>
+<p><code>wannacry</code></p>
+</blockquote>
+<p>Read the statement of <a href="#task-03-strings-in-the-context-of-malware">Task 03</a></p>
+<hr>
+<h2 id="task-04-practical-finding-bitcoin-addresses-in-ransomware-deploy">Task 04: Practical: Finding Bitcoin Addresses in Ransomware (Deploy!)</h2>
+<p><strong>What is Bitcoin?</strong></p>
+<p>At a brief overview, Bitcoin is an &ldquo;anonymous&rdquo; online payment currency in the sense that there is no direct attribution between the sender and recipient. Authors of ransomware use this currency because of this trait - however, just because there is no attribution such as real names like traditional payment methods, it is traceable by Law Enforcement (albeit difficult).</p>
+<p>For example, Wannacry uses Bitcoin as the payment method for the decryption of files. Bitcoin uses virtual wallets, similar to a MAC address of a network interface card. <a href="https://tryhackme.com/p/MuirlandOracle">MuirlandOracle</a> explains the concept of MAC addresses in his Introductory: Networking room, these wallets have addresses who are unique.</p>
+<p>I.e. The Bitcoin address used by the authors of Wannacry was <a href="https://live.blockcypher.com/btc/address/13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94/">13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94</a></p>
+<p><img src="https://i.imgur.com/i6m7GOI.png" alt="wanncry bitcoin wallet"></p>
+<p>In this case, the previously mentioned Bitcoin address used for Wannacry has to-date received over 20BTC (Bitcoins) from victims, which translates into over just over £158k (as of 06/04/2020).</p>
+<p>You can use a website such as <a href="https://live.blockcypher.com/">BlockCypher</a> to explore the Bitcoin network and transactions between wallets.</p>
+<p><img src="https://i.imgur.com/fFQHzwg.png" alt=""></p>
+<p><strong>Practical</strong></p>
+<p>You need to perform a few prerequisites before you can complete this task, the steps are detailed below:</p>
+<ol>
+<li>Deploy the VM attached to this room and wait a couple of minutes for it to deploy. In the interim, ensure you are connected to TryHackMe via OpenVPN to RDP into the machine using the details below, or alternatively, control the instance in-browser at the top of the web page!</li>
+<li>Open the &ldquo;Sysinternals&rdquo; folder located on the Desktop to proceed</li>
+</ol>
+<p>Before using the &ldquo;strings&rdquo; tool provided with Sysinternals, we need to accept the license agreement first. You can do this by launching the executable through the command prompt and press &ldquo;Agree&rdquo; on the popup dialogue box</p>
+<p><img src="https://i.imgur.com/O6A2Ais.png" alt=""></p>
+<p>With this license accepted, we can now use this tool to extract the &ldquo;strings&rdquo; contained within the ComplexCalculatorv2.exe with the following syntax: <code>strings.exe ComplexCalculatorv2.exe &gt; strings.txt</code></p>
+<p><img src="https://i.imgur.com/XqwKQJW.png" alt=""></p>
+<p>Now open up the text file created from the syntax we just entered with a text editor such as Notepad, where you will find the answer to solve Question #2.</p>
+<h3 id="flag-41">Flag-4.1</h3>
+<blockquote>
+<p>List the number of total transactions that the Bitcoin wallet used by the &ldquo;Wannacry&rdquo; author(s)</p>
+<p><code>142</code></p>
+</blockquote>
+<p>always check this URL to get the Correct ANS: <a href="https://live.blockcypher.com/btc/address/13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94/">https://live.blockcypher.com/btc/address/13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94/</a></p>
+<p><img src="https://i.imgur.com/5QrhqTy.png" alt=""></p>
+<h3 id="flag-42">Flag-4.2</h3>
+<blockquote>
+<p>What is the Bitcoin Address stored within &ldquo;ComplexCalculator.exe&rdquo;</p>
+</blockquote>
+<p>ans:
+<img src="https://i.imgur.com/CQCWdz3.png" alt=""></p>
+<hr>
+<h2 id="task-05-summary">Task 05: Summary</h2>
+<p><strong>Let&rsquo;s Recap&hellip;</strong></p>
+<p>This room is somewhat arguably brief. However, we discussed the theory behind &ldquo;strings&rdquo; and why they are important for us as malware analysts. There isn&rsquo;t all that much to the actual process of extracting &ldquo;strings&rdquo;, however, it is an important topic to discuss.</p>
+<p>Moreover, hopefully after a bit of research, you now understand why &ldquo;hard-coded&rdquo; values such as credentials are a bad thing - and unfortunately still a re-occurring problem, least not an easy way to get into bug bounties!</p>
+<p>We then extracted some of these &ldquo;strings&rdquo; from an example application that I made using Kali Linux&rsquo;s strings command.</p>
+<p>Whilst there isn&rsquo;t a default command to extract &ldquo;strings&rdquo; within a program on Windows, there&rsquo;s certainly a toolset that Microsoft provides that you can download!</p>
+<p>Finally, we discussed how malware variants such as ransomware rely upon &ldquo;strings&rdquo; functionality i.e. &ldquo;calling home&rdquo; and/or bitcoin wallet addresses.</p>
+<p>I hope you enjoyed the practical side and remember the tools available to you to extract these &ldquo;strings&rdquo; for use later on within the series!</p>
+<h3 id="flag-5">Flag-5</h3>
+<p><img src="https://i.imgur.com/gucHwHG.png" alt=""></p>
+<hr>
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<hr>
+</article>
+    </section>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2010 - 2022 Classroom</p>
+              
+
+              
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
+        Agent Sudo
+      </a>
+    
+      <a class="ui label" href="/tags/autopsy/" title="autopsy">
+        autopsy
+      </a>
+    
+      <a class="ui label" href="/tags/backdoor/" title="backdoor">
+        backdoor
+      </a>
+    
+      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
+        Baron Samedit
+      </a>
+    
+      <a class="ui label" href="/tags/bash/" title="bash">
+        bash
+      </a>
+    
+      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
+        ceh0821
+      </a>
+    
+      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
+        cheatsheet
+      </a>
+    
+      <a class="ui label" href="/tags/config/" title="config">
+        config
+      </a>
+    
+      <a class="ui label" href="/tags/couch/" title="couch">
+        couch
+      </a>
+    
+      <a class="ui label" href="/tags/crisis/" title="Crisis">
+        Crisis
+      </a>
+    
+      <a class="ui label" href="/tags/dominos/" title="dominos">
+        dominos
+      </a>
+    
+      <a class="ui label" href="/tags/empire/" title="Empire">
+        Empire
+      </a>
+    
+      <a class="ui label" href="/tags/encryption/" title="encryption">
+        encryption
+      </a>
+    
+      <a class="ui label" href="/tags/ffuf/" title="ffuf">
+        ffuf
+      </a>
+    
+      <a class="ui label" href="/tags/forensic/" title="forensic">
+        forensic
+      </a>
+    
+      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
+        gitandcrumpets
+      </a>
+    
+      <a class="ui label" href="/tags/gnupg/" title="gnupg">
+        gnupg
+      </a>
+    
+      <a class="ui label" href="/tags/hackpark/" title="HackPark">
+        HackPark
+      </a>
+    
+      <a class="ui label" href="/tags/hydra/" title="hydra">
+        hydra
+      </a>
+    
+      <a class="ui label" href="/tags/inclusion/" title="inclusion">
+        inclusion
+      </a>
+    
+      <a class="ui label" href="/tags/internal/" title="internal">
+        internal
+      </a>
+    
+      <a class="ui label" href="/tags/internship/" title="Internship">
+        Internship
+      </a>
+    
+      <a class="ui label" href="/tags/interview/" title="interview">
+        interview
+      </a>
+    
+      <a class="ui label" href="/tags/kenobi/" title="kenobi">
+        kenobi
+      </a>
+    
+      <a class="ui label" href="/tags/lab/" title="lab">
+        lab
+      </a>
+    
+      <a class="ui label" href="/tags/leaks/" title="leaks">
+        leaks
+      </a>
+    
+      <a class="ui label" href="/tags/linux/" title="Linux">
+        Linux
+      </a>
+    
+      <a class="ui label" href="/tags/memory/" title="memory">
+        memory
+      </a>
+    
+      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
+        Metamorphosis
+      </a>
+    
+      <a class="ui label" href="/tags/metasploit/" title="metasploit">
+        metasploit
+      </a>
+    
+      <a class="ui label" href="/tags/mobile/" title="Mobile">
+        Mobile
+      </a>
+    
+      <a class="ui label" href="/tags/msf/" title="msf">
+        msf
+      </a>
+    
+      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
+        msfvenom
+      </a>
+    
+      <a class="ui label" href="/tags/nfs/" title="nfs">
+        nfs
+      </a>
+    
+      <a class="ui label" href="/tags/notes/" title="notes">
+        notes
+      </a>
+    
+      <a class="ui label" href="/tags/openvas/" title="openvas">
+        openvas
+      </a>
+    
+      <a class="ui label" href="/tags/osi/" title="OSI">
+        OSI
+      </a>
+    
+      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
+        OSI Model
+      </a>
+    
+      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
+        Overpass 2
+      </a>
+    
+      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
+        Pentesting
+      </a>
+    
+      <a class="ui label" href="/tags/pgp/" title="PGP">
+        PGP
+      </a>
+    
+      <a class="ui label" href="/tags/pip/" title="pip">
+        pip
+      </a>
+    
+      <a class="ui label" href="/tags/pip2/" title="pip2">
+        pip2
+      </a>
+    
+      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
+        Post-Exploitation
+      </a>
+    
+      <a class="ui label" href="/tags/powershell/" title="powershell">
+        powershell
+      </a>
+    
+      <a class="ui label" href="/tags/putty/" title="putty">
+        putty
+      </a>
+    
+      <a class="ui label" href="/tags/python/" title="python">
+        python
+      </a>
+    
+      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
+        RazorBlack
+      </a>
+    
+      <a class="ui label" href="/tags/redteaming/" title="redteaming">
+        redteaming
+      </a>
+    
+      <a class="ui label" href="/tags/ref/" title="Ref">
+        Ref
+      </a>
+    
+      <a class="ui label" href="/tags/relevant/" title="Relevant">
+        Relevant
+      </a>
+    
+      <a class="ui label" href="/tags/rocket/" title="rocket">
+        rocket
+      </a>
+    
+      <a class="ui label" href="/tags/rooms/" title="rooms">
+        rooms
+      </a>
+    
+      <a class="ui label" href="/tags/rootme/" title="RootMe">
+        RootMe
+      </a>
+    
+      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
+        rpwebscanning
+      </a>
+    
+      <a class="ui label" href="/tags/script/" title="script">
+        script
+      </a>
+    
+      <a class="ui label" href="/tags/scripting/" title="Scripting">
+        Scripting
+      </a>
+    
+      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
+        Simple CTF
+      </a>
+    
+      <a class="ui label" href="/tags/splunk/" title="splunk">
+        splunk
+      </a>
+    
+      <a class="ui label" href="/tags/stego/" title="stego">
+        stego
+      </a>
+    
+      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
+        Super-Spam
+      </a>
+    
+      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
+        sweettoothinc
+      </a>
+    
+      <a class="ui label" href="/tags/sysmon/" title="sysmon">
+        sysmon
+      </a>
+    
+      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
+        Thefindcommand
+      </a>
+    
+      <a class="ui label" href="/tags/thm/" title="thm">
+        thm
+      </a>
+    
+      <a class="ui label" href="/tags/tmux/" title="tmux">
+        tmux
+      </a>
+    
+      <a class="ui label" href="/tags/tools/" title="tools">
+        tools
+      </a>
+    
+      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
+        tryhackme
+      </a>
+    
+      <a class="ui label" href="/tags/vapt/" title="vapt">
+        vapt
+      </a>
+    
+      <a class="ui label" href="/tags/volatility/" title="Volatility">
+        Volatility
+      </a>
+    
+      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
+        vuln labs
+      </a>
+    
+      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
+        Vulnversity
+      </a>
+    
+      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
+        web scanning
+      </a>
+    
+      <a class="ui label" href="/tags/wireshark/" title="wireshark">
+        wireshark
+      </a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <div class="item">
+    <a href="/index.xml">
+      <i class="large rss square icon" title="RSS"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="mailto:classroom@anir0y.in">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://twitter.com/anir0y" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://facebook.com/anir0yofficial" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://instagram.com/anir0yofficial" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+  <div class="item">
+    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://github.com/anir0y" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      YOU CAN RESUE MY CONTENT
+    </article>
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+
+
+
+<script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "tomorrow"
+    var darkTheme = "tomorrow-night"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
+
+
+
+
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
+
+    
+
+    
+  </body>
+</html>
