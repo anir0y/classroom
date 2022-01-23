@@ -1,0 +1,54 @@
+---
+title: Classroom | NFS Installation & enumeation
+date: 2022-01-19T13:47:54+05:30
+lastmod: 2022-01-19T13:47:54+05:30
+author: Animesh Roy
+avatar: /img/avatar.jpeg
+authorlink: https://bit.ly/34sGFiK
+cover: /img/blog-nfs.png # for tryhackMe
+simg: /img/blog-nfs.png
+
+categories:
+  - Classroom
+tags:
+  - nfs
+  - ceh0821
+
+
+draft: false
+description: installation of NFS & Enumeation using Various tools. 
+
+---
+
+## OverView
+
+**Network File System (NFS)** is a distributed file system protocol originally developed by Sun Microsystems (Sun) in 1984, allowing a user on a client computer to access files over a computer network much like local storage is accessed. NFS, like many other protocols, builds on the Open Network Computing Remote Procedure Call (ONC RPC) system. NFS is an open IETF standard defined in a Request for Comments (RFC), allowing anyone to implement the protocol.
+
+## Video Walkthough
+
+{{< youtube Ix_2nIfl26Y >}}
+
+
+
+
+
+---
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3526678290068011"
+     data-ad-slot="7160066188"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+
+---
+
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+<!-- EOF -->
