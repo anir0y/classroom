@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>notes | Classroom</title>
+
+    
+<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+<meta name="author" content="Animesh Roy"  />
+<meta name="description" content="" />
+
+
+
+<title>Animesh Roy | Classroom Posts</title>
+<meta name="title" content="Animesh Roy | Blogs & Writeups">
+<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://classroom.anir0y.in/tags/notes/">
+
+<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZBEX7RBNF');
+</script>
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "6gp5990ghr");
+</script>
+
+
+<link rel="canonical" href="https://classroom.anir0y.in/tags/notes/" />
+
+
+<meta property="og:title" content="notes" />
+<meta property="og:description" content="Animesh Roy is a Hyderabad-based Cybersecurity Consultant, the CEO of Arishti Consolidated Pvt. Ltd" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://classroom.anir0y.in/tags/notes/" />
+<meta property="og:updated_time" content="2021-05-16T23:54:39+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="notes"/>
+<meta name="twitter:description" content="Animesh Roy is a Hyderabad-based Cybersecurity Consultant, the CEO of Arishti Consolidated Pvt. Ltd"/>
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.ui.button),
+  .inverted a:not(.ui.button):hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: #fff;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+     
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+
+<header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
+        Agent Sudo
+      </a>
+    
+      <a class="ui label" href="/tags/autopsy/" title="autopsy">
+        autopsy
+      </a>
+    
+      <a class="ui label" href="/tags/backdoor/" title="backdoor">
+        backdoor
+      </a>
+    
+      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
+        Baron Samedit
+      </a>
+    
+      <a class="ui label" href="/tags/bash/" title="bash">
+        bash
+      </a>
+    
+      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
+        ceh0821
+      </a>
+    
+      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
+        cheatsheet
+      </a>
+    
+      <a class="ui label" href="/tags/config/" title="config">
+        config
+      </a>
+    
+      <a class="ui label" href="/tags/couch/" title="couch">
+        couch
+      </a>
+    
+      <a class="ui label" href="/tags/crisis/" title="Crisis">
+        Crisis
+      </a>
+    
+      <a class="ui label" href="/tags/dominos/" title="dominos">
+        dominos
+      </a>
+    
+      <a class="ui label" href="/tags/empire/" title="Empire">
+        Empire
+      </a>
+    
+      <a class="ui label" href="/tags/encryption/" title="encryption">
+        encryption
+      </a>
+    
+      <a class="ui label" href="/tags/ffuf/" title="ffuf">
+        ffuf
+      </a>
+    
+      <a class="ui label" href="/tags/forensic/" title="forensic">
+        forensic
+      </a>
+    
+      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
+        gitandcrumpets
+      </a>
+    
+      <a class="ui label" href="/tags/gnupg/" title="gnupg">
+        gnupg
+      </a>
+    
+      <a class="ui label" href="/tags/hackpark/" title="HackPark">
+        HackPark
+      </a>
+    
+      <a class="ui label" href="/tags/hydra/" title="hydra">
+        hydra
+      </a>
+    
+      <a class="ui label" href="/tags/inclusion/" title="inclusion">
+        inclusion
+      </a>
+    
+      <a class="ui label" href="/tags/internal/" title="internal">
+        internal
+      </a>
+    
+      <a class="ui label" href="/tags/internship/" title="Internship">
+        Internship
+      </a>
+    
+      <a class="ui label" href="/tags/interview/" title="interview">
+        interview
+      </a>
+    
+      <a class="ui label" href="/tags/kenobi/" title="kenobi">
+        kenobi
+      </a>
+    
+      <a class="ui label" href="/tags/lab/" title="lab">
+        lab
+      </a>
+    
+      <a class="ui label" href="/tags/leaks/" title="leaks">
+        leaks
+      </a>
+    
+      <a class="ui label" href="/tags/linux/" title="Linux">
+        Linux
+      </a>
+    
+      <a class="ui label" href="/tags/memory/" title="memory">
+        memory
+      </a>
+    
+      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
+        Metamorphosis
+      </a>
+    
+      <a class="ui label" href="/tags/metasploit/" title="metasploit">
+        metasploit
+      </a>
+    
+      <a class="ui label" href="/tags/mobile/" title="Mobile">
+        Mobile
+      </a>
+    
+      <a class="ui label" href="/tags/msf/" title="msf">
+        msf
+      </a>
+    
+      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
+        msfvenom
+      </a>
+    
+      <a class="ui label" href="/tags/nfs/" title="nfs">
+        nfs
+      </a>
+    
+      <a class="ui label" href="/tags/notes/" title="notes">
+        notes
+      </a>
+    
+      <a class="ui label" href="/tags/openvas/" title="openvas">
+        openvas
+      </a>
+    
+      <a class="ui label" href="/tags/osi/" title="OSI">
+        OSI
+      </a>
+    
+      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
+        OSI Model
+      </a>
+    
+      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
+        Overpass 2
+      </a>
+    
+      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
+        Pentesting
+      </a>
+    
+      <a class="ui label" href="/tags/pgp/" title="PGP">
+        PGP
+      </a>
+    
+      <a class="ui label" href="/tags/pip/" title="pip">
+        pip
+      </a>
+    
+      <a class="ui label" href="/tags/pip2/" title="pip2">
+        pip2
+      </a>
+    
+      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
+        Post-Exploitation
+      </a>
+    
+      <a class="ui label" href="/tags/powershell/" title="powershell">
+        powershell
+      </a>
+    
+      <a class="ui label" href="/tags/putty/" title="putty">
+        putty
+      </a>
+    
+      <a class="ui label" href="/tags/python/" title="python">
+        python
+      </a>
+    
+      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
+        RazorBlack
+      </a>
+    
+      <a class="ui label" href="/tags/redteaming/" title="redteaming">
+        redteaming
+      </a>
+    
+      <a class="ui label" href="/tags/ref/" title="Ref">
+        Ref
+      </a>
+    
+      <a class="ui label" href="/tags/relevant/" title="Relevant">
+        Relevant
+      </a>
+    
+      <a class="ui label" href="/tags/rocket/" title="rocket">
+        rocket
+      </a>
+    
+      <a class="ui label" href="/tags/rooms/" title="rooms">
+        rooms
+      </a>
+    
+      <a class="ui label" href="/tags/rootme/" title="RootMe">
+        RootMe
+      </a>
+    
+      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
+        rpwebscanning
+      </a>
+    
+      <a class="ui label" href="/tags/script/" title="script">
+        script
+      </a>
+    
+      <a class="ui label" href="/tags/scripting/" title="Scripting">
+        Scripting
+      </a>
+    
+      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
+        Simple CTF
+      </a>
+    
+      <a class="ui label" href="/tags/splunk/" title="splunk">
+        splunk
+      </a>
+    
+      <a class="ui label" href="/tags/stego/" title="stego">
+        stego
+      </a>
+    
+      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
+        Super-Spam
+      </a>
+    
+      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
+        sweettoothinc
+      </a>
+    
+      <a class="ui label" href="/tags/sysmon/" title="sysmon">
+        sysmon
+      </a>
+    
+      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
+        Thefindcommand
+      </a>
+    
+      <a class="ui label" href="/tags/thm/" title="thm">
+        thm
+      </a>
+    
+      <a class="ui label" href="/tags/tmux/" title="tmux">
+        tmux
+      </a>
+    
+      <a class="ui label" href="/tags/tools/" title="tools">
+        tools
+      </a>
+    
+      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
+        tryhackme
+      </a>
+    
+      <a class="ui label" href="/tags/vapt/" title="vapt">
+        vapt
+      </a>
+    
+      <a class="ui label" href="/tags/volatility/" title="Volatility">
+        Volatility
+      </a>
+    
+      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
+        vuln labs
+      </a>
+    
+      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
+        Vulnversity
+      </a>
+    
+      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
+        web scanning
+      </a>
+    
+      <a class="ui label" href="/tags/wireshark/" title="wireshark">
+        wireshark
+      </a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid">
+  
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/thm-room-osquery/">
+    
+    <img src="/img/thm.gif" alt="Try Hack Me Room Osquery" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/thm-room-osquery/">Try Hack Me Room Osquery</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Sunday, May 16, 2021</p>
+    </div>
+    <div class="description">
+      Osquery    Profile Support           TASK 1 : Introduction Osquery is an open-source tool created by Facebook. With Osquery, Security Analysts, Incident Responders, Threat Hunters, etc., can query an endpoint (or multiple endpoints) using SQL syntax. Osquery can be installed on multiple platforms: Windows, Linux, macOS, and FreeBSD.
+Many well-known companies, besides Facebook, either use Osquery, utilize osquery within their tools, and/or look for individuals who know Osquery.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>12 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/thm-room-openvas/">
+    
+    <img src="/img/thm.gif" alt="Try Hack Me Room Room Openvas" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/thm-room-openvas/">Try Hack Me Room Room Openvas</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Monday, May 10, 2021</p>
+    </div>
+    <div class="description">
+      OpenVas   Room Subscription Only
+ Task 1: Introduction OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>9 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/thm-room-zerologon/">
+    
+    <img src="/img/thm.gif" alt="Try Hack ME Room Zerologon" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/thm-room-zerologon/">Try Hack ME Room Zerologon</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Monday, May 10, 2021</p>
+    </div>
+    <div class="description">
+      Zero Logon - The Zero Day Angle  Room Subscription Only  About The vulnerability - On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.
+Zero Logon is a purely statistics based attack that abuses a feature within MS-NRPC (Microsoft NetLogon Remote Protocol), MS-NRPC is a critical authentication component of Active Directory that handles authentication for User and Machine accounts.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>18 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/">
+    
+    <img src="/img/blog.png" alt="Cyber Security Interview Questions With Answers" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/cyber-security-interview-questions-with-answers/">Cyber Security Interview Questions With Answers</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Friday, May 7, 2021</p>
+    </div>
+    <div class="description">
+      50 Cyber Security Interview Questions (With Answers)  Top Cyber Security Interview Questions Explain Cryptography It is the science of protecting data from third-party using various methods. It is used to protect sensitive information that shouldn’t be disclosed to anyone other than the owners of the information.
+Differentiate between Symmetric and Asymmetric encryption Symmetric encryption – In this type of encryption, the same key is used for encryption
+and decryption of data.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>13 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/">
+    
+    <img src="/img/blog.png" alt="Active Directory Exploitation Cheat Sheet" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/active-directory-exploitation-cheat-sheet/">Active Directory Exploitation Cheat Sheet</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Friday, May 7, 2021</p>
+    </div>
+    <div class="description">
+      Active Directory Exploitation Cheat Sheet A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.
+This cheat sheet is inspired by the PayloadAllTheThings repo.
+Summary  Active Directory Exploitation Cheat Sheet  Summary Tools Domain Enumeration  Using PowerView Using AD Module Using BloodHound Useful Enumeration Tools   Local Privilege Escalation  Useful Local Priv Esc Tools   Lateral Movement  Powershell Remoting Remote Code Execution with PS Credentials Import a powershell module and execute its functions remotely Executing Remote Stateful commands Mimikatz Useful Tools   Domain Privilege Escalation  Kerberoast ASREPRoast Password Spray Attack Force Set SPN Abusing Shadow Copies List and Decrypt Stored Credentials using Mimikatz Unconstrained Delegation Constrained Delegation Resource Based Constrained Delegation DNSAdmins Abuse Abusing Active Directory-Integraded DNS Abusing Backup Operators Group Abusing Exchange Weaponizing Printer Bug Abusing ACLs Abusing IPv6 with mitm6 SID History Abuse Exploiting SharePoint Zerologon Exploit   Domain Persistence  Golden Ticket Attack DCsync Attack Silver Ticket Attack Skeleton Key Attack DSRM Abuse Custom SSP   Cross Forest Attacks  Trust Tickets Abuse MSSQL Servers Breaking Forest Trusts      Tools  Powersploit PowerUpSQL Powermad Impacket Mimikatz Rubeus -&gt; Compiled Version BloodHound AD Module ASREPRoast  Domain Enumeration Using PowerView Powerview v.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>21 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/notes-osimodel-explained/">
+    
+    <img src="/img/blog.png" alt="Notes OSIModel Explained" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/notes-osimodel-explained/">Notes OSIModel Explained</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Sunday, Apr 25, 2021</p>
+    </div>
+    <div class="description">
+      OSI Model Explained Packet Details You can double click on a packet in capture to open its details. Packets consist of 5 to 7 layers based on the OSI model. We will go over all of them in an HTTP packet from a sample capture
+Looking above we can see 7 distinct layers to the packet: frame/packet, source [MAC], source [IP], protocol, protocol errors, application protocol, and application data. Below we will go over the layers in more detail.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>2 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/notes-osimodel/">
+    
+    <img src="/img/blog.png" alt="Notes OSIModel" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/notes-osimodel/">Notes OSIModel</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Wednesday, Apr 21, 2021</p>
+    </div>
+    <div class="description">
+      OSI Model OverView  The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.
+ The OSI model consists of seven layers:
+   Layers     Application   presentation   session   transport   Network   Data Link   Physical      There are many mnemonics floating around to help you learn the layers of the OSI model &ndash; search around until you find one that you like.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>5 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/notes-stego/">
+    
+    <img src="/img/blog.png" alt="Notes Stego" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/notes-stego/">Notes Stego</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Wednesday, Apr 21, 2021</p>
+    </div>
+    <div class="description">
+      Steganography - A list of useful tools and resources Steganography Steganography is hiding a file or a message inside of another file , there are many fun steganography CTF challenges out there where the flag is hidden in an image , audio file or even other types of files. Here is a list of the most tools I use and some other useful resources.
+ Note : This list will be updated regularly , feel free to pm if you have any suggestions
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>4 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/intro-vapt/">
+    
+    <img src="/img/cover.jpg" alt="Introduction to  Vapt" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/intro-vapt/">Introduction to  Vapt</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Sunday, Mar 21, 2021</p>
+    </div>
+    <div class="description">
+      Vulnerability Assessment and Penetration Testing (VAPT) Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.
+Vulnerability Assessment focuses on internal organizational security, while Penetration Testing focuses on external real-world risk.
+What is Vulnerability Assessment (VA)? A Vulnerability Assessment is a rapid automated review of network devices, servers and systems to identify key vulnerabilities and configuration issues that an attacker may be able to take advantage off.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>3 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+
+  
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2010 - 2022 Classroom</p>
+              
+
+              
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
+        Agent Sudo
+      </a>
+    
+      <a class="ui label" href="/tags/autopsy/" title="autopsy">
+        autopsy
+      </a>
+    
+      <a class="ui label" href="/tags/backdoor/" title="backdoor">
+        backdoor
+      </a>
+    
+      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
+        Baron Samedit
+      </a>
+    
+      <a class="ui label" href="/tags/bash/" title="bash">
+        bash
+      </a>
+    
+      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
+        ceh0821
+      </a>
+    
+      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
+        cheatsheet
+      </a>
+    
+      <a class="ui label" href="/tags/config/" title="config">
+        config
+      </a>
+    
+      <a class="ui label" href="/tags/couch/" title="couch">
+        couch
+      </a>
+    
+      <a class="ui label" href="/tags/crisis/" title="Crisis">
+        Crisis
+      </a>
+    
+      <a class="ui label" href="/tags/dominos/" title="dominos">
+        dominos
+      </a>
+    
+      <a class="ui label" href="/tags/empire/" title="Empire">
+        Empire
+      </a>
+    
+      <a class="ui label" href="/tags/encryption/" title="encryption">
+        encryption
+      </a>
+    
+      <a class="ui label" href="/tags/ffuf/" title="ffuf">
+        ffuf
+      </a>
+    
+      <a class="ui label" href="/tags/forensic/" title="forensic">
+        forensic
+      </a>
+    
+      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
+        gitandcrumpets
+      </a>
+    
+      <a class="ui label" href="/tags/gnupg/" title="gnupg">
+        gnupg
+      </a>
+    
+      <a class="ui label" href="/tags/hackpark/" title="HackPark">
+        HackPark
+      </a>
+    
+      <a class="ui label" href="/tags/hydra/" title="hydra">
+        hydra
+      </a>
+    
+      <a class="ui label" href="/tags/inclusion/" title="inclusion">
+        inclusion
+      </a>
+    
+      <a class="ui label" href="/tags/internal/" title="internal">
+        internal
+      </a>
+    
+      <a class="ui label" href="/tags/internship/" title="Internship">
+        Internship
+      </a>
+    
+      <a class="ui label" href="/tags/interview/" title="interview">
+        interview
+      </a>
+    
+      <a class="ui label" href="/tags/kenobi/" title="kenobi">
+        kenobi
+      </a>
+    
+      <a class="ui label" href="/tags/lab/" title="lab">
+        lab
+      </a>
+    
+      <a class="ui label" href="/tags/leaks/" title="leaks">
+        leaks
+      </a>
+    
+      <a class="ui label" href="/tags/linux/" title="Linux">
+        Linux
+      </a>
+    
+      <a class="ui label" href="/tags/memory/" title="memory">
+        memory
+      </a>
+    
+      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
+        Metamorphosis
+      </a>
+    
+      <a class="ui label" href="/tags/metasploit/" title="metasploit">
+        metasploit
+      </a>
+    
+      <a class="ui label" href="/tags/mobile/" title="Mobile">
+        Mobile
+      </a>
+    
+      <a class="ui label" href="/tags/msf/" title="msf">
+        msf
+      </a>
+    
+      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
+        msfvenom
+      </a>
+    
+      <a class="ui label" href="/tags/nfs/" title="nfs">
+        nfs
+      </a>
+    
+      <a class="ui label" href="/tags/notes/" title="notes">
+        notes
+      </a>
+    
+      <a class="ui label" href="/tags/openvas/" title="openvas">
+        openvas
+      </a>
+    
+      <a class="ui label" href="/tags/osi/" title="OSI">
+        OSI
+      </a>
+    
+      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
+        OSI Model
+      </a>
+    
+      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
+        Overpass 2
+      </a>
+    
+      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
+        Pentesting
+      </a>
+    
+      <a class="ui label" href="/tags/pgp/" title="PGP">
+        PGP
+      </a>
+    
+      <a class="ui label" href="/tags/pip/" title="pip">
+        pip
+      </a>
+    
+      <a class="ui label" href="/tags/pip2/" title="pip2">
+        pip2
+      </a>
+    
+      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
+        Post-Exploitation
+      </a>
+    
+      <a class="ui label" href="/tags/powershell/" title="powershell">
+        powershell
+      </a>
+    
+      <a class="ui label" href="/tags/putty/" title="putty">
+        putty
+      </a>
+    
+      <a class="ui label" href="/tags/python/" title="python">
+        python
+      </a>
+    
+      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
+        RazorBlack
+      </a>
+    
+      <a class="ui label" href="/tags/redteaming/" title="redteaming">
+        redteaming
+      </a>
+    
+      <a class="ui label" href="/tags/ref/" title="Ref">
+        Ref
+      </a>
+    
+      <a class="ui label" href="/tags/relevant/" title="Relevant">
+        Relevant
+      </a>
+    
+      <a class="ui label" href="/tags/rocket/" title="rocket">
+        rocket
+      </a>
+    
+      <a class="ui label" href="/tags/rooms/" title="rooms">
+        rooms
+      </a>
+    
+      <a class="ui label" href="/tags/rootme/" title="RootMe">
+        RootMe
+      </a>
+    
+      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
+        rpwebscanning
+      </a>
+    
+      <a class="ui label" href="/tags/script/" title="script">
+        script
+      </a>
+    
+      <a class="ui label" href="/tags/scripting/" title="Scripting">
+        Scripting
+      </a>
+    
+      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
+        Simple CTF
+      </a>
+    
+      <a class="ui label" href="/tags/splunk/" title="splunk">
+        splunk
+      </a>
+    
+      <a class="ui label" href="/tags/stego/" title="stego">
+        stego
+      </a>
+    
+      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
+        Super-Spam
+      </a>
+    
+      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
+        sweettoothinc
+      </a>
+    
+      <a class="ui label" href="/tags/sysmon/" title="sysmon">
+        sysmon
+      </a>
+    
+      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
+        Thefindcommand
+      </a>
+    
+      <a class="ui label" href="/tags/thm/" title="thm">
+        thm
+      </a>
+    
+      <a class="ui label" href="/tags/tmux/" title="tmux">
+        tmux
+      </a>
+    
+      <a class="ui label" href="/tags/tools/" title="tools">
+        tools
+      </a>
+    
+      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
+        tryhackme
+      </a>
+    
+      <a class="ui label" href="/tags/vapt/" title="vapt">
+        vapt
+      </a>
+    
+      <a class="ui label" href="/tags/volatility/" title="Volatility">
+        Volatility
+      </a>
+    
+      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
+        vuln labs
+      </a>
+    
+      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
+        Vulnversity
+      </a>
+    
+      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
+        web scanning
+      </a>
+    
+      <a class="ui label" href="/tags/wireshark/" title="wireshark">
+        wireshark
+      </a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <div class="item">
+    <a href="/index.xml">
+      <i class="large rss square icon" title="RSS"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="mailto:classroom@anir0y.in">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://twitter.com/anir0y" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://facebook.com/anir0yofficial" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://instagram.com/anir0yofficial" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+  <div class="item">
+    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://github.com/anir0y" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      YOU CAN RESUE MY CONTENT
+    </article>
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/grid.js"></script>
+
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
+
+    
+
+    
+  </body>
+</html>

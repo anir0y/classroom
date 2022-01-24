@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Try Hack Me Room Room Openvas | Classroom</title>
+
+    
+<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+<meta name="author" content="Animesh Roy"  />
+<meta name="description" content="Try Hack ME Room OpenVas walkthough" />
+
+
+
+<title>Animesh Roy | Classroom Posts</title>
+<meta name="title" content="Animesh Roy | Blogs & Writeups">
+<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://classroom.anir0y.in/post/thm-room-openvas/">
+
+<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZBEX7RBNF');
+</script>
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "6gp5990ghr");
+</script>
+
+
+<link rel="canonical" href="https://classroom.anir0y.in/post/thm-room-openvas/" />
+
+
+<meta property="og:title" content="Try Hack Me Room Room Openvas" />
+<meta property="og:description" content="Try Hack ME Room OpenVas walkthough" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/thm-room-openvas/" />
+<meta property="article:published_time" content="2021-05-10T01:36:51+05:30" />
+<meta property="article:modified_time" content="2021-05-10T01:36:51+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Try Hack Me Room Room Openvas"/>
+<meta name="twitter:description" content="Try Hack ME Room OpenVas walkthough"/>
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.ui.button),
+  .inverted a:not(.ui.button):hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: #fff;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#openvas">OpenVas</a></li>
+    <li><a href="#task-1-introduction">Task 1: Introduction</a></li>
+    <li><a href="#task-2-gvm-framework-architecture">Task 2: GVM Framework Architecture</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#task-3-installtion">Task 3: Installtion</a></li>
+    <li><a href="#task-4-initial-configuration">Task 4: initial Configuration</a></li>
+    <li><a href="#task-5-scanning-infra">TASK 5: Scanning Infra</a>
+      <ul>
+        <li><a href="#creating-a-task">Creating a Task</a></li>
+        <li><a href="#scoping-a-new-target">Scoping a New Target</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-6-reporting-and-continuous-monitoring">Task 6: Reporting and Continuous Monitoring</a>
+      <ul>
+        <li><a href="#breaking-down-the-report">Breaking Down the Report</a></li>
+        <li><a href="#continuous-monitoring-overview">Continuous Monitoring Overview</a></li>
+        <li><a href="#creating-schedules">Creating Schedules</a></li>
+        <li><a href="#crafting-alerts">Crafting Alerts</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-7-practical-vulnerability-management">Task 7: Practical Vulnerability Management</a>
+      <ul>
+        <li><a href="#case-001-ms00-what">Case 001: MS00-What?</a></li>
+      </ul>
+    </li>
+    <li><a href="#flags">Flags</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=Try%20Hack%20Me%20Room%20Room%20Openvas&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-openvas%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-openvas%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">Try Hack Me Room Room Openvas<div class="sub header">
+            @
+            
+              
+                <a href="https://anir0y.in" target="_blank">Animesh Roy</a>
+              
+            
+
+            | 
+                Monday, May 10, 2021
+              
+
+            | 9minuteRead
+
+            | Update at
+              
+                Monday, May 10, 2021
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><p><img src="/img/openvas.png" alt="openvas logo"></p>
+<h2 id="openvas">OpenVas</h2>
+<script src="https://tryhackme.com/badge/434937"></script> 
+<blockquote>
+<p><strong>Room</strong> <a href="https://tryhackme.com/room/openvas">Subscription Only</a></p>
+</blockquote>
+<h2 id="task-1-introduction">Task 1: Introduction</h2>
+<p>OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.</p>
+<p>From the OpenVAS GitHub repository &ldquo;This is the Open Vulnerability Assessment Scanner (OpenVAS) of the Greenbone Vulnerability Management (GVM) Solution. It is used for the Greenbone Security Manager appliances and is a full-featured scan engine that executes a continuously updated and extended feed of Network Vulnerability Tests (NVTs)</p>
+<h2 id="task-2-gvm-framework-architecture">Task 2: GVM Framework Architecture</h2>
+<p>As previously mentioned OpenVAS is built off the GreenBone Vulnerability Management (GVM) solution and is only one of the appliances that is released from GreenBone.</p>
+<p><img src="https://www.greenbone.net/wp-content/uploads/01_Logo-mit-Schriftzug_500px_on_white_horiz1.jpg" alt="openvas: animesh roy blog post"></p>
+<p>OpenVAS is a service within a larger framework of services known as Greenbone Vulnerability Management (GVM). In this task we will break down the services that make up the framework and their roles.</p>
+<p><img src="https://community.greenbone.net/uploads/default/optimized/1X/901766e0fa6b6cb6aee9f4702f46fb8a703a332b_2_690x323.png" alt="openvas GVM"></p>
+<p>Above is a brief visual breakdown of what the GVM framework looks like. There are many components that are apart of the architecture for the GVM framework, but we can break it down into three distinct sections: Front-End, Back-End, and Vulnerability/Information feed. These sections are further explained below.</p>
+<h4 id="vulnerabilityinformation-feed-nvt-scap-cert-user-data-community-feed">Vulnerability/Information Feed (NVT, SCAP CERT, User Data, Community Feed)</h4>
+<p>This section will contain all information and vulnerability tests that come from the Greenbone Community Feed that will be the main baseline for testing against systems.  This can also include User Data provided by the user in place of Greenbone NVTs and SCAP CERTs.</p>
+<h4 id="back-end-osp-openvas-targets">Back-End (OSP, OpenVAS, Targets)</h4>
+<p>The back-end infrastructure is what will be actually conducting all of the vulnerability scanning and processing data and NVTS through OpenVAS and GVM. Greenbone Vulnerability Manager will be the middle man between the scanners and the front-end user interfaces.</p>
+<h4 id="front-end-gsa-web-interfaces">Front-End (GSA, Web Interfaces)</h4>
+<p>This is what you interact with when you navigate to OpenVAS in your browser. The web interfaces are built off of the Greenbone Security Assistant and make life easier for an analyst or operator when working with OpenVAS or other forms of scanners through the GVM.</p>
+<p>For more information about the GVM framework architecture check out this forum post <a href="https://community.greenbone.net/t/about-gvm-10-architecture/1231">https://community.greenbone.net/t/about-gvm-10-architecture/1231</a>.</p>
+<h2 id="task-3-installtion">Task 3: Installtion</h2>
+<p>The installation procedure for OpenVAS can vary based on how you decide to install. You can install from Kali/OpenVAS repos, install from source, or run from a docker container. For our purposes, the preferred method is to run it inside a docker container as we don&rsquo;t have to worry about a lot of the setup or errors that we may run into with other installation methods.</p>
+<p><strong>Option 1</strong>: Install from Kali/OpenVAS repositories</p>
+<p>Installing from repositories can sometimes be very simple or it can be a very painful process. For OpenVAS, the installation ranges in difficulty and can require many configurations ran. For more information about this option check out the guides below.</p>
+<p><a href="https://websiteforstudents.com/how-to-install-and-configure-openvas-on-ubuntu-18-04-16-04/">https://websiteforstudents.com/how-to-install-and-configure-openvas-on-ubuntu-18-04-16-04/</a></p>
+<p><a href="https://www.agix.com.au/installing-openvas-on-kali-in-2020/">https://www.agix.com.au/installing-openvas-on-kali-in-2020/</a></p>
+<p><strong>Option 2</strong>: Install from Source</p>
+<p>Installing from source is the least preferred option for beginners and the least optimized way of installing OpenVAS due to prerequisites and make errors. For more information about installing from source look at the <a href="https://github.com/greenbone/openvas-scanner/blob/master/INSTALL.md">INSTALL.MD</a>.</p>
+<p><strong>Option 3</strong>: Run from Docker (Preferred)</p>
+<p>Docker is by far the easiest of all three installation methods and only requires one command to be run to get the client started. For this installation procedure, you will need docker installed.</p>
+<p>For more information about this information procedure checkout the openvas-docker project on <a href="https://github.com/mikesplain/openvas-docker">GitHub</a> and <a href="https://hub.docker.com/r/mikesplain/openvas/dockerfile">DockerHub</a>.</p>
+<ol>
+<li><code>apt install docker.io</code></li>
+<li><code>docker run -d -p 443:443 --name openvas mikesplain/openvas</code></li>
+</ol>
+<p>This command will both pull the docker container and then run the container. It may take a few minutes for the container to fully set up and begin running. Once it is complete you can then navigate to https://127.0.0.1 in your preferred browser and OpenVAS will be setup and ready to go!</p>
+<p>Below are the default credentials to access OpenVAS/GVM:</p>
+<blockquote>
+<p><strong>Username: <code>admin</code>
+Password: <code>admin</code></strong></p>
+</blockquote>
+<p>If you successfully logged into OpenVAS you should see a dashboard that looks similar to the one below.</p>
+<p><img src="https://i.imgur.com/a6WY4SW.png" alt="openvas dashboard"></p>
+<h2 id="task-4-initial-configuration">Task 4: initial Configuration</h2>
+<p>Before we can start scanning and implementing OpenVAS into our vulnerability management solution we need to do a little bit of maintenance and configuration to get OpenVAS properly working. Luckily for us, OpenVAS makes the process very easy and includes a wizard to make the process straightforward.</p>
+<p>Begin by navigating to Scans &gt; Tasks and clicking on the purple magic wand icon to begin the basic configuration wizard. We recommend beginning a scan on <code>127.0.0.1</code> to test out your installation and ensure it is working properly.</p>
+<p><img src="https://i.imgur.com/RbZNSC1.png" alt="openvas scan wizard"></p>
+<p>If you successfully navigated to the wizard you should see a pop-up similar to the one above. This is where you will set up your initial scan against your localhost to ensure everything is properly configured.</p>
+<p>The scan may take a while to complete, allow OpenVAS enough time to finish the scan, and then you will be met with a new dashboard for monitoring and analyzing your complete and ongoing scans like the one below.
+<img src="https://i.imgur.com/gMkDQww.png" alt="scan result openvas"></p>
+<p>Once your scan has finished you can navigate to Scans &gt; Reports and click on your newly created report from your previous task.</p>
+<p><img src="https://i.imgur.com/mxYWFJx.png" alt="openvas results"></p>
+<p>If correctly configured you should see three different vulnerabilities reported all originating from OpenVAS itself. This is normal behavior and can be configured/changed to maintain your OpSec.</p>
+<h2 id="task-5-scanning-infra">TASK 5: Scanning Infra</h2>
+<p>Now that we know that everything is working we can get into the nitty-gritty of OpenVAS and how it works. Deploy the machine and navigate to Scans &gt; Tasks to begin creating a task to scan the provided machine.</p>
+<h3 id="creating-a-task">Creating a Task</h3>
+<p>To create a configurable task navigate to the star icon in the upper right-hand corner of the Tasks dashboard and select New Task.</p>
+<p><img src="https://i.imgur.com/PNlNJuQ.png" alt="creating task openvas"></p>
+<p>Once you select New Task from the dropdown you will be met with a large pop-up with many options. We will break down each of the options sections and what they can be used for.</p>
+<p><img src="https://i.imgur.com/b8sKOYS.png" alt="openvas task config"></p>
+<p>For this task, we will be focusing only on the Name, Scan Targets, and Scanner Type, and Scan Config. In later tasks, we will be focusing on the other options for more advanced configuration and implementation/automation.</p>
+<ol>
+<li>Name: Allows us to set the name the scan will be known as inside of OpenVAS</li>
+<li>Scan Targets: The targets to scan, can include Hosts, Ports, and Credentials. To create a new target you will need to follow another pop-up, this will be covered later in this task.</li>
+<li>Scanner: The scanner to use by default will use the OpenVAS architecture however you can set this to any scanner of your choosing in the settings menu.</li>
+<li>Scan Config: OpenVAS has seven different scan types you can select from and will be used based on how you aggressive or what information you want to collect from your scan</li>
+</ol>
+<h3 id="scoping-a-new-target">Scoping a New Target</h3>
+<p>To scope a new target, navigate to the star icon next to Scan Targets.</p>
+<p><img src="https://i.imgur.com/ro5xv85.png" alt="openvas scope">
+Above is the menu for configuring a new target. The two main options you will need to configure are the Name and the Hosts. This procedure is fairly straight forward and other options will only be used in advanced vulnerability management solutions. These will be covered in later tasks.
+<img src="https://i.imgur.com/9MHYq03.png" alt="dvwa"></p>
+<p>Now that we have our target scoped we can continue to create our task and begin the scan.</p>
+<p>Once you create the task you will be brought back to the scan dashboard where you can monitor and start your task. To start the task navigate to the start icon under Actions.
+<img src="https://i.imgur.com/mYeVhVK.png" alt="animesh roy ">
+<img src="https://i.imgur.com/0bYxIol.png" alt="animesh roy blog post"></p>
+<h2 id="task-6-reporting-and-continuous-monitoring">Task 6: Reporting and Continuous Monitoring</h2>
+<p>OpenVAS has very strong reporting and monitoring capabilities that can contribute to an efficient and optimal solution in your build or vulnerability management pipeline.</p>
+<p>Download the provided report from a vulnerable machine to get familiar with the automated reporting capabilities of OpenVAS.</p>
+<h3 id="breaking-down-the-report">Breaking Down the Report</h3>
+<p>The automated report from OpenVAS begins with some basic host and task information including Host, Start, End, and Vulnerability categories. It will also check for host authentications and an overall summary of open ports on the host
+<img src="https://i.imgur.com/V4VXU3t.png" alt="">
+After the basic host and task information OpenVAS will report on each of the vulnerabilities found.
+<img src="https://i.imgur.com/CUeOtgJ.png" alt="">
+In the above image, the vulnerability breakdown can give a lot of information. We can gather a summary of the vulnerability, detection details, mitigation details, and method of detection.</p>
+<h3 id="continuous-monitoring-overview">Continuous Monitoring Overview</h3>
+<p>OpenVAS offers many options for continuous and scheduled monitoring/vulnerability management. If you work in a team or a pipeline this can allow you to efficiently and quickly optimize your current solutions. Examples of continuous vulnerability scanning utilities are Alerts, Schedules, and Agents. Agents are out of scope for this room but we will be covering the configuration of schedules and alerts below.</p>
+<h3 id="creating-schedules">Creating Schedules</h3>
+<p>To begin creating a schedule navigate to Configuration &gt; Schedules and as always click on the blue star icon in the upper left-hand corner. You should see a pop-up similar to the one below.</p>
+<p><img src="https://i.imgur.com/bcNbfYj.png" alt="">
+Fill out the basic information like Name, First Start Time, Period, etc. Once you have the schedule created you can now create a new Task/Scan with this created schedule attached. You can see this option below.
+<img src="https://i.imgur.com/nitrmkz.png" alt=""></p>
+<h3 id="crafting-alerts">Crafting Alerts</h3>
+<p>The process for creating alerts is very similar to creating a schedule, navigate to Configuration &gt; Alerts and click on the blue star icon in the upper left-hand corner. You should see a pop-up similar to the one below.</p>
+<p><img src="https://i.imgur.com/y3RNl1Y.png" alt="">
+You will notice that there are a lot more options than the schedule menu, don&rsquo;t let this intimidate you, the process is very similar and straightforward. The main options you will need to worry about are Name, Event, Condition, and To Address. The event can be configured to alert based on the status of the scan or when a new NVT/vulnerability is detected. The condition option will make sure that your inbox isn&rsquo;t flooded with alerts, this can be changed based on severity or filters. The To Address is fairly self-explanatory and will send an email of the alert to the specified mail address. Once created you will again need to connect the alert to a new Task/Scan. You can see the specific option below.
+<img src="https://i.imgur.com/Hqo9W71.png" alt=""></p>
+<hr>
+<h2 id="task-7-practical-vulnerability-management">Task 7: Practical Vulnerability Management</h2>
+<h3 id="case-001-ms00-what">Case 001: MS00-What?</h3>
+<p>In this scenario, you are assigned to a routine vulnerability management pipeline as a SOC analyst. Your automated pipeline has already pulled a scan on the server, it is up to you to analyze and identify risk in this report.</p>
+<h2 id="flags">Flags</h2>
+<table>
+<thead>
+<tr>
+<th>Questions</th>
+<th>Flag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>When did the scan start in Case 001?</td>
+<td><code>Feb 28, 00:04:46</code></td>
+</tr>
+<tr>
+<td>When did the scan end in Case 001?</td>
+<td><code>Feb 28, 00:21:02</code></td>
+</tr>
+<tr>
+<td>How many ports are open in Case 001?</td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td>How many total vulnerabilities were found in Case 001?</td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td>What is the highest severity vulnerability found? (MSxx-xxx)</td>
+<td><code>MS17-010</code></td>
+</tr>
+<tr>
+<td>What is the first affected OS to this vulnerability?</td>
+<td><code>Microsoft Windows 10 x32/x64 Edition</code></td>
+</tr>
+<tr>
+<td>What is the recommended vulnerability detection method?</td>
+<td><code>Send the crafted SMB transaction request with fid = 0 and check the response to confirm the vulnerability</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<!-- Ads code-->
+<hr>
+<script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = 'anir0y-21';
+      var aax_src='302';
+    </script>
+<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script></article>
+    </section>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2010 - 2022 Classroom</p>
+              
+
+              
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
+        Agent Sudo
+      </a>
+    
+      <a class="ui label" href="/tags/autopsy/" title="autopsy">
+        autopsy
+      </a>
+    
+      <a class="ui label" href="/tags/backdoor/" title="backdoor">
+        backdoor
+      </a>
+    
+      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
+        Baron Samedit
+      </a>
+    
+      <a class="ui label" href="/tags/bash/" title="bash">
+        bash
+      </a>
+    
+      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
+        ceh0821
+      </a>
+    
+      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
+        cheatsheet
+      </a>
+    
+      <a class="ui label" href="/tags/config/" title="config">
+        config
+      </a>
+    
+      <a class="ui label" href="/tags/couch/" title="couch">
+        couch
+      </a>
+    
+      <a class="ui label" href="/tags/crisis/" title="Crisis">
+        Crisis
+      </a>
+    
+      <a class="ui label" href="/tags/dominos/" title="dominos">
+        dominos
+      </a>
+    
+      <a class="ui label" href="/tags/empire/" title="Empire">
+        Empire
+      </a>
+    
+      <a class="ui label" href="/tags/encryption/" title="encryption">
+        encryption
+      </a>
+    
+      <a class="ui label" href="/tags/ffuf/" title="ffuf">
+        ffuf
+      </a>
+    
+      <a class="ui label" href="/tags/forensic/" title="forensic">
+        forensic
+      </a>
+    
+      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
+        gitandcrumpets
+      </a>
+    
+      <a class="ui label" href="/tags/gnupg/" title="gnupg">
+        gnupg
+      </a>
+    
+      <a class="ui label" href="/tags/hackpark/" title="HackPark">
+        HackPark
+      </a>
+    
+      <a class="ui label" href="/tags/hydra/" title="hydra">
+        hydra
+      </a>
+    
+      <a class="ui label" href="/tags/inclusion/" title="inclusion">
+        inclusion
+      </a>
+    
+      <a class="ui label" href="/tags/internal/" title="internal">
+        internal
+      </a>
+    
+      <a class="ui label" href="/tags/internship/" title="Internship">
+        Internship
+      </a>
+    
+      <a class="ui label" href="/tags/interview/" title="interview">
+        interview
+      </a>
+    
+      <a class="ui label" href="/tags/kenobi/" title="kenobi">
+        kenobi
+      </a>
+    
+      <a class="ui label" href="/tags/lab/" title="lab">
+        lab
+      </a>
+    
+      <a class="ui label" href="/tags/leaks/" title="leaks">
+        leaks
+      </a>
+    
+      <a class="ui label" href="/tags/linux/" title="Linux">
+        Linux
+      </a>
+    
+      <a class="ui label" href="/tags/memory/" title="memory">
+        memory
+      </a>
+    
+      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
+        Metamorphosis
+      </a>
+    
+      <a class="ui label" href="/tags/metasploit/" title="metasploit">
+        metasploit
+      </a>
+    
+      <a class="ui label" href="/tags/mobile/" title="Mobile">
+        Mobile
+      </a>
+    
+      <a class="ui label" href="/tags/msf/" title="msf">
+        msf
+      </a>
+    
+      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
+        msfvenom
+      </a>
+    
+      <a class="ui label" href="/tags/nfs/" title="nfs">
+        nfs
+      </a>
+    
+      <a class="ui label" href="/tags/notes/" title="notes">
+        notes
+      </a>
+    
+      <a class="ui label" href="/tags/openvas/" title="openvas">
+        openvas
+      </a>
+    
+      <a class="ui label" href="/tags/osi/" title="OSI">
+        OSI
+      </a>
+    
+      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
+        OSI Model
+      </a>
+    
+      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
+        Overpass 2
+      </a>
+    
+      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
+        Pentesting
+      </a>
+    
+      <a class="ui label" href="/tags/pgp/" title="PGP">
+        PGP
+      </a>
+    
+      <a class="ui label" href="/tags/pip/" title="pip">
+        pip
+      </a>
+    
+      <a class="ui label" href="/tags/pip2/" title="pip2">
+        pip2
+      </a>
+    
+      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
+        Post-Exploitation
+      </a>
+    
+      <a class="ui label" href="/tags/powershell/" title="powershell">
+        powershell
+      </a>
+    
+      <a class="ui label" href="/tags/putty/" title="putty">
+        putty
+      </a>
+    
+      <a class="ui label" href="/tags/python/" title="python">
+        python
+      </a>
+    
+      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
+        RazorBlack
+      </a>
+    
+      <a class="ui label" href="/tags/redteaming/" title="redteaming">
+        redteaming
+      </a>
+    
+      <a class="ui label" href="/tags/ref/" title="Ref">
+        Ref
+      </a>
+    
+      <a class="ui label" href="/tags/relevant/" title="Relevant">
+        Relevant
+      </a>
+    
+      <a class="ui label" href="/tags/rocket/" title="rocket">
+        rocket
+      </a>
+    
+      <a class="ui label" href="/tags/rooms/" title="rooms">
+        rooms
+      </a>
+    
+      <a class="ui label" href="/tags/rootme/" title="RootMe">
+        RootMe
+      </a>
+    
+      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
+        rpwebscanning
+      </a>
+    
+      <a class="ui label" href="/tags/script/" title="script">
+        script
+      </a>
+    
+      <a class="ui label" href="/tags/scripting/" title="Scripting">
+        Scripting
+      </a>
+    
+      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
+        Simple CTF
+      </a>
+    
+      <a class="ui label" href="/tags/splunk/" title="splunk">
+        splunk
+      </a>
+    
+      <a class="ui label" href="/tags/stego/" title="stego">
+        stego
+      </a>
+    
+      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
+        Super-Spam
+      </a>
+    
+      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
+        sweettoothinc
+      </a>
+    
+      <a class="ui label" href="/tags/sysmon/" title="sysmon">
+        sysmon
+      </a>
+    
+      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
+        Thefindcommand
+      </a>
+    
+      <a class="ui label" href="/tags/thm/" title="thm">
+        thm
+      </a>
+    
+      <a class="ui label" href="/tags/tmux/" title="tmux">
+        tmux
+      </a>
+    
+      <a class="ui label" href="/tags/tools/" title="tools">
+        tools
+      </a>
+    
+      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
+        tryhackme
+      </a>
+    
+      <a class="ui label" href="/tags/vapt/" title="vapt">
+        vapt
+      </a>
+    
+      <a class="ui label" href="/tags/volatility/" title="Volatility">
+        Volatility
+      </a>
+    
+      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
+        vuln labs
+      </a>
+    
+      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
+        Vulnversity
+      </a>
+    
+      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
+        web scanning
+      </a>
+    
+      <a class="ui label" href="/tags/wireshark/" title="wireshark">
+        wireshark
+      </a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <div class="item">
+    <a href="/index.xml">
+      <i class="large rss square icon" title="RSS"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="mailto:classroom@anir0y.in">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://twitter.com/anir0y" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://facebook.com/anir0yofficial" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://instagram.com/anir0yofficial" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+  <div class="item">
+    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://github.com/anir0y" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      YOU CAN RESUE MY CONTENT
+    </article>
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+
+
+
+<script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "tomorrow"
+    var darkTheme = "tomorrow-night"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
+
+
+
+
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
+
+    
+
+    
+  </body>
+</html>
