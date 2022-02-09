@@ -70,6 +70,19 @@
 <nav id=TableOfContents>
 <ul>
 <li><a href=#overview>OverView</a></li>
+<li><a href=#nfs-installation>NFS installation</a></li>
+<li><a href=#install-nfs-server-kernal>install nfs server kernal</a></li>
+<li><a href=#create-a-share-directory>create a share directory</a>
+<ul>
+<li><a href=#enable-share>enable share</a></li>
+</ul>
+</li>
+<li><a href=#restart-nfs-service>restart NFS service</a></li>
+</ul>
+<ul>
+<li><a href=#install-nfs-client>install nfs client</a></li>
+<li><a href=#enum-share>Enum share</a></li>
+<li><a href=#mount-network-share>mount network share</a></li>
 <li><a href=#video-walkthough>Video Walkthough</a></li>
 </ul>
 </nav>
@@ -102,7 +115,52 @@ Wednesday, Jan 19, 2022
 </header>
 <article class=main><h2 id=overview>OverView</h2>
 <p><strong>Network File System (NFS)</strong> is a distributed file system protocol originally developed by Sun Microsystems (Sun) in 1984, allowing a user on a client computer to access files over a computer network much like local storage is accessed. NFS, like many other protocols, builds on the Open Network Computing Remote Procedure Call (ONC RPC) system. NFS is an open IETF standard defined in a Request for Comments (RFC), allowing anyone to implement the protocol.</p>
-<h2 id=video-walkthough>Video Walkthough</h2>
+<hr>
+<h2 id=nfs-installation>NFS installation</h2>
+<h2 id=install-nfs-server-kernal>install nfs server kernal</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt update
+sudo apt install nfs-kernal-server -y 
+</code></pre></div><h2 id=create-a-share-directory>create a share directory</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># ~/ desktop</span>
+mkdir ~/Desktop/nfs
+
+<span style=color:#75715e>#change permission</span>
+sudo chown nobody:nogroup ~/Desktop/nfs
+
+<span style=color:#75715e>#add world writable permission</span>
+sudo chmod <span style=color:#ae81ff>777</span> ~/Desktop/nfs
+</code></pre></div><h3 id=enable-share>enable share</h3>
+<p>edit <code>/etc/exports</code></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#added this line</span>
+<span style=color:#75715e># this is for network CIDR</span>
+/home/anir0y/Desktop/nfs <span style=color:#f92672>{</span>IP<span style=color:#f92672>}</span>/<span style=color:#f92672>{</span>subnet<span style=color:#f92672>}(</span>rw,sync,no_subtree_check<span style=color:#f92672>)</span>
+<span style=color:#75715e># example:</span>
+/home/anir0y/Desktop/nfs 192.168.29.0/24<span style=color:#f92672>(</span>rw,sync,no_subtree_check<span style=color:#f92672>)</span>
+</code></pre></div><h2 id=restart-nfs-service>restart NFS service</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># enable shares</span>
+sudo exportfs
+<span style=color:#75715e># restart the service</span>
+sudo systemctl restart nfs-kernel-server.service
+</code></pre></div><hr>
+<script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<hr>
+<h1 id=client-side-config>Client side config</h1>
+<h2 id=install-nfs-client>install nfs client</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt update
+sudo apt install nfs-common -y
+</code></pre></div><h2 id=enum-share>Enum share</h2>
+<p><code>showmount -e {iP}</code></p>
+<h2 id=mount-network-share>mount network share</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># make a mounting dir</span>
+mkdir ~/nfsclient
+
+<span style=color:#75715e>#mounting</span>
+sudo mount -t nfs <span style=color:#f92672>{</span>IP<span style=color:#f92672>}</span>:<span style=color:#f92672>{</span>folder<span style=color:#f92672>}</span> <span style=color:#f92672>{</span>local_path<span style=color:#f92672>}</span>
+<span style=color:#75715e>#e.g.</span>
+sudo mount -t nfs 192.168.29.83:/home/anir0y/Desktop/nfs ~/nfsclient
+</code></pre></div><h2 id=video-walkthough>Video Walkthough</h2>
 <div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
 <iframe src=https://www.youtube.com/embed/Ix_2nIfl26Y style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
 </div>
