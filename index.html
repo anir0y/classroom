@@ -108,6 +108,9 @@ couch
 <a class="ui label" href=/tags/crisis/ title=Crisis>
 Crisis
 </a>
+<a class="ui label" href=/tags/domain/ title=domain>
+domain
+</a>
 <a class="ui label" href=/tags/dominos/ title=dominos>
 dominos
 </a>
@@ -301,6 +304,35 @@ wireshark
 </div>
 </header>
 <div class="ui relaxed grid dream-grid">
+<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+<article class="ui attached segment card dream-card">
+<a class=image href=https://classroom.anir0y.in/post/notes-domainenum/>
+<img src=/img/doamin-enum.png alt="Domain Enumeration Cheat Sheet">
+</a>
+<div class=content>
+<h2 class="ui medium header">
+<a href=/post/notes-domainenum/>Domain Enumeration Cheat Sheet</a>
+</h2>
+<div class=meta>
+<p class=date>Saturday, Feb 26, 2022</p>
+</div>
+<div class=description>
+Get all the member of the Domain Admins Group Get-NetGroupMember -GroupName "Domain Admins"
+or ActiveDirectory module Get-ADGroupMember -Identity "Domain Admins" -Recursive
+Get the group membership for a user Get-NetGroup -UserName "labuser"
+or ActiveDirectory module Get_ADPrincipalGroupMembership -Identity labuser
+Get all computers of the domain Get-NetComputer (-FullData)
+Using ActiveDirectory module Get-ADComputer -Filter * | select Name Get-ADComputer -Filter * -Properties *
+Find all machines on the current domain where the current user has local admin access Find-LocalAdminAccess -Verbose
+</div>
+</div>
+<div class="extra content">
+<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
+<div class=reading-time>
+<i class="clock icon"></i>1 minute read</div>
+</div>
+</article>
+</div>
 <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
 <article class="ui attached segment card dream-card">
 <a class=image href=https://classroom.anir0y.in/post/tryhackme-jr-security-analyst-intro/>
@@ -517,30 +549,6 @@ Follow @anir0y Phishing Phishing [Subscription Required] Phishing Task 01: Brief
 </article>
 </div>
 <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-<article class="ui attached segment card dream-card">
-<a class=image href=https://classroom.anir0y.in/post/tryhackme-vulnerabilitycapstone/>
-<img src=/img/Vulnerability-Capstone.png alt="Try Hack Me Vulnerability Capstone[writeup]">
-</a>
-<div class=content>
-<h2 class="ui medium header">
-<a href=/post/tryhackme-vulnerabilitycapstone/>Try Hack Me Vulnerability Capstone[writeup]</a>
-</h2>
-<div class=meta>
-<p class=date>Friday, Oct 29, 2021</p>
-</div>
-<div class=description>
-OverView Ackme Support Incorporated has recently set up a new blog. Their developer team have asked for a security audit to be performed before they create and publish articles to the public.
-Follow @anir0y Vulnerability Capstone Vulnerability Capstone [Subscription Required] Vulnerability Capstone Task 01: Introduction Ackme Support Incorporated has recently set up a new blog.
-</div>
-</div>
-<div class="extra content">
-<div class=author><img class="ui avatar image" src=/img/avatar.jpeg alt=avatar><a href=https://bit.ly/34sGFiK target=_blank>Animesh Roy</a></div>
-<div class=reading-time>
-<i class="clock icon"></i>2 minutes read</div>
-</div>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
 <article class="ui center aligned attached segment card dream-card">
 <div class=content>
 <div class="ui medium header">
@@ -604,6 +612,9 @@ couch
 </a>
 <a class="ui label" href=/tags/crisis/ title=Crisis>
 Crisis
+</a>
+<a class="ui label" href=/tags/domain/ title=domain>
+domain
 </a>
 <a class="ui label" href=/tags/dominos/ title=dominos>
 dominos
