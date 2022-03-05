@@ -34,7 +34,7 @@ To run this image you need [docker](#install-docker) installed. once you have do
 
 And wait until it download the image and start it, after that you can see the image running in your local machine:
 
-![img/dvwa.png]
+![dvwa](img/dvwa.png)
 
 Just click on the Create / Reset database button and it will generate any aditional configuration needed.
 
