@@ -14,7 +14,7 @@ tags:
   - tryhackme
   - Operating System Security
 
-draft: true
+draft: false
 description: Try Hack Me Room Operating System Security solved by Animesh Roy. this is a walkthough. read more...
 
 ---
