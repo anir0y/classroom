@@ -11,7 +11,7 @@ simg: /img/blog.png
 categories:
   - Training
 
-draft: true
+draft: false
 description: Steghide Is an open-source, command-line software that can encode and decode data into image files
 
 ---
