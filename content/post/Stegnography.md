@@ -1,12 +1,12 @@
 ---
-title: Stegnography with Steghide
+title: Steganography with Steghide
 date: 2022-05-26T21:42:28+05:30
 lastmod: 2022-05-26T21:42:28+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/blog.png # for tryhackMe
-simg: /img/blog.png
+cover: /img/Stegnography_with_Steghide.png # for tryhackMe
+simg: /img/Stegnography_with_Steghide.png
 
 categories:
   - Training
