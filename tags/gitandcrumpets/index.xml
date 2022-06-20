@@ -2,4 +2,5 @@
 Task 01: Start the VM Task 02: Git the flags user I tried running nmap, no luck
 being impatatient, I ran a quick curl commnad curl -s 10.10.x.y to see what&amp;rsquo;s up.
 got this output.
-let&amp;rsquo;s setup DNS record, edit /etc/hosts file.</description></item></channel></rss>
+let&amp;rsquo;s setup DNS record, edit /etc/hosts file.
+cat /etc/hosts 10.</description></item></channel></rss>
