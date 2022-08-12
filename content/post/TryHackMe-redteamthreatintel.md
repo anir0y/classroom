@@ -15,7 +15,7 @@ tags:
   - rooms
   - thm
 
-draft: true
+draft: false
 description: Try Hack Me Room Red Team Threat Intel solved by Animesh Roy. this is a walkthough. read more...
 
 ---
