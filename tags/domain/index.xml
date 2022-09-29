@@ -4,4 +4,4 @@ Get the group membership for a user Get-NetGroup -UserName &amp;quot;labuser&amp
 or ActiveDirectory module Get_ADPrincipalGroupMembership -Identity labuser
 Get all computers of the domain Get-NetComputer (-FullData)
 Using ActiveDirectory module Get-ADComputer -Filter * | select Name Get-ADComputer -Filter * -Properties *
-Find all machines on the current domain where the current user has local admin access Find-LocalAdminAccess -Verbose</description></item></channel></rss>
+Find all machines on the current domain where the current user has local admin access Find-LocalAdminAccess -Verbose</description></item><img><enclosure url="https://classroom.anir0y.in/img/doamin-enum.png"/></img></channel></rss>
