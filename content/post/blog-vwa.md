@@ -6,7 +6,7 @@ author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
 cover: https://i.imgur.com/1HI2dWi.png # for tryhackMe
-simg: https://i.imgur.com/1HI2dWi.png
+simg: /img/1HI2dWi.png
 
 categories:
 tags:
