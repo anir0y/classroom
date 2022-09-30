@@ -31,8 +31,9 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
-      <guid>"https://classroom.anir0y.in{{.Params.simg}}"</guid>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in{{.Params.simg}}" width="700" height="420"></media:content>
       <description>{{ .Summary | html }}</description>
+      <enclosure url="https://classroom.anir0y.in{{.Params.simg}}"></enclosure>
     
     </item>
    
