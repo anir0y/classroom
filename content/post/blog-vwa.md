@@ -1,7 +1,7 @@
 ---
 title: Vulnerable Web Application is now available!
-date: 2022-09-14T18:50:22+05:30
-lastmod: 2022-09-14T18:50:22+05:30
+date: 2022-09-30T18:50:22+05:30
+lastmod: 2022-30-14T18:50:22+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
