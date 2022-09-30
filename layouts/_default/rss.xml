@@ -37,6 +37,6 @@
     <img>
       <enclosure url="https://classroom.anir0y.in{{.Params.simg}}"></enclosure>
     </img>
+    {{ end }}
   </channel>
 </rss>
-{{ end }}
