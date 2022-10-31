@@ -25,8 +25,8 @@ description: Try Hack Me Room ROOM_NAME solved by Animesh Roy. this is a walktho
 
 | <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
 |---|---|
-|Operating System Security|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/81642a6b52cd6596b8c09ccc219becfe.png)|
-| <b> Operating System Security [Subscription Required] </b>| [Operating System Security](https://tryhackme.com/room/operatingsystemsecurity)|
+|ROOM_NAME |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/81642a6b52cd6596b8c09ccc219becfe.png)|
+
 
 
 ## Task 01: 
