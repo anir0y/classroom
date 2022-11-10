@@ -37,9 +37,9 @@ hasCJKLanguage = true
   #images = ["vapt.jpg"]
 
   author = "Animesh Roy"
-  description = "Animesh Roy is a Hyderabad-based Cybersecurity Consultant, the CEO of Arishti Consolidated Pvt. Ltd"
+  description = "Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community."
   avatar = "/img/avatar.jpeg"
-  headerTitle = "Classroom Notes & Blog Posts"
+  headerTitle = "Reading Stuffs"
   # motto = ""
   # categoriesLimitInHeader = 6 # deprecated
   # headerBottomText = "" # deprecated
@@ -54,8 +54,8 @@ hasCJKLanguage = true
 
   email = "classroom@anir0y.in"
   twitter = "anir0y"
-  facebook = "anir0yofficial"
-  instagram = "anir0yofficial"
+  facebook = "0xanir0y"
+  instagram = "0xanir0y"
   # mastodon = ""
   linkedin = "anir0y"
   github = "anir0y"
