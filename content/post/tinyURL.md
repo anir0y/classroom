@@ -5,8 +5,8 @@ lastmod: 2022-11-13T18:47:39+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: https://i.imgur.com/SLEzLYe.png # for tryhackMe
-simg: https://i.imgur.com/SLEzLYe.png
+cover: img/tinyURL.png # for tryhackMe
+simg: img/tinyURL.png
 
 categories:
   - urlshortner
