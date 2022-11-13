@@ -9,13 +9,13 @@ cover: https://i.imgur.com/SLEzLYe.png # for tryhackMe
 simg: https://i.imgur.com/SLEzLYe.png
 
 categories:
-  - TryHackMe
+  - urlshortner
+  - blog
 tags:
-  - tryhackme
-  - rooms
-  - thm
+  - tinyurl
+  - urlshortner
 
-draft: true
+draft: false
 description: using TINY URL API create your own URL shortner Script using Python
 
 ---
