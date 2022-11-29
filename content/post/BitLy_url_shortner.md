@@ -12,7 +12,7 @@ categories:
   - urlshortner
 
 
-draft: false
+
 description: using BITLY URL API create your own URL shortner Script using Python.
 ---
 
