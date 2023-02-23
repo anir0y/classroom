@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>TryHackMe PalsForLife | Classroom</title>
+    <title>tryhackme | Classroom</title>
 
     
 <link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
@@ -14,7 +14,7 @@
 
 
 <meta name="author" content="Animesh Roy"  />
-<meta name="description" content="TryHackMe Room {PalsForLife} solved by Animesh Roy. this is a walkthough. read more..." />
+<meta name="description" content="" />
 
 
 
@@ -43,7 +43,7 @@
 
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-palsforlife/">
+<meta property="twitter:url" content="https://classroom.anir0y.in/tags/tryhackme/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +63,20 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-palsforlife/" />
+<link rel="canonical" href="https://classroom.anir0y.in/tags/tryhackme/" />
 
 
-<meta property="og:title" content="TryHackMe PalsForLife" />
-<meta property="og:description" content="TryHackMe Room {PalsForLife} solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-palsforlife/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-09-26T15:39:23+05:30" />
-<meta property="article:modified_time" content="2021-09-26T15:39:23+05:30" />
+<meta property="og:title" content="tryhackme" />
+<meta property="og:description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://classroom.anir0y.in/tags/tryhackme/" />
 
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe PalsForLife"/>
-<meta name="twitter:description" content="TryHackMe Room {PalsForLife} solved by Animesh Roy. this is a walkthough. read more..."/>
+<meta name="twitter:title" content="tryhackme"/>
+<meta name="twitter:description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community."/>
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -128,17 +126,7 @@
 </style>
 
 
-    
-
-
-
-<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
-
-
-
-
-
-
+     
 
     
     <link rel="stylesheet" href="/css/custom.css" />
@@ -172,139 +160,150 @@
         <section class="front">
           <div class="dream-max-width">
             
-<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
-  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+
+<header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
     
-    
-    <div class="ui segment toc">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#overview">OverView</a></li>
-    <li><a href="#task-01-deploy-the-vm">Task 01: Deploy the VM</a></li>
-    <li><a href="#task-02-compromise-the-machine">Task 02: Compromise the machine</a></li>
-  </ul>
-
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#nmap">Nmap</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-    
-    <div class="ui segment actions">
-      <button
-        class="ui circular icon button save-as-image"
-        title="Save as image"
-        onclick="savePostAsImg()">
-        <i class="save icon"></i>
-      </button>
-
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20PalsForLife&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-palsforlife%2f" class="ui circular twitter icon button">
-  <i class="twitter icon"></i>
-</a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-palsforlife%2f" class="ui circular facebook icon button">
-  <i class="facebook icon"></i>
-</a>
-
-    </div>
-  </aside>
-  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
-    
-    <section class="ui top attached segment">
-      <header>
-        <h1 class="ui large header">TryHackMe PalsForLife<div class="sub header">
-            @
-            
-              
-                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
-              
-            
-
-            | 
-                Sunday, Sep 26, 2021
-              
-
-            | 1 minutes read
-
-            | Update at
-              
-                Sunday, Sep 26, 2021
-              
-          </div>
-        </h1>
-      </header>
-
-      <article class="main"><h2 id="overview">OverView</h2>
-<p>Abuse a misconfigured Kubernetes cluster</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><script src="https://tryhackme.com/badge/434937"></script></td>
-<td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
-</tr>
-<tr>
-<td>PalsForLife</td>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/4e0a48a3c9d2d998b6011f67bfdc9bb6.png" alt="logo"></td>
-</tr>
-<tr>
-<td><b> PalsForLife [FREE] </b></td>
-<td><a href="https://tryhackme.com/room/palsforlife">PalsForLife</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="task-01-deploy-the-vm">Task 01: Deploy the VM</h2>
-<hr>
-<h2 id="task-02-compromise-the-machine">Task 02: Compromise the machine</h2>
-<h1 id="recon">Recon</h1>
-<h3 id="nmap">Nmap</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
-</code></pre></div><hr>
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<p><ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"></ins></p>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-<hr>
-<hr>
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<p><ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"></ins></p>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-<!-- EOF -->
-</article>
-    </section>
-
-    
-
-    
-
+    <img src="/img/avatar.jpeg" />
     
   </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid">
+  
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/thm-room-osquery/">
+    
+    <img src="/img/thm.gif" alt="Try Hack Me Room Osquery" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/thm-room-osquery/">Try Hack Me Room Osquery</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Sunday, May 16, 2021</p>
+    </div>
+    
+    <div class="description">
+      
+        <h3>🤓   </h3>
+    </div>
+  </div>
+  
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>12 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/thm-room-openvas/">
+    
+    <img src="/img/thm.gif" alt="Try Hack Me Room Room Openvas" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/thm-room-openvas/">Try Hack Me Room Room Openvas</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Monday, May 10, 2021</p>
+    </div>
+    
+    <div class="description">
+      
+        <h3>🤓   </h3>
+    </div>
+  </div>
+  
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>9 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://classroom.anir0y.in/post/thm-room-zerologon/">
+    
+    <img src="/img/thm.gif" alt="Try Hack ME Room Zerologon" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/post/thm-room-zerologon/">Try Hack ME Room Zerologon</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Monday, May 10, 2021</p>
+    </div>
+    
+    <div class="description">
+      
+        <h3>🤓   </h3>
+    </div>
+  </div>
+  
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/img/avatar.jpeg" alt="avatar" /><a href="https://anir0y.in" target="_blank">Animesh Roy</a></div>
+    <div class="reading-time">
+      <i class="clock icon"></i>18 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    
+<article class="ui center aligned attached segment card dream-card">
+  <div class="content">
+    <div class="ui medium header">
+      <a href="/tags/tryhackme/page/7/" title="Previous page">
+        Previous page
+      </a>
+    </div>
+  </div>
+</article>
+
+
+
+
+  </div>
+  
 </div>
 
 
@@ -475,39 +474,9 @@ data-ad-slot="7160066188"></ins></p>
 <script src="/js/theme.js"></script>
 
     
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/post.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
-
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
-
-
-
-<script>
-  hljs.initHighlightingOnLoad()
-  setHighlightTheme()
-
-  function setHighlightTheme() {
-    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
-    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
-
-    var lightTheme = "tomorrow"
-    var darkTheme = "tomorrow-night"
-    var theme = isDark === 'y' ? darkTheme : lightTheme
-
-    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
-    $('pre').css('background', isDark === 'y' ? '#333' : '')
-  }
-</script>
-
-
-
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/grid.js"></script>
 
 
     
