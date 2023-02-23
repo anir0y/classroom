@@ -1,23 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Labs on Classroom</title>
     <link>https://classroom.anir0y.in/categories/labs/</link>
     <description>Recent content in Labs on Classroom</description>
-    <generator>Anir0ry : Blog v1.0(Based on Hugo)</generator>
+    <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
-    <copyright>YOU CAN RESUE MY CONTENT</copyright>
-    <lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/labs/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Sat, 05 Mar 2022 21:05:05 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/labs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DVWA Docker Setup</title>
+      <pubDate>Sat, 05 Mar 2022 21:05:05 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/dvwa-main.png" width="700" height="420"></media:content>
+      <description>Damn Vulnerable Web Application Docker container Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students &amp;amp; teachers to learn about web application security in a controlled class room environment.</description>
+      <enclosure url="https://classroom.anir0y.in/img/dvwa-main.png"></enclosure>
+      <link>https://classroom.anir0y.in/post/dvwa-docker-setup/</link>
+    
+    </item>
+   
+      
+    
     <item>
       <title>Vulnerable Apps, Servers, and Websites!</title>
-      <link>https://classroom.anir0y.in/post/blog1/</link>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
       
-      <guid>https://classroom.anir0y.in/post/blog1/</guid>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description>overview  The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).
   Learning Platforms and VMs  VulnHub Hack the Box TryHackMe eLearn Security PentesterLab    bWAPP  CloudGoat Damn Small Vulnerable Web Damn Vulnerable ARM Router (DVAR) Damn Vulnerable iOS Application (DVIA) Damn Vulnerable Web App (DVWA) Damn Vulnerable Web Services Damn Vulnerable WordPress DOMXSS Extreme Vulnerable Node Application(XVNA) Game of Hacks Gruyere Hack This Site Hack This Hack Yourself first Hackazon  HellBound Hackers Kubernetes Goat Metasploitable2  Metasploitable3  Over The Wire Wargames OWASP Juice Shop  OWASP Mutillidae II Peruggia PortSwigger Web Security Academy RootMe Samurai Web Testing Framework Server-Side Request Forgery (SSRF) vulnerable Lab Snyk exploit-workshop Try2Hack Vicnum Vulnerable Single Sign-On (SSO) Web Security Dojo WebGoat XXE Lab   WebSploit Labs  WebSploit Labs (created and maintained by Omar Ωr Santos) Mayhem - vulnerable container created by Omar Ωr for Mayhem 2020 RTOV-Hackme - vulnerable container created by Omar Ωr for DEF CON 27 RTV-Safemode - vulnerable container created by Omar Ωr for DEF CON Safemode  </description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>https://classroom.anir0y.in/post/blog1/</link>
+    
     </item>
+   
+      
     
   </channel>
 </rss>

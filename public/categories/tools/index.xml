@@ -1,24 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tools on Classroom</title>
     <link>https://classroom.anir0y.in/categories/tools/</link>
     <description>Recent content in tools on Classroom</description>
-    <generator>Anir0ry : Blog v1.0(Based on Hugo)</generator>
+    <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
-    <copyright>YOU CAN RESUE MY CONTENT</copyright>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
     <lastBuildDate>Thu, 18 Feb 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Awesome Powershell</title>
-      <link>https://classroom.anir0y.in/post/ref-powershell/</link>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
       <pubDate>Thu, 18 Feb 2021 21:23:22 +0530</pubDate>
       
-      <guid>https://classroom.anir0y.in/post/ref-powershell/</guid>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description>Awesome PowerShell A curated list of delightful PowerShell packages and resources.
 PowerShell is a cross-platform (Windows, Linux, and macOS) automation and configuration tool that is optimized for dealing with structured data (e.g. JSON, CSV, XML, etc.), REST APIs, and object models. It includes a command-line shell and an associated scripting language.
 Contents  Awesome PowerShell  Contents API Wrapper Blogs Books Build Tools Code and Package Repositories Commandline Productivity Communities Data Documentation Helper Editors and IDEs Frameworks Interactive Learning Logging Module Development Templates Package Managers Parallel Processing Podcasts Security SharePoint SQL Server Testing Themes UI Videos Webserver Misc    API Wrapper  HipChatAdmin - A module for simple integration with Atlassian HipChat via the HipChat API.</description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>https://classroom.anir0y.in/post/ref-powershell/</link>
+    
     </item>
+   
+      
     
   </channel>
 </rss>

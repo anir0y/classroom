@@ -1,23 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>couch on Classroom</title>
     <link>https://classroom.anir0y.in/tags/couch/</link>
     <description>Recent content in couch on Classroom</description>
-    <generator>Anir0ry : Blog v1.0(Based on Hugo)</generator>
+    <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
-    <copyright>YOU CAN RESUE MY CONTENT</copyright>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
     <lastBuildDate>Fri, 09 Jul 2021 19:22:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/couch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Couch</title>
-      <link>https://classroom.anir0y.in/post/tryhackme-couch/</link>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
       <pubDate>Fri, 09 Jul 2021 19:22:00 +0530</pubDate>
       
-      <guid>https://classroom.anir0y.in/post/tryhackme-couch/</guid>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description>Couch Flags    Task Remarks     1.1 flag     Recon running nmap: (Default)
 ┌──(anir0y㉿kali)-[~/share/thm/room/couch] └─$ sudo nmap -sC -sV -oN nmap/couch 10.10.94.40 [sudo] password for anir0y: Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-09 19:26 IST Nmap scan report for 10.10.94.40 Host is up (0.21s latency). Not shown: 999 closed ports PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.</description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>https://classroom.anir0y.in/post/tryhackme-couch/</link>
+    
     </item>
+   
+      
     
   </channel>
 </rss>

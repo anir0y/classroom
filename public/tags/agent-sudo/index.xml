@@ -1,24 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Agent Sudo on Classroom</title>
     <link>https://classroom.anir0y.in/tags/agent-sudo/</link>
     <description>Recent content in Agent Sudo on Classroom</description>
-    <generator>Anir0ry : Blog v1.0(Based on Hugo)</generator>
+    <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
-    <copyright>YOU CAN RESUE MY CONTENT</copyright>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
     <lastBuildDate>Sat, 24 Jul 2021 16:50:32 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/agent-sudo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Agent Sudo</title>
-      <link>https://classroom.anir0y.in/post/tryhackme-agentsudoctf/</link>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
       <pubDate>Sat, 24 Jul 2021 16:50:32 +0530</pubDate>
       
-      <guid>https://classroom.anir0y.in/post/tryhackme-agentsudoctf/</guid>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description>OverView           Follow @anir0y   Agent Sudo    Room [Subscription Required] Agent Sudo     Task 01: Author note n/a
 Task 02:Enumerate   nmap
 sudo nmap -sC -sV -oN init 10.10.245.114 Starting Nmap 7.60 ( https://nmap.org ) at 2021-07-25 19:49 BST Nmap scan report for ip-10-10-245-114.eu-west-1.compute.internal (10.10.245.114) Host is up (0.020s latency). Not shown: 921 closed ports, 76 filtered ports PORT STATE SERVICE VERSION 21/tcp open ftp vsftpd 3.</description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>https://classroom.anir0y.in/post/tryhackme-agentsudoctf/</link>
+    
     </item>
+   
+      
     
   </channel>
 </rss>

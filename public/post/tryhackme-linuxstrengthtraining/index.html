@@ -20,7 +20,17 @@
 
 <title>Animesh Roy | Classroom Posts</title>
 <meta name="title" content="Animesh Roy | Blogs & Writeups">
-<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPD6BXK0P5');
+</script>
 
 
 
@@ -52,23 +62,6 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NZBEX7RBNF');
-</script>
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "6gp5990ghr");
-</script>
-
 
 <link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/" />
 
@@ -76,9 +69,10 @@
 <meta property="og:title" content="TryHackMe Linux Strength Training" />
 <meta property="og:description" content="TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills..." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-08-03T07:41:10+05:30" />
 <meta property="article:modified_time" content="2021-08-03T07:41:10+05:30" />
+
 
 
 
@@ -284,7 +278,7 @@
                 Tuesday, Aug 3, 2021
               
 
-            | 14minuteRead
+            | 14 minutes read
 
             | Update at
               
@@ -402,7 +396,7 @@
 <ul>
 <li>
 <p>read the &lsquo;ReadMeIfStuck.txt&rsquo; file:</p>
-<pre><code class="language-cat" data-lang="cat">topson@james:~$ cat ReadMeIfStuck.txt 
+<pre tabindex="0"><code class="language-cat" data-lang="cat">topson@james:~$ cat ReadMeIfStuck.txt 
 Looking for flag 1?:It seems you will have to think harder if you want to find the flag. Perhaps try looking for a file called `additionalHINT` if you can't find it..
 Looking for flag 2?: look for a file named readME_hint.txt
 
@@ -484,7 +478,7 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p>let&rsquo;s read the 2nd flag</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># find `readME_hint.txt`</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># find `readME_hint.txt`</span>
 topson@james:~$ find . -type f -name readME_hint.txt
 ./corperateFiles/RecordsFinances/readME_hint.txt
 
@@ -514,7 +508,7 @@ Flag<span style="color:#f92672">{</span>flag-was-here<span style="color:#f92672"
 <ul>
 <li>
 <p>download the file, read the hash</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat hash1.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat hash1.txt
 5d7845ac6ee7cfffafc5fe5f35cf666d
 <span style="color:#75715e">#using online hash crackers</span>
 plain text is: secret123
@@ -525,7 +519,7 @@ plain text is: secret123
 <ul>
 <li>
 <p>steps</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ ls
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ ls
 example.txt         logs     oldLogs   <span style="color:#e6db74">&#39;system AB&#39;</span>
 <span style="color:#e6db74">&#39;linuxconf backup&#39;</span>   logs33   serverLx  <span style="color:#e6db74">&#39;system mx&#39;</span>
 
@@ -545,12 +539,12 @@ Analyzing <span style="color:#e6db74">&#39;f9d4049dd6a4dc35d40e5265954b2a46&#39;
 </code></pre></div></li>
 </ul>
 <h3 id="43-crack-hashatxt-using-john-the-ripper-what-is-the-password">4.3 Crack hashA.txt using john the ripper, what is the password?</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">admin
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">admin
 </code></pre></div><h3 id="44-what-is-the-hash-type-stored-in-the-file-hashbtxt">4.4 What is the hash type stored in the file hashB.txt</h3>
 <ul>
 <li>
 <p>follow the steps:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#find the  file</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#find the  file</span>
 sarah@james:~$ find . -type f -name hashB.txt
 ./oldLogs/settings/craft/hashB.txt
 
@@ -568,7 +562,7 @@ Analyzing <span style="color:#960050;background-color:#1e0010">&#39;</span>b7a87
 <ul>
 <li>
 <p>follow instructions</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find the wordlist
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find the wordlist
 sarah@james:~$ find . -type f -name *.mnf
 ./system AB/db/ww.mnf
 
@@ -592,7 +586,7 @@ sarah@james:~$ find . -type f -name hashC.txt
 <ul>
 <li>
 <p>follow the steps</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#find the file </span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#find the file </span>
 sarah@james:~$ find . -type f -name encoded.txt
 ./system AB/managed/encoded.txt
 
@@ -623,13 +617,13 @@ bfddc35c8f9c989545119988f79ccc77
 <ul>
 <li>
 <p>steps</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find the file <span style="color:#e6db74">`</span>layer4.txt<span style="color:#e6db74">`</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find the file <span style="color:#e6db74">`</span>layer4.txt<span style="color:#e6db74">`</span>
 sarah@james:~$ find . -type f -name layer4.txt
 ./system AB/keys/vnmA/layer4.txt
 </code></pre></div></li>
 <li>
 <p>decrypt it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gpg <span style="color:#e6db74">&#39;./system AB/keys/vnmA/layer4.txt&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gpg <span style="color:#e6db74">&#39;./system AB/keys/vnmA/layer4.txt&#39;</span>
 gpg: ./system AB/keys/vnmA/layer4.txt: unknown suffix
 Enter new filename <span style="color:#f92672">[</span>layer4.txt<span style="color:#f92672">]</span>: decrypted-l4
 <span style="color:#75715e"># read decrypted file</span>
@@ -638,7 +632,7 @@ sarah@james:~$ cat decrypted-l4
 </code></pre></div></li>
 <li>
 <p>find &amp; decrypt layer3.txt</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find . -type f -name layer3.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find . -type f -name layer3.txt
 ./oldLogs/2014-02-15/layer3.txt
 sarah@james:~$ gpg <span style="color:#e6db74">&#39;./oldLogs/2014-02-15/layer3.txt&#39;</span>
 gpg: WARNING: no command supplied.  Trying to guess what you mean ...
@@ -651,7 +645,7 @@ sarah@james:~$ cat decrypted-l3.txt
 </code></pre></div></li>
 <li>
 <p>find &amp; decrypt layer2.txt</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find . -type f -name layer2.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find . -type f -name layer2.txt
 ./oldLogs/settings/layer2.txt
 sarah@james:~$ gpg <span style="color:#e6db74">&#39;./oldLogs/settings/layer2.txt&#39;</span>
 gpg: WARNING: no command supplied.  Trying to guess what you mean ...
@@ -667,7 +661,7 @@ sarah@james:~$ cat decrytpd-l2.txt  | base64 -d
 </code></pre></div></li>
 <li>
 <p>find &amp; decrypt layer1.txt</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find . -type f -name layer1.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find . -type f -name layer1.txt
 ./logs/zmn/layer1.txt
 sarah@james:~$ gpg <span style="color:#e6db74">&#39;./logs/zmn/layer1.txt&#39;</span>
 gpg: WARNING: no command supplied.  Trying to guess what you mean ...
@@ -686,7 +680,7 @@ Flag<span style="color:#f92672">{</span>flag-was-here<span style="color:#f92672"
 <ul>
 <li>
 <p>steps</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find /home/sarah -type f -name personal.txt.gpg 2&gt;/dev/null
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find /home/sarah -type f -name personal.txt.gpg 2&gt;/dev/null
 /home/sarah/oldLogs/units/personal.txt.gpg
 
 sarah@james:~$ find /home/sarah -type f -name data.txt 2&gt;/dev/null
@@ -704,7 +698,7 @@ valamanezivonia
 <ul>
 <li>
 <p>steps</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ gpg /home/sarah/oldLogs/units/personal.txt.gpg
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ gpg /home/sarah/oldLogs/units/personal.txt.gpg
 
 sarah@james:~$ cat /home/sarah/oldLogs/units/personal.txt
 getting stronger in linux
@@ -717,7 +711,7 @@ getting stronger in linux
 <ul>
 <li>
 <p>steps</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find /home/sarah -type f -name employees.sql 2&gt;/dev/null
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ find /home/sarah -type f -name employees.sql 2&gt;/dev/null
 /home/sarah/serverLx/employees.sql
 
 sarah@james:~$ cd /home/sarah/serverLx/
@@ -744,14 +738,14 @@ mysql&gt; SELECT * FROM employees WHERE first_name <span style="color:#f92672">=
 <ul>
 <li>
 <p>Find files including Sameer:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ grep -iRl Sameer /home 2&gt;/dev/null
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ grep -iRl Sameer /home 2&gt;/dev/null
 /home/shared/chatlogs/Pqmr
 /home/shared/chatlogs/LpnQ
 /home/shared/chatlogs/KfnP
 </code></pre></div></li>
 <li>
 <p>read the files: [here I&rsquo;m sharing the releavent one]</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ cat /home/shared/chatlogs/Pqmr
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ cat /home/shared/chatlogs/Pqmr
 <span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: Hey Sameer, <span style="color:#66d9ef">do</span> you by any chance no where I can find the sql back-up copy on this system? The database server is down, and I really need to help a customer out.
 
 <span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sameer: Sure. let me check.
@@ -774,7 +768,7 @@ mysql&gt; SELECT * FROM employees WHERE first_name <span style="color:#f92672">=
 </code></pre></div></li>
 <li>
 <p>SQL backup should be in /home/shared/sql/ and encrypted with the password <code>danepon</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ cat /home/shared/chatlogs/KfnP
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sarah@james:~$ cat /home/shared/chatlogs/KfnP
 <span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: Michael, I have been having trouble accessing the sql database back-up copy made today. Sameer gave me the password, but it just will not work?
 
 <span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Michael: Ah, yes. I remember, the security engineer was testing out a new automated software <span style="color:#66d9ef">for</span> creating sql database backups. He must have configured it to encrypt the backups with a different password.
@@ -803,7 +797,7 @@ mysql&gt; SELECT * FROM employees WHERE first_name <span style="color:#f92672">=
 <ul>
 <li>
 <p>Find the config file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sameer@james:~$ find /home/shared/sql/ -type f -size 50M
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sameer@james:~$ find /home/shared/sql/ -type f -size 50M
 /home/shared/sql/conf/JKpN
 
 sameer@james:~$ head /home/shared/sql/conf/JKpN
@@ -816,7 +810,7 @@ user: none
 </code></pre></div></li>
 <li>
 <p>wordlist dir:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sameer@james:~$ printf %s aG9tZS9zYW1lZXIvSGlzdG9yeSBMQi9sYWJtaW5kL2xhdGVzdEJ1aWxkL2NvbmZpZ0JEQgo<span style="color:#f92672">=</span> | base64 -d
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sameer@james:~$ printf %s aG9tZS9zYW1lZXIvSGlzdG9yeSBMQi9sYWJtaW5kL2xhdGVzdEJ1aWxkL2NvbmZpZ0JEQgo<span style="color:#f92672">=</span> | base64 -d
 home/sameer/History LB/labmind/latestBuild/configBD
 </code></pre></div></li>
 </ul>
@@ -824,14 +818,14 @@ home/sameer/History LB/labmind/latestBuild/configBD
 <ul>
 <li>
 <p>There 3 files with such passwords starting with ebq:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sameer@james:~$ grep -iRlE <span style="color:#e6db74">&#39;^ebq&#39;</span> <span style="color:#e6db74">&#39;/home/sameer/History LB/labmind/latestBuild/configBDB&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sameer@james:~$ grep -iRlE <span style="color:#e6db74">&#39;^ebq&#39;</span> <span style="color:#e6db74">&#39;/home/sameer/History LB/labmind/latestBuild/configBDB&#39;</span>
 /home/sameer/History LB/labmind/latestBuild/configBDB/pLmjwi
 /home/sameer/History LB/labmind/latestBuild/configBDB/LmqAQl
 /home/sameer/History LB/labmind/latestBuild/configBDB/Ulpsmt
 </code></pre></div></li>
 <li>
 <p>Show only the passwords:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sameer@james:~$ grep -iRhE <span style="color:#e6db74">&#39;^ebq&#39;</span> <span style="color:#e6db74">&#39;/home/sameer/History LB/labmind/latestBuild/configBDB&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sameer@james:~$ grep -iRhE <span style="color:#e6db74">&#39;^ebq&#39;</span> <span style="color:#e6db74">&#39;/home/sameer/History LB/labmind/latestBuild/configBDB&#39;</span>
 ebqiojsdfioj
 ebqiojsiodj
 ebqiojdifoj
@@ -851,14 +845,14 @@ ebqattle
 </li>
 <li>
 <p><code>gpg2john</code> doesn&rsquo;t work because the file is too big:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gpg2john 2020-08-13.zip.gpg 2020-08-13.zip.gpg.hash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gpg2john 2020-08-13.zip.gpg 2020-08-13.zip.gpg.hash
 
 File 2020-08-13.zip.gpg
 Bad parameter: give<span style="color:#f92672">(</span>len<span style="color:#f92672">=</span>106935040, buf<span style="color:#f92672">=</span>0x5571785b0420, buf_size<span style="color:#f92672">=</span>90000<span style="color:#f92672">)</span>, len can not be bigger than buf_size.
 </code></pre></div></li>
 <li>
 <p>So let&rsquo;s use <a href="https://gist.github.com/anir0y/3afcd6eaeeebe9f828515f33cf723b4c">this script</a> instead:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./crackgpg.sh 2020-08-13.zip.gpg wordlist.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./crackgpg.sh 2020-08-13.zip.gpg wordlist.txt
 FAILED - ebqiojsdfioj
 FAILED - ebqiojsiodj
 FAILED - ebqiojdifoj
@@ -883,7 +877,7 @@ SUCESS - <span style="color:#e6db74">`</span>ebqattle<span style="color:#e6db74"
 <ul>
 <li>7z x 2020-08-13.zip</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">grep -ri james 2020-08-13
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">grep -ri james 2020-08-13
 2020-08-13/sakila/sakila-mv-data.sql:<span style="color:#f92672">(</span>84,<span style="color:#e6db74">&#39;JAMES&#39;</span>,<span style="color:#e6db74">&#39;PITT&#39;</span>,<span style="color:#e6db74">&#39;2006-02-15 04:34:33&#39;</span><span style="color:#f92672">)</span>,
 2020-08-13/sakila/sakila-mv-data.sql:<span style="color:#f92672">(</span>71,1,<span style="color:#e6db74">&#39;KATHY&#39;</span>,<span style="color:#e6db74">&#39;JAMES&#39;</span>,<span style="color:#e6db74">&#39;KATHY.JAMES@sakilacustomer.org&#39;</span>,75,1,<span style="color:#e6db74">&#39;2006-02-14 22:04:36&#39;</span>,<span style="color:#e6db74">&#39;2006-02-15 04:57:20&#39;</span><span style="color:#f92672">)</span>,
 2020-08-13/sakila/sakila-mv-data.sql:<span style="color:#f92672">(</span>299,2,<span style="color:#e6db74">&#39;JAMES&#39;</span>,<span style="color:#e6db74">&#39;GANNON&#39;</span>,<span style="color:#e6db74">&#39;JAMES.GANNON@sakilacustomer.org&#39;</span>,304,1,<span style="color:#e6db74">&#39;2006-02-14 22:04:37&#39;</span>,<span style="color:#e6db74">&#39;2006-02-15 04:57:20&#39;</span><span style="color:#f92672">)</span>,
@@ -896,7 +890,7 @@ SUCESS - <span style="color:#e6db74">`</span>ebqattle<span style="color:#e6db74"
 </li>
 <li>
 <p>James has root permission through sudo:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">james@james:~$ sudo -l
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">james@james:~$ sudo -l
 <span style="color:#f92672">[</span>sudo<span style="color:#f92672">]</span> password <span style="color:#66d9ef">for</span> james: 
 Matching Defaults entries <span style="color:#66d9ef">for</span> james on james:
 env_reset, mail_badpass, secure_path<span style="color:#f92672">=</span>/usr/local/sbin<span style="color:#ae81ff">\:</span>/usr/local/bin<span style="color:#ae81ff">\:</span>/usr/sbin<span style="color:#ae81ff">\:</span>/usr/bin<span style="color:#ae81ff">\:</span>/sbin<span style="color:#ae81ff">\:</span>/bin<span style="color:#ae81ff">\:</span>/snap/bin
@@ -906,7 +900,7 @@ User james may run the following commands on james:
 </code></pre></div></li>
 <li>
 <p>Grab the flag:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">james@james:~$ sudo cat /root/root.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">james@james:~$ sudo cat /root/root.txt
 Flag<span style="color:#f92672">{</span>flag-was-here<span style="color:#f92672">}</span>
 
 NOW YOU ARE LINUX STRONGER!!!
@@ -941,7 +935,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2022 Classroom</p>
+              <p>© 2010 - 2023 Classroom</p>
               
 
               
@@ -960,7 +954,7 @@ data-ad-slot="7160066188"></ins></p>
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
     </h1>
 
     <article class="ui horizontal list">
@@ -973,307 +967,6 @@ data-ad-slot="7160066188"></ins></p>
       </a>
     </article>
 
-    
-    <article class="dream-tags">
-    
-      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
-        Agent Sudo
-      </a>
-    
-      <a class="ui label" href="/tags/autopsy/" title="autopsy">
-        autopsy
-      </a>
-    
-      <a class="ui label" href="/tags/backdoor/" title="backdoor">
-        backdoor
-      </a>
-    
-      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
-        Baron Samedit
-      </a>
-    
-      <a class="ui label" href="/tags/bash/" title="bash">
-        bash
-      </a>
-    
-      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
-        ceh0821
-      </a>
-    
-      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
-        cheatsheet
-      </a>
-    
-      <a class="ui label" href="/tags/config/" title="config">
-        config
-      </a>
-    
-      <a class="ui label" href="/tags/couch/" title="couch">
-        couch
-      </a>
-    
-      <a class="ui label" href="/tags/crisis/" title="Crisis">
-        Crisis
-      </a>
-    
-      <a class="ui label" href="/tags/dominos/" title="dominos">
-        dominos
-      </a>
-    
-      <a class="ui label" href="/tags/empire/" title="Empire">
-        Empire
-      </a>
-    
-      <a class="ui label" href="/tags/encryption/" title="encryption">
-        encryption
-      </a>
-    
-      <a class="ui label" href="/tags/ffuf/" title="ffuf">
-        ffuf
-      </a>
-    
-      <a class="ui label" href="/tags/forensic/" title="forensic">
-        forensic
-      </a>
-    
-      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
-        gitandcrumpets
-      </a>
-    
-      <a class="ui label" href="/tags/gnupg/" title="gnupg">
-        gnupg
-      </a>
-    
-      <a class="ui label" href="/tags/hackpark/" title="HackPark">
-        HackPark
-      </a>
-    
-      <a class="ui label" href="/tags/hydra/" title="hydra">
-        hydra
-      </a>
-    
-      <a class="ui label" href="/tags/inclusion/" title="inclusion">
-        inclusion
-      </a>
-    
-      <a class="ui label" href="/tags/internal/" title="internal">
-        internal
-      </a>
-    
-      <a class="ui label" href="/tags/internship/" title="Internship">
-        Internship
-      </a>
-    
-      <a class="ui label" href="/tags/interview/" title="interview">
-        interview
-      </a>
-    
-      <a class="ui label" href="/tags/kenobi/" title="kenobi">
-        kenobi
-      </a>
-    
-      <a class="ui label" href="/tags/lab/" title="lab">
-        lab
-      </a>
-    
-      <a class="ui label" href="/tags/leaks/" title="leaks">
-        leaks
-      </a>
-    
-      <a class="ui label" href="/tags/linux/" title="Linux">
-        Linux
-      </a>
-    
-      <a class="ui label" href="/tags/memory/" title="memory">
-        memory
-      </a>
-    
-      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
-        Metamorphosis
-      </a>
-    
-      <a class="ui label" href="/tags/metasploit/" title="metasploit">
-        metasploit
-      </a>
-    
-      <a class="ui label" href="/tags/mobile/" title="Mobile">
-        Mobile
-      </a>
-    
-      <a class="ui label" href="/tags/msf/" title="msf">
-        msf
-      </a>
-    
-      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
-        msfvenom
-      </a>
-    
-      <a class="ui label" href="/tags/nfs/" title="nfs">
-        nfs
-      </a>
-    
-      <a class="ui label" href="/tags/notes/" title="notes">
-        notes
-      </a>
-    
-      <a class="ui label" href="/tags/openvas/" title="openvas">
-        openvas
-      </a>
-    
-      <a class="ui label" href="/tags/osi/" title="OSI">
-        OSI
-      </a>
-    
-      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
-        OSI Model
-      </a>
-    
-      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
-        Overpass 2
-      </a>
-    
-      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
-        Pentesting
-      </a>
-    
-      <a class="ui label" href="/tags/pgp/" title="PGP">
-        PGP
-      </a>
-    
-      <a class="ui label" href="/tags/pip/" title="pip">
-        pip
-      </a>
-    
-      <a class="ui label" href="/tags/pip2/" title="pip2">
-        pip2
-      </a>
-    
-      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
-        Post-Exploitation
-      </a>
-    
-      <a class="ui label" href="/tags/powershell/" title="powershell">
-        powershell
-      </a>
-    
-      <a class="ui label" href="/tags/putty/" title="putty">
-        putty
-      </a>
-    
-      <a class="ui label" href="/tags/python/" title="python">
-        python
-      </a>
-    
-      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
-        RazorBlack
-      </a>
-    
-      <a class="ui label" href="/tags/redteaming/" title="redteaming">
-        redteaming
-      </a>
-    
-      <a class="ui label" href="/tags/ref/" title="Ref">
-        Ref
-      </a>
-    
-      <a class="ui label" href="/tags/relevant/" title="Relevant">
-        Relevant
-      </a>
-    
-      <a class="ui label" href="/tags/rocket/" title="rocket">
-        rocket
-      </a>
-    
-      <a class="ui label" href="/tags/rooms/" title="rooms">
-        rooms
-      </a>
-    
-      <a class="ui label" href="/tags/rootme/" title="RootMe">
-        RootMe
-      </a>
-    
-      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
-        rpwebscanning
-      </a>
-    
-      <a class="ui label" href="/tags/script/" title="script">
-        script
-      </a>
-    
-      <a class="ui label" href="/tags/scripting/" title="Scripting">
-        Scripting
-      </a>
-    
-      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
-        Simple CTF
-      </a>
-    
-      <a class="ui label" href="/tags/splunk/" title="splunk">
-        splunk
-      </a>
-    
-      <a class="ui label" href="/tags/stego/" title="stego">
-        stego
-      </a>
-    
-      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
-        Super-Spam
-      </a>
-    
-      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
-        sweettoothinc
-      </a>
-    
-      <a class="ui label" href="/tags/sysmon/" title="sysmon">
-        sysmon
-      </a>
-    
-      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
-        Thefindcommand
-      </a>
-    
-      <a class="ui label" href="/tags/thm/" title="thm">
-        thm
-      </a>
-    
-      <a class="ui label" href="/tags/tmux/" title="tmux">
-        tmux
-      </a>
-    
-      <a class="ui label" href="/tags/tools/" title="tools">
-        tools
-      </a>
-    
-      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
-        tryhackme
-      </a>
-    
-      <a class="ui label" href="/tags/vapt/" title="vapt">
-        vapt
-      </a>
-    
-      <a class="ui label" href="/tags/volatility/" title="Volatility">
-        Volatility
-      </a>
-    
-      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
-        vuln labs
-      </a>
-    
-      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
-        Vulnversity
-      </a>
-    
-      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
-        web scanning
-      </a>
-    
-      <a class="ui label" href="/tags/wireshark/" title="wireshark">
-        wireshark
-      </a>
-    
-    </article>
-    
   </div>
 </header>
 
@@ -1313,7 +1006,7 @@ data-ad-slot="7160066188"></ins></p>
 
   
   <div class="item">
-    <a href="https://facebook.com/anir0yofficial" target="_blank">
+    <a href="https://facebook.com/0xanir0y" target="_blank">
       <i class="large facebook icon" title="Facebook"></i>
     </a>
   </div>
@@ -1321,7 +1014,7 @@ data-ad-slot="7160066188"></ins></p>
 
   
   <div class="item">
-    <a href="https://instagram.com/anir0yofficial" target="_blank">
+    <a href="https://instagram.com/0xanir0y" target="_blank">
       <i class="large instagram icon" title="Instagram"></i>
     </a>
   </div>
@@ -1356,7 +1049,7 @@ data-ad-slot="7160066188"></ins></p>
   <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
     
     <article class="ui segment">
-      YOU CAN RESUE MY CONTENT
+      YOU CAN REUSE MY CONTENT
     </article>
     
   </div>

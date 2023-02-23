@@ -1,24 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HackPark on Classroom</title>
     <link>https://classroom.anir0y.in/tags/hackpark/</link>
     <description>Recent content in HackPark on Classroom</description>
-    <generator>Anir0ry : Blog v1.0(Based on Hugo)</generator>
+    <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
-    <copyright>YOU CAN RESUE MY CONTENT</copyright>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
     <lastBuildDate>Sat, 19 Jun 2021 19:38:27 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/hackpark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Room Hackpark</title>
-      <link>https://classroom.anir0y.in/post/thm-room-hackpark/</link>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
       <pubDate>Sat, 19 Jun 2021 19:38:27 +0530</pubDate>
       
-      <guid>https://classroom.anir0y.in/post/thm-room-hackpark/</guid>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description>HackPark Room link : HackPark
 task 01: Deploy the vulnerable Windows machine This room will cover brute-forcing an accounts credentials, handling public exploits, using the Metasploit framework and privilege escalation on Windows.
 Flags    Flag-ID question     1 Deploy the machine and access its web server.   2 Whats the name of the clown displayed on the homepage?    download the img and do a reverse Image search ans is PENNYWISE    task 02: Using Hydra to brute-force a login 1 : find the directory using gobuster</description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>https://classroom.anir0y.in/post/thm-room-hackpark/</link>
+    
     </item>
+   
+      
     
   </channel>
 </rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intermediate Nmap on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/intermediate-nmap/</link>
+    <description>Recent content in Intermediate Nmap on Classroom</description>
+    <generator>Anir0ry : Blog v1.0</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Fri, 23 Sep 2022 15:28:41 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/intermediate-nmap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Try Hack Me Intermediate Nmap</title>
+      <pubDate>Fri, 23 Sep 2022 15:28:41 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/IntermediateNmap.png" width="700" height="420"></media:content>
+      <description>OverView     Follow @anir0y     Intermediate Nmap {FREE ROOM}     Task 01: You&amp;rsquo;ve learned some great nmap skills! Now can you combine that with other skills with netcat and protocols, to log in to this machine and find the flag? This VM MACHINE_IP is listening on a high port, and if you connect to it it may give you some information you can use to connect to a lower port commonly used for remote access!</description>
+      <enclosure url="https://classroom.anir0y.in/img/IntermediateNmap.png"></enclosure>
+      <link>https://classroom.anir0y.in/post/thm-intermediatenmap/</link>
+    
+    </item>
+   
+      
+    
+  </channel>
+</rss>

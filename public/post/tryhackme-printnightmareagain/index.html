@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Writeup |Try Hack Me PrintNightmare, again! | Classroom</title>
+
+    
+<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+<meta name="author" content="Animesh Roy"  />
+<meta name="description" content="Try Hack Me Room rintNightmare, again solved by Animesh Roy. this is a walkthough. read more..." />
+
+
+
+<title>Animesh Roy | Classroom Posts</title>
+<meta name="title" content="Animesh Roy | Blogs & Writeups">
+<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPD6BXK0P5');
+</script>
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-printnightmareagain/">
+
+<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-printnightmareagain/" />
+
+
+<meta property="og:title" content="Writeup |Try Hack Me PrintNightmare, again!" />
+<meta property="og:description" content="Try Hack Me Room rintNightmare, again solved by Animesh Roy. this is a walkthough. read more..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-printnightmareagain/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-10-31T14:14:20+05:30" />
+<meta property="article:modified_time" content="2022-10-31T14:14:20+05:30" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Writeup |Try Hack Me PrintNightmare, again!"/>
+<meta name="twitter:description" content="Try Hack Me Room rintNightmare, again solved by Animesh Roy. this is a walkthough. read more..."/>
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.ui.button),
+  .inverted a:not(.ui.button):hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: #fff;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">OverView</a></li>
+    <li><a href="#detection">Detection</a></li>
+    <li><a href="#answer-the-questions-below">Answer the questions below</a>
+      <ul>
+        <li><a href="#1-the-user-downloaded-a-zip-file-what-was-the-zip-file-saved-as">1: The user downloaded a zip file. What was the zip file saved as?</a></li>
+        <li><a href="#2-what-is-the-full-path-to-the-exploit-the-user-executed">2: What is the full path to the exploit the user executed?</a></li>
+        <li><a href="#3-what-was-the-temp-location-the-malicious-dll-was-saved-to">3: What was the temp location the malicious DLL was saved to?</a></li>
+        <li><a href="#4-what-was-the-full-location-the-dll-loads-from">4: What was the full location the DLL loads from?</a></li>
+        <li><a href="#5-what-is-the-primary-registry-path-associated-with-this-attack">5: What is the primary registry path associated with this attack?</a></li>
+        <li><a href="#6-what-was-the-pid-for-the-process-that-would-have-been-blocked-from-loading-a-non-microsoft-signed-binary">6: What was the PID for the process that would have been blocked from loading a non-Microsoft-signed binary?</a></li>
+        <li><a href="#7-what-is-the-username-of-the-newly-created-local-administrator-account">7: What is the username of the newly created local administrator account?</a></li>
+        <li><a href="#8-what-is-the-password-for-this-user">8: What is the password for this user?</a></li>
+        <li><a href="#9-what-two-commands-did-the-user-execute-to-cover-their-tracks-no-space-after-the-comma">9: What two commands did the user execute to cover their tracks? (no space after the comma)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=Writeup%20%7cTry%20Hack%20Me%20PrintNightmare%2c%20again%21&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-printnightmareagain%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-printnightmareagain%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">Writeup |Try Hack Me PrintNightmare, again!<div class="sub header">
+            @
+            
+              
+                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
+              
+            
+
+            | 
+                Monday, Oct 31, 2022
+              
+
+            | 2 minutes read
+
+            | Update at
+              
+                Monday, Oct 31, 2022
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><h2 id="overview">OverView</h2>
+<p>Search the artifacts on the endpoint to determine if the employee used any of the Windows Printer Spooler vulnerabilities to elevate their privileges.</p>
+<table>
+<thead>
+<tr>
+<th><script src="https://tryhackme.com/badge/434937"></script></th>
+<th><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[<strong>FREE ROOM</strong>] PrintNightmare, again</td>
+<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/80976dc5f46f5d2f78a99c2c8e2bc4a9.png" alt="logo"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="detection">Detection</h2>
+<p><strong>Scenario</strong>: In the weekly internal security meeting it was reported that an employee overheard two co-workers discussing the PrintNightmare exploit and how they can use it to elevate their privileges on their local computers.</p>
+<p>Task: Inspect the artifacts on the endpoint to detect the exploit they used.</p>
+<h2 id="answer-the-questions-below">Answer the questions below</h2>
+<h3 id="1-the-user-downloaded-a-zip-file-what-was-the-zip-file-saved-as">1: The user downloaded a zip file. What was the zip file saved as?</h3>
+<p>to ans this question, let&rsquo;s open up the Full Event View, set to all time events (options -&gt; advance options -&gt; set to all time). and then search for <code>.zip</code> and you&rsquo;ll get the file name downloaded into <code>downloads</code> directory. ref img:</p>
+<p><img src="https://i.imgur.com/c4IJFX9.png" alt="img"></p>
+<h3 id="2-what-is-the-full-path-to-the-exploit-the-user-executed">2: What is the full path to the exploit the user executed?</h3>
+<p>a little bit of scrolling donw reveals the poweshell script that used to execute the exploit. ref img:</p>
+<p><img src="https://i.imgur.com/pWO3Q51.png" alt="img"></p>
+<h3 id="3-what-was-the-temp-location-the-malicious-dll-was-saved-to">3: What was the temp location the malicious DLL was saved to?</h3>
+<p>again scroll donwn to the timeline to see the <code>malicious dll</code> that downloaded into temp directory. ref img:</p>
+<p><img src="https://i.imgur.com/53h21nC.png" alt="img"></p>
+<h3 id="4-what-was-the-full-location-the-dll-loads-from">4: What was the full location the DLL loads from?</h3>
+<p>same thing again, scrool donw to the time line. that wil reveal the path for the <code>dll</code></p>
+<p><img src="https://i.imgur.com/WFsqAIX.png" alt="img"></p>
+<h3 id="5-what-is-the-primary-registry-path-associated-with-this-attack">5: What is the primary registry path associated with this attack?</h3>
+<p>The <code>HKLM</code> is dead giveaway the path</p>
+<p><img src="https://i.imgur.com/QuozoU5.png" alt="img"></p>
+<h3 id="6-what-was-the-pid-for-the-process-that-would-have-been-blocked-from-loading-a-non-microsoft-signed-binary">6: What was the PID for the process that would have been blocked from loading a non-Microsoft-signed binary?</h3>
+<p>the second line with <code>Blocked PID</code> is the answer:</p>
+<p><img src="https://i.imgur.com/D8tE3GW.png" alt="img"></p>
+<h3 id="7-what-is-the-username-of-the-newly-created-local-administrator-account">7: What is the username of the newly created local administrator account?</h3>
+<p>event ID <code>4720</code> is the giveaway for this, or you can just scroll donwn to see the event evantually.</p>
+<p><img src="https://i.imgur.com/LNOLyCW.png" alt="img"></p>
+<h3 id="8-what-is-the-password-for-this-user">8: What is the password for this user?</h3>
+<p>for this, luckily we have Poweshell console history enabled. so we can just read this info directly from the file.</p>
+<p>ps cmdline: <code>type C:\Users\bmurphy\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt</code></p>
+<p>ref the img to get the flag.</p>
+<p><img src="https://i.imgur.com/nbfoowM.png" alt="img"></p>
+<h3 id="9-what-two-commands-did-the-user-execute-to-cover-their-tracks-no-space-after-the-comma">9: What two commands did the user execute to cover their tracks? (no space after the comma)</h3>
+<p>ps cmdline: <code>type C:\Users\bmurphy\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt</code></p>
+<p>ref the img to get the flag.</p>
+<p><img src="https://i.imgur.com/nbfoowM.png" alt="img"></p>
+<hr>
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<!-- EOF -->
+</article>
+    </section>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2010 - 2023 Classroom</p>
+              
+
+              
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <div class="item">
+    <a href="/index.xml">
+      <i class="large rss square icon" title="RSS"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="mailto:classroom@anir0y.in">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://twitter.com/anir0y" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://facebook.com/0xanir0y" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://instagram.com/0xanir0y" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+  <div class="item">
+    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://github.com/anir0y" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      YOU CAN REUSE MY CONTENT
+    </article>
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+
+
+
+<script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "tomorrow"
+    var darkTheme = "tomorrow-night"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
+
+
+
+
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
+
+    
+
+    
+  </body>
+</html>

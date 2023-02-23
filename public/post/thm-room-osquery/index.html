@@ -20,7 +20,17 @@
 
 <title>Animesh Roy | Classroom Posts</title>
 <meta name="title" content="Animesh Roy | Blogs & Writeups">
-<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPD6BXK0P5');
+</script>
 
 
 
@@ -52,23 +62,6 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NZBEX7RBNF');
-</script>
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "6gp5990ghr");
-</script>
-
 
 <link rel="canonical" href="https://classroom.anir0y.in/post/thm-room-osquery/" />
 
@@ -76,9 +69,10 @@
 <meta property="og:title" content="Try Hack Me Room Osquery" />
 <meta property="og:description" content="Try Hack Me Room Osquery solved by Animesh Roy" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/thm-room-osquery/" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/thm-room-osquery/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-05-16T23:54:39+05:30" />
 <meta property="article:modified_time" content="2021-05-16T23:54:39+05:30" />
+
 
 
 
@@ -285,7 +279,7 @@
                 Sunday, May 16, 2021
               
 
-            | 12minuteRead
+            | 12 minutes read
 
             | Update at
               
@@ -418,15 +412,15 @@ Looking at the above image, <strong>pid</strong> is the <strong>column</strong>,
 <p>just open the website <a href="https://osquery.io/schema/4.6.0/">here</a> you&rsquo;ll see it in left corner.</p>
 <h3 id="flag-43">Flag 4.3</h3>
 <h4 id="how-many-of-the-tables-for-this-version-are-compatible-with-windows">How many of the tables for this version are compatible with Windows?</h4>
-<p>just open the website <a href="https://osquery.io/schema/4.6.0/">here</a> filter for windows.
+<p>just open the website <a href="https://osquery.io/schema/4.6.0/">here</a> filter for windows. 
 <img src="https://i.imgur.com/a9NrNKv.png" alt=""></p>
 <h3 id="flag-44">Flag 4.4</h3>
 <h4 id="how-many-tables-is-compatible-with-linux">How many tables is compatible with Linux?</h4>
-<p>just open the website <a href="https://osquery.io/schema/4.6.0/">here</a> filter for Linux.
+<p>just open the website <a href="https://osquery.io/schema/4.6.0/">here</a> filter for Linux. 
 <img src="https://i.imgur.com/AJtMIKt.png" alt=""></p>
 <h3 id="flag-45">Flag 4.5</h3>
 <h4 id="what-is-the-first-table-listed-that-is-compatible-with-both-linux-and-windows">What is the first table listed that is compatible with both Linux and Windows?</h4>
-<p>just open the website <a href="https://osquery.io/schema/4.6.0/">here</a> filter for windows &amp; Linux type the first table name.
+<p>just open the website <a href="https://osquery.io/schema/4.6.0/">here</a> filter for windows &amp; Linux type the first table name. 
 <img src="https://i.imgur.com/AJtMIKt.png" alt=""></p>
 <hr>
 <h2 id="task-5--creating-queries">TASK 5 : Creating queries</h2>
@@ -464,7 +458,7 @@ Optionally, you can use a WHERE clause to narrow down the list of results return
 </ul>
 <p>Below is a screenshot from the Osquery <a href="https://osquery.readthedocs.io/en/stable/deployment/file-integrity-monitoring/">documentation</a> showing examples of using wildcards when used in folder structures. <br>
 <img src="https://assets.tryhackme.com/additional/osquery/osquery_wildcard.png" alt=""></p>
-<p>Some tables will require a WHERE clause, such as the file table, to return a value. If the required WHERE clause is not included in the query, then you will get an error.
+<p>Some tables will require a WHERE clause, such as the file table, to return a value. If the required WHERE clause is not included in the query, then you will get an error. 
 <img src="https://assets.tryhackme.com/additional/osquery/osquery_fileerror.png" alt=""></p>
 <p>The last concept to cover is JOIN. To join 2 or more tables, each table needs to share a column in common.</p>
 <p>Let&rsquo;s look at 2 tables to demonstrate this further. Below is the schema for the <strong>osquery_info</strong> table and the <strong>processes</strong> table.<br>
@@ -492,7 +486,7 @@ Modify the query Smarty Pants!</p>
 <img src="https://i.imgur.com/PwnlQ4h.png" alt=""></p>
 <h3 id="flags-63">Flags 6.3</h3>
 <h4 id="what-is-the-path-for-the-running-osquerydexe-process">What is the path for the running osqueryd.exe process?</h4>
-<p>the launcher path.
+<p>the launcher path. 
 hint: <code>C:\Users\?????????????\Desktop\????????\???????\osqueryd.exe</code></p>
 <hr>
 <h2 id="task-7--osquery-extensions">TASK 7 : Osquery extensions</h2>
@@ -532,7 +526,7 @@ I guess my way isn&rsquo;t intended. correct me <a href="mailto:classroom@anir0y
 <p><code>osquery&gt; select path,filename,md5 from file join hash using (path) where path like &quot;/home/%%/%&quot; ;</code></p>
 <h3 id="flags-86">Flags 8.6</h3>
 <h4 id="there-is-a-file-that-is-categorized-as-malicious-in-one-of-the-home-directories-query-the-yara-table-to-find-this-file-use-the-sigfile-which-is-saved-in-varosqueryyarascanneryara-which-file-is-it">There is a file that is categorized as malicious in one of the home directories. Query the Yara table to find this file. Use the sigfile which is saved in &lsquo;/var/osquery/yara/scanner.yara&rsquo;. Which file is it?</h4>
-<p>being a lame person I ran yara directly.
+<p>being a lame person I ran yara directly. 
 query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
 <p><img src="https://i.imgur.com/TJI9YbY.png" alt=""></p>
 <p>query: <code>osquery&gt; SELECT * FROM yara WHERE path=&quot;/path/filename&quot; and sigfile=&quot;/var/osquery/yara/scanner.yara&quot;;</code>
@@ -583,7 +577,7 @@ query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
 <img src="https://i.imgur.com/oz9YRJ8.png" alt=""></p>
 <h3 id="flags-97">Flags 9.7</h3>
 <h4 id="what-is-the-query-to-find-the-first-sysmon-event-select-only-the-event-id-order-by-datetime-and-limit-the-output-to-only-1-entry">What is the query to find the first Sysmon event? Select only the event id, order by date/time, and limit the output to only 1 entry.</h4>
-<p>Query 1: find the sysmon Source
+<p>Query 1: find the sysmon Source 
 <code>select * from win_event_log_channels where source like '%sysmon%';</code></p>
 <p>Query 2: <code>select eventid from win_event_log_data where source=&quot;Microsoft-Windows-Sysmon/Operational&quot; order by datetime limit 1;</code></p>
 <p><img src="https://i.imgur.com/hmBZb7L.png" alt=""></p>
@@ -623,7 +617,7 @@ query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2022 Classroom</p>
+              <p>© 2010 - 2023 Classroom</p>
               
 
               
@@ -642,7 +636,7 @@ query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
     </h1>
 
     <article class="ui horizontal list">
@@ -655,307 +649,6 @@ query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
       </a>
     </article>
 
-    
-    <article class="dream-tags">
-    
-      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
-        Agent Sudo
-      </a>
-    
-      <a class="ui label" href="/tags/autopsy/" title="autopsy">
-        autopsy
-      </a>
-    
-      <a class="ui label" href="/tags/backdoor/" title="backdoor">
-        backdoor
-      </a>
-    
-      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
-        Baron Samedit
-      </a>
-    
-      <a class="ui label" href="/tags/bash/" title="bash">
-        bash
-      </a>
-    
-      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
-        ceh0821
-      </a>
-    
-      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
-        cheatsheet
-      </a>
-    
-      <a class="ui label" href="/tags/config/" title="config">
-        config
-      </a>
-    
-      <a class="ui label" href="/tags/couch/" title="couch">
-        couch
-      </a>
-    
-      <a class="ui label" href="/tags/crisis/" title="Crisis">
-        Crisis
-      </a>
-    
-      <a class="ui label" href="/tags/dominos/" title="dominos">
-        dominos
-      </a>
-    
-      <a class="ui label" href="/tags/empire/" title="Empire">
-        Empire
-      </a>
-    
-      <a class="ui label" href="/tags/encryption/" title="encryption">
-        encryption
-      </a>
-    
-      <a class="ui label" href="/tags/ffuf/" title="ffuf">
-        ffuf
-      </a>
-    
-      <a class="ui label" href="/tags/forensic/" title="forensic">
-        forensic
-      </a>
-    
-      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
-        gitandcrumpets
-      </a>
-    
-      <a class="ui label" href="/tags/gnupg/" title="gnupg">
-        gnupg
-      </a>
-    
-      <a class="ui label" href="/tags/hackpark/" title="HackPark">
-        HackPark
-      </a>
-    
-      <a class="ui label" href="/tags/hydra/" title="hydra">
-        hydra
-      </a>
-    
-      <a class="ui label" href="/tags/inclusion/" title="inclusion">
-        inclusion
-      </a>
-    
-      <a class="ui label" href="/tags/internal/" title="internal">
-        internal
-      </a>
-    
-      <a class="ui label" href="/tags/internship/" title="Internship">
-        Internship
-      </a>
-    
-      <a class="ui label" href="/tags/interview/" title="interview">
-        interview
-      </a>
-    
-      <a class="ui label" href="/tags/kenobi/" title="kenobi">
-        kenobi
-      </a>
-    
-      <a class="ui label" href="/tags/lab/" title="lab">
-        lab
-      </a>
-    
-      <a class="ui label" href="/tags/leaks/" title="leaks">
-        leaks
-      </a>
-    
-      <a class="ui label" href="/tags/linux/" title="Linux">
-        Linux
-      </a>
-    
-      <a class="ui label" href="/tags/memory/" title="memory">
-        memory
-      </a>
-    
-      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
-        Metamorphosis
-      </a>
-    
-      <a class="ui label" href="/tags/metasploit/" title="metasploit">
-        metasploit
-      </a>
-    
-      <a class="ui label" href="/tags/mobile/" title="Mobile">
-        Mobile
-      </a>
-    
-      <a class="ui label" href="/tags/msf/" title="msf">
-        msf
-      </a>
-    
-      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
-        msfvenom
-      </a>
-    
-      <a class="ui label" href="/tags/nfs/" title="nfs">
-        nfs
-      </a>
-    
-      <a class="ui label" href="/tags/notes/" title="notes">
-        notes
-      </a>
-    
-      <a class="ui label" href="/tags/openvas/" title="openvas">
-        openvas
-      </a>
-    
-      <a class="ui label" href="/tags/osi/" title="OSI">
-        OSI
-      </a>
-    
-      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
-        OSI Model
-      </a>
-    
-      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
-        Overpass 2
-      </a>
-    
-      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
-        Pentesting
-      </a>
-    
-      <a class="ui label" href="/tags/pgp/" title="PGP">
-        PGP
-      </a>
-    
-      <a class="ui label" href="/tags/pip/" title="pip">
-        pip
-      </a>
-    
-      <a class="ui label" href="/tags/pip2/" title="pip2">
-        pip2
-      </a>
-    
-      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
-        Post-Exploitation
-      </a>
-    
-      <a class="ui label" href="/tags/powershell/" title="powershell">
-        powershell
-      </a>
-    
-      <a class="ui label" href="/tags/putty/" title="putty">
-        putty
-      </a>
-    
-      <a class="ui label" href="/tags/python/" title="python">
-        python
-      </a>
-    
-      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
-        RazorBlack
-      </a>
-    
-      <a class="ui label" href="/tags/redteaming/" title="redteaming">
-        redteaming
-      </a>
-    
-      <a class="ui label" href="/tags/ref/" title="Ref">
-        Ref
-      </a>
-    
-      <a class="ui label" href="/tags/relevant/" title="Relevant">
-        Relevant
-      </a>
-    
-      <a class="ui label" href="/tags/rocket/" title="rocket">
-        rocket
-      </a>
-    
-      <a class="ui label" href="/tags/rooms/" title="rooms">
-        rooms
-      </a>
-    
-      <a class="ui label" href="/tags/rootme/" title="RootMe">
-        RootMe
-      </a>
-    
-      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
-        rpwebscanning
-      </a>
-    
-      <a class="ui label" href="/tags/script/" title="script">
-        script
-      </a>
-    
-      <a class="ui label" href="/tags/scripting/" title="Scripting">
-        Scripting
-      </a>
-    
-      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
-        Simple CTF
-      </a>
-    
-      <a class="ui label" href="/tags/splunk/" title="splunk">
-        splunk
-      </a>
-    
-      <a class="ui label" href="/tags/stego/" title="stego">
-        stego
-      </a>
-    
-      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
-        Super-Spam
-      </a>
-    
-      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
-        sweettoothinc
-      </a>
-    
-      <a class="ui label" href="/tags/sysmon/" title="sysmon">
-        sysmon
-      </a>
-    
-      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
-        Thefindcommand
-      </a>
-    
-      <a class="ui label" href="/tags/thm/" title="thm">
-        thm
-      </a>
-    
-      <a class="ui label" href="/tags/tmux/" title="tmux">
-        tmux
-      </a>
-    
-      <a class="ui label" href="/tags/tools/" title="tools">
-        tools
-      </a>
-    
-      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
-        tryhackme
-      </a>
-    
-      <a class="ui label" href="/tags/vapt/" title="vapt">
-        vapt
-      </a>
-    
-      <a class="ui label" href="/tags/volatility/" title="Volatility">
-        Volatility
-      </a>
-    
-      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
-        vuln labs
-      </a>
-    
-      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
-        Vulnversity
-      </a>
-    
-      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
-        web scanning
-      </a>
-    
-      <a class="ui label" href="/tags/wireshark/" title="wireshark">
-        wireshark
-      </a>
-    
-    </article>
-    
   </div>
 </header>
 
@@ -995,7 +688,7 @@ query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
 
   
   <div class="item">
-    <a href="https://facebook.com/anir0yofficial" target="_blank">
+    <a href="https://facebook.com/0xanir0y" target="_blank">
       <i class="large facebook icon" title="Facebook"></i>
     </a>
   </div>
@@ -1003,7 +696,7 @@ query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
 
   
   <div class="item">
-    <a href="https://instagram.com/anir0yofficial" target="_blank">
+    <a href="https://instagram.com/0xanir0y" target="_blank">
       <i class="large instagram icon" title="Instagram"></i>
     </a>
   </div>
@@ -1038,7 +731,7 @@ query: <code>yara /var/osquery/yara/scanner.yara /home/charlie/</code></p>
   <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
     
     <article class="ui segment">
-      YOU CAN RESUE MY CONTENT
+      YOU CAN REUSE MY CONTENT
     </article>
     
   </div>

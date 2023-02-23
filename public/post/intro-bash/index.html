@@ -20,7 +20,17 @@
 
 <title>Animesh Roy | Classroom Posts</title>
 <meta name="title" content="Animesh Roy | Blogs & Writeups">
-<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPD6BXK0P5');
+</script>
 
 
 
@@ -52,23 +62,6 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NZBEX7RBNF');
-</script>
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "6gp5990ghr");
-</script>
-
 
 <link rel="canonical" href="https://classroom.anir0y.in/post/intro-bash/" />
 
@@ -79,9 +72,10 @@ Introduction {: .-intro}
 This is a quick reference to getting started with Bash scripting.
  Learn bash in y minutes (learnxinyminutes.com) Bash Guide (mywiki.wooledge.org)  Example #!/usr/bin/env bash  NAME=&#34;John&#34; echo &#34;Hello $NAME!&#34; Variables NAME=&#34;John&#34; echo $NAME echo &#34;$NAME&#34; echo &#34;${NAME}!&#34; String quotes NAME=&#34;John&#34; echo &#34;Hi $NAME&#34; #=&gt; Hi John echo &#39;Hi $NAME&#39; #=&gt; Hi $NAME Shell execution echo &#34;I&#39;m in $(pwd)&#34; echo &#34;I&#39;m in `pwd`&#34; # Same See Command substitution" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/intro-bash/" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/intro-bash/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-04-03T18:54:43+05:30" />
 <meta property="article:modified_time" content="2021-04-03T18:54:43+05:30" />
+
 
 
 
@@ -327,7 +321,7 @@ This is a quick reference to getting started with Bash scripting.
                 Saturday, Apr 3, 2021
               
 
-            | 9minuteRead
+            | 9 minutes read
 
             | Update at
               
@@ -347,30 +341,30 @@ This is a quick reference to getting started with Bash scripting.
 <li><a href="http://mywiki.wooledge.org/BashGuide">Bash Guide</a> <em>(mywiki.wooledge.org)</em></li>
 </ul>
 <h3 id="example">Example</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env bash
 </span><span style="color:#75715e"></span>
 NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>
 echo <span style="color:#e6db74">&#34;Hello </span>$NAME<span style="color:#e6db74">!&#34;</span>
 </code></pre></div><h3 id="variables">Variables</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>
 echo $NAME
 echo <span style="color:#e6db74">&#34;</span>$NAME<span style="color:#e6db74">&#34;</span>
 echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">!&#34;</span>
 </code></pre></div><h3 id="string-quotes">String quotes</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>
 echo <span style="color:#e6db74">&#34;Hi </span>$NAME<span style="color:#e6db74">&#34;</span>  <span style="color:#75715e">#=&gt; Hi John</span>
 echo <span style="color:#e6db74">&#39;Hi $NAME&#39;</span>  <span style="color:#75715e">#=&gt; Hi $NAME</span>
 </code></pre></div><h3 id="shell-execution">Shell execution</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;I&#39;m in </span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;I&#39;m in </span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 echo <span style="color:#e6db74">&#34;I&#39;m in `pwd`&#34;</span>
 <span style="color:#75715e"># Same</span>
 </code></pre></div><p>See <a href="http://wiki.bash-hackers.org/syntax/expansion/cmdsubst">Command substitution</a></p>
 <h3 id="conditional-execution">Conditional execution</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git commit <span style="color:#f92672">&amp;&amp;</span> git push
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git commit <span style="color:#f92672">&amp;&amp;</span> git push
 git commit <span style="color:#f92672">||</span> echo <span style="color:#e6db74">&#34;Commit failed&#34;</span>
 </code></pre></div><h3 id="functions">Functions</h3>
 <p>{: id=&lsquo;functions-example&rsquo;}</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">get_name<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">get_name<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
   echo <span style="color:#e6db74">&#34;John&#34;</span>
 <span style="color:#f92672">}</span>
 
@@ -378,18 +372,18 @@ echo <span style="color:#e6db74">&#34;You are </span><span style="color:#66d9ef"
 </code></pre></div><p>See: <a href="#functions">Functions</a></p>
 <h3 id="conditionals">Conditionals</h3>
 <p>{: id=&lsquo;conditionals-example&rsquo;}</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$string<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$string<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;String is empty&#34;</span>
 <span style="color:#66d9ef">elif</span> <span style="color:#f92672">[[</span> -n <span style="color:#e6db74">&#34;</span>$string<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;String is not empty&#34;</span>
 <span style="color:#66d9ef">fi</span>
 </code></pre></div><p>See: <a href="#conditionals">Conditionals</a></p>
 <h3 id="strict-mode">Strict mode</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set -euo pipefail
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set -euo pipefail
 IFS<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\n\t&#39;</span>
 </code></pre></div><p>See: <a href="http://redsymbol.net/articles/unofficial-bash-strict-mode/">Unofficial bash strict mode</a></p>
 <h3 id="brace-expansion">Brace expansion</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#f92672">{</span>A,B<span style="color:#f92672">}</span>.js
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#f92672">{</span>A,B<span style="color:#f92672">}</span>.js
 </code></pre></div><table>
 <thead>
 <tr>
@@ -416,7 +410,7 @@ IFS<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\n\t&#3
 <h2 id="parameter-expansions">Parameter expansions</h2>
 <p>{: .-three-column}</p>
 <h3 id="basics">Basics</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span>
 echo <span style="color:#e6db74">${</span>name<span style="color:#e6db74">}</span>
 echo <span style="color:#e6db74">${</span>name/J/j<span style="color:#e6db74">}</span>    <span style="color:#75715e">#=&gt; &#34;john&#34; (substitution)</span>
 echo <span style="color:#e6db74">${</span>name:0:2<span style="color:#e6db74">}</span>    <span style="color:#75715e">#=&gt; &#34;Jo&#34; (slicing)</span>
@@ -425,10 +419,10 @@ echo <span style="color:#e6db74">${</span>name:<span style="color:#66d9ef">:-</s
 echo <span style="color:#e6db74">${</span>name:(-1)<span style="color:#e6db74">}</span>   <span style="color:#75715e">#=&gt; &#34;n&#34; (slicing from right)</span>
 echo <span style="color:#e6db74">${</span>name:(-2):1<span style="color:#e6db74">}</span> <span style="color:#75715e">#=&gt; &#34;h&#34; (slicing from right)</span>
 echo <span style="color:#e6db74">${</span>food<span style="color:#66d9ef">:-</span>Cake<span style="color:#e6db74">}</span>  <span style="color:#75715e">#=&gt; $food or &#34;Cake&#34;</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">length<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">length<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
 echo <span style="color:#e6db74">${</span>name:0:length<span style="color:#e6db74">}</span>  <span style="color:#75715e">#=&gt; &#34;Jo&#34;</span>
 </code></pre></div><p>See: <a href="http://wiki.bash-hackers.org/syntax/pe">Parameter expansion</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">STR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/foo.cpp&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">STR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/foo.cpp&#34;</span>
 echo <span style="color:#e6db74">${</span>STR%.cpp<span style="color:#e6db74">}</span>    <span style="color:#75715e"># /path/to/foo</span>
 echo <span style="color:#e6db74">${</span>STR%.cpp<span style="color:#e6db74">}</span>.o  <span style="color:#75715e"># /path/to/foo.o</span>
 echo <span style="color:#e6db74">${</span>STR%/*<span style="color:#e6db74">}</span>      <span style="color:#75715e"># /path/to</span>
@@ -440,10 +434,10 @@ echo <span style="color:#e6db74">${</span>STR#*/<span style="color:#e6db74">}</s
 echo <span style="color:#e6db74">${</span>STR##*/<span style="color:#e6db74">}</span>     <span style="color:#75715e"># foo.cpp</span>
 
 echo <span style="color:#e6db74">${</span>STR/foo/bar<span style="color:#e6db74">}</span> <span style="color:#75715e"># /path/to/bar.cpp</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">STR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Hello world&#34;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">STR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Hello world&#34;</span>
 echo <span style="color:#e6db74">${</span>STR:6:5<span style="color:#e6db74">}</span>   <span style="color:#75715e"># &#34;world&#34;</span>
 echo <span style="color:#e6db74">${</span>STR: -5:5<span style="color:#e6db74">}</span>  <span style="color:#75715e"># &#34;world&#34;</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">SRC<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/foo.cpp&#34;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">SRC<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/foo.cpp&#34;</span>
 BASE<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>SRC##*/<span style="color:#e6db74">}</span>   <span style="color:#75715e">#=&gt; &#34;foo.cpp&#34; (basepath)</span>
 DIR<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>SRC%$BASE<span style="color:#e6db74">}</span>  <span style="color:#75715e">#=&gt; &#34;/path/to/&#34; (dirpath)</span>
 </code></pre></div><h3 id="substitution">Substitution</h3>
@@ -502,8 +496,8 @@ DIR<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>SRC%
 </tbody>
 </table>
 <h3 id="comments">Comments</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Single line comment</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">: <span style="color:#e6db74">&#39;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Single line comment</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">: <span style="color:#e6db74">&#39;
 </span><span style="color:#e6db74">This is a
 </span><span style="color:#e6db74">multi line
 </span><span style="color:#e6db74">comment
@@ -543,7 +537,7 @@ DIR<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>SRC%
 </tbody>
 </table>
 <h3 id="manipulation">Manipulation</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">STR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HELLO WORLD!&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">STR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HELLO WORLD!&#34;</span>
 echo <span style="color:#e6db74">${</span>STR,<span style="color:#e6db74">}</span>   <span style="color:#75715e">#=&gt; &#34;hELLO WORLD!&#34; (lowercase 1st letter)</span>
 echo <span style="color:#e6db74">${</span>STR,,<span style="color:#e6db74">}</span>  <span style="color:#75715e">#=&gt; &#34;hello world!&#34; (all lowercase)</span>
 
@@ -581,51 +575,51 @@ echo <span style="color:#e6db74">${</span>STR^^<span style="color:#e6db74">}</sp
 <h2 id="loops">Loops</h2>
 <p>{: .-three-column}</p>
 <h3 id="basic-for-loop">Basic for loop</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> i in /etc/rc.*; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> i in /etc/rc.*; <span style="color:#66d9ef">do</span>
   echo $i
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h3 id="c-like-for-loop">C-like for loop</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> <span style="color:#f92672">((</span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> ; i &lt; <span style="color:#ae81ff">100</span> ; i++<span style="color:#f92672">))</span>; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> <span style="color:#f92672">((</span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> ; i &lt; <span style="color:#ae81ff">100</span> ; i++<span style="color:#f92672">))</span>; <span style="color:#66d9ef">do</span>
   echo $i
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h3 id="ranges">Ranges</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> i in <span style="color:#f92672">{</span>1..5<span style="color:#f92672">}</span>; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> i in <span style="color:#f92672">{</span>1..5<span style="color:#f92672">}</span>; <span style="color:#66d9ef">do</span>
     echo <span style="color:#e6db74">&#34;Welcome </span>$i<span style="color:#e6db74">&#34;</span>
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h4 id="with-step-size">With step size</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> i in <span style="color:#f92672">{</span>5..50..5<span style="color:#f92672">}</span>; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> i in <span style="color:#f92672">{</span>5..50..5<span style="color:#f92672">}</span>; <span style="color:#66d9ef">do</span>
     echo <span style="color:#e6db74">&#34;Welcome </span>$i<span style="color:#e6db74">&#34;</span>
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h3 id="reading-lines">Reading lines</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat file.txt | <span style="color:#66d9ef">while</span> read line; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat file.txt | <span style="color:#66d9ef">while</span> read line; <span style="color:#66d9ef">do</span>
   echo $line
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h3 id="forever">Forever</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span>
   ···
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h2 id="functions-1">Functions</h2>
 <p>{: .-three-column}</p>
 <h3 id="defining-functions">Defining functions</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">myfunc<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">myfunc<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
     echo <span style="color:#e6db74">&#34;hello </span>$1<span style="color:#e6db74">&#34;</span>
 <span style="color:#f92672">}</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Same as above (alternate syntax)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Same as above (alternate syntax)</span>
 <span style="color:#66d9ef">function</span> myfunc<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
     echo <span style="color:#e6db74">&#34;hello </span>$1<span style="color:#e6db74">&#34;</span>
 <span style="color:#f92672">}</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">myfunc <span style="color:#e6db74">&#34;John&#34;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">myfunc <span style="color:#e6db74">&#34;John&#34;</span>
 </code></pre></div><h3 id="returning-values">Returning values</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">myfunc<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">myfunc<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
     local myresult<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;some value&#39;</span>
     echo $myresult
 <span style="color:#f92672">}</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">result<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>myfunc<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">result<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>myfunc<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><h3 id="raising-errors">Raising errors</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">myfunc<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">myfunc<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
 <span style="color:#f92672">}</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> myfunc; <span style="color:#66d9ef">then</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> myfunc; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;success&#34;</span>
 <span style="color:#66d9ef">else</span>
   echo <span style="color:#e6db74">&#34;failure&#34;</span>
@@ -764,8 +758,8 @@ Otherwise, they do exactly the same thing (arguments as separate strings).</p>
 <td>And</td>
 </tr>
 <tr>
-<td><code>[[ X || Y ]]</code></td>
-<td>Or</td>
+<td>`[[ X</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -829,7 +823,7 @@ Otherwise, they do exactly the same thing (arguments as separate strings).</p>
 </tbody>
 </table>
 <h3 id="example-1">Example</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># String</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># String</span>
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$string<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;String is empty&#34;</span>
 <span style="color:#66d9ef">elif</span> <span style="color:#f92672">[[</span> -n <span style="color:#e6db74">&#34;</span>$string<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
@@ -837,28 +831,28 @@ Otherwise, they do exactly the same thing (arguments as separate strings).</p>
 <span style="color:#66d9ef">else</span>
   echo <span style="color:#e6db74">&#34;This never happens&#34;</span>
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Combinations</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Combinations</span>
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> X <span style="color:#f92672">&amp;&amp;</span> Y <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
   ...
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Equal</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Equal</span>
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$A<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;</span>$B<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Regex</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Regex</span>
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;A&#34;</span> <span style="color:#f92672">=</span>~ . <span style="color:#f92672">]]</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span> $a &lt; $b <span style="color:#f92672">))</span>; <span style="color:#66d9ef">then</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span> $a &lt; $b <span style="color:#f92672">))</span>; <span style="color:#66d9ef">then</span>
    echo <span style="color:#e6db74">&#34;</span>$a<span style="color:#e6db74"> is smaller than </span>$b<span style="color:#e6db74">&#34;</span>
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -e <span style="color:#e6db74">&#34;file.txt&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -e <span style="color:#e6db74">&#34;file.txt&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;file exists&#34;</span>
 <span style="color:#66d9ef">fi</span>
 </code></pre></div><h2 id="arrays">Arrays</h2>
 <h3 id="defining-arrays">Defining arrays</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Fruits<span style="color:#f92672">=(</span><span style="color:#e6db74">&#39;Apple&#39;</span> <span style="color:#e6db74">&#39;Banana&#39;</span> <span style="color:#e6db74">&#39;Orange&#39;</span><span style="color:#f92672">)</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Fruits<span style="color:#f92672">[</span>0<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;Apple&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Fruits<span style="color:#f92672">=(</span><span style="color:#e6db74">&#39;Apple&#39;</span> <span style="color:#e6db74">&#39;Banana&#39;</span> <span style="color:#e6db74">&#39;Orange&#39;</span><span style="color:#f92672">)</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Fruits<span style="color:#f92672">[</span>0<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;Apple&#34;</span>
 Fruits<span style="color:#f92672">[</span>1<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;Banana&#34;</span>
 Fruits<span style="color:#f92672">[</span>2<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;Orange&#34;</span>
 </code></pre></div><h3 id="working-with-arrays">Working with arrays</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">${</span>Fruits[0]<span style="color:#e6db74">}</span>           <span style="color:#75715e"># Element #0</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">${</span>Fruits[0]<span style="color:#e6db74">}</span>           <span style="color:#75715e"># Element #0</span>
 echo <span style="color:#e6db74">${</span>Fruits[-1]<span style="color:#e6db74">}</span>          <span style="color:#75715e"># Last element</span>
 echo <span style="color:#e6db74">${</span>Fruits[@]<span style="color:#e6db74">}</span>           <span style="color:#75715e"># All elements, space-separated</span>
 echo <span style="color:#e6db74">${#</span>Fruits[@]<span style="color:#e6db74">}</span>          <span style="color:#75715e"># Number of elements</span>
@@ -867,7 +861,7 @@ echo <span style="color:#e6db74">${#</span>Fruits[3]<span style="color:#e6db74">
 echo <span style="color:#e6db74">${</span>Fruits[@]:3:2<span style="color:#e6db74">}</span>       <span style="color:#75715e"># Range (from position 3, length 2)</span>
 echo <span style="color:#e6db74">${</span>!Fruits[@]<span style="color:#e6db74">}</span>          <span style="color:#75715e"># Keys of all elements, space-separated</span>
 </code></pre></div><h3 id="operations">Operations</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Fruits<span style="color:#f92672">=(</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>Fruits[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;Watermelon&#34;</span><span style="color:#f92672">)</span>    <span style="color:#75715e"># Push</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Fruits<span style="color:#f92672">=(</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>Fruits[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;Watermelon&#34;</span><span style="color:#f92672">)</span>    <span style="color:#75715e"># Push</span>
 Fruits<span style="color:#f92672">+=(</span><span style="color:#e6db74">&#39;Watermelon&#39;</span><span style="color:#f92672">)</span>                  <span style="color:#75715e"># Also Push</span>
 Fruits<span style="color:#f92672">=(</span> <span style="color:#e6db74">${</span>Fruits[@]/Ap*/<span style="color:#e6db74">}</span> <span style="color:#f92672">)</span>            <span style="color:#75715e"># Remove by regex match</span>
 unset Fruits<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span>                         <span style="color:#75715e"># Remove one item</span>
@@ -875,41 +869,41 @@ Fruits<span style="color:#f92672">=(</span><span style="color:#e6db74">&#34;</sp
 Fruits<span style="color:#f92672">=(</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>Fruits[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>Veggies[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span> <span style="color:#75715e"># Concatenate</span>
 lines<span style="color:#f92672">=(</span><span style="color:#e6db74">`</span>cat <span style="color:#e6db74">&#34;logfile&#34;</span><span style="color:#e6db74">`</span><span style="color:#f92672">)</span>                 <span style="color:#75715e"># Read from file</span>
 </code></pre></div><h3 id="iteration">Iteration</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>arrayName[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>arrayName[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
   echo $i
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h2 id="dictionaries">Dictionaries</h2>
 <p>{: .-three-column}</p>
 <h3 id="defining">Defining</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">declare -A sounds
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sounds<span style="color:#f92672">[</span>dog<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;bark&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">declare -A sounds
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sounds<span style="color:#f92672">[</span>dog<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;bark&#34;</span>
 sounds<span style="color:#f92672">[</span>cow<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;moo&#34;</span>
 sounds<span style="color:#f92672">[</span>bird<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;tweet&#34;</span>
 sounds<span style="color:#f92672">[</span>wolf<span style="color:#f92672">]=</span><span style="color:#e6db74">&#34;howl&#34;</span>
 </code></pre></div><p>Declares <code>sound</code> as a Dictionary object (aka associative array).</p>
 <h3 id="working-with-dictionaries">Working with dictionaries</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">${</span>sounds[dog]<span style="color:#e6db74">}</span> <span style="color:#75715e"># Dog&#39;s sound</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">${</span>sounds[dog]<span style="color:#e6db74">}</span> <span style="color:#75715e"># Dog&#39;s sound</span>
 echo <span style="color:#e6db74">${</span>sounds[@]<span style="color:#e6db74">}</span>   <span style="color:#75715e"># All values</span>
 echo <span style="color:#e6db74">${</span>!sounds[@]<span style="color:#e6db74">}</span>  <span style="color:#75715e"># All keys</span>
 echo <span style="color:#e6db74">${#</span>sounds[@]<span style="color:#e6db74">}</span>  <span style="color:#75715e"># Number of elements</span>
 unset sounds<span style="color:#f92672">[</span>dog<span style="color:#f92672">]</span>   <span style="color:#75715e"># Delete dog</span>
 </code></pre></div><h3 id="iteration-1">Iteration</h3>
 <h4 id="iterate-over-values">Iterate over values</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> val in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>sounds[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> val in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>sounds[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
   echo $val
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h4 id="iterate-over-keys">Iterate over keys</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> key in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>!sounds[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> key in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>!sounds[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
   echo $key
 <span style="color:#66d9ef">done</span>
 </code></pre></div><h2 id="options">Options</h2>
 <h3 id="options-1">Options</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set -o noclobber  <span style="color:#75715e"># Avoid overlay files (echo &#34;hi&#34; &gt; foo)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set -o noclobber  <span style="color:#75715e"># Avoid overlay files (echo &#34;hi&#34; &gt; foo)</span>
 set -o errexit    <span style="color:#75715e"># Used to exit upon error, avoiding cascading errors</span>
 set -o pipefail   <span style="color:#75715e"># Unveils hidden failures</span>
 set -o nounset    <span style="color:#75715e"># Exposes unset variables</span>
 </code></pre></div><h3 id="glob-options">Glob options</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">shopt -s nullglob    <span style="color:#75715e"># Non-matching globs are removed  (&#39;*.foo&#39; =&gt; &#39;&#39;)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">shopt -s nullglob    <span style="color:#75715e"># Non-matching globs are removed  (&#39;*.foo&#39; =&gt; &#39;&#39;)</span>
 shopt -s failglob    <span style="color:#75715e"># Non-matching globs throw errors</span>
 shopt -s nocaseglob  <span style="color:#75715e"># Case insensitive globs</span>
 shopt -s dotglob     <span style="color:#75715e"># Wildcards match dotfiles (&#34;*.sh&#34; =&gt; &#34;.foo.sh&#34;)</span>
@@ -1033,33 +1027,33 @@ matches.</p>
 <p><code>!!</code> can be replaced with any valid expansion i.e. <code>!cat</code>, <code>!-2</code>, <code>!42</code>, etc.</p>
 <h2 id="miscellaneous">Miscellaneous</h2>
 <h3 id="numeric-calculations">Numeric calculations</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">$((</span>a <span style="color:#f92672">+</span> <span style="color:#ae81ff">200</span><span style="color:#66d9ef">))</span>      <span style="color:#75715e"># Add 200 to $a</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">$((</span>$RANDOM<span style="color:#f92672">%</span><span style="color:#ae81ff">200</span><span style="color:#66d9ef">))</span>  <span style="color:#75715e"># Random number 0..199</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">$((</span>a <span style="color:#f92672">+</span> <span style="color:#ae81ff">200</span><span style="color:#66d9ef">))</span>      <span style="color:#75715e"># Add 200 to $a</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">$((</span>$RANDOM<span style="color:#f92672">%</span><span style="color:#ae81ff">200</span><span style="color:#66d9ef">))</span>  <span style="color:#75715e"># Random number 0..199</span>
 </code></pre></div><h3 id="subshells">Subshells</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>cd somedir; echo <span style="color:#e6db74">&#34;I&#39;m now in </span>$PWD<span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>cd somedir; echo <span style="color:#e6db74">&#34;I&#39;m now in </span>$PWD<span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span>
 pwd <span style="color:#75715e"># still in first directory</span>
 </code></pre></div><h3 id="redirection">Redirection</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python hello.py &gt; output.txt   <span style="color:#75715e"># stdout to (file)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python hello.py &gt; output.txt   <span style="color:#75715e"># stdout to (file)</span>
 python hello.py &gt;&gt; output.txt  <span style="color:#75715e"># stdout to (file), append</span>
 python hello.py 2&gt; error.log   <span style="color:#75715e"># stderr to (file)</span>
 python hello.py 2&gt;&amp;<span style="color:#ae81ff">1</span>           <span style="color:#75715e"># stderr to stdout</span>
 python hello.py 2&gt;/dev/null    <span style="color:#75715e"># stderr to (null)</span>
 python hello.py &amp;&gt;/dev/null    <span style="color:#75715e"># stdout and stderr to (null)</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python hello.py &lt; foo.txt      <span style="color:#75715e"># feed foo.txt to stdin for python</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python hello.py &lt; foo.txt      <span style="color:#75715e"># feed foo.txt to stdin for python</span>
 </code></pre></div><h3 id="inspecting-commands">Inspecting commands</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">command -V cd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">command -V cd
 <span style="color:#75715e">#=&gt; &#34;cd is a function/alias/whatever&#34;</span>
 </code></pre></div><h3 id="trap-errors">Trap errors</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">trap <span style="color:#e6db74">&#39;echo Error at about $LINENO&#39;</span> ERR
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">trap <span style="color:#e6db74">&#39;echo Error at about $LINENO&#39;</span> ERR
 </code></pre></div><p>or</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">traperr<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">traperr<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
   echo <span style="color:#e6db74">&#34;ERROR: </span><span style="color:#e6db74">${</span>BASH_SOURCE[1]<span style="color:#e6db74">}</span><span style="color:#e6db74"> at about </span><span style="color:#e6db74">${</span>BASH_LINENO[0]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 <span style="color:#f92672">}</span>
 
 set -o errtrace
 trap traperr ERR
 </code></pre></div><h3 id="caseswitch">Case/switch</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> in
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> in
   start | up<span style="color:#f92672">)</span>
     vagrant up
     ;;
@@ -1069,9 +1063,9 @@ trap traperr ERR
     ;;
 <span style="color:#66d9ef">esac</span>
 </code></pre></div><h3 id="source-relative">Source relative</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>0%/*<span style="color:#e6db74">}</span><span style="color:#e6db74">/../share/foo.sh&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>0%/*<span style="color:#e6db74">}</span><span style="color:#e6db74">/../share/foo.sh&#34;</span>
 </code></pre></div><h3 id="printf">printf</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">printf <span style="color:#e6db74">&#34;Hello %s, I&#39;m %s&#34;</span> Sven Olga
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">printf <span style="color:#e6db74">&#34;Hello %s, I&#39;m %s&#34;</span> Sven Olga
 <span style="color:#75715e">#=&gt; &#34;Hello Sven, I&#39;m Olga</span>
 
 printf <span style="color:#e6db74">&#34;1 + 1 = %d&#34;</span> <span style="color:#ae81ff">2</span>
@@ -1080,9 +1074,9 @@ printf <span style="color:#e6db74">&#34;1 + 1 = %d&#34;</span> <span style="colo
 printf <span style="color:#e6db74">&#34;This is how you print a float: %f&#34;</span> <span style="color:#ae81ff">2</span>
 <span style="color:#75715e">#=&gt; &#34;This is how you print a float: 2.000000&#34;</span>
 </code></pre></div><h3 id="directory-of-script">Directory of script</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>0%/*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>0%/*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><h3 id="getting-options">Getting options</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">while</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span>~ ^- <span style="color:#f92672">&amp;&amp;</span> ! <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;--&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">do</span> <span style="color:#66d9ef">case</span> $1 in
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">while</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span>~ ^- <span style="color:#f92672">&amp;&amp;</span> ! <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;--&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">do</span> <span style="color:#66d9ef">case</span> $1 in
   -V | --version <span style="color:#f92672">)</span>
     echo $version
     exit
@@ -1096,14 +1090,14 @@ printf <span style="color:#e6db74">&#34;This is how you print a float: %f&#34;</
 <span style="color:#66d9ef">esac</span>; shift; <span style="color:#66d9ef">done</span>
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;--&#39;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span> shift; <span style="color:#66d9ef">fi</span>
 </code></pre></div><h3 id="heredoc">Heredoc</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat <span style="color:#e6db74">&lt;&lt;END
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat <span style="color:#e6db74">&lt;&lt;END
 </span><span style="color:#e6db74">hello world
 </span><span style="color:#e6db74">END</span>
 </code></pre></div><h3 id="reading-input">Reading input</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo -n <span style="color:#e6db74">&#34;Proceed? [y/n]: &#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo -n <span style="color:#e6db74">&#34;Proceed? [y/n]: &#34;</span>
 read ans
 echo $ans
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">read -n <span style="color:#ae81ff">1</span> ans    <span style="color:#75715e"># Just one character</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">read -n <span style="color:#ae81ff">1</span> ans    <span style="color:#75715e"># Just one character</span>
 </code></pre></div><h3 id="special-variables">Special variables</h3>
 <table>
 <thead>
@@ -1133,17 +1127,17 @@ echo $ans
 </table>
 <p>See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables">Special parameters</a>.</p>
 <h3 id="go-to-previous-directory">Go to previous directory</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pwd <span style="color:#75715e"># /home/user/foo</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pwd <span style="color:#75715e"># /home/user/foo</span>
 cd bar/
 pwd <span style="color:#75715e"># /home/user/foo/bar</span>
 cd -
 pwd <span style="color:#75715e"># /home/user/foo</span>
 </code></pre></div><h3 id="check-for-commands-result">Check for command&rsquo;s result</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> ping -c <span style="color:#ae81ff">1</span> google.com; <span style="color:#66d9ef">then</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> ping -c <span style="color:#ae81ff">1</span> google.com; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;It appears you have a working internet connection&#34;</span>
 <span style="color:#66d9ef">fi</span>
 </code></pre></div><h3 id="grep-check">Grep check</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> grep -q <span style="color:#e6db74">&#39;foo&#39;</span> ~/.bash_history; <span style="color:#66d9ef">then</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> grep -q <span style="color:#e6db74">&#39;foo&#39;</span> ~/.bash_history; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;You appear to have typed &#39;foo&#39; in the past&#34;</span>
 <span style="color:#66d9ef">fi</span>
 </code></pre></div><h2 id="also-see">Also see</h2>
@@ -1167,7 +1161,7 @@ pwd <span style="color:#75715e"># /home/user/foo</span>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2022 Classroom</p>
+              <p>© 2010 - 2023 Classroom</p>
               
 
               
@@ -1186,7 +1180,7 @@ pwd <span style="color:#75715e"># /home/user/foo</span>
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
     </h1>
 
     <article class="ui horizontal list">
@@ -1199,307 +1193,6 @@ pwd <span style="color:#75715e"># /home/user/foo</span>
       </a>
     </article>
 
-    
-    <article class="dream-tags">
-    
-      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
-        Agent Sudo
-      </a>
-    
-      <a class="ui label" href="/tags/autopsy/" title="autopsy">
-        autopsy
-      </a>
-    
-      <a class="ui label" href="/tags/backdoor/" title="backdoor">
-        backdoor
-      </a>
-    
-      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
-        Baron Samedit
-      </a>
-    
-      <a class="ui label" href="/tags/bash/" title="bash">
-        bash
-      </a>
-    
-      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
-        ceh0821
-      </a>
-    
-      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
-        cheatsheet
-      </a>
-    
-      <a class="ui label" href="/tags/config/" title="config">
-        config
-      </a>
-    
-      <a class="ui label" href="/tags/couch/" title="couch">
-        couch
-      </a>
-    
-      <a class="ui label" href="/tags/crisis/" title="Crisis">
-        Crisis
-      </a>
-    
-      <a class="ui label" href="/tags/dominos/" title="dominos">
-        dominos
-      </a>
-    
-      <a class="ui label" href="/tags/empire/" title="Empire">
-        Empire
-      </a>
-    
-      <a class="ui label" href="/tags/encryption/" title="encryption">
-        encryption
-      </a>
-    
-      <a class="ui label" href="/tags/ffuf/" title="ffuf">
-        ffuf
-      </a>
-    
-      <a class="ui label" href="/tags/forensic/" title="forensic">
-        forensic
-      </a>
-    
-      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
-        gitandcrumpets
-      </a>
-    
-      <a class="ui label" href="/tags/gnupg/" title="gnupg">
-        gnupg
-      </a>
-    
-      <a class="ui label" href="/tags/hackpark/" title="HackPark">
-        HackPark
-      </a>
-    
-      <a class="ui label" href="/tags/hydra/" title="hydra">
-        hydra
-      </a>
-    
-      <a class="ui label" href="/tags/inclusion/" title="inclusion">
-        inclusion
-      </a>
-    
-      <a class="ui label" href="/tags/internal/" title="internal">
-        internal
-      </a>
-    
-      <a class="ui label" href="/tags/internship/" title="Internship">
-        Internship
-      </a>
-    
-      <a class="ui label" href="/tags/interview/" title="interview">
-        interview
-      </a>
-    
-      <a class="ui label" href="/tags/kenobi/" title="kenobi">
-        kenobi
-      </a>
-    
-      <a class="ui label" href="/tags/lab/" title="lab">
-        lab
-      </a>
-    
-      <a class="ui label" href="/tags/leaks/" title="leaks">
-        leaks
-      </a>
-    
-      <a class="ui label" href="/tags/linux/" title="Linux">
-        Linux
-      </a>
-    
-      <a class="ui label" href="/tags/memory/" title="memory">
-        memory
-      </a>
-    
-      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
-        Metamorphosis
-      </a>
-    
-      <a class="ui label" href="/tags/metasploit/" title="metasploit">
-        metasploit
-      </a>
-    
-      <a class="ui label" href="/tags/mobile/" title="Mobile">
-        Mobile
-      </a>
-    
-      <a class="ui label" href="/tags/msf/" title="msf">
-        msf
-      </a>
-    
-      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
-        msfvenom
-      </a>
-    
-      <a class="ui label" href="/tags/nfs/" title="nfs">
-        nfs
-      </a>
-    
-      <a class="ui label" href="/tags/notes/" title="notes">
-        notes
-      </a>
-    
-      <a class="ui label" href="/tags/openvas/" title="openvas">
-        openvas
-      </a>
-    
-      <a class="ui label" href="/tags/osi/" title="OSI">
-        OSI
-      </a>
-    
-      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
-        OSI Model
-      </a>
-    
-      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
-        Overpass 2
-      </a>
-    
-      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
-        Pentesting
-      </a>
-    
-      <a class="ui label" href="/tags/pgp/" title="PGP">
-        PGP
-      </a>
-    
-      <a class="ui label" href="/tags/pip/" title="pip">
-        pip
-      </a>
-    
-      <a class="ui label" href="/tags/pip2/" title="pip2">
-        pip2
-      </a>
-    
-      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
-        Post-Exploitation
-      </a>
-    
-      <a class="ui label" href="/tags/powershell/" title="powershell">
-        powershell
-      </a>
-    
-      <a class="ui label" href="/tags/putty/" title="putty">
-        putty
-      </a>
-    
-      <a class="ui label" href="/tags/python/" title="python">
-        python
-      </a>
-    
-      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
-        RazorBlack
-      </a>
-    
-      <a class="ui label" href="/tags/redteaming/" title="redteaming">
-        redteaming
-      </a>
-    
-      <a class="ui label" href="/tags/ref/" title="Ref">
-        Ref
-      </a>
-    
-      <a class="ui label" href="/tags/relevant/" title="Relevant">
-        Relevant
-      </a>
-    
-      <a class="ui label" href="/tags/rocket/" title="rocket">
-        rocket
-      </a>
-    
-      <a class="ui label" href="/tags/rooms/" title="rooms">
-        rooms
-      </a>
-    
-      <a class="ui label" href="/tags/rootme/" title="RootMe">
-        RootMe
-      </a>
-    
-      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
-        rpwebscanning
-      </a>
-    
-      <a class="ui label" href="/tags/script/" title="script">
-        script
-      </a>
-    
-      <a class="ui label" href="/tags/scripting/" title="Scripting">
-        Scripting
-      </a>
-    
-      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
-        Simple CTF
-      </a>
-    
-      <a class="ui label" href="/tags/splunk/" title="splunk">
-        splunk
-      </a>
-    
-      <a class="ui label" href="/tags/stego/" title="stego">
-        stego
-      </a>
-    
-      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
-        Super-Spam
-      </a>
-    
-      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
-        sweettoothinc
-      </a>
-    
-      <a class="ui label" href="/tags/sysmon/" title="sysmon">
-        sysmon
-      </a>
-    
-      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
-        Thefindcommand
-      </a>
-    
-      <a class="ui label" href="/tags/thm/" title="thm">
-        thm
-      </a>
-    
-      <a class="ui label" href="/tags/tmux/" title="tmux">
-        tmux
-      </a>
-    
-      <a class="ui label" href="/tags/tools/" title="tools">
-        tools
-      </a>
-    
-      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
-        tryhackme
-      </a>
-    
-      <a class="ui label" href="/tags/vapt/" title="vapt">
-        vapt
-      </a>
-    
-      <a class="ui label" href="/tags/volatility/" title="Volatility">
-        Volatility
-      </a>
-    
-      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
-        vuln labs
-      </a>
-    
-      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
-        Vulnversity
-      </a>
-    
-      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
-        web scanning
-      </a>
-    
-      <a class="ui label" href="/tags/wireshark/" title="wireshark">
-        wireshark
-      </a>
-    
-    </article>
-    
   </div>
 </header>
 
@@ -1539,7 +1232,7 @@ pwd <span style="color:#75715e"># /home/user/foo</span>
 
   
   <div class="item">
-    <a href="https://facebook.com/anir0yofficial" target="_blank">
+    <a href="https://facebook.com/0xanir0y" target="_blank">
       <i class="large facebook icon" title="Facebook"></i>
     </a>
   </div>
@@ -1547,7 +1240,7 @@ pwd <span style="color:#75715e"># /home/user/foo</span>
 
   
   <div class="item">
-    <a href="https://instagram.com/anir0yofficial" target="_blank">
+    <a href="https://instagram.com/0xanir0y" target="_blank">
       <i class="large instagram icon" title="Instagram"></i>
     </a>
   </div>
@@ -1582,7 +1275,7 @@ pwd <span style="color:#75715e"># /home/user/foo</span>
   <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
     
     <article class="ui segment">
-      YOU CAN RESUE MY CONTENT
+      YOU CAN REUSE MY CONTENT
     </article>
     
   </div>

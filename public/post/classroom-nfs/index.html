@@ -20,7 +20,17 @@
 
 <title>Animesh Roy | Classroom Posts</title>
 <meta name="title" content="Animesh Roy | Blogs & Writeups">
-<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPD6BXK0P5');
+</script>
 
 
 
@@ -52,23 +62,6 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NZBEX7RBNF');
-</script>
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "6gp5990ghr");
-</script>
-
 
 <link rel="canonical" href="https://classroom.anir0y.in/post/classroom-nfs/" />
 
@@ -76,9 +69,10 @@
 <meta property="og:title" content="Classroom | NFS Installation &amp; enumeation" />
 <meta property="og:description" content="installation of NFS &amp; Enumeation using Various tools." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/classroom-nfs/" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/classroom-nfs/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-01-19T13:47:54+05:30" />
 <meta property="article:modified_time" content="2022-01-19T13:47:54+05:30" />
+
 
 
 
@@ -186,6 +180,20 @@
       <nav id="TableOfContents">
   <ul>
     <li><a href="#overview">OverView</a></li>
+    <li><a href="#nfs-installation">NFS installation</a></li>
+    <li><a href="#install-nfs-server-kernal">install nfs server kernal</a></li>
+    <li><a href="#create-a-share-directory">create a share directory</a>
+      <ul>
+        <li><a href="#enable-share">enable share</a></li>
+      </ul>
+    </li>
+    <li><a href="#restart-nfs-service">restart NFS service</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#install-nfs-client">install nfs client</a></li>
+    <li><a href="#enum-share">Enum share</a></li>
+    <li><a href="#mount-network-share">mount network share</a></li>
     <li><a href="#video-walkthough">Video Walkthough</a></li>
   </ul>
 </nav>
@@ -224,7 +232,7 @@
                 Wednesday, Jan 19, 2022
               
 
-            | 1minuteRead
+            | 1 minutes read
 
             | Update at
               
@@ -236,7 +244,61 @@
 
       <article class="main"><h2 id="overview">OverView</h2>
 <p><strong>Network File System (NFS)</strong> is a distributed file system protocol originally developed by Sun Microsystems (Sun) in 1984, allowing a user on a client computer to access files over a computer network much like local storage is accessed. NFS, like many other protocols, builds on the Open Network Computing Remote Procedure Call (ONC RPC) system. NFS is an open IETF standard defined in a Request for Comments (RFC), allowing anyone to implement the protocol.</p>
-<h2 id="video-walkthough">Video Walkthough</h2>
+<hr>
+<h2 id="nfs-installation">NFS installation</h2>
+<h2 id="install-nfs-server-kernal">install nfs server kernal</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
+sudo apt install nfs-kernal-server -y 
+</code></pre></div><h2 id="create-a-share-directory">create a share directory</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># ~/ desktop</span>
+mkdir ~/Desktop/nfs
+
+<span style="color:#75715e">#change permission</span>
+sudo chown nobody:nogroup ~/Desktop/nfs
+
+<span style="color:#75715e">#add world writable permission</span>
+sudo chmod <span style="color:#ae81ff">777</span> ~/Desktop/nfs
+</code></pre></div><h3 id="enable-share">enable share</h3>
+<p>edit <code>/etc/exports</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#added this line</span>
+<span style="color:#75715e"># this is for network CIDR</span>
+/home/anir0y/Desktop/nfs <span style="color:#f92672">{</span>IP<span style="color:#f92672">}</span>/<span style="color:#f92672">{</span>subnet<span style="color:#f92672">}(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+<span style="color:#75715e"># example:</span>
+/home/anir0y/Desktop/nfs 192.168.29.0/24<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+</code></pre></div><h2 id="restart-nfs-service">restart NFS service</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># enable shares</span>
+sudo exportfs
+<span style="color:#75715e"># restart the service</span>
+sudo systemctl restart nfs-kernel-server.service
+</code></pre></div><hr>
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<hr>
+<h1 id="client-side-config">Client side config</h1>
+<h2 id="install-nfs-client">install nfs client</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
+sudo apt install nfs-common -y
+</code></pre></div><h2 id="enum-share">Enum share</h2>
+<p><code>showmount -e {iP}</code></p>
+<h2 id="mount-network-share">mount network share</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># make a mounting dir</span>
+mkdir ~/nfsclient
+
+<span style="color:#75715e">#mounting</span>
+sudo mount -t nfs <span style="color:#f92672">{</span>IP<span style="color:#f92672">}</span>:<span style="color:#f92672">{</span>folder<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>local_path<span style="color:#f92672">}</span>
+<span style="color:#75715e">#e.g.</span>
+sudo mount -t nfs 192.168.29.83:/home/anir0y/Desktop/nfs ~/nfsclient
+</code></pre></div><h2 id="video-walkthough">Video Walkthough</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/Ix_2nIfl26Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -272,7 +334,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2022 Classroom</p>
+              <p>© 2010 - 2023 Classroom</p>
               
 
               
@@ -291,7 +353,7 @@ data-ad-slot="7160066188"></ins></p>
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
     </h1>
 
     <article class="ui horizontal list">
@@ -304,307 +366,6 @@ data-ad-slot="7160066188"></ins></p>
       </a>
     </article>
 
-    
-    <article class="dream-tags">
-    
-      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
-        Agent Sudo
-      </a>
-    
-      <a class="ui label" href="/tags/autopsy/" title="autopsy">
-        autopsy
-      </a>
-    
-      <a class="ui label" href="/tags/backdoor/" title="backdoor">
-        backdoor
-      </a>
-    
-      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
-        Baron Samedit
-      </a>
-    
-      <a class="ui label" href="/tags/bash/" title="bash">
-        bash
-      </a>
-    
-      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
-        ceh0821
-      </a>
-    
-      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
-        cheatsheet
-      </a>
-    
-      <a class="ui label" href="/tags/config/" title="config">
-        config
-      </a>
-    
-      <a class="ui label" href="/tags/couch/" title="couch">
-        couch
-      </a>
-    
-      <a class="ui label" href="/tags/crisis/" title="Crisis">
-        Crisis
-      </a>
-    
-      <a class="ui label" href="/tags/dominos/" title="dominos">
-        dominos
-      </a>
-    
-      <a class="ui label" href="/tags/empire/" title="Empire">
-        Empire
-      </a>
-    
-      <a class="ui label" href="/tags/encryption/" title="encryption">
-        encryption
-      </a>
-    
-      <a class="ui label" href="/tags/ffuf/" title="ffuf">
-        ffuf
-      </a>
-    
-      <a class="ui label" href="/tags/forensic/" title="forensic">
-        forensic
-      </a>
-    
-      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
-        gitandcrumpets
-      </a>
-    
-      <a class="ui label" href="/tags/gnupg/" title="gnupg">
-        gnupg
-      </a>
-    
-      <a class="ui label" href="/tags/hackpark/" title="HackPark">
-        HackPark
-      </a>
-    
-      <a class="ui label" href="/tags/hydra/" title="hydra">
-        hydra
-      </a>
-    
-      <a class="ui label" href="/tags/inclusion/" title="inclusion">
-        inclusion
-      </a>
-    
-      <a class="ui label" href="/tags/internal/" title="internal">
-        internal
-      </a>
-    
-      <a class="ui label" href="/tags/internship/" title="Internship">
-        Internship
-      </a>
-    
-      <a class="ui label" href="/tags/interview/" title="interview">
-        interview
-      </a>
-    
-      <a class="ui label" href="/tags/kenobi/" title="kenobi">
-        kenobi
-      </a>
-    
-      <a class="ui label" href="/tags/lab/" title="lab">
-        lab
-      </a>
-    
-      <a class="ui label" href="/tags/leaks/" title="leaks">
-        leaks
-      </a>
-    
-      <a class="ui label" href="/tags/linux/" title="Linux">
-        Linux
-      </a>
-    
-      <a class="ui label" href="/tags/memory/" title="memory">
-        memory
-      </a>
-    
-      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
-        Metamorphosis
-      </a>
-    
-      <a class="ui label" href="/tags/metasploit/" title="metasploit">
-        metasploit
-      </a>
-    
-      <a class="ui label" href="/tags/mobile/" title="Mobile">
-        Mobile
-      </a>
-    
-      <a class="ui label" href="/tags/msf/" title="msf">
-        msf
-      </a>
-    
-      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
-        msfvenom
-      </a>
-    
-      <a class="ui label" href="/tags/nfs/" title="nfs">
-        nfs
-      </a>
-    
-      <a class="ui label" href="/tags/notes/" title="notes">
-        notes
-      </a>
-    
-      <a class="ui label" href="/tags/openvas/" title="openvas">
-        openvas
-      </a>
-    
-      <a class="ui label" href="/tags/osi/" title="OSI">
-        OSI
-      </a>
-    
-      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
-        OSI Model
-      </a>
-    
-      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
-        Overpass 2
-      </a>
-    
-      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
-        Pentesting
-      </a>
-    
-      <a class="ui label" href="/tags/pgp/" title="PGP">
-        PGP
-      </a>
-    
-      <a class="ui label" href="/tags/pip/" title="pip">
-        pip
-      </a>
-    
-      <a class="ui label" href="/tags/pip2/" title="pip2">
-        pip2
-      </a>
-    
-      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
-        Post-Exploitation
-      </a>
-    
-      <a class="ui label" href="/tags/powershell/" title="powershell">
-        powershell
-      </a>
-    
-      <a class="ui label" href="/tags/putty/" title="putty">
-        putty
-      </a>
-    
-      <a class="ui label" href="/tags/python/" title="python">
-        python
-      </a>
-    
-      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
-        RazorBlack
-      </a>
-    
-      <a class="ui label" href="/tags/redteaming/" title="redteaming">
-        redteaming
-      </a>
-    
-      <a class="ui label" href="/tags/ref/" title="Ref">
-        Ref
-      </a>
-    
-      <a class="ui label" href="/tags/relevant/" title="Relevant">
-        Relevant
-      </a>
-    
-      <a class="ui label" href="/tags/rocket/" title="rocket">
-        rocket
-      </a>
-    
-      <a class="ui label" href="/tags/rooms/" title="rooms">
-        rooms
-      </a>
-    
-      <a class="ui label" href="/tags/rootme/" title="RootMe">
-        RootMe
-      </a>
-    
-      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
-        rpwebscanning
-      </a>
-    
-      <a class="ui label" href="/tags/script/" title="script">
-        script
-      </a>
-    
-      <a class="ui label" href="/tags/scripting/" title="Scripting">
-        Scripting
-      </a>
-    
-      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
-        Simple CTF
-      </a>
-    
-      <a class="ui label" href="/tags/splunk/" title="splunk">
-        splunk
-      </a>
-    
-      <a class="ui label" href="/tags/stego/" title="stego">
-        stego
-      </a>
-    
-      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
-        Super-Spam
-      </a>
-    
-      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
-        sweettoothinc
-      </a>
-    
-      <a class="ui label" href="/tags/sysmon/" title="sysmon">
-        sysmon
-      </a>
-    
-      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
-        Thefindcommand
-      </a>
-    
-      <a class="ui label" href="/tags/thm/" title="thm">
-        thm
-      </a>
-    
-      <a class="ui label" href="/tags/tmux/" title="tmux">
-        tmux
-      </a>
-    
-      <a class="ui label" href="/tags/tools/" title="tools">
-        tools
-      </a>
-    
-      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
-        tryhackme
-      </a>
-    
-      <a class="ui label" href="/tags/vapt/" title="vapt">
-        vapt
-      </a>
-    
-      <a class="ui label" href="/tags/volatility/" title="Volatility">
-        Volatility
-      </a>
-    
-      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
-        vuln labs
-      </a>
-    
-      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
-        Vulnversity
-      </a>
-    
-      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
-        web scanning
-      </a>
-    
-      <a class="ui label" href="/tags/wireshark/" title="wireshark">
-        wireshark
-      </a>
-    
-    </article>
-    
   </div>
 </header>
 
@@ -644,7 +405,7 @@ data-ad-slot="7160066188"></ins></p>
 
   
   <div class="item">
-    <a href="https://facebook.com/anir0yofficial" target="_blank">
+    <a href="https://facebook.com/0xanir0y" target="_blank">
       <i class="large facebook icon" title="Facebook"></i>
     </a>
   </div>
@@ -652,7 +413,7 @@ data-ad-slot="7160066188"></ins></p>
 
   
   <div class="item">
-    <a href="https://instagram.com/anir0yofficial" target="_blank">
+    <a href="https://instagram.com/0xanir0y" target="_blank">
       <i class="large instagram icon" title="Instagram"></i>
     </a>
   </div>
@@ -687,7 +448,7 @@ data-ad-slot="7160066188"></ins></p>
   <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
     
     <article class="ui segment">
-      YOU CAN RESUE MY CONTENT
+      YOU CAN REUSE MY CONTENT
     </article>
     
   </div>

