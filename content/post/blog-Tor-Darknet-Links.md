@@ -42,11 +42,13 @@ Today (May 11, 2024), I received similar feedback on Twitter from user @riendut0
 Based on this feedback, I revisited the links and discovered that some of them are indeed malicious, according to various online sources. Therefore, this post will remain closed until I implement a more robust method for automating and validating dark links.
 
 For further insights, Twitter user [@ZachXBT](https://twitter.com/zachxbt) has provided a detailed review:
-[Anir0y Scams Info](https://anir0y-scams.info/)
+https://anir0y-scams.info/
 
-Though [@ZachXBT](https://twitter.com/zachxbt) may lack proficiency in OSINT, considering his prior work and perceptions of Indian scammers, I can understand his perspective.
+Despite [@ZachXBT](https://twitter.com/zachxbt) potentially lacking proficiency in OSINT and being influenced by his prior work and perceptions of Indian scammers, I can empathize with his perspective. However, it's worth noting that despite their "hard work," they overlooked my readily available contact information, including my socials: LinkedIn & Twitter. Had they attempted to reach out to me, I might have clarified the situation earlier. Furthermore, it's crucial to emphasize that the information he posted about me is entirely false.
+
 
 I want to clarify once more that all links were gathered from multiple sources at the time of posting, and not all were validated. Moving forward, I am committed to improving the validation process for dark links.
+
 
 
 ---
