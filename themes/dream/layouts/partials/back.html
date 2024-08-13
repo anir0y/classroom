@@ -29,7 +29,7 @@
 
   {{ if findRE "posts/.+" .RelPermalink }}
   {{ else }}
-  {{ if and .Site.DisqusShortname  }}
+  {{ if and .Site.Config.Services.Disqus.Shortname  }}
   <div class="sixteen wide mobile eight wide tablet eight wide computer column dream-column">
     <article class="ui segment">
       <div id="disqus_thread"></div>
@@ -46,7 +46,7 @@
 
         (function() { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
-          s.src = 'https://' + '{{ .Site.DisqusShortname }}' + '.disqus.com/embed.js';
+          s.src = 'https://' + '{{ .Site.Config.Services.Disqus.Shortname }}' + '.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
         })();

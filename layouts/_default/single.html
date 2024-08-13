@@ -87,7 +87,7 @@
       <article class="main">{{ .Content | emojify }}</article>
     </section>
 
-    {{ if .Site.DisqusShortname }}
+    {{ if .Site.Config.Services.Disqus.Shortname }}
     <article class="ui segment post-disqus-area" data-html2canvas-ignore>
       <div id="disqus_thread"></div>
       <script>
@@ -103,7 +103,7 @@
 
         (function() { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
-          s.src = 'https://' + '{{ .Site.DisqusShortname }}' + '.disqus.com/embed.js';
+          s.src = 'https://' + '{{ .Site.Config.Services.Disqus.Shortname }}' + '.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
         })();
