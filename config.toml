@@ -6,8 +6,8 @@ theme = "dream"
 
 copyright = "YOU CAN REUSE MY CONTENT"
 
-#googleAnalytics = "G-NZBEX7RBNF"
-#disqusShortname = ""
+#Services.GoogleAnalytics.ID = "G-NZBEX7RBNF"
+#Disqus.Shortname = ""
 enableRobotsTXT = true
 hasCJKLanguage = true
 
