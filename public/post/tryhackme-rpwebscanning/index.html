@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-rpwebscanning/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-rpwebscanning/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,30 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-rpwebscanning/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-rpwebscanning/" />
 
 
-<meta property="og:title" content="Try Hack Me Web Scanning" />
-<meta property="og:description" content="TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-rpwebscanning/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-07-14T14:00:45+05:30" />
-<meta property="article:modified_time" content="2021-07-14T14:00:45+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-rpwebscanning/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="Try Hack Me Web Scanning">
+  <meta property="og:description" content="TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-07-14T14:00:45+05:30">
+    <meta property="article:modified_time" content="2021-07-14T14:00:45+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Rooms">
+    <meta property="article:tag" content="Thm">
+    <meta property="article:tag" content="Rpwebscanning">
+    <meta property="article:tag" content="Web Scanning">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Try Hack Me Web Scanning"/>
-<meta name="twitter:description" content="TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Try Hack Me Web Scanning">
+  <meta name="twitter:description" content="TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +173,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -226,10 +246,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=Try%20Hack%20Me%20Web%20Scanning&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-rpwebscanning%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=Try%20Hack%20Me%20Web%20Scanning&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-rpwebscanning%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-rpwebscanning%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-rpwebscanning%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -265,22 +285,22 @@
 <p>Learn the basics of automated web scanning!</p>
 <p>Web scanning represents one of the core constructs of modern pen testing. Quite simply, most of what we interact with on a daily basis is the internet, and therein there is a multitude of ever-widening number of vulnerabilities. Within this room, we will investigate two of the most common scanners: Nikto and Zap.</p>
 <table>
-<thead>
-<tr>
-<th>Web Scanning</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"></td>
-<td><a href="https://tryhackme.com/room/rpwebscanning"><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"></a></td>
-</tr>
-<tr>
-<td>Solved by</td>
-<td><a href="https://anir0y.in">@anir0y</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Web Scanning</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"></td>
+          <td><a href="https://tryhackme.com/room/rpwebscanning"><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"></a></td>
+      </tr>
+      <tr>
+          <td>Solved by</td>
+          <td><a href="https://anir0y.in">@anir0y</a></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-01-pull-the-lever-kronk">Task 01: Pull the lever, Kronk</h2>
@@ -288,99 +308,98 @@
 <h2 id="task-02-im-supposed-to-scan-with-that">Task 02: &hellip;I&rsquo;m supposed to scan with that?</h2>
 <p>A short quiz over the various switches used with Nikto as well as a quick scan against our target. All you&rsquo;ll need for this is the help menu for nikto. Include all parts of the switch unless otherwise specified, this includes</p>
 <h3 id="help">help</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ip-10-10-80-133:~# nikto -H
-
-   Options:
-       -ask+               Whether to ask about submitting updates
-                               yes   Ask about each <span style="color:#f92672">(</span>default<span style="color:#f92672">)</span>
-                               no    Dont ask, dont send
-                               auto  Dont ask, just send
-       -Cgidirs+           Scan these CGI dirs: <span style="color:#e6db74">&#34;none&#34;</span>, <span style="color:#e6db74">&#34;all&#34;</span>, or values like <span style="color:#e6db74">&#34;/cgi/ /cgi-a/&#34;</span>
-       -config+            Use this config file
-       -Display+           Turn on/off display outputs:
-                               <span style="color:#ae81ff">1</span>     Show redirects
-                               <span style="color:#ae81ff">2</span>     Show cookies received
-                               <span style="color:#ae81ff">3</span>     Show all 200/OK responses
-                               <span style="color:#ae81ff">4</span>     Show URLs which require authentication
-                               D     Debug output
-                               E     Display all HTTP errors
-                               P     Print progress to STDOUT
-                               S     Scrub output of IPs and hostnames
-                               V     Verbose output
-       -dbcheck           Check database and other key files <span style="color:#66d9ef">for</span> syntax errors
-       -evasion+          Encoding technique:
-                               <span style="color:#ae81ff">1</span>     Random URI encoding <span style="color:#f92672">(</span>non-UTF8<span style="color:#f92672">)</span>
-                               <span style="color:#ae81ff">2</span>     Directory self-reference <span style="color:#f92672">(</span>/./<span style="color:#f92672">)</span>
-                               <span style="color:#ae81ff">3</span>     Premature URL ending
-                               <span style="color:#ae81ff">4</span>     Prepend long random string
-                               <span style="color:#ae81ff">5</span>     Fake parameter
-                               <span style="color:#ae81ff">6</span>     TAB as request spacer
-                               <span style="color:#ae81ff">7</span>     Change the <span style="color:#66d9ef">case</span> of the URL
-                               <span style="color:#ae81ff">8</span>     Use Windows directory separator <span style="color:#f92672">(</span><span style="color:#ae81ff">\)</span>
-                               A     Use a carriage <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>0x0d<span style="color:#f92672">)</span> as a request spacer
-                               B     Use binary value 0x0b as a request spacer
-        -Format+           Save file <span style="color:#f92672">(</span>-o<span style="color:#f92672">)</span> format:
-                               csv   Comma-separated-value
-                               htm   HTML Format
-                               msf+  Log to Metasploit
-                               nbe   Nessus NBE format
-                               txt   Plain text
-                               xml   XML Format
-                               <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> not specified the format will be taken from the file extension passed to -output<span style="color:#f92672">)</span>
-       -Help              Extended help information
-       -host+             Target host
-       -IgnoreCode        Ignore Codes--treat as negative responses
-       -id+               Host authentication to use, format is id:pass or id:pass:realm
-       -key+              Client certificate key file
-       -list-plugins      List all available plugins, perform no testing
-       -maxtime+          Maximum testing time per host
-       -mutate+           Guess additional file names:
-                               <span style="color:#ae81ff">1</span>     Test all files with all root directories
-                               <span style="color:#ae81ff">2</span>     Guess <span style="color:#66d9ef">for</span> password file names
-                               <span style="color:#ae81ff">3</span>     Enumerate user names via Apache <span style="color:#f92672">(</span>/~user type requests<span style="color:#f92672">)</span>
-                               <span style="color:#ae81ff">4</span>     Enumerate user names via cgiwrap <span style="color:#f92672">(</span>/cgi-bin/cgiwrap/~user type requests<span style="color:#f92672">)</span>
-                               <span style="color:#ae81ff">5</span>     Attempt to brute force sub-domain names, assume that the host name is the parent domain
-                               <span style="color:#ae81ff">6</span>     Attempt to guess directory names from the supplied dictionary file
-       -mutate-options    Provide information <span style="color:#66d9ef">for</span> mutates
-       -nointeractive     Disables interactive features
-       -nolookup          Disables DNS lookups
-       -nossl             Disables the use of SSL
-       -no404             Disables nikto attempting to guess a <span style="color:#ae81ff">404</span> page
-       -output+           Write output to this file <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;.&#39;</span> <span style="color:#66d9ef">for</span> auto-name<span style="color:#f92672">)</span>
-       -Pause+            Pause between tests <span style="color:#f92672">(</span>seconds, integer or float<span style="color:#f92672">)</span>
-       -Plugins+          List of plugins to run <span style="color:#f92672">(</span>default: ALL<span style="color:#f92672">)</span>
-       -port+             Port to use <span style="color:#f92672">(</span>default 80<span style="color:#f92672">)</span>
-       -RSAcert+          Client certificate file
-       -root+             Prepend root value to all requests, format is /directory
-       -Save              Save positive responses to this directory <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;.&#39;</span> <span style="color:#66d9ef">for</span> auto-name<span style="color:#f92672">)</span>
-       -ssl               Force ssl mode on port
-       -Tuning+           Scan tuning:
-                               <span style="color:#ae81ff">1</span>     Interesting File / Seen in logs
-                               <span style="color:#ae81ff">2</span>     Misconfiguration / Default File
-                               <span style="color:#ae81ff">3</span>     Information Disclosure
-                               <span style="color:#ae81ff">4</span>     Injection <span style="color:#f92672">(</span>XSS/Script/HTML<span style="color:#f92672">)</span>
-                               <span style="color:#ae81ff">5</span>     Remote File Retrieval - Inside Web Root
-                               <span style="color:#ae81ff">6</span>     Denial of Service
-                               <span style="color:#ae81ff">7</span>     Remote File Retrieval - Server Wide
-                               <span style="color:#ae81ff">8</span>     Command Execution / Remote Shell
-                               <span style="color:#ae81ff">9</span>     SQL Injection
-                               <span style="color:#ae81ff">0</span>     File Upload
-                               a     Authentication Bypass
-                               b     Software Identification
-                               c     Remote Source Inclusion
-                               x     Reverse Tuning Options <span style="color:#f92672">(</span>i.e., include all except specified<span style="color:#f92672">)</span>
-       -timeout+          Timeout <span style="color:#66d9ef">for</span> requests <span style="color:#f92672">(</span>default <span style="color:#ae81ff">10</span> seconds<span style="color:#f92672">)</span>
-       -Userdbs           Load only user databases, not the standard databases
-                               all   Disable standard dbs and load only user dbs
-                               tests Disable only db_tests and load udb_tests
-       -until             Run <span style="color:#66d9ef">until</span> the specified time or duration
-       -update            Update databases and plugins from CIRT.net
-       -useproxy          Use the proxy defined in nikto.conf
-       -Version           Print plugin and database versions
-       -vhost+            Virtual host <span style="color:#f92672">(</span><span style="color:#66d9ef">for</span> Host header<span style="color:#f92672">)</span>
-   		+ requires a value
-
-</code></pre></div><h3 id="21">2.1</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@ip-10-10-80-133:~# nikto -H
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   Options:
+</span></span><span style="display:flex;"><span>       -ask+               Whether to ask about submitting updates
+</span></span><span style="display:flex;"><span>                               yes   Ask about each <span style="color:#f92672">(</span>default<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                               no    Dont ask, dont send
+</span></span><span style="display:flex;"><span>                               auto  Dont ask, just send
+</span></span><span style="display:flex;"><span>       -Cgidirs+           Scan these CGI dirs: <span style="color:#e6db74">&#34;none&#34;</span>, <span style="color:#e6db74">&#34;all&#34;</span>, or values like <span style="color:#e6db74">&#34;/cgi/ /cgi-a/&#34;</span>
+</span></span><span style="display:flex;"><span>       -config+            Use this config file
+</span></span><span style="display:flex;"><span>       -Display+           Turn on/off display outputs:
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">1</span>     Show redirects
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">2</span>     Show cookies received
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">3</span>     Show all 200/OK responses
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">4</span>     Show URLs which require authentication
+</span></span><span style="display:flex;"><span>                               D     Debug output
+</span></span><span style="display:flex;"><span>                               E     Display all HTTP errors
+</span></span><span style="display:flex;"><span>                               P     Print progress to STDOUT
+</span></span><span style="display:flex;"><span>                               S     Scrub output of IPs and hostnames
+</span></span><span style="display:flex;"><span>                               V     Verbose output
+</span></span><span style="display:flex;"><span>       -dbcheck           Check database and other key files <span style="color:#66d9ef">for</span> syntax errors
+</span></span><span style="display:flex;"><span>       -evasion+          Encoding technique:
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">1</span>     Random URI encoding <span style="color:#f92672">(</span>non-UTF8<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">2</span>     Directory self-reference <span style="color:#f92672">(</span>/./<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">3</span>     Premature URL ending
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">4</span>     Prepend long random string
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">5</span>     Fake parameter
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">6</span>     TAB as request spacer
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">7</span>     Change the <span style="color:#66d9ef">case</span> of the URL
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">8</span>     Use Windows directory separator <span style="color:#f92672">(</span><span style="color:#ae81ff">\)</span>
+</span></span><span style="display:flex;"><span>                               A     Use a carriage <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>0x0d<span style="color:#f92672">)</span> as a request spacer
+</span></span><span style="display:flex;"><span>                               B     Use binary value 0x0b as a request spacer
+</span></span><span style="display:flex;"><span>        -Format+           Save file <span style="color:#f92672">(</span>-o<span style="color:#f92672">)</span> format:
+</span></span><span style="display:flex;"><span>                               csv   Comma-separated-value
+</span></span><span style="display:flex;"><span>                               htm   HTML Format
+</span></span><span style="display:flex;"><span>                               msf+  Log to Metasploit
+</span></span><span style="display:flex;"><span>                               nbe   Nessus NBE format
+</span></span><span style="display:flex;"><span>                               txt   Plain text
+</span></span><span style="display:flex;"><span>                               xml   XML Format
+</span></span><span style="display:flex;"><span>                               <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> not specified the format will be taken from the file extension passed to -output<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>       -Help              Extended help information
+</span></span><span style="display:flex;"><span>       -host+             Target host
+</span></span><span style="display:flex;"><span>       -IgnoreCode        Ignore Codes--treat as negative responses
+</span></span><span style="display:flex;"><span>       -id+               Host authentication to use, format is id:pass or id:pass:realm
+</span></span><span style="display:flex;"><span>       -key+              Client certificate key file
+</span></span><span style="display:flex;"><span>       -list-plugins      List all available plugins, perform no testing
+</span></span><span style="display:flex;"><span>       -maxtime+          Maximum testing time per host
+</span></span><span style="display:flex;"><span>       -mutate+           Guess additional file names:
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">1</span>     Test all files with all root directories
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">2</span>     Guess <span style="color:#66d9ef">for</span> password file names
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">3</span>     Enumerate user names via Apache <span style="color:#f92672">(</span>/~user type requests<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">4</span>     Enumerate user names via cgiwrap <span style="color:#f92672">(</span>/cgi-bin/cgiwrap/~user type requests<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">5</span>     Attempt to brute force sub-domain names, assume that the host name is the parent domain
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">6</span>     Attempt to guess directory names from the supplied dictionary file
+</span></span><span style="display:flex;"><span>       -mutate-options    Provide information <span style="color:#66d9ef">for</span> mutates
+</span></span><span style="display:flex;"><span>       -nointeractive     Disables interactive features
+</span></span><span style="display:flex;"><span>       -nolookup          Disables DNS lookups
+</span></span><span style="display:flex;"><span>       -nossl             Disables the use of SSL
+</span></span><span style="display:flex;"><span>       -no404             Disables nikto attempting to guess a <span style="color:#ae81ff">404</span> page
+</span></span><span style="display:flex;"><span>       -output+           Write output to this file <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;.&#39;</span> <span style="color:#66d9ef">for</span> auto-name<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>       -Pause+            Pause between tests <span style="color:#f92672">(</span>seconds, integer or float<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>       -Plugins+          List of plugins to run <span style="color:#f92672">(</span>default: ALL<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>       -port+             Port to use <span style="color:#f92672">(</span>default 80<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>       -RSAcert+          Client certificate file
+</span></span><span style="display:flex;"><span>       -root+             Prepend root value to all requests, format is /directory
+</span></span><span style="display:flex;"><span>       -Save              Save positive responses to this directory <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;.&#39;</span> <span style="color:#66d9ef">for</span> auto-name<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>       -ssl               Force ssl mode on port
+</span></span><span style="display:flex;"><span>       -Tuning+           Scan tuning:
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">1</span>     Interesting File / Seen in logs
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">2</span>     Misconfiguration / Default File
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">3</span>     Information Disclosure
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">4</span>     Injection <span style="color:#f92672">(</span>XSS/Script/HTML<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">5</span>     Remote File Retrieval - Inside Web Root
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">6</span>     Denial of Service
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">7</span>     Remote File Retrieval - Server Wide
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">8</span>     Command Execution / Remote Shell
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">9</span>     SQL Injection
+</span></span><span style="display:flex;"><span>                               <span style="color:#ae81ff">0</span>     File Upload
+</span></span><span style="display:flex;"><span>                               a     Authentication Bypass
+</span></span><span style="display:flex;"><span>                               b     Software Identification
+</span></span><span style="display:flex;"><span>                               c     Remote Source Inclusion
+</span></span><span style="display:flex;"><span>                               x     Reverse Tuning Options <span style="color:#f92672">(</span>i.e., include all except specified<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>       -timeout+          Timeout <span style="color:#66d9ef">for</span> requests <span style="color:#f92672">(</span>default <span style="color:#ae81ff">10</span> seconds<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>       -Userdbs           Load only user databases, not the standard databases
+</span></span><span style="display:flex;"><span>                               all   Disable standard dbs and load only user dbs
+</span></span><span style="display:flex;"><span>                               tests Disable only db_tests and load udb_tests
+</span></span><span style="display:flex;"><span>       -until             Run <span style="color:#66d9ef">until</span> the specified time or duration
+</span></span><span style="display:flex;"><span>       -update            Update databases and plugins from CIRT.net
+</span></span><span style="display:flex;"><span>       -useproxy          Use the proxy defined in nikto.conf
+</span></span><span style="display:flex;"><span>       -Version           Print plugin and database versions
+</span></span><span style="display:flex;"><span>       -vhost+            Virtual host <span style="color:#f92672">(</span><span style="color:#66d9ef">for</span> Host header<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>   		+ requires a value
+</span></span></code></pre></div><h3 id="21">2.1</h3>
 <p>First and foremost, what switch do we use to set the target host?</p>
 <ul>
 <li><code>-h</code> ; nikto -h (h is for host)</li>
@@ -424,32 +443,32 @@
 </ul>
 <h3 id="28">2.8</h3>
 <p>Let&rsquo;s scan our target machine, what web server do we discover and what version is it?</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">- Nikto v2.1.5
----------------------------------------------------------------------------
-+ Target IP:          10.10.147.152
-+ Target Hostname:    ip-10-10-147-152.eu-west-1.compute.internal
-+ Target Port:        <span style="color:#ae81ff">80</span>
-+ Start Time:         2021-07-14 09:57:30 <span style="color:#f92672">(</span>GMT1<span style="color:#f92672">)</span>
----------------------------------------------------------------------------
-+ Server: Apache/2.4.7 <span style="color:#f92672">(</span>Ubuntu<span style="color:#f92672">)</span>
-+ Cookie PHPSESSID created without the httponly flag
-+ Retrieved x-powered-by header: PHP/5.5.9-1ubuntu4.26
-+ The anti-clickjacking X-Frame-Options header is not present.
-+ Root page / redirects to: login.php
-+ No CGI Directories found <span style="color:#f92672">(</span>use <span style="color:#e6db74">&#39;-C all&#39;</span> to force check all possible dirs<span style="color:#f92672">)</span>
-+ Server leaks inodes via ETags, header found with file /robots.txt, fields: 0x1a 0x5775a354caa9f 
-+ File/dir <span style="color:#e6db74">&#39;/&#39;</span> in robots.txt returned a non-forbidden or redirect HTTP code <span style="color:#f92672">(</span>302<span style="color:#f92672">)</span>
-+ <span style="color:#e6db74">&#34;robots.txt&#34;</span> contains <span style="color:#ae81ff">1</span> entry which should be manually viewed.
-+ OSVDB-3268: /config/: Directory indexing found.
-+ /config/: Configuration information may be available remotely.
-+ OSVDB-3268: /docs/: Directory indexing found.
-+ OSVDB-3233: /icons/README: Apache default file found.
-+ /login.php: Admin login page/section found.
-+ <span style="color:#ae81ff">6544</span> items checked: <span style="color:#ae81ff">0</span> error<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> and <span style="color:#ae81ff">11</span> item<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> reported on remote host
-+ End Time:           2021-07-14 09:57:39 <span style="color:#f92672">(</span>GMT1<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#ae81ff">9</span> seconds<span style="color:#f92672">)</span>
----------------------------------------------------------------------------
-+ <span style="color:#ae81ff">1</span> host<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> tested
-</code></pre></div><h3 id="29">2.9</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>- Nikto v2.1.5
+</span></span><span style="display:flex;"><span>---------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>+ Target IP:          10.10.147.152
+</span></span><span style="display:flex;"><span>+ Target Hostname:    ip-10-10-147-152.eu-west-1.compute.internal
+</span></span><span style="display:flex;"><span>+ Target Port:        <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>+ Start Time:         2021-07-14 09:57:30 <span style="color:#f92672">(</span>GMT1<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>---------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>+ Server: Apache/2.4.7 <span style="color:#f92672">(</span>Ubuntu<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>+ Cookie PHPSESSID created without the httponly flag
+</span></span><span style="display:flex;"><span>+ Retrieved x-powered-by header: PHP/5.5.9-1ubuntu4.26
+</span></span><span style="display:flex;"><span>+ The anti-clickjacking X-Frame-Options header is not present.
+</span></span><span style="display:flex;"><span>+ Root page / redirects to: login.php
+</span></span><span style="display:flex;"><span>+ No CGI Directories found <span style="color:#f92672">(</span>use <span style="color:#e6db74">&#39;-C all&#39;</span> to force check all possible dirs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>+ Server leaks inodes via ETags, header found with file /robots.txt, fields: 0x1a 0x5775a354caa9f 
+</span></span><span style="display:flex;"><span>+ File/dir <span style="color:#e6db74">&#39;/&#39;</span> in robots.txt returned a non-forbidden or redirect HTTP code <span style="color:#f92672">(</span>302<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>+ <span style="color:#e6db74">&#34;robots.txt&#34;</span> contains <span style="color:#ae81ff">1</span> entry which should be manually viewed.
+</span></span><span style="display:flex;"><span>+ OSVDB-3268: /config/: Directory indexing found.
+</span></span><span style="display:flex;"><span>+ /config/: Configuration information may be available remotely.
+</span></span><span style="display:flex;"><span>+ OSVDB-3268: /docs/: Directory indexing found.
+</span></span><span style="display:flex;"><span>+ OSVDB-3233: /icons/README: Apache default file found.
+</span></span><span style="display:flex;"><span>+ /login.php: Admin login page/section found.
+</span></span><span style="display:flex;"><span>+ <span style="color:#ae81ff">6544</span> items checked: <span style="color:#ae81ff">0</span> error<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> and <span style="color:#ae81ff">11</span> item<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> reported on remote host
+</span></span><span style="display:flex;"><span>+ End Time:           2021-07-14 09:57:39 <span style="color:#f92672">(</span>GMT1<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#ae81ff">9</span> seconds<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>---------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>+ <span style="color:#ae81ff">1</span> host<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> tested
+</span></span></code></pre></div><h3 id="29">2.9</h3>
 <p>This box is vulnerable to very poor directory control due to it&rsquo;s web server version, what directory is indexed that really shouldn&rsquo;t be?</p>
 <ul>
 <li><code>config</code></li>
@@ -512,10 +531,10 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p><code>/</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">root@ip-10-10-80-133:~# curl 10.10.147.152/robots.txt ; echo 
-User-agent: *
-Disallow: /
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>root@ip-10-10-80-133:~# curl 10.10.147.152/robots.txt ; echo 
+</span></span><span style="display:flex;"><span>User-agent: *
+</span></span><span style="display:flex;"><span>Disallow: /
+</span></span></code></pre></div></li>
 </ul>
 <h3 id="36">3.6</h3>
 <p>ZAP will find a directory that contains images for our application, what is the path for that directory? (This is what will follows the name/ip of the website)</p>
@@ -577,7 +596,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -788,7 +807,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

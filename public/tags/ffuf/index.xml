@@ -1,23 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ffuf on Classroom</title>
-    <link>https://classroom.anir0y.in/tags/ffuf/</link>
-    <description>Recent content in ffuf on Classroom</description>
+    <title>Ffuf on Classroom</title>
+    <link>http://localhost:1313/tags/ffuf/</link>
+    <description>Recent content in Ffuf on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sat, 17 Jul 2021 02:49:02 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/ffuf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jul 2021 02:49:02 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/ffuf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Ffuf</title>
       <pubDate>Sat, 17 Jul 2021 02:49:02 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>overview    fuff          room Link     task 01: Introduction Summary ffuf stands for Fuzz Faster U Fool. It&amp;rsquo;s a tool used for web enumeration, fuzzing, and directory brute forcing.
-Install ffuf ffuf is already included in the following Linux distributions:
- BlackArch Pentoo Kali Parrot  Install SecLists SecLists is a collection of multiple types of lists used during security assessments.</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;overview&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;fuff&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/b197813dc74d88fa2a6df2c128ff155c.png&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;room&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://tryhackme.com/room/ffuf&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;task-01-introduction&#34;&gt;task 01: Introduction&lt;/h2&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;ffuf stands for Fuzz Faster U Fool. It&amp;rsquo;s a tool used for web enumeration, fuzzing, and directory brute forcing.&lt;/p&gt;
+&lt;h3 id=&#34;install-ffuf&#34;&gt;Install ffuf&lt;/h3&gt;
+&lt;p&gt;ffuf is already included in the following Linux distributions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BlackArch&lt;/li&gt;
+&lt;li&gt;Pentoo&lt;/li&gt;
+&lt;li&gt;Kali&lt;/li&gt;
+&lt;li&gt;Parrot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;install-seclists&#34;&gt;Install SecLists&lt;/h3&gt;
+&lt;p&gt;SecLists is a collection of multiple types of lists used during security assessments. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/tryhackme-ffuf/</link>
+      <link>http://localhost:1313/post/tryhackme-ffuf/</link>
     
     </item>
    

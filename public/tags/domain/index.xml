@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>domain on Classroom</title>
-    <link>https://classroom.anir0y.in/tags/domain/</link>
-    <description>Recent content in domain on Classroom</description>
+    <title>Domain on Classroom</title>
+    <link>http://localhost:1313/tags/domain/</link>
+    <description>Recent content in Domain on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sat, 26 Feb 2022 20:55:07 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/domain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Feb 2022 20:55:07 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/domain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Domain Enumeration Cheat Sheet</title>
       <pubDate>Sat, 26 Feb 2022 20:55:07 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/doamin-enum.png" width="700" height="420"></media:content>
-      <description>Get all the member of the Domain Admins Group Get-NetGroupMember -GroupName &amp;quot;Domain Admins&amp;quot;
-or ActiveDirectory module Get-ADGroupMember -Identity &amp;quot;Domain Admins&amp;quot; -Recursive
-Get the group membership for a user Get-NetGroup -UserName &amp;quot;labuser&amp;quot;
-or ActiveDirectory module Get_ADPrincipalGroupMembership -Identity labuser
-Get all computers of the domain Get-NetComputer (-FullData)
-Using ActiveDirectory module Get-ADComputer -Filter * | select Name Get-ADComputer -Filter * -Properties *
-Find all machines on the current domain where the current user has local admin access Find-LocalAdminAccess -Verbose</description>
+      <description>&lt;h2 id=&#34;get-all-the-member-of-the-domain-admins-group&#34;&gt;Get all the member of the Domain Admins Group&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-NetGroupMember -GroupName &amp;quot;Domain Admins&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;or-activedirectory-module&#34;&gt;or ActiveDirectory module&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-ADGroupMember -Identity &amp;quot;Domain Admins&amp;quot; -Recursive&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;get-the-group-membership-for-a-user&#34;&gt;Get the group membership for a user&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-NetGroup -UserName &amp;quot;labuser&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;or-activedirectory-module-1&#34;&gt;or ActiveDirectory module&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get_ADPrincipalGroupMembership -Identity labuser&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;get-all-computers-of-the-domain&#34;&gt;Get all computers of the domain&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-NetComputer (-FullData)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;using-activedirectory-module&#34;&gt;Using ActiveDirectory module&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-ADComputer -Filter * | select Name&lt;/code&gt;
+&lt;code&gt;Get-ADComputer -Filter * -Properties *&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;find-all-machines-on-the-current-domain-where-the-current-user-has-local-admin-access&#34;&gt;Find all machines on the current domain where the current user has local admin access&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Find-LocalAdminAccess -Verbose&lt;/code&gt;&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/doamin-enum.png"></enclosure>
-      <link>https://classroom.anir0y.in/post/notes-domainenum/</link>
+      <link>http://localhost:1313/post/notes-domainenum/</link>
     
     </item>
    

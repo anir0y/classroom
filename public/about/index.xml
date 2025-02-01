@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Classroom</title>
-    <link>https://classroom.anir0y.in/about/</link>
+    <link>http://localhost:1313/about/</link>
     <description>Recent content in Abouts on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sun, 21 Mar 2021 20:59:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Mar 2021 20:59:00 +0530</lastBuildDate><atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Me</title>
       <pubDate>Sun, 21 Mar 2021 20:59:00 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description></description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://anir0y.in/assets/images/ani-186x186.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/about/me/</link>
+      <link>http://localhost:1313/about/me/</link>
     
     </item>
    

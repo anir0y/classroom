@@ -2,20 +2,293 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Classroom</title>
-    <link>https://classroom.anir0y.in/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 26 Jan 2023 00:03:57 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Feb 2025 13:36:24 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>phishing</title>
-      <pubDate>Thu, 26 Jan 2023 00:03:57 +0530</pubDate>
+      <title>Networking</title>
+      <pubDate>Sat, 01 Feb 2025 13:36:24 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/phishing/</link>
+      <link>http://localhost:1313/tags/networking/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Subnet</title>
+      <pubDate>Sat, 01 Feb 2025 13:36:24 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/subnet/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Apache</title>
+      <pubDate>Tue, 13 Aug 2024 11:11:42 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/apache/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Docker</title>
+      <pubDate>Tue, 13 Aug 2024 11:11:42 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/docker/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Guacamole</title>
+      <pubDate>Tue, 13 Aug 2024 11:11:42 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/guacamole/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Folder Sharing</title>
+      <pubDate>Thu, 30 May 2024 13:12:02 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/folder-sharing/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Kali</title>
+      <pubDate>Thu, 30 May 2024 13:12:02 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/kali/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Vm-Tools</title>
+      <pubDate>Thu, 30 May 2024 13:12:02 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/vm-tools/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Response</title>
+      <pubDate>Fri, 15 Mar 2024 12:50:55 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/response/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Hax0r</title>
+      <pubDate>Mon, 11 Mar 2024 19:13:04 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/hax0r/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Osint</title>
+      <pubDate>Mon, 11 Mar 2024 19:13:04 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/osint/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Darklinks</title>
+      <pubDate>Mon, 02 Oct 2023 14:34:21 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/darklinks/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Tor</title>
+      <pubDate>Mon, 02 Oct 2023 14:34:21 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/tor/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Gpg</title>
+      <pubDate>Tue, 30 May 2023 11:59:25 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/gpg/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Autohackos</title>
+      <pubDate>Tue, 09 May 2023 20:42:03 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/autohackos/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Soc</title>
+      <pubDate>Mon, 10 Apr 2023 19:27:17 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/soc/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Splunk</title>
+      <pubDate>Mon, 10 Apr 2023 19:27:17 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/splunk/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Lookback</title>
+      <pubDate>Sun, 19 Mar 2023 21:12:15 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/lookback/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Azure</title>
+      <pubDate>Thu, 16 Mar 2023 22:06:19 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/azure/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Bugged</title>
+      <pubDate>Mon, 13 Mar 2023 19:08:04 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/bugged/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Keylogger</title>
+      <pubDate>Sun, 12 Mar 2023 19:25:10 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/keylogger/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Phishing</title>
+      <pubDate>Wed, 22 Feb 2023 18:50:22 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <description></description>
+      <enclosure url="https://classroom.anir0y.in"></enclosure>
+      <link>http://localhost:1313/tags/phishing/</link>
     
     </item>
    
@@ -28,33 +301,33 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/smishing/</link>
+      <link>http://localhost:1313/tags/smishing/</link>
     
     </item>
    
       
     
     <item>
-      <title>tinyurl</title>
+      <title>Tinyurl</title>
       <pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/tinyurl/</link>
+      <link>http://localhost:1313/tags/tinyurl/</link>
     
     </item>
    
       
     
     <item>
-      <title>urlshortner</title>
+      <title>Urlshortner</title>
       <pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/urlshortner/</link>
+      <link>http://localhost:1313/tags/urlshortner/</link>
     
     </item>
    
@@ -67,46 +340,46 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/intermediate-nmap/</link>
+      <link>http://localhost:1313/tags/intermediate-nmap/</link>
     
     </item>
    
       
     
     <item>
-      <title>tryhackme</title>
+      <title>Tryhackme</title>
       <pubDate>Fri, 23 Sep 2022 15:28:41 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/tryhackme/</link>
+      <link>http://localhost:1313/tags/tryhackme/</link>
     
     </item>
    
       
     
     <item>
-      <title>rooms</title>
+      <title>Rooms</title>
       <pubDate>Tue, 16 Aug 2022 15:24:03 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/rooms/</link>
+      <link>http://localhost:1313/tags/rooms/</link>
     
     </item>
    
       
     
     <item>
-      <title>thm</title>
+      <title>Thm</title>
       <pubDate>Tue, 16 Aug 2022 15:24:03 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/thm/</link>
+      <link>http://localhost:1313/tags/thm/</link>
     
     </item>
    
@@ -119,59 +392,59 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/operating-system-security/</link>
+      <link>http://localhost:1313/tags/operating-system-security/</link>
     
     </item>
    
       
     
     <item>
-      <title>dvwa</title>
+      <title>Dvwa</title>
       <pubDate>Sat, 05 Mar 2022 21:05:05 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/dvwa/</link>
+      <link>http://localhost:1313/tags/dvwa/</link>
     
     </item>
    
       
     
     <item>
-      <title>domain</title>
+      <title>Domain</title>
       <pubDate>Sat, 26 Feb 2022 20:55:07 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/domain/</link>
+      <link>http://localhost:1313/tags/domain/</link>
     
     </item>
    
       
     
     <item>
-      <title>ceh0821</title>
+      <title>Ceh0821</title>
       <pubDate>Wed, 19 Jan 2022 13:47:54 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/ceh0821/</link>
+      <link>http://localhost:1313/tags/ceh0821/</link>
     
     </item>
    
       
     
     <item>
-      <title>nfs</title>
+      <title>Nfs</title>
       <pubDate>Wed, 19 Jan 2022 13:47:54 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/nfs/</link>
+      <link>http://localhost:1313/tags/nfs/</link>
     
     </item>
    
@@ -184,20 +457,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/ref/</link>
+      <link>http://localhost:1313/tags/ref/</link>
     
     </item>
    
       
     
     <item>
-      <title>openvas</title>
+      <title>Openvas</title>
       <pubDate>Mon, 13 Sep 2021 23:16:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/openvas/</link>
+      <link>http://localhost:1313/tags/openvas/</link>
     
     </item>
    
@@ -210,20 +483,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/super-spam/</link>
+      <link>http://localhost:1313/tags/super-spam/</link>
     
     </item>
    
       
     
     <item>
-      <title>internal</title>
+      <title>Internal</title>
       <pubDate>Tue, 10 Aug 2021 11:44:25 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/internal/</link>
+      <link>http://localhost:1313/tags/internal/</link>
     
     </item>
    
@@ -236,20 +509,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/relevant/</link>
+      <link>http://localhost:1313/tags/relevant/</link>
     
     </item>
    
       
     
     <item>
-      <title>sweettoothinc</title>
+      <title>Sweettoothinc</title>
       <pubDate>Wed, 28 Jul 2021 12:16:24 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/sweettoothinc/</link>
+      <link>http://localhost:1313/tags/sweettoothinc/</link>
     
     </item>
    
@@ -262,20 +535,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/agent-sudo/</link>
+      <link>http://localhost:1313/tags/agent-sudo/</link>
     
     </item>
    
       
     
     <item>
-      <title>rocket</title>
+      <title>Rocket</title>
       <pubDate>Sat, 24 Jul 2021 15:36:15 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/rocket/</link>
+      <link>http://localhost:1313/tags/rocket/</link>
     
     </item>
    
@@ -288,7 +561,7 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/overpass-2/</link>
+      <link>http://localhost:1313/tags/overpass-2/</link>
     
     </item>
    
@@ -301,7 +574,7 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/baron-samedit/</link>
+      <link>http://localhost:1313/tags/baron-samedit/</link>
     
     </item>
    
@@ -314,7 +587,7 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/metamorphosis/</link>
+      <link>http://localhost:1313/tags/metamorphosis/</link>
     
     </item>
    
@@ -327,7 +600,7 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/simple-ctf/</link>
+      <link>http://localhost:1313/tags/simple-ctf/</link>
     
     </item>
    
@@ -340,59 +613,59 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/razorblack/</link>
+      <link>http://localhost:1313/tags/razorblack/</link>
     
     </item>
    
       
     
     <item>
-      <title>ffuf</title>
+      <title>Ffuf</title>
       <pubDate>Sat, 17 Jul 2021 02:49:02 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/ffuf/</link>
+      <link>http://localhost:1313/tags/ffuf/</link>
     
     </item>
    
       
     
     <item>
-      <title>rpwebscanning</title>
+      <title>Rpwebscanning</title>
       <pubDate>Wed, 14 Jul 2021 14:00:45 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/rpwebscanning/</link>
+      <link>http://localhost:1313/tags/rpwebscanning/</link>
     
     </item>
    
       
     
     <item>
-      <title>web scanning</title>
+      <title>Web Scanning</title>
       <pubDate>Wed, 14 Jul 2021 14:00:45 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/web-scanning/</link>
+      <link>http://localhost:1313/tags/web-scanning/</link>
     
     </item>
    
       
     
     <item>
-      <title>redteaming</title>
+      <title>Redteaming</title>
       <pubDate>Tue, 13 Jul 2021 14:37:01 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/redteaming/</link>
+      <link>http://localhost:1313/tags/redteaming/</link>
     
     </item>
    
@@ -405,20 +678,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/thefindcommand/</link>
+      <link>http://localhost:1313/tags/thefindcommand/</link>
     
     </item>
    
       
     
     <item>
-      <title>tmux</title>
+      <title>Tmux</title>
       <pubDate>Sun, 11 Jul 2021 13:50:48 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/tmux/</link>
+      <link>http://localhost:1313/tags/tmux/</link>
     
     </item>
    
@@ -431,33 +704,33 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/crisis/</link>
+      <link>http://localhost:1313/tags/crisis/</link>
     
     </item>
    
       
     
     <item>
-      <title>couch</title>
+      <title>Couch</title>
       <pubDate>Fri, 09 Jul 2021 19:22:00 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/couch/</link>
+      <link>http://localhost:1313/tags/couch/</link>
     
     </item>
    
       
     
     <item>
-      <title>inclusion</title>
+      <title>Inclusion</title>
       <pubDate>Thu, 08 Jul 2021 14:19:01 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/inclusion/</link>
+      <link>http://localhost:1313/tags/inclusion/</link>
     
     </item>
    
@@ -470,20 +743,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/rootme/</link>
+      <link>http://localhost:1313/tags/rootme/</link>
     
     </item>
    
       
     
     <item>
-      <title>gitandcrumpets</title>
+      <title>Gitandcrumpets</title>
       <pubDate>Sun, 04 Jul 2021 23:04:02 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/gitandcrumpets/</link>
+      <link>http://localhost:1313/tags/gitandcrumpets/</link>
     
     </item>
    
@@ -496,46 +769,46 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/post-exploitation/</link>
+      <link>http://localhost:1313/tags/post-exploitation/</link>
     
     </item>
    
       
     
     <item>
-      <title>hydra</title>
+      <title>Hydra</title>
       <pubDate>Sat, 03 Jul 2021 20:14:32 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/hydra/</link>
+      <link>http://localhost:1313/tags/hydra/</link>
     
     </item>
    
       
     
     <item>
-      <title>pip</title>
+      <title>Pip</title>
       <pubDate>Sat, 03 Jul 2021 01:30:12 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/pip/</link>
+      <link>http://localhost:1313/tags/pip/</link>
     
     </item>
    
       
     
     <item>
-      <title>pip2</title>
+      <title>Pip2</title>
       <pubDate>Sat, 03 Jul 2021 01:30:12 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/pip2/</link>
+      <link>http://localhost:1313/tags/pip2/</link>
     
     </item>
    
@@ -548,20 +821,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/hackpark/</link>
+      <link>http://localhost:1313/tags/hackpark/</link>
     
     </item>
    
       
     
     <item>
-      <title>kenobi</title>
+      <title>Kenobi</title>
       <pubDate>Thu, 10 Jun 2021 21:22:32 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/kenobi/</link>
+      <link>http://localhost:1313/tags/kenobi/</link>
     
     </item>
    
@@ -574,59 +847,59 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/vulnversity/</link>
+      <link>http://localhost:1313/tags/vulnversity/</link>
     
     </item>
    
       
     
     <item>
-      <title>backdoor</title>
+      <title>Backdoor</title>
       <pubDate>Mon, 07 Jun 2021 20:20:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/backdoor/</link>
+      <link>http://localhost:1313/tags/backdoor/</link>
     
     </item>
    
       
     
     <item>
-      <title>msfvenom</title>
+      <title>Msfvenom</title>
       <pubDate>Mon, 07 Jun 2021 20:20:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/msfvenom/</link>
+      <link>http://localhost:1313/tags/msfvenom/</link>
     
     </item>
    
       
     
     <item>
-      <title>putty</title>
+      <title>Putty</title>
       <pubDate>Mon, 07 Jun 2021 20:20:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/putty/</link>
+      <link>http://localhost:1313/tags/putty/</link>
     
     </item>
    
       
     
     <item>
-      <title>autopsy</title>
+      <title>Autopsy</title>
       <pubDate>Thu, 27 May 2021 00:31:13 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/autopsy/</link>
+      <link>http://localhost:1313/tags/autopsy/</link>
     
     </item>
    
@@ -639,85 +912,85 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/volatility/</link>
+      <link>http://localhost:1313/tags/volatility/</link>
     
     </item>
    
       
     
     <item>
-      <title>dominos</title>
+      <title>Dominos</title>
       <pubDate>Sat, 22 May 2021 19:56:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/dominos/</link>
+      <link>http://localhost:1313/tags/dominos/</link>
     
     </item>
    
       
     
     <item>
-      <title>leaks</title>
+      <title>Leaks</title>
       <pubDate>Sat, 22 May 2021 19:56:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/leaks/</link>
+      <link>http://localhost:1313/tags/leaks/</link>
     
     </item>
    
       
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <pubDate>Sat, 22 May 2021 19:56:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
     
     </item>
    
       
     
     <item>
-      <title>script</title>
+      <title>Script</title>
       <pubDate>Sat, 22 May 2021 19:56:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/script/</link>
+      <link>http://localhost:1313/tags/script/</link>
     
     </item>
    
       
     
     <item>
-      <title>notes</title>
+      <title>Notes</title>
       <pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/notes/</link>
+      <link>http://localhost:1313/tags/notes/</link>
     
     </item>
    
       
     
     <item>
-      <title>interview</title>
+      <title>Interview</title>
       <pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/interview/</link>
+      <link>http://localhost:1313/tags/interview/</link>
     
     </item>
    
@@ -730,20 +1003,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/osi-model/</link>
+      <link>http://localhost:1313/tags/osi-model/</link>
     
     </item>
    
       
     
     <item>
-      <title>wireshark</title>
+      <title>Wireshark</title>
       <pubDate>Sun, 25 Apr 2021 20:20:59 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/wireshark/</link>
+      <link>http://localhost:1313/tags/wireshark/</link>
     
     </item>
    
@@ -756,85 +1029,85 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/osi/</link>
+      <link>http://localhost:1313/tags/osi/</link>
     
     </item>
    
       
     
     <item>
-      <title>stego</title>
+      <title>Stego</title>
       <pubDate>Wed, 21 Apr 2021 17:47:23 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/stego/</link>
+      <link>http://localhost:1313/tags/stego/</link>
     
     </item>
    
       
     
     <item>
-      <title>cheatsheet</title>
+      <title>Cheatsheet</title>
       <pubDate>Tue, 13 Apr 2021 21:15:35 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/cheatsheet/</link>
+      <link>http://localhost:1313/tags/cheatsheet/</link>
     
     </item>
    
       
     
     <item>
-      <title>forensic</title>
+      <title>Forensic</title>
       <pubDate>Tue, 13 Apr 2021 21:15:35 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/forensic/</link>
+      <link>http://localhost:1313/tags/forensic/</link>
     
     </item>
    
       
     
     <item>
-      <title>tools</title>
+      <title>Tools</title>
       <pubDate>Tue, 13 Apr 2021 21:15:35 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/tools/</link>
+      <link>http://localhost:1313/tags/tools/</link>
     
     </item>
    
       
     
     <item>
-      <title>encryption</title>
+      <title>Encryption</title>
       <pubDate>Tue, 13 Apr 2021 16:57:30 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/encryption/</link>
+      <link>http://localhost:1313/tags/encryption/</link>
     
     </item>
    
       
     
     <item>
-      <title>gnupg</title>
+      <title>Gnupg</title>
       <pubDate>Tue, 13 Apr 2021 16:57:30 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/gnupg/</link>
+      <link>http://localhost:1313/tags/gnupg/</link>
     
     </item>
    
@@ -847,46 +1120,46 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/pgp/</link>
+      <link>http://localhost:1313/tags/pgp/</link>
     
     </item>
    
       
     
     <item>
-      <title>msf</title>
+      <title>Msf</title>
       <pubDate>Wed, 07 Apr 2021 15:25:21 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/msf/</link>
+      <link>http://localhost:1313/tags/msf/</link>
     
     </item>
    
       
     
     <item>
-      <title>bash</title>
+      <title>Bash</title>
       <pubDate>Sat, 03 Apr 2021 18:54:43 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/bash/</link>
+      <link>http://localhost:1313/tags/bash/</link>
     
     </item>
    
       
     
     <item>
-      <title>lab</title>
+      <title>Lab</title>
       <pubDate>Sat, 03 Apr 2021 18:54:43 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/lab/</link>
+      <link>http://localhost:1313/tags/lab/</link>
     
     </item>
    
@@ -899,20 +1172,20 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/empire/</link>
+      <link>http://localhost:1313/tags/empire/</link>
     
     </item>
    
       
     
     <item>
-      <title>metasploit</title>
+      <title>Metasploit</title>
       <pubDate>Thu, 01 Apr 2021 16:14:32 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/metasploit/</link>
+      <link>http://localhost:1313/tags/metasploit/</link>
     
     </item>
    
@@ -925,7 +1198,7 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
     
     </item>
    
@@ -938,98 +1211,85 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/scripting/</link>
+      <link>http://localhost:1313/tags/scripting/</link>
     
     </item>
    
       
     
     <item>
-      <title>powershell</title>
+      <title>Powershell</title>
       <pubDate>Thu, 25 Mar 2021 20:01:50 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/powershell/</link>
+      <link>http://localhost:1313/tags/powershell/</link>
     
     </item>
    
       
     
     <item>
-      <title>vapt</title>
+      <title>Vapt</title>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/vapt/</link>
+      <link>http://localhost:1313/tags/vapt/</link>
     
     </item>
    
       
     
     <item>
-      <title>vuln labs</title>
+      <title>Vuln Labs</title>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/vuln-labs/</link>
+      <link>http://localhost:1313/tags/vuln-labs/</link>
     
     </item>
    
       
     
     <item>
-      <title>memory</title>
+      <title>Memory</title>
       <pubDate>Wed, 17 Mar 2021 01:00:08 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/memory/</link>
+      <link>http://localhost:1313/tags/memory/</link>
     
     </item>
    
       
     
     <item>
-      <title>config</title>
+      <title>Config</title>
       <pubDate>Thu, 11 Mar 2021 01:45:35 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/config/</link>
+      <link>http://localhost:1313/tags/config/</link>
     
     </item>
    
       
     
     <item>
-      <title>splunk</title>
+      <title>Sysmon</title>
       <pubDate>Thu, 11 Mar 2021 01:45:35 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/splunk/</link>
-    
-    </item>
-   
-      
-    
-    <item>
-      <title>sysmon</title>
-      <pubDate>Thu, 11 Mar 2021 01:45:35 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description></description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/sysmon/</link>
+      <link>http://localhost:1313/tags/sysmon/</link>
     
     </item>
    
@@ -1042,7 +1302,7 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/mobile/</link>
+      <link>http://localhost:1313/tags/mobile/</link>
     
     </item>
    
@@ -1055,7 +1315,7 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/pentesting/</link>
+      <link>http://localhost:1313/tags/pentesting/</link>
     
     </item>
    
@@ -1068,7 +1328,7 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description></description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/tags/internship/</link>
+      <link>http://localhost:1313/tags/internship/</link>
     
     </item>
    

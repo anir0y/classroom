@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>How to Trust Imported GPG Keys | Classroom</title>
+
+    
+<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+<meta name="author" content="Animesh Roy @anir0y  "  />
+<meta name="description" content="Learn how to trust imported GPG keys using the web of trust, keyserver, or manually. GPG, trust, imported keys, web of trust, keyserver, manual trust" />
+
+
+
+<title>Animesh Roy | Classroom Posts</title>
+<meta name="title" content="Animesh Roy | Blogs & Writeups">
+<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPD6BXK0P5');
+</script>
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:1313/post/blog-how-to-trust-imported-gpg-keys/">
+
+<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/post/blog-how-to-trust-imported-gpg-keys/" />
+
+
+<meta property="og:url" content="http://localhost:1313/post/blog-how-to-trust-imported-gpg-keys/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="How to Trust Imported GPG Keys">
+  <meta property="og:description" content="Learn how to trust imported GPG keys using the web of trust, keyserver, or manually. GPG, trust, imported keys, web of trust, keyserver, manual trust">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2023-05-30T11:59:25+05:30">
+    <meta property="article:modified_time" content="2023-05-30T11:59:25+05:30">
+    <meta property="article:tag" content="Gpg">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to Trust Imported GPG Keys">
+  <meta name="twitter:description" content="Learn how to trust imported GPG keys using the web of trust, keyserver, or manually. GPG, trust, imported keys, web of trust, keyserver, manual trust">
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.ui.button),
+  .inverted a:not(.ui.button):hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: #fff;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#tldr">TLDR</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#web-of-trust">Web of trust</a></li>
+    <li><a href="#keyserver">Keyserver</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=How%20to%20Trust%20Imported%20GPG%20Keys&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog-how-to-trust-imported-gpg-keys%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fblog-how-to-trust-imported-gpg-keys%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">How to Trust Imported GPG Keys<div class="sub header">
+            @
+            
+              
+                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
+              
+            
+
+            | 
+                Tuesday, May 30, 2023
+              
+
+            | 4 minutes read
+
+            | Update at
+              
+                Tuesday, May 30, 2023
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><h2 id="tldr">TLDR</h2>
+<blockquote>
+<p>When you import a GPG key, you are trusting that the key belongs to the person or organization who claims to own it. There are a few ways to trust imported GPG keys:</p>
+<p>Web of trust: The web of trust is a decentralized system for verifying GPG keys. When you import a key, you can choose to trust it based on the trust of other people in the web of trust.
+Keyserver: A keyserver is a server that stores GPG keys. When you import a key, you can choose to trust it based on the trust of the keyserver.
+Manually: You can also manually trust a GPG key by adding it to your keyring with the gpg &ndash;edit-key command.
+Once you have trusted an imported GPG key, you can use it to encrypt and sign data.</p>
+<p>TLDR: There are three ways to trust imported GPG keys: the web of trust, keyserver, or manually.</p>
+</blockquote>
+<hr>
+<!--inline-ads-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3526678290068011"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+style="display:block"
+data-ad-format="fluid"
+data-ad-layout-key="-8c+7e-5f-ar+1mn"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="5692962495"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<hr>
+<h1 id="how-to-trust-imported-gpg-keys">How to Trust Imported GPG Keys</h1>
+<p>When you import a GPG key, you are trusting that the key belongs to the person or organization who claims to own it. This is important because GPG keys are used to encrypt and sign data, and you need to be sure that you are only trusting the keys of people who you can verify.</p>
+<p>There are a few ways to trust imported GPG keys:</p>
+<ul>
+<li><strong>Web of trust:</strong> The web of trust is a decentralized system for verifying GPG keys. When you import a key, you can choose to trust it based on the trust of other people in the web of trust.</li>
+<li><strong>Keyserver:</strong> A keyserver is a server that stores GPG keys. When you import a key, you can choose to trust it based on the trust of the keyserver.</li>
+<li><strong>Manually:</strong> You can also manually trust a GPG key by adding it to your keyring with the <code>gpg --edit-key</code> command.</li>
+</ul>
+<p>Once you have trusted an imported GPG key, you can use it to encrypt and sign data.</p>
+<h2 id="web-of-trust">Web of trust</h2>
+<p>The web of trust is a decentralized system for verifying GPG keys. When you import a key, you can choose to trust it based on the trust of other people in the web of trust.</p>
+<p>To use the web of trust, you need to know the fingerprint of the key you want to trust. You can find the fingerprint of a key by running the <code>gpg --fingerprint</code> command.</p>
+<p>Once you have the fingerprint of the key you want to trust, you can find people who trust that key by searching the web of trust. There are a number of websites that allow you to search the web of trust, such as <a href="https://keybase.io/">Keybase</a> and <a href="https://keyserver.ubuntu.com/">UBUNTU Keyserver</a>.</p>
+<p>When you find someone who trusts the key you want to trust, you can add their trust to your own trust. To do this, you need to import their key and then use the <code>gpg --edit-key</code> command to add their trust to your keyring.</p>
+<h2 id="keyserver">Keyserver</h2>
+<p>A keyserver is a server that stores GPG keys. When you import a key, you can choose to trust it based on the trust of the keyserver.</p>
+<p>To use a keyserver, you need to know the keyserver&rsquo;s URL. You can find the URL of a keyserver by searching the web.</p>
+<p>Once you know the URL of a keyserver, you can import a key by running the <code>gpg --recv-keys</code> command.</p>
+<p>For example, to import the key with fingerprint <code>2431 62C3 B284 BC32 CB11 03B1 A217 B9F4 5304 6C23</code>, hosted in <code>keyserver.ubuntu.com</code> you would run the following command:</p>
+<p><code>gpg --keyserver keyserver.ubuntu.com --recv-keys 243162C3B284BC32CB1103B1A217B9F453046C23</code></p>
+<p><img src="https://i.imgur.com/271yeJS.png" alt="img"></p>
+<p>Once you have imported a key, you can trust it based on the trust of the keyserver. To do this, you need to use the gpg &ndash;edit-key command to add the keyserver&rsquo;s trust to your keyring.</p>
+<p>by default key won&rsquo;t be trusted as you can see it here:</p>
+<p><img src="https://i.imgur.com/SC2Em09.png" alt="img"></p>
+<p>Manually
+You can also manually trust a GPG key by adding it to your keyring with the gpg &ndash;edit-key command.</p>
+<p>To do this, you need to know the fingerprint of the key you want to trust. You can find the fingerprint of a key by running the gpg &ndash;fingerprint command.</p>
+<p>Once you have the fingerprint of the key you want to trust, you can add it to your keyring by running the following command:</p>
+<p><code>gpg --edit-key 2431 62C3 B284 BC32 CB11 03B1 A217 B9F4 5304 6C23</code></p>
+<p><img src="https://i.imgur.com/DbeVD1A.png" alt="img"></p>
+<p>Once you have added the key to your keyring, you can trust it by pressing <code>y</code> when prompted.</p>
+<p>Once you have trusted an imported GPG key, you can use it to encrypt and sign data.</p>
+<p><img src="https://i.imgur.com/sIMBToL.png" alt="img"></p>
+<hr>
+<blockquote>
+<p>Liked the article? share your feedback here: <a href="https://twitter.com/anir0y"> twitter</a></p>
+</blockquote>
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<!-- EOF -->
+<!-- //====================\\ -->
+<!-- || GPG post by anir0y || -->
+<!-- \\====================// -->
+</article>
+    </section>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2010 - 2025 Classroom</p>
+              
+
+              
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <div class="item">
+    <a href="/index.xml">
+      <i class="large rss square icon" title="RSS"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="mailto:classroom@anir0y.in">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://twitter.com/anir0y" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://facebook.com/0xanir0y" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://instagram.com/0xanir0y" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+  <div class="item">
+    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://github.com/anir0y" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      YOU CAN REUSE MY CONTENT
+    </article>
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+
+
+
+<script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "tomorrow"
+    var darkTheme = "tomorrow-night"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
+
+
+
+
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
+
+    
+
+    
+  </body>
+</html>

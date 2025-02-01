@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room Introduction to Django solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-django/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-django/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,28 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-django/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-django/" />
 
 
-<meta property="og:title" content="TryHackMe Introduction to Django" />
-<meta property="og:description" content="TryHackMe Room Introduction to Django solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-django/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-09-11T18:40:31+05:30" />
-<meta property="article:modified_time" content="2021-09-11T18:40:31+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-django/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe Introduction to Django">
+  <meta property="og:description" content="TryHackMe Room Introduction to Django solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-09-11T18:40:31+05:30">
+    <meta property="article:modified_time" content="2021-09-11T18:40:31+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Rooms">
+    <meta property="article:tag" content="Thm">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe Introduction to Django"/>
-<meta name="twitter:description" content="TryHackMe Room Introduction to Django solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe Introduction to Django">
+  <meta name="twitter:description" content="TryHackMe Room Introduction to Django solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +171,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -208,10 +226,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Introduction%20to%20Django&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-django%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Introduction%20to%20Django&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-django%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-django%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-django%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -245,26 +263,26 @@
 
       <article class="main"><h2 id="overview">OverView</h2>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><script src="https://tryhackme.com/badge/434937"></script></td>
-<td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
-</tr>
-<tr>
-<td>Django</td>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c11fb449f10add8bc11a137fef9e979c.png" alt="logo"></td>
-</tr>
-<tr>
-<td><b> Room [Subscription Required] </b></td>
-<td><a href="https://tryhackme.com/room/django">Django</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><script src="https://tryhackme.com/badge/434937"></script></td>
+          <td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
+      </tr>
+      <tr>
+          <td>Django</td>
+          <td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c11fb449f10add8bc11a137fef9e979c.png" alt="logo"></td>
+      </tr>
+      <tr>
+          <td><b> Room [Subscription Required] </b></td>
+          <td><a href="https://tryhackme.com/room/django">Django</a></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="01-introduction">01: Introduction</h2>
 <p>Learning Python can be extremely useful for penetration testers, and a simple understanding of its frameworks can be a key to success. In this lesson, we are going to learn about one of the best ones ever made: Django.</p>
@@ -298,22 +316,22 @@
 <p><code>python3 manage.py startapp {app_name}</code></p>
 <h3 id="02-flags">02-Flags</h3>
 <table>
-<thead>
-<tr>
-<th>Answer the questions below</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>How would we create an app called Forms?</td>
-<td><code>python3 manage.py startapp Forms</code></td>
-</tr>
-<tr>
-<td>How would we run our project to a local network?</td>
-<td><code>python3 manage.py runserver 0.0.0.0:8000</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Answer the questions below</th>
+          <th>ans</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>How would we create an app called Forms?</td>
+          <td><code>python3 manage.py startapp Forms</code></td>
+      </tr>
+      <tr>
+          <td>How would we run our project to a local network?</td>
+          <td><code>python3 manage.py runserver 0.0.0.0:8000</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <!-- Google Ads -->
@@ -359,7 +377,7 @@ data-ad-slot="7160066188"></ins></p>
 <p>We create a variable called <code>urlpatterns</code> in which we state names of our directories. <code>views.index</code> calls index function from <code>views.py</code> to be executed therefore creating some output response for HTTP request.</p>
 <p>For example, if we are willing to create a directory called &ldquo;archive&rdquo;, with function &ldquo;main&rdquo;, we would include this in urls.py:</p>
 <p><code>path('archive/', views.main, name ='main')</code></p>
-<p>NOTE: Paths with blank directory ('') are going to call the function whenever the app is accessed at https://IP/{app_name}; any other directories are going to extend the link, for example, the archives directory I used above would be located in <code>https://IP/articles/archive</code>.</p>
+<p>NOTE: Paths with blank directory (&rsquo;&rsquo;) are going to call the function whenever the app is accessed at https://IP/{app_name}; any other directories are going to extend the link, for example, the archives directory I used above would be located in <code>https://IP/articles/archive</code>.</p>
 <p><code>views.py</code> is responsible for carrying out functions which are called using urls.py</p>
 <p>Now let&rsquo;s create a simple HTTP response function for our app.</p>
 <p>The syntax is pretty easy for this one. All you have to do is create a function with a certain name which you will be referring to in urls.py</p>
@@ -410,33 +428,33 @@ data-ad-slot="7160066188"></ins></p>
 <h2 id="05--ctf">05:  CTF</h2>
 <h3 id="enumeation">Enumeation</h3>
 <h4 id="nmap">Nmap</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nmap -sC -sV -oN init 10.10.223.23
-
-<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>
-22/tcp   open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 <span style="color:#f92672">(</span>Ubuntu Linux; protocol 2.0<span style="color:#f92672">)</span>
-| ssh-hostkey: 
-|   <span style="color:#ae81ff">2048</span> 35:30:91:45:b9:d1:ed:5a:13:42:3e:20:95:6d:c7:b7 <span style="color:#f92672">(</span>RSA<span style="color:#f92672">)</span>
-|   <span style="color:#ae81ff">256</span> f5:69:6a:7b:c8:ac:89:b5:38:93:50:2f:05:24:22:70 <span style="color:#f92672">(</span>ECDSA<span style="color:#f92672">)</span>
-|_  <span style="color:#ae81ff">256</span> 8f:4d:37:ba:40:12:05:fa:f0:e6:d6:82:fb:65:52:e8 <span style="color:#f92672">(</span>ED25519<span style="color:#f92672">)</span>
-8000/tcp open  http-alt WSGIServer/0.2 CPython/3.6.9
-<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nmap -sC -sV -oN init 10.10.223.23
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>22/tcp   open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 <span style="color:#f92672">(</span>Ubuntu Linux; protocol 2.0<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>| ssh-hostkey: 
+</span></span><span style="display:flex;"><span>|   <span style="color:#ae81ff">2048</span> 35:30:91:45:b9:d1:ed:5a:13:42:3e:20:95:6d:c7:b7 <span style="color:#f92672">(</span>RSA<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>|   <span style="color:#ae81ff">256</span> f5:69:6a:7b:c8:ac:89:b5:38:93:50:2f:05:24:22:70 <span style="color:#f92672">(</span>ECDSA<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>|_  <span style="color:#ae81ff">256</span> 8f:4d:37:ba:40:12:05:fa:f0:e6:d6:82:fb:65:52:e8 <span style="color:#f92672">(</span>ED25519<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>8000/tcp open  http-alt WSGIServer/0.2 CPython/3.6.9
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>
+</span></span></code></pre></div><ul>
 <li>If we go to http://<Machine IP>:8000 we see a Django page with lots of messages about DISALLOWED HOSTS. Rings a bell from the tasks above? We should add the machine IP to the hosts before we can access the app. Let&rsquo;s do that.</li>
 </ul>
 <h3 id="admin-panel-flag">Admin panel flag?</h3>
 <ul>
 <li>
 <p>SSH into machine by given creds:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Username: django-admin
-Password: roottoor1212
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Username: django-admin
+</span></span><span style="display:flex;"><span>Password: roottoor1212
+</span></span></code></pre></div></li>
 <li>
 <p>refered to <a href="#02-getting-started">Unit-2</a> we know we should change our ALLOWED_HOSTS in the app&rsquo;s <code>settings.py</code></p>
 </li>
 <li>
 <p>change this line on <code>settings.py</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ALLOWED_HOSTS <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;0.0.0.0&#39;</span>, <span style="color:#e6db74">&#39;10.10.147.62&#39;</span>]
-</code></pre></div><p><img src="https://i.imgur.com/Zv6Aw6j.png" alt="img"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ALLOWED_HOSTS <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;0.0.0.0&#39;</span>, <span style="color:#e6db74">&#39;10.10.147.62&#39;</span>]
+</span></span></code></pre></div><p><img src="https://i.imgur.com/Zv6Aw6j.png" alt="img"></p>
 </li>
 <li>
 <p>check the page again</p>
@@ -461,12 +479,12 @@ Password: roottoor1212
 <ul>
 <li>
 <p>find local user home dir:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -la /home
-cd /home/StrangeFox
-ls
-cat user.txt
-THM<span style="color:#f92672">{</span>xxx<span style="color:#f92672">}</span>
-</code></pre></div><p><img src="https://i.imgur.com/7BRimgd.png" alt="img"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -la /home
+</span></span><span style="display:flex;"><span>cd /home/StrangeFox
+</span></span><span style="display:flex;"><span>ls
+</span></span><span style="display:flex;"><span>cat user.txt
+</span></span><span style="display:flex;"><span>THM<span style="color:#f92672">{</span>xxx<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p><img src="https://i.imgur.com/7BRimgd.png" alt="img"></p>
 </li>
 </ul>
 <h3 id="hidden-flag">Hidden flag?</h3>
@@ -506,7 +524,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -717,7 +735,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

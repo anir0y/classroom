@@ -1,22 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on Classroom</title>
-    <link>https://classroom.anir0y.in/categories/blog/</link>
-    <description>Recent content in blog on Classroom</description>
+    <title>Blog on Classroom</title>
+    <link>http://localhost:1313/categories/blog/</link>
+    <description>Recent content in Blog on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 26 Jan 2023 00:03:57 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Oct 2023 14:34:21 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Tor Darknet Links</title>
+      <pubDate>Mon, 02 Oct 2023 14:34:21 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/darknet.png" width="700" height="420"></media:content>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;All the sites listed have been verified by DarkNetEye as legitimate operations. Beware of unverified links, as they may lead to scams. DarkNetEye, a trusted darknet news and link portal, is utilized by thousands daily for safe darknet access. Below are some of the most popular darknet markets and services currently listed on our platform.&lt;/p&gt;
+&lt;h3 id=&#34;top-darknet-markets&#34;&gt;Top Darknet Markets:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;[Post Removed]&lt;/p&gt;
+&lt;p&gt;After receiving feedback, it appeared spammy. Additionally, there have been two blog posts addressing their suspicious activities:&lt;/p&gt;</description>
+      <enclosure url="https://classroom.anir0y.in/img/darknet.png"></enclosure>
+      <link>http://localhost:1313/post/blog-tor-darknet-links/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Optimizing Web Application Performance and Security With Azure Front Door and Application Gateway</title>
+      <pubDate>Thu, 16 Mar 2023 22:06:19 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/az-sec-1.png" width="700" height="420"></media:content>
+      <description>&lt;h1 id=&#34;how-to-configure-azure-front-door-with-application-gateway&#34;&gt;How to configure Azure Front Door with Application Gateway&lt;/h1&gt;
+&lt;p&gt;Azure Front Door and Application Gateway are two services that can help you improve the performance and security of your web applications. In this post, we will explain what they are, how they work together, and how to configure them step by step.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-azure-front-door&#34;&gt;What is Azure Front Door?&lt;/h2&gt;
+&lt;p&gt;Azure Front Door is an Application Delivery Network (ADN) as a service, offering various layer 7 load-balancing capabilities for your applications. It provides dynamic site acceleration (DSA) along with global load balancing with near real-time failover. It is a highly available and scalable service, which is fully managed by Azure.&lt;/p&gt;</description>
+      <enclosure url="https://classroom.anir0y.in/img/az-sec-1.png"></enclosure>
+      <link>http://localhost:1313/post/blog-optimizing-web-application-performance-and-security-with-azure-front-door-and-application-gateway/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Blog | Watering Hole Attacks Scanbox Keylogger</title>
+      <pubDate>Sun, 12 Mar 2023 19:25:10 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/Watering_Hole_Attacks_Scanbox_Keylogger.png" width="700" height="420"></media:content>
+      <description>&lt;h1 id=&#34;a-new-report-by-researchers-at-cycraft-has-revealed-that-a-sophisticated-cyberattack-campaign-has-been-using-watering-hole-attacks-to-deliver-a-scanbox-keylogger-to-victims-across-various-industries&#34;&gt;A new report by researchers at CyCraft has revealed that a sophisticated cyberattack campaign has been using watering hole attacks to deliver a Scanbox keylogger to victims across various industries&lt;/h1&gt;
+&lt;p&gt;Watering hole attacks are a form of cyberattack that targets groups of users by infecting websites that they commonly visit. The attackers then wait for an opportunity to compromise their devices and gain access to their networks.&lt;/p&gt;
+&lt;p&gt;Scanbox is a keylogger that can capture keystrokes, screenshots, and other information from the infected devices. It can also detect the presence of security tools and antivirus software on the system.&lt;/p&gt;</description>
+      <enclosure url="https://classroom.anir0y.in/img/Watering_Hole_Attacks_Scanbox_Keylogger.png"></enclosure>
+      <link>http://localhost:1313/post/blog-watering-hole-attacks-scanbox-keylogger/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>4 types of phishing</title>
+      <pubDate>Wed, 22 Feb 2023 18:50:22 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/1HI2dWi.png" width="700" height="420"></media:content>
+      <description>&lt;p&gt;Phishing is a type of cyber attack that involves deceiving individuals or organizations to obtain sensitive information such as usernames, passwords, and credit card details. Phishing attacks can take various forms, but the ultimate goal is to trick people into revealing their confidential information. In this blog post, we will discuss four types of phishing attacks.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/336791.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;email-phishing&#34;&gt;Email Phishing&lt;/h2&gt;
+&lt;p&gt;Email phishing is the most common type of phishing attack. It involves sending fraudulent emails that appear to be from reputable sources, such as banks, social media platforms, or government agencies. The emails usually contain a link to a fake website that is designed to steal the victim&amp;rsquo;s login credentials or personal information. The website may look similar to the legitimate one, but it is actually a phishing site created by cybercriminals to steal data.&lt;/p&gt;</description>
+      <enclosure url="https://classroom.anir0y.in/img/1HI2dWi.png"></enclosure>
+      <link>http://localhost:1313/post/blog-types-of-phishing/</link>
+    
+    </item>
+   
+      
+    
     <item>
       <title>Smishing - Understanding and Protecting Against the Growing Threat of Phishing via Text Message</title>
       <pubDate>Thu, 26 Jan 2023 00:03:57 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/smshing.png" width="700" height="420"></media:content>
-      <description>[ADS] Arishti.live is back with more training contents
- This article explains what smishing is, how it works and how to protect yourself from falling victim to a smishing attack. Smishing is a type of phishing that uses text messages to trick individuals into giving away sensitive information. Learn about common smishing tactics, how to spot a smishing message and the best ways to protect yourself from this growing threat. With this knowledge, you can stay safe and secure online.</description>
+      <description>&lt;p&gt;&lt;strong&gt;[ADS]   &lt;a href=&#34;https://arishti.live&#34;&gt;Arishti.live&lt;/a&gt; is back with more training contents&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This article explains what smishing is, how it works and how to protect yourself from falling victim to a smishing attack. Smishing is a type of phishing that uses text messages to trick individuals into giving away sensitive information. Learn about common smishing tactics, how to spot a smishing message and the best ways to protect yourself from this growing threat. With this knowledge, you can stay safe and secure online.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/smshing.png"></enclosure>
-      <link>https://classroom.anir0y.in/post/smshingintro/</link>
+      <link>http://localhost:1313/post/smshingintro/</link>
     
     </item>
    
@@ -27,13 +94,19 @@
       <pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inimg/tinyURL.png" width="700" height="420"></media:content>
-      <description>OverView this is unsuall post on how to create short urls. in this post I&amp;rsquo;ll be usng tiny.url APIs.
-get the API from tinyurl.com signup to tinyurl.com and login to the dashboard, then click on API section and click on create API
-now you&amp;rsquo;ll have a API key!!!
-[optional] setup custom domain (FREE) click on branded domain setting, and create a domain, ref to image:
-Automation time Now, we have everything we need.</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
+&lt;p&gt;this is unsuall post on how to create short urls. in this post I&amp;rsquo;ll be usng tiny.url APIs.&lt;/p&gt;
+&lt;h2 id=&#34;get-the-api-from-tinyurlcom&#34;&gt;get the API from tinyurl.com&lt;/h2&gt;
+&lt;p&gt;signup to &lt;code&gt;tinyurl.com&lt;/code&gt; and login to the dashboard, then click on &lt;code&gt;API&lt;/code&gt; section and click on create API&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/FYBKFo5.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;now you&amp;rsquo;ll have a API key!!!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;optional-setup-custom-domain-free&#34;&gt;[optional] setup custom domain (FREE)&lt;/h2&gt;
+&lt;p&gt;click on branded domain setting, and create a domain, ref to image:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/fBpKa1l.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;automation-time&#34;&gt;Automation time&lt;/h2&gt;
+&lt;p&gt;Now, we have everything we need. so let&amp;rsquo;s download the script and add our &lt;code&gt;token&lt;/code&gt; and &lt;code&gt;branded domain&lt;/code&gt; name and call it a day.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.inimg/tinyURL.png"></enclosure>
-      <link>https://classroom.anir0y.in/post/tinyurl/</link>
+      <link>http://localhost:1313/post/tinyurl/</link>
     
     </item>
    

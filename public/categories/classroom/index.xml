@@ -2,20 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Classroom</title>
-    <link>https://classroom.anir0y.in/categories/classroom/</link>
+    <link>http://localhost:1313/categories/classroom/</link>
     <description>Recent content on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 19 Jan 2022 13:47:54 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/classroom/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 13:47:54 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/classroom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Classroom | NFS Installation &amp; enumeation</title>
       <pubDate>Wed, 19 Jan 2022 13:47:54 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog-nfs.png" width="700" height="420"></media:content>
-      <description>OverView Network File System (NFS) is a distributed file system protocol originally developed by Sun Microsystems (Sun) in 1984, allowing a user on a client computer to access files over a computer network much like local storage is accessed. NFS, like many other protocols, builds on the Open Network Computing Remote Procedure Call (ONC RPC) system. NFS is an open IETF standard defined in a Request for Comments (RFC), allowing anyone to implement the protocol.</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Network File System (NFS)&lt;/strong&gt; is a distributed file system protocol originally developed by Sun Microsystems (Sun) in 1984, allowing a user on a client computer to access files over a computer network much like local storage is accessed. NFS, like many other protocols, builds on the Open Network Computing Remote Procedure Call (ONC RPC) system. NFS is an open IETF standard defined in a Request for Comments (RFC), allowing anyone to implement the protocol.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/blog-nfs.png"></enclosure>
-      <link>https://classroom.anir0y.in/post/classroom-nfs/</link>
+      <link>http://localhost:1313/post/classroom-nfs/</link>
     
     </item>
    
@@ -26,10 +27,28 @@
       <pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Osquery    Profile Support           TASK 1 : Introduction Osquery is an open-source tool created by Facebook. With Osquery, Security Analysts, Incident Responders, Threat Hunters, etc., can query an endpoint (or multiple endpoints) using SQL syntax. Osquery can be installed on multiple platforms: Windows, Linux, macOS, and FreeBSD.
-Many well-known companies, besides Facebook, either use Osquery, utilize osquery within their tools, and/or look for individuals who know Osquery.</description>
+      <description>&lt;h2 id=&#34;osquery&#34;&gt;Osquery&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Profile&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Support&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;&lt;a href=&#34;https://www.buymeacoffee.com/anir0y&#34;&gt;&lt;img src=&#34;https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;task-1--introduction&#34;&gt;TASK 1 : Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://osquery.io/&#34;&gt;Osquery&lt;/a&gt; is an &lt;a href=&#34;https://github.com/osquery/osquery&#34;&gt;open-source&lt;/a&gt; tool created by Facebook. With Osquery, Security Analysts, Incident Responders, Threat Hunters, etc., can query an endpoint (or multiple endpoints) using SQL syntax. Osquery can be installed on multiple platforms: Windows, Linux, macOS, and FreeBSD.&lt;/p&gt;
+&lt;p&gt;Many well-known companies, besides Facebook, either use Osquery, utilize osquery within their tools, and/or look for individuals who know Osquery.&lt;/p&gt;
+&lt;p&gt;As of today (March 2021), Github and AT&amp;amp;T seek individuals who have experience with Osquery.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/thm-room-osquery/</link>
+      <link>http://localhost:1313/post/thm-room-osquery/</link>
     
     </item>
    
@@ -40,10 +59,16 @@ Many well-known companies, besides Facebook, either use Osquery, utilize osquery
       <pubDate>Mon, 10 May 2021 01:36:51 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>OpenVas   Room Subscription Only
- Task 1: Introduction OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/openvas.png&#34; alt=&#34;openvas logo&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;openvas&#34;&gt;OpenVas&lt;/h2&gt;
+&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt; 
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Room&lt;/strong&gt; &lt;a href=&#34;https://tryhackme.com/room/openvas&#34;&gt;Subscription Only&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;task-1-introduction&#34;&gt;Task 1: Introduction&lt;/h2&gt;
+&lt;p&gt;OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/thm-room-openvas/</link>
+      <link>http://localhost:1313/post/thm-room-openvas/</link>
     
     </item>
    
@@ -54,10 +79,16 @@ Many well-known companies, besides Facebook, either use Osquery, utilize osquery
       <pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Zero Logon - The Zero Day Angle  Room Subscription Only  About The vulnerability - On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.
-Zero Logon is a purely statistics based attack that abuses a feature within MS-NRPC (Microsoft NetLogon Remote Protocol), MS-NRPC is a critical authentication component of Active Directory that handles authentication for User and Machine accounts.</description>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;zero-logon---the-zero-day-angle&#34;&gt;Zero Logon - The Zero Day Angle&lt;/h2&gt;
+&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;  
+&lt;h2 id=&#34;room-subscription-onlyhttpstryhackmecomroomzer0logon&#34;&gt;Room &lt;a href=&#34;https://tryhackme.com/room/zer0logon&#34;&gt;Subscription Only&lt;/a&gt;&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;about-the-vulnerability--&#34;&gt;About The vulnerability -&lt;/h3&gt;
+&lt;p&gt;On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.&lt;/p&gt;
+&lt;p&gt;Zero Logon is a purely statistics based attack that abuses a feature within MS-NRPC (Microsoft NetLogon Remote Protocol), MS-NRPC is a critical authentication component of Active Directory that handles authentication for User and Machine accounts. In short &amp;ndash; the attack mainly focuses on a poor implementation of Cryptography. To be more specific, Microsoft chose to use AES-CFB8 for a function called ComputeNetlogonCredential, which is normally fine, except they had hard coded the Initialization Vector to use all zeros instead of a random string. When an attacker sends a message only containing zeros with the IV of zero, there is a 1-in-256 chance that the Ciphertext will be Zero.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/thm-room-zerologon/</link>
+      <link>http://localhost:1313/post/thm-room-zerologon/</link>
     
     </item>
    
@@ -68,11 +99,17 @@ Zero Logon is a purely statistics based attack that abuses a feature within MS-N
       <pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>50 Cyber Security Interview Questions (With Answers)  Top Cyber Security Interview Questions Explain Cryptography It is the science of protecting data from third-party using various methods. It is used to protect sensitive information that shouldn’t be disclosed to anyone other than the owners of the information.
-Differentiate between Symmetric and Asymmetric encryption Symmetric encryption – In this type of encryption, the same key is used for encryption
-and decryption of data.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/6bZ0NCp.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;50-cyber-security-interview-questions-with-answers&#34;&gt;50 Cyber Security Interview Questions (With Answers)&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;top-cyber-security-interview-questions&#34;&gt;Top Cyber Security Interview Questions&lt;/h2&gt;
+&lt;h3 id=&#34;explain-cryptography&#34;&gt;Explain Cryptography&lt;/h3&gt;
+&lt;p&gt;It is the science of protecting data from third-party using various methods. It is used to protect sensitive information that shouldn’t be disclosed to anyone other than the owners of the information.&lt;/p&gt;
+&lt;h3 id=&#34;differentiate-between-symmetric-and-asymmetric-encryption&#34;&gt;Differentiate between Symmetric and Asymmetric encryption&lt;/h3&gt;
+&lt;p&gt;Symmetric encryption – In this type of encryption, the same key is used for encryption&lt;/p&gt;
+&lt;p&gt;and decryption of data. It is more vulnerable this way and it is used to encrypt data transmissions that are bulky in nature.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</link>
+      <link>http://localhost:1313/post/cyber-security-interview-questions-with-answers/</link>
     
     </item>
    
@@ -83,11 +120,100 @@ and decryption of data.</description>
       <pubDate>Fri, 07 May 2021 14:00:36 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Active Directory Exploitation Cheat Sheet A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.
-This cheat sheet is inspired by the PayloadAllTheThings repo.
-Summary  Active Directory Exploitation Cheat Sheet  Summary Tools Domain Enumeration  Using PowerView Using AD Module Using BloodHound Useful Enumeration Tools   Local Privilege Escalation  Useful Local Priv Esc Tools   Lateral Movement  Powershell Remoting Remote Code Execution with PS Credentials Import a powershell module and execute its functions remotely Executing Remote Stateful commands Mimikatz Useful Tools   Domain Privilege Escalation  Kerberoast ASREPRoast Password Spray Attack Force Set SPN Abusing Shadow Copies List and Decrypt Stored Credentials using Mimikatz Unconstrained Delegation Constrained Delegation Resource Based Constrained Delegation DNSAdmins Abuse Abusing Active Directory-Integraded DNS Abusing Backup Operators Group Abusing Exchange Weaponizing Printer Bug Abusing ACLs Abusing IPv6 with mitm6 SID History Abuse Exploiting SharePoint Zerologon Exploit   Domain Persistence  Golden Ticket Attack DCsync Attack Silver Ticket Attack Skeleton Key Attack DSRM Abuse Custom SSP   Cross Forest Attacks  Trust Tickets Abuse MSSQL Servers Breaking Forest Trusts      Tools  Powersploit PowerUpSQL Powermad Impacket Mimikatz Rubeus -&amp;gt; Compiled Version BloodHound AD Module ASREPRoast  Domain Enumeration Using PowerView Powerview v.</description>
+      <description>&lt;h1 id=&#34;active-directory-exploitation-cheat-sheet&#34;&gt;Active Directory Exploitation Cheat Sheet&lt;/h1&gt;
+&lt;p&gt;A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.&lt;/p&gt;
+&lt;p&gt;This cheat sheet is inspired by the &lt;a href=&#34;https://github.com/swisskyrepo/PayloadsAllTheThings&#34;&gt;PayloadAllTheThings&lt;/a&gt; repo.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet/master/WalkTheDog.png&#34; alt=&#34;Just Walking The Dog&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#active-directory-exploitation-cheat-sheet&#34;&gt;Active Directory Exploitation Cheat Sheet&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tools&#34;&gt;Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#domain-enumeration&#34;&gt;Domain Enumeration&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#using-powerview&#34;&gt;Using PowerView&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#using-ad-module&#34;&gt;Using AD Module&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#using-bloodhound&#34;&gt;Using BloodHound&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#useful-enumeration-tools&#34;&gt;Useful Enumeration Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#local-privilege-escalation&#34;&gt;Local Privilege Escalation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#useful-local-priv-esc-tools&#34;&gt;Useful Local Priv Esc Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#lateral-movement&#34;&gt;Lateral Movement&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#powershell-remoting&#34;&gt;Powershell Remoting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#remote-code-execution-with-ps-credentials&#34;&gt;Remote Code Execution with PS Credentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#import-a-powershell-module-and-execute-its-functions-remotely&#34;&gt;Import a powershell module and execute its functions remotely&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#executing-remote-stateful-commands&#34;&gt;Executing Remote Stateful commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#mimikatz&#34;&gt;Mimikatz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#useful-tools&#34;&gt;Useful Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#domain-privilege-escalation&#34;&gt;Domain Privilege Escalation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#kerberoast&#34;&gt;Kerberoast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#asreproast&#34;&gt;ASREPRoast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#password-spray-attack&#34;&gt;Password Spray Attack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#force-set-spn&#34;&gt;Force Set SPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#abusing-shadow-copies&#34;&gt;Abusing Shadow Copies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#list-and-decrypt-stored-credentials-using-mimikatz&#34;&gt;List and Decrypt Stored Credentials using Mimikatz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#unconstrained-delegation&#34;&gt;Unconstrained Delegation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#constrained-delegation&#34;&gt;Constrained Delegation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#resource-based-constrained-delegation&#34;&gt;Resource Based Constrained Delegation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dnsadmins-abuse&#34;&gt;DNSAdmins Abuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#abusing-active-directory-integraded-dns&#34;&gt;Abusing Active Directory-Integraded DNS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#abusing-backup-operators-group&#34;&gt;Abusing Backup Operators Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#abusing-exchange&#34;&gt;Abusing Exchange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#weaponizing-printer-bug&#34;&gt;Weaponizing Printer Bug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#abusing-acls&#34;&gt;Abusing ACLs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#abusing-ipv6-with-mitm6&#34;&gt;Abusing IPv6 with mitm6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sid-history-abuse&#34;&gt;SID History Abuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#exploiting-sharepoint&#34;&gt;Exploiting SharePoint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#zerologon-exploit&#34;&gt;Zerologon Exploit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#domain-persistence&#34;&gt;Domain Persistence&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#golden-ticket-attack&#34;&gt;Golden Ticket Attack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dcsync-attack&#34;&gt;DCsync Attack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#silver-ticket-attack&#34;&gt;Silver Ticket Attack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#skeleton-key-attack&#34;&gt;Skeleton Key Attack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dsrm-abuse&#34;&gt;DSRM Abuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#custom-ssp&#34;&gt;Custom SSP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cross-forest-attacks&#34;&gt;Cross Forest Attacks&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#trust-tickets&#34;&gt;Trust Tickets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#abuse-mssql-servers&#34;&gt;Abuse MSSQL Servers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#breaking-forest-trusts&#34;&gt;Breaking Forest Trusts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PowerShellMafia/PowerSploit/tree/dev&#34;&gt;Powersploit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NetSPI/PowerUpSQL&#34;&gt;PowerUpSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Kevin-Robertson/Powermad&#34;&gt;Powermad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SecureAuthCorp/impacket&#34;&gt;Impacket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gentilkiwi/mimikatz&#34;&gt;Mimikatz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/GhostPack/Rubeus&#34;&gt;Rubeus&lt;/a&gt; -&amp;gt; &lt;a href=&#34;https://github.com/r3motecontrol/Ghostpack-CompiledBinaries&#34;&gt;Compiled Version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/BloodHoundAD/BloodHound&#34;&gt;BloodHound&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/samratashok/ADModule&#34;&gt;AD Module&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/HarmJ0y/ASREPRoast&#34;&gt;ASREPRoast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;domain-enumeration&#34;&gt;Domain Enumeration&lt;/h2&gt;
+&lt;h3 id=&#34;using-powerview&#34;&gt;Using PowerView&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1&#34;&gt;Powerview v.3.0&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://powersploit.readthedocs.io/en/latest/&#34;&gt;Powerview Wiki&lt;/a&gt;&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</link>
+      <link>http://localhost:1313/post/active-directory-exploitation-cheat-sheet/</link>
     
     </item>
    
@@ -98,10 +224,14 @@ Summary  Active Directory Exploitation Cheat Sheet  Summary Tools Domain Enumera
       <pubDate>Sun, 25 Apr 2021 20:20:59 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>OSI Model Explained Packet Details You can double click on a packet in capture to open its details. Packets consist of 5 to 7 layers based on the OSI model. We will go over all of them in an HTTP packet from a sample capture
-Looking above we can see 7 distinct layers to the packet: frame/packet, source [MAC], source [IP], protocol, protocol errors, application protocol, and application data. Below we will go over the layers in more detail.</description>
+      <description>&lt;h1 id=&#34;osi-model-explained&#34;&gt;OSI Model Explained&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/r4SjjLc.png&#34; alt=&#34;OSI Model&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;packet-details&#34;&gt;Packet Details&lt;/h2&gt;
+&lt;p&gt;You can double click on a packet in capture to open its details. Packets consist of 5 to 7 layers based on the OSI model. We will go over all of them in an HTTP packet from a sample capture&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/7t17lRS.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Looking above we can see 7 distinct layers to the packet: frame/packet, source [MAC], source [IP], protocol, protocol errors, application protocol, and application data. Below we will go over the layers in more detail.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/notes-osimodel-explained/</link>
+      <link>http://localhost:1313/post/notes-osimodel-explained/</link>
     
     </item>
    
@@ -112,11 +242,46 @@ Looking above we can see 7 distinct layers to the packet: frame/packet, source [
       <pubDate>Wed, 21 Apr 2021 20:01:52 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>OSI Model OverView  The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&amp;rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.
- The OSI model consists of seven layers:
-   Layers     Application   presentation   session   transport   Network   Data Link   Physical      There are many mnemonics floating around to help you learn the layers of the OSI model &amp;ndash; search around until you find one that you like.</description>
+      <description>&lt;h1 id=&#34;osi-model-overview&#34;&gt;OSI Model OverView&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&amp;rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The OSI model consists of seven layers:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Layers&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Application&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;presentation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;session&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;transport&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Network&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Data Link&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Physical&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are many mnemonics floating around to help you learn the layers of the OSI model &amp;ndash; search around until you find one that you like.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/notes-osimodel/</link>
+      <link>http://localhost:1313/post/notes-osimodel/</link>
     
     </item>
    
@@ -127,10 +292,13 @@ Looking above we can see 7 distinct layers to the packet: frame/packet, source [
       <pubDate>Wed, 21 Apr 2021 17:47:23 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Steganography - A list of useful tools and resources Steganography Steganography is hiding a file or a message inside of another file , there are many fun steganography CTF challenges out there where the flag is hidden in an image , audio file or even other types of files. Here is a list of the most tools I use and some other useful resources.
- Note : This list will be updated regularly , feel free to pm if you have any suggestions</description>
+      <description>&lt;h1 id=&#34;steganography---a-list-of-useful-tools-and-resources&#34;&gt;Steganography - A list of useful tools and resources&lt;/h1&gt;
+&lt;p&gt;Steganography
+Steganography is hiding a file or a message inside of another file , there are many fun steganography CTF challenges out there where the flag is hidden in an image , audio file or even other types of files. Here is a list of the most tools I use and some other useful resources.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note : This list will be updated regularly , feel free to pm if you have any suggestions&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/notes-stego/</link>
+      <link>http://localhost:1313/post/notes-stego/</link>
     
     </item>
    
@@ -141,10 +309,17 @@ Looking above we can see 7 distinct layers to the packet: frame/packet, source [
       <pubDate>Wed, 07 Apr 2021 15:25:21 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>WRITING METERPRETER SCRIPTS There are a few things you need to keep in mind when creating a new Meterpreter script.
- Not all versions of Windows are the same Some versions of Windows have security countermeasures for some of the commands Not all command line tools are in all versions of Windows Some of the command line tools switches vary depending on the version of Windows  For our purposes, we are going to create a stand alone binary that will be run on the target system that will create a reverse Meterpreter shell back to us.</description>
+      <description>&lt;h1 id=&#34;writing-meterpreter-scripts&#34;&gt;WRITING METERPRETER SCRIPTS&lt;/h1&gt;
+&lt;p&gt;There are a few things you need to keep in mind when creating a new Meterpreter script.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Not all versions of Windows are the same&lt;/li&gt;
+&lt;li&gt;Some versions of Windows have security countermeasures for some of the commands&lt;/li&gt;
+&lt;li&gt;Not all command line tools are in all versions of Windows&lt;/li&gt;
+&lt;li&gt;Some of the command line tools switches vary depending on the version of Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For our purposes, we are going to create a stand alone binary that will be run on the target system that will create a reverse Meterpreter shell back to us. This will rule out any problems with an exploit as we work through our script development.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/msf-runscript/</link>
+      <link>http://localhost:1313/post/msf-runscript/</link>
     
     </item>
    
@@ -155,11 +330,14 @@ Looking above we can see 7 distinct layers to the packet: frame/packet, source [
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Vulnerability Assessment and Penetration Testing (VAPT) Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.
-Vulnerability Assessment focuses on internal organizational security, while Penetration Testing focuses on external real-world risk.
-What is Vulnerability Assessment (VA)? A Vulnerability Assessment is a rapid automated review of network devices, servers and systems to identify key vulnerabilities and configuration issues that an attacker may be able to take advantage off.</description>
+      <description>&lt;h1 id=&#34;vulnerability-assessment-and-penetration-testing-vapt&#34;&gt;Vulnerability Assessment and Penetration Testing (VAPT)&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/anir0y/cdn/main/vapt.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.&lt;/p&gt;
+&lt;p&gt;Vulnerability Assessment focuses on internal organizational security, while Penetration Testing focuses on external real-world risk.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-vulnerability-assessment-va&#34;&gt;What is Vulnerability Assessment (VA)?&lt;/h3&gt;
+&lt;p&gt;A Vulnerability Assessment is a rapid automated review of network devices, servers and systems to identify key vulnerabilities and configuration issues that an attacker may be able to take advantage off. Its generally conducted within the network on internal devices and due to its low footprint can be carried out as often as every day.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/intro-vapt/</link>
+      <link>http://localhost:1313/post/intro-vapt/</link>
     
     </item>
    
@@ -170,9 +348,114 @@ What is Vulnerability Assessment (VA)? A Vulnerability Assessment is a rapid aut
       <pubDate>Sat, 12 Sep 2020 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Online Links    Name Links     One Note Online   Agenda PDF   WhatsApp Group Join       For Any technical Help : classroom@anir0y.inFor other Quries, please contact Support team. Progress    Date Topic Tasks(optional) Status     SEP 7 Introdution Day -01 Completed   Sep 14 OS Day -02 Completed   Sep 15 Info Sec Day -03 Completed   Sep 17 Risk Management Day -04 Completed         EOF EOF EOF EOF       Topic Link     IP address https://tools.</description>
+      <description>&lt;h1 id=&#34;online-links&#34;&gt;Online Links&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Links&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;One Note&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/u/s!AjGfb2ZCIBDrsWV0GhT1o3BkMyXO&#34;&gt;Online&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Agenda&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/b/s!AjGfb2ZCIBDrsXTiW86PvlOnbkYz?e=9qXkEi&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;WhatsApp Group&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://chat.whatsapp.com/CYnq94GcjFJIjIaccfbE2k&#34;&gt;Join &lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; For Any technical Help : classroom@anir0y.in
+ For other Quries, please contact Support team.
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;progress&#34;&gt;Progress&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Date&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Topic&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Tasks(optional)&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Status&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SEP 7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Introdution&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Day -01&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Completed&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sep 14&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;OS&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Day -02&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Completed&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sep 15&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Info Sec&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Day -03&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Completed&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sep 17&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Risk Management&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Day -04&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Completed&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;EOF&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;EOF&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;&lt;code&gt;EOF&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;&lt;code&gt;EOF&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Topic&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IP address&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://tools.ietf.org/html/rfc791#ref-1&#34;&gt;https://tools.ietf.org/html/rfc791#ref-1&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Network Forensic&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cyberdefenders.org/&#34;&gt;https://cyberdefenders.org/&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IETF&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.ietf.org/standards/&#34;&gt;https://www.ietf.org/standards/&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CEH&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://arishti.live/ceh/&#34;&gt;https://arishti.live/ceh/&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;NEtwork sec&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.comptia.org/certifications/network&#34;&gt;https://www.comptia.org/certifications/network&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</link>
+      <link>http://localhost:1313/post/2020-08-07-smartknowner-sep/</link>
     
     </item>
    
@@ -183,10 +466,69 @@ What is Vulnerability Assessment (VA)? A Vulnerability Assessment is a rapid aut
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>+++ title = &amp;ldquo;SmartKnowner: AUG Batch! &amp;quot; description = &amp;ldquo;Smartknowner cybersecurity internship&amp;rdquo; tags = [ &amp;ldquo;Classroom&amp;rdquo;, &amp;ldquo;learning&amp;rdquo;, ] date= &amp;ldquo;12 Aug 2020&amp;rdquo; categories = [ &amp;ldquo;Classroom&amp;rdquo;, ] image = &amp;ldquo;fast-lane.jpg&amp;rdquo; +++
-Hello, Links to our classroom will be available here.    Name Links     One Note Weblink   Agenda download pdf   WhatsApp Group Join Here     Progress  [√]Session Start [√] Installation of VM  Download VM  Oracle Virtual Box Vmware   OS download  Kali Win7 ubuntu   Networking   [√] Minor Project : Download here [0] Major Project  </description>
+      <description>&lt;p&gt;+++
+title = &amp;ldquo;SmartKnowner: AUG Batch! &amp;quot;
+description = &amp;ldquo;Smartknowner cybersecurity internship&amp;rdquo;
+tags = [
+&amp;ldquo;Classroom&amp;rdquo;,
+&amp;ldquo;learning&amp;rdquo;,
+]
+date= &amp;ldquo;12 Aug 2020&amp;rdquo;
+categories = [
+&amp;ldquo;Classroom&amp;rdquo;,
+]
+image = &amp;ldquo;fast-lane.jpg&amp;rdquo;
++++&lt;/p&gt;
+&lt;h4 id=&#34;hello-links-to-our-classroom-will-be-available-here&#34;&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Links&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;One Note&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/u/s!AjGfb2ZCIBDrsH6rlJEY3c1F56Zx&#34;&gt;Weblink&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Agenda&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/b/s!AjGfb2ZCIBDrsH2mgTjIE4BLAIF3&#34;&gt;download pdf&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;WhatsApp Group&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;#&#34;&gt;Join Here&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;progress&#34;&gt;Progress&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;[√]Session Start&lt;/li&gt;
+&lt;li&gt;[√] Installation of VM
+&lt;ul&gt;
+&lt;li&gt;Download VM
+&lt;ul&gt;
+&lt;li&gt;Oracle Virtual Box&lt;/li&gt;
+&lt;li&gt;Vmware&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OS download
+&lt;ul&gt;
+&lt;li&gt;Kali&lt;/li&gt;
+&lt;li&gt;Win7&lt;/li&gt;
+&lt;li&gt;ubuntu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Networking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[√] Minor Project : Download &lt;a href=&#34;https://1drv.ms/b/s!AjGfb2ZCIBDrsi5EmFWVNg4mPIgI?e=HchT53s&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[0] Major Project&lt;/li&gt;
+&lt;/ul&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</link>
+      <link>http://localhost:1313/post/2020-08-07-smartknowner-aug/</link>
     
     </item>
    
@@ -197,9 +539,56 @@ Hello, Links to our classroom will be available here.    Name Links     One Note
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Hello, Links to our classroom will be available here.    Name Links     One Note Weblink   Agenda download pdf   WhatsApp Group Join Here     Progress  Session Start [0] Installation of VM  Download VM  Oracle Virtual Box Vmware   OS download  Kali Win7 ubuntu   Networking   [0] Minor Project [0] Major Project  </description>
+      <description>&lt;h4 id=&#34;hello-links-to-our-classroom-will-be-available-here&#34;&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Links&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;One Note&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/u/s!AjGfb2ZCIBDrsGuTv4IKhMMeYCiV&#34;&gt;Weblink&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Agenda&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;#&#34;&gt;download pdf&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;WhatsApp Group&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://chat.whatsapp.com/HmQHXODwN8P3mdiTRYuR4l&#34;&gt;Join Here&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;progress&#34;&gt;Progress&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Session Start&lt;/li&gt;
+&lt;li&gt;[0] Installation of VM
+&lt;ul&gt;
+&lt;li&gt;Download VM
+&lt;ul&gt;
+&lt;li&gt;Oracle Virtual Box&lt;/li&gt;
+&lt;li&gt;Vmware&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OS download
+&lt;ul&gt;
+&lt;li&gt;Kali&lt;/li&gt;
+&lt;li&gt;Win7&lt;/li&gt;
+&lt;li&gt;ubuntu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Networking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[0] Minor Project&lt;/li&gt;
+&lt;li&gt;[0] Major Project&lt;/li&gt;
+&lt;/ul&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</link>
+      <link>http://localhost:1313/post/2020-08-07-verzeo-aug/</link>
     
     </item>
    
@@ -210,9 +599,56 @@ Hello, Links to our classroom will be available here.    Name Links     One Note
       <pubDate>Sun, 12 Jul 2020 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Hello, Links to our classroom will be available here.    Name Links     One Note Weblink   Agenda download pdf   WhatsApp Group Join Here     Progress  Session Start Installation of VM  Download VM  Oracle Virtual Box Vmware   OS download  Kali Win7 ubuntu   Networking   [0] Minor Project [0] Major Project  </description>
+      <description>&lt;h4 id=&#34;hello-links-to-our-classroom-will-be-available-here&#34;&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Links&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;One Note&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/u/s!AjGfb2ZCIBDrsDi0nsYqvmLMQGsO&#34;&gt;Weblink&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Agenda&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;#&#34;&gt;download pdf&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;WhatsApp Group&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;#&#34;&gt;Join Here&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;progress&#34;&gt;Progress&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Session Start&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Installation of VM
+&lt;ul&gt;
+&lt;li&gt;Download VM
+&lt;ul&gt;
+&lt;li&gt;Oracle Virtual Box&lt;/li&gt;
+&lt;li&gt;Vmware&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OS download
+&lt;ul&gt;
+&lt;li&gt;Kali&lt;/li&gt;
+&lt;li&gt;Win7&lt;/li&gt;
+&lt;li&gt;ubuntu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Networking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[0] Minor Project&lt;/li&gt;
+&lt;li&gt;[0] Major Project&lt;/li&gt;
+&lt;/ul&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</link>
+      <link>http://localhost:1313/post/2020-08-07-smartknowner-july/</link>
     
     </item>
    
@@ -223,9 +659,60 @@ Hello, Links to our classroom will be available here.    Name Links     One Note
       <pubDate>Tue, 07 Jul 2020 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Hello, Links to our classroom will be available here.    Name Links     One Note Weblink   Agenda download pdf   One Drive Web Link   Minor Project Download     Progress  Session Start Installation of VM  Download VM  Oracle Virtual Box Vmware   OS download  Kali Win7 ubuntu   Networking   Minor Project : Download [0] Major Project  </description>
+      <description>&lt;h4 id=&#34;hello-links-to-our-classroom-will-be-available-here&#34;&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Links&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;One Note&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/u/s!AjGfb2ZCIBDrsB2i-w51Esb8DW8c?e=nWDGpn&#34;&gt;Weblink&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Agenda&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;#&#34;&gt;download pdf&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;One Drive&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/u/s!AjGfb2ZCIBDrsBxBA91FQhRVByB4?e=EcQkkP&#34;&gt;Web Link&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Minor Project&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://1drv.ms/b/s!AjGfb2ZCIBDrsRU0ZB2Bm1t93GGX?e=MClIpH&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;progress&#34;&gt;Progress&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Session Start&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Installation of VM
+&lt;ul&gt;
+&lt;li&gt;Download VM
+&lt;ul&gt;
+&lt;li&gt;Oracle Virtual Box&lt;/li&gt;
+&lt;li&gt;Vmware&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OS download
+&lt;ul&gt;
+&lt;li&gt;Kali&lt;/li&gt;
+&lt;li&gt;Win7&lt;/li&gt;
+&lt;li&gt;ubuntu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Networking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Minor Project : &lt;a href=&#34;https://1drv.ms/b/s!AjGfb2ZCIBDrsRU0ZB2Bm1t93GGX?e=MClIpH&#34;&gt;Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[0] Major Project&lt;/li&gt;
+&lt;/ul&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/2020-07-07-verzeo-july/</link>
+      <link>http://localhost:1313/post/2020-07-07-verzeo-july/</link>
     
     </item>
    

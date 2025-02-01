@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room The find command solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-thefindcommand/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-thefindcommand/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,29 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-thefindcommand/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-thefindcommand/" />
 
 
-<meta property="og:title" content="TryHackMe The find command" />
-<meta property="og:description" content="TryHackMe Room The find command solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-thefindcommand/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-07-12T23:17:35+05:30" />
-<meta property="article:modified_time" content="2021-07-12T23:17:35+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-thefindcommand/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe The find command">
+  <meta property="og:description" content="TryHackMe Room The find command solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-07-12T23:17:35+05:30">
+    <meta property="article:modified_time" content="2021-07-12T23:17:35+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Rooms">
+    <meta property="article:tag" content="Thm">
+    <meta property="article:tag" content="Thefindcommand">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe The find command"/>
-<meta name="twitter:description" content="TryHackMe Room The find command solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe The find command">
+  <meta name="twitter:description" content="TryHackMe Room The find command solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +172,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -214,10 +233,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20The%20find%20command&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-thefindcommand%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20The%20find%20command&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-thefindcommand%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-thefindcommand%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-thefindcommand%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -251,22 +270,22 @@
 
       <article class="main"><h2 id="overview">Overview</h2>
 <table>
-<thead>
-<tr>
-<th>The find command</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/user-avatars/af7feb2c43a2c7d5f111b98ccbd15048.png" alt="logo"></td>
-<td><a href="https://tryhackme.com/room/thefindcommand"><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c237d2dc14b96182f5ecb7c02a2b58b8.png" alt="logo"></a></td>
-</tr>
-<tr>
-<td>Solved by</td>
-<td><a href="https://anir0y.in">@anir0y</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>The find command</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><img src="https://tryhackme-images.s3.amazonaws.com/user-avatars/af7feb2c43a2c7d5f111b98ccbd15048.png" alt="logo"></td>
+          <td><a href="https://tryhackme.com/room/thefindcommand"><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c237d2dc14b96182f5ecb7c02a2b58b8.png" alt="logo"></a></td>
+      </tr>
+      <tr>
+          <td>Solved by</td>
+          <td><a href="https://anir0y.in">@anir0y</a></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-01-start-finding">Task 01: Start finding</h2>
@@ -378,7 +397,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -589,7 +608,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

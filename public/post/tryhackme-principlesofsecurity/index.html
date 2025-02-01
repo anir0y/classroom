@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room Principles of Security solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-principlesofsecurity/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-principlesofsecurity/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,25 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-principlesofsecurity/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-principlesofsecurity/" />
 
 
-<meta property="og:title" content="TryHackMe Principles of Security" />
-<meta property="og:description" content="TryHackMe Room Principles of Security solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-principlesofsecurity/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-09-09T14:23:47+05:30" />
-<meta property="article:modified_time" content="2021-09-09T14:23:47+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-principlesofsecurity/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe Principles of Security">
+  <meta property="og:description" content="TryHackMe Room Principles of Security solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-09-09T14:23:47+05:30">
+    <meta property="article:modified_time" content="2021-09-09T14:23:47+05:30">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe Principles of Security"/>
-<meta name="twitter:description" content="TryHackMe Room Principles of Security solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe Principles of Security">
+  <meta name="twitter:description" content="TryHackMe Room Principles of Security solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +168,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -215,10 +230,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Principles%20of%20Security&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-principlesofsecurity%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Principles%20of%20Security&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-principlesofsecurity%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-principlesofsecurity%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-principlesofsecurity%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -252,26 +267,26 @@
 
       <article class="main"><h2 id="overview">OverView</h2>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><script src="https://tryhackme.com/badge/434937"></script></td>
-<td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
-</tr>
-<tr>
-<td>Principles of Security</td>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/6c678e92fe6d0da58f691d94c4cacbe5.png" alt="logo"></td>
-</tr>
-<tr>
-<td><b> Room [Free] </b></td>
-<td><a href="https://tryhackme.com/room/principlesofsecurity">Principles of Security</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><script src="https://tryhackme.com/badge/434937"></script></td>
+          <td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
+      </tr>
+      <tr>
+          <td>Principles of Security</td>
+          <td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/6c678e92fe6d0da58f691d94c4cacbe5.png" alt="logo"></td>
+      </tr>
+      <tr>
+          <td><b> Room [Free] </b></td>
+          <td><a href="https://tryhackme.com/room/principlesofsecurity">Principles of Security</a></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="introduction">Introduction</h2>
 <p>The following room is going to outline some of the fundamental principles of information security. The frameworks used to protect data and systems to the elements of what exactly makes data secure.</p>
@@ -302,26 +317,26 @@
 </ul>
 <h3 id="02-flags">02-Flags</h3>
 <table>
-<thead>
-<tr>
-<th>Answer the questions below</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What element of the CIA triad ensures that data cannot be altered by unauthorised people?</td>
-<td><code>Integrity</code></td>
-</tr>
-<tr>
-<td>What element of the CIA triad ensures that data is available?</td>
-<td><code>Availability</code></td>
-</tr>
-<tr>
-<td>What element of the CIA triad ensures that data is only accessed by authorised people?</td>
-<td><code>Confidentiality</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Answer the questions below</th>
+          <th>ans</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>What element of the CIA triad ensures that data cannot be altered by unauthorised people?</td>
+          <td><code>Integrity</code></td>
+      </tr>
+      <tr>
+          <td>What element of the CIA triad ensures that data is available?</td>
+          <td><code>Availability</code></td>
+      </tr>
+      <tr>
+          <td>What element of the CIA triad ensures that data is only accessed by authorised people?</td>
+          <td><code>Confidentiality</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h3 id="03-principles-of-privileges">03: Principles of Privileges</h3>
@@ -337,30 +352,30 @@
 <p>As we previously mentioned, PAM incorporates more than assigning access. It also encompasses enforcing security policies such as password management, auditing policies and reducing the attack surface a system faces.</p>
 <h3 id="03-flags">03-Flags</h3>
 <table>
-<thead>
-<tr>
-<th>Answer the questions below</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What does the acronym &ldquo;PIM&rdquo; stand for?</td>
-<td><code>Privileged Identity Management</code></td>
-</tr>
-<tr>
-<td>What does the acronym &ldquo;PAM&rdquo; stand for?</td>
-<td><code>Privileged Access Management</code></td>
-</tr>
-<tr>
-<td>If you wanted to manage the privileges a system access role had, what methodology would you use?</td>
-<td><code>PAM</code></td>
-</tr>
-<tr>
-<td>If you wanted to create a system role that is based on a users role/responsibilities with an organisation, what methodology is this?</td>
-<td><code>PIM</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Answer the questions below</th>
+          <th>ans</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>What does the acronym &ldquo;PIM&rdquo; stand for?</td>
+          <td><code>Privileged Identity Management</code></td>
+      </tr>
+      <tr>
+          <td>What does the acronym &ldquo;PAM&rdquo; stand for?</td>
+          <td><code>Privileged Access Management</code></td>
+      </tr>
+      <tr>
+          <td>If you wanted to manage the privileges a system access role had, what methodology would you use?</td>
+          <td><code>PAM</code></td>
+      </tr>
+      <tr>
+          <td>If you wanted to create a system role that is based on a users role/responsibilities with an organisation, what methodology is this?</td>
+          <td><code>PIM</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <!-- Google Ads -->
@@ -384,22 +399,22 @@ data-ad-slot="7160066188"></ins></p>
 <p>The Bell-La Padula Model is used to achieve confidentiality. This model has a few assumptions, such as an organisation&rsquo;s hierarchical structure it is used in, where everyone&rsquo;s responsibilities/roles are well-defined.</p>
 <p>The model works by granting access to pieces of data (called objects) on a strictly need to know basis. This model uses the rule &ldquo;no write down, no read up&rdquo;.</p>
 <table>
-<thead>
-<tr>
-<th>Advantages</th>
-<th>Disadvantages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Policies in this model can be replicated to real-life organisations hierarchies (and vice versa)</td>
-<td>Even though a user may not have access to an object, they will know about its existence &ndash; so it&rsquo;s not confidential in that aspect.</td>
-</tr>
-<tr>
-<td>Simple to implement and understand, and has been proven to be successful.</td>
-<td>The model relies on a large amount of trust within the organisation.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Advantages</th>
+          <th>Disadvantages</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Policies in this model can be replicated to real-life organisations hierarchies (and vice versa)</td>
+          <td>Even though a user may not have access to an object, they will know about its existence &ndash; so it&rsquo;s not confidential in that aspect.</td>
+      </tr>
+      <tr>
+          <td>Simple to implement and understand, and has been proven to be successful.</td>
+          <td>The model relies on a large amount of trust within the organisation.</td>
+      </tr>
+  </tbody>
 </table>
 <p><img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5de96d9ca744773ea7ef8c00/room-content/0e6e5d9d80785fc287b4a67e1453b295.png" alt="img"></p>
 <p>The Bell LaPadula Model is popular within organisations such as governmental and military. This is because members of the organisations are presumed to have already gone through a process called vetting. Vetting is a screening process where applicant&rsquo;s backgrounds are examined to establish the risk they pose to the organisation. Therefore, applicants who are successfully vetted are assumed to be trustworthy - which is where this model fits in.</p>
@@ -408,51 +423,51 @@ data-ad-slot="7160066188"></ins></p>
 <p>This model applies the rule to objects (data) and subjects (users) that can be summarised as &ldquo;no write up, no read down&rdquo;. This rule means that subjects can create or write content to objects at or below their level but can only read the contents of objects above the subject&rsquo;s level.</p>
 <p>Let&rsquo;s compare some advantages and disadvantages of this model in the table below:</p>
 <table>
-<thead>
-<tr>
-<th>Advantages</th>
-<th>Disadvantages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>This model is simple to implement.</td>
-<td>There will be many levels of access and objects. Things can be easily overlooked when applying security controls</td>
-</tr>
-<tr>
-<td>Resolves the limitations of the Bell-La Padula model by addressing both confidentiality and data integrity</td>
-<td>Often results in delays within a business. For example, a doctor would not be able to read the notes made by a nurse in a hospital with this model</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Advantages</th>
+          <th>Disadvantages</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>This model is simple to implement.</td>
+          <td>There will be many levels of access and objects. Things can be easily overlooked when applying security controls</td>
+      </tr>
+      <tr>
+          <td>Resolves the limitations of the Bell-La Padula model by addressing both confidentiality and data integrity</td>
+          <td>Often results in delays within a business. For example, a doctor would not be able to read the notes made by a nurse in a hospital with this model</td>
+      </tr>
+  </tbody>
 </table>
 <p><img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5de96d9ca744773ea7ef8c00/room-content/895ba351ef24ef6495d290222e49470e.png" alt="img"></p>
 <p>The Biba model is used in organisations or situations where integrity is more important than confidentiality. For example, in software development, developers may only have access to the code that is necessary for their job. They may not need access to critical pieces of information such as databases, etc.</p>
 <h3 id="04-flags">04-Flags</h3>
 <table>
-<thead>
-<tr>
-<th>Answer the questions below</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What is the name of the model that uses the rule &ldquo;can&rsquo;t read up, can read down&rdquo;</td>
-<td><code>The Bell-La Padula Model</code></td>
-</tr>
-<tr>
-<td>What is the name of the model that uses the rule &ldquo;can read up, can&rsquo;t read down&rdquo;?</td>
-<td><code>the Biba Model</code></td>
-</tr>
-<tr>
-<td>If you were a military, what security model would you use?</td>
-<td><code>The Bell-La Padula Model</code></td>
-</tr>
-<tr>
-<td>If you were a software developer, what security model would the company perhaps use?</td>
-<td><code>the Biba Model</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Answer the questions below</th>
+          <th>ans</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>What is the name of the model that uses the rule &ldquo;can&rsquo;t read up, can read down&rdquo;</td>
+          <td><code>The Bell-La Padula Model</code></td>
+      </tr>
+      <tr>
+          <td>What is the name of the model that uses the rule &ldquo;can read up, can&rsquo;t read down&rdquo;?</td>
+          <td><code>the Biba Model</code></td>
+      </tr>
+      <tr>
+          <td>If you were a military, what security model would you use?</td>
+          <td><code>The Bell-La Padula Model</code></td>
+      </tr>
+      <tr>
+          <td>If you were a software developer, what security model would the company perhaps use?</td>
+          <td><code>the Biba Model</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="05-threat-modelling--incident-response">05: Threat Modelling &amp; Incident Response</h2>
@@ -475,103 +490,103 @@ data-ad-slot="7160066188"></ins></p>
 </ul>
 <p>To help with this, there are frameworks such as STRIDE (Spoofing, identity, Tampering with data, Repudiation threats, Information disclosure, Denial of Service and Elevation of privileges) and PASTA (Process for Attack Simulation and Threat Analysis) infosec never tasted so good!. Let&rsquo;s detail STRIDE below. STRIDE, authored by two Microsoft security researchers in 1999 is still very relevant today. STRIDE includes six main principles, which I have detailed in the table below:</p>
 <table>
-<thead>
-<tr>
-<th>Principle</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Spoofing</td>
-<td>This principle requires you to authenticate requests and users accessing a system. Spoofing involves a malicious party falsely identifying itself as another. Access keys (such as API keys) or signatures via encryption helps remediate this threat.</td>
-</tr>
-<tr>
-<td>Tampering</td>
-<td>By providing anti-tampering measures to a system or application, you help provide integrity to the data. Data that is accessed must be kept integral and accurate. For example, shops use seals on food products.</td>
-</tr>
-<tr>
-<td>Repudiation</td>
-<td>This principle dictates the use of services such as logging of activity for a system or application to track.</td>
-</tr>
-<tr>
-<td>Information Disclosure</td>
-<td>Applications or services that handle information of multiple users need to be appropriately configured to only show information relevant to the owner is shown.</td>
-</tr>
-<tr>
-<td>Denial of Service</td>
-<td>Applications and services use up system resources, these two things should have measures in place so that abuse of the application/service won&rsquo;t result in bringing the whole system down.</td>
-</tr>
-<tr>
-<td>Elevation of Privilege</td>
-<td>This is the worst-case scenario for an application or service. It means that a user was able to escalate their authorization to that of a higher level i.e. an administrator. This scenario often leads to further exploitation or information disclosure.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Principle</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Spoofing</td>
+          <td>This principle requires you to authenticate requests and users accessing a system. Spoofing involves a malicious party falsely identifying itself as another. Access keys (such as API keys) or signatures via encryption helps remediate this threat.</td>
+      </tr>
+      <tr>
+          <td>Tampering</td>
+          <td>By providing anti-tampering measures to a system or application, you help provide integrity to the data. Data that is accessed must be kept integral and accurate. For example, shops use seals on food products.</td>
+      </tr>
+      <tr>
+          <td>Repudiation</td>
+          <td>This principle dictates the use of services such as logging of activity for a system or application to track.</td>
+      </tr>
+      <tr>
+          <td>Information Disclosure</td>
+          <td>Applications or services that handle information of multiple users need to be appropriately configured to only show information relevant to the owner is shown.</td>
+      </tr>
+      <tr>
+          <td>Denial of Service</td>
+          <td>Applications and services use up system resources, these two things should have measures in place so that abuse of the application/service won&rsquo;t result in bringing the whole system down.</td>
+      </tr>
+      <tr>
+          <td>Elevation of Privilege</td>
+          <td>This is the worst-case scenario for an application or service. It means that a user was able to escalate their authorization to that of a higher level i.e. an administrator. This scenario often leads to further exploitation or information disclosure.</td>
+      </tr>
+  </tbody>
 </table>
 <p>A breach of security is known as an incident. And despite all rigorous threat models and secure system designs, incidents do happen. Actions taken to resolve and remediate the threat are known as Incident Response (IR) and are a whole career path in cybersecurity.</p>
 <p>Incidents are classified using a rating of urgency and impact. Urgency will be determined by the type of attack faced, where the impact will be determined by the affected system and what impact that has on business operations.</p>
 <p><img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5de96d9ca744773ea7ef8c00/room-content/ab0cc8478b0bce9a400187f559d36dd6.png" alt="img"></p>
 <p>An incident is responded to by a Computer Security Incident Response Team (CSIRT) which is prearranged group of employees with technical knowledge about the systems and/or current incident. To successfully solve an incident, these steps are often referred to as the six phases of Incident Response that takes place, listed in the table below:</p>
 <table>
-<thead>
-<tr>
-<th>Action</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Preparation</td>
-<td>Do we have the resources and plans in place to deal with the security incident?</td>
-</tr>
-<tr>
-<td>Identification</td>
-<td>Has the threat and the threat actor been correctly identified in order for us to respond to?</td>
-</tr>
-<tr>
-<td>Containment</td>
-<td>Can the threat/security incident be contained to prevent other systems or users from being impacted?</td>
-</tr>
-<tr>
-<td>Eradication</td>
-<td>Remove the active threat.</td>
-</tr>
-<tr>
-<td>Recovery</td>
-<td>Perform a full review of the impacted systems to return to business as usual operations.</td>
-</tr>
-<tr>
-<td>Lessons Learned</td>
-<td>What can be learnt from the incident? I.e. if it was due to a phishing email, employees should be trained better to detect phishing emails.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Preparation</td>
+          <td>Do we have the resources and plans in place to deal with the security incident?</td>
+      </tr>
+      <tr>
+          <td>Identification</td>
+          <td>Has the threat and the threat actor been correctly identified in order for us to respond to?</td>
+      </tr>
+      <tr>
+          <td>Containment</td>
+          <td>Can the threat/security incident be contained to prevent other systems or users from being impacted?</td>
+      </tr>
+      <tr>
+          <td>Eradication</td>
+          <td>Remove the active threat.</td>
+      </tr>
+      <tr>
+          <td>Recovery</td>
+          <td>Perform a full review of the impacted systems to return to business as usual operations.</td>
+      </tr>
+      <tr>
+          <td>Lessons Learned</td>
+          <td>What can be learnt from the incident? I.e. if it was due to a phishing email, employees should be trained better to detect phishing emails.</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="05-flags">05-Flags</h3>
 <table>
-<thead>
-<tr>
-<th>Answer the questions below</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What model outlines &ldquo;Spoofing&rdquo;?</td>
-<td><code>STRIDE</code></td>
-</tr>
-<tr>
-<td>What does the acronym &ldquo;IR&rdquo; stand for?</td>
-<td><code>incident response</code></td>
-</tr>
-<tr>
-<td>You are tasked with adding some measures to an application to improve the integrity of data, what STRIDE principle is this?</td>
-<td><code>Tampering</code></td>
-</tr>
-<tr>
-<td>An attacker has penetrated your organisation&rsquo;s security and stolen data. It is your task to return the organisation to business as usual. What incident response stage is this?</td>
-<td><code>Recovery</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Answer the questions below</th>
+          <th>ans</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>What model outlines &ldquo;Spoofing&rdquo;?</td>
+          <td><code>STRIDE</code></td>
+      </tr>
+      <tr>
+          <td>What does the acronym &ldquo;IR&rdquo; stand for?</td>
+          <td><code>incident response</code></td>
+      </tr>
+      <tr>
+          <td>You are tasked with adding some measures to an application to improve the integrity of data, what STRIDE principle is this?</td>
+          <td><code>Tampering</code></td>
+      </tr>
+      <tr>
+          <td>An attacker has penetrated your organisation&rsquo;s security and stolen data. It is your task to return the organisation to business as usual. What incident response stage is this?</td>
+          <td><code>Recovery</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <!-- Google Ads -->
@@ -602,7 +617,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -813,7 +828,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

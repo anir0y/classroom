@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>urlshortner on Classroom</title>
-    <link>https://classroom.anir0y.in/tags/urlshortner/</link>
-    <description>Recent content in urlshortner on Classroom</description>
+    <title>Urlshortner on Classroom</title>
+    <link>http://localhost:1313/tags/urlshortner/</link>
+    <description>Recent content in Urlshortner on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sun, 13 Nov 2022 18:47:39 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/urlshortner/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Nov 2022 18:47:39 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/urlshortner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BLOG | Shorten URL using TinyURL API</title>
       <pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inimg/tinyURL.png" width="700" height="420"></media:content>
-      <description>OverView this is unsuall post on how to create short urls. in this post I&amp;rsquo;ll be usng tiny.url APIs.
-get the API from tinyurl.com signup to tinyurl.com and login to the dashboard, then click on API section and click on create API
-now you&amp;rsquo;ll have a API key!!!
-[optional] setup custom domain (FREE) click on branded domain setting, and create a domain, ref to image:
-Automation time Now, we have everything we need.</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
+&lt;p&gt;this is unsuall post on how to create short urls. in this post I&amp;rsquo;ll be usng tiny.url APIs.&lt;/p&gt;
+&lt;h2 id=&#34;get-the-api-from-tinyurlcom&#34;&gt;get the API from tinyurl.com&lt;/h2&gt;
+&lt;p&gt;signup to &lt;code&gt;tinyurl.com&lt;/code&gt; and login to the dashboard, then click on &lt;code&gt;API&lt;/code&gt; section and click on create API&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/FYBKFo5.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;now you&amp;rsquo;ll have a API key!!!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;optional-setup-custom-domain-free&#34;&gt;[optional] setup custom domain (FREE)&lt;/h2&gt;
+&lt;p&gt;click on branded domain setting, and create a domain, ref to image:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/fBpKa1l.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;automation-time&#34;&gt;Automation time&lt;/h2&gt;
+&lt;p&gt;Now, we have everything we need. so let&amp;rsquo;s download the script and add our &lt;code&gt;token&lt;/code&gt; and &lt;code&gt;branded domain&lt;/code&gt; name and call it a day.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.inimg/tinyURL.png"></enclosure>
-      <link>https://classroom.anir0y.in/post/tinyurl/</link>
+      <link>http://localhost:1313/post/tinyurl/</link>
     
     </item>
    

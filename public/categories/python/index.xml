@@ -2,22 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Classroom</title>
-    <link>https://classroom.anir0y.in/categories/python/</link>
+    <link>http://localhost:1313/categories/python/</link>
     <description>Recent content in Python on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sat, 03 Jul 2021 01:30:12 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jul 2021 01:30:12 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>python pip2 Install</title>
       <pubDate>Sat, 03 Jul 2021 01:30:12 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>PIP 2 installation in last few weeks I&amp;rsquo;ve seen people are asking for how to install pip2 in latest Kali linux, here is the answer. once installation is done, you can find it as pip2 and then you can use it to install pip2 i.e. python 2.7 modules.
-how to? download the script and run here is how:
-wget https://gist.githubusercontent.com/anir0y/a20246e26dcb2ebf1b44a0e1d989f5d1/raw/a9908e5dd147f0b6eb71ec51f9845fafe7fb8a7f/pip2%2520install -O run.sh chmod +x run.sh #wget will save the output as run.</description>
+      <description>&lt;h2 id=&#34;pip-2-installation&#34;&gt;PIP 2 installation&lt;/h2&gt;
+&lt;p&gt;in last few weeks I&amp;rsquo;ve seen people are asking for how to install pip2 in latest Kali linux, here is the answer. once installation is done, you can find it as &lt;code&gt;pip2&lt;/code&gt;
+and then you can use it to install &lt;code&gt;pip2&lt;/code&gt; i.e. &lt;code&gt;python 2.7&lt;/code&gt; modules.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/anir0y/a20246e26dcb2ebf1b44a0e1d989f5d1.js&#34;&gt;&lt;/script&gt;
+&lt;h3 id=&#34;how-to&#34;&gt;how to?&lt;/h3&gt;
+&lt;p&gt;download the script and run here is how:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://gist.githubusercontent.com/anir0y/a20246e26dcb2ebf1b44a0e1d989f5d1/raw/a9908e5dd147f0b6eb71ec51f9845fafe7fb8a7f/pip2%2520install -O run.sh 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chmod +x run.sh &lt;span style=&#34;color:#75715e&#34;&gt;#wget will save the output as run.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./run.sh &lt;span style=&#34;color:#75715e&#34;&gt;#execute to install the pip2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;wait till it shows, &amp;ldquo;DONE!&amp;rdquo;&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/pip2-install/</link>
+      <link>http://localhost:1313/post/pip2-install/</link>
     
     </item>
    

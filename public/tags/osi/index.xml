@@ -2,22 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OSI on Classroom</title>
-    <link>https://classroom.anir0y.in/tags/osi/</link>
+    <link>http://localhost:1313/tags/osi/</link>
     <description>Recent content in OSI on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 21 Apr 2021 20:01:52 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/osi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Apr 2021 20:01:52 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/osi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes OSIModel</title>
       <pubDate>Wed, 21 Apr 2021 20:01:52 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>OSI Model OverView  The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&amp;rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.
- The OSI model consists of seven layers:
-   Layers     Application   presentation   session   transport   Network   Data Link   Physical      There are many mnemonics floating around to help you learn the layers of the OSI model &amp;ndash; search around until you find one that you like.</description>
+      <description>&lt;h1 id=&#34;osi-model-overview&#34;&gt;OSI Model OverView&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&amp;rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The OSI model consists of seven layers:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Layers&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Application&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;presentation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;session&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;transport&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Network&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Data Link&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Physical&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are many mnemonics floating around to help you learn the layers of the OSI model &amp;ndash; search around until you find one that you like.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/notes-osimodel/</link>
+      <link>http://localhost:1313/post/notes-osimodel/</link>
     
     </item>
    

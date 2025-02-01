@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>openvas on Classroom</title>
-    <link>https://classroom.anir0y.in/tags/openvas/</link>
-    <description>Recent content in openvas on Classroom</description>
+    <title>Openvas on Classroom</title>
+    <link>http://localhost:1313/tags/openvas/</link>
+    <description>Recent content in Openvas on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Mon, 13 Sep 2021 23:16:16 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/openvas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Sep 2021 23:16:16 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/openvas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Openvas</title>
       <pubDate>Mon, 13 Sep 2021 23:16:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
-      <description>{{post_content}}
- 
-(adsbygoogle = window.adsbygoogle || []).push({});</description>
+      <description>&lt;p&gt;{{post_content}}&lt;/p&gt;
+&lt;hr&gt;
+&lt;!-- Google Ads --&gt;
+&lt;script async src=&#34;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;ins class=&#34;adsbygoogle&#34;
+style=&#34;display:block; text-align:center;&#34;
+data-ad-layout=&#34;in-article&#34;
+data-ad-format=&#34;fluid&#34;
+data-ad-client=&#34;ca-pub-3526678290068011&#34;
+data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;
+&lt;!-- END --&gt;
+&lt;script data-name=&#34;BMC-Widget&#34; data-cfasync=&#34;false&#34; src=&#34;https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js&#34; data-id=&#34;anir0y&#34; data-description=&#34;Support me on Buy me a coffee!&#34; data-message=&#34;&#34; data-color=&#34;#5F7FFF&#34; data-position=&#34;Right&#34; data-x_margin=&#34;18&#34; data-y_margin=&#34;18&#34;&gt;&lt;/script&gt;
+&lt;!-- EOF --&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
-      <link>https://classroom.anir0y.in/post/howto-install-openvas/</link>
+      <link>http://localhost:1313/post/howto-install-openvas/</link>
     
     </item>
    

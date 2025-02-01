@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-phishingyl/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-phishingyl/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,26 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-phishingyl/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-phishingyl/" />
 
 
-<meta property="og:title" content="Try Hack Me Phishing" />
-<meta property="og:description" content="TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-phishingyl/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-11-16T18:51:09+05:30" />
-<meta property="article:modified_time" content="2021-11-16T18:51:09+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-phishingyl/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="Try Hack Me Phishing">
+  <meta property="og:description" content="TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-11-16T18:51:09+05:30">
+    <meta property="article:modified_time" content="2021-11-16T18:51:09+05:30">
+    <meta property="article:tag" content="Tryhackme">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Try Hack Me Phishing"/>
-<meta name="twitter:description" content="TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Try Hack Me Phishing">
+  <meta name="twitter:description" content="TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +169,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -238,10 +254,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=Try%20Hack%20Me%20Phishing&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-phishingyl%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=Try%20Hack%20Me%20Phishing&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-phishingyl%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-phishingyl%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-phishingyl%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -276,26 +292,26 @@
       <article class="main"><h2 id="overview">OverView</h2>
 <p>Learn what phishing is and why it&rsquo;s important to a red team engagement. You will set up phishing infrastructure, write a convincing phishing email and try to trick your target into opening your email in a real-world simulation.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><script src="https://tryhackme.com/badge/434937"></script></td>
-<td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
-</tr>
-<tr>
-<td>Phishing</td>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/91fc6ef91a824bf0c1d830fbdfab96be.png" alt="logo"></td>
-</tr>
-<tr>
-<td><b> Phishing [Subscription Required] </b></td>
-<td><a href="https://tryhackme.com/room/phishingyl">Phishing</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><script src="https://tryhackme.com/badge/434937"></script></td>
+          <td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
+      </tr>
+      <tr>
+          <td>Phishing</td>
+          <td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/91fc6ef91a824bf0c1d830fbdfab96be.png" alt="logo"></td>
+      </tr>
+      <tr>
+          <td><b> Phishing [Subscription Required] </b></td>
+          <td><a href="https://tryhackme.com/room/phishingyl">Phishing</a></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="task-01-brief">Task 01: Brief</h2>
 <p>This room will take you through what phishing is, how it&rsquo;s performed, some valuable tools and why it&rsquo;s an essential part of a Red Team engagement.</p>
@@ -330,25 +346,25 @@
 <p><img src="/img/20896253d9efcc8ed2f72412dda8790f.png" alt="img"></p>
 <h3 id="answer-the-questions-below">Answer the questions below</h3>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2.1</td>
-<td>What type of psychological manipulation is phishing part of?</td>
-<td><code>social engineering</code></td>
-</tr>
-<tr>
-<td>2.2</td>
-<td>What type of phishing campaign do red teams get involved in?</td>
-<td><code>spear-phishing</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2.1</td>
+          <td>What type of psychological manipulation is phishing part of?</td>
+          <td><code>social engineering</code></td>
+      </tr>
+      <tr>
+          <td>2.2</td>
+          <td>What type of phishing campaign do red teams get involved in?</td>
+          <td><code>spear-phishing</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <!-- Google Ads -->
@@ -389,25 +405,25 @@ The Subject:</p>
 <p><code>&lt;a href=&quot;http://spoofsite.thm&quot;&gt;https://onlinebank.thm&lt;/a&gt;</code></p>
 <h3 id="3-answer-the-questions-below">3 Answer the questions below</h3>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3.1</td>
-<td>What tactic can be used to find brands or people a victim interacts with?</td>
-<td><code>OSINT</code></td>
-</tr>
-<tr>
-<td>3.2</td>
-<td>What should be changed on an HTML anchor tag to disguise a link?</td>
-<td><code>anchor text</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>3.1</td>
+          <td>What tactic can be used to find brands or people a victim interacts with?</td>
+          <td><code>OSINT</code></td>
+      </tr>
+      <tr>
+          <td>3.2</td>
+          <td>What should be changed on an HTML anchor tag to disguise a link?</td>
+          <td><code>anchor text</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-04-phishing-infrastructure">TASK 04: Phishing Infrastructure</h2>
@@ -435,30 +451,30 @@ You&rsquo;ll need to set up webservers or purchase web hosting from a company to
 <p><img src="/img/phish-2.png" alt="img"></p>
 <h3 id="4-answer-the-questions-below">4 Answer the questions below</h3>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4.1</td>
-<td>What part of a red team infrastructure can make a website look more authentic?</td>
-<td><code>ssl/tls certificate</code></td>
-</tr>
-<tr>
-<td>4.2</td>
-<td>What protocol has TXT records that can improve email deliverability?</td>
-<td><code>DNS</code></td>
-</tr>
-<tr>
-<td>4.3</td>
-<td>What tool can automate a phishing campaign and include analytics?</td>
-<td><code>gophish</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>4.1</td>
+          <td>What part of a red team infrastructure can make a website look more authentic?</td>
+          <td><code>ssl/tls certificate</code></td>
+      </tr>
+      <tr>
+          <td>4.2</td>
+          <td>What protocol has TXT records that can improve email deliverability?</td>
+          <td><code>DNS</code></td>
+      </tr>
+      <tr>
+          <td>4.3</td>
+          <td>What tool can automate a phishing campaign and include analytics?</td>
+          <td><code>gophish</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-05-using-gophish">TASK 05: Using GoPhish</h2>
@@ -469,46 +485,46 @@ You&rsquo;ll need to set up webservers or purchase web hosting from a company to
 <p><strong>Sending Profiles:</strong></p>
 <p>Sending profiles are the connection details required to actually send your Phishing emails; this is just simply an SMTP server that you have access to. Click the Sending Profiles link on the left-hand menu and then click the &ldquo;New Profile&rdquo; button.</p>
 <p>Next, add in the following information as per the screenshot below:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Name: Local Server
-
-From: noreply@redteam.thm
-
-Host: 127.0.0.1:25
-</code></pre></div><p><img src="/img/2552180eb55c121e0268614de1fd522d.png" alt="gophish-tryhackme" class="center"></img></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Name: Local Server
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>From: noreply@redteam.thm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Host: 127.0.0.1:25
+</span></span></code></pre></div><p><img src="/img/2552180eb55c121e0268614de1fd522d.png" alt="gophish-tryhackme" class="center"></img></p>
 <p>Then click Save Profile.</p>
 <p><strong>Landing Pages:</strong></p>
 <p>Next, we&rsquo;re going to set up the landing page; this is the website that the Phishing email is going to direct the victim to; this page is usually a spoof of a website the victim is familiar with.</p>
 <p>Click the Landing Pages link on the left-hand menu and then click the &ldquo;New Page&rdquo; button.</p>
 <p>Give the Landing Page the name ACME Login, next in the HTML box; you&rsquo;ll need to press the Source button to allow us to enter the HTML code as shown below:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;ACME IT SUPPORT - Admin Panel&lt;/<span style="color:#f92672">title</span>&gt;
-    &lt;<span style="color:#f92672">style</span>&gt;
-        <span style="color:#f92672">body</span> { <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Ubuntu&#34;</span>, <span style="color:#66d9ef">monospace</span>; <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span> }
-        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> { <span style="color:#66d9ef">margin</span>:<span style="color:#66d9ef">auto</span>; <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">border</span>:<span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ececec</span>; <span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">left</span>;<span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">13</span><span style="color:#66d9ef">px</span>;}
-        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> <span style="color:#f92672">div</span> <span style="color:#f92672">input</span> { <span style="color:#66d9ef">margin-bottom</span>:<span style="color:#ae81ff">7</span><span style="color:#66d9ef">px</span>;}
-        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> <span style="color:#f92672">input</span> { <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">280</span><span style="color:#66d9ef">px</span>;}
-        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">last-child</span> { <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>; }
-        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">last-child</span> <span style="color:#f92672">input</span> { <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;}
-    &lt;/<span style="color:#f92672">style</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">h2</span>&gt;ACME IT SUPPORT&lt;/<span style="color:#f92672">h2</span>&gt;
-    &lt;<span style="color:#f92672">h3</span>&gt;Admin Panel&lt;/<span style="color:#f92672">h3</span>&gt;
-    &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-form&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span>&gt;Username:&lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span>&gt;&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span>&gt;Password:&lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span>&gt;&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span>&gt;&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Login&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">form</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><p>Click the Source button again, and you should see a login box with username and password fields as per the image below, also click the Capture Submitted Data box and then also the Capture Passwords box and then click the Save Page button.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;ACME IT SUPPORT - Admin Panel&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">body</span> { <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Ubuntu&#34;</span>, <span style="color:#66d9ef">monospace</span>; <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span> }
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> { <span style="color:#66d9ef">margin</span>:<span style="color:#66d9ef">auto</span>; <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">border</span>:<span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ececec</span>; <span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">left</span>;<span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">13</span><span style="color:#66d9ef">px</span>;}
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> <span style="color:#f92672">div</span> <span style="color:#f92672">input</span> { <span style="color:#66d9ef">margin-bottom</span>:<span style="color:#ae81ff">7</span><span style="color:#66d9ef">px</span>;}
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> <span style="color:#f92672">input</span> { <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">280</span><span style="color:#66d9ef">px</span>;}
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">last-child</span> { <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>; }
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">div</span>.<span style="color:#a6e22e">login-form</span> <span style="color:#f92672">div</span>:<span style="color:#a6e22e">last-child</span> <span style="color:#f92672">input</span> { <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h2</span>&gt;ACME IT SUPPORT&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h3</span>&gt;Admin Panel&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login-form&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span>&gt;Username:&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span>&gt;&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span>&gt;Password:&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span>&gt;&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span>&gt;&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Login&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Click the Source button again, and you should see a login box with username and password fields as per the image below, also click the Capture Submitted Data box and then also the Capture Passwords box and then click the Save Page button.</p>
 <p><img src="/img/c46147f57dbac7f8ae02d2b44e0ed088.png" alt="gophish-tryhackme" class="center"></img></p>
 <p><strong>Email Templates:</strong></p>
 <p>This is the design and content of the email you&rsquo;re going to actually send to the victim; it will need to be persuasive and contain a link to your landing page to enable us to capture the victim&rsquo;s username and password. Click the Email Templates link on the left-hand menu and then click the New Template button. Give the template the name Email 1, the subject New Message Received, click the HTML tab, and then the Source button to enable HTML editor mode. In the contents write a persuasive email that would convince the user to click the link, the link text will need to be set to <a href="https://admin.acmeitsupport.thm">https://admin.acmeitsupport.thm</a>, but the actual link will need to be set to {{.URL}} which will get changed to our spoofed landing page when the email gets sent, you can do this by highlighting the link text and then clicking the link button on the top row of icons, make sure to set the protocol dropdown to <other>.</p>
@@ -564,20 +580,20 @@ data-ad-slot="7160066188"></ins></p>
 <p>The droppers are not usually malicious themselves, so they tend to pass antivirus checks. Once installed, the intended malware is either unpacked or downloaded from a server and installed onto the victim&rsquo;s computer. The malicious software usually connects back to the attacker&rsquo;s infrastructure. The attacker can take control of the victim&rsquo;s computer, which can further explore and exploit the local network.</p>
 <h3 id="6-answer-the-questions-below">6 Answer the questions below</h3>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>6.1</td>
-<td>Do droppers tend to be malicious?</td>
-<td><code>Nay</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>6.1</td>
+          <td>Do droppers tend to be malicious?</td>
+          <td><code>Nay</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-07-choosing-a-phishing-domain">TASK 07: Choosing A Phishing Domain</h2>
@@ -601,25 +617,25 @@ data-ad-slot="7160066188"></ins></p>
 <p><img src="/img/2e6059e320a8ddb30107c4ccc9bcec1a.png" alt="gophish-tryhackme" class="center"></img></p>
 <h3 id="7-answer-the-questions-below">7 Answer the questions below</h3>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>7.1</td>
-<td>What is better, using an expired or new domain? (old/new)</td>
-<td><code>OLD</code></td>
-</tr>
-<tr>
-<td>7.2</td>
-<td>What is the term used to describe registering a similar domain name with a spelling error?</td>
-<td><code>Typosquatting</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>7.1</td>
+          <td>What is better, using an expired or new domain? (old/new)</td>
+          <td><code>OLD</code></td>
+      </tr>
+      <tr>
+          <td>7.2</td>
+          <td>What is the term used to describe registering a similar domain name with a spelling error?</td>
+          <td><code>Typosquatting</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-08---using-ms-office-in-phishing">Task 08 :  Using MS Office In Phishing</h2>
@@ -630,20 +646,20 @@ data-ad-slot="7160066188"></ins></p>
 <p>Once the staff member opened the attachment and enabled the macros, their computer was compromised.</p>
 <h3 id="8-answer-the-questions-below">8 Answer the questions below</h3>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>8.1</td>
-<td>What can Microsoft Office documents contain, which, when executed can run computer commands?</td>
-<td><code>macros</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>8.1</td>
+          <td>What can Microsoft Office documents contain, which, when executed can run computer commands?</td>
+          <td><code>macros</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-09-using-browser-exploits">TASK 09: Using Browser Exploits</h2>
@@ -654,20 +670,20 @@ data-ad-slot="7160066188"></ins></p>
 <p>An example of this is CVE-2021-40444 from September 2021, which is a vulnerability found in Microsoft systems that allowed the execution of code just from visiting a website.</p>
 <h3 id="9-answer-the-questions-below">9 Answer the questions below</h3>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>9.1</td>
-<td>Which recent CVE caused remote code execution?</td>
-<td><code>CVE-2021-40444</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>9.1</td>
+          <td>Which recent CVE caused remote code execution?</td>
+          <td><code>CVE-2021-40444</code></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-10-phishing-practical">TASK 10: Phishing Practical</h2>
@@ -703,7 +719,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -914,7 +930,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

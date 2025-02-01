@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on Classroom</title>
-    <link>https://classroom.anir0y.in/tags/python/</link>
-    <description>Recent content in python on Classroom</description>
+    <title>Python on Classroom</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sat, 22 May 2021 19:56:16 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 May 2021 19:56:16 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Domino’s India Data Leak Of 18 Cr Orders Resurfaces; Customer Location, Mobile Numbers Exposed</title>
       <pubDate>Sat, 22 May 2021 19:56:16 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>update: Site seems to be down for now!
- Domino&amp;rsquo;s India, which is owned by Jubilant FoodWorks has apparently fallen victim to a massive data leak. Hackers have reportedly published crucial data on the dark web. The data contains details of lakhs of Domino&amp;rsquo;s India customers and employees. As per reports, sensitive customer data like names, phone numbers, and credit card details have been accessed by hackers.
-Image Credits: Pixabay/Twitter - @dominos_india</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;update: Site seems to be down for now!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Domino&amp;rsquo;s India, which is owned by Jubilant FoodWorks has apparently fallen victim to a massive data leak. Hackers have reportedly published crucial data on the dark web. The data contains details of lakhs of Domino&amp;rsquo;s India customers and employees. As per reports, sensitive customer data like names, phone numbers, and credit card details have been accessed by hackers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/omdfhadpryptysxd_1618997536.jpeg&#34; alt=&#34;&#34;&gt;
+Image Credits: Pixabay/Twitter - @dominos_india&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>https://classroom.anir0y.in/post/scripts-dominos/</link>
+      <link>http://localhost:1313/post/scripts-dominos/</link>
     
     </item>
    

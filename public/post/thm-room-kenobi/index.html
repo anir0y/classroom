@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="TryHackMe Room kenobi solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/thm-room-kenobi/">
+<meta property="twitter:url" content="http://localhost:1313/post/thm-room-kenobi/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,29 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/thm-room-kenobi/" />
+<link rel="canonical" href="http://localhost:1313/post/thm-room-kenobi/" />
 
 
-<meta property="og:title" content="TryHackME Room Kenobi" />
-<meta property="og:description" content="TryHackMe Room kenobi solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/thm-room-kenobi/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-06-10T21:22:32+05:30" />
-<meta property="article:modified_time" content="2021-06-10T21:22:32+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/thm-room-kenobi/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackME Room Kenobi">
+  <meta property="og:description" content="TryHackMe Room kenobi solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-06-10T21:22:32+05:30">
+    <meta property="article:modified_time" content="2021-06-10T21:22:32+05:30">
+    <meta property="article:tag" content="Tryhackme">
+    <meta property="article:tag" content="Rooms">
+    <meta property="article:tag" content="Thm">
+    <meta property="article:tag" content="Kenobi">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackME Room Kenobi"/>
-<meta name="twitter:description" content="TryHackMe Room kenobi solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackME Room Kenobi">
+  <meta name="twitter:description" content="TryHackMe Room kenobi solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +172,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -208,10 +227,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackME%20Room%20Kenobi&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-kenobi%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackME%20Room%20Kenobi&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthm-room-kenobi%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-kenobi%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fthm-room-kenobi%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -246,26 +265,26 @@
       <article class="main"><h2 id="kenobi">kenobi</h2>
 <h2 id="task-01--deploy-the-vulnerable-machine">Task 01 : Deploy the vulnerable machine</h2>
 <table>
-<thead>
-<tr>
-<th style="text-align:left">Flag-ID</th>
-<th>question</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td>Make sure you&rsquo;re connected to our network and deploy the machine</td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td>Scan the machine with nmap, how many ports are open?</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><img src="https://i.imgur.com/eHy08jQ.png" alt="img"></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Flag-ID</th>
+          <th>question</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td>Make sure you&rsquo;re connected to our network and deploy the machine</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td>Scan the machine with nmap, how many ports are open?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><img src="https://i.imgur.com/eHy08jQ.png" alt="img"></td>
+      </tr>
+  </tbody>
 </table>
 <hr>
 <h2 id="task-02-enumerating-samba-for-shares">Task 02: Enumerating Samba for shares</h2>
@@ -282,46 +301,46 @@
 <li><code>nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.233.45 #show mounts</code></li>
 </ul>
 <table>
-<thead>
-<tr>
-<th style="text-align:left">Flag-ID</th>
-<th>question</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td>Using the nmap command above, how many shares have been found?</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><code>3</code></td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td>Once you&rsquo;re connected, list the files on the share. What is the file can you see?</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href="#flag-22">ref</a></td>
-<td><img src="https://i.imgur.com/70LFnVH.png" alt="img"></td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td>What port is FTP running on?</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href="#flag-23">ref</a></td>
-<td><code>21</code></td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td>What mount can we see?</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href="#flag-24">ref</a></td>
-<td><code>/var</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Flag-ID</th>
+          <th>question</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td>Using the nmap command above, how many shares have been found?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><code>3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td>Once you&rsquo;re connected, list the files on the share. What is the file can you see?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="#flag-22">ref</a></td>
+          <td><img src="https://i.imgur.com/70LFnVH.png" alt="img"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td>What port is FTP running on?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="#flag-23">ref</a></td>
+          <td><code>21</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td>What mount can we see?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="#flag-24">ref</a></td>
+          <td><code>/var</code></td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="flag-22">Flag-2.2</h3>
 <p>anonymous auth is enbled, just hit enter when it askes for password.</p>
@@ -347,110 +366,110 @@
 <h2 id="task-04-gain-initial-access-with-proftpd">Task 04: Gain initial access with ProFtpd</h2>
 <p><img src="https://i.imgur.com/L54MBzX.png" alt=""></p>
 <table>
-<thead>
-<tr>
-<th style="text-align:left">Flag-ID</th>
-<th>question</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td>What is the version?</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href="#flag-31">ref</a></td>
-<td><code>1.3.5</code></td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td>How many exploits are there for the ProFTPd running?</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href="#flag-32">ref</a></td>
-<td><code>3</code></td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td>We know that the FTP service is running as the Kenobi user (from the file on the share) and an ssh key is generated for that user.</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><code>n\a</code></td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td>We knew that the /var directory was a mount we could see (task 2, question 4). So we&rsquo;ve now moved Kenobi&rsquo;s private key to the /var/tmp directory.</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><code>n\a</code></td>
-</tr>
-<tr>
-<td style="text-align:left">5</td>
-<td>What is Kenobi&rsquo;s user flag (/home/kenobi/user.txt)?</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><code>d0b0f3f53b6caa532a83915e19224899</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Flag-ID</th>
+          <th>question</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td>What is the version?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="#flag-31">ref</a></td>
+          <td><code>1.3.5</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td>How many exploits are there for the ProFTPd running?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="#flag-32">ref</a></td>
+          <td><code>3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td>We know that the FTP service is running as the Kenobi user (from the file on the share) and an ssh key is generated for that user.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><code>n\a</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td>We knew that the /var directory was a mount we could see (task 2, question 4). So we&rsquo;ve now moved Kenobi&rsquo;s private key to the /var/tmp directory.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><code>n\a</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5</td>
+          <td>What is Kenobi&rsquo;s user flag (/home/kenobi/user.txt)?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><code>d0b0f3f53b6caa532a83915e19224899</code></td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="flag-31">Flag-3.1</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">┌─<span style="color:#f92672">[</span>anir0y@thm<span style="color:#f92672">]</span>─<span style="color:#f92672">[</span>~/share/thm/room/kenobi<span style="color:#f92672">]</span>
-└──╼ $cat nmap/kenobi 
-<span style="color:#75715e"># Nmap 7.91 scan initiated Thu Jun 10 21:19:17 2021 as: nmap -sC -sV -oN kenobi 10.10.233.45</span>
-Nmap scan report <span style="color:#66d9ef">for</span> 10.10.233.45
-Host is up <span style="color:#f92672">(</span>0.20s latency<span style="color:#f92672">)</span>.
-Not shown: <span style="color:#ae81ff">993</span> closed ports
-PORT     STATE SERVICE     VERSION
-21/tcp   open  ftp         <span style="color:#e6db74">`</span>ProFTPD 1.3.5<span style="color:#e6db74">`</span>
-</code></pre></div><h3 id="flag-32">Flag-3.2</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>┌─<span style="color:#f92672">[</span>anir0y@thm<span style="color:#f92672">]</span>─<span style="color:#f92672">[</span>~/share/thm/room/kenobi<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>└──╼ $cat nmap/kenobi 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Nmap 7.91 scan initiated Thu Jun 10 21:19:17 2021 as: nmap -sC -sV -oN kenobi 10.10.233.45</span>
+</span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> 10.10.233.45
+</span></span><span style="display:flex;"><span>Host is up <span style="color:#f92672">(</span>0.20s latency<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>Not shown: <span style="color:#ae81ff">993</span> closed ports
+</span></span><span style="display:flex;"><span>PORT     STATE SERVICE     VERSION
+</span></span><span style="display:flex;"><span>21/tcp   open  ftp         <span style="color:#e6db74">`</span>ProFTPD 1.3.5<span style="color:#e6db74">`</span>
+</span></span></code></pre></div><h3 id="flag-32">Flag-3.2</h3>
 <p><img src="https://i.imgur.com/7q0pmef.png" alt="img"></p>
 <hr>
 <h2 id="task-04--privilege-escalation-with-path-variable-manipulation">Task 04:  Privilege Escalation with Path Variable Manipulation</h2>
 <p><img src="https://i.imgur.com/LN2uOCJ.png" alt="suid"></p>
 <table>
-<thead>
-<tr>
-<th style="text-align:left">Flag-ID</th>
-<th>question</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td>What file looks particularly out of the ordinary?</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><code>/usr/bin/menu</code></td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td>Run the binary, how many options appear?</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><code>3</code></td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td>We copied the /bin/sh shell, called it curl, gave it the correct permissions and then put its location in our path. This meant that when the /usr/bin/menu binary was run, its using our path variable to find the &ldquo;curl&rdquo; binary.. Which is actually a version of /usr/sh, as well as this file being run as root it runs our shell as root!</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><code>n\a</code></td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td>What is the root flag (/root/root.txt)?</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td><code>177b3cd8562289f37382721c28381f02</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Flag-ID</th>
+          <th>question</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td>What file looks particularly out of the ordinary?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><code>/usr/bin/menu</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td>Run the binary, how many options appear?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><code>3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td>We copied the /bin/sh shell, called it curl, gave it the correct permissions and then put its location in our path. This meant that when the /usr/bin/menu binary was run, its using our path variable to find the &ldquo;curl&rdquo; binary.. Which is actually a version of /usr/sh, as well as this file being run as root it runs our shell as root!</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><code>n\a</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td>What is the root flag (/root/root.txt)?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td><code>177b3cd8562289f37382721c28381f02</code></td>
+      </tr>
+  </tbody>
 </table>
 <!-- Google Ads -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -480,7 +499,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -691,7 +710,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

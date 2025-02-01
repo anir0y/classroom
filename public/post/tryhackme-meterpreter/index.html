@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="Animesh Roy"  />
+<meta name="author" content="Animesh Roy @anir0y  "  />
 <meta name="description" content="Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthough. read more..." />
 
 
@@ -34,6 +34,16 @@
 
 
 
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://classroom.anir0y.in/">
 <meta property="og:title" content="Animesh Roy | Blogs & Writeups">
@@ -41,9 +51,11 @@
 <meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
 
 
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-meterpreter/">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-meterpreter/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -63,22 +75,26 @@
 
 
 
-<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-meterpreter/" />
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-meterpreter/" />
 
 
-<meta property="og:title" content="TryHackMe Metasploit Meterpreter" />
-<meta property="og:description" content="Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthough. read more..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-meterpreter/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-09-30T13:21:37+05:30" />
-<meta property="article:modified_time" content="2021-09-30T13:21:37+05:30" />
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-meterpreter/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="TryHackMe Metasploit Meterpreter">
+  <meta property="og:description" content="Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-09-30T13:21:37+05:30">
+    <meta property="article:modified_time" content="2021-09-30T13:21:37+05:30">
+    <meta property="article:tag" content="Tryhackme">
 
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="TryHackMe Metasploit Meterpreter"/>
-<meta name="twitter:description" content="Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthough. read more..."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TryHackMe Metasploit Meterpreter">
+  <meta name="twitter:description" content="Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthough. read more...">
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -153,7 +169,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
   </div>
   
   <div class="item">
@@ -211,10 +227,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Metasploit%20Meterpreter&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-meterpreter%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Metasploit%20Meterpreter&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-meterpreter%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-meterpreter%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-meterpreter%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -249,26 +265,26 @@
       <article class="main"><h2 id="overview">OverView</h2>
 <p>Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><script src="https://tryhackme.com/badge/434937"></script></td>
-<td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
-</tr>
-<tr>
-<td>Metasploit: Meterpreter</td>
-<td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/7774a96fb05b63b3abfed628f267f2a9.png" alt="logo"></td>
-</tr>
-<tr>
-<td><b> Metasploit: Meterpreter [Subscription Required] </b></td>
-<td><a href="">Metasploit: Meterpreter</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><script src="https://tryhackme.com/badge/434937"></script></td>
+          <td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
+      </tr>
+      <tr>
+          <td>Metasploit: Meterpreter</td>
+          <td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/7774a96fb05b63b3abfed628f267f2a9.png" alt="logo"></td>
+      </tr>
+      <tr>
+          <td><b> Metasploit: Meterpreter [Subscription Required] </b></td>
+          <td><a href="">Metasploit: Meterpreter</a></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="task-01-introduction-to-meterpreter">Task 01: Introduction to Meterpreter</h2>
 <p>Meterpreter is a Metasploit payload that supports the penetration testing process with many valuable components. Meterpreter will run on the target system and act as an agent within a command and control architecture. You will interact with the target operating system and files and use Meterpreter&rsquo;s specialized commands.</p>
@@ -283,74 +299,74 @@
 <ul>
 <li>
 <p>code</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">meterpreter &gt; ps
-
-Process List
-<span style="color:#f92672">============</span>
-
-PID   PPID  Name                  Arch  Session  User                          Path
----   ----  ----                  ----  -------  ----                          ----
-<span style="color:#ae81ff">0</span>     <span style="color:#ae81ff">0</span>     <span style="color:#f92672">[</span>System Process<span style="color:#f92672">]</span>                                                   
-<span style="color:#ae81ff">4</span>     <span style="color:#ae81ff">0</span>     System                x64   <span style="color:#ae81ff">0</span>                                      
-<span style="color:#ae81ff">396</span>   <span style="color:#ae81ff">644</span>   LogonUI.exe           x64   <span style="color:#ae81ff">1</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\L</span>ogonUI.exe
-<span style="color:#ae81ff">416</span>   <span style="color:#ae81ff">4</span>     smss.exe              x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           <span style="color:#ae81ff">\S</span>ystemRoot<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\s</span>mss.exe
-<span style="color:#ae81ff">428</span>   <span style="color:#ae81ff">692</span>   svchost.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           
-<span style="color:#ae81ff">548</span>   <span style="color:#ae81ff">540</span>   csrss.exe             x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\c</span>srss.exe
-<span style="color:#ae81ff">596</span>   <span style="color:#ae81ff">540</span>   wininit.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\w</span>ininit.exe
-<span style="color:#ae81ff">604</span>   <span style="color:#ae81ff">588</span>   csrss.exe             x64   <span style="color:#ae81ff">1</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\c</span>srss.exe
-<span style="color:#ae81ff">644</span>   <span style="color:#ae81ff">588</span>   winlogon.exe          x64   <span style="color:#ae81ff">1</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\w</span>inlogon.exe
-<span style="color:#ae81ff">692</span>   <span style="color:#ae81ff">596</span>   services.exe          x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\s</span>ervices.exe
-<span style="color:#ae81ff">700</span>   <span style="color:#ae81ff">692</span>   sppsvc.exe            x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\N</span>ETWORK SERVICE  
-<span style="color:#ae81ff">716</span>   <span style="color:#ae81ff">596</span>   lsass.exe             x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\l</span>sass.exe  <span style="color:#ae81ff">1276</span>  <span style="color:#ae81ff">1304</span>  cmd.exe               x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\c</span>md.exe
-<span style="color:#ae81ff">1304</span>  <span style="color:#ae81ff">692</span>   spoolsv.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\s</span>poolsv.exe
-<span style="color:#ae81ff">1340</span>  <span style="color:#ae81ff">692</span>   svchost.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\L</span>OCAL SERVICE    
-<span style="color:#ae81ff">1388</span>  <span style="color:#ae81ff">548</span>   conhost.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\c</span>onhost.exe
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>meterpreter &gt; ps
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Process List
+</span></span><span style="display:flex;"><span><span style="color:#f92672">============</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>PID   PPID  Name                  Arch  Session  User                          Path
+</span></span><span style="display:flex;"><span>---   ----  ----                  ----  -------  ----                          ----
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span>     <span style="color:#ae81ff">0</span>     <span style="color:#f92672">[</span>System Process<span style="color:#f92672">]</span>                                                   
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>     <span style="color:#ae81ff">0</span>     System                x64   <span style="color:#ae81ff">0</span>                                      
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">396</span>   <span style="color:#ae81ff">644</span>   LogonUI.exe           x64   <span style="color:#ae81ff">1</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\L</span>ogonUI.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">416</span>   <span style="color:#ae81ff">4</span>     smss.exe              x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           <span style="color:#ae81ff">\S</span>ystemRoot<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\s</span>mss.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">428</span>   <span style="color:#ae81ff">692</span>   svchost.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">548</span>   <span style="color:#ae81ff">540</span>   csrss.exe             x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\c</span>srss.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">596</span>   <span style="color:#ae81ff">540</span>   wininit.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\w</span>ininit.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">604</span>   <span style="color:#ae81ff">588</span>   csrss.exe             x64   <span style="color:#ae81ff">1</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\c</span>srss.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">644</span>   <span style="color:#ae81ff">588</span>   winlogon.exe          x64   <span style="color:#ae81ff">1</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\w</span>inlogon.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">692</span>   <span style="color:#ae81ff">596</span>   services.exe          x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\s</span>ervices.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">700</span>   <span style="color:#ae81ff">692</span>   sppsvc.exe            x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\N</span>ETWORK SERVICE  
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">716</span>   <span style="color:#ae81ff">596</span>   lsass.exe             x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\l</span>sass.exe  <span style="color:#ae81ff">1276</span>  <span style="color:#ae81ff">1304</span>  cmd.exe               x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\c</span>md.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1304</span>  <span style="color:#ae81ff">692</span>   spoolsv.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\s</span>poolsv.exe
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1340</span>  <span style="color:#ae81ff">692</span>   svchost.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\L</span>OCAL SERVICE    
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1388</span>  <span style="color:#ae81ff">548</span>   conhost.exe           x64   <span style="color:#ae81ff">0</span>        NT AUTHORITY<span style="color:#ae81ff">\S</span>YSTEM           C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32<span style="color:#ae81ff">\c</span>onhost.exe
+</span></span></code></pre></div></li>
 </ul>
 <p>Even if we were to go a step further and look at DLLs (Dynamic-Link Libraries) used by the Meterpreter process (PID 1304 in this case), we still would not find anything jumping at us (e.g. no meterpreter.dll)</p>
 <ul>
 <li>
 <p>code</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32&gt;tasklist /m /fi <span style="color:#e6db74">&#34;pid eq 1304&#34;</span>
-tasklist /m /fi <span style="color:#e6db74">&#34;pid eq 1304&#34;</span>
-
-Image Name                     PID Modules                                     
-<span style="color:#f92672">=========================</span> <span style="color:#f92672">========</span> <span style="color:#f92672">============================================</span>
-spoolsv.exe                   <span style="color:#ae81ff">1304</span> ntdll.dll, kernel32.dll, KERNELBASE.dll,    
-                                   msvcrt.dll, sechost.dll, RPCRT4.dll,        
-                                   USER32.dll, GDI32.dll, LPK.dll, USP10.dll,  
-                                   POWRPROF.dll, SETUPAPI.dll, CFGMGR32.dll,   
-                                   ADVAPI32.dll, OLEAUT32.dll, ole32.dll,      
-                                   DEVOBJ.dll, DNSAPI.dll, WS2_32.dll,         
-                                   NSI.dll, IMM32.DLL, MSCTF.dll,              
-                                   CRYPTBASE.dll, slc.dll, RpcRtRemote.dll,    
-                                   secur32.dll, SSPICLI.DLL, credssp.dll,      
-                                   IPHLPAPI.DLL, WINNSI.DLL, mswsock.dll,      
-                                   wshtcpip.dll, wship6.dll, rasadhlp.dll,     
-                                   fwpuclnt.dll, CLBCatQ.DLL, umb.dll,         
-                                   ATL.DLL, WINTRUST.dll, CRYPT32.dll,         
-                                   MSASN1.dll, localspl.dll, SPOOLSS.DLL,      
-                                   srvcli.dll, winspool.drv,                   
-                                   PrintIsolationProxy.dll, FXSMON.DLL,        
-                                   tcpmon.dll, snmpapi.dll, wsnmp32.dll,       
-                                   msxml6.dll, SHLWAPI.dll, usbmon.dll,        
-                                   wls0wndh.dll, WSDMon.dll, wsdapi.dll,       
-                                   webservices.dll, FirewallAPI.dll,           
-                                   VERSION.dll, FunDisc.dll, fdPnp.dll,        
-                                   winprint.dll, USERENV.dll, profapi.dll,     
-                                   GPAPI.dll, dsrole.dll, win32spl.dll,        
-                                   inetpp.dll, DEVRTL.dll, SPINF.dll,          
-                                   CRYPTSP.dll, rsaenh.dll, WINSTA.dll,        
-                                   cscapi.dll, netutils.dll, WININET.dll,      
-                                   urlmon.dll, iertutil.dll, WINHTTP.dll,      
-                                   webio.dll, SHELL32.dll, MPR.dll,            
-                                   NETAPI32.dll, wkscli.dll, PSAPI.DLL,        
-                                   WINMM.dll, dhcpcsvc6.DLL, dhcpcsvc.DLL,     
-                                   apphelp.dll, NLAapi.dll, napinsp.dll,       
-                                   pnrpnsp.dll, winrnr.dll                     
-
-C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32&gt;
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32&gt;tasklist /m /fi <span style="color:#e6db74">&#34;pid eq 1304&#34;</span>
+</span></span><span style="display:flex;"><span>tasklist /m /fi <span style="color:#e6db74">&#34;pid eq 1304&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Image Name                     PID Modules                                     
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=========================</span> <span style="color:#f92672">========</span> <span style="color:#f92672">============================================</span>
+</span></span><span style="display:flex;"><span>spoolsv.exe                   <span style="color:#ae81ff">1304</span> ntdll.dll, kernel32.dll, KERNELBASE.dll,    
+</span></span><span style="display:flex;"><span>                                   msvcrt.dll, sechost.dll, RPCRT4.dll,        
+</span></span><span style="display:flex;"><span>                                   USER32.dll, GDI32.dll, LPK.dll, USP10.dll,  
+</span></span><span style="display:flex;"><span>                                   POWRPROF.dll, SETUPAPI.dll, CFGMGR32.dll,   
+</span></span><span style="display:flex;"><span>                                   ADVAPI32.dll, OLEAUT32.dll, ole32.dll,      
+</span></span><span style="display:flex;"><span>                                   DEVOBJ.dll, DNSAPI.dll, WS2_32.dll,         
+</span></span><span style="display:flex;"><span>                                   NSI.dll, IMM32.DLL, MSCTF.dll,              
+</span></span><span style="display:flex;"><span>                                   CRYPTBASE.dll, slc.dll, RpcRtRemote.dll,    
+</span></span><span style="display:flex;"><span>                                   secur32.dll, SSPICLI.DLL, credssp.dll,      
+</span></span><span style="display:flex;"><span>                                   IPHLPAPI.DLL, WINNSI.DLL, mswsock.dll,      
+</span></span><span style="display:flex;"><span>                                   wshtcpip.dll, wship6.dll, rasadhlp.dll,     
+</span></span><span style="display:flex;"><span>                                   fwpuclnt.dll, CLBCatQ.DLL, umb.dll,         
+</span></span><span style="display:flex;"><span>                                   ATL.DLL, WINTRUST.dll, CRYPT32.dll,         
+</span></span><span style="display:flex;"><span>                                   MSASN1.dll, localspl.dll, SPOOLSS.DLL,      
+</span></span><span style="display:flex;"><span>                                   srvcli.dll, winspool.drv,                   
+</span></span><span style="display:flex;"><span>                                   PrintIsolationProxy.dll, FXSMON.DLL,        
+</span></span><span style="display:flex;"><span>                                   tcpmon.dll, snmpapi.dll, wsnmp32.dll,       
+</span></span><span style="display:flex;"><span>                                   msxml6.dll, SHLWAPI.dll, usbmon.dll,        
+</span></span><span style="display:flex;"><span>                                   wls0wndh.dll, WSDMon.dll, wsdapi.dll,       
+</span></span><span style="display:flex;"><span>                                   webservices.dll, FirewallAPI.dll,           
+</span></span><span style="display:flex;"><span>                                   VERSION.dll, FunDisc.dll, fdPnp.dll,        
+</span></span><span style="display:flex;"><span>                                   winprint.dll, USERENV.dll, profapi.dll,     
+</span></span><span style="display:flex;"><span>                                   GPAPI.dll, dsrole.dll, win32spl.dll,        
+</span></span><span style="display:flex;"><span>                                   inetpp.dll, DEVRTL.dll, SPINF.dll,          
+</span></span><span style="display:flex;"><span>                                   CRYPTSP.dll, rsaenh.dll, WINSTA.dll,        
+</span></span><span style="display:flex;"><span>                                   cscapi.dll, netutils.dll, WININET.dll,      
+</span></span><span style="display:flex;"><span>                                   urlmon.dll, iertutil.dll, WINHTTP.dll,      
+</span></span><span style="display:flex;"><span>                                   webio.dll, SHELL32.dll, MPR.dll,            
+</span></span><span style="display:flex;"><span>                                   NETAPI32.dll, wkscli.dll, PSAPI.DLL,        
+</span></span><span style="display:flex;"><span>                                   WINMM.dll, dhcpcsvc6.DLL, dhcpcsvc.DLL,     
+</span></span><span style="display:flex;"><span>                                   apphelp.dll, NLAapi.dll, napinsp.dll,       
+</span></span><span style="display:flex;"><span>                                   pnrpnsp.dll, winrnr.dll                     
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\s</span>ystem32&gt;
+</span></span></code></pre></div></li>
 </ul>
 <p>Techniques and tools that can be used to detect Meterpreter are beyond the scope of this room. This section aimed to show you how stealthy Meterpreter is running; remember, most antivirus software will detect it.</p>
 <p>It is also worth noting that Meterpreter will establish an encrypted (TLS) communication channel with the attacker&rsquo;s system.</p>
@@ -374,33 +390,33 @@ data-ad-slot="7160066188"></ins></p>
 <ul>
 <li>
 <p>code</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root@ip-10-10-186-44:~# msfvenom --list payloads | grep meterpreter
-android/meterpreter/reverse_http                    Run a meterpreter server in Android. Tunnel communication over HTTP
-android/meterpreter/reverse_https                   Run a meterpreter server in Android. Tunnel communication over HTTPS
-android/meterpreter/reverse_tcp                     Run a meterpreter server in Android. Connect back stager
-android/meterpreter_reverse_http                    Connect back to attacker and spawn a Meterpreter shell
-android/meterpreter_reverse_https                   Connect back to attacker and spawn a Meterpreter shell
-android/meterpreter_reverse_tcp                     Connect back to the attacker and spawn a Meterpreter shell
-apple_ios/aarch64/meterpreter_reverse_http          Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-apple_ios/aarch64/meterpreter_reverse_https         Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-apple_ios/aarch64/meterpreter_reverse_tcp           Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-apple_ios/armle/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-apple_ios/armle/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-apple_ios/armle/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-java/meterpreter/bind_tcp                           Run a meterpreter server in Java. Listen <span style="color:#66d9ef">for</span> a connection
-java/meterpreter/reverse_http                       Run a meterpreter server in Java. Tunnel communication over HTTP
-java/meterpreter/reverse_https                      Run a meterpreter server in Java. Tunnel communication over HTTPS
-java/meterpreter/reverse_tcp                        Run a meterpreter server in Java. Connect back stager
-linux/aarch64/meterpreter/reverse_tcp               Inject the mettle server payload <span style="color:#f92672">(</span>staged<span style="color:#f92672">)</span>. Connect back to the attacker
-linux/aarch64/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-linux/aarch64/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-linux/aarch64/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-linux/armbe/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-linux/armbe/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-linux/armbe/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
-linux/armle/meterpreter/bind_tcp                    Inject the mettle server payload <span style="color:#f92672">(</span>staged<span style="color:#f92672">)</span>. Listen <span style="color:#66d9ef">for</span> a connection
-linux/armle/meterpreter/reverse_tcp                 Inject the mettle server payload <span style="color:#f92672">(</span>staged<span style="color:#f92672">)</span>. Connect back to the attacker <span style="color:#f92672">[</span>...<span style="color:#f92672">]</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@ip-10-10-186-44:~# msfvenom --list payloads | grep meterpreter
+</span></span><span style="display:flex;"><span>android/meterpreter/reverse_http                    Run a meterpreter server in Android. Tunnel communication over HTTP
+</span></span><span style="display:flex;"><span>android/meterpreter/reverse_https                   Run a meterpreter server in Android. Tunnel communication over HTTPS
+</span></span><span style="display:flex;"><span>android/meterpreter/reverse_tcp                     Run a meterpreter server in Android. Connect back stager
+</span></span><span style="display:flex;"><span>android/meterpreter_reverse_http                    Connect back to attacker and spawn a Meterpreter shell
+</span></span><span style="display:flex;"><span>android/meterpreter_reverse_https                   Connect back to attacker and spawn a Meterpreter shell
+</span></span><span style="display:flex;"><span>android/meterpreter_reverse_tcp                     Connect back to the attacker and spawn a Meterpreter shell
+</span></span><span style="display:flex;"><span>apple_ios/aarch64/meterpreter_reverse_http          Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>apple_ios/aarch64/meterpreter_reverse_https         Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>apple_ios/aarch64/meterpreter_reverse_tcp           Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>apple_ios/armle/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>apple_ios/armle/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>apple_ios/armle/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>java/meterpreter/bind_tcp                           Run a meterpreter server in Java. Listen <span style="color:#66d9ef">for</span> a connection
+</span></span><span style="display:flex;"><span>java/meterpreter/reverse_http                       Run a meterpreter server in Java. Tunnel communication over HTTP
+</span></span><span style="display:flex;"><span>java/meterpreter/reverse_https                      Run a meterpreter server in Java. Tunnel communication over HTTPS
+</span></span><span style="display:flex;"><span>java/meterpreter/reverse_tcp                        Run a meterpreter server in Java. Connect back stager
+</span></span><span style="display:flex;"><span>linux/aarch64/meterpreter/reverse_tcp               Inject the mettle server payload <span style="color:#f92672">(</span>staged<span style="color:#f92672">)</span>. Connect back to the attacker
+</span></span><span style="display:flex;"><span>linux/aarch64/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>linux/aarch64/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>linux/aarch64/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>linux/armbe/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>linux/armbe/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>linux/armbe/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload <span style="color:#f92672">(</span>stageless<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>linux/armle/meterpreter/bind_tcp                    Inject the mettle server payload <span style="color:#f92672">(</span>staged<span style="color:#f92672">)</span>. Listen <span style="color:#66d9ef">for</span> a connection
+</span></span><span style="display:flex;"><span>linux/armle/meterpreter/reverse_tcp                 Inject the mettle server payload <span style="color:#f92672">(</span>staged<span style="color:#f92672">)</span>. Connect back to the attacker <span style="color:#f92672">[</span>...<span style="color:#f92672">]</span>
+</span></span></code></pre></div></li>
 </ul>
 <p>The list will show Meterpreter versions available for the following platforms;</p>
 <ul>
@@ -423,32 +439,32 @@ linux/armle/meterpreter/reverse_tcp                 Inject the mettle server pay
 <ul>
 <li>
 <p>exploit</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">msf6 &gt; use exploit/windows/smb/ms17_010_eternalblue 
-<span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Using configured payload windows/x64/meterpreter/reverse_tcp
-msf6 exploit<span style="color:#f92672">(</span>windows/smb/ms17_010_eternalblue<span style="color:#f92672">)</span> &gt;
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>msf6 &gt; use exploit/windows/smb/ms17_010_eternalblue 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Using configured payload windows/x64/meterpreter/reverse_tcp
+</span></span><span style="display:flex;"><span>msf6 exploit<span style="color:#f92672">(</span>windows/smb/ms17_010_eternalblue<span style="color:#f92672">)</span> &gt;
+</span></span></code></pre></div></li>
 </ul>
 <p>You can also list other available payloads using the <code>show payloads</code> command with any module.</p>
 <ul>
 <li>
 <p>payloads</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">msf6 exploit<span style="color:#f92672">(</span>windows/smb/ms17_010_eternalblue<span style="color:#f92672">)</span> &gt; show payloads 
-
-Compatible Payloads
-<span style="color:#f92672">===================</span>
-
-<span style="color:#75715e">#   Name                                        Disclosure Date  Rank    Check  Description</span>
--   ----                                        ---------------  ----    -----  -----------
-<span style="color:#ae81ff">0</span>   generic/custom                                               manual  No     Custom Payload
-<span style="color:#ae81ff">1</span>   generic/shell_bind_tcp                                       manual  No     Generic Command Shell, Bind TCP Inline
-<span style="color:#ae81ff">2</span>   generic/shell_reverse_tcp                                    manual  No     Generic Command Shell, Reverse TCP Inline
-<span style="color:#ae81ff">3</span>   windows/x64/exec                                             manual  No     Windows x64 Execute Command
-<span style="color:#ae81ff">4</span>   windows/x64/loadlibrary                                      manual  No     Windows x64 LoadLibrary Path
-<span style="color:#ae81ff">5</span>   windows/x64/messagebox                                       manual  No     Windows MessageBox x64
-<span style="color:#ae81ff">6</span>   windows/x64/meterpreter/bind_ipv6_tcp                        manual  No     Windows Meterpreter <span style="color:#f92672">(</span>Reflective Injection x64<span style="color:#f92672">)</span>, Windows x64 IPv6 Bind TCP Stager
-<span style="color:#ae81ff">7</span>   windows/x64/meterpreter/bind_ipv6_tcp_uuid                   manual  No     Windows Meterpreter <span style="color:#f92672">(</span>Reflective Injection x64<span style="color:#f92672">)</span>, Windows x64 IPv6 Bind TCP Stager with UUID Support
-<span style="color:#ae81ff">8</span>   windows/x64/meterpreter/bind_named_pipe                      manual  No     Windows Meterpreter <span style="color:#f92672">(</span>Reflective Injection x64<span style="color:#f92672">)</span>, Windows x64 Bind Named Pipe Stager <span style="color:#f92672">[</span>...<span style="color:#f92672">]</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>msf6 exploit<span style="color:#f92672">(</span>windows/smb/ms17_010_eternalblue<span style="color:#f92672">)</span> &gt; show payloads 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Compatible Payloads
+</span></span><span style="display:flex;"><span><span style="color:#f92672">===================</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   Name                                        Disclosure Date  Rank    Check  Description</span>
+</span></span><span style="display:flex;"><span>-   ----                                        ---------------  ----    -----  -----------
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span>   generic/custom                                               manual  No     Custom Payload
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>   generic/shell_bind_tcp                                       manual  No     Generic Command Shell, Bind TCP Inline
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>   generic/shell_reverse_tcp                                    manual  No     Generic Command Shell, Reverse TCP Inline
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>   windows/x64/exec                                             manual  No     Windows x64 Execute Command
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>   windows/x64/loadlibrary                                      manual  No     Windows x64 LoadLibrary Path
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>   windows/x64/messagebox                                       manual  No     Windows MessageBox x64
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>   windows/x64/meterpreter/bind_ipv6_tcp                        manual  No     Windows Meterpreter <span style="color:#f92672">(</span>Reflective Injection x64<span style="color:#f92672">)</span>, Windows x64 IPv6 Bind TCP Stager
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>   windows/x64/meterpreter/bind_ipv6_tcp_uuid                   manual  No     Windows Meterpreter <span style="color:#f92672">(</span>Reflective Injection x64<span style="color:#f92672">)</span>, Windows x64 IPv6 Bind TCP Stager with UUID Support
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span>   windows/x64/meterpreter/bind_named_pipe                      manual  No     Windows Meterpreter <span style="color:#f92672">(</span>Reflective Injection x64<span style="color:#f92672">)</span>, Windows x64 Bind Named Pipe Stager <span style="color:#f92672">[</span>...<span style="color:#f92672">]</span>
+</span></span></code></pre></div></li>
 </ul>
 <hr>
 <h2 id="task-03--meterpreter-commands">Task 03:  Meterpreter Commands</h2>
@@ -456,22 +472,22 @@ Compatible Payloads
 <ul>
 <li>
 <p>help</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">meterpreter &gt; help
-
-Core Commands
-<span style="color:#f92672">=============</span>
-
-Command                   Description
--------                   -----------
-?                         Help menu
-background                Backgrounds the current session
-bg                        Alias <span style="color:#66d9ef">for</span> background
-bgkill                    Kills a background meterpreter script
-bglist                    Lists running background scripts
-bgrun                     Executes a meterpreter script as a background thread
-channel                   Displays information or control active channels
-close                     Closes a channel<span style="color:#f92672">[</span>...<span style="color:#f92672">]</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>meterpreter &gt; help
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Core Commands
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=============</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Command                   Description
+</span></span><span style="display:flex;"><span>-------                   -----------
+</span></span><span style="display:flex;"><span>?                         Help menu
+</span></span><span style="display:flex;"><span>background                Backgrounds the current session
+</span></span><span style="display:flex;"><span>bg                        Alias <span style="color:#66d9ef">for</span> background
+</span></span><span style="display:flex;"><span>bgkill                    Kills a background meterpreter script
+</span></span><span style="display:flex;"><span>bglist                    Lists running background scripts
+</span></span><span style="display:flex;"><span>bgrun                     Executes a meterpreter script as a background thread
+</span></span><span style="display:flex;"><span>channel                   Displays information or control active channels
+</span></span><span style="display:flex;"><span>close                     Closes a channel<span style="color:#f92672">[</span>...<span style="color:#f92672">]</span>
+</span></span></code></pre></div></li>
 </ul>
 <p>Every version of Meterpreter will have different command options, so running the help command is always a good idea. Commands are built-in tools available on Meterpreter. They will run on the target system without loading any additional script or executable files.</p>
 <p>Meterpreter will provide you with three primary categories of tools;</p>
@@ -546,50 +562,50 @@ close                     Closes a channel<span style="color:#f92672">[</span>..
 <p><img src="https://i.imgur.com/tzVhPqy.png" alt="img"></p>
 <h3 id="answer-the-questions-below">Answer the questions below</h3>
 <table>
-<thead>
-<tr>
-<th>question</th>
-<th>ans</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What is the computer name?</td>
-<td><a href="#1-sysinfo">5.1</a></td>
-</tr>
-<tr>
-<td>What is the target domain?</td>
-<td><a href="#1-sysinfo">5.1</a></td>
-</tr>
-<tr>
-<td>What is the name of the share likely created by the user?</td>
-<td><a href="#3">5.3</a></td>
-</tr>
-<tr>
-<td>What is the NTLM hash of the jchambers user?</td>
-<td><a href="#4">5.4</a></td>
-</tr>
-<tr>
-<td>What is the cleartext password of the jchambers user?</td>
-<td><a href="#5">5.5</a></td>
-</tr>
-<tr>
-<td>Where is the &ldquo;secrets.txt&rdquo;  file located?</td>
-<td><a href="#6">5.6</a></td>
-</tr>
-<tr>
-<td>What is the Twitter password revealed in the &ldquo;secrets.txt&rdquo; file?</td>
-<td><a href="#6">5.6</a></td>
-</tr>
-<tr>
-<td>Where is the &ldquo;realsecret.txt&rdquo; file located?</td>
-<td><a href="#8">5.7</a></td>
-</tr>
-<tr>
-<td>What is the real secret?</td>
-<td><a href="#8">5.8</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>question</th>
+          <th>ans</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>What is the computer name?</td>
+          <td><a href="#1-sysinfo">5.1</a></td>
+      </tr>
+      <tr>
+          <td>What is the target domain?</td>
+          <td><a href="#1-sysinfo">5.1</a></td>
+      </tr>
+      <tr>
+          <td>What is the name of the share likely created by the user?</td>
+          <td><a href="#3">5.3</a></td>
+      </tr>
+      <tr>
+          <td>What is the NTLM hash of the jchambers user?</td>
+          <td><a href="#4">5.4</a></td>
+      </tr>
+      <tr>
+          <td>What is the cleartext password of the jchambers user?</td>
+          <td><a href="#5">5.5</a></td>
+      </tr>
+      <tr>
+          <td>Where is the &ldquo;secrets.txt&rdquo;  file located?</td>
+          <td><a href="#6">5.6</a></td>
+      </tr>
+      <tr>
+          <td>What is the Twitter password revealed in the &ldquo;secrets.txt&rdquo; file?</td>
+          <td><a href="#6">5.6</a></td>
+      </tr>
+      <tr>
+          <td>Where is the &ldquo;realsecret.txt&rdquo; file located?</td>
+          <td><a href="#8">5.7</a></td>
+      </tr>
+      <tr>
+          <td>What is the real secret?</td>
+          <td><a href="#8">5.8</a></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="solutions">solutions</h2>
 <h3 id="1-sysinfo">1 sysinfo</h3>
@@ -671,7 +687,7 @@ data-ad-slot="7160066188"></ins></p>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2010 - 2023 Classroom</p>
+              <p>© 2010 - 2025 Classroom</p>
               
 
               
@@ -882,7 +898,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('https:\/\/classroom.anir0y.in/index.json', function (data) {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],
