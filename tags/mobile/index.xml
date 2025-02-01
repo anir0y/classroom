@@ -1,2 +1,444 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile on Classroom</title><link>https://classroom.anir0y.in/tags/mobile/</link><description>Recent content in Mobile on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 09 Mar 2021 21:23:59 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Mobile App pentesting</title><pubDate>Tue, 09 Mar 2021 21:23:59 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Mobile Application Penetration Testing Cheat Sheet The Mobile App Pentest cheat sheet was created to provide concise collection of high value information on specific mobile application penetration testing topics and checklist, which is mapped OWASP Mobile Risk Top 10 for conducting pentest.
-Mobile Application Security Testing Distributions All-in-one Mobile Security Frameworks Android Application Penetration Testing Reverse Engineering and Static Analysis Dynamic and Runtime Analysis Network Analysis and Server Side Testing Bypassing Root Detection and SSL Pinning Security Libraries iOS Application Penetration Testing Access Filesystem on iDevice Reverse Engineering and Static Analysis Dynamic and Runtime Analysis Network Analysis and Server Side Testing Bypassing Root Detection and SSL Pinning Security Libraries Mobile Penetration Testing Lab Contribution License Mobile Application Security Testing Distributions Appie - A portable software package for Android Pentesting and an awesome alternative to existing Virtual machines.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/learnings-mobileapppt/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile on Classroom</title><link>https://classroom.anir0y.in/tags/mobile/</link><description>Recent content in Mobile on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 09 Mar 2021 21:23:59 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Mobile App pentesting</title><pubDate>Tue, 09 Mar 2021 21:23:59 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="mobile-application-penetration-testing-cheat-sheet">Mobile Application Penetration Testing Cheat Sheet&lt;/h2>
+&lt;p>The Mobile App Pentest cheat sheet was created to provide concise collection of high value information on specific mobile application penetration testing topics and checklist, which is mapped OWASP Mobile Risk Top 10 for conducting pentest.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="#mobile-application-security-testing-distributions">Mobile Application Security Testing Distributions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#all-in-one-mobile-security-frameworks">All-in-one Mobile Security Frameworks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#android-application-penetration-testing">Android Application Penetration Testing&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#reverse-engineering-and-static-analysis">Reverse Engineering and Static Analysis&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dynamic-and-runtime-analysis">Dynamic and Runtime Analysis&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#network-analysis-and-server-side-testing">Network Analysis and Server Side Testing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#bypassing-root-detection-and-ssl-pinning">Bypassing Root Detection and SSL Pinning&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#security-libraries">Security Libraries&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#ios-application-penetration-testing">iOS Application Penetration Testing&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#access-filesystem-on-idevice">Access Filesystem on iDevice&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#reverse-engineering-and-static-analysis">Reverse Engineering and Static Analysis&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dynamic-and-runtime-analysis">Dynamic and Runtime Analysis&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#network-analysis-and-server-side-testing">Network Analysis and Server Side Testing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#bypassing-root-detection-and-ssl-pinning">Bypassing Root Detection and SSL Pinning&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#security-libraries">Security Libraries&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#mobile-penetration-testing-lab">Mobile Penetration Testing Lab&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#contribution">Contribution&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#license">License&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="mobile-application-security-testing-distributions">Mobile Application Security Testing Distributions&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://manifestsecurity.com/appie">Appie&lt;/a> - A portable software package for Android Pentesting and an awesome alternative to existing Virtual machines.&lt;/li>
+&lt;li>&lt;a href="https://androidtamer.com/">Android Tamer&lt;/a> - Android Tamer is a Virtual / Live Platform for Android Security professionals.&lt;/li>
+&lt;li>&lt;a href="https://github.com/sh4hin/Androl4b">Androl4b&lt;/a> - A Virtual Machine For Assessing Android applications, Reverse Engineering and Malware Analysis&lt;/li>
+&lt;li>&lt;a href="https://github.com/oguzhantopgul/Vezir-Project">Vezir Project&lt;/a> - Mobile Application Pentesting and Malware Analysis Environment.&lt;/li>
+&lt;/ul>
+&lt;h3 id="all-in-one-mobile-security-frameworks">All-in-One Mobile Security Frameworks&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ajinabraham/Mobile-Security-Framework-MobSF">Mobile Security Framework - MobSF&lt;/a> - Mobile Security Framework is an intelligent, all-in-one open source mobile application (Android/iOS) automated pen-testing framework capable of performing static and dynamic analysis.
+&lt;ul>
+&lt;li>&lt;code>python manage.py runserver 127.0.0.1:1337&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/mwrlabs/needle">Needle&lt;/a> - Needle is an open source, modular framework to streamline the process of conducting security assessments of iOS apps including Binary Analysis, Static Code Analysis, Runtime Manipulation using Cycript and Frida hooking, and so on.&lt;/li>
+&lt;li>&lt;a href="https://github.com/sensepost/objection">Objection&lt;/a> - Objection is a runtime mobile exploration toolkit, powered by Frida. It was built with the aim of helping assess mobile applications and their security posture without the need for a jailbroken or rooted mobile device.&lt;/li>
+&lt;li>&lt;a href="https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security">RMS-Runtime-Mobile-Security&lt;/a> - Runtime Mobile Security (RMS), powered by FRIDA, is a powerful web interface that helps you to manipulate Android and iOS Apps at Runtime.&lt;/li>
+&lt;/ul>
+&lt;h3 id="android-application-penetration-testing">Android Application Penetration Testing&lt;/h3>
+&lt;h4 id="reverse-engineering-and-static-analysis">Reverse Engineering and Static Analysis&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="http://ibotpeaches.github.io/Apktool/">APKTool&lt;/a> - A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications.
+&lt;ul>
+&lt;li>Disassembling Android apk file
+&lt;ul>
+&lt;li>&lt;code>apktool d &amp;lt;apk file&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Rebuilding decoded resources back to binary APK/JAR with certificate signing
+&lt;ul>
+&lt;li>&lt;code>apktool b &amp;lt;modified folder&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>keytool -genkey -v -keystore keys/test.keystore -alias Test -keyalg RSA -keysize 1024 -sigalg SHA1withRSA -validity 10000&lt;/code>&lt;/li>
+&lt;li>&lt;code>jarsigner -keystore keys/test.keystore dist/test.apk -sigalg SHA1withRSA -digestalg SHA1 Test&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/Konloch/bytecode-viewer">Bytecode Viewer&lt;/a> - Bytecode Viewer is an Advanced Lightweight Java Bytecode Viewer, It&amp;rsquo;s written completely in Java, and it&amp;rsquo;s open sourced.&lt;/li>
+&lt;li>&lt;a href="https://github.com/skylot/jadx">Jadx&lt;/a> - Dex to Java decompiler: Command line and GUI tools for produce Java source code from Android Dex and Apk files.&lt;/li>
+&lt;li>&lt;a href="https://github.com/vaibhavpandeyvpz/apkstudio">APK Studio&lt;/a> - Open-source, cross platform Qt based IDE for reverse-engineering Android application packages.&lt;/li>
+&lt;li>&lt;a href="https://github.com/testwhat/SmaliEx">Oat2dex&lt;/a> - A tool for converting .oat file to .dex files.
+&lt;ul>
+&lt;li>Deoptimize boot classes (The output will be in &amp;ldquo;odex&amp;rdquo; and &amp;ldquo;dex&amp;rdquo; folders)
+&lt;ul>
+&lt;li>&lt;code>java -jar oat2dex.jar boot &amp;lt;boot.oat file&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Deoptimize application
+&lt;ul>
+&lt;li>&lt;code>java -jar oat2dex.jar &amp;lt;app.odex&amp;gt; &amp;lt;boot-class-folder output from above&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Get odex from oat
+&lt;ul>
+&lt;li>&lt;code>java -jar oat2dex.jar odex &amp;lt;oat file&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Get odex smali (with optimized opcode) from oat/odex
+&lt;ul>
+&lt;li>&lt;code>java -jar oat2dex.jar smali &amp;lt;oat/odex file&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="http://findbugs.sourceforge.net/">FindBugs&lt;/a> + &lt;a href="http://h3xstream.github.io/find-sec-bugs/">FindSecurityBugs&lt;/a> - FindSecurityBugs is a extension for FindBugs which include security rules for Java applications.&lt;/li>
+&lt;li>&lt;a href="https://github.com/linkedin/qark">Qark&lt;/a> - This tool is designed to look for several security related Android application vulnerabilities, either in source code or packaged APKs.&lt;/li>
+&lt;li>&lt;a href="https://github.com/SUPERAndroidAnalyzer/super">SUPER&lt;/a> - SUPER is a command-line application that can be used in Windows, MacOS X and Linux, that analyzes .apk files in search for vulnerabilities. It does this by decompressing APKs and applying a series of rules to detect those vulnerabilities.&lt;/li>
+&lt;li>&lt;a href="https://github.com/AndroBugs/AndroBugs_Framework">AndroBugs&lt;/a> - AndroBugs Framework is an efficient Android vulnerability scanner that helps developers or hackers find potential security vulnerabilities in Android applications. No need to install on Windows.&lt;/li>
+&lt;li>&lt;a href="https://github.com/CalebFenton/simplify">Simplify&lt;/a> - A tool for de-obfuscating android package into Classes.dex which can be use Dex2jar and JD-GUI to extract contents of dex file.
+&lt;ul>
+&lt;li>&lt;code>simplify.jar -i &amp;quot;input smali files or folder&amp;quot; -o &amp;lt;output dex file&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/HamiltonianCycle/ClassNameDeobfuscator">ClassNameDeobfuscator&lt;/a> - Simple script to parse through the .smali files produced by apktool and extract the .source annotation lines.&lt;/li>
+&lt;li>&lt;a href="https://github.com/nelenkov/android-backup-extractor">Android backup extractor&lt;/a> - Utility to extract and repack Android backups created with adb backup (ICS+). Largely based on BackupManagerService.java from AOSP.
+Tip !! &amp;ldquo;adb backup&amp;rdquo; command can also be used for extracting application package with the following command:
+&lt;ul>
+&lt;li>&lt;code>adb backup &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>dd if=backup.ab bs=1 skip=24 | python -c &amp;quot;import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read()))&amp;quot; &amp;gt; backup.tar&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="dynamic-and-runtime-analysis">Dynamic and Runtime Analysis&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="http://www.cydiasubstrate.com/">Cydia Substrate&lt;/a> - Cydia Substrate for Android enables developers to make changes to existing software with Substrate extensions that are injected in to the target process&amp;rsquo;s memory.&lt;/li>
+&lt;li>&lt;a href="http://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053">Xposed Framework&lt;/a> - Xposed framework enables you to modify the system or application aspect and behaviour at runtime, without modifying any Android application package(APK) or re-flashing.&lt;/li>
+&lt;li>&lt;a href="https://github.com/JakeWharton/pidcat">PID Cat&lt;/a> - An update to Jeff Sharkey&amp;rsquo;s excellent logcat color script which only shows log entries for processes from a specific application package.&lt;/li>
+&lt;li>&lt;a href="https://github.com/ac-pm/Inspeckage">Inspeckage&lt;/a> - Inspeckage is a tool developed to offer dynamic analysis of Android applications. By applying hooks to functions of the Android API, Inspeckage will help you understand what an Android application is doing at runtime.&lt;/li>
+&lt;li>&lt;a href="http://www.frida.re/">Frida&lt;/a> - The toolkit works using a client-server model and lets you inject in to running processes not just on Android, but also on iOS, Windows and Mac.&lt;/li>
+&lt;li>&lt;a href="https://github.com/antojoseph/diff-gui">Diff-GUI&lt;/a> - A Web framework to start instrumenting with the avaliable modules, hooking on native, inject JavaScript using Frida.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Nightbringer21/fridump">Fridump&lt;/a> - Fridump is using the Frida framework to dump accessible memory addresses from any platform supported. It can be used from a Windows, Linux or Mac OS X system to dump the memory of an iOS, Android or Windows application.&lt;/li>
+&lt;li>&lt;a href="https://github.com/nccgroup/house">House&lt;/a> - A runtime mobile application analysis toolkit with a Web GUI, powered by Frida, is designed for helping assess mobile applications by implementing dynamic function hooking and intercepting and intended to make Frida script writing as simple as possible.&lt;/li>
+&lt;li>&lt;a href="https://github.com/swdunlop/AndBug">AndBug&lt;/a> - AndBug is a debugger targeting the Android platform&amp;rsquo;s Dalvik virtual machine intended for reverse engineers and developers.
+&lt;ul>
+&lt;li>Identifying application process using adb shell
+&lt;ul>
+&lt;li>&lt;code>adb shell ps | grep -i &amp;quot;App keyword&amp;quot;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Accessing the application using AndBug in order to identify loaded classes
+&lt;ul>
+&lt;li>&lt;code>andbug shell -p &amp;lt;process number&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Tracing specific class
+&lt;ul>
+&lt;li>&lt;code>ct &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Debugging with jdb
+&lt;ul>
+&lt;li>&lt;code>adb forward tcp:&amp;lt;port&amp;gt; jdwp:&amp;lt;port&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>jdb -attach localhost:&amp;lt;port&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/iSECPartners/Introspy-Android">Cydia Substrate: Introspy-Android&lt;/a> - Blackbox tool to help understand what an Android application is doing at runtime and assist in the identification of potential security issues.&lt;/li>
+&lt;li>&lt;a href="https://github.com/FSecureLABS/drozer">Drozer&lt;/a> - Drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps&amp;rsquo; IPC endpoints and the underlying OS.
+&lt;ul>
+&lt;li>Starting a session
+&lt;ul>
+&lt;li>&lt;code>adb forward tcp:31415 tcp:31415&lt;/code>&lt;/li>
+&lt;li>&lt;code>drozer console connect&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Retrieving package information
+&lt;ul>
+&lt;li>&lt;code>run app.package.list -f &amp;lt;app name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run app.package.info -a &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Identifying the attack surface
+&lt;ul>
+&lt;li>&lt;code>run app.package.attacksurface &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Exploiting Activities
+&lt;ul>
+&lt;li>&lt;code>run app.activity.info -a &amp;lt;package name&amp;gt; -u&lt;/code>&lt;/li>
+&lt;li>&lt;code>run app.activity.start --component &amp;lt;package name&amp;gt; &amp;lt;component name&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Exploiting Content Provider
+&lt;ul>
+&lt;li>&lt;code>run app.provider.info -a &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run scanner.provider.finduris -a &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run app.provider.query &amp;lt;uri&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run app.provider.update &amp;lt;uri&amp;gt; --selection &amp;lt;conditions&amp;gt; &amp;lt;selection arg&amp;gt; &amp;lt;column&amp;gt; &amp;lt;data&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run scanner.provider.sqltables -a &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run scanner.provider.injection -a &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run scanner.provider.traversal -a &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Exploiting Broadcast Receivers
+&lt;ul>
+&lt;li>&lt;code>run app.broadcast.info -a &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run app.broadcast.send --component &amp;lt;package name&amp;gt; &amp;lt;component name&amp;gt; --extra &amp;lt;type&amp;gt; &amp;lt;key&amp;gt; &amp;lt;value&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run app.broadcast.sniff --action &amp;lt;action&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Exploiting Service
+&lt;ul>
+&lt;li>&lt;code>run app.service.info -a &amp;lt;package name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run app.service.start --action &amp;lt;action&amp;gt; --component &amp;lt;package name&amp;gt; &amp;lt;component name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;code>run app.service.send &amp;lt;package name&amp;gt; &amp;lt;component name&amp;gt; --msg &amp;lt;what&amp;gt; &amp;lt;arg1&amp;gt; &amp;lt;arg2&amp;gt; --extra &amp;lt;type&amp;gt; &amp;lt;key&amp;gt; &amp;lt;value&amp;gt; --bundle-as-obj&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="network-analysis-and-server-side-testing">Network Analysis and Server Side Testing&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="http://www.androidtcpdump.com">Tcpdump&lt;/a> - A command line packet capture utility.&lt;/li>
+&lt;li>&lt;a href="https://www.wireshark.org/download.html">Wireshark&lt;/a> - An open-source packet analyzer.
+&lt;ul>
+&lt;li>Live packet captures in real time
+&lt;ul>
+&lt;li>&lt;code>adb shell &amp;quot;tcpdump -s 0 -w - | nc -l -p 4444&amp;quot;&lt;/code>&lt;/li>
+&lt;li>&lt;code>adb forward tcp:4444 tcp:4444&lt;/code>&lt;/li>
+&lt;li>&lt;code>nc localhost 4444 | sudo wireshark -k -S -i –&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="http://www.contextis.com/services/research/canape/">Canape&lt;/a> - A network testing tool for arbitrary protocols.&lt;/li>
+&lt;li>&lt;a href="https://intrepidusgroup.com/insight/mallory/">Mallory&lt;/a> - A Man in The Middle Tool (MiTM) that use to monitor and manipulate traffic on mobile devices and applications.&lt;/li>
+&lt;li>&lt;a href="https://portswigger.net/burp/download.html">Burp Suite&lt;/a> - Burp Suite is an integrated platform for performing security testing of applications.
+&lt;ul>
+&lt;li>Installing trusted CA at the Android OS level (Root device/Emulator) for Android N+ as the following:
+&lt;ul>
+&lt;li>&lt;code>openssl x509 -inform PEM -subject_hash -in BurpCA.pem | head -1&lt;/code>&lt;/li>
+&lt;li>&lt;code>cat BurpCA.pem &amp;gt; 9a5ba580.0&lt;/code>&lt;/li>
+&lt;li>&lt;code>openssl x509 -inform PEM -text -in BurpCA.pem -out /dev/null &amp;gt;&amp;gt; 9a5ba580.0&lt;/code>&lt;/li>
+&lt;li>&lt;code>adb root&lt;/code>&lt;/li>
+&lt;li>&lt;code>abd remount&lt;/code>&lt;/li>
+&lt;li>&lt;code>adb push 9a5ba580.0 /system/etc/security/cacerts/&lt;/code>&lt;/li>
+&lt;li>&lt;code>adb shell “chmod 644 /system/etc/security/cacerts/9a5ba580.0”&lt;/code>&lt;/li>
+&lt;li>&lt;code>adb shell “reboot”&lt;/code>&lt;/li>
+&lt;li>Check Settings &amp;gt; Security &amp;gt; Trusted Credentials &amp;gt; SYSTEM to confirm your newly added CA is listed.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://portswigger.net/burp/documentation/desktop/mobile-testing">Burp Suite Mobile Assistant&lt;/a> - Burp Suite Mobile Assistant is a tool to facilitate testing of iOS apps with Burp Suite; It can modify the system-wide proxy settings of iOS devices so that HTTP(S) traffic can be easily redirected to a running instance of Burp, It can attempt to circumvent SSL certificate pinning in selected apps, allowing Burp Suite to break their HTTPS connections and intercept, inspect and modify all traffic.&lt;/li>
+&lt;li>&lt;a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">OWASP ZAP&lt;/a> - OWASP Zed Attack Proxy Project is an open-source web application security scanner. It is intended to be used by both those new to application security as well as professional penetration testers.&lt;/li>
+&lt;li>&lt;a href="https://play.google.com/store/apps/details?id=org.proxydroid">Proxydroid&lt;/a> - Global Proxy App for Android System.&lt;/li>
+&lt;/ul>
+&lt;h4 id="bypassing-root-detection-and-ssl-pinning">Bypassing Root Detection and SSL Pinning&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/topjohnwu/Magisk">Magisk&lt;/a> - Magisk suites provide root access to your device, capability to modify read-only partitions by installing modules and hide Magisk from root detections/system integrity checks.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Fuzion24/JustTrustMe">Xposed Module: Just Trust Me&lt;/a> - Xposed Module to bypass SSL certificate pinning.&lt;/li>
+&lt;li>&lt;a href="https://github.com/ac-pm/SSLUnpinning_Xposed">Xposed Module: SSLUnpinning&lt;/a> - Android Xposed Module to bypass SSL certificate validation (Certificate Pinning).&lt;/li>
+&lt;li>&lt;a href="https://github.com/iSECPartners/Android-SSL-TrustKiller">Cydia Substrate Module: Android SSL Trust Killer&lt;/a> - Blackbox tool to bypass SSL certificate pinning for most applications running on a device.&lt;/li>
+&lt;li>&lt;a href="https://github.com/devadvance/rootcloakplus">Cydia Substrate Module: RootCoak Plus&lt;/a> - Patch root checking for commonly known indications of root.&lt;/li>
+&lt;li>&lt;a href="https://github.com/iSECPartners/android-ssl-bypass">Android-ssl-bypass&lt;/a> - an Android debugging tool that can be used for bypassing SSL, even when certificate pinning is implemented, as well as other debugging tasks. The tool runs as an interactive console.&lt;/li>
+&lt;li>&lt;a href="https://codeshare.frida.re/">Frida CodeShare&lt;/a> - The Frida CodeShare project is comprised of developers from around the world working together with one goal - push Frida to its limits in new and innovative ways.
+&lt;ul>
+&lt;li>Bypassing Root Detection
+&lt;ul>
+&lt;li>&lt;code>frida --codeshare dzonerzy/fridantiroot -f YOUR_BINARY&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Bypassing SSL Pinning
+&lt;ul>
+&lt;li>&lt;code>frida --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida -f YOUR_BINARY&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="security-libraries">Security Libraries&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://www.owasp.org/images/1/1f/Pubkey-pin-android.zip">PublicKey Pinning&lt;/a> - Pinning in Android can be accomplished through a custom X509TrustManager. X509TrustManager should perform the customary X509 checks in addition to performing the pinning configuration.&lt;/li>
+&lt;li>&lt;a href="https://github.com/moxie0/AndroidPinning">Android Pinning&lt;/a> - A standalone library project for certificate pinning on Android.&lt;/li>
+&lt;li>&lt;a href="https://github.com/tozny/java-aes-crypto">Java AES Crypto&lt;/a> - A simple Android class for encrypting &amp;amp; decrypting strings, aiming to avoid the classic mistakes that most such classes suffer from.&lt;/li>
+&lt;li>&lt;a href="http://proguard.sourceforge.net/">Proguard&lt;/a> - ProGuard is a free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes.&lt;/li>
+&lt;li>&lt;a href="https://www.zetetic.net/sqlcipher/sqlcipher-for-android/">SQL Cipher&lt;/a> - SQLCipher is an open source extension to SQLite that provides transparent 256-bit AES encryption of database files.&lt;/li>
+&lt;li>&lt;a href="https://github.com/scottyab/secure-preferences">Secure Preferences&lt;/a> - Android Shared preference wrapper than encrypts the keys and values of Shared Preferences.&lt;/li>
+&lt;li>&lt;a href="https://github.com/guardianproject/TrustedIntents">Trusted Intents&lt;/a> - Library for flexible trusted interactions between Android apps.&lt;/li>
+&lt;li>&lt;a href="https://github.com/scottyab/rootbeer">RootBeer&lt;/a> - A tasty root checker library and sample app.&lt;/li>
+&lt;li>&lt;a href="https://github.com/google/capillary">End-to-end encryption&lt;/a> - Capillary is a library to simplify the sending of end-to-end encrypted push messages from Java-based application servers to Android clients.&lt;/li>
+&lt;/ul>
+&lt;h3 id="ios-application-penetration-testing">iOS Application Penetration Testing&lt;/h3>
+&lt;h4 id="access-filesystem-on-idevice">Access Filesystem on iDevice&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://filezilla-project.org/download.php?show_all=1">FileZilla&lt;/a> - It supports FTP, SFTP, and FTPS (FTP over SSL/TLS).&lt;/li>
+&lt;li>&lt;a href="https://cyberduck.io">Cyberduck&lt;/a> - Libre FTP, SFTP, WebDAV, S3, Azure &amp;amp; OpenStack Swift browser for Mac and Windows.&lt;/li>
+&lt;li>&lt;a href="https://code.google.com/p/iphonetunnel-usbmuxconnectbyport/downloads/list">itunnel&lt;/a> - Use to forward SSH via USB.&lt;/li>
+&lt;li>&lt;a href="https://github.com/tcurdt/iProxy">iProxy&lt;/a> - Let&amp;rsquo;s you connect your laptop to the iPhone to surf the web.&lt;/li>
+&lt;li>&lt;a href="http://www.i-funbox.com">iFunbox&lt;/a> - The File and App Management Tool for iPhone, iPad &amp;amp; iPod Touch.&lt;/li>
+&lt;/ul>
+&lt;h4 id="reverse-engineering-and-static-analysis-1">Reverse Engineering and Static Analysis&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="http://www.unix.com/man-page/osx/1/otool/">otool&lt;/a> - The otool command displays specified parts of object files or libraries.&lt;/li>
+&lt;li>&lt;a href="http://cydia.radare.org/">Clutch&lt;/a> - Decrypted the application and dump specified bundleID into binary or .ipa file.&lt;/li>
+&lt;li>&lt;a href="https://github.com/stefanesser/dumpdecrypted">Dumpdecrypted&lt;/a> - Dumps decrypted mach-o files from encrypted iPhone applications from memory to disk. This tool is necessary for security researchers to be able to look under the hood of encryption.
+&lt;ul>
+&lt;li>&lt;code>iPod:~ root# DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /var/mobile/Applications/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/Scan.app/Scan&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="http://stevenygard.com/projects/class-dump/">class-dump&lt;/a> - A command-line utility for examining the Objective-C runtime information stored in Mach-O files.&lt;/li>
+&lt;li>&lt;a href="https://github.com/DerekSelander/dsdump">dsdump&lt;/a> - An improved nm + objc/swift class-dump.&lt;/li>
+&lt;li>&lt;a href="https://github.com/limneos/weak_classdump">Weak Classdump&lt;/a> - A Cycript script that generates a header file for the class passed to the function. Most useful when you cannot classdump or dumpdecrypted , when binaries are encrypted etc.
+&lt;ul>
+&lt;li>&lt;code>iPod:~ root# cycript -p Skype weak_classdump.cy; cycript -p Skype&lt;/code>&lt;/li>
+&lt;li>&lt;code>#cy weak_classdump_bundle([NSBundle mainBundle],&amp;quot;/tmp/Skype&amp;quot;)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/tanprathan/Fridpa">Fridpa&lt;/a> - An automated wrapper script for patching iOS applications (IPA files) and work on non-jailbroken device.&lt;/li>
+&lt;li>&lt;a href="https://github.com/AloneMonkey/frida-ios-dump">Frida-iOS-Dump&lt;/a> - Pull a decrypted IPA from a jailbroken device.&lt;/li>
+&lt;li>&lt;a href="https://github.com/ChiChou/bagbak">bagbak&lt;/a> - Yet another frida based iOS dumpdecrypted, supports decrypting app extensions and no SSH required.&lt;/li>
+&lt;li>&lt;a href="https://github.com/BishopFox/bfinject">bfinject&lt;/a> - bfinject loads arbitrary dylibs into running App Store apps. It has built-in support for decrypting App Store apps, and comes bundled with iSpy and Cycript.
+&lt;ul>
+&lt;li>A Simple Test
+&lt;ul>
+&lt;li>&lt;code>bash bfinject -P Reddit -L test&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Decrypt App Store apps
+&lt;ul>
+&lt;li>&lt;code>bash bfinject -P Reddit -L decrypt&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cycript
+&lt;ul>
+&lt;li>&lt;code>bash bfinject -P Reddit -L cycript &lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="http://hopperapp.com/">HopperApp&lt;/a> - Hopper is a reverse engineering tool for OS X and Linux, that lets you disassemble, decompile and debug your 32/64bits Intel Mac, Linux, Windows and iOS executables.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Januzellij/hopperscripts">hopperscripts&lt;/a> - Hopperscripts can be used to demangle the Swift function name in HopperApp.&lt;/li>
+&lt;li>&lt;a href="http://www.radare.org/">Radare2&lt;/a> - Radare2 is a unix-like reverse engineering framework and commandline tools.&lt;/li>
+&lt;li>&lt;a href="https://github.com/xndrs/XReSign">XReSign&lt;/a> - XReSign allows you to sign or resign unencrypted ipa-files with certificate for which you hold the corresponding private key. Checked for developer, ad-hoc and enterprise distribution.&lt;/li>
+&lt;/ul>
+&lt;h4 id="dynamic-and-runtime-analysis-1">Dynamic and Runtime Analysis&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="http://www.cycript.org">cycript&lt;/a> - Cycript allows developers to explore and modify running applications on either iOS or Mac OS X using a hybrid of Objective-C++ and JavaScript syntax through an interactive console that features syntax highlighting and tab completion.
+&lt;ul>
+&lt;li>Show currently visible view controller
+&lt;ul>
+&lt;li>&lt;code>cy# UIApp.keyWindow.rootViewController.visibleViewController&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Show view controller at the top of the navigation stack
+&lt;ul>
+&lt;li>&lt;code>cy# UIApp.keyWindow.rootViewController.topViewController&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Get an array of existing objects of a certain class
+&lt;ul>
+&lt;li>&lt;code>cy# choose(UIViewController)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>UI Dump,cuts off lots of descriptions of UIViews
+&lt;ul>
+&lt;li>&lt;code>cy# [[UIApp keyWindow] _autolayoutTrace].toString()&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Skip UIViews and nextResponders to get ViewControllers directly
+&lt;ul>
+&lt;li>&lt;code>cy# [[[UIApp keyWindow] rootViewController] _printHierarchy].toString()&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>List method at runtime
+&lt;ul>
+&lt;li>&lt;code>cy# classname.messages&lt;/code> or
+&lt;code>cy# function printMethods(className, isa) { var count = new new Type(&amp;quot;I&amp;quot;); var classObj = (isa != undefined) ? objc_getClass(className)-&amp;gt;isa : objc_getClass(className); var methods = class_copyMethodList(classObj, count); var methodsArray = []; for(var i = 0; i &amp;lt; *count; i++) { var method = methods[i]; methodsArray.push({selector:method_getName(method), implementation:method_getImplementation(method)}); } free(methods); return methodsArray; }&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;ul>
+&lt;li>&lt;code>cy# printMethods(&amp;quot;&amp;lt;classname&amp;gt;&amp;quot;)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prints out all the instance variables
+&lt;ul>
+&lt;li>&lt;code>cy# a=#0x15d0db80&lt;/code>&lt;/li>
+&lt;li>&lt;code>cy# *a&lt;/code> or&lt;/li>
+&lt;li>&lt;code>cy# function tryPrintIvars(a){ var x={}; for(i in *a){ try{ x[i] = (*a)[i]; } catch(e){} } return x; }&lt;/code>&lt;/li>
+&lt;li>&lt;code>cy# a=#0x15d0db80&lt;/code>&lt;/li>
+&lt;li>&lt;code>cy# tryPrintIvars(a)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Manipulating through property
+&lt;ul>
+&lt;li>&lt;code>cy# [a pinCode]&lt;/code>&lt;/li>
+&lt;li>&lt;code>cy# [a setPinCode: @&amp;quot;1234&amp;quot;]&lt;/code> or &lt;code>cy# a.setPinCode= @&amp;quot;1234&amp;quot;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Method Swizzling for Instance Method
+&lt;ul>
+&lt;li>&lt;code>cy# [a isValidPin]&lt;/code>&lt;/li>
+&lt;li>&lt;code>cy# &amp;lt;classname&amp;gt;.prototype.isValidPin = function(){return 1;}&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Method Swizzling for Class Method
+&lt;ul>
+&lt;li>&lt;code>cy# [Pin isValidPin]&lt;/code>&lt;/li>
+&lt;li>&lt;code>cy# Pin.contructor.prototype.['isValidPin'] = function(){return 1;}&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://appsec-labs.com/cydia/">iNalyzer&lt;/a> - AppSec Labs iNalyzer is a framework for manipulating iOS applications, tampering with parameters and method.&lt;/li>
+&lt;li>&lt;a href="https://github.com/chaitin/passionfruit">Passionfruit&lt;/a> - Simple iOS app blackbox assessment tool with Fully web based GUI. Powered by frida.re and vuejs.&lt;/li>
+&lt;li>&lt;a href="https://github.com/iSECPartners/Introspy-iOS">Introspy-iOS&lt;/a> - Blackbox tool to help understand what an iOS application is doing at runtime and assist in the identification of potential security issues.&lt;/li>
+&lt;li>&lt;a href="https://itunes.apple.com/app/apple-configurator-2/id1037126344">Apple configurator 2&lt;/a> - A utility which can be used to view live system log on iDevice.&lt;/li>
+&lt;li>&lt;a href="http://cydia.radare.org/">keychaindumper&lt;/a> - A tool to check which keychain items are available to an attacker once an iOS device has been jailbroken.&lt;/li>
+&lt;li>&lt;a href="http://securitylearn.net/wp-content/uploads/tools/iOS/BinaryCookieReader.py">BinaryCookieReader&lt;/a> - A tool to dump all the cookies from the binary Cookies.binarycookies file.&lt;/li>
+&lt;/ul>
+&lt;h4 id="network-analysis-and-server-side-testing-1">Network Analysis and Server Side Testing&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="http://www.contextis.com/services/research/canape/">Canape&lt;/a> - A network testing tool for arbitrary protocols.&lt;/li>
+&lt;li>&lt;a href="https://intrepidusgroup.com/insight/mallory/">Mallory&lt;/a> - A Man in The Middle Tool (MiTM) that use to monitor and manipulate traffic on mobile devices and applications.&lt;/li>
+&lt;li>&lt;a href="https://portswigger.net/burp/download.html">Burp Suite&lt;/a> - Burp Suite is an integrated platform for performing security testing of applications.&lt;/li>
+&lt;li>&lt;a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">OWASP ZAP&lt;/a> - OWASP Zed Attack Proxy Project is an open-source web application security scanner. It is intended to be used by both those new to application security as well as professional penetration testers.&lt;/li>
+&lt;li>&lt;a href="http://www.charlesproxy.com">Charles Proxy&lt;/a> - HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet.&lt;/li>
+&lt;/ul>
+&lt;h4 id="bypassing-root-detection-and-ssl-pinning-1">Bypassing Root Detection and SSL Pinning&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/nabla-c0d3/ssl-kill-switch2">SSL Kill Switch 2&lt;/a> - Blackbox tool to disable SSL certificate validation - including certificate pinning - within iOS and OS X Apps.&lt;/li>
+&lt;li>&lt;a href="https://github.com/intrepidusgroup/trustme">iOS TrustMe&lt;/a> - Disable certificate trust checks on iOS devices.&lt;/li>
+&lt;li>&lt;a href="http://cydia.saurik.com/package/kr.typostudio.tsprotector8/">tsProtector&lt;/a> - Another tool for bypassing Jailbreak detection.&lt;/li>
+&lt;li>&lt;a href="http://julioverne.github.io/">JailProtect&lt;/a> - Apart from bypassing jailbreak detection, it also allows you to spoof your iOS firmware version easily.&lt;/li>
+&lt;li>&lt;a href="https://ios.jjolano.me">Shadow&lt;/a> - Shadow is a tweak to bypass jailbreak detection that defeats basic detection methods used by many App Store apps.&lt;/li>
+&lt;li>&lt;a href="https://codeshare.frida.re/">Frida CodeShare&lt;/a> - The Frida CodeShare project is comprised of developers from around the world working together with one goal - push Frida to its limits in new and innovative ways.
+&lt;ul>
+&lt;li>Bypassing SSL Pinning
+&lt;ul>
+&lt;li>&lt;code>frida --codeshare lichao890427/ios-ssl-bypass -f YOUR_BINARY&lt;/code>&lt;/li>
+&lt;li>&lt;code>frida --codeshare dki/ios10-ssl-bypass -f YOUR_BINARY&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="security-libraries-1">Security Libraries&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://www.owasp.org/images/9/9a/Pubkey-pin-ios.zip">PublicKey Pinning&lt;/a> - iOS pinning is performed through a NSURLConnectionDelegate. The delegate must implement connection:canAuthenticateAgainstProtectionSpace: and connection:didReceiveAuthenticationChallenge:. Within connection:didReceiveAuthenticationChallenge:, the delegate must call SecTrustEvaluate to perform customary X509 checks.&lt;/li>
+&lt;li>&lt;a href="https://github.com/rockbruno/swiftshield">Swiftshield&lt;/a> - SwiftShield is a tool that generates irreversible, encrypted names for your iOS project&amp;rsquo;s objects (including your Pods and Storyboards) in order to protect your app from tools that reverse engineer iOS apps, like class-dump and Cycript.&lt;/li>
+&lt;li>&lt;a href="https://github.com/securing/IOSSecuritySuite">IOSSecuritySuite&lt;/a> - iOS Security Suite is an advanced and easy-to-use platform security &amp;amp; anti-tampering library written in pure Swift! If you are developing for iOS and you want to protect your app according to the OWASP MASVS standard, chapter v8, then this library could save you a lot of time.&lt;/li>
+&lt;li>&lt;a href="https://project-imas.github.com/">OWASP iMAS&lt;/a> - iMAS is a collaborative research project from the MITRE Corporation focused on open source iOS security controls.&lt;/li>
+&lt;/ul>
+&lt;h3 id="mobile-penetration-testing-lab">Mobile Penetration Testing Lab&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/WaTF-Team/WaTF-Bank">WaTF Bank&lt;/a> - What-a-Terrible-Failure Mobile Banking Application (WaTF-Bank), written in Java, Swift 4, Objective-C and Python (Flask framework) as a backend server, is designed to simulate a &amp;ldquo;real-world&amp;rdquo; web services-enabled mobile banking application that contains over 30 vulnerabilities based on OWASP Mobile Top 10 Risks.&lt;/li>
+&lt;li>&lt;a href="https://github.com/dineshshetty/Android-InsecureBankv2">InsecureBankv2&lt;/a> - WThis vulnerable Android application is named &amp;ldquo;InsecureBankv2&amp;rdquo; and is made for security enthusiasts and developers to learn the Android insecurities by testing this vulnerable application. Its back-end server component is written in python.&lt;/li>
+&lt;li>&lt;a href="https://github.com/prateek147/DVIA-v2">DVIA-v2&lt;/a> - Damn Vulnerable iOS App (DVIA) is an iOS application that is damn vulnerable. Its main goal is to provide a platform to mobile security enthusiasts/professionals or students to test their iOS penetration testing skills in a legal environment.&lt;/li>
+&lt;li>&lt;a href="https://github.com/payatu/diva-android">DIVA Android&lt;/a> - DIVA (Damn insecure and vulnerable App) is an App intentionally designed to be insecure.The aim of the App is to teach developers/QA/security professionals, flaws that are generally present in the Apps due poor or insecure coding practices.&lt;/li>
+&lt;li>&lt;a href="https://github.com/logicalhacking/DVHMA">DVHMA&lt;/a> - Damn Vulnerable Hybrid Mobile App (DVHMA) is an hybrid mobile app (for Android) that intentionally contains vulnerabilities. Its purpose is to enable security professionals to test their tools and techniques legally, help developers better understand the common pitfalls in developing hybrid mobile apps securely.&lt;/li>
+&lt;li>&lt;a href="https://github.com/OWASP/MSTG-Hacking-Playground">MSTG Hacking Playground&lt;/a> - This is a collection of iOS and Android mobile apps, that are intentionally build insecure. These apps are used as examples to demonstrate different vulnerabilities explained in the the OWASP Mobile Security Testing Guide.&lt;/li>
+&lt;li>&lt;a href="https://github.com/OWASP/owasp-mstg/tree/master/Crackmes">UnCrackable Mobile Apps&lt;/a> - UnCrackable Apps for Android and iOS, a collection of mobile reverse engineering challenges. These challenges are used as examples throughout the Mobile Security Testing Guide.&lt;/li>
+&lt;li>&lt;a href="https://github.com/OWASP/igoat">OWASP iGoat&lt;/a> - Goat is a learning tool for iOS developers (iPhone, iPad, etc.) and mobile app pentesters. It was inspired by the WebGoat project, and has a similar conceptual flow to it.&lt;/li>
+&lt;/ul></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/learnings-mobileapppt/</link></item></channel></rss>

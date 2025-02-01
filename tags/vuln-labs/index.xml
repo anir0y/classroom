@@ -1,2 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vuln Labs on Classroom</title><link>https://classroom.anir0y.in/tags/vuln-labs/</link><description>Recent content in Vuln Labs on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vuln-labs/index.xml" rel="self" type="application/rss+xml"/><item><title>Vulnerable Apps, Servers, and Websites!</title><pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>overview The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).
-Learning Platforms and VMs VulnHub Hack the Box TryHackMe eLearn Security PentesterLab bWAPP CloudGoat Damn Small Vulnerable Web Damn Vulnerable ARM Router (DVAR) Damn Vulnerable iOS Application (DVIA) Damn Vulnerable Web App (DVWA) Damn Vulnerable Web Services Damn Vulnerable WordPress DOMXSS Extreme Vulnerable Node Application(XVNA) Game of Hacks Gruyere Hack This Site Hack This Hack Yourself first Hackazon HellBound Hackers Kubernetes Goat Metasploitable2 Metasploitable3 Over The Wire Wargames OWASP Juice Shop OWASP Mutillidae II Peruggia PortSwigger Web Security Academy RootMe Samurai Web Testing Framework Server-Side Request Forgery (SSRF) vulnerable Lab Snyk exploit-workshop Try2Hack Vicnum Vulnerable Single Sign-On (SSO) Web Security Dojo WebGoat XXE Lab WebSploit Labs WebSploit Labs (created and maintained by Omar Ωr Santos) Mayhem - vulnerable container created by Omar Ωr for Mayhem 2020 RTOV-Hackme - vulnerable container created by Omar Ωr for DEF CON 27 RTV-Safemode - vulnerable container created by Omar Ωr for DEF CON Safemode</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/blog1/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vuln Labs on Classroom</title><link>https://classroom.anir0y.in/tags/vuln-labs/</link><description>Recent content in Vuln Labs on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vuln-labs/index.xml" rel="self" type="application/rss+xml"/><item><title>Vulnerable Apps, Servers, and Websites!</title><pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview">overview&lt;/h2>
+&lt;blockquote>
+&lt;p>The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="learning-platforms-and-vms">Learning Platforms and VMs&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.vulnhub.com">VulnHub&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackthebox.eu/">Hack the Box&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tryhackme.com/">TryHackMe&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.elearnsecurity.com/">eLearn Security&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pentesterlab.com/">PentesterLab&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://sourceforge.net/projects/bwapp/files/bWAPP">bWAPP &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/RhinoSecurityLabs/cloudgoat">CloudGoat&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/stamparm/DSVW">Damn Small Vulnerable Web&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://blog.exploitlab.net/2018/01/dvar-damn-vulnerable-arm-router.html">Damn Vulnerable ARM Router (DVAR)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://damnvulnerableiosapp.com">Damn Vulnerable iOS Application (DVIA)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ethicalhack3r/DVWA">Damn Vulnerable Web App (DVWA)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/snoopysecurity/dvws">Damn Vulnerable Web Services&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/vavkamil/dvwp">Damn Vulnerable WordPress&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.domxss.com/domxss/">DOMXSS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/vegabird/xvna">Extreme Vulnerable Node Application(XVNA)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.gameofhacks.com">Game of Hacks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://google-gruyere.appspot.com">Gruyere&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackthissite.org">Hack This Site&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackthis.co.uk">Hack This&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hack-yourself-first.com/">Hack Yourself first&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/rapid7/hackazon">Hackazon &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hellboundhackers.org">HellBound Hackers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/madhuakula/kubernetes-goat">Kubernetes Goat&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://community.rapid7.com/docs/DOC-1875">Metasploitable2 &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.rapid7.com/2016/11/15/test-your-might-with-the-shiny-new-metasploitable3/">Metasploitable3 &lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://overthewire.org/wargames">Over The Wire Wargames&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.owasp.org/index.php/OWASP_Juice_Shop_Project">OWASP Juice Shop &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sourceforge.net/projects/mutillidae">OWASP Mutillidae II&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sourceforge.net/projects/peruggia">Peruggia&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://portswigger.net/web-security">PortSwigger Web Security Academy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.root-me.org">RootMe&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.samurai-wtf.org/">Samurai Web Testing Framework&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/incredibleindishell/SSRF_Vulnerable_Lab">Server-Side Request Forgery (SSRF) vulnerable Lab&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/snyk/exploit-workshop">Snyk exploit-workshop&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.try2hack.nl">Try2Hack&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://vicnum.ciphertechs.com">Vicnum&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/dogangcr/vulnerable-sso">Vulnerable Single Sign-On (SSO)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.mavensecurity.com/resources/web-security-dojo">Web Security Dojo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/WebGoat/WebGoat">WebGoat&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jbarone/xxelab">XXE Lab&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="websploit-labs">WebSploit Labs&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://websploit.org">WebSploit Labs (created and maintained by Omar Ωr Santos)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://websploit.org">Mayhem - vulnerable container created by Omar Ωr for Mayhem 2020&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://websploit.org">RTOV-Hackme - vulnerable container created by Omar Ωr for DEF CON 27&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://websploit.org">RTV-Safemode - vulnerable container created by Omar Ωr for DEF CON Safemode&lt;/a>&lt;/li>
+&lt;/ul></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/blog1/</link></item></channel></rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bugged on Classroom</title>
+    <link>http://localhost:1313/tags/bugged/</link>
+    <description>Recent content in Bugged on Classroom</description>
+    <generator>Anir0ry : Blog v1.0</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Mon, 13 Mar 2023 19:08:04 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/bugged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Bugged</title>
+      <pubDate>Mon, 13 Mar 2023 19:08:04 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Analyze the network&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;John was working on his smart home appliances when he noticed weird traffic going across the network. Can you help him figure out what these weird network communications are?&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;a class=&#34;twitter-follow-button&#34; href=&#34;https://twitter.com/anir0y&#34; data-size=&#34;large&#34;&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://tryhackme.com/room/bugged&#34;&gt;Bugged&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/adcc4fe6db75bd8f327a51ea55a770aa.png&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;task-01-initial-scan&#34;&gt;Task 01: Initial Scan&lt;/h2&gt;
+&lt;h3 id=&#34;nmap&#34;&gt;nmap&lt;/h3&gt;
+&lt;p&gt;let&amp;rsquo;s start with quick nmap scan;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;inital run gets me nothing&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -sC -sV -oA nmap/initial 10.10.79.196 -Pn
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting Nmap 7.60 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; https://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; at 2023-03-13 13:52 GMT
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ip-10-10-79-196.eu-west-1.compute.internal &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;10.10.79.196&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host is up &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0.0042s latency&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;All &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt; scanned ports on ip-10-10-79-196.eu-west-1.compute.internal &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;10.10.79.196&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; are closed
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MAC Address: 02:B2:12:B7:1C:B1 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Unknown&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; IP address &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; host up&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; scanned in 1.99 seconds
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;let&amp;rsquo;s run a full port scan&lt;/em&gt;&lt;/p&gt;</description>
+      <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
+      <link>http://localhost:1313/post/tryhackme-bugged/</link>
+    
+    </item>
+   
+      
+    
+  </channel>
+</rss>

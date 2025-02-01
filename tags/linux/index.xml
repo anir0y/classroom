@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Classroom</title><link>https://classroom.anir0y.in/tags/linux/</link><description>Recent content in Linux on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Fri, 26 Mar 2021 20:24:44 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Linux</title><pubDate>Fri, 26 Mar 2021 20:24:44 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Overview Class Practical for Linux Basic Scripting
-Hello {Name} #!/bin/bash echo &amp;#34;Hello, $1&amp;#34; Output bash hello.sh Mentor Hello Mentor Age Check #!/bin/bash #user-input echo -n &amp;#34;Enter Your Age: &amp;#34; read VAR #function if [[ $VAR -gt 21 ]] then echo &amp;#34;You&amp;#39;re Adult&amp;#34; else echo &amp;#34;Nope!&amp;#34; fi OutPut bash age.sh 19 Nope!</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/excelr-basic-linux/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Classroom</title><link>https://classroom.anir0y.in/tags/linux/</link><description>Recent content in Linux on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Fri, 26 Mar 2021 20:24:44 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Linux</title><pubDate>Fri, 26 Mar 2021 20:24:44 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="overview">Overview&lt;/h1>
+&lt;p>Class Practical for Linux Basic Scripting&lt;/p>
+&lt;h2 id="hello-name">Hello {Name}&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>echo &lt;span style="color:#e6db74">&amp;#34;Hello, &lt;/span>$1&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="output">Output&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bash hello.sh Mentor
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Hello Mentor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="age-check">Age Check&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#user-input&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo -n &lt;span style="color:#e6db74">&amp;#34;Enter Your Age: &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>read VAR
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#function&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> $VAR -gt &lt;span style="color:#ae81ff">21&lt;/span> &lt;span style="color:#f92672">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;You&amp;#39;re Adult&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;Nope!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="output-1">OutPut&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bash age.sh &lt;span style="color:#ae81ff">19&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Nope!
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/excelr-basic-linux/</link></item></channel></rss>

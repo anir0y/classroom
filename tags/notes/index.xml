@@ -1,15 +1,184 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Classroom</title><link>https://classroom.anir0y.in/tags/notes/</link><description>Recent content in Notes on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 16 May 2021 23:54:39 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack Me Room Osquery</title><pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Osquery Profile Support TASK 1 : Introduction Osquery is an open-source tool created by Facebook. With Osquery, Security Analysts, Incident Responders, Threat Hunters, etc., can query an endpoint (or multiple endpoints) using SQL syntax. Osquery can be installed on multiple platforms: Windows, Linux, macOS, and FreeBSD.
-Many well-known companies, besides Facebook, either use Osquery, utilize osquery within their tools, and/or look for individuals who know Osquery.
-As of today (March 2021), Github and AT&amp;amp;T seek individuals who have experience with Osquery.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-osquery/</link></item><item><title>Try Hack Me Room Room Openvas</title><pubDate>Mon, 10 May 2021 01:36:51 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>OpenVas Room Subscription Only
-Task 1: Introduction OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-openvas/</link></item><item><title>Try Hack ME Room Zerologon</title><pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Zero Logon - The Zero Day Angle Room Subscription Only About The vulnerability - On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.
-Zero Logon is a purely statistics based attack that abuses a feature within MS-NRPC (Microsoft NetLogon Remote Protocol), MS-NRPC is a critical authentication component of Active Directory that handles authentication for User and Machine accounts.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-zerologon/</link></item><item><title>Cyber Security Interview Questions With Answers</title><pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>50 Cyber Security Interview Questions (With Answers) Top Cyber Security Interview Questions Explain Cryptography It is the science of protecting data from third-party using various methods. It is used to protect sensitive information that shouldn’t be disclosed to anyone other than the owners of the information.
-Differentiate between Symmetric and Asymmetric encryption Symmetric encryption – In this type of encryption, the same key is used for encryption
-and decryption of data.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</link></item><item><title>Active Directory Exploitation Cheat Sheet</title><pubDate>Fri, 07 May 2021 14:00:36 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Active Directory Exploitation Cheat Sheet A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.
-This cheat sheet is inspired by the PayloadAllTheThings repo.
-Summary Active Directory Exploitation Cheat Sheet Summary Tools Domain Enumeration Using PowerView Using AD Module Using BloodHound Useful Enumeration Tools Local Privilege Escalation Useful Local Priv Esc Tools Lateral Movement Powershell Remoting Remote Code Execution with PS Credentials Import a powershell module and execute its functions remotely Executing Remote Stateful commands Mimikatz Useful Tools Domain Privilege Escalation Kerberoast ASREPRoast Password Spray Attack Force Set SPN Abusing Shadow Copies List and Decrypt Stored Credentials using Mimikatz Unconstrained Delegation Constrained Delegation Resource Based Constrained Delegation DNSAdmins Abuse Abusing Active Directory-Integraded DNS Abusing Backup Operators Group Abusing Exchange Weaponizing Printer Bug Abusing ACLs Abusing IPv6 with mitm6 SID History Abuse Exploiting SharePoint Zerologon Exploit Domain Persistence Golden Ticket Attack DCsync Attack Silver Ticket Attack Skeleton Key Attack DSRM Abuse Custom SSP Cross Forest Attacks Trust Tickets Abuse MSSQL Servers Breaking Forest Trusts Tools Powersploit PowerUpSQL Powermad Impacket Mimikatz Rubeus -&amp;gt; Compiled Version BloodHound AD Module ASREPRoast Domain Enumeration Using PowerView Powerview v.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</link></item><item><title>Notes OSIModel Explained</title><pubDate>Sun, 25 Apr 2021 20:20:59 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>OSI Model Explained Packet Details You can double click on a packet in capture to open its details. Packets consist of 5 to 7 layers based on the OSI model. We will go over all of them in an HTTP packet from a sample capture
-Looking above we can see 7 distinct layers to the packet: frame/packet, source [MAC], source [IP], protocol, protocol errors, application protocol, and application data. Below we will go over the layers in more detail.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/notes-osimodel-explained/</link></item><item><title>Notes OSIModel</title><pubDate>Wed, 21 Apr 2021 20:01:52 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>OSI Model OverView The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&amp;rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.
-The OSI model consists of seven layers:
-Layers Application presentation session transport Network Data Link Physical There are many mnemonics floating around to help you learn the layers of the OSI model &amp;ndash; search around until you find one that you like.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/notes-osimodel/</link></item><item><title>Notes Stego</title><pubDate>Wed, 21 Apr 2021 17:47:23 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Steganography - A list of useful tools and resources Steganography Steganography is hiding a file or a message inside of another file , there are many fun steganography CTF challenges out there where the flag is hidden in an image , audio file or even other types of files. Here is a list of the most tools I use and some other useful resources.
-Note : This list will be updated regularly , feel free to pm if you have any suggestions</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/notes-stego/</link></item><item><title>Introduction to Vapt</title><pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Vulnerability Assessment and Penetration Testing (VAPT) Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.
-Vulnerability Assessment focuses on internal organizational security, while Penetration Testing focuses on external real-world risk.
-What is Vulnerability Assessment (VA)? A Vulnerability Assessment is a rapid automated review of network devices, servers and systems to identify key vulnerabilities and configuration issues that an attacker may be able to take advantage off.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/intro-vapt/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Classroom</title><link>https://classroom.anir0y.in/tags/notes/</link><description>Recent content in Notes on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 16 May 2021 23:54:39 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack Me Room Osquery</title><pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="osquery">Osquery&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Profile&lt;/th>
+&lt;th style="text-align: right">Support&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;script src="https://tryhackme.com/badge/434937">&lt;/script>&lt;/td>
+&lt;td style="text-align: right">&lt;a href="https://www.buymeacoffee.com/anir0y">&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00">&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="task-1--introduction">TASK 1 : Introduction&lt;/h2>
+&lt;p>&lt;a href="https://osquery.io/">Osquery&lt;/a> is an &lt;a href="https://github.com/osquery/osquery">open-source&lt;/a> tool created by Facebook. With Osquery, Security Analysts, Incident Responders, Threat Hunters, etc., can query an endpoint (or multiple endpoints) using SQL syntax. Osquery can be installed on multiple platforms: Windows, Linux, macOS, and FreeBSD.&lt;/p>
+&lt;p>Many well-known companies, besides Facebook, either use Osquery, utilize osquery within their tools, and/or look for individuals who know Osquery.&lt;/p>
+&lt;p>As of today (March 2021), Github and AT&amp;amp;T seek individuals who have experience with Osquery.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-osquery/</link></item><item><title>Try Hack Me Room Room Openvas</title><pubDate>Mon, 10 May 2021 01:36:51 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;p>&lt;img src="https://classroom.anir0y.in/img/openvas.png" alt="openvas logo">&lt;/p>
+&lt;h2 id="openvas">OpenVas&lt;/h2>
+&lt;script src="https://tryhackme.com/badge/434937">&lt;/script>
+&lt;blockquote>
+&lt;p>&lt;strong>Room&lt;/strong> &lt;a href="https://tryhackme.com/room/openvas">Subscription Only&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="task-1-introduction">Task 1: Introduction&lt;/h2>
+&lt;p>OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-openvas/</link></item><item><title>Try Hack ME Room Zerologon</title><pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;hr>
+&lt;h2 id="zero-logon---the-zero-day-angle">Zero Logon - The Zero Day Angle&lt;/h2>
+&lt;script src="https://tryhackme.com/badge/434937">&lt;/script>
+&lt;h2 id="room-subscription-onlyhttpstryhackmecomroomzer0logon">Room &lt;a href="https://tryhackme.com/room/zer0logon">Subscription Only&lt;/a>&lt;/h2>
+&lt;hr>
+&lt;h3 id="about-the-vulnerability--">About The vulnerability -&lt;/h3>
+&lt;p>On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.&lt;/p>
+&lt;p>Zero Logon is a purely statistics based attack that abuses a feature within MS-NRPC (Microsoft NetLogon Remote Protocol), MS-NRPC is a critical authentication component of Active Directory that handles authentication for User and Machine accounts. In short &amp;ndash; the attack mainly focuses on a poor implementation of Cryptography. To be more specific, Microsoft chose to use AES-CFB8 for a function called ComputeNetlogonCredential, which is normally fine, except they had hard coded the Initialization Vector to use all zeros instead of a random string. When an attacker sends a message only containing zeros with the IV of zero, there is a 1-in-256 chance that the Ciphertext will be Zero.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-zerologon/</link></item><item><title>Cyber Security Interview Questions With Answers</title><pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;p>&lt;img src="https://i.imgur.com/6bZ0NCp.png" alt="">&lt;/p>
+&lt;h1 id="50-cyber-security-interview-questions-with-answers">50 Cyber Security Interview Questions (With Answers)&lt;/h1>
+&lt;hr>
+&lt;h2 id="top-cyber-security-interview-questions">Top Cyber Security Interview Questions&lt;/h2>
+&lt;h3 id="explain-cryptography">Explain Cryptography&lt;/h3>
+&lt;p>It is the science of protecting data from third-party using various methods. It is used to protect sensitive information that shouldn’t be disclosed to anyone other than the owners of the information.&lt;/p>
+&lt;h3 id="differentiate-between-symmetric-and-asymmetric-encryption">Differentiate between Symmetric and Asymmetric encryption&lt;/h3>
+&lt;p>Symmetric encryption – In this type of encryption, the same key is used for encryption&lt;/p>
+&lt;p>and decryption of data. It is more vulnerable this way and it is used to encrypt data transmissions that are bulky in nature.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</link></item><item><title>Active Directory Exploitation Cheat Sheet</title><pubDate>Fri, 07 May 2021 14:00:36 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="active-directory-exploitation-cheat-sheet">Active Directory Exploitation Cheat Sheet&lt;/h1>
+&lt;p>A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.&lt;/p>
+&lt;p>This cheat sheet is inspired by the &lt;a href="https://github.com/swisskyrepo/PayloadsAllTheThings">PayloadAllTheThings&lt;/a> repo.&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet/master/WalkTheDog.png" alt="Just Walking The Dog">&lt;/p>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="#active-directory-exploitation-cheat-sheet">Active Directory Exploitation Cheat Sheet&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#summary">Summary&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#tools">Tools&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#domain-enumeration">Domain Enumeration&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#using-powerview">Using PowerView&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#using-ad-module">Using AD Module&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#using-bloodhound">Using BloodHound&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#useful-enumeration-tools">Useful Enumeration Tools&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#local-privilege-escalation">Local Privilege Escalation&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#useful-local-priv-esc-tools">Useful Local Priv Esc Tools&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#lateral-movement">Lateral Movement&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#powershell-remoting">Powershell Remoting&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#remote-code-execution-with-ps-credentials">Remote Code Execution with PS Credentials&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#import-a-powershell-module-and-execute-its-functions-remotely">Import a powershell module and execute its functions remotely&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#executing-remote-stateful-commands">Executing Remote Stateful commands&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#mimikatz">Mimikatz&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#useful-tools">Useful Tools&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#domain-privilege-escalation">Domain Privilege Escalation&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#kerberoast">Kerberoast&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#asreproast">ASREPRoast&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#password-spray-attack">Password Spray Attack&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#force-set-spn">Force Set SPN&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#abusing-shadow-copies">Abusing Shadow Copies&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#list-and-decrypt-stored-credentials-using-mimikatz">List and Decrypt Stored Credentials using Mimikatz&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#unconstrained-delegation">Unconstrained Delegation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#constrained-delegation">Constrained Delegation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#resource-based-constrained-delegation">Resource Based Constrained Delegation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dnsadmins-abuse">DNSAdmins Abuse&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#abusing-active-directory-integraded-dns">Abusing Active Directory-Integraded DNS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#abusing-backup-operators-group">Abusing Backup Operators Group&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#abusing-exchange">Abusing Exchange&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#weaponizing-printer-bug">Weaponizing Printer Bug&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#abusing-acls">Abusing ACLs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#abusing-ipv6-with-mitm6">Abusing IPv6 with mitm6&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#sid-history-abuse">SID History Abuse&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#exploiting-sharepoint">Exploiting SharePoint&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#zerologon-exploit">Zerologon Exploit&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#domain-persistence">Domain Persistence&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#golden-ticket-attack">Golden Ticket Attack&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dcsync-attack">DCsync Attack&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#silver-ticket-attack">Silver Ticket Attack&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#skeleton-key-attack">Skeleton Key Attack&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dsrm-abuse">DSRM Abuse&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#custom-ssp">Custom SSP&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#cross-forest-attacks">Cross Forest Attacks&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#trust-tickets">Trust Tickets&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#abuse-mssql-servers">Abuse MSSQL Servers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#breaking-forest-trusts">Breaking Forest Trusts&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="tools">Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/PowerShellMafia/PowerSploit/tree/dev">Powersploit&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/NetSPI/PowerUpSQL">PowerUpSQL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Kevin-Robertson/Powermad">Powermad&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/SecureAuthCorp/impacket">Impacket&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/gentilkiwi/mimikatz">Mimikatz&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/GhostPack/Rubeus">Rubeus&lt;/a> -&amp;gt; &lt;a href="https://github.com/r3motecontrol/Ghostpack-CompiledBinaries">Compiled Version&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/BloodHoundAD/BloodHound">BloodHound&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/samratashok/ADModule">AD Module&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/HarmJ0y/ASREPRoast">ASREPRoast&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="domain-enumeration">Domain Enumeration&lt;/h2>
+&lt;h3 id="using-powerview">Using PowerView&lt;/h3>
+&lt;p>&lt;a href="https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1">Powerview v.3.0&lt;/a>&lt;br>
+&lt;a href="https://powersploit.readthedocs.io/en/latest/">Powerview Wiki&lt;/a>&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</link></item><item><title>Notes OSIModel Explained</title><pubDate>Sun, 25 Apr 2021 20:20:59 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="osi-model-explained">OSI Model Explained&lt;/h1>
+&lt;p>&lt;img src="https://i.imgur.com/r4SjjLc.png" alt="OSI Model">&lt;/p>
+&lt;h2 id="packet-details">Packet Details&lt;/h2>
+&lt;p>You can double click on a packet in capture to open its details. Packets consist of 5 to 7 layers based on the OSI model. We will go over all of them in an HTTP packet from a sample capture&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/7t17lRS.png" alt="">&lt;/p>
+&lt;p>Looking above we can see 7 distinct layers to the packet: frame/packet, source [MAC], source [IP], protocol, protocol errors, application protocol, and application data. Below we will go over the layers in more detail.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/notes-osimodel-explained/</link></item><item><title>Notes OSIModel</title><pubDate>Wed, 21 Apr 2021 20:01:52 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="osi-model-overview">OSI Model OverView&lt;/h1>
+&lt;hr>
+&lt;p>The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&amp;rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.&lt;/p>
+&lt;hr>
+&lt;p>The OSI model consists of seven layers:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Layers&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Application&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>presentation&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>session&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>transport&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Network&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Data Link&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Physical&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;blockquote>
+&lt;p>There are many mnemonics floating around to help you learn the layers of the OSI model &amp;ndash; search around until you find one that you like.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/notes-osimodel/</link></item><item><title>Notes Stego</title><pubDate>Wed, 21 Apr 2021 17:47:23 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="steganography---a-list-of-useful-tools-and-resources">Steganography - A list of useful tools and resources&lt;/h1>
+&lt;p>Steganography
+Steganography is hiding a file or a message inside of another file , there are many fun steganography CTF challenges out there where the flag is hidden in an image , audio file or even other types of files. Here is a list of the most tools I use and some other useful resources.&lt;/p>
+&lt;blockquote>
+&lt;p>Note : This list will be updated regularly , feel free to pm if you have any suggestions&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/notes-stego/</link></item><item><title>Introduction to Vapt</title><pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="vulnerability-assessment-and-penetration-testing-vapt">Vulnerability Assessment and Penetration Testing (VAPT)&lt;/h1>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/anir0y/cdn/main/vapt.jpg" alt="">&lt;/p>
+&lt;p>Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.&lt;/p>
+&lt;p>Vulnerability Assessment focuses on internal organizational security, while Penetration Testing focuses on external real-world risk.&lt;/p>
+&lt;h3 id="what-is-vulnerability-assessment-va">What is Vulnerability Assessment (VA)?&lt;/h3>
+&lt;p>A Vulnerability Assessment is a rapid automated review of network devices, servers and systems to identify key vulnerabilities and configuration issues that an attacker may be able to take advantage off. Its generally conducted within the network on internal devices and due to its low footprint can be carried out as often as every day.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/intro-vapt/</link></item></channel></rss>

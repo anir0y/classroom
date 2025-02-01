@@ -1,7 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RootMe on Classroom</title><link>https://classroom.anir0y.in/tags/rootme/</link><description>Recent content in RootMe on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 06 Jul 2021 13:36:08 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/rootme/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe RootMe</title><pubDate>Tue, 06 Jul 2021 13:36:08 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>RootMe Task 01: Deploy the Room Task 02: Reconnaissance 2.1 Scan the machine, how many ports are open?
-run the command: nmap -sC -sV -oN nmap MACHINE_IP
-2.2 What version of Apache is running?
-Ans is in task 2.1 output result. use cat nmap to see the output file.
-2.3 Find directories on the web server using the GoBuster tool.
-gobuster dir -u 10.10.71.82 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-2.4 What is the hidden directory?</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-rrootme/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RootMe on Classroom</title><link>https://classroom.anir0y.in/tags/rootme/</link><description>Recent content in RootMe on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 06 Jul 2021 13:36:08 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/rootme/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe RootMe</title><pubDate>Tue, 06 Jul 2021 13:36:08 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="rootme">RootMe&lt;/h2>
+&lt;h2 id="task-01-deploy-the-room">Task 01: Deploy the Room&lt;/h2>
+&lt;hr>
+&lt;h2 id="task-02--reconnaissance">Task 02: Reconnaissance&lt;/h2>
+&lt;h3 id="21">2.1&lt;/h3>
+&lt;p>&lt;strong>Scan the machine, how many ports are open?&lt;/strong>&lt;/p>
+&lt;p>run the command: &lt;code>nmap -sC -sV -oN nmap MACHINE_IP&lt;/code>&lt;/p>
+&lt;h3 id="22">2.2&lt;/h3>
+&lt;p>&lt;strong>What version of Apache is running?&lt;/strong>&lt;/p>
+&lt;p>Ans is in &lt;a href="#21">task 2.1&lt;/a> output result. use &lt;code>cat nmap&lt;/code> to see the output file.&lt;/p>
+&lt;h3 id="23">2.3&lt;/h3>
+&lt;p>&lt;strong>Find directories on the web server using the GoBuster tool.&lt;/strong>&lt;/p>
+&lt;p>&lt;code>gobuster dir -u 10.10.71.82 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt&lt;/code>&lt;/p>
+&lt;h3 id="24">2.4&lt;/h3>
+&lt;p>&lt;strong>What is the hidden directory?&lt;/strong>&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-rrootme/</link></item></channel></rss>

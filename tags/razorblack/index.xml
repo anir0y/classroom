@@ -1,3 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RazorBlack on Classroom</title><link>https://classroom.anir0y.in/tags/razorblack/</link><description>Recent content in RazorBlack on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 18 Jul 2021 19:31:05 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/razorblack/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe RazorBlack</title><pubDate>Sun, 18 Jul 2021 19:31:05 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Overview RazorBlack Room Task 01 These guys call themselves hackers. Can you show them who&amp;rsquo;s the boss ??
-Task 02: Flag Submission Panel What is the Domain Name? nmap
-sudo nmap -sV -sC -oN nmap/init 10.10.149.120 # Nmap 7.91 scan initiated Sun Jul 18 19:35:34 2021 as: nmap -sV -sC -oN nmap/init 10.10.149.120 Nmap scan report for 10.10.149.120 Host is up (0.15s latency). Not shown: 986 closed ports PORT STATE SERVICE VERSION 53/tcp open domain Simple DNS Plus 88/tcp open kerberos-sec Microsoft Windows Kerberos (server time: 2021-07-18 14:05:57Z) 111/tcp open rpcbind 2-4 (RPC #100000) | rpcinfo: .</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-raz0rblack/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RazorBlack on Classroom</title><link>https://classroom.anir0y.in/tags/razorblack/</link><description>Recent content in RazorBlack on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 18 Jul 2021 19:31:05 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/razorblack/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe RazorBlack</title><pubDate>Sun, 18 Jul 2021 19:31:05 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>RazorBlack&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="https://tryhackme.com/room/raz0rblack">Room&lt;/a>&lt;/td>
+&lt;td>&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/5e543ba613749349efa339fbf3aca901.jpeg" alt="logo">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="task-01">Task 01&lt;/h2>
+&lt;p>These guys call themselves hackers. Can you show them who&amp;rsquo;s the boss ??&lt;/p>
+&lt;hr>
+&lt;h2 id="task-02-flag-submission-panel">Task 02: Flag Submission Panel&lt;/h2>
+&lt;h2 id="what-is-the-domain-name">What is the Domain Name?&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>nmap&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo nmap -sV -sC -oN nmap/init 10.10.149.120
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Nmap 7.91 scan initiated Sun Jul 18 19:35:34 2021 as: nmap -sV -sC -oN nmap/init 10.10.149.120&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Nmap scan report &lt;span style="color:#66d9ef">for&lt;/span> 10.10.149.120
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Host is up &lt;span style="color:#f92672">(&lt;/span>0.15s latency&lt;span style="color:#f92672">)&lt;/span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Not shown: &lt;span style="color:#ae81ff">986&lt;/span> closed ports
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>PORT STATE SERVICE VERSION
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>53/tcp open domain Simple DNS Plus
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>88/tcp open kerberos-sec Microsoft Windows Kerberos &lt;span style="color:#f92672">(&lt;/span>server time: 2021-07-18 14:05:57Z&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>111/tcp open rpcbind 2-4 &lt;span style="color:#f92672">(&lt;/span>RPC &lt;span style="color:#75715e">#100000)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| rpcinfo:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...&lt;span style="color:#f92672">[&lt;/span>snip&lt;span style="color:#f92672">]&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>135/tcp open msrpc Microsoft Windows RPC
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>139/tcp open netbios-ssn Microsoft Windows netbios-ssn
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>389/tcp open ldap Microsoft Windows Active Directory LDAP &lt;span style="color:#f92672">(&lt;/span>Domain: raz0rblack.thm, Site: Default-First-Site-Name&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>445/tcp open microsoft-ds?
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>464/tcp open kpasswd5?
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>593/tcp open ncacn_http Microsoft Windows RPC over HTTP 1.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>636/tcp open tcpwrapped
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>2049/tcp open mountd 1-3 &lt;span style="color:#f92672">(&lt;/span>RPC &lt;span style="color:#75715e">#100005)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>3268/tcp open ldap Microsoft Windows Active Directory LDAP &lt;span style="color:#f92672">(&lt;/span>Domain: raz0rblack.thm, Site: Default-First-Site-Name&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>3269/tcp open tcpwrapped
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>3389/tcp open ms-wbt-server Microsoft Terminal Services
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| rdp-ntlm-info:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| Target_Name: RAZ0RBLACK
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| NetBIOS_Domain_Name: RAZ0RBLACK
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| NetBIOS_Computer_Name: HAVEN-DC
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| DNS_Domain_Name: raz0rblack.thm
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| DNS_Computer_Name: HAVEN-DC.raz0rblack.thm
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| Product_Version: 10.0.17763
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|_ System_Time: 2021-07-18T14:06:45+00:00
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| ssl-cert: Subject: commonName&lt;span style="color:#f92672">=&lt;/span>HAVEN-DC.raz0rblack.thm
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| Not valid before: 2021-02-22T15:02:37
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|_Not valid after: 2021-08-24T15:02:37
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|_ssl-date: 2021-07-18T14:06:54+00:00; +2s from scanner time.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Service Info: Host: HAVEN-DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Host script results:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|_clock-skew: mean: 1s, deviation: 0s, median: 1s
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| smb2-security-mode:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| 2.02:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|_ Message signing enabled and required
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| smb2-time:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| date: 2021-07-18T14:06:47
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|_ start_date: N/A
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Nmap done at Sun Jul 18 19:38:17 2021 -- 1 IP address (1 host up) scanned in 163.34 seconds&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="what-is-stevens-flag">What is Steven’s Flag?&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>SMB&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-raz0rblack/</link></item></channel></rss>

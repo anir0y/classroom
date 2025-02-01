@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thefindcommand on Classroom</title><link>https://classroom.anir0y.in/tags/thefindcommand/</link><description>Recent content in Thefindcommand on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 12 Jul 2021 23:17:35 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/thefindcommand/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe The find command</title><pubDate>Mon, 12 Jul 2021 23:17:35 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Overview The find command Solved by @anir0y Task 01: Start finding Task 02: Be more specific Most of the time, you won’t be looking for something in your working directory. The first argument of your find command should be the directory you want to search. The command will search in that directory and in all its subdirectories. So, if you want to search the whole filesystem, your command should begin with find /.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-thefindcommand/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thefindcommand on Classroom</title><link>https://classroom.anir0y.in/tags/thefindcommand/</link><description>Recent content in Thefindcommand on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 12 Jul 2021 23:17:35 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/thefindcommand/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe The find command</title><pubDate>Mon, 12 Jul 2021 23:17:35 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>The find command&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://tryhackme-images.s3.amazonaws.com/user-avatars/af7feb2c43a2c7d5f111b98ccbd15048.png" alt="logo">&lt;/td>
+&lt;td>&lt;a href="https://tryhackme.com/room/thefindcommand">&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c237d2dc14b96182f5ecb7c02a2b58b8.png" alt="logo">&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Solved by&lt;/td>
+&lt;td>&lt;a href="https://anir0y.in">@anir0y&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="task-01-start-finding">Task 01: Start finding&lt;/h2>
+&lt;hr>
+&lt;h2 id="task-02-be-more-specific">Task 02: Be more specific&lt;/h2>
+&lt;blockquote>
+&lt;p>Most of the time, you won’t be looking for something in your working directory. The first argument of your &lt;code>find&lt;/code> command should be the directory you want to search. The command will search in that directory and in all its subdirectories. So, if you want to search the whole filesystem, your command should begin with &lt;code>find /&lt;/code>.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-thefindcommand/</link></item></channel></rss>

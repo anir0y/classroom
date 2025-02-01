@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Training on Classroom</title><link>https://classroom.anir0y.in/categories/training/</link><description>Recent content in Training on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Thu, 26 May 2022 21:42:28 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/training/index.xml" rel="self" type="application/rss+xml"/><item><title>Steganography with Steghide</title><pubDate>Thu, 26 May 2022 21:42:28 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/Stegnography_with_Steghide.png" width="700" height="420"/><description>Choice of tools Steghide: Is an open-source, command-line software that can encode and decode data into image files
-Features:
-compression of embedded data encryption of embedded data embedding of a checksum to verify the integrity of the extracted data support for JPEG, BMP, WAV and AU files Installation (Linux) apt-get install steghide Creating an image with a secret message in it. Create a folder with the name of your choice:</description><enclosure url="https://classroom.anir0y.in/img/Stegnography_with_Steghide.png"/><link>https://classroom.anir0y.in/post/stegnography/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Training on Classroom</title><link>https://classroom.anir0y.in/categories/training/</link><description>Recent content in Training on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Thu, 26 May 2022 21:42:28 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/training/index.xml" rel="self" type="application/rss+xml"/><item><title>Steganography with Steghide</title><pubDate>Thu, 26 May 2022 21:42:28 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/Stegnography_with_Steghide.png" width="700" height="420"/><description>&lt;h1 id="choice-of-tools">Choice of tools&lt;/h1>
+&lt;p>Steghide: Is an open-source, command-line software that can encode and decode data into image files&lt;/p>
+&lt;p>Features:&lt;/p>
+&lt;ul>
+&lt;li>compression of embedded data&lt;/li>
+&lt;li>encryption of embedded data&lt;/li>
+&lt;li>embedding of a checksum to verify the integrity of the extracted data&lt;/li>
+&lt;li>support for JPEG, BMP, WAV and AU files&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation-linux">Installation (Linux)&lt;/h2>
+&lt;pre>&lt;code> apt-get install steghide
+&lt;/code>&lt;/pre>
+&lt;h2 id="creating-an-image-with-a-secret-message-in-it">Creating an image with a secret message in it.&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Create a folder with the name of your choice:&lt;/p></description><enclosure url="https://classroom.anir0y.in/img/Stegnography_with_Steghide.png"/><link>https://classroom.anir0y.in/post/stegnography/</link></item></channel></rss>

@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tinyurl on Classroom</title><link>https://classroom.anir0y.in/tags/tinyurl/</link><description>Recent content in Tinyurl on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 13 Nov 2022 18:47:39 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/tinyurl/index.xml" rel="self" type="application/rss+xml"/><item><title>BLOG | Shorten URL using TinyURL API</title><pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inimg/tinyURL.png" width="700" height="420"/><description>OverView this is unsuall post on how to create short urls. in this post I&amp;rsquo;ll be usng tiny.url APIs.
-get the API from tinyurl.com signup to tinyurl.com and login to the dashboard, then click on API section and click on create API
-now you&amp;rsquo;ll have a API key!!!
-[optional] setup custom domain (FREE) click on branded domain setting, and create a domain, ref to image:
-Automation time Now, we have everything we need.</description><enclosure url="https://classroom.anir0y.inimg/tinyURL.png"/><link>https://classroom.anir0y.in/post/tinyurl/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tinyurl on Classroom</title><link>https://classroom.anir0y.in/tags/tinyurl/</link><description>Recent content in Tinyurl on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 13 Nov 2022 18:47:39 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/tinyurl/index.xml" rel="self" type="application/rss+xml"/><item><title>BLOG | Shorten URL using TinyURL API</title><pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inimg/tinyURL.png" width="700" height="420"/><description>&lt;h2 id="overview">OverView&lt;/h2>
+&lt;p>this is unsuall post on how to create short urls. in this post I&amp;rsquo;ll be usng tiny.url APIs.&lt;/p>
+&lt;h2 id="get-the-api-from-tinyurlcom">get the API from tinyurl.com&lt;/h2>
+&lt;p>signup to &lt;code>tinyurl.com&lt;/code> and login to the dashboard, then click on &lt;code>API&lt;/code> section and click on create API&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/FYBKFo5.png" alt="img">&lt;/p>
+&lt;p>&lt;em>now you&amp;rsquo;ll have a API key!!!&lt;/em>&lt;/p>
+&lt;h2 id="optional-setup-custom-domain-free">[optional] setup custom domain (FREE)&lt;/h2>
+&lt;p>click on branded domain setting, and create a domain, ref to image:&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/fBpKa1l.png" alt="img">&lt;/p>
+&lt;h2 id="automation-time">Automation time&lt;/h2>
+&lt;p>Now, we have everything we need. so let&amp;rsquo;s download the script and add our &lt;code>token&lt;/code> and &lt;code>branded domain&lt;/code> name and call it a day.&lt;/p></description><enclosure url="https://classroom.anir0y.inimg/tinyURL.png"/><link>https://classroom.anir0y.in/post/tinyurl/</link></item></channel></rss>

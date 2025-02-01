@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bash on Classroom</title><link>https://classroom.anir0y.in/tags/bash/</link><description>Recent content in Bash on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sat, 03 Apr 2021 18:54:43 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro Bash</title><pubDate>Sat, 03 Apr 2021 18:54:43 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Getting started {: .-three-column}
-Introduction {: .-intro}
-This is a quick reference to getting started with Bash scripting.
-Learn bash in y minutes (learnxinyminutes.com) Bash Guide (mywiki.wooledge.org) Example #!/usr/bin/env bash NAME=&amp;#34;John&amp;#34; echo &amp;#34;Hello $NAME!&amp;#34; Variables NAME=&amp;#34;John&amp;#34; echo $NAME echo &amp;#34;$NAME&amp;#34; echo &amp;#34;${NAME}!&amp;#34; String quotes NAME=&amp;#34;John&amp;#34; echo &amp;#34;Hi $NAME&amp;#34; #=&amp;gt; Hi John echo &amp;#39;Hi $NAME&amp;#39; #=&amp;gt; Hi $NAME Shell execution echo &amp;#34;I&amp;#39;m in $(pwd)&amp;#34; echo &amp;#34;I&amp;#39;m in `pwd`&amp;#34; # Same See Command substitution</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/intro-bash/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bash on Classroom</title><link>https://classroom.anir0y.in/tags/bash/</link><description>Recent content in Bash on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sat, 03 Apr 2021 18:54:43 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro Bash</title><pubDate>Sat, 03 Apr 2021 18:54:43 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="getting-started">Getting started&lt;/h2>
+&lt;p>{: .-three-column}&lt;/p>
+&lt;h3 id="introduction">Introduction&lt;/h3>
+&lt;p>{: .-intro}&lt;/p>
+&lt;p>This is a quick reference to getting started with Bash scripting.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://learnxinyminutes.com/docs/bash/">Learn bash in y minutes&lt;/a> &lt;em>(learnxinyminutes.com)&lt;/em>&lt;/li>
+&lt;li>&lt;a href="http://mywiki.wooledge.org/BashGuide">Bash Guide&lt;/a> &lt;em>(mywiki.wooledge.org)&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;h3 id="example">Example&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NAME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;John&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;Hello &lt;/span>$NAME&lt;span style="color:#e6db74">!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="variables">Variables&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>NAME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;John&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo $NAME
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$NAME&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>NAME&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="string-quotes">String quotes&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>NAME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;John&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;Hi &lt;/span>$NAME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#75715e">#=&amp;gt; Hi John&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#39;Hi $NAME&amp;#39;&lt;/span> &lt;span style="color:#75715e">#=&amp;gt; Hi $NAME&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="shell-execution">Shell execution&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;I&amp;#39;m in &lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>pwd&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;I&amp;#39;m in `pwd`&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Same&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See &lt;a href="http://wiki.bash-hackers.org/syntax/expansion/cmdsubst">Command substitution&lt;/a>&lt;/p>
+&lt;h3 id="conditional-execution">Conditional execution&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git commit &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> git push
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit &lt;span style="color:#f92672">||&lt;/span> echo &lt;span style="color:#e6db74">&amp;#34;Commit failed&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="functions">Functions&lt;/h3>
+&lt;p>{: id=&amp;lsquo;functions-example&amp;rsquo;}&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/intro-bash/</link></item></channel></rss>

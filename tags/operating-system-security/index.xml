@@ -1,2 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Operating System Security on Classroom</title><link>https://classroom.anir0y.in/tags/operating-system-security/</link><description>Recent content in Operating System Security on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 16 May 2022 12:02:51 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/operating-system-security/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack Me Operating System Security [WriteUp]</title><pubDate>Mon, 16 May 2022 12:02:51 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/Operating_System_Security.png" width="700" height="420"/><description>OverView This room introduces users to operating system security and demonstrates SSH authentication on Linux.
-Follow @anir0y Operating System Security Operating System Security [Subscription Required] Operating System Security Introduction to Operating System Security Every day you use a smartphone or a laptop or almost any type of computer, you interact directly or indirectly with an operating system. Operating systems include MS Windows, macOS, iOS, Android, Chrome OS, and Linux. But what is an operating system?</description><enclosure url="https://classroom.anir0y.in/img/Operating_System_Security.png"/><link>https://classroom.anir0y.in/post/tryhackme-operatingsystemsecurity/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Operating System Security on Classroom</title><link>https://classroom.anir0y.in/tags/operating-system-security/</link><description>Recent content in Operating System Security on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 16 May 2022 12:02:51 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/operating-system-security/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack Me Operating System Security [WriteUp]</title><pubDate>Mon, 16 May 2022 12:02:51 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/Operating_System_Security.png" width="700" height="420"/><description>&lt;h2 id="overview">OverView&lt;/h2>
+&lt;p>This room introduces users to operating system security and demonstrates SSH authentication on Linux.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;script src="https://tryhackme.com/badge/434937">&lt;/script>&lt;/th>
+&lt;th>&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y&lt;a>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Operating System Security&lt;/td>
+&lt;td>&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/81642a6b52cd6596b8c09ccc219becfe.png" alt="logo">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;b> Operating System Security [Subscription Required] &lt;/b>&lt;/td>
+&lt;td>&lt;a href="https://tryhackme.com/room/operatingsystemsecurity">Operating System Security&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="introduction-to-operating-system-security">Introduction to Operating System Security&lt;/h2>
+&lt;p>Every day you use a smartphone or a laptop or almost any type of computer, you interact directly or indirectly with an operating system. Operating systems include MS Windows, macOS, iOS, Android, Chrome OS, and Linux. But what is an operating system? To define an operating system, we need to visit one computer term: hardware.&lt;/p></description><enclosure url="https://classroom.anir0y.in/img/Operating_System_Security.png"/><link>https://classroom.anir0y.in/post/tryhackme-operatingsystemsecurity/</link></item></channel></rss>

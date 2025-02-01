@@ -1,3 +1,574 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Certifications on Classroom</title><link>https://classroom.anir0y.in/categories/certifications/</link><description>Recent content in Certifications on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 21 Feb 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/certifications/index.xml" rel="self" type="application/rss+xml"/><item><title>Free Certifications</title><pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Free Certifications Curated list of free courses &amp;amp; certifications.
-The offers on top of the table are time-limited and will expire soon. So, hurry up and grab them first!
-Technology Provider Description Link Expiration Google Cloud Google One free month at Qwiklabs, Pluralsight &amp;amp; Coursera learning platforms. Pluralsight &amp;amp; Coursera require a credit card. Don’t forget to cancel in time. (Qwiklabs seem still to work. Rest - expired) Link ?31-May-2020? Agile Atlassian Free access to Atlassian’s on-demand courses ($300 value each).</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/blog4/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Certifications on Classroom</title><link>https://classroom.anir0y.in/categories/certifications/</link><description>Recent content in Certifications on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 21 Feb 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/certifications/index.xml" rel="self" type="application/rss+xml"/><item><title>Free Certifications</title><pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="free-certifications">Free Certifications&lt;/h1>
+&lt;p>Curated list of free courses &amp;amp; certifications.&lt;/p>
+&lt;p>The offers on top of the table are time-limited and will expire soon. So, hurry up and grab them first!&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Technology&lt;/th>
+&lt;th>Provider&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Link&lt;/th>
+&lt;th>Expiration&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Google Cloud&lt;/td>
+&lt;td>Google&lt;/td>
+&lt;td>One free month at Qwiklabs, Pluralsight &amp;amp; Coursera learning platforms. Pluralsight &amp;amp; Coursera require a credit card. Don’t forget to cancel in time. (Qwiklabs seem still to work. Rest - expired)&lt;/td>
+&lt;td>&lt;a href="https://inthecloud.withgoogle.com/training-discount/register.html">Link&lt;/a>&lt;/td>
+&lt;td>?31-May-2020?&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Agile&lt;/td>
+&lt;td>Atlassian&lt;/td>
+&lt;td>Free access to Atlassian’s on-demand courses ($300 value each).&lt;/td>
+&lt;td>&lt;a href="https://training.atlassian.com/free-training-catalog">Link&lt;/a>&lt;/td>
+&lt;td>30-Jun-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Databases&lt;/td>
+&lt;td>Exasol&lt;/td>
+&lt;td>Free Exasol training courses and certifications (€150 value each).&lt;/td>
+&lt;td>&lt;a href="https://www.exasol.com/portal/display/TRAINING/Exasol+Training+and+Certification">Link&lt;/a>&lt;/td>
+&lt;td>30-Jun-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Soft Skills&lt;/td>
+&lt;td>Coursera&lt;/td>
+&lt;td>115 free online courses with certificates by Coursera. Credit card required. Don’t forget to cancel in time&lt;/td>
+&lt;td>&lt;a href="https://blog.coursera.org/coursera-together-free-online-learning-during-covid-19/">Link&lt;/a>&lt;/td>
+&lt;td>31-Jul-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Programming&lt;/td>
+&lt;td>Packt&lt;/td>
+&lt;td>15 free programming &amp;amp; data science certificate courses by Packt ($20 value each).&lt;/td>
+&lt;td>&lt;a href="https://courses.packtpub.com/pages/free">Link&lt;/a>&lt;/td>
+&lt;td>31-Jul-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cloud Networking&lt;/td>
+&lt;td>Aviatrix&lt;/td>
+&lt;td>Aviatrix ,Free ACE - Multicloud Networking associate Course &amp;amp; Certificate code ACEONLINE&lt;/td>
+&lt;td>&lt;a href="https://aviatrix.teachable.com">Link&lt;/a>&lt;/td>
+&lt;td>Limited Time&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Acronis&lt;/td>
+&lt;td>Acronis&lt;/td>
+&lt;td>Get professional training and certifications for free in technical or sales tracks (MSP/SP/CSP/VAR/SI/OEM).&lt;/td>
+&lt;td>&lt;a href="https://summit.acronis.events/page/1597729/acronis-cyberfit-academy-training">Link&lt;/a>&lt;/td>
+&lt;td>18-Oct-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Alibaba Cloud&lt;/td>
+&lt;td>Alibaba Cloud&lt;/td>
+&lt;td>Specialty Certification Bootcamp, a three-part event featuring three-hour videos summarizing the DevOps, Networking, and Data Analytics specialty certification program.&lt;/td>
+&lt;td>&lt;a href="https://edu.alibabacloud.com/certification/specialty-bootcamp">Link&lt;/a>&lt;/td>
+&lt;td>23-Oct-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Alibaba Cloud&lt;/td>
+&lt;td>Alibaba Cloud&lt;/td>
+&lt;td>Get free ACA Certification exam voucher from Alibaba Cloud for attending this October webinar live.&lt;/td>
+&lt;td>&lt;a href="https://resource.alibabacloud.com/webinar/detail.html?id=2534">Link&lt;/a> / &lt;a href="hhttps://resource.alibabacloud.com/webinar/detail.html?id=2535">Link&lt;/a> / &lt;a href="https://resource.alibabacloud.com/webinar/detail.html?id=2536">Link&lt;/a>&lt;/td>
+&lt;td>30-Oct-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Microsoft 365&lt;/td>
+&lt;td>Microsoft&lt;/td>
+&lt;td>Complete Microsoft Cloud Skills Challenge (Microsoft 365) and qualify for a free certification exam voucher.&lt;/td>
+&lt;td>&lt;a href="https://www.microsoft.com/en-us/us-partner-blog/2020/10/15/skill-up-and-stand-out-with-microsoft-365-technical-trainings/?utm_source=Twitter&amp;amp;utm_medium=Social&amp;amp;utm_campaign=skill-up-and-stand-out-with-microsoft-365-technical-trainings%2F">Link&lt;/a>&lt;/td>
+&lt;td>03-Nov-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>InterSystems&lt;/td>
+&lt;td>InterSystems&lt;/td>
+&lt;td>Free InterSystems Certification exam attempts to all attendees of InterSystems Virtual Summit 2020.&lt;/td>
+&lt;td>&lt;a href="https://www.intersystems.com/virtual-summit-2020/">Link&lt;/a>&lt;/td>
+&lt;td>05-Nov-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>IBM&lt;/td>
+&lt;td>IBM&lt;/td>
+&lt;td>Earn digital badges from Data &amp;amp; AI Essentials courses, and professional certificate or specialization from Coursera.&lt;/td>
+&lt;td>&lt;a href="https://developer.ibm.com/conferences/digital-developer-conference-data-ai/">Link&lt;/a>&lt;/td>
+&lt;td>24-Nov-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Azure&lt;/td>
+&lt;td>Microsoft&lt;/td>
+&lt;td>Free AZ-900 Microsoft Azure Fundamentals certification (worth $99) upon completion of the 2 day virtual training.&lt;/td>
+&lt;td>&lt;a href="https://info.microsoft.com/AP-AzureINFRA-CATALOG-FY20-07Jul-07-MicrosoftAzureVirtualTrainingDayFundamentals-SRDEM30218_CatalogDisplayPage.html">Link&lt;/a> / &lt;a href="https://www.microsoft.com/en-us/trainingdays">Alternative Link&lt;/a>&lt;/td>
+&lt;td>Limited Time&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>IT&lt;/td>
+&lt;td>CompTIA / Jobs.mo.gov&lt;/td>
+&lt;td>The CompTIA Mentored Learning Program is a free program for displaced workers offering online instructor-led workshops that cover a technical computer curriculum geared toward IT industry-recognized CompTIA certification.&lt;/td>
+&lt;td>&lt;a href="https://jobs.mo.gov/content/comptia">Link&lt;/a>&lt;/td>
+&lt;td>04-Dec-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>HYCU&lt;/td>
+&lt;td>HYCU&lt;/td>
+&lt;td>Free Certified Enterprise Cloud HYCU Admin certification for HYCU customers and partners. Free swags for those who complete before end of October 2020.&lt;/td>
+&lt;td>&lt;a href="https://blog.hycu.com/data-protection/you-asked-we-listened-hycu-learning-center">Link&lt;/a>&lt;/td>
+&lt;td>31-Dec-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>JumpCloud&lt;/td>
+&lt;td>JumpCloud&lt;/td>
+&lt;td>Free JumpCloud Core Certification (worth $150).&lt;/td>
+&lt;td>&lt;a href="https://jumpcloud.com/university/certifications/core">Link&lt;/a>&lt;/td>
+&lt;td>01-Jan-2021&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Kubernetes&lt;/td>
+&lt;td>Rancher&lt;/td>
+&lt;td>Free “Certified Rancher Operator: Level 1” on-demand training &amp;amp; certification by Rancher.&lt;/td>
+&lt;td>&lt;a href="https://academy.rancher.com/courses/course-v1:RANCHER+K101+2019/about">Link&lt;/a>&lt;/td>
+&lt;td>14-Jul-2021&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Azure&lt;/td>
+&lt;td>Pluralsight&lt;/td>
+&lt;td>Free subscription at Pluralsight for Microsoft Azure courses&lt;/td>
+&lt;td>&lt;a href="https://www.pluralsight.com/partners/microsoft/azure">Link&lt;/a>&lt;/td>
+&lt;td>01-Jan-2025&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Google Cloud&lt;/td>
+&lt;td>QwikLabs&lt;/td>
+&lt;td>Extra 30 days for Google Cloud labs on Qwiklabs.&lt;/td>
+&lt;td>&lt;a href="https://go.qwiklabs.com/qwiklabs-free">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Automated Testing&lt;/td>
+&lt;td>Test Automation University&lt;/td>
+&lt;td>Free certification courses by the Test Automation University.&lt;/td>
+&lt;td>&lt;a href="https://testautomationu.applitools.com/">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security&lt;/td>
+&lt;td>Juniper Networks&lt;/td>
+&lt;td>Courses and certifications for free by Juniper Networks (instead of 150 euros).&lt;/td>
+&lt;td>&lt;a href="https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=11478">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Google Cloud&lt;/td>
+&lt;td>Qwiklabs&lt;/td>
+&lt;td>Claim 30 days free Qwiklabs and access to the featured labs.&lt;/td>
+&lt;td>&lt;a href="https://go.qwiklabs.com/googlecloudsolutions">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Huawei Networking&lt;/td>
+&lt;td>Huawei Academy&lt;/td>
+&lt;td>Free courses &amp;amp; exams from Huawei Academy for the HCIA, HCIP, and HCIE certifications.&lt;/td>
+&lt;td>&lt;a href="https://ilearningx.huawei.com/portal/courses">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Huawei Networking&lt;/td>
+&lt;td>Huawei Academ&lt;/td>
+&lt;td>Free course &amp;amp; certification (HCIA level, $200 value).&lt;/td>
+&lt;td>&lt;a href="https://e.huawei.com/en/talent/#/ict/partner-details?consultationId=545&amp;amp;consClassCode=AUTH&amp;amp;consTypeCode=consulationRZZX&amp;amp;urlForm=certifi">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Programming&lt;/td>
+&lt;td>JetBrains&lt;/td>
+&lt;td>Free courses by JetBrains Academy for learning Java, Kotlin &amp;amp; Python.&lt;/td>
+&lt;td>&lt;a href="https://www.jetbrains.com/academy/">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cloud Monitoring&lt;/td>
+&lt;td>Elastic&lt;/td>
+&lt;td>Free access to 11 Elastic Stack courses ($200 value each).&lt;/td>
+&lt;td>&lt;a href="https://www.elastic.co/training/free">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Diverse&lt;/td>
+&lt;td>Udacity&lt;/td>
+&lt;td>One free month access to nanodegree programs by Udacity ($400 value). Credit card / PayPal required. Don’t forget to cancel in time.&lt;/td>
+&lt;td>&lt;a href="https://blog.udacity.com/2020/03/one-month-free-on-nanodegrees.html">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Alibaba Cloud&lt;/td>
+&lt;td>Coursera&lt;/td>
+&lt;td>“Architecting on Alibaba Cloud Specialization” at Coursera.&lt;/td>
+&lt;td>&lt;a href="https://www.coursera.org/specializations/alibabacloud">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DevOps&lt;/td>
+&lt;td>The Linux Foundation&lt;/td>
+&lt;td>The Linux Foundation offers 23 free courses with finalizing exams &amp;amp; confirmations.&lt;/td>
+&lt;td>&lt;a href="https://training.linuxfoundation.org/resources/?_sft_content_type=free-course">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DevOps&lt;/td>
+&lt;td>CloudBees University&lt;/td>
+&lt;td>Free training through CloudBees University (Jenkins, DevOps).&lt;/td>
+&lt;td>&lt;a href="https://standard.cbu.cloudbees.com/">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Data Analytics&lt;/td>
+&lt;td>Sumo Logic&lt;/td>
+&lt;td>6 free training courses and certifications by Sumo Logic.&lt;/td>
+&lt;td>&lt;a href="https://www.sumologic.com/learn/certifications/">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Web Development&lt;/td>
+&lt;td>Freecodecamp&lt;/td>
+&lt;td>6 Free Code Camp learning courses &amp;amp; certifications, incl. RWD, JavaScript, APIs, React…&lt;/td>
+&lt;td>&lt;a href="https://www.freecodecamp.org/">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Databases&lt;/td>
+&lt;td>Mongodb&lt;/td>
+&lt;td>12 free MongoDB courses with proof of completion.&lt;/td>
+&lt;td>&lt;a href="https://university.mongodb.com/courses/catalog">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Diverse&lt;/td>
+&lt;td>Udemy&lt;/td>
+&lt;td>~670 free courses at Udemy, incl. certificates.&lt;/td>
+&lt;td>&lt;a href="https://www.udemy.com/courses/free/">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cPanel&lt;/td>
+&lt;td>Cpanel University&lt;/td>
+&lt;td>Free cPanel Professional Certification (CPP) awarded simply by successfully completing the full series of video lessons. There is no final certification exam required for the CPP status.&lt;/td>
+&lt;td>&lt;a href="https://exams.cpanel.net/catalog/info/id:228,cat:38">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Analytics&lt;/td>
+&lt;td>Google Analytics Academy&lt;/td>
+&lt;td>Google Analytics Academy free courses with certificates&lt;/td>
+&lt;td>&lt;a href="https://analytics.google.com/analytics/academy/">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SD-WAN&lt;/td>
+&lt;td>Silver Peak&lt;/td>
+&lt;td>Silver Peak , offers Free Training &amp;amp; Certification Exam for SD-WAN Profissional&lt;/td>
+&lt;td>&lt;a href="https://www.silver-peak.com/support/training">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Data Science&lt;/td>
+&lt;td>IBM Cognitive Class&lt;/td>
+&lt;td>Data science courses with proof of completion and badge&lt;/td>
+&lt;td>&lt;a href="https://cognitiveclass.ai/">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>IT sector&lt;/td>
+&lt;td>Bitdegree&lt;/td>
+&lt;td>gain or improve digital skills on our eLearning platform&lt;/td>
+&lt;td>&lt;a href="https://www.bitdegree.org/free-certifications-online">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Databases&lt;/td>
+&lt;td>CockcroachLab University&lt;/td>
+&lt;td>Free Cert - the core concepts behind distributed databases and give you all the tools you need to get started with CockroachDB&lt;/td>
+&lt;td>&lt;a href="https://university.cockroachlabs.com/course/getting-started-with-cockroachdb">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Databases&lt;/td>
+&lt;td>CockcroachLab University&lt;/td>
+&lt;td>Free Cert - you will build a full-stack ride-sharing application in Python using the popular SQLAlchemy ORM and CockroachDB&lt;/td>
+&lt;td>&lt;a href="https://university.cockroachlabs.com/course/cockroachdb-for-python-developers">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SysTrack&lt;/td>
+&lt;td>Lakeside Software&lt;/td>
+&lt;td>Free SysTrack certification and badge upon completion of self-paced courses through their online learning platform. They offer three courses: SysTrack Technician, SysTrack Engineer, and SysTrack Dashboard Designer.&lt;/td>
+&lt;td>&lt;a href="https://info.lakesidesoftware.com/acton/fs/blocks/showLandingPage/a/31052/p/p-0081/t/page/fm/0">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Eggplant&lt;/td>
+&lt;td>Eggplant&lt;/td>
+&lt;td>Free Eggplant courses and certifications.&lt;/td>
+&lt;td>&lt;a href="https://www.eggplantsoftware.com/training-and-certifications">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>AWS&lt;/td>
+&lt;td>AWS&lt;/td>
+&lt;td>Free full-time AWS training with certification and launch a career in cloud computing with AWS re/Start for unemployed and underemployed individuals.&lt;/td>
+&lt;td>&lt;a href="https://aws.amazon.com/training/restart/">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>API&lt;/td>
+&lt;td>API Academy&lt;/td>
+&lt;td>Free API Designer and API Security Architect certifications.&lt;/td>
+&lt;td>&lt;a href="https://apiacademy.co/api-certification/">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>AI&lt;/td>
+&lt;td>Microsoft AI&lt;/td>
+&lt;td>Microsoft AI Classroom Series. Microsoft has joined forces with NASSCOM FutureSkills® to deliver Microsoft’s AI, machine learning and data science expertise to students through easy-to-consume modules including demos, hands-on workshop and assignments.&lt;/td>
+&lt;td>&lt;a href="http://thetechco.in/MicrosoftAIforStudents/index">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Zerto&lt;/td>
+&lt;td>Zerto&lt;/td>
+&lt;td>Free Zerto Associate Certification on Zerto University.&lt;/td>
+&lt;td>&lt;a href="https://www.zerto.com/myzerto/training/">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Calico&lt;/td>
+&lt;td>Calico&lt;/td>
+&lt;td>Certified Calico Operator: Level 1.&lt;/td>
+&lt;td>&lt;a href="https://academy.tigera.io/course/certified-calico-operator-level-1/">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Stepik&lt;/td>
+&lt;td>Stepik&lt;/td>
+&lt;td>Several free courses with certificates are available for reference in design, computer science, mathematics, etc.&lt;/td>
+&lt;td>&lt;a href="https://stepik.org/catalog/search?cert=true&amp;amp;free=true">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Databases&lt;/td>
+&lt;td>Liquibase&lt;/td>
+&lt;td>Learn all about Liquibase fundamentals from free online courses by Liquibase experts and see how to apply them in the real world.&lt;/td>
+&lt;td>&lt;a href="https://learn.liquibase.com/index">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="security">Security&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Provider&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Link&lt;/th>
+&lt;th>Expiration&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Palo Alto Networks&lt;/td>
+&lt;td>Free certification exam coupon code upon completion of certification prep training during the event.&lt;/td>
+&lt;td>&lt;a href="https://ignite.paloaltonetworks.com/">Link&lt;/a>&lt;/td>
+&lt;td>18-Nov-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Fortinet&lt;/td>
+&lt;td>Free Network Security training courses &amp;amp; certifications by Fortinet / NSE Institute.&lt;/td>
+&lt;td>&lt;a href="https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2020/fortinet-makes-all-online-cybersecurity-training-courses-available-for-free.html">Link&lt;/a>&lt;/td>
+&lt;td>31-Dec-2020&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The Academic Council Of uLektz&lt;/td>
+&lt;td>Free Cyber Security training and certification.&lt;/td>
+&lt;td>&lt;a href="https://www.ulektzskills.com/skills/The-Academic-Council-Of-uLektz/Cyber-Security-NTA4Mg==">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>APMG International&lt;/td>
+&lt;td>Free Certified Cyber Professional (CCP) Specialism Pilot certification for &lt;strong>eligible indiviuals&lt;/strong> (see link for info).&lt;/td>
+&lt;td>&lt;a href="https://apmg-international.com/article/certified-cyber-professional-ccp-specialism-pilot">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cisco Networking Academy&lt;/td>
+&lt;td>Free Introduction to Cybersecurity course with Networking Academy badge for completing this course.&lt;/td>
+&lt;td>&lt;a href="https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SkillFront&lt;/td>
+&lt;td>Free ISO/IEC 27001 Information Security Associate™&lt;/td>
+&lt;td>&lt;a href="https://www.skillfront.com/ISO-IEC-27001-Information-Security-Associate">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="project-management">Project Management&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Provider&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Link&lt;/th>
+&lt;th>Expiration&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Certiprof&lt;/td>
+&lt;td>Free “Scrum Foundations Professional Certificate (SFPC)” certification. Available in en, pt-br &amp;amp; es. Use the code “COVID19Support”&lt;/td>
+&lt;td>&lt;a href="https://certiprof.com/pages/scrum-foundations-professional-certificate-sfpc-english">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Six Sigma Online&lt;/td>
+&lt;td>Free Six Sigma White Belt Training &amp;amp; Certification.&lt;/td>
+&lt;td>&lt;a href="https://www.sixsigmaonline.org/six-sigma-white-belt-certification/">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>OHSC&lt;/td>
+&lt;td>Free Project Management course and certificate by Oxford Home Study Centre (OHSC).&lt;/td>
+&lt;td>&lt;a href="https://www.oxfordhomestudy.com/courses/project-management-courses-online/free-online-courses-with-certificates-in-project-management">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Msicertified&lt;/td>
+&lt;td>Free Project Management Essentials Certified (PMEC) training &amp;amp; certification.&lt;/td>
+&lt;td>&lt;a href="https://www.msicertified.com/free-project-management-certification.html">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>6sigmastudy&lt;/td>
+&lt;td>Free Six Sigma Yellow Belt course &amp;amp; certification.&lt;/td>
+&lt;td>&lt;a href="http://www.6sigmastudy.com/Six-Sigma-Yellow-Belt.asp">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ScrumStudy&lt;/td>
+&lt;td>Free “Scrum Fundamentals Certified (SFC™)” training course &amp;amp; certification&lt;/td>
+&lt;td>&lt;a href="https://www.scrumstudy.com/certification/scrum-fundamentals-certified">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SkillFront&lt;/td>
+&lt;td>Free Certified Associate In Scrum Fundamentals™ (CASF™)&lt;/td>
+&lt;td>&lt;a href="https://www.skillfront.com/CASF-Certified-Associate-In-Scrum-Fundamentals">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="marketing">Marketing&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Provider&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Link&lt;/th>
+&lt;th>Expiration&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Google&lt;/td>
+&lt;td>Fundamentals of Digital Marketing free course &amp;amp; certificate by Google.&lt;/td>
+&lt;td>&lt;a href="https://learndigital.withgoogle.com/digitalgarage/course/digital-marketing">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Microsoft&lt;/td>
+&lt;td>Microsoft Advertising certification and training.&lt;/td>
+&lt;td>&lt;a href="https://about.ads.microsoft.com/en-us/resources/training/get-certified">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SMstudy&lt;/td>
+&lt;td>4 free marketing related fundamental certifications by SMstudy.&lt;/td>
+&lt;td>&lt;a href="https://www.smstudy.com/freeresources/earn-4-free-certifications">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DMAC&lt;/td>
+&lt;td>Free Facebook &amp;amp; Instagram Marketing course and certification by DMAC (Digital Marketing Academy of Canada).&lt;/td>
+&lt;td>&lt;a href="https://www.yourdmac.com/free-online-social-media-marketing-course">Link&lt;/a>&lt;/td>
+&lt;td>Limited Time&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Hootsuite&lt;/td>
+&lt;td>&lt;strong>[Students only]&lt;/strong> Free Hootsuite Platform Certification (worth $99) and Social Marketing Certification (worth $199) through Hootsuite&amp;rsquo;s Student Program.&lt;/td>
+&lt;td>&lt;a href="https://hootsuite.com/pages/landing/student-program">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>HubSpot Academy&lt;/td>
+&lt;td>Free marketing &amp;amp; sales courses with certification.&lt;/td>
+&lt;td>&lt;a href="https://academy.hubspot.com/courses?page=1#certsOnly=true">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SEMrush&lt;/td>
+&lt;td>Free Online Digital Marketing Courses and Exams.&lt;/td>
+&lt;td>&lt;a href="https://www.semrush.com/academy/">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="others">Others&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Provider&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Link&lt;/th>
+&lt;th>Expiration&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Salesforce&lt;/td>
+&lt;td>Free Salesforce courses with career learning paths and &lt;em>superbadges&lt;/em>. Also, free half-day &lt;a href="https://trailhead.salesforce.com/credentials/cert-days">Salesforce Certification preparation webinar&lt;/a>, offering $70 discount coupon for any $200 exam for all attendees.&lt;/td>
+&lt;td>&lt;a href="https://trailhead.salesforce.com/en/home">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Revenera&lt;/td>
+&lt;td>Revenera Certification free of charge to approved members of the legal community.&lt;/td>
+&lt;td>&lt;a href="https://info.revenera.com/SCA-Legal-Certification-Program-Request">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Kahoot!&lt;/td>
+&lt;td>Kahoot! Certified for schools, free program designed to help teachers become the ultimate Kahoot! superheroes.&lt;/td>
+&lt;td>&lt;a href="https://kahoot.com/blog/2020/09/18/kahoot-certified-for-schools-better-than-before/">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Explain Everything&lt;/td>
+&lt;td>Free Explain Everything course and certification.&lt;/td>
+&lt;td>&lt;a href="https://explaineverything.com/the-explain-everything-certification-course-is-here/">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SkillFront&lt;/td>
+&lt;td>Free SkillFront Entrepreneur Program™: Foundations Of Business And Entrepreneurship™&lt;/td>
+&lt;td>&lt;a href="https://www.skillfront.com/Free-Business-Entrepreneurship-Program-Certification">Link&lt;/a>&lt;/td>
+&lt;td>Unlimited&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CertiProf&lt;/td>
+&lt;td>Free Remote Work and Virtual Collaboration - RWVCPC&lt;/td>
+&lt;td>&lt;a href="https://certiprof.com/pages/remote-work-and-virtual-collaboration-certificate-rwvcpc">Link&lt;/a>&lt;/td>
+&lt;td>Unknown&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/blog4/</link></item></channel></rss>

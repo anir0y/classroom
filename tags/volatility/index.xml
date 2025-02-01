@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Volatility on Classroom</title><link>https://classroom.anir0y.in/tags/volatility/</link><description>Recent content in Volatility on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 23 May 2021 23:09:45 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/volatility/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack me Room Volatility</title><pubDate>Sun, 23 May 2021 23:09:45 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>Volatility Learn how to perform memory forensics with Volatility!
-Profile Support Task 01: Intro Volatility is a free memory forensics tool developed and maintained by Volatility labs. Regarded as the gold standard for memory forensics in incident response, Volatility is wildly expandable via a plugins system and is an invaluable tool for any Blue Teamer.
-Task 02: Obtaining Memory Samples Obtaining a memory capture from machines can be done in numerous ways, however, the easiest method will often vary depending on what you&amp;rsquo;re working with.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-bpvolatility/</link></item><item><title>Volatility Installation in Linux</title><pubDate>Wed, 17 Mar 2021 01:00:08 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>How to Install Volatility 2.6 in Kali Volatility is no longer packaged with new Kali releases, but can be manually installed.
-┌──(kali㉿kali)-[~/volatility] └─$ vol.py Volatility Foundation Volatility Framework 2.6.1 *** Failed to import volatility.plugins.registry.shutdown (ImportError: No module named Crypto.Hash) *** Failed to import volatility.plugins.getservicesids (ImportError: No module named Crypto.Hash) *** Failed to import volatility.plugins.timeliner (ImportError: No module named Crypto.Hash) *** Failed to import volatility.plugins.malware.apihooks (NameError: name &amp;#39;distorm3&amp;#39; is not defined) *** Failed to import volatility.</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/vol2-installation/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Volatility on Classroom</title><link>https://classroom.anir0y.in/tags/volatility/</link><description>Recent content in Volatility on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 23 May 2021 23:09:45 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/volatility/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack me Room Volatility</title><pubDate>Sun, 23 May 2021 23:09:45 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="volatility">Volatility&lt;/h1>
+&lt;blockquote>
+&lt;p>Learn how to perform memory forensics with Volatility!&lt;/p>
+&lt;/blockquote>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Profile&lt;/th>
+&lt;th style="text-align: right">Support&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;script src="https://tryhackme.com/badge/434937">&lt;/script>&lt;/td>
+&lt;td style="text-align: right">&lt;a href="https://www.buymeacoffee.com/anir0y">&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00">&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="task-01-intro">Task 01: Intro&lt;/h2>
+&lt;p>Volatility is a free memory forensics tool developed and maintained by Volatility labs. Regarded as the gold standard for memory forensics in incident response, Volatility is wildly expandable via a plugins system and is an invaluable tool for any Blue Teamer.&lt;/p>
+&lt;hr>
+&lt;!-- Amazon Ads-->
+&lt;script type="text/javascript" language="javascript">
+var aax_size='300x250';
+var aax_pubname = 'anir0y-21';
+var aax_src='302';
+&lt;/script>
+&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js">&lt;/script>
+&lt;!-- Amazon Ads-->
+&lt;hr>
+&lt;h2 id="task-02-obtaining-memory-samples">Task 02: Obtaining Memory Samples&lt;/h2>
+&lt;p>Obtaining a memory capture from machines can be done in numerous ways, however, the easiest method will often vary depending on what you&amp;rsquo;re working with. For example, live machines (turned on) can have their memory captured with one of the following tools:&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-bpvolatility/</link></item><item><title>Volatility Installation in Linux</title><pubDate>Wed, 17 Mar 2021 01:00:08 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="how-to-install-volatility-26-in-kali">How to Install Volatility 2.6 in Kali&lt;/h1>
+&lt;p>Volatility is no longer packaged with new Kali releases, but can be manually installed.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-zsh" data-lang="zsh">&lt;span style="display:flex;">&lt;span>┌──&lt;span style="color:#f92672">(&lt;/span>kali㉿kali&lt;span style="color:#f92672">)&lt;/span>-&lt;span style="color:#f92672">[&lt;/span>~/volatility&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─$ vol.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Volatility Foundation Volatility Framework 2.6.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> *** Failed to import volatility.plugins.registry.shutdown &lt;span style="color:#f92672">(&lt;/span>ImportError: No module named Crypto.Hash&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> *** Failed to import volatility.plugins.getservicesids &lt;span style="color:#f92672">(&lt;/span>ImportError: No module named Crypto.Hash&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> *** Failed to import volatility.plugins.timeliner &lt;span style="color:#f92672">(&lt;/span>ImportError: No module named Crypto.Hash&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> *** Failed to import volatility.plugins.malware.apihooks &lt;span style="color:#f92672">(&lt;/span>NameError: name &lt;span style="color:#e6db74">&amp;#39;distorm3&amp;#39;&lt;/span> is not defined&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> *** Failed to import volatility.plugins.malware.threads &lt;span style="color:#f92672">(&lt;/span>NameError: name &lt;span style="color:#e6db74">&amp;#39;distorm3&amp;#39;&lt;/span> is not defined&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> *** Failed to import volatility.plugins.mac.apihooks_kernel &lt;span style="color:#f92672">(&lt;/span>ImportError: No module named distorm3&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="as-volatility-relies-on-certain-python-2-dependencies-we-will-need-to-install-python-2-pip">As Volatility relies on certain Python 2 dependencies, we will need to install Python 2 Pip:&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo python2 get-pip.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># upgrade setup tools to avoid &amp;#34;invalid command egg_info&amp;#34; error&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>pip2 install &lt;span style="color:#f92672">--&lt;/span>upgrade setuptools
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># install python-dev to avoid &amp;#34;x86_64-linux-gnu-gcc failed...&amp;#34; error&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo apt-get install python-dev
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="now-that-pip2-is-installed-we-can-use-it-to-get-the-volatility-dependencies">Now that pip2 is installed, we can use it to get the Volatility dependencies:&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>pip2 install pycrypto
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>pip2 install distorm3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;!-- Google Ads -->
+&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">&lt;/script>
+&lt;p>&lt;ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188">&lt;/ins>&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/vol2-installation/</link></item></channel></rss>
