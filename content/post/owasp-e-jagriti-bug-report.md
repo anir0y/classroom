@@ -66,19 +66,7 @@ headers = {
     "Sec-Ch-Ua-Platform": "\"macOS\"",
     "Authorization": "",
     "Accept-Language": "en-US,en;q=0.9",
-    "Sec-Ch-Ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
-    "Sec-Ch-Ua-Mobile": "?0",
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-    "Origin": "[invalid url, do not cite]
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Dest": "empty",
-    "Referer": "[invalid url, do not cite]
-    "Accept-Encoding": "gzip, deflate, br",
-    "Priority": "u=1, i",
-    "Connection": "keep-alive"
+    "User-Agent": "Imma hacker sar"
 }
 
 # Define the sequence of userIds (e.g., range from 10005 to 10010)
