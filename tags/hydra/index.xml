@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hydra on Classroom</title><link>https://classroom.anir0y.in/tags/hydra/</link><description>Recent content in Hydra on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sat, 03 Jul 2021 20:14:32 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/hydra/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe Hydra</title><pubDate>Sat, 03 Jul 2021 20:14:32 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="hydra">Hydra&lt;/h2>
 &lt;blockquote>
-&lt;p>Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website&amp;rsquo;s credentials.&lt;/p>
-&lt;/blockquote>
+&lt;p>Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website&amp;rsquo;s credentials.&lt;/p>&lt;/blockquote>
 &lt;h2 id="task-01-hydra-introduction">Task 01: Hydra Introduction&lt;/h2>
 &lt;p>Hydra is a brute force online password cracking program; a quick system login password &amp;lsquo;hacking&amp;rsquo; tool.&lt;/p>
 &lt;h3 id="installing-hydra">Installing Hydra&lt;/h3>

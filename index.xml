@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Classroom</title><link>https://classroom.anir0y.in/</link><description>Recent content on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sat, 01 Feb 2025 13:36:24 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Mastering Subnetting- A Comprehensive Guide with Practical Lab Exercises</title><pubDate>Sat, 01 Feb 2025 13:36:24 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://i.imgur.com/6f7E7IY.png" width="700" height="420"/><description>&lt;h2 id="overview">OverView&lt;/h2>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Classroom</title><link>https://classroom.anir0y.in/</link><description>Recent content on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 14 Jul 2025 02:24:47 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint</title><pubDate>Mon, 14 Jul 2025 02:24:47 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png" width="700" height="420"/><description>&lt;!-- Google Ads -->
+&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">&lt;/script>
+&lt;p>&lt;ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188">&lt;/ins>&lt;/p>
+&lt;script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script>
+&lt;!-- END -->
+&lt;hr>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The e-Jagriti platform, developed by the Department of Consumer Affairs, Government of India, is a digital solution for consumer dispute resolution, offering features such as online case filing, real-time monitoring, and AI-powered search capabilities. Hosted at [e-jagriti.gov.in]([invalid url, do not cite]), it aims to enhance accessibility and efficiency in addressing consumer grievances. However, a potential security vulnerability in its &lt;code>/services/user/auth/v2/findUser&lt;/code> endpoint may allow attackers to perform user enumeration, identifying valid user accounts by exploiting differences in server responses. This blog post examines the nature of this vulnerability, demonstrates a proof of concept (PoC), evaluates its potential impact, and proposes mitigation strategies to enhance the platform’s security.&lt;/p></description><enclosure url="https://classroom.anir0y.inhttps://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png"/><link>https://classroom.anir0y.in/post/owasp-e-jagriti-bug-report/</link></item><item><title>Mastering Subnetting- A Comprehensive Guide with Practical Lab Exercises</title><pubDate>Sat, 01 Feb 2025 13:36:24 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://i.imgur.com/6f7E7IY.png" width="700" height="420"/><description>&lt;h2 id="overview">OverView&lt;/h2>
 &lt;p>Subnetting is a fundamental concept in networking that involves dividing a larger network into smaller, more manageable sub-networks, or subnets. This practice enhances network performance, improves security, and simplifies management. In this blog post, we&amp;rsquo;ll explore the basics of subnetting, its importance, and provide practical examples to illustrate how it works.&lt;/p>
 &lt;figure>&lt;img src="https://i.imgur.com/6f7E7IY.png"
 alt="Subnetting Diagram" width="600">
@@ -19,15 +33,13 @@ alt="Subnetting Diagram" width="600">
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>kali@kali:~$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Adding Support for Shared Folders When Using OVT
 Unfortunately, shared folders will not work out of the box, some additional scripts are needed. Those can be installed easily with kali-tweaks:&lt;/p></description><enclosure url="https://classroom.anir0y.inhttps://i.imgur.com/KbdONjh.png"/><link>https://classroom.anir0y.in/post/blog-how-to-enable-folder-share-in-kali-vm-and-windows-host/</link></item><item><title>Addressing Allegations - A Response to Recent Claims Against Me</title><pubDate>Fri, 15 Mar 2024 12:50:55 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://i.imgur.com/s7rytzA.png" width="700" height="420"/><description>&lt;blockquote>
-&lt;p>&lt;strong>Date:&lt;/strong> March 15, 2024&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;strong>Date:&lt;/strong> March 15, 2024&lt;/p>&lt;/blockquote>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In recent days, there have been concerning allegations made against &lt;a href="https://anir0y.in">anir0y.in&lt;/a>, suggesting involvement in scamming activities. As the owner and operator of this website, I feel compelled to address these claims directly and transparently.&lt;/p>
 &lt;h2 id="misrepresentation-of-intent">Misrepresentation of Intent&lt;/h2>
 &lt;p>Let me state unequivocally: the core purpose of &lt;a href="https://anir0y.in">anir0y.in&lt;/a> has always been to provide valuable insights and resources for individuals navigating the darknet. Any insinuation of fraudulent behavior associated with this platform is entirely unfounded and without merit.&lt;/p></description><enclosure url="https://classroom.anir0y.inhttps://i.imgur.com/s7rytzA.png"/><link>https://classroom.anir0y.in/post/blog-addressing-alligation/</link></item><item><title>The Curious Case of Mr. OSINT- A Digital Intrusion Tale</title><pubDate>Mon, 11 Mar 2024 19:13:04 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://i.imgur.com/RQww4KM.png" width="700" height="420"/><description>&lt;blockquote>
-&lt;p>Date: March 11, 2024&lt;/p>
-&lt;/blockquote>
+&lt;p>Date: March 11, 2024&lt;/p>&lt;/blockquote>
 &lt;p>&lt;strong>This morning, I was greeted by an unexpected surprise when I checked my public calendar – two mysterious &amp;ldquo;Meetings&amp;rdquo; had appeared out of nowhere.
 Naturally, alarm bells started ringing. How had someone managed to infiltrate my calendar and insert these meetings? More importantly, how had they acquired my information to do so?&lt;/strong>&lt;/p>
 &lt;h2 id="the-infamous-breach">The Infamous Breach&lt;/h2>
@@ -290,8 +302,7 @@ data-ad-slot="7160066188">&lt;/ins>&lt;/p></description><enclosure url="https://
 &lt;h2 id="task-01--introduction">Task 01: Introduction&lt;/h2>
 &lt;h3 id="11-what-is-the-mitre-id-for-software-configuration">1.1 What is the MITRE ID for Software Configuration?&lt;/h3>
 &lt;blockquote>
-&lt;p>Answer : M1054&lt;/p>
-&lt;/blockquote>
+&lt;p>Answer : M1054&lt;/p>&lt;/blockquote>
 &lt;h2 id="task-02-pf-sender-policy-framework">Task 02: PF (Sender Policy Framework)&lt;/h2>
 &lt;p>What is the Sender Policy Framework (SPF)?&lt;/p>
 &lt;p>Per dmarcian, &amp;ldquo;Sender Policy Framework (SPF) is used to authenticate the sender of an email. With an SPF record in place, Internet Service Providers can verify that a mail server is authorized to send email for a specific domain. An SPF record is a DNS TXT record containing a list of the IP addresses that are allowed to send email on behalf of your domain.&amp;rdquo;&lt;/p></description><enclosure url="https://classroom.anir0y.in/img/phishing-4.png"/><link>https://classroom.anir0y.in/post/tryhackme-phishingemails4/</link></item><item><title>Try Hack Me Red Team Threat Intel</title><pubDate>Fri, 12 Aug 2022 13:05:49 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/redteamthreatintel.png" width="700" height="420"/><description>&lt;h2 id="overview">OverView&lt;/h2>
@@ -1130,8 +1141,7 @@ data-ad-slot="7160066188">&lt;/ins>&lt;/p>
 &lt;/tbody>
 &lt;/table>
 &lt;blockquote>
-&lt;p>Vulnerability allow a authenticated user whith low privilages upload a malicious WAV file that could lead to remote arbitrary file disclosure and server-side request forgery (SSRF).&lt;/p>
-&lt;/blockquote>
+&lt;p>Vulnerability allow a authenticated user whith low privilages upload a malicious WAV file that could lead to remote arbitrary file disclosure and server-side request forgery (SSRF).&lt;/p>&lt;/blockquote>
 &lt;hr>
 &lt;h2 id="task-01-introduction">Task 01: Introduction&lt;/h2>
 &lt;p>An XXE vulnerability consists of an injection that takes advantage of the poor configuration of the XML interpreter allowing to include external entities, this attack is performed against an application that interprets XML language in its parameters.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-wordpresscve202129447/</link></item><item><title>TryHackMe Intro to Windows</title><pubDate>Tue, 24 Aug 2021 15:17:46 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview">OverView&lt;/h2>
@@ -2289,8 +2299,7 @@ data-ad-slot="7160066188">&lt;/ins>&lt;/p></description><enclosure url="https://
 &lt;h2 id="task-02-enumeration-w-powerview">Task 02: Enumeration w/ Powerview&lt;/h2>
 &lt;p>Powerview is a powerful powershell script from powershell empire that can be used for enumerating a domain after you have already gained a shell in the system.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-postexploit/</link></item><item><title>TryHackMe Hydra</title><pubDate>Sat, 03 Jul 2021 20:14:32 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="hydra">Hydra&lt;/h2>
 &lt;blockquote>
-&lt;p>Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website&amp;rsquo;s credentials.&lt;/p>
-&lt;/blockquote>
+&lt;p>Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website&amp;rsquo;s credentials.&lt;/p>&lt;/blockquote>
 &lt;h2 id="task-01-hydra-introduction">Task 01: Hydra Introduction&lt;/h2>
 &lt;p>Hydra is a brute force online password cracking program; a quick system login password &amp;lsquo;hacking&amp;rsquo; tool.&lt;/p>
 &lt;h3 id="installing-hydra">Installing Hydra&lt;/h3>
@@ -2311,8 +2320,7 @@ and then you can use it to install &lt;code>pip2&lt;/code> i.e. &lt;code>python 
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./run.sh &lt;span style="color:#75715e">#execute to install the pip2&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>wait till it shows, &amp;ldquo;DONE!&amp;rdquo;&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/pip2-install/</link></item><item><title>TryHackMe Room Ice</title><pubDate>Tue, 29 Jun 2021 14:11:50 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="ice">ICE&lt;/h2>
 &lt;blockquote>
-&lt;p>Deploy &amp;amp; hack into a Windows machine, exploiting a very poorly secured media server.&lt;/p>
-&lt;/blockquote>
+&lt;p>Deploy &amp;amp; hack into a Windows machine, exploiting a very poorly secured media server.&lt;/p>&lt;/blockquote>
 &lt;h2 id="task-01-connect">task 01: Connect&lt;/h2>
 &lt;p>Nothing to do just follow the instructions.&lt;/p>
 &lt;hr>
@@ -2323,12 +2331,10 @@ and then you can use it to install &lt;code>pip2&lt;/code> i.e. &lt;code>python 
 &lt;li>&lt;a href="https://nmap.org/book/man-port-scanning-techniques.html">https://nmap.org/book/man-port-scanning-techniques.html&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>for this lab: &lt;code>nmap -sS -p- TARGET_IP&lt;/code>&lt;/p>
-&lt;/blockquote>
+&lt;p>for this lab: &lt;code>nmap -sS -p- TARGET_IP&lt;/code>&lt;/p>&lt;/blockquote>
 &lt;h3 id="task-21">task 2.1&lt;/h3>
 &lt;blockquote>
-&lt;p>Deploy the machine! This may take up to three minutes to start.&lt;/p>
-&lt;/blockquote>
+&lt;p>Deploy the machine! This may take up to three minutes to start.&lt;/p>&lt;/blockquote>
 &lt;h3 id="task-22">Task 2.2&lt;/h3>
 &lt;blockquote>
 &lt;p>Launch a scan against our target machine, I recommend using a SYN scan set to scan all ports on the machine. The scan command will be provided as a hint, however, it&amp;rsquo;s recommended to complete the room &amp;lsquo;Nmap&amp;rsquo; prior to this room.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-ice/</link></item><item><title>TryHackMe Room Hackpark</title><pubDate>Sat, 19 Jun 2021 19:38:27 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="hackpark">HackPark&lt;/h2>
@@ -2605,7 +2611,7 @@ var aax_src='302';
 &lt;!-- Amazon Ads-->
 &lt;iframe style="width:300px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=IN&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=anir0y-21&amp;language=en_IN&amp;marketplace=amazon&amp;region=IN&amp;placement=1593272901&amp;asins=1593272901&amp;linkId=60304e65b31865f7a816862eaac56668&amp;show_border=false&amp;link_opens_in_new_window=true">&lt;/iframe>
 &lt;!-- Amazon Ads-->
-&lt;h2 id="i-learnt-from-this-book-practical-malware-analysis-the-hands-on-guide-to-dissecting-malicious-softwarehttpsamznto3ucw0n5">I learnt from this Book: &lt;a href="https://amzn.to/3uCw0N5">Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software&lt;/a>&lt;/h2>
+&lt;h2 id="i-learnt-from-this-book-practical-malware-analysis-the-hands-on-guide-to-dissecting-malicious-software">I learnt from this Book: &lt;a href="https://amzn.to/3uCw0N5">Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software&lt;/a>&lt;/h2>
 &lt;hr>
 &lt;h2 id="task-01-introduction">Task 01: Introduction&lt;/h2>
 &lt;p>These challenges are aimed towards learning about the &amp;ldquo;Static Analysis&amp;rdquo; technique used to analyze the malware. The main aim for this room is not to used any types of debuggers neither the executable&amp;rsquo;s/programs should be run on any platform. You are required to answer all the questions without even using the debugger and even not executing the executable&amp;rsquo;s/programs.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-basicmalwarere/</link></item><item><title>Try Hack ME Room Malstrings</title><pubDate>Mon, 31 May 2021 00:21:19 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="mal-strings">MAL: Strings&lt;/h1>
@@ -2767,8 +2773,7 @@ var aax_src='302';
 &lt;h3 id="flg-2">Flg 2&lt;/h3>
 &lt;p>looking into eventviewer log for EventID 4624. Ref: &lt;a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4624">read&lt;/a>&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/investigatingwindows/</link></item><item><title>Try Hack me Room Volatility</title><pubDate>Sun, 23 May 2021 23:09:45 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="volatility">Volatility&lt;/h1>
 &lt;blockquote>
-&lt;p>Learn how to perform memory forensics with Volatility!&lt;/p>
-&lt;/blockquote>
+&lt;p>Learn how to perform memory forensics with Volatility!&lt;/p>&lt;/blockquote>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -2797,8 +2802,7 @@ var aax_src='302';
 &lt;hr>
 &lt;h2 id="task-02-obtaining-memory-samples">Task 02: Obtaining Memory Samples&lt;/h2>
 &lt;p>Obtaining a memory capture from machines can be done in numerous ways, however, the easiest method will often vary depending on what you&amp;rsquo;re working with. For example, live machines (turned on) can have their memory captured with one of the following tools:&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-bpvolatility/</link></item><item><title>Domino’s India Data Leak Of 18 Cr Orders Resurfaces; Customer Location, Mobile Numbers Exposed</title><pubDate>Sat, 22 May 2021 19:56:16 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;blockquote>
-&lt;p>update: Site seems to be down for now!&lt;/p>
-&lt;/blockquote>
+&lt;p>update: Site seems to be down for now!&lt;/p>&lt;/blockquote>
 &lt;p>Domino&amp;rsquo;s India, which is owned by Jubilant FoodWorks has apparently fallen victim to a massive data leak. Hackers have reportedly published crucial data on the dark web. The data contains details of lakhs of Domino&amp;rsquo;s India customers and employees. As per reports, sensitive customer data like names, phone numbers, and credit card details have been accessed by hackers.&lt;/p>
 &lt;p>&lt;img src="https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/omdfhadpryptysxd_1618997536.jpeg" alt="">
 Image Credits: Pixabay/Twitter - @dominos_india&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/scripts-dominos/</link></item><item><title>Try Hack Me Room Attacking Kerberos</title><pubDate>Thu, 20 May 2021 23:25:07 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="attacking-kerberos">Attacking Kerberos&lt;/h1>
@@ -2872,13 +2876,12 @@ var aax_src='302';
 &lt;h2 id="openvas">OpenVas&lt;/h2>
 &lt;script src="https://tryhackme.com/badge/434937">&lt;/script>
 &lt;blockquote>
-&lt;p>&lt;strong>Room&lt;/strong> &lt;a href="https://tryhackme.com/room/openvas">Subscription Only&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;strong>Room&lt;/strong> &lt;a href="https://tryhackme.com/room/openvas">Subscription Only&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;h2 id="task-1-introduction">Task 1: Introduction&lt;/h2>
 &lt;p>OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-openvas/</link></item><item><title>Try Hack ME Room Zerologon</title><pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;hr>
 &lt;h2 id="zero-logon---the-zero-day-angle">Zero Logon - The Zero Day Angle&lt;/h2>
 &lt;script src="https://tryhackme.com/badge/434937">&lt;/script>
-&lt;h2 id="room-subscription-onlyhttpstryhackmecomroomzer0logon">Room &lt;a href="https://tryhackme.com/room/zer0logon">Subscription Only&lt;/a>&lt;/h2>
+&lt;h2 id="room-subscription-only">Room &lt;a href="https://tryhackme.com/room/zer0logon">Subscription Only&lt;/a>&lt;/h2>
 &lt;hr>
 &lt;h3 id="about-the-vulnerability--">About The vulnerability -&lt;/h3>
 &lt;p>On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.&lt;/p>
@@ -3601,8 +3604,7 @@ Available in PDF, DOCX and Markdown format!
 &lt;p>Even though the internet is one of the man’s great creation, but it has remained as a root cause for many cyber attacks. Let us discuss about cyber punk who is the root cause for many data breaches that has happened till date.&lt;/p>
 &lt;p>Phishing is a type of social engineering attack, where the attacker generally tries to impersonate as a legitimate person to get some sensitive credentials like [username, passwords, etc] of the target. It is the most common and widely used technique to gain initial access or to intrude into an internal network of an organisation. These attacks generally target financial service companies, cooperative employees, top management. Phishing technique is a root cause for many data thefts, and the reason for this lack of awareness among the employees&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/blog2/</link></item><item><title>Vulnerable Apps, Servers, and Websites!</title><pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview">overview&lt;/h2>
 &lt;blockquote>
-&lt;p>The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).&lt;/p>
-&lt;/blockquote>
+&lt;p>The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).&lt;/p>&lt;/blockquote>
 &lt;hr>
 &lt;h2 id="learning-platforms-and-vms">Learning Platforms and VMs&lt;/h2>
 &lt;ul>
