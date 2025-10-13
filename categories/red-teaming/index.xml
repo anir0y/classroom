@@ -1,34 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Red Teaming on Classroom</title><link>https://classroom.anir0y.in/categories/red-teaming/</link><description>Recent content in Red Teaming on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 13 Jul 2021 14:37:01 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/red-teaming/index.xml" rel="self" type="application/rss+xml"/><item><title>Awesome Red Teaming</title><pubDate>Tue, 13 Jul 2021 14:37:01 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="awesome-red-teaming">Awesome Red Teaming&lt;/h2>
-&lt;p>List of Awesome Red Team / Red Teaming Resources&lt;/p>
-&lt;p>This list is for anyone wishing to learn about Red Teaming but do not have a starting point.&lt;/p>
-&lt;p>Anyway, this is a living resources and will update regularly with latest Adversarial Tactics and Techniques based on &lt;a href="https://attack.mitre.org/wiki/Main_Page">Mitre ATT&amp;amp;CK&lt;/a>&lt;/p>
-&lt;p>You can help by sending Pull Requests to add more information.&lt;/p>
-&lt;h1 id="table-of-contents">Table of Contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#-initial-access">Initial Access&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-execution">Execution&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-persistence">Persistence&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-privilege-escalation">Privilege Escalation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-defense-evasion">Defense Evasion&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-credential-access">Credential Access&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-discovery">Discovery&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-lateral-movement">Lateral Movement&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-collection">Collection&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-exfiltration">Exfiltration&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-command-and-control">Command and Control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-embedded-and-peripheral-devices-hacking">Embedded and Peripheral Devices Hacking&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-misc">Misc&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-redteam-gadgets">RedTeam Gadgets&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-ebooks">Ebooks&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-training--free-">Training&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#-certification">Certification&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;!-- Google Ads -->
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">&lt;/script>
-&lt;p>&lt;ins class="adsbygoogle"
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Red Teaming on Classroom</title><link>https://classroom.anir0y.in/categories/red-teaming/</link><description>Recent content in Red Teaming on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 13 Jul 2021 14:37:01 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/red-teaming/index.xml" rel="self" type="application/rss+xml"/><item><title>Awesome Red Teaming</title><pubDate>Tue, 13 Jul 2021 14:37:01 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="awesome-red-teaming"&gt;Awesome Red Teaming&lt;/h2&gt;
+&lt;p&gt;List of Awesome Red Team / Red Teaming Resources&lt;/p&gt;
+&lt;p&gt;This list is for anyone wishing to learn about Red Teaming but do not have a starting point.&lt;/p&gt;
+&lt;p&gt;Anyway, this is a living resources and will update regularly with latest Adversarial Tactics and Techniques based on &lt;a href="https://attack.mitre.org/wiki/Main_Page"&gt;Mitre ATT&amp;amp;CK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can help by sending Pull Requests to add more information.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of Contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#-initial-access"&gt;Initial Access&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-execution"&gt;Execution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-persistence"&gt;Persistence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-privilege-escalation"&gt;Privilege Escalation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-defense-evasion"&gt;Defense Evasion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-credential-access"&gt;Credential Access&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-discovery"&gt;Discovery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-lateral-movement"&gt;Lateral Movement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-collection"&gt;Collection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-exfiltration"&gt;Exfiltration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-command-and-control"&gt;Command and Control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-embedded-and-peripheral-devices-hacking"&gt;Embedded and Peripheral Devices Hacking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-misc"&gt;Misc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-redteam-gadgets"&gt;RedTeam Gadgets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-ebooks"&gt;Ebooks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-training--free-"&gt;Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#-certification"&gt;Certification&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;!-- Google Ads --&gt;
+&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
+&lt;p&gt;&lt;ins class="adsbygoogle"
 style="display:block; text-align:center;"
 data-ad-layout="in-article"
 data-ad-format="fluid"
 data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188">&lt;/ins>&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/post-awesome-red-teaming/</link></item></channel></rss>
+data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/post-awesome-red-teaming/</link></item></channel></rss>

@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intermediate Nmap on Classroom</title><link>https://classroom.anir0y.in/tags/intermediate-nmap/</link><description>Recent content in Intermediate Nmap on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Fri, 23 Sep 2022 15:28:41 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/intermediate-nmap/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack Me Intermediate Nmap</title><pubDate>Fri, 23 Sep 2022 15:28:41 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/IntermediateNmap.png" width="700" height="420"/><description>&lt;h1 id="overview">OverView&lt;/h1>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;script src="https://tryhackme.com/badge/434937">&lt;/script>&lt;/th>
-&lt;th>&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y&lt;a>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;a href="https://tryhackme.com/room/intermediatenmap">Intermediate Nmap&lt;/a> {FREE ROOM}&lt;/td>
-&lt;td>&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/01aff3c76024f34b0582ad59e2138bfd.png" alt="logo">&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="task-01">Task 01:&lt;/h2>
-&lt;p>You&amp;rsquo;ve learned some great nmap skills! Now can you combine that with other skills with netcat and protocols, to log in to this machine and find the flag? This VM MACHINE_IP is listening on a high port, and if you connect to it it may give you some information you can use to connect to a lower port commonly used for remote access!&lt;/p></description><enclosure url="https://classroom.anir0y.in/img/IntermediateNmap.png"/><link>https://classroom.anir0y.in/post/thm-intermediatenmap/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intermediate Nmap on Classroom</title><link>https://classroom.anir0y.in/tags/intermediate-nmap/</link><description>Recent content in Intermediate Nmap on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Fri, 23 Sep 2022 15:28:41 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/intermediate-nmap/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack Me Intermediate Nmap</title><pubDate>Fri, 23 Sep 2022 15:28:41 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/IntermediateNmap.png" width="700" height="420"/><description>&lt;h1 id="overview"&gt;OverView&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://tryhackme.com/room/intermediatenmap"&gt;Intermediate Nmap&lt;/a&gt; {FREE ROOM}&lt;/td&gt;
+&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/01aff3c76024f34b0582ad59e2138bfd.png" alt="logo"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="task-01"&gt;Task 01:&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;ve learned some great nmap skills! Now can you combine that with other skills with netcat and protocols, to log in to this machine and find the flag? This VM MACHINE_IP is listening on a high port, and if you connect to it it may give you some information you can use to connect to a lower port commonly used for remote access!&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/IntermediateNmap.png"/><link>https://classroom.anir0y.in/post/thm-intermediatenmap/</link></item></channel></rss>

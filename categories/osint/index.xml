@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OSINT on Classroom</title><link>https://classroom.anir0y.in/categories/osint/</link><description>Recent content in OSINT on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 30 May 2022 03:36:44 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/osint/index.xml" rel="self" type="application/rss+xml"/><item><title>OSINT Resources I</title><pubDate>Mon, 30 May 2022 03:36:44 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/OSINT_Tools.png" width="700" height="420"/><description>&lt;h2 id="overview">OverView&lt;/h2>
-&lt;p>🕵️ OSINT Tools for gathering information and actions forensic 🕵️&lt;/p>
-&lt;hr>
-&lt;h3 id="-collection-of-4000-osint-resources">🕵️ Collection of 4000+ OSINT resources&lt;/h3>
-&lt;p>&lt;a href="https://metaosint.github.io/table/">https://metaosint.github.io/table/&lt;/a>&lt;/p>
-&lt;h3 id="spiderfoot-automates-osint-for-threat-intelligence-and-mapping-your-attack-surface">SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.&lt;/h3>
-&lt;p>&lt;a href="https://github.com/smicallef/spiderfoot">https://github.com/smicallef/spiderfoot&lt;/a>&lt;/p>
-&lt;h3 id="hayabusa">Hayabusa&lt;/h3>
-&lt;p>Hayabusa is a sigma-based threat hunting and fast forensics timeline generator for Windows event logs written in Rust. :
-&lt;a href="https://github.com/Yamato-Security/hayabusa">https://github.com/Yamato-Security/hayabusa&lt;/a>&lt;/p>
-&lt;h3 id="awesome-forensics">Awesome forensics&lt;/h3>
-&lt;p>A curated list of awesome forensic analysis tools and resources. :
-&lt;a href="https://github.com/patronuscode/awesome-forensics">https://github.com/patronuscode/awesome-forensics&lt;/a>&lt;/p>
-&lt;h3 id="mvt">MVT&lt;/h3>
-&lt;p>MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.:
-&lt;a href="https://github.com/mvt-project/mvt">https://github.com/mvt-project/mvt&lt;/a>&lt;/p></description><enclosure url="https://classroom.anir0y.in/img/OSINT_Tools.png"/><link>https://classroom.anir0y.in/post/osint_resources-i/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OSINT on Classroom</title><link>https://classroom.anir0y.in/categories/osint/</link><description>Recent content in OSINT on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 30 May 2022 03:36:44 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/osint/index.xml" rel="self" type="application/rss+xml"/><item><title>OSINT Resources I</title><pubDate>Mon, 30 May 2022 03:36:44 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/OSINT_Tools.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
+&lt;p&gt;🕵️ OSINT Tools for gathering information and actions forensic 🕵️&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="-collection-of-4000-osint-resources"&gt;🕵️ Collection of 4000+ OSINT resources&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://metaosint.github.io/table/"&gt;https://metaosint.github.io/table/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="spiderfoot-automates-osint-for-threat-intelligence-and-mapping-your-attack-surface"&gt;SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/smicallef/spiderfoot"&gt;https://github.com/smicallef/spiderfoot&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="hayabusa"&gt;Hayabusa&lt;/h3&gt;
+&lt;p&gt;Hayabusa is a sigma-based threat hunting and fast forensics timeline generator for Windows event logs written in Rust. :
+&lt;a href="https://github.com/Yamato-Security/hayabusa"&gt;https://github.com/Yamato-Security/hayabusa&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="awesome-forensics"&gt;Awesome forensics&lt;/h3&gt;
+&lt;p&gt;A curated list of awesome forensic analysis tools and resources. :
+&lt;a href="https://github.com/patronuscode/awesome-forensics"&gt;https://github.com/patronuscode/awesome-forensics&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="mvt"&gt;MVT&lt;/h3&gt;
+&lt;p&gt;MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.:
+&lt;a href="https://github.com/mvt-project/mvt"&gt;https://github.com/mvt-project/mvt&lt;/a&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/OSINT_Tools.png"/><link>https://classroom.anir0y.in/post/osint_resources-i/</link></item></channel></rss>

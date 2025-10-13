@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gitandcrumpets on Classroom</title><link>https://classroom.anir0y.in/tags/gitandcrumpets/</link><description>Recent content in Gitandcrumpets on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 04 Jul 2021 23:04:02 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/gitandcrumpets/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe Gitandcrumpets</title><pubDate>Sun, 04 Jul 2021 23:04:02 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="git-and-crumpets">Git and Crumpets&lt;/h2>
-&lt;p>Our devs have been clamoring for some centralized version control, so the admin came through. Rumour has it that they included a few countermeasures&amp;hellip;&lt;/p>
-&lt;h2 id="task-01--start-the-vm">Task 01: Start the VM&lt;/h2>
-&lt;hr>
-&lt;h2 id="task-02-git-the-flags">Task 02: Git the flags&lt;/h2>
-&lt;h2 id="user">user&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>I tried running nmap, no luck&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>being impatatient, I ran a quick curl commnad &lt;code>curl -s 10.10.x.y&lt;/code> to see what&amp;rsquo;s up.&lt;/p>
-&lt;p>&lt;img src="https://i.imgur.com/tpxQmLf.png" alt="img">&lt;/p>
-&lt;p>got this output.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>let&amp;rsquo;s setup &lt;strong>DNS&lt;/strong> record, edit &lt;code>/etc/hosts&lt;/code> file.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gitandcrumpets on Classroom</title><link>https://classroom.anir0y.in/tags/gitandcrumpets/</link><description>Recent content in Gitandcrumpets on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 04 Jul 2021 23:04:02 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/gitandcrumpets/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe Gitandcrumpets</title><pubDate>Sun, 04 Jul 2021 23:04:02 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="git-and-crumpets"&gt;Git and Crumpets&lt;/h2&gt;
+&lt;p&gt;Our devs have been clamoring for some centralized version control, so the admin came through. Rumour has it that they included a few countermeasures&amp;hellip;&lt;/p&gt;
+&lt;h2 id="task-01--start-the-vm"&gt;Task 01: Start the VM&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="task-02-git-the-flags"&gt;Task 02: Git the flags&lt;/h2&gt;
+&lt;h2 id="user"&gt;user&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I tried running nmap, no luck&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;being impatatient, I ran a quick curl commnad &lt;code&gt;curl -s 10.10.x.y&lt;/code&gt; to see what&amp;rsquo;s up.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://i.imgur.com/tpxQmLf.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;got this output.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;let&amp;rsquo;s setup &lt;strong&gt;DNS&lt;/strong&gt; record, edit &lt;code&gt;/etc/hosts&lt;/code&gt; file.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</link></item></channel></rss>

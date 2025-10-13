@@ -1,92 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Android on Classroom</title><link>https://classroom.anir0y.in/categories/android/</link><description>Recent content in Android on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 11 Oct 2022 19:04:38 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/android/index.xml" rel="self" type="application/rss+xml"/><item><title>Android MalwareAnalysis</title><pubDate>Tue, 11 Oct 2022 19:04:38 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/amat.png" width="700" height="420"/><description>&lt;p>&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y&lt;/a>&lt;/p>
-&lt;h1 id="android-malware-analysis-tools">Android Malware Analysis Tools&lt;/h1>
-&lt;h2 id="static-analysis">Static Analysis&lt;/h2>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>tools&lt;/th>
-&lt;th>short Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;a href="https://external.anir0y.in/classyshark">ClassyShark&lt;/a>&lt;/td>
-&lt;td>Standalone android apps binary inspection tool.ClassyShark&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://external.anir0y.in/StaCoAn">StaCoAn&lt;/a>&lt;/td>
-&lt;td>Mobile application static code analysis tool.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://external.anir0y.in/apk-mitm">APK-MiTM&lt;/a>&lt;/td>
-&lt;td>CLI application that automatically prepares Android APK files for HTTPS inspection.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="dynamic-analysis">Dynamic Analysis&lt;/h2>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>tools&lt;/th>
-&lt;th>short Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;a href="https://external.anir0y.in/appmon">AppMon&lt;/a>&lt;/td>
-&lt;td>Automated framework for monitoring and tampering system API calls based on Frida.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://www.wireshark.org/download.html">Wireshark&lt;/a>&lt;/td>
-&lt;td>Network analysis tool.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://www.androidtcpdump.com/">tcpdump&lt;/a>&lt;/td>
-&lt;td>Network analysis tool.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://external.anir0y.in/mitmproxy">MiTMProxy&lt;/a>&lt;/td>
-&lt;td>An interactive SSL/TLS-capable intercepting HTTP proxy (great for HTTPS inspection).&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://portswigger.net/burp/communitydownload">Burp Suite&lt;/a>&lt;/td>
-&lt;td>The free web proxy for any browser, system, or platform.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://www.inetsim.org/packages.html">INetSim&lt;/a>&lt;/td>
-&lt;td>Internet Services Simulation Suite.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="some-other-tools">Some Other tools&lt;/h2>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>tools&lt;/th>
-&lt;th>short Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;a href="https://tamerplatform.com/">Android Tamer&lt;/a>&lt;/td>
-&lt;td>VM/Live OS for Android security research and analysis.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://cuckoosandbox.org/">Cuckoo Sandbox&lt;/a>&lt;/td>
-&lt;td>Free and open-source automated malware analysis sandbox.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://external.anir0y.in/MobSF">MobSF (Mobile Security Framework)&lt;/a>&lt;/td>
-&lt;td>Malware analysis and security assessment framework capable of performing static and dynamic analysis.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;!-- Google Ads -->
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">&lt;/script>
-&lt;p>&lt;ins class="adsbygoogle"
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Android on Classroom</title><link>https://classroom.anir0y.in/categories/android/</link><description>Recent content in Android on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 11 Oct 2022 19:04:38 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/android/index.xml" rel="self" type="application/rss+xml"/><item><title>Android MalwareAnalysis</title><pubDate>Tue, 11 Oct 2022 19:04:38 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/amat.png" width="700" height="420"/><description>&lt;p&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="android-malware-analysis-tools"&gt;Android Malware Analysis Tools&lt;/h1&gt;
+&lt;h2 id="static-analysis"&gt;Static Analysis&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;tools&lt;/th&gt;
+&lt;th&gt;short Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://external.anir0y.in/classyshark"&gt;ClassyShark&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Standalone android apps binary inspection tool.ClassyShark&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://external.anir0y.in/StaCoAn"&gt;StaCoAn&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Mobile application static code analysis tool.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://external.anir0y.in/apk-mitm"&gt;APK-MiTM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CLI application that automatically prepares Android APK files for HTTPS inspection.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="dynamic-analysis"&gt;Dynamic Analysis&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;tools&lt;/th&gt;
+&lt;th&gt;short Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://external.anir0y.in/appmon"&gt;AppMon&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Automated framework for monitoring and tampering system API calls based on Frida.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.wireshark.org/download.html"&gt;Wireshark&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Network analysis tool.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.androidtcpdump.com/"&gt;tcpdump&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Network analysis tool.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://external.anir0y.in/mitmproxy"&gt;MiTMProxy&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;An interactive SSL/TLS-capable intercepting HTTP proxy (great for HTTPS inspection).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://portswigger.net/burp/communitydownload"&gt;Burp Suite&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The free web proxy for any browser, system, or platform.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.inetsim.org/packages.html"&gt;INetSim&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Internet Services Simulation Suite.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="some-other-tools"&gt;Some Other tools&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;tools&lt;/th&gt;
+&lt;th&gt;short Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://tamerplatform.com/"&gt;Android Tamer&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;VM/Live OS for Android security research and analysis.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://cuckoosandbox.org/"&gt;Cuckoo Sandbox&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Free and open-source automated malware analysis sandbox.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://external.anir0y.in/MobSF"&gt;MobSF (Mobile Security Framework)&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Malware analysis and security assessment framework capable of performing static and dynamic analysis.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;!-- Google Ads --&gt;
+&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
+&lt;p&gt;&lt;ins class="adsbygoogle"
 style="display:block; text-align:center;"
 data-ad-layout="in-article"
 data-ad-format="fluid"
 data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188">&lt;/ins>&lt;/p></description><enclosure url="https://classroom.anir0y.in/img/amat.png"/><link>https://classroom.anir0y.in/post/android-malwareanalysis/</link></item></channel></rss>
+data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/amat.png"/><link>https://classroom.anir0y.in/post/android-malwareanalysis/</link></item></channel></rss>

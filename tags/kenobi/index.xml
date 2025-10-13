@@ -1,82 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kenobi on Classroom</title><link>https://classroom.anir0y.in/tags/kenobi/</link><description>Recent content in Kenobi on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Thu, 10 Jun 2021 21:22:32 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/kenobi/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackME Room Kenobi</title><pubDate>Thu, 10 Jun 2021 21:22:32 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="kenobi">kenobi&lt;/h2>
-&lt;h2 id="task-01--deploy-the-vulnerable-machine">Task 01 : Deploy the vulnerable machine&lt;/h2>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">Flag-ID&lt;/th>
-&lt;th>question&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">1&lt;/td>
-&lt;td>Make sure you&amp;rsquo;re connected to our network and deploy the machine&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">2&lt;/td>
-&lt;td>Scan the machine with nmap, how many ports are open?&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td>&lt;img src="https://i.imgur.com/eHy08jQ.png" alt="img">&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;h2 id="task-02-enumerating-samba-for-shares">Task 02: Enumerating Samba for shares&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/O8S93Kr.png" alt="samba">&lt;/p>
-&lt;h4 id="cheat-sheet">cheat sheet&lt;/h4>
-&lt;ul>
-&lt;li>&lt;code>nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse [IP]&lt;/code>&lt;/li>
-&lt;li>&lt;code>smbclient //&amp;lt;ip&amp;gt;/anonymous&lt;/code>
-&lt;ul>
-&lt;li>&lt;img src="https://i.imgur.com/B1FXBt8.png" alt="img">&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;code>smbget -R smb://&amp;lt;ip&amp;gt;/anonymous #recursive download files&lt;/code>&lt;/li>
-&lt;li>&lt;code>nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.233.45 #show mounts&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">Flag-ID&lt;/th>
-&lt;th>question&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">1&lt;/td>
-&lt;td>Using the nmap command above, how many shares have been found?&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td>&lt;code>3&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">2&lt;/td>
-&lt;td>Once you&amp;rsquo;re connected, list the files on the share. What is the file can you see?&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;a href="#flag-22">ref&lt;/a>&lt;/td>
-&lt;td>&lt;img src="https://i.imgur.com/70LFnVH.png" alt="img">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">3&lt;/td>
-&lt;td>What port is FTP running on?&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;a href="#flag-23">ref&lt;/a>&lt;/td>
-&lt;td>&lt;code>21&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">4&lt;/td>
-&lt;td>What mount can we see?&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">&lt;a href="#flag-24">ref&lt;/a>&lt;/td>
-&lt;td>&lt;code>/var&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h3 id="flag-22">Flag-2.2&lt;/h3>
-&lt;p>anonymous auth is enbled, just hit enter when it askes for password.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-kenobi/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kenobi on Classroom</title><link>https://classroom.anir0y.in/tags/kenobi/</link><description>Recent content in Kenobi on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Thu, 10 Jun 2021 21:22:32 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/kenobi/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackME Room Kenobi</title><pubDate>Thu, 10 Jun 2021 21:22:32 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="kenobi"&gt;kenobi&lt;/h2&gt;
+&lt;h2 id="task-01--deploy-the-vulnerable-machine"&gt;Task 01 : Deploy the vulnerable machine&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;Flag-ID&lt;/th&gt;
+&lt;th&gt;question&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;1&lt;/td&gt;
+&lt;td&gt;Make sure you&amp;rsquo;re connected to our network and deploy the machine&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;2&lt;/td&gt;
+&lt;td&gt;Scan the machine with nmap, how many ports are open?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="https://i.imgur.com/eHy08jQ.png" alt="img"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="task-02-enumerating-samba-for-shares"&gt;Task 02: Enumerating Samba for shares&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://i.imgur.com/O8S93Kr.png" alt="samba"&gt;&lt;/p&gt;
+&lt;h4 id="cheat-sheet"&gt;cheat sheet&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse [IP]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;smbclient //&amp;lt;ip&amp;gt;/anonymous&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src="https://i.imgur.com/B1FXBt8.png" alt="img"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;smbget -R smb://&amp;lt;ip&amp;gt;/anonymous #recursive download files&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.233.45 #show mounts&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;Flag-ID&lt;/th&gt;
+&lt;th&gt;question&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;1&lt;/td&gt;
+&lt;td&gt;Using the nmap command above, how many shares have been found?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;2&lt;/td&gt;
+&lt;td&gt;Once you&amp;rsquo;re connected, list the files on the share. What is the file can you see?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="#flag-22"&gt;ref&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="https://i.imgur.com/70LFnVH.png" alt="img"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;3&lt;/td&gt;
+&lt;td&gt;What port is FTP running on?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="#flag-23"&gt;ref&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;21&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;4&lt;/td&gt;
+&lt;td&gt;What mount can we see?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="#flag-24"&gt;ref&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/var&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="flag-22"&gt;Flag-2.2&lt;/h3&gt;
+&lt;p&gt;anonymous auth is enbled, just hit enter when it askes for password.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-kenobi/</link></item></channel></rss>

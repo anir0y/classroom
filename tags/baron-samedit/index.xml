@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Baron Samedit on Classroom</title><link>https://classroom.anir0y.in/tags/baron-samedit/</link><description>Recent content in Baron Samedit on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Fri, 23 Jul 2021 00:56:23 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/baron-samedit/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe Baron Samedit</title><pubDate>Fri, 23 Jul 2021 00:56:23 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview">OverView&lt;/h2>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;/th>
-&lt;th>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;script src="https://tryhackme.com/badge/434937">&lt;/script>&lt;/td>
-&lt;td>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Baron Samedit&lt;/td>
-&lt;td>&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/b64a68fc8025073fc1cc1ba972380ebd.png" alt="logo">&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>room&lt;/td>
-&lt;td>&lt;a href="https://tryhackme.com/room/sudovulnssamedit">Baron Samedit&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;h2 id="task-01-deploy">Task 01: Deploy&lt;/h2>
-&lt;hr>
-&lt;h2 id="task-02-baron-samedit">Task 02: Baron Samedit&lt;/h2>
-&lt;p>In January 2021, Qualys released a blog post detailing a terrifying new vulnerability in the Unix sudo program.&lt;/p>
-&lt;p>Specifically, this was a heap buffer overflow allowing any user to escalate privileges to root &amp;ndash; no misconfigurations required. This exploit works with the default settings, for any user regardless of sudo permissions, which makes it all the scarier. The vulnerability has been patched, but affects any unpatched version of the sudo program from 1.8.2-1.8.31p2 and 1.9.0-1.9.5p1, meaning that it&amp;rsquo;s been around for the last ten years.&lt;/p></description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-sudovulnssamedit/</link></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Baron Samedit on Classroom</title><link>https://classroom.anir0y.in/tags/baron-samedit/</link><description>Recent content in Baron Samedit on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Fri, 23 Jul 2021 00:56:23 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/baron-samedit/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe Baron Samedit</title><pubDate>Fri, 23 Jul 2021 00:56:23 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Baron Samedit&lt;/td&gt;
+&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/b64a68fc8025073fc1cc1ba972380ebd.png" alt="logo"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;room&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://tryhackme.com/room/sudovulnssamedit"&gt;Baron Samedit&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="task-01-deploy"&gt;Task 01: Deploy&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="task-02-baron-samedit"&gt;Task 02: Baron Samedit&lt;/h2&gt;
+&lt;p&gt;In January 2021, Qualys released a blog post detailing a terrifying new vulnerability in the Unix sudo program.&lt;/p&gt;
+&lt;p&gt;Specifically, this was a heap buffer overflow allowing any user to escalate privileges to root &amp;ndash; no misconfigurations required. This exploit works with the default settings, for any user regardless of sudo permissions, which makes it all the scarier. The vulnerability has been patched, but affects any unpatched version of the sudo program from 1.8.2-1.8.31p2 and 1.9.0-1.9.5p1, meaning that it&amp;rsquo;s been around for the last ten years.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-sudovulnssamedit/</link></item></channel></rss>
