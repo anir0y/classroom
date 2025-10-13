@@ -1,6 +1,9 @@
 #!/bin/bash
 
 
-read -p "Enter Title: " posttitle
+read -p "Enter Title: " PostTitle
+posttitle=$(echo "$PostTitle" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 
-hugo new post/TryHackMe-$posttitle.md ; code . ; hugo server -D
+echo $posttitle
+
+hugo new post/$posttitle.md ; code . ; hugo server -D

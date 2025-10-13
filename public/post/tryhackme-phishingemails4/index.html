@@ -309,8 +309,7 @@
 <h2 id="task-01--introduction">Task 01:  Introduction</h2>
 <h3 id="11-what-is-the-mitre-id-for-software-configuration">1.1 What is the MITRE ID for Software Configuration?</h3>
 <blockquote>
-<p>Answer : M1054</p>
-</blockquote>
+<p>Answer : M1054</p></blockquote>
 <h2 id="task-02-pf-sender-policy-framework">Task 02: PF (Sender Policy Framework)</h2>
 <p>What is the Sender Policy Framework (SPF)?</p>
 <p>Per dmarcian, &ldquo;Sender Policy Framework (SPF) is used to authenticate the sender of an email. With an SPF record in place, Internet Service Providers can verify that a mail server is authorized to send email for a specific domain. An SPF record is a DNS TXT record containing a list of the IP addresses that are allowed to send email on behalf of your domain.&rdquo;</p>
@@ -327,12 +326,10 @@
 <h3 id="2-answer-the-questions-below">2 Answer the questions below</h3>
 <h4 id="21-what-is-the-spf-rule-to-use-if-you-wish-to-ensure-an-operator-rejects-emails-without-potentially-discarding-a-legitimate-email">2.1 What is the SPF rule to use if you wish to ensure an operator rejects emails without potentially discarding a legitimate email?</h4>
 <blockquote>
-<p><code>v=spf1 ~all</code></p>
-</blockquote>
+<p><code>v=spf1 ~all</code></p></blockquote>
 <h4 id="22-what-is-the-meaning-of-the--all-tag">2.2 What is the meaning of the -all tag?</h4>
 <blockquote>
-<p><code>fail</code></p>
-</blockquote>
+<p><code>fail</code></p></blockquote>
 <p><strong>Ref</strong></p>
 <ul>
 <li><a href="https://dmarcian.com/what-is-spf/">https://dmarcian.com/what-is-spf/</a></li>
@@ -371,8 +368,7 @@ data-ad-slot="7160066188"></ins></p>
 <h3 id="3-answer-the-questions-below">3 Answer the questions below</h3>
 <h4 id="31--which-email-header-shows-the-status-of-whether-dkim-passed-or-failed">3.1  Which email header shows the status of whether DKIM passed or failed?</h4>
 <blockquote>
-<p><code>Authentication-Results</code></p>
-</blockquote>
+<p><code>Authentication-Results</code></p></blockquote>
 <p><strong>ref</strong></p>
 <ul>
 <li><a href="https://dmarcian.com/dkim-selectors/">https://dmarcian.com/dkim-selectors/</a></li>
@@ -399,8 +395,7 @@ data-ad-slot="7160066188"></ins></p>
 <h3 id="4-answer-the-questions-below">4 Answer the questions below</h3>
 <h4 id="41-which-dmarc-policy-would-you-use-not-to-accept-an-email-if-the-message-fails-the-dmarc-check">4.1 Which DMARC policy would you use not to accept an email if the message fails the DMARC check?</h4>
 <blockquote>
-<p><code>p=reject</code></p>
-</blockquote>
+<p><code>p=reject</code></p></blockquote>
 <p><strong>Ref</strong></p>
 <ul>
 <li><a href="https://dmarcian.com/dmarc-record/">https://dmarcian.com/dmarc-record/</a></li>
@@ -430,8 +425,7 @@ data-ad-slot="7160066188"></ins></p>
 <h3 id="5-answer-the-questions-below">5 Answer the questions below</h3>
 <h4 id="51-what-is-nonrepudiation-the-answer-is-a-full-sentence-including-the-">5.1 What is nonrepudiation? (The answer is a full sentence, including the &ldquo;.&rdquo;)</h4>
 <blockquote>
-<p><code>The uniqueness of a signature prevents the owner of the signature from disowning the signature.</code></p>
-</blockquote>
+<p><code>The uniqueness of a signature prevents the owner of the signature from disowning the signature.</code></p></blockquote>
 <p><strong>ref</strong></p>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/smime-exo/smime-exo">https://docs.microsoft.com/en-us/exchange/security-and-compliance/smime-exo/smime-exo</a></li>
@@ -449,8 +443,7 @@ data-ad-slot="7160066188"></ins></p>
 <h3 id="6-answer-the-questions-below">6 Answer the questions below</h3>
 <h4 id="61-what-wireshark-filter-can-you-use-to-narrow-down-the-packet-output-using-smtp-status-codes">6.1 What Wireshark filter can you use to narrow down the packet output using SMTP status codes?</h4>
 <blockquote>
-<p><code>smtp.response.code</code></p>
-</blockquote>
+<p><code>smtp.response.code</code></p></blockquote>
 <p><img src="https://i.imgur.com/DIIoEdm.png" alt="img"></p>
 <h4 id="62-per-the-network-traffic-what-was-the-message-for-status-code-220-do-not-include-the-status-code-220-in-the-answer">6.2 Per the network traffic, what was the message for status code 220? (Do not include the status code (220) in the answer)</h4>
 <p><img src="https://i.imgur.com/l5c0Hrf.png" alt="img"></p>
@@ -458,8 +451,7 @@ data-ad-slot="7160066188"></ins></p>
 <p><img src="https://i.imgur.com/T9R9mD5.png" alt="img"></p>
 <h4 id="64-based-on-the-packet-from-the-previous-question-what-was-the-message-regarding-the-mailbox">6.4 Based on the packet from the previous question, what was the message regarding the mailbox?</h4>
 <blockquote>
-<p>ref to image in <a href="#63-one-packet-shows-a-response-that-an-email-was-blocked-using-spamhausorg-what-were-the-packet-number-and-status-code-no-spaces-in-your-answer">6.3</a></p>
-</blockquote>
+<p>ref to image in <a href="#63-one-packet-shows-a-response-that-an-email-was-blocked-using-spamhausorg-what-were-the-packet-number-and-status-code-no-spaces-in-your-answer">6.3</a></p></blockquote>
 <p><code>mailbox name not allowed</code></p>
 <h4 id="65-what-is-the-status-code-that-will-typically-precede-a-smtp-data-command">6.5 What is the status code that will typically precede a SMTP DATA command?</h4>
 <p>ref to this : <a href="https://www.mailersend.com/blog/smtp-codes">https://www.mailersend.com/blog/smtp-codes</a></p>
@@ -473,8 +465,7 @@ data-ad-slot="7160066188"></ins></p>
 <h3 id="7-answer-the-questions-below">7 Answer the questions below</h3>
 <h4 id="71-what-port-is-the-smtp-traffic-using">7.1 What port is the SMTP traffic using?</h4>
 <blockquote>
-<p><code>port 25</code></p>
-</blockquote>
+<p><code>port 25</code></p></blockquote>
 <h4 id="72-how-many-packets-are-specifically-smtp">7.2 How many packets are specifically SMTP?</h4>
 <p><img src="https://i.imgur.com/uhyIxLY.png" alt="img"></p>
 <h4 id="73-what-is-the-source-ip-address-for-all-the-smtp-traffic">7.3 What is the source IP address for all the SMTP traffic?</h4>
@@ -489,14 +480,12 @@ data-ad-slot="7160066188"></ins></p>
 <p><img src="https://i.imgur.com/NISf2wh.png" alt="img"></p>
 <h4 id="74-what-is-the-filename-of-the-third-file-attachment">7.4. What is the filename of the third file attachment?</h4>
 <blockquote>
-<p>filter used <code>mime_multipart.header.content-disposition</code></p>
-</blockquote>
+<p>filter used <code>mime_multipart.header.content-disposition</code></p></blockquote>
 <p>result:</p>
 <p><img src="https://i.imgur.com/9r2m9Jx.png" alt="img"></p>
 <h4 id="75-how-about-the-last-file-attachment">7.5 How about the last file attachment?\</h4>
 <blockquote>
-<p>ref to task <a href="#74-what-is-the-filename-of-the-third-file-attachment">7.4</a></p>
-</blockquote>
+<p>ref to task <a href="#74-what-is-the-filename-of-the-third-file-attachment">7.4</a></p></blockquote>
 <p>ans is <code>.zip</code></p>
 <hr>
 <h2 id="task-08-smtp-and-cc-communication">Task 08: SMTP and C&amp;C Communication</h2>
@@ -515,8 +504,7 @@ data-ad-slot="7160066188"></ins></p>
 <h4 id="81-per-mitre-attck-which-software-is-associated-with-using-smtp-and-pop3-for-c2-communications">8.1 Per MITRE ATT&amp;CK, which software is associated with using SMTP and POP3 for C2 communications?</h4>
 <blockquote>
 <p>erf to documet shared read this <a href="https://attack.mitre.org/software/S0251/">link</a>
-ans is <code>Zebrocy</code></p>
-</blockquote>
+ans is <code>Zebrocy</code></p></blockquote>
 <hr>
 <h2 id="task-09-conclusion">Task 09: Conclusion</h2>
 <p>A playbook is a defined process that should be followed in a specific situation, in this case, a phishing incident.</p>
@@ -528,8 +516,7 @@ ans is <code>Zebrocy</code></p>
 <h3 id="9-answer-the-questions-below">9 Answer the questions below</h3>
 <h4 id="91-per-the-playbook-what-framework-was-used-for-the-ir-process">9.1 Per the playbook, what framework was used for the IR process?</h4>
 <blockquote>
-<p><code>NIST</code></p>
-</blockquote>
+<p><code>NIST</code></p></blockquote>
 <hr>
 <!-- Google Ads -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

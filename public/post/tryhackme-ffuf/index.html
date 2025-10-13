@@ -450,8 +450,7 @@ data-ad-slot="7160066188"></ins></p>
 <h2 id="task-03-finding-pages-and-directories">task 03: Finding pages and directories</h2>
 <p>One approach you could take would be to start enumerating with a generic list of files such as raft-medium-files-lowercase.txt.</p>
 <blockquote>
-<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt</code></p>
-</blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt</code></p></blockquote>
 <p>However, using a large generic wordlist containing irrelevant file extensions is not very efficient.</p>
 <p>Instead, we can usually assume <code>index.&lt;extension&gt;</code> is the default page on most websites so we can try common extensions for just the index page. With this method, we can usually determine what programming language or languages the site uses.</p>
 <p>For example, we can append the extension after index.</p>
@@ -467,17 +466,14 @@ data-ad-slot="7160066188"></ins></p>
 .dll
 .exe
 </code></pre><blockquote>
-<p><code>ffuf -u http://10.10.62.131/indexFUZZ -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt</code></p>
-</blockquote>
+<p><code>ffuf -u http://10.10.62.131/indexFUZZ -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt</code></p></blockquote>
 <p>Now that we know the extensions supported we can try a list of generic words (without of extension) and apply the extensions we know works (found from Q2) + some common ones like <code>.txt</code>.</p>
 <p>We&rsquo;ll exclude the 4 letter extensions from this wordlist as it will result in many false positives.</p>
 <blockquote>
-<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -e .php,.txt</code></p>
-</blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -e .php,.txt</code></p></blockquote>
 <p>Directory names are not always dependent on the type of environment you&rsquo;re enumerating and is often a good starting point before attempting to fuzz for files. If we wanted to fuzz directories we only need to provide a wordlist.</p>
 <blockquote>
-<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt</code></p>
-</blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt</code></p></blockquote>
 <h3 id="31">3.1</h3>
 <p>What text file did you find?</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-files-lowercase.txt
@@ -596,13 +592,11 @@ For example, a 403 HTTP status code indicates that we&rsquo;re forbidden to acce
 <p>By adding <code>-fc 403</code> (filter code) we&rsquo;ll hide from the output all 403 HTTP status codes.</p>
 <blockquote>
 <p>q1</p>
-<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc 403</code></p>
-</blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc 403</code></p></blockquote>
 <p>Sometimes you might want to filter out multiple status codes such as 500, 302, 301, 401, etc. For instance, if you know you want to see 200 status code responses, you could use <code>-mc 200</code> (match code) instead of having a long list of filtered codes.</p>
 <blockquote>
 <p>Q2</p>
-<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -mc 200</code></p>
-</blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -mc 200</code></p></blockquote>
 <p>Sometimes it might be beneficial to see what requests the server doesn&rsquo;t handle by matching for HTTP 500 Internal Server Error response codes (<code>-mc 500</code>). Finding irregularities in behavior could help better understand how the web app works.</p>
 <p>There are other filters and matchers. For example, you could encounter entries with a 200 status code with a response size of zero. eg. <code>functions.php</code> or <code>inc/myfile.php</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>$ ffuf -u http://MACHINE_IP/config/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc <span style="color:#ae81ff">403</span>
@@ -630,8 +624,7 @@ For example, a 403 HTTP status code indicates that we&rsquo;re forbidden to acce
 </span></span></code></pre></div><p>We often see there are false positives with files beginning with a dot (eg. .htgroups,.php, etc.). They throw a 403 Forbidden error, however those files don&rsquo;t actually exist. It&rsquo;s tempting to use <code>-fc 403</code> but this could hide valuable files we don&rsquo;t have access to yet. So instead we can use a regexp to match all files beginning with a dot</p>
 <blockquote>
 <p>Q3</p>
-<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fr '/\..*'</code></p>
-</blockquote>
+<p><code>ffuf -u http://10.10.62.131/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fr '/\..*'</code></p></blockquote>
 <h3 id="41">4.1</h3>
 <p>After applying the fc filter, how many results were returned?</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists/Discovery/Web-Content/raft-medium-files-lowercase.txt -fc <span style="color:#ae81ff">403</span>
@@ -690,16 +683,14 @@ data-ad-slot="7160066188"></ins></p>
 <h2 id="task-05-fuzzing-parameters">task 05: Fuzzing parameters</h2>
 <p>Discovering a vulnerable parameter could lead to file inclusion, path disclosure, XSS, SQL injection, or even command injection. Since ffuf allows you to put the keyword anywhere we can use it to fuzz for parameters.</p>
 <blockquote>
-<p>Command for Q1</p>
-</blockquote>
+<p>Command for Q1</p></blockquote>
 <pre><code> $ ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -fw 39
  $ ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -fw 39
 </code></pre>
 <p>Now that we found a parameter accepting integer values we&rsquo;ll start fuzzing values.</p>
 <p>At this point, we could generate a wordlist and save a file containing integers. To cut out a step we can use -w - which tells ffuf to read a wordlist from stdout. This will allow us to generate a list of integers with a command of our choice then pipe the output to ffuf. Below is a list of 5 different ways to generate numbers 0 - 255.</p>
 <blockquote>
-<p>Commands for Q2</p>
-</blockquote>
+<p>Commands for Q2</p></blockquote>
 <pre><code> $ ruby -e '(0..255).each{|i| puts i}' | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
  $ ruby -e 'puts (0..255).to_a' | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
  $ for i in {0..255}; do echo $i; done | ffuf -u 'http://MACHINE_IP/sqli-labs/Less-1/?id=FUZZ' -c -w - -fw 33
@@ -708,8 +699,7 @@ data-ad-slot="7160066188"></ins></p>
 </code></pre>
 <p>We can also use ffuf for wordlist-based brute-force attacks, for example, trying passwords on an authentication page.</p>
 <blockquote>
-<p>Command for Q3</p>
-</blockquote>
+<p>Command for Q3</p></blockquote>
 <pre><code> $ ffuf -u http://10.10.71.46/sqli-labs/Less-11/ -c -w /usr/share/seclists/Passwords/Leaked-Databases/hak5.txt -X POST -d 'uname=Dummy&amp;passwd=FUZZ&amp;submit=Submit' -fs 1435 -H 'Content-Type: application/x-www-form-urlencoded'
 </code></pre>
 <p>Here we have to use the POST method (specified with <code>-X</code>) and to give the POST data (with <code>-d</code>) where we include the <code>FUZZ</code> keyword in place of the password.</p>
@@ -793,16 +783,14 @@ data-ad-slot="7160066188"></ins></p>
 <p>ffuf may not be as efficient as specialized tools when it comes to subdomain enumeration but it&rsquo;s possible to do.</p>
 <blockquote>
 <p>Command for Q1</p>
-<p><code>$ ffuf -u http://FUZZ.tryhackme.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt</code></p>
-</blockquote>
+<p><code>$ ffuf -u http://FUZZ.tryhackme.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt</code></p></blockquote>
 <p>Some subdomains might not be resolvable by the DNS server you&rsquo;re using and are only resolvable from within the target&rsquo;s local network by their private DNS servers. So some virtual hosts (vhosts) may exist with private subdomains so the previous command doesn&rsquo;t find them. To try finding private subdomains we&rsquo;ll have to use the Host HTTP header as these requests might be accepted by the web server.
 Note: virtual hosts (vhosts) is the name used by Apache httpd but for Nginx the right term is Server Blocks</p>
 <p>Compare the results you obtain with direct subdomain enumeration and with vhost enumeration:</p>
 <blockquote>
 <p>Commands for Q2</p>
 <p><code>$ ffuf -u http://FUZZ.google.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -fs 0</code>
-<code>$ ffuf -u http://google.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.google.com' -fs 0</code></p>
-</blockquote>
+<code>$ ffuf -u http://google.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.google.com' -fs 0</code></p></blockquote>
 <p>For example there is a subdomain aol.google.com you can&rsquo;t find it with direct subdomain enumeration (1st command) but that you can find with vhost enumeration (2nd command).</p>
 <p>We can use drill or dig to find the IP address of the root domain:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ drill google.com

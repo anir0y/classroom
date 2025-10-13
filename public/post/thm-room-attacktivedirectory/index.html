@@ -525,25 +525,21 @@ or just check the Help.</p>
 <h3 id="flag-61">Flag 6.1</h3>
 <h4 id="using-utility-can-we-map-remote-smb-shares">Using utility can we map remote SMB shares?</h4>
 <blockquote>
-<p><code>Smbclient</code></p>
-</blockquote>
+<p><code>Smbclient</code></p></blockquote>
 <h3 id="flag-62">Flag 6.2</h3>
 <h4 id="which-option-will-list-shares">Which option will list shares?</h4>
 <blockquote>
-<p><code>-l</code></p>
-</blockquote>
+<p><code>-l</code></p></blockquote>
 <h3 id="flag-63">Flag 6.3</h3>
 <h4 id="how-many-remote-shares-is-the-server-listing">How many remote shares is the server listing?</h4>
 <blockquote>
-<p><code>6</code></p>
-</blockquote>
+<p><code>6</code></p></blockquote>
 <h4 id="explanation-7">Explanation</h4>
 <p><img src="https://i.imgur.com/c6iFnzO.png" alt=""></p>
 <h3 id="flag-64">Flag 6.4</h3>
 <h4 id="there-is-one-particular-share-that-we-have-access-to-that-contains-a-text-file-which-share-is-it">There is one particular share that we have access to that contains a text file. Which share is it?</h4>
 <blockquote>
-<p><code>backup</code></p>
-</blockquote>
+<p><code>backup</code></p></blockquote>
 <h4 id="explanation-8">Explanation</h4>
 <p>run the command</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>└──╼ $smbclient <span style="color:#ae81ff">\\\\</span>10.10.8.212<span style="color:#ae81ff">\\</span>backup -U <span style="color:#e6db74">&#39;svc-admin%management2005&#39;</span>
@@ -567,8 +563,7 @@ or just check the Help.</p>
 </span></span></code></pre></div><h3 id="flag-66">Flag 6.6</h3>
 <h4 id="decoding-the-contents-of-the-file-what-is-the-full-contents">Decoding the contents of the file, what is the full contents?</h4>
 <blockquote>
-<p><a href="mailto:backup@spookysec.local">backup@spookysec.local</a>:backup2517860</p>
-</blockquote>
+<p><a href="mailto:backup@spookysec.local">backup@spookysec.local</a>:backup2517860</p></blockquote>
 <h4 id="explanation-10">Explanation</h4>
 <p>base64 decode</p>
 <hr>
@@ -581,27 +576,23 @@ or just check the Help.</p>
 <h3 id="flag-71">Flag 7.1</h3>
 <h4 id="what-method-allowed-us-to-dump-ntdsdit">What method allowed us to dump NTDS.DIT?</h4>
 <blockquote>
-<p><code>DRSUAPI</code></p>
-</blockquote>
+<p><code>DRSUAPI</code></p></blockquote>
 <h4 id="explanation-11">Explanation</h4>
 <p><img src="https://i.imgur.com/bD5Z10P.png" alt=""></p>
 <h3 id="flag-72">Flag 7.2</h3>
 <h4 id="what-is-the-administrators-ntlm-hash">What is the Administrators NTLM hash?</h4>
 <blockquote>
-<p><code>0e0363213e37b94221497260erbcb4fc</code></p>
-</blockquote>
+<p><code>0e0363213e37b94221497260erbcb4fc</code></p></blockquote>
 <h4 id="explanation-12">Explanation</h4>
 <p><img src="https://i.imgur.com/bD5Z10P.png" alt=""></p>
 <h3 id="flag-73">Flag 7.3</h3>
 <h4 id="what-method-of-attack-could-allow-us-to-authenticate-as-the-user-without-the-password">What method of attack could allow us to authenticate as the user without the password?</h4>
 <blockquote>
-<p><code>Pass the Hash</code></p>
-</blockquote>
+<p><code>Pass the Hash</code></p></blockquote>
 <h3 id="flag-74">Flag 7.4</h3>
 <h4 id="using-a-tool-called-evil-winrm-what-option-will-allow-us-to-use-a-hash">Using a tool called Evil-WinRM what option will allow us to use a hash?</h4>
 <blockquote>
-<p><code>-H</code></p>
-</blockquote>
+<p><code>-H</code></p></blockquote>
 <h4 id="explanation-13">Explanation</h4>
 <p><img src="https://i.imgur.com/ctRxPeL.png" alt=""></p>
 <hr>
@@ -611,18 +602,15 @@ or just check the Help.</p>
 <h3 id="flags-task1">Flags Task.1</h3>
 <h4 id="svc-admin">svc-admin</h4>
 <blockquote>
-<p><code>TryHackMe{K3rb3r0s_Pr3_4uth}</code></p>
-</blockquote>
+<p><code>TryHackMe{K3rb3r0s_Pr3_4uth}</code></p></blockquote>
 <h3 id="flags-task1-1">Flags Task.1</h3>
 <h4 id="backup">backup</h4>
 <blockquote>
-<p><code>TryHackMe{B4ckM3UpSc0tty!}</code></p>
-</blockquote>
+<p><code>TryHackMe{B4ckM3UpSc0tty!}</code></p></blockquote>
 <h3 id="flags-task1-2">Flags Task.1</h3>
 <h4 id="administrator">Administrator</h4>
 <blockquote>
-<p><code>TryHackMe{4ctiveD1rectoryM4st3r}</code></p>
-</blockquote>
+<p><code>TryHackMe{4ctiveD1rectoryM4st3r}</code></p></blockquote>
 <h4 id="explanation-14">Explanation</h4>
 <p>Run <code>evil-winrm</code> with <code>administrator</code> hash and copy the flags</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>┌─<span style="color:#f92672">[</span>✗<span style="color:#f92672">]</span>─<span style="color:#f92672">[</span>mentor@attackerVM<span style="color:#f92672">]</span>─<span style="color:#f92672">[</span>~/thm/attacktivedirectory<span style="color:#f92672">]</span>

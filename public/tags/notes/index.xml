@@ -49,8 +49,7 @@
 &lt;h2 id=&#34;openvas&#34;&gt;OpenVas&lt;/h2&gt;
 &lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt; 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Room&lt;/strong&gt; &lt;a href=&#34;https://tryhackme.com/room/openvas&#34;&gt;Subscription Only&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Room&lt;/strong&gt; &lt;a href=&#34;https://tryhackme.com/room/openvas&#34;&gt;Subscription Only&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;task-1-introduction&#34;&gt;Task 1: Introduction&lt;/h2&gt;
 &lt;p&gt;OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
@@ -68,7 +67,7 @@
       <description>&lt;hr&gt;
 &lt;h2 id=&#34;zero-logon---the-zero-day-angle&#34;&gt;Zero Logon - The Zero Day Angle&lt;/h2&gt;
 &lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;  
-&lt;h2 id=&#34;room-subscription-onlyhttpstryhackmecomroomzer0logon&#34;&gt;Room &lt;a href=&#34;https://tryhackme.com/room/zer0logon&#34;&gt;Subscription Only&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;room-subscription-only&#34;&gt;Room &lt;a href=&#34;https://tryhackme.com/room/zer0logon&#34;&gt;Subscription Only&lt;/a&gt;&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;about-the-vulnerability--&#34;&gt;About The vulnerability -&lt;/h3&gt;
 &lt;p&gt;On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.&lt;/p&gt;

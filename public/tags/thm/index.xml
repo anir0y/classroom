@@ -7,10 +7,10 @@
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Mon, 14 Jul 2025 02:24:47 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/thm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Oct 2025 10:46:19 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/thm/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TryHackMe BugBounty 1</title>
-      <pubDate>Mon, 14 Jul 2025 02:24:47 +0530</pubDate>
+      <title>Thm Man in the Middle Detection</title>
+      <pubDate>Mon, 13 Oct 2025 10:46:19 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
       <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
@@ -59,7 +59,7 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
 &lt;script data-name=&#34;BMC-Widget&#34; data-cfasync=&#34;false&#34; src=&#34;https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js&#34; data-id=&#34;anir0y&#34; data-description=&#34;Support me on Buy me a coffee!&#34; data-message=&#34;&#34; data-color=&#34;#5F7FFF&#34; data-position=&#34;Right&#34; data-x_margin=&#34;18&#34; data-y_margin=&#34;18&#34;&gt;&lt;/script&gt;
 &lt;!-- EOF --&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
-      <link>http://localhost:1313/post/tryhackme-bugbounty-1/</link>
+      <link>http://localhost:1313/post/thm-man-in-the-middle-detection/</link>
     
     </item>
    
@@ -92,8 +92,7 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
 &lt;h2 id=&#34;task-01--introduction&#34;&gt;Task 01:  Introduction&lt;/h2&gt;
 &lt;h3 id=&#34;11-what-is-the-mitre-id-for-software-configuration&#34;&gt;1.1 What is the MITRE ID for Software Configuration?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Answer : M1054&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Answer : M1054&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;task-02-pf-sender-policy-framework&#34;&gt;Task 02: PF (Sender Policy Framework)&lt;/h2&gt;
 &lt;p&gt;What is the Sender Policy Framework (SPF)?&lt;/p&gt;
 &lt;p&gt;Per dmarcian, &amp;ldquo;Sender Policy Framework (SPF) is used to authenticate the sender of an email. With an SPF record in place, Internet Service Providers can verify that a mail server is authorized to send email for a specific domain. An SPF record is a DNS TXT record containing a list of the IP addresses that are allowed to send email on behalf of your domain.&amp;rdquo;&lt;/p&gt;</description>
@@ -581,8 +580,7 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Vulnerability allow a authenticated user whith low privilages upload a malicious WAV file that could lead to remote arbitrary file disclosure and server-side request forgery (SSRF).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Vulnerability allow a authenticated user whith low privilages upload a malicious WAV file that could lead to remote arbitrary file disclosure and server-side request forgery (SSRF).&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;task-01-introduction&#34;&gt;Task 01: Introduction&lt;/h2&gt;
 &lt;p&gt;An XXE vulnerability consists of an injection that takes advantage of the poor configuration of the XML interpreter allowing to include external entities, this attack is performed against an application that interprets XML language in its parameters.&lt;/p&gt;</description>
@@ -2227,8 +2225,7 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description>&lt;h2 id=&#34;hydra&#34;&gt;Hydra&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website&amp;rsquo;s credentials.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website&amp;rsquo;s credentials.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;task-01-hydra-introduction&#34;&gt;Task 01: Hydra Introduction&lt;/h2&gt;
 &lt;p&gt;Hydra is a brute force online password cracking program; a quick system login password &amp;lsquo;hacking&amp;rsquo; tool.&lt;/p&gt;
 &lt;h3 id=&#34;installing-hydra&#34;&gt;Installing Hydra&lt;/h3&gt;
@@ -2253,8 +2250,7 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description>&lt;h2 id=&#34;ice&#34;&gt;ICE&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Deploy &amp;amp; hack into a Windows machine, exploiting a very poorly secured media server.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Deploy &amp;amp; hack into a Windows machine, exploiting a very poorly secured media server.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;task-01-connect&#34;&gt;task 01: Connect&lt;/h2&gt;
 &lt;p&gt;Nothing to do just follow the instructions.&lt;/p&gt;
 &lt;hr&gt;
@@ -2265,12 +2261,10 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;</description>
 &lt;li&gt;&lt;a href=&#34;https://nmap.org/book/man-port-scanning-techniques.html&#34;&gt;https://nmap.org/book/man-port-scanning-techniques.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;for this lab: &lt;code&gt;nmap -sS -p- TARGET_IP&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;for this lab: &lt;code&gt;nmap -sS -p- TARGET_IP&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;task-21&#34;&gt;task 2.1&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Deploy the machine! This may take up to three minutes to start.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Deploy the machine! This may take up to three minutes to start.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;task-22&#34;&gt;Task 2.2&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Launch a scan against our target machine, I recommend using a SYN scan set to scan all ports on the machine. The scan command will be provided as a hint, however, it&amp;rsquo;s recommended to complete the room &amp;lsquo;Nmap&amp;rsquo; prior to this room.&lt;/p&gt;</description>
@@ -2623,7 +2617,7 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;</description>
 &lt;!-- Amazon Ads--&gt;
 &lt;iframe style=&#34;width:300px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=IN&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=anir0y-21&amp;language=en_IN&amp;marketplace=amazon&amp;region=IN&amp;placement=1593272901&amp;asins=1593272901&amp;linkId=60304e65b31865f7a816862eaac56668&amp;show_border=false&amp;link_opens_in_new_window=true&#34;&gt;&lt;/iframe&gt;
 &lt;!-- Amazon Ads--&gt;
-&lt;h2 id=&#34;i-learnt-from-this-book-practical-malware-analysis-the-hands-on-guide-to-dissecting-malicious-softwarehttpsamznto3ucw0n5&#34;&gt;I learnt from this Book: &lt;a href=&#34;https://amzn.to/3uCw0N5&#34;&gt;Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;i-learnt-from-this-book-practical-malware-analysis-the-hands-on-guide-to-dissecting-malicious-software&#34;&gt;I learnt from this Book: &lt;a href=&#34;https://amzn.to/3uCw0N5&#34;&gt;Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software&lt;/a&gt;&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;task-01-introduction&#34;&gt;Task 01: Introduction&lt;/h2&gt;
 &lt;p&gt;These challenges are aimed towards learning about the &amp;ldquo;Static Analysis&amp;rdquo; technique used to analyze the malware. The main aim for this room is not to used any types of debuggers neither the executable&amp;rsquo;s/programs should be run on any platform. You are required to answer all the questions without even using the debugger and even not executing the executable&amp;rsquo;s/programs.&lt;/p&gt;</description>
@@ -2866,8 +2860,7 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
       <description>&lt;h1 id=&#34;volatility&#34;&gt;Volatility&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Learn how to perform memory forensics with Volatility!&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Learn how to perform memory forensics with Volatility!&lt;/p&gt;&lt;/blockquote&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;

@@ -205,7 +205,7 @@
       </ul>
     </li>
     <li><a href="#root">Root</a></li>
-    <li><a href="#you-can-learn-more-about-socat-in-this-amazing-room-shellhttpstryhackmecomroomintrotoshells">you can learn more about <code>socat</code> in this amazing room: <a href="https://tryhackme.com/room/introtoshells">SHELL</a></a></li>
+    <li><a href="#you-can-learn-more-about-socat-in-this-amazing-room-shell">you can learn more about <code>socat</code> in this amazing room: <a href="https://tryhackme.com/room/introtoshells">SHELL</a></a></li>
     <li><a href="#bonus">Bonus</a></li>
   </ul>
 </nav>
@@ -305,8 +305,7 @@ data-ad-slot="7160066188"></ins></p>
 <hr>
 <h2 id="root">Root</h2>
 <blockquote>
-<p>we have a working <code>ssh</code> access to the server, let&rsquo;s try to find out to be a root.</p>
-</blockquote>
+<p>we have a working <code>ssh</code> access to the server, let&rsquo;s try to find out to be a root.</p></blockquote>
 <p>I&rsquo;m going to start with <code>sudo -l</code> command to see if <code>falconfeast</code> have any sudo run privileges.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># user can run socat with no password required. </span>
 </span></span><span style="display:flex;"><span>falconfeast@inclusion:~$ sudo -l 
@@ -324,7 +323,7 @@ data-ad-slot="7160066188"></ins></p>
 </span></span></code></pre></div><p>we got the flag!!!</p>
 <p><img src="https://i.imgur.com/4K2vY1I.png" alt="root"></p>
 <hr>
-<h2 id="you-can-learn-more-about-socat-in-this-amazing-room-shellhttpstryhackmecomroomintrotoshells">you can learn more about <code>socat</code> in this amazing room: <a href="https://tryhackme.com/room/introtoshells">SHELL</a></h2>
+<h2 id="you-can-learn-more-about-socat-in-this-amazing-room-shell">you can learn more about <code>socat</code> in this amazing room: <a href="https://tryhackme.com/room/introtoshells">SHELL</a></h2>
 <hr>
 <h2 id="bonus">Bonus</h2>
 <p>you could&rsquo;ve been got both flag with <code>web LFI</code> itself. I don&rsquo;t know that is intented way or not. but hey! you got that option too.</p>
