@@ -9,11 +9,13 @@
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
     <lastBuildDate>Mon, 13 Oct 2025 10:46:19 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/man-in-the-middle/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Thm Man in the Middle Detection</title>
+      <title>TryHackMe Man in the Middle Detection</title>
       <pubDate>Mon, 13 Oct 2025 10:46:19 +0530</pubDate>
       
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/5e8dd9a4a45e18443162feab-1759866709706.png" width="700" height="420"></media:content>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;My View: Lab is well designed and informative; I loved it while solving the challenge.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -22,43 +24,22 @@
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;ROOM_NAME&lt;/td&gt;
-          &lt;td&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/81642a6b52cd6596b8c09ccc219becfe.png&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;task-01&#34;&gt;Task 01:&lt;/h2&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src=&#34;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&#34;&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class=&#34;adsbygoogle&#34;
-style=&#34;display:block; text-align:center;&#34;
-data-ad-layout=&#34;in-article&#34;
-data-ad-format=&#34;fluid&#34;
-data-ad-client=&#34;ca-pub-3526678290068011&#34;
-data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;
-&lt;!-- END --&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src=&#34;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&#34;&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class=&#34;adsbygoogle&#34;
-style=&#34;display:block; text-align:center;&#34;
-data-ad-layout=&#34;in-article&#34;
-data-ad-format=&#34;fluid&#34;
-data-ad-client=&#34;ca-pub-3526678290068011&#34;
-data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;
-&lt;!-- END --&gt;
-&lt;script data-name=&#34;BMC-Widget&#34; data-cfasync=&#34;false&#34; src=&#34;https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js&#34; data-id=&#34;anir0y&#34; data-description=&#34;Support me on Buy me a coffee!&#34; data-message=&#34;&#34; data-color=&#34;#5F7FFF&#34; data-position=&#34;Right&#34; data-x_margin=&#34;18&#34; data-y_margin=&#34;18&#34;&gt;&lt;/script&gt;
-&lt;!-- EOF --&gt;</description>
-      <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
+&lt;h2 id=&#34;task-01-introduction&#34;&gt;Task 01: Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Learning Objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This room focuses on the following learning objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand common MITM attack vectors and techniques&lt;/li&gt;
+&lt;li&gt;Learn to identify indicators of compromise related to MITM attacks&lt;/li&gt;
+&lt;li&gt;Master network monitoring tools for detecting suspicious traffic patterns&lt;/li&gt;
+&lt;li&gt;Practice incident response procedures for MITM scenarios&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;task-02-lab-connection&#34;&gt;Task 02: Lab Connection&lt;/h2&gt;
+&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;A routine network monitoring alert at Acme Corp revealed unusual traffic patterns suggesting a possible Man-in-the-Middle (MITM) attack inside the corporate LAN. Over several days, an attacker quietly intercepted communications, redirected connections, and captured user credentials.
+In this room, you’ll step into the role of a SOC Analyst investigating this incident. Using the provided packet capture and logs, you’ll uncover evidence of three chained MITM techniques.&lt;/p&gt;</description>
+      <enclosure url="https://classroom.anir0y.inhttps://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/5e8dd9a4a45e18443162feab-1759866709706.png"></enclosure>
       <link>http://localhost:1313/post/thm-man-in-the-middle-detection/</link>
     
     </item>

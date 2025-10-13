@@ -23,10 +23,10 @@ description: Try Hack Me Room Man-in-the-Middle Detection solved by Animesh Roy.
 
 > My View: Lab is well designed and informative; I loved it while solving the challenge.
 
-| TryHackMe Badge | Social Follow |
-| --- | --- |
+
 | <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-| **Man-in-the-Middle** | ![logo](https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/5e8dd9a4a45e18443162feab-1759866709706.png)|
+|---|---|
+
 
 
 
