@@ -245,11 +245,15 @@ This result indicates that the attacker successfully performed ARP spoofing and 
 
 ![img](https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.19.07.png)
 
+> **Answer:** 10 packets captured in the filtered view.
+
 #### What MAC address was used by the attacker to impersonate the gateway?
 
 > arp.duplicate-address-detected || arp.duplicate-address-frame
 
 ![What MAC address was used by the attacker to impersonate the gateway](https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.24.42.png)
+
+> **Answer:** `02:fe:fe:fe:55:55`.
 
 #### How many Gratuitous ARP replies were observed for 192.168.10.1?
 
@@ -257,15 +261,21 @@ This result indicates that the attacker successfully performed ARP spoofing and 
 
 ![How many Gratuitous ARP replies were observed for 192.168.10.1](https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.31.19.png)
 
+> **Answer:** 2 gratuitous replies.
+
 #### How many unique MAC addresses claimed the same IP (192.168.10.1)?
 
 > arp.opcode==2 && _ws.col.info contains "192.168.10.1 is at"
+
+> **Answer:** 2 MAC addresses (the legitimate gateway and the impersonating attacker).
 
 #### How many ARP spoofing packets were observed in total from the attacker?
 
 > arp.opcode == 2 && arp.src.proto_ipv4 == 192.168.10.1 && eth.src == 02:fe:fe:fe:55:55
 
 ![How many ARP spoofing packets were observed in total from the attacker?](https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.37.50.png)
+
+> **Answer:** 14 spoofed responses originated from the attacker.
 
 ## Task 05: Unmasking DNS Spoofing
 
@@ -371,15 +381,21 @@ Let's move on to the next task: understanding why SSL stripping is used and find
 
 ![How many DNS responses were observed for the domain corp-login.acme-corp.local](https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.52.16.png)
 
+> **Answer:** 21 DNS responses returning data for the portal.
+
 #### How many DNS requests were observed from the IPs other than 8.8.8.8?
 
 ![How many DNS requests were observed from the IPs other than 8.8.8.8?](https://github.com/anir0y/cdn/blob/main/Screenshot%202025-10-13%20at%2011.54.21.png?raw=true)
+
+> **Answer:** 2 forged responses sourced from `192.168.10.55`.
 
 #### What IP did the attacker’s forged DNS response return for the domain?
 
 `192.168.10.55`
 
 ![What IP did the attacker’s forged DNS response return for the domain](https://github.com/anir0y/cdn/blob/main/Screenshot%202025-10-13%20at%2011.54.21.png?raw=true)
+
+> **Answer:** The victim was redirected to `192.168.10.55`.
 
 ## Task 06: Spotting SSL Stripping in Action
 
