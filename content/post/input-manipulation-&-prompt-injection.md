@@ -16,7 +16,7 @@ tags:
   - Input Manipulation & Prompt Injection
   - thm
 
-draft: true
+draft: false
 description: Try Hack Me Room Input Manipulation & Prompt Injection solved by Animesh Roy. this is a walkthough. read more...
 
 ---
