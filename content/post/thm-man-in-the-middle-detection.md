@@ -463,10 +463,14 @@ We can also identify the user's credentials in plaintext, which confirms that th
 
 ![img](https://github.com/anir0y/cdn/blob/main/Screenshot%202025-10-13%20at%2012.01.12.png?raw=true)
 
+> **Answer:** 1 credential submission.
+
 #### What's the password of the victim found in the plaintext after successful ssl stripping attack. 
 Use the same `http.request.method == "POST"` filter and read the packet data.
 
 ![img](https://github.com/anir0y/cdn/blob/main/Screenshot%202025-10-13%20at%2012.02.37.png?raw=true)
+
+> **Answer:** Password `Secret123!` (submitted by user `alice`).
 
 ## Task 07: Conclusion
 
@@ -476,40 +480,6 @@ Use the same `http.request.method == "POST"` filter and read the packet data.
 > My View: Lab is well designed and informative; I loved it while solving the challenge.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
 
 
 
