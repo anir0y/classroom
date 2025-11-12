@@ -475,21 +475,31 @@ Detecting an MITM attack is a critical finding. It signifies that an adversary i
 <blockquote>
 <p><code>arp &amp;&amp; arp.src.proto_ipv4 == 192.168.10.1 &amp;&amp; eth.src == 02:aa:bb:cc:00:01</code></p></blockquote>
 <p><img src="https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.19.07.png" alt="img"></p>
+<blockquote>
+<p><strong>Answer:</strong> 10 packets captured in the filtered view.</p></blockquote>
 <h4 id="what-mac-address-was-used-by-the-attacker-to-impersonate-the-gateway">What MAC address was used by the attacker to impersonate the gateway?</h4>
 <blockquote>
 <p>arp.duplicate-address-detected || arp.duplicate-address-frame</p></blockquote>
 <p><img src="https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.24.42.png" alt="What MAC address was used by the attacker to impersonate the gateway"></p>
+<blockquote>
+<p><strong>Answer:</strong> <code>02:fe:fe:fe:55:55</code>.</p></blockquote>
 <h4 id="how-many-gratuitous-arp-replies-were-observed-for-192168101">How many Gratuitous ARP replies were observed for 192.168.10.1?</h4>
 <blockquote>
 <p>arp.isgratuitous &amp;&amp; arp.src.proto_ipv4 == 192.168.10.1</p></blockquote>
 <p><img src="https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.31.19.png" alt="How many Gratuitous ARP replies were observed for 192.168.10.1"></p>
+<blockquote>
+<p><strong>Answer:</strong> 2 gratuitous replies.</p></blockquote>
 <h4 id="how-many-unique-mac-addresses-claimed-the-same-ip-192168101">How many unique MAC addresses claimed the same IP (192.168.10.1)?</h4>
 <blockquote>
 <p>arp.opcode==2 &amp;&amp; _ws.col.info contains &ldquo;192.168.10.1 is at&rdquo;</p></blockquote>
+<blockquote>
+<p><strong>Answer:</strong> 2 MAC addresses (the legitimate gateway and the impersonating attacker).</p></blockquote>
 <h4 id="how-many-arp-spoofing-packets-were-observed-in-total-from-the-attacker">How many ARP spoofing packets were observed in total from the attacker?</h4>
 <blockquote>
 <p>arp.opcode == 2 &amp;&amp; arp.src.proto_ipv4 == 192.168.10.1 &amp;&amp; eth.src == 02:fe:fe:fe:55:55</p></blockquote>
 <p><img src="https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.37.50.png" alt="How many ARP spoofing packets were observed in total from the attacker?"></p>
+<blockquote>
+<p><strong>Answer:</strong> 14 spoofed responses originated from the attacker.</p></blockquote>
 <h2 id="task-05-unmasking-dns-spoofing">Task 05: Unmasking DNS Spoofing</h2>
 <h4 id="dns-protocol-simplified">DNS Protocol Simplified</h4>
 <p>First, let&rsquo;s understand DNS. Think of it as your phone&rsquo;s contact list. You don&rsquo;t remember your friends&rsquo; phone numbers; you tap on their names. Similarly, DNS translates human-friendly website names (like <a href="https://www.google.com">www.google.com</a>) into computer-friendly IP addresses.</p>
@@ -553,11 +563,17 @@ The result shows valid DNS replies from the legitimate DNS server.</p>
 <h4 id="how-many-dns-responses-were-observed-for-the-domain-corp-loginacme-corplocal">How many DNS responses were observed for the domain corp-login.acme-corp.local?</h4>
 <p><code>dns &amp;&amp; dns.qry.name == &quot;corp-login.acme-corp.local&quot; &amp;&amp; dns.flags.response == 1</code></p>
 <p><img src="https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/Screenshot%202025-10-13%20at%2011.52.16.png" alt="How many DNS responses were observed for the domain corp-login.acme-corp.local"></p>
+<blockquote>
+<p><strong>Answer:</strong> 21 DNS responses returning data for the portal.</p></blockquote>
 <h4 id="how-many-dns-requests-were-observed-from-the-ips-other-than-8888">How many DNS requests were observed from the IPs other than 8.8.8.8?</h4>
 <p><img src="https://github.com/anir0y/cdn/blob/main/Screenshot%202025-10-13%20at%2011.54.21.png?raw=true" alt="How many DNS requests were observed from the IPs other than 8.8.8.8?"></p>
+<blockquote>
+<p><strong>Answer:</strong> 2 forged responses sourced from <code>192.168.10.55</code>.</p></blockquote>
 <h4 id="what-ip-did-the-attackers-forged-dns-response-return-for-the-domain">What IP did the attacker’s forged DNS response return for the domain?</h4>
 <p><code>192.168.10.55</code></p>
 <p><img src="https://github.com/anir0y/cdn/blob/main/Screenshot%202025-10-13%20at%2011.54.21.png?raw=true" alt="What IP did the attacker’s forged DNS response return for the domain"></p>
+<blockquote>
+<p><strong>Answer:</strong> The victim was redirected to <code>192.168.10.55</code>.</p></blockquote>
 <h2 id="task-06-spotting-ssl-stripping-in-action">Task 06: Spotting SSL Stripping in Action</h2>
 <p>SSL stripping is a man-in-the-middle technique in which an attacker intercepts and modifies traffic to remove or prevent TLS encryption between a client and a server. This causes the client to communicate over HTTP instead of HTTPS. The attacker retains a secure (HTTPS) session with the server while relaying plain HTTP to the victim, enabling eavesdropping and credential capture.</p>
 <h4 id="how-it-works">How It Works</h4>
@@ -600,27 +616,17 @@ The result shows valid DNS replies from the legitimate DNS server.</p>
 <h4 id="how-many-post-requests-were-observed-for-our-domain-corp-loginacme-corplocal">How many POST requests were observed for our domain corp-login.acme-corp.local?</h4>
 <p><strong>Filter:</strong> <code>http.request.method == &quot;POST&quot;</code></p>
 <p><img src="https://github.com/anir0y/cdn/blob/main/Screenshot%202025-10-13%20at%2012.01.12.png?raw=true" alt="img"></p>
+<blockquote>
+<p><strong>Answer:</strong> 1 credential submission.</p></blockquote>
 <h4 id="whats-the-password-of-the-victim-found-in-the-plaintext-after-successful-ssl-stripping-attack">What&rsquo;s the password of the victim found in the plaintext after successful ssl stripping attack.</h4>
 <p>Use the same <code>http.request.method == &quot;POST&quot;</code> filter and read the packet data.</p>
 <p><img src="https://github.com/anir0y/cdn/blob/main/Screenshot%202025-10-13%20at%2012.02.37.png?raw=true" alt="img"></p>
+<blockquote>
+<p><strong>Answer:</strong> Password <code>Secret123!</code> (submitted by user <code>alice</code>).</p></blockquote>
 <h2 id="task-07-conclusion">Task 07: Conclusion</h2>
 <hr>
 <blockquote>
 <p>My View: Lab is well designed and informative; I loved it while solving the challenge.</p></blockquote>
-<hr>
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<p><ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"></ins></p>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-<hr>
 <hr>
 <!-- Google Ads -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
