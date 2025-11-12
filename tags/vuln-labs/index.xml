@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vuln Labs on Classroom</title><link>https://classroom.anir0y.in/tags/vuln-labs/</link><description>Recent content in Vuln Labs on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vuln-labs/index.xml" rel="self" type="application/rss+xml"/><item><title>Vulnerable Apps, Servers, and Websites!</title><pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;overview&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id="learning-platforms-and-vms"&gt;Learning Platforms and VMs&lt;/h2&gt;
 &lt;ul&gt;
