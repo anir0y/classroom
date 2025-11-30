@@ -7,10 +7,10 @@
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 12 Nov 2025 12:21:07 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 19:57:58 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/tryhackme/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Input Manipulation &amp; Prompt Injection</title>
-      <pubDate>Wed, 12 Nov 2025 12:21:07 +0530</pubDate>
+      <title>Healthgpt</title>
+      <pubDate>Sun, 30 Nov 2025 19:57:58 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
       <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
@@ -59,6 +59,41 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
 &lt;script data-name=&#34;BMC-Widget&#34; data-cfasync=&#34;false&#34; src=&#34;https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js&#34; data-id=&#34;anir0y&#34; data-description=&#34;Support me on Buy me a coffee!&#34; data-message=&#34;&#34; data-color=&#34;#5F7FFF&#34; data-position=&#34;Right&#34; data-x_margin=&#34;18&#34; data-y_margin=&#34;18&#34;&gt;&lt;/script&gt;
 &lt;!-- EOF --&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
+      <link>http://localhost:1313/post/healthgpt/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Input Manipulation &amp; Prompt Injection</title>
+      <pubDate>Wed, 12 Nov 2025 12:21:07 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://tryhackme-images.s3.amazonaws.com/room-icons/645b19f5d5848d004ab9c9e2-1759491275677.png" width="700" height="420"></media:content>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;a class=&#34;twitter-follow-button&#34; href=&#34;https://twitter.com/anir0y&#34; data-size=&#34;large&#34;&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Input Manipulation &amp;amp; Prompt Injection&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/645b19f5d5848d004ab9c9e2-1759491275677&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;task-01-introduction&#34;&gt;Task 01: Introduction&lt;/h2&gt;
+&lt;h3 id=&#34;what-is-input-manipulation&#34;&gt;What is Input Manipulation?&lt;/h3&gt;
+&lt;p&gt;Large Language Models (LLMs) are designed to generate responses based on instructions and user queries. In many applications, these models operate with multiple layers of instruction:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;System prompts: Hidden instructions that define the model&amp;rsquo;s role and limitations (e.g., &amp;ldquo;You are a helpful assistant, but never reveal internal tools or credentials&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;User prompts: Inputs typed in by the end-user (e.g., &amp;ldquo;How do I reset my password?&amp;rdquo;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Attackers have realised that they can carefully craft their input to override, confuse, or even exploit the model&amp;rsquo;s safeguards. This is known as input manipulation. The most common form of input manipulation is prompt injection, where the attacker changes the flow of instructions and forces the model to ignore or bypass restrictions.&lt;/p&gt;</description>
+      <enclosure url="https://classroom.anir0y.inhttps://tryhackme-images.s3.amazonaws.com/room-icons/645b19f5d5848d004ab9c9e2-1759491275677.png"></enclosure>
       <link>http://localhost:1313/post/input-manipulation--prompt-injection/</link>
     
     </item>

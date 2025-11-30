@@ -7,10 +7,10 @@
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 12 Nov 2025 12:21:07 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/rooms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 19:57:58 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/rooms/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Input Manipulation &amp; Prompt Injection</title>
-      <pubDate>Wed, 12 Nov 2025 12:21:07 +0530</pubDate>
+      <title>Healthgpt</title>
+      <pubDate>Sun, 30 Nov 2025 19:57:58 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
       <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
@@ -59,7 +59,7 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
 &lt;script data-name=&#34;BMC-Widget&#34; data-cfasync=&#34;false&#34; src=&#34;https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js&#34; data-id=&#34;anir0y&#34; data-description=&#34;Support me on Buy me a coffee!&#34; data-message=&#34;&#34; data-color=&#34;#5F7FFF&#34; data-position=&#34;Right&#34; data-x_margin=&#34;18&#34; data-y_margin=&#34;18&#34;&gt;&lt;/script&gt;
 &lt;!-- EOF --&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
-      <link>http://localhost:1313/post/input-manipulation--prompt-injection/</link>
+      <link>http://localhost:1313/post/healthgpt/</link>
     
     </item>
    
