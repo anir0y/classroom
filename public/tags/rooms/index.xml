@@ -7,10 +7,10 @@
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Fri, 12 Dec 2025 13:20:33 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/rooms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Dec 2025 19:16:54 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/rooms/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Network Discovery Detection</title>
-      <pubDate>Fri, 12 Dec 2025 13:20:33 +0530</pubDate>
+      <title>Log Analysis With Siem</title>
+      <pubDate>Mon, 15 Dec 2025 19:16:54 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
       <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
@@ -58,6 +58,36 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
 &lt;!-- END --&gt;
 &lt;script data-name=&#34;BMC-Widget&#34; data-cfasync=&#34;false&#34; src=&#34;https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js&#34; data-id=&#34;anir0y&#34; data-description=&#34;Support me on Buy me a coffee!&#34; data-message=&#34;&#34; data-color=&#34;#5F7FFF&#34; data-position=&#34;Right&#34; data-x_margin=&#34;18&#34; data-y_margin=&#34;18&#34;&gt;&lt;/script&gt;
 &lt;!-- EOF --&gt;</description>
+      <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
+      <link>http://localhost:1313/post/log-analysis-with-siem/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Network Discovery Detection</title>
+      <pubDate>Fri, 12 Dec 2025 13:20:33 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
+      <description>&lt;p&gt;Understand how attackers discover assets in a network, and how to detect that activity.&lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;OverView&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;a class=&#34;x-follow-button&#34; href=&#34;https://x.com/anir0y&#34; data-size=&#34;large&#34;&gt; x/@anir0y&lt;a&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Network Discovery Detection&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/61306d87a330ed00419e22e7-1757355846285&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;task-01-introduction&#34;&gt;Task 01: Introduction&lt;/h1&gt;
+&lt;p&gt;Whenever an attacker wants to target a network, they first have to better understand their target. To do this, attackers perform certain actions to discover the target network. This is often one of the first steps of detecting an attacker&amp;rsquo;s activity and perhaps one of the most common stages of attack a SOC analyst observes in their shift. In this room, we will explore network discovery in detail.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
       <link>http://localhost:1313/post/network-discovery-detection/</link>
     
