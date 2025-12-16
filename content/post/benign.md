@@ -15,7 +15,7 @@ tags:
   - rooms
   - thm
 
-draft: true
+draft: false
 description: Try Hack Me Room Benign solved by Animesh Roy. this is a walkthough. read more...
 
 ---
