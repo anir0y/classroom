@@ -7,10 +7,10 @@
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Tue, 16 Dec 2025 12:01:28 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Dec 2025 13:23:02 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/tryhackme/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Itsybitsy</title>
-      <pubDate>Tue, 16 Dec 2025 12:01:28 +0530</pubDate>
+      <title>Benign</title>
+      <pubDate>Tue, 16 Dec 2025 13:23:02 +0530</pubDate>
       
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
       <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
@@ -58,6 +58,39 @@ data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
 &lt;!-- END --&gt;
 &lt;script data-name=&#34;BMC-Widget&#34; data-cfasync=&#34;false&#34; src=&#34;https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js&#34; data-id=&#34;anir0y&#34; data-description=&#34;Support me on Buy me a coffee!&#34; data-message=&#34;&#34; data-color=&#34;#5F7FFF&#34; data-position=&#34;Right&#34; data-x_margin=&#34;18&#34; data-y_margin=&#34;18&#34;&gt;&lt;/script&gt;
 &lt;!-- EOF --&gt;</description>
+      <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
+      <link>http://localhost:1313/post/benign/</link>
+    
+    </item>
+   
+      
+    
+    <item>
+      <title>Try Hack Me Itsybitsy walkthrough</title>
+      <pubDate>Tue, 16 Dec 2025 12:01:28 +0530</pubDate>
+      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"></media:content>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;OverView&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;a class=&#34;twitter-follow-button&#34; href=&#34;https://twitter.com/anir0y&#34; data-size=&#34;large&#34;&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ItsyBitsy&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/be84f26c22e5a051fc003dba5ed3dcd4.png&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;task-01-introduction&#34;&gt;Task 01: Introduction&lt;/h2&gt;
+&lt;h3 id=&#34;room-machine&#34;&gt;Room Machine&lt;/h3&gt;
+&lt;p&gt;Before moving forward, deploy the machine. When you deploy the machine, it will be assigned an IP Machine IP: MACHINE_IP. The machine will take up to 3-5 minutes to start. Use the following credentials to log in and access the logs in the Discover tab.&lt;/p&gt;
+&lt;h2 id=&#34;task-02-scenario---investigate-a-potential-c2-communication-alert&#34;&gt;Task 02: Scenario - Investigate a potential C2 communication alert&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Scenario&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;During normal SOC monitoring, Analyst John observed an alert on an IDS solution indicating a potential C2 communication from a user Browne from the HR department. A suspicious file was accessed containing a malicious pattern THM:{ ________ }. A week-long HTTP connection logs have been pulled to investigate. Due to limited resources, only the connection logs could be pulled out and are ingested into the connection_logs index in Kibana.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in/img/blog.png"></enclosure>
       <link>http://localhost:1313/post/itsybitsy/</link>
     
