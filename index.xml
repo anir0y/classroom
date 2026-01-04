@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Classroom</title><link>https://classroom.anir0y.in/</link><description>Recent content on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 16 Dec 2025 13:23:02 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack Me Benign Room Walkthrough</title><pubDate>Tue, 16 Dec 2025 13:23:02 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Classroom</title><link>https://classroom.anir0y.in/</link><description>Recent content on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 04 Jan 2026 20:58:51 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Traverse - TryHackMe Walkthrough</title><pubDate>Sun, 04 Jan 2026 20:58:51 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;p&gt;Challenge your secure coding skills to restore a compromised website.&lt;/p&gt;
+&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Traverse&lt;/td&gt;
+&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/d2c1e819d8409b3bee8e15c688a3f088.png" alt="logo"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
+&lt;p&gt;Bob is a security engineer at a firm and works closely with the software/DevOps team to develop a tourism web application. Once the website was moved from QA to Production, the team noticed that the website was getting hacked daily and wanted to know the exact reason. Bob consulted the blue team as well but has yet to be successful. Therefore, he finally enrolled in the Software Security pathway at THM to learn if he was doing something wrong.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/blog.png"/><link>https://classroom.anir0y.in/post/traverse/</link></item><item><title>Try Hack Me Benign Room Walkthrough</title><pubDate>Tue, 16 Dec 2025 13:23:02 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -3498,7 +3515,7 @@ developed in .NET supports all Windows x64, includes code integrity and write su
 &lt;/ul&gt;
 &lt;h3 id="example"&gt;Example&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#!/usr/bin/env bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;NAME&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;John&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;Hello &lt;/span&gt;$NAME&lt;span style="color:#e6db74"&gt;!&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="variables"&gt;Variables&lt;/h3&gt;
@@ -3722,13 +3739,13 @@ Available in PDF, DOCX and Markdown format!
 &lt;p&gt;Class Practical for Linux Basic Scripting&lt;/p&gt;
 &lt;h2 id="hello-name"&gt;Hello {Name}&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;Hello, &lt;/span&gt;$1&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;Hello, &lt;/span&gt;$1&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="output"&gt;Output&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bash hello.sh Mentor
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Hello Mentor
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="age-check"&gt;Age Check&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#user-input&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo -n &lt;span style="color:#e6db74"&gt;&amp;#34;Enter Your Age: &amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;read VAR
