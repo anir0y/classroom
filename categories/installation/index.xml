@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Installation on Classroom</title><link>https://classroom.anir0y.in/categories/installation/</link><description>Recent content in Installation on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Fri, 02 Apr 2021 18:47:08 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Powershell Empire</title><pubDate>Fri, 02 Apr 2021 18:47:08 +0530</pubDate><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="prereq"&gt;Prereq&lt;/h1&gt;
 &lt;h2 id="install-pip3-python-package-installer"&gt;install pip3 (python Package installer)&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install python3-pip -y
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install python3-pip -y
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="install-poetry"&gt;Install Poetry&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;sudo pip3 install poetry
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="install-git"&gt;install Git&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git -y
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git -y
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="install-powershell---empire"&gt;Install Powershell - Empire&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone --recursive https://github.com/BC-SECURITY/Empire.git
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone --recursive https://github.com/BC-SECURITY/Empire.git
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd Empire
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo ./setup/install.sh
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo poetry install
@@ -14,7 +14,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id="hacking"&gt;Hacking&lt;/h1&gt;
 &lt;h2 id="generate-a-listener-http"&gt;generate a listener (http)&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;(&lt;/span&gt;Empire&lt;span style="color:#f92672"&gt;)&lt;/span&gt; &amp;gt; uselistener http
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;(&lt;/span&gt;Empire&lt;span style="color:#f92672"&gt;)&lt;/span&gt; &amp;gt; uselistener http
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;(&lt;/span&gt;Empire: listeners/http&lt;span style="color:#f92672"&gt;)&lt;/span&gt; &amp;gt; info
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Name: HTTP&lt;span style="color:#f92672"&gt;[&lt;/span&gt;S&lt;span style="color:#f92672"&gt;]&lt;/span&gt;

@@ -28,7 +28,7 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;nmap&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN init 10.10.245.114
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN init 10.10.245.114
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.60 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-25 19:49 BST
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; ip-10-10-245-114.eu-west-1.compute.internal &lt;span style="color:#f92672"&gt;(&lt;/span&gt;10.10.245.114&lt;span style="color:#f92672"&gt;)&lt;/span&gt;

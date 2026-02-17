@@ -429,7 +429,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 &lt;h2 id="recon"&gt;Recon&lt;/h2&gt;
 &lt;h3 id="nmap"&gt;nmap&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Basic Scan[nmap]&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Nmap 7.92 scan initiated Tue Nov 30 05:12:53 2021 as: nmap -sC -sV -oN nmap/init -vv 10.10.4.240&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Nmap 7.92 scan initiated Tue Nov 30 05:12:53 2021 as: nmap -sC -sV -oN nmap/init -vv 10.10.4.240&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.4.240
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up, received reset ttl &lt;span style="color:#ae81ff"&gt;60&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.15s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Scanned at 2021-11-30 05:12:54 EST &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 14s
@@ -815,7 +815,7 @@ data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url=
 &lt;p&gt;Are you good enough to apply for this job?&lt;/p&gt;
 &lt;h2 id="enumeration"&gt;Enumeration&lt;/h2&gt;
 &lt;h3 id="nmap"&gt;Nmap&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.127.35
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.127.35
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;sudo&lt;span style="color:#f92672"&gt;]&lt;/span&gt; password &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; anir0y:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-09-19 13:18 IST
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.127.35
@@ -1284,7 +1284,7 @@ data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url=
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;nmap (basic scan)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.187.112
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.187.112
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;sudo&lt;span style="color:#f92672"&gt;]&lt;/span&gt; password &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; anir0y:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-28 12:20 IST
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.187.112
@@ -1405,7 +1405,7 @@ data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url=
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;nmap&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN init 10.10.245.114
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN init 10.10.245.114
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.60 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-25 19:49 BST
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; ip-10-10-245-114.eu-west-1.compute.internal &lt;span style="color:#f92672"&gt;(&lt;/span&gt;10.10.245.114&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
@@ -1744,7 +1744,7 @@ data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url=
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;nmap&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sV -sC -oN nmap/init 10.10.149.120
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sV -sC -oN nmap/init 10.10.149.120
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Nmap 7.91 scan initiated Sun Jul 18 19:35:34 2021 as: nmap -sV -sC -oN nmap/init 10.10.149.120&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.149.120
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.15s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
@@ -1997,7 +1997,7 @@ data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url=
 &lt;hr&gt;
 &lt;h3 id="recon"&gt;Recon&lt;/h3&gt;
 &lt;p&gt;running nmap: (Default)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;┌──&lt;span style="color:#f92672"&gt;(&lt;/span&gt;anir0y㉿kali&lt;span style="color:#f92672"&gt;)&lt;/span&gt;-&lt;span style="color:#f92672"&gt;[&lt;/span&gt;~/share/thm/room/couch&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;┌──&lt;span style="color:#f92672"&gt;(&lt;/span&gt;anir0y㉿kali&lt;span style="color:#f92672"&gt;)&lt;/span&gt;-&lt;span style="color:#f92672"&gt;[&lt;/span&gt;~/share/thm/room/couch&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└─$ sudo nmap -sC -sV -oN nmap/couch 10.10.94.40
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;sudo&lt;span style="color:#f92672"&gt;]&lt;/span&gt; password &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; anir0y:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-09 19:26 IST
@@ -2022,7 +2022,7 @@ data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url=
 &lt;h2 id="recon"&gt;Recon&lt;/h2&gt;
 &lt;h3 id="nmap"&gt;Nmap&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;nmap&lt;/code&gt; found two open TCP ports, SSH (22) and HTTP (80):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-08 14:35 IST
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-08 14:35 IST
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.206.247
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.27s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Not shown: &lt;span style="color:#ae81ff"&gt;998&lt;/span&gt; closed ports
