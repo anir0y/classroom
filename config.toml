@@ -11,6 +11,10 @@ copyright = "YOU CAN REUSE MY CONTENT"
 enableRobotsTXT = true
 hasCJKLanguage = true
 
+[author]
+  name = "Animesh Roy"
+  email = "mail@anir0y.in"
+
 # Paginate = 6
 
 [outputs]
@@ -52,7 +56,7 @@ hasCJKLanguage = true
 
  
 
-  email = "classroom@anir0y.in"
+  email = "mail@anir0y.in"
   twitter = "anir0y"
   facebook = "0xanir0y"
   instagram = "0xanir0y"
