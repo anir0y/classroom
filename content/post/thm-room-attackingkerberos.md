@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Attacking Kerberos solved by Animesh Roy. this is a walkthough. Learn how to abuse the Kerberos Ticket Granting Service inside of a Windows Domain Controller. read more...
+description: Try Hack Me Room Attacking Kerberos solved by Animesh Roy. this is a walkthrough. Learn how to abuse the Kerberos Ticket Granting Service inside of a Windows Domain Controller. read more...
 
 ---
 # Attacking Kerberos
@@ -109,16 +109,6 @@ The main ticket that you will see is a ticket-granting ticket these can come in 
 |Deploy the Machine|`N/a`|
 
 ---
-
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 
 ---
 
@@ -560,13 +550,4 @@ Know that you have the knowledge needed to attack Kerberos I encourage you to co
 
 
 
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---

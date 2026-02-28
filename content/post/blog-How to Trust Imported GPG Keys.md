@@ -30,27 +30,7 @@ description: Learn how to trust imported GPG keys using the web of trust, keyser
 > Manually: You can also manually trust a GPG key by adding it to your keyring with the gpg --edit-key command.
 > Once you have trusted an imported GPG key, you can use it to encrypt and sign data.
 > 
-> TLDR: There are three ways to trust imported GPG keys: the web of trust, keyserver, or manually.
-
-
----
-<!--inline-ads-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3526678290068011"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-8c+7e-5f-ar+1mn"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="5692962495"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
-
-# How to Trust Imported GPG Keys
+> TLDR: There are three ways to trust imported GPG keys: the web of trust, keyserver, or manually.# How to Trust Imported GPG Keys
 
 When you import a GPG key, you are trusting that the key belongs to the person or organization who claims to own it. This is important because GPG keys are used to encrypt and sign data, and you need to be sure that you are only trusting the keys of people who you can verify.
 
@@ -113,25 +93,6 @@ Once you have trusted an imported GPG key, you can use it to encrypt and sign da
 ---
 
 > Liked the article? share your feedback here: [ twitter](https://twitter.com/anir0y)
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->
-
 <!-- //====================\\ -->
 <!-- || GPG post by anir0y || -->
 <!-- \\====================// -->

@@ -48,33 +48,3 @@ In conclusion, smishing is a type of phishing technique that involves sending te
 
 
 **In conclusion**, smishing is a type of phishing technique that uses text messages to trick individuals into giving away sensitive information. It is becoming more prevalent and it's important to be aware of the tactics used by attackers. By being cautious when receiving unsolicited text messages, using anti-phishing and anti-malware software, and being aware of the signs of a smishing attack, individuals can protect themselves from falling victim to this type of cybercrime. Remember that it's better to be safe than sorry and to always verify the legitimacy of a message before taking any action.
-
-
-
-
-
-
-
-
-
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

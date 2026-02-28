@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Web Fundamentals solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Web Fundamentals solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 ## Web Fundamentals
@@ -50,15 +50,6 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 
 source: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 
 ### Flags 3
 
@@ -89,17 +80,4 @@ source: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 |4|What's the "Set a cookie" flag?|
 ||![anir0y-blog-img](https://i.imgur.com/NLfmeE9.png)|
 
----
-
-<!-- Amazon Ads-->
-<center>
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-</center>
-<!-- Amazon Ads-->
-
----
+------

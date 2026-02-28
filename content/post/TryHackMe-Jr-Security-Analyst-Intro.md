@@ -18,7 +18,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Jr Security Analyst Intro solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room Jr Security Analyst Intro solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -94,23 +94,7 @@ Junior Security Analysts play a crucial role in the investigation procedure. The
 
 **Response** 
 
-After the investigation, the SOC team coordinates and takes actions on the compromised hosts, which involves isolating the hosts from the network, terminating the malicious processes, deleting files, and more
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+After the investigation, the SOC team coordinates and takes actions on the compromised hosts, which involves isolating the hosts from the network, terminating the malicious processes, deleting files, and more---
 
 ## Task 03: A day In the life of a Junior (Associate) Security Analyst 
 
@@ -131,23 +115,7 @@ Are you ready to immerse yourself into the role of a Junior Security Analyst for
 | Click on the green View Site button in this task to open the Static Site Lab and navigate to the security monitoring tool on the right panel to try to identify the suspicious activity. |`n\a`||
 |What was the malicious IP address in the alerts?| `we can see multiple failed login for user, and one succesful login from a remote IP` |[login-failed](#login)|
 |To whom did you escalate the event associated with the malicious IP address?|`to the SOC lead`| [soc-lead](#soc-lead)|
-|After blocking the malicious IP address on the firewall, what message did the malicious actor leave for you?|`follow the guide`| [firewall](#mal-ip)|
-
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+|After blocking the malicious IP address on the firewall, what message did the malicious actor leave for you?|`follow the guide`| [firewall](#mal-ip)|---
 
 #### login
 
@@ -160,7 +128,3 @@ Are you ready to immerse yourself into the role of a Junior Security Analyst for
 #### mal-ip
 
 ![img](https://i.imgur.com/iXKjCZh.png)
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

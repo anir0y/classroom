@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Hacking with PowerShell solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Hacking with PowerShell solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -228,23 +228,7 @@ Here's an example of sort the list of directories:
 
 * Decoding file with `certutil.exe`
   `certutil -decode "C:\Users\Administrator\Desktop\b64.txt" out.txt`
-* read the `out.txt` file
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+* read the `out.txt` file---
 
 ### task 04: Enumeration
 
@@ -339,23 +323,7 @@ Your task will be to answer the following questions to enumerate the machine usi
 
 ### 4.15 Who is the owner of the C:\
 
-`Get-Acl c:/`
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+`Get-Acl c:/`---
 
 ### Task 05: Basic Scripting Challenge
 
@@ -439,23 +407,3 @@ Now that you've learnt a little bit about how scripting works - let's try someth
 ### 6.1 How many open ports did you find between 130 and 140(inclusive of those two)?
 
 {if you know this answer please let me know, so far I am able to find 2 listenting port!!!}
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

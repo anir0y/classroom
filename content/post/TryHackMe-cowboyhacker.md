@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Bounty Hacker solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Bounty Hacker solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -82,23 +82,7 @@ You were boasting on and on about your elite hacker skills in the bar and a few 
 |4|What service can you bruteforce with the text file found?|`SSH`|
 |5|What is the users password? |[SSH-BruteForce](#35-ssh-bruteforce)|
 |6|user.txt|[user](#usertxt)|
-|7|root.txt|[root]()|
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+|7|root.txt|[root]()|---
 
 ### 3.3 FTP Enum
 
@@ -146,23 +130,3 @@ You were boasting on and on about your elite hacker skills in the bar and a few 
      ![img](https://i.imgur.com/VqPz7Vu.png)
   
 ![footer](https://i.imgur.com/rCDF5u6.png)
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

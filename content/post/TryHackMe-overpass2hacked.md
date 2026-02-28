@@ -18,7 +18,7 @@ tags:
   - Overpass 2
   
 draft: false
-description: TryHackMe Room Overpass 2 - Hacked solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Overpass 2 - Hacked solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 ## OverView
@@ -89,23 +89,7 @@ xxxxxxxxx        (paradox)
 4g 0:00:00:00 DONE (2020-08-30 20:06) 10.00g/s 555.0p/s 2775c/s 2775C/s Spring2017..starwars
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed
-```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+```---
 
 ## Task 02: Research - Analyse the code
 
@@ -190,23 +174,7 @@ Crack the hash using rockyou and a cracking tool of your choice. What's the pass
      Stopped: Sun Aug 30 21:05:43 2020
      ```
 
-     ![img](https://i.imgur.com/dNfuHfE.png)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     ![img](https://i.imgur.com/dNfuHfE.png)---
 
 ## Task 03: Attack - Get back in
 
@@ -314,23 +282,3 @@ What's the root flag?
 - read the flag:
   
   ![img](https://i.imgur.com/JRxPKgD.png)
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

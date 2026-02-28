@@ -19,7 +19,7 @@ tags:
 
 draft: false
 
-description: Try Hack Me Room Volatility solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room Volatility solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 # Volatility
@@ -36,15 +36,6 @@ Volatility is a free memory forensics tool developed and maintained by Volatilit
 
 ---
 
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---
 
 ## Task 02: Obtaining Memory Samples
@@ -206,19 +197,4 @@ Now that we've performed some basic forensics, let's go a step further and see w
 
 ![](https://i.imgur.com/j2BBJxa.jpg)
 
-**MemLabs** - A collection of CTF-style memory forensic labs [Link](https://github.com/stuxnet999/MemLabs)
-
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+**MemLabs** - A collection of CTF-style memory forensic labs [Link](https://github.com/stuxnet999/MemLabs)---

@@ -19,7 +19,7 @@ tags:
   - RazorBlack
 
 draft: false
-description: TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthough. These guys call themselves hackers. Can you show them who's the boss ??
+description: TryHackMe Room RazorBlack solved by Animesh Roy. this is a walkthrough. These guys call themselves hackers. Can you show them who's the boss ??
 
 
 ---
@@ -177,23 +177,7 @@ These guys call themselves hackers. Can you show them who's the boss ??
      ```bash
      $ cat /etc/hosts
      10.10.149.120   raz0rblack raz0rblack.thm
-     ```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     ```---
 
 ## What is the zip file’s password?
 
@@ -381,23 +365,7 @@ These guys call themselves hackers. Can you show them who's the boss ??
      [experiment_gone_wrong.zip] system.hive password: electromagnetismo
      inflating: system.hive
      inflating: ntds.dit
-     ```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     ```---
 
 ## What is Ljudmila’s Hash?
 
@@ -457,23 +425,7 @@ These guys call themselves hackers. Can you show them who's the boss ??
 
      root@kali$ hashcat -m 13100 hashes.kerberoast rockyou.txt(relative path: /usr/share/wordlist/rockyou.txt)
      # cracked password: cyanide9amine5628
-     ```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     ```---
 
 ## What is Xyan1d3’s Flag?
 
@@ -670,23 +622,7 @@ These guys call themselves hackers. Can you show them who's the boss ??
      Here is your Root Flag
      THM{1b4f46cc4fba46348273d18dc91da20d}
 
-     ```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     ```---
 
 ## What is Tyson’s Flag?
 
@@ -718,23 +654,3 @@ These guys call themselves hackers. Can you show them who's the boss ??
      ```
 
 Open the image in firefox and see the text “I dont have much time […] the way to exit vim is :w”. He died before he could end his sentence, so the answer for the last question is: `:wq`.
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

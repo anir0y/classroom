@@ -18,22 +18,7 @@ tags:
 
 
 draft: false
-description: Try Hack Me Room ROOM_NAME solved by Animesh Roy. this is a walkthough. read more...
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
+description: "Exposing a User Enumeration Vulnerability in e-Jagriti's findUser Endpoint — OWASP bug bounty report by Animesh Roy."
 ---
 ## Introduction
 
@@ -166,24 +151,3 @@ The potential user enumeration vulnerability in e-Jagriti’s `/services/user/au
 - [Blue Goat Cyber: Username Enumeration Vulnerability Explained](https://bluegoatcyber.com/blog/username-enumeration-vulnerability-explained/)
 - [LinkedIn: Understanding and Preventing User Enumeration Vulnerability](https://www.linkedin.com/pulse/understanding-preventing-user-enumeration-donny-widjaja-mspm-cspo)
 - [OWASP: Testing for Account Enumeration and Guessable User Account](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account)
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

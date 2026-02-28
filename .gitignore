@@ -2,4 +2,5 @@ post.sh
 temp.log
 shorturl.ps1
 .dccache
-.dccache
+public/
+resources/

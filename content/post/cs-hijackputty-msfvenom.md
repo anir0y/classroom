@@ -84,14 +84,4 @@ msf exploit(handler) > exploit
 
 ![msf-payload](https://i.imgur.com/UvxDbqe.png)
 
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
-
 ---

@@ -18,7 +18,7 @@ tags:
   - Simple CTF
 
 draft: false
-description: TryHackMe Room Simple CTF solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Simple CTF solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -63,23 +63,7 @@ description: TryHackMe Room Simple CTF solved by Animesh Roy. this is a walkthou
      Read data files from: /usr/bin/../share/nmap
      Nmap done: 1 IP address (1 host up) scanned in 10.39 seconds
                Raw packets sent: 2006 (88.248KB) | Rcvd: 10 (424B)
-     ```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     ```---
 
 ## What is running on the higher port?
 
@@ -160,23 +144,7 @@ Looking at the searchsploit result we find tons of vulnerabilities. The question
 
 * exploit DB
   
-     [![img](https://i.imgur.com/8NG6I4I.png)](https://www.exploit-db.com/exploits/46635)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     [![img](https://i.imgur.com/8NG6I4I.png)](https://www.exploit-db.com/exploits/46635)---
 
 ## To what kind of vulnerability is the application vulnerable?
 
@@ -209,23 +177,7 @@ please remember this is `python 2` tool, you might need to install `pip2` in ord
      - Try SSH into other Found Port
      ![img](https://i.imgur.com/J0uHkMU.png)
 
-it worked!!
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+it worked!!---
 
 ## What's the user flag?
 
@@ -264,24 +216,3 @@ usually I start with `sudo -l` to verify if the current user have any sudo privs
 * GTFO bins for the found application!
 
      ![img](https://i.imgur.com/vIOVgJ3.png)
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

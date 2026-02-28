@@ -60,19 +60,6 @@ Install Osquery on your local machine or local virtual machine, please refer to 
 
 Refer to the documentation on the Osquery daemon (osqueryd) information and all the [command-line flags here](https://osquery.readthedocs.io/en/latest/installation/cli-flags/).    
 Schema is [here](https://osquery.io/schema/)
-
----
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="1939553774"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
----
 ## TASK 3 : Interacting with the Osquery Shell
 
 To interact with the Osquery interactive console/shell, open CMD (or PowerShell) and run ``osqueryi``. 
@@ -447,14 +434,3 @@ Lastly, look at other community projects for Osquery listed at https://osquery.i
 ![](https://assets.tryhackme.com/additional/osquery/osquery_comm_projs.png)
 
 The repo on enterprise threat hunting with [Osquery + MITRE ATT&CK](https://github.com/teoseller/osquery-attck) is definitely worth your attention. 
-
-
-
-<!-- Ads code-->
----
-<script type="text/javascript" language="javascript">
-      var aax_size='728x90';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>

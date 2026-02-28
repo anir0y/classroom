@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Investigating Windows solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room Investigating Windows solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 # Investigating Windows
@@ -31,15 +31,6 @@ A windows machine has been hacked, its your job to go investigate this windows m
 
 
 
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---
 
 ## Task 01: Investigating Windows
@@ -139,14 +130,4 @@ Ans is from [Flag-13](#flag-13), hardcoded known domain name.
 
 
 ---
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
-
 ---

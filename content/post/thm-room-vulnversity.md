@@ -18,7 +18,7 @@ tags:
   - Vulnversity
 
 draft: false
-description: TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 ## Vulnversity
@@ -60,15 +60,6 @@ description: TryHackMe Room Vulnversity solved by Animesh Roy. this is a walktho
 based on Nmap Fingerprints. 
 
 ---
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---
 
 ## TASK 03: Locating directories using GoBuster
@@ -250,18 +241,5 @@ id
 uid=33(www-data) gid=33(www-data) euid=0(root) egid=0(root) groups=0(root),33(www-data)
 
 ```
-
-<!-- Amazon Ads-->
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
-
 
 ---

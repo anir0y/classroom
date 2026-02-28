@@ -17,7 +17,7 @@ tags:
  
 
 draft: false
-description: TryHackMe Room {CyberCrafted} solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room {CyberCrafted} solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -48,22 +48,7 @@ Pwn this pay-to-win Minecraft server!
 |7|Can you get the Minecraft server flag?|[2.7](#27)|
 |8|What is the name of the sketchy plugin?|[2.8](#28)|
 |9|What is the user's flag?|[2.9](#29)|
-|10|Finish the job and give me the root flag!|[2.10](#210)|
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+|10|Finish the job and give me the root flag!|[2.10](#210)|---
 
 ## Initial recon
 
@@ -101,22 +86,7 @@ basic nmap returns `2 open ports`
 * use `ssh2john` to generate the crackable hash; `locate ssh2john` to find the file on your attacker machine
 * `usr/share/john/ssh2john.py creeper.key > cracking.hash` 
 * cracking: `john cracking.hash --wordlist=/usr/share/wordlists/rockyou.txt`
-  
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-## Flags
+  ## Flags
 
 ### 2.1
 
@@ -191,22 +161,3 @@ ref to [Sqlmap](#sqlmap)
 * check `gtfobins` for screen
 * run the `sudo command` then type `CTRL+A` & `c` to get the shell.
 * read the root flag.
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

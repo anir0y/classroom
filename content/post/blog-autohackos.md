@@ -51,25 +51,3 @@ AutoHackOS is compatible with most common hardware devices and platforms that ar
 AutoHackOS is currently in beta testing and is available for download from its official website3. The developers of AutoHackOS welcome feedback and suggestions from the automotive security community and plan to add more features and improvements in the future.
 
 AutoHackOS is a promising operating system that aims to make automobile pentesting easier and more accessible for security researchers, enthusiasts, and professionals. It provides a comprehensive set of tools and frameworks that can be used to test the security of connected vehicles and their components. By using AutoHackOS, users can discover and exploit vulnerabilities in vehicle software and hardware before hackers do.
-
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

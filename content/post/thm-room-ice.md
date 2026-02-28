@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room ICE solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room ICE solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 ## ICE
@@ -303,25 +303,7 @@ we already have a open session from [Task03](#37). let's continue.
   (null)    (null)     (null)
   Dark      Dark-PC    Password01!
   dark-pc$  WORKGROUP  (null)
-```
-
----
-<!-- Google Ads -->
-ads
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+```---
 
 ### Task 06: Post-Exploitation
 
@@ -384,23 +366,3 @@ meterpreter > run post/windows/manage/enable_rdp
 [*] For cleanup execute Meterpreter resource file: /root/.msf4/loot/20210630145839_default_10.10.220.240_host.windows.cle_567279.txt
 
 ```
-
----
-<!-- Google Ads -->
-ads
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

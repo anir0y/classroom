@@ -17,7 +17,7 @@ tags:
 
 
 draft: false
-description: TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -70,23 +70,7 @@ The below example scenario shows how an employee of a company could be tricked i
 |||
 |---|---|---|
 |2.1|What type of psychological manipulation is phishing part of?| `social engineering`|
-|2.2|What type of phishing campaign do red teams get involved in?| `spear-phishing`|
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+|2.2|What type of phishing campaign do red teams get involved in?| `spear-phishing`|---
 
 ## TASK 03: Writing Convincing Phishing Emails
 
@@ -325,24 +309,7 @@ Expanding Brian's details and then viewing the details for the submitted data, y
 
 ### 5 Answer the questions below
 
-**Follow the instuctions**
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-## TASK 06: Droppers
+**Follow the instuctions**## TASK 06: Droppers
 
 Droppers are software that phishing victims tend to be tricked into downloading and running on their system. The dropper may advertise itself as something useful or legitimate such as a codec to view a certain video or software to open a specific file.
 
@@ -442,22 +409,3 @@ Now that you've learnt what goes into a phishing email campaign, let's see if yo
 ### 10 Answer the questions below
 
 **Follow the instructions**
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills...
+description: TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthrough. Guided room for beginners to learn/reinforce linux command line skills...
 ---
 
 ## OverView
@@ -129,23 +129,7 @@ NOTE:
 
 * \S is a regexp token to match any non-whitespace character
 * -i to make case insensitive search
-* -o to display only matching content
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+* -o to display only matching content---
 
 ## Task 03: Working with files
 
@@ -679,27 +663,3 @@ SSH as james and change the user to root
 
      NOW YOU ARE LINUX STRONGER!!!
      ```
-
-
-
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

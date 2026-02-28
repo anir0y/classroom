@@ -18,7 +18,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room oh-My-Webserver solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room oh-My-Webserver solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -150,23 +150,7 @@ let's do some basic recon before I go full Nmap with it.
 
 ### user flag 
 
-![img](https://i.imgur.com/txEbKgW.png)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+![img](https://i.imgur.com/txEbKgW.png)---
 
 ## ROOT ENUM 
 
@@ -218,23 +202,3 @@ THM{FLAG_CONTENT}
 ## Conclusion 
 
 well this is a fun box to play around. I did stucked multiple times before figuring out how to get root and YES!! I did try enumrating winrm stuffs before realising that's not gonna work and then looked for OMI Exploit. 
-
-
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

@@ -30,23 +30,7 @@ for free!
 
 Build apps, host websites, run open source software, learn cloud computing, and more – every cloud resource you need at an affordable price.
 
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=6ff08d124386&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=6ff08d124386&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)---
 
 ## Frequently asked questions
 
@@ -60,7 +44,3 @@ The $100, 60-day free trial provides free credit up to $100 that must be used wi
 
 
 [![DigitalOcean Referral Badge](/img/do-banner.gif)](https://www.digitalocean.com/?refcode=6ff08d124386&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

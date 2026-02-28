@@ -16,7 +16,7 @@ tags:
   - tryhackme
 
 draft: false
-description: TryHackMe Room {Net Sec Challenge} solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room {Net Sec Challenge} solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -51,23 +51,7 @@ Use this challenge to test your mastery of the skills you have acquired in the N
 |What is the flag hidden in the SSH server header?|[ssh-server](#ssh-server-header)|
 |We have an FTP server listening on a nonstandard port. What is the version of the FTP server?|[ftp](#ftp)|
 |We learned two usernames using social engineering: eddie and quinn. What is the flag hidden in one of these two account files and accessible via FTP?|[hydra](#hydra)|
-|Browsing to http://MACHINE_IP displays a small challenge that will give you a flag once you solve it. What is the flag?|[covert-nmap](#covert-nmap)|
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+|Browsing to http://MACHINE_IP displays a small challenge that will give you a flag once you solve it. What is the flag?|[covert-nmap](#covert-nmap)|---
 
 ## recon
 
@@ -132,23 +116,3 @@ We do not have any credentails to login. anyways it says on header, let's just p
 `nmap -sN MACHINE_IP`
 
 ![img](https://i.imgur.com/BHgtX0Y.png)
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

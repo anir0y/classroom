@@ -18,7 +18,7 @@ tags:
   - kenobi
 
 draft: false
-description: TryHackMe Room kenobi solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room kenobi solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 ## kenobi
@@ -74,14 +74,6 @@ anonymous auth is enbled, just hit enter when it askes for password.
 
 ---
 
-<!-- Amazon Ads-->
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---
 
 ## Task 04: Gain initial access with ProFtpd
@@ -135,21 +127,4 @@ PORT     STATE SERVICE     VERSION
 |3|We copied the /bin/sh shell, called it curl, gave it the correct permissions and then put its location in our path. This meant that when the /usr/bin/menu binary was run, its using our path variable to find the "curl" binary.. Which is actually a version of /usr/sh, as well as this file being run as root it runs our shell as root!|
 ||`n\a`|
 |4|What is the root flag (/root/root.txt)?|
-||`177b3cd8562289f37382721c28381f02`|
-
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
----
+||`177b3cd8562289f37382721c28381f02`|---

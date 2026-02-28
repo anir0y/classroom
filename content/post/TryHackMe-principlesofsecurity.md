@@ -14,7 +14,7 @@ categories:
 
 
 draft: false
-description: TryHackMe Room Principles of Security solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Principles of Security solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -108,23 +108,7 @@ As we previously mentioned, PAM incorporates more than assigning access. It also
 |What does the acronym "PIM" stand for?|`Privileged Identity Management`|
 |What does the acronym "PAM" stand for?|`Privileged Access Management`|
 |If you wanted to manage the privileges a system access role had, what methodology would you use?|`PAM`|
-|If you wanted to create a system role that is based on a users role/responsibilities with an organisation, what methodology is this?|`PIM`|
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+|If you wanted to create a system role that is based on a users role/responsibilities with an organisation, what methodology is this?|`PIM`|---
 
 ## 04: Security Models Continued
 
@@ -235,23 +219,3 @@ An incident is responded to by a Computer Security Incident Response Team (CSIRT
 |What does the acronym "IR" stand for?|`incident response`|
 |You are tasked with adding some measures to an application to improve the integrity of data, what STRIDE principle is this?|`Tampering`|
 |An attacker has penetrated your organisation's security and stolen data. It is your task to return the organisation to business as usual. What incident response stage is this? |`Recovery`|
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

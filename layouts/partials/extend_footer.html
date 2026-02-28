@@ -1,0 +1,50 @@
+{{- if .IsPage -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Summary | plainify | truncate 160 | jsonify }}{{ end }},
+  "author": {
+    "@type": "Person",
+    "name": {{ with .Params.author }}{{ . | jsonify }}{{ else }}"Animesh Roy"{{ end }},
+    "url": "https://classroom.anir0y.in/about/me/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Classroom",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://classroom.anir0y.in/img/avatar.jpeg"
+    }
+  },
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  {{- with .Params.cover }}
+  "image": {{ if .image }}{{ (printf "%s%s" $.Site.BaseURL .image) | jsonify }}{{ else }}"https://classroom.anir0y.in/img/avatar.jpeg"{{ end }},
+  {{- else }}
+  "image": "https://classroom.anir0y.in/img/avatar.jpeg",
+  {{- end }}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | jsonify }}
+  }
+}
+</script>
+{{- end -}}
+
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Classroom",
+  "url": "https://classroom.anir0y.in/",
+  "description": "Cybersecurity blog by Animesh Roy",
+  "author": {
+    "@type": "Person",
+    "name": "Animesh Roy"
+  }
+}
+</script>
+{{- end -}}

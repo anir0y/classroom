@@ -18,7 +18,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthough. read more... Learn about function hooking in Linux and have fun hooking functions
+description: TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthrough. read more... Learn about function hooking in Linux and have fun hooking functions
 
 ---
 
@@ -140,23 +140,7 @@ Which file contains a whitespace-separated list of ELF shared objects to be load
 
 If both the environment variable and the file are employed, the libraries specified by which would be loaded first?
 
-![img](https://i.imgur.com/WvXfE8k.png)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+![img](https://i.imgur.com/WvXfE8k.png)---
 
 ## Task 04: Putting On Our Coding Hats
 
@@ -243,23 +227,7 @@ How many arguments does write() take?
 
 Which feature test macro must be defined in order to obtain the  definitions  of RTLD_NEXT from <dlfcn.h>
 
-![img](https://i.imgur.com/vQmROWz.png)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+![img](https://i.imgur.com/vQmROWz.png)---
 
 ## Task 05: Let's Gooooooooo
 
@@ -371,23 +339,7 @@ When compiling our code to produce a Shared Object, which flag is used to create
 
 Can hooking libc functions affect the behavior of Python3? (Yay/Nay)
 
-     yay
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     yay---
 
 ## task 06: Hiding Files From ls
 
@@ -474,23 +426,3 @@ _[Note : If you are stuck, [here's an article by room author](https://www.linuxf
 There are two mandatory fields of a dirent structure. One is d_name, and the other one is?
 
      d_ino
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

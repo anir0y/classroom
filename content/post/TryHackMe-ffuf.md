@@ -19,7 +19,7 @@ tags:
   - ffuf
 
 draft: false
-description: TryHackMe Room ffuf solved by Animesh Roy. this is a walkthough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing...
+description: TryHackMe Room ffuf solved by Animesh Roy. this is a walkthrough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing...
 
 ---
 ## overview
@@ -169,23 +169,7 @@ external                [Status: 301, Size: 314, Words: 20, Lines: 10]
 robots.txt              [Status: 200, Size: 26, Words: 3, Lines: 2]
 server-status           [Status: 403, Size: 292, Words: 21, Lines: 11]
 :: Progress: [20473/20473] :: Job [1/1] :: 3717 req/sec :: Duration: [0:00:10] :: Errors: 0 ::
-```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+```---
 
 ## task 03: Finding pages and directories
 
@@ -295,23 +279,7 @@ config                  [Status: 301, Size: 312, Words: 20, Lines: 10]
 external                [Status: 301, Size: 314, Words: 20, Lines: 10]
 server-status           [Status: 403, Size: 292, Words: 21, Lines: 11]
 ...[snip]...
-```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+```---
 
 ## task 04: Using filters
 
@@ -475,23 +443,7 @@ ffuf -u http://10.10.62.131/FUZZ -w Tools/wordlists/SecLists//Discovery/Web-Cont
        v1.3.1
 ________________________________________________
 wp-forum.phps           [Status: 403, Size: 292, Words: 21, Lines: 11]
-```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+```---
 
 ## task 05: Fuzzing parameters
 
@@ -597,23 +549,7 @@ ________________________________________________
 p@ssword                [Status: 200, Size: 1526, Words: 100, Lines: 50]
 :: Progress: [2351/2351] :: Job [1/1] :: 3743 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
 ________________________________________________
-```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+```---
 
 ## task 06: Finding vhosts and subdomains
 
@@ -778,22 +714,3 @@ How do you enable colorized output?
      -c
 
 ---
-
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

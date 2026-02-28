@@ -93,26 +93,7 @@ Each of these subnets can accommodate up to 62 hosts.
 
 Subnetting is a powerful tool in network design and management, offering benefits in IP address utilization, performance optimization, security enhancement, and troubleshooting efficiency. By understanding and applying subnetting principles, network administrators can create scalable and efficient network infrastructures.
 
-For more detailed information and practical examples, you can refer to the [network repository by anir0y on GitHub](https://github.com/anir0y/network/). 
-
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-### Practical
+For more detailed information and practical examples, you can refer to the [network repository by anir0y on GitHub](https://github.com/anir0y/network/). ### Practical
 
 **Exploring the Network Repository**
 
@@ -165,12 +146,6 @@ While the exact content of the repository is not fully detailed, a typical subne
 
 **Conclusion**
 
-Engaging with practical exercises, such as those potentially provided in the [network repository by anir0y](https://github.com/anir0y/network/), allows you to apply theoretical knowledge in real-world scenarios. By exploring and modifying the code, you can gain a deeper understanding of subnetting and its applications in network management.
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->
-<center>
+Engaging with practical exercises, such as those potentially provided in the [network repository by anir0y](https://github.com/anir0y/network/), allows you to apply theoretical knowledge in real-world scenarios. By exploring and modifying the code, you can gain a deeper understanding of subnetting and its applications in network management.<center>
 <em>This blog is written with LLM model with custom prompt.</em>
 </center>

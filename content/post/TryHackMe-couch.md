@@ -19,7 +19,7 @@ tags:
   - couch
 
 draft: false
-description: TryHackMe Room couch solved by Animesh Roy. this is a walkthough. Hack into a vulnerable database server that collects and stores data in JSON-based document formats, in this semi-guided challenge.
+description: TryHackMe Room couch solved by Animesh Roy. this is a walkthrough. Hack into a vulnerable database server that collects and stores data in JSON-based document formats, in this semi-guided challenge.
 
 ---
 
@@ -120,23 +120,7 @@ CouchDB, you will find that the _utils URL will bring the user to the admin pane
 
 What is the path to list all databases in the web browser of the database management system?
 
-![img](https://i.imgur.com/mX6dgqb.png)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+![img](https://i.imgur.com/mX6dgqb.png)---
 
 ### 1.7
 
@@ -204,23 +188,3 @@ atena@ubuntu:~$ docker -H 127.0.0.1:2375 run --rm -it --privileged --net=host -v
 ~ # cat /mnt/root/root.txt
 THM{REDACTED}
 ```
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

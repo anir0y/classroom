@@ -18,7 +18,7 @@ tags:
   - Thefindcommand
 
 draft: false
-description: TryHackMe Room The find command solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room The find command solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 ## Overview
@@ -56,23 +56,7 @@ Find all files in the /home directory (recursive) whose name is "user.txt" (case
 
 Find all directories whose name contains the word "exploits"
 
-     `find / -type d -name "*exploits*"`
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     `find / -type d -name "*exploits*"`---
 
 ## Task 03: Know exactly what you're looking for
 
@@ -145,23 +129,3 @@ Find all files in the /usr/bin directory (recursive) that have been modified wit
 To conclude this tutorial, there are two more things that you should know of. The first is that you can use the redirection operator > with the find command. You can save the results of the search to a file, and more importantly, you can suppress the output of any possible errors to make the output more readable. This is done by appending 2> /dev/null to your command. This way, you won’t see any results you’re not allowed to access.
 
 The second thing is the -exec flag. You can use it in your find command to execute a new command, following the -exec flag, like so: -exec whoami \;. The possibilities enabled by this option are beyond the scope of this tutorial, but most notably it can be used for privilege escalation.
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

@@ -18,7 +18,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room ItsyBitsy solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room ItsyBitsy solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -99,26 +99,4 @@ The name of the file accessed is `secret.txt`
 
 ### 2.7: The file contains a secret code with the format THM{_____}.
 
-Refer the above screenshot, the secret code is `THM{SECRET__CODE}`
-
-
-
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-<!-- Buy Me A Coffee -->
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->
+Refer the above screenshot, the secret code is `THM{SECRET__CODE}`<!-- Buy Me A Coffee -->

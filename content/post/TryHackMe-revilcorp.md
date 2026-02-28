@@ -16,7 +16,7 @@ tags:
   - tryhackme
 
 draft: false
-description: TryHackMe Room {REvil Corp} solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room {REvil Corp} solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -118,23 +118,7 @@ ref to [task 3](#malicious-executable) we can copy and paste the URL
 
 1. goto `timeline`
 2. search for `.bmp` ext
-3. you have the ans!!!
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+3. you have the ans!!!---
 
 ### attacker left a note for the user on the Desktop
 
@@ -180,23 +164,3 @@ ref to [task 3](#malicious-executable) we can copy and paste the URL
 ### three names associated with the malware
 
 ref to [OTX](https://otx.alienvault.com/indicator/file/5f56d5748940e4039053f85978074bde16d64bd5ba97f6f0026ba8172cb29e93/)
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

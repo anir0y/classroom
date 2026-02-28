@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: {{ .Site.BaseURL }}sitemap.xml
+
+# Block crawling of pagination pages
+Disallow: /page/

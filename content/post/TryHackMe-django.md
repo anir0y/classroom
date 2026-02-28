@@ -18,7 +18,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Introduction to Django solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Introduction to Django solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -95,23 +95,7 @@ Startapp allows you to initialize an app for your project. Django projects can h
 |Answer the questions below| ans|
 |---|---|
 |How would we create an app called Forms? |`python3 manage.py startapp Forms`|
-|How would we run our project to a local network?|`python3 manage.py runserver 0.0.0.0:8000`|
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+|How would we run our project to a local network?|`python3 manage.py runserver 0.0.0.0:8000`|---
 
 ## 03: Creating a website
 
@@ -301,23 +285,3 @@ Here's your first flag disguised as the First Name of the user Flag.
   `grep -Rwi "thm"`
 
   You Shall find what you're looking for!
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

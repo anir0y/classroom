@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room REMnux - The Redux solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room REMnux - The Redux solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 # REMnux - The Redux
@@ -26,15 +26,6 @@ description: TryHackMe Room REMnux - The Redux solved by Animesh Roy. this is a 
 |:-----|-----:|
 |<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
 
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---
 
 ## Task 01: introduction
@@ -428,20 +419,4 @@ Docs.microsoft.com. 2018. Processes And Threads - Win32 Apps. Retrieved from: ht
 
 * [REMnux 7.0 Documentation](https://docs.remnux.org/)
 
-* [Volatility 2.4. Windows & Linux Profile Cheatsheets](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+* [Volatility 2.4. Windows & Linux Profile Cheatsheets](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)---

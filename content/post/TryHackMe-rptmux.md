@@ -18,7 +18,7 @@ tags:
   - tmux
 
 draft: false
-description: TryHackMe Room tmux solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room tmux solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -72,21 +72,3 @@ tmux, the terminal multiplexer, is easily one of the most used tools by the Linu
 * Last but now least, how do we spawn a named tmux session named 'neat'? `tmux new -s neat`
   
 ---
-
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

@@ -55,25 +55,3 @@ As someone deeply committed to integrity and transparency, I am troubled by any 
 In conclusion, I want to reiterate that the primary goal of [anir0y.in](https://anir0y.in) is to foster informative and meaningful discussions about the darknet. I am open to constructive feedback and willing to address any concerns raised by the community. Transparency and accountability are paramount, and I remain dedicated to upholding these principles.
 
 \- Animesh Roy
-
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

@@ -17,7 +17,7 @@ tags:
 
 
 draft: false
-description: Try Hack Me Room Phishing Emails 2 solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room Phishing Emails 2 solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -181,23 +181,7 @@ Analysis: https://app.any.run/tasks/12dcbc54-be0f-4250-b6c1-94d548816e5c/#
 
 #### This email sample used the names of a few major companies, their products, and logos such as OneDrive and Adobe. What other company name was used in this phishing email?
 
-`read the first screenshot carefully`
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+`read the first screenshot carefully`---
 
 ## Task 5: Please update your payment details
 
@@ -343,24 +327,3 @@ Additional Resources:
 * https://www.itgovernance.co.uk/blog/5-ways-to-detect-a-phishing-email
 * https://cheapsslsecurity.com/blog/10-phishing-email-examples-you-need-to-see/
 * https://phishingquiz.withgoogle.com
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

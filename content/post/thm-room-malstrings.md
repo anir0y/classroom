@@ -17,7 +17,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room MALware Strings solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room MALware Strings solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 # MAL: Strings
@@ -26,15 +26,6 @@ description: Try Hack Me Room MALware Strings solved by Animesh Roy. this is a w
 |:-----|-----:|
 |<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
 
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---
 
 ## Task 01: What are "strings"?
@@ -239,19 +230,4 @@ I hope you enjoyed the practical side and remember the tools available to you to
 ![](https://i.imgur.com/gucHwHG.png)
 
 
----
-
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+------

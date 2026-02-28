@@ -18,7 +18,7 @@ tags:
   - HackPark
 
 draft: false
-description: TryHackMe Room HackPark solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room HackPark solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 ## HackPark
@@ -89,14 +89,6 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.135.139 http-post-form 
 ![img](https://i.imgur.com/0DSaivn.png)
 
 ---
-<!-- Amazon Ads-->
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---
 
 ## task 03:  Compromise the machine
@@ -313,17 +305,5 @@ WinPeas is a great tool which will enumerate the system and attempt to recommend
   a `systeminfo.exe` commnd gives it away.
 
 ---
-
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 ---

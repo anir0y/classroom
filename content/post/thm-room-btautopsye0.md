@@ -18,7 +18,7 @@ tags:
   - autopsy
 
 draft: false
-description: Try Hack Me Room Autopsy solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room Autopsy solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 # Autopsy
@@ -29,15 +29,6 @@ Learn how to use Autopsy to investigate artifacts from a disk image. Use your kn
 |:-----|-----:|
 |<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
 
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 ---
 
 ## Task 01: Introduction
@@ -489,15 +480,5 @@ Below are some topics that you should explore on your own to configure Autopsy t
 The disk image used with this room's development was created and released by the NIST under the Computer Forensic Reference Data Sets (CFReDS) Project. It is encouraged to download the disk image, go through the full exercise ([here](https://www.cfreds.nist.gov/data_leakage_case/data-leakage-case.html)) to practice using Autopsy, and level up your investigation techniques. 
 
 
-
-<!-- Amazon Ads-->
-
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
 
 ---

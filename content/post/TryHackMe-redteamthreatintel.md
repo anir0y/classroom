@@ -18,7 +18,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Red Team Threat Intel solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room Red Team Threat Intel solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -84,23 +84,7 @@ There are several public white papers and documents if you are interested in rea
 
 * https://www.ecb.europa.eu/pub/pdf/other/ecb.tiber_eu_framework.en.pdf
 * https://www.crest-approved.org/tiber-eu/index.html
-* https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/pf/ms/sb-tiber-eu.pdf
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+* https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/pf/ms/sb-tiber-eu.pdf---
 
 ## Task 05: TTP Mapping
 
@@ -284,31 +268,3 @@ Each red team will have its methodology of collecting and digesting threat intel
 When planning an engagement, remember that it is crucial to look at scenarios from all perspectives: offensive, defensive, and the adversary's.
 
 Threat intelligence allows us as the red team to look deeper into an adversary's behavior by using the blue team's methodology to our advantage.
-
-
-
-
-
-
-
-
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

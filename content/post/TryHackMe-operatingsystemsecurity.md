@@ -17,7 +17,7 @@ tags:
   - Operating System Security
 
 draft: false
-description: Try Hack Me Room Operating System Security solved by Animesh Roy. this is a walkthough. read more...
+description: Try Hack Me Room Operating System Security solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -81,23 +81,7 @@ Which of the following is not an operating system?
 * Solaris
 * Thunderbird
 
-ans: `thunderbird`
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+ans: `thunderbird`---
 
 ## Task 02:  Common Examples of OS Security
 
@@ -177,23 +161,7 @@ Which of the following is a strong password, in your opinion?
 * LearnM00r
 * qwertyuiop
 
-*ANS:* `LearnM00r`
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
----
+*ANS:* `LearnM00r`---
 
 ## Task 03: Practical Example of OS Security
 
@@ -252,17 +220,3 @@ We know that both of these users have little regard for cybersecurity best pract
 **ANS:** `ref to image`
 
 ![img](https://i.imgur.com/XipoDuA.png)   
-
-
-
-
-
-
-
-
-
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->

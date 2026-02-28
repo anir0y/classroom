@@ -18,7 +18,7 @@ tags:
   - Super-Spam
 
 draft: false
-description: TryHackMe Room Super-Spam solved by Animesh Roy. this is a walkthough. read more...
+description: TryHackMe Room Super-Spam solved by Animesh Roy. this is a walkthrough. read more...
 
 ---
 
@@ -121,23 +121,7 @@ Flag|ref link|
 
      Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
      # Nmap done at Fri Aug 13 09:23:20 2021 -- 1 IP address (1 host up) scanned in 550.84 seconds
-     ```
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     ```---
 
 ## FTP
 
@@ -198,23 +182,7 @@ Based on packets seems like, WIFI traffic captured for "Wi-Fi Hacking" I'll be u
 
 * finally a upload option, I'll be using php reverse shell to getinto the box
 
-     ![img](https://i.imgur.com/cHHGEKq.png)
-
----
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
----
+     ![img](https://i.imgur.com/cHHGEKq.png)---
 
 ### Uploading backdoor
 
@@ -317,23 +285,3 @@ Now we have `password` and 4 username, let's Bruteforce for SSH
   ![img](https://i.imgur.com/7847mP4.png)
 
 * use [CyberChef](https://gchq.github.io/CyberChef/) to decode and read the `root` flag
-
----
-<!-- Google Ads -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3526678290068011"
-     data-ad-slot="7160066188"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- EOF -->
