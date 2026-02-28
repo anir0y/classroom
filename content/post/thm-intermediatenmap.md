@@ -5,7 +5,9 @@ lastmod: 2022-09-23T15:28:41+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/IntermediateNmap.png # for tryhackMe
+cover:
+  image: /img/IntermediateNmap.png
+  alt: "cover image"
 simg: /img/IntermediateNmap.png
 
 categories:

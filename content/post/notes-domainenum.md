@@ -5,7 +5,9 @@ lastmod: 2022-02-26T20:55:07+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/doamin-enum.png # for tryhackMe
+cover:
+  image: /img/doamin-enum.png
+  alt: "cover image"
 simg: /img/doamin-enum.png
 
 categories:

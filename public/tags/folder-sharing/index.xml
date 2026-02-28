@@ -1,36 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Folder Sharing on Classroom</title>
-    <link>http://localhost:1313/tags/folder-sharing/</link>
+    <link>https://classroom.anir0y.in/tags/folder-sharing/</link>
     <description>Recent content in Folder Sharing on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 30 May 2024 13:12:02 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/folder-sharing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 May 2024 13:12:02 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/folder-sharing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog How to Enable Folder Share in Kali VM and Windows Host</title>
+      <link>https://classroom.anir0y.in/post/blog-how-to-enable-folder-share-in-kali-vm-and-windows-host/</link>
       <pubDate>Thu, 30 May 2024 13:12:02 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://i.imgur.com/KbdONjh.png" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
-&lt;p&gt;Installing &amp;ldquo;Guest Tools&amp;rdquo; significantly enhances the user experience with VMware virtual machines (VMs). As of September 2015, VMware recommends using the distribution-specific open-vm-tools (OVT) instead of the VMware Tools package for guest machines.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kali@kali:~$ sudo apt update
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;...&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kali@kali:~$
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kali@kali:~$ sudo apt install -y --reinstall open-vm-tools-desktop fuse
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;...&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kali@kali:~$
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kali@kali:~$ sudo reboot -f
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kali@kali:~$
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Adding Support for Shared Folders When Using OVT
-Unfortunately, shared folders will not work out of the box, some additional scripts are needed. Those can be installed easily with kali-tweaks:&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.inhttps://i.imgur.com/KbdONjh.png"></enclosure>
-      <link>http://localhost:1313/post/blog-how-to-enable-folder-share-in-kali-vm-and-windows-host/</link>
-    
+      <guid>https://classroom.anir0y.in/post/blog-how-to-enable-folder-share-in-kali-vm-and-windows-host/</guid>
+      <description>This comprehensive guide shows you how to seamlessly mount your Windows folder in a Kali Linux VM using VMware and open-vm-tools. Enhance your virtual machine experience with step-by-step instructions and troubleshooting tips.</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

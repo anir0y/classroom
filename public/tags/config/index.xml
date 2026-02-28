@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Config on Classroom</title>
-    <link>http://localhost:1313/tags/config/</link>
+    <link>https://classroom.anir0y.in/tags/config/</link>
     <description>Recent content in Config on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 11 Mar 2021 01:45:35 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Mar 2021 01:45:35 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/config/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Splunk Sysmon Configuration</title>
+      <link>https://classroom.anir0y.in/post/splunk-sysmon/</link>
       <pubDate>Thu, 11 Mar 2021 01:45:35 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/splunk-sysmon/</guid>
       <description>&lt;h1 id=&#34;configure-your-splunk-universal-forwarder-to-send-sysmon-logs-to-splunk&#34;&gt;Configure your Splunk Universal forwarder to send Sysmon logs to Splunk&lt;/h1&gt;
 &lt;p&gt;Okay locate your input.conf file and edit with your favorite text editor. It should be located somewhere similar to this&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Program Files\SplunkUniversalForwarder\etc\apps\SplunkUniversalForwarder\local\inputs.conf
@@ -23,12 +24,6 @@ current_only = 0
 disabled = 0
 start_from = oldest
 &lt;/code&gt;&lt;/pre&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/splunk-sysmon/</link>
-    
     </item>
-   
-      
-    
   </channel>
 </rss>

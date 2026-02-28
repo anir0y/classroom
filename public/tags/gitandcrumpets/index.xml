@@ -1,41 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Gitandcrumpets on Classroom</title>
-    <link>http://localhost:1313/tags/gitandcrumpets/</link>
+    <link>https://classroom.anir0y.in/tags/gitandcrumpets/</link>
     <description>Recent content in Gitandcrumpets on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sun, 04 Jul 2021 23:04:02 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/gitandcrumpets/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jul 2021 23:04:02 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/gitandcrumpets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Gitandcrumpets</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</link>
       <pubDate>Sun, 04 Jul 2021 23:04:02 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;git-and-crumpets&#34;&gt;Git and Crumpets&lt;/h2&gt;
-&lt;p&gt;Our devs have been clamoring for some centralized version control, so the admin came through. Rumour has it that they included a few countermeasures&amp;hellip;&lt;/p&gt;
-&lt;h2 id=&#34;task-01--start-the-vm&#34;&gt;Task 01:  Start the VM&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;task-02-git-the-flags&#34;&gt;Task 02: Git the flags&lt;/h2&gt;
-&lt;h2 id=&#34;user&#34;&gt;user&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;I tried running nmap, no luck&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;being impatatient, I ran a quick curl commnad &lt;code&gt;curl -s 10.10.x.y&lt;/code&gt; to see what&amp;rsquo;s up.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/tpxQmLf.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;got this output.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;let&amp;rsquo;s setup &lt;strong&gt;DNS&lt;/strong&gt; record, edit &lt;code&gt;/etc/hosts&lt;/code&gt; file.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/tryhackme-gitandcrumpets/</link>
-    
+      <guid>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</guid>
+      <description>TryHackMe Room Git and Crumpets solved by Animesh Roy. this is a walkthough. read more...</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

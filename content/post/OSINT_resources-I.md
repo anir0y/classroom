@@ -5,7 +5,9 @@ lastmod: 2022-05-30T03:36:44+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/OSINT_Tools.png # for tryhackMe
+cover:
+  image: /img/OSINT_Tools.png
+  alt: "cover image"
 simg: /img/OSINT_Tools.png
 
 categories:

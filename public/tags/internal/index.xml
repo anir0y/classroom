@@ -1,49 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Internal on Classroom</title>
-    <link>http://localhost:1313/tags/internal/</link>
+    <link>https://classroom.anir0y.in/tags/internal/</link>
     <description>Recent content in Internal on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Tue, 10 Aug 2021 11:44:25 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/internal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 11:44:25 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/internal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Internal</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-internal/</link>
       <pubDate>Tue, 10 Aug 2021 11:44:25 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;a class=&#34;twitter-follow-button&#34; href=&#34;https://twitter.com/anir0y&#34; data-size=&#34;large&#34;&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;internal&lt;/td&gt;
-          &lt;td&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/8f245ccd549148ce6c6f76a583b842d6.jpeg&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;a href=&#34;&#34;&gt;internal&lt;/a&gt;&lt;a href=&#34;https://tryhackme.com/room/internal&#34;&gt;https://tryhackme.com/room/internal&lt;/a&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;task-01-pre-engagement-briefing&#34;&gt;Task 01: Pre-engagement Briefing&lt;/h2&gt;
-&lt;p&gt;The client requests that an engineer conducts an external, web app, and internal assessment of the provided virtual environment. The client has asked that minimal information be provided about the assessment, wanting the engagement conducted from the eyes of a malicious actor (black box penetration test).  The client has asked that you secure two flags (no location provided) as proof of exploitation:&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/tryhackme-internal/</link>
-    
+      <guid>https://classroom.anir0y.in/post/tryhackme-internal/</guid>
+      <description>TryHackMe Room Internal solved by Animesh Roy. this is a walkthough. read more...</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

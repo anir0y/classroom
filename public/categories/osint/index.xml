@@ -1,40 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>OSINT on Classroom</title>
-    <link>http://localhost:1313/categories/osint/</link>
+    <link>https://classroom.anir0y.in/categories/osint/</link>
     <description>Recent content in OSINT on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Mon, 30 May 2022 03:36:44 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/osint/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 May 2022 03:36:44 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/osint/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OSINT Resources I</title>
+      <link>https://classroom.anir0y.in/post/osint_resources-i/</link>
       <pubDate>Mon, 30 May 2022 03:36:44 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/OSINT_Tools.png" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
-&lt;p&gt;🕵️ OSINT Tools for gathering information and actions forensic 🕵️&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-collection-of-4000-osint-resources&#34;&gt;🕵️ Collection of 4000+ OSINT resources&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://metaosint.github.io/table/&#34;&gt;https://metaosint.github.io/table/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;spiderfoot-automates-osint-for-threat-intelligence-and-mapping-your-attack-surface&#34;&gt;SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/smicallef/spiderfoot&#34;&gt;https://github.com/smicallef/spiderfoot&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hayabusa&#34;&gt;Hayabusa&lt;/h3&gt;
-&lt;p&gt;Hayabusa is a sigma-based threat hunting and fast forensics timeline generator for Windows event logs written in Rust. :
-&lt;a href=&#34;https://github.com/Yamato-Security/hayabusa&#34;&gt;https://github.com/Yamato-Security/hayabusa&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;awesome-forensics&#34;&gt;Awesome forensics&lt;/h3&gt;
-&lt;p&gt;A curated list of awesome forensic analysis tools and resources. :
-&lt;a href=&#34;https://github.com/patronuscode/awesome-forensics&#34;&gt;https://github.com/patronuscode/awesome-forensics&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;mvt&#34;&gt;MVT&lt;/h3&gt;
-&lt;p&gt;MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.:
-&lt;a href=&#34;https://github.com/mvt-project/mvt&#34;&gt;https://github.com/mvt-project/mvt&lt;/a&gt;&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in/img/OSINT_Tools.png"></enclosure>
-      <link>http://localhost:1313/post/osint_resources-i/</link>
-    
+      <guid>https://classroom.anir0y.in/post/osint_resources-i/</guid>
+      <description>OSINT Tools for gathering information and actions forensic</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

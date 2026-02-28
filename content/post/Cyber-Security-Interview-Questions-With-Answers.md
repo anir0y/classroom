@@ -5,7 +5,9 @@ lastmod: 2021-05-07T19:38:21+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover: /img/blog.png
+cover:
+  image: /img/blog.png
+  alt: "cover image"
 description: test
 categories:
   - Classroom

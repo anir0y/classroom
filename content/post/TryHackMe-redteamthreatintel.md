@@ -5,7 +5,9 @@ lastmod: 2022-08-12T13:05:49+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/redteamthreatintel.png # for tryhackMe
+cover:
+  image: /img/redteamthreatintel.png
+  alt: "cover image"
 simg: /img/redteamthreatintel.png
 
 categories:

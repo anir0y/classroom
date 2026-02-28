@@ -5,7 +5,9 @@ lastmod: 2022-06-20T16:58:42+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/ransomware.png # for tryhackMe
+cover:
+  image: /img/ransomware.png
+  alt: "cover image"
 simg: /img/ransomware.png
 
 categories:

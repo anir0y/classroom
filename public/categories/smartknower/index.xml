@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Smartknower on Classroom</title>
-    <link>http://localhost:1313/categories/smartknower/</link>
+    <link>https://classroom.anir0y.in/categories/smartknower/</link>
     <description>Recent content in Smartknower on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sat, 12 Sep 2020 21:23:22 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/smartknower/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Sep 2020 21:23:22 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/smartknower/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SmartKnowner: SEP Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</link>
       <pubDate>Sat, 12 Sep 2020 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</guid>
       <description>&lt;h1 id=&#34;online-links&#34;&gt;Online Links&lt;/h1&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -119,18 +120,12 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/2020-08-07-smartknowner-sep/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>SmartKnowner: AUG Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</link>
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</guid>
       <description>&lt;p&gt;+++
 title = &amp;ldquo;SmartKnowner: AUG Batch! &amp;quot;
 description = &amp;ldquo;Smartknowner cybersecurity internship&amp;rdquo;
@@ -192,18 +187,12 @@ image = &amp;ldquo;fast-lane.jpg&amp;rdquo;
 &lt;li&gt;[√] Minor Project : Download &lt;a href=&#34;https://1drv.ms/b/s!AjGfb2ZCIBDrsi5EmFWVNg4mPIgI?e=HchT53s&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;[0] Major Project&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/2020-08-07-smartknowner-aug/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>SmartKnowner: JULY Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</link>
       <pubDate>Sun, 12 Jul 2020 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</guid>
       <description>&lt;h4 id=&#34;hello-links-to-our-classroom-will-be-available-here&#34;&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -252,12 +241,6 @@ image = &amp;ldquo;fast-lane.jpg&amp;rdquo;
 &lt;li&gt;[0] Minor Project&lt;/li&gt;
 &lt;li&gt;[0] Major Project&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/2020-08-07-smartknowner-july/</link>
-    
     </item>
-   
-      
-    
   </channel>
 </rss>

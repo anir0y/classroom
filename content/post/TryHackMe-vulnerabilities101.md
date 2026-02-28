@@ -5,7 +5,9 @@ lastmod: 2021-09-21T14:21:54+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/Vulnerabilities101.png # for tryhackMe
+cover:
+  image: /img/Vulnerabilities101.png
+  alt: "cover image"
 simg: /img/Vulnerabilities101.png
 
 categories:

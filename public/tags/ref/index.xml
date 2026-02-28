@@ -1,36 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ref on Classroom</title>
-    <link>http://localhost:1313/tags/ref/</link>
+    <link>https://classroom.anir0y.in/tags/ref/</link>
     <description>Recent content in Ref on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sun, 03 Oct 2021 21:58:41 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/ref/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Oct 2021 21:58:41 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/ref/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DigitalOcean Account Setup</title>
+      <link>https://classroom.anir0y.in/post/ref-do/</link>
       <pubDate>Sun, 03 Oct 2021 21:58:41 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/do.gif" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
-&lt;p&gt;Deploy faster &amp;amp; scale easier with an application server that saves your team time &amp;amp; money. Get started with fast, secure, and reliable cloud infrastructure solutions. Try for free. Premium AMD w/ NVMe SSD. Scale Quickly. Manage W/ Teams. Simple API. 55 Sec. Deploy.&lt;/p&gt;
-&lt;h2 id=&#34;start-your-free-trial-with-a-100-credit-for-60-days&#34;&gt;Start your free trial with a $100 credit for 60 days&lt;/h2&gt;
-&lt;p&gt;Get $100 to try DigitalOcean – and do all the below
-for free!&lt;/p&gt;
-&lt;p&gt;Build apps, host websites, run open source software, learn cloud computing, and more – every cloud resource you need at an affordable price.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in/img/do.gif"></enclosure>
-      <link>http://localhost:1313/post/ref-do/</link>
-    
+      <guid>https://classroom.anir0y.in/post/ref-do/</guid>
+      <description>Deploy faster &amp;amp; scale easier with an application server that saves your team time &amp;amp; money</description>
     </item>
-   
-      
-    
     <item>
       <title>Keep Learning</title>
+      <link>https://classroom.anir0y.in/post/learnings/</link>
       <pubDate>Tue, 09 Mar 2021 21:05:41 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/learnings/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;journey-of-a-pentester&#34;&gt;Journey of a Pentester&lt;/h1&gt;
 &lt;p&gt;the starting point will be:&lt;/p&gt;
@@ -60,18 +50,12 @@ for free!&lt;/p&gt;
 &lt;li&gt;CRTP&lt;/li&gt;
 &lt;li&gt;OSWE&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/learnings/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Free Certifications</title>
+      <link>https://classroom.anir0y.in/post/blog4/</link>
       <pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/blog4/</guid>
       <description>&lt;h1 id=&#34;free-certifications&#34;&gt;Free Certifications&lt;/h1&gt;
 &lt;p&gt;Curated list of free courses &amp;amp; certifications.&lt;/p&gt;
 &lt;p&gt;The offers on top of the table are time-limited and will expire soon. So, hurry up and grab them first!&lt;/p&gt;
@@ -646,12 +630,6 @@ for free!&lt;/p&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/blog4/</link>
-    
     </item>
-   
-      
-    
   </channel>
 </rss>

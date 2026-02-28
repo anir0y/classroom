@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -55,7 +55,7 @@
 
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-bugged/">
+<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-bugged/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -72,10 +72,10 @@
 
 
 
-<link rel="canonical" href="http://localhost:1313/post/tryhackme-bugged/" />
+<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-bugged/" />
 
 
-<meta property="og:url" content="http://localhost:1313/post/tryhackme-bugged/">
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-bugged/">
   <meta property="og:site_name" content="Classroom">
   <meta property="og:title" content="TryHackMe Bugged">
   <meta property="og:description" content="Try Hack Me Room Bugged solved by Animesh Roy. John likes to live in a very Internet connected world. Maybe too connected.">
@@ -166,7 +166,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in\/'"></i>
   </div>
   
   <div class="item">
@@ -210,10 +210,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Bugged&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-bugged%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Bugged&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-bugged%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-bugged%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-bugged%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -266,7 +266,7 @@
 <h3 id="nmap">nmap</h3>
 <p>let&rsquo;s start with quick nmap scan;</p>
 <p><em>inital run gets me nothing</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sC -sV -oA nmap/initial 10.10.79.196 -Pn
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sC -sV -oA nmap/initial 10.10.79.196 -Pn
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Starting Nmap 7.60 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2023-03-13 13:52 GMT
 </span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> ip-10-10-79-196.eu-west-1.compute.internal <span style="color:#f92672">(</span>10.10.79.196<span style="color:#f92672">)</span>
@@ -277,7 +277,7 @@
 </span></span><span style="display:flex;"><span>Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 1.99 seconds
 </span></span></code></pre></div><p><em>let&rsquo;s run a full port scan</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"></code></pre></div><hr>
 <!-- Google Ads -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <p><ins class="adsbygoogle"
@@ -531,7 +531,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
+    $.getJSON('https:\/\/classroom.anir0y.in\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

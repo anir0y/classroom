@@ -5,7 +5,9 @@ lastmod: 2023-03-12T19:25:10+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/Watering_Hole_Attacks_Scanbox_Keylogger.png # for tryhackMe
+cover:
+  image: /img/Watering_Hole_Attacks_Scanbox_Keylogger.png
+  alt: "cover image"
 simg: /img/Watering_Hole_Attacks_Scanbox_Keylogger.png
 
 categories:

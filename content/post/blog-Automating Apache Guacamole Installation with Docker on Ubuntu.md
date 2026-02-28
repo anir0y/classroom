@@ -5,7 +5,9 @@ lastmod: 2024-08-13T11:11:42+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/ApacheGuacamole.png # for tryhackMe
+cover:
+  image: /img/ApacheGuacamole.png
+  alt: "cover image"
 simg: /img/ApacheGuacamole.png
 
 categories:

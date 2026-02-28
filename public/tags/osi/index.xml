@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>OSI on Classroom</title>
-    <link>http://localhost:1313/tags/osi/</link>
+    <link>https://classroom.anir0y.in/tags/osi/</link>
     <description>Recent content in OSI on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 21 Apr 2021 20:01:52 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/osi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Apr 2021 20:01:52 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/osi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes OSIModel</title>
+      <link>https://classroom.anir0y.in/post/notes-osimodel/</link>
       <pubDate>Wed, 21 Apr 2021 20:01:52 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/notes-osimodel/</guid>
       <description>&lt;h1 id=&#34;osi-model-overview&#34;&gt;OSI Model OverView&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&amp;rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.&lt;/p&gt;
@@ -51,12 +52,6 @@
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;There are many mnemonics floating around to help you learn the layers of the OSI model &amp;ndash; search around until you find one that you like.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/notes-osimodel/</link>
-    
     </item>
-   
-      
-    
   </channel>
 </rss>

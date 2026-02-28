@@ -5,7 +5,9 @@ lastmod: 2024-03-11T19:13:04+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: https://i.imgur.com/RQww4KM.png # for tryhackMe
+cover:
+  image: https://i.imgur.com/RQww4KM.png
+  alt: "cover image"
 simg: https://i.imgur.com/RQww4KM.png
 
 categories:

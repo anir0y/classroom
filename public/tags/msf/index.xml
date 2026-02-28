@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Msf on Classroom</title>
-    <link>http://localhost:1313/tags/msf/</link>
+    <link>https://classroom.anir0y.in/tags/msf/</link>
     <description>Recent content in Msf on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 07 Apr 2021 15:25:21 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/msf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Apr 2021 15:25:21 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/msf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Msf Runscript</title>
+      <link>https://classroom.anir0y.in/post/msf-runscript/</link>
       <pubDate>Wed, 07 Apr 2021 15:25:21 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/msf-runscript/</guid>
       <description>&lt;h1 id=&#34;writing-meterpreter-scripts&#34;&gt;WRITING METERPRETER SCRIPTS&lt;/h1&gt;
 &lt;p&gt;There are a few things you need to keep in mind when creating a new Meterpreter script.&lt;/p&gt;
 &lt;ul&gt;
@@ -22,12 +23,6 @@
 &lt;li&gt;Some of the command line tools switches vary depending on the version of Windows&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For our purposes, we are going to create a stand alone binary that will be run on the target system that will create a reverse Meterpreter shell back to us. This will rule out any problems with an exploit as we work through our script development.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/msf-runscript/</link>
-    
     </item>
-   
-      
-    
   </channel>
 </rss>

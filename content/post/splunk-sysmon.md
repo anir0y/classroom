@@ -5,7 +5,9 @@ lastmod: 2021-03-11T01:45:35+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover: /img/cover.jpg
+cover:
+  image: /img/cover.jpg
+  alt: "cover image"
 categories:
   - SIEM
 tags:

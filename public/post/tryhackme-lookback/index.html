@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -55,7 +55,7 @@
 
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-lookback/">
+<meta property="twitter:url" content="https://classroom.anir0y.in/post/tryhackme-lookback/">
 
 <meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
 <meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
@@ -72,10 +72,10 @@
 
 
 
-<link rel="canonical" href="http://localhost:1313/post/tryhackme-lookback/" />
+<link rel="canonical" href="https://classroom.anir0y.in/post/tryhackme-lookback/" />
 
 
-<meta property="og:url" content="http://localhost:1313/post/tryhackme-lookback/">
+<meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-lookback/">
   <meta property="og:site_name" content="Classroom">
   <meta property="og:title" content="TryHackMe Lookback">
   <meta property="og:description" content="Try Hack Me Room Lookback solved by Animesh Roy. this is a walkthough. read more...">
@@ -166,7 +166,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/classroom.anir0y.in\/'"></i>
   </div>
   
   <div class="item">
@@ -211,10 +211,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Lookback&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-lookback%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Lookback&url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-lookback%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-lookback%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-lookback%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -266,12 +266,14 @@
 <p>The Lookback company has just started the integration with Active Directory. Due to the coming deadline, the system integrator had to rush the deployment of the environment. Can you spot any vulnerabilities?</p>
 <blockquote>
 <p>Sometimes to move forward, we have to go backward.
-So if you get stuck, try to look back!</p></blockquote>
+So if you get stuck, try to look back!</p>
+</blockquote>
 <hr>
 <h2 id="initial-recon">Initial Recon</h2>
 <h3 id="nmap">NMAP</h3>
 <blockquote>
-<p>we will start our initial scan using nmap, here are the results:</p></blockquote>
+<p>we will start our initial scan using nmap, here are the results:</p>
+</blockquote>
 <pre tabindex="0"><code class="language-nmap" data-lang="nmap">80/tcp   open  http          Microsoft IIS httpd 10.0
 |_http-server-header: Microsoft-IIS/10.0
 |_http-title: Site doesn&#39;t have a title.
@@ -560,7 +562,7 @@ data-ad-slot="7160066188"></ins></p>
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
+    $.getJSON('https:\/\/classroom.anir0y.in\//index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],

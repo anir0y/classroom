@@ -1,28 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Azure on Classroom</title>
-    <link>http://localhost:1313/tags/azure/</link>
+    <link>https://classroom.anir0y.in/tags/azure/</link>
     <description>Recent content in Azure on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 16 Mar 2023 22:06:19 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Mar 2023 22:06:19 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimizing Web Application Performance and Security With Azure Front Door and Application Gateway</title>
+      <link>https://classroom.anir0y.in/post/blog-optimizing-web-application-performance-and-security-with-azure-front-door-and-application-gateway/</link>
       <pubDate>Thu, 16 Mar 2023 22:06:19 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/az-sec-1.png" width="700" height="420"></media:content>
-      <description>&lt;h1 id=&#34;how-to-configure-azure-front-door-with-application-gateway&#34;&gt;How to configure Azure Front Door with Application Gateway&lt;/h1&gt;
-&lt;p&gt;Azure Front Door and Application Gateway are two services that can help you improve the performance and security of your web applications. In this post, we will explain what they are, how they work together, and how to configure them step by step.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-azure-front-door&#34;&gt;What is Azure Front Door?&lt;/h2&gt;
-&lt;p&gt;Azure Front Door is an Application Delivery Network (ADN) as a service, offering various layer 7 load-balancing capabilities for your applications. It provides dynamic site acceleration (DSA) along with global load balancing with near real-time failover. It is a highly available and scalable service, which is fully managed by Azure.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in/img/az-sec-1.png"></enclosure>
-      <link>http://localhost:1313/post/blog-optimizing-web-application-performance-and-security-with-azure-front-door-and-application-gateway/</link>
-    
+      <guid>https://classroom.anir0y.in/post/blog-optimizing-web-application-performance-and-security-with-azure-front-door-and-application-gateway/</guid>
+      <description>Learn how to optimize the performance and security of your web applications using Azure Front Door and Application Gateway. Our step-by-step guide explains how these services work together and provides tips for configuring them effectively. Discover the benefits of using Front Door and Application Gateway, including load balancing, WAF protection, and SSL encryption. Start improving your web application today!</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

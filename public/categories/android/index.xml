@@ -1,116 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Android on Classroom</title>
-    <link>http://localhost:1313/categories/android/</link>
+    <link>https://classroom.anir0y.in/categories/android/</link>
     <description>Recent content in Android on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Tue, 11 Oct 2022 19:04:38 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Feb 2026 21:00:00 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dissecting a Two-Stage Indian Banking Trojan: From Fake eChallan to Full Device Compromise</title>
+      <link>https://classroom.anir0y.in/post/blog-dissecting-rto-echallan-banking-trojan/</link>
+      <pubDate>Thu, 19 Feb 2026 21:00:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/blog-dissecting-rto-echallan-banking-trojan/</guid>
+      <description>Deep-dive analysis of a fresh Android banking trojan disguised as an Indian RTO eChallan app. Two-stage dropper &#43; payload architecture using NP Protect packer, Firebase C2, SMS interception, USSD abuse, and a 7-page phishing funnel stealing Aadhaar, PAN, card details, and UPI PINs. Only 11/66 VirusTotal detection rate.</description>
+    </item>
     <item>
       <title>Android MalwareAnalysis</title>
+      <link>https://classroom.anir0y.in/post/android-malwareanalysis/</link>
       <pubDate>Tue, 11 Oct 2022 19:04:38 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/amat.png" width="700" height="420"></media:content>
-      <description>&lt;p&gt;&lt;a class=&#34;twitter-follow-button&#34; href=&#34;https://twitter.com/anir0y&#34; data-size=&#34;large&#34;&gt; Follow @anir0y&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;android-malware-analysis-tools&#34;&gt;Android Malware Analysis Tools&lt;/h1&gt;
-&lt;h2 id=&#34;static-analysis&#34;&gt;Static Analysis&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;tools&lt;/th&gt;
-          &lt;th&gt;short Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://external.anir0y.in/classyshark&#34;&gt;ClassyShark&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;Standalone android apps binary inspection tool.ClassyShark&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://external.anir0y.in/StaCoAn&#34;&gt;StaCoAn&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;Mobile application static code analysis tool.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://external.anir0y.in/apk-mitm&#34;&gt;APK-MiTM&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;CLI application that automatically prepares Android APK files for HTTPS inspection.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;dynamic-analysis&#34;&gt;Dynamic Analysis&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;tools&lt;/th&gt;
-          &lt;th&gt;short Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://external.anir0y.in/appmon&#34;&gt;AppMon&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;Automated framework for monitoring and tampering system API calls based on Frida.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://www.wireshark.org/download.html&#34;&gt;Wireshark&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;Network analysis tool.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://www.androidtcpdump.com/&#34;&gt;tcpdump&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;Network analysis tool.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://external.anir0y.in/mitmproxy&#34;&gt;MiTMProxy&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;An interactive SSL/TLS-capable intercepting HTTP proxy (great for HTTPS inspection).&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://portswigger.net/burp/communitydownload&#34;&gt;Burp Suite&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;The free web proxy for any browser, system, or platform.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://www.inetsim.org/packages.html&#34;&gt;INetSim&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;Internet Services Simulation Suite.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;some-other-tools&#34;&gt;Some Other tools&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;tools&lt;/th&gt;
-          &lt;th&gt;short Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://tamerplatform.com/&#34;&gt;Android Tamer&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;VM/Live OS for Android security research and analysis.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://cuckoosandbox.org/&#34;&gt;Cuckoo Sandbox&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;Free and open-source automated malware analysis sandbox.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://external.anir0y.in/MobSF&#34;&gt;MobSF (Mobile Security Framework)&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;Malware analysis and security assessment framework capable of performing static and dynamic analysis.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src=&#34;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&#34;&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class=&#34;adsbygoogle&#34;
-style=&#34;display:block; text-align:center;&#34;
-data-ad-layout=&#34;in-article&#34;
-data-ad-format=&#34;fluid&#34;
-data-ad-client=&#34;ca-pub-3526678290068011&#34;
-data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in/img/amat.png"></enclosure>
-      <link>http://localhost:1313/post/android-malwareanalysis/</link>
-    
+      <guid>https://classroom.anir0y.in/post/android-malwareanalysis/</guid>
+      <description>Android Malware Analysis Tools Static Analysis ClassyShark &amp;amp;#8211; Standalone android apps binary inspection tool. StaCoAn &amp;amp;#8211; Mobile application static code analysis tool. SmaliSCA &amp;amp;#8211; Smali static code analysis. maldrolyzer &amp;amp;#8211; Simple framework to extract &amp;amp;#8220;actionable&amp;amp;#8221; data from Android malware (C&amp;amp;amp;Cs, phone numbers, etc.). Argus-SAF &amp;amp;#8211; Android application static analysis framework. DroidRA &amp;amp;#8211; Taming reflection to &amp;amp;hellip; Continue reading &amp;amp;quot;Android&amp;amp;quot;</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

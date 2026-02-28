@@ -5,7 +5,9 @@ lastmod: 2022-05-16T12:02:51+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/Operating_System_Security.png # for tryhackMe
+cover:
+  image: /img/Operating_System_Security.png
+  alt: "cover image"
 simg: /img/Operating_System_Security.png
 
 categories:

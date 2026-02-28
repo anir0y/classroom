@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rocket on Classroom</title>
-    <link>http://localhost:1313/tags/rocket/</link>
+    <link>https://classroom.anir0y.in/tags/rocket/</link>
     <description>Recent content in Rocket on Classroom</description>
     <generator>Anir0ry : Blog v1.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sat, 24 Jul 2021 15:36:15 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/rocket/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jul 2021 15:36:15 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/rocket/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Rocket</title>
       <pubDate>Sat, 24 Jul 2021 15:36:15 +0530</pubDate>
@@ -45,7 +45,7 @@
 &lt;ul&gt;
 &lt;li&gt;nmap&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.5.63
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.5.63
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;sudo&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; password &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; anir0y: 
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; https://nmap.org &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; at 2021-07-24 15:43 IST
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nmap scan report &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; 10.10.5.63
@@ -68,7 +68,7 @@
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;Hostname:&lt;/em&gt; rocket.thm add this to &lt;code&gt;/etc/hosts&lt;/code&gt; file.&lt;/p&gt;</description>
       <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/tryhackme-rocket/</link>
+      <link>https://classroom.anir0y.in/post/tryhackme-rocket/</link>
     
     </item>
    

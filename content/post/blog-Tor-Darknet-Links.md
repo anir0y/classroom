@@ -5,7 +5,9 @@ lastmod: 2024-05-11T01:04:21+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/darknet.png # for tryhackMe
+cover:
+  image: /img/darknet.png
+  alt: "cover image"
 simg: /img/darknet.png
 
 categories:

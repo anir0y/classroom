@@ -5,7 +5,9 @@ lastmod: 2021-06-07T20:20:16+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover: /img/blog.png
+cover:
+  image: /img/blog.png
+  alt: "cover image"
 
 categories:
   - tuv

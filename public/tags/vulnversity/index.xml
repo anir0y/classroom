@@ -1,110 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vulnversity on Classroom</title>
-    <link>http://localhost:1313/tags/vulnversity/</link>
+    <link>https://classroom.anir0y.in/tags/vulnversity/</link>
     <description>Recent content in Vulnversity on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 09 Jun 2021 20:10:48 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/vulnversity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Jun 2021 20:10:48 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/vulnversity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Room Vulnversity</title>
+      <link>https://classroom.anir0y.in/post/thm-room-vulnversity/</link>
       <pubDate>Wed, 09 Jun 2021 20:10:48 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;vulnversity&#34;&gt;Vulnversity&lt;/h2&gt;
-&lt;h2 id=&#34;task-01--deploy-the-machine&#34;&gt;TASK 01:  Deploy the machine&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;task-02-reconnaissance&#34;&gt;TASK 02: Reconnaissance&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://nmap.org&#34;&gt;Nmap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;CheatSheet&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;flags&#34;&gt;Flags&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Flag ID&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;Questions&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;There are many nmap &amp;ldquo;cheatsheets&amp;rdquo; online that you can use too.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;N\A&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;Scan the box, how many ports are open?&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;https://i.imgur.com/0XgYocm.png&#34; alt=&#34;img&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;What version of the squid proxy is running on the machine?&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;https://i.imgur.com/0XgYocm.png&#34; alt=&#34;img&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;How many ports will nmap scan if the flag -p-400 was used?&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;400&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;5&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;Using the nmap flag -n what will it not resolve?&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;DNS&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;6&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;What is the most likely operating system this machine is running?&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;ubuntu&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;7&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;What port is the web server running on?&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;https://i.imgur.com/Tsd6hc7.png&#34; alt=&#34;img-anir0y&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;8&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;Its important to ensure you are always doing your reconnaissance thoroughly before progressing. Knowing all open services (which can all be points of exploitation) is very important, don&amp;rsquo;t forget that ports on a higher range might be open so always scan ports after 1000 (even if you leave scanning in the background)&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h4 id=&#34;flag6&#34;&gt;Flag6&lt;/h4&gt;
-&lt;p&gt;based on Nmap Fingerprints.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/thm-room-vulnversity/</link>
-    
+      <guid>https://classroom.anir0y.in/post/thm-room-vulnversity/</guid>
+      <description>TryHackMe Room Vulnversity solved by Animesh Roy. this is a walkthough. read more...</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

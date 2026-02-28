@@ -1,39 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bugbounty on Classroom</title>
-    <link>http://localhost:1313/categories/bugbounty/</link>
+    <link>https://classroom.anir0y.in/categories/bugbounty/</link>
     <description>Recent content in Bugbounty on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Mon, 14 Jul 2025 02:24:47 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/bugbounty/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Jul 2025 02:24:47 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/bugbounty/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint</title>
+      <link>https://classroom.anir0y.in/post/owasp-e-jagriti-bug-report/</link>
       <pubDate>Mon, 14 Jul 2025 02:24:47 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png" width="700" height="420"></media:content>
-      <description>&lt;!-- Google Ads --&gt;
-&lt;script async src=&#34;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&#34;&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class=&#34;adsbygoogle&#34;
-style=&#34;display:block; text-align:center;&#34;
-data-ad-layout=&#34;in-article&#34;
-data-ad-format=&#34;fluid&#34;
-data-ad-client=&#34;ca-pub-3526678290068011&#34;
-data-ad-slot=&#34;7160066188&#34;&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;
-&lt;!-- END --&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;The e-Jagriti platform, developed by the Department of Consumer Affairs, Government of India, is a digital solution for consumer dispute resolution, offering features such as online case filing, real-time monitoring, and AI-powered search capabilities. Hosted at [e-jagriti.gov.in]([invalid url, do not cite]), it aims to enhance accessibility and efficiency in addressing consumer grievances. However, a potential security vulnerability in its &lt;code&gt;/services/user/auth/v2/findUser&lt;/code&gt; endpoint may allow attackers to perform user enumeration, identifying valid user accounts by exploiting differences in server responses. This blog post examines the nature of this vulnerability, demonstrates a proof of concept (PoC), evaluates its potential impact, and proposes mitigation strategies to enhance the platform’s security.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.inhttps://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png"></enclosure>
-      <link>http://localhost:1313/post/owasp-e-jagriti-bug-report/</link>
-    
+      <guid>https://classroom.anir0y.in/post/owasp-e-jagriti-bug-report/</guid>
+      <description>Try Hack Me Room ROOM_NAME solved by Animesh Roy. this is a walkthough. read more...</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

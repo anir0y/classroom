@@ -1,61 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Urlshortner on Classroom</title>
-    <link>http://localhost:1313/categories/urlshortner/</link>
+    <link>https://classroom.anir0y.in/categories/urlshortner/</link>
     <description>Recent content in Urlshortner on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Tue, 29 Nov 2022 15:32:55 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/urlshortner/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Nov 2022 15:32:55 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/urlshortner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BitLy url shortner</title>
+      <link>https://classroom.anir0y.in/post/bitly_url_shortner/</link>
       <pubDate>Tue, 29 Nov 2022 15:32:55 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/bitly.png" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
-&lt;p&gt;we&amp;rsquo;re going to write a python script to get short URLs using &lt;a href=&#34;https://bit.ly/&#34;&gt;Bit.ly&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;get-the-api-from-bitly&#34;&gt;get the API from BITLY&lt;/h2&gt;
-&lt;p&gt;signup to &lt;a href=&#34;bitly.com&#34;&gt;bitly.com&lt;/a&gt; and login to the dashboard, then click on &lt;code&gt;API&lt;/code&gt; section and click on create API&lt;/p&gt;
-&lt;p&gt;ref to the image below:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/lsjJQTc.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;follow the instructions:&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;click on settings after login&lt;/li&gt;
-&lt;li&gt;click on API&lt;/li&gt;
-&lt;li&gt;Enter your password and then&lt;/li&gt;
-&lt;li&gt;click on generate token.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;save the token as we will be using it on our script.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in/img/bitly.png"></enclosure>
-      <link>http://localhost:1313/post/bitly_url_shortner/</link>
-    
+      <guid>https://classroom.anir0y.in/post/bitly_url_shortner/</guid>
+      <description>using BITLY URL API create your own URL shortner Script using Python.</description>
     </item>
-   
-      
-    
     <item>
       <title>BLOG | Shorten URL using TinyURL API</title>
+      <link>https://classroom.anir0y.in/post/tinyurl/</link>
       <pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inimg/tinyURL.png" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
-&lt;p&gt;this is unsuall post on how to create short urls. in this post I&amp;rsquo;ll be usng tiny.url APIs.&lt;/p&gt;
-&lt;h2 id=&#34;get-the-api-from-tinyurlcom&#34;&gt;get the API from tinyurl.com&lt;/h2&gt;
-&lt;p&gt;signup to &lt;code&gt;tinyurl.com&lt;/code&gt; and login to the dashboard, then click on &lt;code&gt;API&lt;/code&gt; section and click on create API&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/FYBKFo5.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;now you&amp;rsquo;ll have a API key!!!&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;optional-setup-custom-domain-free&#34;&gt;[optional] setup custom domain (FREE)&lt;/h2&gt;
-&lt;p&gt;click on branded domain setting, and create a domain, ref to image:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/fBpKa1l.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;automation-time&#34;&gt;Automation time&lt;/h2&gt;
-&lt;p&gt;Now, we have everything we need. so let&amp;rsquo;s download the script and add our &lt;code&gt;token&lt;/code&gt; and &lt;code&gt;branded domain&lt;/code&gt; name and call it a day.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.inimg/tinyURL.png"></enclosure>
-      <link>http://localhost:1313/post/tinyurl/</link>
-    
+      <guid>https://classroom.anir0y.in/post/tinyurl/</guid>
+      <description>using TINY URL API create your own URL shortner Script using Python</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

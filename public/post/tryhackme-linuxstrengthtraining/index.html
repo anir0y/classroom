@@ -1,417 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>TryHackMe Linux Strength Training | Classroom</title>
-
-    
-<link href="/img/avatar.jpeg" rel="shortcut icon" type="image/x-icon" />
-
-
-
-
-
-<meta name="author" content="Animesh Roy @anir0y  "  />
-<meta name="description" content="TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills..." />
-
-
-
-<title>Animesh Roy | Classroom Posts</title>
-<meta name="title" content="Animesh Roy | Blogs & Writeups">
-<meta name="description" content="Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community. He also running a community “Arishti Live” to help everyone who wants to, or work in cyber security domain. His expertise on training & consulting are the best of both the world. He uses his real-life case studies in trainings, to help candidates to understand the job in better ways.">
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPD6BXK0P5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SPD6BXK0P5');
-</script>
-
-
-
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "it10lq8bk1");
-</script>
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://classroom.anir0y.in/">
-<meta property="og:title" content="Animesh Roy | Blogs & Writeups">
-<meta property="og:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
-<meta property="og:image" content="https://i.imgur.com/Ji5C41H.png">
-
-
-<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/88cd00f83ae38d0239d06996b1ad293a.js"></script>
-
-
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://localhost:1313/post/tryhackme-linuxstrengthtraining/">
-
-<meta property="twitter:title" content="Animesh Roy | Blogs & Writeups">
-<meta property="twitter:description" content="This blog contents writeups from CTFs and other infosec related posts also some task related to Classroom training">
-<meta property="twitter:image" content="https://i.imgur.com/Ji5C41H.png">
-
-
-
-
-
-
-
-<script data-ad-client="ca-pub-3526678290068011" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-
-
-
-<link rel="canonical" href="http://localhost:1313/post/tryhackme-linuxstrengthtraining/" />
-
-
-<meta property="og:url" content="http://localhost:1313/post/tryhackme-linuxstrengthtraining/">
-  <meta property="og:site_name" content="Classroom">
-  <meta property="og:title" content="TryHackMe Linux Strength Training">
-  <meta property="og:description" content="TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills...">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2021-08-03T07:41:10+05:30">
-    <meta property="article:modified_time" content="2021-08-03T07:41:10+05:30">
-    <meta property="article:tag" content="Tryhackme">
-    <meta property="article:tag" content="Rooms">
-    <meta property="article:tag" content="Thm">
-
-
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="TryHackMe Linux Strength Training">
-  <meta name="twitter:description" content="TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills...">
-
-
-<link rel="stylesheet" href="/css/semantic.min.css" />
-<link rel="stylesheet" href="/css/icomoon.css" />
-<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/css/github-markdown.css" />
-<link rel="stylesheet" href="/css/site.css" />
-<link rel="stylesheet" href="/css/custom.css" />
-
-<style>
-  a:not(.ui.button):hover {
-    text-decoration: underline;
-  }
-
-  
-  a:not(.ui.button) {
-    color: seagreen !important;
-  }
-  
-
-  
-  .inverted a:not(.ui.button),
-  .inverted a:not(.ui.button):hover {
-     color: darkseagreen !important;
-  }
-  
-
-  
-  body.default {
-    
-    background-color: #fff;
-    
-
-    
-  }
-  
-
-  
-  body.dark {
-    
-    background-color: black;
-    
-
-    
-  }
-  
-</style>
-
-
-    
-
-
-
-<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
-
-
-
-
-
-
-
-    
-    <link rel="stylesheet" href="/css/custom.css" />
-    
-  </head>
-
-  <body class="default">
-    
-<nav class="ui secondary menu dream-menu">
-
-  <div class="item">
-    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
-  </div>
-  <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/localhost:1313\/'"></i>
-  </div>
-  
-  <div class="item">
-    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
-  </div>
-  
-  
-  <div class="item">
-    <i class="large link search icon" onclick="toggleSearch()"></i>
-  </div>
-  
-</nav>
-
-    <div class="flip-container">
-      <div class="flipper">
-        <section class="front">
-          <div class="dream-max-width">
-            
-<div class="ui relaxed grid dream-grid dream-grid-single"style="flex-direction: row-reverse;">
-  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
-    
-    
-    <div class="ui segment toc">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#overview">OverView</a></li>
-    <li><a href="#task-01--intro">Task 01:  Intro</a></li>
-    <li><a href="#task-02-finding-your-way-around-linux---overview">Task 02: Finding your way around linux - overview</a>
-      <ul>
-        <li><a href="#22-what-is-the-correct-option-for-finding-files-based-on-group">2.2 What is the correct option for finding files based on group</a></li>
-        <li><a href="#23-what-is-format-for-finding-a-file-with-the-user-named-francis-and-with-a-size-of-52-kilobytes-in-the-directory-homefrancis">2.3 What is format for finding a file with the user named Francis and with a size of 52 kilobytes in the directory /home/francis/</a></li>
-        <li><a href="#24-ssh-as-topson-using-his-password-topson-go-to-the-hometopsonchatlogs-directory-and-type-the-following-grep--irl-keyword-what-is-the-name-of-the-file-that-you-found-using-this-command">2.4 SSH as topson using his password topson. Go to the /home/topson/chatlogs directory and type the following: grep -iRl &lsquo;keyword&rsquo;. What is the name of the file that you found using this command?</a></li>
-        <li><a href="#26-what-are-the-characters-subsequent-to-the-word-you-found">2.6 What are the characters subsequent to the word you found?</a></li>
-        <li><a href="#27-read-the-file-named-readmeifstucktxt-what-is-the-flag">2.7 Read the file named &lsquo;ReadMeIfStuck.txt&rsquo;. What is the Flag?</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-03-working-with-files">Task 03: Working with files</a>
-      <ul>
-        <li><a href="#31-hypothetically-you-find-yourself-in-a-directory-with-many-files-and-want-to-move-all-these-files-to-the-directory-of-homefrancislogs-what-is-the-correct-command-to-do-this">3.1 Hypothetically, you find yourself in a directory with many files and want to move all these files to the directory of /home/francis/logs. What is the correct command to do this?</a></li>
-        <li><a href="#32-hypothetically-you-want-to-transfer-a-file-from-your-homejamesdesktop-with-the-name-scriptpy-to-the-remote-machine-192168105-directory-of-homejohnscripts-using-the-username-of-john-what-would-be-the-full-command-to-do-this">3.2 Hypothetically, you want to transfer a file from your /home/james/Desktop/ with the name script.py to the remote machine (192.168.10.5) directory of /home/john/scripts using the username of john. What would be the full command to do this?</a></li>
-        <li><a href="#33-how-would-you-rename-a-folder-named--logs-to--newlogs">3.3 How would you rename a folder named -logs to -newlogs</a></li>
-        <li><a href="#34-how-would-you-copy-the-file-named-encryption-keys-to-the-directory-of-homejohnlogs">3.4 How would you copy the file named encryption keys to the directory of /home/john/logs</a></li>
-        <li><a href="#35-find-a-file-named-readme_hinttxt-inside-topsons-directory-and-read-it-using-the-instructions-it-gives-you-get-the-second-flag">3.5 Find a file named readME_hint.txt inside topson&rsquo;s directory and read it. Using the instructions it gives you, get the second flag.</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-04--hashing---introduction">Task 04:  Hashing - introduction</a>
-      <ul>
-        <li><a href="#41-download-the-hash-file-attached-to-this-task-and-attempt-to-crack-the-md5-hash-what-is-the-password">4.1 Download the hash file attached to this task and attempt to crack the MD5 hash. What is the password?</a></li>
-        <li><a href="#42-what-is-the-hash-type-stored-in-the-file-hashatxt">4.2 What is the hash type stored in the file hashA.txt</a></li>
-        <li><a href="#43-crack-hashatxt-using-john-the-ripper-what-is-the-password">4.3 Crack hashA.txt using john the ripper, what is the password?</a></li>
-        <li><a href="#44-what-is-the-hash-type-stored-in-the-file-hashbtxt">4.4 What is the hash type stored in the file hashB.txt</a></li>
-        <li><a href="#45-find-a-wordlist--with-the-file-extention-of-mnf-and-use-it-to-crack-the-hash-with-the-filename-hashctxt-what-is-the-password">4.5 Find a wordlist  with the file extention of &lsquo;.mnf&rsquo; and use it to crack the hash with the filename hashC.txt. What is the password?</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-05-decoding-base64">task 05: Decoding base64</a>
-      <ul>
-        <li><a href="#51-what-is-the-name-of-the-tool-which-allows-us-to-decode-base64-strings">5.1 what is the name of the tool which allows us to decode base64 strings?</a></li>
-        <li><a href="#52-find-a-file-called-encodedtxt-what-is-the-special-answer">5.2 find a file called encoded.txt. What is the special answer?</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-06-encryptiondecryption-using-gpg">Task 06: Encryption/Decryption using gpg</a>
-      <ul>
-        <li><a href="#62-you-wish-to-encrypt-a-file-called-history_logstxt-using-the-aes-128-scheme-what-is-the-full-command-to-do-this">6.2 You wish to encrypt a file called history_logs.txt using the AES-128 scheme. What is the full command to do this?</a></li>
-        <li><a href="#63-what-is-the-command-to-decrypt-the-file-you-just-encrypted">6.3 What is the command to decrypt the file you just encrypted?</a></li>
-        <li><a href="#64-find-an-encrypted-file-called-layer4txt-its-password-is-bob-use-this-to-locate-the-flag-what-is-the-flag">6.4 Find an encrypted file called layer4.txt, its password is bob. Use this to locate the flag. What is the flag?</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-07-cracking-encrypted-gpg-files">Task 07: Cracking encrypted gpg files</a>
-      <ul>
-        <li><a href="#72">7.2</a></li>
-        <li><a href="#73">7.3</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-08-reading-sql-databases">Task 08: Reading SQL databases</a>
-      <ul>
-        <li><a href="#81">8.1</a></li>
-      </ul>
-    </li>
-    <li><a href="#task-09-final-challenge">Task 09: Final Challenge</a>
-      <ul>
-        <li><a href="#91">9.1</a></li>
-        <li><a href="#92">9.2</a></li>
-        <li><a href="#93">9.3</a></li>
-        <li><a href="#94">9.4</a></li>
-        <li><a href="#95">9.5</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-    
-    <div class="ui segment actions">
-      <button
-        class="ui circular icon button save-as-image"
-        title="Save as image"
-        onclick="savePostAsImg()">
-        <i class="save icon"></i>
-      </button>
-
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Linux%20Strength%20Training&url=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-linuxstrengthtraining%2f" class="ui circular twitter icon button">
-  <i class="twitter icon"></i>
-</a>
-<a href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2ftryhackme-linuxstrengthtraining%2f" class="ui circular facebook icon button">
-  <i class="facebook icon"></i>
-</a>
-
-    </div>
-  </aside>
-  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
-    
-    <section class="ui top attached segment">
-      <header>
-        <h1 class="ui large header">TryHackMe Linux Strength Training<div class="sub header">
-            @
-            
-              
-                <a href="https://bit.ly/34sGFiK" target="_blank">Animesh Roy</a>
-              
-            
-
-            | 
-                Tuesday, Aug 3, 2021
-              
-
-            | 14 minutes read
-
-            | Update at
-              
-                Tuesday, Aug 3, 2021
-              
-          </div>
-        </h1>
-      </header>
-
-      <article class="main"><h2 id="overview">OverView</h2>
-<table>
-  <thead>
-      <tr>
-          <th></th>
-          <th></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><script src="https://tryhackme.com/badge/434937"></script></td>
-          <td><a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a></td>
-      </tr>
-      <tr>
-          <td>Linux Strength Training</td>
-          <td><img src="https://tryhackme-images.s3.amazonaws.com/room-icons/b4f28a92c7d33f8460d896653cf5d428.png" alt="logo"></td>
-      </tr>
-      <tr>
-          <td><b> Room [Subscription Required] </b></td>
-          <td><a href="https://tryhackme.com/room/linuxstrengthtraining">Linux Strength Training</a></td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="task-01--intro">Task 01:  Intro</h2>
-<p>This room is intended to further the understanding of basic Linux command line skills for beginners.</p>
-<hr>
-<h2 id="task-02-finding-your-way-around-linux---overview">Task 02: Finding your way around linux - overview</h2>
-<p>As a security researcher you will often be required to find specific files/folders on a system based on various conditions ranging from, but not limited to the following:</p>
-<ul>
-<li>size</li>
-<li>filename</li>
-<li>user/group</li>
-<li>date modified</li>
-<li>date accessed</li>
-<li>Its keyword contents</li>
-</ul>
-<p>Therefore, we can do this using the following syntax:</p>
-<table>
-  <thead>
-      <tr>
-          <th>What we can do</th>
-          <th>Syntax</th>
-          <th>Real example of syntax</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Find files based on filename</td>
-          <td>find [directory path] -type f -name [filename]</td>
-          <td>find /home/Andy -type f -name sales.txt</td>
-      </tr>
-      <tr>
-          <td>Find Directory based on directory name</td>
-          <td>find [directory path] -type d -name [filename]</td>
-          <td>find /home/Andy -type d -name pictures</td>
-      </tr>
-      <tr>
-          <td>Find files based on size</td>
-          <td>find [directory path] -type f -size [size]</td>
-          <td>find /home/Andy -type f -size 10c <br> (c for bytes <br> k for kilobytes <br> M megabytes <br> G for gigabytes <br> type:&lsquo;man find&rsquo; for full information on the  options)</td>
-      </tr>
-      <tr>
-          <td>Find files based on username</td>
-          <td>find [directory path] -type f -user [username]</td>
-          <td>find /etc/server -type f -user john</td>
-      </tr>
-      <tr>
-          <td>Find files based on group name</td>
-          <td>find [directory path] -type f -group [group name]</td>
-          <td>find /etc/server -type f -group teamstar</td>
-      </tr>
-      <tr>
-          <td>Find files modified after a specific date</td>
-          <td>find [directory path] -type f -newermt &lsquo;[date and time]&rsquo;</td>
-          <td>find / -type f -newermt &lsquo;6/30/2020 0:00:00&rsquo; <br> (all dates/times after 6/30/2020 0:00:00 will be considered a condition to look for)</td>
-      </tr>
-      <tr>
-          <td>Find files based on date modified</td>
-          <td>find [directory path] -type f -newermt [start date range] ! -newermt [end date range]</td>
-          <td>find / -type f -newermt 2013-09-12 ! -newermt 2013-09-14 <br> (all dates before 2013-09-12 will be excluded; all dates after 2013-09-14 will be excluded, therefore this only leaves 2013-09-13 as the date to look for.)</td>
-      </tr>
-      <tr>
-          <td>Find files with a specific keyword</td>
-          <td>grep -iRl [directory path/keyword]</td>
-          <td>grep -iRl &lsquo;/folderA/flag&rsquo;</td>
-      </tr>
-      <tr>
-          <td>read the manual for the find command</td>
-          <td>man find</td>
-          <td>man find</td>
-      </tr>
-  </tbody>
-</table>
-<p><strong>Note</strong>: There are many more useful commands aside from the examples above. If you ever have trouble understanding any of the syntax or getting it to work, head on over to <a href="explainshell.com">explainshell.com</a> to check the syntax and see how this tool can help you on your journey to Linux greatness.</p>
-<p><strong>Further notes</strong>: if you do not know already, typing CTRL+L allows you to clear the screen quicker rather than typing &lsquo;clear&rsquo; all the time. Additionally, hitting the up arrow allows you to return to a previously typed command so you do not have to spend time retyping it again if you made an error. Cool. Finally, placing: 2&gt;/dev/null at the end of your find command can help filter your results to exclude files/directories that you do not have permission to.</p>
-<h3 id="22-what-is-the-correct-option-for-finding-files-based-on-group">2.2 What is the correct option for finding files based on group</h3>
-<p><code>-group</code></p>
-<h3 id="23-what-is-format-for-finding-a-file-with-the-user-named-francis-and-with-a-size-of-52-kilobytes-in-the-directory-homefrancis">2.3 What is format for finding a file with the user named Francis and with a size of 52 kilobytes in the directory /home/francis/</h3>
-<p><code>find /home/francis/ -type f -user Francis -size 52k</code></p>
-<h3 id="24-ssh-as-topson-using-his-password-topson-go-to-the-hometopsonchatlogs-directory-and-type-the-following-grep--irl-keyword-what-is-the-name-of-the-file-that-you-found-using-this-command">2.4 SSH as topson using his password topson. Go to the /home/topson/chatlogs directory and type the following: grep -iRl &lsquo;keyword&rsquo;. What is the name of the file that you found using this command?</h3>
-<p><code>2019-10-11</code></p>
-<h3 id="26-what-are-the-characters-subsequent-to-the-word-you-found">2.6 What are the characters subsequent to the word you found?</h3>
-<p><code>ttitor</code></p>
-<p><img src="https://i.imgur.com/rRrGluz.png" alt="img"></p>
-<h3 id="27-read-the-file-named-readmeifstucktxt-what-is-the-flag">2.7 Read the file named &lsquo;ReadMeIfStuck.txt&rsquo;. What is the Flag?</h3>
-<ul>
-<li>
-<p>read the &lsquo;ReadMeIfStuck.txt&rsquo; file:</p>
-<pre tabindex="0"><code class="language-cat" data-lang="cat">topson@james:~$ cat ReadMeIfStuck.txt 
+<!doctype html><html lang=en dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>TryHackMe Linux Strength Training | Classroom</title><meta name=keywords content="tryhackme,rooms,thm"><meta name=description content="TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills..."><meta name=author content="Animesh Roy"><link rel=canonical href=https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/><link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=icon type=image/png sizes=16x16 href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=icon type=image/png sizes=32x32 href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=apple-touch-icon href=https://classroom.anir0y.in/img/avatar.jpeg><link rel=mask-icon href=https://classroom.anir0y.in/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/"><meta property="og:site_name" content="Classroom"><meta property="og:title" content="TryHackMe Linux Strength Training"><meta property="og:description" content="TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills..."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-08-03T07:41:10+05:30"><meta property="article:modified_time" content="2021-08-03T07:41:10+05:30"><meta property="article:tag" content="Tryhackme"><meta property="article:tag" content="Rooms"><meta property="article:tag" content="Thm"><meta property="og:image" content="https://classroom.anir0y.in/img/thm.gif"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://classroom.anir0y.in/img/thm.gif"><meta name=twitter:title content="TryHackMe Linux Strength Training"><meta name=twitter:description content="TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills..."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://classroom.anir0y.in/post/"},{"@type":"ListItem","position":2,"name":"TryHackMe Linux Strength Training","item":"https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"TryHackMe Linux Strength Training","name":"TryHackMe Linux Strength Training","description":"TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills...","keywords":["tryhackme","rooms","thm"],"articleBody":"OverView Follow @anir0y Linux Strength Training Room [Subscription Required] Linux Strength Training Task 01: Intro This room is intended to further the understanding of basic Linux command line skills for beginners.\nTask 02: Finding your way around linux - overview As a security researcher you will often be required to find specific files/folders on a system based on various conditions ranging from, but not limited to the following:\nsize filename user/group date modified date accessed Its keyword contents Therefore, we can do this using the following syntax:\nWhat we can do Syntax Real example of syntax Find files based on filename find [directory path] -type f -name [filename] find /home/Andy -type f -name sales.txt Find Directory based on directory name find [directory path] -type d -name [filename] find /home/Andy -type d -name pictures Find files based on size find [directory path] -type f -size [size] find /home/Andy -type f -size 10c (c for bytes k for kilobytes M megabytes G for gigabytes type:‘man find’ for full information on the options) Find files based on username find [directory path] -type f -user [username] find /etc/server -type f -user john Find files based on group name find [directory path] -type f -group [group name] find /etc/server -type f -group teamstar Find files modified after a specific date find [directory path] -type f -newermt ‘[date and time]’ find / -type f -newermt ‘6/30/2020 0:00:00’ (all dates/times after 6/30/2020 0:00:00 will be considered a condition to look for) Find files based on date modified find [directory path] -type f -newermt [start date range] ! -newermt [end date range] find / -type f -newermt 2013-09-12 ! -newermt 2013-09-14 (all dates before 2013-09-12 will be excluded; all dates after 2013-09-14 will be excluded, therefore this only leaves 2013-09-13 as the date to look for.) Find files with a specific keyword grep -iRl [directory path/keyword] grep -iRl ‘/folderA/flag’ read the manual for the find command man find man find Note: There are many more useful commands aside from the examples above. If you ever have trouble understanding any of the syntax or getting it to work, head on over to explainshell.com to check the syntax and see how this tool can help you on your journey to Linux greatness.\nFurther notes: if you do not know already, typing CTRL+L allows you to clear the screen quicker rather than typing ‘clear’ all the time. Additionally, hitting the up arrow allows you to return to a previously typed command so you do not have to spend time retyping it again if you made an error. Cool. Finally, placing: 2\u003e/dev/null at the end of your find command can help filter your results to exclude files/directories that you do not have permission to.\n2.2 What is the correct option for finding files based on group -group\n2.3 What is format for finding a file with the user named Francis and with a size of 52 kilobytes in the directory /home/francis/ find /home/francis/ -type f -user Francis -size 52k\n2.4 SSH as topson using his password topson. Go to the /home/topson/chatlogs directory and type the following: grep -iRl ‘keyword’. What is the name of the file that you found using this command? 2019-10-11\n2.6 What are the characters subsequent to the word you found? ttitor\n2.7 Read the file named ‘ReadMeIfStuck.txt’. What is the Flag? read the ‘ReadMeIfStuck.txt’ file:\ntopson@james:~$ cat ReadMeIfStuck.txt Looking for flag 1?:It seems you will have to think harder if you want to find the flag. Perhaps try looking for a file called `additionalHINT` if you can't find it.. Looking for flag 2?: look for a file named readME_hint.txt # stage 2 topson@james:~$ find . -type f -name additionalHINT ./channels/additionalHINT ## read the file topson@james:~$ cat ./channels/additionalHINT try to find a directory called telephone numbers... Oh wait.. it contains a space.. I wonder how we can find that.... # stage 3 topson@james:~$ find . -type d -name 'telephone numbers' ./corperateFiles/xch/telephone numbers topson@james:~$ ls -lhA './corperateFiles/xch/telephone numbers' total 4.0K -rw-r--r-- 1 topson topson 189 Oct 5 15:26 readME.txt topson@james:~$ cat './corperateFiles/xch/telephone numbers/readME.txt' 202-555-0150 202-555-0125 617-555-0115 +1-617-555-0115 +1-617-555-0186 +1-617-555-0138 use the Find command to find a file with a modified date of 2016-09-12 from the /workflows directory topson@james:~$ find workflows/ -type f -newermt 2016-09-11 ! -newermt 2016-09-13 workflows/xft/eBQRhHvx grep -oi '\\S*flag\\S*' workflows/xft/eBQRhHvx Flag{flag-was-here} NOTE:\n\\S is a regexp token to match any non-whitespace character -i to make case insensitive search -o to display only matching content Task 03: Working with files You should be somewhat familiar already with working with files. Similar to windows, we can do the following:\ncopy files and folders move files and folders rename files and folders create files and folders For a quick recap to train your mental memory on the commands please refer to the below information:\nA few additional things to remember is that occasionally you may encounter files/folders with special characters such as - (dash). Just remember that if you try to copy or move these files you will encounter errors because Linux interprets the - as a type of argument, therefore you will have to place – just before the filename. For example: cp – -filename.txt /home/folderExample.\n3.1 Hypothetically, you find yourself in a directory with many files and want to move all these files to the directory of /home/francis/logs. What is the correct command to do this? mv * /home/francis/logs\n3.2 Hypothetically, you want to transfer a file from your /home/james/Desktop/ with the name script.py to the remote machine (192.168.10.5) directory of /home/john/scripts using the username of john. What would be the full command to do this? scp /home/james/Desktop/script.py john@192.168.10.5:/home/john/scripts\n3.3 How would you rename a folder named -logs to -newlogs mv -- -logs -newlogs\n3.4 How would you copy the file named encryption keys to the directory of /home/john/logs cp encryption keys /home/john/logs\n3.5 Find a file named readME_hint.txt inside topson’s directory and read it. Using the instructions it gives you, get the second flag. let’s read the 2nd flag\n# find `readME_hint.txt` topson@james:~$ find . -type f -name readME_hint.txt ./corperateFiles/RecordsFinances/readME_hint.txt #read the file topson@james:~$ cat ./corperateFiles/RecordsFinances/readME_hint.txt Instructions: Move the MoveMe.txt file to the march folder directory and then execute the SH program to reveal the second flag. you need to research three things: how to execute bash files how to work with files that begin with a - (dash) whether that is to do with copying or moving files how to work with files with spaces ### follow the instructions for flag2 topson@james:~/corperateFiles/RecordsFinances$ mv -- -MoveMe.txt '-march folder' topson@james:~/corperateFiles/RecordsFinances$ cd -- '-march folder' topson@james:~/corperateFiles/RecordsFinances/-march folder$ bash -- -runME.sh -MoveMe.txt exists. Flag{flag-was-here} Task 04: Hashing - introduction 4.1 Download the hash file attached to this task and attempt to crack the MD5 hash. What is the password? download the file, read the hash\ncat hash1.txt 5d7845ac6ee7cfffafc5fe5f35cf666d #using online hash crackers plain text is: secret123 SSH as sarah using: sarah@[MACHINE_IP] and use the password: rainbowtree1230x\n4.2 What is the hash type stored in the file hashA.txt steps\nsarah@james:~$ ls example.txt logs oldLogs 'system AB' 'linuxconf backup' logs33 serverLx 'system mx' sarah@james:~$ find . -type f -name hashA.txt ./system AB/server_mail/server settings/hashA.txt sarah@james:~$ cat ./system\\ AB/server_mail/server\\ settings/hashA.txt f9d4049dd6a4dc35d40e5265954b2a46 hashid f9d4049dd6a4dc35d40e5265954b2a46 Analyzing 'f9d4049dd6a4dc35d40e5265954b2a46' [+] MD2 [+] MD5 [+] MD4 [ans is one of them] 4.3 Crack hashA.txt using john the ripper, what is the password? admin 4.4 What is the hash type stored in the file hashB.txt follow the steps:\n#find the file sarah@james:~$ find . -type f -name hashB.txt ./oldLogs/settings/craft/hashB.txt # read the file sarah@james:~$ cat ./oldLogs/settings/craft/hashB.txt b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3 # id the hash hashid b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3 Analyzing 'b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3 [ans-was-here] 4.5 Find a wordlist with the file extention of ‘.mnf’ and use it to crack the hash with the filename hashC.txt. What is the password? follow instructions\nfind the wordlist sarah@james:~$ find . -type f -name *.mnf ./system AB/db/ww.mnf #copy it to local machine scp sarah@[MACHINE_IP]:'~/system\\ AB/db/ww.mnf' . # find the hashC.txt sarah@james:~$ find . -type f -name hashC.txt ./system AB/server_mail/hashC.txt # save the hash and get cracking task 05: Decoding base64 5.1 what is the name of the tool which allows us to decode base64 strings? base64 # linux utility\n5.2 find a file called encoded.txt. What is the special answer? follow the steps\n#find the file sarah@james:~$ find . -type f -name encoded.txt ./system AB/managed/encoded.txt # Decode the file and look for the spacial word: sarah@james:~$ base64 -d '/home/sarah/system AB/managed/encoded.txt' | grep --color special you know how to decode base64 data, well done. you deserve the answer but because this is the linux strength training room where you are intended to build your linux memory and skills, you will have to find it in this very long text file. Look for the keyword: 'special' in this very large text file. Nullam nibh diam, gravida vestibulum mi sed, consectetur tincidunt nunc. Morbi pharetra turpis nec ligula pellentesque lobortis. Aenean sit amet ullamcorper turpis. Nam id magna sed felis facilisis accumsan. Aliquam cursus dolor eu enim maximus, eu malesuada sapien dignissim. Suspendisse ultrices condimentum nisi et pellentesque. Fusce ornare aliquet quam, eu efficitur elit facilisis et. Donec special: `the answer is in a file called ent.txt`, find it sagittis dolor nulla, interdum auctor tortor accumsan et. Aliquam vitae egestas dui, ut condimentum magna. Vestibulum tellus lacus, sollicitudin vitae dui sed, bibendum fermentum lacus. Mauris diam leo, efficitur at mi iaculis, sagittis hendrerit justo. Vivamus ante odio, cursus id tristique vitae, dapibus id eros. Quisque vitae mauris massa. Phasellus ut lectus efficitur, vulputate leo et, facilisis metus. Nulla volutpat nulla sem, vel vestibulum libero ultricies eu. Nam pulvinar tincidunt metus et accumsan. # Now we need to find ent.txt: sarah@james:~$ find /home/sarah -type f -name ent.txt 2\u003e/dev/null /home/sarah/logs/zhc/ent.txt sarah@james:~$ cat /home/sarah/logs/zhc/ent.txt bfddc35c8f9c989545119988f79ccc77 # crack the hash Task 06: Encryption/Decryption using gpg 6.2 You wish to encrypt a file called history_logs.txt using the AES-128 scheme. What is the full command to do this? gpg --cipher-algo AES-128 --symmetric history_logs.txt\n6.3 What is the command to decrypt the file you just encrypted? gpg history_logs.txt.gpg\n6.4 Find an encrypted file called layer4.txt, its password is bob. Use this to locate the flag. What is the flag? steps\nfind the file `layer4.txt` sarah@james:~$ find . -type f -name layer4.txt ./system AB/keys/vnmA/layer4.txt decrypt it:\ngpg './system AB/keys/vnmA/layer4.txt' gpg: ./system AB/keys/vnmA/layer4.txt: unknown suffix Enter new filename [layer4.txt]: decrypted-l4 # read decrypted file sarah@james:~$ cat decrypted-l4 1. Find a file called layer3.txt, its password is james. find \u0026 decrypt layer3.txt\nsarah@james:~$ find . -type f -name layer3.txt ./oldLogs/2014-02-15/layer3.txt sarah@james:~$ gpg './oldLogs/2014-02-15/layer3.txt' gpg: WARNING: no command supplied. Trying to guess what you mean ... gpg: AES256 encrypted data gpg: encrypted with 1 passphrase gpg: ./oldLogs/2014-02-15/layer3.txt: unknown suffix Enter new filename [layer3.txt]: decrypted-l3.txt sarah@james:~$ cat decrypted-l3.txt 1. Find a file called layer2.txt, its password is tony. find \u0026 decrypt layer2.txt\nsarah@james:~$ find . -type f -name layer2.txt ./oldLogs/settings/layer2.txt sarah@james:~$ gpg './oldLogs/settings/layer2.txt' gpg: WARNING: no command supplied. Trying to guess what you mean ... gpg: AES256 encrypted data gpg: encrypted with 1 passphrase gpg: ./oldLogs/settings/layer2.txt: unknown suffix Enter new filename [layer2.txt]: decrytpd-l2.txt sarah@james:~$ cat decrytpd-l2.txt MS4gRmluZCBhIGZpbGUgY2FsbGVkIGxheWVyMS50eHQsIGl0cyBwYXNzd29yZCBpcyBoYWNrZWQu sarah@james:~$ cat decrytpd-l2.txt | base64 -d 1. Find a file called layer1.txt, its password is hacked. find \u0026 decrypt layer1.txt\nsarah@james:~$ find . -type f -name layer1.txt ./logs/zmn/layer1.txt sarah@james:~$ gpg './logs/zmn/layer1.txt' gpg: WARNING: no command supplied. Trying to guess what you mean ... gpg: AES256 encrypted data gpg: encrypted with 1 passphrase gpg: ./logs/zmn/layer1.txt: unknown suffix Enter new filename [layer1.txt]: d-l1.txt sarah@james:~$ cat d-l1.txt Flag{flag-was-here} Task 07: Cracking encrypted gpg files 7.2 Find an encrypted file called personal.txt.gpg and find a wordlist called data.txt. Use tac to reverse the wordlist before brute-forcing it against the encrypted file. What is the password to the encrypted file?\nsteps\nsarah@james:~$ find /home/sarah -type f -name personal.txt.gpg 2\u003e/dev/null /home/sarah/oldLogs/units/personal.txt.gpg sarah@james:~$ find /home/sarah -type f -name data.txt 2\u003e/dev/null /home/sarah/logs/zmn/old stuff/-mvLp/data.txt sarah@james:~$ tac '/home/sarah/logs/zmn/old stuff/-mvLp/data.txt' \u003e wordrev.txt $ john /home/sarah/oldLogs/units/personal.txt.gpg -w wordrev.txt --format gpg ... valamanezivonia 7.3 What is written in this now decrypted file?\nsteps\nsarah@james:~$ gpg /home/sarah/oldLogs/units/personal.txt.gpg sarah@james:~$ cat /home/sarah/oldLogs/units/personal.txt getting stronger in linux Task 08: Reading SQL databases 8.1 Find a file called employees.sql and read the SQL database. (Sarah and Sameer can log both into mysql using the password: password). Find the flag contained in one of the tables. What is the flag?\nsteps\nsarah@james:~$ find /home/sarah -type f -name employees.sql 2\u003e/dev/null /home/sarah/serverLx/employees.sql sarah@james:~$ cd /home/sarah/serverLx/ sarah@james:~$ mysql -p mysql\u003e source /home/sarah/serverLx/employees.sql mysql\u003e SELECT * FROM employees WHERE first_name = 'Lobel' and last_name LIKE '%Flag%'; +--------+------------+------------+----------------+--------+------------+ | emp_no | birth_date | first_name | last_name | gender | hire_date | +--------+------------+------------+----------------+--------+------------+ | 499973 | 1963-06-03 | Lobel | Flag{flag-was-here} | M | 1994-02-01 | +--------+------------+------------+----------------+--------+------------+ 1 row in set (0.07 sec) Task 09: Final Challenge 9.1 9.2 What is Sameer’s SSH password?\nHint: You may need to use grep to find keywords based on what you would expect the next chat log to include? Perhaps names?\nFind files including Sameer:\nsarah@james:~$ grep -iRl Sameer /home 2\u003e/dev/null /home/shared/chatlogs/Pqmr /home/shared/chatlogs/LpnQ /home/shared/chatlogs/KfnP read the files: [here I’m sharing the releavent one]\nsarah@james:~$ cat /home/shared/chatlogs/Pqmr (2020-08-13) Sarah: Hey Sameer, do you by any chance no where I can find the sql back-up copy on this system? The database server is down, and I really need to help a customer out. (2020-08-13) Sameer: Sure. let me check. (2020-08-13) Sarah: Thanks. (2020-08-13) Sameer: check the home/shared/sql/ directory. It should be in there with the date of today. (2020-08-13) Sarah: Thank you Sameer. (2020-08-13) Sameer: No problem. It probably is encrypted. Just use the password: `danepon`. (2020-08-13) Sarah: OK, thank you. (2020-08-13) Sameer: No problem (2020-08-13) Sameer: By the way, if you have any issues just talk to Michael as I will be off for the remainder of the day. See you tomorrow. Bye. (2020-08-13) Sarah: Bye. SQL backup should be in /home/shared/sql/ and encrypted with the password danepon.\nsarah@james:~$ cat /home/shared/chatlogs/KfnP (2020-08-13) Sarah: Michael, I have been having trouble accessing the sql database back-up copy made today. Sameer gave me the password, but it just will not work? (2020-08-13) Michael: Ah, yes. I remember, the security engineer was testing out a new automated software for creating sql database backups. He must have configured it to encrypt the backups with a different password. (2020-08-13) Sarah: So how can I get a hold of it? (2020-08-13) Michael: Good question. From what I remember the test program utilised a configuration file around 50mb. It is located inside the home/shared/sql/conf directory. This configuration file contained the directory location of a wordlist it used to randomly select a password from for encrypting the sql back-up copies with. (2020-08-13) Sarah: I do not really understand the last part? (2020-08-13) Michael: once you find the configuration file and consequently the wordlist directory, visit it. One of those wordlists must contain the password it used for the testing. All I remember is that the password began with ebq. You will need Sameer’s account. His SSH password is: `thegreatestpasswordever000`. (2020-08-13) Sarah: Thank you, I will try to find it. notes:\npassword of /home/shared/sql/2020-08-13.zip.gpg is not danepon the config file is in /home/shared/sql/conf and is about 50mb the config file contains the wordlist directory the SQL backup password start with ebq Sameer’s SSH password: thegreatestpasswordever000 9.3 What is the password for the sql database back-up copy\nFind the config file:\nsameer@james:~$ find /home/shared/sql/ -type f -size 50M /home/shared/sql/conf/JKpN sameer@james:~$ head /home/shared/sql/conf/JKpN Software: sql auto-back-up Version: 2.3 Wordlist directory: aG9tZS9zYW1lZXIvSGlzdG9yeSBMQi9sYWJtaW5kL2xhdGVzdEJ1aWxkL2NvbmZpZ0JEQgo= sql-encrypt: true time: 2h* user: none wordlist dir:\nsameer@james:~$ printf %s aG9tZS9zYW1lZXIvSGlzdG9yeSBMQi9sYWJtaW5kL2xhdGVzdEJ1aWxkL2NvbmZpZ0JEQgo= | base64 -d home/sameer/History LB/labmind/latestBuild/configBD There is a mistake here, the last folder is configBDB and not configBD.\nThere 3 files with such passwords starting with ebq:\nsameer@james:~$ grep -iRlE '^ebq' '/home/sameer/History LB/labmind/latestBuild/configBDB' /home/sameer/History LB/labmind/latestBuild/configBDB/pLmjwi /home/sameer/History LB/labmind/latestBuild/configBDB/LmqAQl /home/sameer/History LB/labmind/latestBuild/configBDB/Ulpsmt Show only the passwords:\nsameer@james:~$ grep -iRhE '^ebq' '/home/sameer/History LB/labmind/latestBuild/configBDB' ebqiojsdfioj ebqiojsiodj ebqiojdifoj ebqiopsjdfopj ebqnice ebqops ebqiuiud ebqjoisjdfij ebqkjjdd ebqijsji ebqopkopk ebqattle Let’s download the encrypted SQL backup:\n$ scp sameer@10.10.61.194:/home/shared/sql/2020-08-13.zip.gpg .\ngpg2john doesn’t work because the file is too big:\ngpg2john 2020-08-13.zip.gpg 2020-08-13.zip.gpg.hash File 2020-08-13.zip.gpg Bad parameter: give(len=106935040, buf=0x5571785b0420, buf_size=90000), len can not be bigger than buf_size. So let’s use this script instead:\n$ ./crackgpg.sh 2020-08-13.zip.gpg wordlist.txt FAILED - ebqiojsdfioj FAILED - ebqiojsiodj FAILED - ebqiojdifoj FAILED - ebqiopsjdfopj FAILED - ebqnice FAILED - ebqops FAILED - ebqiuiud FAILED - ebqjoisjdfij FAILED - ebqkjjdd FAILED - ebqijsji FAILED - ebqopkopk SUCESS - `ebqattle` # flag 9.4 Find the SSH password of the user James. What is the password?\nExtarct the archive: 7z x 2020-08-13.zip\n7z x 2020-08-13.zip grep -ri james 2020-08-13 2020-08-13/sakila/sakila-mv-data.sql:(84,'JAMES','PITT','2006-02-15 04:34:33'), 2020-08-13/sakila/sakila-mv-data.sql:(71,1,'KATHY','JAMES','KATHY.JAMES@sakilacustomer.org',75,1,'2006-02-14 22:04:36','2006-02-15 04:57:20'), 2020-08-13/sakila/sakila-mv-data.sql:(299,2,'JAMES','GANNON','JAMES.GANNON@sakilacustomer.org',304,1,'2006-02-14 22:04:37','2006-02-15 04:57:20'), 2020-08-13/load_employees.dump:(499996,'1953-03-07','James','#vuimaxcullings','M','1990-09-27'), 9.5 SSH as james and change the user to root\nSSH back with james:vuimaxcullings\nJames has root permission through sudo:\njames@james:~$ sudo -l [sudo] password for james: Matching Defaults entries for james on james: env_reset, mail_badpass, secure_path=/usr/local/sbin\\:/usr/local/bin\\:/usr/sbin\\:/usr/bin\\:/sbin\\:/bin\\:/snap/bin User james may run the following commands on james: (ALL : ALL) ALL Grab the flag:\njames@james:~$ sudo cat /root/root.txt Flag{flag-was-here} NOW YOU ARE LINUX STRONGER!!! ","wordCount":"2804","inLanguage":"en","image":"https://classroom.anir0y.in/img/thm.gif","datePublished":"2021-08-03T07:41:10+05:30","dateModified":"2021-08-03T07:41:10+05:30","author":{"@type":"Person","name":"Animesh Roy"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/"},"publisher":{"@type":"Organization","name":"Classroom","logo":{"@type":"ImageObject","url":"https://classroom.anir0y.in/img/avatar.jpeg"}}}</script></head><body id=top><header class=header><nav class=nav><div class=logo><a href=https://classroom.anir0y.in/ accesskey=h title="Classroom (Alt + H)"><img src=https://classroom.anir0y.in/img/avatar.jpeg alt aria-label=logo height=35>Classroom</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://classroom.anir0y.in/post/ title=Posts><span>Posts</span></a></li><li><a href=https://classroom.anir0y.in/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://classroom.anir0y.in/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://classroom.anir0y.in/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://classroom.anir0y.in/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://classroom.anir0y.in/about/me/ title=About><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://classroom.anir0y.in/>Home</a>&nbsp;»&nbsp;<a href=https://classroom.anir0y.in/post/>Posts</a></div><h1 class="post-title entry-hint-parent">TryHackMe Linux Strength Training</h1><div class=post-description>TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthough. Guided room for beginners to learn/reinforce linux command line skills...</div><div class=post-meta><span title='2021-08-03 07:41:10 +0530 IST'>August 3, 2021</span>&nbsp;·&nbsp;<span>14 min</span>&nbsp;·&nbsp;<span>Animesh Roy</span>&nbsp;|&nbsp;<span>
+<a href=https://github.com/anir0y/classroom/tree/master/content/post/TryHackMe-linuxstrengthtraining.md rel="noopener noreferrer edit" target=_blank>Suggest Changes</a></span></div></header><figure class=entry-cover><img loading=eager src=https://classroom.anir0y.in/img/thm.gif alt="cover image"></figure><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><nav id=TableOfContents><ul><li><a href=#overview>OverView</a></li><li><a href=#task-01--intro>Task 01: Intro</a></li><li><a href=#task-02-finding-your-way-around-linux---overview>Task 02: Finding your way around linux - overview</a><ul><li><a href=#22-what-is-the-correct-option-for-finding-files-based-on-group>2.2 What is the correct option for finding files based on group</a></li><li><a href=#23-what-is-format-for-finding-a-file-with-the-user-named-francis-and-with-a-size-of-52-kilobytes-in-the-directory-homefrancis>2.3 What is format for finding a file with the user named Francis and with a size of 52 kilobytes in the directory /home/francis/</a></li><li><a href=#24-ssh-as-topson-using-his-password-topson-go-to-the-hometopsonchatlogs-directory-and-type-the-following-grep--irl-keyword-what-is-the-name-of-the-file-that-you-found-using-this-command>2.4 SSH as topson using his password topson. Go to the /home/topson/chatlogs directory and type the following: grep -iRl &lsquo;keyword&rsquo;. What is the name of the file that you found using this command?</a></li><li><a href=#26-what-are-the-characters-subsequent-to-the-word-you-found>2.6 What are the characters subsequent to the word you found?</a></li><li><a href=#27-read-the-file-named-readmeifstucktxt-what-is-the-flag>2.7 Read the file named &lsquo;ReadMeIfStuck.txt&rsquo;. What is the Flag?</a></li></ul></li><li><a href=#task-03-working-with-files>Task 03: Working with files</a><ul><li><a href=#31-hypothetically-you-find-yourself-in-a-directory-with-many-files-and-want-to-move-all-these-files-to-the-directory-of-homefrancislogs-what-is-the-correct-command-to-do-this>3.1 Hypothetically, you find yourself in a directory with many files and want to move all these files to the directory of /home/francis/logs. What is the correct command to do this?</a></li><li><a href=#32-hypothetically-you-want-to-transfer-a-file-from-your-homejamesdesktop-with-the-name-scriptpy-to-the-remote-machine-192168105-directory-of-homejohnscripts-using-the-username-of-john-what-would-be-the-full-command-to-do-this>3.2 Hypothetically, you want to transfer a file from your /home/james/Desktop/ with the name script.py to the remote machine (192.168.10.5) directory of /home/john/scripts using the username of john. What would be the full command to do this?</a></li><li><a href=#33-how-would-you-rename-a-folder-named--logs-to--newlogs>3.3 How would you rename a folder named -logs to -newlogs</a></li><li><a href=#34-how-would-you-copy-the-file-named-encryption-keys-to-the-directory-of-homejohnlogs>3.4 How would you copy the file named encryption keys to the directory of /home/john/logs</a></li><li><a href=#35-find-a-file-named-readme_hinttxt-inside-topsons-directory-and-read-it-using-the-instructions-it-gives-you-get-the-second-flag>3.5 Find a file named readME_hint.txt inside topson&rsquo;s directory and read it. Using the instructions it gives you, get the second flag.</a></li></ul></li><li><a href=#task-04--hashing---introduction>Task 04: Hashing - introduction</a><ul><li><a href=#41-download-the-hash-file-attached-to-this-task-and-attempt-to-crack-the-md5-hash-what-is-the-password>4.1 Download the hash file attached to this task and attempt to crack the MD5 hash. What is the password?</a></li><li><a href=#42-what-is-the-hash-type-stored-in-the-file-hashatxt>4.2 What is the hash type stored in the file hashA.txt</a></li><li><a href=#43-crack-hashatxt-using-john-the-ripper-what-is-the-password>4.3 Crack hashA.txt using john the ripper, what is the password?</a></li><li><a href=#44-what-is-the-hash-type-stored-in-the-file-hashbtxt>4.4 What is the hash type stored in the file hashB.txt</a></li><li><a href=#45-find-a-wordlist--with-the-file-extention-of-mnf-and-use-it-to-crack-the-hash-with-the-filename-hashctxt-what-is-the-password>4.5 Find a wordlist with the file extention of &lsquo;.mnf&rsquo; and use it to crack the hash with the filename hashC.txt. What is the password?</a></li></ul></li><li><a href=#task-05-decoding-base64>task 05: Decoding base64</a><ul><li><a href=#51-what-is-the-name-of-the-tool-which-allows-us-to-decode-base64-strings>5.1 what is the name of the tool which allows us to decode base64 strings?</a></li><li><a href=#52-find-a-file-called-encodedtxt-what-is-the-special-answer>5.2 find a file called encoded.txt. What is the special answer?</a></li></ul></li><li><a href=#task-06-encryptiondecryption-using-gpg>Task 06: Encryption/Decryption using gpg</a><ul><li><a href=#62-you-wish-to-encrypt-a-file-called-history_logstxt-using-the-aes-128-scheme-what-is-the-full-command-to-do-this>6.2 You wish to encrypt a file called history_logs.txt using the AES-128 scheme. What is the full command to do this?</a></li><li><a href=#63-what-is-the-command-to-decrypt-the-file-you-just-encrypted>6.3 What is the command to decrypt the file you just encrypted?</a></li><li><a href=#64-find-an-encrypted-file-called-layer4txt-its-password-is-bob-use-this-to-locate-the-flag-what-is-the-flag>6.4 Find an encrypted file called layer4.txt, its password is bob. Use this to locate the flag. What is the flag?</a></li></ul></li><li><a href=#task-07-cracking-encrypted-gpg-files>Task 07: Cracking encrypted gpg files</a><ul><li><a href=#72>7.2</a></li><li><a href=#73>7.3</a></li></ul></li><li><a href=#task-08-reading-sql-databases>Task 08: Reading SQL databases</a><ul><li><a href=#81>8.1</a></li></ul></li><li><a href=#task-09-final-challenge>Task 09: Final Challenge</a><ul><li><a href=#91>9.1</a></li><li><a href=#92>9.2</a></li><li><a href=#93>9.3</a></li><li><a href=#94>9.4</a></li><li><a href=#95>9.5</a></li></ul></li></ul></nav></div></details></div><div class=post-content><h2 id=overview>OverView<a hidden class=anchor aria-hidden=true href=#overview>#</a></h2><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><script src=https://tryhackme.com/badge/434937></script></td><td><a class=twitter-follow-button href=https://twitter.com/anir0y data-size=large>Follow @anir0y<a></td></tr><tr><td>Linux Strength Training</td><td><img alt=logo loading=lazy src=https://tryhackme-images.s3.amazonaws.com/room-icons/b4f28a92c7d33f8460d896653cf5d428.png></td></tr><tr><td><b>Room [Subscription Required]</b></td><td><a href=https://tryhackme.com/room/linuxstrengthtraining>Linux Strength Training</a></td></tr></tbody></table><h2 id=task-01--intro>Task 01: Intro<a hidden class=anchor aria-hidden=true href=#task-01--intro>#</a></h2><p>This room is intended to further the understanding of basic Linux command line skills for beginners.</p><hr><h2 id=task-02-finding-your-way-around-linux---overview>Task 02: Finding your way around linux - overview<a hidden class=anchor aria-hidden=true href=#task-02-finding-your-way-around-linux---overview>#</a></h2><p>As a security researcher you will often be required to find specific files/folders on a system based on various conditions ranging from, but not limited to the following:</p><ul><li>size</li><li>filename</li><li>user/group</li><li>date modified</li><li>date accessed</li><li>Its keyword contents</li></ul><p>Therefore, we can do this using the following syntax:</p><table><thead><tr><th>What we can do</th><th>Syntax</th><th>Real example of syntax</th></tr></thead><tbody><tr><td>Find files based on filename</td><td>find [directory path] -type f -name [filename]</td><td>find /home/Andy -type f -name sales.txt</td></tr><tr><td>Find Directory based on directory name</td><td>find [directory path] -type d -name [filename]</td><td>find /home/Andy -type d -name pictures</td></tr><tr><td>Find files based on size</td><td>find [directory path] -type f -size [size]</td><td>find /home/Andy -type f -size 10c<br>(c for bytes<br>k for kilobytes<br>M megabytes<br>G for gigabytes<br>type:&lsquo;man find&rsquo; for full information on the options)</td></tr><tr><td>Find files based on username</td><td>find [directory path] -type f -user [username]</td><td>find /etc/server -type f -user john</td></tr><tr><td>Find files based on group name</td><td>find [directory path] -type f -group [group name]</td><td>find /etc/server -type f -group teamstar</td></tr><tr><td>Find files modified after a specific date</td><td>find [directory path] -type f -newermt &lsquo;[date and time]&rsquo;</td><td>find / -type f -newermt &lsquo;6/30/2020 0:00:00&rsquo;<br>(all dates/times after 6/30/2020 0:00:00 will be considered a condition to look for)</td></tr><tr><td>Find files based on date modified</td><td>find [directory path] -type f -newermt [start date range] ! -newermt [end date range]</td><td>find / -type f -newermt 2013-09-12 ! -newermt 2013-09-14<br>(all dates before 2013-09-12 will be excluded; all dates after 2013-09-14 will be excluded, therefore this only leaves 2013-09-13 as the date to look for.)</td></tr><tr><td>Find files with a specific keyword</td><td>grep -iRl [directory path/keyword]</td><td>grep -iRl &lsquo;/folderA/flag&rsquo;</td></tr><tr><td>read the manual for the find command</td><td>man find</td><td>man find</td></tr></tbody></table><p><strong>Note</strong>: There are many more useful commands aside from the examples above. If you ever have trouble understanding any of the syntax or getting it to work, head on over to <a href=explainshell.com>explainshell.com</a> to check the syntax and see how this tool can help you on your journey to Linux greatness.</p><p><strong>Further notes</strong>: if you do not know already, typing CTRL+L allows you to clear the screen quicker rather than typing &lsquo;clear&rsquo; all the time. Additionally, hitting the up arrow allows you to return to a previously typed command so you do not have to spend time retyping it again if you made an error. Cool. Finally, placing: 2>/dev/null at the end of your find command can help filter your results to exclude files/directories that you do not have permission to.</p><h3 id=22-what-is-the-correct-option-for-finding-files-based-on-group>2.2 What is the correct option for finding files based on group<a hidden class=anchor aria-hidden=true href=#22-what-is-the-correct-option-for-finding-files-based-on-group>#</a></h3><p><code>-group</code></p><h3 id=23-what-is-format-for-finding-a-file-with-the-user-named-francis-and-with-a-size-of-52-kilobytes-in-the-directory-homefrancis>2.3 What is format for finding a file with the user named Francis and with a size of 52 kilobytes in the directory /home/francis/<a hidden class=anchor aria-hidden=true href=#23-what-is-format-for-finding-a-file-with-the-user-named-francis-and-with-a-size-of-52-kilobytes-in-the-directory-homefrancis>#</a></h3><p><code>find /home/francis/ -type f -user Francis -size 52k</code></p><h3 id=24-ssh-as-topson-using-his-password-topson-go-to-the-hometopsonchatlogs-directory-and-type-the-following-grep--irl-keyword-what-is-the-name-of-the-file-that-you-found-using-this-command>2.4 SSH as topson using his password topson. Go to the /home/topson/chatlogs directory and type the following: grep -iRl &lsquo;keyword&rsquo;. What is the name of the file that you found using this command?<a hidden class=anchor aria-hidden=true href=#24-ssh-as-topson-using-his-password-topson-go-to-the-hometopsonchatlogs-directory-and-type-the-following-grep--irl-keyword-what-is-the-name-of-the-file-that-you-found-using-this-command>#</a></h3><p><code>2019-10-11</code></p><h3 id=26-what-are-the-characters-subsequent-to-the-word-you-found>2.6 What are the characters subsequent to the word you found?<a hidden class=anchor aria-hidden=true href=#26-what-are-the-characters-subsequent-to-the-word-you-found>#</a></h3><p><code>ttitor</code></p><p><img alt=img loading=lazy src=https://i.imgur.com/rRrGluz.png></p><h3 id=27-read-the-file-named-readmeifstucktxt-what-is-the-flag>2.7 Read the file named &lsquo;ReadMeIfStuck.txt&rsquo;. What is the Flag?<a hidden class=anchor aria-hidden=true href=#27-read-the-file-named-readmeifstucktxt-what-is-the-flag>#</a></h3><ul><li><p>read the &lsquo;ReadMeIfStuck.txt&rsquo; file:</p><pre tabindex=0><code class=language-cat data-lang=cat>topson@james:~$ cat ReadMeIfStuck.txt 
 Looking for flag 1?:It seems you will have to think harder if you want to find the flag. Perhaps try looking for a file called `additionalHINT` if you can&#39;t find it..
 Looking for flag 2?: look for a file named readME_hint.txt
 
@@ -448,733 +38,271 @@ workflows/xft/eBQRhHvx
 
 grep -oi &#39;\S*flag\S*&#39; workflows/xft/eBQRhHvx
 Flag{flag-was-here}
-</code></pre></li>
-</ul>
-<p>NOTE:</p>
-<ul>
-<li>\S is a regexp token to match any non-whitespace character</li>
-<li>-i to make case insensitive search</li>
-<li>-o to display only matching content</li>
-</ul>
-<hr>
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<p><ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"></ins></p>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-<hr>
-<h2 id="task-03-working-with-files">Task 03: Working with files</h2>
-<p>You should be somewhat familiar already with working with files. Similar to windows, we can do the following:</p>
-<ul>
-<li>copy files and folders</li>
-<li>move files and folders</li>
-<li>rename files and folders</li>
-<li>create files and folders</li>
-</ul>
-<p>For a quick recap to train your mental memory on the commands please refer to the below information:</p>
-<p><img src="https://i.imgur.com/pTyp2w4.png" alt="img"></p>
-<p>A few additional things to remember is that occasionally you may encounter files/folders with special characters such as - (dash). Just remember that if you try to copy or move these files you will encounter errors because Linux interprets the - as a type of argument, therefore you will have to place &ndash; just before the filename. For example: cp &ndash; -filename.txt /home/folderExample.</p>
-<h3 id="31-hypothetically-you-find-yourself-in-a-directory-with-many-files-and-want-to-move-all-these-files-to-the-directory-of-homefrancislogs-what-is-the-correct-command-to-do-this">3.1 Hypothetically, you find yourself in a directory with many files and want to move all these files to the directory of /home/francis/logs. What is the correct command to do this?</h3>
-<p><code>mv * /home/francis/logs</code></p>
-<h3 id="32-hypothetically-you-want-to-transfer-a-file-from-your-homejamesdesktop-with-the-name-scriptpy-to-the-remote-machine-192168105-directory-of-homejohnscripts-using-the-username-of-john-what-would-be-the-full-command-to-do-this">3.2 Hypothetically, you want to transfer a file from your /home/james/Desktop/ with the name script.py to the remote machine (192.168.10.5) directory of /home/john/scripts using the username of john. What would be the full command to do this?</h3>
-<p><code>scp /home/james/Desktop/script.py john@192.168.10.5:/home/john/scripts</code></p>
-<h3 id="33-how-would-you-rename-a-folder-named--logs-to--newlogs">3.3 How would you rename a folder named -logs to -newlogs</h3>
-<p><code>mv -- -logs -newlogs</code></p>
-<h3 id="34-how-would-you-copy-the-file-named-encryption-keys-to-the-directory-of-homejohnlogs">3.4 How would you copy the file named encryption keys to the directory of /home/john/logs</h3>
-<p><code>cp encryption keys /home/john/logs</code></p>
-<h3 id="35-find-a-file-named-readme_hinttxt-inside-topsons-directory-and-read-it-using-the-instructions-it-gives-you-get-the-second-flag">3.5 Find a file named readME_hint.txt inside topson&rsquo;s directory and read it. Using the instructions it gives you, get the second flag.</h3>
-<ul>
-<li>
-<p>let&rsquo;s read the 2nd flag</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># find `readME_hint.txt`</span>
-</span></span><span style="display:flex;"><span>topson@james:~$ find . -type f -name readME_hint.txt
-</span></span><span style="display:flex;"><span>./corperateFiles/RecordsFinances/readME_hint.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#read the file</span>
-</span></span><span style="display:flex;"><span>topson@james:~$ cat ./corperateFiles/RecordsFinances/readME_hint.txt 
-</span></span><span style="display:flex;"><span>Instructions: Move the MoveMe.txt file to the march folder directory and <span style="color:#66d9ef">then</span> execute the SH program to reveal the second flag.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>you need to research three things:
-</span></span><span style="display:flex;"><span>                              how to execute bash files
-</span></span><span style="display:flex;"><span>                              how to work with files that begin with a - <span style="color:#f92672">(</span>dash<span style="color:#f92672">)</span> whether that is to <span style="color:#66d9ef">do</span> with copying or moving files 
-</span></span><span style="display:flex;"><span>                              how to work with files with spaces
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">### follow the instructions for flag2</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>topson@james:~/corperateFiles/RecordsFinances$ mv -- -MoveMe.txt <span style="color:#e6db74">&#39;-march folder&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>topson@james:~/corperateFiles/RecordsFinances$ cd -- <span style="color:#e6db74">&#39;-march folder&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>topson@james:~/corperateFiles/RecordsFinances/-march folder$ bash -- -runME.sh
-</span></span><span style="display:flex;"><span>-MoveMe.txt exists.
-</span></span><span style="display:flex;"><span>Flag<span style="color:#f92672">{</span>flag-was-here<span style="color:#f92672">}</span>
-</span></span></code></pre></div></li>
-</ul>
-<hr>
-<h2 id="task-04--hashing---introduction">Task 04:  Hashing - introduction</h2>
-<h3 id="41-download-the-hash-file-attached-to-this-task-and-attempt-to-crack-the-md5-hash-what-is-the-password">4.1 Download the hash file attached to this task and attempt to crack the MD5 hash. What is the password?</h3>
-<ul>
-<li>
-<p>download the file, read the hash</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat hash1.txt
-</span></span><span style="display:flex;"><span>5d7845ac6ee7cfffafc5fe5f35cf666d
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#using online hash crackers</span>
-</span></span><span style="display:flex;"><span>plain text is: secret123
-</span></span></code></pre></div></li>
-</ul>
-<p>SSH as sarah using: sarah@[MACHINE_IP] and use the password: rainbowtree1230x</p>
-<h3 id="42-what-is-the-hash-type-stored-in-the-file-hashatxt">4.2 What is the hash type stored in the file hashA.txt</h3>
-<ul>
-<li>
-<p>steps</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ ls
-</span></span><span style="display:flex;"><span>example.txt         logs     oldLogs   <span style="color:#e6db74">&#39;system AB&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;linuxconf backup&#39;</span>   logs33   serverLx  <span style="color:#e6db74">&#39;system mx&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ find . -type f -name hashA.txt
-</span></span><span style="display:flex;"><span>./system AB/server_mail/server settings/hashA.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat ./system<span style="color:#ae81ff">\ </span>AB/server_mail/server<span style="color:#ae81ff">\ </span>settings/hashA.txt 
-</span></span><span style="display:flex;"><span>f9d4049dd6a4dc35d40e5265954b2a46
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>hashid f9d4049dd6a4dc35d40e5265954b2a46
-</span></span><span style="display:flex;"><span>Analyzing <span style="color:#e6db74">&#39;f9d4049dd6a4dc35d40e5265954b2a46&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> MD2 
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> MD5 
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>+<span style="color:#f92672">]</span> MD4 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>ans is one of them<span style="color:#f92672">]</span>
-</span></span></code></pre></div></li>
-</ul>
-<h3 id="43-crack-hashatxt-using-john-the-ripper-what-is-the-password">4.3 Crack hashA.txt using john the ripper, what is the password?</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>admin
-</span></span></code></pre></div><h3 id="44-what-is-the-hash-type-stored-in-the-file-hashbtxt">4.4 What is the hash type stored in the file hashB.txt</h3>
-<ul>
-<li>
-<p>follow the steps:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#find the  file</span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ find . -type f -name hashB.txt
-</span></span><span style="display:flex;"><span>./oldLogs/settings/craft/hashB.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># read the file</span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat ./oldLogs/settings/craft/hashB.txt
-</span></span><span style="display:flex;"><span>b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># id the hash</span>
-</span></span><span style="display:flex;"><span>hashid b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3
-</span></span><span style="display:flex;"><span>Analyzing <span style="color:#960050;background-color:#1e0010">&#39;</span>b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>ans-was-here<span style="color:#f92672">]</span>
-</span></span></code></pre></div></li>
-</ul>
-<h3 id="45-find-a-wordlist--with-the-file-extention-of-mnf-and-use-it-to-crack-the-hash-with-the-filename-hashctxt-what-is-the-password">4.5 Find a wordlist  with the file extention of &lsquo;.mnf&rsquo; and use it to crack the hash with the filename hashC.txt. What is the password?</h3>
-<ul>
-<li>
-<p>follow instructions</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find the wordlist
-</span></span><span style="display:flex;"><span>sarah@james:~$ find . -type f -name *.mnf
-</span></span><span style="display:flex;"><span>./system AB/db/ww.mnf
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#copy it to local machine</span>
-</span></span><span style="display:flex;"><span>scp sarah@<span style="color:#f92672">[</span>MACHINE_IP<span style="color:#f92672">]</span>:<span style="color:#e6db74">&#39;~/system\ AB/db/ww.mnf&#39;</span> .
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># find the hashC.txt</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ find . -type f -name hashC.txt
-</span></span><span style="display:flex;"><span>./system AB/server_mail/hashC.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># save the hash and get cracking</span>
-</span></span></code></pre></div></li>
-</ul>
-<hr>
-<h2 id="task-05-decoding-base64">task 05: Decoding base64</h2>
-<h3 id="51-what-is-the-name-of-the-tool-which-allows-us-to-decode-base64-strings">5.1 what is the name of the tool which allows us to decode base64 strings?</h3>
-<p><code>base64</code> # linux utility</p>
-<h3 id="52-find-a-file-called-encodedtxt-what-is-the-special-answer">5.2 find a file called encoded.txt. What is the special answer?</h3>
-<ul>
-<li>
-<p>follow the steps</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#find the file </span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ find . -type f -name encoded.txt
-</span></span><span style="display:flex;"><span>./system AB/managed/encoded.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Decode the file and look for the spacial word:</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ base64 -d <span style="color:#e6db74">&#39;/home/sarah/system AB/managed/encoded.txt&#39;</span> | grep --color special
-</span></span><span style="display:flex;"><span>you know how to decode base64 data, well <span style="color:#66d9ef">done</span>. you deserve the answer but because this is the linux strength training room where you are intended to build your linux memory and skills, you will have to find it in this very long text file. Look <span style="color:#66d9ef">for</span> the keyword: <span style="color:#e6db74">&#39;special&#39;</span> in this very large text file.
-</span></span><span style="display:flex;"><span>Nullam nibh diam, gravida vestibulum mi sed, consectetur tincidunt nunc. Morbi pharetra turpis nec ligula pellentesque lobortis. Aenean sit amet ullamcorper turpis. Nam id magna sed felis facilisis accumsan. Aliquam cursus dolor eu enim maximus, eu malesuada sapien dignissim. Suspendisse ultrices condimentum nisi et pellentesque. Fusce ornare aliquet quam, eu efficitur elit facilisis et. Donec special: <span style="color:#e6db74">`</span>the answer is in a file called ent.txt<span style="color:#e6db74">`</span>, find it sagittis dolor nulla, interdum auctor tortor accumsan et. Aliquam vitae egestas dui, ut condimentum magna. Vestibulum tellus lacus, sollicitudin vitae dui sed, bibendum fermentum lacus. Mauris diam leo, efficitur at mi iaculis, sagittis hendrerit justo. Vivamus ante odio, cursus id tristique vitae, dapibus id eros. Quisque vitae mauris massa. Phasellus ut lectus efficitur, vulputate leo et, facilisis metus. Nulla volutpat nulla sem, vel vestibulum libero ultricies eu. Nam pulvinar tincidunt metus et accumsan.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Now we need to find ent.txt:</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ find /home/sarah -type f -name ent.txt 2&gt;/dev/null
-</span></span><span style="display:flex;"><span>/home/sarah/logs/zhc/ent.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat /home/sarah/logs/zhc/ent.txt
-</span></span><span style="display:flex;"><span>bfddc35c8f9c989545119988f79ccc77
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># crack the hash</span>
-</span></span></code></pre></div></li>
-</ul>
-<hr>
-<h2 id="task-06-encryptiondecryption-using-gpg">Task 06: Encryption/Decryption using gpg</h2>
-<h3 id="62-you-wish-to-encrypt-a-file-called-history_logstxt-using-the-aes-128-scheme-what-is-the-full-command-to-do-this">6.2 You wish to encrypt a file called history_logs.txt using the AES-128 scheme. What is the full command to do this?</h3>
-<p><code>gpg --cipher-algo AES-128 --symmetric history_logs.txt</code></p>
-<h3 id="63-what-is-the-command-to-decrypt-the-file-you-just-encrypted">6.3 What is the command to decrypt the file you just encrypted?</h3>
-<p><code>gpg history_logs.txt.gpg</code></p>
-<h3 id="64-find-an-encrypted-file-called-layer4txt-its-password-is-bob-use-this-to-locate-the-flag-what-is-the-flag">6.4 Find an encrypted file called layer4.txt, its password is bob. Use this to locate the flag. What is the flag?</h3>
-<ul>
-<li>
-<p>steps</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find the file <span style="color:#e6db74">`</span>layer4.txt<span style="color:#e6db74">`</span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ find . -type f -name layer4.txt
-</span></span><span style="display:flex;"><span>./system AB/keys/vnmA/layer4.txt
-</span></span></code></pre></div></li>
-<li>
-<p>decrypt it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gpg <span style="color:#e6db74">&#39;./system AB/keys/vnmA/layer4.txt&#39;</span>
-</span></span><span style="display:flex;"><span>gpg: ./system AB/keys/vnmA/layer4.txt: unknown suffix
-</span></span><span style="display:flex;"><span>Enter new filename <span style="color:#f92672">[</span>layer4.txt<span style="color:#f92672">]</span>: decrypted-l4
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># read decrypted file</span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat decrypted-l4 
-</span></span><span style="display:flex;"><span>1. Find a file called layer3.txt, its password is james.
-</span></span></code></pre></div></li>
-<li>
-<p>find &amp; decrypt layer3.txt</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ find . -type f -name layer3.txt
-</span></span><span style="display:flex;"><span>./oldLogs/2014-02-15/layer3.txt
-</span></span><span style="display:flex;"><span>sarah@james:~$ gpg <span style="color:#e6db74">&#39;./oldLogs/2014-02-15/layer3.txt&#39;</span>
-</span></span><span style="display:flex;"><span>gpg: WARNING: no command supplied.  Trying to guess what you mean ...
-</span></span><span style="display:flex;"><span>gpg: AES256 encrypted data
-</span></span><span style="display:flex;"><span>gpg: encrypted with <span style="color:#ae81ff">1</span> passphrase
-</span></span><span style="display:flex;"><span>gpg: ./oldLogs/2014-02-15/layer3.txt: unknown suffix
-</span></span><span style="display:flex;"><span>Enter new filename <span style="color:#f92672">[</span>layer3.txt<span style="color:#f92672">]</span>: decrypted-l3.txt
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat decrypted-l3.txt 
-</span></span><span style="display:flex;"><span>1. Find a file called layer2.txt, its password is tony.
-</span></span></code></pre></div></li>
-<li>
-<p>find &amp; decrypt layer2.txt</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ find . -type f -name layer2.txt
-</span></span><span style="display:flex;"><span>./oldLogs/settings/layer2.txt
-</span></span><span style="display:flex;"><span>sarah@james:~$ gpg <span style="color:#e6db74">&#39;./oldLogs/settings/layer2.txt&#39;</span>
-</span></span><span style="display:flex;"><span>gpg: WARNING: no command supplied.  Trying to guess what you mean ...
-</span></span><span style="display:flex;"><span>gpg: AES256 encrypted data
-</span></span><span style="display:flex;"><span>gpg: encrypted with <span style="color:#ae81ff">1</span> passphrase
-</span></span><span style="display:flex;"><span>gpg: ./oldLogs/settings/layer2.txt: unknown suffix
-</span></span><span style="display:flex;"><span>Enter new filename <span style="color:#f92672">[</span>layer2.txt<span style="color:#f92672">]</span>: decrytpd-l2.txt
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat decrytpd-l2.txt 
-</span></span><span style="display:flex;"><span>MS4gRmluZCBhIGZpbGUgY2FsbGVkIGxheWVyMS50eHQsIGl0cyBwYXNzd29yZCBpcyBoYWNrZWQu
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat decrytpd-l2.txt  | base64 -d
-</span></span><span style="display:flex;"><span>1. Find a file called layer1.txt, its password is hacked.
-</span></span></code></pre></div></li>
-<li>
-<p>find &amp; decrypt layer1.txt</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ find . -type f -name layer1.txt
-</span></span><span style="display:flex;"><span>./logs/zmn/layer1.txt
-</span></span><span style="display:flex;"><span>sarah@james:~$ gpg <span style="color:#e6db74">&#39;./logs/zmn/layer1.txt&#39;</span>
-</span></span><span style="display:flex;"><span>gpg: WARNING: no command supplied.  Trying to guess what you mean ...
-</span></span><span style="display:flex;"><span>gpg: AES256 encrypted data
-</span></span><span style="display:flex;"><span>gpg: encrypted with <span style="color:#ae81ff">1</span> passphrase
-</span></span><span style="display:flex;"><span>gpg: ./logs/zmn/layer1.txt: unknown suffix
-</span></span><span style="display:flex;"><span>Enter new filename <span style="color:#f92672">[</span>layer1.txt<span style="color:#f92672">]</span>: d-l1.txt
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat d-l1.txt 
-</span></span><span style="display:flex;"><span>Flag<span style="color:#f92672">{</span>flag-was-here<span style="color:#f92672">}</span>
-</span></span></code></pre></div></li>
-</ul>
-<hr>
-<h2 id="task-07-cracking-encrypted-gpg-files">Task 07: Cracking encrypted gpg files</h2>
-<h3 id="72">7.2</h3>
-<p>Find an encrypted file called personal.txt.gpg and find a wordlist called data.txt. Use tac to reverse the wordlist before brute-forcing it against the encrypted file. What is the password to the encrypted file?</p>
-<ul>
-<li>
-<p>steps</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ find /home/sarah -type f -name personal.txt.gpg 2&gt;/dev/null
-</span></span><span style="display:flex;"><span>/home/sarah/oldLogs/units/personal.txt.gpg
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ find /home/sarah -type f -name data.txt 2&gt;/dev/null
-</span></span><span style="display:flex;"><span>/home/sarah/logs/zmn/old stuff/-mvLp/data.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ tac <span style="color:#e6db74">&#39;/home/sarah/logs/zmn/old stuff/-mvLp/data.txt&#39;</span> &gt; wordrev.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>$ john /home/sarah/oldLogs/units/personal.txt.gpg -w wordrev.txt --format gpg
-</span></span><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>valamanezivonia
-</span></span></code></pre></div></li>
-</ul>
-<h3 id="73">7.3</h3>
-<p>What is written in this now decrypted file?</p>
-<ul>
-<li>
-<p>steps</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ gpg /home/sarah/oldLogs/units/personal.txt.gpg
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ cat /home/sarah/oldLogs/units/personal.txt
-</span></span><span style="display:flex;"><span>getting stronger in linux
-</span></span></code></pre></div></li>
-</ul>
-<hr>
-<h2 id="task-08-reading-sql-databases">Task 08: Reading SQL databases</h2>
-<h3 id="81">8.1</h3>
-<p>Find a file called employees.sql and read the SQL database. (Sarah and Sameer can log both into mysql using the password: password). Find the flag contained in one of the tables. What is the flag?</p>
-<ul>
-<li>
-<p>steps</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ find /home/sarah -type f -name employees.sql 2&gt;/dev/null
-</span></span><span style="display:flex;"><span>/home/sarah/serverLx/employees.sql
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ cd /home/sarah/serverLx/
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sarah@james:~$ mysql -p
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mysql&gt; source /home/sarah/serverLx/employees.sql
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mysql&gt; SELECT * FROM employees WHERE first_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Lobel&#39;</span> and last_name LIKE <span style="color:#e6db74">&#39;%Flag%&#39;</span>;
-</span></span><span style="display:flex;"><span>+--------+------------+------------+----------------+--------+------------+
-</span></span><span style="display:flex;"><span>| emp_no | birth_date | first_name | last_name      | gender | hire_date  |
-</span></span><span style="display:flex;"><span>+--------+------------+------------+----------------+--------+------------+
-</span></span><span style="display:flex;"><span>| <span style="color:#ae81ff">499973</span> | 1963-06-03 | Lobel      | Flag<span style="color:#f92672">{</span>flag-was-here<span style="color:#f92672">}</span> | M      | 1994-02-01 |
-</span></span><span style="display:flex;"><span>+--------+------------+------------+----------------+--------+------------+
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> row in set <span style="color:#f92672">(</span>0.07 sec<span style="color:#f92672">)</span>
-</span></span></code></pre></div></li>
-</ul>
-<hr>
-<h2 id="task-09-final-challenge">Task 09: Final Challenge</h2>
-<h3 id="91">9.1</h3>
-<h3 id="92">9.2</h3>
-<p>What is Sameer&rsquo;s SSH password?</p>
-<p>Hint: You may need to use grep to find keywords based on what you would expect the next chat log to include? Perhaps names?</p>
-<ul>
-<li>
-<p>Find files including Sameer:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ grep -iRl Sameer /home 2&gt;/dev/null
-</span></span><span style="display:flex;"><span>/home/shared/chatlogs/Pqmr
-</span></span><span style="display:flex;"><span>/home/shared/chatlogs/LpnQ
-</span></span><span style="display:flex;"><span>/home/shared/chatlogs/KfnP
-</span></span></code></pre></div></li>
-<li>
-<p>read the files: [here I&rsquo;m sharing the releavent one]</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ cat /home/shared/chatlogs/Pqmr
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: Hey Sameer, <span style="color:#66d9ef">do</span> you by any chance no where I can find the sql back-up copy on this system? The database server is down, and I really need to help a customer out.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sameer: Sure. let me check.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: Thanks.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sameer: check the home/shared/sql/ directory. It should be in there with the date of today.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: Thank you Sameer.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sameer: No problem. It probably is encrypted. Just use the password: <span style="color:#e6db74">`</span>danepon<span style="color:#e6db74">`</span>.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: OK, thank you.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sameer: No problem
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sameer: By the way, <span style="color:#66d9ef">if</span> you have any issues just talk to Michael as I will be off <span style="color:#66d9ef">for</span> the remainder of the day. See you tomorrow. Bye.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: Bye.
-</span></span></code></pre></div></li>
-<li>
-<p>SQL backup should be in /home/shared/sql/ and encrypted with the password <code>danepon</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sarah@james:~$ cat /home/shared/chatlogs/KfnP
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: Michael, I have been having trouble accessing the sql database back-up copy made today. Sameer gave me the password, but it just will not work?
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Michael: Ah, yes. I remember, the security engineer was testing out a new automated software <span style="color:#66d9ef">for</span> creating sql database backups. He must have configured it to encrypt the backups with a different password.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: So how can I get a hold of it?
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Michael: Good question. From what I remember the test program utilised a configuration file around 50mb. It is located inside the home/shared/sql/conf directory. This configuration file contained the directory location of a wordlist it used to randomly <span style="color:#66d9ef">select</span> a password from <span style="color:#66d9ef">for</span> encrypting the sql back-up copies with.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: I <span style="color:#66d9ef">do</span> not really understand the last part?
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Michael: once you find the configuration file and consequently the wordlist directory, visit it. One of those wordlists must contain the password it used <span style="color:#66d9ef">for</span> the testing. All I remember is that the password began with ebq. You will need Sameer’s account. His SSH password is: <span style="color:#e6db74">`</span>thegreatestpasswordever000<span style="color:#e6db74">`</span>.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>2020-08-13<span style="color:#f92672">)</span> Sarah: Thank you, I will try to find it.
-</span></span></code></pre></div></li>
-</ul>
-<p>notes:</p>
-<ul>
-<li>password of /home/shared/sql/2020-08-13.zip.gpg is not danepon</li>
-<li>the config file is in /home/shared/sql/conf and is about 50mb</li>
-<li>the config file contains the wordlist directory</li>
-<li>the SQL backup password start with ebq</li>
-<li>Sameer&rsquo;s SSH password: thegreatestpasswordever000</li>
-</ul>
-<h3 id="93">9.3</h3>
-<p>What is the password for the sql database back-up copy</p>
-<ul>
-<li>
-<p>Find the config file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sameer@james:~$ find /home/shared/sql/ -type f -size 50M
-</span></span><span style="display:flex;"><span>/home/shared/sql/conf/JKpN
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sameer@james:~$ head /home/shared/sql/conf/JKpN
-</span></span><span style="display:flex;"><span>Software: sql auto-back-up
-</span></span><span style="display:flex;"><span>Version: 2.3
-</span></span><span style="display:flex;"><span>Wordlist directory: aG9tZS9zYW1lZXIvSGlzdG9yeSBMQi9sYWJtaW5kL2xhdGVzdEJ1aWxkL2NvbmZpZ0JEQgo<span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>sql-encrypt: true
-</span></span><span style="display:flex;"><span>time: 2h*
-</span></span><span style="display:flex;"><span>user: none
-</span></span></code></pre></div></li>
-<li>
-<p>wordlist dir:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sameer@james:~$ printf %s aG9tZS9zYW1lZXIvSGlzdG9yeSBMQi9sYWJtaW5kL2xhdGVzdEJ1aWxkL2NvbmZpZ0JEQgo<span style="color:#f92672">=</span> | base64 -d
-</span></span><span style="display:flex;"><span>home/sameer/History LB/labmind/latestBuild/configBD
-</span></span></code></pre></div></li>
-</ul>
-<p>There is a mistake here, the last folder is configBDB and not configBD.</p>
-<ul>
-<li>
-<p>There 3 files with such passwords starting with ebq:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sameer@james:~$ grep -iRlE <span style="color:#e6db74">&#39;^ebq&#39;</span> <span style="color:#e6db74">&#39;/home/sameer/History LB/labmind/latestBuild/configBDB&#39;</span>
-</span></span><span style="display:flex;"><span>/home/sameer/History LB/labmind/latestBuild/configBDB/pLmjwi
-</span></span><span style="display:flex;"><span>/home/sameer/History LB/labmind/latestBuild/configBDB/LmqAQl
-</span></span><span style="display:flex;"><span>/home/sameer/History LB/labmind/latestBuild/configBDB/Ulpsmt
-</span></span></code></pre></div></li>
-<li>
-<p>Show only the passwords:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sameer@james:~$ grep -iRhE <span style="color:#e6db74">&#39;^ebq&#39;</span> <span style="color:#e6db74">&#39;/home/sameer/History LB/labmind/latestBuild/configBDB&#39;</span>
-</span></span><span style="display:flex;"><span>ebqiojsdfioj
-</span></span><span style="display:flex;"><span>ebqiojsiodj
-</span></span><span style="display:flex;"><span>ebqiojdifoj
-</span></span><span style="display:flex;"><span>ebqiopsjdfopj
-</span></span><span style="display:flex;"><span>ebqnice
-</span></span><span style="display:flex;"><span>ebqops
-</span></span><span style="display:flex;"><span>ebqiuiud
-</span></span><span style="display:flex;"><span>ebqjoisjdfij
-</span></span><span style="display:flex;"><span>ebqkjjdd
-</span></span><span style="display:flex;"><span>ebqijsji
-</span></span><span style="display:flex;"><span>ebqopkopk
-</span></span><span style="display:flex;"><span>ebqattle
-</span></span></code></pre></div></li>
-<li>
-<p>Let&rsquo;s download the encrypted SQL backup:</p>
-<p><code>$ scp sameer@10.10.61.194:/home/shared/sql/2020-08-13.zip.gpg .</code></p>
-</li>
-<li>
-<p><code>gpg2john</code> doesn&rsquo;t work because the file is too big:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gpg2john 2020-08-13.zip.gpg 2020-08-13.zip.gpg.hash
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>File 2020-08-13.zip.gpg
-</span></span><span style="display:flex;"><span>Bad parameter: give<span style="color:#f92672">(</span>len<span style="color:#f92672">=</span>106935040, buf<span style="color:#f92672">=</span>0x5571785b0420, buf_size<span style="color:#f92672">=</span>90000<span style="color:#f92672">)</span>, len can not be bigger than buf_size.
-</span></span></code></pre></div></li>
-<li>
-<p>So let&rsquo;s use <a href="https://gist.github.com/anir0y/3afcd6eaeeebe9f828515f33cf723b4c">this script</a> instead:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./crackgpg.sh 2020-08-13.zip.gpg wordlist.txt
-</span></span><span style="display:flex;"><span>FAILED - ebqiojsdfioj
-</span></span><span style="display:flex;"><span>FAILED - ebqiojsiodj
-</span></span><span style="display:flex;"><span>FAILED - ebqiojdifoj
-</span></span><span style="display:flex;"><span>FAILED - ebqiopsjdfopj
-</span></span><span style="display:flex;"><span>FAILED - ebqnice
-</span></span><span style="display:flex;"><span>FAILED - ebqops
-</span></span><span style="display:flex;"><span>FAILED - ebqiuiud
-</span></span><span style="display:flex;"><span>FAILED - ebqjoisjdfij
-</span></span><span style="display:flex;"><span>FAILED - ebqkjjdd
-</span></span><span style="display:flex;"><span>FAILED - ebqijsji
-</span></span><span style="display:flex;"><span>FAILED - ebqopkopk
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>SUCESS - <span style="color:#e6db74">`</span>ebqattle<span style="color:#e6db74">`</span>  <span style="color:#75715e"># flag </span>
-</span></span></code></pre></div></li>
-</ul>
-<h3 id="94">9.4</h3>
-<p>Find the SSH password of the user James. What is the password?</p>
-<ul>
-<li>Extarct the archive:</li>
-</ul>
-<p><code>7z x 2020-08-13.zip</code></p>
-<ul>
-<li>7z x 2020-08-13.zip</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -ri james 2020-08-13
-</span></span><span style="display:flex;"><span>2020-08-13/sakila/sakila-mv-data.sql:<span style="color:#f92672">(</span>84,<span style="color:#e6db74">&#39;JAMES&#39;</span>,<span style="color:#e6db74">&#39;PITT&#39;</span>,<span style="color:#e6db74">&#39;2006-02-15 04:34:33&#39;</span><span style="color:#f92672">)</span>,
-</span></span><span style="display:flex;"><span>2020-08-13/sakila/sakila-mv-data.sql:<span style="color:#f92672">(</span>71,1,<span style="color:#e6db74">&#39;KATHY&#39;</span>,<span style="color:#e6db74">&#39;JAMES&#39;</span>,<span style="color:#e6db74">&#39;KATHY.JAMES@sakilacustomer.org&#39;</span>,75,1,<span style="color:#e6db74">&#39;2006-02-14 22:04:36&#39;</span>,<span style="color:#e6db74">&#39;2006-02-15 04:57:20&#39;</span><span style="color:#f92672">)</span>,
-</span></span><span style="display:flex;"><span>2020-08-13/sakila/sakila-mv-data.sql:<span style="color:#f92672">(</span>299,2,<span style="color:#e6db74">&#39;JAMES&#39;</span>,<span style="color:#e6db74">&#39;GANNON&#39;</span>,<span style="color:#e6db74">&#39;JAMES.GANNON@sakilacustomer.org&#39;</span>,304,1,<span style="color:#e6db74">&#39;2006-02-14 22:04:37&#39;</span>,<span style="color:#e6db74">&#39;2006-02-15 04:57:20&#39;</span><span style="color:#f92672">)</span>,
-</span></span><span style="display:flex;"><span>2020-08-13/load_employees.dump:<span style="color:#f92672">(</span>499996,<span style="color:#e6db74">&#39;1953-03-07&#39;</span>,<span style="color:#e6db74">&#39;James&#39;</span>,<span style="color:#e6db74">&#39;#vuimaxcullings&#39;</span>,<span style="color:#e6db74">&#39;M&#39;</span>,<span style="color:#e6db74">&#39;1990-09-27&#39;</span><span style="color:#f92672">)</span>,
-</span></span></code></pre></div><h3 id="95">9.5</h3>
-<p>SSH as james and change the user to root</p>
-<ul>
-<li>
-<p>SSH back with <code>james:vuimaxcullings</code></p>
-</li>
-<li>
-<p>James has root permission through sudo:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>james@james:~$ sudo -l
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>sudo<span style="color:#f92672">]</span> password <span style="color:#66d9ef">for</span> james: 
-</span></span><span style="display:flex;"><span>Matching Defaults entries <span style="color:#66d9ef">for</span> james on james:
-</span></span><span style="display:flex;"><span>env_reset, mail_badpass, secure_path<span style="color:#f92672">=</span>/usr/local/sbin<span style="color:#ae81ff">\:</span>/usr/local/bin<span style="color:#ae81ff">\:</span>/usr/sbin<span style="color:#ae81ff">\:</span>/usr/bin<span style="color:#ae81ff">\:</span>/sbin<span style="color:#ae81ff">\:</span>/bin<span style="color:#ae81ff">\:</span>/snap/bin
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>User james may run the following commands on james:
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>ALL : ALL<span style="color:#f92672">)</span> ALL
-</span></span></code></pre></div></li>
-<li>
-<p>Grab the flag:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>james@james:~$ sudo cat /root/root.txt
-</span></span><span style="display:flex;"><span>Flag<span style="color:#f92672">{</span>flag-was-here<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>NOW YOU ARE LINUX STRONGER!!!
-</span></span></code></pre></div></li>
-</ul>
-<hr>
-<!-- Google Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<p><ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"></ins></p>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- END -->
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-<!-- EOF -->
-</article>
-    </section>
-
-    
-
-    
-
-    
-  </div>
-</div>
-
-
-            <footer class="ui basic center aligned segment" style="background-color: transparent;">
-              
-              <p>© 2010 - 2026 Classroom</p>
-              
-
-              
-
-              
-            </footer>
-          </div>
-        </section>
-        <section class="back">
-          <div class="dream-max-width">
-            <header class="ui basic very padded segment dream-header">
-  <div class="ui small circular image">
-    
-    <img src="/img/avatar.jpeg" />
-    
-  </div>
-
-  <div class="content">
-    <h1 class="ui medium header">Reading Stuffs<div class="sub header"></div>
-    </h1>
-
-    <article class="ui horizontal list">
-      
-      <a class="item" href="/categories">
-        <i class="th list icon" title="All Categories"></i>
-      </a>
-      <a class="item" href="/tags">
-        <i class="tags icon" title="All Tags"></i>
-      </a>
-    </article>
-
-  </div>
-</header>
-
-
-<div class="ui relaxed grid dream-grid dream-back">
-  
-  
-  
-
-  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
-    <article class="ui segment">
-      <h3 class="ui header">Social Links</h3>
-      <nav class="ui secondary menu dream-menu dream-socials">
-  
-  <div class="item">
-    <a href="/index.xml">
-      <i class="large rss square icon" title="RSS"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="mailto:classroom@anir0y.in">
-      <i class="large mail icon" title="Email"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://twitter.com/anir0y" target="_blank">
-      <i class="large twitter icon" title="Twitter"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://facebook.com/0xanir0y" target="_blank">
-      <i class="large facebook icon" title="Facebook"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://instagram.com/0xanir0y" target="_blank">
-      <i class="large instagram icon" title="Instagram"></i>
-    </a>
-  </div>
-  
-
-  
-
-  
-  <div class="item">
-    <a href="https://www.linkedin.com/in/anir0y" target="_blank">
-      <i class="large linkedin icon" title="Linkedin"></i>
-    </a>
-  </div>
-  
-
-  
-  <div class="item">
-    <a href="https://github.com/anir0y" target="_blank">
-      <i class="large github icon" title="GitHub"></i>
-    </a>
-  </div>
-  
-
-  
-
-  
-</nav>
-
-    </article>
-  </div>
-
-  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
-    
-    <article class="ui segment">
-      YOU CAN REUSE MY CONTENT
-    </article>
-    
-  </div>
-
-  
-  
-  
-</div>
-
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <script>
-  window.defaultDark =  null 
-  window.backgroundDark = "black"
-  window.backgroundImageDark =  null 
-  window.darkNav =  true 
-  window.hasTwitterEmbed =  true 
-
-  if (window.hasTwitterEmbed) {
-    
-    window.twttr = (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {}
-      if (d.getElementById(id)) return t
-      js = d.createElement(s)
-      js.id = id
-      js.src = 'https://platform.twitter.com/widgets.js'
-      fjs.parentNode.insertBefore(js, fjs)
-
-      t._e = []
-      t.ready = function (f) {
-        t._e.push(f)
-      }
-
-      return t
-    })(document, 'script', 'twitter-wjs')
-  }
-</script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantic.min.js"></script>
-<script src="/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/js/header.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/theme.js"></script>
-
-    
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/post.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
-
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
-
-
-
-<script>
-  hljs.initHighlightingOnLoad()
-  setHighlightTheme()
-
-  function setHighlightTheme() {
-    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
-    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
-
-    var lightTheme = "tomorrow"
-    var darkTheme = "tomorrow-night"
-    var theme = isDark === 'y' ? darkTheme : lightTheme
-
-    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
-    $('pre').css('background', isDark === 'y' ? '#333' : '')
-  }
-</script>
-
-
-
-
-
-    
-    <div class="ui inverted segment" id="dream-search">
-  <div class="ui search">
-    <div class="ui transparent input">
-      <input class="prompt" type="text" placeholder="Search" />
-    </div>
-    <div class="results"></div>
-  </div>
-</div>
-<script>
-  $(document).ready(function () {
-    $.getJSON('http:\/\/localhost:1313\//index.json', function (data) {
-      $('.ui.search').search({
-        source: data,
-        searchFields: ['title'],
-        showNoResults: true,
-      })
-    })
-  })
-</script>
-<script src="/js/search.js"></script>
-
-    
-
-    
-
-    
-  </body>
-</html>
+</code></pre></li></ul><p>NOTE:</p><ul><li>\S is a regexp token to match any non-whitespace character</li><li>-i to make case insensitive search</li><li>-o to display only matching content</li></ul><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><hr><h2 id=task-03-working-with-files>Task 03: Working with files<a hidden class=anchor aria-hidden=true href=#task-03-working-with-files>#</a></h2><p>You should be somewhat familiar already with working with files. Similar to windows, we can do the following:</p><ul><li>copy files and folders</li><li>move files and folders</li><li>rename files and folders</li><li>create files and folders</li></ul><p>For a quick recap to train your mental memory on the commands please refer to the below information:</p><p><img alt=img loading=lazy src=https://i.imgur.com/pTyp2w4.png></p><p>A few additional things to remember is that occasionally you may encounter files/folders with special characters such as - (dash). Just remember that if you try to copy or move these files you will encounter errors because Linux interprets the - as a type of argument, therefore you will have to place &ndash; just before the filename. For example: cp &ndash; -filename.txt /home/folderExample.</p><h3 id=31-hypothetically-you-find-yourself-in-a-directory-with-many-files-and-want-to-move-all-these-files-to-the-directory-of-homefrancislogs-what-is-the-correct-command-to-do-this>3.1 Hypothetically, you find yourself in a directory with many files and want to move all these files to the directory of /home/francis/logs. What is the correct command to do this?<a hidden class=anchor aria-hidden=true href=#31-hypothetically-you-find-yourself-in-a-directory-with-many-files-and-want-to-move-all-these-files-to-the-directory-of-homefrancislogs-what-is-the-correct-command-to-do-this>#</a></h3><p><code>mv * /home/francis/logs</code></p><h3 id=32-hypothetically-you-want-to-transfer-a-file-from-your-homejamesdesktop-with-the-name-scriptpy-to-the-remote-machine-192168105-directory-of-homejohnscripts-using-the-username-of-john-what-would-be-the-full-command-to-do-this>3.2 Hypothetically, you want to transfer a file from your /home/james/Desktop/ with the name script.py to the remote machine (192.168.10.5) directory of /home/john/scripts using the username of john. What would be the full command to do this?<a hidden class=anchor aria-hidden=true href=#32-hypothetically-you-want-to-transfer-a-file-from-your-homejamesdesktop-with-the-name-scriptpy-to-the-remote-machine-192168105-directory-of-homejohnscripts-using-the-username-of-john-what-would-be-the-full-command-to-do-this>#</a></h3><p><code>scp /home/james/Desktop/script.py john@192.168.10.5:/home/john/scripts</code></p><h3 id=33-how-would-you-rename-a-folder-named--logs-to--newlogs>3.3 How would you rename a folder named -logs to -newlogs<a hidden class=anchor aria-hidden=true href=#33-how-would-you-rename-a-folder-named--logs-to--newlogs>#</a></h3><p><code>mv -- -logs -newlogs</code></p><h3 id=34-how-would-you-copy-the-file-named-encryption-keys-to-the-directory-of-homejohnlogs>3.4 How would you copy the file named encryption keys to the directory of /home/john/logs<a hidden class=anchor aria-hidden=true href=#34-how-would-you-copy-the-file-named-encryption-keys-to-the-directory-of-homejohnlogs>#</a></h3><p><code>cp encryption keys /home/john/logs</code></p><h3 id=35-find-a-file-named-readme_hinttxt-inside-topsons-directory-and-read-it-using-the-instructions-it-gives-you-get-the-second-flag>3.5 Find a file named readME_hint.txt inside topson&rsquo;s directory and read it. Using the instructions it gives you, get the second flag.<a hidden class=anchor aria-hidden=true href=#35-find-a-file-named-readme_hinttxt-inside-topsons-directory-and-read-it-using-the-instructions-it-gives-you-get-the-second-flag>#</a></h3><ul><li><p>let&rsquo;s read the 2nd flag</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># find `readME_hint.txt`</span>
+</span></span><span class=line><span class=cl>topson@james:~$ find . -type f -name readME_hint.txt
+</span></span><span class=line><span class=cl>./corperateFiles/RecordsFinances/readME_hint.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#read the file</span>
+</span></span><span class=line><span class=cl>topson@james:~$ cat ./corperateFiles/RecordsFinances/readME_hint.txt 
+</span></span><span class=line><span class=cl>Instructions: Move the MoveMe.txt file to the march folder directory and <span class=k>then</span> execute the SH program to reveal the second flag.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>you need to research three things:
+</span></span><span class=line><span class=cl>                              how to execute bash files
+</span></span><span class=line><span class=cl>                              how to work with files that begin with a - <span class=o>(</span>dash<span class=o>)</span> whether that is to <span class=k>do</span> with copying or moving files 
+</span></span><span class=line><span class=cl>                              how to work with files with spaces
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>### follow the instructions for flag2</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>topson@james:~/corperateFiles/RecordsFinances$ mv -- -MoveMe.txt <span class=s1>&#39;-march folder&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>topson@james:~/corperateFiles/RecordsFinances$ <span class=nb>cd</span> -- <span class=s1>&#39;-march folder&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>topson@james:~/corperateFiles/RecordsFinances/-march folder$ bash -- -runME.sh
+</span></span><span class=line><span class=cl>-MoveMe.txt exists.
+</span></span><span class=line><span class=cl>Flag<span class=o>{</span>flag-was-here<span class=o>}</span>
+</span></span></code></pre></div></li></ul><hr><h2 id=task-04--hashing---introduction>Task 04: Hashing - introduction<a hidden class=anchor aria-hidden=true href=#task-04--hashing---introduction>#</a></h2><h3 id=41-download-the-hash-file-attached-to-this-task-and-attempt-to-crack-the-md5-hash-what-is-the-password>4.1 Download the hash file attached to this task and attempt to crack the MD5 hash. What is the password?<a hidden class=anchor aria-hidden=true href=#41-download-the-hash-file-attached-to-this-task-and-attempt-to-crack-the-md5-hash-what-is-the-password>#</a></h3><ul><li><p>download the file, read the hash</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>cat hash1.txt
+</span></span><span class=line><span class=cl>5d7845ac6ee7cfffafc5fe5f35cf666d
+</span></span><span class=line><span class=cl><span class=c1>#using online hash crackers</span>
+</span></span><span class=line><span class=cl>plain text is: secret123
+</span></span></code></pre></div></li></ul><p>SSH as sarah using: sarah@[MACHINE_IP] and use the password: rainbowtree1230x</p><h3 id=42-what-is-the-hash-type-stored-in-the-file-hashatxt>4.2 What is the hash type stored in the file hashA.txt<a hidden class=anchor aria-hidden=true href=#42-what-is-the-hash-type-stored-in-the-file-hashatxt>#</a></h3><ul><li><p>steps</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ ls
+</span></span><span class=line><span class=cl>example.txt         logs     oldLogs   <span class=s1>&#39;system AB&#39;</span>
+</span></span><span class=line><span class=cl><span class=s1>&#39;linuxconf backup&#39;</span>   logs33   serverLx  <span class=s1>&#39;system mx&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ find . -type f -name hashA.txt
+</span></span><span class=line><span class=cl>./system AB/server_mail/server settings/hashA.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ cat ./system<span class=se>\ </span>AB/server_mail/server<span class=se>\ </span>settings/hashA.txt 
+</span></span><span class=line><span class=cl>f9d4049dd6a4dc35d40e5265954b2a46
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>hashid f9d4049dd6a4dc35d40e5265954b2a46
+</span></span><span class=line><span class=cl>Analyzing <span class=s1>&#39;f9d4049dd6a4dc35d40e5265954b2a46&#39;</span>
+</span></span><span class=line><span class=cl><span class=o>[</span>+<span class=o>]</span> MD2 
+</span></span><span class=line><span class=cl><span class=o>[</span>+<span class=o>]</span> MD5 
+</span></span><span class=line><span class=cl><span class=o>[</span>+<span class=o>]</span> MD4 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>ans is one of them<span class=o>]</span>
+</span></span></code></pre></div></li></ul><h3 id=43-crack-hashatxt-using-john-the-ripper-what-is-the-password>4.3 Crack hashA.txt using john the ripper, what is the password?<a hidden class=anchor aria-hidden=true href=#43-crack-hashatxt-using-john-the-ripper-what-is-the-password>#</a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>admin
+</span></span></code></pre></div><h3 id=44-what-is-the-hash-type-stored-in-the-file-hashbtxt>4.4 What is the hash type stored in the file hashB.txt<a hidden class=anchor aria-hidden=true href=#44-what-is-the-hash-type-stored-in-the-file-hashbtxt>#</a></h3><ul><li><p>follow the steps:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1>#find the  file</span>
+</span></span><span class=line><span class=cl>sarah@james:~$ find . -type f -name hashB.txt
+</span></span><span class=line><span class=cl>./oldLogs/settings/craft/hashB.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># read the file</span>
+</span></span><span class=line><span class=cl>sarah@james:~$ cat ./oldLogs/settings/craft/hashB.txt
+</span></span><span class=line><span class=cl>b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># id the hash</span>
+</span></span><span class=line><span class=cl>hashid b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3
+</span></span><span class=line><span class=cl>Analyzing <span class=err>&#39;</span>b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3
+</span></span><span class=line><span class=cl><span class=o>[</span>ans-was-here<span class=o>]</span>
+</span></span></code></pre></div></li></ul><h3 id=45-find-a-wordlist--with-the-file-extention-of-mnf-and-use-it-to-crack-the-hash-with-the-filename-hashctxt-what-is-the-password>4.5 Find a wordlist with the file extention of &lsquo;.mnf&rsquo; and use it to crack the hash with the filename hashC.txt. What is the password?<a hidden class=anchor aria-hidden=true href=#45-find-a-wordlist--with-the-file-extention-of-mnf-and-use-it-to-crack-the-hash-with-the-filename-hashctxt-what-is-the-password>#</a></h3><ul><li><p>follow instructions</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>find the wordlist
+</span></span><span class=line><span class=cl>sarah@james:~$ find . -type f -name *.mnf
+</span></span><span class=line><span class=cl>./system AB/db/ww.mnf
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#copy it to local machine</span>
+</span></span><span class=line><span class=cl>scp sarah@<span class=o>[</span>MACHINE_IP<span class=o>]</span>:<span class=s1>&#39;~/system\ AB/db/ww.mnf&#39;</span> .
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># find the hashC.txt</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ find . -type f -name hashC.txt
+</span></span><span class=line><span class=cl>./system AB/server_mail/hashC.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># save the hash and get cracking</span>
+</span></span></code></pre></div></li></ul><hr><h2 id=task-05-decoding-base64>task 05: Decoding base64<a hidden class=anchor aria-hidden=true href=#task-05-decoding-base64>#</a></h2><h3 id=51-what-is-the-name-of-the-tool-which-allows-us-to-decode-base64-strings>5.1 what is the name of the tool which allows us to decode base64 strings?<a hidden class=anchor aria-hidden=true href=#51-what-is-the-name-of-the-tool-which-allows-us-to-decode-base64-strings>#</a></h3><p><code>base64</code> # linux utility</p><h3 id=52-find-a-file-called-encodedtxt-what-is-the-special-answer>5.2 find a file called encoded.txt. What is the special answer?<a hidden class=anchor aria-hidden=true href=#52-find-a-file-called-encodedtxt-what-is-the-special-answer>#</a></h3><ul><li><p>follow the steps</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1>#find the file </span>
+</span></span><span class=line><span class=cl>sarah@james:~$ find . -type f -name encoded.txt
+</span></span><span class=line><span class=cl>./system AB/managed/encoded.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Decode the file and look for the spacial word:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ base64 -d <span class=s1>&#39;/home/sarah/system AB/managed/encoded.txt&#39;</span> <span class=p>|</span> grep --color special
+</span></span><span class=line><span class=cl>you know how to decode base64 data, well <span class=k>done</span>. you deserve the answer but because this is the linux strength training room where you are intended to build your linux memory and skills, you will have to find it in this very long text file. Look <span class=k>for</span> the keyword: <span class=s1>&#39;special&#39;</span> in this very large text file.
+</span></span><span class=line><span class=cl>Nullam nibh diam, gravida vestibulum mi sed, consectetur tincidunt nunc. Morbi pharetra turpis nec ligula pellentesque lobortis. Aenean sit amet ullamcorper turpis. Nam id magna sed felis facilisis accumsan. Aliquam cursus dolor eu enim maximus, eu malesuada sapien dignissim. Suspendisse ultrices condimentum nisi et pellentesque. Fusce ornare aliquet quam, eu efficitur elit facilisis et. Donec special: <span class=sb>`</span>the answer is in a file called ent.txt<span class=sb>`</span>, find it sagittis dolor nulla, interdum auctor tortor accumsan et. Aliquam vitae egestas dui, ut condimentum magna. Vestibulum tellus lacus, sollicitudin vitae dui sed, bibendum fermentum lacus. Mauris diam leo, efficitur at mi iaculis, sagittis hendrerit justo. Vivamus ante odio, cursus id tristique vitae, dapibus id eros. Quisque vitae mauris massa. Phasellus ut lectus efficitur, vulputate leo et, facilisis metus. Nulla volutpat nulla sem, vel vestibulum libero ultricies eu. Nam pulvinar tincidunt metus et accumsan.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Now we need to find ent.txt:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ find /home/sarah -type f -name ent.txt 2&gt;/dev/null
+</span></span><span class=line><span class=cl>/home/sarah/logs/zhc/ent.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ cat /home/sarah/logs/zhc/ent.txt
+</span></span><span class=line><span class=cl>bfddc35c8f9c989545119988f79ccc77
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># crack the hash</span>
+</span></span></code></pre></div></li></ul><hr><h2 id=task-06-encryptiondecryption-using-gpg>Task 06: Encryption/Decryption using gpg<a hidden class=anchor aria-hidden=true href=#task-06-encryptiondecryption-using-gpg>#</a></h2><h3 id=62-you-wish-to-encrypt-a-file-called-history_logstxt-using-the-aes-128-scheme-what-is-the-full-command-to-do-this>6.2 You wish to encrypt a file called history_logs.txt using the AES-128 scheme. What is the full command to do this?<a hidden class=anchor aria-hidden=true href=#62-you-wish-to-encrypt-a-file-called-history_logstxt-using-the-aes-128-scheme-what-is-the-full-command-to-do-this>#</a></h3><p><code>gpg --cipher-algo AES-128 --symmetric history_logs.txt</code></p><h3 id=63-what-is-the-command-to-decrypt-the-file-you-just-encrypted>6.3 What is the command to decrypt the file you just encrypted?<a hidden class=anchor aria-hidden=true href=#63-what-is-the-command-to-decrypt-the-file-you-just-encrypted>#</a></h3><p><code>gpg history_logs.txt.gpg</code></p><h3 id=64-find-an-encrypted-file-called-layer4txt-its-password-is-bob-use-this-to-locate-the-flag-what-is-the-flag>6.4 Find an encrypted file called layer4.txt, its password is bob. Use this to locate the flag. What is the flag?<a hidden class=anchor aria-hidden=true href=#64-find-an-encrypted-file-called-layer4txt-its-password-is-bob-use-this-to-locate-the-flag-what-is-the-flag>#</a></h3><ul><li><p>steps</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>find the file <span class=sb>`</span>layer4.txt<span class=sb>`</span>
+</span></span><span class=line><span class=cl>sarah@james:~$ find . -type f -name layer4.txt
+</span></span><span class=line><span class=cl>./system AB/keys/vnmA/layer4.txt
+</span></span></code></pre></div></li><li><p>decrypt it:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gpg <span class=s1>&#39;./system AB/keys/vnmA/layer4.txt&#39;</span>
+</span></span><span class=line><span class=cl>gpg: ./system AB/keys/vnmA/layer4.txt: unknown suffix
+</span></span><span class=line><span class=cl>Enter new filename <span class=o>[</span>layer4.txt<span class=o>]</span>: decrypted-l4
+</span></span><span class=line><span class=cl><span class=c1># read decrypted file</span>
+</span></span><span class=line><span class=cl>sarah@james:~$ cat decrypted-l4 
+</span></span><span class=line><span class=cl>1. Find a file called layer3.txt, its password is james.
+</span></span></code></pre></div></li><li><p>find & decrypt layer3.txt</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ find . -type f -name layer3.txt
+</span></span><span class=line><span class=cl>./oldLogs/2014-02-15/layer3.txt
+</span></span><span class=line><span class=cl>sarah@james:~$ gpg <span class=s1>&#39;./oldLogs/2014-02-15/layer3.txt&#39;</span>
+</span></span><span class=line><span class=cl>gpg: WARNING: no <span class=nb>command</span> supplied.  Trying to guess what you mean ...
+</span></span><span class=line><span class=cl>gpg: AES256 encrypted data
+</span></span><span class=line><span class=cl>gpg: encrypted with <span class=m>1</span> passphrase
+</span></span><span class=line><span class=cl>gpg: ./oldLogs/2014-02-15/layer3.txt: unknown suffix
+</span></span><span class=line><span class=cl>Enter new filename <span class=o>[</span>layer3.txt<span class=o>]</span>: decrypted-l3.txt
+</span></span><span class=line><span class=cl>sarah@james:~$ cat decrypted-l3.txt 
+</span></span><span class=line><span class=cl>1. Find a file called layer2.txt, its password is tony.
+</span></span></code></pre></div></li><li><p>find & decrypt layer2.txt</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ find . -type f -name layer2.txt
+</span></span><span class=line><span class=cl>./oldLogs/settings/layer2.txt
+</span></span><span class=line><span class=cl>sarah@james:~$ gpg <span class=s1>&#39;./oldLogs/settings/layer2.txt&#39;</span>
+</span></span><span class=line><span class=cl>gpg: WARNING: no <span class=nb>command</span> supplied.  Trying to guess what you mean ...
+</span></span><span class=line><span class=cl>gpg: AES256 encrypted data
+</span></span><span class=line><span class=cl>gpg: encrypted with <span class=m>1</span> passphrase
+</span></span><span class=line><span class=cl>gpg: ./oldLogs/settings/layer2.txt: unknown suffix
+</span></span><span class=line><span class=cl>Enter new filename <span class=o>[</span>layer2.txt<span class=o>]</span>: decrytpd-l2.txt
+</span></span><span class=line><span class=cl>sarah@james:~$ cat decrytpd-l2.txt 
+</span></span><span class=line><span class=cl>MS4gRmluZCBhIGZpbGUgY2FsbGVkIGxheWVyMS50eHQsIGl0cyBwYXNzd29yZCBpcyBoYWNrZWQu
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ cat decrytpd-l2.txt  <span class=p>|</span> base64 -d
+</span></span><span class=line><span class=cl>1. Find a file called layer1.txt, its password is hacked.
+</span></span></code></pre></div></li><li><p>find & decrypt layer1.txt</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ find . -type f -name layer1.txt
+</span></span><span class=line><span class=cl>./logs/zmn/layer1.txt
+</span></span><span class=line><span class=cl>sarah@james:~$ gpg <span class=s1>&#39;./logs/zmn/layer1.txt&#39;</span>
+</span></span><span class=line><span class=cl>gpg: WARNING: no <span class=nb>command</span> supplied.  Trying to guess what you mean ...
+</span></span><span class=line><span class=cl>gpg: AES256 encrypted data
+</span></span><span class=line><span class=cl>gpg: encrypted with <span class=m>1</span> passphrase
+</span></span><span class=line><span class=cl>gpg: ./logs/zmn/layer1.txt: unknown suffix
+</span></span><span class=line><span class=cl>Enter new filename <span class=o>[</span>layer1.txt<span class=o>]</span>: d-l1.txt
+</span></span><span class=line><span class=cl>sarah@james:~$ cat d-l1.txt 
+</span></span><span class=line><span class=cl>Flag<span class=o>{</span>flag-was-here<span class=o>}</span>
+</span></span></code></pre></div></li></ul><hr><h2 id=task-07-cracking-encrypted-gpg-files>Task 07: Cracking encrypted gpg files<a hidden class=anchor aria-hidden=true href=#task-07-cracking-encrypted-gpg-files>#</a></h2><h3 id=72>7.2<a hidden class=anchor aria-hidden=true href=#72>#</a></h3><p>Find an encrypted file called personal.txt.gpg and find a wordlist called data.txt. Use tac to reverse the wordlist before brute-forcing it against the encrypted file. What is the password to the encrypted file?</p><ul><li><p>steps</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ find /home/sarah -type f -name personal.txt.gpg 2&gt;/dev/null
+</span></span><span class=line><span class=cl>/home/sarah/oldLogs/units/personal.txt.gpg
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ find /home/sarah -type f -name data.txt 2&gt;/dev/null
+</span></span><span class=line><span class=cl>/home/sarah/logs/zmn/old stuff/-mvLp/data.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ tac <span class=s1>&#39;/home/sarah/logs/zmn/old stuff/-mvLp/data.txt&#39;</span> &gt; wordrev.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ john /home/sarah/oldLogs/units/personal.txt.gpg -w wordrev.txt --format gpg
+</span></span><span class=line><span class=cl>...
+</span></span><span class=line><span class=cl>valamanezivonia
+</span></span></code></pre></div></li></ul><h3 id=73>7.3<a hidden class=anchor aria-hidden=true href=#73>#</a></h3><p>What is written in this now decrypted file?</p><ul><li><p>steps</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ gpg /home/sarah/oldLogs/units/personal.txt.gpg
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ cat /home/sarah/oldLogs/units/personal.txt
+</span></span><span class=line><span class=cl>getting stronger in linux
+</span></span></code></pre></div></li></ul><hr><h2 id=task-08-reading-sql-databases>Task 08: Reading SQL databases<a hidden class=anchor aria-hidden=true href=#task-08-reading-sql-databases>#</a></h2><h3 id=81>8.1<a hidden class=anchor aria-hidden=true href=#81>#</a></h3><p>Find a file called employees.sql and read the SQL database. (Sarah and Sameer can log both into mysql using the password: password). Find the flag contained in one of the tables. What is the flag?</p><ul><li><p>steps</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ find /home/sarah -type f -name employees.sql 2&gt;/dev/null
+</span></span><span class=line><span class=cl>/home/sarah/serverLx/employees.sql
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ <span class=nb>cd</span> /home/sarah/serverLx/
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sarah@james:~$ mysql -p
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>mysql&gt; <span class=nb>source</span> /home/sarah/serverLx/employees.sql
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>mysql&gt; SELECT * FROM employees WHERE <span class=nv>first_name</span> <span class=o>=</span> <span class=s1>&#39;Lobel&#39;</span> and last_name LIKE <span class=s1>&#39;%Flag%&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>+--------+------------+------------+----------------+--------+------------+
+</span></span><span class=line><span class=cl><span class=p>|</span> emp_no <span class=p>|</span> birth_date <span class=p>|</span> first_name <span class=p>|</span> last_name      <span class=p>|</span> gender <span class=p>|</span> hire_date  <span class=p>|</span>
+</span></span><span class=line><span class=cl>+--------+------------+------------+----------------+--------+------------+
+</span></span><span class=line><span class=cl><span class=p>|</span> <span class=m>499973</span> <span class=p>|</span> 1963-06-03 <span class=p>|</span> Lobel      <span class=p>|</span> Flag<span class=o>{</span>flag-was-here<span class=o>}</span> <span class=p>|</span> M      <span class=p>|</span> 1994-02-01 <span class=p>|</span>
+</span></span><span class=line><span class=cl>+--------+------------+------------+----------------+--------+------------+
+</span></span><span class=line><span class=cl><span class=m>1</span> row in <span class=nb>set</span> <span class=o>(</span>0.07 sec<span class=o>)</span>
+</span></span></code></pre></div></li></ul><hr><h2 id=task-09-final-challenge>Task 09: Final Challenge<a hidden class=anchor aria-hidden=true href=#task-09-final-challenge>#</a></h2><h3 id=91>9.1<a hidden class=anchor aria-hidden=true href=#91>#</a></h3><h3 id=92>9.2<a hidden class=anchor aria-hidden=true href=#92>#</a></h3><p>What is Sameer&rsquo;s SSH password?</p><p>Hint: You may need to use grep to find keywords based on what you would expect the next chat log to include? Perhaps names?</p><ul><li><p>Find files including Sameer:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ grep -iRl Sameer /home 2&gt;/dev/null
+</span></span><span class=line><span class=cl>/home/shared/chatlogs/Pqmr
+</span></span><span class=line><span class=cl>/home/shared/chatlogs/LpnQ
+</span></span><span class=line><span class=cl>/home/shared/chatlogs/KfnP
+</span></span></code></pre></div></li><li><p>read the files: [here I&rsquo;m sharing the releavent one]</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ cat /home/shared/chatlogs/Pqmr
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: Hey Sameer, <span class=k>do</span> you by any chance no where I can find the sql back-up copy on this system? The database server is down, and I really need to <span class=nb>help</span> a customer out.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sameer: Sure. <span class=nb>let</span> me check.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: Thanks.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sameer: check the home/shared/sql/ directory. It should be in there with the date of today.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: Thank you Sameer.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sameer: No problem. It probably is encrypted. Just use the password: <span class=sb>`</span>danepon<span class=sb>`</span>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: OK, thank you.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sameer: No problem
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sameer: By the way, <span class=k>if</span> you have any issues just talk to Michael as I will be off <span class=k>for</span> the remainder of the day. See you tomorrow. Bye.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: Bye.
+</span></span></code></pre></div></li><li><p>SQL backup should be in /home/shared/sql/ and encrypted with the password <code>danepon</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sarah@james:~$ cat /home/shared/chatlogs/KfnP
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: Michael, I have been having trouble accessing the sql database back-up copy made today. Sameer gave me the password, but it just will not work?
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Michael: Ah, yes. I remember, the security engineer was testing out a new automated software <span class=k>for</span> creating sql database backups. He must have configured it to encrypt the backups with a different password.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: So how can I get a hold of it?
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Michael: Good question. From what I remember the <span class=nb>test</span> program utilised a configuration file around 50mb. It is located inside the home/shared/sql/conf directory. This configuration file contained the directory location of a wordlist it used to randomly <span class=k>select</span> a password from <span class=k>for</span> encrypting the sql back-up copies with.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: I <span class=k>do</span> not really understand the last part?
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Michael: once you find the configuration file and consequently the wordlist directory, visit it. One of those wordlists must contain the password it used <span class=k>for</span> the testing. All I remember is that the password began with ebq. You will need Sameer’s account. His SSH password is: <span class=sb>`</span>thegreatestpasswordever000<span class=sb>`</span>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>2020-08-13<span class=o>)</span> Sarah: Thank you, I will try to find it.
+</span></span></code></pre></div></li></ul><p>notes:</p><ul><li>password of /home/shared/sql/2020-08-13.zip.gpg is not danepon</li><li>the config file is in /home/shared/sql/conf and is about 50mb</li><li>the config file contains the wordlist directory</li><li>the SQL backup password start with ebq</li><li>Sameer&rsquo;s SSH password: thegreatestpasswordever000</li></ul><h3 id=93>9.3<a hidden class=anchor aria-hidden=true href=#93>#</a></h3><p>What is the password for the sql database back-up copy</p><ul><li><p>Find the config file:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sameer@james:~$ find /home/shared/sql/ -type f -size 50M
+</span></span><span class=line><span class=cl>/home/shared/sql/conf/JKpN
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sameer@james:~$ head /home/shared/sql/conf/JKpN
+</span></span><span class=line><span class=cl>Software: sql auto-back-up
+</span></span><span class=line><span class=cl>Version: 2.3
+</span></span><span class=line><span class=cl>Wordlist directory: <span class=nv>aG9tZS9zYW1lZXIvSGlzdG9yeSBMQi9sYWJtaW5kL2xhdGVzdEJ1aWxkL2NvbmZpZ0JEQgo</span><span class=o>=</span>
+</span></span><span class=line><span class=cl>sql-encrypt: <span class=nb>true</span>
+</span></span><span class=line><span class=cl>time: 2h*
+</span></span><span class=line><span class=cl>user: none
+</span></span></code></pre></div></li><li><p>wordlist dir:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sameer@james:~$ <span class=nb>printf</span> %s <span class=nv>aG9tZS9zYW1lZXIvSGlzdG9yeSBMQi9sYWJtaW5kL2xhdGVzdEJ1aWxkL2NvbmZpZ0JEQgo</span><span class=o>=</span> <span class=p>|</span> base64 -d
+</span></span><span class=line><span class=cl>home/sameer/History LB/labmind/latestBuild/configBD
+</span></span></code></pre></div></li></ul><p>There is a mistake here, the last folder is configBDB and not configBD.</p><ul><li><p>There 3 files with such passwords starting with ebq:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sameer@james:~$ grep -iRlE <span class=s1>&#39;^ebq&#39;</span> <span class=s1>&#39;/home/sameer/History LB/labmind/latestBuild/configBDB&#39;</span>
+</span></span><span class=line><span class=cl>/home/sameer/History LB/labmind/latestBuild/configBDB/pLmjwi
+</span></span><span class=line><span class=cl>/home/sameer/History LB/labmind/latestBuild/configBDB/LmqAQl
+</span></span><span class=line><span class=cl>/home/sameer/History LB/labmind/latestBuild/configBDB/Ulpsmt
+</span></span></code></pre></div></li><li><p>Show only the passwords:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sameer@james:~$ grep -iRhE <span class=s1>&#39;^ebq&#39;</span> <span class=s1>&#39;/home/sameer/History LB/labmind/latestBuild/configBDB&#39;</span>
+</span></span><span class=line><span class=cl>ebqiojsdfioj
+</span></span><span class=line><span class=cl>ebqiojsiodj
+</span></span><span class=line><span class=cl>ebqiojdifoj
+</span></span><span class=line><span class=cl>ebqiopsjdfopj
+</span></span><span class=line><span class=cl>ebqnice
+</span></span><span class=line><span class=cl>ebqops
+</span></span><span class=line><span class=cl>ebqiuiud
+</span></span><span class=line><span class=cl>ebqjoisjdfij
+</span></span><span class=line><span class=cl>ebqkjjdd
+</span></span><span class=line><span class=cl>ebqijsji
+</span></span><span class=line><span class=cl>ebqopkopk
+</span></span><span class=line><span class=cl>ebqattle
+</span></span></code></pre></div></li><li><p>Let&rsquo;s download the encrypted SQL backup:</p><p><code>$ scp sameer@10.10.61.194:/home/shared/sql/2020-08-13.zip.gpg .</code></p></li><li><p><code>gpg2john</code> doesn&rsquo;t work because the file is too big:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gpg2john 2020-08-13.zip.gpg 2020-08-13.zip.gpg.hash
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>File 2020-08-13.zip.gpg
+</span></span><span class=line><span class=cl>Bad parameter: give<span class=o>(</span><span class=nv>len</span><span class=o>=</span>106935040, <span class=nv>buf</span><span class=o>=</span>0x5571785b0420, <span class=nv>buf_size</span><span class=o>=</span>90000<span class=o>)</span>, len can not be bigger than buf_size.
+</span></span></code></pre></div></li><li><p>So let&rsquo;s use <a href=https://gist.github.com/anir0y/3afcd6eaeeebe9f828515f33cf723b4c>this script</a> instead:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ ./crackgpg.sh 2020-08-13.zip.gpg wordlist.txt
+</span></span><span class=line><span class=cl>FAILED - ebqiojsdfioj
+</span></span><span class=line><span class=cl>FAILED - ebqiojsiodj
+</span></span><span class=line><span class=cl>FAILED - ebqiojdifoj
+</span></span><span class=line><span class=cl>FAILED - ebqiopsjdfopj
+</span></span><span class=line><span class=cl>FAILED - ebqnice
+</span></span><span class=line><span class=cl>FAILED - ebqops
+</span></span><span class=line><span class=cl>FAILED - ebqiuiud
+</span></span><span class=line><span class=cl>FAILED - ebqjoisjdfij
+</span></span><span class=line><span class=cl>FAILED - ebqkjjdd
+</span></span><span class=line><span class=cl>FAILED - ebqijsji
+</span></span><span class=line><span class=cl>FAILED - ebqopkopk
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>SUCESS - <span class=sb>`</span>ebqattle<span class=sb>`</span>  <span class=c1># flag </span>
+</span></span></code></pre></div></li></ul><h3 id=94>9.4<a hidden class=anchor aria-hidden=true href=#94>#</a></h3><p>Find the SSH password of the user James. What is the password?</p><ul><li>Extarct the archive:</li></ul><p><code>7z x 2020-08-13.zip</code></p><ul><li>7z x 2020-08-13.zip</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>grep -ri james 2020-08-13
+</span></span><span class=line><span class=cl>2020-08-13/sakila/sakila-mv-data.sql:<span class=o>(</span>84,<span class=s1>&#39;JAMES&#39;</span>,<span class=s1>&#39;PITT&#39;</span>,<span class=s1>&#39;2006-02-15 04:34:33&#39;</span><span class=o>)</span>,
+</span></span><span class=line><span class=cl>2020-08-13/sakila/sakila-mv-data.sql:<span class=o>(</span>71,1,<span class=s1>&#39;KATHY&#39;</span>,<span class=s1>&#39;JAMES&#39;</span>,<span class=s1>&#39;KATHY.JAMES@sakilacustomer.org&#39;</span>,75,1,<span class=s1>&#39;2006-02-14 22:04:36&#39;</span>,<span class=s1>&#39;2006-02-15 04:57:20&#39;</span><span class=o>)</span>,
+</span></span><span class=line><span class=cl>2020-08-13/sakila/sakila-mv-data.sql:<span class=o>(</span>299,2,<span class=s1>&#39;JAMES&#39;</span>,<span class=s1>&#39;GANNON&#39;</span>,<span class=s1>&#39;JAMES.GANNON@sakilacustomer.org&#39;</span>,304,1,<span class=s1>&#39;2006-02-14 22:04:37&#39;</span>,<span class=s1>&#39;2006-02-15 04:57:20&#39;</span><span class=o>)</span>,
+</span></span><span class=line><span class=cl>2020-08-13/load_employees.dump:<span class=o>(</span>499996,<span class=s1>&#39;1953-03-07&#39;</span>,<span class=s1>&#39;James&#39;</span>,<span class=s1>&#39;#vuimaxcullings&#39;</span>,<span class=s1>&#39;M&#39;</span>,<span class=s1>&#39;1990-09-27&#39;</span><span class=o>)</span>,
+</span></span></code></pre></div><h3 id=95>9.5<a hidden class=anchor aria-hidden=true href=#95>#</a></h3><p>SSH as james and change the user to root</p><ul><li><p>SSH back with <code>james:vuimaxcullings</code></p></li><li><p>James has root permission through sudo:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>james@james:~$ sudo -l
+</span></span><span class=line><span class=cl><span class=o>[</span>sudo<span class=o>]</span> password <span class=k>for</span> james: 
+</span></span><span class=line><span class=cl>Matching Defaults entries <span class=k>for</span> james on james:
+</span></span><span class=line><span class=cl>env_reset, mail_badpass, <span class=nv>secure_path</span><span class=o>=</span>/usr/local/sbin<span class=se>\:</span>/usr/local/bin<span class=se>\:</span>/usr/sbin<span class=se>\:</span>/usr/bin<span class=se>\:</span>/sbin<span class=se>\:</span>/bin<span class=se>\:</span>/snap/bin
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>User james may run the following commands on james:
+</span></span><span class=line><span class=cl><span class=o>(</span>ALL : ALL<span class=o>)</span> ALL
+</span></span></code></pre></div></li><li><p>Grab the flag:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>james@james:~$ sudo cat /root/root.txt
+</span></span><span class=line><span class=cl>Flag<span class=o>{</span>flag-was-here<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>NOW YOU ARE LINUX STRONGER!!!
+</span></span></code></pre></div></li></ul><hr><script async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><p><ins class=adsbygoogle style=display:block;text-align:center data-ad-layout=in-article data-ad-format=fluid data-ad-client=ca-pub-3526678290068011 data-ad-slot=7160066188></ins></p><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><script data-name=BMC-Widget data-cfasync=false src=https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js data-id=anir0y data-description="Support me on Buy me a coffee!" data-message data-color=#5F7FFF data-position=Right data-x_margin=18 data-y_margin=18></script></div><footer class=post-footer><ul class=post-tags><li><a href=https://classroom.anir0y.in/tags/tryhackme/>Tryhackme</a></li><li><a href=https://classroom.anir0y.in/tags/rooms/>Rooms</a></li><li><a href=https://classroom.anir0y.in/tags/thm/>Thm</a></li></ul><nav class=paginav><a class=prev href=https://classroom.anir0y.in/post/tryhackme-relevant/><span class=title>« Prev</span><br><span>TryHackMe Relevant</span>
+</a><a class=next href=https://classroom.anir0y.in/post/tryhackme-sweettoothinc/><span class=title>Next »</span><br><span>TryHackMe Sweettooth Inc.</span></a></nav><ul class=share-buttons><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Linux Strength Training on x" href="https://x.com/intent/tweet/?text=TryHackMe%20Linux%20Strength%20Training&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxstrengthtraining%2f&amp;hashtags=tryhackme%2crooms%2cthm"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446C483.971.0 512 28.03 512 62.554zM269.951 190.75 182.567 75.216H56L207.216 272.95 63.9 436.783h61.366L235.9 310.383l96.667 126.4H456L298.367 228.367l134-153.151H371.033zM127.633 110h36.468l219.38 290.065H349.5z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Linux Strength Training on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxstrengthtraining%2f&amp;title=TryHackMe%20Linux%20Strength%20Training&amp;summary=TryHackMe%20Linux%20Strength%20Training&amp;source=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxstrengthtraining%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Linux Strength Training on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxstrengthtraining%2f&title=TryHackMe%20Linux%20Strength%20Training"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Linux Strength Training on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxstrengthtraining%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Linux Strength Training on whatsapp" href="https://api.whatsapp.com/send?text=TryHackMe%20Linux%20Strength%20Training%20-%20https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxstrengthtraining%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Linux Strength Training on telegram" href="https://telegram.me/share/url?text=TryHackMe%20Linux%20Strength%20Training&amp;url=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxstrengthtraining%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentColor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share TryHackMe Linux Strength Training on ycombinator" href="https://news.ycombinator.com/submitlink?t=TryHackMe%20Linux%20Strength%20Training&u=https%3a%2f%2fclassroom.anir0y.in%2fpost%2ftryhackme-linuxstrengthtraining%2f"><svg width="30" height="30" viewBox="0 0 512 512" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446zM183.8767 87.9921h-62.034L230.6673 292.4508V424.0079h50.6655V292.4508L390.1575 87.9921H328.1233L256 238.2489z"/></svg></a></li></ul></footer></article></main><footer class=footer><span>YOU CAN REUSE MY CONTENT</span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

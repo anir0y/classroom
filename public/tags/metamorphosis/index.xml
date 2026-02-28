@@ -1,100 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Metamorphosis on Classroom</title>
-    <link>http://localhost:1313/tags/metamorphosis/</link>
+    <link>https://classroom.anir0y.in/tags/metamorphosis/</link>
     <description>Recent content in Metamorphosis on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 21 Jul 2021 03:31:08 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/metamorphosis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jul 2021 03:31:08 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/metamorphosis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Metamorphosis</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-metamorphosis/</link>
       <pubDate>Wed, 21 Jul 2021 03:31:08 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Metamorphosis&lt;/th&gt;
-          &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Room&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/93e2e34d54161c2a22b80a1eb5cd9857.jpeg&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;recon&#34;&gt;Recon&lt;/h2&gt;
-&lt;h3 id=&#34;nmap&#34;&gt;nmap&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt; ```nmap
- sudo nmap -sC -sV -oN Metamorphosis 10.10.38.244
- [sudo] password for anir0y: 
- Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-21 03:35 IST
- Nmap scan report for 10.10.38.244
- Host is up (0.17s latency).
- Not shown: 995 closed ports
- PORT    STATE SERVICE     VERSION
- 22/tcp  open  ssh         OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
- | ssh-hostkey: 
- |   2048 f7:0f:0a:18:50:78:07:10:f2:32:d1:60:30:40:d4:be (RSA)
- |   256 5c:00:37:df:b2:ba:4c:f2:3c:46:6e:a3:e9:44:90:37 (ECDSA)
- |_  256 fe:bf:53:f1:d0:5a:7c:30:db:ac:c8:3c:79:64:47:c8 (ED25519)
- 80/tcp  open  http        Apache httpd 2.4.29 ((Ubuntu))
- |_http-server-header: Apache/2.4.29 (Ubuntu)
- |_http-title: Apache2 Ubuntu Default Page: It works
- 139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
- 445/tcp open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
- 873/tcp open  rsync       (protocol version 31)
- Service Info: Host: INCOGNITO; OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
- Host script results:
- |_clock-skew: mean: 3s, deviation: 0s, median: 2s
- |_nbstat: NetBIOS name: INCOGNITO, NetBIOS user: &amp;lt;unknown&amp;gt;, NetBIOS MAC: &amp;lt;unknown&amp;gt; (unknown)
- | smb-os-discovery: 
- |   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
- |   Computer name: incognito
- |   NetBIOS computer name: INCOGNITO\x00
- |   Domain name: \x00
- |   FQDN: incognito
- |_  System time: 2021-07-20T22:05:48+00:00
- | smb-security-mode: 
- |   account_used: guest
- |   authentication_level: user
- |   challenge_response: supported
- |_  message_signing: disabled (dangerous, but default)
- | smb2-security-mode: 
- |   2.02: 
- |_    Message signing enabled but not required
- | smb2-time: 
- |   date: 2021-07-20T22:05:48
- |_  start_date: N/A
-
- Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
- Nmap done: 1 IP address (1 host up) scanned in 24.70 seconds
- ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;directory-listing-with-gobuster&#34;&gt;Directory Listing with &lt;code&gt;GoBuster&lt;/code&gt;&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt; ```bash
- gobuster dir -u http://MACHINE_IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x txt,php
- #txt &amp;amp; php extention for good measure
- ...[snip]...
- /index.php            (Status: 200) [Size: 10818]
- /admin                (Status: 301) [Size: 312] [--&amp;gt; http://10.10.38.244/admin/]
- ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;admin&lt;/code&gt; dir is returning &lt;code&gt;403&lt;/code&gt;&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/tryhackme-metamorphosis/</link>
-    
+      <guid>https://classroom.anir0y.in/post/tryhackme-metamorphosis/</guid>
+      <description>TryHackMe Room Metamorphosis solved by Animesh Roy. this is a walkthough. read more...</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

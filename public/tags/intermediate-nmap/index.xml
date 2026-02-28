@@ -1,41 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Intermediate Nmap on Classroom</title>
-    <link>http://localhost:1313/tags/intermediate-nmap/</link>
+    <link>https://classroom.anir0y.in/tags/intermediate-nmap/</link>
     <description>Recent content in Intermediate Nmap on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Fri, 23 Sep 2022 15:28:41 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/intermediate-nmap/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 15:28:41 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/intermediate-nmap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Try Hack Me Intermediate Nmap</title>
+      <link>https://classroom.anir0y.in/post/thm-intermediatenmap/</link>
       <pubDate>Fri, 23 Sep 2022 15:28:41 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/IntermediateNmap.png" width="700" height="420"></media:content>
-      <description>&lt;h1 id=&#34;overview&#34;&gt;OverView&lt;/h1&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;a class=&#34;twitter-follow-button&#34; href=&#34;https://twitter.com/anir0y&#34; data-size=&#34;large&#34;&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://tryhackme.com/room/intermediatenmap&#34;&gt;Intermediate Nmap&lt;/a&gt; {FREE ROOM}&lt;/td&gt;
-          &lt;td&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/01aff3c76024f34b0582ad59e2138bfd.png&#34; alt=&#34;logo&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;task-01&#34;&gt;Task 01:&lt;/h2&gt;
-&lt;p&gt;You&amp;rsquo;ve learned some great nmap skills! Now can you combine that with other skills with netcat and protocols, to log in to this machine and find the flag? This VM MACHINE_IP is listening on a high port, and if you connect to it it may give you some information you can use to connect to a lower port commonly used for remote access!&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in/img/IntermediateNmap.png"></enclosure>
-      <link>http://localhost:1313/post/thm-intermediatenmap/</link>
-    
+      <guid>https://classroom.anir0y.in/post/thm-intermediatenmap/</guid>
+      <description>Try Hack Me Room Intermediate Nmap solved by Animesh Roy. this is a walkthough. read more...</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

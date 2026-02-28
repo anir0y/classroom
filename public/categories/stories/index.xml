@@ -1,30 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Stories on Classroom</title>
-    <link>http://localhost:1313/categories/stories/</link>
+    <link>https://classroom.anir0y.in/categories/stories/</link>
     <description>Recent content in Stories on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Mon, 11 Mar 2024 19:13:04 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/stories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2024 19:13:04 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/stories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Curious Case of Mr. OSINT-  A Digital Intrusion Tale</title>
+      <link>https://classroom.anir0y.in/post/blog-hax0r-stories-001/</link>
       <pubDate>Mon, 11 Mar 2024 19:13:04 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://i.imgur.com/RQww4KM.png" width="700" height="420"></media:content>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Date: March 11, 2024&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;This morning, I was greeted by an unexpected surprise when I checked my public calendar – two mysterious &amp;ldquo;Meetings&amp;rdquo; had appeared out of nowhere.
-Naturally, alarm bells started ringing. How had someone managed to infiltrate my calendar and insert these meetings? More importantly, how had they acquired my information to do so?&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;the-infamous-breach&#34;&gt;The Infamous Breach&lt;/h2&gt;
-&lt;p&gt;The answer, as it turned out, wasn&amp;rsquo;t as complex or sophisticated as I initially feared. In fact, it was a stark reminder of the importance of security awareness in the digital age.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.inhttps://i.imgur.com/RQww4KM.png"></enclosure>
-      <link>http://localhost:1313/post/blog-hax0r-stories-001/</link>
-    
+      <guid>https://classroom.anir0y.in/post/blog-hax0r-stories-001/</guid>
+      <description>In the fast-evolving world of cybersecurity, the story of Haxor—an enigmatic hacker—captured the attention of both experts and enthusiasts. Animesh Roy’s article sheds light on the rise and fall of this mysterious figure. Let’s delve into the details.</description>
     </item>
-   
-      
-    
   </channel>
 </rss>

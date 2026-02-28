@@ -1,128 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Classroom</title>
-    <link>http://localhost:1313/categories/classroom/</link>
+    <link>https://classroom.anir0y.in/categories/classroom/</link>
     <description>Recent content on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 19 Jan 2022 13:47:54 +0530</lastBuildDate><atom:link href="http://localhost:1313/categories/classroom/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 13:47:54 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/classroom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Classroom | NFS Installation &amp; enumeation</title>
+      <link>https://classroom.anir0y.in/post/classroom-nfs/</link>
       <pubDate>Wed, 19 Jan 2022 13:47:54 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog-nfs.png" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;OverView&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Network File System (NFS)&lt;/strong&gt; is a distributed file system protocol originally developed by Sun Microsystems (Sun) in 1984, allowing a user on a client computer to access files over a computer network much like local storage is accessed. NFS, like many other protocols, builds on the Open Network Computing Remote Procedure Call (ONC RPC) system. NFS is an open IETF standard defined in a Request for Comments (RFC), allowing anyone to implement the protocol.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in/img/blog-nfs.png"></enclosure>
-      <link>http://localhost:1313/post/classroom-nfs/</link>
-    
+      <guid>https://classroom.anir0y.in/post/classroom-nfs/</guid>
+      <description>installation of NFS &amp;amp; Enumeation using Various tools.</description>
     </item>
-   
-      
-    
     <item>
       <title>Try Hack Me Room Osquery</title>
+      <link>https://classroom.anir0y.in/post/thm-room-osquery/</link>
       <pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;osquery&#34;&gt;Osquery&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Profile&lt;/th&gt;
-          &lt;th style=&#34;text-align: right&#34;&gt;Support&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: right&#34;&gt;&lt;a href=&#34;https://www.buymeacoffee.com/anir0y&#34;&gt;&lt;img src=&#34;https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00&#34;&gt;&lt;/a&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;task-1--introduction&#34;&gt;TASK 1 : Introduction&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://osquery.io/&#34;&gt;Osquery&lt;/a&gt; is an &lt;a href=&#34;https://github.com/osquery/osquery&#34;&gt;open-source&lt;/a&gt; tool created by Facebook. With Osquery, Security Analysts, Incident Responders, Threat Hunters, etc., can query an endpoint (or multiple endpoints) using SQL syntax. Osquery can be installed on multiple platforms: Windows, Linux, macOS, and FreeBSD.&lt;/p&gt;
-&lt;p&gt;Many well-known companies, besides Facebook, either use Osquery, utilize osquery within their tools, and/or look for individuals who know Osquery.&lt;/p&gt;
-&lt;p&gt;As of today (March 2021), Github and AT&amp;amp;T seek individuals who have experience with Osquery.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/thm-room-osquery/</link>
-    
+      <guid>https://classroom.anir0y.in/post/thm-room-osquery/</guid>
+      <description>Try Hack Me Room Osquery solved by Animesh Roy</description>
     </item>
-   
-      
-    
     <item>
       <title>Try Hack Me Room Room Openvas</title>
+      <link>https://classroom.anir0y.in/post/thm-room-openvas/</link>
       <pubDate>Mon, 10 May 2021 01:36:51 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/openvas.png&#34; alt=&#34;openvas logo&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;openvas&#34;&gt;OpenVas&lt;/h2&gt;
-&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt; 
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Room&lt;/strong&gt; &lt;a href=&#34;https://tryhackme.com/room/openvas&#34;&gt;Subscription Only&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;task-1-introduction&#34;&gt;Task 1: Introduction&lt;/h2&gt;
-&lt;p&gt;OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/thm-room-openvas/</link>
-    
+      <guid>https://classroom.anir0y.in/post/thm-room-openvas/</guid>
+      <description>Try Hack ME Room OpenVas walkthough</description>
     </item>
-   
-      
-    
     <item>
       <title>Try Hack ME Room Zerologon</title>
+      <link>https://classroom.anir0y.in/post/thm-room-zerologon/</link>
       <pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;hr&gt;
-&lt;h2 id=&#34;zero-logon---the-zero-day-angle&#34;&gt;Zero Logon - The Zero Day Angle&lt;/h2&gt;
-&lt;script src=&#34;https://tryhackme.com/badge/434937&#34;&gt;&lt;/script&gt;  
-&lt;h2 id=&#34;room-subscription-only&#34;&gt;Room &lt;a href=&#34;https://tryhackme.com/room/zer0logon&#34;&gt;Subscription Only&lt;/a&gt;&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;about-the-vulnerability--&#34;&gt;About The vulnerability -&lt;/h3&gt;
-&lt;p&gt;On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.&lt;/p&gt;
-&lt;p&gt;Zero Logon is a purely statistics based attack that abuses a feature within MS-NRPC (Microsoft NetLogon Remote Protocol), MS-NRPC is a critical authentication component of Active Directory that handles authentication for User and Machine accounts. In short &amp;ndash; the attack mainly focuses on a poor implementation of Cryptography. To be more specific, Microsoft chose to use AES-CFB8 for a function called ComputeNetlogonCredential, which is normally fine, except they had hard coded the Initialization Vector to use all zeros instead of a random string. When an attacker sends a message only containing zeros with the IV of zero, there is a 1-in-256 chance that the Ciphertext will be Zero.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/thm-room-zerologon/</link>
-    
+      <guid>https://classroom.anir0y.in/post/thm-room-zerologon/</guid>
+      <description>Try Hack ME Room Zerologon walkthough</description>
     </item>
-   
-      
-    
     <item>
       <title>Cyber Security Interview Questions With Answers</title>
+      <link>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</link>
       <pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/6bZ0NCp.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;50-cyber-security-interview-questions-with-answers&#34;&gt;50 Cyber Security Interview Questions (With Answers)&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;top-cyber-security-interview-questions&#34;&gt;Top Cyber Security Interview Questions&lt;/h2&gt;
-&lt;h3 id=&#34;explain-cryptography&#34;&gt;Explain Cryptography&lt;/h3&gt;
-&lt;p&gt;It is the science of protecting data from third-party using various methods. It is used to protect sensitive information that shouldn’t be disclosed to anyone other than the owners of the information.&lt;/p&gt;
-&lt;h3 id=&#34;differentiate-between-symmetric-and-asymmetric-encryption&#34;&gt;Differentiate between Symmetric and Asymmetric encryption&lt;/h3&gt;
-&lt;p&gt;Symmetric encryption – In this type of encryption, the same key is used for encryption&lt;/p&gt;
-&lt;p&gt;and decryption of data. It is more vulnerable this way and it is used to encrypt data transmissions that are bulky in nature.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/cyber-security-interview-questions-with-answers/</link>
-    
+      <guid>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</guid>
+      <description>test</description>
     </item>
-   
-      
-    
     <item>
       <title>Active Directory Exploitation Cheat Sheet</title>
+      <link>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</link>
       <pubDate>Fri, 07 May 2021 14:00:36 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</guid>
       <description>&lt;h1 id=&#34;active-directory-exploitation-cheat-sheet&#34;&gt;Active Directory Exploitation Cheat Sheet&lt;/h1&gt;
 &lt;p&gt;A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.&lt;/p&gt;
 &lt;p&gt;This cheat sheet is inspired by the &lt;a href=&#34;https://github.com/swisskyrepo/PayloadsAllTheThings&#34;&gt;PayloadAllTheThings&lt;/a&gt; repo.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet/master/WalkTheDog.png&#34; alt=&#34;Just Walking The Dog&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Just Walking The Dog&#34; loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet/master/WalkTheDog.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#active-directory-exploitation-cheat-sheet&#34;&gt;Active Directory Exploitation Cheat Sheet&lt;/a&gt;
@@ -211,36 +141,24 @@
 &lt;h3 id=&#34;using-powerview&#34;&gt;Using PowerView&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1&#34;&gt;Powerview v.3.0&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://powersploit.readthedocs.io/en/latest/&#34;&gt;Powerview Wiki&lt;/a&gt;&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/active-directory-exploitation-cheat-sheet/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Notes OSIModel Explained</title>
+      <link>https://classroom.anir0y.in/post/notes-osimodel-explained/</link>
       <pubDate>Sun, 25 Apr 2021 20:20:59 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/notes-osimodel-explained/</guid>
       <description>&lt;h1 id=&#34;osi-model-explained&#34;&gt;OSI Model Explained&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/r4SjjLc.png&#34; alt=&#34;OSI Model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;OSI Model&#34; loading=&#34;lazy&#34; src=&#34;https://i.imgur.com/r4SjjLc.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;packet-details&#34;&gt;Packet Details&lt;/h2&gt;
 &lt;p&gt;You can double click on a packet in capture to open its details. Packets consist of 5 to 7 layers based on the OSI model. We will go over all of them in an HTTP packet from a sample capture&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/7t17lRS.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://i.imgur.com/7t17lRS.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Looking above we can see 7 distinct layers to the packet: frame/packet, source [MAC], source [IP], protocol, protocol errors, application protocol, and application data. Below we will go over the layers in more detail.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/notes-osimodel-explained/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Notes OSIModel</title>
+      <link>https://classroom.anir0y.in/post/notes-osimodel/</link>
       <pubDate>Wed, 21 Apr 2021 20:01:52 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/notes-osimodel/</guid>
       <description>&lt;h1 id=&#34;osi-model-overview&#34;&gt;OSI Model OverView&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it&amp;rsquo;s actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.&lt;/p&gt;
@@ -279,35 +197,23 @@
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;There are many mnemonics floating around to help you learn the layers of the OSI model &amp;ndash; search around until you find one that you like.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/notes-osimodel/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Notes Stego</title>
+      <link>https://classroom.anir0y.in/post/notes-stego/</link>
       <pubDate>Wed, 21 Apr 2021 17:47:23 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/notes-stego/</guid>
       <description>&lt;h1 id=&#34;steganography---a-list-of-useful-tools-and-resources&#34;&gt;Steganography - A list of useful tools and resources&lt;/h1&gt;
 &lt;p&gt;Steganography
 Steganography is hiding a file or a message inside of another file , there are many fun steganography CTF challenges out there where the flag is hidden in an image , audio file or even other types of files. Here is a list of the most tools I use and some other useful resources.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note : This list will be updated regularly , feel free to pm if you have any suggestions&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/notes-stego/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Msf Runscript</title>
+      <link>https://classroom.anir0y.in/post/msf-runscript/</link>
       <pubDate>Wed, 07 Apr 2021 15:25:21 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/msf-runscript/</guid>
       <description>&lt;h1 id=&#34;writing-meterpreter-scripts&#34;&gt;WRITING METERPRETER SCRIPTS&lt;/h1&gt;
 &lt;p&gt;There are a few things you need to keep in mind when creating a new Meterpreter script.&lt;/p&gt;
 &lt;ul&gt;
@@ -317,36 +223,24 @@ Steganography is hiding a file or a message inside of another file , there are m
 &lt;li&gt;Some of the command line tools switches vary depending on the version of Windows&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For our purposes, we are going to create a stand alone binary that will be run on the target system that will create a reverse Meterpreter shell back to us. This will rule out any problems with an exploit as we work through our script development.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/msf-runscript/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Introduction to  Vapt</title>
+      <link>https://classroom.anir0y.in/post/intro-vapt/</link>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/intro-vapt/</guid>
       <description>&lt;h1 id=&#34;vulnerability-assessment-and-penetration-testing-vapt&#34;&gt;Vulnerability Assessment and Penetration Testing (VAPT)&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/anir0y/cdn/main/vapt.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/anir0y/cdn/main/vapt.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.&lt;/p&gt;
 &lt;p&gt;Vulnerability Assessment focuses on internal organizational security, while Penetration Testing focuses on external real-world risk.&lt;/p&gt;
 &lt;h3 id=&#34;what-is-vulnerability-assessment-va&#34;&gt;What is Vulnerability Assessment (VA)?&lt;/h3&gt;
 &lt;p&gt;A Vulnerability Assessment is a rapid automated review of network devices, servers and systems to identify key vulnerabilities and configuration issues that an attacker may be able to take advantage off. Its generally conducted within the network on internal devices and due to its low footprint can be carried out as often as every day.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/intro-vapt/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>SmartKnowner: SEP Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</link>
       <pubDate>Sat, 12 Sep 2020 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</guid>
       <description>&lt;h1 id=&#34;online-links&#34;&gt;Online Links&lt;/h1&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -453,18 +347,12 @@ Steganography is hiding a file or a message inside of another file , there are m
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/2020-08-07-smartknowner-sep/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>SmartKnowner: AUG Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</link>
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</guid>
       <description>&lt;p&gt;+++
 title = &amp;ldquo;SmartKnowner: AUG Batch! &amp;quot;
 description = &amp;ldquo;Smartknowner cybersecurity internship&amp;rdquo;
@@ -526,18 +414,12 @@ image = &amp;ldquo;fast-lane.jpg&amp;rdquo;
 &lt;li&gt;[√] Minor Project : Download &lt;a href=&#34;https://1drv.ms/b/s!AjGfb2ZCIBDrsi5EmFWVNg4mPIgI?e=HchT53s&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;[0] Major Project&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/2020-08-07-smartknowner-aug/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Verzeo: JULY Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</link>
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</guid>
       <description>&lt;h4 id=&#34;hello-links-to-our-classroom-will-be-available-here&#34;&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -586,18 +468,12 @@ image = &amp;ldquo;fast-lane.jpg&amp;rdquo;
 &lt;li&gt;[0] Minor Project&lt;/li&gt;
 &lt;li&gt;[0] Major Project&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/2020-08-07-verzeo-aug/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>SmartKnowner: JULY Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</link>
       <pubDate>Sun, 12 Jul 2020 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</guid>
       <description>&lt;h4 id=&#34;hello-links-to-our-classroom-will-be-available-here&#34;&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -646,18 +522,12 @@ image = &amp;ldquo;fast-lane.jpg&amp;rdquo;
 &lt;li&gt;[0] Minor Project&lt;/li&gt;
 &lt;li&gt;[0] Major Project&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/2020-08-07-smartknowner-july/</link>
-    
     </item>
-   
-      
-    
     <item>
       <title>Verzeo JULY Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-07-07-verzeo-july/</link>
       <pubDate>Tue, 07 Jul 2020 21:23:22 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/2020-07-07-verzeo-july/</guid>
       <description>&lt;h4 id=&#34;hello-links-to-our-classroom-will-be-available-here&#34;&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -710,12 +580,6 @@ image = &amp;ldquo;fast-lane.jpg&amp;rdquo;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Minor Project : &lt;a href=&#34;https://1drv.ms/b/s!AjGfb2ZCIBDrsRU0ZB2Bm1t93GGX?e=MClIpH&#34;&gt;Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;[0] Major Project&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/2020-07-07-verzeo-july/</link>
-    
     </item>
-   
-      
-    
   </channel>
 </rss>

@@ -1,28 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Encryption on Classroom</title>
-    <link>http://localhost:1313/tags/encryption/</link>
+    <link>https://classroom.anir0y.in/tags/encryption/</link>
     <description>Recent content in Encryption on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Tue, 13 Apr 2021 16:57:30 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 16:57:30 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes Gnupg</title>
+      <link>https://classroom.anir0y.in/post/notes-gnupg/</link>
       <pubDate>Tue, 13 Apr 2021 16:57:30 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
+      <guid>https://classroom.anir0y.in/post/notes-gnupg/</guid>
       <description>&lt;h1 id=&#34;how-to-use-gpg-to-encrypt-and-sign-messages&#34;&gt;How To Use GPG to Encrypt and Sign Messages&lt;/h1&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;GPG, or GNU Privacy Guard, is a public key cryptography implementation. This allows for the secure transmission of information between parties and can be used to verify that the origin of a message is genuine.&lt;/p&gt;
 &lt;p&gt;In this guide, we will discuss how GPG works and how to implement it. We will be using an Ubuntu 16.04 server for this demonstration, but will include instructions for other distributions as well.&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/notes-gnupg/</link>
-    
     </item>
-   
-      
-    
   </channel>
 </rss>

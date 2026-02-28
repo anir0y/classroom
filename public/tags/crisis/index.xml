@@ -1,83 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Crisis on Classroom</title>
-    <link>http://localhost:1313/tags/crisis/</link>
+    <link>https://classroom.anir0y.in/tags/crisis/</link>
     <description>Recent content in Crisis on Classroom</description>
-    <generator>Anir0ry : Blog v1.0</generator>
+    <generator>Hugo -- 0.155.0</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Sat, 10 Jul 2021 15:18:30 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/crisis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 15:18:30 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/crisis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Crisis</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-crisis/</link>
       <pubDate>Sat, 10 Jul 2021 15:18:30 +0530</pubDate>
-      
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"></media:content>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Room Name&lt;/th&gt;
-          &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Crisis&lt;/td&gt;
-          &lt;td&gt;&lt;a href=&#34;https://ktryhackme.com/jr/crisis&#34;&gt;&lt;img src=&#34;https://tryhackme-images.s3.amazonaws.com/room-icons/be6532386459feb00480cb5d56e788c5.png&#34; alt=&#34;crisis&#34;&gt;&lt;/a&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Dev&lt;/td&gt;
-          &lt;td&gt;&lt;a href=&#34;https://anir0y.in&#34;&gt;@anir0y&lt;/a&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Tools required&lt;/td&gt;
-          &lt;td&gt;&lt;a href=&#34;https://wireshark.org&#34;&gt;Wireshark&lt;/a&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Join Room&lt;/td&gt;
-          &lt;td&gt;&lt;a href=&#34;tryhackme.com/jr/crisis&#34;&gt;Crisis&lt;/a&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;task-01-introduction&#34;&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the File&lt;/li&gt;
-&lt;li&gt;open with Wireshark&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;11&#34;&gt;1.1&lt;/h3&gt;
-&lt;p&gt;Download file.&lt;/p&gt;
-&lt;h3 id=&#34;12&#34;&gt;1.2&lt;/h3&gt;
-&lt;p&gt;When it all started?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Open packet 1, layer 1 reavels the Time Stamp&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/V5mg69J.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Enter Format (MMM DD, YYYY)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;13&#34;&gt;1.3&lt;/h3&gt;
-&lt;p&gt;What is the domain name?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Check the DNS (use filer &lt;code&gt;DNS&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/gtnvuN0.png&#34; alt=&#34;dns&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;14&#34;&gt;1.4&lt;/h3&gt;
-&lt;p&gt;What is the EMAIL Sending Protocol &amp;amp; Port&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;RFC  &lt;a href=&#34;https://datatracker.ietf.org/doc/html/rfc8314&#34;&gt;8314&lt;/a&gt;; hint &lt;a href=&#34;https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol&#34;&gt;wiki&lt;/a&gt;&lt;/p&gt;</description>
-      <enclosure url="https://classroom.anir0y.in"></enclosure>
-      <link>http://localhost:1313/post/tryhackme-crisis/</link>
-    
+      <guid>https://classroom.anir0y.in/post/tryhackme-crisis/</guid>
+      <description>TryHackMe Room Crisis solved by Animesh Roy. this is a walkthough. read more...</description>
     </item>
-   
-      
-    
   </channel>
 </rss>
