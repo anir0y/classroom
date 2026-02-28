@@ -5,9 +5,7 @@ lastmod: 2022-09-23T15:28:41+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/IntermediateNmap.png
-  alt: "cover image"
+featureimage: img/IntermediateNmap.png
 simg: /img/IntermediateNmap.png
 
 categories:
@@ -19,8 +17,7 @@ tags:
 
 
 draft: false
-description: Try Hack Me Room Intermediate Nmap solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Intermediate Nmap walkthrough — master Nmap network scanning techniques including service detection, scripting engine, and firewall evasion."
 ---
 
 # OverView

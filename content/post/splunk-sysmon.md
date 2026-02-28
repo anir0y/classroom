@@ -5,9 +5,7 @@ lastmod: 2021-03-11T01:45:35+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/cover.jpg
-  alt: "cover image"
+featureimage: img/cover.jpg
 categories:
   - SIEM
 tags:
@@ -15,6 +13,7 @@ tags:
   - sysmon
   - config
 draft: false
+description: "Guide to configuring Sysmon with Splunk for enhanced endpoint visibility, log collection, and threat detection in Windows environments."
 ---
 
 

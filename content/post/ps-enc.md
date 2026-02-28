@@ -5,14 +5,13 @@ lastmod: 2021-03-25T20:01:50+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/cover.jpg
-  alt: "cover image"
+featureimage: img/cover.jpg
 categories:
   - Excelr
 tags:
   - powershell
 
+description: "Understanding PowerShell encoding techniques — Base64 encoding, obfuscation methods, and decoding strategies for security analysis."
 
 ---
 

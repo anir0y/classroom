@@ -5,9 +5,7 @@ lastmod: 2021-05-23T23:09:45+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -19,8 +17,7 @@ tags:
 
 draft: false
 
-description: Try Hack Me Room Volatility solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Room Volatility walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Volatility challenge room."
 ---
 # Volatility
 > Learn how to perform memory forensics with Volatility!

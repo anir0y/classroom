@@ -5,9 +5,7 @@ lastmod: 2021-03-21T21:23:22+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/cover.jpg
-  alt: "cover image"
+featureimage: img/cover.jpg
 categories:
   - cheatsheet
   - tools
@@ -15,6 +13,7 @@ tags:
   - tools
   - powershell
 draft: false
+description: "Comprehensive PowerShell cheat sheet with essential commands, scripting techniques, and security-focused one-liners for penetration testing."
 ---
 
 

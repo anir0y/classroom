@@ -5,9 +5,7 @@ lastmod: 2021-05-29T00:08:19+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room MAL Malware Introductory solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Room Malware Introductory walkthrough — analyze malware samples using static and dynamic analysis techniques to understand malicious behavior."
 ---
 # MAL: Malware Introductory
 

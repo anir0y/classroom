@@ -5,9 +5,7 @@ lastmod: 2021-03-17T01:00:08+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/cover.jpg
-  alt: "cover image"
+featureimage: img/cover.jpg
 categories:
   - DFIR
   - forensic
@@ -17,6 +15,7 @@ tags:
   - tools
   - Volatility
 draft: false
+description: "Step-by-step guide to installing Volatility 2 on Linux for memory forensics, including dependencies, Python setup, and verification."
 ---
 
 

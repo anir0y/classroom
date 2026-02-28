@@ -5,9 +5,7 @@ lastmod: 2025-12-16T13:23:02+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 simg: /img/blog.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Benign solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Benign walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Benign challenge room."
 ---
 
 ## OverView

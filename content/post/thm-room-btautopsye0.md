@@ -5,9 +5,7 @@ lastmod: 2021-05-27T00:31:13+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - autopsy
 
 draft: false
-description: Try Hack Me Room Autopsy solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Thm Room Autopsy walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Thm Room Autopsy challenge room."
 ---
 # Autopsy
 Learn how to use Autopsy to investigate artifacts from a disk image. Use your knowledge to investigate an employee who is being accused of leaking private company data.

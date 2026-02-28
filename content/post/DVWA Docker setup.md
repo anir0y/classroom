@@ -5,9 +5,7 @@ lastmod: 2022-03-05T21:05:05+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/dvwa-main.png
-  alt: "cover image"
+featureimage: img/dvwa-main.png
 simg: /img/dvwa-main.png
 
 categories:

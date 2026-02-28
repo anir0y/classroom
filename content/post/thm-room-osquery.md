@@ -5,9 +5,7 @@ lastmod: 2021-05-16T23:54:39+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 categories:
   - Classroom
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
   - rooms
   
 draft: false
-description: Try Hack Me Room Osquery solved by Animesh Roy
-
+description: "TryHackMe Room Osquery walkthrough — learn endpoint monitoring with osquery SQL-based queries for process, network, and file system analysis."
 ---
 
 

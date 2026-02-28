@@ -1,0 +1,56 @@
+/* ================================================
+   Table of Contents — sidebar styling
+   ================================================ */
+
+/* Container spacing */
+#TableOfContents {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Remove default list bullets, add left border for hierarchy */
+#TableOfContents ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Nested lists get indentation */
+#TableOfContents ul ul {
+  padding-left: 0.75rem;
+  border-left: 1px solid rgba(var(--color-primary-400), 0.2);
+  margin-left: 0.5rem;
+}
+
+/* Each TOC item */
+#TableOfContents li {
+  margin: 0.15rem 0;
+}
+
+/* Links — clearly styled as links */
+#TableOfContents a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: rgba(var(--color-neutral-400), 1);
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  transition: all 0.15s ease;
+  border-left: 2px solid transparent;
+}
+
+/* Hover — highlight as clickable */
+#TableOfContents a:hover {
+  color: rgba(var(--color-primary-400), 1);
+  background: rgba(var(--color-primary-400), 0.08);
+  border-left-color: rgba(var(--color-primary-400), 0.6);
+}
+
+/* Active/current section (smart TOC highlight) */
+#TableOfContents a.active {
+  color: rgba(var(--color-primary-300), 1);
+  background: rgba(var(--color-primary-400), 0.12);
+  border-left-color: rgba(var(--color-primary-400), 1);
+  font-weight: 500;
+}

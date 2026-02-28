@@ -1,0 +1,23 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Classroom"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Cybersecurity blog by Animesh Roy -- CTF walkthroughs, malware analysis, penetration testing, and security research."
+  copyright = "YOU CAN REUSE MY CONTENT"
+
+[params.author]
+  name = "Animesh Roy"
+  # image = "img/cover.jpg"
+  headline = "Cybersecurity Researcher"
+  bio = "CTF walkthroughs, malware analysis, penetration testing, and security research."
+  links = [
+    { twitter = "https://twitter.com/anir0y" },
+    { github = "https://github.com/anir0y" },
+  ]

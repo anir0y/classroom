@@ -5,9 +5,7 @@ lastmod: 2021-08-04T08:35:47+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - Relevant
 
 draft: false
-description: TryHackMe Room Relevant solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Relevant walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Relevant challenge room."
 ---
 
 ## OverView

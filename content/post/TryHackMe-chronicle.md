@@ -5,9 +5,7 @@ lastmod: 2021-08-07T13:04:08+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
   - thm
 
 draft: true
-description: TryHackMe Room Chronicle solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Chronicle walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Chronicle challenge room."
 ---
 
 ## OverView

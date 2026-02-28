@@ -5,9 +5,7 @@ lastmod: 2025-07-14T02:24:47+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png
-  alt: "cover image"
+featureimage: https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png
 simg: https://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png
 
 categories:

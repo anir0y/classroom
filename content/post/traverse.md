@@ -5,9 +5,7 @@ lastmod: 2026-01-04T20:58:51+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 simg: /img/blog.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Traverse solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Traverse walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Traverse challenge room."
 ---
 Challenge your secure coding skills to restore a compromised website.
 

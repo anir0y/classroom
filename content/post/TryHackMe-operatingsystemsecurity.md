@@ -5,9 +5,7 @@ lastmod: 2022-05-16T12:02:51+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/Operating_System_Security.png
-  alt: "cover image"
+featureimage: img/Operating_System_Security.png
 simg: /img/Operating_System_Security.png
 
 categories:
@@ -17,8 +15,7 @@ tags:
   - Operating System Security
 
 draft: false
-description: Try Hack Me Room Operating System Security solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Operating System Security walkthrough — understand operating system security fundamentals including hardening, access controls, and common weaknesses."
 ---
 
 ## OverView

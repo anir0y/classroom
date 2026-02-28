@@ -5,9 +5,7 @@ lastmod: 2021-09-11T18:40:31+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/Django.gif
-  alt: "cover image"
+featureimage: img/Django.gif
 simg: /img/Django.gif 
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Introduction to Django solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Introduction to Django walkthrough — learn Django web framework fundamentals including models, views, templates, and common security pitfalls."
 ---
 
 ## OverView

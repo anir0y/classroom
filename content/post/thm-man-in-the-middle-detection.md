@@ -5,9 +5,7 @@ lastmod: 2025-10-13T10:46:19+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/5e8dd9a4a45e18443162feab-1759866709706.png
-  alt: "cover image"
+featureimage: https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/5e8dd9a4a45e18443162feab-1759866709706.png
 simg: https://tryhackme-images.s3.amazonaws.com/user-uploads/5e8dd9a4a45e18443162feab/room-content/5e8dd9a4a45e18443162feab-1759866709706.png
 
 categories:
@@ -17,8 +15,7 @@ tags:
   - Man-in-the-Middle
 
 draft: false
-description: Try Hack Me Room Man-in-the-Middle Detection solved by Animesh Roy. This is a walkthrough; read more...
-
+description: "TryHackMe Man in the Middle Detection walkthrough — This is a walkthrough;"
 ---
 
 ## Overview

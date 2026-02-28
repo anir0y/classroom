@@ -5,9 +5,7 @@ lastmod: 2021-06-08T11:04:18+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Web Fundamentals solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Thm Room Web Fundamentals walkthrough — exploit web application vulnerabilities and practice common web attack techniques."
 ---
 ## Web Fundamentals
 

@@ -5,9 +5,7 @@ lastmod: 2021-06-19T19:38:27+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - HackPark
 
 draft: false
-description: TryHackMe Room HackPark solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Room Hackpark walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Hackpark challenge room."
 ---
 ## HackPark
 

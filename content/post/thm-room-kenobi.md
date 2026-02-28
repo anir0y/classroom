@@ -5,9 +5,7 @@ lastmod: 2021-06-10T21:22:32+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - kenobi
 
 draft: false
-description: TryHackMe Room kenobi solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Room Kenobi walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Kenobi challenge room."
 ---
 ## kenobi
 

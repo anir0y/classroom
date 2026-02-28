@@ -5,9 +5,7 @@ lastmod: 2025-12-12T13:20:33+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 simg: /img/blog.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 
-description: Try Hack Me Room Network Discovery Detection solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Network Discovery Detection walkthrough — practice network security fundamentals including scanning, enumeration, and protocol analysis."
 ---
 Understand how attackers discover assets in a network, and how to detect that activity.
 

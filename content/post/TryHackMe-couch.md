@@ -6,9 +6,7 @@ author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
 #cover: /img/blog.png
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -19,8 +17,7 @@ tags:
   - couch
 
 draft: false
-description: TryHackMe Room couch solved by Animesh Roy. this is a walkthrough. Hack into a vulnerable database server that collects and stores data in JSON-based document formats, in this semi-guided challenge.
-
+description: "TryHackMe Couch walkthrough — Hack into a vulnerable database server that collects and stores data in JSON-based document formats, in this semi-guided challenge."
 ---
 
 ## Couch

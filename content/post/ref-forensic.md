@@ -5,9 +5,7 @@ lastmod: 2021-04-13T21:15:35+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/cover.jpg
-  alt: "cover image"
+featureimage: img/cover.jpg
 categories:
   - references
 tags:
@@ -15,6 +13,7 @@ tags:
   - tools
   - cheatsheet
 draft: false
+description: "Curated reference list of digital forensic tools for disk analysis, memory forensics, network capture, and incident response investigations."
 ---
 
 ![](https://raw.githubusercontent.com/mesquidar/ForensicsTools/master/FORENSICS%20TOOLS.png)

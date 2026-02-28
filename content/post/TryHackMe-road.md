@@ -5,9 +5,7 @@ lastmod: 2021-11-30T15:39:49+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/road.png
-  alt: "cover image"
+featureimage: img/road.png
 simg: /img/road.png
 
 categories:
@@ -16,8 +14,7 @@ tags:
   - tryhackme
 
 draft: false
-description: TryHackMe Room {Road} solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Road walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Road challenge room."
 ---
 
 ## OverView

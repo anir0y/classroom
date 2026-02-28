@@ -5,9 +5,7 @@ lastmod: 2021-08-05T12:08:59+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Mobile Malware Analysis solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Mobile Malware Analysis walkthrough — analyze malware samples using static and dynamic analysis techniques to understand malicious behavior."
 ---
 
 ## OverView

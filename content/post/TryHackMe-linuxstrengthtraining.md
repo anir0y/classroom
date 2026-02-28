@@ -5,9 +5,7 @@ lastmod: 2021-08-03T07:41:10+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -17,7 +15,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Linux Strength Training solved by Animesh Roy. this is a walkthrough. Guided room for beginners to learn/reinforce linux command line skills...
+description: "TryHackMe Linux Strength Training walkthrough — Guided room for beginners to learn/reinforce linux command line skills..."
 ---
 
 ## OverView

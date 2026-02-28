@@ -5,9 +5,7 @@ lastmod: 2021-10-18T13:50:55+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/netsecchallenge.gif
-  alt: "cover image"
+featureimage: img/netsecchallenge.gif
 simg: /img/netsecchallenge.gif
 
 categories:
@@ -16,8 +14,7 @@ tags:
   - tryhackme
 
 draft: false
-description: TryHackMe Room {Net Sec Challenge} solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Net Sec Challenge walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Net Sec Challenge challenge room."
 ---
 
 ## OverView

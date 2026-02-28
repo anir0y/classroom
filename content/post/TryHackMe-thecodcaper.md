@@ -5,9 +5,7 @@ lastmod: 2021-09-13T12:40:13+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/tcc.gif
-  alt: "cover image"
+featureimage: img/tcc.gif
 simg: /img/tcc.gif
 
 categories:
@@ -16,8 +14,7 @@ tags:
   - tryhackme
 
 draft: false
-description: TryHackMe Room {The Cod Caper} solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe The Cod Caper walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the The Cod Caper challenge room."
 ---
 
 ## OverView

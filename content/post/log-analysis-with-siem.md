@@ -5,9 +5,7 @@ lastmod: 2025-12-15T19:16:54+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 simg: /img/blog.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Log Analysis With SIEM solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Log Analysis With SIEM walkthrough — practice Security Information and Event Management log analysis and threat detection."
 ---
 
 Learn how SIEM solutions can be used to detect and analyse malicious behaviour.

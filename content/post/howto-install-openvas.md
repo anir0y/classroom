@@ -5,9 +5,7 @@ lastmod: 2021-09-13T23:16:16+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/openvas.png
-  alt: "cover image"
+featureimage: img/openvas.png
 simg: /img/blog.png
 
 categories:

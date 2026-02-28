@@ -14,9 +14,6 @@ tags:
   - thm
 draft: true
 description: ""
-keywords: []
-ShowToc: true
-TocOpen: false
 ---
 
 ## Overview

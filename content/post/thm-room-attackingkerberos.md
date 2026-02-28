@@ -5,9 +5,7 @@ lastmod: 2021-05-20T23:25:07+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/blog.png
-  alt: "cover image"
+featureimage: img/blog.png
 
 categories:
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Attacking Kerberos solved by Animesh Roy. this is a walkthrough. Learn how to abuse the Kerberos Ticket Granting Service inside of a Windows Domain Controller. read more...
-
+description: "TryHackMe Room Attacking Kerberos walkthrough — Learn how to abuse the Kerberos Ticket Granting Service inside of a Windows Domain Controller."
 ---
 # Attacking Kerberos
 

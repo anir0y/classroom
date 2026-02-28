@@ -5,9 +5,7 @@ lastmod: 2025-11-30T19:57:58+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 simg: /img/blog.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Healthgpt solved by Animesh Roy. A safety-compliant AI assistant that has strict rules against revealing sensitive internal data.
-
+description: "TryHackMe Healthgpt walkthrough — A safety-compliant AI assistant that has strict rules against revealing sensitive internal data."
 ---
 
 ## OverView

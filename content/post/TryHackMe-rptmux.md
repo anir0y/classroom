@@ -5,9 +5,7 @@ lastmod: 2021-07-11T13:50:48+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - tmux
 
 draft: false
-description: TryHackMe Room tmux solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Tmux walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Tmux challenge room."
 ---
 
 ## Overview

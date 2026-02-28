@@ -5,9 +5,7 @@ lastmod: 2023-05-09T20:42:03+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: https://www.autohackos.com/images/illustrations/worker.svg
-  alt: "cover image"
+featureimage: img/blog.png
 simg: https://www.autohackos.com/images/illustrations/worker.svg
 
 categories:

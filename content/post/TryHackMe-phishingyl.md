@@ -5,9 +5,7 @@ lastmod: 2021-11-16T18:51:09+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/phishing.png
-  alt: "cover image"
+featureimage: img/phishing.png
 simg: /img/phishing.png
 
 categories:
@@ -17,8 +15,7 @@ tags:
 
 
 draft: false
-description: TryHackMe Room {Phishing} solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Phishing walkthrough — analyze phishing emails, identify social engineering techniques, and examine malicious headers and payloads."
 ---
 
 ## OverView

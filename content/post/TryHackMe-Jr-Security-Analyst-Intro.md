@@ -5,9 +5,7 @@ lastmod: 2022-02-26T11:57:17+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/soc-1.png
-  alt: "cover image"
+featureimage: img/soc-1.png
 simg: /img/soc-1.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Jr Security Analyst Intro solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Jr Security Analyst Intro walkthrough — introduction to SOC analyst responsibilities, alert triage, and incident response fundamentals."
 ---
 
 ## OverView

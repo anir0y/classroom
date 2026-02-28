@@ -5,9 +5,7 @@ lastmod: 2023-03-13T19:08:04+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 simg: /img/blog.png
 
 categories:
@@ -17,8 +15,7 @@ tags:
 
 
 draft: true
-description: Try Hack Me Room Bugged solved by Animesh Roy. John likes to live in a very Internet connected world. Maybe too connected.
-
+description: "TryHackMe Bugged walkthrough — John likes to live in a very Internet connected world. Maybe too connected."
 ---
 
 ## OverView

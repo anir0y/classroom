@@ -5,9 +5,7 @@ lastmod: 2021-07-23T01:16:55+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - Overpass 2
   
 draft: false
-description: TryHackMe Room Overpass 2 - Hacked solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Overpass 2 - Hacked walkthrough — investigate a compromised server, analyze attacker artifacts, and trace the intrusion timeline."
 ---
 ## OverView
 

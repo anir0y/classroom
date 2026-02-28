@@ -5,9 +5,7 @@ lastmod: 2021-08-10T11:44:25+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
 
 
 draft: false
-description: TryHackMe Room Internal solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Internal walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Internal challenge room."
 ---
 
 ## OverView

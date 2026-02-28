@@ -5,9 +5,7 @@ lastmod: 2023-01-26T00:03:57+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/smshing.png
-  alt: "cover image"
+featureimage: img/smshing.png
 simg: /img/smshing.png
 
 categories:

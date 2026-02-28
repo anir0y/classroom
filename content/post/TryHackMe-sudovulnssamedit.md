@@ -5,9 +5,7 @@ lastmod: 2021-07-23T00:56:23+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - Baron Samedit
 
 draft: false
-description: TryHackMe Room Baron Samedit solved by Animesh Roy. A tutorial room exploring CVE-2021-3156 in the Unix Sudo Program. 
-
+description: "TryHackMe Baron Samedit walkthrough — A tutorial room exploring CVE-2021-3156 in the Unix Sudo Program."
 ---
 ## OverView
 

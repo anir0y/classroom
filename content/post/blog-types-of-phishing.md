@@ -5,9 +5,7 @@ lastmod: 2023-02-22T18:50:22+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/4 types of phishing.png
-  alt: "cover image"
+featureimage: img/4 types of phishing.png
 simg: /img/1HI2dWi.png
 
 categories:

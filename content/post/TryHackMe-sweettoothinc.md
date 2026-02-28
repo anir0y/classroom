@@ -5,9 +5,7 @@ lastmod: 2021-07-28T12:16:24+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - sweettoothinc
 
 draft: false
-description: TryHackMe Room Sweettooth Inc solved by Animesh Roy. Sweettooth Inc. needs your help to find out how secure their system is!
-
+description: "TryHackMe Sweettooth Inc. walkthrough — Sweettooth Inc. needs your help to find out how secure their system is!"
 ---
 
 ## OverView

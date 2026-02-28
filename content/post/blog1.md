@@ -5,9 +5,7 @@ lastmod: 2021-03-21T21:23:22+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/cover.jpg
-  alt: "cover image"
+featureimage: img/cover.jpg
 categories:
   - Labs
 tags:

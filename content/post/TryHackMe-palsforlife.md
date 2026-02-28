@@ -5,9 +5,7 @@ lastmod: 2021-09-26T15:39:23+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 simg: /img/blog.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: true
-description: TryHackMe Room {PalsForLife} solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe PalsForLife walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the PalsForLife challenge room."
 ---
 
 ## OverView

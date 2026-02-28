@@ -5,9 +5,7 @@ lastmod: 2021-05-07T19:38:21+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/blog.png
-  alt: "cover image"
+featureimage: img/blog.png
 description: "50 cybersecurity interview questions with answers — cryptography, CIA triad, firewalls, IDS vs IPS, and more for job prep."
 categories:
   - Classroom

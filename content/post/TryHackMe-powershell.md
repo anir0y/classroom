@@ -5,9 +5,7 @@ lastmod: 2021-08-17T14:58:29+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Hacking with PowerShell solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Hacking with PowerShell walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Hacking with PowerShell challenge room."
 ---
 
 ## OverView

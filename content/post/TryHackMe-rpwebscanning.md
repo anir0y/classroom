@@ -5,9 +5,7 @@ lastmod: 2021-07-14T14:00:45+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -19,8 +17,7 @@ tags:
   - web scanning
 
 draft: false
-description: TryHackMe Room Web Scanning solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Web Scanning walkthrough — exploit web application vulnerabilities and practice common web attack techniques."
 ---
 ## Overview
 

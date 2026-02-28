@@ -5,14 +5,13 @@ lastmod: 2021-04-02T18:47:08+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/cover.jpg
-  alt: "cover image"
+featureimage: img/cover.jpg
 categories:
   - installation
   - Hacking
 tags:
   - Empire
+description: "Installation guide for PowerShell Empire post-exploitation framework — setup, configuration, and generating your first HTTP listener."
 
 ---
 

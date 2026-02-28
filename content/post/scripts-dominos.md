@@ -5,9 +5,7 @@ lastmod: 2021-05-22T19:56:16+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/blog.png
-  alt: "cover image"
+featureimage: img/blog.png
 
 categories:
   - dataleak

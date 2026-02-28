@@ -6,9 +6,7 @@ author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
 #cover: /img/blog.png
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Crack the hash solved by Animesh Roy.Cracking hashes challenges. read more...
-
+description: "TryHackMe Crack the hash walkthrough — Cracking hashes challenges."
 ---
 ## Crack the hash
 

@@ -5,9 +5,7 @@ lastmod: 2021-07-03T20:14:32+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - hydra
 
 draft: false
-description: TryHackMe Room hydra solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Hydra walkthrough — learn brute-force password attacks using Hydra against SSH, FTP, and web login forms."
 ---
 ## Hydra
 

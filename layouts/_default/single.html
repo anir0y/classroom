@@ -1,102 +1,148 @@
-{{- define "main" }}
+{{ define "main" }}
+  {{ .Scratch.Set "scope" "single" }}
+  <article>
+    {{/* Hero */}}
+    {{ if .Params.showHero | default (site.Params.article.showHero | default false) }}
+      {{ $heroStyle := .Params.heroStyle }}
+      {{ if not $heroStyle }}{{ $heroStyle = site.Params.article.heroStyle }}{{ end }}
+      {{ $heroStyle := print "hero/" $heroStyle ".html" }}
+      {{ if templates.Exists ( printf "partials/%s" $heroStyle ) }}
+        {{ partial $heroStyle . }}
+      {{ else }}
+        {{ partial "hero/basic.html" . }}
+      {{ end }}
+    {{ end }}
 
-<article class="post-single">
-  <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
-    <h1 class="post-title entry-hint-parent">
-      {{ .Title }}
-      {{- if .Draft }}
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-      {{- end }}
-    </h1>
-    {{- if .Description }}
-    <div class="post-description">
-      {{ .Description }}
-    </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <div class="post-meta">
-      {{- partial "post_meta.html" . -}}
-      {{- partial "translation_list.html" . -}}
-      {{- partial "edit_post.html" . -}}
-      {{- partial "post_canonical.html" . -}}
-    </div>
-    {{- end }}
-  </header>
-  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
-  {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
-  {{- end }}
+    {{/* Header */}}
+    <header id="single_header" class="mt-5 max-w-prose">
+      {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title | emojify }}
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
+      </div>
+      {{ if not (.Params.showAuthorBottom | default (site.Params.article.showAuthorBottom | default false)) }}
+        {{ template "SingleAuthor" . }}
+      {{ end }}
+    </header>
 
-  {{/* Ad: Top - below header, above content */}}
-  {{- partial "ads-top.html" . -}}
+    {{/* Body */}}
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      {{ $enableToc := site.Params.article.showTableOfContents | default false }}
+      {{ $enableToc = .Params.showTableOfContents | default $enableToc }}
+      {{ $showToc := and $enableToc (in .TableOfContents "<ul") }}
+      {{ $topClass := cond (hasPrefix site.Params.header.layout "fixed") "lg:top-[140px]" "lg:top-10" }}
+      {{ if $showToc }}
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">
+            {{ partial "toc.html" . }}
+          </div>
+        </div>
+      {{ end }}
 
-  {{- if .Content }}
-  <div class="post-content">
-    {{- if gt .WordCount 500 -}}
-      {{/* Long post: inject mid-article ad after ~3rd paragraph */}}
-      {{- $content := .Content -}}
-      {{- $paragraphs := split $content "</p>" -}}
-      {{- $insertAfter := 3 -}}
-      {{- if lt (len $paragraphs) 6 -}}
-        {{- $insertAfter = div (len $paragraphs) 2 -}}
-      {{- end -}}
-      {{- range $i, $p := $paragraphs -}}
-        {{- if $p -}}
-          {{ $p | safeHTML }}</p>
-          {{- if eq $i $insertAfter -}}
-            {{- partial "ads-mid.html" $ -}}
-          {{- end -}}
-        {{- end -}}
-      {{- end -}}
-    {{- else -}}
-      {{/* Short post: no mid-article ad */}}
-      {{- if not (.Param "disableAnchoredHeadings") }}
-      {{- partial "anchored_headings.html" .Content -}}
-      {{- else }}{{ .Content }}{{ end }}
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        {{ partial "series/series.html" . }}
+
+        {{/* Ad: Above article content */}}
+        {{ if templates.Exists "partials/ads-top.html" }}
+          <div class="not-prose my-4 print:hidden">
+            {{ partial "ads-top.html" . }}
+          </div>
+        {{ end }}
+
+        <div class="article-content max-w-prose mb-20">
+          {{ .Content }}
+
+          {{/* Ad: Below article content */}}
+          {{ if templates.Exists "partials/ads-bottom.html" }}
+            <div class="not-prose my-6 print:hidden">
+              {{ partial "ads-bottom.html" . }}
+            </div>
+          {{ end }}
+
+          {{ $defaultReplyByEmail := site.Params.replyByEmail }}
+          {{ $replyByEmail := default $defaultReplyByEmail .Params.replyByEmail }}
+          {{ if $replyByEmail }}
+            <strong class="block mt-8">
+              <a
+                target="_blank"
+                class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+                href="mailto:{{ site.Params.Author.email }}?subject={{ replace (printf "Reply to %s" .Title) "\"" "'" }}">
+                {{ i18n "article.reply_by_email" | default "Reply by Email" }}
+              </a>
+            </strong>
+          {{ end }}
+        </div>
+        {{ if (.Params.showAuthorBottom | default (site.Params.article.showAuthorBottom | default false)) }}
+          {{ template "SingleAuthor" . }}
+        {{ end }}
+        {{ partial "series/series-closed.html" . }}
+        {{ partial "sharing-links.html" . }}
+        {{ partial "related.html" . }}
+      </div>
+    </section>
+
+    {{/* Footer */}}
+    <footer class="pt-8 max-w-prose print:hidden">
+      {{ partial "article-pagination.html" . }}
+      {{ if .Params.showComments | default (site.Params.article.showComments | default false) }}
+        {{ if templates.Exists "partials/comments.html" }}
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+            <div class="pt-3">
+              {{ partial "comments.html" . }}
+            </div>
+          </div>
+        {{ else }}
+          {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
+        {{ end }}
+      {{ end }}
+    </footer>
+  </article>
+{{ end }}
+
+{{ define "SingleAuthor" }}
+  {{ $authorsData := site.Data.authors }}
+  {{ $taxonomies := site.Taxonomies.authors }}
+  {{ $baseURL := site.BaseURL }}
+  {{ $taxonomyLink := 0 }}
+  {{ $showAuthor := 0 }}
+  {{ $isAuthorBottom := (.Params.showAuthorBottom | default ( site.Params.article.showAuthorBottom | default false)) }}
+
+  {{ if not (strings.HasSuffix $baseURL "/") }}
+    {{ $baseURL = delimit (slice $baseURL "/") "" }}
+  {{ end }}
+
+  {{ if .Params.showAuthor | default (site.Params.article.showAuthor | default true) }}
+    {{ $showAuthor = 1 }}
+    {{ partial "author.html" . }}
+  {{ end }}
+
+  {{ range $author := .Page.Params.authors }}
+    {{ $authorData := index $authorsData $author }}
+    {{- if $authorData -}}
+      {{ range $taxonomyname, $taxonomy := $taxonomies }}
+        {{ if (eq $taxonomyname $author) }}
+          {{ $taxonomyLink = delimit (slice $baseURL "authors/" $author "/") "" }}
+        {{ end }}
+      {{ end }}
+
+      {{ $finalLink := $taxonomyLink }}
+      {{ $currentLang := site.Language.Lang }}
+      {{ if eq site.LanguagePrefix "" }}
+        {{ $finalLink = printf "%sauthors/%s/" $baseURL $author }}
+      {{ else }}
+        {{ $finalLink = printf "%s%s/authors/%s/" $baseURL $currentLang $author }}
+      {{ end }}
+      {{ partial "author-extra.html" (dict "context" . "data" $authorData "link" $finalLink) }}
     {{- end -}}
-  </div>
-  {{- end }}
+  {{ end }}
 
-  {{/* Ad: Bottom - after content */}}
-  {{- partial "ads-bottom.html" . -}}
-
-  {{/* Buy Me a Coffee */}}
-  <div class="bmc-container">
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-  </div>
-
-  <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    <ul class="post-tags">
-      {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
-    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_icons.html" . -}}
-    {{- end }}
-  </footer>
-
-  {{/* Utterances Comments */}}
-  <div class="utterances-container" style="margin-top: 2rem;">
-    <script src="https://utteranc.es/client.js"
-      repo="anir0y/classroom"
-      issue-term="pathname"
-      theme="preferred-color-scheme"
-      crossorigin="anonymous"
-      async>
-    </script>
-  </div>
-</article>
-
-{{- end }}{{/* end main */}}
+  {{ if or $taxonomyLink $showAuthor }}
+    <div class="{{ cond $isAuthorBottom "mb-10" "mb-5" }}"></div>
+  {{ end }}
+{{ end }}

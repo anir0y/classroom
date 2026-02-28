@@ -5,9 +5,7 @@ lastmod: 2022-05-30T03:36:44+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/OSINT_Tools.png
-  alt: "cover image"
+featureimage: img/OSINT_Tools.png
 simg: /img/OSINT_Tools.png
 
 categories:

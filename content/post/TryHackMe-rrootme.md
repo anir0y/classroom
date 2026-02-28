@@ -5,9 +5,7 @@ lastmod: 2021-07-06T13:36:08+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - RootMe
 
 draft: false
-description: TryHackMe Room RootMe solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe RootMe walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the RootMe challenge room."
 ---
 ## RootMe
 

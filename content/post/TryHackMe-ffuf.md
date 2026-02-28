@@ -6,9 +6,7 @@ author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
 #cover: /img/blog.png
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -19,8 +17,7 @@ tags:
   - ffuf
 
 draft: false
-description: TryHackMe Room ffuf solved by Animesh Roy. this is a walkthrough. ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing...
-
+description: "TryHackMe Ffuf walkthrough — Ffuf stands for Fuzz Faster U Fool. It's a tool used for web enumeration, fuzzing, and directory brute forcing..."
 ---
 ## overview
 

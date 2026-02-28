@@ -5,9 +5,7 @@ lastmod: 2021-07-04T23:04:02+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - gitandcrumpets
 
 draft: false
-description: TryHackMe Room Git and Crumpets solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Gitandcrumpets walkthrough — exploit exposed Git repositories to extract secrets, credentials, and sensitive source code."
 ---
 ## Git and Crumpets
 

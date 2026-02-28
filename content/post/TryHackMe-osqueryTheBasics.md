@@ -5,9 +5,7 @@ lastmod: 2022-11-12T18:18:23+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/osquery-1.png
-  alt: "cover image"
+featureimage: img/osquery-1.png
 simg: /img/osquery-1.png
 
 categories:
@@ -15,8 +13,7 @@ categories:
 
 
 draft: false
-description: Try Hack Me Room Osquery The Basics solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe writeup | Osquery The Basics walkthrough — learn endpoint monitoring with osquery SQL-based queries for process, network, and file system analysis."
 ---
 
 ## OverView

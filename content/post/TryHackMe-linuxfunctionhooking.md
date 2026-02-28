@@ -6,9 +6,7 @@ author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
 #cover: /img/blog.png
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: TryHackMe Room Linux Function Hooking solved by Animesh Roy. this is a walkthrough. read more... Learn about function hooking in Linux and have fun hooking functions
-
+description: "TryHackMe Linux Function Hooking walkthrough — Learn about function hooking in Linux and have fun hooking functions"
 ---
 
 ## OverView

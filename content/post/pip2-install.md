@@ -5,9 +5,7 @@ lastmod: 2021-07-03T01:30:12+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/blog.png
-  alt: "cover image"
+featureimage: img/blog.png
 
 categories:
   - Python

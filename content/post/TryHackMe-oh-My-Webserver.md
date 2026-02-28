@@ -5,9 +5,7 @@ lastmod: 2022-03-09T10:50:11+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/ohmyweb.png
-  alt: "cover image"
+featureimage: img/ohmyweb.png
 simg: /img/ohmyweb.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room oh-My-Webserver solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Oh My Webserver walkthrough — exploit web application vulnerabilities and practice common web attack techniques."
 ---
 
 ## OverView

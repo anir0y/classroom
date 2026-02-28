@@ -5,9 +5,7 @@ lastmod: 2021-07-19T22:32:49+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/thm.gif
-  alt: "cover image"
+featureimage: img/thm.png
 
 categories:
   - TryHackMe
@@ -18,8 +16,7 @@ tags:
   - Simple CTF
 
 draft: false
-description: TryHackMe Room Simple CTF solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Simple CTF walkthrough — solve CTF challenges covering enumeration, exploitation, and privilege escalation on a vulnerable target."
 ---
 
 

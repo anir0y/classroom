@@ -5,9 +5,7 @@ lastmod: 2022-05-26T21:42:28+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/Stegnography_with_Steghide.png
-  alt: "cover image"
+featureimage: img/Stegnography_with_Steghide.png
 simg: /img/Stegnography_with_Steghide.png
 
 categories:

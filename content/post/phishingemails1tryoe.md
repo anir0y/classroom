@@ -5,9 +5,7 @@ lastmod: 2022-01-24T17:33:15+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/phish-e-1.png
-  alt: "cover image"
+featureimage: img/phish-e-1.png
 simg: /img/phish-e-1.png
 
 categories:
@@ -17,8 +15,7 @@ tags:
 
 
 draft: false
-description: Try Hack Me Room Phishing Emails 1 solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Phishing Emails 1 walkthrough — analyze phishing emails, identify social engineering techniques, and examine malicious headers and payloads."
 ---
 
 ## OverView

@@ -5,9 +5,7 @@ lastmod: 2022-08-12T13:05:49+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
-cover:
-  image: /img/redteamthreatintel.png
-  alt: "cover image"
+featureimage: img/redteamthreatintel.png
 simg: /img/redteamthreatintel.png
 
 categories:
@@ -18,8 +16,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Red Team Threat Intel solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Red Team Threat Intel walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Red Team Threat Intel challenge room."
 ---
 
 ## OverView

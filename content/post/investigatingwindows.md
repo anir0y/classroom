@@ -5,9 +5,7 @@ lastmod: 2021-05-25T20:09:18+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
-cover:
-  image: /img/blog.png
-  alt: "cover image"
+featureimage: img/blog.png
 
 categories:
   - TryHackMe
@@ -17,8 +15,7 @@ tags:
   - thm
 
 draft: false
-description: Try Hack Me Room Investigating Windows solved by Animesh Roy. this is a walkthrough. read more...
-
+description: "TryHackMe Investigating Windows walkthrough — explore Windows operating system fundamentals, security features, and common attack surfaces."
 ---
 # Investigating Windows
 A windows machine has been hacked, its your job to go investigate this windows machine and find clues to what the hacker might have done.
