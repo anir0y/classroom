@@ -1,0 +1,23 @@
+# Cache policy for static assets (Cloudflare Pages / Netlify compatible)
+# For GitHub Pages + Cloudflare CDN, set equivalent rules in Cloudflare Dashboard:
+#   Cloudflare > Rules > Cache Rules > "Static assets long cache"
+#   Match: URI Path contains /css/ OR /js/ OR /img/ OR /fonts/
+#   Cache TTL: 1 year, Browser TTL: 1 month
+
+/css/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/js/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/img/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=2592000, immutable
+
+/*.js
+  Cache-Control: public, max-age=2592000, immutable
