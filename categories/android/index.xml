@@ -1,102 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Android on Classroom</title><link>https://classroom.anir0y.in/categories/android/</link><description>Recent content in Android on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Thu, 19 Feb 2026 21:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/android/index.xml" rel="self" type="application/rss+xml"/><item><title>Dissecting a Two-Stage Indian Banking Trojan: From Fake eChallan to Full Device Compromise</title><pubDate>Thu, 19 Feb 2026 21:00:00 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/rto-malware-analysis/00_dropper_launch.png" width="700" height="420"/><description>&lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;We obtained a fresh Android malware sample masquerading as an Indian RTO (Road Transport Office) traffic fine payment app. Our analysis revealed a sophisticated two-stage banking trojan with:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A &lt;strong&gt;dropper&lt;/strong&gt; protected by NP Protect commercial packer (v3.1.37) that silently installs a hidden payload&lt;/li&gt;
-&lt;li&gt;A &lt;strong&gt;payload&lt;/strong&gt; capable of real-time SMS interception, USSD banking code execution, and a 7-page phishing funnel stealing Aadhaar, PAN, card details, and UPI PINs&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Firebase Cloud Messaging&lt;/strong&gt; as a C2 channel and an active HTTP C2 at &lt;code&gt;jsonserv[.]live&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Only 11/66 VirusTotal detections&lt;/strong&gt; (16.7% detection rate) &amp;ndash; most major AV engines miss it entirely&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="1-initial-triage"&gt;1. Initial Triage&lt;/h2&gt;
-&lt;p&gt;The sample arrived as &lt;code&gt;RTO Traffic Challan 1000 (1).apk&lt;/code&gt; &amp;ndash; a 10MB APK posing as an Indian traffic fine payment application. Quick triage immediately raised flags:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/rto-malware-analysis/00_dropper_launch.png"/><link>https://classroom.anir0y.in/post/blog-dissecting-rto-echallan-banking-trojan/</link></item><item><title>Android MalwareAnalysis</title><pubDate>Tue, 11 Oct 2022 19:04:38 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/amat.png" width="700" height="420"/><description>&lt;p&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id="android-malware-analysis-tools"&gt;Android Malware Analysis Tools&lt;/h1&gt;
-&lt;h2 id="static-analysis"&gt;Static Analysis&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;tools&lt;/th&gt;
-&lt;th&gt;short Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://external.anir0y.in/classyshark"&gt;ClassyShark&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Standalone android apps binary inspection tool.ClassyShark&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://external.anir0y.in/StaCoAn"&gt;StaCoAn&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Mobile application static code analysis tool.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://external.anir0y.in/apk-mitm"&gt;APK-MiTM&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;CLI application that automatically prepares Android APK files for HTTPS inspection.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="dynamic-analysis"&gt;Dynamic Analysis&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;tools&lt;/th&gt;
-&lt;th&gt;short Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://external.anir0y.in/appmon"&gt;AppMon&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Automated framework for monitoring and tampering system API calls based on Frida.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://www.wireshark.org/download.html"&gt;Wireshark&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Network analysis tool.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://www.androidtcpdump.com/"&gt;tcpdump&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Network analysis tool.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://external.anir0y.in/mitmproxy"&gt;MiTMProxy&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;An interactive SSL/TLS-capable intercepting HTTP proxy (great for HTTPS inspection).&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://portswigger.net/burp/communitydownload"&gt;Burp Suite&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;The free web proxy for any browser, system, or platform.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://www.inetsim.org/packages.html"&gt;INetSim&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Internet Services Simulation Suite.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="some-other-tools"&gt;Some Other tools&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;tools&lt;/th&gt;
-&lt;th&gt;short Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://tamerplatform.com/"&gt;Android Tamer&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;VM/Live OS for Android security research and analysis.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://cuckoosandbox.org/"&gt;Cuckoo Sandbox&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Free and open-source automated malware analysis sandbox.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://external.anir0y.in/MobSF"&gt;MobSF (Mobile Security Framework)&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Malware analysis and security assessment framework capable of performing static and dynamic analysis.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/amat.png"/><link>https://classroom.anir0y.in/post/android-malwareanalysis/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Classroom</title>
+    <link>https://classroom.anir0y.in/categories/android/</link>
+    <description>Recent content in Android on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Thu, 19 Feb 2026 21:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dissecting a Two-Stage Indian Banking Trojan: From Fake eChallan to Full Device Compromise</title>
+      <link>https://classroom.anir0y.in/post/blog-dissecting-rto-echallan-banking-trojan/</link>
+      <pubDate>Thu, 19 Feb 2026 21:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/blog-dissecting-rto-echallan-banking-trojan/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Android MalwareAnalysis</title>
+      <link>https://classroom.anir0y.in/post/android-malwareanalysis/</link>
+      <pubDate>Tue, 11 Oct 2022 19:04:38 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/android-malwareanalysis/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

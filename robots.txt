@@ -1,1 +1,7 @@
 User-agent: *
+Allow: /
+
+Sitemap: https://classroom.anir0y.in/sitemap.xml
+
+# Block crawling of pagination pages
+Disallow: /page/

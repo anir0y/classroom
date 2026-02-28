@@ -1,29 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HackPark on Classroom</title><link>https://classroom.anir0y.in/tags/hackpark/</link><description>Recent content in HackPark on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sat, 19 Jun 2021 19:38:27 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/hackpark/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe Room Hackpark</title><pubDate>Sat, 19 Jun 2021 19:38:27 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="hackpark"&gt;HackPark&lt;/h2&gt;
-&lt;p&gt;Room link : &lt;a href="https://tryhackme.com/room/hackpark"&gt;HackPark&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="task-01-deploy-the-vulnerable-windows-machine"&gt;task 01: Deploy the vulnerable Windows machine&lt;/h2&gt;
-&lt;p&gt;This room will cover brute-forcing an accounts credentials, handling public exploits, using the Metasploit framework and privilege escalation on Windows.&lt;/p&gt;
-&lt;h3 id="flags"&gt;Flags&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Flag-ID&lt;/th&gt;
-&lt;th&gt;question&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;1&lt;/td&gt;
-&lt;td&gt;Deploy the machine and access its web server.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;2&lt;/td&gt;
-&lt;td&gt;Whats the name of the clown displayed on the homepage?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td&gt;download the img and do a reverse Image search ans is &lt;code&gt;PENNYWISE&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-02-using-hydra-to-brute-force-a-login"&gt;task 02: Using Hydra to brute-force a login&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/8wR5oby.png" alt="hydra"&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-hackpark/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HackPark on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/hackpark/</link>
+    <description>Recent content in HackPark on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Sat, 19 Jun 2021 19:38:27 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/hackpark/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TryHackMe Room Hackpark</title>
+      <link>https://classroom.anir0y.in/post/thm-room-hackpark/</link>
+      <pubDate>Sat, 19 Jun 2021 19:38:27 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-hackpark/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

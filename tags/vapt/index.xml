@@ -1,6 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vapt on Classroom</title><link>https://classroom.anir0y.in/tags/vapt/</link><description>Recent content in Vapt on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vapt/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to Vapt</title><pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="vulnerability-assessment-and-penetration-testing-vapt"&gt;Vulnerability Assessment and Penetration Testing (VAPT)&lt;/h1&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/anir0y/cdn/main/vapt.jpg" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.&lt;/p&gt;
-&lt;p&gt;Vulnerability Assessment focuses on internal organizational security, while Penetration Testing focuses on external real-world risk.&lt;/p&gt;
-&lt;h3 id="what-is-vulnerability-assessment-va"&gt;What is Vulnerability Assessment (VA)?&lt;/h3&gt;
-&lt;p&gt;A Vulnerability Assessment is a rapid automated review of network devices, servers and systems to identify key vulnerabilities and configuration issues that an attacker may be able to take advantage off. Its generally conducted within the network on internal devices and due to its low footprint can be carried out as often as every day.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/intro-vapt/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vapt on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/vapt/</link>
+    <description>Recent content in Vapt on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vapt/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction to  Vapt</title>
+      <link>https://classroom.anir0y.in/post/intro-vapt/</link>
+      <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/intro-vapt/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

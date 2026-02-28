@@ -1,59 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vuln Labs on Classroom</title><link>https://classroom.anir0y.in/tags/vuln-labs/</link><description>Recent content in Vuln Labs on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vuln-labs/index.xml" rel="self" type="application/rss+xml"/><item><title>Vulnerable Apps, Servers, and Websites!</title><pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;overview&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The following is a collection of vulnerable servers (VMs) or websites that you can use to practice your skills (sorted alphabetically).&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id="learning-platforms-and-vms"&gt;Learning Platforms and VMs&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.vulnhub.com"&gt;VulnHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.hackthebox.eu/"&gt;Hack the Box&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://tryhackme.com/"&gt;TryHackMe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.elearnsecurity.com/"&gt;eLearn Security&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://pentesterlab.com/"&gt;PentesterLab&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://sourceforge.net/projects/bwapp/files/bWAPP"&gt;bWAPP &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/RhinoSecurityLabs/cloudgoat"&gt;CloudGoat&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/stamparm/DSVW"&gt;Damn Small Vulnerable Web&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.exploitlab.net/2018/01/dvar-damn-vulnerable-arm-router.html"&gt;Damn Vulnerable ARM Router (DVAR)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://damnvulnerableiosapp.com"&gt;Damn Vulnerable iOS Application (DVIA)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/ethicalhack3r/DVWA"&gt;Damn Vulnerable Web App (DVWA)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/snoopysecurity/dvws"&gt;Damn Vulnerable Web Services&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/vavkamil/dvwp"&gt;Damn Vulnerable WordPress&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.domxss.com/domxss/"&gt;DOMXSS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/vegabird/xvna"&gt;Extreme Vulnerable Node Application(XVNA)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.gameofhacks.com"&gt;Game of Hacks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://google-gruyere.appspot.com"&gt;Gruyere&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.hackthissite.org"&gt;Hack This Site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.hackthis.co.uk"&gt;Hack This&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://hack-yourself-first.com/"&gt;Hack Yourself first&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/rapid7/hackazon"&gt;Hackazon &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.hellboundhackers.org"&gt;HellBound Hackers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/madhuakula/kubernetes-goat"&gt;Kubernetes Goat&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://community.rapid7.com/docs/DOC-1875"&gt;Metasploitable2 &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.rapid7.com/2016/11/15/test-your-might-with-the-shiny-new-metasploitable3/"&gt;Metasploitable3 &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://overthewire.org/wargames"&gt;Over The Wire Wargames&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.owasp.org/index.php/OWASP_Juice_Shop_Project"&gt;OWASP Juice Shop &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://sourceforge.net/projects/mutillidae"&gt;OWASP Mutillidae II&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://sourceforge.net/projects/peruggia"&gt;Peruggia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://portswigger.net/web-security"&gt;PortSwigger Web Security Academy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.root-me.org"&gt;RootMe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.samurai-wtf.org/"&gt;Samurai Web Testing Framework&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/incredibleindishell/SSRF_Vulnerable_Lab"&gt;Server-Side Request Forgery (SSRF) vulnerable Lab&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/snyk/exploit-workshop"&gt;Snyk exploit-workshop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.try2hack.nl"&gt;Try2Hack&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://vicnum.ciphertechs.com"&gt;Vicnum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dogangcr/vulnerable-sso"&gt;Vulnerable Single Sign-On (SSO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mavensecurity.com/resources/web-security-dojo"&gt;Web Security Dojo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/WebGoat/WebGoat"&gt;WebGoat&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/jbarone/xxelab"&gt;XXE Lab&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="websploit-labs"&gt;WebSploit Labs&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://websploit.org"&gt;WebSploit Labs (created and maintained by Omar Ωr Santos)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://websploit.org"&gt;Mayhem - vulnerable container created by Omar Ωr for Mayhem 2020&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://websploit.org"&gt;RTOV-Hackme - vulnerable container created by Omar Ωr for DEF CON 27&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://websploit.org"&gt;RTV-Safemode - vulnerable container created by Omar Ωr for DEF CON Safemode&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/blog1/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vuln Labs on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/vuln-labs/</link>
+    <description>Recent content in Vuln Labs on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Sun, 21 Mar 2021 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vuln-labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Vulnerable Apps, Servers, and Websites!</title>
+      <link>https://classroom.anir0y.in/post/blog1/</link>
+      <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/blog1/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

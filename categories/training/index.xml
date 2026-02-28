@@ -1,16 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Training on Classroom</title><link>https://classroom.anir0y.in/categories/training/</link><description>Recent content in Training on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Thu, 26 May 2022 21:42:28 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/training/index.xml" rel="self" type="application/rss+xml"/><item><title>Steganography with Steghide</title><pubDate>Thu, 26 May 2022 21:42:28 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/Stegnography_with_Steghide.png" width="700" height="420"/><description>&lt;h1 id="choice-of-tools"&gt;Choice of tools&lt;/h1&gt;
-&lt;p&gt;Steghide: Is an open-source, command-line software that can encode and decode data into image files&lt;/p&gt;
-&lt;p&gt;Features:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;compression of embedded data&lt;/li&gt;
-&lt;li&gt;encryption of embedded data&lt;/li&gt;
-&lt;li&gt;embedding of a checksum to verify the integrity of the extracted data&lt;/li&gt;
-&lt;li&gt;support for JPEG, BMP, WAV and AU files&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="installation-linux"&gt;Installation (Linux)&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt; apt-get install steghide
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="creating-an-image-with-a-secret-message-in-it"&gt;Creating an image with a secret message in it.&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Create a folder with the name of your choice:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/Stegnography_with_Steghide.png"/><link>https://classroom.anir0y.in/post/stegnography/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Training on Classroom</title>
+    <link>https://classroom.anir0y.in/categories/training/</link>
+    <description>Recent content in Training on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Thu, 26 May 2022 21:42:28 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/training/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Steganography with Steghide</title>
+      <link>https://classroom.anir0y.in/post/stegnography/</link>
+      <pubDate>Thu, 26 May 2022 21:42:28 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/stegnography/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

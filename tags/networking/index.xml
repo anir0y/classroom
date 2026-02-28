@@ -1,7 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Networking on Classroom</title><link>https://classroom.anir0y.in/tags/networking/</link><description>Recent content in Networking on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sat, 01 Feb 2025 13:36:24 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Mastering Subnetting- A Comprehensive Guide with Practical Lab Exercises</title><pubDate>Sat, 01 Feb 2025 13:36:24 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://i.imgur.com/6f7E7IY.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;p&gt;Subnetting is a fundamental concept in networking that involves dividing a larger network into smaller, more manageable sub-networks, or subnets. This practice enhances network performance, improves security, and simplifies management. In this blog post, we&amp;rsquo;ll explore the basics of subnetting, its importance, and provide practical examples to illustrate how it works.&lt;/p&gt;
-&lt;figure&gt;&lt;img src="https://i.imgur.com/6f7E7IY.png"
-alt="Subnetting Diagram" width="600"&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;What is Subnetting?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Subnetting is the process of splitting an IP address space into multiple smaller segments called subnets. Each subnet functions as an independent network, allowing for better organization and management of IP addresses. This division is achieved by manipulating the subnet mask, which determines the network and host portions of an IP address.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.inhttps://i.imgur.com/6f7E7IY.png"/><link>https://classroom.anir0y.in/post/blog-subnet-p1/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/networking/</link>
+    <description>Recent content in Networking on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Sat, 01 Feb 2025 13:36:24 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mastering Subnetting- A Comprehensive Guide with Practical Lab Exercises</title>
+      <link>https://classroom.anir0y.in/post/blog-subnet-p1/</link>
+      <pubDate>Sat, 01 Feb 2025 13:36:24 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/blog-subnet-p1/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

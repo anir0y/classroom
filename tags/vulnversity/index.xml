@@ -1,86 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vulnversity on Classroom</title><link>https://classroom.anir0y.in/tags/vulnversity/</link><description>Recent content in Vulnversity on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Wed, 09 Jun 2021 20:10:48 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vulnversity/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe Room Vulnversity</title><pubDate>Wed, 09 Jun 2021 20:10:48 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="vulnversity"&gt;Vulnversity&lt;/h2&gt;
-&lt;h2 id="task-01--deploy-the-machine"&gt;TASK 01: Deploy the machine&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-reconnaissance"&gt;TASK 02: Reconnaissance&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://nmap.org"&gt;Nmap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;CheatSheet&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="flags"&gt;Flags&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Flag ID&lt;/th&gt;
-&lt;th style="text-align: center"&gt;Questions&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;1&lt;/td&gt;
-&lt;td style="text-align: center"&gt;There are many nmap &amp;ldquo;cheatsheets&amp;rdquo; online that you can use too.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;N\A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;2&lt;/td&gt;
-&lt;td style="text-align: center"&gt;Scan the box, how many ports are open?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://i.imgur.com/0XgYocm.png" alt="img"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;3&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What version of the squid proxy is running on the machine?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://i.imgur.com/0XgYocm.png" alt="img"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;4&lt;/td&gt;
-&lt;td style="text-align: center"&gt;How many ports will nmap scan if the flag -p-400 was used?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;400&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;5&lt;/td&gt;
-&lt;td style="text-align: center"&gt;Using the nmap flag -n what will it not resolve?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;DNS&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;6&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What is the most likely operating system this machine is running?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;ubuntu&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;7&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What port is the web server running on?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://i.imgur.com/Tsd6hc7.png" alt="img-anir0y"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;8&lt;/td&gt;
-&lt;td style="text-align: center"&gt;Its important to ensure you are always doing your reconnaissance thoroughly before progressing. Knowing all open services (which can all be points of exploitation) is very important, don&amp;rsquo;t forget that ports on a higher range might be open so always scan ports after 1000 (even if you leave scanning in the background)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h4 id="flag6"&gt;Flag6&lt;/h4&gt;
-&lt;p&gt;based on Nmap Fingerprints.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-vulnversity/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vulnversity on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/vulnversity/</link>
+    <description>Recent content in Vulnversity on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Wed, 09 Jun 2021 20:10:48 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/vulnversity/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TryHackMe Room Vulnversity</title>
+      <link>https://classroom.anir0y.in/post/thm-room-vulnversity/</link>
+      <pubDate>Wed, 09 Jun 2021 20:10:48 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-vulnversity/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

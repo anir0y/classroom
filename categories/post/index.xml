@@ -1,49 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Post on Classroom</title><link>https://classroom.anir0y.in/categories/post/</link><description>Recent content in Post on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 13 Sep 2021 23:16:16 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Openvas</title><pubDate>Mon, 13 Sep 2021 23:16:16 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;p&gt;{{post_content}}&lt;/p&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;script&gt;
-(adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;
-&lt;!-- END --&gt;
-&lt;script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anir0y" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"&gt;&lt;/script&gt;
-&lt;!-- EOF --&gt;</description><enclosure url="https://classroom.anir0y.in/img/blog.png"/><link>https://classroom.anir0y.in/post/howto-install-openvas/</link></item><item><title>Awesome Red Teaming</title><pubDate>Tue, 13 Jul 2021 14:37:01 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="awesome-red-teaming"&gt;Awesome Red Teaming&lt;/h2&gt;
-&lt;p&gt;List of Awesome Red Team / Red Teaming Resources&lt;/p&gt;
-&lt;p&gt;This list is for anyone wishing to learn about Red Teaming but do not have a starting point.&lt;/p&gt;
-&lt;p&gt;Anyway, this is a living resources and will update regularly with latest Adversarial Tactics and Techniques based on &lt;a href="https://attack.mitre.org/wiki/Main_Page"&gt;Mitre ATT&amp;amp;CK&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;You can help by sending Pull Requests to add more information.&lt;/p&gt;
-&lt;h1 id="table-of-contents"&gt;Table of Contents&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#-initial-access"&gt;Initial Access&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-execution"&gt;Execution&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-persistence"&gt;Persistence&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-privilege-escalation"&gt;Privilege Escalation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-defense-evasion"&gt;Defense Evasion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-credential-access"&gt;Credential Access&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-discovery"&gt;Discovery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-lateral-movement"&gt;Lateral Movement&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-collection"&gt;Collection&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-exfiltration"&gt;Exfiltration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-command-and-control"&gt;Command and Control&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-embedded-and-peripheral-devices-hacking"&gt;Embedded and Peripheral Devices Hacking&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-misc"&gt;Misc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-redteam-gadgets"&gt;RedTeam Gadgets&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-ebooks"&gt;Ebooks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-training--free-"&gt;Training&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#-certification"&gt;Certification&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/post-awesome-red-teaming/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on Classroom</title>
+    <link>https://classroom.anir0y.in/categories/post/</link>
+    <description>Recent content in Post on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Mon, 13 Sep 2021 23:16:16 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Install Openvas</title>
+      <link>https://classroom.anir0y.in/post/howto-install-openvas/</link>
+      <pubDate>Mon, 13 Sep 2021 23:16:16 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/howto-install-openvas/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Awesome Red Teaming</title>
+      <link>https://classroom.anir0y.in/post/post-awesome-red-teaming/</link>
+      <pubDate>Tue, 13 Jul 2021 14:37:01 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/post-awesome-red-teaming/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

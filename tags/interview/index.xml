@@ -1,9 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Interview on Classroom</title><link>https://classroom.anir0y.in/tags/interview/</link><description>Recent content in Interview on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Fri, 07 May 2021 19:38:21 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/interview/index.xml" rel="self" type="application/rss+xml"/><item><title>Cyber Security Interview Questions With Answers</title><pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;p&gt;&lt;img src="https://i.imgur.com/6bZ0NCp.png" alt=""&gt;&lt;/p&gt;
-&lt;h1 id="50-cyber-security-interview-questions-with-answers"&gt;50 Cyber Security Interview Questions (With Answers)&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id="top-cyber-security-interview-questions"&gt;Top Cyber Security Interview Questions&lt;/h2&gt;
-&lt;h3 id="explain-cryptography"&gt;Explain Cryptography&lt;/h3&gt;
-&lt;p&gt;It is the science of protecting data from third-party using various methods. It is used to protect sensitive information that shouldn’t be disclosed to anyone other than the owners of the information.&lt;/p&gt;
-&lt;h3 id="differentiate-between-symmetric-and-asymmetric-encryption"&gt;Differentiate between Symmetric and Asymmetric encryption&lt;/h3&gt;
-&lt;p&gt;Symmetric encryption – In this type of encryption, the same key is used for encryption&lt;/p&gt;
-&lt;p&gt;and decryption of data. It is more vulnerable this way and it is used to encrypt data transmissions that are bulky in nature.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interview on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/interview/</link>
+    <description>Recent content in Interview on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Fri, 07 May 2021 19:38:21 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cyber Security Interview Questions With Answers</title>
+      <link>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</link>
+      <pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

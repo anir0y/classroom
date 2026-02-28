@@ -1,3 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Smishing on Classroom</title><link>https://classroom.anir0y.in/tags/smishing/</link><description>Recent content in Smishing on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Thu, 26 Jan 2023 00:03:57 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/smishing/index.xml" rel="self" type="application/rss+xml"/><item><title>Smishing - Understanding and Protecting Against the Growing Threat of Phishing via Text Message</title><pubDate>Thu, 26 Jan 2023 00:03:57 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/smshing.png" width="700" height="420"/><description>&lt;p&gt;&lt;strong&gt;[ADS] &lt;a href="https://arishti.live"&gt;Arishti.live&lt;/a&gt; is back with more training contents&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This article explains what smishing is, how it works and how to protect yourself from falling victim to a smishing attack. Smishing is a type of phishing that uses text messages to trick individuals into giving away sensitive information. Learn about common smishing tactics, how to spot a smishing message and the best ways to protect yourself from this growing threat. With this knowledge, you can stay safe and secure online.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/smshing.png"/><link>https://classroom.anir0y.in/post/smshingintro/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smishing on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/smishing/</link>
+    <description>Recent content in Smishing on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Thu, 26 Jan 2023 00:03:57 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/smishing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Smishing - Understanding and Protecting Against the Growing Threat of Phishing via Text Message</title>
+      <link>https://classroom.anir0y.in/post/smshingintro/</link>
+      <pubDate>Thu, 26 Jan 2023 00:03:57 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/smshingintro/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

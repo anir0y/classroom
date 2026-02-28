@@ -1,15 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Idor on Classroom</title><link>https://classroom.anir0y.in/tags/idor/</link><description>Recent content in Idor on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 14 Jul 2025 02:24:47 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/idor/index.xml" rel="self" type="application/rss+xml"/><item><title>Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint</title><pubDate>Mon, 14 Jul 2025 02:24:47 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inhttps://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png" width="700" height="420"/><description>&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;script&gt;
-(adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;
-&lt;!-- END --&gt;
-&lt;hr&gt;
-&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;The e-Jagriti platform, developed by the Department of Consumer Affairs, Government of India, is a digital solution for consumer dispute resolution, offering features such as online case filing, real-time monitoring, and AI-powered search capabilities. Hosted at [e-jagriti.gov.in]([invalid url, do not cite]), it aims to enhance accessibility and efficiency in addressing consumer grievances. However, a potential security vulnerability in its &lt;code&gt;/services/user/auth/v2/findUser&lt;/code&gt; endpoint may allow attackers to perform user enumeration, identifying valid user accounts by exploiting differences in server responses. This blog post examines the nature of this vulnerability, demonstrates a proof of concept (PoC), evaluates its potential impact, and proposes mitigation strategies to enhance the platform’s security.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.inhttps://raw.githubusercontent.com/anir0y/cdn/refs/heads/main/owasp-blog-1.png"/><link>https://classroom.anir0y.in/post/owasp-e-jagriti-bug-report/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Idor on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/idor/</link>
+    <description>Recent content in Idor on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Mon, 14 Jul 2025 02:24:47 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/idor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint</title>
+      <link>https://classroom.anir0y.in/post/owasp-e-jagriti-bug-report/</link>
+      <pubDate>Mon, 14 Jul 2025 02:24:47 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/owasp-e-jagriti-bug-report/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

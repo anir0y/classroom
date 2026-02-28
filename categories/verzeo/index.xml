@@ -1,48 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Verzeo on Classroom</title><link>https://classroom.anir0y.in/categories/verzeo/</link><description>Recent content in Verzeo on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Wed, 12 Aug 2020 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/verzeo/index.xml" rel="self" type="application/rss+xml"/><item><title>Verzeo: JULY Batch</title><pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h4 id="hello-links-to-our-classroom-will-be-available-here"&gt;Hello, Links to our classroom will be available here.&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Links&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;One Note&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://1drv.ms/u/s!AjGfb2ZCIBDrsGuTv4IKhMMeYCiV"&gt;Weblink&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Agenda&lt;/td&gt;
-&lt;td&gt;&lt;a href="#"&gt;download pdf&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WhatsApp Group&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://chat.whatsapp.com/HmQHXODwN8P3mdiTRYuR4l"&gt;Join Here&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h5 id="progress"&gt;Progress&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; Session Start&lt;/li&gt;
-&lt;li&gt;[0] Installation of VM
-&lt;ul&gt;
-&lt;li&gt;Download VM
-&lt;ul&gt;
-&lt;li&gt;Oracle Virtual Box&lt;/li&gt;
-&lt;li&gt;Vmware&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OS download
-&lt;ul&gt;
-&lt;li&gt;Kali&lt;/li&gt;
-&lt;li&gt;Win7&lt;/li&gt;
-&lt;li&gt;ubuntu&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Networking&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;[0] Minor Project&lt;/li&gt;
-&lt;li&gt;[0] Major Project&lt;/li&gt;
-&lt;/ul&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Verzeo on Classroom</title>
+    <link>https://classroom.anir0y.in/categories/verzeo/</link>
+    <description>Recent content in Verzeo on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Wed, 12 Aug 2020 21:23:22 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/verzeo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Verzeo: JULY Batch</title>
+      <link>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</link>
+      <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

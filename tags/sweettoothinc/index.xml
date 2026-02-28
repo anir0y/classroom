@@ -1,80 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sweettoothinc on Classroom</title><link>https://classroom.anir0y.in/tags/sweettoothinc/</link><description>Recent content in Sweettoothinc on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Wed, 28 Jul 2021 12:16:24 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/sweettoothinc/index.xml" rel="self" type="application/rss+xml"/><item><title>TryHackMe Sweettooth Inc.</title><pubDate>Wed, 28 Jul 2021 12:16:24 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Sweettooth Inc&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/33632296aaf0a3545edaf9a386aade62.jpeg" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/sweettoothinc"&gt;Sweettooth Inc&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;tools (additional)&lt;/td&gt;
-&lt;td&gt;Docker CE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01--deploy-the-machine"&gt;Task 01: Deploy the machine&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02enumeration"&gt;Task 02:Enumeration&lt;/h2&gt;
-&lt;h3 id="recon"&gt;Recon&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;nmap (basic scan)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.187.112
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;sudo&lt;span style="color:#f92672"&gt;]&lt;/span&gt; password &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; anir0y:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-28 12:20 IST
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.187.112
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.19s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Not shown: &lt;span style="color:#ae81ff"&gt;997&lt;/span&gt; closed ports
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;PORT STATE SERVICE VERSION
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;111/tcp open rpcbind 2-4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RPC &lt;span style="color:#75715e"&gt;#100000)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| rpcinfo:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| program version port/proto service
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100000&lt;/span&gt; 2,3,4 111/tcp rpcbind
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100000&lt;/span&gt; 2,3,4 111/udp rpcbind
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100000&lt;/span&gt; 3,4 111/tcp6 rpcbind
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100000&lt;/span&gt; 3,4 111/udp6 rpcbind
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100024&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; 41045/udp status
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100024&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; 55132/udp6 status
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100024&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; 55323/tcp status
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ &lt;span style="color:#ae81ff"&gt;100024&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; 56412/tcp6 status
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2222/tcp open ssh OpenSSH 6.7p1 Debian 5+deb8u8 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;protocol 2.0&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| ssh-hostkey:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;1024&lt;/span&gt; b0:ce:c9:21:65:89:94:52:76:48:ce:d8:c8:fc:d4:ec &lt;span style="color:#f92672"&gt;(&lt;/span&gt;DSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;2048&lt;/span&gt; 7e:86:88:fe:42:4e:94:48:0a:aa:da:ab:34:61:3c:6e &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; 04:1c:82:f6:a6:74:53:c9:c4:6f:25:37:4c:bf:8b:a8 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ECDSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; 49:4b:dc:e6:04:07:b6:d5:ab:c0:b0:a3:42:8e:87:b5 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ED25519&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;8086/tcp open http InfluxDB http admin 1.3.0
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_http-title: Site doesn&lt;span style="color:#960050;background-color:#1e0010"&gt;&amp;#39;&lt;/span&gt;t have a title &lt;span style="color:#f92672"&gt;(&lt;/span&gt;text/plain; charset&lt;span style="color:#f92672"&gt;=&lt;/span&gt;utf-8&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; IP address &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; host up&lt;span style="color:#f92672"&gt;)&lt;/span&gt; scanned in 21.84 seconds
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="21--do-a-tcp-portscan-what-is-the-name-of-the-database-software-running-on-one-of-these-ports"&gt;2.1 : Do a TCP portscan. What is the name of the database software running on one of these ports?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;InfluxDB&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-sweettoothinc/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sweettoothinc on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/sweettoothinc/</link>
+    <description>Recent content in Sweettoothinc on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Wed, 28 Jul 2021 12:16:24 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/sweettoothinc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TryHackMe Sweettooth Inc.</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-sweettoothinc/</link>
+      <pubDate>Wed, 28 Jul 2021 12:16:24 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-sweettoothinc/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

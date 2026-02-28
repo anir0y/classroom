@@ -1,26 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rpwebscanning on Classroom</title><link>https://classroom.anir0y.in/tags/rpwebscanning/</link><description>Recent content in Rpwebscanning on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Wed, 14 Jul 2021 14:00:45 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/rpwebscanning/index.xml" rel="self" type="application/rss+xml"/><item><title>Try Hack Me Web Scanning</title><pubDate>Wed, 14 Jul 2021 14:00:45 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Learn the basics of automated web scanning!&lt;/p&gt;
-&lt;p&gt;Web scanning represents one of the core constructs of modern pen testing. Quite simply, most of what we interact with on a daily basis is the internet, and therein there is a multitude of ever-widening number of vulnerabilities. Within this room, we will investigate two of the most common scanners: Nikto and Zap.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Web Scanning&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/rpwebscanning"&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Solved by&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://anir0y.in"&gt;@anir0y&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-pull-the-lever-kronk"&gt;Task 01: Pull the lever, Kronk&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-im-supposed-to-scan-with-that"&gt;Task 02: &amp;hellip;I&amp;rsquo;m supposed to scan with that?&lt;/h2&gt;
-&lt;p&gt;A short quiz over the various switches used with Nikto as well as a quick scan against our target. All you&amp;rsquo;ll need for this is the help menu for nikto. Include all parts of the switch unless otherwise specified, this includes&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-rpwebscanning/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rpwebscanning on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/rpwebscanning/</link>
+    <description>Recent content in Rpwebscanning on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Wed, 14 Jul 2021 14:00:45 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/rpwebscanning/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Try Hack Me Web Scanning</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-rpwebscanning/</link>
+      <pubDate>Wed, 14 Jul 2021 14:00:45 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-rpwebscanning/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

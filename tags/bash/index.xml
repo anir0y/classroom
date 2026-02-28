@@ -1,33 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bash on Classroom</title><link>https://classroom.anir0y.in/tags/bash/</link><description>Recent content in Bash on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sat, 03 Apr 2021 18:54:43 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro Bash</title><pubDate>Sat, 03 Apr 2021 18:54:43 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="getting-started"&gt;Getting started&lt;/h2&gt;
-&lt;p&gt;{: .-three-column}&lt;/p&gt;
-&lt;h3 id="introduction"&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;{: .-intro}&lt;/p&gt;
-&lt;p&gt;This is a quick reference to getting started with Bash scripting.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learnxinyminutes.com/docs/bash/"&gt;Learn bash in y minutes&lt;/a&gt; &lt;em&gt;(learnxinyminutes.com)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://mywiki.wooledge.org/BashGuide"&gt;Bash Guide&lt;/a&gt; &lt;em&gt;(mywiki.wooledge.org)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="example"&gt;Example&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#!/usr/bin/env bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;NAME&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;John&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;Hello &lt;/span&gt;$NAME&lt;span style="color:#e6db74"&gt;!&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="variables"&gt;Variables&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;NAME&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;John&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo $NAME
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;$NAME&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;NAME&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;!&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="string-quotes"&gt;String quotes&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;NAME&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;John&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;Hi &lt;/span&gt;$NAME&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#75715e"&gt;#=&amp;gt; Hi John&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#39;Hi $NAME&amp;#39;&lt;/span&gt; &lt;span style="color:#75715e"&gt;#=&amp;gt; Hi $NAME&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="shell-execution"&gt;Shell execution&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;I&amp;#39;m in &lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;pwd&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;I&amp;#39;m in `pwd`&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Same&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See &lt;a href="http://wiki.bash-hackers.org/syntax/expansion/cmdsubst"&gt;Command substitution&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="conditional-execution"&gt;Conditional execution&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git push
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit &lt;span style="color:#f92672"&gt;||&lt;/span&gt; echo &lt;span style="color:#e6db74"&gt;&amp;#34;Commit failed&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="functions"&gt;Functions&lt;/h3&gt;
-&lt;p&gt;{: id=&amp;lsquo;functions-example&amp;rsquo;}&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/intro-bash/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/bash/</link>
+    <description>Recent content in Bash on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Sat, 03 Apr 2021 18:54:43 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Intro Bash</title>
+      <link>https://classroom.anir0y.in/post/intro-bash/</link>
+      <pubDate>Sat, 03 Apr 2021 18:54:43 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/intro-bash/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

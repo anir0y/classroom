@@ -1,18 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Classroom</title><link>https://classroom.anir0y.in/categories/notes/</link><description>Recent content in Notes on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sat, 26 Feb 2022 20:55:07 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Domain Enumeration Cheat Sheet</title><pubDate>Sat, 26 Feb 2022 20:55:07 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/doamin-enum.png" width="700" height="420"/><description>&lt;h2 id="get-all-the-member-of-the-domain-admins-group"&gt;Get all the member of the Domain Admins Group&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Get-NetGroupMember -GroupName &amp;quot;Domain Admins&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="or-activedirectory-module"&gt;or ActiveDirectory module&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Get-ADGroupMember -Identity &amp;quot;Domain Admins&amp;quot; -Recursive&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="get-the-group-membership-for-a-user"&gt;Get the group membership for a user&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Get-NetGroup -UserName &amp;quot;labuser&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="or-activedirectory-module-1"&gt;or ActiveDirectory module&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Get_ADPrincipalGroupMembership -Identity labuser&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="get-all-computers-of-the-domain"&gt;Get all computers of the domain&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Get-NetComputer (-FullData)&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="using-activedirectory-module"&gt;Using ActiveDirectory module&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Get-ADComputer -Filter * | select Name&lt;/code&gt;
-&lt;code&gt;Get-ADComputer -Filter * -Properties *&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="find-all-machines-on-the-current-domain-where-the-current-user-has-local-admin-access"&gt;Find all machines on the current domain where the current user has local admin access&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Find-LocalAdminAccess -Verbose&lt;/code&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/doamin-enum.png"/><link>https://classroom.anir0y.in/post/notes-domainenum/</link></item><item><title>Notes Gnupg</title><pubDate>Tue, 13 Apr 2021 16:57:30 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="how-to-use-gpg-to-encrypt-and-sign-messages"&gt;How To Use GPG to Encrypt and Sign Messages&lt;/h1&gt;
-&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;GPG, or GNU Privacy Guard, is a public key cryptography implementation. This allows for the secure transmission of information between parties and can be used to verify that the origin of a message is genuine.&lt;/p&gt;
-&lt;p&gt;In this guide, we will discuss how GPG works and how to implement it. We will be using an Ubuntu 16.04 server for this demonstration, but will include instructions for other distributions as well.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/notes-gnupg/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Classroom</title>
+    <link>https://classroom.anir0y.in/categories/notes/</link>
+    <description>Recent content in Notes on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Sat, 26 Feb 2022 20:55:07 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Domain Enumeration Cheat Sheet</title>
+      <link>https://classroom.anir0y.in/post/notes-domainenum/</link>
+      <pubDate>Sat, 26 Feb 2022 20:55:07 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/notes-domainenum/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Notes Gnupg</title>
+      <link>https://classroom.anir0y.in/post/notes-gnupg/</link>
+      <pubDate>Tue, 13 Apr 2021 16:57:30 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/notes-gnupg/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

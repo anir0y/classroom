@@ -1,24 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Urlshortner on Classroom</title><link>https://classroom.anir0y.in/categories/urlshortner/</link><description>Recent content in Urlshortner on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Tue, 29 Nov 2022 15:32:55 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/urlshortner/index.xml" rel="self" type="application/rss+xml"/><item><title>BitLy url shortner</title><pubDate>Tue, 29 Nov 2022 15:32:55 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/bitly.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;p&gt;we&amp;rsquo;re going to write a python script to get short URLs using &lt;a href="https://bit.ly/"&gt;Bit.ly&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="get-the-api-from-bitly"&gt;get the API from BITLY&lt;/h2&gt;
-&lt;p&gt;signup to &lt;a href="bitly.com"&gt;bitly.com&lt;/a&gt; and login to the dashboard, then click on &lt;code&gt;API&lt;/code&gt; section and click on create API&lt;/p&gt;
-&lt;p&gt;ref to the image below:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/lsjJQTc.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;follow the instructions:&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;click on settings after login&lt;/li&gt;
-&lt;li&gt;click on API&lt;/li&gt;
-&lt;li&gt;Enter your password and then&lt;/li&gt;
-&lt;li&gt;click on generate token.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;save the token as we will be using it on our script.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/bitly.png"/><link>https://classroom.anir0y.in/post/bitly_url_shortner/</link></item><item><title>BLOG | Shorten URL using TinyURL API</title><pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.inimg/tinyURL.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;p&gt;this is unsuall post on how to create short urls. in this post I&amp;rsquo;ll be usng tiny.url APIs.&lt;/p&gt;
-&lt;h2 id="get-the-api-from-tinyurlcom"&gt;get the API from tinyurl.com&lt;/h2&gt;
-&lt;p&gt;signup to &lt;code&gt;tinyurl.com&lt;/code&gt; and login to the dashboard, then click on &lt;code&gt;API&lt;/code&gt; section and click on create API&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/FYBKFo5.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;now you&amp;rsquo;ll have a API key!!!&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="optional-setup-custom-domain-free"&gt;[optional] setup custom domain (FREE)&lt;/h2&gt;
-&lt;p&gt;click on branded domain setting, and create a domain, ref to image:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/fBpKa1l.png" alt="img"&gt;&lt;/p&gt;
-&lt;h2 id="automation-time"&gt;Automation time&lt;/h2&gt;
-&lt;p&gt;Now, we have everything we need. so let&amp;rsquo;s download the script and add our &lt;code&gt;token&lt;/code&gt; and &lt;code&gt;branded domain&lt;/code&gt; name and call it a day.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.inimg/tinyURL.png"/><link>https://classroom.anir0y.in/post/tinyurl/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Urlshortner on Classroom</title>
+    <link>https://classroom.anir0y.in/categories/urlshortner/</link>
+    <description>Recent content in Urlshortner on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Tue, 29 Nov 2022 15:32:55 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/urlshortner/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BitLy url shortner</title>
+      <link>https://classroom.anir0y.in/post/bitly_url_shortner/</link>
+      <pubDate>Tue, 29 Nov 2022 15:32:55 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/bitly_url_shortner/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>BLOG | Shorten URL using TinyURL API</title>
+      <link>https://classroom.anir0y.in/post/tinyurl/</link>
+      <pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tinyurl/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

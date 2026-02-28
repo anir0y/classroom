@@ -1,2118 +1,633 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rooms on Classroom</title><link>https://classroom.anir0y.in/tags/rooms/</link><description>Recent content in Rooms on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Sun, 04 Jan 2026 20:58:51 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/rooms/index.xml" rel="self" type="application/rss+xml"/><item><title>Traverse - TryHackMe Walkthrough</title><pubDate>Sun, 04 Jan 2026 20:58:51 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;p&gt;Challenge your secure coding skills to restore a compromised website.&lt;/p&gt;
-&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Traverse&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/d2c1e819d8409b3bee8e15c688a3f088.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;Bob is a security engineer at a firm and works closely with the software/DevOps team to develop a tourism web application. Once the website was moved from QA to Production, the team noticed that the website was getting hacked daily and wanted to know the exact reason. Bob consulted the blue team as well but has yet to be successful. Therefore, he finally enrolled in the Software Security pathway at THM to learn if he was doing something wrong.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/blog.png"/><link>https://classroom.anir0y.in/post/traverse/</link></item><item><title>Try Hack Me Benign Room Walkthrough</title><pubDate>Tue, 16 Dec 2025 13:23:02 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Benign&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/43027f83fddeab1e7b9d5642fc876390.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;We will investigate host-centric logs in this challenge room to find suspicious process execution. To learn more about Splunk and how to investigate the logs, look at the rooms splunk101 and splunk201.&lt;/p&gt;
-&lt;h2 id="task-02-scenario-identify-and-investigate-an-infected-host"&gt;Task 02: Scenario: Identify and Investigate an Infected Host&lt;/h2&gt;
-&lt;p&gt;One of the client’s IDS indicated a potentially suspicious process execution indicating one of the hosts from the HR department was compromised. Some tools related to network information gathering / scheduled tasks were executed which confirmed the suspicion. Due to limited resources, we could only pull the process execution logs with Event ID: 4688 and ingested them into Splunk with the index win_eventlogs for further investigation.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/blog.png"/><link>https://classroom.anir0y.in/post/benign/</link></item><item><title>Try Hack Me Itsybitsy walkthrough</title><pubDate>Tue, 16 Dec 2025 12:01:28 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;h1 id="overview"&gt;OverView&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;ItsyBitsy&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/be84f26c22e5a051fc003dba5ed3dcd4.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;h3 id="room-machine"&gt;Room Machine&lt;/h3&gt;
-&lt;p&gt;Before moving forward, deploy the machine. When you deploy the machine, it will be assigned an IP Machine IP: MACHINE_IP. The machine will take up to 3-5 minutes to start. Use the following credentials to log in and access the logs in the Discover tab.&lt;/p&gt;
-&lt;h2 id="task-02-scenario---investigate-a-potential-c2-communication-alert"&gt;Task 02: Scenario - Investigate a potential C2 communication alert&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Scenario&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;During normal SOC monitoring, Analyst John observed an alert on an IDS solution indicating a potential C2 communication from a user Browne from the HR department. A suspicious file was accessed containing a malicious pattern THM:{ ________ }. A week-long HTTP connection logs have been pulled to investigate. Due to limited resources, only the connection logs could be pulled out and are ingested into the connection_logs index in Kibana.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/blog.png"/><link>https://classroom.anir0y.in/post/itsybitsy/</link></item><item><title>Log Analysis With SIEM - TryHackMe Walkthrough</title><pubDate>Mon, 15 Dec 2025 19:16:54 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;p&gt;Learn how SIEM solutions can be used to detect and analyse malicious behaviour.&lt;/p&gt;
-&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Log Analysis With SIEM&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/674d9727a22822c1eb46cb31-1755722165142" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h1&gt;
-&lt;h2 id="learning-objectives"&gt;Learning Objectives&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Discover various data sources that are ingested into a SIEM.&lt;/li&gt;
-&lt;li&gt;Understand the importance of data correlation.&lt;/li&gt;
-&lt;li&gt;Learn the value of Windows, Linux, Web, and Network logs during an investigation.&lt;/li&gt;
-&lt;li&gt;Practice analysing malicious behaviour.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="task-02-benefits-of-siem-for-analysts"&gt;Task 02: Benefits of SIEM for Analysts&lt;/h1&gt;
-&lt;p&gt;SIEM solutions play a vital role in every Security Operations Centre, and any SOC analyst&amp;rsquo;s day-to-day life.
-Let’s take a moment to understand why SIEM is so valuable and explore its key benefits for analysis.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/blog.png"/><link>https://classroom.anir0y.in/post/log-analysis-with-siem/</link></item><item><title>Network Discovery Detection</title><pubDate>Fri, 12 Dec 2025 13:20:33 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;p&gt;Understand how attackers discover assets in a network, and how to detect that activity.&lt;/p&gt;
-&lt;h1 id="overview"&gt;OverView&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a class="x-follow-button" href="https://x.com/anir0y" data-size="large"&gt; x/@anir0y&lt;a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Network Discovery Detection&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/61306d87a330ed00419e22e7-1757355846285" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h1&gt;
-&lt;p&gt;Whenever an attacker wants to target a network, they first have to better understand their target. To do this, attackers perform certain actions to discover the target network. This is often one of the first steps of detecting an attacker&amp;rsquo;s activity and perhaps one of the most common stages of attack a SOC analyst observes in their shift. In this room, we will explore network discovery in detail.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/blog.png"/><link>https://classroom.anir0y.in/post/network-discovery-detection/</link></item><item><title>Healthgpt</title><pubDate>Sun, 30 Nov 2025 19:57:58 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/blog.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Healthgpt&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/645b19f5d5848d004ab9c9e2-1763995774132" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01"&gt;Task 01:&lt;/h2&gt;
-&lt;p&gt;Meet HealthGPT, a well-meaning virtual assistant used by a busy healthcare team. It helps clinicians look up procedures, draft notes, and sort through day-to-day queries. It&amp;rsquo;s designed to be cautious with patient information, strict about confidentiality, and careful about what it reveals.&lt;/p&gt;
-&lt;p&gt;Whenever doctors discuss cases, nurses review charts, or administrators exchange internal updates, HealthGPT quietly soaks up the details. It isn&amp;rsquo;t supposed to repeat any of it, and every message you send is reviewed by the system&amp;rsquo;s compliance filters. Push too hard or ask for something too direct and the assistant might lock up or escalate your request. If you want to draw anything meaningful out of it, you&amp;rsquo;ll need a soft touch, steady pacing, and a clever way of shaping your prompts.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/blog.png"/><link>https://classroom.anir0y.in/post/healthgpt/</link></item><item><title>Try Hack Me Phishing Emails 4</title><pubDate>Tue, 16 Aug 2022 15:24:03 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/phishing-4.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Phishing Email 4&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://i.imgur.com/TYr2wgy.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Phishing Email 4 [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/phishingemails4gkxh"&gt;Phishing Email 4&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01--introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;h3 id="11-what-is-the-mitre-id-for-software-configuration"&gt;1.1 What is the MITRE ID for Software Configuration?&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Answer : M1054&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="task-02-pf-sender-policy-framework"&gt;Task 02: PF (Sender Policy Framework)&lt;/h2&gt;
-&lt;p&gt;What is the Sender Policy Framework (SPF)?&lt;/p&gt;
-&lt;p&gt;Per dmarcian, &amp;ldquo;Sender Policy Framework (SPF) is used to authenticate the sender of an email. With an SPF record in place, Internet Service Providers can verify that a mail server is authorized to send email for a specific domain. An SPF record is a DNS TXT record containing a list of the IP addresses that are allowed to send email on behalf of your domain.&amp;rdquo;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/phishing-4.png"/><link>https://classroom.anir0y.in/post/tryhackme-phishingemails4/</link></item><item><title>Try Hack Me Red Team Threat Intel</title><pubDate>Fri, 12 Aug 2022 13:05:49 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/redteamthreatintel.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Operating System Security&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/81642a6b52cd6596b8c09ccc219becfe.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Operating System Security [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/operatingsystemsecurity"&gt;Operating System Security&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01--introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;Threat Intelligence (TI) or Cyber Threat Intelligence (CTI) is the information, or TTPs (Tactics, Techniques, and Procedures), attributed to an adversary, commonly used by defenders to aid in detection measures. The red cell can leverage CTI from an offensive perspective to assist in adversary emulation.&lt;/p&gt;
-&lt;p&gt;Learning Objectives&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/redteamthreatintel.png"/><link>https://classroom.anir0y.in/post/tryhackme-redteamthreatintel/</link></item><item><title>TryHackMe Oh My Webserver</title><pubDate>Wed, 09 Mar 2022 10:50:11 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/ohmyweb.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;p&gt;This is a free room, which means anyone can deploy virtual machines in the room (without being subscribed)! 1682 users are in here and this room is 152 days old.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;oh-My-Webserver&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c1833021c98fa6c74fc125f4b34741ca.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; oh-My-Webserver [FREE] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/ohmyweb"&gt;oh-My-Webserver&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="recon"&gt;recon&lt;/h2&gt;
-&lt;h3 id="lets-start-with-nmap"&gt;let&amp;rsquo;s start with Nmap&lt;/h3&gt;
-&lt;pre tabindex="0"&gt;&lt;code class="language-nmap" data-lang="nmap"&gt;sudo nmap -sC -sV -oA initial-s1 10.10.216.165 -vv -Pn -n
-Starting Nmap 7.60 ( https://nmap.org ) at 2022-03-09 05:27 GMT
-[snip]
-Not shown: 998 filtered ports
-Reason: 998 no-responses
-PORT STATE SERVICE REASON VERSION
-22/tcp open ssh syn-ack ttl 64 OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-80/tcp open http syn-ack ttl 63 Apache httpd 2.4.49 ((Unix))
-|_http-favicon: Unknown favicon MD5: 02FD5D10B62C7BC5AD03F8B0F105323C
-| http-methods:
-| Supported Methods: POST OPTIONS HEAD GET TRACE
-|_ Potentially risky methods: TRACE
-|_http-server-header: Apache/2.4.49 (Unix)
-|_http-title: Consult - Business Consultancy Agency Template | Home
-MAC Address: 02:79:D4:48:D1:C7 (Unknown)
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-[snip]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Nmap returns 2 port &lt;code&gt;80&lt;/code&gt; and &lt;code&gt;22&lt;/code&gt; Both are common ports and we will be start looking in Port 80 as this is where website/web-application will be listening and this is the common attack surface.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/ohmyweb.png"/><link>https://classroom.anir0y.in/post/tryhackme-oh-my-webserver/</link></item><item><title>TryHackMe Jr Security Analyst Intro</title><pubDate>Sat, 26 Feb 2022 11:57:17 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/soc-1.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Jr Security Analyst Intro&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/9caa407b3413a4cee19f1365acaa0195.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Jr Security Analyst Intro [FREE ROOM] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/jrsecanalystintrouxo"&gt;Jr Security Analyst Intro&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="a-career-as-a-junior-associate-security-analyst"&gt;A career as a Junior (Associate) Security Analyst&lt;/h2&gt;
-&lt;p&gt;In the Junior Security Analyst role, you will be a Triage Specialist. You will spend a lot of time triaging or monitoring the event logs and alerts.&lt;/p&gt;
-&lt;p&gt;The responsibilities for a Junior Security Analyst or Tier 1 SOC Analyst include:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/soc-1.png"/><link>https://classroom.anir0y.in/post/tryhackme-jr-security-analyst-intro/</link></item><item><title>Try Hack Me Android Malware Analysis</title><pubDate>Sun, 23 Jan 2022 11:38:33 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/ama.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Android Malware Analysis&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/614168d64533447f0e81987aaa858ff3.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Android Malware Analysis [FREE ROOM] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/androidmalwareanalysis"&gt;Android Malware Analysis&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;Hi all! In this room, we are going to investigate some Android malware and learn how to pivot from the information we have to build hunting rules and find similar samples. To do this room, it is recommended to have done the following rooms (especially if you&amp;rsquo;re a beginner):&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/ama.png"/><link>https://classroom.anir0y.in/post/tryhackme-androidmalwareanalysis/</link></item><item><title>Try Hack Me Exploit Vulnerabilities</title><pubDate>Sun, 26 Sep 2021 08:29:10 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/exploitingavulnerabilityv2.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Exploit Vulnerabilities&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/5fda25317f800a25f8cbc7320bbd83b2.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Exploit Vulnerabilities [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/exploitingavulnerabilityv2"&gt;Exploit Vulnerabilities&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;In this room, we are going to be going over some means of identifying vulnerabilities and coupling our research skills to learn how these can be abused.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-automated-vs-manual-vulnerability-research"&gt;Task 02: Automated Vs. Manual Vulnerability Research&lt;/h2&gt;
-&lt;p&gt;There is a myriad of tools and services available in cybersecurity for vulnerability scanning. Ranging from being commercial (and footing a heavy bill) to open-source and free, vulnerability scanners are convenient means of quickly canvassing an application for flaws.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/exploitingavulnerabilityv2.png"/><link>https://classroom.anir0y.in/post/tryhackme-exploitingavulnerabilityv2.md/</link></item><item><title>Try Hack Me Vulnerabilities 101</title><pubDate>Tue, 21 Sep 2021 14:21:54 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/Vulnerabilities101.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;p&gt;Understand the flaws of an application and apply your researching skills on some vulnerability databases.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Vulnerabilities 101&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/d30e917f1945d3e25592ee34805bb900.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Vulnerabilities 101 [FREE ROOM] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/vulnerabilities101"&gt;Vulnerabilities 101&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;Cybersecurity is big business in the modern-day world. The hacks that we hear about in newspapers are from exploiting vulnerabilities. In this room, we&amp;rsquo;re going to explain exactly what a vulnerability is, the types of vulnerabilities and how we can exploit these for success in our penetration testing endeavours.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/Vulnerabilities101.png"/><link>https://classroom.anir0y.in/post/tryhackme-vulnerabilities101/</link></item><item><title>Try Hack Me Empline</title><pubDate>Sun, 19 Sep 2021 13:14:49 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/empline.png" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Empline&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/189112ffef41c0fa813d7d5b394a58b5.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Empline [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/empline"&gt;Empline&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Are you good enough to apply for this job?&lt;/p&gt;
-&lt;h2 id="enumeration"&gt;Enumeration&lt;/h2&gt;
-&lt;h3 id="nmap"&gt;Nmap&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.127.35
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;sudo&lt;span style="color:#f92672"&gt;]&lt;/span&gt; password &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; anir0y:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-09-19 13:18 IST
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.127.35
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.21s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Not shown: &lt;span style="color:#ae81ff"&gt;997&lt;/span&gt; closed ports
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;PORT STATE SERVICE VERSION
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;22/tcp open ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Ubuntu Linux; protocol 2.0&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| ssh-hostkey:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;2048&lt;/span&gt; c0:d5:41:ee:a4:d0:83:0c:97:0d:75:cc:7b:10:7f:76 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; 83:82:f9:69:19:7d:0d:5c:53:65:d5:54:f6:45:db:74 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ECDSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; 4f:91:3e:8b:69:69:09:70:0e:82:26:28:5c:84:71:c9 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ED25519&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;80/tcp open http Apache httpd 2.4.29 &lt;span style="color:#f92672"&gt;((&lt;/span&gt;Ubuntu&lt;span style="color:#f92672"&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_http-server-header: Apache/2.4.29 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Ubuntu&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_http-title: Empline
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;3306/tcp open mysql MySQL 5.5.5-10.1.48-MariaDB-0ubuntu0.18.04.1
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| mysql-info:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Protocol: &lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Version: 5.5.5-10.1.48-MariaDB-0ubuntu0.18.04.1
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Thread ID: &lt;span style="color:#ae81ff"&gt;86&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Capabilities flags: &lt;span style="color:#ae81ff"&gt;63487&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Some Capabilities: Support41Auth, IgnoreSigpipes, Speaks41ProtocolOld, SupportsTransactions, SupportsCompression, FoundRows, InteractiveClient, Speaks41ProtocolNew, DontAllowDatabaseTableColumn, IgnoreSpaceBeforeParenthesis, ODBCClient, LongPassword, ConnectWithDatabase, SupportsLoadDataLocal, LongColumnFlag, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Status: Autocommi
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Salt: N|F*;+c3re&lt;span style="color:#e6db74"&gt;&amp;#39;0ZUy#?Sd&amp;#39;&lt;/span&gt;|
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ Auth Plugin Name: mysql_native_password
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; IP address &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; host up&lt;span style="color:#f92672"&gt;)&lt;/span&gt; scanned in 16.67 seconds
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Port&lt;/th&gt;
-&lt;th&gt;service&lt;/th&gt;
-&lt;th&gt;remarks&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;22&lt;/td&gt;
-&lt;td&gt;SSH&lt;/td&gt;
-&lt;td&gt;will check this one later&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;80&lt;/td&gt;
-&lt;td&gt;HTTP&lt;/td&gt;
-&lt;td&gt;web-service&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3306&lt;/td&gt;
-&lt;td&gt;MySQL&lt;/td&gt;
-&lt;td&gt;kinda odd, usually MySQL port/services aren&amp;rsquo;t exposed on external IP&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="http-enumeration"&gt;HTTP Enumeration&lt;/h3&gt;
-&lt;h4 id="port80"&gt;port:80&lt;/h4&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/5JIXGQa.png" alt="img"&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/empline.png"/><link>https://classroom.anir0y.in/post/tryhackme-empline/</link></item><item><title>TryHackMe Introduction to Django</title><pubDate>Sat, 11 Sep 2021 18:40:31 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/Django.gif" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Django&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c11fb449f10add8bc11a137fef9e979c.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/django"&gt;Django&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="01-introduction"&gt;01: Introduction&lt;/h2&gt;
-&lt;p&gt;Learning Python can be extremely useful for penetration testers, and a simple understanding of its frameworks can be a key to success. In this lesson, we are going to learn about one of the best ones ever made: Django.&lt;/p&gt;
-&lt;p&gt;Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. It allows you to develop websites and web applications in a matter of hours.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/Django.gif"/><link>https://classroom.anir0y.in/post/tryhackme-django/</link></item><item><title>TryHackMe Wordpress CVE-2021-29447</title><pubDate>Sun, 29 Aug 2021 14:35:45 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Wordpress CVE-2021-29447&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/e9417007c4398491c2db96c52ef3106a.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/wordpresscve202129447"&gt;Wordpress CVE-2021-29447&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Vulnerability allow a authenticated user whith low privilages upload a malicious WAV file that could lead to remote arbitrary file disclosure and server-side request forgery (SSRF).&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;An XXE vulnerability consists of an injection that takes advantage of the poor configuration of the XML interpreter allowing to include external entities, this attack is performed against an application that interprets XML language in its parameters.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-wordpresscve202129447/</link></item><item><title>TryHackMe Intro to Windows</title><pubDate>Tue, 24 Aug 2021 15:17:46 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Intro to Windows&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/d95c60aba81ab78c7716e23360eec377.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/intro2winold"&gt;Intro to Windows&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-windows-history"&gt;Task 01: Windows history&lt;/h2&gt;
-&lt;p&gt;On November 20, 1985 Microsoft announced its operating system named Windows which was a graphical operating system shell as a response to growing GUIs (graphical user interfaces). At the moment Windows dominates the word of computers with around 90% market share and it overtook Apple (Mac OS) which was introduced in 1984.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-intro2winold/</link></item><item><title>TryHackMe Bounty Hacker</title><pubDate>Fri, 20 Aug 2021 23:29:16 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Bounty Hacker&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/9ad38a2cc31d6ae0030c888aca7fe646.jpeg" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/cowboyhacker"&gt;Bounty Hacker&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they&amp;rsquo;d take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers &amp;amp; beef in your future!&lt;/p&gt;
-&lt;h2 id="recon"&gt;Recon&lt;/h2&gt;
-&lt;h3 id="nmap"&gt;nmap&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt; sudo nmap -sC -sV -oN nmap/init 10.10.60.197 1 ⨯
-[sudo] password for anir0y:
-Starting Nmap 7.91 ( https://nmap.org ) at 2021-08-20 23:33 IST
-Nmap scan report for 10.10.60.197
-Host is up (0.17s latency).
-Not shown: 967 filtered ports, 30 closed ports
-PORT STATE SERVICE VERSION
-21/tcp open ftp vsftpd 3.0.3
-| ftp-anon: Anonymous FTP login allowed (FTP code 230)
-| -rw-rw-r-- 1 ftp ftp 418 Jun 07 2020 locks.txt
-|_-rw-rw-r-- 1 ftp ftp 68 Jun 07 2020 task.txt
-| ftp-syst:
-| STAT:
-| FTP server status:
-| Connected to ::ffff:10.17.4.40
-| Logged in as ftp
-| TYPE: ASCII
-| No session bandwidth limit
-| Session timeout in seconds is 300
-| Control connection is plain text
-| Data connections will be plain text
-| At session startup, client count was 4
-| vsFTPd 3.0.3 - secure, fast, stable
-|_End of status
-22/tcp open ssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey:
-| 2048 dc:f8:df:a7:a6:00:6d:18:b0:70:2b:a5:aa:a6:14:3e (RSA)
-| 256 ec:c0:f2:d9:1e:6f:48:7d:38:9a:e3:bb:08:c4:0c:c9 (ECDSA)
-|_ 256 a4:1a:15:a5:d4:b1:cf:8f:16:50:3a:7d:d0:d8:13:c2 (ED25519)
-80/tcp open http Apache httpd 2.4.18 ((Ubuntu))
-|_http-server-header: Apache/2.4.18 (Ubuntu)
-|_http-title: Site doesn't have a title (text/html).
-Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 23.41 seconds
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="flags"&gt;Flags&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Flag&lt;/th&gt;
-&lt;th&gt;question&lt;/th&gt;
-&lt;th&gt;ref&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;Deploy the machine.&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;N/A&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;Find open ports on the macine&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;N/A&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;Who wrote the task list?&lt;/td&gt;
-&lt;td&gt;&lt;a href="#33"&gt;ref&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;What service can you bruteforce with the text file found?&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;SSH&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;What is the users password?&lt;/td&gt;
-&lt;td&gt;&lt;a href="#35-ssh-bruteforce"&gt;SSH-BruteForce&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;user.txt&lt;/td&gt;
-&lt;td&gt;&lt;a href="#usertxt"&gt;user&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;root.txt&lt;/td&gt;
-&lt;td&gt;&lt;a href=""&gt;root&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-cowboyhacker/</link></item><item><title>TryHackMe Hacking with PowerShell</title><pubDate>Tue, 17 Aug 2021 14:58:29 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Hacking with PowerShell&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/ca3da5aa8e312b0316f06a25a03028a5.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/powershell"&gt;Hacking with PowerShell&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Learn the basics of PowerShell and PowerShell Scripting&lt;/p&gt;
-&lt;h2 id="task-01--objectives"&gt;task 01: Objectives&lt;/h2&gt;
-&lt;p&gt;In this room, we&amp;rsquo;ll be exploring the following concepts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is Powershell and how it works&lt;/li&gt;
-&lt;li&gt;Basic Powershell commands&lt;/li&gt;
-&lt;li&gt;Windows enumeration with Powershell&lt;/li&gt;
-&lt;li&gt;Powershell scripting&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-what-is-powershell"&gt;Task 02: What is Powershell?&lt;/h2&gt;
-&lt;p&gt;Powershell is the Windows Scripting Language and shell environment that is built using the .NET framework.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-powershell/</link></item><item><title>TryHackMe Super-Spam</title><pubDate>Fri, 13 Aug 2021 09:04:14 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Super-Spam&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/f8f1345b6e420c2f12ab1cd9f1e2ede9.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/superspamr"&gt;Super-Spam&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-defeat-super-spam"&gt;Task 01: Defeat Super-Spam&lt;/h2&gt;
-&lt;h3 id="general-uvilix"&gt;General Uvilix&lt;/h3&gt;
-&lt;p&gt;Good Morning! Our intel tells us that he has returned. Super-spam, the evil alien villain from the planet Alpha Solaris IV from the outer reaches of the Andromeda Galaxy. He is a most wanted notorious cosmos hacker who has made it his lifetime mission to attack every Linux server possible on his journey to a Linux-free galaxy. As an avid Windows proponent, Super-spam has now arrived on Earth and has managed to hack into OUR Linux machine in pursuit of his ultimate goal. We must regain control of our server before it&amp;rsquo;s too late! Find a way to hack back in to discover his next evil plan for total Windows domination! Beware, super-spam&amp;rsquo;s evil powers are to confuse and deter his victims.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-superspamr/</link></item><item><title>TryHackMe Mobile Malware Analysis</title><pubDate>Thu, 05 Aug 2021 12:08:59 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Mobile Malware Analysis&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/1a8af49f6135843b36f1378812034155.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [FREE ROOM] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/mma"&gt;Mobile Malware Analysis&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-introduction"&gt;task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;It&amp;rsquo;s incredible how often our computers are in the scope of cyber attacks. Antivirus has become an indispensable shield to provide us with a more secure environment, since we are exposed to destructible malware and cyber attacks. Inside our pockets, we have computers so powerful, but much smaller, we must be equally attentive on our phones, because we can suffer equally damaging attacks, sometimes even worse, because they can store relevant information such as private conversations and important accounts.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-mma/</link></item><item><title>TryHackMe Relevant</title><pubDate>Wed, 04 Aug 2021 08:35:47 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Relevant&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/10524728b2b462e8d164efe4e67ed087.jpeg" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/relevant"&gt;Relevant&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-pre-engagement-briefing"&gt;task 01: Pre-Engagement Briefing&lt;/h2&gt;
-&lt;h3 id="scope-of-work"&gt;Scope of Work&lt;/h3&gt;
-&lt;p&gt;The client requests that an engineer conducts an assessment of the provided virtual environment. The client has asked that minimal information be provided about the assessment, wanting the engagement conducted from the eyes of a malicious actor (black box penetration test). The client has asked that you secure two flags (no location provided) as proof of exploitation:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-relevant/</link></item><item><title>TryHackMe Linux Strength Training</title><pubDate>Tue, 03 Aug 2021 07:41:10 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Linux Strength Training&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/b4f28a92c7d33f8460d896653cf5d428.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/linuxstrengthtraining"&gt;Linux Strength Training&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01--intro"&gt;Task 01: Intro&lt;/h2&gt;
-&lt;p&gt;This room is intended to further the understanding of basic Linux command line skills for beginners.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-finding-your-way-around-linux---overview"&gt;Task 02: Finding your way around linux - overview&lt;/h2&gt;
-&lt;p&gt;As a security researcher you will often be required to find specific files/folders on a system based on various conditions ranging from, but not limited to the following:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/</link></item><item><title>TryHackMe Sweettooth Inc.</title><pubDate>Wed, 28 Jul 2021 12:16:24 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Sweettooth Inc&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/33632296aaf0a3545edaf9a386aade62.jpeg" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;b&gt; Room [Subscription Required] &lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/sweettoothinc"&gt;Sweettooth Inc&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;tools (additional)&lt;/td&gt;
-&lt;td&gt;Docker CE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01--deploy-the-machine"&gt;Task 01: Deploy the machine&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02enumeration"&gt;Task 02:Enumeration&lt;/h2&gt;
-&lt;h3 id="recon"&gt;Recon&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;nmap (basic scan)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN nmap/init 10.10.187.112
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;sudo&lt;span style="color:#f92672"&gt;]&lt;/span&gt; password &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; anir0y:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-28 12:20 IST
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.187.112
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.19s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Not shown: &lt;span style="color:#ae81ff"&gt;997&lt;/span&gt; closed ports
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;PORT STATE SERVICE VERSION
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;111/tcp open rpcbind 2-4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RPC &lt;span style="color:#75715e"&gt;#100000)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| rpcinfo:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| program version port/proto service
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100000&lt;/span&gt; 2,3,4 111/tcp rpcbind
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100000&lt;/span&gt; 2,3,4 111/udp rpcbind
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100000&lt;/span&gt; 3,4 111/tcp6 rpcbind
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100000&lt;/span&gt; 3,4 111/udp6 rpcbind
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100024&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; 41045/udp status
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100024&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; 55132/udp6 status
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;100024&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; 55323/tcp status
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ &lt;span style="color:#ae81ff"&gt;100024&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; 56412/tcp6 status
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2222/tcp open ssh OpenSSH 6.7p1 Debian 5+deb8u8 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;protocol 2.0&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| ssh-hostkey:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;1024&lt;/span&gt; b0:ce:c9:21:65:89:94:52:76:48:ce:d8:c8:fc:d4:ec &lt;span style="color:#f92672"&gt;(&lt;/span&gt;DSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;2048&lt;/span&gt; 7e:86:88:fe:42:4e:94:48:0a:aa:da:ab:34:61:3c:6e &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; 04:1c:82:f6:a6:74:53:c9:c4:6f:25:37:4c:bf:8b:a8 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ECDSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; 49:4b:dc:e6:04:07:b6:d5:ab:c0:b0:a3:42:8e:87:b5 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ED25519&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;8086/tcp open http InfluxDB http admin 1.3.0
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_http-title: Site doesn&lt;span style="color:#960050;background-color:#1e0010"&gt;&amp;#39;&lt;/span&gt;t have a title &lt;span style="color:#f92672"&gt;(&lt;/span&gt;text/plain; charset&lt;span style="color:#f92672"&gt;=&lt;/span&gt;utf-8&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; IP address &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; host up&lt;span style="color:#f92672"&gt;)&lt;/span&gt; scanned in 21.84 seconds
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="21--do-a-tcp-portscan-what-is-the-name-of-the-database-software-running-on-one-of-these-ports"&gt;2.1 : Do a TCP portscan. What is the name of the database software running on one of these ports?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;InfluxDB&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-sweettoothinc/</link></item><item><title>Giveaway July 2021</title><pubDate>Mon, 26 Jul 2021 01:44:28 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;h3 id="i-am-hosting-a-giveaway-3-subscription-1-month-on-july-27th-2021-please-share-with-your-friends-who-might-get-benefits-from-this"&gt;I am hosting a &lt;code&gt;Giveaway&lt;/code&gt; 3 subscription (1 month) on July 27th, 2021, please share with your friends who might get benefits from this&lt;/h3&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;script&gt;
-(adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;
-&lt;!-- END --&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: center"&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: center"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;a href="https://bit.ly/3rDslP1"&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAAAXNSR0IArs4c6QAAIABJREFUeF7tnXucHUWZ95+nzpmZZAIJgU2GOd0JyemehA2Il7jedlEWlV1YxRXdyJwTQRAvr6+yu6wCoojh3fWGqK+igiIIZM7ErKuoiLLiyroiurxcZDUGpvskZrrPJAyXJEASZubU835qMhMnk76dy/TpmX76v5murnrq+1T/TlV1VT0IfDEBJpBaApjamnPFmQATABYAbgRMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA2wARSTIAFIMXO56ozARYAbgNMIMUEWABS7HyuOhNgAeA20DCBO02z4+mRkU7o6FgspRQCYNFkpoh4FKFsG/+7Cu0gxILJe4LoGAnQsjaIgp4hEmMT9owA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" alt="test"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
-padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-border-radius: 8px; will-change: transform;"&gt;
-&lt;iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-src="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAElOOrtNsg&amp;#x2F;view?embed"&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;a href="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAElOOrtNsg&amp;#x2F;view?utm_content=DAElOOrtNsg&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=embeds&amp;amp;utm_source=link" target="_blank" rel="noopener"&gt;index&lt;/a&gt; by editor446
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/giveaway-1/</link></item><item><title>TryHackMe Agent Sudo</title><pubDate>Sat, 24 Jul 2021 16:50:32 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: center"&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: center"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"&gt; Follow @anir0y&lt;a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: center"&gt;Agent Sudo&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/aedc6b66c222e15ff740c282a0c3f44e.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: center"&gt;&lt;em&gt;Room [Subscription Required]&lt;/em&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;a href=""&gt;Agent Sudo&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-author-note"&gt;Task 01: Author note&lt;/h2&gt;
-&lt;p&gt;n/a&lt;/p&gt;
-&lt;h2 id="task-02enumerate"&gt;Task 02:Enumerate&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;nmap&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sC -sV -oN init 10.10.245.114
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.60 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-25 19:49 BST
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; ip-10-10-245-114.eu-west-1.compute.internal &lt;span style="color:#f92672"&gt;(&lt;/span&gt;10.10.245.114&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.020s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Not shown: &lt;span style="color:#ae81ff"&gt;921&lt;/span&gt; closed ports, &lt;span style="color:#ae81ff"&gt;76&lt;/span&gt; filtered ports
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;PORT STATE SERVICE VERSION
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;21/tcp open ftp vsftpd 3.0.3
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;22/tcp open ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Ubuntu Linux; protocol 2.0&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| ssh-hostkey:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;2048&lt;/span&gt; ef:1f:5d:04:d4:77:95:06:60:72:ec:f0:58:f2:cc:07 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; 5e:02:d1:9a:c4:e7:43:06:62:c1:9e:25:84:8a:e7:ea &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ECDSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; 2d:00:5c:b9:fd:a8:c8:d8:80:e3:92:4f:8b:4f:18:e2 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;EdDSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;80/tcp open http Apache httpd 2.4.29 &lt;span style="color:#f92672"&gt;((&lt;/span&gt;Ubuntu&lt;span style="color:#f92672"&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_http-server-header: Apache/2.4.29 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Ubuntu&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_http-title: Annoucement
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;MAC Address: 02:C4:A2:7C:B0:5B &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Unknown&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; IP address &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; host up&lt;span style="color:#f92672"&gt;)&lt;/span&gt; scanned in 13.23 seconds
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="21-how-many-open-ports"&gt;2.1 How many open ports?&lt;/h3&gt;
-&lt;p&gt;ans: &lt;code&gt;3&lt;/code&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-agentsudoctf/</link></item><item><title>TryHackMe Overpass 2 - Hacked</title><pubDate>Fri, 23 Jul 2021 01:16:55 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Overpass 2&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/96141387d9d4a22658f8db0ada67d62d.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;room&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/overpass2hacked"&gt;Overpass 2 &lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-forensics---analyse-the-pcap"&gt;Task 01: Forensics - Analyse the PCAP&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;open Pcap with Wireshark&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="11"&gt;1.1&lt;/h3&gt;
-&lt;p&gt;What was the URL of the page they used to upload a reverse shell?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;wireshark filter &lt;code&gt;http&lt;/code&gt; look for post req &lt;code&gt;http.request.method == POST&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/TQqr9ym.png" alt="img"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="12"&gt;1.2&lt;/h3&gt;
-&lt;p&gt;What payload did the attacker use to gain access?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;filter &lt;code&gt;tcp.stream eq 1&lt;/code&gt; read the &lt;code&gt;tcp stream&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/ejzmG5K.png" alt="img"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="13"&gt;1.3&lt;/h3&gt;
-&lt;p&gt;What password did the attacker use to privesc?&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-overpass2hacked/</link></item><item><title>TryHackMe Baron Samedit</title><pubDate>Fri, 23 Jul 2021 00:56:23 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Baron Samedit&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/b64a68fc8025073fc1cc1ba972380ebd.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;room&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/sudovulnssamedit"&gt;Baron Samedit&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-deploy"&gt;Task 01: Deploy&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-baron-samedit"&gt;Task 02: Baron Samedit&lt;/h2&gt;
-&lt;p&gt;In January 2021, Qualys released a blog post detailing a terrifying new vulnerability in the Unix sudo program.&lt;/p&gt;
-&lt;p&gt;Specifically, this was a heap buffer overflow allowing any user to escalate privileges to root &amp;ndash; no misconfigurations required. This exploit works with the default settings, for any user regardless of sudo permissions, which makes it all the scarier. The vulnerability has been patched, but affects any unpatched version of the sudo program from 1.8.2-1.8.31p2 and 1.9.0-1.9.5p1, meaning that it&amp;rsquo;s been around for the last ten years.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-sudovulnssamedit/</link></item><item><title>TryHackMe Metamorphosis</title><pubDate>Wed, 21 Jul 2021 03:31:08 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Metamorphosis&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Room&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/93e2e34d54161c2a22b80a1eb5cd9857.jpeg" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="recon"&gt;Recon&lt;/h2&gt;
-&lt;h3 id="nmap"&gt;nmap&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt; ```nmap
-sudo nmap -sC -sV -oN Metamorphosis 10.10.38.244
-[sudo] password for anir0y:
-Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-21 03:35 IST
-Nmap scan report for 10.10.38.244
-Host is up (0.17s latency).
-Not shown: 995 closed ports
-PORT STATE SERVICE VERSION
-22/tcp open ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey:
-| 2048 f7:0f:0a:18:50:78:07:10:f2:32:d1:60:30:40:d4:be (RSA)
-| 256 5c:00:37:df:b2:ba:4c:f2:3c:46:6e:a3:e9:44:90:37 (ECDSA)
-|_ 256 fe:bf:53:f1:d0:5a:7c:30:db:ac:c8:3c:79:64:47:c8 (ED25519)
-80/tcp open http Apache httpd 2.4.29 ((Ubuntu))
-|_http-server-header: Apache/2.4.29 (Ubuntu)
-|_http-title: Apache2 Ubuntu Default Page: It works
-139/tcp open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp open netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
-873/tcp open rsync (protocol version 31)
-Service Info: Host: INCOGNITO; OS: Linux; CPE: cpe:/o:linux:linux_kernel
-Host script results:
-|_clock-skew: mean: 3s, deviation: 0s, median: 2s
-|_nbstat: NetBIOS name: INCOGNITO, NetBIOS user: &amp;lt;unknown&amp;gt;, NetBIOS MAC: &amp;lt;unknown&amp;gt; (unknown)
-| smb-os-discovery:
-| OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
-| Computer name: incognito
-| NetBIOS computer name: INCOGNITO\x00
-| Domain name: \x00
-| FQDN: incognito
-|_ System time: 2021-07-20T22:05:48+00:00
-| smb-security-mode:
-| account_used: guest
-| authentication_level: user
-| challenge_response: supported
-|_ message_signing: disabled (dangerous, but default)
-| smb2-security-mode:
-| 2.02:
-|_ Message signing enabled but not required
-| smb2-time:
-| date: 2021-07-20T22:05:48
-|_ start_date: N/A
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 24.70 seconds
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="directory-listing-with-gobuster"&gt;Directory Listing with &lt;code&gt;GoBuster&lt;/code&gt;&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt; ```bash
-gobuster dir -u http://MACHINE_IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x txt,php
-#txt &amp;amp; php extention for good measure
-...[snip]...
-/index.php (Status: 200) [Size: 10818]
-/admin (Status: 301) [Size: 312] [--&amp;gt; http://10.10.38.244/admin/]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;admin&lt;/code&gt; dir is returning &lt;code&gt;403&lt;/code&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-metamorphosis/</link></item><item><title>TryHackMe Crack the hash</title><pubDate>Tue, 20 Jul 2021 21:54:07 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="crack-the-hash"&gt;Crack the hash&lt;/h2&gt;
-&lt;p&gt;I just used &lt;code&gt;google&lt;/code&gt; search to find out the hashes! being lazy paid off this time!!!&lt;/p&gt;
-&lt;h2 id="task-01"&gt;Task 01&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Hash&lt;/th&gt;
-&lt;th&gt;Plain text Value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;48bb6e862e54f2a795ffc4e541caed4d&lt;/td&gt;
-&lt;td&gt;easy&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CBFDAC6008F9CAB4083784CBD1874F76618D2A97&lt;/td&gt;
-&lt;td&gt;password123&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032&lt;/td&gt;
-&lt;td&gt;letmein&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;$2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom&lt;/td&gt;
-&lt;td&gt;bleh&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;279412f945939ba78ce0758d3fd83daa&lt;/td&gt;
-&lt;td&gt;Eternity22&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;
-&lt;script&gt;
-(adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;
-&lt;!-- END --&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-level-2"&gt;Task 02: Level 2&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Hash&lt;/th&gt;
-&lt;th&gt;Salt&lt;/th&gt;
-&lt;th&gt;Plain text Value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;paule&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1DFECA0C002AE40B8619ECF94819CC1B&lt;/td&gt;
-&lt;td&gt;n63umy8lkf4i&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;$6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.&lt;/td&gt;
-&lt;td&gt;aReallyHardSalt&lt;/td&gt;
-&lt;td&gt;waka99&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;e5d8870e5bdd26602cab8dbe07a942c8669e56d6&lt;/td&gt;
-&lt;td&gt;tryhackme&lt;/td&gt;
-&lt;td&gt;481616481616&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-crackthehash/</link></item><item><title>TryHackMe Simple CTF</title><pubDate>Mon, 19 Jul 2021 22:32:49 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;OverView&lt;/th&gt;
-&lt;th style="text-align: center"&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Simple CTF&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/f28ade2b51eb7aeeac91002d41f29c47.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;room&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;a href="https://tryhackme.com/room/easyctf"&gt;Simple CTF&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-simple-ctf"&gt;Task 01: Simple CTF&lt;/h2&gt;
-&lt;h2 id="how-many-services-are-running-under-port-1000"&gt;How many services are running under port 1000?&lt;/h2&gt;
-&lt;h3 id="recon"&gt;recon&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;nmap&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code class="language-nmap" data-lang="nmap"&gt;sudo nmap -p 0-999 10.10.38.103 -v -oN 1000-port
-Starting Nmap 7.60 ( https://nmap.org ) at 2021-07-19 18:14 BST
-Initiating ARP Ping Scan at 18:14
-Scanning 10.10.38.103 [1 port]
-Completed ARP Ping Scan at 18:14, 0.22s elapsed (1 total hosts)
-Initiating Parallel DNS resolution of 1 host. at 18:14
-Completed Parallel DNS resolution of 1 host. at 18:14, 0.00s elapsed
-Initiating SYN Stealth Scan at 18:14
-Scanning ip-10-10-38-103.eu-west-1.compute.internal (10.10.38.103) [1000 ports]
-Discovered open port 21/tcp on 10.10.38.103
-Discovered open port 80/tcp on 10.10.38.103
-Completed SYN Stealth Scan at 18:14, 10.05s elapsed (1000 total ports)
-Nmap scan report for ip-10-10-38-103.eu-west-1.compute.internal (10.10.38.103)
-Host is up (0.00037s latency).
-Not shown: 998 filtered ports
-PORT STATE SERVICE
-21/tcp open ftp
-80/tcp open http
-2222/tcp open EtherNetIP-1
-MAC Address: 02:A2:72:52:C3:F7 (Unknown)
-Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 10.39 seconds
-Raw packets sent: 2006 (88.248KB) | Rcvd: 10 (424B)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;!-- Google Ads --&gt;
-&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-3526678290068011"
-data-ad-slot="7160066188"&gt;&lt;/ins&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-easyctf/</link></item><item><title>TryHackMe RazorBlack</title><pubDate>Sun, 18 Jul 2021 19:31:05 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;RazorBlack&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/raz0rblack"&gt;Room&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/5e543ba613749349efa339fbf3aca901.jpeg" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01"&gt;Task 01&lt;/h2&gt;
-&lt;p&gt;These guys call themselves hackers. Can you show them who&amp;rsquo;s the boss ??&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-flag-submission-panel"&gt;Task 02: Flag Submission Panel&lt;/h2&gt;
-&lt;h2 id="what-is-the-domain-name"&gt;What is the Domain Name?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;nmap&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nmap -sV -sC -oN nmap/init 10.10.149.120
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Nmap 7.91 scan initiated Sun Jul 18 19:35:34 2021 as: nmap -sV -sC -oN nmap/init 10.10.149.120&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.149.120
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.15s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Not shown: &lt;span style="color:#ae81ff"&gt;986&lt;/span&gt; closed ports
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;PORT STATE SERVICE VERSION
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;53/tcp open domain Simple DNS Plus
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;88/tcp open kerberos-sec Microsoft Windows Kerberos &lt;span style="color:#f92672"&gt;(&lt;/span&gt;server time: 2021-07-18 14:05:57Z&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;111/tcp open rpcbind 2-4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RPC &lt;span style="color:#75715e"&gt;#100000)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| rpcinfo:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...&lt;span style="color:#f92672"&gt;[&lt;/span&gt;snip&lt;span style="color:#f92672"&gt;]&lt;/span&gt;...
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;135/tcp open msrpc Microsoft Windows RPC
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;139/tcp open netbios-ssn Microsoft Windows netbios-ssn
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;389/tcp open ldap Microsoft Windows Active Directory LDAP &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Domain: raz0rblack.thm, Site: Default-First-Site-Name&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;445/tcp open microsoft-ds?
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;464/tcp open kpasswd5?
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;593/tcp open ncacn_http Microsoft Windows RPC over HTTP 1.0
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;636/tcp open tcpwrapped
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2049/tcp open mountd 1-3 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RPC &lt;span style="color:#75715e"&gt;#100005)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;3268/tcp open ldap Microsoft Windows Active Directory LDAP &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Domain: raz0rblack.thm, Site: Default-First-Site-Name&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;3269/tcp open tcpwrapped
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;3389/tcp open ms-wbt-server Microsoft Terminal Services
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| rdp-ntlm-info:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Target_Name: RAZ0RBLACK
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| NetBIOS_Domain_Name: RAZ0RBLACK
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| NetBIOS_Computer_Name: HAVEN-DC
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| DNS_Domain_Name: raz0rblack.thm
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| DNS_Computer_Name: HAVEN-DC.raz0rblack.thm
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Product_Version: 10.0.17763
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ System_Time: 2021-07-18T14:06:45+00:00
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| ssl-cert: Subject: commonName&lt;span style="color:#f92672"&gt;=&lt;/span&gt;HAVEN-DC.raz0rblack.thm
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| Not valid before: 2021-02-22T15:02:37
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_Not valid after: 2021-08-24T15:02:37
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ssl-date: 2021-07-18T14:06:54+00:00; +2s from scanner time.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service Info: Host: HAVEN-DC; OS: Windows; CPE: cpe:/o:microsoft:windows
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host script results:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_clock-skew: mean: 1s, deviation: 0s, median: 1s
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| smb2-security-mode:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| 2.02:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ Message signing enabled and required
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| smb2-time:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| date: 2021-07-18T14:06:47
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ start_date: N/A
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Nmap done at Sun Jul 18 19:38:17 2021 -- 1 IP address (1 host up) scanned in 163.34 seconds&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="what-is-stevens-flag"&gt;What is Steven’s Flag?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;SMB&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-raz0rblack/</link></item><item><title>TryHackMe Linux Function Hooking</title><pubDate>Sun, 18 Jul 2021 02:30:10 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;OverView&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Linux Function Hooking&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/linuxfunctionhooking"&gt;room&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c0911c9d569c72aa687d73dce22a450a.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-introduction"&gt;task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;In this room, we will be looking into what are Shared Libraries, what is Function Hooking and how we can leverage LD_PRELOAD to do the same! I have tried to keep this room as simple as possible, however some basic understanding of C will be definitely useful!&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-what-are-shared-libraries"&gt;task 02: What are Shared Libraries?&lt;/h2&gt;
-&lt;p&gt;What Are Shared Libraries ?&lt;/p&gt;
-&lt;p&gt;Shared libraries are pre-compiled C-code which are linked during the final steps of producing an executable. They provide reusable features like functions, routines, classes, data structures, etc which can then be used while writing code of your own.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-linuxfunctionhooking/</link></item><item><title>TryHackMe Ffuf</title><pubDate>Sat, 17 Jul 2021 02:49:02 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;overview&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;fuff&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/b197813dc74d88fa2a6df2c128ff155c.png" alt="logo"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;room&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/ffuf"&gt;Link&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-introduction"&gt;task 01: Introduction&lt;/h2&gt;
-&lt;h3 id="summary"&gt;Summary&lt;/h3&gt;
-&lt;p&gt;ffuf stands for Fuzz Faster U Fool. It&amp;rsquo;s a tool used for web enumeration, fuzzing, and directory brute forcing.&lt;/p&gt;
-&lt;h3 id="install-ffuf"&gt;Install ffuf&lt;/h3&gt;
-&lt;p&gt;ffuf is already included in the following Linux distributions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;BlackArch&lt;/li&gt;
-&lt;li&gt;Pentoo&lt;/li&gt;
-&lt;li&gt;Kali&lt;/li&gt;
-&lt;li&gt;Parrot&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="install-seclists"&gt;Install SecLists&lt;/h3&gt;
-&lt;p&gt;SecLists is a collection of multiple types of lists used during security assessments. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-ffuf/</link></item><item><title>Try Hack Me Web Scanning</title><pubDate>Wed, 14 Jul 2021 14:00:45 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Learn the basics of automated web scanning!&lt;/p&gt;
-&lt;p&gt;Web scanning represents one of the core constructs of modern pen testing. Quite simply, most of what we interact with on a daily basis is the internet, and therein there is a multitude of ever-widening number of vulnerabilities. Within this room, we will investigate two of the most common scanners: Nikto and Zap.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Web Scanning&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/rpwebscanning"&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/55be0345f15c6d622f2dab4e9b2ec8da.png" alt="logo"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Solved by&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://anir0y.in"&gt;@anir0y&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-pull-the-lever-kronk"&gt;Task 01: Pull the lever, Kronk&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-im-supposed-to-scan-with-that"&gt;Task 02: &amp;hellip;I&amp;rsquo;m supposed to scan with that?&lt;/h2&gt;
-&lt;p&gt;A short quiz over the various switches used with Nikto as well as a quick scan against our target. All you&amp;rsquo;ll need for this is the help menu for nikto. Include all parts of the switch unless otherwise specified, this includes&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-rpwebscanning/</link></item><item><title>TryHackMe The find command</title><pubDate>Mon, 12 Jul 2021 23:17:35 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;The find command&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/user-avatars/af7feb2c43a2c7d5f111b98ccbd15048.png" alt="logo"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/thefindcommand"&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/c237d2dc14b96182f5ecb7c02a2b58b8.png" alt="logo"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Solved by&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://anir0y.in"&gt;@anir0y&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-start-finding"&gt;Task 01: Start finding&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-be-more-specific"&gt;Task 02: Be more specific&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Most of the time, you won’t be looking for something in your working directory. The first argument of your &lt;code&gt;find&lt;/code&gt; command should be the directory you want to search. The command will search in that directory and in all its subdirectories. So, if you want to search the whole filesystem, your command should begin with &lt;code&gt;find /&lt;/code&gt;.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-thefindcommand/</link></item><item><title>TryHackMe Tmux</title><pubDate>Sun, 11 Jul 2021 13:50:48 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Room Name&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;tmux&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://tryhackme.com/room/rptmux"&gt;&lt;img src="https://i.imgur.com/GYktm26.png" alt="tmux"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Dev&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://anir0y.in"&gt;@anir0y&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-1-screens-wishes-it-was-cool"&gt;[Task 1] Screens wishes it was cool&lt;/h2&gt;
-&lt;p&gt;tmux, the terminal multiplexer, is easily one of the most used tools by the Linux community (and not just pentesters!). While not a malicious tool, tmux makes running simultaneous tasks throughout a pentest incredibly easy. In this primer room, we&amp;rsquo;ll walk through the process of installing and using some of the most common key combinations used in tmux. (Note, the installation process in this is geared towards Kali/Ubuntu.)&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-rptmux/</link></item><item><title>TryHackMe Crisis</title><pubDate>Sat, 10 Jul 2021 15:18:30 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Room Name&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Crisis&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://ktryhackme.com/jr/crisis"&gt;&lt;img src="https://tryhackme-images.s3.amazonaws.com/room-icons/be6532386459feb00480cb5d56e788c5.png" alt="crisis"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Dev&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://anir0y.in"&gt;@anir0y&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Tools required&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://wireshark.org"&gt;Wireshark&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Join Room&lt;/td&gt;
-&lt;td&gt;&lt;a href="tryhackme.com/jr/crisis"&gt;Crisis&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Download the File&lt;/li&gt;
-&lt;li&gt;open with Wireshark&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="11"&gt;1.1&lt;/h3&gt;
-&lt;p&gt;Download file.&lt;/p&gt;
-&lt;h3 id="12"&gt;1.2&lt;/h3&gt;
-&lt;p&gt;When it all started?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Open packet 1, layer 1 reavels the Time Stamp&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/V5mg69J.png" alt="img"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Enter Format (MMM DD, YYYY)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="13"&gt;1.3&lt;/h3&gt;
-&lt;p&gt;What is the domain name?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Check the DNS (use filer &lt;code&gt;DNS&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/gtnvuN0.png" alt="dns"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="14"&gt;1.4&lt;/h3&gt;
-&lt;p&gt;What is the EMAIL Sending Protocol &amp;amp; Port&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;RFC &lt;a href="https://datatracker.ietf.org/doc/html/rfc8314"&gt;8314&lt;/a&gt;; hint &lt;a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol"&gt;wiki&lt;/a&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-crisis/</link></item><item><title>TryHackMe Couch</title><pubDate>Fri, 09 Jul 2021 19:22:00 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="couch"&gt;Couch&lt;/h2&gt;
-&lt;h2 id="flags"&gt;Flags&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Task&lt;/th&gt;
-&lt;th&gt;Remarks&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1.1&lt;/td&gt;
-&lt;td&gt;&lt;a href="#recon"&gt;flag&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id="recon"&gt;Recon&lt;/h3&gt;
-&lt;p&gt;running nmap: (Default)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;┌──&lt;span style="color:#f92672"&gt;(&lt;/span&gt;anir0y㉿kali&lt;span style="color:#f92672"&gt;)&lt;/span&gt;-&lt;span style="color:#f92672"&gt;[&lt;/span&gt;~/share/thm/room/couch&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└─$ sudo nmap -sC -sV -oN nmap/couch 10.10.94.40
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;sudo&lt;span style="color:#f92672"&gt;]&lt;/span&gt; password &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; anir0y:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-09 19:26 IST
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.94.40
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.21s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Not shown: &lt;span style="color:#ae81ff"&gt;999&lt;/span&gt; closed ports
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;PORT STATE SERVICE VERSION
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;22/tcp open ssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Ubuntu Linux; protocol 2.0&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| ssh-hostkey:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;2048&lt;/span&gt; 34:9d:39:09:34:30:4b:3d:a7:1e:df:eb:a3:b0:e5:aa &lt;span style="color:#f92672"&gt;(&lt;/span&gt;RSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;| &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; a4:2e:ef:3a:84:5d:21:1b:b9:d4:26:13:a5:2d:df:19 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ECDSA&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;|_ &lt;span style="color:#ae81ff"&gt;256&lt;/span&gt; e1:6d:4d:fd:c8:00:8e:86:c2:13:2d:c7:ad:85:13:9c &lt;span style="color:#f92672"&gt;(&lt;/span&gt;ED25519&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; IP address &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; host up&lt;span style="color:#f92672"&gt;)&lt;/span&gt; scanned in 41.79 seconds
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nmap All ports:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-couch/</link></item><item><title>TryHackMe Inclusion</title><pubDate>Thu, 08 Jul 2021 14:19:01 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="inclusion"&gt;inclusion&lt;/h2&gt;
-&lt;h2 id="task-01-deploy"&gt;task 01: Deploy&lt;/h2&gt;
-&lt;p&gt;This is a beginner level room designed for people who want to get familiar with Local file inclusion vulnerability.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-root-it"&gt;Task 02: Root It&lt;/h2&gt;
-&lt;h2 id="recon"&gt;Recon&lt;/h2&gt;
-&lt;h3 id="nmap"&gt;Nmap&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;nmap&lt;/code&gt; found two open TCP ports, SSH (22) and HTTP (80):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Starting Nmap 7.91 &lt;span style="color:#f92672"&gt;(&lt;/span&gt; https://nmap.org &lt;span style="color:#f92672"&gt;)&lt;/span&gt; at 2021-07-08 14:35 IST
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap scan report &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; 10.10.206.247
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host is up &lt;span style="color:#f92672"&gt;(&lt;/span&gt;0.27s latency&lt;span style="color:#f92672"&gt;)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Not shown: &lt;span style="color:#ae81ff"&gt;998&lt;/span&gt; closed ports
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;PORT STATE SERVICE VERSION
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;22/tcp open ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Ubuntu Linux; protocol 2.0&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;80/tcp open http Werkzeug httpd 0.16.0 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;Python 3.6.9&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Nmap &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; IP address &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; host up&lt;span style="color:#f92672"&gt;)&lt;/span&gt; scanned in 73.52 seconds
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="website"&gt;website&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/gxhGw96.png" alt="website"&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-inclusion/</link></item><item><title>TryHackMe RootMe</title><pubDate>Tue, 06 Jul 2021 13:36:08 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="rootme"&gt;RootMe&lt;/h2&gt;
-&lt;h2 id="task-01-deploy-the-room"&gt;Task 01: Deploy the Room&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02--reconnaissance"&gt;Task 02: Reconnaissance&lt;/h2&gt;
-&lt;h3 id="21"&gt;2.1&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Scan the machine, how many ports are open?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;run the command: &lt;code&gt;nmap -sC -sV -oN nmap MACHINE_IP&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id="22"&gt;2.2&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;What version of Apache is running?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Ans is in &lt;a href="#21"&gt;task 2.1&lt;/a&gt; output result. use &lt;code&gt;cat nmap&lt;/code&gt; to see the output file.&lt;/p&gt;
-&lt;h3 id="23"&gt;2.3&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Find directories on the web server using the GoBuster tool.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;gobuster dir -u 10.10.71.82 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id="24"&gt;2.4&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;What is the hidden directory?&lt;/strong&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-rrootme/</link></item><item><title>TryHackMe Gitandcrumpets</title><pubDate>Sun, 04 Jul 2021 23:04:02 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="git-and-crumpets"&gt;Git and Crumpets&lt;/h2&gt;
-&lt;p&gt;Our devs have been clamoring for some centralized version control, so the admin came through. Rumour has it that they included a few countermeasures&amp;hellip;&lt;/p&gt;
-&lt;h2 id="task-01--start-the-vm"&gt;Task 01: Start the VM&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-git-the-flags"&gt;Task 02: Git the flags&lt;/h2&gt;
-&lt;h2 id="user"&gt;user&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;I tried running nmap, no luck&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;being impatatient, I ran a quick curl commnad &lt;code&gt;curl -s 10.10.x.y&lt;/code&gt; to see what&amp;rsquo;s up.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/tpxQmLf.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;got this output.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;let&amp;rsquo;s setup &lt;strong&gt;DNS&lt;/strong&gt; record, edit &lt;code&gt;/etc/hosts&lt;/code&gt; file.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</link></item><item><title>TryHackMe Postexploit</title><pubDate>Sun, 04 Jul 2021 14:36:48 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="post-exploitation-basics"&gt;Post-Exploitation Basics&lt;/h2&gt;
-&lt;p&gt;Learn the basics of post-exploitation and maintaining access with mimikatz, bloodhound, powerview and msfvenom&lt;/p&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;This room will be related to very real world applications and will most likely not help with any ctfs however this room will give you great starting knowledge of how to approach a network after you have gained a shell on a machine.&lt;/p&gt;
-&lt;h2 id="task-02-enumeration-w-powerview"&gt;Task 02: Enumeration w/ Powerview&lt;/h2&gt;
-&lt;p&gt;Powerview is a powerful powershell script from powershell empire that can be used for enumerating a domain after you have already gained a shell in the system.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-postexploit/</link></item><item><title>TryHackMe Hydra</title><pubDate>Sat, 03 Jul 2021 20:14:32 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="hydra"&gt;Hydra&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website&amp;rsquo;s credentials.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="task-01-hydra-introduction"&gt;Task 01: Hydra Introduction&lt;/h2&gt;
-&lt;p&gt;Hydra is a brute force online password cracking program; a quick system login password &amp;lsquo;hacking&amp;rsquo; tool.&lt;/p&gt;
-&lt;h3 id="installing-hydra"&gt;Installing Hydra&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re using Kali Linux, hydra is pre-installed. Otherwise you can download it here: &lt;a href="https://github.com/vanhauser-thc/thc-hydra"&gt;https://github.com/vanhauser-thc/thc-hydra&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02--using-hydra"&gt;Task 02: Using Hydra&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Hydra Commands&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The options we pass into Hydra depends on which service (protocol) we&amp;rsquo;re attacking. For example if we wanted to bruteforce FTP with the username being user and a password list being passlist.txt, we&amp;rsquo;d use the following command:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/tryhackme-hydra/</link></item><item><title>TryHackMe Room Ice</title><pubDate>Tue, 29 Jun 2021 14:11:50 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="ice"&gt;ICE&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Deploy &amp;amp; hack into a Windows machine, exploiting a very poorly secured media server.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="task-01-connect"&gt;task 01: Connect&lt;/h2&gt;
-&lt;p&gt;Nothing to do just follow the instructions.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-recon"&gt;Task 02: Recon&lt;/h2&gt;
-&lt;h3 id="things-you-should-know"&gt;Things you should know&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://nmap.org/book/synscan.html"&gt;https://nmap.org/book/synscan.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://nmap.org/book/man-port-scanning-techniques.html"&gt;https://nmap.org/book/man-port-scanning-techniques.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;for this lab: &lt;code&gt;nmap -sS -p- TARGET_IP&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="task-21"&gt;task 2.1&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Deploy the machine! This may take up to three minutes to start.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="task-22"&gt;Task 2.2&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Launch a scan against our target machine, I recommend using a SYN scan set to scan all ports on the machine. The scan command will be provided as a hint, however, it&amp;rsquo;s recommended to complete the room &amp;lsquo;Nmap&amp;rsquo; prior to this room.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-ice/</link></item><item><title>TryHackMe Room Hackpark</title><pubDate>Sat, 19 Jun 2021 19:38:27 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="hackpark"&gt;HackPark&lt;/h2&gt;
-&lt;p&gt;Room link : &lt;a href="https://tryhackme.com/room/hackpark"&gt;HackPark&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="task-01-deploy-the-vulnerable-windows-machine"&gt;task 01: Deploy the vulnerable Windows machine&lt;/h2&gt;
-&lt;p&gt;This room will cover brute-forcing an accounts credentials, handling public exploits, using the Metasploit framework and privilege escalation on Windows.&lt;/p&gt;
-&lt;h3 id="flags"&gt;Flags&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Flag-ID&lt;/th&gt;
-&lt;th&gt;question&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;1&lt;/td&gt;
-&lt;td&gt;Deploy the machine and access its web server.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;2&lt;/td&gt;
-&lt;td&gt;Whats the name of the clown displayed on the homepage?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td&gt;download the img and do a reverse Image search ans is &lt;code&gt;PENNYWISE&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-02-using-hydra-to-brute-force-a-login"&gt;task 02: Using Hydra to brute-force a login&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/8wR5oby.png" alt="hydra"&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-hackpark/</link></item><item><title>TryHackME Room Kenobi</title><pubDate>Thu, 10 Jun 2021 21:22:32 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="kenobi"&gt;kenobi&lt;/h2&gt;
-&lt;h2 id="task-01--deploy-the-vulnerable-machine"&gt;Task 01 : Deploy the vulnerable machine&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Flag-ID&lt;/th&gt;
-&lt;th&gt;question&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;1&lt;/td&gt;
-&lt;td&gt;Make sure you&amp;rsquo;re connected to our network and deploy the machine&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;2&lt;/td&gt;
-&lt;td&gt;Scan the machine with nmap, how many ports are open?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://i.imgur.com/eHy08jQ.png" alt="img"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-enumerating-samba-for-shares"&gt;Task 02: Enumerating Samba for shares&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/O8S93Kr.png" alt="samba"&gt;&lt;/p&gt;
-&lt;h4 id="cheat-sheet"&gt;cheat sheet&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse [IP]&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;smbclient //&amp;lt;ip&amp;gt;/anonymous&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;img src="https://i.imgur.com/B1FXBt8.png" alt="img"&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;smbget -R smb://&amp;lt;ip&amp;gt;/anonymous #recursive download files&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.233.45 #show mounts&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Flag-ID&lt;/th&gt;
-&lt;th&gt;question&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;1&lt;/td&gt;
-&lt;td&gt;Using the nmap command above, how many shares have been found?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;2&lt;/td&gt;
-&lt;td&gt;Once you&amp;rsquo;re connected, list the files on the share. What is the file can you see?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;a href="#flag-22"&gt;ref&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://i.imgur.com/70LFnVH.png" alt="img"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;3&lt;/td&gt;
-&lt;td&gt;What port is FTP running on?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;a href="#flag-23"&gt;ref&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;21&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;4&lt;/td&gt;
-&lt;td&gt;What mount can we see?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;a href="#flag-24"&gt;ref&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/var&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="flag-22"&gt;Flag-2.2&lt;/h3&gt;
-&lt;p&gt;anonymous auth is enbled, just hit enter when it askes for password.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-kenobi/</link></item><item><title>TryHackMe Room Vulnversity</title><pubDate>Wed, 09 Jun 2021 20:10:48 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="vulnversity"&gt;Vulnversity&lt;/h2&gt;
-&lt;h2 id="task-01--deploy-the-machine"&gt;TASK 01: Deploy the machine&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-reconnaissance"&gt;TASK 02: Reconnaissance&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://nmap.org"&gt;Nmap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;CheatSheet&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="flags"&gt;Flags&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Flag ID&lt;/th&gt;
-&lt;th style="text-align: center"&gt;Questions&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;1&lt;/td&gt;
-&lt;td style="text-align: center"&gt;There are many nmap &amp;ldquo;cheatsheets&amp;rdquo; online that you can use too.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;N\A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;2&lt;/td&gt;
-&lt;td style="text-align: center"&gt;Scan the box, how many ports are open?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://i.imgur.com/0XgYocm.png" alt="img"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;3&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What version of the squid proxy is running on the machine?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://i.imgur.com/0XgYocm.png" alt="img"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;4&lt;/td&gt;
-&lt;td style="text-align: center"&gt;How many ports will nmap scan if the flag -p-400 was used?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;400&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;5&lt;/td&gt;
-&lt;td style="text-align: center"&gt;Using the nmap flag -n what will it not resolve?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;DNS&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;6&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What is the most likely operating system this machine is running?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;code&gt;ubuntu&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;7&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What port is the web server running on?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td style="text-align: center"&gt;&lt;img src="https://i.imgur.com/Tsd6hc7.png" alt="img-anir0y"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;8&lt;/td&gt;
-&lt;td style="text-align: center"&gt;Its important to ensure you are always doing your reconnaissance thoroughly before progressing. Knowing all open services (which can all be points of exploitation) is very important, don&amp;rsquo;t forget that ports on a higher range might be open so always scan ports after 1000 (even if you leave scanning in the background)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h4 id="flag6"&gt;Flag6&lt;/h4&gt;
-&lt;p&gt;based on Nmap Fingerprints.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-vulnversity/</link></item><item><title>Thm Room Web Fundamentals</title><pubDate>Tue, 08 Jun 2021 11:04:18 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="web-fundamentals"&gt;Web Fundamentals&lt;/h2&gt;
-&lt;h2 id="task-01-introduction-and-objectives"&gt;Task 01: Introduction and objectives&lt;/h2&gt;
-&lt;h3 id="flags-1-na"&gt;Flags 1: n/a&lt;/h3&gt;
-&lt;h2 id="task-02-how-do-we-load-websites"&gt;Task 02: How do we load websites?&lt;/h2&gt;
-&lt;h3 id="flags-2"&gt;Flags 2&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Flag ID&lt;/th&gt;
-&lt;th style="text-align: center"&gt;Questions&lt;/th&gt;
-&lt;th style="text-align: left"&gt;Ans&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What request verb is used to retrieve page content?&lt;/td&gt;
-&lt;td style="text-align: left"&gt;&lt;code&gt;GET&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What port do web servers normally listen on?&lt;/td&gt;
-&lt;td style="text-align: left"&gt;&lt;code&gt;80&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td style="text-align: center"&gt;What&amp;rsquo;s responsible for making websites look fancy?&lt;/td&gt;
-&lt;td style="text-align: left"&gt;&lt;code&gt;CSS&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-03-more-http---verbs-and-request-formats"&gt;Task 03: More HTTP - Verbs and request formats&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;HTTP response status codes&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-webfundamentals/</link></item><item><title>TryHackMe Writeup REMnux - The Redux</title><pubDate>Tue, 01 Jun 2021 09:49:05 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="remnux---the-redux"&gt;REMnux - The Redux&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;script type="text/javascript" language="javascript"&gt;
-var aax_size='300x250';
-var aax_pubname = 'anir0y-21';
-var aax_src='302';
-&lt;/script&gt;
-&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"&gt;&lt;/script&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: introduction&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Welcome to the redux of REMnux.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Since the release of the previous REMnux room, REMnux has had substantial changes, rendering the previous room outdated and impossible to complete.&lt;/p&gt;
-&lt;p&gt;I have taken the opportunity to recreate the room covering REMnux from scratch, taking a very different approach to ensure you get to use all the facilities that make REMnux unique.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-malremnuxv2/</link></item><item><title>TryHackMe BasicMalwareRE Writeup</title><pubDate>Mon, 31 May 2021 08:20:27 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="basicmalwarere"&gt;BasicMalwareRE&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;iframe style="width:300px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=IN&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=anir0y-21&amp;language=en_IN&amp;marketplace=amazon&amp;region=IN&amp;placement=1593272901&amp;asins=1593272901&amp;linkId=60304e65b31865f7a816862eaac56668&amp;show_border=false&amp;link_opens_in_new_window=true"&gt;&lt;/iframe&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;h2 id="i-learnt-from-this-book-practical-malware-analysis-the-hands-on-guide-to-dissecting-malicious-software"&gt;I learnt from this Book: &lt;a href="https://amzn.to/3uCw0N5"&gt;Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software&lt;/a&gt;&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;These challenges are aimed towards learning about the &amp;ldquo;Static Analysis&amp;rdquo; technique used to analyze the malware. The main aim for this room is not to used any types of debuggers neither the executable&amp;rsquo;s/programs should be run on any platform. You are required to answer all the questions without even using the debugger and even not executing the executable&amp;rsquo;s/programs.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-basicmalwarere/</link></item><item><title>Try Hack ME Room Malstrings</title><pubDate>Mon, 31 May 2021 00:21:19 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="mal-strings"&gt;MAL: Strings&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;script type="text/javascript" language="javascript"&gt;
-var aax_size='300x250';
-var aax_pubname = 'anir0y-21';
-var aax_src='302';
-&lt;/script&gt;
-&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"&gt;&lt;/script&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-what-are-strings"&gt;Task 01: What are &amp;ldquo;strings&amp;rdquo;?&lt;/h2&gt;
-&lt;h3 id="mp-strings"&gt;MP: Strings&lt;/h3&gt;
-&lt;h4 id="what-are-strings"&gt;What are &amp;ldquo;strings&amp;rdquo;?&lt;/h4&gt;
-&lt;p&gt;From a programming perspective, &amp;ldquo;strings&amp;rdquo; is the term given for data handled by an application. At a broader view, these pieces of data are used to store information such as text to numerical values.&lt;/p&gt;
-&lt;p&gt;For example, let&amp;rsquo;s say we have an application such as a calculator. A user will have to input two numerical values (e.g. 1 and 5) combined with an operator (e.g. + or plus) addition in this case. These values will be stored as &amp;ldquo;strings&amp;rdquo;.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-malstrings/</link></item><item><title>Try Hack ME Room Malware Introductory</title><pubDate>Sat, 29 May 2021 00:08:19 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="mal-malware-introductory"&gt;MAL: Malware Introductory&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;script type="text/javascript" language="javascript"&gt;
-var aax_size='300x250';
-var aax_pubname = 'anir0y-21';
-var aax_src='302';
-&lt;/script&gt;
-&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"&gt;&lt;/script&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-what-is-the-purpose-of-malware-analysis"&gt;Task 01: What is the Purpose of Malware Analysis?&lt;/h2&gt;
-&lt;p&gt;Malware is such a prevalent topic within Cybersecurity, and often an unfortunately recurring theme among global news today.&lt;/p&gt;
-&lt;p&gt;Not only is malware analysis a form of incidence response, but it is also useful in understanding how the behaviours of variants of malware result in their respective categorisation. This room will be a practical introduction to the techniques and tools used throughout malware analysis - albeit brief, I hope to expand on these techniques a lot more in-depth within the future.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-malmalintroductory/</link></item><item><title>Try Hack Me Room History of Malware</title><pubDate>Fri, 28 May 2021 00:43:47 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="history-of-malware"&gt;History of Malware&lt;/h1&gt;
-&lt;p&gt;Join this room to learn about the first forms of malware and how they turned into the malicious code we see today.&lt;/p&gt;
-&lt;hr&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;script type="text/javascript" language="javascript"&gt;
-var aax_size='300x250';
-var aax_pubname = 'anir0y-21';
-var aax_src='302';
-&lt;/script&gt;
-&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"&gt;&lt;/script&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01--introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;Malware&amp;rdquo;&lt;/strong&gt; consists of two words combined; malicious and software. Typically, Malware is designed to cause damage to Computers or Networks, this may be on a very large scale or only on a local network (LAN).&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-historyofmalware/</link></item><item><title>Thm Room Autopsy</title><pubDate>Thu, 27 May 2021 00:31:13 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="autopsy"&gt;Autopsy&lt;/h1&gt;
-&lt;p&gt;Learn how to use Autopsy to investigate artifacts from a disk image. Use your knowledge to investigate an employee who is being accused of leaking private company data.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;script type="text/javascript" language="javascript"&gt;
-var aax_size='300x250';
-var aax_pubname = 'anir0y-21';
-var aax_src='302';
-&lt;/script&gt;
-&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"&gt;&lt;/script&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;What is &lt;a href="https://www.autopsy.com/"&gt;Autopsy&lt;/a&gt;?&lt;/p&gt;
-&lt;p&gt;The official description: &amp;ldquo;Autopsy is the premier open source forensics platform which is fast, easy-to-use, and capable of analyzing all types of mobile devices and digital media. Its plug-in architecture enables extensibility from community-developed or custom-built modules. Autopsy evolves to meet the needs of hundreds of thousands of professionals in law enforcement, national security, litigation support, and corporate investigation.&amp;rdquo;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-btautopsye0/</link></item><item><title>Investigating Windows</title><pubDate>Tue, 25 May 2021 20:09:18 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="investigating-windows"&gt;Investigating Windows&lt;/h1&gt;
-&lt;p&gt;A windows machine has been hacked, its your job to go investigate this windows machine and find clues to what the hacker might have done.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;script type="text/javascript" language="javascript"&gt;
-var aax_size='300x250';
-var aax_pubname = 'anir0y-21';
-var aax_src='302';
-&lt;/script&gt;
-&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"&gt;&lt;/script&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-investigating-windows"&gt;Task 01: Investigating Windows&lt;/h2&gt;
-&lt;!--
-### Flags Task.1
-|Flag ID|Question|Goes here|
-|-|:---:|:---|
-|1|Whats the version and year of the windows machine?|`ans`|
-|2|Which user logged in last?|`Administrator`|
-|3|When did John log onto the system last?|`03/02/2019 5:48:32 PM`|
-|4|What IP does the system connect to when it first starts?|`10.34.2.3`|
-|5|What two accounts had administrative privileges (other than the Administrator user)|`Jenny,Guest`|
-|6|Whats the name of the scheduled task that is malicous|`clean file system`|
-|7|What file was the task trying to run daily?|`nc.ps1`|
-|8|What port did this file listen locally for?|`1348`|
-|9|When did Jenny last logon?|`never`|
-|10|At what date did the compromise take place?|`03/02/2019`|
-|11|At what time did Windows first assign special privileges to a new logon?|`03/02/2019 4:04:49 PM`|
-|12|What tool was used to get Windows passwords?|`mimikatz`|
-|13|What was the attackers external control and command servers IP?|`76.32.97.132`|
-|14|What was the extension name of the shell uploaded via the servers website?|`.jsp`|
-|15|What was the last port the attacker opened?|`1337`|
-|16|Check for DNS poisoning, what site was targeted?|`google.com`|
---&gt;
-&lt;h4 id="explanation"&gt;Explanation&lt;/h4&gt;
-&lt;h3 id="flg-2"&gt;Flg 2&lt;/h3&gt;
-&lt;p&gt;looking into eventviewer log for EventID 4624. Ref: &lt;a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4624"&gt;read&lt;/a&gt;&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/investigatingwindows/</link></item><item><title>Try Hack me Room Volatility</title><pubDate>Sun, 23 May 2021 23:09:45 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="volatility"&gt;Volatility&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Learn how to perform memory forensics with Volatility!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="task-01-intro"&gt;Task 01: Intro&lt;/h2&gt;
-&lt;p&gt;Volatility is a free memory forensics tool developed and maintained by Volatility labs. Regarded as the gold standard for memory forensics in incident response, Volatility is wildly expandable via a plugins system and is an invaluable tool for any Blue Teamer.&lt;/p&gt;
-&lt;hr&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;script type="text/javascript" language="javascript"&gt;
-var aax_size='300x250';
-var aax_pubname = 'anir0y-21';
-var aax_src='302';
-&lt;/script&gt;
-&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"&gt;&lt;/script&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-obtaining-memory-samples"&gt;Task 02: Obtaining Memory Samples&lt;/h2&gt;
-&lt;p&gt;Obtaining a memory capture from machines can be done in numerous ways, however, the easiest method will often vary depending on what you&amp;rsquo;re working with. For example, live machines (turned on) can have their memory captured with one of the following tools:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-bpvolatility/</link></item><item><title>Try Hack Me Room Attacking Kerberos</title><pubDate>Thu, 20 May 2021 23:25:07 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="attacking-kerberos"&gt;Attacking Kerberos&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-01-introduction"&gt;Task 01: Introduction&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/2dq2jLY.png" alt=""&gt;&lt;/p&gt;
-&lt;h3 id="what-is-kerberos--"&gt;What is Kerberos? -&lt;/h3&gt;
-&lt;p&gt;Kerberos is the default authentication service for Microsoft Windows domains. It is intended to be more &amp;ldquo;secure&amp;rdquo; than NTLM by using third party ticket authorization as well as stronger encryption. Even though NTLM has a lot more attack vectors to choose from Kerberos still has a handful of underlying vulnerabilities just like NTLM that we can use to our advantage.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-attackingkerberos/</link></item><item><title>Try Hack Me Room Attacktivedirectory</title><pubDate>Tue, 18 May 2021 23:58:19 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h1 id="attacktivedirectory"&gt;Attacktivedirectory&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;script type="text/javascript" language="javascript"&gt;
-var aax_size='300x250';
-var aax_pubname = 'anir0y-21';
-var aax_src='302';
-&lt;/script&gt;
-&lt;script type="text/javascript" language="javascript" src="https://c.amazon-adsystem.com/aax2/assoc.js"&gt;&lt;/script&gt;
-&lt;!-- Amazon Ads--&gt;
-&lt;h2 id="task-01-deploy-the-machine"&gt;Task 01: Deploy The Machine&lt;/h2&gt;
-&lt;p&gt;Walkthough how to access VM &amp;amp; Attacker VM&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="task-02-setup"&gt;Task 02: Setup&lt;/h2&gt;
-&lt;p&gt;Installing Impacket:&lt;/p&gt;
-&lt;p&gt;Whether you&amp;rsquo;re on the Kali 2019.3 or Kali 2021.1, Impacket can be a pain to install correctly. Here&amp;rsquo;s some instructions that may help you install it correctly!&lt;/p&gt;
-&lt;p&gt;First, you will need to clone the Impacket Github repo onto your box. The following command will clone Impacket into /opt/impacket:&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-attacktivedirectory/</link></item><item><title>Try Hack Me Room Osquery</title><pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;h2 id="osquery"&gt;Osquery&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: left"&gt;Profile&lt;/th&gt;
-&lt;th style="text-align: right"&gt;Support&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: left"&gt;&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;&lt;/td&gt;
-&lt;td style="text-align: right"&gt;&lt;a href="https://www.buymeacoffee.com/anir0y"&gt;&lt;img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&amp;emoji=🍺&amp;slug=anir0y&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Lato&amp;outline_colour=000000&amp;coffee_colour=FFDD00"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id="task-1--introduction"&gt;TASK 1 : Introduction&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://osquery.io/"&gt;Osquery&lt;/a&gt; is an &lt;a href="https://github.com/osquery/osquery"&gt;open-source&lt;/a&gt; tool created by Facebook. With Osquery, Security Analysts, Incident Responders, Threat Hunters, etc., can query an endpoint (or multiple endpoints) using SQL syntax. Osquery can be installed on multiple platforms: Windows, Linux, macOS, and FreeBSD.&lt;/p&gt;
-&lt;p&gt;Many well-known companies, besides Facebook, either use Osquery, utilize osquery within their tools, and/or look for individuals who know Osquery.&lt;/p&gt;
-&lt;p&gt;As of today (March 2021), Github and AT&amp;amp;T seek individuals who have experience with Osquery.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-osquery/</link></item><item><title>Try Hack Me Room Room Openvas</title><pubDate>Mon, 10 May 2021 01:36:51 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;p&gt;&lt;img src="https://classroom.anir0y.in/img/openvas.png" alt="openvas logo"&gt;&lt;/p&gt;
-&lt;h2 id="openvas"&gt;OpenVas&lt;/h2&gt;
-&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Room&lt;/strong&gt; &lt;a href="https://tryhackme.com/room/openvas"&gt;Subscription Only&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="task-1-introduction"&gt;Task 1: Introduction&lt;/h2&gt;
-&lt;p&gt;OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. It is commonly used by corporations as part of their mitigation solutions to quickly identify any gaps in their production or even development servers or applications. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-openvas/</link></item><item><title>Try Hack ME Room Zerologon</title><pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in" width="700" height="420"/><description>&lt;hr&gt;
-&lt;h2 id="zero-logon---the-zero-day-angle"&gt;Zero Logon - The Zero Day Angle&lt;/h2&gt;
-&lt;script src="https://tryhackme.com/badge/434937"&gt;&lt;/script&gt;
-&lt;h2 id="room-subscription-only"&gt;Room &lt;a href="https://tryhackme.com/room/zer0logon"&gt;Subscription Only&lt;/a&gt;&lt;/h2&gt;
-&lt;hr&gt;
-&lt;h3 id="about-the-vulnerability--"&gt;About The vulnerability -&lt;/h3&gt;
-&lt;p&gt;On September 14, Secura released a whitepaper for CVE-2020-1472, that allowed an attacker to go from Zero to Domain Admin in approximately one minute. They dubbed this vulnerability Zero Logon.&lt;/p&gt;
-&lt;p&gt;Zero Logon is a purely statistics based attack that abuses a feature within MS-NRPC (Microsoft NetLogon Remote Protocol), MS-NRPC is a critical authentication component of Active Directory that handles authentication for User and Machine accounts. In short &amp;ndash; the attack mainly focuses on a poor implementation of Cryptography. To be more specific, Microsoft chose to use AES-CFB8 for a function called ComputeNetlogonCredential, which is normally fine, except they had hard coded the Initialization Vector to use all zeros instead of a random string. When an attacker sends a message only containing zeros with the IV of zero, there is a 1-in-256 chance that the Ciphertext will be Zero.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in"/><link>https://classroom.anir0y.in/post/thm-room-zerologon/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rooms on Classroom</title>
+    <link>https://classroom.anir0y.in/tags/rooms/</link>
+    <description>Recent content in Rooms on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Sun, 04 Jan 2026 20:58:51 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/rooms/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Traverse - TryHackMe Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/traverse/</link>
+      <pubDate>Sun, 04 Jan 2026 20:58:51 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/traverse/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Benign Room Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/benign/</link>
+      <pubDate>Tue, 16 Dec 2025 13:23:02 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/benign/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Itsybitsy walkthrough</title>
+      <link>https://classroom.anir0y.in/post/itsybitsy/</link>
+      <pubDate>Tue, 16 Dec 2025 12:01:28 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/itsybitsy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Log Analysis With SIEM - TryHackMe Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/log-analysis-with-siem/</link>
+      <pubDate>Mon, 15 Dec 2025 19:16:54 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/log-analysis-with-siem/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Network Discovery Detection</title>
+      <link>https://classroom.anir0y.in/post/network-discovery-detection/</link>
+      <pubDate>Fri, 12 Dec 2025 13:20:33 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/network-discovery-detection/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Healthgpt</title>
+      <link>https://classroom.anir0y.in/post/healthgpt/</link>
+      <pubDate>Sun, 30 Nov 2025 19:57:58 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/healthgpt/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Phishing Emails 4</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-phishingemails4/</link>
+      <pubDate>Tue, 16 Aug 2022 15:24:03 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-phishingemails4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Red Team Threat Intel</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-redteamthreatintel/</link>
+      <pubDate>Fri, 12 Aug 2022 13:05:49 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-redteamthreatintel/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Oh My Webserver</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-oh-my-webserver/</link>
+      <pubDate>Wed, 09 Mar 2022 10:50:11 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-oh-my-webserver/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Jr Security Analyst Intro</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-jr-security-analyst-intro/</link>
+      <pubDate>Sat, 26 Feb 2022 11:57:17 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-jr-security-analyst-intro/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Android Malware Analysis</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-androidmalwareanalysis/</link>
+      <pubDate>Sun, 23 Jan 2022 11:38:33 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-androidmalwareanalysis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Exploit Vulnerabilities</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-exploitingavulnerabilityv2.md/</link>
+      <pubDate>Sun, 26 Sep 2021 08:29:10 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-exploitingavulnerabilityv2.md/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Vulnerabilities 101</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-vulnerabilities101/</link>
+      <pubDate>Tue, 21 Sep 2021 14:21:54 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-vulnerabilities101/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Empline</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-empline/</link>
+      <pubDate>Sun, 19 Sep 2021 13:14:49 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-empline/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Introduction to Django</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-django/</link>
+      <pubDate>Sat, 11 Sep 2021 18:40:31 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-django/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Wordpress CVE-2021-29447</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-wordpresscve202129447/</link>
+      <pubDate>Sun, 29 Aug 2021 14:35:45 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-wordpresscve202129447/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Intro to Windows</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-intro2winold/</link>
+      <pubDate>Tue, 24 Aug 2021 15:17:46 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-intro2winold/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Bounty Hacker</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-cowboyhacker/</link>
+      <pubDate>Fri, 20 Aug 2021 23:29:16 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-cowboyhacker/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Hacking with PowerShell</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-powershell/</link>
+      <pubDate>Tue, 17 Aug 2021 14:58:29 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-powershell/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Super-Spam</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-superspamr/</link>
+      <pubDate>Fri, 13 Aug 2021 09:04:14 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-superspamr/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Mobile Malware Analysis</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-mma/</link>
+      <pubDate>Thu, 05 Aug 2021 12:08:59 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-mma/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Relevant</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-relevant/</link>
+      <pubDate>Wed, 04 Aug 2021 08:35:47 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-relevant/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Linux Strength Training</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/</link>
+      <pubDate>Tue, 03 Aug 2021 07:41:10 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Sweettooth Inc.</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-sweettoothinc/</link>
+      <pubDate>Wed, 28 Jul 2021 12:16:24 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-sweettoothinc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Giveaway July 2021</title>
+      <link>https://classroom.anir0y.in/post/giveaway-1/</link>
+      <pubDate>Mon, 26 Jul 2021 01:44:28 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/giveaway-1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Agent Sudo</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-agentsudoctf/</link>
+      <pubDate>Sat, 24 Jul 2021 16:50:32 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-agentsudoctf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Overpass 2 - Hacked</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-overpass2hacked/</link>
+      <pubDate>Fri, 23 Jul 2021 01:16:55 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-overpass2hacked/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Baron Samedit</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-sudovulnssamedit/</link>
+      <pubDate>Fri, 23 Jul 2021 00:56:23 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-sudovulnssamedit/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Metamorphosis</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-metamorphosis/</link>
+      <pubDate>Wed, 21 Jul 2021 03:31:08 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-metamorphosis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Crack the hash</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-crackthehash/</link>
+      <pubDate>Tue, 20 Jul 2021 21:54:07 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-crackthehash/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Simple CTF</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-easyctf/</link>
+      <pubDate>Mon, 19 Jul 2021 22:32:49 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-easyctf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe RazorBlack</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-raz0rblack/</link>
+      <pubDate>Sun, 18 Jul 2021 19:31:05 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-raz0rblack/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Linux Function Hooking</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-linuxfunctionhooking/</link>
+      <pubDate>Sun, 18 Jul 2021 02:30:10 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-linuxfunctionhooking/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Ffuf</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-ffuf/</link>
+      <pubDate>Sat, 17 Jul 2021 02:49:02 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-ffuf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Web Scanning</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-rpwebscanning/</link>
+      <pubDate>Wed, 14 Jul 2021 14:00:45 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-rpwebscanning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe The find command</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-thefindcommand/</link>
+      <pubDate>Mon, 12 Jul 2021 23:17:35 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-thefindcommand/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Tmux</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-rptmux/</link>
+      <pubDate>Sun, 11 Jul 2021 13:50:48 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-rptmux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Crisis</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-crisis/</link>
+      <pubDate>Sat, 10 Jul 2021 15:18:30 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-crisis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Couch</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-couch/</link>
+      <pubDate>Fri, 09 Jul 2021 19:22:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-couch/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Inclusion</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-inclusion/</link>
+      <pubDate>Thu, 08 Jul 2021 14:19:01 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-inclusion/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe RootMe</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-rrootme/</link>
+      <pubDate>Tue, 06 Jul 2021 13:36:08 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-rrootme/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Gitandcrumpets</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</link>
+      <pubDate>Sun, 04 Jul 2021 23:04:02 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Postexploit</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-postexploit/</link>
+      <pubDate>Sun, 04 Jul 2021 14:36:48 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-postexploit/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Hydra</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-hydra/</link>
+      <pubDate>Sat, 03 Jul 2021 20:14:32 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-hydra/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Room Ice</title>
+      <link>https://classroom.anir0y.in/post/thm-room-ice/</link>
+      <pubDate>Tue, 29 Jun 2021 14:11:50 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-ice/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Room Hackpark</title>
+      <link>https://classroom.anir0y.in/post/thm-room-hackpark/</link>
+      <pubDate>Sat, 19 Jun 2021 19:38:27 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-hackpark/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackME Room Kenobi</title>
+      <link>https://classroom.anir0y.in/post/thm-room-kenobi/</link>
+      <pubDate>Thu, 10 Jun 2021 21:22:32 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-kenobi/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Room Vulnversity</title>
+      <link>https://classroom.anir0y.in/post/thm-room-vulnversity/</link>
+      <pubDate>Wed, 09 Jun 2021 20:10:48 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-vulnversity/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Thm Room Web Fundamentals</title>
+      <link>https://classroom.anir0y.in/post/thm-room-webfundamentals/</link>
+      <pubDate>Tue, 08 Jun 2021 11:04:18 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-webfundamentals/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe Writeup REMnux - The Redux</title>
+      <link>https://classroom.anir0y.in/post/thm-room-malremnuxv2/</link>
+      <pubDate>Tue, 01 Jun 2021 09:49:05 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-malremnuxv2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe BasicMalwareRE Writeup</title>
+      <link>https://classroom.anir0y.in/post/thm-room-basicmalwarere/</link>
+      <pubDate>Mon, 31 May 2021 08:20:27 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-basicmalwarere/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack ME Room Malstrings</title>
+      <link>https://classroom.anir0y.in/post/thm-room-malstrings/</link>
+      <pubDate>Mon, 31 May 2021 00:21:19 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-malstrings/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack ME Room Malware Introductory</title>
+      <link>https://classroom.anir0y.in/post/thm-room-malmalintroductory/</link>
+      <pubDate>Sat, 29 May 2021 00:08:19 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-malmalintroductory/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Room History of Malware</title>
+      <link>https://classroom.anir0y.in/post/thm-room-historyofmalware/</link>
+      <pubDate>Fri, 28 May 2021 00:43:47 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-historyofmalware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Thm Room Autopsy</title>
+      <link>https://classroom.anir0y.in/post/thm-room-btautopsye0/</link>
+      <pubDate>Thu, 27 May 2021 00:31:13 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-btautopsye0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Investigating Windows</title>
+      <link>https://classroom.anir0y.in/post/investigatingwindows/</link>
+      <pubDate>Tue, 25 May 2021 20:09:18 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/investigatingwindows/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack me Room Volatility</title>
+      <link>https://classroom.anir0y.in/post/thm-room-bpvolatility/</link>
+      <pubDate>Sun, 23 May 2021 23:09:45 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-bpvolatility/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Room Attacking Kerberos</title>
+      <link>https://classroom.anir0y.in/post/thm-room-attackingkerberos/</link>
+      <pubDate>Thu, 20 May 2021 23:25:07 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-attackingkerberos/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Room Attacktivedirectory</title>
+      <link>https://classroom.anir0y.in/post/thm-room-attacktivedirectory/</link>
+      <pubDate>Tue, 18 May 2021 23:58:19 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-attacktivedirectory/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Room Osquery</title>
+      <link>https://classroom.anir0y.in/post/thm-room-osquery/</link>
+      <pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-osquery/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me Room Room Openvas</title>
+      <link>https://classroom.anir0y.in/post/thm-room-openvas/</link>
+      <pubDate>Mon, 10 May 2021 01:36:51 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-openvas/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack ME Room Zerologon</title>
+      <link>https://classroom.anir0y.in/post/thm-room-zerologon/</link>
+      <pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/thm-room-zerologon/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

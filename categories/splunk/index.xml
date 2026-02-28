@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Splunk on Classroom</title><link>https://classroom.anir0y.in/categories/splunk/</link><description>Recent content in Splunk on Classroom</description><generator>Anir0ry : Blog v1.0</generator><language>en</language><managingEditor>mail@anir0y.in (Animesh Roy)</managingEditor><webMaster>mail@anir0y.in (Animesh Roy)</webMaster><copyright>YOU CAN REUSE MY CONTENT</copyright><lastBuildDate>Mon, 10 Apr 2023 19:27:17 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/splunk/index.xml" rel="self" type="application/rss+xml"/><item><title>SOC Splunk101</title><pubDate>Mon, 10 Apr 2023 19:27:17 +0530</pubDate><author>mail@anir0y.in (Animesh Roy)</author><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://classroom.anir0y.in/img/soc-101.png" width="700" height="420"/><description>&lt;h2 id="some-use-cases-for-splunk"&gt;some Use Cases for Splunk.&lt;/h2&gt;
-&lt;h3 id="1--windows-audit-log-tampering"&gt;1- Windows Audit Log Tampering&lt;/h3&gt;
-&lt;p&gt;Check for any tampering done to Windows audit logs.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sql" data-lang="sql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;index&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;__your_sysmon_index__ (sourcetype&lt;span style="color:#f92672"&gt;=&lt;/span&gt;wineventlog &lt;span style="color:#66d9ef"&gt;AND&lt;/span&gt; (EventCode&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1102&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;OR&lt;/span&gt; EventCode&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1100&lt;/span&gt;)) &lt;span style="color:#66d9ef"&gt;OR&lt;/span&gt; (sourcetype&lt;span style="color:#f92672"&gt;=&lt;/span&gt;wineventlog &lt;span style="color:#66d9ef"&gt;AND&lt;/span&gt; EventCode&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;104&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;|&lt;/span&gt; stats &lt;span style="color:#66d9ef"&gt;count&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;by&lt;/span&gt; _time EventCode Message sourcetype &lt;span style="color:#66d9ef"&gt;host&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="2--finding-large-web-uploads"&gt;2- Finding Large Web Uploads&lt;/h3&gt;
-&lt;p&gt;Find large file uploads that could point to data exfiltration in your network.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sql" data-lang="sql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;index&lt;/span&gt;&lt;span style="color:#f92672"&gt;=&lt;/span&gt;__your_sysmon_index__ sourcetype&lt;span style="color:#f92672"&gt;=&lt;/span&gt;websense&lt;span style="color:#f92672"&gt;*&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;|&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;where&lt;/span&gt; bytes_out &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;35000000&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;|&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;table&lt;/span&gt; _time src_ip bytes&lt;span style="color:#f92672"&gt;*&lt;/span&gt; uri
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="3--detecting-recurring-malware-on-host"&gt;3- Detecting Recurring Malware on Host&lt;/h3&gt;
-&lt;p&gt;Using anti-virus logs to detect if malware is recurring on a host after being removed.&lt;/p&gt;</description><enclosure url="https://classroom.anir0y.in/img/soc-101.png"/><link>https://classroom.anir0y.in/post/soc-splunk101/</link></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Splunk on Classroom</title>
+    <link>https://classroom.anir0y.in/categories/splunk/</link>
+    <description>Recent content in Splunk on Classroom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>YOU CAN REUSE MY CONTENT</copyright>
+    <lastBuildDate>Mon, 10 Apr 2023 19:27:17 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/splunk/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SOC Splunk101</title>
+      <link>https://classroom.anir0y.in/post/soc-splunk101/</link>
+      <pubDate>Mon, 10 Apr 2023 19:27:17 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/soc-splunk101/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
