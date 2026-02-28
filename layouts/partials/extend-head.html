@@ -1,3 +1,22 @@
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3526678290068011"
-     crossorigin="anonymous"></script>
+{{/* Google AdSense — deferred until user interaction to reduce unused JS on initial load.
+     Loads on first scroll, click, or touch event, then removes the listener. */}}
+<script>
+(function() {
+  var loaded = false;
+  function loadAdsense() {
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement('script');
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3526678290068011';
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+    document.head.appendChild(s);
+    ['scroll','click','touchstart'].forEach(function(e) {
+      window.removeEventListener(e, loadAdsense, {capture: true, passive: true});
+    });
+  }
+  ['scroll','click','touchstart'].forEach(function(e) {
+    window.addEventListener(e, loadAdsense, {capture: true, passive: true, once: true});
+  });
+})();
+</script>
