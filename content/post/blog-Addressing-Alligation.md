@@ -16,7 +16,7 @@ tags:
   - Response
 
 draft: false
-description: Unveiling the truth behind recent allegations, this blog post provides a clear and transparent response to accusations against [Your Website Name]. Addressing concerns head-on, [Your Name] clarifies misconceptions and reaffirms their commitment to integrity. Dive into this insightful post for a comprehensive understanding and join the conversation on navigating the darknet responsibly.
+description: "Addressing recent allegations against anir0y.in — a transparent response clarifying misconceptions about darknet links and phishing claims."
 ---
 
 > **Date:** March 15, 2024

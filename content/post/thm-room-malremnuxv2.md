@@ -54,7 +54,7 @@ I have attached some useful material about some of the topics covered in the roo
 
 Nothing to do here
 
-![](https://media.tenor.com/images/785f74ac0466d62e60c051a6ea108242/tenor.gif)
+![deploy-task-gif](https://media.tenor.com/images/785f74ac0466d62e60c051a6ea108242/tenor.gif)
 
 ---
 
@@ -74,7 +74,7 @@ Not only will this task be covering Javascript embeds (like we did previously), 
 
 We previously discussed how easily javascript can be embedded into a PDF file, whereupon opening is executed unbeknownst to the user. Javascript, much like other languages that we come on to discover in Task 4, provide a great way of creating a foothold, where additional malware can be downloaded and executed.
 
-![](https://i.imgur.com/16r4ZtR.png)
+![embedded-javascript-example](https://i.imgur.com/16r4ZtR.png)
 
 Looks like the Cooctus Clan just wanted to say hey - it's a good thing that they're nice people!
 
@@ -84,7 +84,7 @@ We'll be using `peepdfto` begin a precursory analysis of a PDF file to determine
 
 We can simply do `peepdf demo_notsuspicious.pdf`:
 
-![](https://i.imgur.com/yBhDeYi.png)
+![peepdf-scan-output](https://i.imgur.com/yBhDeYi.png)
 
 Note the output confirming that there's Javascript present, but also how it is executed? OpenAction will execute the code when the PDF is launched.
 
@@ -92,7 +92,7 @@ To extract this Javascript, we can use `peepdf`'s "extract" module. This require
 
 The following command will create a script file for `peepdf` to use
 1. `echo 'extract js > javascript-from-demo_notsuspicious.pdf' > extracted_javascript.txt`
-   ![](https://i.imgur.com/hYUwXuu.png)
+   ![peepdf-extract-script-setup](https://i.imgur.com/hYUwXuu.png)
   
    The script will extract all javascript via `extract js` and pipe `>` the contents into "javascript-from-demo_notsuspicious.pdf"
    We now need to tell `peepdf` the name of the script (extracted_javascript.txt) and the PDF file that we want to extract from (demo_notsuspicious.pdf): 
@@ -101,9 +101,9 @@ The following command will create a script file for `peepdf` to use
    Remembering that the Javascript will output into a file called "javascript-from-demo_nonsuspicious.pdf" because of our script.
 
   To recap: "extracted_javascript.txt" (highlighted in red) is our script, where "demo_notsuspicious.pdf" (highlighted in green) is the original PDF file that we think is malicious.
-  ![](https://i.imgur.com/0q0dt9I.png)
+  ![peepdf-extract-command](https://i.imgur.com/0q0dt9I.png)
   You will see an output, in this case, a file named "javascript-from-demo_notsuspicious" (highlighted in yellow). This file now contains our extracted Javascript, we can simply `cat` this to see the contents.
-  ![](https://i.imgur.com/zSLNeKV.png)
+  ![extracted-javascript-content](https://i.imgur.com/zSLNeKV.png)
 
   As it turns out, the PDF file we have analysed contains the javascript code of `app.alert("All your Cooctus are belong to us!")`
 
@@ -113,7 +113,7 @@ We have used peepdf to:
 1. Look for the presence of Javascript
 2. Extract any contained Javascript for us to read without it being executed.
 
-![](https://i.imgur.com/gI35CYV.png)
+![peepdf-practical-summary](https://i.imgur.com/gI35CYV.png)
 
 The commands to do so have been used above, you may have to implement them differently, proceed to answer questions 1 - 4 before moving onto the next section
 
@@ -123,53 +123,53 @@ Of course not only can Javascript be embedded, by executables can be very much t
 
 The "advert.pdf" actually has an embedded executable. Looking at the extracted Javascript, we can see the following Javascript snippet:
 
-![](https://i.imgur.com/HkaEbdF.png)
+![embedded-executable-javascript](https://i.imgur.com/HkaEbdF.png)
 
 This tells us that when the PDF is opened, the user will be asked to save an attachment:
 
-![](https://i.imgur.com/2ABomDi.png)
+![pdf-save-attachment-prompt](https://i.imgur.com/2ABomDi.png)
 
 Although PDF attachments can be ZIP files or images, in this case, it is another PDF...Or is it? Well, let's save the file and see what happens. Uh oh...At least that we get a warning that something is trying to execute, but hey, Karen from HR wouldn't send you a dodgy email, right? It's probably a false alarm.
 
-![](https://i.imgur.com/daoeGoL.png)
+![execution-warning-dialog](https://i.imgur.com/daoeGoL.png)
 
 Ah...Well, turns out it was. We just got a reverse shell from the Windows PC to my attack machine.
 
-![](https://i.imgur.com/o9mP0CA.png)
+![reverse-shell-obtained](https://i.imgur.com/o9mP0CA.png)
 
 It's now obvious (albeit too late for them) that the "pdf" that gets saved isn't a PDF. Let's open it up in a hex editor.
 
-![](https://i.imgur.com/CSypGSC.png)
+![hex-editor-executable-header](https://i.imgur.com/CSypGSC.png)
 
 Well well well, looks like we have an executable. Let's investigate further by looking at the strings.
 
-![](https://i.imgur.com/lVmoupA.png)
+![strings-output-analysis](https://i.imgur.com/lVmoupA.png)
 
 It looks like we have our attacker's IP and port!
 
-![](https://i.imgur.com/wthxQE3.png)
+![attacker-ip-and-port](https://i.imgur.com/wthxQE3.png)
 
 ### Flag-3.1
 > How many types of categories of "Suspicious elements" are there in "notsuspicious.pdf"
 >
 > `3`
-![](https://i.imgur.com/AsEMzbp.png)
+![task-3-1-suspicious-elements](https://i.imgur.com/AsEMzbp.png)
 
 ### Flag-3.2
 > Use peepdf to extract the javascript from "notsuspicious.pdf". What is the flag?
 
-![](https://i.imgur.com/vfecjOD.png)
+![task-3-2-extracted-flag](https://i.imgur.com/vfecjOD.png)
 
 ### Flag-3.3
 > How many types of categories of "Suspicious elements" are there in "advert.pdf"
 
 run this `peepdf advert.pdf`
-![](https://i.imgur.com/H5Mk3Zi.png)
+![task-3-3-peepdf-advert](https://i.imgur.com/H5Mk3Zi.png)
 
 ### Flag-3.4 
 > Now use peepdf to extract the javascript from "advert.pdf". What is the value of "cName"?
 
-![](https://i.imgur.com/DR6Q6cX.png)
+![task-3-4-cname-value](https://i.imgur.com/DR6Q6cX.png)
 
 ---
 
@@ -182,15 +182,15 @@ Malware infection via malicious macros (or scripts within Microsoft Office produ
 For example, current APT campaigns such as Emotet, QuickBot infect users by sending seemingly legitimate documents attached to emails i.e. an invoice for business. However, once opened, execute malicious code without the user knowing. This malicious code is often used in what's known as a "dropper attack", where additional malicious programs are downloaded onto the host.
 
 Take the document file below as an example:    
-![](https://i.imgur.com/ciosaCD.png)
+![malicious-word-document](https://i.imgur.com/ciosaCD.png)
 
 Looks perfectly okay, right? Well in actual fact, this word document has just downloaded a ransomware file from a malicious IP address in the background, with not much more than this snippet of code:
 
-![](https://i.imgur.com/DQxSeHt.png)
+![macro-code-snippet](https://i.imgur.com/DQxSeHt.png)
 
 I have programmed the script to show a pop-up for demonstration purposes. However, in real life, this would be done without any popup.
 
-![](https://i.imgur.com/SVT0kOZ.png)
+![macro-download-popup](https://i.imgur.com/SVT0kOZ.png)
 
 Luckily for me, this EXE is safe. Unfortunately in the real-world, this EXE could start encrypting my files. 
 
@@ -201,11 +201,11 @@ Thankfully Anti-Viruses these days are pretty reliable on picking up that sort o
 
 The downside to this? You need a large amount of text to be contained within the page, users will be suspicious and not proceed with editing the document.
 
-![](https://i.imgur.com/5Td2ywE.png)
+![obfuscated-payload-in-text](https://i.imgur.com/5Td2ywE.png)
 
 Although, just put on your steganography hat...Authors can just remove the borders from the text box and make the text white. The macro doesn't need the text to be visible to the user, it just needs to exist on the page.
 
-![](https://i.imgur.com/DMhsuTd.png)
+![hidden-text-steganography](https://i.imgur.com/DMhsuTd.png)
 
 See? Not so suspicious now.
 
@@ -215,19 +215,19 @@ First, we will analyse a suspicious Microsoft Office Word document together. We 
 
 By using `vmonkey DefinitelyALegitInvoice.doc`. vmonkey has detected potentially malicious visual basic code within a macro.
 
-![](https://i.imgur.com/jooSji9.png)
+![vmonkey-macro-detection](https://i.imgur.com/jooSji9.png)
 
 Now it's your turn, analyse the two Microsoft Office document's (.doc) files located within "/home/remnux/Tasks/4" to answer the questions attached to this task.
 
 ### FLag-4.1
 > What is the name of the Macro for "DefinitelyALegitInvoice.doc"
 
-![](https://i.imgur.com/kg7OPYT.png)
+![task-4-1-macro-name](https://i.imgur.com/kg7OPYT.png)
 
 ### FLag-4.2
 > What is the URL the Macro in "Taxes2020.doc" would try to launch?
 
-![](https://i.imgur.com/d3eIk2i.png)
+![task-4-2-macro-url](https://i.imgur.com/d3eIk2i.png)
 
 ---
 
@@ -247,11 +247,11 @@ For example, files that are encrypted will have a very high entropy score. Where
 
 Malware authors use techniques such as encryption or packing (we'll come onto this next) to obfuscate their code and to attempt to bypass anti-virus. Because of this, these files will have high entropy. If an analyst had 1,000 files, they could rank the files by their entropy scoring, of course, the files with the higher entropy should be analysed first.
 
-![](https://i.imgur.com/4lgx8FM.png)
+![low-entropy-file-example](https://i.imgur.com/4lgx8FM.png)
 
 Whereas however, this file would have a high entropy because there's no pattern to the data - it's a lot more random in comparison.
 
-![](https://i.imgur.com/kX0JcNy.png)
+![high-entropy-file-example](https://i.imgur.com/kX0JcNy.png)
 
 **Packing and Unpacking**
 
@@ -261,17 +261,17 @@ Legitimate software developers use packing to reduce the size of their applicati
 
 Executables have what's called an entry point. When launched, this entry point is simply the location of the first pieces of code to be executed within the file - as illustrated below:
 
-![](https://i.imgur.com/gZgqg2n.png)
+![executable-entry-point-diagram](https://i.imgur.com/gZgqg2n.png)
 (Sikorski and Honig, 2012)
 
 
 When an executable is packed, it must unpack itself before any code can execute. Because of this, packers change the entry point from the original location to what's called the "Unpacking Stub".   
-![](https://i.imgur.com/zKEDArl.png)
+![packed-executable-unpacking-stub](https://i.imgur.com/zKEDArl.png)
 (Sikorski and Honig, 2012)
 
 The "Unpacking Stub" will begin to unpack the executable into its original state. Once the program is fully unpacked, the entry point will now relocate back to its normal place to begin executing code
 
-![](https://i.imgur.com/o3dRrTh.png)
+![unpacked-executable-restored](https://i.imgur.com/o3dRrTh.png)
 (Sikorski and Honig, 2012)
 
 It is only at this point can an analyst begin to understand what the executable is doing as it is now in it's true, original form.
@@ -291,23 +291,23 @@ I have two copies of my application, one not packed and another has been packed.
 
 Below we can see that this copy has 34 imports, so a noticeable amount and the imports are quite revealing in what we can expect the application to do:
 
-![](https://i.imgur.com/HdG2Gol.png)
+![unpacked-imports-list](https://i.imgur.com/HdG2Gol.png)
 
 Whereas the other copy only presents us with 6 imports.
 
-![](https://i.imgur.com/5TZ8pa5.png)
+![packed-imports-list](https://i.imgur.com/5TZ8pa5.png)
 
 We can verify that this was packed using UPX via tools such as [PEID](https://www.aldeid.com/wiki/PEiD), or by manually comparing the executables sections and filesize differences.
 
-![](https://i.imgur.com/jgp7geN.png)
+![peid-upx-detection](https://i.imgur.com/jgp7geN.png)
 
 Look at that entropy! 7.526 out of 8! Also, note the name of the sections. UPX0 and the entry point being at UPX1...that's our packer.
 
-![](https://i.imgur.com/BKlrTA0.png)
+![upx-entropy-score](https://i.imgur.com/BKlrTA0.png)
 
 ### Flag-5
 
-![](https://i.imgur.com/3qrihQX.png)
+![task-5-answer](https://i.imgur.com/3qrihQX.png)
 
 --- 
 
@@ -319,7 +319,7 @@ Look at that entropy! 7.526 out of 8! Also, note the name of the sections. UPX0 
 
 You are going to be analysing the memory dump I've taken of a Windows 7 PC that has been infected with the Jigsaw Ransomware. This memory dump can be found in "/home/remnux/Tasks/6/Win7-Jigsaw.raw".
 
-![](https://i.imgur.com/hzhY3OC.png)
+![jigsaw-ransomware-infected](https://i.imgur.com/hzhY3OC.png)
 
 **A Volatility Crash Course**     
 **Understanding our Memory Dump**

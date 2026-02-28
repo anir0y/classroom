@@ -15,6 +15,7 @@ categories:
 tags:
   - Internship
 draft: false
+description: "SmartKnower August batch cybersecurity internship classroom with VM setup, Kali Linux labs, and hands-on learning resources."
 ---
 
 +++

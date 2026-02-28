@@ -14,7 +14,7 @@ tags:
   - Linux 
   - Scripting
 
-
+description: "Basic Linux bash scripting exercises — hello world, age check, and practical shell scripting examples for beginners."
 ---
 # Overview
 Class Practical for Linux Basic Scripting 

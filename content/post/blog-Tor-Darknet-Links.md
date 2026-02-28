@@ -17,7 +17,7 @@ tags:
   - darklinks
 
 draft: false
-description: All the sites listed have been verified by DarkNetEye as being legitimate operations. Beware of unverified links which may result in you being scammed. DarkNetEye is one of the oldest and most established darknet news and link portals which is used by thousands of people every day to access the darknet safely. These are a selection of the most popular darknet markets and services which are currently listed on our platform
+description: "Curated list of verified Tor darknet links and onion services. Updated with safety warnings and phishing link removal notices."
 
 
 
