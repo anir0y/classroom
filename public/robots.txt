@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://classroom.anir0y.in/sitemap.xml
