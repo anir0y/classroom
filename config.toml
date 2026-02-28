@@ -1,88 +1,144 @@
 baseURL = "https://classroom.anir0y.in"
 languageCode = "en"
-defaultContentLanguage = "en"
 title = "Classroom"
-theme = "dream"
-
+theme = "PaperMod"
 copyright = "YOU CAN REUSE MY CONTENT"
 
-#Services.GoogleAnalytics.ID = "G-NZBEX7RBNF"
-#Disqus.Shortname = ""
 enableRobotsTXT = true
-hasCJKLanguage = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
 
-# Paginate = 6
+paginate = 10
+
+[minify]
+  disableXML = true
+  minifyOutput = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-#
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    noClasses = false
 
 [params]
-  background = "#fff"
-  #backgroundImage = ""
-  linkColor = "seagreen"
-
-  # dark mode
-  backgroundDark = "black"
-  #backgroundImageDark = "/me/background-dark.jpg"
-  darkLinkColor = "darkseagreen"
-  darkNav = true
-  dark404 = true
-
-  #images = ["vapt.jpg"]
-
+  env = "production"
+  title = "Classroom"
+  description = "Cybersecurity blog by Animesh Roy — CTF walkthroughs, malware analysis, penetration testing, and security research."
+  keywords = ["cybersecurity", "tryhackme", "ctf", "malware analysis", "penetration testing", "red teaming"]
   author = "Animesh Roy"
-  description = "Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community."
-  avatar = "/img/avatar.jpeg"
-  headerTitle = "Reading Stuffs"
-  # motto = ""
-  # categoriesLimitInHeader = 6 # deprecated
-  # headerBottomText = "" # deprecated
 
-  # footerBottomText = ""
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
 
-  rss = true
+  [params.assets]
+    favicon = "/img/avatar.jpeg"
+    favicon16x16 = "/img/avatar.jpeg"
+    favicon32x32 = "/img/avatar.jpeg"
+    apple_touch_icon = "/img/avatar.jpeg"
 
+  [params.label]
+    text = "Classroom"
+    icon = "/img/avatar.jpeg"
+    iconHeight = 35
 
+  [params.profileMode]
+    enabled = false
 
- 
+  [params.homeInfoParams]
+    Title = "Animesh Roy's Classroom"
+    Content = "Cybersecurity expertise — CTF walkthroughs, malware analysis, penetration testing, and security research."
 
-  email = "mail@anir0y.in"
-  twitter = "anir0y"
-  facebook = "0xanir0y"
-  instagram = "0xanir0y"
-  # mastodon = ""
-  linkedin = "anir0y"
-  github = "anir0y"
-  #stackoverflow = "5676489/anir0y"
-  #codepen = "anir0y"
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/anir0y"
 
-  siteStartYear = 2010
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/anir0y"
 
-  favicon = "/img/avatar.jpeg"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/anir0y"
 
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/0xanir0y"
 
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
 
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
 
-  highlightjs = true
-  highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
-  highlightjsExtraLanguages = ["clojure", "ocaml"]
-  highlightjsTheme = "tomorrow"
-  highlightjsThemeDark = "tomorrow-night"
+  [params.editPost]
+    URL = "https://github.com/anir0y/classroom/tree/master/content"
+    Text = "Suggest Changes"
+    appendFilePath = true
 
-  # search
-  enableSearch = true
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
-  # options
-  showSummaryCoverInPost = false
-  hasTwitterEmbed = true
-  reversePostAndAside = true
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/post/"
+  weight = 1
 
-  [params.advanced]
-    customCSS = ["css/custom.css"]
-    customJS = []
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/archives/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 5
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/me/"
+  weight = 6

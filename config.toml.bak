@@ -1,0 +1,88 @@
+baseURL = "https://classroom.anir0y.in"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Classroom"
+theme = "dream"
+
+copyright = "YOU CAN REUSE MY CONTENT"
+
+#Services.GoogleAnalytics.ID = "G-NZBEX7RBNF"
+#Disqus.Shortname = ""
+enableRobotsTXT = true
+hasCJKLanguage = true
+
+# Paginate = 6
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+#
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  background = "#fff"
+  #backgroundImage = ""
+  linkColor = "seagreen"
+
+  # dark mode
+  backgroundDark = "black"
+  #backgroundImageDark = "/me/background-dark.jpg"
+  darkLinkColor = "darkseagreen"
+  darkNav = true
+  dark404 = true
+
+  #images = ["vapt.jpg"]
+
+  author = "Animesh Roy"
+  description = "Animesh Roy has more than a decade worth experience working in cyber security domain. He has worked with governments, corporates, colleges and universities, defence, and the community."
+  avatar = "/img/avatar.jpeg"
+  headerTitle = "Reading Stuffs"
+  # motto = ""
+  # categoriesLimitInHeader = 6 # deprecated
+  # headerBottomText = "" # deprecated
+
+  # footerBottomText = ""
+
+  rss = true
+
+
+
+ 
+
+  email = "mail@anir0y.in"
+  twitter = "anir0y"
+  facebook = "0xanir0y"
+  instagram = "0xanir0y"
+  # mastodon = ""
+  linkedin = "anir0y"
+  github = "anir0y"
+  #stackoverflow = "5676489/anir0y"
+  #codepen = "anir0y"
+
+  siteStartYear = 2010
+
+  favicon = "/img/avatar.jpeg"
+
+
+
+
+  highlightjs = true
+  highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
+  highlightjsExtraLanguages = ["clojure", "ocaml"]
+  highlightjsTheme = "tomorrow"
+  highlightjsThemeDark = "tomorrow-night"
+
+  # search
+  enableSearch = true
+
+  # options
+  showSummaryCoverInPost = false
+  hasTwitterEmbed = true
+  reversePostAndAside = true
+
+  [params.advanced]
+    customCSS = ["css/custom.css"]
+    customJS = []
