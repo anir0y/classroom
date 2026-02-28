@@ -1,0 +1,27 @@
+/* Custom styles for classroom.anir0y.in */
+
+/* Image sizing for inline images */
+img[alt=crisis] { width: 200px; }
+img[alt=tmux] { width: 200px; }
+img[alt=logo] { width: 200px; }
+img[alt=img] { width: 90%; }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Ad slot spacing */
+.ad-container {
+  margin: 1.5rem 0;
+  text-align: center;
+  min-height: 100px;
+}
+
+/* Buy Me Coffee positioning */
+.bmc-container {
+  margin: 2rem 0;
+  text-align: center;
+}
