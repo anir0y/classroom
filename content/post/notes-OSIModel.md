@@ -15,6 +15,7 @@ tags:
   - OSI
   
 draft: false
+description: "OSI Model overview — learn all 7 layers of the networking model, from physical to application, with clear explanations and examples."
 ---
 
 # OSI Model OverView

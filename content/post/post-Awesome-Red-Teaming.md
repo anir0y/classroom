@@ -17,7 +17,7 @@ tags:
   - redteaming
 
 draft: false
-description: List of Awesome Red Team / Red Teaming Resources
+description: "Curated red teaming resources — MITRE ATT&CK-mapped tools and techniques for initial access, persistence, lateral movement, and evasion."
 
 ---
 

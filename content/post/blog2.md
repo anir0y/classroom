@@ -14,7 +14,7 @@ categories:
 tags:
   - tools
 draft: false
-description: Phishing is a type of social engineering attack, where the attacker generally tries to impersonate as a legitimate person to get some sensitive credentials like [username, passwords, etc] of the target. 
+description: "Learn how phishing attacks work — types, techniques, real-world examples, and tools used in social engineering credential theft."
 ---
 
 

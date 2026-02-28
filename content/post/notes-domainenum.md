@@ -17,7 +17,7 @@ tags:
 
 
 draft: false
-description: domain enumeration technique
+description: "Active Directory domain enumeration cheat sheet — PowerShell commands for users, groups, GPOs, ACLs, and trust mapping."
 
 ---
 

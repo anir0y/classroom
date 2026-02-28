@@ -15,6 +15,7 @@ tags:
   - stego
   
 draft: false
+description: "Steganography tools and techniques — Steghide, Foremost, binwalk, zsteg, and more for CTF challenges and hidden data extraction."
 ---
 
 # Steganography - A list of useful tools and resources

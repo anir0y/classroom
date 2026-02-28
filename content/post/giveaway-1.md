@@ -18,7 +18,7 @@ tags:
   - thm
 
 draft: false
-description: Chance to win 1 month of TryHackMe Subscription
+description: "Win a free 1-month TryHackMe subscription! July 2021 giveaway with 3 premium subscriptions up for grabs."
 
 ---
 

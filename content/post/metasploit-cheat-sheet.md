@@ -14,6 +14,7 @@ tags:
   - metasploit
   - tools
 draft: false
+description: "Metasploit Framework cheat sheet — essential commands for exploits, payloads, sessions, meterpreter, and post-exploitation modules."
 ---
 
 #### Metasploit Cheat Sheet

@@ -16,7 +16,7 @@ tags:
   - openvas
 
 draft: false
-description: OpenVas installation
+description: "Step-by-step OpenVAS installation guide — set up the open-source vulnerability scanner for network security assessments."
 
 ---
 

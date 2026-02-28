@@ -13,6 +13,7 @@ categories:
 tags:
   - ref
 draft: false
+description: "Pentester learning roadmap — OS fundamentals, networking, Active Directory, web apps, recommended labs, and certifications like OSCP."
 ---
 ---
 # Journey of a Pentester 

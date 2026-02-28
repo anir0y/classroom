@@ -19,7 +19,7 @@ tags:
   - backdoor
 
 draft: false
-description: Backdooring EXE Files
+description: "Learn to backdoor EXE files with MSFVenom — embed Metasploit payloads into PuTTY and other executables for penetration testing."
 
 ---
 ## Backdooring EXE Files

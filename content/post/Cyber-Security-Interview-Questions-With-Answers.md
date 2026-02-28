@@ -8,7 +8,7 @@ authorlink: https://anir0y.in
 cover:
   image: /img/blog.png
   alt: "cover image"
-description: test
+description: "50 cybersecurity interview questions with answers — cryptography, CIA triad, firewalls, IDS vs IPS, and more for job prep."
 categories:
   - Classroom
 tags:

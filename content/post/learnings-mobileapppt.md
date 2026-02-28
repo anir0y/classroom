@@ -15,6 +15,7 @@ tags:
   - Mobile 
   - Pentesting
 draft: false
+description: "Mobile app penetration testing cheat sheet — Android and iOS security tools, reverse engineering, SSL pinning bypass, and OWASP Top 10."
 ---
 
 

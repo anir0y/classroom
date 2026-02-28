@@ -15,6 +15,7 @@ tags:
   - notes
   - vapt
 draft: false
+description: "Introduction to VAPT — understand vulnerability assessment vs penetration testing, methodologies, deliverables, and testing types."
 ---
 
 

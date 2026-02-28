@@ -16,6 +16,7 @@ tags:
   - wireshark
   
 draft: false
+description: "OSI Model explained with Wireshark — understand all 7 layers through real packet analysis, from physical frames to application data."
 ---
 
 # OSI Model Explained

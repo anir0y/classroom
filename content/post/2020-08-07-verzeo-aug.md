@@ -15,6 +15,7 @@ categories:
 tags:
   - Internship
 draft: false
+description: "Verzeo August batch cybersecurity internship classroom with VM setup, Kali Linux, networking labs, and project resources."
 ---
 
 

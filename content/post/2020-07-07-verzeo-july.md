@@ -14,6 +14,7 @@ categories:
 tags:
   - Internship
 draft: false
+description: "Verzeo July batch cybersecurity internship classroom resources, VM setup guides, networking labs, and project links."
 ---
 
 

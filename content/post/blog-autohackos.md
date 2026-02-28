@@ -16,7 +16,7 @@ tags:
   - autohackos
 
 draft: false
-description: AutoHackOS is a new operating system that helps you test the security of connected vehicles. It comes with various tools and frameworks that let you perform different types of attacks and analyses on vehicles and their networks. Whether you are a security researcher, enthusiast, or professional, AutoHackOS can help you discover and exploit vulnerabilities in vehicle software and hardware before hackers do. Download AutoHackOS today and start your automobile pentesting journey.
+description: "AutoHackOS — a Linux-based OS for automobile pentesting with CAN bus analysis, wireless hacking, and vehicle vulnerability scanning tools."
 
 
 

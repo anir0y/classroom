@@ -13,6 +13,7 @@ categories:
 tags:
   - vuln labs
 draft: false
+description: "Curated list of vulnerable apps, servers, and websites for practicing cybersecurity skills — VulnHub, HackTheBox, TryHackMe, and more."
 ---
 
 ## overview 

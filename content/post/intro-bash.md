@@ -15,6 +15,7 @@ tags:
   - bash
   - lab
 draft: false
+description: "Bash scripting quick reference — variables, string operations, conditionals, loops, functions, and arrays for beginners."
 ---
 
 Getting started

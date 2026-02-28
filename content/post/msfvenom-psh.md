@@ -14,6 +14,7 @@ tags:
   - metasploit
   - tools
 draft: false
+description: "Create a Meterpreter reverse shell with PowerShell using MSFVenom — payload generation, listener setup, and session interaction."
 ---
 
 # meterpreter reverse shell with powershell

@@ -17,7 +17,7 @@ tags:
   
 
 draft: false
-description: Python 2.7 pip installtion
+description: "How to install pip2 for Python 2.7 on Kali Linux — quick installation script and usage guide for legacy Python modules."
 
 ---
 ## PIP 2 installation

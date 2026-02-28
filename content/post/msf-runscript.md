@@ -14,6 +14,7 @@ categories:
 tags:
   - msf
 draft: false
+description: "Guide to writing custom Meterpreter scripts — create resource files, automate post-exploitation tasks, and build reverse shells."
 ---
 
 #  WRITING METERPRETER SCRIPTS

@@ -9,6 +9,7 @@ cover:
   image: /img/cover.jpg
   alt: "cover image"
 draft: false
+description: "Prerequisites for cybersecurity training — system requirements, VM setup with VirtualBox, Kali Linux, and course overview."
 ---
 
 

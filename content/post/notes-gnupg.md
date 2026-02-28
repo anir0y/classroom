@@ -16,6 +16,7 @@ tags:
   - encryption
   - PGP
 draft: false
+description: "GPG encryption guide — generate keys, encrypt and sign messages, verify signatures, and manage keyrings with GNU Privacy Guard."
 ---
 
 # How To Use GPG to Encrypt and Sign Messages

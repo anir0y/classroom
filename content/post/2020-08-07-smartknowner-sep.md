@@ -16,6 +16,7 @@ categories:
 tags:
   - Internship
 draft: false
+description: "SmartKnower September batch cybersecurity internship covering OS basics, InfoSec fundamentals, and risk management training."
 ---
 
 

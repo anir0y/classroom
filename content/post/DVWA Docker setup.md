@@ -16,7 +16,7 @@ tags:
   - dvwa
 
 draft: false
-description: DVWA Lab Setup with docker.
+description: "Set up DVWA (Damn Vulnerable Web Application) with Docker — quick install guide for practicing web application security testing."
 
 ---
 

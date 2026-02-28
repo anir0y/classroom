@@ -14,6 +14,7 @@ tags:
   - metasploit
   - tools
 draft: false
+description: "MSFVenom cheat sheet — one-liner payload commands for Windows, Linux, Mac, web shells, and encoded reverse shells."
 ---
 ---
 

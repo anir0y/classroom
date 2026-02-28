@@ -13,6 +13,7 @@ categories:
 tags:
   - Ref
 draft: false
+description: "Curated list of free cybersecurity and IT certifications — Google Cloud, Azure, CompTIA, Kubernetes, and more with direct links."
 ---
 
 # Free Certifications
