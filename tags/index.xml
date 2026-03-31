@@ -7,7 +7,327 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 19 Feb 2026 21:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Mar 2026 19:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Rooms</title>
+      <link>https://classroom.anir0y.in/tags/rooms/</link>
+      <pubDate>Tue, 31 Mar 2026 19:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/rooms/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SSTI</title>
+      <link>https://classroom.anir0y.in/tags/ssti/</link>
+      <pubDate>Tue, 31 Mar 2026 19:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/ssti/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Template-Injection</title>
+      <link>https://classroom.anir0y.in/tags/template-injection/</link>
+      <pubDate>Tue, 31 Mar 2026 19:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/template-injection/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Thm</title>
+      <link>https://classroom.anir0y.in/tags/thm/</link>
+      <pubDate>Tue, 31 Mar 2026 19:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/thm/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tryhackme</title>
+      <link>https://classroom.anir0y.in/tags/tryhackme/</link>
+      <pubDate>Tue, 31 Mar 2026 19:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/tryhackme/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web-Application-Pentesting</title>
+      <link>https://classroom.anir0y.in/tags/web-application-pentesting/</link>
+      <pubDate>Tue, 31 Mar 2026 19:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/web-application-pentesting/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>https://classroom.anir0y.in/tags/authentication/</link>
+      <pubDate>Tue, 31 Mar 2026 17:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/authentication/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MFA</title>
+      <link>https://classroom.anir0y.in/tags/mfa/</link>
+      <pubDate>Tue, 31 Mar 2026 17:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/mfa/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Access-Control</title>
+      <link>https://classroom.anir0y.in/tags/access-control/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/access-control/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Apprentice</title>
+      <link>https://classroom.anir0y.in/tags/apprentice/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/apprentice/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Burp-Academy</title>
+      <link>https://classroom.anir0y.in/tags/burp-academy/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/burp-academy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>File-Upload</title>
+      <link>https://classroom.anir0y.in/tags/file-upload/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/file-upload/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Os-Command-Injection</title>
+      <link>https://classroom.anir0y.in/tags/os-command-injection/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/os-command-injection/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Path-Traversal</title>
+      <link>https://classroom.anir0y.in/tags/path-traversal/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/path-traversal/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Portswigger</title>
+      <link>https://classroom.anir0y.in/tags/portswigger/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/portswigger/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sql-Injection</title>
+      <link>https://classroom.anir0y.in/tags/sql-injection/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/sql-injection/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ssrf</title>
+      <link>https://classroom.anir0y.in/tags/ssrf/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/ssrf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web-Security</title>
+      <link>https://classroom.anir0y.in/tags/web-security/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/web-security/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cors</title>
+      <link>https://classroom.anir0y.in/tags/cors/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/cors/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Csrf</title>
+      <link>https://classroom.anir0y.in/tags/csrf/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/csrf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Http-Request-Smuggling</title>
+      <link>https://classroom.anir0y.in/tags/http-request-smuggling/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/http-request-smuggling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nosql</title>
+      <link>https://classroom.anir0y.in/tags/nosql/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/nosql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Pentesting</title>
+      <link>https://classroom.anir0y.in/tags/pentesting/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/pentesting/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Prototype-Pollution</title>
+      <link>https://classroom.anir0y.in/tags/prototype-pollution/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/prototype-pollution/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sop</title>
+      <link>https://classroom.anir0y.in/tags/sop/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/sop/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sqli</title>
+      <link>https://classroom.anir0y.in/tags/sqli/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/sqli/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web-Application</title>
+      <link>https://classroom.anir0y.in/tags/web-application/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/web-application/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Xss</title>
+      <link>https://classroom.anir0y.in/tags/xss/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/xss/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Xxe</title>
+      <link>https://classroom.anir0y.in/tags/xxe/</link>
+      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/xxe/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Burp-Suite</title>
+      <link>https://classroom.anir0y.in/tags/burp-suite/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/burp-suite/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Labs</title>
+      <link>https://classroom.anir0y.in/tags/labs/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/labs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Practitioner</title>
+      <link>https://classroom.anir0y.in/tags/practitioner/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/practitioner/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Android</title>
@@ -75,36 +395,6 @@
       <pubDate>Thu, 19 Feb 2026 21:00:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/reverse-engineering/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Rooms</title>
-      <link>https://classroom.anir0y.in/tags/rooms/</link>
-      <pubDate>Sun, 04 Jan 2026 20:58:51 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/rooms/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Thm</title>
-      <link>https://classroom.anir0y.in/tags/thm/</link>
-      <pubDate>Sun, 04 Jan 2026 20:58:51 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/thm/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Tryhackme</title>
-      <link>https://classroom.anir0y.in/tags/tryhackme/</link>
-      <pubDate>Sun, 04 Jan 2026 20:58:51 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/tryhackme/</guid>
       <description></description>
       
     </item>
@@ -1075,16 +1365,6 @@
       <pubDate>Tue, 09 Mar 2021 21:23:59 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/mobile/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Pentesting</title>
-      <link>https://classroom.anir0y.in/tags/pentesting/</link>
-      <pubDate>Tue, 09 Mar 2021 21:23:59 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/pentesting/</guid>
       <description></description>
       
     </item>
