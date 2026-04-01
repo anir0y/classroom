@@ -4,18 +4,24 @@
 
   <url>
     <loc>https://classroom.anir0y.in/</loc>
-    <lastmod>2026-04-01T23:00:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://classroom.anir0y.in/post/tryhackme-mfa-attacks/</loc>
-    <lastmod>2026-04-01T23:00:00+05:30</lastmod>
+    <lastmod>2026-04-01T23:30:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://classroom.anir0y.in/post/</loc>
+    <lastmod>2026-04-01T23:30:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/post/tryhackme-hammer/</loc>
+    <lastmod>2026-04-01T23:30:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/post/tryhackme-mfa-attacks/</loc>
     <lastmod>2026-04-01T23:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

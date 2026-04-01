@@ -7,7 +7,117 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 01 Apr 2026 23:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Apr 2026 23:30:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Authentication</title>
+      <link>https://classroom.anir0y.in/tags/authentication/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/authentication/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Brute-Force</title>
+      <link>https://classroom.anir0y.in/tags/brute-force/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/brute-force/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Bug-Bounty</title>
+      <link>https://classroom.anir0y.in/tags/bug-bounty/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/bug-bounty/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Jwt</title>
+      <link>https://classroom.anir0y.in/tags/jwt/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/jwt/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Otp</title>
+      <link>https://classroom.anir0y.in/tags/otp/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/otp/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Pentesting</title>
+      <link>https://classroom.anir0y.in/tags/pentesting/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/pentesting/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Rate-Limiting</title>
+      <link>https://classroom.anir0y.in/tags/rate-limiting/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/rate-limiting/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Rce</title>
+      <link>https://classroom.anir0y.in/tags/rce/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/rce/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Rooms</title>
+      <link>https://classroom.anir0y.in/tags/rooms/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/rooms/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Thm</title>
+      <link>https://classroom.anir0y.in/tags/thm/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/thm/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tryhackme</title>
+      <link>https://classroom.anir0y.in/tags/tryhackme/</link>
+      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/tryhackme/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>2fa</title>
@@ -20,81 +130,11 @@
     </item>
     
     <item>
-      <title>Authentication</title>
-      <link>https://classroom.anir0y.in/tags/authentication/</link>
-      <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/authentication/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Bug-Bounty</title>
-      <link>https://classroom.anir0y.in/tags/bug-bounty/</link>
-      <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/bug-bounty/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Mfa</title>
+      <title>MFA</title>
       <link>https://classroom.anir0y.in/tags/mfa/</link>
       <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/mfa/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Otp</title>
-      <link>https://classroom.anir0y.in/tags/otp/</link>
-      <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/otp/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Pentesting</title>
-      <link>https://classroom.anir0y.in/tags/pentesting/</link>
-      <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/pentesting/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Rooms</title>
-      <link>https://classroom.anir0y.in/tags/rooms/</link>
-      <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/rooms/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Thm</title>
-      <link>https://classroom.anir0y.in/tags/thm/</link>
-      <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/thm/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Tryhackme</title>
-      <link>https://classroom.anir0y.in/tags/tryhackme/</link>
-      <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/tryhackme/</guid>
       <description></description>
       
     </item>
