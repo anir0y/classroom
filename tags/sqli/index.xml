@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Tue, 31 Mar 2026 13:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Apr 2026 02:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>7 PortSwigger Practitioner Labs Solved — SSRF to Web Cache Deception</title>
+      <link>https://classroom.anir0y.in/post/portswigger-practitioner-labs-7-techniques/</link>
+      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/portswigger-practitioner-labs-7-techniques/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web App Pentesting: Injection &amp; Client-Side Attacks — TryHackMe Notes</title>
+      <link>https://classroom.anir0y.in/post/tryhackme-webapp-pentesting-injection-clientside/</link>
+      <pubDate>Thu, 02 Apr 2026 01:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/tryhackme-webapp-pentesting-injection-clientside/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>TryHackMe Web Application Pentesting Path - Theory Notes</title>
