@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 02 Apr 2026 02:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Apr 2026 12:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Access-Control</title>
       <link>https://classroom.anir0y.in/tags/access-control/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/access-control/</guid>
       <description></description>
@@ -22,7 +22,7 @@
     <item>
       <title>Bug-Bounty</title>
       <link>https://classroom.anir0y.in/tags/bug-bounty/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/bug-bounty/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>Csrf</title>
       <link>https://classroom.anir0y.in/tags/csrf/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/csrf/</guid>
       <description></description>
@@ -40,11 +40,21 @@
     </item>
     
     <item>
-      <title>File-Upload</title>
-      <link>https://classroom.anir0y.in/tags/file-upload/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
+      <title>Graphql</title>
+      <link>https://classroom.anir0y.in/tags/graphql/</link>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
       
-      <guid>https://classroom.anir0y.in/tags/file-upload/</guid>
+      <guid>https://classroom.anir0y.in/tags/graphql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Jwt</title>
+      <link>https://classroom.anir0y.in/tags/jwt/</link>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/jwt/</guid>
       <description></description>
       
     </item>
@@ -52,9 +62,159 @@
     <item>
       <title>Nosql</title>
       <link>https://classroom.anir0y.in/tags/nosql/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/nosql/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Portswigger</title>
+      <link>https://classroom.anir0y.in/tags/portswigger/</link>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/portswigger/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Samesite</title>
+      <link>https://classroom.anir0y.in/tags/samesite/</link>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/samesite/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Xss</title>
+      <link>https://classroom.anir0y.in/tags/xss/</link>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/xss/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Clickjacking</title>
+      <link>https://classroom.anir0y.in/tags/clickjacking/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/clickjacking/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cors</title>
+      <link>https://classroom.anir0y.in/tags/cors/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/cors/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deserialization</title>
+      <link>https://classroom.anir0y.in/tags/deserialization/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/deserialization/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>File-Upload</title>
+      <link>https://classroom.anir0y.in/tags/file-upload/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/file-upload/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Idor</title>
+      <link>https://classroom.anir0y.in/tags/idor/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/idor/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Llm-Attacks</title>
+      <link>https://classroom.anir0y.in/tags/llm-attacks/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/llm-attacks/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sqli</title>
+      <link>https://classroom.anir0y.in/tags/sqli/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/sqli/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ssrf</title>
+      <link>https://classroom.anir0y.in/tags/ssrf/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/ssrf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ssti</title>
+      <link>https://classroom.anir0y.in/tags/ssti/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/ssti/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web-Security-Academy</title>
+      <link>https://classroom.anir0y.in/tags/web-security-academy/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/web-security-academy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Websockets</title>
+      <link>https://classroom.anir0y.in/tags/websockets/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/websockets/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Xxe</title>
+      <link>https://classroom.anir0y.in/tags/xxe/</link>
+      <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/tags/xxe/</guid>
       <description></description>
       
     </item>
@@ -70,51 +230,11 @@
     </item>
     
     <item>
-      <title>Portswigger</title>
-      <link>https://classroom.anir0y.in/tags/portswigger/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/portswigger/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Sqli</title>
-      <link>https://classroom.anir0y.in/tags/sqli/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/sqli/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Ssti</title>
-      <link>https://classroom.anir0y.in/tags/ssti/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/ssti/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Web-Cache-Deception</title>
       <link>https://classroom.anir0y.in/tags/web-cache-deception/</link>
       <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/web-cache-deception/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Web-Security-Academy</title>
-      <link>https://classroom.anir0y.in/tags/web-security-academy/</link>
-      <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/web-security-academy/</guid>
       <description></description>
       
     </item>
@@ -135,16 +255,6 @@
       <pubDate>Thu, 02 Apr 2026 01:00:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/rooms/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Ssrf</title>
-      <link>https://classroom.anir0y.in/tags/ssrf/</link>
-      <pubDate>Thu, 02 Apr 2026 01:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/ssrf/</guid>
       <description></description>
       
     </item>
@@ -180,26 +290,6 @@
     </item>
     
     <item>
-      <title>Xss</title>
-      <link>https://classroom.anir0y.in/tags/xss/</link>
-      <pubDate>Thu, 02 Apr 2026 01:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/xss/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Xxe</title>
-      <link>https://classroom.anir0y.in/tags/xxe/</link>
-      <pubDate>Thu, 02 Apr 2026 01:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/xxe/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Authentication</title>
       <link>https://classroom.anir0y.in/tags/authentication/</link>
       <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
@@ -215,16 +305,6 @@
       <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/brute-force/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Jwt</title>
-      <link>https://classroom.anir0y.in/tags/jwt/</link>
-      <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/jwt/</guid>
       <description></description>
       
     </item>
@@ -270,7 +350,7 @@
     </item>
     
     <item>
-      <title>MFA</title>
+      <title>Mfa</title>
       <link>https://classroom.anir0y.in/tags/mfa/</link>
       <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
       
@@ -355,16 +435,6 @@
       <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/web-security/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Cors</title>
-      <link>https://classroom.anir0y.in/tags/cors/</link>
-      <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/cors/</guid>
       <description></description>
       
     </item>
@@ -515,16 +585,6 @@
       <pubDate>Mon, 13 Oct 2025 10:46:19 +0530</pubDate>
       
       <guid>https://classroom.anir0y.in/tags/man-in-the-middle/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Idor</title>
-      <link>https://classroom.anir0y.in/tags/idor/</link>
-      <pubDate>Mon, 14 Jul 2025 02:24:47 +0530</pubDate>
-      
-      <guid>https://classroom.anir0y.in/tags/idor/</guid>
       <description></description>
       
     </item>
