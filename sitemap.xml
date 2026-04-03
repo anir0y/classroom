@@ -4,18 +4,24 @@
 
   <url>
     <loc>https://classroom.anir0y.in/</loc>
-    <lastmod>2026-04-03T11:00:00+05:30</lastmod>
+    <lastmod>2026-04-03T12:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://classroom.anir0y.in/post/llm-attack-techniques-bug-bounty-playbook/</loc>
-    <lastmod>2026-04-03T11:00:00+05:30</lastmod>
+    <loc>https://classroom.anir0y.in/post/hello-world-i-am-seetha/</loc>
+    <lastmod>2026-04-03T12:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://classroom.anir0y.in/post/</loc>
+    <lastmod>2026-04-03T12:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/post/llm-attack-techniques-bug-bounty-playbook/</loc>
     <lastmod>2026-04-03T11:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
