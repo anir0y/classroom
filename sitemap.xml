@@ -3,19 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://classroom.anir0y.in/post/portswigger-session2-30-labs/</loc>
-    <lastmod>2026-04-02T12:00:00+05:30</lastmod>
+    <loc>https://classroom.anir0y.in/</loc>
+    <lastmod>2026-04-03T11:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://classroom.anir0y.in/</loc>
-    <lastmod>2026-04-02T12:00:00+05:30</lastmod>
+    <loc>https://classroom.anir0y.in/post/llm-attack-techniques-bug-bounty-playbook/</loc>
+    <lastmod>2026-04-03T11:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://classroom.anir0y.in/post/</loc>
+    <lastmod>2026-04-03T11:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/post/xss-masterclass-30-labs-complete-playbook/</loc>
+    <lastmod>2026-04-03T10:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/post/portswigger-session2-30-labs/</loc>
     <lastmod>2026-04-02T12:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

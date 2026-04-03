@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Mon, 14 Jul 2025 02:24:47 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/owasp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Apr 2026 11:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/owasp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hacking AI Chatbots: LLM Attack Techniques for Bug Bounty Hunters</title>
+      <link>https://classroom.anir0y.in/post/llm-attack-techniques-bug-bounty-playbook/</link>
+      <pubDate>Fri, 03 Apr 2026 11:00:00 +0530</pubDate>
+      
+      <guid>https://classroom.anir0y.in/post/llm-attack-techniques-bug-bounty-playbook/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint</title>
