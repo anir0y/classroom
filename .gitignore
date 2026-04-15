@@ -4,3 +4,5 @@ shorturl.ps1
 .dccache
 public/
 resources/
+.worktrees/
+node_modules/

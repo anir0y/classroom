@@ -1,0 +1,16 @@
+[data-pretext-card="true"] {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-pretext-card="true"] .entry-content {
+  flex: 1;
+}
+
+[data-pretext-scope="excerpt"] {
+  --pretext-height: auto;
+}
+
+[data-pretext-scope="excerpt"][data-pretext-ready="true"] {
+  min-height: var(--pretext-height);
+}

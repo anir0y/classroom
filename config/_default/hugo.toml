@@ -1,7 +1,4 @@
-# -- Site Configuration --
-# https://blowfish.page/docs/getting-started/
-
-theme = "blowfish"
+theme = "PaperMod"
 baseURL = "https://classroom.anir0y.in/"
 defaultContentLanguage = "en"
 
@@ -16,17 +13,9 @@ buildExpired = false
 [pagination]
   pagerSize = 10
 
-[imaging]
-  anchor = 'Center'
-
 [taxonomies]
   tag = "tags"
   category = "categories"
-
-[sitemap]
-  changefreq = 'daily'
-  filename = 'sitemap.xml'
-  priority = 0.5
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -34,25 +23,3 @@ buildExpired = false
 [minify]
   disableXML = true
   minifyOutput = true
-
-[related]
-  threshold = 0
-  toLower = false
-
-    [[related.indices]]
-        name = "tags"
-        weight = 100
-
-    [[related.indices]]
-        name = "categories"
-        weight = 100
-
-    [[related.indices]]
-        name = "date"
-        weight = 10
-
-    [[related.indices]]
-      applyFilter = false
-      name = 'fragmentrefs'
-      type = 'fragments'
-      weight = 10
