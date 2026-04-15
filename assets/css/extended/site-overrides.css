@@ -1,0 +1,43 @@
+#TableOfContents {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+#TableOfContents ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#TableOfContents ul ul {
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--border);
+  margin-left: 0.5rem;
+}
+
+#TableOfContents li {
+  margin: 0.15rem 0;
+}
+
+#TableOfContents a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  transition: all 0.15s ease;
+  border-left: 2px solid transparent;
+}
+
+#TableOfContents a:hover,
+#TableOfContents a.active {
+  color: var(--primary);
+  background: var(--tertiary);
+  border-left-color: var(--primary);
+}
+
+.post-ads {
+  margin: 1.5rem 0;
+}
