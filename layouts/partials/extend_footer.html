@@ -1,1 +1,3 @@
 {{ partial "extend-footer.html" . }}
+{{ $pretext := resources.Get "js/pretext-enhance.js" | js.Build | fingerprint }}
+<script defer src="{{ $pretext.RelPermalink }}" integrity="{{ $pretext.Data.Integrity }}"></script>

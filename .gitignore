@@ -5,3 +5,4 @@ shorturl.ps1
 public/
 resources/
 .worktrees/
+node_modules/

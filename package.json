@@ -1,0 +1,8 @@
+{
+  "name": "classroom",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@chenglou/pretext": "^0.0.5"
+  }
+}
