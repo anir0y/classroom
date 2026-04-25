@@ -20,7 +20,7 @@
     },
     "author": {
       "@type": "Person",
-      "name": "{{ .Site.Params.Author.name | safeJS }}",
+      "name": "{{ .Site.Params.author | safeJS }}",
       "url": "{{ .Site.BaseURL }}about/me/"
     }
   }
@@ -38,7 +38,7 @@
     "url": {{ .Permalink }},
     "author": {
       "@type": "Person",
-      "name": "{{ .Site.Params.Author.name | safeJS }}",
+      "name": "{{ .Site.Params.author | safeJS }}",
       "url": "{{ .Site.BaseURL }}about/me/"
     },
     "publisher": {

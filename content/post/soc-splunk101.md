@@ -1,5 +1,5 @@
 ---
-title: SOC Splunk101
+title: "Splunk for SOC: 80+ Practical Security Use Cases and Queries"
 date: 2023-04-10T19:27:17+05:30
 lastmod: 2023-04-10T19:27:17+05:30
 author: Animesh Roy
@@ -16,7 +16,7 @@ tags:
   - soc
 
 draft: false
-description: More than 80 Use Cases for Splunk.
+description: "Explore 80+ practical Splunk use cases for SOC analysts. Learn to detect audit log tampering, large web uploads, and more with ready-to-use SPL queries."
 
 ---
 

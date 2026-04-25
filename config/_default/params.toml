@@ -1,94 +1,62 @@
-# -- Theme Parameters --
-# https://blowfish.page/docs/configuration/#theme-parameters
+# -- PaperMod Theme Parameters --
+# https://github.com/adityatelange/hugo-PaperMod/wiki/Features
 
-colorScheme = "ocean"
-defaultAppearance = "dark"
-autoSwitchAppearance = true
+env = "production"
+description = "Cybersecurity blog by Animesh Roy -- CTF walkthroughs, malware analysis, penetration testing, and security research."
+author = "Animesh Roy"
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = true
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
 
-enableSearch = true
-enableCodeCopy = true
+[cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
 
-disableImageOptimization = false
-disableTextInHeader = false
-hotlinkFeatureImage = true
+[editPost]
+  URL = "https://github.com/anir0y/classroom/tree/master/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
 
-highlightCurrentMenuArea = true
-smartTOC = true
-smartTOCHideUnfocusedChildren = true
+[profileMode]
+  enabled = false
+  title = "Classroom"
+  subtitle = "Cybersecurity blog by Animesh Roy -- CTF walkthroughs, malware analysis, penetration testing, and security research."
 
-# SEO
-defaultSocialImage = "img/cover.jpg"
-enableStructuredBreadcrumbs = true
+[homeInfoParams]
+  Title = "Classroom"
+  Content = "CTF walkthroughs, malware analysis, penetration testing, and security research by Animesh Roy."
 
-[header]
-  layout = "basic"
+[[socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/anir0y"
 
-[footer]
-  showMenu = true
-  showCopyright = true
-  showThemeAttribution = true
-  showAppearanceSwitcher = true
-  showScrollToTop = true
+[[socialIcons]]
+  name = "github"
+  url = "https://github.com/anir0y"
 
-[homepage]
-  layout = "background"
-  homepageImage = "img/cover.jpg"
-  showRecent = true
-  showRecentItems = 10
-  showMoreLink = true
-  showMoreLinkDest = "/post/"
-  cardView = true
-  cardViewScreenWidth = false
-  layoutBackgroundBlur = true
+[[socialIcons]]
+  name = "rss"
+  url = "index.xml"
 
-[article]
-  showDate = true
-  showDateUpdated = true
-  showAuthor = true
-  showHero = true
-  heroStyle = "background"
-  layoutBackgroundBlur = true
-  layoutBackgroundHeaderSpace = true
-  showBreadcrumbs = true
-  showDraftLabel = true
-  showEdit = false
-  showHeadingAnchors = true
-  showPagination = true
-  showReadingTime = true
-  showTableOfContents = true
-  showRelatedContent = true
-  relatedContentLimit = 3
-  showTaxonomies = true
-  showWordCount = true
-  showZenMode = false
-
-[list]
-  showHero = true
-  heroStyle = "background"
-  layoutBackgroundBlur = true
-  layoutBackgroundHeaderSpace = true
-  showBreadcrumbs = false
-  showSummary = true
-  showTableOfContents = false
-  showCards = true
-  groupByYear = true
-  cardView = true
-  cardViewScreenWidth = false
-
-[sitemap]
-  excludedKinds = ["taxonomy", "term"]
-
-[taxonomy]
-  showTermCount = true
-  showHero = false
-  showBreadcrumbs = false
-  showTableOfContents = false
-  cardView = true
-
-[term]
-  showHero = false
-  showBreadcrumbs = false
-  showTableOfContents = true
-  groupByYear = false
-  cardView = true
-  cardViewScreenWidth = false
+[fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]

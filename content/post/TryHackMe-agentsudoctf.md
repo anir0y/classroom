@@ -1,5 +1,5 @@
 ---
-title: TryHackMe Agent Sudo
+title: "TryHackMe Agent Sudo Walkthrough - CTF Writeup"
 date: 2021-07-24T16:50:32+05:30
 lastmod: 2021-07-24T16:50:32+05:30
 author: Animesh Roy
@@ -25,7 +25,7 @@ description: TryHackMe Room Agent Sudo, You found a secret server located under 
 |||
 |:---:|:---:|
 | <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Agent Sudo|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/aedc6b66c222e15ff740c282a0c3f44e.png)|
+|Agent Sudo|![Agent Sudo Room Logo](https://tryhackme-images.s3.amazonaws.com/room-icons/aedc6b66c222e15ff740c282a0c3f44e.png)|
 | _Room [Subscription Required]_| [Agent Sudo]()|
 
 ---
@@ -231,8 +231,8 @@ ans: `user-agent`
 ### 4.1 What is the user flag?
 
 - read the file
-  
-  ![img](https://i.imgur.com/xY5vy2l.png)
+
+  ![User flag capture in Agent Sudo](https://i.imgur.com/xY5vy2l.png)
 
 ### 4.2 What is the incident of the photo called?
 
@@ -243,9 +243,8 @@ ans: `user-agent`
      ```
 
 - do a reverse image search with the image
-  
-  ![img](https://i.imgur.com/2wasC3q.png)
 
+  ![Reverse image search result for Alien Autopsy](https://i.imgur.com/2wasC3q.png)
 - Hint [link](https://www.foxnews.com/science/filmmaker-reveals-how-he-faked-infamous-roswell-alien-autopsy-footage-in-a-london-apartment)---
 
 ## Task 05: Privilege escalation
