@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Overpass 2 on Classroom</title>
     <link>https://classroom.anir0y.in/tags/overpass-2/</link>
     <description>Recent content in Overpass 2 on Classroom</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Fri, 23 Jul 2021 01:16:55 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/overpass-2/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 23 Jul 2021 01:16:55 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/overpass-2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Overpass 2 - Hacked</title>
       <link>https://classroom.anir0y.in/post/tryhackme-overpass2hacked/</link>
       <pubDate>Fri, 23 Jul 2021 01:16:55 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-overpass2hacked/</guid>
-      <description></description>
-      
+      <description>TryHackMe Overpass 2 - Hacked walkthrough — investigate a compromised server, analyze attacker artifacts, and trace the intrusion timeline.</description>
     </item>
-    
   </channel>
 </rss>

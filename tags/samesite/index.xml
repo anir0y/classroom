@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Samesite on Classroom</title>
     <link>https://classroom.anir0y.in/tags/samesite/</link>
     <description>Recent content in Samesite on Classroom</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 02 Apr 2026 12:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/samesite/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 02 Apr 2026 12:00:00 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/samesite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>30 More PortSwigger Labs — JWT, XSS Evasion, CSRF Bypass Masterclass</title>
       <link>https://classroom.anir0y.in/post/portswigger-session2-30-labs/</link>
       <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/portswigger-session2-30-labs/</guid>
-      <description></description>
-      
+      <description>Session 2: 30 PortSwigger labs covering 5 JWT attacks, 16 XSS evasion techniques, 6 CSRF bypasses, NoSQL injection, GraphQL, and more.</description>
     </item>
-    
   </channel>
 </rss>

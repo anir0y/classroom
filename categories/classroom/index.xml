@@ -1,173 +1,124 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Classroom</title>
     <link>https://classroom.anir0y.in/categories/classroom/</link>
     <description>Recent content on Classroom</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 19 Jan 2022 13:47:54 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/classroom/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 19 Jan 2022 13:47:54 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/classroom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Classroom | NFS Installation &amp; enumeation</title>
       <link>https://classroom.anir0y.in/post/classroom-nfs/</link>
       <pubDate>Wed, 19 Jan 2022 13:47:54 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/classroom-nfs/</guid>
-      <description></description>
-      
+      <description>installation of NFS &amp;amp; Enumeation using Various tools.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Room Osquery</title>
       <link>https://classroom.anir0y.in/post/thm-room-osquery/</link>
       <pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-osquery/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Osquery walkthrough — learn endpoint monitoring with osquery SQL-based queries for process, network, and file system analysis.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Room Room Openvas</title>
       <link>https://classroom.anir0y.in/post/thm-room-openvas/</link>
       <pubDate>Mon, 10 May 2021 01:36:51 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-openvas/</guid>
-      <description></description>
-      
+      <description>Try Hack ME Room OpenVas walkthrough</description>
     </item>
-    
     <item>
       <title>Try Hack ME Room Zerologon</title>
       <link>https://classroom.anir0y.in/post/thm-room-zerologon/</link>
       <pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-zerologon/</guid>
-      <description></description>
-      
+      <description>Try Hack ME Room Zerologon walkthrough</description>
     </item>
-    
     <item>
       <title>Cyber Security Interview Questions With Answers</title>
       <link>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</link>
       <pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</guid>
-      <description></description>
-      
+      <description>50 cybersecurity interview questions with answers — cryptography, CIA triad, firewalls, IDS vs IPS, and more for job prep.</description>
     </item>
-    
     <item>
       <title>Active Directory Exploitation Cheat Sheet</title>
       <link>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</link>
       <pubDate>Fri, 07 May 2021 14:00:36 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</guid>
-      <description></description>
-      
+      <description>Active Directory exploitation cheat sheet covering common attack techniques, enumeration, privilege escalation, and lateral movement in AD environments.</description>
     </item>
-    
     <item>
       <title>Notes OSIModel Explained</title>
       <link>https://classroom.anir0y.in/post/notes-osimodel-explained/</link>
       <pubDate>Sun, 25 Apr 2021 20:20:59 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/notes-osimodel-explained/</guid>
-      <description></description>
-      
+      <description>OSI Model explained with Wireshark — understand all 7 layers through real packet analysis, from physical frames to application data.</description>
     </item>
-    
     <item>
       <title>Notes OSIModel</title>
       <link>https://classroom.anir0y.in/post/notes-osimodel/</link>
       <pubDate>Wed, 21 Apr 2021 20:01:52 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/notes-osimodel/</guid>
-      <description></description>
-      
+      <description>OSI Model overview — learn all 7 layers of the networking model, from physical to application, with clear explanations and examples.</description>
     </item>
-    
     <item>
       <title>Notes Stego</title>
       <link>https://classroom.anir0y.in/post/notes-stego/</link>
       <pubDate>Wed, 21 Apr 2021 17:47:23 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/notes-stego/</guid>
-      <description></description>
-      
+      <description>Steganography tools and techniques — Steghide, Foremost, binwalk, zsteg, and more for CTF challenges and hidden data extraction.</description>
     </item>
-    
     <item>
       <title>Msf Runscript</title>
       <link>https://classroom.anir0y.in/post/msf-runscript/</link>
       <pubDate>Wed, 07 Apr 2021 15:25:21 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/msf-runscript/</guid>
-      <description></description>
-      
+      <description>Guide to writing custom Meterpreter scripts — create resource files, automate post-exploitation tasks, and build reverse shells.</description>
     </item>
-    
     <item>
       <title>Introduction to  Vapt</title>
       <link>https://classroom.anir0y.in/post/intro-vapt/</link>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/intro-vapt/</guid>
-      <description></description>
-      
+      <description>Introduction to VAPT — understand vulnerability assessment vs penetration testing, methodologies, deliverables, and testing types.</description>
     </item>
-    
     <item>
       <title>SmartKnowner: SEP Batch</title>
       <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</link>
       <pubDate>Sat, 12 Sep 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</guid>
-      <description></description>
-      
+      <description>SmartKnower September batch cybersecurity internship covering OS basics, InfoSec fundamentals, and risk management training.</description>
     </item>
-    
     <item>
       <title>SmartKnowner: AUG Batch</title>
       <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</link>
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</guid>
-      <description></description>
-      
+      <description>SmartKnower August batch cybersecurity internship classroom with VM setup, Kali Linux labs, and hands-on learning resources.</description>
     </item>
-    
     <item>
       <title>Verzeo: JULY Batch</title>
       <link>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</link>
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</guid>
-      <description></description>
-      
+      <description>Verzeo August batch cybersecurity internship classroom with VM setup, Kali Linux, networking labs, and project resources.</description>
     </item>
-    
     <item>
       <title>SmartKnowner: JULY Batch</title>
       <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</link>
       <pubDate>Sun, 12 Jul 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</guid>
-      <description></description>
-      
+      <description>SmartKnower July batch cybersecurity internship classroom with VM installation, Kali Linux setup, and networking labs.</description>
     </item>
-    
     <item>
       <title>Verzeo JULY Batch</title>
       <link>https://classroom.anir0y.in/post/2020-07-07-verzeo-july/</link>
       <pubDate>Tue, 07 Jul 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-07-07-verzeo-july/</guid>
-      <description></description>
-      
+      <description>Verzeo July batch cybersecurity internship classroom resources, VM setup guides, networking labs, and project links.</description>
     </item>
-    
   </channel>
 </rss>

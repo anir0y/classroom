@@ -1,83 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tools on Classroom</title>
     <link>https://classroom.anir0y.in/tags/tools/</link>
     <description>Recent content in Tools on Classroom</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Tue, 13 Apr 2021 21:15:35 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/tools/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 13 Apr 2021 21:15:35 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forensic Tools</title>
       <link>https://classroom.anir0y.in/post/ref-forensic/</link>
       <pubDate>Tue, 13 Apr 2021 21:15:35 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/ref-forensic/</guid>
-      <description></description>
-      
+      <description>Curated reference list of digital forensic tools for disk analysis, memory forensics, network capture, and incident response investigations.</description>
     </item>
-    
     <item>
       <title>Msfvenom Psh</title>
       <link>https://classroom.anir0y.in/post/msfvenom-psh/</link>
       <pubDate>Thu, 01 Apr 2021 16:14:32 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/msfvenom-psh/</guid>
-      <description></description>
-      
+      <description>Create a Meterpreter reverse shell with PowerShell using MSFVenom — payload generation, listener setup, and session interaction.</description>
     </item>
-    
     <item>
-      <title>Msfvenom Cheatsheet</title>
+      <title>MSFVenom Cheatsheet: Payload Generation &amp; One-Liners Guide</title>
       <link>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</link>
       <pubDate>Thu, 01 Apr 2021 16:11:01 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</guid>
-      <description></description>
-      
+      <description>A complete MSFVenom cheatsheet with one-liner payloads for Windows, Linux, macOS, and web shells. Includes examples for various formats and reverse shells.</description>
     </item>
-    
     <item>
       <title>Phishing Attack</title>
       <link>https://classroom.anir0y.in/post/blog2/</link>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog2/</guid>
-      <description></description>
-      
+      <description>Learn how phishing attacks work — types, techniques, real-world examples, and tools used in social engineering credential theft.</description>
     </item>
-    
     <item>
       <title>Volatility Installation in Linux</title>
       <link>https://classroom.anir0y.in/post/vol2-installation/</link>
       <pubDate>Wed, 17 Mar 2021 01:00:08 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/vol2-installation/</guid>
-      <description></description>
-      
+      <description>Step-by-step guide to installing Volatility 2 on Linux for memory forensics, including dependencies, Python setup, and verification.</description>
     </item>
-    
     <item>
       <title>Metasploit Cheat Sheet</title>
       <link>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</link>
       <pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</guid>
-      <description></description>
-      
+      <description>Metasploit Framework cheat sheet — essential commands for exploits, payloads, sessions, meterpreter, and post-exploitation modules.</description>
     </item>
-    
     <item>
       <title>Awesome Powershell</title>
       <link>https://classroom.anir0y.in/post/ref-powershell/</link>
       <pubDate>Thu, 18 Feb 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/ref-powershell/</guid>
-      <description></description>
-      
+      <description>Comprehensive PowerShell cheat sheet with essential commands, scripting techniques, and security-focused one-liners for penetration testing.</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,1563 +1,1097 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Classroom</title>
     <link>https://classroom.anir0y.in/</link>
     <description>Recent content on Classroom</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Mon, 06 Apr 2026 12:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 06 Apr 2026 12:00:00 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>20 PortSwigger Labs in One Session: SSTI to Access Control</title>
       <link>https://classroom.anir0y.in/post/technique-20-portswigger-labs-one-session/</link>
       <pubDate>Mon, 06 Apr 2026 12:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/technique-20-portswigger-labs-one-session/</guid>
-      <description></description>
-      
+      <description>Speed-running 20 PortSwigger labs across 8 vulnerability classes — SSTI, SQLi, NoSQL injection, path traversal, OS command injection, XXE, SSRF, access control, and business logic. Payloads, bypass techniques, and bounty takeaways.</description>
     </item>
-    
     <item>
       <title>30 More PortSwigger Labs — JWT, XSS Evasion, CSRF Bypass Masterclass</title>
       <link>https://classroom.anir0y.in/post/portswigger-session2-30-labs/</link>
       <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/portswigger-session2-30-labs/</guid>
-      <description></description>
-      
+      <description>Session 2: 30 PortSwigger labs covering 5 JWT attacks, 16 XSS evasion techniques, 6 CSRF bypasses, NoSQL injection, GraphQL, and more.</description>
     </item>
-    
     <item>
       <title>30 PortSwigger Labs Solved — A Bug Bounty Training Marathon</title>
       <link>https://classroom.anir0y.in/post/portswigger-30-labs-marathon/</link>
       <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/portswigger-30-labs-marathon/</guid>
-      <description></description>
-      
+      <description>30 PortSwigger Web Security Academy labs solved in a single session — covering SSRF, SQLi, SSTI, XXE, IDOR, CSRF, CORS, NoSQL injection, deserialization, WebSocket XSS, file upload, LLM attacks, and more. Key payloads and bug bounty tips for each.</description>
     </item>
-    
     <item>
       <title>7 PortSwigger Practitioner Labs Solved — SSRF to Web Cache Deception</title>
       <link>https://classroom.anir0y.in/post/portswigger-practitioner-labs-7-techniques/</link>
       <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/portswigger-practitioner-labs-7-techniques/</guid>
-      <description></description>
-      
+      <description>Solving 7 PortSwigger Practitioner labs covering blind SQLi, SSTI, access control bypass, file upload traversal, NoSQL injection, CSRF method bypass, and web cache deception — with payloads and bug bounty tips.</description>
     </item>
-    
     <item>
       <title>Web App Pentesting: Injection &amp; Client-Side Attacks — TryHackMe Notes</title>
       <link>https://classroom.anir0y.in/post/tryhackme-webapp-pentesting-injection-clientside/</link>
       <pubDate>Thu, 02 Apr 2026 01:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-webapp-pentesting-injection-clientside/</guid>
-      <description></description>
-      
+      <description>Comprehensive notes from the TryHackMe Web Application Pentesting path covering advanced SQL injection, XSS evasion, CSRF SameSite bypass, SSRF, and more -- with bug bounty applicability for each technique.</description>
     </item>
-    
     <item>
       <title>TryHackMe Hammer - Auth Bypass to RCE via Chained Vulnerabilities</title>
       <link>https://classroom.anir0y.in/post/tryhackme-hammer/</link>
       <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-hammer/</guid>
-      <description></description>
-      
+      <description>Walkthrough of the TryHackMe Hammer challenge room -- chaining 5 vulnerabilities from directory fuzzing to RCE: email discovery in logs, OTP brute force via session rotation, JWT kid header exploitation, and command execution.</description>
     </item>
-    
     <item>
       <title>Exploiting Multi-Factor Authentication - TryHackMe Walkthrough</title>
       <link>https://classroom.anir0y.in/post/tryhackme-mfa-attacks/</link>
       <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-mfa-attacks/</guid>
-      <description></description>
-      
+      <description>A practical walkthrough of exploiting Multi-Factor Authentication weaknesses. Covers OTP leakage, MFA bypass via logic flaws, and brute-forcing with auto-logout evasion -- from the TryHackMe Web Application Pentesting path.</description>
     </item>
-    
     <item>
       <title>TryHackMe Server-side Template Injection (SSTI)</title>
       <link>https://classroom.anir0y.in/post/tryhackme-serversidetemplateinjection/</link>
       <pubDate>Tue, 31 Mar 2026 19:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-serversidetemplateinjection/</guid>
-      <description></description>
-      
+      <description>TryHackMe SSTI room walkthrough — understanding Server-Side Template Injection, detecting template engines, exploiting Smarty/Pug/Jinja2/Twig, and mitigation strategies.</description>
     </item>
-    
     <item>
       <title>TryHackMe Multi-Factor Authentication</title>
       <link>https://classroom.anir0y.in/post/tryhackme-multifactorauthentication/</link>
       <pubDate>Tue, 31 Mar 2026 17:30:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-multifactorauthentication/</guid>
-      <description></description>
-      
+      <description>TryHackMe Multi-Factor Authentication room walkthrough — understanding MFA, common vulnerabilities, OTP leakage, insecure coding practices, and bypassing auto-logout features.</description>
     </item>
-    
     <item>
       <title>Burp Academy: Server-Side Vulnerabilities (Apprentice) - Complete Guide</title>
       <link>https://classroom.anir0y.in/post/burp-academy-server-side-vulns-apprentice/</link>
       <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/burp-academy-server-side-vulns-apprentice/</guid>
       <description>&lt;p&gt;This post covers all 7 vulnerability classes and 12 labs from the &lt;strong&gt;PortSwigger Web Security Academy&amp;rsquo;s Server-Side Vulnerabilities (Apprentice)&lt;/strong&gt; learning path. This is the best starting point for anyone entering web application security or bug bounty hunting.&lt;/p&gt;</description>
-      
     </item>
-    
     <item>
       <title>TryHackMe Web Application Pentesting Path - Theory Notes</title>
       <link>https://classroom.anir0y.in/post/tryhackme-webapppentesting-path/</link>
       <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-webapppentesting-path/</guid>
-      <description></description>
-      
+      <description>Comprehensive notes from the TryHackMe Web Application Pentesting learning path covering injection attacks, server-side attacks, client-side attacks, and HTTP request smuggling.</description>
     </item>
-    
     <item>
       <title>PortSwigger Web Security Academy - 39 Labs Solved</title>
       <link>https://classroom.anir0y.in/post/burp-academy-practitioner-labs/</link>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/burp-academy-practitioner-labs/</guid>
-      <description></description>
-      
+      <description>Complete walkthrough of 39 PortSwigger Web Security Academy labs covering SQLi, XSS, SSRF, API Testing, Race Conditions, and more.</description>
     </item>
-    
     <item>
       <title>Dissecting a Two-Stage Indian Banking Trojan: From Fake eChallan to Full Device Compromise</title>
       <link>https://classroom.anir0y.in/post/blog-dissecting-rto-echallan-banking-trojan/</link>
       <pubDate>Thu, 19 Feb 2026 21:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-dissecting-rto-echallan-banking-trojan/</guid>
-      <description></description>
-      
+      <description>Deep-dive analysis of a fresh Android banking trojan disguised as an Indian RTO eChallan app. Two-stage dropper &#43; payload architecture using NP Protect packer, Firebase C2, SMS interception, USSD abuse, and a 7-page phishing funnel stealing Aadhaar, PAN, card details, and UPI PINs. Only 11/66 VirusTotal detection rate.</description>
     </item>
-    
     <item>
       <title>Traverse - TryHackMe Walkthrough</title>
       <link>https://classroom.anir0y.in/post/traverse/</link>
       <pubDate>Sun, 04 Jan 2026 20:58:51 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/traverse/</guid>
-      <description></description>
-      
+      <description>TryHackMe Traverse walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Traverse challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Benign Room Walkthrough</title>
       <link>https://classroom.anir0y.in/post/benign/</link>
       <pubDate>Tue, 16 Dec 2025 13:23:02 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/benign/</guid>
-      <description></description>
-      
+      <description>TryHackMe Benign walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Benign challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Itsybitsy walkthrough</title>
       <link>https://classroom.anir0y.in/post/itsybitsy/</link>
       <pubDate>Tue, 16 Dec 2025 12:01:28 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/itsybitsy/</guid>
-      <description></description>
-      
+      <description>TryHackMe ItsyBitsy walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the ItsyBitsy challenge room.</description>
     </item>
-    
     <item>
       <title>Log Analysis With SIEM - TryHackMe Walkthrough</title>
       <link>https://classroom.anir0y.in/post/log-analysis-with-siem/</link>
       <pubDate>Mon, 15 Dec 2025 19:16:54 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/log-analysis-with-siem/</guid>
-      <description></description>
-      
+      <description>TryHackMe Log Analysis With SIEM walkthrough — practice Security Information and Event Management log analysis and threat detection.</description>
     </item>
-    
     <item>
       <title>Network Discovery Detection</title>
       <link>https://classroom.anir0y.in/post/network-discovery-detection/</link>
       <pubDate>Fri, 12 Dec 2025 13:20:33 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/network-discovery-detection/</guid>
-      <description></description>
-      
+      <description>TryHackMe Network Discovery Detection walkthrough — practice network security fundamentals including scanning, enumeration, and protocol analysis.</description>
     </item>
-    
     <item>
       <title>Healthgpt</title>
       <link>https://classroom.anir0y.in/post/healthgpt/</link>
       <pubDate>Sun, 30 Nov 2025 19:57:58 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/healthgpt/</guid>
-      <description></description>
-      
+      <description>TryHackMe Healthgpt walkthrough — A safety-compliant AI assistant that has strict rules against revealing sensitive internal data.</description>
     </item>
-    
     <item>
       <title>Input Manipulation &amp; Prompt Injection</title>
       <link>https://classroom.anir0y.in/post/input-manipulation--prompt-injection/</link>
       <pubDate>Wed, 12 Nov 2025 12:21:07 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/input-manipulation--prompt-injection/</guid>
-      <description></description>
-      
+      <description>Try Hack Me Room Input Manipulation &amp;amp; Prompt Injection solved by Animesh Roy. this is a walkthrough. read more...</description>
     </item>
-    
     <item>
       <title>TryHackMe Man in the Middle Detection</title>
       <link>https://classroom.anir0y.in/post/thm-man-in-the-middle-detection/</link>
       <pubDate>Mon, 13 Oct 2025 10:46:19 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-man-in-the-middle-detection/</guid>
-      <description></description>
-      
+      <description>TryHackMe Man in the Middle Detection walkthrough — This is a walkthrough;</description>
     </item>
-    
     <item>
       <title>Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint</title>
       <link>https://classroom.anir0y.in/post/owasp-e-jagriti-bug-report/</link>
       <pubDate>Mon, 14 Jul 2025 02:24:47 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/owasp-e-jagriti-bug-report/</guid>
-      <description></description>
-      
+      <description>Exposing a User Enumeration Vulnerability in e-Jagriti&amp;#39;s findUser Endpoint — OWASP bug bounty report by Animesh Roy.</description>
     </item>
-    
     <item>
       <title>Mastering Subnetting- A Comprehensive Guide with Practical Lab Exercises</title>
       <link>https://classroom.anir0y.in/post/blog-subnet-p1/</link>
       <pubDate>Sat, 01 Feb 2025 13:36:24 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-subnet-p1/</guid>
-      <description></description>
-      
+      <description>Enhance your networking skills with our in-depth guide on subnetting. Learn the fundamentals, explore practical examples, and apply your knowledge through hands-on lab exercises to achieve subnetting mastery...</description>
     </item>
-    
     <item>
       <title>Blog Automating Apache Guacamole Installation With Docker on Ubuntu</title>
       <link>https://classroom.anir0y.in/post/blog-automating-apache-guacamole-installation-with-docker-on-ubuntu/</link>
       <pubDate>Tue, 13 Aug 2024 11:11:42 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-automating-apache-guacamole-installation-with-docker-on-ubuntu/</guid>
-      <description></description>
-      
+      <description>Automating Apache Guacamole Installation with Docker on Ubuntu. Apache Guacamole is a clientless remote desktop gateway that supports standard protocols like VNC, RDP, and SSH. Setting it up as a Docker container on Ubuntu can be a breeze with the right script. In this guide, we&amp;#39;ll walk you through creating a bash script that automates the entire process, including checks for existing installations, and provides easy access to credentials.</description>
     </item>
-    
     <item>
       <title>Blog How to Enable Folder Share in Kali VM and Windows Host</title>
       <link>https://classroom.anir0y.in/post/blog-how-to-enable-folder-share-in-kali-vm-and-windows-host/</link>
       <pubDate>Thu, 30 May 2024 13:12:02 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-how-to-enable-folder-share-in-kali-vm-and-windows-host/</guid>
-      <description></description>
-      
+      <description>This comprehensive guide shows you how to seamlessly mount your Windows folder in a Kali Linux VM using VMware and open-vm-tools. Enhance your virtual machine experience with step-by-step instructions and troubleshooting tips.</description>
     </item>
-    
     <item>
       <title>Addressing Allegations - A Response to Recent Claims Against Me</title>
       <link>https://classroom.anir0y.in/post/blog-addressing-alligation/</link>
       <pubDate>Fri, 15 Mar 2024 12:50:55 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-addressing-alligation/</guid>
-      <description></description>
-      
+      <description>Addressing recent allegations against anir0y.in — a transparent response clarifying misconceptions about darknet links and phishing claims.</description>
     </item>
-    
     <item>
       <title>The Curious Case of Mr. OSINT-  A Digital Intrusion Tale</title>
       <link>https://classroom.anir0y.in/post/blog-hax0r-stories-001/</link>
       <pubDate>Mon, 11 Mar 2024 19:13:04 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-hax0r-stories-001/</guid>
-      <description></description>
-      
+      <description>In the fast-evolving world of cybersecurity, the story of Haxor—an enigmatic hacker—captured the attention of both experts and enthusiasts. Animesh Roy’s article sheds light on the rise and fall of this mysterious figure. Let’s delve into the details.</description>
     </item>
-    
     <item>
       <title>Blog Tor Darknet Links</title>
       <link>https://classroom.anir0y.in/post/blog-tor-darknet-links/</link>
       <pubDate>Mon, 02 Oct 2023 14:34:21 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-tor-darknet-links/</guid>
-      <description></description>
-      
+      <description>Curated list of verified Tor darknet links and onion services. Updated with safety warnings and phishing link removal notices.</description>
     </item>
-    
     <item>
       <title>How to Trust Imported GPG Keys</title>
       <link>https://classroom.anir0y.in/post/blog-how-to-trust-imported-gpg-keys/</link>
       <pubDate>Tue, 30 May 2023 11:59:25 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-how-to-trust-imported-gpg-keys/</guid>
-      <description></description>
-      
+      <description>Learn how to trust imported GPG keys using the web of trust, keyserver, or manually. GPG, trust, imported keys, web of trust, keyserver, manual trust</description>
     </item>
-    
     <item>
       <title>AutoHackOS A New Operating System for Automobile Pentesting</title>
       <link>https://classroom.anir0y.in/post/blog-autohackos/</link>
       <pubDate>Tue, 09 May 2023 20:42:03 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-autohackos/</guid>
-      <description></description>
-      
+      <description>AutoHackOS — a Linux-based OS for automobile pentesting with CAN bus analysis, wireless hacking, and vehicle vulnerability scanning tools.</description>
     </item>
-    
     <item>
-      <title>SOC Splunk101</title>
+      <title>Splunk for SOC: 80&#43; Practical Security Use Cases and Queries</title>
       <link>https://classroom.anir0y.in/post/soc-splunk101/</link>
       <pubDate>Mon, 10 Apr 2023 19:27:17 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/soc-splunk101/</guid>
-      <description></description>
-      
+      <description>Explore 80&#43; practical Splunk use cases for SOC analysts. Learn to detect audit log tampering, large web uploads, and more with ready-to-use SPL queries.</description>
     </item>
-    
     <item>
       <title>Optimizing Web Application Performance and Security With Azure Front Door and Application Gateway</title>
       <link>https://classroom.anir0y.in/post/blog-optimizing-web-application-performance-and-security-with-azure-front-door-and-application-gateway/</link>
       <pubDate>Thu, 16 Mar 2023 22:06:19 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-optimizing-web-application-performance-and-security-with-azure-front-door-and-application-gateway/</guid>
-      <description></description>
-      
+      <description>Learn how to optimize the performance and security of your web applications using Azure Front Door and Application Gateway. Our step-by-step guide explains how these services work together and provides tips for configuring them effectively. Discover the benefits of using Front Door and Application Gateway, including load balancing, WAF protection, and SSL encryption. Start improving your web application today!</description>
     </item>
-    
     <item>
       <title>Blog | Watering Hole Attacks Scanbox Keylogger</title>
       <link>https://classroom.anir0y.in/post/blog-watering-hole-attacks-scanbox-keylogger/</link>
       <pubDate>Sun, 12 Mar 2023 19:25:10 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-watering-hole-attacks-scanbox-keylogger/</guid>
-      <description></description>
-      
+      <description>Watering hole attacks are a form of cyberattack that use infected websites to compromise devices and networks. Find out how Scanbox keylogger targets organizations across different sectors and what you can do to prevent it</description>
     </item>
-    
     <item>
       <title>4 types of phishing</title>
       <link>https://classroom.anir0y.in/post/blog-types-of-phishing/</link>
       <pubDate>Wed, 22 Feb 2023 18:50:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-types-of-phishing/</guid>
-      <description></description>
-      
+      <description>TLDR Phishing is a type of cyber attack that tricks individuals or organizations into revealing sensitive information. There are four types of phishing attacks email phishing, spear phishing, smishing, and vishing. Email phishing is the most common and involves fraudulent emails, while spear phishing is more targeted and personalized. Smishing uses text messages, and vishing uses phone calls. To protect against phishing, individuals should remain vigilant when receiving unsolicited emails, text messages, or phone calls, and avoid revealing sensitive information unless certain of the legitimacy of the request.</description>
     </item>
-    
     <item>
       <title>Smishing - Understanding and Protecting Against the Growing Threat of Phishing via Text Message</title>
       <link>https://classroom.anir0y.in/post/smshingintro/</link>
       <pubDate>Thu, 26 Jan 2023 00:03:57 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/smshingintro/</guid>
-      <description></description>
-      
+      <description>This article explains what smishing is, how it works and how to protect yourself from falling victim to a smishing attack. Smishing is a type of phishing that uses text messages to trick individuals into giving away sensitive information. Learn about common smishing tactics, how to spot a smishing message and the best ways to protect yourself from this growing threat. With this knowledge, you can stay safe and secure online.</description>
     </item>
-    
     <item>
       <title>BitLy url shortner</title>
       <link>https://classroom.anir0y.in/post/bitly_url_shortner/</link>
       <pubDate>Tue, 29 Nov 2022 15:32:55 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/bitly_url_shortner/</guid>
-      <description></description>
-      
+      <description>using BITLY URL API create your own URL shortner Script using Python.</description>
     </item>
-    
     <item>
       <title>BLOG | Shorten URL using TinyURL API</title>
       <link>https://classroom.anir0y.in/post/tinyurl/</link>
       <pubDate>Sun, 13 Nov 2022 18:47:39 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tinyurl/</guid>
-      <description></description>
-      
+      <description>using TINY URL API create your own URL shortner Script using Python</description>
     </item>
-    
     <item>
       <title>Try Hack Me writeup | Osquery The Basics</title>
       <link>https://classroom.anir0y.in/post/tryhackme-osquerythebasics/</link>
       <pubDate>Sat, 12 Nov 2022 18:18:23 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-osquerythebasics/</guid>
-      <description></description>
-      
+      <description>TryHackMe writeup | Osquery The Basics walkthrough — learn endpoint monitoring with osquery SQL-based queries for process, network, and file system analysis.</description>
     </item>
-    
     <item>
       <title>Writeup |Try Hack Me PrintNightmare, again!</title>
       <link>https://classroom.anir0y.in/post/tryhackme-printnightmareagain/</link>
       <pubDate>Mon, 31 Oct 2022 14:14:20 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-printnightmareagain/</guid>
-      <description></description>
-      
+      <description>Try Hack Me Room rintNightmare, again solved by Animesh Roy. this is a walkthrough. read more...</description>
     </item>
-    
     <item>
       <title>TryHackMe Surfer</title>
       <link>https://classroom.anir0y.in/post/tryhackme-surfer/</link>
       <pubDate>Sat, 22 Oct 2022 17:00:08 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-surfer/</guid>
-      <description></description>
-      
+      <description>TryHackMe Surfer walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Surfer challenge room.</description>
     </item>
-    
     <item>
       <title>Android MalwareAnalysis</title>
       <link>https://classroom.anir0y.in/post/android-malwareanalysis/</link>
       <pubDate>Tue, 11 Oct 2022 19:04:38 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/android-malwareanalysis/</guid>
-      <description></description>
-      
+      <description>Android Malware Analysis Tools Static Analysis ClassyShark &amp;amp;#8211; Standalone android apps binary inspection tool. StaCoAn &amp;amp;#8211; Mobile application static code analysis tool. SmaliSCA &amp;amp;#8211; Smali static code analysis. maldrolyzer &amp;amp;#8211; Simple framework to extract &amp;amp;#8220;actionable&amp;amp;#8221; data from Android malware (C&amp;amp;amp;Cs, phone numbers, etc.). Argus-SAF &amp;amp;#8211; Android application static analysis framework. DroidRA &amp;amp;#8211; Taming reflection to &amp;amp;hellip; Continue reading &amp;amp;quot;Android&amp;amp;quot;</description>
     </item>
-    
     <item>
       <title>Vulnerable Web Application is now available!</title>
       <link>https://classroom.anir0y.in/post/blog-vwa/</link>
       <pubDate>Fri, 30 Sep 2022 18:50:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog-vwa/</guid>
-      <description></description>
-      
+      <description>Vulnerable Web Application is now available!</description>
     </item>
-    
     <item>
       <title>Try Hack Me Intermediate Nmap</title>
       <link>https://classroom.anir0y.in/post/thm-intermediatenmap/</link>
       <pubDate>Fri, 23 Sep 2022 15:28:41 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-intermediatenmap/</guid>
-      <description></description>
-      
+      <description>TryHackMe Intermediate Nmap walkthrough — master Nmap network scanning techniques including service detection, scripting engine, and firewall evasion.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Phishing Emails 4</title>
       <link>https://classroom.anir0y.in/post/tryhackme-phishingemails4/</link>
       <pubDate>Tue, 16 Aug 2022 15:24:03 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-phishingemails4/</guid>
-      <description></description>
-      
+      <description>TryHackMe Phishing Emails 4 walkthrough — analyze phishing emails, identify social engineering techniques, and examine malicious headers and payloads.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Red Team Threat Intel</title>
       <link>https://classroom.anir0y.in/post/tryhackme-redteamthreatintel/</link>
       <pubDate>Fri, 12 Aug 2022 13:05:49 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-redteamthreatintel/</guid>
-      <description></description>
-      
+      <description>TryHackMe Red Team Threat Intel walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Red Team Threat Intel challenge room.</description>
     </item>
-    
     <item>
       <title>Basics of Ransomware</title>
       <link>https://classroom.anir0y.in/post/what_is_ransomware/</link>
       <pubDate>Mon, 20 Jun 2022 16:58:42 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/what_is_ransomware/</guid>
-      <description></description>
-      
+      <description>All About the Ransomware and how it works!</description>
     </item>
-    
     <item>
       <title>OSINT Resources I</title>
       <link>https://classroom.anir0y.in/post/osint_resources-i/</link>
       <pubDate>Mon, 30 May 2022 03:36:44 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/osint_resources-i/</guid>
-      <description></description>
-      
+      <description>OSINT Tools for gathering information and actions forensic</description>
     </item>
-    
     <item>
       <title>Steganography with Steghide</title>
       <link>https://classroom.anir0y.in/post/stegnography/</link>
       <pubDate>Thu, 26 May 2022 21:42:28 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/stegnography/</guid>
-      <description></description>
-      
+      <description>Steghide Is an open-source, command-line software that can encode and decode data into image files</description>
     </item>
-    
     <item>
       <title>Try Hack Me Operating System Security [WriteUp]</title>
       <link>https://classroom.anir0y.in/post/tryhackme-operatingsystemsecurity/</link>
       <pubDate>Mon, 16 May 2022 12:02:51 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-operatingsystemsecurity/</guid>
-      <description></description>
-      
+      <description>TryHackMe Operating System Security walkthrough — understand operating system security fundamentals including hardening, access controls, and common weaknesses.</description>
     </item>
-    
     <item>
       <title>TryHackMe Oh My Webserver</title>
       <link>https://classroom.anir0y.in/post/tryhackme-oh-my-webserver/</link>
       <pubDate>Wed, 09 Mar 2022 10:50:11 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-oh-my-webserver/</guid>
-      <description></description>
-      
+      <description>TryHackMe Oh My Webserver walkthrough — exploit web application vulnerabilities and practice common web attack techniques.</description>
     </item>
-    
     <item>
       <title>DVWA Docker Setup</title>
       <link>https://classroom.anir0y.in/post/dvwa-docker-setup/</link>
       <pubDate>Sat, 05 Mar 2022 21:05:05 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/dvwa-docker-setup/</guid>
-      <description></description>
-      
+      <description>Set up DVWA (Damn Vulnerable Web Application) with Docker — quick install guide for practicing web application security testing.</description>
     </item>
-    
     <item>
       <title>Domain Enumeration Cheat Sheet</title>
       <link>https://classroom.anir0y.in/post/notes-domainenum/</link>
       <pubDate>Sat, 26 Feb 2022 20:55:07 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/notes-domainenum/</guid>
-      <description></description>
-      
+      <description>Active Directory domain enumeration cheat sheet — PowerShell commands for users, groups, GPOs, ACLs, and trust mapping.</description>
     </item>
-    
     <item>
       <title>TryHackMe Jr Security Analyst Intro</title>
       <link>https://classroom.anir0y.in/post/tryhackme-jr-security-analyst-intro/</link>
       <pubDate>Sat, 26 Feb 2022 11:57:17 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-jr-security-analyst-intro/</guid>
-      <description></description>
-      
+      <description>TryHackMe Jr Security Analyst Intro walkthrough — introduction to SOC analyst responsibilities, alert triage, and incident response fundamentals.</description>
     </item>
-    
     <item>
       <title>TryHackMe Phishing Emails 2</title>
       <link>https://classroom.anir0y.in/post/tryhackme-phishingemails-2/</link>
       <pubDate>Wed, 26 Jan 2022 13:16:10 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-phishingemails-2/</guid>
-      <description></description>
-      
+      <description>TryHackMe Phishing Emails 2 walkthrough — analyze phishing emails, identify social engineering techniques, and examine malicious headers and payloads.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Phishing Emails 1</title>
       <link>https://classroom.anir0y.in/post/phishingemails1tryoe/</link>
       <pubDate>Mon, 24 Jan 2022 17:33:15 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/phishingemails1tryoe/</guid>
-      <description></description>
-      
+      <description>TryHackMe Phishing Emails 1 walkthrough — analyze phishing emails, identify social engineering techniques, and examine malicious headers and payloads.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Android Malware Analysis</title>
       <link>https://classroom.anir0y.in/post/tryhackme-androidmalwareanalysis/</link>
       <pubDate>Sun, 23 Jan 2022 11:38:33 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-androidmalwareanalysis/</guid>
-      <description></description>
-      
+      <description>TryHackMe Android Malware Analysis walkthrough — Android malware analysis with Pithus (static and hunting)</description>
     </item>
-    
     <item>
       <title>Classroom | NFS Installation &amp; enumeation</title>
       <link>https://classroom.anir0y.in/post/classroom-nfs/</link>
       <pubDate>Wed, 19 Jan 2022 13:47:54 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/classroom-nfs/</guid>
-      <description></description>
-      
+      <description>installation of NFS &amp;amp; Enumeation using Various tools.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Road</title>
       <link>https://classroom.anir0y.in/post/tryhackme-road/</link>
       <pubDate>Tue, 30 Nov 2021 15:39:49 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-road/</guid>
-      <description></description>
-      
+      <description>TryHackMe Road walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Road challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack Me CyberCrafted</title>
       <link>https://classroom.anir0y.in/post/tryhackme-cybercrafted/</link>
       <pubDate>Wed, 24 Nov 2021 15:54:45 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-cybercrafted/</guid>
-      <description></description>
-      
+      <description>TryHackMe CyberCrafted walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the CyberCrafted challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack Me REvil Corp</title>
       <link>https://classroom.anir0y.in/post/tryhackme-revilcorp/</link>
       <pubDate>Tue, 23 Nov 2021 13:51:46 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-revilcorp/</guid>
-      <description></description>
-      
+      <description>TryHackMe REvil Corp walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the REvil Corp challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Phishing</title>
       <link>https://classroom.anir0y.in/post/tryhackme-phishingyl/</link>
       <pubDate>Tue, 16 Nov 2021 18:51:09 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-phishingyl/</guid>
-      <description></description>
-      
+      <description>TryHackMe Phishing walkthrough — analyze phishing emails, identify social engineering techniques, and examine malicious headers and payloads.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Vulnerability Capstone[writeup]</title>
       <link>https://classroom.anir0y.in/post/tryhackme-vulnerabilitycapstone/</link>
       <pubDate>Fri, 29 Oct 2021 12:13:26 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-vulnerabilitycapstone/</guid>
-      <description></description>
-      
+      <description>TryHackMe Vulnerability Capstone walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Vulnerability Capstone challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Net Sec Challenge</title>
       <link>https://classroom.anir0y.in/post/tryhackme-netsecchallenge/</link>
       <pubDate>Mon, 18 Oct 2021 13:50:55 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-netsecchallenge/</guid>
-      <description></description>
-      
+      <description>TryHackMe Net Sec Challenge walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Net Sec Challenge challenge room.</description>
     </item>
-    
     <item>
       <title>DigitalOcean Account Setup</title>
       <link>https://classroom.anir0y.in/post/ref-do/</link>
       <pubDate>Sun, 03 Oct 2021 21:58:41 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/ref-do/</guid>
-      <description></description>
-      
+      <description>Deploy faster &amp;amp; scale easier with an application server that saves your team time &amp;amp; money</description>
     </item>
-    
     <item>
       <title>TryHackMe Metasploit Meterpreter</title>
       <link>https://classroom.anir0y.in/post/tryhackme-meterpreter/</link>
       <pubDate>Thu, 30 Sep 2021 13:21:37 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-meterpreter/</guid>
-      <description></description>
-      
+      <description>Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthrough. read more...</description>
     </item>
-    
     <item>
       <title>Try Hack Me Exploit Vulnerabilities</title>
       <link>https://classroom.anir0y.in/post/tryhackme-exploitingavulnerabilityv2.md/</link>
       <pubDate>Sun, 26 Sep 2021 08:29:10 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-exploitingavulnerabilityv2.md/</guid>
-      <description></description>
-      
+      <description>TryHackMe Exploit Vulnerabilities walkthrough — identify and exploit vulnerabilities in target systems to gain unauthorized access.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Vulnerabilities 101</title>
       <link>https://classroom.anir0y.in/post/tryhackme-vulnerabilities101/</link>
       <pubDate>Tue, 21 Sep 2021 14:21:54 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-vulnerabilities101/</guid>
-      <description></description>
-      
+      <description>TryHackMe Vulnerabilities 101 walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Vulnerabilities 101 challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Empline</title>
       <link>https://classroom.anir0y.in/post/tryhackme-empline/</link>
       <pubDate>Sun, 19 Sep 2021 13:14:49 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-empline/</guid>
-      <description></description>
-      
+      <description>TryHackMe Empline walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Empline challenge room.</description>
     </item>
-    
     <item>
       <title>Install Openvas</title>
       <link>https://classroom.anir0y.in/post/howto-install-openvas/</link>
       <pubDate>Mon, 13 Sep 2021 23:16:16 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/howto-install-openvas/</guid>
-      <description></description>
-      
+      <description>Step-by-step OpenVAS installation guide — set up the open-source vulnerability scanner for network security assessments.</description>
     </item>
-    
     <item>
       <title>Try Hack Me The Cod Caper</title>
       <link>https://classroom.anir0y.in/post/tryhackme-thecodcaper/</link>
       <pubDate>Mon, 13 Sep 2021 12:40:13 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-thecodcaper/</guid>
-      <description></description>
-      
+      <description>TryHackMe The Cod Caper walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the The Cod Caper challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Introduction to Django</title>
       <link>https://classroom.anir0y.in/post/tryhackme-django/</link>
       <pubDate>Sat, 11 Sep 2021 18:40:31 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-django/</guid>
-      <description></description>
-      
+      <description>TryHackMe Introduction to Django walkthrough — learn Django web framework fundamentals including models, views, templates, and common security pitfalls.</description>
     </item>
-    
     <item>
       <title>TryHackMe Principles of Security</title>
       <link>https://classroom.anir0y.in/post/tryhackme-principlesofsecurity/</link>
       <pubDate>Thu, 09 Sep 2021 14:23:47 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-principlesofsecurity/</guid>
-      <description></description>
-      
+      <description>TryHackMe Principles of Security walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Principles of Security challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Wordpress CVE-2021-29447</title>
       <link>https://classroom.anir0y.in/post/tryhackme-wordpresscve202129447/</link>
       <pubDate>Sun, 29 Aug 2021 14:35:45 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-wordpresscve202129447/</guid>
-      <description></description>
-      
+      <description>TryHackMe Wordpress CVE-2021-29447 walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Wordpress CVE-2021-29447 challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Intro to Windows</title>
       <link>https://classroom.anir0y.in/post/tryhackme-intro2winold/</link>
       <pubDate>Tue, 24 Aug 2021 15:17:46 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-intro2winold/</guid>
-      <description></description>
-      
+      <description>TryHackMe Intro to Windows walkthrough — explore Windows operating system fundamentals, security features, and common attack surfaces.</description>
     </item>
-    
     <item>
       <title>TryHackMe Bounty Hacker</title>
       <link>https://classroom.anir0y.in/post/tryhackme-cowboyhacker/</link>
       <pubDate>Fri, 20 Aug 2021 23:29:16 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-cowboyhacker/</guid>
-      <description></description>
-      
+      <description>TryHackMe Bounty Hacker walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Bounty Hacker challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Hacking with PowerShell</title>
       <link>https://classroom.anir0y.in/post/tryhackme-powershell/</link>
       <pubDate>Tue, 17 Aug 2021 14:58:29 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-powershell/</guid>
-      <description></description>
-      
+      <description>TryHackMe Hacking with PowerShell walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Hacking with PowerShell challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Super-Spam</title>
       <link>https://classroom.anir0y.in/post/tryhackme-superspamr/</link>
       <pubDate>Fri, 13 Aug 2021 09:04:14 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-superspamr/</guid>
-      <description></description>
-      
+      <description>TryHackMe Super-Spam walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Super-Spam challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Internal</title>
       <link>https://classroom.anir0y.in/post/tryhackme-internal/</link>
       <pubDate>Tue, 10 Aug 2021 11:44:25 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-internal/</guid>
-      <description></description>
-      
+      <description>TryHackMe Internal walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Internal challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Mobile Malware Analysis</title>
       <link>https://classroom.anir0y.in/post/tryhackme-mma/</link>
       <pubDate>Thu, 05 Aug 2021 12:08:59 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-mma/</guid>
-      <description></description>
-      
+      <description>TryHackMe Mobile Malware Analysis walkthrough — analyze malware samples using static and dynamic analysis techniques to understand malicious behavior.</description>
     </item>
-    
     <item>
       <title>TryHackMe Relevant</title>
       <link>https://classroom.anir0y.in/post/tryhackme-relevant/</link>
       <pubDate>Wed, 04 Aug 2021 08:35:47 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-relevant/</guid>
-      <description></description>
-      
+      <description>TryHackMe Relevant walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Relevant challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Linux Strength Training</title>
       <link>https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/</link>
       <pubDate>Tue, 03 Aug 2021 07:41:10 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-linuxstrengthtraining/</guid>
-      <description></description>
-      
+      <description>TryHackMe Linux Strength Training walkthrough — Guided room for beginners to learn/reinforce linux command line skills...</description>
     </item>
-    
     <item>
       <title>TryHackMe Sweettooth Inc.</title>
       <link>https://classroom.anir0y.in/post/tryhackme-sweettoothinc/</link>
       <pubDate>Wed, 28 Jul 2021 12:16:24 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-sweettoothinc/</guid>
-      <description></description>
-      
+      <description>TryHackMe Sweettooth Inc. walkthrough — Sweettooth Inc. needs your help to find out how secure their system is!</description>
     </item>
-    
     <item>
       <title>Giveaway July 2021</title>
       <link>https://classroom.anir0y.in/post/giveaway-1/</link>
       <pubDate>Mon, 26 Jul 2021 01:44:28 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/giveaway-1/</guid>
-      <description></description>
-      
+      <description>Win a free 1-month TryHackMe subscription! July 2021 giveaway with 3 premium subscriptions up for grabs.</description>
     </item>
-    
     <item>
-      <title>TryHackMe Agent Sudo</title>
+      <title>TryHackMe Agent Sudo Walkthrough - CTF Writeup</title>
       <link>https://classroom.anir0y.in/post/tryhackme-agentsudoctf/</link>
       <pubDate>Sat, 24 Jul 2021 16:50:32 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-agentsudoctf/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Agent Sudo, You found a secret server located under the deep sea. Your task is to hack inside the server and reveal the truth.</description>
     </item>
-    
     <item>
       <title>TryHackMe Overpass 2 - Hacked</title>
       <link>https://classroom.anir0y.in/post/tryhackme-overpass2hacked/</link>
       <pubDate>Fri, 23 Jul 2021 01:16:55 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-overpass2hacked/</guid>
-      <description></description>
-      
+      <description>TryHackMe Overpass 2 - Hacked walkthrough — investigate a compromised server, analyze attacker artifacts, and trace the intrusion timeline.</description>
     </item>
-    
     <item>
       <title>TryHackMe Baron Samedit</title>
       <link>https://classroom.anir0y.in/post/tryhackme-sudovulnssamedit/</link>
       <pubDate>Fri, 23 Jul 2021 00:56:23 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-sudovulnssamedit/</guid>
-      <description></description>
-      
+      <description>TryHackMe Baron Samedit walkthrough — A tutorial room exploring CVE-2021-3156 in the Unix Sudo Program.</description>
     </item>
-    
     <item>
       <title>TryHackMe Metamorphosis</title>
       <link>https://classroom.anir0y.in/post/tryhackme-metamorphosis/</link>
       <pubDate>Wed, 21 Jul 2021 03:31:08 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-metamorphosis/</guid>
-      <description></description>
-      
+      <description>TryHackMe Metamorphosis walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Metamorphosis challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Crack the hash</title>
       <link>https://classroom.anir0y.in/post/tryhackme-crackthehash/</link>
       <pubDate>Tue, 20 Jul 2021 21:54:07 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-crackthehash/</guid>
-      <description></description>
-      
+      <description>TryHackMe Crack the hash walkthrough — Cracking hashes challenges.</description>
     </item>
-    
     <item>
       <title>TryHackMe Simple CTF</title>
       <link>https://classroom.anir0y.in/post/tryhackme-easyctf/</link>
       <pubDate>Mon, 19 Jul 2021 22:32:49 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-easyctf/</guid>
-      <description></description>
-      
+      <description>TryHackMe Simple CTF walkthrough — solve CTF challenges covering enumeration, exploitation, and privilege escalation on a vulnerable target.</description>
     </item>
-    
     <item>
       <title>TryHackMe RazorBlack</title>
       <link>https://classroom.anir0y.in/post/tryhackme-raz0rblack/</link>
       <pubDate>Sun, 18 Jul 2021 19:31:05 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-raz0rblack/</guid>
-      <description></description>
-      
+      <description>TryHackMe RazorBlack walkthrough — These guys call themselves hackers. Can you show them who&amp;#39;s the boss ??</description>
     </item>
-    
     <item>
       <title>TryHackMe Linux Function Hooking</title>
       <link>https://classroom.anir0y.in/post/tryhackme-linuxfunctionhooking/</link>
       <pubDate>Sun, 18 Jul 2021 02:30:10 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-linuxfunctionhooking/</guid>
-      <description></description>
-      
+      <description>TryHackMe Linux Function Hooking walkthrough — Learn about function hooking in Linux and have fun hooking functions</description>
     </item>
-    
     <item>
       <title>TryHackMe Ffuf</title>
       <link>https://classroom.anir0y.in/post/tryhackme-ffuf/</link>
       <pubDate>Sat, 17 Jul 2021 02:49:02 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-ffuf/</guid>
-      <description></description>
-      
+      <description>TryHackMe Ffuf walkthrough — Ffuf stands for Fuzz Faster U Fool. It&amp;#39;s a tool used for web enumeration, fuzzing, and directory brute forcing...</description>
     </item>
-    
     <item>
       <title>Try Hack Me Web Scanning</title>
       <link>https://classroom.anir0y.in/post/tryhackme-rpwebscanning/</link>
       <pubDate>Wed, 14 Jul 2021 14:00:45 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-rpwebscanning/</guid>
-      <description></description>
-      
+      <description>TryHackMe Web Scanning walkthrough — exploit web application vulnerabilities and practice common web attack techniques.</description>
     </item>
-    
     <item>
       <title>Awesome Red Teaming</title>
       <link>https://classroom.anir0y.in/post/post-awesome-red-teaming/</link>
       <pubDate>Tue, 13 Jul 2021 14:37:01 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/post-awesome-red-teaming/</guid>
-      <description></description>
-      
+      <description>Curated red teaming resources — MITRE ATT&amp;amp;CK-mapped tools and techniques for initial access, persistence, lateral movement, and evasion.</description>
     </item>
-    
     <item>
       <title>TryHackMe The find command</title>
       <link>https://classroom.anir0y.in/post/tryhackme-thefindcommand/</link>
       <pubDate>Mon, 12 Jul 2021 23:17:35 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-thefindcommand/</guid>
-      <description></description>
-      
+      <description>TryHackMe The find command walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the The find command challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Tmux</title>
       <link>https://classroom.anir0y.in/post/tryhackme-rptmux/</link>
       <pubDate>Sun, 11 Jul 2021 13:50:48 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-rptmux/</guid>
-      <description></description>
-      
+      <description>TryHackMe Tmux walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Tmux challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Crisis</title>
       <link>https://classroom.anir0y.in/post/tryhackme-crisis/</link>
       <pubDate>Sat, 10 Jul 2021 15:18:30 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-crisis/</guid>
-      <description></description>
-      
+      <description>TryHackMe Crisis walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Crisis challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Couch</title>
       <link>https://classroom.anir0y.in/post/tryhackme-couch/</link>
       <pubDate>Fri, 09 Jul 2021 19:22:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-couch/</guid>
-      <description></description>
-      
+      <description>TryHackMe Couch walkthrough — Hack into a vulnerable database server that collects and stores data in JSON-based document formats, in this semi-guided challenge.</description>
     </item>
-    
     <item>
       <title>TryHackMe Inclusion</title>
       <link>https://classroom.anir0y.in/post/tryhackme-inclusion/</link>
       <pubDate>Thu, 08 Jul 2021 14:19:01 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-inclusion/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room inclusion, A beginner level LFI challenge. solved by Animesh Roy. this is a walkthrough. read more...</description>
     </item>
-    
     <item>
       <title>TryHackMe RootMe</title>
       <link>https://classroom.anir0y.in/post/tryhackme-rrootme/</link>
       <pubDate>Tue, 06 Jul 2021 13:36:08 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-rrootme/</guid>
-      <description></description>
-      
+      <description>TryHackMe RootMe walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the RootMe challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Gitandcrumpets</title>
       <link>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</link>
       <pubDate>Sun, 04 Jul 2021 23:04:02 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-gitandcrumpets/</guid>
-      <description></description>
-      
+      <description>TryHackMe Gitandcrumpets walkthrough — exploit exposed Git repositories to extract secrets, credentials, and sensitive source code.</description>
     </item>
-    
     <item>
       <title>TryHackMe Postexploit</title>
       <link>https://classroom.anir0y.in/post/tryhackme-postexploit/</link>
       <pubDate>Sun, 04 Jul 2021 14:36:48 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-postexploit/</guid>
-      <description></description>
-      
+      <description>TryHackMe Postexploit walkthrough — identify and exploit vulnerabilities in target systems to gain unauthorized access.</description>
     </item>
-    
     <item>
       <title>TryHackMe Hydra</title>
       <link>https://classroom.anir0y.in/post/tryhackme-hydra/</link>
       <pubDate>Sat, 03 Jul 2021 20:14:32 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-hydra/</guid>
-      <description></description>
-      
+      <description>TryHackMe Hydra walkthrough — learn brute-force password attacks using Hydra against SSH, FTP, and web login forms.</description>
     </item>
-    
     <item>
       <title>python pip2 Install</title>
       <link>https://classroom.anir0y.in/post/pip2-install/</link>
       <pubDate>Sat, 03 Jul 2021 01:30:12 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/pip2-install/</guid>
-      <description></description>
-      
+      <description>How to install pip2 for Python 2.7 on Kali Linux — quick installation script and usage guide for legacy Python modules.</description>
     </item>
-    
     <item>
       <title>TryHackMe Room Ice</title>
       <link>https://classroom.anir0y.in/post/thm-room-ice/</link>
       <pubDate>Tue, 29 Jun 2021 14:11:50 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-ice/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Ice walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Ice challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Room Hackpark</title>
       <link>https://classroom.anir0y.in/post/thm-room-hackpark/</link>
       <pubDate>Sat, 19 Jun 2021 19:38:27 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-hackpark/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Hackpark walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Hackpark challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackME Room Kenobi</title>
       <link>https://classroom.anir0y.in/post/thm-room-kenobi/</link>
       <pubDate>Thu, 10 Jun 2021 21:22:32 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-kenobi/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Kenobi walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Kenobi challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe Room Vulnversity</title>
       <link>https://classroom.anir0y.in/post/thm-room-vulnversity/</link>
       <pubDate>Wed, 09 Jun 2021 20:10:48 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-vulnversity/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Vulnversity walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Vulnversity challenge room.</description>
     </item>
-    
     <item>
       <title>Thm Room Web Fundamentals</title>
       <link>https://classroom.anir0y.in/post/thm-room-webfundamentals/</link>
       <pubDate>Tue, 08 Jun 2021 11:04:18 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-webfundamentals/</guid>
-      <description></description>
-      
+      <description>TryHackMe Thm Room Web Fundamentals walkthrough — exploit web application vulnerabilities and practice common web attack techniques.</description>
     </item>
-    
     <item>
       <title>Backdooring EXE Files</title>
       <link>https://classroom.anir0y.in/post/cs-hijackputty-msfvenom/</link>
       <pubDate>Mon, 07 Jun 2021 20:20:16 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/cs-hijackputty-msfvenom/</guid>
-      <description></description>
-      
+      <description>Learn to backdoor EXE files with MSFVenom — embed Metasploit payloads into PuTTY and other executables for penetration testing.</description>
     </item>
-    
     <item>
       <title>TryHackMe Writeup REMnux - The Redux</title>
       <link>https://classroom.anir0y.in/post/thm-room-malremnuxv2/</link>
       <pubDate>Tue, 01 Jun 2021 09:49:05 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-malremnuxv2/</guid>
-      <description></description>
-      
+      <description>TryHackMe Writeup REMnux - The Redux walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Writeup REMnux - The Redux challenge room.</description>
     </item>
-    
     <item>
       <title>TryHackMe BasicMalwareRE Writeup</title>
       <link>https://classroom.anir0y.in/post/thm-room-basicmalwarere/</link>
       <pubDate>Mon, 31 May 2021 08:20:27 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-basicmalwarere/</guid>
-      <description></description>
-      
+      <description>TryHackMe BasicMalwareRE walkthrough — analyze malware samples using static and dynamic analysis techniques to understand malicious behavior.</description>
     </item>
-    
     <item>
       <title>Try Hack ME Room Malstrings</title>
       <link>https://classroom.anir0y.in/post/thm-room-malstrings/</link>
       <pubDate>Mon, 31 May 2021 00:21:19 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-malstrings/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Malstrings walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Malstrings challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack ME Room Malware Introductory</title>
       <link>https://classroom.anir0y.in/post/thm-room-malmalintroductory/</link>
       <pubDate>Sat, 29 May 2021 00:08:19 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-malmalintroductory/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Malware Introductory walkthrough — analyze malware samples using static and dynamic analysis techniques to understand malicious behavior.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Room History of Malware</title>
       <link>https://classroom.anir0y.in/post/thm-room-historyofmalware/</link>
       <pubDate>Fri, 28 May 2021 00:43:47 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-historyofmalware/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room History of Malware walkthrough — analyze malware samples using static and dynamic analysis techniques to understand malicious behavior.</description>
     </item>
-    
     <item>
       <title>Thm Room Autopsy</title>
       <link>https://classroom.anir0y.in/post/thm-room-btautopsye0/</link>
       <pubDate>Thu, 27 May 2021 00:31:13 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-btautopsye0/</guid>
-      <description></description>
-      
+      <description>TryHackMe Thm Room Autopsy walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Thm Room Autopsy challenge room.</description>
     </item>
-    
     <item>
       <title>Investigating Windows</title>
       <link>https://classroom.anir0y.in/post/investigatingwindows/</link>
       <pubDate>Tue, 25 May 2021 20:09:18 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/investigatingwindows/</guid>
-      <description></description>
-      
+      <description>TryHackMe Investigating Windows walkthrough — explore Windows operating system fundamentals, security features, and common attack surfaces.</description>
     </item>
-    
     <item>
       <title>Try Hack me Room Volatility</title>
       <link>https://classroom.anir0y.in/post/thm-room-bpvolatility/</link>
       <pubDate>Sun, 23 May 2021 23:09:45 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-bpvolatility/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Volatility walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Volatility challenge room.</description>
     </item>
-    
     <item>
       <title>Domino’s India Data Leak Of 18 Cr Orders Resurfaces; Customer Location, Mobile Numbers Exposed</title>
       <link>https://classroom.anir0y.in/post/scripts-dominos/</link>
       <pubDate>Sat, 22 May 2021 19:56:16 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/scripts-dominos/</guid>
-      <description></description>
-      
+      <description>Domino’s India Data Leak Of 18 Cr Orders Resurfaces; Customer Location, Mobile Numbers Exposed</description>
     </item>
-    
     <item>
       <title>Try Hack Me Room Attacking Kerberos</title>
       <link>https://classroom.anir0y.in/post/thm-room-attackingkerberos/</link>
       <pubDate>Thu, 20 May 2021 23:25:07 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-attackingkerberos/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Attacking Kerberos walkthrough — Learn how to abuse the Kerberos Ticket Granting Service inside of a Windows Domain Controller.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Room Attacktivedirectory</title>
       <link>https://classroom.anir0y.in/post/thm-room-attacktivedirectory/</link>
       <pubDate>Tue, 18 May 2021 23:58:19 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-attacktivedirectory/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Attacktivedirectory walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Attacktivedirectory challenge room.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Room Osquery</title>
       <link>https://classroom.anir0y.in/post/thm-room-osquery/</link>
       <pubDate>Sun, 16 May 2021 23:54:39 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-osquery/</guid>
-      <description></description>
-      
+      <description>TryHackMe Room Osquery walkthrough — learn endpoint monitoring with osquery SQL-based queries for process, network, and file system analysis.</description>
     </item>
-    
     <item>
       <title>Try Hack Me Room Room Openvas</title>
       <link>https://classroom.anir0y.in/post/thm-room-openvas/</link>
       <pubDate>Mon, 10 May 2021 01:36:51 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-openvas/</guid>
-      <description></description>
-      
+      <description>Try Hack ME Room OpenVas walkthrough</description>
     </item>
-    
     <item>
       <title>Try Hack ME Room Zerologon</title>
       <link>https://classroom.anir0y.in/post/thm-room-zerologon/</link>
       <pubDate>Mon, 10 May 2021 01:22:37 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/thm-room-zerologon/</guid>
-      <description></description>
-      
+      <description>Try Hack ME Room Zerologon walkthrough</description>
     </item>
-    
     <item>
       <title>Cyber Security Interview Questions With Answers</title>
       <link>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</link>
       <pubDate>Fri, 07 May 2021 19:38:21 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/cyber-security-interview-questions-with-answers/</guid>
-      <description></description>
-      
+      <description>50 cybersecurity interview questions with answers — cryptography, CIA triad, firewalls, IDS vs IPS, and more for job prep.</description>
     </item>
-    
     <item>
       <title>Active Directory Exploitation Cheat Sheet</title>
       <link>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</link>
       <pubDate>Fri, 07 May 2021 14:00:36 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/active-directory-exploitation-cheat-sheet/</guid>
-      <description></description>
-      
+      <description>Active Directory exploitation cheat sheet covering common attack techniques, enumeration, privilege escalation, and lateral movement in AD environments.</description>
     </item>
-    
     <item>
       <title>Notes OSIModel Explained</title>
       <link>https://classroom.anir0y.in/post/notes-osimodel-explained/</link>
       <pubDate>Sun, 25 Apr 2021 20:20:59 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/notes-osimodel-explained/</guid>
-      <description></description>
-      
+      <description>OSI Model explained with Wireshark — understand all 7 layers through real packet analysis, from physical frames to application data.</description>
     </item>
-    
     <item>
       <title>Notes OSIModel</title>
       <link>https://classroom.anir0y.in/post/notes-osimodel/</link>
       <pubDate>Wed, 21 Apr 2021 20:01:52 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/notes-osimodel/</guid>
-      <description></description>
-      
+      <description>OSI Model overview — learn all 7 layers of the networking model, from physical to application, with clear explanations and examples.</description>
     </item>
-    
     <item>
       <title>Notes Stego</title>
       <link>https://classroom.anir0y.in/post/notes-stego/</link>
       <pubDate>Wed, 21 Apr 2021 17:47:23 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/notes-stego/</guid>
-      <description></description>
-      
+      <description>Steganography tools and techniques — Steghide, Foremost, binwalk, zsteg, and more for CTF challenges and hidden data extraction.</description>
     </item>
-    
     <item>
       <title>Forensic Tools</title>
       <link>https://classroom.anir0y.in/post/ref-forensic/</link>
       <pubDate>Tue, 13 Apr 2021 21:15:35 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/ref-forensic/</guid>
-      <description></description>
-      
+      <description>Curated reference list of digital forensic tools for disk analysis, memory forensics, network capture, and incident response investigations.</description>
     </item>
-    
     <item>
       <title>Notes Gnupg</title>
       <link>https://classroom.anir0y.in/post/notes-gnupg/</link>
       <pubDate>Tue, 13 Apr 2021 16:57:30 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/notes-gnupg/</guid>
-      <description></description>
-      
+      <description>GPG encryption guide — generate keys, encrypt and sign messages, verify signatures, and manage keyrings with GNU Privacy Guard.</description>
     </item>
-    
     <item>
       <title>Msf Runscript</title>
       <link>https://classroom.anir0y.in/post/msf-runscript/</link>
       <pubDate>Wed, 07 Apr 2021 15:25:21 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/msf-runscript/</guid>
-      <description></description>
-      
+      <description>Guide to writing custom Meterpreter scripts — create resource files, automate post-exploitation tasks, and build reverse shells.</description>
     </item>
-    
     <item>
       <title>Intro Bash</title>
       <link>https://classroom.anir0y.in/post/intro-bash/</link>
       <pubDate>Sat, 03 Apr 2021 18:54:43 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/intro-bash/</guid>
-      <description></description>
-      
+      <description>Bash scripting quick reference — variables, string operations, conditionals, loops, functions, and arrays for beginners.</description>
     </item>
-    
     <item>
       <title>Powershell Empire</title>
       <link>https://classroom.anir0y.in/post/powershell-empire-install/</link>
       <pubDate>Fri, 02 Apr 2021 18:47:08 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/powershell-empire-install/</guid>
-      <description></description>
-      
+      <description>Installation guide for PowerShell Empire post-exploitation framework — setup, configuration, and generating your first HTTP listener.</description>
     </item>
-    
     <item>
       <title>Msfvenom Psh</title>
       <link>https://classroom.anir0y.in/post/msfvenom-psh/</link>
       <pubDate>Thu, 01 Apr 2021 16:14:32 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/msfvenom-psh/</guid>
-      <description></description>
-      
+      <description>Create a Meterpreter reverse shell with PowerShell using MSFVenom — payload generation, listener setup, and session interaction.</description>
     </item>
-    
     <item>
-      <title>Msfvenom Cheatsheet</title>
+      <title>MSFVenom Cheatsheet: Payload Generation &amp; One-Liners Guide</title>
       <link>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</link>
       <pubDate>Thu, 01 Apr 2021 16:11:01 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</guid>
-      <description></description>
-      
+      <description>A complete MSFVenom cheatsheet with one-liner payloads for Windows, Linux, macOS, and web shells. Includes examples for various formats and reverse shells.</description>
     </item>
-    
     <item>
       <title>Basic Linux</title>
       <link>https://classroom.anir0y.in/post/excelr-basic-linux/</link>
       <pubDate>Fri, 26 Mar 2021 20:24:44 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/excelr-basic-linux/</guid>
-      <description></description>
-      
+      <description>Basic Linux bash scripting exercises — hello world, age check, and practical shell scripting examples for beginners.</description>
     </item>
-    
     <item>
       <title>Ps Enc</title>
       <link>https://classroom.anir0y.in/post/ps-enc/</link>
       <pubDate>Thu, 25 Mar 2021 20:01:50 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/ps-enc/</guid>
-      <description></description>
-      
+      <description>Understanding PowerShell encoding techniques — Base64 encoding, obfuscation methods, and decoding strategies for security analysis.</description>
     </item>
-    
     <item>
       <title>Introduction to  Vapt</title>
       <link>https://classroom.anir0y.in/post/intro-vapt/</link>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/intro-vapt/</guid>
-      <description></description>
-      
+      <description>Introduction to VAPT — understand vulnerability assessment vs penetration testing, methodologies, deliverables, and testing types.</description>
     </item>
-    
     <item>
       <title>Phishing Attack</title>
       <link>https://classroom.anir0y.in/post/blog2/</link>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog2/</guid>
-      <description></description>
-      
+      <description>Learn how phishing attacks work — types, techniques, real-world examples, and tools used in social engineering credential theft.</description>
     </item>
-    
     <item>
       <title>Vulnerable Apps, Servers, and Websites!</title>
       <link>https://classroom.anir0y.in/post/blog1/</link>
       <pubDate>Sun, 21 Mar 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog1/</guid>
-      <description></description>
-      
+      <description>Curated list of vulnerable apps, servers, and websites for practicing cybersecurity skills — VulnHub, HackTheBox, TryHackMe, and more.</description>
     </item>
-    
     <item>
       <title>Me</title>
       <link>https://classroom.anir0y.in/about/me/</link>
       <pubDate>Sun, 21 Mar 2021 20:59:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/about/me/</guid>
       <description></description>
-      
     </item>
-    
     <item>
       <title>Volatility Installation in Linux</title>
       <link>https://classroom.anir0y.in/post/vol2-installation/</link>
       <pubDate>Wed, 17 Mar 2021 01:00:08 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/vol2-installation/</guid>
-      <description></description>
-      
+      <description>Step-by-step guide to installing Volatility 2 on Linux for memory forensics, including dependencies, Python setup, and verification.</description>
     </item>
-    
     <item>
       <title>Splunk Sysmon Configuration</title>
       <link>https://classroom.anir0y.in/post/splunk-sysmon/</link>
       <pubDate>Thu, 11 Mar 2021 01:45:35 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/splunk-sysmon/</guid>
-      <description></description>
-      
+      <description>Guide to configuring Sysmon with Splunk for enhanced endpoint visibility, log collection, and threat detection in Windows environments.</description>
     </item>
-    
     <item>
       <title>Mobile App pentesting</title>
       <link>https://classroom.anir0y.in/post/learnings-mobileapppt/</link>
       <pubDate>Tue, 09 Mar 2021 21:23:59 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/learnings-mobileapppt/</guid>
-      <description></description>
-      
+      <description>Mobile app penetration testing cheat sheet — Android and iOS security tools, reverse engineering, SSL pinning bypass, and OWASP Top 10.</description>
     </item>
-    
     <item>
       <title>Keep Learning</title>
       <link>https://classroom.anir0y.in/post/learnings/</link>
       <pubDate>Tue, 09 Mar 2021 21:05:41 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/learnings/</guid>
-      <description></description>
-      
+      <description>Pentester learning roadmap — OS fundamentals, networking, Active Directory, web apps, recommended labs, and certifications like OSCP.</description>
     </item>
-    
     <item>
       <title>Free Certifications</title>
       <link>https://classroom.anir0y.in/post/blog4/</link>
       <pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog4/</guid>
-      <description></description>
-      
+      <description>Curated list of free cybersecurity and IT certifications — Google Cloud, Azure, CompTIA, Kubernetes, and more with direct links.</description>
     </item>
-    
     <item>
       <title>Metasploit Cheat Sheet</title>
       <link>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</link>
       <pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</guid>
-      <description></description>
-      
+      <description>Metasploit Framework cheat sheet — essential commands for exploits, payloads, sessions, meterpreter, and post-exploitation modules.</description>
     </item>
-    
     <item>
       <title>Awesome Powershell</title>
       <link>https://classroom.anir0y.in/post/ref-powershell/</link>
       <pubDate>Thu, 18 Feb 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/ref-powershell/</guid>
-      <description></description>
-      
+      <description>Comprehensive PowerShell cheat sheet with essential commands, scripting techniques, and security-focused one-liners for penetration testing.</description>
     </item>
-    
     <item>
       <title>SmartKnowner: SEP Batch</title>
       <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</link>
       <pubDate>Sat, 12 Sep 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-sep/</guid>
-      <description></description>
-      
+      <description>SmartKnower September batch cybersecurity internship covering OS basics, InfoSec fundamentals, and risk management training.</description>
     </item>
-    
     <item>
       <title>SmartKnowner: AUG Batch</title>
       <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</link>
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-aug/</guid>
-      <description></description>
-      
+      <description>SmartKnower August batch cybersecurity internship classroom with VM setup, Kali Linux labs, and hands-on learning resources.</description>
     </item>
-    
     <item>
       <title>Verzeo: JULY Batch</title>
       <link>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</link>
       <pubDate>Wed, 12 Aug 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-08-07-verzeo-aug/</guid>
-      <description></description>
-      
+      <description>Verzeo August batch cybersecurity internship classroom with VM setup, Kali Linux, networking labs, and project resources.</description>
     </item>
-    
     <item>
       <title>SmartKnowner: JULY Batch</title>
       <link>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</link>
       <pubDate>Sun, 12 Jul 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-08-07-smartknowner-july/</guid>
-      <description></description>
-      
+      <description>SmartKnower July batch cybersecurity internship classroom with VM installation, Kali Linux setup, and networking labs.</description>
     </item>
-    
     <item>
       <title>Verzeo JULY Batch</title>
       <link>https://classroom.anir0y.in/post/2020-07-07-verzeo-july/</link>
       <pubDate>Tue, 07 Jul 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/2020-07-07-verzeo-july/</guid>
-      <description></description>
-      
+      <description>Verzeo July batch cybersecurity internship classroom resources, VM setup guides, networking labs, and project links.</description>
     </item>
-    
     <item>
       <title>Prequties for Training</title>
       <link>https://classroom.anir0y.in/post/blog3/</link>
       <pubDate>Wed, 01 Jan 2020 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/blog3/</guid>
-      <description></description>
-      
+      <description>Prerequisites for cybersecurity training — system requirements, VM setup with VirtualBox, Kali Linux, and course overview.</description>
     </item>
-    
   </channel>
 </rss>

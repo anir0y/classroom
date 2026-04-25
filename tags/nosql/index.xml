@@ -1,63 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nosql on Classroom</title>
     <link>https://classroom.anir0y.in/tags/nosql/</link>
     <description>Recent content in Nosql on Classroom</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 02 Apr 2026 12:00:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 02 Apr 2026 12:00:00 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>30 More PortSwigger Labs — JWT, XSS Evasion, CSRF Bypass Masterclass</title>
       <link>https://classroom.anir0y.in/post/portswigger-session2-30-labs/</link>
       <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/portswigger-session2-30-labs/</guid>
-      <description></description>
-      
+      <description>Session 2: 30 PortSwigger labs covering 5 JWT attacks, 16 XSS evasion techniques, 6 CSRF bypasses, NoSQL injection, GraphQL, and more.</description>
     </item>
-    
     <item>
       <title>30 PortSwigger Labs Solved — A Bug Bounty Training Marathon</title>
       <link>https://classroom.anir0y.in/post/portswigger-30-labs-marathon/</link>
       <pubDate>Thu, 02 Apr 2026 04:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/portswigger-30-labs-marathon/</guid>
-      <description></description>
-      
+      <description>30 PortSwigger Web Security Academy labs solved in a single session — covering SSRF, SQLi, SSTI, XXE, IDOR, CSRF, CORS, NoSQL injection, deserialization, WebSocket XSS, file upload, LLM attacks, and more. Key payloads and bug bounty tips for each.</description>
     </item>
-    
     <item>
       <title>7 PortSwigger Practitioner Labs Solved — SSRF to Web Cache Deception</title>
       <link>https://classroom.anir0y.in/post/portswigger-practitioner-labs-7-techniques/</link>
       <pubDate>Thu, 02 Apr 2026 02:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/portswigger-practitioner-labs-7-techniques/</guid>
-      <description></description>
-      
+      <description>Solving 7 PortSwigger Practitioner labs covering blind SQLi, SSTI, access control bypass, file upload traversal, NoSQL injection, CSRF method bypass, and web cache deception — with payloads and bug bounty tips.</description>
     </item>
-    
     <item>
       <title>Web App Pentesting: Injection &amp; Client-Side Attacks — TryHackMe Notes</title>
       <link>https://classroom.anir0y.in/post/tryhackme-webapp-pentesting-injection-clientside/</link>
       <pubDate>Thu, 02 Apr 2026 01:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-webapp-pentesting-injection-clientside/</guid>
-      <description></description>
-      
+      <description>Comprehensive notes from the TryHackMe Web Application Pentesting path covering advanced SQL injection, XSS evasion, CSRF SameSite bypass, SSRF, and more -- with bug bounty applicability for each technique.</description>
     </item>
-    
     <item>
       <title>TryHackMe Web Application Pentesting Path - Theory Notes</title>
       <link>https://classroom.anir0y.in/post/tryhackme-webapppentesting-path/</link>
       <pubDate>Tue, 31 Mar 2026 13:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-webapppentesting-path/</guid>
-      <description></description>
-      
+      <description>Comprehensive notes from the TryHackMe Web Application Pentesting learning path covering injection attacks, server-side attacks, client-side attacks, and HTTP request smuggling.</description>
     </item>
-    
   </channel>
 </rss>

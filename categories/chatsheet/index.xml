@@ -1,43 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chatsheet on Classroom</title>
     <link>https://classroom.anir0y.in/categories/chatsheet/</link>
     <description>Recent content in Chatsheet on Classroom</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Thu, 01 Apr 2021 16:14:32 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/categories/chatsheet/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 01 Apr 2021 16:14:32 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/categories/chatsheet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Msfvenom Psh</title>
       <link>https://classroom.anir0y.in/post/msfvenom-psh/</link>
       <pubDate>Thu, 01 Apr 2021 16:14:32 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/msfvenom-psh/</guid>
-      <description></description>
-      
+      <description>Create a Meterpreter reverse shell with PowerShell using MSFVenom — payload generation, listener setup, and session interaction.</description>
     </item>
-    
     <item>
-      <title>Msfvenom Cheatsheet</title>
+      <title>MSFVenom Cheatsheet: Payload Generation &amp; One-Liners Guide</title>
       <link>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</link>
       <pubDate>Thu, 01 Apr 2021 16:11:01 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/msfvenom-cheatsheet/</guid>
-      <description></description>
-      
+      <description>A complete MSFVenom cheatsheet with one-liner payloads for Windows, Linux, macOS, and web shells. Includes examples for various formats and reverse shells.</description>
     </item>
-    
     <item>
       <title>Metasploit Cheat Sheet</title>
       <link>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</link>
       <pubDate>Sun, 21 Feb 2021 21:23:22 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/metasploit-cheat-sheet/</guid>
-      <description></description>
-      
+      <description>Metasploit Framework cheat sheet — essential commands for exploits, payloads, sessions, meterpreter, and post-exploitation modules.</description>
     </item>
-    
   </channel>
 </rss>

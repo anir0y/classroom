@@ -1,53 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Authentication on Classroom</title>
     <link>https://classroom.anir0y.in/tags/authentication/</link>
     <description>Recent content in Authentication on Classroom</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>YOU CAN REUSE MY CONTENT</copyright>
-    <lastBuildDate>Wed, 01 Apr 2026 23:30:00 +0530</lastBuildDate><atom:link href="https://classroom.anir0y.in/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 01 Apr 2026 23:30:00 +0530</lastBuildDate>
+    <atom:link href="https://classroom.anir0y.in/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Hammer - Auth Bypass to RCE via Chained Vulnerabilities</title>
       <link>https://classroom.anir0y.in/post/tryhackme-hammer/</link>
       <pubDate>Wed, 01 Apr 2026 23:30:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-hammer/</guid>
-      <description></description>
-      
+      <description>Walkthrough of the TryHackMe Hammer challenge room -- chaining 5 vulnerabilities from directory fuzzing to RCE: email discovery in logs, OTP brute force via session rotation, JWT kid header exploitation, and command execution.</description>
     </item>
-    
     <item>
       <title>Exploiting Multi-Factor Authentication - TryHackMe Walkthrough</title>
       <link>https://classroom.anir0y.in/post/tryhackme-mfa-attacks/</link>
       <pubDate>Wed, 01 Apr 2026 23:00:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-mfa-attacks/</guid>
-      <description></description>
-      
+      <description>A practical walkthrough of exploiting Multi-Factor Authentication weaknesses. Covers OTP leakage, MFA bypass via logic flaws, and brute-forcing with auto-logout evasion -- from the TryHackMe Web Application Pentesting path.</description>
     </item>
-    
     <item>
       <title>TryHackMe Multi-Factor Authentication</title>
       <link>https://classroom.anir0y.in/post/tryhackme-multifactorauthentication/</link>
       <pubDate>Tue, 31 Mar 2026 17:30:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/tryhackme-multifactorauthentication/</guid>
-      <description></description>
-      
+      <description>TryHackMe Multi-Factor Authentication room walkthrough — understanding MFA, common vulnerabilities, OTP leakage, insecure coding practices, and bypassing auto-logout features.</description>
     </item>
-    
     <item>
       <title>Burp Academy: Server-Side Vulnerabilities (Apprentice) - Complete Guide</title>
       <link>https://classroom.anir0y.in/post/burp-academy-server-side-vulns-apprentice/</link>
       <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
-      
       <guid>https://classroom.anir0y.in/post/burp-academy-server-side-vulns-apprentice/</guid>
       <description>&lt;p&gt;This post covers all 7 vulnerability classes and 12 labs from the &lt;strong&gt;PortSwigger Web Security Academy&amp;rsquo;s Server-Side Vulnerabilities (Apprentice)&lt;/strong&gt; learning path. This is the best starting point for anyone entering web application security or bug bounty hunting.&lt;/p&gt;</description>
-      
     </item>
-    
   </channel>
 </rss>
