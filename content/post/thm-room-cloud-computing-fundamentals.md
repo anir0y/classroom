@@ -21,7 +21,7 @@ description: "A beginner-friendly walkthrough of the TryHackMe Cloud Computing F
 ---
 ## Cloud Computing Fundamentals
 
-This room is part of the **Pre Security** path, and it is a *reading* room — about 30 minutes, no hacking. It explains, in plain language, what "the cloud" actually is, why companies use it, and the words you will keep hearing later, like *public cloud*, *IaaS*, and *EC2*.
+This room is part of the **Pre Security** path — about 30 minutes, mostly reading plus one short hands-on cloud-console exercise (no hacking). It explains, in plain language, what "the cloud" actually is, why companies use it, and the words you will keep hearing later, like *public cloud*, *IaaS*, and *EC2*.
 
 Think of a small app you built on your laptop. It works, but only you can use it, and if a lot of people show up, your laptop cannot keep up. The cloud is the fix for exactly this kind of problem. Let's walk through the room task by task.
 
@@ -94,7 +94,57 @@ With PaaS the provider runs the servers and operating system for you, so you onl
 
 ## Task 03: Deploying a Cloud Instance
 
-This task is the hands-on part. TryHackMe gives you a simulated cloud environment so you can see the ideas in action and "deploy" a cloud instance — an **EC2**-style virtual machine (EC2 is Amazon's name for a cloud computer you can create, use, and remove whenever you need it). Just follow the on-screen steps in the room to launch the instance, then continue to the conclusion.
+This is the hands-on part. Click **View Site** to open the *TryHackMe Cloud Console* — a safe, simulated version of a cloud platform like AWS. You don't need to memorise buttons; the goal is just to *see* how easily cloud machines (and their costs) can be created and changed.
+
+Two words first:
+
+- **EC2** is a virtual computer in the cloud — it has a CPU and RAM and runs apps, just like a real machine. Adding an EC2 instance = adding a computer to your environment.
+- **Instance Type** (like `t3.micro` or `m5.large`) describes how powerful that computer is. Bigger = more power = higher cost.
+
+### What to do in the console
+
+1. Pick a **Region** (top-right) — just a geographical location for your resources.
+2. In **Create Lab Machine**, create your app machine — Name: `application-interface`, Type: `t3.micro`, Status: `running`.
+3. Create two study machines for practising — `study-machine-1` and `study-machine-2`, both `m5.large`, both running.
+4. Open **Billing** to see the cost per machine and the total.
+5. Stop both study machines, then check Billing again — the cost drops, because **stopped machines cost nothing**.
+
+The console uses these simple prices (credits per month):
+
+| Instance type | Cost / month |
+|---|---|
+| t3.micro | 10 |
+| t3.small | 18 |
+| m5.large | 70 |
+| any **stopped** VM | 0 |
+
+The environment starts with two machines already running — `web-1` and `db-1` (both `t3.micro`). So once you add your three, the full environment is `web-1` + `db-1` + `application-interface` (3 × t3.micro = 30) plus `study-machine-1` + `study-machine-2` (2 × m5.large = 140) = **170 credits/month** when everything runs.
+
+### Task 3 — Questions and Answers
+
+**What is the total cost of credits of the entire environment if study-machine-1 and study-machine-2 are stopped?**
+
+> `30`
+
+The two `m5.large` study machines stop (0 credits each), leaving the three `t3.micro` machines running: 10 + 10 + 10 = **30**.
+
+**How many credits does an m5.large EC2 instance cost per month?**
+
+> `70`
+
+**What is the total cost of credits if only the new instances we created are running?**
+
+> `150`
+
+Only the three you created run: `application-interface` (10) + `study-machine-1` (70) + `study-machine-2` (70) = **150**.
+
+**What would be the total running cost of the entire environment you created if you add a third t3a.small study machine?**
+
+> `188`
+
+The full environment running is 170, and a `t3a.small` (same price as t3.small, 18 credits) adds 18: 170 + 18 = **188**.
+
+> 💡 Lesson: cloud billing is *pay-for-what-you-run*. Stopping machines you don't need is the easiest way to cut your bill — exactly what the exercise shows.
 
 ## Task 04: Conclusion
 
