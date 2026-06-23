@@ -6,8 +6,15 @@
     <description>Recent content in Categories on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Apr 2026 12:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 12:00:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe</title>
+      <link>https://classroom.anir0y.in/categories/tryhackme/</link>
+      <pubDate>Tue, 23 Jun 2026 12:00:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/categories/tryhackme/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Security</title>
       <link>https://classroom.anir0y.in/categories/security/</link>
@@ -20,13 +27,6 @@
       <link>https://classroom.anir0y.in/categories/portswigger/</link>
       <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/categories/portswigger/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TryHackMe</title>
-      <link>https://classroom.anir0y.in/categories/tryhackme/</link>
-      <pubDate>Thu, 02 Apr 2026 01:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/categories/tryhackme/</guid>
       <description></description>
     </item>
     <item>
@@ -114,7 +114,7 @@
       <description></description>
     </item>
     <item>
-      <title>Gpg</title>
+      <title>GPG</title>
       <link>https://classroom.anir0y.in/categories/gpg/</link>
       <pubDate>Tue, 30 May 2023 11:59:25 +0530</pubDate>
       <guid>https://classroom.anir0y.in/categories/gpg/</guid>

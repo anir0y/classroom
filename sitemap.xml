@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://classroom.anir0y.in/categories/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/tags/cloud-computing/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/post/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/tags/pre-security/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/tags/rooms/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/tags/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/tags/thm/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/tags/tryhackme/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/categories/tryhackme/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://classroom.anir0y.in/post/thm-room-cloud-computing-fundamentals/</loc>
+    <lastmod>2026-06-23T12:00:00+05:30</lastmod>
+  </url><url>
     <loc>https://classroom.anir0y.in/post/technique-20-portswigger-labs-one-session/</loc>
     <lastmod>2026-04-06T12:00:00+05:30</lastmod>
   </url><url>
@@ -11,12 +44,6 @@
     <loc>https://classroom.anir0y.in/tags/bug-bounty/</loc>
     <lastmod>2026-04-06T12:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://classroom.anir0y.in/categories/</loc>
-    <lastmod>2026-04-06T12:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://classroom.anir0y.in/</loc>
-    <lastmod>2026-04-06T12:00:00+05:30</lastmod>
-  </url><url>
     <loc>https://classroom.anir0y.in/tags/command-injection/</loc>
     <lastmod>2026-04-06T12:00:00+05:30</lastmod>
   </url><url>
@@ -24,9 +51,6 @@
     <lastmod>2026-04-06T12:00:00+05:30</lastmod>
   </url><url>
     <loc>https://classroom.anir0y.in/tags/portswigger/</loc>
-    <lastmod>2026-04-06T12:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://classroom.anir0y.in/post/</loc>
     <lastmod>2026-04-06T12:00:00+05:30</lastmod>
   </url><url>
     <loc>https://classroom.anir0y.in/categories/security/</loc>
@@ -39,9 +63,6 @@
     <lastmod>2026-04-06T12:00:00+05:30</lastmod>
   </url><url>
     <loc>https://classroom.anir0y.in/tags/ssti/</loc>
-    <lastmod>2026-04-06T12:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://classroom.anir0y.in/tags/</loc>
     <lastmod>2026-04-06T12:00:00+05:30</lastmod>
   </url><url>
     <loc>https://classroom.anir0y.in/tags/xxe/</loc>
@@ -108,18 +129,6 @@
     <lastmod>2026-04-02T02:00:00+05:30</lastmod>
   </url><url>
     <loc>https://classroom.anir0y.in/tags/race-conditions/</loc>
-    <lastmod>2026-04-02T01:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://classroom.anir0y.in/tags/rooms/</loc>
-    <lastmod>2026-04-02T01:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://classroom.anir0y.in/tags/thm/</loc>
-    <lastmod>2026-04-02T01:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://classroom.anir0y.in/tags/tryhackme/</loc>
-    <lastmod>2026-04-02T01:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://classroom.anir0y.in/categories/tryhackme/</loc>
     <lastmod>2026-04-02T01:00:00+05:30</lastmod>
   </url><url>
     <loc>https://classroom.anir0y.in/post/tryhackme-webapp-pentesting-injection-clientside/</loc>
@@ -362,10 +371,10 @@
     <loc>https://classroom.anir0y.in/tags/tor/</loc>
     <lastmod>2024-05-11T01:04:21+05:30</lastmod>
   </url><url>
-    <loc>https://classroom.anir0y.in/categories/gpg/</loc>
+    <loc>https://classroom.anir0y.in/tags/gpg/</loc>
     <lastmod>2023-05-30T11:59:25+05:30</lastmod>
   </url><url>
-    <loc>https://classroom.anir0y.in/tags/gpg/</loc>
+    <loc>https://classroom.anir0y.in/categories/gpg/</loc>
     <lastmod>2023-05-30T11:59:25+05:30</lastmod>
   </url><url>
     <loc>https://classroom.anir0y.in/post/blog-how-to-trust-imported-gpg-keys/</loc>
