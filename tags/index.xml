@@ -6,13 +6,104 @@
     <description>Recent content in Tags on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jun 2026 13:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 13:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blind-Ssrf</title>
+      <link>https://classroom.anir0y.in/tags/blind-ssrf/</link>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/blind-ssrf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Burp-Academy</title>
+      <link>https://classroom.anir0y.in/tags/burp-academy/</link>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/burp-academy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud-Security</title>
+      <link>https://classroom.anir0y.in/tags/cloud-security/</link>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/cloud-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Filter-Bypass</title>
+      <link>https://classroom.anir0y.in/tags/filter-bypass/</link>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/filter-bypass/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portswigger</title>
+      <link>https://classroom.anir0y.in/tags/portswigger/</link>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/portswigger/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ssrf</title>
+      <link>https://classroom.anir0y.in/tags/ssrf/</link>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/ssrf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Security</title>
+      <link>https://classroom.anir0y.in/tags/web-security/</link>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/web-security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Access-Control</title>
       <link>https://classroom.anir0y.in/tags/access-control/</link>
-      <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
+      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/tags/access-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Account-Takeover</title>
+      <link>https://classroom.anir0y.in/tags/account-takeover/</link>
+      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/account-takeover/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jwt</title>
+      <link>https://classroom.anir0y.in/tags/jwt/</link>
+      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/jwt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oauth</title>
+      <link>https://classroom.anir0y.in/tags/oauth/</link>
+      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/oauth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oidc</title>
+      <link>https://classroom.anir0y.in/tags/oidc/</link>
+      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/oidc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openid-Connect</title>
+      <link>https://classroom.anir0y.in/tags/openid-connect/</link>
+      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/openid-connect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redirect-Uri</title>
+      <link>https://classroom.anir0y.in/tags/redirect-uri/</link>
+      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/tags/redirect-uri/</guid>
       <description></description>
     </item>
     <item>
@@ -20,41 +111,6 @@
       <link>https://classroom.anir0y.in/tags/authentication/</link>
       <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/tags/authentication/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Burp-Academy</title>
-      <link>https://classroom.anir0y.in/tags/burp-academy/</link>
-      <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/tags/burp-academy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Jwt</title>
-      <link>https://classroom.anir0y.in/tags/jwt/</link>
-      <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/tags/jwt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oauth</title>
-      <link>https://classroom.anir0y.in/tags/oauth/</link>
-      <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/tags/oauth/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Portswigger</title>
-      <link>https://classroom.anir0y.in/tags/portswigger/</link>
-      <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/tags/portswigger/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web-Security</title>
-      <link>https://classroom.anir0y.in/tags/web-security/</link>
-      <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/tags/web-security/</guid>
       <description></description>
     </item>
     <item>
@@ -191,14 +247,7 @@
       <description></description>
     </item>
     <item>
-      <title>Ssrf</title>
-      <link>https://classroom.anir0y.in/tags/ssrf/</link>
-      <pubDate>Mon, 06 Apr 2026 12:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/tags/ssrf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ssti</title>
+      <title>SSTI</title>
       <link>https://classroom.anir0y.in/tags/ssti/</link>
       <pubDate>Mon, 06 Apr 2026 12:00:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/tags/ssti/</guid>

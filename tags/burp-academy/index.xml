@@ -6,8 +6,15 @@
     <description>Recent content in Burp-Academy on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jun 2026 13:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 13:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/tags/burp-academy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSRF: Server-Side Request Forgery - Practitioner Guide</title>
+      <link>https://classroom.anir0y.in/post/ssrf-server-side-request-forgery/</link>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/ssrf-server-side-request-forgery/</guid>
+      <description>&lt;p&gt;Server-Side Request Forgery makes the &lt;strong&gt;server&lt;/strong&gt; issue requests of your choosing — into its own internal network, cloud metadata, or back at itself. It&amp;rsquo;s a perennial OWASP Top 10 entry and one of the highest-impact bug bounty classes because it pivots from the internet straight into the trust zone behind the firewall. (It&amp;rsquo;s also the SSRF I referenced from the &lt;a href=&#34;https://classroom.anir0y.in/post/oauth-oidc-attacks/&#34;&gt;OAuth&lt;/a&gt; &lt;code&gt;request_uri&lt;/code&gt;/discovery surface.)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JWT &amp; Authentication Attacks - Practitioner Guide</title>
       <link>https://classroom.anir0y.in/post/jwt-and-authentication-attacks/</link>

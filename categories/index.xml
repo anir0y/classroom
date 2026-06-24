@@ -6,20 +6,20 @@
     <description>Recent content in Categories on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jun 2026 13:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 13:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>API Security</title>
-      <link>https://classroom.anir0y.in/categories/api-security/</link>
-      <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/categories/api-security/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Web Security</title>
       <link>https://classroom.anir0y.in/categories/web-security/</link>
-      <pubDate>Wed, 24 Jun 2026 13:00:00 +0530</pubDate>
+      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/categories/web-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API Security</title>
+      <link>https://classroom.anir0y.in/categories/api-security/</link>
+      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/categories/api-security/</guid>
       <description></description>
     </item>
     <item>
@@ -121,7 +121,7 @@
       <description></description>
     </item>
     <item>
-      <title>GPG</title>
+      <title>Gpg</title>
       <link>https://classroom.anir0y.in/categories/gpg/</link>
       <pubDate>Tue, 30 May 2023 11:59:25 +0530</pubDate>
       <guid>https://classroom.anir0y.in/categories/gpg/</guid>
