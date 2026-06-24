@@ -6,29 +6,8 @@
     <description>Recent content in Categories on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jun 2026 13:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 23:00:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Web Security</title>
-      <link>https://classroom.anir0y.in/categories/web-security/</link>
-      <pubDate>Wed, 24 Jun 2026 13:30:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/categories/web-security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>API Security</title>
-      <link>https://classroom.anir0y.in/categories/api-security/</link>
-      <pubDate>Wed, 24 Jun 2026 13:15:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/categories/api-security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Burp Academy</title>
-      <link>https://classroom.anir0y.in/categories/burp-academy/</link>
-      <pubDate>Wed, 24 Jun 2026 11:00:00 +0530</pubDate>
-      <guid>https://classroom.anir0y.in/categories/burp-academy/</guid>
-      <description></description>
-    </item>
     <item>
       <title>TryHackMe</title>
       <link>https://classroom.anir0y.in/categories/tryhackme/</link>
@@ -48,6 +27,20 @@
       <link>https://classroom.anir0y.in/categories/portswigger/</link>
       <pubDate>Thu, 02 Apr 2026 12:00:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/categories/portswigger/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Burp Academy</title>
+      <link>https://classroom.anir0y.in/categories/burp-academy/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/categories/burp-academy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Security</title>
+      <link>https://classroom.anir0y.in/categories/web-security/</link>
+      <pubDate>Tue, 31 Mar 2026 15:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/categories/web-security/</guid>
       <description></description>
     </item>
     <item>
