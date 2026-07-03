@@ -23,7 +23,20 @@ buildExpired = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  # Taxonomy/term pages (tags, categories) render HTML only — no RSS index.xml.
+  # Those feeds were being crawled and reported as "not indexed" in Search Console.
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
 [minify]
   disableXML = true
   minifyOutput = true
+
+# Mark thin taxonomy/term pages (tags, categories) as noindex via PaperMod's
+# native robotsNoIndex param. They were the bulk of "Crawled - currently not
+# indexed" in Search Console. Real posts stay indexable and are reachable via
+# the /post/ section listing and sitemap.
+[[cascade]]
+  robotsNoIndex = true
+  [cascade._target]
+    kind = "{taxonomy,term}"
