@@ -1,0 +1,23 @@
+{
+  "serverInfo": {
+    "name": "Classroom",
+    "version": "1.0.0",
+    "description": "Public cybersecurity learning content and read-only site search."
+  },
+  "transport": {
+    "type": "webmcp",
+    "endpoint": "https://classroom.anir0y.in/"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  }
+}

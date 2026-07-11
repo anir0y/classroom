@@ -21,8 +21,18 @@ buildExpired = false
   tag = "tags"
   category = "categories"
 
+# llms.txt: an agent/LLM-friendly index of the site, served at /llms.txt.
+# Auto-generated from posts by layouts/index.llms.txt so it stays fresh.
+[outputFormats]
+  [outputFormats.llms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    rel = "alternate"
+    notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "llms"]
   # Taxonomy/term pages (tags, categories) render HTML only — no RSS index.xml.
   # Those feeds were being crawled and reported as "not indexed" in Search Console.
   taxonomy = ["HTML"]

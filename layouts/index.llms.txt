@@ -1,0 +1,18 @@
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+{{ site.Params.homeInfoParams.Content }}
+
+## Posts
+{{ range (where site.RegularPages "Section" "post").ByDate.Reverse }}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ end }}
+{{- end }}
+
+## More
+
+- [All Posts]({{ absURL "post/" }})
+- [Archives]({{ absURL "archives/" }})
+- [About]({{ absURL "about/me/" }})
+- [RSS Feed]({{ absURL "index.xml" }})
+- [Sitemap]({{ absURL "sitemap.xml" }})

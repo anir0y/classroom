@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "site-navigation",
+      "type": "skill-md",
+      "description": "Discover Classroom posts, indexes, archives, and read-only public resources.",
+      "url": "https://classroom.anir0y.in/.well-known/agent-skills/site-navigation/SKILL.md",
+      "digest": "sha256:16dfdbd388a6ee09d70ee6483ae63272f59ed02d6e0e72abf6696cd1c544b05c"
+    }
+  ]
+}

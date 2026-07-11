@@ -1,0 +1,12 @@
+{
+  "resource": "https://classroom.anir0y.in",
+  "authorization_servers": [
+    "https://classroom.anir0y.in"
+  ],
+  "scopes_supported": [
+    "public.read"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ]
+}

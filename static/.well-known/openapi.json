@@ -1,0 +1,72 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Classroom Public Content API",
+    "version": "1.0.0",
+    "description": "Read-only discovery endpoints for Classroom, a public cybersecurity learning site."
+  },
+  "servers": [
+    {
+      "url": "https://classroom.anir0y.in"
+    }
+  ],
+  "paths": {
+    "/index.json": {
+      "get": {
+        "summary": "Search index",
+        "description": "Returns the static PaperMod search index for published content.",
+        "responses": {
+          "200": {
+            "description": "Search index JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "summary": "Agent-readable site index",
+        "responses": {
+          "200": {
+            "description": "Markdown/plain-text site index",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/api-catalog": {
+      "get": {
+        "summary": "API catalog",
+        "responses": {
+          "200": {
+            "description": "RFC 9727 linkset catalog",
+            "content": {
+              "application/linkset+json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

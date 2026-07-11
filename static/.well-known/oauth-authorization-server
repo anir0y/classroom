@@ -1,0 +1,28 @@
+{
+  "issuer": "https://classroom.anir0y.in",
+  "authorization_endpoint": "https://classroom.anir0y.in/auth.md#authorization",
+  "token_endpoint": "https://classroom.anir0y.in/auth.md#tokens",
+  "jwks_uri": "https://classroom.anir0y.in/.well-known/jwks.json",
+  "grant_types_supported": [
+    "urn:ietf:params:oauth:grant-type:token-exchange"
+  ],
+  "response_types_supported": [
+    "none"
+  ],
+  "scopes_supported": [
+    "public.read"
+  ],
+  "agent_auth": {
+    "skill": "https://classroom.anir0y.in/auth.md",
+    "register_uri": "https://classroom.anir0y.in/auth.md#registration",
+    "identity_types_supported": [
+      "anonymous"
+    ],
+    "anonymous": {
+      "credential_types_supported": [
+        "none"
+      ],
+      "claim_uri": "https://classroom.anir0y.in/auth.md#public-access"
+    }
+  }
+}
