@@ -1,0 +1,28 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://classroom.anir0y.in/",
+      "service-desc": [
+        {
+          "href": "https://classroom.anir0y.in/.well-known/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://classroom.anir0y.in/llms.txt",
+          "type": "text/plain"
+        },
+        {
+          "href": "https://classroom.anir0y.in/auth.md",
+          "type": "text/markdown"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://classroom.anir0y.in/"
+        }
+      ]
+    }
+  ]
+}
