@@ -17,7 +17,7 @@ tags:
   - Pre Security
 
 draft: false
-description: "A beginner-friendly walkthrough of the TryHackMe Cloud Computing Fundamentals room — what the cloud is, deployment types (public, private, hybrid), service models (IaaS, PaaS, SaaS), and every task answer in plain English."
+description: "A beginner walkthrough of the TryHackMe Cloud Computing Fundamentals room — what the cloud is, deployment types, and service models (IaaS, PaaS, SaaS)."
 ---
 ## Cloud Computing Fundamentals
 

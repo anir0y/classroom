@@ -1,5 +1,5 @@
 ---
-title: "Exploiting Multi-Factor Authentication - TryHackMe Walkthrough"
+title: "Exploiting Multi-Factor Auth — TryHackMe"
 date: 2026-04-01T23:00:00+05:30
 lastmod: 2026-04-01T23:00:00+05:30
 author: Animesh Roy
@@ -21,7 +21,7 @@ tags:
   - web-application
   - pentesting
 draft: false
-description: "A practical walkthrough of exploiting Multi-Factor Authentication weaknesses. Covers OTP leakage, MFA bypass via logic flaws, and brute-forcing with auto-logout evasion -- from the TryHackMe Web Application Pentesting path."
+description: "A practical walkthrough of exploiting Multi-Factor Authentication weaknesses — OTP leakage, MFA bypass via logic flaws, and brute-forcing with logout evasion."
 ---
 
 ## Overview

@@ -15,13 +15,13 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Writeup REMnux - The Redux walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Writeup REMnux - The Redux challenge room."
+description: "TryHackMe REMnux: The Redux walkthrough — step-by-step enumeration, exploitation, and privilege escalation, with every task answer explained."
 ---
 # REMnux - The Redux
 
-|Profile|Support|
-|:-----|-----:|
-|<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
+|Profile|
+|:-----|
+|<script src="https://tryhackme.com/badge/434937"></script>|
 
 ---
 
@@ -327,7 +327,7 @@ Whilst Volatility can't assume, it can guess. Here's where profiles come into pl
 
 *Please note that volatility will take a few minutes for commands to complete.*
 
-![](https://i.imgur.com/vSyKXJl.png)
+![TryHackMe Writeup REMnux - The Redux — How's Your Memory?](https://i.imgur.com/vSyKXJl.png)
 
 Profile `Win7SP1x64` is the first suggested and just happens to be the correct OS version.
 
@@ -345,7 +345,7 @@ Specifically, we need to identify the malicious processes to get an understandin
 
 Note how you can see Google Chrome within the process because the application was running at the time of the memory dump.
 
-![](https://i.imgur.com/pZwWizH.png)
+![TryHackMe Writeup REMnux - The Redux — How's Your Memory? (2)](https://i.imgur.com/pZwWizH.png)
 
 **Needles in Haystacks**
 
@@ -365,11 +365,11 @@ Even without analysing, we can start to understand what sort of interaction the 
 
 Again, it's easy to become overwhelmed at trying to figure out what's of significance. It only comes with time, experience and research into what Windows DLL's do what.
 
-![](https://i.imgur.com/S7aICI0.png)
+![TryHackMe Writeup REMnux - The Redux — How's Your Memory? (3)](https://i.imgur.com/S7aICI0.png)
 
 What stands out initially is the "CRYPTBASE.dll"
 
-![](https://i.imgur.com/r1qtrXJ.png)
+![TryHackMe Writeup REMnux - The Redux — How's Your Memory? (4)](https://i.imgur.com/r1qtrXJ.png)
 
 This DLL is a Windows library that allows applications to use cryptography. Whilst many use it legitimately, i.e. HTTPS, let's assume that we didn't know that the host was infected with ransomware specifically, we'd need to start investigating the process further. However, that is not for here. We've found enough evidence to suspect ransomware through memory forensics & research.
 

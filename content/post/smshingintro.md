@@ -1,5 +1,5 @@
 ---
-title: Smishing - Understanding and Protecting Against the Growing Threat of Phishing via Text Message
+title: "Smishing: SMS Phishing Threats and Protection"
 date: 2023-01-26T00:03:57+05:30
 lastmod: 2023-01-26T00:03:57+05:30
 author: Animesh Roy
@@ -16,7 +16,7 @@ tags:
 
 
 draft: false
-description: This article explains what smishing is, how it works and how to protect yourself from falling victim to a smishing attack. Smishing is a type of phishing that uses text messages to trick individuals into giving away sensitive information. Learn about common smishing tactics, how to spot a smishing message and the best ways to protect yourself from this growing threat. With this knowledge, you can stay safe and secure online.
+description: "What smishing is, how SMS-based phishing works, common tactics used to steal your data, and the best ways to spot and protect yourself from these attacks."
 
 ---
 

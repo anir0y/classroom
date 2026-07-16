@@ -1,5 +1,5 @@
 ---
-title: "TryHackMe Hammer - Auth Bypass to RCE via Chained Vulnerabilities"
+title: "TryHackMe Hammer: Auth Bypass to RCE Chain"
 date: 2026-04-01T23:30:00+05:30
 lastmod: 2026-04-01T23:30:00+05:30
 author: Animesh Roy
@@ -22,7 +22,7 @@ tags:
   - bug-bounty
   - pentesting
 draft: false
-description: "Walkthrough of the TryHackMe Hammer challenge room -- chaining 5 vulnerabilities from directory fuzzing to RCE: email discovery in logs, OTP brute force via session rotation, JWT kid header exploitation, and command execution."
+description: "TryHackMe Hammer walkthrough — chaining 5 bugs to RCE: directory fuzzing, email discovery in logs, OTP brute force via session rotation, and JWT kid abuse."
 ---
 
 ## Overview

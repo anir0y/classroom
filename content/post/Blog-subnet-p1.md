@@ -1,5 +1,5 @@
 ---
-title: Mastering Subnetting- A Comprehensive Guide with Practical Lab Exercises
+title: "Mastering Subnetting: A Practical Lab Guide"
 date: 2025-02-01T13:36:24+05:30
 lastmod: 2025-02-01T13:36:24+05:30
 author: Animesh Roy
@@ -15,7 +15,7 @@ tags:
   - subnet
 
 draft: false
-description: Enhance your networking skills with our in-depth guide on subnetting. Learn the fundamentals, explore practical examples, and apply your knowledge through hands-on lab exercises to achieve subnetting mastery...
+description: "An in-depth guide to subnetting — learn the fundamentals, work through practical examples, and apply your skills with hands-on lab exercises to master it."
 
 ---
 

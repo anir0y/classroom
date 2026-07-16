@@ -16,7 +16,7 @@ draft: false
 description: "Curated reference list of digital forensic tools for disk analysis, memory forensics, network capture, and incident response investigations."
 ---
 
-![](https://raw.githubusercontent.com/mesquidar/ForensicsTools/master/FORENSICS%20TOOLS.png)
+![Forensic Tools screenshot](https://raw.githubusercontent.com/mesquidar/ForensicsTools/master/FORENSICS%20TOOLS.png)
 
 # Forensics Tools
 A list of free and open source forensics analysis tools and other resources. 

@@ -1,5 +1,5 @@
 ---
-title: "Splunk for SOC: 80+ Practical Security Use Cases and Queries"
+title: "Splunk for SOC: 80+ Security Use Cases"
 date: 2023-04-10T19:27:17+05:30
 lastmod: 2023-04-10T19:27:17+05:30
 author: Animesh Roy

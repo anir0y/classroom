@@ -75,7 +75,7 @@ anonymous auth is enbled, just hit enter when it askes for password.
 
 ## Task 04: Gain initial access with ProFtpd
 
-![](https://i.imgur.com/L54MBzX.png)
+![TryHackME Room Kenobi — Gain initial access with ProFtpd](https://i.imgur.com/L54MBzX.png)
 
 |Flag-ID|question|
 |:--|---|

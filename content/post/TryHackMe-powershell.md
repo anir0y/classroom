@@ -15,7 +15,7 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Hacking with PowerShell walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Hacking with PowerShell challenge room."
+description: "TryHackMe Hacking with PowerShell walkthrough — step-by-step enumeration, exploitation, and privilege escalation, with every task answer explained."
 ---
 
 ## OverView

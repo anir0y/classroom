@@ -1,5 +1,5 @@
 ---
-title: The Curious Case of Mr. OSINT-  A Digital Intrusion Tale
+title: "The Curious Case of Mr. OSINT: Intrusion Tale"
 date: 2024-03-11T19:13:04+05:30
 lastmod: 2024-03-11T19:13:04+05:30
 author: Animesh Roy
@@ -15,7 +15,7 @@ tags:
   - osint
 
 draft: false
-description: In the fast-evolving world of cybersecurity, the story of Haxor—an enigmatic hacker—captured the attention of both experts and enthusiasts. Animesh Roy’s article sheds light on the rise and fall of this mysterious figure. Let’s delve into the details.
+description: "The rise and fall of Haxor, an enigmatic hacker — Animesh Roy's story of the mysterious figure who captured the attention of the cybersecurity world."
 
 ---
 

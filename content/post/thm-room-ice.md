@@ -64,7 +64,7 @@ read about RDP [here](https://docs.microsoft.com/en-us/troubleshoot/windows-serv
 
 > What does Nmap identify as the hostname of the machine? (All caps for the answer)
 * DARK-PC
-  ![](https://i.imgur.com/a0UXZ3Q.png)
+  ![TryHackMe Room Ice screenshot](https://i.imgur.com/a0UXZ3Q.png)
 
 ---
 

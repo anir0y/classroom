@@ -1,5 +1,5 @@
 ---
-title: Optimizing Web Application Performance and Security With Azure Front Door and Application Gateway
+title: "Azure Front Door & App Gateway: Perf + Security"
 date: 2023-03-16T22:06:19+05:30
 lastmod: 2023-03-16T22:06:19+05:30
 author: Animesh Roy
@@ -15,7 +15,7 @@ tags:
 
 
 draft: false
-description: Learn how to optimize the performance and security of your web applications using Azure Front Door and Application Gateway. Our step-by-step guide explains how these services work together and provides tips for configuring them effectively. Discover the benefits of using Front Door and Application Gateway, including load balancing, WAF protection, and SSL encryption. Start improving your web application today!
+description: "Optimize web app performance and security with Azure Front Door and Application Gateway — load balancing, WAF protection, and SSL, with configuration tips."
 
 ---
 

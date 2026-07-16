@@ -15,7 +15,7 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Wordpress CVE-2021-29447 walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Wordpress CVE-2021-29447 challenge room."
+description: "TryHackMe WordPress CVE-2021-29447 walkthrough — step-by-step enumeration, exploitation, and privilege escalation, with every task answer explained."
 ---
 
 ## OverView

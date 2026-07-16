@@ -17,7 +17,7 @@ tags:
   - couch
 
 draft: false
-description: "TryHackMe Couch walkthrough — Hack into a vulnerable database server that collects and stores data in JSON-based document formats, in this semi-guided challenge."
+description: "TryHackMe Couch walkthrough — hack into a vulnerable database server that stores data in JSON-based document formats, in this semi-guided challenge."
 ---
 
 ## Couch

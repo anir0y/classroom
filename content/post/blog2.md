@@ -16,7 +16,7 @@ description: "Learn how phishing attacks work — types, techniques, real-world 
 ---
 
 
-<img src="https://i.imgur.com/F6UyCki.png" width="80%" height="auto">
+<img src="https://i.imgur.com/F6UyCki.png" width="80%" height="auto" alt="Phishing attack overview">
 
 ## Overview:
 Even though the internet is one of the man’s great creation, but it has remained as a root cause for many cyber attacks. Let us discuss about cyber punk who is the root cause for many data breaches that has happened till date.
@@ -41,7 +41,7 @@ Phishing can be executed on various platforms like Windows, Linux, Mac, even and
 
 > Note: phishing was initially coined in the year 1996 [used to steal online account password]
 <br>
-<img src="https://i.imgur.com/7NScXfl.png" width="30%" height="auto"><br>
+<img src="https://i.imgur.com/7NScXfl.png" width="30%" height="auto" alt="Phishing attack example"><br>
 
 Adversaries send maliciously crafted email attachments to the victim, typically to execute some malicious programs on the victim’s machine to gather sensitive information, intrude into the internal network, steal credentials and etc.
 
@@ -121,7 +121,7 @@ Red Team: Attack Scenario
 #### you're lazy too??? read this. 
 well, I'm lazy so I created a script that automate pretty much all, once you git clone this, run the magic.sh file.
 
->For Windows magic.sh won't work!<br> ![](https://www.reactiongifs.com/wp-content/uploads/2013/07/running.gif)
+>For Windows magic.sh won't work!<br> ![Phishing Attack — you're lazy too??? read this.](https://www.reactiongifs.com/wp-content/uploads/2013/07/running.gif)
 <br>
 
 #### Linux user run this:

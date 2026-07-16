@@ -1,5 +1,5 @@
 ---
-title: "20 PortSwigger Labs in One Session: SSTI to Access Control"
+title: "20 PortSwigger Labs: SSTI to Access Control"
 date: 2026-04-06T12:00:00+05:30
 lastmod: 2026-04-06T12:00:00+05:30
 author: Animesh Roy
@@ -21,7 +21,7 @@ tags:
   - ssrf
   - bug-bounty
 draft: false
-description: "Speed-running 20 PortSwigger labs across 8 vulnerability classes — SSTI, SQLi, NoSQL injection, path traversal, OS command injection, XXE, SSRF, access control, and business logic. Payloads, bypass techniques, and bounty takeaways."
+description: "Speed-running 20 PortSwigger labs across 8 vuln classes — SSTI, SQLi, NoSQLi, path traversal, OS command injection, XXE, SSRF, and access control bypass."
 ---
 
 ## Overview

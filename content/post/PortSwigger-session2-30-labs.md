@@ -1,5 +1,5 @@
 ---
-title: "30 More PortSwigger Labs — JWT, XSS Evasion, CSRF Bypass Masterclass"
+title: "30 More PortSwigger Labs: JWT, XSS, CSRF Bypass"
 date: 2026-04-02T12:00:00+05:30
 lastmod: 2026-04-02T12:00:00+05:30
 author: Animesh Roy

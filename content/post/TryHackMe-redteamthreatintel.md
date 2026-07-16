@@ -16,7 +16,7 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Red Team Threat Intel walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Red Team Threat Intel challenge room."
+description: "TryHackMe Red Team Threat Intel walkthrough — step-by-step enumeration, exploitation, and privilege escalation, with every task answer explained."
 ---
 
 ## OverView

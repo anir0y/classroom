@@ -1,5 +1,5 @@
 ---
-title: AutoHackOS A New Operating System for Automobile Pentesting
+title: "AutoHackOS: An OS for Automobile Pentesting"
 date: 2023-05-09T20:42:03+05:30
 lastmod: 2023-05-09T20:42:03+05:30
 author: Animesh Roy

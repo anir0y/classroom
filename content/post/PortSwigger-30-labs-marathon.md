@@ -1,5 +1,5 @@
 ---
-title: "30 PortSwigger Labs Solved — A Bug Bounty Training Marathon"
+title: "30 PortSwigger Labs — Bug Bounty Marathon"
 date: 2026-04-02T04:00:00+05:30
 lastmod: 2026-04-02T04:00:00+05:30
 author: Animesh Roy
@@ -29,7 +29,7 @@ tags:
   - file-upload
   - llm-attacks
 draft: false
-description: "30 PortSwigger Web Security Academy labs solved in a single session — covering SSRF, SQLi, SSTI, XXE, IDOR, CSRF, CORS, NoSQL injection, deserialization, WebSocket XSS, file upload, LLM attacks, and more. Key payloads and bug bounty tips for each."
+description: "30 PortSwigger Web Security Academy labs solved in one session — SSRF, SQLi, SSTI, XXE, IDOR, CSRF, CORS, deserialization, and XSS, with key payloads."
 ---
 
 ## Overview

@@ -24,9 +24,9 @@ description: "TryHackMe Room Volatility walkthrough with step-by-step solutions 
 
 
 
-|Profile|Support|
-|:-----|-----:|
-|<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
+|Profile|
+|:-----|
+|<script src="https://tryhackme.com/badge/434937"></script>|
 
 ## Task 01: Intro
 Volatility is a free memory forensics tool developed and maintained by Volatility labs. Regarded as the gold standard for memory forensics in incident response, Volatility is wildly expandable via a plugins system and is an invaluable tool for any Blue Teamer. 
@@ -91,7 +91,7 @@ ANS: N/A
 |-|-|
 |Ans|  WinXPSP2x86|
 
-![](https://i.imgur.com/IAS86zK.png)
+![Try Hack me Room Volatility — Running the imageinfo command in Volatility will provide us with a number of profiles we](https://i.imgur.com/IAS86zK.png)
 
 
 ### Flag 3.3
@@ -100,7 +100,7 @@ ANS: N/A
 |-|-|
 |Ans|  `368`|
 
-![](https://i.imgur.com/mTM1rbC.png)
+![Try Hack me Room Volatility — Take a look through the processes within our image. What is the process ID for the](https://i.imgur.com/mTM1rbC.png)
 
 ### Flag 3.4
 #### In addition to viewing active processes, we can also view active network connections at the time of image creation! Let's do this now with the command `volatility -f MEMORY_FILE.raw --profile=PROFILE netscan`. Unfortunately, something not great is going to happen here due to the sheer age of the target operating system as the command netscan doesn't support it.
@@ -115,7 +115,7 @@ ANS: N/A
 |-|-|
 |Ans|  `csrss.exe`|
 
-![](https://i.imgur.com/RovjndU.png)
+![Try Hack me Room Volatility — It's fairly common for malware to attempt to hide itself and the process associated with](https://i.imgur.com/RovjndU.png)
 
 ### Flag 3.6
 #### In addition to viewing hidden processes via psxview, we can also check this with a greater focus via the command 'ldrmodules'. Three columns will appear here in the middle, InLoad, InInit, InMem. If any of these are false, that module has likely been injected which is a really bad thing. On a normal system the grep statement above should return no output. Which process has all three columns listed as 'False' (other than System)?
@@ -123,7 +123,7 @@ ANS: N/A
 |||
 |-|-|
 |Ans|  `csrss.exe`|
-![](https://i.imgur.com/Ss1qJhg.png)
+![Try Hack me Room Volatility — In addition to viewing hidden processes via psxview, we can also check this with a](https://i.imgur.com/Ss1qJhg.png)
 
 ### Flag 3.7
 #### Injected code can be a huge issue and is highly indicative of very very bad things. We can check for this with the command `malfind`. Using the full command `volatility -f MEMORY_FILE.raw --profile=PROFILE malfind -D <Destination Directory>` we can not only find this code, but also dump it to our specified directory. Let's do this now! We'll use this dump later for more analysis. How many files does this generate?
@@ -131,7 +131,7 @@ ANS: N/A
 |||
 |-|-|
 |Ans| `12`|
-![](https://i.imgur.com/jhMFuBz.png)
+![Try Hack me Room Volatility — Injected code can be a huge issue and is highly indicative of very very bad things. We](https://i.imgur.com/jhMFuBz.png)
 
 ### Flag 3.8
 #### Last but certainly not least we can view all of the DLLs loaded into memory. DLLs are shared system libraries utilized in system processes. These are commonly subjected to hijacking and other side-loading attacks, making them a key target for forensics. Let's list all of the DLLs in memory now with the command `dlllist`
@@ -150,10 +150,10 @@ ANS: N/A
 |Ans| `12`|
 
 > First find the PID, ref to question 5: CSRSS.EXE is the process
-![](https://i.imgur.com/JwLhiI7.png)
+![Try Hack me Room Volatility — Now that we've seen all of the DLLs running in memory, let's go a step further and pull](https://i.imgur.com/JwLhiI7.png)
 
 > dump the DLLs
-![](https://i.imgur.com/fkVd0lW.png)
+![Try Hack me Room Volatility — Now that we've seen all of the DLLs running in memory, let's go a step further and pull (2)](https://i.imgur.com/fkVd0lW.png)
 
 ---
 
@@ -175,12 +175,12 @@ Now that we've performed some basic forensics, let's go a step further and see w
 
 **Step 1: Get the DLL list**
    
-![](https://i.imgur.com/MIdjNrx.png)
+![Try Hack me Room Volatility — Explanation Flag4.3](https://i.imgur.com/MIdjNrx.png)
 
 **step 2: upload them to VT** 
 > one of them return the malware name
 
-![](https://i.imgur.com/t67noV1.png)
+![Try Hack me Room Volatility — Explanation Flag4.3 (2)](https://i.imgur.com/t67noV1.png)
 
 ---
  ### task 05: Extra Credit
@@ -192,6 +192,6 @@ Now that we've performed some basic forensics, let's go a step further and see w
 
 **"The Art of Memory Forensics"** - [Link](https://amzn.to/3ffexFK)
 
-![](https://i.imgur.com/j2BBJxa.jpg)
+![Try Hack me Room Volatility — Explanation Flag4.3 (3)](https://i.imgur.com/j2BBJxa.jpg)
 
 **MemLabs** - A collection of CTF-style memory forensic labs [Link](https://github.com/stuxnet999/MemLabs)---

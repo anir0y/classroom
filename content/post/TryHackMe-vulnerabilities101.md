@@ -16,7 +16,7 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Vulnerabilities 101 walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Vulnerabilities 101 challenge room."
+description: "TryHackMe Vulnerabilities 101 walkthrough — step-by-step enumeration, exploitation, and privilege escalation, with every task answer explained."
 ---
 
 ## OverView

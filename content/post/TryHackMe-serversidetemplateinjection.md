@@ -19,7 +19,7 @@ tags:
   - web-application-pentesting
 
 draft: false
-description: "TryHackMe SSTI room walkthrough — understanding Server-Side Template Injection, detecting template engines, exploiting Smarty/Pug/Jinja2/Twig, and mitigation strategies."
+description: "TryHackMe SSTI room walkthrough — detecting template engines and exploiting Smarty, Pug, Jinja2, and Twig, plus mitigation strategies."
 ---
 
 ## Server-side Template Injection (SSTI)

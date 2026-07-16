@@ -1,5 +1,5 @@
 ---
-title: "PortSwigger Web Security Academy - 39 Labs Solved"
+title: "PortSwigger Academy: 39 Labs Solved"
 date: 2026-03-31
 draft: false
 author: "anir0y"

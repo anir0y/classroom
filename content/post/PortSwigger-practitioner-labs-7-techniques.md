@@ -1,5 +1,5 @@
 ---
-title: "7 PortSwigger Practitioner Labs Solved — SSRF to Web Cache Deception"
+title: "7 PortSwigger Practitioner Labs: SSRF to Cache"
 date: 2026-04-02T02:00:00+05:30
 lastmod: 2026-04-02T02:00:00+05:30
 author: Animesh Roy
@@ -22,7 +22,7 @@ tags:
   - bug-bounty
   - pentesting
 draft: false
-description: "Solving 7 PortSwigger Practitioner labs covering blind SQLi, SSTI, access control bypass, file upload traversal, NoSQL injection, CSRF method bypass, and web cache deception — with payloads and bug bounty tips."
+description: "7 PortSwigger Practitioner labs solved — blind SQLi, SSTI, access control bypass, file upload traversal, NoSQLi, CSRF bypass, and web cache deception."
 ---
 
 ## Overview

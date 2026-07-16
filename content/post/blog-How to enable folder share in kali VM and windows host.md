@@ -1,5 +1,5 @@
 ---
-title: Blog How to Enable Folder Share in Kali VM and Windows Host
+title: "Share Folders Between Kali VM and Windows Host"
 date: 2024-05-30T13:12:02+05:30
 lastmod: 2024-05-30T13:12:02+05:30
 author: Animesh Roy
@@ -17,7 +17,7 @@ tags:
   - vm-tools
 
 draft: false
-description: This comprehensive guide shows you how to seamlessly mount your Windows folder in a Kali Linux VM using VMware and open-vm-tools. Enhance your virtual machine experience with step-by-step instructions and troubleshooting tips.
+description: "A step-by-step guide to mounting a Windows folder in a Kali Linux VM using VMware and open-vm-tools, with troubleshooting tips for a smoother workflow."
 
 ---
 

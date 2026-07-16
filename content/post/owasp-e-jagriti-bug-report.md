@@ -1,5 +1,5 @@
 ---
-title: Exposing a User Enumeration Vulnerability in e-Jagriti’s findUser Endpoint
+title: "User Enumeration in e-Jagriti findUser Endpoint"
 date: 2025-07-14T02:24:47+05:30
 lastmod: 2025-07-14T02:24:47+05:30
 author: Animesh Roy

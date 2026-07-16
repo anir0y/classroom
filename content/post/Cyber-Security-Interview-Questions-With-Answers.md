@@ -15,7 +15,7 @@ tags:
   
 draft: false
 ---
-![](https://i.imgur.com/6bZ0NCp.png)
+![Cyber Security Interview Questions With Answers screenshot](https://i.imgur.com/6bZ0NCp.png)
 
 # 50 Cyber Security Interview Questions (With Answers)
 ---

@@ -1,5 +1,5 @@
 ---
-title: Domino’s India Data Leak Of 18 Cr Orders Resurfaces; Customer Location, Mobile Numbers Exposed
+title: "Domino’s India Data Leak: 18 Cr Orders Exposed"
 date: 2021-05-22T19:56:16+05:30
 lastmod: 2021-05-22T19:56:16+05:30
 author: Animesh Roy
@@ -23,7 +23,7 @@ description: Domino’s India Data Leak Of 18 Cr Orders Resurfaces; Customer Loc
 
 Domino's India, which is owned by Jubilant FoodWorks has apparently fallen victim to a massive data leak. Hackers have reportedly published crucial data on the dark web. The data contains details of lakhs of Domino's India customers and employees. As per reports, sensitive customer data like names, phone numbers, and credit card details have been accessed by hackers. 
 
-![](https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/omdfhadpryptysxd_1618997536.jpeg)
+![Domino’s India Data Leak Of 18 Cr Orders Resurfaces; Customer Location, Mobile Numbers Exposed screenshot](https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/omdfhadpryptysxd_1618997536.jpeg)
 Image Credits: Pixabay/Twitter - @dominos_india
 
 ------

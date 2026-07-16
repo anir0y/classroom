@@ -14,7 +14,7 @@ tags:
   - tryhackme
 
 draft: false
-description: "TryHackMe Net Sec Challenge walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Net Sec Challenge challenge room."
+description: "TryHackMe Net Sec Challenge walkthrough — step-by-step enumeration, exploitation, and privilege escalation, with every task answer explained."
 ---
 
 ## OverView

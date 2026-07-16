@@ -15,7 +15,7 @@ tags:
 
 
 draft: false
-description: Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation. TryHackMe Room Metasploit Meterpreter solved by Animesh Roy. this is a walkthrough. read more...
+description: "A deep dive into Meterpreter and how in-memory payloads enable post-exploitation — the TryHackMe Metasploit Meterpreter room, solved by Animesh Roy."
 
 ---
 

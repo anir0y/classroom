@@ -1,5 +1,5 @@
 ---
-title: Blog Automating Apache Guacamole Installation With Docker on Ubuntu
+title: "Automate Apache Guacamole with Docker on Ubuntu"
 date: 2024-08-13T11:11:42+05:30
 lastmod: 2024-08-13T11:11:42+05:30
 author: Animesh Roy
@@ -16,7 +16,7 @@ tags:
   - Docker
 
 draft: false
-description: Automating Apache Guacamole Installation with Docker on Ubuntu. Apache Guacamole is a clientless remote desktop gateway that supports standard protocols like VNC, RDP, and SSH. Setting it up as a Docker container on Ubuntu can be a breeze with the right script. In this guide, we'll walk you through creating a bash script that automates the entire process, including checks for existing installations, and provides easy access to credentials.
+description: "Automate Apache Guacamole setup on Ubuntu with a Docker bash script — clientless VNC/RDP/SSH remote desktop, install checks, and easy credential access."
 
 ---
 

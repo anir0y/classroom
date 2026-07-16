@@ -15,7 +15,7 @@ tags:
 
 
 draft: false
-description: TLDR Phishing is a type of cyber attack that tricks individuals or organizations into revealing sensitive information. There are four types of phishing attacks email phishing, spear phishing, smishing, and vishing. Email phishing is the most common and involves fraudulent emails, while spear phishing is more targeted and personalized. Smishing uses text messages, and vishing uses phone calls. To protect against phishing, individuals should remain vigilant when receiving unsolicited emails, text messages, or phone calls, and avoid revealing sensitive information unless certain of the legitimacy of the request.
+description: "Phishing explained — the four types (email, spear phishing, smishing, vishing), how each attack works, and practical tips to protect yourself and your org."
 
 
 

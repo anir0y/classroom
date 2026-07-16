@@ -19,7 +19,7 @@ tags:
   - web-application-pentesting
 
 draft: false
-description: "TryHackMe Multi-Factor Authentication room walkthrough — understanding MFA, common vulnerabilities, OTP leakage, insecure coding practices, and bypassing auto-logout features."
+description: "TryHackMe Multi-Factor Authentication room walkthrough — understanding MFA, common vulnerabilities, OTP leakage, and bypassing auto-logout features."
 ---
 
 ## Multi-Factor Authentication

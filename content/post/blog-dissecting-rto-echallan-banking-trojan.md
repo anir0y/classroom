@@ -1,5 +1,5 @@
 ---
-title: "Dissecting a Two-Stage Indian Banking Trojan: From Fake eChallan to Full Device Compromise"
+title: "Indian Banking Trojan: Fake eChallan to Takeover"
 date: 2026-02-19T21:00:00+05:30
 lastmod: 2026-02-19T21:00:00+05:30
 author: Animesh Roy
@@ -22,7 +22,7 @@ tags:
   - firebase
 
 draft: false
-description: "Deep-dive analysis of a fresh Android banking trojan disguised as an Indian RTO eChallan app. Two-stage dropper + payload architecture using NP Protect packer, Firebase C2, SMS interception, USSD abuse, and a 7-page phishing funnel stealing Aadhaar, PAN, card details, and UPI PINs. Only 11/66 VirusTotal detection rate."
+description: "Analysis of an Android banking trojan posing as an Indian RTO eChallan app — two-stage dropper, NP Protect packer, Firebase C2, SMS/USSD abuse, and UPI theft."
 ---
 
 ## TL;DR

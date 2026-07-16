@@ -14,7 +14,7 @@ tags:
      - keylogger
 
 draft: false
-description: Watering hole attacks are a form of cyberattack that use infected websites to compromise devices and networks. Find out how Scanbox keylogger targets organizations across different sectors and what you can do to prevent it
+description: "How watering hole attacks use infected websites to compromise devices — a look at the Scanbox keylogger, who it targets, and how to defend against it."
 
 ---
 

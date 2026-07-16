@@ -19,7 +19,7 @@ description: "Introduction to VAPT — understand vulnerability assessment vs pe
 
 # Vulnerability Assessment and Penetration Testing (VAPT)
 
-![](https://raw.githubusercontent.com/anir0y/cdn/main/vapt.jpg)
+![Introduction to Vapt — Vulnerability Assessment and Penetration Testing (VAPT)](https://raw.githubusercontent.com/anir0y/cdn/main/vapt.jpg)
 
 Vulnerability Assessment and Penetration Testing (VAPT) are both security services that focus on identifying vulnerabilities in the network, server and system infrastructure. Both the services serves a different purpose and are carried out to achieve different but complimentary goals.
 

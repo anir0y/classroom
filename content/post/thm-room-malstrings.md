@@ -19,9 +19,9 @@ description: "TryHackMe Room Malstrings walkthrough with step-by-step solutions 
 ---
 # MAL: Strings
 
-|Profile|Support|
-|:-----|-----:|
-|<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
+|Profile|
+|:-----|
+|<script src="https://tryhackme.com/badge/434937"></script>|
 
 ---
 
@@ -45,7 +45,7 @@ There are a plethora of examples of companies storing sensitive information such
 
 Illustrated below is an example of an Android Application containing sensitive credentials within strings:
 
-![](https://1.bp.blogspot.com/-itNHMN1O9J8/Xi2olyvRRfI/AAAAAAAAGtk/LEY9xXheHJgBs4TUdhQsEzUGunvVH3BmwCEwYBhgL/s640/2_hardcoded_pass.png)
+![Try Hack ME Room Malstrings — Why are "strings" important?](https://1.bp.blogspot.com/-itNHMN1O9J8/Xi2olyvRRfI/AAAAAAAAGtk/LEY9xXheHJgBs4TUdhQsEzUGunvVH3BmwCEwYBhgL/s640/2_hardcoded_pass.png)
 
 (Credit: [Ezequiel., Skullarmy](https://www.blogger.com/profile/01349805697841422503))
 
@@ -59,7 +59,7 @@ Time for a bit of research to solve the questions below:
 > `intellian`
 
 I searched this product name on google and found it’s default username and password.    
-![](https://i.imgur.com/keVrtdy.png)
+![Try Hack ME Room Malstrings — Flag-1.1](https://i.imgur.com/keVrtdy.png)
 
 ### Flag-1.2 
 > What is the CVE entry disclosed by the company "Teradata" in their "Viewpoint" Application that has a password within a string?
@@ -85,7 +85,7 @@ read: https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf
 
 It is a little console program I have written in c++ for this example that replicates a login prompt. 
 
-![](https://i.imgur.com/3PQghBl.png)
+![Try Hack ME Room Malstrings — Practical: Extracting "strings" From an Application](https://i.imgur.com/3PQghBl.png)
 
 As displayed above, if you were to execute this on Windows you'd be greeted with a prompt asking for a Username and password. The problem is, we don't know what the credentials are but we want to get in! Let's have a look into how the application understands what usernames and passwords are right and wrong.
 
@@ -93,11 +93,11 @@ Load up a terminal and use the command `strings <filename>` replacing <filename>
 
 You will see a lot of text appear - and might be cut things out! Rather than just printing the output to the terminal, perhaps we should save it to a file? You can "pipe" (or direct) the output to a file.
 
-![](https://i.imgur.com/ge2sGB4.png)
+![Try Hack ME Room Malstrings — Practical: Extracting "strings" From an Application (2)](https://i.imgur.com/ge2sGB4.png)
 
 Now that we have stored the output into a file, we can do all sorts - filter it, sort it, search it! That's what you'll need to do. Open it in a text editor - either via terminal using nano, vi or Kali's installed GUI text editor Mousepad  
 
-![](https://i.imgur.com/Azkt3su.png)
+![Try Hack ME Room Malstrings — Practical: Extracting "strings" From an Application (3)](https://i.imgur.com/Azkt3su.png)
 
 Looking through the file will show mostly garbage, but all you need is one golden nugget! You will be able to answer the following questions with this information. Think, what looks most likely a username and password?
 
@@ -120,7 +120,7 @@ Looking through the file will show mostly garbage, but all you need is one golde
 
 #### Ans of all 3 questions. 
 
-![](https://i.imgur.com/vCU5igb.png)
+![Try Hack ME Room Malstrings — Ans of all 3 questions.](https://i.imgur.com/vCU5igb.png)
 
 ---
 
@@ -169,7 +169,7 @@ In this case, the previously mentioned Bitcoin address used for Wannacry has to-
 
 You can use a website such as [BlockCypher](https://live.blockcypher.com/) to explore the Bitcoin network and transactions between wallets.
 
-![](https://i.imgur.com/fFQHzwg.png)
+![Try Hack ME Room Malstrings — Practical: Finding Bitcoin Addresses in Ransomware (Deploy!)](https://i.imgur.com/fFQHzwg.png)
 
 **Practical**
 
@@ -180,11 +180,11 @@ You need to perform a few prerequisites before you can complete this task, the s
 
 Before using the "strings" tool provided with Sysinternals, we need to accept the license agreement first. You can do this by launching the executable through the command prompt and press "Agree" on the popup dialogue box
 
-![](https://i.imgur.com/O6A2Ais.png)
+![Try Hack ME Room Malstrings — Practical: Finding Bitcoin Addresses in Ransomware (Deploy!) (2)](https://i.imgur.com/O6A2Ais.png)
 
 With this license accepted, we can now use this tool to extract the "strings" contained within the ComplexCalculatorv2.exe with the following syntax: `strings.exe ComplexCalculatorv2.exe > strings.txt`
 
-![](https://i.imgur.com/XqwKQJW.png)
+![Try Hack ME Room Malstrings — Practical: Finding Bitcoin Addresses in Ransomware (Deploy!) (3)](https://i.imgur.com/XqwKQJW.png)
 
 Now open up the text file created from the syntax we just entered with a text editor such as Notepad, where you will find the answer to solve Question #2.
 
@@ -195,13 +195,13 @@ Now open up the text file created from the syntax we just entered with a text ed
 
 always check this URL to get the Correct ANS: https://live.blockcypher.com/btc/address/13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94/
 
-![](https://i.imgur.com/5QrhqTy.png)
+![Try Hack ME Room Malstrings — Flag-4.1](https://i.imgur.com/5QrhqTy.png)
 
 ### Flag-4.2
 > What is the Bitcoin Address stored within "ComplexCalculator.exe"
 >
 ans:
-![](https://i.imgur.com/CQCWdz3.png)
+![Try Hack ME Room Malstrings — Flag-4.2](https://i.imgur.com/CQCWdz3.png)
 
 ---
 
@@ -224,7 +224,7 @@ I hope you enjoyed the practical side and remember the tools available to you to
 
 ### Flag-5
 
-![](https://i.imgur.com/gucHwHG.png)
+![Try Hack ME Room Malstrings — Flag-5](https://i.imgur.com/gucHwHG.png)
 
 
 ------

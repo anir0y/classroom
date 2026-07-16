@@ -22,9 +22,9 @@ A windows machine has been hacked, its your job to go investigate this windows m
 
 
 
-|Profile|Support|
-|:-----|-----:|
-|<script src="https://tryhackme.com/badge/434937"></script>|<a href="https://www.buymeacoffee.com/anir0y"><img src="https://img.buymeacoffee.com/button-api/?text=Cheers!!!&emoji=🍺&slug=anir0y&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>|
+|Profile|
+|:-----|
+|<script src="https://tryhackme.com/badge/434937"></script>|
 
 
 
@@ -64,66 +64,66 @@ looking into eventviewer log for EventID 4624. Ref: [read](https://docs.microsof
 ### Flag 3 
 open CMD -> type net user John
 look for Last Logon   
-![](https://i.imgur.com/dQ1djOm.png)
+![Investigating Windows screenshot](https://i.imgur.com/dQ1djOm.png)
 
 ### Flag 4
 while booting up we see the IP in CMD
-![](https://i.imgur.com/w1hkL7y.png)
+![Investigating Windows screenshot (2)](https://i.imgur.com/w1hkL7y.png)
 
 ### Flag 5
 CMD: `net localgroup administrators`   
-![](https://i.imgur.com/CoI1GHD.png)
+![Investigating Windows screenshot (3)](https://i.imgur.com/CoI1GHD.png)
 
 ### FLag 6 
 open task scheduler and look for names that sticks out.   
-![](https://i.imgur.com/uWrrf23.png)
+![Investigating Windows screenshot (4)](https://i.imgur.com/uWrrf23.png)
 
 ### FLag-7
 dig more with `clean file system`  
-![](https://i.imgur.com/YES0F6P.png)
+![Investigating Windows — FLag-7](https://i.imgur.com/YES0F6P.png)
 
 ### FLag 8
 Args   
-![](https://i.imgur.com/YES0F6P.png)
+![Investigating Windows screenshot (5)](https://i.imgur.com/YES0F6P.png)
 
 
 ### FLag 9
-![](https://i.imgur.com/4uzm1Zo.png)
+![Investigating Windows screenshot (6)](https://i.imgur.com/4uzm1Zo.png)
 
 ### FLag 10 
 check the file create date of [Flag7](#flag-7)
-![](https://i.imgur.com/qMrT8Zr.png)
+![Investigating Windows screenshot (7)](https://i.imgur.com/qMrT8Zr.png)
 
 ### FLag 11
 looking 10 min (before-after for any special logon)   
 PS: use [Get-EventLog](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-eventlog?view=powershell-5.1) Date Range with XPath Filter
-![](https://i.imgur.com/8IG9Nar.png)
+![Investigating Windows screenshot (8)](https://i.imgur.com/8IG9Nar.png)
 
 ### FLag 12
 GameOver is another Task Scheduled. opon investigation / running it like an Idiot you'll see the banner that tells you the Name of the tool. 
 `mim.exe` 
-![](https://i.imgur.com/lkb2Z1k.png)
+![Investigating Windows screenshot (9)](https://i.imgur.com/lkb2Z1k.png)
 
 ### FLag-13
 this machine doesnot have SYSMON, and took me 40 min to figure out where to look, long story short there is `google.com is hardcoded to 76.32.97.132` that's suspicious. 
 
-![](https://i.imgur.com/uNKqh9E.png)
+![Investigating Windows — FLag-13](https://i.imgur.com/uNKqh9E.png)
 
 ### FLag 14
 Default web dir in Windows is `c:\inetpub\wwwroot` found the file `backddoors` there (jsp is the ans.)
 
-![](https://i.imgur.com/qqFtsJj.png)
+![Investigating Windows screenshot (10)](https://i.imgur.com/qqFtsJj.png)
 
 ### FLag 15
 Rookie `0x1337 Hax0r` mistake of using port `1337` 
 PS: in Windows port can be open/close manually using Windosws built in firewall rules.   
-![](https://i.imgur.com/AQvldFm.png)
+![Investigating Windows screenshot (11)](https://i.imgur.com/AQvldFm.png)
 
 
 ### FLag 16
 Ans is from [Flag-13](#flag-13), hardcoded known domain name. 
 
-![](https://i.imgur.com/uNKqh9E.png)
+![Investigating Windows screenshot (12)](https://i.imgur.com/uNKqh9E.png)
 
 
 ---

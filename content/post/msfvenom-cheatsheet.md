@@ -1,5 +1,5 @@
 ---
-title: "MSFVenom Cheatsheet: Payload Generation & One-Liners Guide"
+title: "MSFVenom Cheatsheet: Payloads & One-Liners"
 date: 2021-04-01T16:11:01+05:30
 lastmod: 2021-04-01T16:11:01+05:30
 author: Animesh Roy

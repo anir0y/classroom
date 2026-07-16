@@ -12,7 +12,7 @@ categories:
 
 
 draft: false
-description: "TryHackMe Principles of Security walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Principles of Security challenge room."
+description: "TryHackMe Principles of Security walkthrough — step-by-step enumeration, exploitation, and privilege escalation, with every task answer explained."
 ---
 
 ## OverView

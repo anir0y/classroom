@@ -1,7 +1,8 @@
 ---
-title: "Burp Academy: Server-Side Vulnerabilities (Apprentice) - Complete Guide"
+title: "Burp Academy: Server-Side Vulns (Apprentice)"
 date: 2026-03-31T15:30:00+05:30
 lastmod: 2026-03-31T15:30:00+05:30
+description: "Walkthrough of 12 PortSwigger Apprentice server-side labs across 7 classes — path traversal, SQLi, SSRF, command injection, file upload, access control."
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://bit.ly/34sGFiK
