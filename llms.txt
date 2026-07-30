@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Packed Light — Keylogger C2 Hidden in Cookies](https://classroom.anir0y.in/post/thm-room-packed-light/): Walkthrough of the TryHackMe Packed Light room — spotting a beaconing keylogger in a pcap and decoding its stolen keystrokes out of HTTP Cookie headers.
 - [TryHackMe Room Pentesting Fundamentals](https://classroom.anir0y.in/post/thm-room-pentesting-fundamentals/): A beginner walkthrough of the TryHackMe Pentesting Fundamentals room — what a pentest is, hacker ethics, methodologies (OSSTMM/OWASP/NIST), and box types.
 - [TryHackMe Room Cloud Computing Fundamentals](https://classroom.anir0y.in/post/thm-room-cloud-computing-fundamentals/): A beginner walkthrough of the TryHackMe Cloud Computing Fundamentals room — what the cloud is, deployment types, and service models (IaaS, PaaS, SaaS).
 - [20 PortSwigger Labs: SSTI to Access Control](https://classroom.anir0y.in/post/technique-20-portswigger-labs-one-session/): Speed-running 20 PortSwigger labs across 8 vuln classes — SSTI, SQLi, NoSQLi, path traversal, OS command injection, XXE, SSRF, and access control bypass.
