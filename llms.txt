@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Complimentary — Cognito Guest Keys to DynamoDB](https://classroom.anir0y.in/post/thm-room-complimentary/): Walkthrough of the TryHackMe room Complimentary — abusing a Cognito unauthenticated identity pool to get AWS keys and scan every guest record out of DynamoDB.
 - [TryHackMe Room 404 — Dumping Source From an Exposed .git](https://classroom.anir0y.in/post/thm-room-404/): Walkthrough of the TryHackMe room Room 404 — finding an exposed .git directory on a staging server, mirroring it, and rebuilding the source to recover the flag.
 - [TryHackMe The Concierge Knows Too Much — VERA Prompt Leak](https://classroom.anir0y.in/post/thm-room-concierge-knows-too-much/): Walkthrough of the TryHackMe room The Concierge Knows Too Much — impersonating a trusted guest to make an AI hotel concierge leak its own system prompt.
 - [TryHackMe Packed Light — Keylogger C2 Hidden in Cookies](https://classroom.anir0y.in/post/thm-room-packed-light/): Walkthrough of the TryHackMe Packed Light room — spotting a beaconing keylogger in a pcap and decoding its stolen keystrokes out of HTTP Cookie headers.
