@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jul 2026 22:45:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 00:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe The Concierge Knows Too Much — VERA Prompt Leak</title>
+      <link>https://classroom.anir0y.in/post/thm-room-concierge-knows-too-much/</link>
+      <pubDate>Fri, 31 Jul 2026 00:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-concierge-knows-too-much/</guid>
+      <description>Walkthrough of the TryHackMe room The Concierge Knows Too Much — impersonating a trusted guest to make an AI hotel concierge leak its own system prompt.</description>
+    </item>
     <item>
       <title>TryHackMe Packed Light — Keylogger C2 Hidden in Cookies</title>
       <link>https://classroom.anir0y.in/post/thm-room-packed-light/</link>
