@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Towel on the Sunbed — Racing a Once-a-Day Reward](https://classroom.anir0y.in/post/thm-room-towel-on-the-sunbed/): Walkthrough of the TryHackMe room Towel on the Sunbed — beating a once-per-24h staking reward with a TOCTOU race, and why naive threading loses it.
 - [TryHackMe Overheard at Breakfast — An Email Is an Identity](https://classroom.anir0y.in/post/thm-room-overheard-at-breakfast/): Walkthrough of the TryHackMe room Overheard at Breakfast — turning an email dropped in casual chat into a forgotten Gravatar profile, and the flag in its bio.
 - [TryHackMe Beach Bar — A Playlist That Runs Commands](https://classroom.anir0y.in/post/thm-room-beach-bar/): Walkthrough of the TryHackMe room Beach Bar — a demo DJ login, an unsafe PyYAML loader that turns a playlist into RCE, and root's password leaking via ps.
 - [TryHackMe AI Threat Modelling — STRIDE, ATLAS and OWASP](https://classroom.anir0y.in/post/thm-room-ai-threat-modelling/): Walkthrough of the TryHackMe AI Threat Modelling room — adapting STRIDE for AI, enriching with MITRE ATLAS, and mapping OWASP LLM Top 10 risks to components.
