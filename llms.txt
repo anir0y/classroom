@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe AI System Reconnaissance — Fingerprinting the ML Stack](https://classroom.anir0y.in/post/thm-ai-system-reconnaissance/): Walkthrough of TryHackMe AI System Reconnaissance — scanning AI-specific ports, fingerprinting Triton and MLflow, and looting a Jupyter notebook.
 - [TryHackMe Do Not Disturb — Four Doors, None of Them Locked](https://classroom.anir0y.in/post/thm-room-do-not-disturb/): Walkthrough of the TryHackMe room Do Not Disturb — NoSQL login bypass to EJS SSTI to RCE, a Node inspector for lateral movement, and the disk group for root.
 - [TryHackMe CryptoCabana — A SAS Token and a Vault That Remembers](https://classroom.anir0y.in/post/thm-room-cryptocabana/): Walkthrough of TryHackMe CryptoCabana — an over-scoped Azure SAS token in client-side JS, a hidden container, and a Key Vault secret that outlived rotation.
 - [TryHackMe Towel on the Sunbed — Racing a Once-a-Day Reward](https://classroom.anir0y.in/post/thm-room-towel-on-the-sunbed/): Walkthrough of the TryHackMe room Towel on the Sunbed — beating a once-per-24h staking reward with a TOCTOU race, and why naive threading loses it.
