@@ -1,7 +1,7 @@
 ---
 title: TryHackMe CryptoCabana — A SAS Token and a Vault That Remembers
 date: 2026-08-05T12:00:00+05:30
-lastmod: 2026-08-05T12:00:00+05:30
+lastmod: 2026-08-05T14:30:00+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
@@ -179,7 +179,7 @@ GET /secrets/{name}/versions?api-version=7.4     <- every version
 GET /secrets/{name}/{version}?api-version=7.4    <- a specific old value
 ```
 
-Here's the script — it walks every secret, lists its versions oldest-first, and prints each value:
+Here's the script — it walks every secret, lists its versions oldest-first, and prints each value ([`kv_dump.py` on GitHub Gist](https://gist.github.com/anir0y/93461a3eada4a33b6524cae8988f3cab)):
 
 ```python
 #!/usr/bin/env python3

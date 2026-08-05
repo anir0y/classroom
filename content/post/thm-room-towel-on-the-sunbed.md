@@ -1,7 +1,7 @@
 ---
 title: TryHackMe Towel on the Sunbed — Racing a Once-a-Day Reward
 date: 2026-08-05T10:30:00+05:30
-lastmod: 2026-08-05T11:15:00+05:30
+lastmod: 2026-08-05T14:30:00+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
@@ -276,6 +276,8 @@ if __name__ == "__main__":
 ```
 
 Run it as `python3 race2.py 20 whale02`, where the first argument is how many sockets to race and the second is the account name to register. Use a **fresh username each run** — once an account has successfully claimed, its cooldown is real and it can't race again.
+
+> 📎 Both scripts on GitHub Gist: [`race2.py` (single-packet) and `race.py` (naive)](https://gist.github.com/anir0y/6a3cf4eb7b3f05f5ae151df65c719e83)
 
 For comparison, the naive version that only landed 1 in 10 is just `threading.Barrier` over a shared `requests.Session`:
 

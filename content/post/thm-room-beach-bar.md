@@ -1,7 +1,7 @@
 ---
 title: TryHackMe Beach Bar — A Playlist That Runs Commands
 date: 2026-08-04T20:30:00+05:30
-lastmod: 2026-08-04T20:30:00+05:30
+lastmod: 2026-08-05T14:30:00+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
@@ -190,6 +190,8 @@ print(shell(" ".join(sys.argv[1:])))
 ```
 
 Two details make this comfortable to live in. The **base64 wrapper** means my command never has to survive YAML's quoting, so `|`, `;`, `>` and quotes all pass through untouched. The **`2>&1`** means errors come back to me instead of vanishing into the server's logs — without it, a typo just returns an empty `<pre>` and you waste time wondering whether the payload broke.
+
+> 📎 Full script on GitHub Gist: [`rce.py`](https://gist.github.com/anir0y/a5d620ff19c2087da360054f67693bd2)
 
 ```bash
 python3 rce.py 'id; cat /home/bartender/user.txt'

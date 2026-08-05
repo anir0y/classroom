@@ -1,7 +1,7 @@
 ---
 title: TryHackMe Do Not Disturb — Four Doors, None of Them Locked
 date: 2026-08-05T13:00:00+05:30
-lastmod: 2026-08-05T13:00:00+05:30
+lastmod: 2026-08-05T14:30:00+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
@@ -178,6 +178,8 @@ send_text(sock, json.dumps({
     "params": {"expression": expr, "includeCommandLineAPI": True},
 }))
 ```
+
+> 📎 All three scripts for this room — the SSTI preview driver, the base64 command shell, and the full inspector client — are on GitHub Gist: [`ssti.py`, `dnd_shell.py`, `inspector_rce.py`](https://gist.github.com/anir0y/2354044ac30ce798e9f2656fb879693b).
 
 Note that inside the inspected process `require` *is* defined — no `mainModule` dance needed, because you're evaluating in the module's own scope. Staged on the target and run:
 
