@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Infinity Pool: The Root Key Was in a Voicemail](https://classroom.anir0y.in/post/thm-room-infinity-pool/): Walkthrough of TryHackMe Infinity Pool: command injection to a web foothold, FreePBX UCP (CVE-2026-46376) to read an automation key from a voicemail, then root.
 - [TryHackMe The Hollow Shell — A Zip Slip You Have to Restart to Feel](https://classroom.anir0y.in/post/thm-room-hollow-shell/): TryHackMe The Hollow Shell — Zip Slip arbitrary file write to RCE by bombing the gunicorn worker to bust Jinja's cached template.
 - [TryHackMe AI System Reconnaissance — Fingerprinting the ML Stack](https://classroom.anir0y.in/post/thm-ai-system-reconnaissance/): Walkthrough of TryHackMe AI System Reconnaissance — scanning AI-specific ports, fingerprinting Triton and MLflow, and looting a Jupyter notebook.
 - [TryHackMe Do Not Disturb — Four Doors, None of Them Locked](https://classroom.anir0y.in/post/thm-room-do-not-disturb/): Walkthrough of the TryHackMe room Do Not Disturb — NoSQL login bypass to EJS SSTI to RCE, a Node inspector for lateral movement, and the disk group for root.
