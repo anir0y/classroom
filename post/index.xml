@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Aug 2026 15:05:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 16:10:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Operating Systems Introduction: Kernel Space and a Flag</title>
+      <link>https://classroom.anir0y.in/post/thm-room-os-intro/</link>
+      <pubDate>Sat, 08 Aug 2026 15:50:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-os-intro/</guid>
+      <description>Walkthrough of TryHackMe Operating Systems Introduction: kernel vs user space, reading a MATE desktop&amp;#39;s specs and filesystems, and a flag in a user&amp;#39;s note.</description>
+    </item>
     <item>
       <title>TryHackMe Prompt Injection: Talking an AI Into a $1 Supercar</title>
       <link>https://classroom.anir0y.in/post/thm-room-prompt-injection/</link>
