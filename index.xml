@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Aug 2026 21:15:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 10:35:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe After Hours: Persistence Hiding in the WMI Repository</title>
+      <link>https://classroom.anir0y.in/post/thm-room-after-hours/</link>
+      <pubDate>Sat, 08 Aug 2026 10:00:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-after-hours/</guid>
+      <description>TryHackMe After Hours walkthrough: WMI fileless persistence in the CIM repository, a PowerShell loader, and a .NET payload inflated from a WMI property.</description>
+    </item>
     <item>
       <title>TryHackMe Infinity Pool: The Root Key Was in a Voicemail</title>
       <link>https://classroom.anir0y.in/post/thm-room-infinity-pool/</link>
