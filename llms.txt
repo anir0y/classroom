@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Prompt Injection: Talking an AI Into a $1 Supercar](https://classroom.anir0y.in/post/thm-room-prompt-injection/): Walkthrough of TryHackMe Prompt Injection: direct injection to buy a $1 supercar and indirect injection that leaks a CEO email through a calendar event.
 - [TryHackMe After Hours: Persistence Hiding in the WMI Repository](https://classroom.anir0y.in/post/thm-room-after-hours/): TryHackMe After Hours walkthrough: WMI fileless persistence in the CIM repository, a PowerShell loader, and a .NET payload inflated from a WMI property.
 - [TryHackMe Infinity Pool: The Root Key Was in a Voicemail](https://classroom.anir0y.in/post/thm-room-infinity-pool/): Walkthrough of TryHackMe Infinity Pool: command injection to a web foothold, FreePBX UCP (CVE-2026-46376) to read an automation key from a voicemail, then root.
 - [TryHackMe The Hollow Shell — A Zip Slip You Have to Restart to Feel](https://classroom.anir0y.in/post/thm-room-hollow-shell/): TryHackMe The Hollow Shell — Zip Slip arbitrary file write to RCE by bombing the gunicorn worker to bust Jinja's cached template.

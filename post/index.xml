@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Aug 2026 10:35:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 15:05:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Prompt Injection: Talking an AI Into a $1 Supercar</title>
+      <link>https://classroom.anir0y.in/post/thm-room-prompt-injection/</link>
+      <pubDate>Sat, 08 Aug 2026 14:45:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-prompt-injection/</guid>
+      <description>Walkthrough of TryHackMe Prompt Injection: direct injection to buy a $1 supercar and indirect injection that leaks a CEO email through a calendar event.</description>
+    </item>
     <item>
       <title>TryHackMe After Hours: Persistence Hiding in the WMI Repository</title>
       <link>https://classroom.anir0y.in/post/thm-room-after-hours/</link>
