@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Aug 2026 00:45:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 01:15:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Python Simple Demo: Building Guess the Number</title>
+      <link>https://classroom.anir0y.in/post/thm-room-python-simple-demo/</link>
+      <pubDate>Sun, 09 Aug 2026 00:55:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-python-simple-demo/</guid>
+      <description>Walkthrough of TryHackMe Python Simple Demo: building a Guess the Number game with variables, print/int/input, if/elif/else conditionals, and a while loop.</description>
+    </item>
     <item>
       <title>TryHackMe Data Encoding: ASCII, Unicode, and the UTF Encodings</title>
       <link>https://classroom.anir0y.in/post/thm-room-data-encoding/</link>
