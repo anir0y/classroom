@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe The Guestbook: A Two-Hour Prompt-Injection Rabbit Hole](https://classroom.anir0y.in/post/thm-room-guestbook/): Walkthrough of TryHackMe The Guestbook: the two-hour rabbit hole I fell into, then the real bug, VERA's cross-entry prompt injection to RCE and a Base64 flag.
 - [TryHackMe Windows Basics: First Day and a Quarantined EICAR](https://classroom.anir0y.in/post/thm-room-windows-basics/): Walkthrough of TryHackMe Windows Basics: Server 2019 system specs, File Explorer, Settings, Task Manager, and recovering a quarantined EICAR file name.
 - [TryHackMe Operating Systems Introduction: Kernel Space and a Flag](https://classroom.anir0y.in/post/thm-room-os-intro/): Walkthrough of TryHackMe Operating Systems Introduction: kernel vs user space, reading a MATE desktop's specs and filesystems, and a flag in a user's note.
 - [TryHackMe Prompt Injection: Talking an AI Into a $1 Supercar](https://classroom.anir0y.in/post/thm-room-prompt-injection/): Walkthrough of TryHackMe Prompt Injection: direct injection to buy a $1 supercar and indirect injection that leaks a CEO email through a calendar event.
