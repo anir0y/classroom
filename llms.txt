@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe New Hire Old Artifacts: Hunting an Intrusion in Splunk](https://classroom.anir0y.in/post/thm-room-new-hire-old-artifacts/): Walkthrough of TryHackMe New Hire Old Artifacts: a Splunk threat hunt over Sysmon logs, with the SPL for every answer and the full attack chain.
 - [TryHackMe Database SQL Basics: SELECT, FROM, WHERE, ORDER BY](https://classroom.anir0y.in/post/thm-room-database-sql-basics/): Walkthrough of TryHackMe Database SQL Basics: databases, tables/rows/columns, and the SELECT, FROM, WHERE, ORDER BY clauses, with every Cafe SQL answer.
 - [TryHackMe JavaScript Simple Demo: Guess the Number in Node.js](https://classroom.anir0y.in/post/thm-room-javascript-simple-demo/): Walkthrough of TryHackMe JavaScript Simple Demo: rebuilding Guess the Number in Node.js with let/const, console.log, parseInt, if/else if, and while.
 - [TryHackMe Python Simple Demo: Building Guess the Number](https://classroom.anir0y.in/post/thm-room-python-simple-demo/): Walkthrough of TryHackMe Python Simple Demo: building a Guess the Number game with variables, print/int/input, if/elif/else conditionals, and a while loop.
