@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe JavaScript Simple Demo: Guess the Number in Node.js](https://classroom.anir0y.in/post/thm-room-javascript-simple-demo/): Walkthrough of TryHackMe JavaScript Simple Demo: rebuilding Guess the Number in Node.js with let/const, console.log, parseInt, if/else if, and while.
 - [TryHackMe Python Simple Demo: Building Guess the Number](https://classroom.anir0y.in/post/thm-room-python-simple-demo/): Walkthrough of TryHackMe Python Simple Demo: building a Guess the Number game with variables, print/int/input, if/elif/else conditionals, and a while loop.
 - [TryHackMe Data Encoding: ASCII, Unicode, and the UTF Encodings](https://classroom.anir0y.in/post/thm-room-data-encoding/): Walkthrough of TryHackMe Data Encoding: ASCII and TryHackMe as bytes, Unicode code points, UTF-8/16/32, and every ASCII and Unicode task answer explained.
 - [TryHackMe The Guestbook: A Two-Hour Prompt-Injection Rabbit Hole](https://classroom.anir0y.in/post/thm-room-guestbook/): Walkthrough of TryHackMe The Guestbook: the two-hour rabbit hole I fell into, then the real bug, VERA's cross-entry prompt injection to RCE and a Base64 flag.
