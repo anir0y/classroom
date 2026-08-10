@@ -1,0 +1,70 @@
+{
+  "name": "Classroom Content Agent",
+  "description": "Searches and lists public cybersecurity learning content published on Classroom.",
+  "supportedInterfaces": [
+    {
+      "url": "https://classroom.anir0y.in/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "version": "1.0.0",
+  "documentationUrl": "https://classroom.anir0y.in/llms.txt",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "search-classroom-content",
+      "name": "Search Classroom Content",
+      "description": "Searches published Classroom cybersecurity articles by keyword or phrase.",
+      "tags": [
+        "cybersecurity",
+        "learning",
+        "search"
+      ],
+      "examples": [
+        "search: nmap"
+      ],
+      "inputModes": [
+        "text/plain",
+        "application/json"
+      ],
+      "outputModes": [
+        "text/plain",
+        "application/json"
+      ]
+    },
+    {
+      "id": "list-recent-classroom-posts",
+      "name": "List Recent Classroom Posts",
+      "description": "Lists the most recently published Classroom cybersecurity articles.",
+      "tags": [
+        "cybersecurity",
+        "learning",
+        "recent-posts"
+      ],
+      "examples": [
+        "Show the latest Classroom posts"
+      ],
+      "inputModes": [
+        "text/plain",
+        "application/json"
+      ],
+      "outputModes": [
+        "text/plain",
+        "application/json"
+      ]
+    }
+  ]
+}
