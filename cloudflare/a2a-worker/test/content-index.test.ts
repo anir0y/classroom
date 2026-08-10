@@ -92,8 +92,12 @@ describe("loadContentIndex", () => {
       cache: "no-store",
     });
     expect(pending).toHaveLength(1);
-    expect(await cache.match(FRESH_CACHE_KEY)).toBeDefined();
-    expect(await cache.match(STALE_CACHE_KEY)).toBeDefined();
+    expect(
+      (await cache.match(FRESH_CACHE_KEY))?.headers.get("cache-control"),
+    ).toBe("public, max-age=60");
+    expect(
+      (await cache.match(STALE_CACHE_KEY))?.headers.get("cache-control"),
+    ).toBe("public, max-age=86400");
   });
 
   it("uses the stale last-known-good index when the origin fails", async () => {
@@ -134,5 +138,46 @@ describe("loadContentIndex", () => {
         logger: { error: vi.fn() },
       }),
     ).rejects.toBeInstanceOf(ContentIndexUnavailableError);
+  });
+
+  it.each([
+    { originPayload: [null] },
+    { originPayload: [{}] },
+    { originPayload: [] },
+  ])(
+    "keeps the stale index when the origin returns an unusable array",
+    async ({ originPayload }) => {
+      const cache = new MemoryCache();
+      cache.seed(STALE_CACHE_KEY, livePosts);
+
+      await expect(
+        loadContentIndex({
+          cache,
+          fetcher: fetcher(
+            new Response(JSON.stringify(originPayload), {
+              status: 200,
+              headers: { "content-type": "application/json" },
+            }),
+          ),
+          logger: { error: vi.fn() },
+        }),
+      ).resolves.toEqual(livePosts);
+    },
+  );
+
+  it("ignores a malformed fresh cache entry and refreshes from the origin", async () => {
+    const cache = new MemoryCache();
+    cache.seed(FRESH_CACHE_KEY, [{}]);
+    const origin = fetcher(
+      new Response(JSON.stringify(livePosts), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      }),
+    );
+
+    await expect(loadContentIndex({ cache, fetcher: origin })).resolves.toEqual(
+      livePosts,
+    );
+    expect(origin).toHaveBeenCalledOnce();
   });
 });

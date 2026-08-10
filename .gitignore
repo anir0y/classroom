@@ -5,6 +5,7 @@ shorturl.ps1
 public/
 resources/
 .worktrees/
+.pnpm-store/
 cloudflare/a2a-worker/node_modules/
 cloudflare/a2a-worker/.wrangler/
 cloudflare/a2a-worker/.dev.vars*

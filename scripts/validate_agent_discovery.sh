@@ -72,8 +72,17 @@ for field in ("name", "description", "version"):
         f"Agent Card {field} must be a non-empty string"
     )
 
-assert isinstance(card["capabilities"], dict), (
-    "Agent Card capabilities must be an object"
+assert card["capabilities"] == {
+    "streaming": False,
+    "pushNotifications": False,
+    "extendedAgentCard": False,
+}, "Agent Card capabilities must match the implemented Worker"
+expected_modes = {"text/plain", "application/json"}
+assert set(card["defaultInputModes"]) == expected_modes, (
+    "Agent Card defaultInputModes do not match the Worker"
+)
+assert set(card["defaultOutputModes"]) == expected_modes, (
+    "Agent Card defaultOutputModes do not match the Worker"
 )
 assert isinstance(card["supportedInterfaces"], list) and card["supportedInterfaces"], (
     "Agent Card supportedInterfaces must be a non-empty list"
@@ -93,6 +102,15 @@ for skill in card["skills"]:
         assert isinstance(skill.get(field), str) and skill[field].strip(), (
             f"Agent Card skill {field} must be a non-empty string"
         )
+    assert isinstance(skill.get("tags"), list) and all(
+        isinstance(tag, str) and tag.strip() for tag in skill["tags"]
+    ), f"Agent Card skill {skill['id']} must have non-empty tags"
+    assert set(skill.get("inputModes", [])) == expected_modes, (
+        f"Agent Card skill {skill['id']} inputModes do not match the Worker"
+    )
+    assert set(skill.get("outputModes", [])) == expected_modes, (
+        f"Agent Card skill {skill['id']} outputModes do not match the Worker"
+    )
 
 skill_ids = {skill["id"] for skill in card["skills"]}
 assert skill_ids == {

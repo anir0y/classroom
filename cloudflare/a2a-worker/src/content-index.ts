@@ -20,6 +20,21 @@ interface LoadContentIndexOptions {
   waitUntil?: (promise: Promise<unknown>) => void;
 }
 
+function isUsableContentIndex(payload: unknown): payload is ContentPost[] {
+  return (
+    Array.isArray(payload) &&
+    payload.length > 0 &&
+    payload.every(
+      (post) =>
+        typeof post === "object" &&
+        post !== null &&
+        "permalink" in post &&
+        typeof post.permalink === "string" &&
+        post.permalink.trim().length > 0,
+    )
+  );
+}
+
 async function readCachedIndex(
   cache: Pick<Cache, "match">,
   key: string,
@@ -31,7 +46,7 @@ async function readCachedIndex(
     }
 
     const payload: unknown = await response.json();
-    return Array.isArray(payload) ? (payload as ContentPost[]) : null;
+    return isUsableContentIndex(payload) ? payload : null;
   } catch {
     return null;
   }
@@ -72,8 +87,8 @@ export async function loadContentIndex({
     }
 
     const payload: unknown = await response.json();
-    if (!Array.isArray(payload)) {
-      throw new Error("Content index payload is not an array");
+    if (!isUsableContentIndex(payload)) {
+      throw new Error("Content index payload has no usable posts");
     }
 
     const serialized = JSON.stringify(payload);
@@ -95,7 +110,7 @@ export async function loadContentIndex({
       await cacheWrite;
     }
 
-    return payload as ContentPost[];
+    return payload;
   } catch (error: unknown) {
     originFailure = error;
     logger.error(

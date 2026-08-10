@@ -16,6 +16,21 @@ const A2A_PATH = "/a2a";
 const A2A_VERSION = "1.0";
 const AGENT_CARD_ETAG = 'W/"classroom-a2a-1.0.0"';
 const AGENT_CARD_BODY = JSON.stringify(agentCard);
+const CONTENT_FIELDS = ["text", "raw", "url", "data"] as const;
+const PUSH_NOTIFICATION_METHODS = new Set([
+  "CreateTaskPushNotificationConfig",
+  "GetTaskPushNotificationConfig",
+  "ListTaskPushNotificationConfigs",
+  "DeleteTaskPushNotificationConfig",
+]);
+const UNSUPPORTED_A2A_METHODS = new Set([
+  "SendStreamingMessage",
+  "GetTask",
+  "ListTasks",
+  "CancelTask",
+  "SubscribeToTask",
+  "GetExtendedAgentCard",
+]);
 
 type JsonRpcId = string | number | null;
 
@@ -35,6 +50,17 @@ interface HandlerDependencies {
   loadIndex: () => Promise<ContentPost[]>;
   randomUUID?: () => string;
 }
+
+type MessageValidation =
+  | {
+      valid: true;
+      parts: unknown[];
+      contextId?: string;
+    }
+  | {
+      valid: false;
+      response: Response;
+    };
 
 function agentCardHeaders(): Headers {
   return new Headers({
@@ -145,6 +171,59 @@ function versionNotSupported(id: JsonRpcId, requestedVersion: string): Response 
   ]);
 }
 
+function a2aError(
+  id: JsonRpcId,
+  code: number,
+  message: string,
+  reason: string,
+  metadata: Record<string, string> = {},
+): Response {
+  return jsonRpcError(id, code, message, [
+    {
+      "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+      reason,
+      domain: "a2a-protocol.org",
+      metadata,
+    },
+  ]);
+}
+
+function taskNotFound(id: JsonRpcId, taskId: string): Response {
+  return a2aError(id, -32001, "Task not found", "TASK_NOT_FOUND", { taskId });
+}
+
+function pushNotificationsNotSupported(id: JsonRpcId): Response {
+  return a2aError(
+    id,
+    -32003,
+    "Push notifications are not supported",
+    "PUSH_NOTIFICATION_NOT_SUPPORTED",
+  );
+}
+
+function unsupportedOperation(id: JsonRpcId, method: string): Response {
+  return a2aError(
+    id,
+    -32004,
+    "Operation not supported",
+    "UNSUPPORTED_OPERATION",
+    { method },
+  );
+}
+
+function contentTypeNotSupported(
+  id: JsonRpcId,
+  mediaType: string,
+): Response {
+  return a2aError(
+    id,
+    -32005,
+    "Content type not supported",
+    "CONTENT_TYPE_NOT_SUPPORTED",
+    { mediaType },
+  );
+}
+
 function invalidParams(id: JsonRpcId, description: string): Response {
   return jsonRpcError(id, -32602, "Invalid parameters", [
     {
@@ -159,12 +238,38 @@ function invalidParams(id: JsonRpcId, description: string): Response {
   ]);
 }
 
-function messageParts(params: unknown): {
-  parts: unknown[];
-  contextId?: string;
-} | null {
+function owns(object: Record<string, unknown>, property: string): boolean {
+  return Object.prototype.hasOwnProperty.call(object, property);
+}
+
+function normalizedMediaType(value: string): string {
+  return value.split(";", 1)[0]?.trim().toLowerCase() ?? "";
+}
+
+function validateMessage(
+  params: unknown,
+  id: JsonRpcId,
+): MessageValidation {
   if (!isObject(params) || !isObject(params.message)) {
-    return null;
+    return {
+      valid: false,
+      response: invalidParams(id, "A valid user message is required"),
+    };
+  }
+
+  if (owns(params, "configuration")) {
+    if (!isObject(params.configuration)) {
+      return {
+        valid: false,
+        response: invalidParams(id, "configuration must be an object"),
+      };
+    }
+    if (
+      owns(params.configuration, "taskPushNotificationConfig") &&
+      params.configuration.taskPushNotificationConfig !== null
+    ) {
+      return { valid: false, response: pushNotificationsNotSupported(id) };
+    }
   }
 
   const { message } = params;
@@ -172,14 +277,99 @@ function messageParts(params: unknown): {
     typeof message.messageId !== "string" ||
     message.messageId.trim().length === 0 ||
     message.role !== "ROLE_USER" ||
-    !Array.isArray(message.parts)
+    !Array.isArray(message.parts) ||
+    message.parts.length === 0
   ) {
-    return null;
+    return {
+      valid: false,
+      response: invalidParams(id, "A valid user message is required"),
+    };
+  }
+
+  if (owns(message, "taskId")) {
+    if (typeof message.taskId !== "string" || !message.taskId.trim()) {
+      return {
+        valid: false,
+        response: invalidParams(id, "taskId must be a non-empty string"),
+      };
+    }
+    return {
+      valid: false,
+      response: taskNotFound(id, message.taskId),
+    };
+  }
+
+  if (
+    owns(message, "contextId") &&
+    (typeof message.contextId !== "string" || !message.contextId.trim())
+  ) {
+    return {
+      valid: false,
+      response: invalidParams(id, "contextId must be a non-empty string"),
+    };
+  }
+
+  for (const part of message.parts) {
+    if (!isObject(part)) {
+      return {
+        valid: false,
+        response: invalidParams(id, "Each Part must be an object"),
+      };
+    }
+
+    const contentFields = CONTENT_FIELDS.filter((field) => owns(part, field));
+    if (contentFields.length !== 1) {
+      return {
+        valid: false,
+        response: invalidParams(
+          id,
+          "Each Part must set exactly one content field",
+        ),
+      };
+    }
+
+    const contentField = contentFields[0];
+    if (contentField === "raw" || contentField === "url") {
+      const mediaType =
+        typeof part.mediaType === "string"
+          ? normalizedMediaType(part.mediaType)
+          : contentField;
+      return {
+        valid: false,
+        response: contentTypeNotSupported(id, mediaType),
+      };
+    }
+
+    if (contentField === "text" && typeof part.text !== "string") {
+      return {
+        valid: false,
+        response: invalidParams(id, "A text Part must contain a string"),
+      };
+    }
+
+    if (owns(part, "mediaType")) {
+      if (typeof part.mediaType !== "string") {
+        return {
+          valid: false,
+          response: invalidParams(id, "Part mediaType must be a string"),
+        };
+      }
+      const mediaType = normalizedMediaType(part.mediaType);
+      const expectedMediaType =
+        contentField === "text" ? "text/plain" : "application/json";
+      if (mediaType !== expectedMediaType) {
+        return {
+          valid: false,
+          response: contentTypeNotSupported(id, mediaType),
+        };
+      }
+    }
   }
 
   return {
+    valid: true,
     parts: message.parts,
-    ...(typeof message.contextId === "string" && message.contextId.trim()
+    ...(typeof message.contextId === "string"
       ? { contextId: message.contextId }
       : {}),
   };
@@ -205,13 +395,21 @@ async function handleA2ARequest(
     return versionNotSupported(payload.id, requestedVersion);
   }
 
+  if (PUSH_NOTIFICATION_METHODS.has(payload.method)) {
+    return pushNotificationsNotSupported(payload.id);
+  }
+
+  if (UNSUPPORTED_A2A_METHODS.has(payload.method)) {
+    return unsupportedOperation(payload.id, payload.method);
+  }
+
   if (payload.method !== "SendMessage") {
     return jsonRpcError(payload.id, -32601, "Method not found");
   }
 
-  const input = messageParts(payload.params);
-  if (!input) {
-    return invalidParams(payload.id, "A valid user message is required");
+  const input = validateMessage(payload.params, payload.id);
+  if (!input.valid) {
+    return input.response;
   }
 
   let action;

@@ -177,12 +177,120 @@ describe("Classroom A2A Worker", () => {
     expect(body).toMatchObject({ id: "request-1", error: { code: -32602 } });
   });
 
-  it("returns method not found for unsupported methods", async () => {
+  it("rejects a Part that sets more than one content field", async () => {
+    const response = await handler()(
+      a2aRequest(
+        sendMessageBody([
+          { text: "search: nmap", data: { action: "search", query: "nmap" } },
+        ]),
+      ),
+    );
+    const body = (await response.json()) as { error: { code: number } };
+
+    expect(body.error.code).toBe(-32602);
+  });
+
+  it("returns content-type-not-supported for unsupported Part content", async () => {
+    const response = await handler()(
+      a2aRequest(sendMessageBody([{ raw: "bm1hcA==", mediaType: "image/png" }])),
+    );
+    const body = (await response.json()) as {
+      error: { code: number; data: Array<{ reason: string }> };
+    };
+
+    expect(body.error).toMatchObject({
+      code: -32005,
+      data: [{ reason: "CONTENT_TYPE_NOT_SUPPORTED" }],
+    });
+  });
+
+  it("returns task-not-found when a stateless request references a task", async () => {
+    const requestBody = sendMessageBody([{ text: "search: nmap" }]);
+    const params = requestBody.params as {
+      message: Record<string, unknown>;
+    };
+    params.message.taskId = "task-1";
+
+    const response = await handler()(a2aRequest(requestBody));
+    const body = (await response.json()) as {
+      error: { code: number; data: Array<{ reason: string }> };
+    };
+
+    expect(body.error).toMatchObject({
+      code: -32001,
+      data: [{ reason: "TASK_NOT_FOUND" }],
+    });
+  });
+
+  it("returns push-not-supported when a request includes push configuration", async () => {
+    const requestBody = sendMessageBody([{ text: "search: nmap" }]);
+    const params = requestBody.params as Record<string, unknown>;
+    params.configuration = {
+      taskPushNotificationConfig: {
+        pushNotificationConfig: { url: "https://example.com/callback" },
+      },
+    };
+
+    const response = await handler()(a2aRequest(requestBody));
+    const body = (await response.json()) as {
+      error: { code: number; data: Array<{ reason: string }> };
+    };
+
+    expect(body.error).toMatchObject({
+      code: -32003,
+      data: [{ reason: "PUSH_NOTIFICATION_NOT_SUPPORTED" }],
+    });
+  });
+
+  it.each([
+    "SendStreamingMessage",
+    "GetTask",
+    "ListTasks",
+    "CancelTask",
+    "SubscribeToTask",
+    "GetExtendedAgentCard",
+  ])("returns operation-not-supported for %s", async (method) => {
     const response = await handler()(
       a2aRequest({
         jsonrpc: "2.0",
         id: "request-1",
-        method: "GetTask",
+        method,
+      }),
+    );
+    const body = (await response.json()) as {
+      error: { code: number; data: Array<{ reason: string }> };
+    };
+
+    expect(body.error).toMatchObject({
+      code: -32004,
+      data: [{ reason: "UNSUPPORTED_OPERATION" }],
+    });
+  });
+
+  it("returns push-not-supported for push-notification methods", async () => {
+    const response = await handler()(
+      a2aRequest({
+        jsonrpc: "2.0",
+        id: "request-1",
+        method: "CreateTaskPushNotificationConfig",
+      }),
+    );
+    const body = (await response.json()) as {
+      error: { code: number; data: Array<{ reason: string }> };
+    };
+
+    expect(body.error).toMatchObject({
+      code: -32003,
+      data: [{ reason: "PUSH_NOTIFICATION_NOT_SUPPORTED" }],
+    });
+  });
+
+  it("returns method-not-found for an unknown method", async () => {
+    const response = await handler()(
+      a2aRequest({
+        jsonrpc: "2.0",
+        id: "request-1",
+        method: "UnknownMethod",
       }),
     );
     const body = (await response.json()) as { error: { code: number } };
