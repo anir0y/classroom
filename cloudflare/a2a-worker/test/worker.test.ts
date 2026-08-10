@@ -226,9 +226,7 @@ describe("Classroom A2A Worker", () => {
     const requestBody = sendMessageBody([{ text: "search: nmap" }]);
     const params = requestBody.params as Record<string, unknown>;
     params.configuration = {
-      taskPushNotificationConfig: {
-        pushNotificationConfig: { url: "https://example.com/callback" },
-      },
+      taskPushNotificationConfig: { url: "https://example.com/callback" },
     };
 
     const response = await handler()(a2aRequest(requestBody));
@@ -240,6 +238,153 @@ describe("Classroom A2A Worker", () => {
       code: -32003,
       data: [{ reason: "PUSH_NOTIFICATION_NOT_SUPPORTED" }],
     });
+  });
+
+  it("rejects malformed optional SendMessage fields", async () => {
+    const mutations: Array<
+      [string, (requestBody: Record<string, unknown>) => void]
+    > = [
+      [
+        "request tenant",
+        (requestBody) => {
+          (requestBody.params as Record<string, unknown>).tenant = 123;
+        },
+      ],
+      [
+        "request metadata",
+        (requestBody) => {
+          (requestBody.params as Record<string, unknown>).metadata = [];
+        },
+      ],
+      [
+        "message metadata",
+        (requestBody) => {
+          const params = requestBody.params as { message: Record<string, unknown> };
+          params.message.metadata = "invalid";
+        },
+      ],
+      [
+        "message extensions",
+        (requestBody) => {
+          const params = requestBody.params as { message: Record<string, unknown> };
+          params.message.extensions = ["https://example.com/extension", 123];
+        },
+      ],
+      [
+        "message referenceTaskIds",
+        (requestBody) => {
+          const params = requestBody.params as { message: Record<string, unknown> };
+          params.message.referenceTaskIds = {};
+        },
+      ],
+      [
+        "Part metadata",
+        (requestBody) => {
+          const params = requestBody.params as {
+            message: { parts: Array<Record<string, unknown>> };
+          };
+          params.message.parts[0]!.metadata = "invalid";
+        },
+      ],
+      [
+        "Part filename",
+        (requestBody) => {
+          const params = requestBody.params as {
+            message: { parts: Array<Record<string, unknown>> };
+          };
+          params.message.parts[0]!.filename = 123;
+        },
+      ],
+      [
+        "configuration acceptedOutputModes",
+        (requestBody) => {
+          (requestBody.params as Record<string, unknown>).configuration = {
+            acceptedOutputModes: ["text/plain", 123],
+          };
+        },
+      ],
+      [
+        "configuration historyLength",
+        (requestBody) => {
+          (requestBody.params as Record<string, unknown>).configuration = {
+            historyLength: -1,
+          };
+        },
+      ],
+      [
+        "configuration returnImmediately",
+        (requestBody) => {
+          (requestBody.params as Record<string, unknown>).configuration = {
+            returnImmediately: "true",
+          };
+        },
+      ],
+      [
+        "push configuration",
+        (requestBody) => {
+          (requestBody.params as Record<string, unknown>).configuration = {
+            taskPushNotificationConfig: { url: 123 },
+          };
+        },
+      ],
+      [
+        "raw Part content",
+        (requestBody) => {
+          const params = requestBody.params as {
+            message: { parts: Array<Record<string, unknown>> };
+          };
+          params.message.parts = [{ raw: 123 }];
+        },
+      ],
+      [
+        "URL Part content",
+        (requestBody) => {
+          const params = requestBody.params as {
+            message: { parts: Array<Record<string, unknown>> };
+          };
+          params.message.parts = [{ url: 123 }];
+        },
+      ],
+    ];
+
+    for (const [label, mutate] of mutations) {
+      const requestBody = sendMessageBody([{ text: "search: nmap" }]);
+      mutate(requestBody);
+      const response = await handler()(a2aRequest(requestBody));
+      const body = (await response.json()) as { error: { code: number } };
+
+      expect(body.error.code, label).toBe(-32602);
+    }
+  });
+
+  it("returns only output modes accepted by the client", async () => {
+    const requestBody = sendMessageBody([{ text: "search: nmap" }]);
+    (requestBody.params as Record<string, unknown>).configuration = {
+      acceptedOutputModes: ["text/plain"],
+      historyLength: 0,
+      returnImmediately: false,
+    };
+
+    const response = await handler()(a2aRequest(requestBody));
+    const body = (await response.json()) as {
+      result: { message: { parts: Array<Record<string, unknown>> } };
+    };
+
+    expect(body.result.message.parts).toEqual([
+      { text: "Found 1 Classroom post." },
+    ]);
+  });
+
+  it("returns content-type-not-supported when no output mode is compatible", async () => {
+    const requestBody = sendMessageBody([{ text: "search: nmap" }]);
+    (requestBody.params as Record<string, unknown>).configuration = {
+      acceptedOutputModes: ["image/png"],
+    };
+
+    const response = await handler()(a2aRequest(requestBody));
+    const body = (await response.json()) as { error: { code: number } };
+
+    expect(body.error.code).toBe(-32005);
   });
 
   it.each([

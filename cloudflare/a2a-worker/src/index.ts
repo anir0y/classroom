@@ -56,6 +56,7 @@ type MessageValidation =
       valid: true;
       parts: unknown[];
       contextId?: string;
+      acceptedOutputModes?: string[];
     }
   | {
       valid: false;
@@ -224,13 +225,17 @@ function contentTypeNotSupported(
   );
 }
 
-function invalidParams(id: JsonRpcId, description: string): Response {
+function invalidParams(
+  id: JsonRpcId,
+  description: string,
+  field = "params.message",
+): Response {
   return jsonRpcError(id, -32602, "Invalid parameters", [
     {
       "@type": "type.googleapis.com/google.rpc.BadRequest",
       fieldViolations: [
         {
-          field: "params.message",
+          field,
           description,
         },
       ],
@@ -242,6 +247,57 @@ function owns(object: Record<string, unknown>, property: string): boolean {
   return Object.prototype.hasOwnProperty.call(object, property);
 }
 
+function isStringArray(value: unknown): value is string[] {
+  return Array.isArray(value) && value.every((item) => typeof item === "string");
+}
+
+function validationFailure(
+  id: JsonRpcId,
+  field: string,
+  description: string,
+): MessageValidation {
+  return {
+    valid: false,
+    response: invalidParams(id, description, field),
+  };
+}
+
+function validatePushConfiguration(value: unknown): string | null {
+  if (!isObject(value)) {
+    return "taskPushNotificationConfig must be an object";
+  }
+
+  if (typeof value.url !== "string" || !value.url.trim()) {
+    return "taskPushNotificationConfig.url must be a non-empty string";
+  }
+
+  for (const field of ["tenant", "id", "taskId", "token"] as const) {
+    if (owns(value, field) && typeof value[field] !== "string") {
+      return `taskPushNotificationConfig.${field} must be a string`;
+    }
+  }
+
+  if (owns(value, "authentication")) {
+    if (!isObject(value.authentication)) {
+      return "taskPushNotificationConfig.authentication must be an object";
+    }
+    if (
+      typeof value.authentication.scheme !== "string" ||
+      !value.authentication.scheme.trim()
+    ) {
+      return "taskPushNotificationConfig.authentication.scheme must be a non-empty string";
+    }
+    if (
+      owns(value.authentication, "credentials") &&
+      typeof value.authentication.credentials !== "string"
+    ) {
+      return "taskPushNotificationConfig.authentication.credentials must be a string";
+    }
+  }
+
+  return null;
+}
+
 function normalizedMediaType(value: string): string {
   return value.split(";", 1)[0]?.trim().toLowerCase() ?? "";
 }
@@ -251,24 +307,79 @@ function validateMessage(
   id: JsonRpcId,
 ): MessageValidation {
   if (!isObject(params) || !isObject(params.message)) {
-    return {
-      valid: false,
-      response: invalidParams(id, "A valid user message is required"),
-    };
+    return validationFailure(
+      id,
+      "params.message",
+      "A valid user message is required",
+    );
   }
 
+  if (owns(params, "tenant") && typeof params.tenant !== "string") {
+    return validationFailure(id, "params.tenant", "tenant must be a string");
+  }
+  if (owns(params, "metadata") && !isObject(params.metadata)) {
+    return validationFailure(
+      id,
+      "params.metadata",
+      "metadata must be an object",
+    );
+  }
+
+  let acceptedOutputModes: string[] | undefined;
+  let pushConfigurationRequested = false;
   if (owns(params, "configuration")) {
     if (!isObject(params.configuration)) {
-      return {
-        valid: false,
-        response: invalidParams(id, "configuration must be an object"),
-      };
+      return validationFailure(
+        id,
+        "params.configuration",
+        "configuration must be an object",
+      );
+    }
+    if (owns(params.configuration, "acceptedOutputModes")) {
+      if (!isStringArray(params.configuration.acceptedOutputModes)) {
+        return validationFailure(
+          id,
+          "params.configuration.acceptedOutputModes",
+          "acceptedOutputModes must be an array of strings",
+        );
+      }
+      acceptedOutputModes = params.configuration.acceptedOutputModes.map(
+        normalizedMediaType,
+      );
     }
     if (
-      owns(params.configuration, "taskPushNotificationConfig") &&
-      params.configuration.taskPushNotificationConfig !== null
+      owns(params.configuration, "historyLength") &&
+      (!Number.isInteger(params.configuration.historyLength) ||
+        (params.configuration.historyLength as number) < 0)
     ) {
-      return { valid: false, response: pushNotificationsNotSupported(id) };
+      return validationFailure(
+        id,
+        "params.configuration.historyLength",
+        "historyLength must be a non-negative integer",
+      );
+    }
+    if (
+      owns(params.configuration, "returnImmediately") &&
+      typeof params.configuration.returnImmediately !== "boolean"
+    ) {
+      return validationFailure(
+        id,
+        "params.configuration.returnImmediately",
+        "returnImmediately must be a boolean",
+      );
+    }
+    if (owns(params.configuration, "taskPushNotificationConfig")) {
+      const pushValidation = validatePushConfiguration(
+        params.configuration.taskPushNotificationConfig,
+      );
+      if (pushValidation) {
+        return validationFailure(
+          id,
+          "params.configuration.taskPushNotificationConfig",
+          pushValidation,
+        );
+      }
+      pushConfigurationRequested = true;
     }
   }
 
@@ -280,55 +391,116 @@ function validateMessage(
     !Array.isArray(message.parts) ||
     message.parts.length === 0
   ) {
-    return {
-      valid: false,
-      response: invalidParams(id, "A valid user message is required"),
-    };
+    return validationFailure(
+      id,
+      "params.message",
+      "A valid user message is required",
+    );
   }
 
+  let requestedTaskId: string | undefined;
   if (owns(message, "taskId")) {
     if (typeof message.taskId !== "string" || !message.taskId.trim()) {
-      return {
-        valid: false,
-        response: invalidParams(id, "taskId must be a non-empty string"),
-      };
+      return validationFailure(
+        id,
+        "params.message.taskId",
+        "taskId must be a non-empty string",
+      );
     }
-    return {
-      valid: false,
-      response: taskNotFound(id, message.taskId),
-    };
+    requestedTaskId = message.taskId;
   }
 
   if (
     owns(message, "contextId") &&
     (typeof message.contextId !== "string" || !message.contextId.trim())
   ) {
-    return {
-      valid: false,
-      response: invalidParams(id, "contextId must be a non-empty string"),
-    };
+    return validationFailure(
+      id,
+      "params.message.contextId",
+      "contextId must be a non-empty string",
+    );
+  }
+
+  if (owns(message, "metadata") && !isObject(message.metadata)) {
+    return validationFailure(
+      id,
+      "params.message.metadata",
+      "metadata must be an object",
+    );
+  }
+  if (owns(message, "extensions") && !isStringArray(message.extensions)) {
+    return validationFailure(
+      id,
+      "params.message.extensions",
+      "extensions must be an array of strings",
+    );
+  }
+  if (
+    owns(message, "referenceTaskIds") &&
+    !isStringArray(message.referenceTaskIds)
+  ) {
+    return validationFailure(
+      id,
+      "params.message.referenceTaskIds",
+      "referenceTaskIds must be an array of strings",
+    );
   }
 
   for (const part of message.parts) {
     if (!isObject(part)) {
-      return {
-        valid: false,
-        response: invalidParams(id, "Each Part must be an object"),
-      };
+      return validationFailure(
+        id,
+        "params.message.parts",
+        "Each Part must be an object",
+      );
     }
 
     const contentFields = CONTENT_FIELDS.filter((field) => owns(part, field));
     if (contentFields.length !== 1) {
-      return {
-        valid: false,
-        response: invalidParams(
-          id,
-          "Each Part must set exactly one content field",
-        ),
-      };
+      return validationFailure(
+        id,
+        "params.message.parts",
+        "Each Part must set exactly one content field",
+      );
     }
 
     const contentField = contentFields[0];
+    if (
+      contentField !== "data" &&
+      typeof part[contentField] !== "string"
+    ) {
+      return validationFailure(
+        id,
+        `params.message.parts.${contentField}`,
+        `${contentField} Part content must be a string`,
+      );
+    }
+
+    if (owns(part, "metadata") && !isObject(part.metadata)) {
+      return validationFailure(
+        id,
+        "params.message.parts.metadata",
+        "Part metadata must be an object",
+      );
+    }
+    if (owns(part, "filename") && typeof part.filename !== "string") {
+      return validationFailure(
+        id,
+        "params.message.parts.filename",
+        "Part filename must be a string",
+      );
+    }
+
+    if (owns(part, "mediaType")) {
+      if (typeof part.mediaType !== "string") {
+        return validationFailure(
+          id,
+          "params.message.parts.mediaType",
+          "Part mediaType must be a string",
+        );
+      }
+    }
+
     if (contentField === "raw" || contentField === "url") {
       const mediaType =
         typeof part.mediaType === "string"
@@ -340,20 +512,7 @@ function validateMessage(
       };
     }
 
-    if (contentField === "text" && typeof part.text !== "string") {
-      return {
-        valid: false,
-        response: invalidParams(id, "A text Part must contain a string"),
-      };
-    }
-
-    if (owns(part, "mediaType")) {
-      if (typeof part.mediaType !== "string") {
-        return {
-          valid: false,
-          response: invalidParams(id, "Part mediaType must be a string"),
-        };
-      }
+    if (typeof part.mediaType === "string") {
       const mediaType = normalizedMediaType(part.mediaType);
       const expectedMediaType =
         contentField === "text" ? "text/plain" : "application/json";
@@ -366,12 +525,36 @@ function validateMessage(
     }
   }
 
+  if (pushConfigurationRequested) {
+    return { valid: false, response: pushNotificationsNotSupported(id) };
+  }
+
+  if (requestedTaskId) {
+    return { valid: false, response: taskNotFound(id, requestedTaskId) };
+  }
+
+  if (
+    acceptedOutputModes &&
+    !acceptedOutputModes.some(
+      (mode) => mode === "text/plain" || mode === "application/json",
+    )
+  ) {
+    return {
+      valid: false,
+      response: contentTypeNotSupported(
+        id,
+        acceptedOutputModes.join(",") || "none",
+      ),
+    };
+  }
+
   return {
     valid: true,
     parts: message.parts,
     ...(typeof message.contextId === "string"
       ? { contextId: message.contextId }
       : {}),
+    ...(acceptedOutputModes ? { acceptedOutputModes } : {}),
   };
 }
 
@@ -434,6 +617,19 @@ async function handleA2ARequest(
       " Classroom " +
       (count === 1 ? "post" : "posts") +
       ".";
+    const responseParts: Array<Record<string, unknown>> = [];
+    if (
+      !input.acceptedOutputModes ||
+      input.acceptedOutputModes.includes("text/plain")
+    ) {
+      responseParts.push({ text: summary });
+    }
+    if (
+      !input.acceptedOutputModes ||
+      input.acceptedOutputModes.includes("application/json")
+    ) {
+      responseParts.push({ data: result });
+    }
 
     return jsonRpcResponse({
       jsonrpc: "2.0",
@@ -443,7 +639,7 @@ async function handleA2ARequest(
           messageId,
           contextId,
           role: "ROLE_AGENT",
-          parts: [{ text: summary }, { data: result }],
+          parts: responseParts,
         },
       },
     });
