@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 19:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 00:05:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Tactical Detection: IOCs, Sigma, and Tripwires</title>
+      <link>https://classroom.anir0y.in/post/thm-room-tactical-detection/</link>
+      <pubDate>Mon, 10 Aug 2026 23:45:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-tactical-detection/</guid>
+      <description>Walkthrough of TryHackMe Tactical Detection: turn unique and public IOCs into Sigma rules, translate them with Uncoder, and set Windows file tripwires.</description>
+    </item>
     <item>
       <title>TryHackMe Slingshot: Retracing a Web-Server Breach in ELK</title>
       <link>https://classroom.anir0y.in/post/thm-room-slingshot/</link>
