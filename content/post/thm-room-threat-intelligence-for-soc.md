@@ -1,7 +1,7 @@
 ---
 title: "TryHackMe Threat Intelligence for SOC: IOC Hunting in Kibana"
-date: 2026-08-11T01:30:00+05:30
-lastmod: 2026-08-11T01:50:00+05:30
+date: 2026-08-10T23:55:00+05:30
+lastmod: 2026-08-10T23:58:00+05:30
 author: Animesh Roy
 avatar: /img/avatar.jpeg
 authorlink: https://anir0y.in
