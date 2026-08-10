@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Become a Hacker: Gobuster and a Hydra Login Attack](https://classroom.anir0y.in/post/thm-room-become-a-hacker/): Walkthrough of TryHackMe Become a Hacker: enumerate a web app to find a hidden login, then chain it with a Hydra dictionary attack to log in and grab the flag.
 - [TryHackMe Cryptography Concepts: Symmetric, Asymmetric, and HTTPS](https://classroom.anir0y.in/post/thm-room-cryptography-concepts/): Walkthrough of TryHackMe Cryptography Concepts: plaintext vs ciphertext, the Caesar cipher game, symmetric vs asymmetric encryption, and how HTTPS uses both.
 - [TryHackMe The CIA Triad: Confidentiality, Integrity, Availability](https://classroom.anir0y.in/post/thm-room-the-cia-triad/): Walkthrough of TryHackMe The CIA Triad: what Confidentiality, Integrity, and Availability protect, every task answer, and the drag-and-drop flag exercise.
 - [TryHackMe Management Wants a Word: A Four-Layer DFIR Decryption Chain](https://classroom.anir0y.in/post/thm-management-wants-a-word/): DFIR walkthrough of TryHackMe Management Wants a Word: peeling back DPAPI, a Chrome v10 password, a VeraCrypt volume, and a rasterised PDF to reach the flag.

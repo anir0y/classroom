@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 01:40:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 02:55:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Become a Hacker: Gobuster and a Hydra Login Attack</title>
+      <link>https://classroom.anir0y.in/post/thm-room-become-a-hacker/</link>
+      <pubDate>Mon, 10 Aug 2026 02:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-become-a-hacker/</guid>
+      <description>Walkthrough of TryHackMe Become a Hacker: enumerate a web app to find a hidden login, then chain it with a Hydra dictionary attack to log in and grab the flag.</description>
+    </item>
     <item>
       <title>TryHackMe Cryptography Concepts: Symmetric, Asymmetric, and HTTPS</title>
       <link>https://classroom.anir0y.in/post/thm-room-cryptography-concepts/</link>
