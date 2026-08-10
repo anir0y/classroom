@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe The CIA Triad: Confidentiality, Integrity, Availability](https://classroom.anir0y.in/post/thm-room-the-cia-triad/): Walkthrough of TryHackMe The CIA Triad: what Confidentiality, Integrity, and Availability protect, every task answer, and the drag-and-drop flag exercise.
 - [TryHackMe Management Wants a Word: A Four-Layer DFIR Decryption Chain](https://classroom.anir0y.in/post/thm-management-wants-a-word/): DFIR walkthrough of TryHackMe Management Wants a Word: peeling back DPAPI, a Chrome v10 password, a VeraCrypt volume, and a rasterised PDF to reach the flag.
 - [TryHackMe New Hire Old Artifacts: Hunting an Intrusion in Splunk](https://classroom.anir0y.in/post/thm-room-new-hire-old-artifacts/): Walkthrough of TryHackMe New Hire Old Artifacts: a Splunk threat hunt over Sysmon logs, with the SPL for every answer and the full attack chain.
 - [TryHackMe Database SQL Basics: SELECT, FROM, WHERE, ORDER BY](https://classroom.anir0y.in/post/thm-room-database-sql-basics/): Walkthrough of TryHackMe Database SQL Basics: databases, tables/rows/columns, and the SELECT, FROM, WHERE, ORDER BY clauses, with every Cafe SQL answer.
