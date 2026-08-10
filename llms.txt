@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Threat Intelligence for SOC: IOC Hunting in Kibana](https://classroom.anir0y.in/post/thm-room-threat-intelligence-for-soc/): Walkthrough of TryHackMe Threat Intelligence for SOC: hunt an IOC list in Kibana to find a compromised host, sinkhole domains, and build ElastAlert rules.
 - [TryHackMe Tactical Detection: IOCs, Sigma, and Tripwires](https://classroom.anir0y.in/post/thm-room-tactical-detection/): Walkthrough of TryHackMe Tactical Detection: turn unique and public IOCs into Sigma rules, translate them with Uncoder, and set Windows file tripwires.
 - [TryHackMe Slingshot: Retracing a Web-Server Breach in ELK](https://classroom.anir0y.in/post/thm-room-slingshot/): Walkthrough of TryHackMe Slingshot: use Kibana and KQL to rebuild a web-server kill chain from Apache and ModSecurity logs, with every answer and flag.
 - [TryHackMe Become a Defender: Map, Prioritize, Defend](https://classroom.anir0y.in/post/thm-room-become-a-defender/): Walkthrough of TryHackMe Become a Defender: map a client's infrastructure, prioritize critical systems, and defend in depth, with every answer and flag.
