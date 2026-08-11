@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe SigHunt: Nine Sigma Rules for a Ransomware Chain](https://classroom.anir0y.in/post/thm-room-sighunt/): Walkthrough of TryHackMe SigHunt: tune nine Sigma detection rules in the Sigma Validator to catch each stage of a ransomware attack chain and grab the flags.
 - [TryHackMe Sigma: Detecting AnyDesk, Tasks, and Ransomware](https://classroom.anir0y.in/post/thm-room-sigma/): Walkthrough of TryHackMe Sigma: write Sigma rules, convert them with sigmac, and hunt an AnyDesk install, a rogue scheduled task, and ransomware in Kibana.
 - [TryHackMe Threat Intelligence for SOC: IOC Hunting in Kibana](https://classroom.anir0y.in/post/thm-room-threat-intelligence-for-soc/): Walkthrough of TryHackMe Threat Intelligence for SOC: hunt an IOC list in Kibana to find a compromised host, sinkhole domains, and build ElastAlert rules.
 - [TryHackMe Tactical Detection: IOCs, Sigma, and Tripwires](https://classroom.anir0y.in/post/thm-room-tactical-detection/): Walkthrough of TryHackMe Tactical Detection: turn unique and public IOCs into Sigma rules, translate them with Uncoder, and set Windows file tripwires.

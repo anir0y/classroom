@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Aug 2026 00:05:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 00:24:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe SigHunt: Nine Sigma Rules for a Ransomware Chain</title>
+      <link>https://classroom.anir0y.in/post/thm-room-sighunt/</link>
+      <pubDate>Tue, 11 Aug 2026 00:20:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-sighunt/</guid>
+      <description>Walkthrough of TryHackMe SigHunt: tune nine Sigma detection rules in the Sigma Validator to catch each stage of a ransomware attack chain and grab the flags.</description>
+    </item>
     <item>
       <title>TryHackMe Sigma: Detecting AnyDesk, Tasks, and Ransomware</title>
       <link>https://classroom.anir0y.in/post/thm-room-sigma/</link>
