@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Aug 2026 00:34:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 00:44:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Introduction to SOAR: Playbooks and Automation</title>
+      <link>https://classroom.anir0y.in/post/thm-room-introduction-to-soar/</link>
+      <pubDate>Tue, 11 Aug 2026 00:40:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-introduction-to-soar/</guid>
+      <description>Walkthrough of TryHackMe Introduction to SOAR: the SOC challenges it solves, its orchestration and automation, and building playbooks to speed investigations.</description>
+    </item>
     <item>
       <title>TryHackMe Aurora EDR: Sigma Detections in the Event Log</title>
       <link>https://classroom.anir0y.in/post/thm-room-aurora-edr/</link>

@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Introduction to SOAR: Playbooks and Automation](https://classroom.anir0y.in/post/thm-room-introduction-to-soar/): Walkthrough of TryHackMe Introduction to SOAR: the SOC challenges it solves, its orchestration and automation, and building playbooks to speed investigations.
 - [TryHackMe Aurora EDR: Sigma Detections in the Event Log](https://classroom.anir0y.in/post/thm-room-aurora-edr/): Walkthrough of TryHackMe Aurora EDR: how the Sigma-based agent uses ETW, its presets and response actions, and reading its detections in the Windows Event Log.
 - [TryHackMe SigHunt: Nine Sigma Rules for a Ransomware Chain](https://classroom.anir0y.in/post/thm-room-sighunt/): Walkthrough of TryHackMe SigHunt: tune nine Sigma detection rules in the Sigma Validator to catch each stage of a ransomware attack chain and grab the flags.
 - [TryHackMe Sigma: Detecting AnyDesk, Tasks, and Ransomware](https://classroom.anir0y.in/post/thm-room-sigma/): Walkthrough of TryHackMe Sigma: write Sigma rules, convert them with sigmac, and hunt an AnyDesk install, a rogue scheduled task, and ransomware in Kibana.
