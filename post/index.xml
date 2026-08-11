@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Aug 2026 12:24:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 13:24:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Threat Hunting Pivoting: Chasing an AD Intrusion</title>
+      <link>https://classroom.anir0y.in/post/thm-room-threat-hunting-pivoting/</link>
+      <pubDate>Tue, 11 Aug 2026 13:20:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-threat-hunting-pivoting/</guid>
+      <description>Walkthrough of TryHackMe Threat Hunting Pivoting: hunting discovery, service-based privilege escalation, DCSync, and Pass-the-Hash lateral movement in Elastic.</description>
+    </item>
     <item>
       <title>TryHackMe Threat Hunting Foothold: Hunt an Intrusion in Elastic</title>
       <link>https://classroom.anir0y.in/post/thm-room-threat-hunting-foothold/</link>
