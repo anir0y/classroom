@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Threat Hunting Foothold: Hunt an Intrusion in Elastic](https://classroom.anir0y.in/post/thm-room-threat-hunting-foothold/): Walkthrough of TryHackMe Threat Hunting Foothold: reconstructing an intrusion across filebeat, winlogbeat, and packetbeat in the Elastic Stack with KQL.
 - [TryHackMe Threat Hunting Introduction: Mindset and Process](https://classroom.anir0y.in/post/thm-room-threat-hunting-introduction/): Walkthrough of TryHackMe Threat Hunting Introduction: how hunting differs from incident response, picking what to hunt for, and ATT&CK Navigator layers.
 - [TryHackMe Introduction to SOAR: Playbooks and Automation](https://classroom.anir0y.in/post/thm-room-introduction-to-soar/): Walkthrough of TryHackMe Introduction to SOAR: the SOC challenges it solves, its orchestration and automation, and building playbooks to speed investigations.
 - [TryHackMe Aurora EDR: Sigma Detections in the Event Log](https://classroom.anir0y.in/post/thm-room-aurora-edr/): Walkthrough of TryHackMe Aurora EDR: how the Sigma-based agent uses ETW, its presets and response actions, and reading its detections in the Windows Event Log.
