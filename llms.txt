@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Hunt Me I Payment Collectors: Phish to DNS Exfil](https://classroom.anir0y.in/post/thm-room-payment-collectors/): Walkthrough of TryHackMe Hunt Me I Payment Collectors: tracing a phish from an LNK lure through a powercat shell, PowerView recon, and DNS exfiltration.
 - [TryHackMe Threat Hunting Endgame: Collection to Impact in Elastic](https://classroom.anir0y.in/post/thm-room-threat-hunting-endgame/): Walkthrough of TryHackMe Threat Hunting Endgame: hunting collection, ICMP exfiltration, and shadow-copy impact across custom case indices in Elastic.
 - [TryHackMe Threat Hunting Pivoting: Chasing an AD Intrusion](https://classroom.anir0y.in/post/thm-room-threat-hunting-pivoting/): Walkthrough of TryHackMe Threat Hunting Pivoting: hunting discovery, service-based privilege escalation, DCSync, and Pass-the-Hash lateral movement in Elastic.
 - [TryHackMe Threat Hunting Foothold: Hunt an Intrusion in Elastic](https://classroom.anir0y.in/post/thm-room-threat-hunting-foothold/): Walkthrough of TryHackMe Threat Hunting Foothold: reconstructing an intrusion across filebeat, winlogbeat, and packetbeat in the Elastic Stack with KQL.
