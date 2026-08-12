@@ -47,9 +47,7 @@ The box ships two custom PowerShell helpers. `THM-Utils` summarises the noisy Wi
 
 The command banner at the top is the customised PowerShell profile: it prints the Atomic Red Team hints (`Invoke-AtomicTest All -ShowDetailsBrief`, `Invoke-AtomicTest TXXX-1`, `Invoke-AtomicTest TXXX-1 -Cleanup`) and the `THM-Utils` log-cleanup hint every time a shell opens.
 
-The reference card below summarises the full toolset the room hands you.
-
-![Terminal card of the Task 3 toolset: THM-Utils log commands and the Invoke-AtomicTest execute-and-cleanup pattern](/img/thm-atomicbird1/02-toolset.png) On the offensive side, `Invoke-AtomicTest All -ShowDetailsBrief` lists every custom test and `Invoke-AtomicTest T0000-1` runs one, so the command that undoes a specific test and restores the files it changed is **`Invoke-AtomicTest T0123-4 -Cleanup`**. Clear, execute, stat the logs, clean up: that four-step cycle is the whole room.
+On the offensive side, `Invoke-AtomicTest All -ShowDetailsBrief` lists every custom test and `Invoke-AtomicTest T0000-1` runs one, so the command that undoes a specific test and restores the files it changed is **`Invoke-AtomicTest T0123-4 -Cleanup`**. Clear, execute, stat the logs, clean up: that four-step cycle is the whole room.
 
 ## Task 4: execute, investigate, detect
 
@@ -57,19 +55,19 @@ The reference card below summarises the full toolset the room hands you.
 
 The first case runs three tests and asks you to read the result of each. This is where the mindset from Task 2 pays off.
 
-![Terminal card of the three cases: Task 4 execution and discovery, Task 5 shared-file hashes, and Task 6 clipboard and system-file abuse](/img/thm-atomicbird1/03-cases.png)
+Executing **T0004-1** performs system enumeration and drops a `Task-Result.txt` document on the Desktop; opening it, the OS Build info reads **`10.0.17763 N/A Build 17763`** (Windows Server 2019).
 
-Executing **T0004-1** performs system enumeration and drops a document on the Desktop; opening it, the OS Build info reads **`10.0.17763 N/A Build 17763`** (Windows Server 2019). **T0004-2** emulates a GUI credential prompt, the T1056.002 GUI Input Capture technique, and capturing the cleartext credential yields the flag **`THM{THM_Emulation_Room}`**. **T0004-3** is the interesting one: the test is designed to fail, and the point is to find the attempted command in the logs rather than in any output. Reading the PowerShell and Sysmon events shows the failed command was **`<!bin/bash>`**, a Linux shebang fragment that Windows could never execute, which is exactly the kind of artefact-only evidence the room wants you comfortable reading.
+![Real screenshot of Task-Result.txt opened on the AtomicBird VM showing OS Version 10.0.17763 N/A Build 17763](/img/thm-atomicbird1/vm-02-osbuild.png) **T0004-2** emulates a GUI credential prompt, the T1056.002 GUI Input Capture technique, and capturing the cleartext credential yields the flag **`THM{THM_Emulation_Room}`**. **T0004-3** is the interesting one: the test is designed to fail, and the point is to find the attempted command in the logs rather than in any output. Reading the PowerShell and Sysmon events shows the failed command was **`<!bin/bash>`**, a Linux shebang fragment that Windows could never execute, which is exactly the kind of artefact-only evidence the room wants you comfortable reading.
 
 ## Task 5: the universal suspicious share
 
-Case 2 is a clean, provable demonstration of file manipulation on a shared drive (T1091). The method is to fingerprint the file first, run the test, then fingerprint it again and compare. Navigating to the shared folder and hashing the `.txt` document before anything runs gives a SHA256 of **`3CA9FB42ACF0A347BDFDC78E0435331BC458194E4BC7FBFFB255BC4CF02CDC1A`**. After executing **T0005-1** and recalculating, the hash is **`626DBB861DCFF600DABEFCE7BF93F2C72C0F6462CC5729B963FC8242D7D43990`**. The two hashes differing is the entire finding: a file on a share silently changed, and you can prove it to the byte without ever seeing the code that did it. That is the blue-team half of the purple loop in one comparison.
+Case 2 is a clean, provable demonstration of file manipulation on a shared drive (T1091). The shared folder mounts as the **Share4All (S:)** drive, and the `.txt` document is `S:\Donation_call.txt`. The method is to fingerprint the file first, run the test, then fingerprint it again and compare. Hashing it before anything runs gives a SHA256 of **`3CA9FB42ACF0A347BDFDC78E0435331BC458194E4BC7FBFFB255BC4CF02CDC1A`**. After executing **T0005-1** and recalculating, the hash is **`626DBB861DCFF600DABEFCE7BF93F2C72C0F6462CC5729B963FC8242D7D43990`**. The two hashes differing is the entire finding: a file on a share silently changed, and you can prove it to the byte without ever seeing the code that did it. That is the blue-team half of the purple loop in one comparison.
+
+![Real screenshot of the AtomicBird PowerShell session: Get-FileHash on S:\Donation_call.txt before and after Invoke-AtomicTest T0005-1, showing the SHA256 change](/img/thm-atomicbird1/vm-03-sha256.png)
 
 ## Task 6: dump and go
 
 The final case covers Collection and staging for exfiltration (T1115). **T0006-1** dumps command-line history to a file, the kind of artefact an attacker harvests for credentials and internal hostnames, and locating that malicious history dump reveals the flag **`THM{THM_analytics_to_exfiltration_with_NexGenHunt}`**. **T0006-2** hijacks a system file to stage data for exfiltration, and finding that system-file modification activity gives **`THM{NextGenHunt.thm.jhn}`**. Both answers live in the artefacts the tests leave behind, not in any console output, which is the last reinforcement of the room's core lesson.
-
-![Card listing every graded answer across the room](/img/thm-atomicbird1/04-answers.png)
 
 ## Every answer
 
