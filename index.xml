@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 13:39:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 14:44:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Atomic Bird Goes Purple #1: Execute, Investigate, Detect</title>
+      <link>https://classroom.anir0y.in/post/thm-room-atomic-bird-goes-purple-1/</link>
+      <pubDate>Wed, 12 Aug 2026 14:40:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-atomic-bird-goes-purple-1/</guid>
+      <description>Walkthrough of TryHackMe Atomic Bird Goes Purple #1: running custom atomic tests and investigating the Sysmon and Aurora EDR artefacts they leave behind.</description>
+    </item>
     <item>
       <title>TryHackMe Atomic Red Team: Emulate ATT&amp;CK, One Test at a Time</title>
       <link>https://classroom.anir0y.in/post/thm-room-atomic-red-team/</link>
