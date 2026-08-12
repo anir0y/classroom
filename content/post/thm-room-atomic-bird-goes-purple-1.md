@@ -29,6 +29,10 @@ This is the room where the Threat Emulation module stops teaching and starts tes
 
 ![The Atomic Bird Goes Purple #1 room on TryHackMe marked Room completed 100 percent, all seven tasks green](/img/thm-atomicbird1/01-room.png)
 
+The lab machine boots to a Windows Server 2019 desktop (hostname `AtomicBird`) preloaded with the custom Atomic Red Team module, the `THM-Utils` PowerShell helpers, Sysmon and Aurora EDR. This is the real box the rest of the room is driven from.
+
+![The live AtomicBird VM desktop with the custom PowerShell profile open, showing the Atomic Red Team hints and THM-Utils commands](/img/thm-atomicbird1/vm-00-desktop.png)
+
 ## Task 2: custom exercises and the investigation mindset
 
 Task 2 frames the method before any test runs. The custom atomics are grouped into three cases, each mapped to a small set of ATT&CK techniques: Case 1 covers Execution, Discovery and Collection (T1056.002, T1059, T1082); Case 2 covers Lateral Movement through removable and shared media (T1091); Case 3 covers Collection via clipboard and system-file abuse (T1115). The important discipline the task sets is that the outcome you care about is not the test succeeding, it is what you can see right after it runs. Some atomics are deliberately not provided in cleartext, so you are expected to reason about them from the event logs alone, which is exactly how you handle a real sample you cannot decompile.
@@ -37,9 +41,15 @@ Task 2 frames the method before any test runs. The custom atomics are grouped in
 
 The box ships two custom PowerShell helpers. `THM-Utils` summarises the noisy Windows logs into something you can actually read, and the Atomic Red Team module runs the tests. The single most useful habit here is to clear the logs before every test so the events you see afterwards belong to that test and nothing else.
 
-![Terminal card of the Task 3 toolset: THM-Utils log commands and the Invoke-AtomicTest execute-and-cleanup pattern](/img/thm-atomicbird1/02-toolset.png)
+`THM-LogClear-All` wipes the logs, `THM-LogStats-All` gives you a RecordCount per source, and the per-source commands (`THM-LogStats-Sysmon`, `THM-LogStats-Security`, and so on) group events by Count, Event ID, Task Category and Provider. Running `THM-LogStats-Flag` prints the task's flag directly, which is **`THM{Emulation_is_fun_but_needs_focus_and_exploration}`**.
 
-`THM-LogClear-All` wipes the logs, `THM-LogStats-All` gives you a RecordCount per source, and the per-source commands (`THM-LogStats-Sysmon`, `THM-LogStats-Security`, and so on) group events by Count, Event ID, Task Category and Provider. Running `THM-LogStats-Flag` prints the task's flag directly, which is **`THM{Emulation_is_fun_but_needs_focus_and_exploration}`**. On the offensive side, `Invoke-AtomicTest All -ShowDetailsBrief` lists every custom test and `Invoke-AtomicTest T0000-1` runs one, so the command that undoes a specific test and restores the files it changed is **`Invoke-AtomicTest T0123-4 -Cleanup`**. Clear, execute, stat the logs, clean up: that four-step cycle is the whole room.
+![Real screenshot of the AtomicBird PowerShell session running THM-LogStats-Flag and returning the Task 3 flag](/img/thm-atomicbird1/vm-01-task3-flag.png)
+
+The command banner at the top is the customised PowerShell profile: it prints the Atomic Red Team hints (`Invoke-AtomicTest All -ShowDetailsBrief`, `Invoke-AtomicTest TXXX-1`, `Invoke-AtomicTest TXXX-1 -Cleanup`) and the `THM-Utils` log-cleanup hint every time a shell opens.
+
+The reference card below summarises the full toolset the room hands you.
+
+![Terminal card of the Task 3 toolset: THM-Utils log commands and the Invoke-AtomicTest execute-and-cleanup pattern](/img/thm-atomicbird1/02-toolset.png) On the offensive side, `Invoke-AtomicTest All -ShowDetailsBrief` lists every custom test and `Invoke-AtomicTest T0000-1` runs one, so the command that undoes a specific test and restores the files it changed is **`Invoke-AtomicTest T0123-4 -Cleanup`**. Clear, execute, stat the logs, clean up: that four-step cycle is the whole room.
 
 ## Task 4: execute, investigate, detect
 
