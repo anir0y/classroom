@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Preparation: The First Phase of Incident Response](https://classroom.anir0y.in/post/thm-room-preparation/): Walkthrough of TryHackMe Preparation: the IR lifecycle, building a CSIRT, chain of custody and jump bags, and configuring Sysmon, SRP and audit-logging visibility.
 - [TryHackMe Atomic Bird Goes Purple #2: Discover, Hide, Deface, Persist](https://classroom.anir0y.in/post/thm-room-atomic-bird-goes-purple-2/): Walkthrough of TryHackMe Atomic Bird Goes Purple #2: credential search, decoy accounts, rogue services, defacement, and registry-planted reverse shells.
 - [TryHackMe Atomic Bird Goes Purple #1: Execute, Investigate, Detect](https://classroom.anir0y.in/post/thm-room-atomic-bird-goes-purple-1/): Walkthrough of TryHackMe Atomic Bird Goes Purple #1: running custom atomic tests and investigating the Sysmon and Aurora EDR artefacts they leave behind.
 - [TryHackMe Atomic Red Team: Emulate ATT&CK, One Test at a Time](https://classroom.anir0y.in/post/thm-room-atomic-red-team/): Walkthrough of TryHackMe Atomic Red Team: driving Invoke-AtomicRedTeam, reading atomic YAMLs, and turning ATT&CK tests into Sysmon and Aurora EDR detections.
