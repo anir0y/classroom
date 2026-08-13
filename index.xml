@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Aug 2026 21:10:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 21:40:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Report Writing for SOC L2 Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-report-writing-soc-l2/</link>
+      <pubDate>Thu, 13 Aug 2026 21:36:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-report-writing-soc-l2/</guid>
+      <description>Walkthrough of TryHackMe Report Writing for SOC L2: writing for C-level, MSSP customers, and DFIR teams, plus the two report-correction simulations and their flags.</description>
+    </item>
     <item>
       <title>TryHackMe SOC L2 Alert Triage: The Senior Workflow</title>
       <link>https://classroom.anir0y.in/post/thm-room-soc-l2-alert-triage/</link>
