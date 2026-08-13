@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Python for Pentesters Walkthrough](https://classroom.anir0y.in/post/thm-room-python-for-pentesters/): Walkthrough of TryHackMe Python for Pentesters: directory enumeration, port scanning, MD5/SHA256 hash cracking, and SSH brute-force against the live target.
 - [TryHackMe Report Writing for SOC L2 Walkthrough](https://classroom.anir0y.in/post/thm-room-report-writing-soc-l2/): Walkthrough of TryHackMe Report Writing for SOC L2: writing for C-level, MSSP customers, and DFIR teams, plus the two report-correction simulations and their flags.
 - [TryHackMe SOC L2 Alert Triage: The Senior Workflow](https://classroom.anir0y.in/post/thm-room-soc-l2-alert-triage/): Walkthrough of TryHackMe SOC L2 Alert Triage: the L1 vs L2 workflow, log analysis and the threat hunting loop, threat response, and the triage flag.
 - [TryHackMe Senior Security Analyst Intro: The L2 Role](https://classroom.anir0y.in/post/thm-room-senior-security-analyst-intro/): Walkthrough of TryHackMe Senior Security Analyst Intro: what a SOC Level 2 analyst actually does, the L1 to L2 mindset shift, and the SIEM timeline challenge flag.
