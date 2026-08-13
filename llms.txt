@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Senior Security Analyst Intro: The L2 Role](https://classroom.anir0y.in/post/thm-room-senior-security-analyst-intro/): Walkthrough of TryHackMe Senior Security Analyst Intro: what a SOC Level 2 analyst actually does, the L1 to L2 mindset shift, and the SIEM timeline challenge flag.
 - [TryHackMe Threat Intel & Containment: Buying Time on the Adversary](https://classroom.anir0y.in/post/thm-room-threat-intel-and-containment/): Walkthrough of TryHackMe Threat Intel & Containment: pre-containment IOCs, controlled vs entire isolation, building threat intelligence, and a pcap practical.
 - [TryHackMe Identification & Scoping: Working a Phishing Incident](https://classroom.anir0y.in/post/thm-room-identification-and-scoping/): Walkthrough of TryHackMe Identification & Scoping: triaging phishing tickets, using the Asset Inventory and Spreadsheet of Doom, and pivoting through IoCs.
 - [TryHackMe Preparation: The First Phase of Incident Response](https://classroom.anir0y.in/post/thm-room-preparation/): Walkthrough of TryHackMe Preparation: the IR lifecycle, building a CSIRT, chain of custody and jump bags, and configuring Sysmon, SRP and audit-logging visibility.
