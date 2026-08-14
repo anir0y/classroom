@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Elastic: Using Elastic Defend Walkthrough](https://classroom.anir0y.in/post/thm-room-elasticdefend/): Walkthrough of TryHackMe Elastic: Using Elastic Defend: configure the integration, explore endpoint telemetry, and triage EDR alerts via the Elasticsearch API.
 - [TryHackMe Elastic: Setting up a SOC Lab Walkthrough](https://classroom.anir0y.in/post/thm-room-elasticlab/): Walkthrough of TryHackMe Elastic: Setting up a SOC Lab with Elasticsearch, Kibana and Fleet, ingesting Apache and custom VPN logs to answer the data questions.
 - [TryHackMe Defensive Security Trends: Keeping Up as an L2](https://classroom.anir0y.in/post/thm-room-defensivesecuritytrends/): Walkthrough of TryHackMe Defensive Security Trends: faster and complex attacks, valid accounts, supply chain, AI impact, and the Verizon DBIR research challenge.
 - [TryHackMe Python for Pentesters Walkthrough](https://classroom.anir0y.in/post/thm-room-python-for-pentesters/): Walkthrough of TryHackMe Python for Pentesters: directory enumeration, port scanning, MD5/SHA256 hash cracking, and SSH brute-force against the live target.
