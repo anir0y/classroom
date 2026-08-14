@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 11:50:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 12:25:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Elastic: Setting up a SOC Lab Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-elasticlab/</link>
+      <pubDate>Fri, 14 Aug 2026 12:20:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-elasticlab/</guid>
+      <description>Walkthrough of TryHackMe Elastic: Setting up a SOC Lab with Elasticsearch, Kibana and Fleet, ingesting Apache and custom VPN logs to answer the data questions.</description>
+    </item>
     <item>
       <title>TryHackMe Defensive Security Trends: Keeping Up as an L2</title>
       <link>https://classroom.anir0y.in/post/thm-room-defensivesecuritytrends/</link>
