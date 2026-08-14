@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Defensive Security Trends: Keeping Up as an L2](https://classroom.anir0y.in/post/thm-room-defensivesecuritytrends/): Walkthrough of TryHackMe Defensive Security Trends: faster and complex attacks, valid accounts, supply chain, AI impact, and the Verizon DBIR research challenge.
 - [TryHackMe Python for Pentesters Walkthrough](https://classroom.anir0y.in/post/thm-room-python-for-pentesters/): Walkthrough of TryHackMe Python for Pentesters: directory enumeration, port scanning, MD5/SHA256 hash cracking, and SSH brute-force against the live target.
 - [TryHackMe Report Writing for SOC L2 Walkthrough](https://classroom.anir0y.in/post/thm-room-report-writing-soc-l2/): Walkthrough of TryHackMe Report Writing for SOC L2: writing for C-level, MSSP customers, and DFIR teams, plus the two report-correction simulations and their flags.
 - [TryHackMe SOC L2 Alert Triage: The Senior Workflow](https://classroom.anir0y.in/post/thm-room-soc-l2-alert-triage/): Walkthrough of TryHackMe SOC L2 Alert Triage: the L1 vs L2 workflow, log analysis and the threat hunting loop, threat response, and the triage flag.

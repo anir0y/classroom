@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 00:28:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 11:50:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Defensive Security Trends: Keeping Up as an L2</title>
+      <link>https://classroom.anir0y.in/post/thm-room-defensivesecuritytrends/</link>
+      <pubDate>Fri, 14 Aug 2026 11:45:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-defensivesecuritytrends/</guid>
+      <description>Walkthrough of TryHackMe Defensive Security Trends: faster and complex attacks, valid accounts, supply chain, AI impact, and the Verizon DBIR research challenge.</description>
+    </item>
     <item>
       <title>TryHackMe Python for Pentesters Walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-python-for-pentesters/</link>
