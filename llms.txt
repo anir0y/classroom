@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Detecting AD Initial Access Walkthrough](https://classroom.anir0y.in/post/thm-room-detectingadinitialaccess/): Walkthrough of TryHackMe Detecting AD Initial Access: IIS web shell hunting via w3wp.exe process chains, OWA brute-force correlation, NPS VPN credential attacks, and the Task 8 investigation challenge.
 - [TryHackMe Monitoring Active Directory Walkthrough](https://classroom.anir0y.in/post/thm-room-monitoringactivedirectory/): Walkthrough of TryHackMe Monitoring Active Directory: AD event IDs, stack counting for baselines, audit policy, and the new-employee onboarding investigation in Splunk.
 - [TryHackMe Elastic: Using Elastic Defend Walkthrough](https://classroom.anir0y.in/post/thm-room-elasticdefend/): Walkthrough of TryHackMe Elastic: Using Elastic Defend: configure the integration, explore endpoint telemetry, and triage EDR alerts via the Elasticsearch API.
 - [TryHackMe Elastic: Setting up a SOC Lab Walkthrough](https://classroom.anir0y.in/post/thm-room-elasticlab/): Walkthrough of TryHackMe Elastic: Setting up a SOC Lab with Elasticsearch, Kibana and Fleet, ingesting Apache and custom VPN logs to answer the data questions.
