@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Aug 2026 00:20:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 00:52:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Detecting AD Post-Exploitation Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-detectingadpostexploitation/</link>
+      <pubDate>Mon, 17 Aug 2026 00:52:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-detectingadpostexploitation/</guid>
+      <description>Walkthrough of TryHackMe Detecting AD Post-Exploitation: rogue Domain Admin persistence, VSS shadow copy and event log deletion, WMIC ransomware fan-out, and wiper research questions.</description>
+    </item>
     <item>
       <title>TryHackMe Detecting AD Lateral Movement Walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-detectingadlateralmovement/</link>
