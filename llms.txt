@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Detecting AD Lateral Movement Walkthrough](https://classroom.anir0y.in/post/thm-room-detectingadlateralmovement/): Walkthrough of TryHackMe Detecting AD Lateral Movement: SMB and ADMIN$ access, PsExec service installation, RDP hop chains, and the Task 7 investigation challenge in Splunk.
 - [TryHackMe Detecting AD Credential Attacks Walkthrough](https://classroom.anir0y.in/post/thm-room-detectingadcredentialattacks/): Walkthrough of TryHackMe Detecting AD Credential Attacks: Kerberoasting via RC4 service tickets, AS-REP roasting, LSASS dumping with procdump, DCSync via Event 4662, and NTDS.dit extraction.
 - [TryHackMe Detecting AD Initial Access Walkthrough](https://classroom.anir0y.in/post/thm-room-detectingadinitialaccess/): Walkthrough of TryHackMe Detecting AD Initial Access: IIS web shell hunting via w3wp.exe process chains, OWA brute-force correlation, NPS VPN credential attacks, and the Task 8 investigation challenge.
 - [TryHackMe Monitoring Active Directory Walkthrough](https://classroom.anir0y.in/post/thm-room-monitoringactivedirectory/): Walkthrough of TryHackMe Monitoring Active Directory: AD event IDs, stack counting for baselines, audit policy, and the new-employee onboarding investigation in Splunk.
