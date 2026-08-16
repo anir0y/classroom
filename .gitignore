@@ -9,3 +9,4 @@ resources/
 cloudflare/a2a-worker/node_modules/
 cloudflare/a2a-worker/.wrangler/
 cloudflare/a2a-worker/.dev.vars*
+scripts/__pycache__/
