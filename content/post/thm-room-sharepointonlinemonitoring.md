@@ -27,7 +27,7 @@ description: "Walkthrough of TryHackMe SharePoint Online Monitoring: external sh
 
 ## SharePoint Online Monitoring
 
-Final room in the **Microsoft 365 for SOC** module, closing out [M365 Monitoring Basics](/post/thm-room-m365monitoringbasics/), [Entra ID Monitoring](/post/thm-room-entraidmonitoring/) and [Exchange Online Monitoring](/post/thm-room-exchangeonlinemonitoring/). Identity, then mail, and now the file store — where the data actually lives and where an attacker with a stolen session goes to take it.
+Fourth room in the **Microsoft 365 for SOC** module, after [M365 Monitoring Basics](/post/thm-room-m365monitoringbasics/), [Entra ID Monitoring](/post/thm-room-entraidmonitoring/) and [Exchange Online Monitoring](/post/thm-room-exchangeonlinemonitoring/). Identity, then mail, and now the file store — where the data actually lives and where an attacker with a stolen session goes to take it.
 
 Seven tasks, fourteen graded answers, all solved 100%. Two indexes: `practice` for the guided walk and `challenge` for the unguided scenario.
 
@@ -145,7 +145,7 @@ The last question is the sharpest one in the room: which `CorrelationId` proves 
 
 That pairing — `AddedToSecureLink` when the link is created, `SecureLinkUsed` when it is redeemed — is the single most useful thing to take from this room. The first tells you exposure; only the second tells you the exposure was realised.
 
-## Task 7: closing the module
+## Task 7: what carries forward
 
 ![TryHackMe SharePoint Online Monitoring completed](/img/thm-sharepointonline/04-room-complete.png)
 
@@ -155,4 +155,4 @@ Two things carry forward.
 
 **The baseline trick has now worked in four consecutive rooms**, and that is the real lesson of the module rather than any single field name. [M365 Monitoring Basics](/post/thm-room-m365monitoringbasics/) had one office IP, [Entra ID Monitoring](/post/thm-room-entraidmonitoring/) had one country, [Exchange Online](/post/thm-room-exchangeonlinemonitoring/) had one egress address, and here it is one city plus the absence of failed logins. In every case the detection was a `stats` grouped on source, and the finding was the row that did not belong. Cloud identity logs are high-volume and low-variety, which makes them unusually well suited to exactly that.
 
-Room solved 100% — seven tasks, fourteen answers, 112 points, and the Microsoft 365 for SOC module complete.
+Room solved 100% — seven tasks, fourteen answers, 112 points. One room left in the module: [Microsoft Intune Monitoring](/post/thm-room-msintunemonitoring/), where the platform stops being somewhere attackers read data and becomes somewhere they destroy it.
