@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Aug 2026 15:47:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 16:36:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe M365 Monitoring Basics Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-m365monitoringbasics/</link>
+      <pubDate>Mon, 17 Aug 2026 16:36:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-m365monitoringbasics/</guid>
+      <description>Walkthrough of TryHackMe M365 Monitoring Basics: Entra ID sign-in and audit logs, M365 unified audit logs, and one account takeover traced from password spray to business email compromise.</description>
+    </item>
     <item>
       <title>TryHackMe Ledger Walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-ledger/</link>

@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe M365 Monitoring Basics Walkthrough](https://classroom.anir0y.in/post/thm-room-m365monitoringbasics/): Walkthrough of TryHackMe M365 Monitoring Basics: Entra ID sign-in and audit logs, M365 unified audit logs, and one account takeover traced from password spray to business email compromise.
 - [TryHackMe Ledger Walkthrough](https://classroom.anir0y.in/post/thm-room-ledger/): Walkthrough of TryHackMe Ledger: anonymous LDAP enumeration, a password left in a description field, and ESC1 on an AD CS certificate template for Domain Admin.
 - [TryHackMe Detecting AD Post-Exploitation Walkthrough](https://classroom.anir0y.in/post/thm-room-detectingadpostexploitation/): Walkthrough of TryHackMe Detecting AD Post-Exploitation: rogue Domain Admin persistence, VSS shadow copy and event log deletion, WMIC ransomware fan-out, and wiper research questions.
 - [TryHackMe Detecting AD Lateral Movement Walkthrough](https://classroom.anir0y.in/post/thm-room-detectingadlateralmovement/): Walkthrough of TryHackMe Detecting AD Lateral Movement: SMB and ADMIN$ access, PsExec service installation, RDP hop chains, and the Task 7 investigation challenge in Splunk.
