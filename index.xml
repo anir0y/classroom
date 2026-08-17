@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Aug 2026 00:52:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 15:47:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Ledger Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-ledger/</link>
+      <pubDate>Mon, 17 Aug 2026 15:47:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-ledger/</guid>
+      <description>Walkthrough of TryHackMe Ledger: anonymous LDAP enumeration, a password left in a description field, and ESC1 on an AD CS certificate template for Domain Admin.</description>
+    </item>
     <item>
       <title>TryHackMe Detecting AD Post-Exploitation Walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-detectingadpostexploitation/</link>
