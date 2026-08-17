@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe SharePoint Online Monitoring Walkthrough](https://classroom.anir0y.in/post/thm-room-sharepointonlinemonitoring/): Walkthrough of TryHackMe SharePoint Online Monitoring: external sharing links, FileDownloaded exfiltration, OneNote phishing and a full SharePoint compromise investigation.
 - [TryHackMe Exchange Online Monitoring Walkthrough](https://classroom.anir0y.in/post/thm-room-exchangeonlinemonitoring/): Walkthrough of TryHackMe Exchange Online Monitoring: malicious inbox rules, mailbox forwarding to external addresses, message trace analysis, and a full internal phishing investigation.
 - [TryHackMe Entra ID Monitoring Walkthrough](https://classroom.anir0y.in/post/thm-room-entraidmonitoring/): Walkthrough of TryHackMe Entra ID Monitoring: password spraying vs throttled brute force, Identity Protection risk detections, Conditional Access blocks, MFA fatigue, and OAuth consent persistence.
 - [TryHackMe M365 Monitoring Basics Walkthrough](https://classroom.anir0y.in/post/thm-room-m365monitoringbasics/): Walkthrough of TryHackMe M365 Monitoring Basics: Entra ID sign-in and audit logs, M365 unified audit logs, and one account takeover traced from password spray to business email compromise.
