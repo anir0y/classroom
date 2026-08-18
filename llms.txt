@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Intro to Detection Engineering Walkthrough](https://classroom.anir0y.in/post/thm-room-introtodetectioneng/): Walkthrough of TryHackMe Intro to Detection Engineering: the DE life cycle, precision vs recall, detection library decay, and all eight flags from the Senna assessment.
 - [TryHackMe Monitoring AWS Workloads Walkthrough](https://classroom.anir0y.in/post/thm-room-monitoringawsworkloads/): Walkthrough of TryHackMe Monitoring AWS Workloads: Falco syscall telemetry on EC2 and inside containers, a command injection to reverse shell, and a Lambda function repurposed into a cryptomining launcher via SSM.
 - [TryHackMe Monitoring AWS Services Walkthrough](https://classroom.anir0y.in/post/thm-room-monitoringawsservices/): Walkthrough of TryHackMe Monitoring AWS Services: a public S3 bucket policy and the filename brute force that followed, SSH open to the world on EC2, an Internet-exposed RDS instance that needed two changes, IAM discovery, and Denial of Wallet.
 - [TryHackMe Monitoring AWS Logins Walkthrough](https://classroom.anir0y.in/post/thm-room-monitoringawslogins/): Walkthrough of TryHackMe Monitoring AWS Logins: console logins and MFAUsed, AKIA vs ASIA access keys, an S3 data-extortion attack, AssumeRole session names, and a Splunk integration authenticating as root.

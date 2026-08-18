@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2026 14:33:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 15:33:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Intro to Detection Engineering Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-introtodetectioneng/</link>
+      <pubDate>Tue, 18 Aug 2026 15:33:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-introtodetectioneng/</guid>
+      <description>Walkthrough of TryHackMe Intro to Detection Engineering: the DE life cycle, precision vs recall, detection library decay, and all eight flags from the Senna assessment.</description>
+    </item>
     <item>
       <title>TryHackMe Monitoring AWS Workloads Walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-monitoringawsworkloads/</link>
