@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2026 11:01:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 11:45:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Monitoring AWS Services Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-monitoringawsservices/</link>
+      <pubDate>Tue, 18 Aug 2026 11:45:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-monitoringawsservices/</guid>
+      <description>Walkthrough of TryHackMe Monitoring AWS Services: a public S3 bucket policy and the filename brute force that followed, SSH open to the world on EC2, an Internet-exposed RDS instance that needed two changes, IAM discovery, and Denial of Wallet.</description>
+    </item>
     <item>
       <title>TryHackMe Monitoring AWS Logins Walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-monitoringawslogins/</link>
