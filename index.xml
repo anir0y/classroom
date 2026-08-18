@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2026 08:38:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 09:25:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe AWS Security Logging Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-awssecuritylogging/</link>
+      <pubDate>Tue, 18 Aug 2026 09:25:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-awssecuritylogging/</guid>
+      <description>Walkthrough of TryHackMe AWS Security Logging: CloudTrail console logins and bucket creation, three GuardDuty findings ending in an XMRig miner, CloudFront access logs, and the S3 data event that ties the intrusion together.</description>
+    </item>
     <item>
       <title>TryHackMe Cloud Security Pitfalls Walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-cloudsecuritypitfalls/</link>
