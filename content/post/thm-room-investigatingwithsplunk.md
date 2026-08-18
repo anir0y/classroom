@@ -27,6 +27,8 @@ description: "Walkthrough of TryHackMe Investigating with Splunk: a homoglyph ba
 
 ## Investigating with Splunk
 
+Room: [Investigating with Splunk](https://tryhackme.com/room/investigatingwithsplunk) on TryHackMe.
+
 A standalone Splunk investigation room rather than part of a module — one task, nine questions, and a single JSON dataset of Windows event logs. Solved 100%.
 
 ![TryHackMe Investigating with Splunk at 100%, all nine questions answered](/img/thm-investigatingsplunk/01-room-complete.png)
