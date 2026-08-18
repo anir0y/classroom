@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Monitoring AWS Logins Walkthrough](https://classroom.anir0y.in/post/thm-room-monitoringawslogins/): Walkthrough of TryHackMe Monitoring AWS Logins: console logins and MFAUsed, AKIA vs ASIA access keys, an S3 data-extortion attack, AssumeRole session names, and a Splunk integration authenticating as root.
 - [TryHackMe Investigating with Splunk Walkthrough](https://classroom.anir0y.in/post/thm-room-investigatingwithsplunk/): Walkthrough of TryHackMe Investigating with Splunk: a homoglyph backdoor account, WMIC lateral movement, Sysmon registry artefacts, and decoding an Empire PowerShell stager to recover its C2 URL.
 - [TryHackMe AWS Security Logging Walkthrough](https://classroom.anir0y.in/post/thm-room-awssecuritylogging/): Walkthrough of TryHackMe AWS Security Logging: CloudTrail console logins and bucket creation, three GuardDuty findings ending in an XMRig miner, CloudFront access logs, and the S3 data event that ties the intrusion together.
 - [TryHackMe Cloud Security Pitfalls Walkthrough](https://classroom.anir0y.in/post/thm-room-cloudsecuritypitfalls/): Walkthrough of TryHackMe Cloud Security Pitfalls: IaaS/PaaS/SaaS, the Shared Responsibility Model, why cloud logging is the real obstacle to SIEM coverage, and both challenge flags.
