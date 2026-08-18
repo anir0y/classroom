@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2026 11:45:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 14:33:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Monitoring AWS Workloads Walkthrough</title>
+      <link>https://classroom.anir0y.in/post/thm-room-monitoringawsworkloads/</link>
+      <pubDate>Tue, 18 Aug 2026 14:33:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-monitoringawsworkloads/</guid>
+      <description>Walkthrough of TryHackMe Monitoring AWS Workloads: Falco syscall telemetry on EC2 and inside containers, a command injection to reverse shell, and a Lambda function repurposed into a cryptomining launcher via SSM.</description>
+    </item>
     <item>
       <title>TryHackMe Monitoring AWS Services Walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-monitoringawsservices/</link>
