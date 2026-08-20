@@ -6,7 +6,7 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Aug 2026 13:56:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 16:10:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe AI &amp; Automation in Detection Engineering Walkthrough</title>
@@ -275,11 +275,11 @@
       <description>Walkthrough of TryHackMe Threat Hunting Foothold: reconstructing an intrusion across filebeat, winlogbeat, and packetbeat in the Elastic Stack with KQL.</description>
     </item>
     <item>
-      <title>TryHackMe Threat Hunting Introduction: Mindset and Process</title>
+      <title>TryHackMe Threat Hunting Introduction: Approaches, Targets, and APT-Serpent</title>
       <link>https://classroom.anir0y.in/post/thm-room-threat-hunting-introduction/</link>
       <pubDate>Tue, 11 Aug 2026 10:15:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/post/thm-room-threat-hunting-introduction/</guid>
-      <description>Walkthrough of TryHackMe Threat Hunting Introduction: how hunting differs from incident response, picking what to hunt for, and ATT&amp;amp;CK Navigator layers.</description>
+      <description>Walkthrough of TryHackMe Threat Hunting Introduction: dwell time, the three hunting approaches and targets, the four hunting methods, and a proactive hunt against APT-Serpent in the practical.</description>
     </item>
     <item>
       <title>TryHackMe Introduction to SOAR: Playbooks and Automation</title>
