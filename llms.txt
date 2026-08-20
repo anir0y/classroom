@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Sigma Language: Write Once, Convert Everywhere, Tune the Rest](https://classroom.anir0y.in/post/thm-room-sigmalanguage/): Walkthrough of TryHackMe Sigma Language: rule anatomy on a real SigmaHQ rule, writing a recon detection from scratch, converting it to SPL, KQL and EQL with sigma-cli, and fixing six syntax bugs across three broken rules.
 - [TryHackMe AI & Automation in Detection Engineering Walkthrough](https://classroom.anir0y.in/post/thm-room-aiautomationdetectioneng/): Walkthrough of TryHackMe AI & Automation in Detection Engineering: a full Detection-as-Code pull request review in TryGitMe, the three bugs that kept a print.exe rule at TP 0/6, and an AI copilot that writes a flawless DCSync rule for someone else's environment.
 - [TryHackMe Intro to Detection Engineering Walkthrough](https://classroom.anir0y.in/post/thm-room-introtodetectioneng/): Walkthrough of TryHackMe Intro to Detection Engineering: the DE life cycle, precision vs recall, detection library decay, and all eight flags from the Senna assessment.
 - [TryHackMe Monitoring AWS Workloads Walkthrough](https://classroom.anir0y.in/post/thm-room-monitoringawsworkloads/): Walkthrough of TryHackMe Monitoring AWS Workloads: Falco syscall telemetry on EC2 and inside containers, a command injection to reverse shell, and a Lambda function repurposed into a cryptomining launcher via SSM.
