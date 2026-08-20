@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe DetectMare: Five Broken Detections and a Red Team That Attacks Your Filters](https://classroom.anir0y.in/post/thm-room-detectmare/): Walkthrough of TryHackMe DetectMare: tuning five Sigma detections through a Detection-as-Code pipeline whose red-team check actively bypasses your exclusions, across an APT21 chain from a .docm lure to LSASS dumping, pass-the-hash and a password-protected rar.
 - [TryHackMe Sigma Language: Write Once, Convert Everywhere, Tune the Rest](https://classroom.anir0y.in/post/thm-room-sigmalanguage/): Walkthrough of TryHackMe Sigma Language: rule anatomy on a real SigmaHQ rule, writing a recon detection from scratch, converting it to SPL, KQL and EQL with sigma-cli, and fixing six syntax bugs across three broken rules.
 - [TryHackMe AI & Automation in Detection Engineering Walkthrough](https://classroom.anir0y.in/post/thm-room-aiautomationdetectioneng/): Walkthrough of TryHackMe AI & Automation in Detection Engineering: a full Detection-as-Code pull request review in TryGitMe, the three bugs that kept a print.exe rule at TP 0/6, and an AI copilot that writes a flawless DCSync rule for someone else's environment.
 - [TryHackMe Intro to Detection Engineering Walkthrough](https://classroom.anir0y.in/post/thm-room-introtodetectioneng/): Walkthrough of TryHackMe Intro to Detection Engineering: the DE life cycle, precision vs recall, detection library decay, and all eight flags from the Senna assessment.
