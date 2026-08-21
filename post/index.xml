@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Aug 2026 22:03:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 22:46:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Network Monitoring with Zeek: One uid, Five Logs, One Intrusion</title>
+      <link>https://classroom.anir0y.in/post/thm-room-networkmonitoringwithzeek/</link>
+      <pubDate>Fri, 21 Aug 2026 22:46:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-networkmonitoringwithzeek/</guid>
+      <description>Walkthrough of TryHackMe Network Monitoring with Zeek: reading conn.log, dns.log, http.log, ssl.log and files.log with zeek-cut to find a Cobalt Strike beacon, DNS tunnel and 5 MB exfil POST, then tuning a Notice script from 23 alerts down to 10.</description>
+    </item>
     <item>
       <title>TryHackMe Post-Incident Activity: Turning an Incident Into Detection Rules</title>
       <link>https://classroom.anir0y.in/post/thm-room-postincidentactivity/</link>
