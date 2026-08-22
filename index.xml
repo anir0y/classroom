@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Aug 2026 22:46:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 12:44:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Advanced Packet Analysis: What the Logs Could Not Tell You</title>
+      <link>https://classroom.anir0y.in/post/thm-room-advancedpacketanalysis/</link>
+      <pubDate>Sat, 22 Aug 2026 12:44:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-advancedpacketanalysis/</guid>
+      <description>Walkthrough of TryHackMe Advanced Packet Analysis: triaging a SYN scan with TShark, decoding base64 C2 tasking, pulling cleartext FTP credentials, exporting and hashing malware from a PCAP, and reading JA4 fingerprints.</description>
+    </item>
     <item>
       <title>TryHackMe Network Monitoring with Zeek: One uid, Five Logs, One Intrusion</title>
       <link>https://classroom.anir0y.in/post/thm-room-networkmonitoringwithzeek/</link>
