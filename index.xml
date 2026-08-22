@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Aug 2026 15:05:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 16:50:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Response and Recovery: Containing an M365 Compromise From the Audit Log</title>
+      <link>https://classroom.anir0y.in/post/thm-room-responseandrecovery/</link>
+      <pubDate>Sat, 22 Aug 2026 16:50:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-responseandrecovery/</guid>
+      <description>Walkthrough of TryHackMe Response and Recovery: scoping attacker post-compromise activity in the Nexus Financial M365 tenant through Unified Audit Logs — two alert-suppressing inbox rules, five SharePoint downloads, an anonymous sharing link to protonmail, and a riskLevel of none that explains the whole incident.</description>
+    </item>
     <item>
       <title>TryHackMe Volt Typhoon: Retracing an APT Through Three Log Sources</title>
       <link>https://classroom.anir0y.in/post/thm-room-volttyphoon/</link>
