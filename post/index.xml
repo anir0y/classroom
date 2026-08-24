@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Aug 2026 16:50:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 07:38:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Traffic Analysis Pitfalls: When the Wire Stops Talking</title>
+      <link>https://classroom.anir0y.in/post/thm-room-trafficanalysispitfalls/</link>
+      <pubDate>Mon, 24 Aug 2026 07:38:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-trafficanalysispitfalls/</guid>
+      <description>Walkthrough of TryHackMe Traffic Analysis Pitfalls: ASN enrichment over CDN traffic, finding 6,946 QUIC sessions a TCP rule never sees, spotting a DoH switch from a silent UDP/53 host, and attributing a 847 MB exfil to EXCEL.EXE via Sysmon.</description>
+    </item>
     <item>
       <title>TryHackMe Response and Recovery: Containing an M365 Compromise From the Audit Log</title>
       <link>https://classroom.anir0y.in/post/thm-room-responseandrecovery/</link>
