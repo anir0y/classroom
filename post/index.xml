@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Aug 2026 07:38:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 17:01:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Basic Static Analysis: Six Samples, No Execution</title>
+      <link>https://classroom.anir0y.in/post/thm-room-staticanalysis1/</link>
+      <pubDate>Fri, 28 Aug 2026 17:01:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-staticanalysis1/</guid>
+      <description>Walkthrough of TryHackMe Basic Static Analysis: FLOSS recovering a Dbgview.exe stackstring that strings.exe cannot see, imphash and ssdeep tying two samples together, capa mapping anti-VM and Run-key persistence to MBC B0012.001, and PEstudio flagging RPCRT4.dll for a single UuidCreate import.</description>
+    </item>
     <item>
       <title>TryHackMe Traffic Analysis Pitfalls: When the Wire Stops Talking</title>
       <link>https://classroom.anir0y.in/post/thm-room-trafficanalysispitfalls/</link>
