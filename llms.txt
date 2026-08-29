@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Servidae: Tracing a Compromised Workstation in ELK](https://classroom.anir0y.in/post/thm-room-servidae/): TryHackMe Servidae walkthrough: tracing a compromised workstation through Elastic, from a PDF lure to AlwaysInstallElevated, a curl brute force and CSV exfiltration.
 - [TryHackMe MalBuster: Four Binaries, No Hand-Holding](https://classroom.anir0y.in/post/thm-room-malbuster/): TryHackMe MalBuster walkthrough: triaging four unknown PE binaries on REMnux with pefile, capa and hash OSINT, and two version-dependent answers.
 - [TryHackMe MalDoc Static Analysis: PDF, Office and OneNote](https://classroom.anir0y.in/post/thm-room-maldoc/): TryHackMe MalDoc Static Analysis walkthrough: hex-encoded PDF JavaScript, a macro split across 15 concatenations, and a OneNote payload staged through the registry.
 - [TryHackMe Script Static Analysis: Four Scripts, One PowerShell Prompt](https://classroom.anir0y.in/post/thm-room-scriptstaticanalysis/): TryHackMe Script Static Analysis walkthrough: a Node.js dropper among 253 decoys, shellcode gzipped before the XOR, a MachineGuid-keyed payload, and GlassWorm.
