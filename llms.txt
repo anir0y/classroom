@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe MalBuster: Four Binaries, No Hand-Holding](https://classroom.anir0y.in/post/thm-room-malbuster/): TryHackMe MalBuster walkthrough: triaging four unknown PE binaries on REMnux with pefile, capa and hash OSINT, and two version-dependent answers.
 - [TryHackMe MalDoc Static Analysis: PDF, Office and OneNote](https://classroom.anir0y.in/post/thm-room-maldoc/): TryHackMe MalDoc Static Analysis walkthrough: hex-encoded PDF JavaScript, a macro split across 15 concatenations, and a OneNote payload staged through the registry.
 - [TryHackMe Script Static Analysis: Four Scripts, One PowerShell Prompt](https://classroom.anir0y.in/post/thm-room-scriptstaticanalysis/): TryHackMe Script Static Analysis walkthrough: a Node.js dropper among 253 decoys, shellcode gzipped before the XOR, a MachineGuid-keyed payload, and GlassWorm.
 - [TryHackMe Basic Static Analysis: Six Samples, No Execution](https://classroom.anir0y.in/post/thm-room-staticanalysis1/): Walkthrough of TryHackMe Basic Static Analysis: FLOSS recovering a Dbgview.exe stackstring that strings.exe cannot see, imphash and ssdeep tying two samples together, capa mapping anti-VM and Run-key persistence to MBC B0012.001, and PEstudio flagging RPCRT4.dll for a single UuidCreate import.

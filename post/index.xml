@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 20:04:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 21:50:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe MalBuster: Four Binaries, No Hand-Holding</title>
+      <link>https://classroom.anir0y.in/post/thm-room-malbuster/</link>
+      <pubDate>Sat, 29 Aug 2026 21:50:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-malbuster/</guid>
+      <description>TryHackMe MalBuster walkthrough: triaging four unknown PE binaries on REMnux with pefile, capa and hash OSINT, and two version-dependent answers.</description>
+    </item>
     <item>
       <title>TryHackMe MalDoc Static Analysis: PDF, Office and OneNote</title>
       <link>https://classroom.anir0y.in/post/thm-room-maldoc/</link>
