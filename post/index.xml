@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Aug 2026 17:01:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 18:39:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Script Static Analysis: Four Scripts, One PowerShell Prompt</title>
+      <link>https://classroom.anir0y.in/post/thm-room-scriptstaticanalysis/</link>
+      <pubDate>Sat, 29 Aug 2026 18:39:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-scriptstaticanalysis/</guid>
+      <description>TryHackMe Script Static Analysis walkthrough: a Node.js dropper among 253 decoys, shellcode gzipped before the XOR, a MachineGuid-keyed payload, and GlassWorm.</description>
+    </item>
     <item>
       <title>TryHackMe Basic Static Analysis: Six Samples, No Execution</title>
       <link>https://classroom.anir0y.in/post/thm-room-staticanalysis1/</link>
