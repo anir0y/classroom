@@ -60,7 +60,7 @@ The next two questions have you generate events and find them in Discover. Both 
 useradd testuser
 gpasswd -a testuser sudo
 grep -E 'useradd|gpasswd' /var/log/auth.log | tail
-# ... soclabelastic useradd[3040]: new user: name=testuser, UID=1001, ...
+# ... soclabelastic useradd[3040]: new user: name=testuser, UID=1001...
 # ... soclabelastic gpasswd[3048]: user testuser added by root to group sudo
 ```
 

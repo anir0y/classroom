@@ -79,7 +79,7 @@ await __os('wazuh-alerts-*', {size:0, query:{bool:{filter:F}}, aggs:{
 With 447 distinct command lines and target filenames in the index, the answer masks are a better search tool than keywords. Each mask gives exact character counts, so you can regex the corpus for the shape instead of guessing at content:
 
 ```javascript
-const all = [...cmdLineBuckets, ...targetFilenameBuckets].map(b => b.key);
+const all = [...cmdLineBuckets...targetFilenameBuckets].map(b => b.key);
 
 // Q1 mask **********_*********_********.****
 all.join('\n').match(/[A-Za-z0-9]{10}_[A-Za-z0-9]{9}_[A-Za-z0-9]{8}\.[A-Za-z0-9]{4}/g);
@@ -169,7 +169,7 @@ await __os('wazuh-alerts-*', {size:0, query:{bool:{filter:[...F,
 //   2  Scripts/pypykatz.exe
 ```
 
-**memotech.exe** — eight characters, sitting in an `x64` directory, ran twice on 29 April. Expanding one of those events removes all doubt:
+**memotech.exe**, eight characters, sitting in an `x64` directory, ran twice on 29 April. Expanding one of those events removes all doubt:
 
 ![Wazuh expanded document for memotech.exe showing company gentilkiwi Benjamin DELPY, description mimikatz for Windows, and a sekurlsa pass-the-hash command line targeting user john.sterling](/img/thm-mondaymonitor/04-memotech-mimikatz.png)
 
@@ -225,4 +225,4 @@ Everything on 29 April 2024, agent `Windows_SwiftSpend2`:
 
 **Check what your SIEM view is filtering before you conclude there is no data.** The Security events module silently pins `manager.name` to the live manager, which is correct for a running deployment and exactly wrong for an imported dataset. Zero hits on a query you are confident about is far more often a filter you did not know was applied than an empty index. The same instinct paid off in [Servidae](/post/thm-room-servidae/), where the culprit was a display timezone rather than a filter, and the fix in both cases was to interrogate the view instead of the data.
 
-Room solved 100% — 1 task, 7 answers.
+Room solved 100%: 1 task, 7 answers.

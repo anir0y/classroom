@@ -16,7 +16,7 @@ tags:
   - Vulnversity
 
 draft: false
-description: "TryHackMe Room Vulnversity walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Vulnversity challenge room."
+description: "TryHackMe Room Vulnversity walkthrough with step-by-step solutions, enumeration, exploitation, and privilege escalation on the Room Vulnversity challenge room."
 ---
 ## Vulnversity
 
@@ -210,7 +210,7 @@ $ find / -user root -perm -4000 -exec ls -ldb {} \;
 
 > credit : [Gtfo bins](https://gtfobins.github.io/gtfobins/systemctl/)
 
-![TryHackMe Room Vulnversity — flag-5.1](https://i.imgur.com/5z5748W.png)
+![TryHackMe Room Vulnversity, flag-5.1](https://i.imgur.com/5z5748W.png)
 
 ## flag-5.2 
 

@@ -1,5 +1,5 @@
 ---
-title: TryHackMe Towel on the Sunbed — Racing a Once-a-Day Reward
+title: TryHackMe Towel on the Sunbed, Racing a Once-a-Day Reward
 date: 2026-08-05T10:30:00+05:30
 lastmod: 2026-08-05T14:30:00+05:30
 author: Animesh Roy
@@ -21,14 +21,14 @@ tags:
   - Node.js
 
 draft: false
-description: "Walkthrough of the TryHackMe room Towel on the Sunbed — beating a once-per-24h staking reward with a TOCTOU race, and why naive threading loses it."
+description: "Walkthrough of the TryHackMe room Towel on the Sunbed, beating a once-per-24h staking reward with a TOCTOU race, and why naive threading loses it."
 ---
 
 ## Towel on the Sunbed
 
 **Day 8 of Hacker Holidays 2026.** The Byte Lotus has a wellness portal, and the wellness portal has a crypto rewards app, because of course it does. The briefing:
 
-> Ponzi found the resort's wellness portal running a little side project called Ponzi — a crypto rewards app, poolside edition. He set his towel down, claimed his daily reward, and went to reapply sunscreen. He came back to find the sunbed had been "claimed" three times over while he wasn't looking.
+> Ponzi found the resort's wellness portal running a little side project called Ponzi, a crypto rewards app, poolside edition. He set his towel down, claimed his daily reward, and went to reapply sunscreen. He came back to find the sunbed had been "claimed" three times over while he wasn't looking.
 
 And the line that tells you what the bug is, if you read it carefully:
 
@@ -38,7 +38,7 @@ There's even a hint styled as a social post from `@0xMia`:
 
 > "ponzi guy has been refreshing his dashboard for an HOUR waiting on this timer 💀 bro really thinks the clock is the only thing checking him"
 
-*Between his request and the server's clock.* *The clock is the only thing checking him.* That is a **race condition** described in plain English — a check that happens at one moment and a write that happens at another, with a gap in between.
+*Between his request and the server's clock.* *The clock is the only thing checking him.* That is a **race condition** described in plain English, a check that happens at one moment and a write that happens at another, with a gap in between.
 
 Category is Web, difficulty Medium, 90 points, tagged Business Logic and API Abuse. Target is `http://<lab-ip>:3000`.
 
@@ -51,7 +51,7 @@ The app redirects everything to `/auth/login` and offers `/auth/register`, so I 
 - **Earn 50 PONZI every 24 hours** by claiming the staking reward
 - **Reach 150 PONZI** to unlock the Whale Vault
 
-Do the arithmetic before touching anything. 150 needed, 50 per claim, one claim per day — **exactly three claims**, which is three days of waiting. That number is the room. It's also the room's title: Ponzi's sunbed got claimed *three times over*.
+Do the arithmetic before touching anything. 150 needed, 50 per claim, one claim per day, **exactly three claims**, which is three days of waiting. That number is the room. It's also the room's title: Ponzi's sunbed got claimed *three times over*.
 
 So the objective isn't "find an injection." It's "make one day's claim pay out three times."
 
@@ -69,7 +69,7 @@ grep -nE "fetch|/api/" js/dashboard.js
 87:  await fetch('/vault')
 ```
 
-Three endpoints, and no client-side cleverness to work around. Before attacking, establish the baseline honestly — you need to know exactly what "working correctly" looks like:
+Three endpoints, and no client-side cleverness to work around. Before attacking, establish the baseline honestly, you need to know exactly what "working correctly" looks like:
 
 ![Terminal showing the three API endpoints, a successful claim returning reward 50, a second claim rejected with secondsRemaining 86399, and the vault denying access with shortfall 100](/img/thm-towel/02-api.png)
 
@@ -84,7 +84,7 @@ curl -s -b ck.txt $T/vault
 # {"error":"Access denied. Whale-tier balance required.","currentBalance":50,"required":150,"shortfall":100}
 ```
 
-The cooldown works. Sequentially, there is no bug here at all — the second request is correctly refused, and `/dashboard/api/me` shows `canClaim: false` with `secondsUntilClaim: 86399`.
+The cooldown works. Sequentially, there is no bug here at all, the second request is correctly refused, and `/dashboard/api/me` shows `canClaim: false` with `secondsUntilClaim: 86399`.
 
 That's the important framing. **This vulnerability does not exist in sequential time.** You can test this endpoint all day, one request after another, and conclude it's solid. It only exists when two requests overlap.
 
@@ -102,9 +102,9 @@ await db.addBalance(id, 50);                       // 3. write
 await db.setLastClaim(id, Date.now());
 ```
 
-Between step 1 and step 4 there is an `await`. In Node that means the handler **yields the event loop** — and any other request that arrived meanwhile gets to run steps 1 and 2 against the *old* `last_claim`. Every one of them concludes it's allowed. That's a TOCTOU (time-of-check to time-of-use) race, and it's why single-threaded JavaScript is not immune to races the way people assume.
+Between step 1 and step 4 there is an `await`. In Node that means the handler **yields the event loop**, and any other request that arrived meanwhile gets to run steps 1 and 2 against the *old* `last_claim`. Every one of them concludes it's allowed. That's a TOCTOU (time-of-check to time-of-use) race, and it's why single-threaded JavaScript is not immune to races the way people assume.
 
-So: fire a batch of claims at once. My first attempt was the obvious one — ten threads sharing a `requests.Session`:
+So: fire a batch of claims at once. My first attempt was the obvious one, ten threads sharing a `requests.Session`:
 
 ![Terminal showing the naive threaded attempt against a fresh account, resulting in only 1 of 10 claims paid out and a final balance of 50](/img/thm-towel/03-naive-fail.png)
 
@@ -119,17 +119,17 @@ final balance=50 tier=Shrimp (need 150)
 
 **WAN jitter smears the arrivals.** The lab was ~200 ms away with round-trips varying by over 100 ms. Even with ten genuinely parallel sockets, they'd land spread across a window far wider than the race itself.
 
-The race window is measured in the time between a database read and a database write — likely under a millisecond. To land inside it you need requests arriving within *microseconds* of each other, and "start ten threads and hope" doesn't get you there.
+The race window is measured in the time between a database read and a database write, likely under a millisecond. To land inside it you need requests arriving within *microseconds* of each other, and "start ten threads and hope" doesn't get you there.
 
 ## Step 4: Make them arrive together
 
 The technique is **last-byte synchronisation** (the idea behind PortSwigger's single-packet attack). Rather than trying to send complete requests simultaneously, you do the slow, jittery work in advance and leave each request one byte short of complete:
 
 1. Open N independent sockets and finish all the TCP handshakes up front.
-2. Send each request *except* its final body byte. Declare `Content-Length: 1` and withhold the body. Each request now sits parked in the server's buffer — received, but not yet dispatchable.
+2. Send each request *except* its final body byte. Declare `Content-Length: 1` and withhold the body. Each request now sits parked in the server's buffer, received, but not yet dispatchable.
 3. Release the final byte on all N sockets back-to-back.
 
-All the variable cost — DNS, handshakes, headers, TLS if any — is paid before the starting gun. What's left is one byte per connection, so the requests become dispatchable within a hair's breadth of each other.
+All the variable cost, DNS, handshakes, headers, TLS if any, is paid before the starting gun. What's left is one byte per connection, so the requests become dispatchable within a hair's breadth of each other.
 
 ```python
 head = (
@@ -173,15 +173,15 @@ final balance=1000 tier=Whale (need 150)
 
 > `THM{t0w3l_0n_th3_sunb3d_d0ubl3_sp3nt}`
 
-**Twenty out of twenty.** Every single request read `last_claim` before any of them wrote it, so all twenty paid out — 1000 PONZI from a single day's entitlement, against a 150 threshold.
+**Twenty out of twenty.** Every single request read `last_claim` before any of them wrote it, so all twenty paid out, 1000 PONZI from a single day's entitlement, against a 150 threshold.
 
-Worth reporting honestly: my first socket-based run landed **5 of 20**, not 20. Same code, same target, minutes apart. Race exploitation is probabilistic — you're betting on scheduling you don't control — so if a run underperforms, run it again before concluding it failed. Five was already more than the three I needed.
+Worth reporting honestly: my first socket-based run landed **5 of 20**, not 20. Same code, same target, minutes apart. Race exploitation is probabilistic, you're betting on scheduling you don't control, so if a run underperforms, run it again before concluding it failed. Five was already more than the three I needed.
 
 The flag naming it `d0ubl3_sp3nt` is apt. This is structurally the **double-spend** problem: one entitlement, spent many times, because the ledger was read before it was written.
 
 ## The complete exploit
 
-Here's the whole thing, end to end — it registers a fresh account, races the first claim, and prints the resulting balance and vault response. Point `HOST` at your own lab IP.
+Here's the whole thing, end to end, it registers a fresh account, races the first claim, and prints the resulting balance and vault response. Point `HOST` at your own lab IP.
 
 ```python
 #!/usr/bin/env python3
@@ -275,7 +275,7 @@ if __name__ == "__main__":
     main()
 ```
 
-Run it as `python3 race2.py 20 whale02`, where the first argument is how many sockets to race and the second is the account name to register. Use a **fresh username each run** — once an account has successfully claimed, its cooldown is real and it can't race again.
+Run it as `python3 race2.py 20 whale02`, where the first argument is how many sockets to race and the second is the account name to register. Use a **fresh username each run**, once an account has successfully claimed, its cooldown is real and it can't race again.
 
 > 📎 Both scripts on GitHub Gist: [`race2.py` (single-packet) and `race.py` (naive)](https://gist.github.com/anir0y/6a3cf4eb7b3f05f5ae151df65c719e83)
 
@@ -298,21 +298,21 @@ The logic is identical. The only difference is *how the bytes reach the wire*, a
 
 ## Why races are the bug class that survives review
 
-Every other Byte Lotus room this week had a mistake you could point at in a diff — an unsafe loader, a password in argv, an exposed `.git`. This one doesn't, and that's what makes it worth studying.
+Every other Byte Lotus room this week had a mistake you could point at in a diff, an unsafe loader, a password in argv, an exposed `.git`. This one doesn't, and that's what makes it worth studying.
 
 **The code looks correct.** Check-then-act reads like exactly what the requirement says: "if 24 hours have passed, pay out." A reviewer confirms the requirement is implemented, and moves on. There's no dangerous function to grep for.
 
-**Sequential tests all pass.** Unit tests, integration tests, and manual QA all drive one request at a time and see correct refusals. The vulnerability is invisible to every test that doesn't deliberately overlap requests — and almost nobody writes those.
+**Sequential tests all pass.** Unit tests, integration tests, and manual QA all drive one request at a time and see correct refusals. The vulnerability is invisible to every test that doesn't deliberately overlap requests, and almost nobody writes those.
 
 **"Single-threaded so it's safe" is wrong.** Node runs one thread, but `await` is a yield point. Any state read before an `await` may be stale after it. The same trap exists in Python asyncio, Go with unlocked shared state, and any framework doing concurrent database work.
 
 **It's a business-logic bug, so scanners never see it.** There is no payload, no anomalous character, no suspicious string. Every request is perfectly well-formed and individually authorised. Burp's scanner, a WAF, and an IDS all see twenty legitimate claims from a logged-in user. The only thing wrong is *how many* succeeded.
 
-That combination — invisible to review, invisible to sequential tests, invisible to scanners — is why race conditions keep showing up in production payment, voucher, withdrawal and referral flows years after launch.
+That combination, invisible to review, invisible to sequential tests, invisible to scanners, is why race conditions keep showing up in production payment, voucher, withdrawal and referral flows years after launch.
 
 ## Fixing it
 
-The fix is not "add a rate limiter." Rate limiting reduces how often an attacker can *attempt* this, but a burst of twenty simultaneous requests is a single burst — it's exactly what slips under a per-minute limit.
+The fix is not "add a rate limiter." Rate limiting reduces how often an attacker can *attempt* this, but a burst of twenty simultaneous requests is a single burst, it's exactly what slips under a per-minute limit.
 
 **Make the check and the write one atomic operation.** Let the database decide, with a conditional update whose own `WHERE` clause enforces the rule:
 
@@ -337,17 +337,17 @@ Then check the affected row count. Exactly one request gets `1`; every other con
 | | |
 |---|---|
 | Room | Towel on the Sunbed |
-| Event | Hacker Holidays 2026 — Day 8 |
+| Event | Hacker Holidays 2026, Day 8 |
 | Category | Web · Business Logic · API Abuse |
 | Difficulty | Medium · 90 points |
 | Target | `http://<lab-ip>:3000` |
 | Stack | Node.js / Express (`X-Powered-By: Express`) |
-| App | Ponzi — Wellness Rewards |
+| App | Ponzi, Wellness Rewards |
 | Economics | 50 PONZI per claim, 1 claim / 24h, 150 to open the Whale Vault |
 | Endpoints | `GET /dashboard/api/me`, `POST /claim`, `GET /vault` |
 | Bug | TOCTOU race between the cooldown check and the timestamp write |
 | Technique | Last-byte synchronisation across 20 pre-opened sockets |
-| Result | 20/20 claims paid — 1000 PONZI against a 150 threshold |
+| Result | 20/20 claims paid, 1000 PONZI against a 150 threshold |
 | Flag | `THM{t0w3l_0n_th3_sunb3d_d0ubl3_sp3nt}` |
 
 ## Wrap-up
@@ -360,8 +360,8 @@ python3 race2.py 20 whale                                         # 20 sockets, 
 curl -s -b ck.txt $T/vault                                        # flag
 ```
 
-The lesson I'd keep is about **where to look**, not how to fire sockets. Ponzi's app had no injection, no broken authentication, no leaked secret. It had a rule — *once every 24 hours* — and the rule was enforced in two steps instead of one.
+The lesson I'd keep is about **where to look**, not how to fire sockets. Ponzi's app had no injection, no broken authentication, no leaked secret. It had a rule, *once every 24 hours*, and the rule was enforced in two steps instead of one.
 
 So when a target looks clean, stop hunting for payloads and start listing its **rules**: one vote per user, one coupon per order, one withdrawal per balance, one signup bonus per account. Then ask the only question that matters for this bug class: *what happens if I ask twice at exactly the same moment?*
 
-Ponzi waited an hour for a timer that was never really guarding anything. The clock was the only thing checking him — and a clock you read before you write is not a lock. 🪷
+Ponzi waited an hour for a timer that was never really guarding anything. The clock was the only thing checking him, and a clock you read before you write is not a lock. 🪷

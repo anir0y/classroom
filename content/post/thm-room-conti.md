@@ -116,7 +116,7 @@ The account creation is **net user /add securityninja hardToHack123$**, at `13:0
 13:04:11  net  localgroup "Remote Desktop Users" "securityninja" /add
 ```
 
-The answer mask is worth a note here. Splunk renders the command line as `net  user` with two spaces, but the mask is `*** **** /*** ************* **************` — single spaces throughout. Submit what the mask describes, not what the field displays.
+The answer mask is worth a note here. Splunk renders the command line as `net  user` with two spaces, but the mask is `*** **** /*** ************* **************`, single spaces throughout. Submit what the mask describes, not what the field displays.
 
 Process migration shows up as Sysmon **event ID 8**, CreateRemoteThread, and there are exactly two in the entire dataset:
 
@@ -213,4 +213,4 @@ Sixteen minutes from web shell to ransom note.
 
 **Sysmon event ID 8 is worth its own saved search.** Two CreateRemoteThread events in a 28,000-event dataset gave up the migration path and the credential dump in a single table, with no keyword guessing. Process injection is rare in normal operation and enormously informative when it happens, which makes it one of the highest signal-to-noise searches available on a Windows estate. The same is true of event ID 11 filtered to executable extensions in user profile directories, which found the ransomware in one query.
 
-Room solved 100% — 2 tasks, 11 answers.
+Room solved 100%: 2 tasks, 11 answers.

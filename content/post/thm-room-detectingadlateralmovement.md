@@ -29,7 +29,7 @@ description: "Walkthrough of TryHackMe Detecting AD Lateral Movement: SMB and AD
 
 Fourth room in the **Active Directory for SOC** module, following [Monitoring Active Directory](/post/thm-room-monitoringactivedirectory/), [Detecting AD Initial Access](/post/thm-room-detectingadinitialaccess/), and [Detecting AD Credential Attacks](/post/thm-room-detectingadcredentialattacks/). The previous room ended with the attacker holding stolen credentials. This one is what they do next: move.
 
-Three techniques — **SMB/admin shares, PsExec, and RDP** — plus a discovery phase before them and an unguided challenge after. Eight tasks, sixteen graded answers, all solved 100%. Two indexes: `win` for the walkthrough and `challenge` for Task 7.
+Three techniques, **SMB/admin shares, PsExec, and RDP**, plus a discovery phase before them and an unguided challenge after. Eight tasks, sixteen graded answers, all solved 100%. Two indexes: `win` for the walkthrough and `challenge` for Task 7.
 
 ![TryHackMe Detecting AD Lateral Movement at 100%, all eight tasks complete](/img/thm-adlateral/00-thumbnail.png)
 
@@ -50,7 +50,7 @@ index=win EventCode=1 (CommandLine="*net *" OR CommandLine="*nltest*" OR Command
 #   03:51:23   net  view \\THM-SHR-SRV /all
 ```
 
-The first discovery command is **`nltest  /domain_trusts`** — mapping trust relationships before anything else. Then domain users, then the two groups that matter most, then local admins, then shares.
+The first discovery command is **`nltest  /domain_trusts`**, mapping trust relationships before anything else. Then domain users, then the two groups that matter most, then local admins, then shares.
 
 The PowerShell enumeration question wants this:
 
@@ -58,11 +58,11 @@ The PowerShell enumeration question wants this:
 Import-Module ActiveDirectory; Get-ADUser -Filter * -Properties MemberOf | Select-Object Name, SamAccountName
 ```
 
-Two answer-format notes that will save you a retry. Sysmon renders these command lines with a **double space** after the image name (`nltest  /domain_trusts`), and the room warns about it explicitly. And for the PowerShell question the grader wants only the *inner* command — not the `powershell -Command "…"` wrapper it was invoked with. The underscore mask on the answer box tells you which: count the tokens against your candidate string before submitting and you will never guess wrong.
+Two answer-format notes that will save you a retry. Sysmon renders these command lines with a **double space** after the image name (`nltest  /domain_trusts`), and the room warns about it explicitly. And for the PowerShell question the grader wants only the *inner* command, not the `powershell -Command "…"` wrapper it was invoked with. The underscore mask on the answer box tells you which: count the tokens against your candidate string before submitting and you will never guess wrong.
 
 ## Task 3: how lateral movement is logged
 
-Two knowledge answers that anchor the rest of the room. In Event 4624, **Logon Type 10** is RemoteInteractive — an RDP session. And on the *source* system, **Event 4648** records a process using explicit alternate credentials to reach a remote resource.
+Two knowledge answers that anchor the rest of the room. In Event 4624, **Logon Type 10** is RemoteInteractive, an RDP session. And on the *source* system, **Event 4648** records a process using explicit alternate credentials to reach a remote resource.
 
 4648 is the underrated one. Most detection focuses on the destination, but 4648 fires on the machine the attacker is sitting at, and it names both identities: who they are logged in as, and whose credentials they just used. That is exactly the pivot Task 4 needs.
 
@@ -78,7 +78,7 @@ index=win EventCode=5140 Share_Name="*ADMIN$*"
 #   03:58:02   THM-SQL-SRV   luke.sullivan   10.5.50.12
 ```
 
-The account used to reach `ADMIN$` is **luke.sullivan**. But note the source: every one of those comes from `10.5.50.12`, which is `THM-MKT-WS` — michelle.smith's workstation, not luke.sullivan's. That mismatch is the finding, and Event 4648 on the source machine proves it:
+The account used to reach `ADMIN$` is **luke.sullivan**. But note the source: every one of those comes from `10.5.50.12`, which is `THM-MKT-WS`, michelle.smith's workstation, not luke.sullivan's. That mismatch is the finding, and Event 4648 on the source machine proves it:
 
 ```
 index=win EventCode=4648 NOT Target_Server_Name=localhost
@@ -109,7 +109,7 @@ The table reads as a matched pair. On the **source** (`THM-MKT-WS`), `cmd.exe` s
 C:\Tools\PsExec.exe  -accepteula \\THM-SQL-SRV cmd /c "hostname & whoami & ipconfig"
 ```
 
-Two things stand out. The `-accepteula` flag is a giveaway — it exists to suppress the first-run EULA dialog, so it appears when someone is scripting PsExec rather than using it interactively. And `hostname & whoami & ipconfig` is orientation: the attacker does not know where they landed, so the first thing they ask the new host is what it is and who they are on it.
+Two things stand out. The `-accepteula` flag is a giveaway, it exists to suppress the first-run EULA dialog, so it appears when someone is scripting PsExec rather than using it interactively. And `hostname & whoami & ipconfig` is orientation: the attacker does not know where they landed, so the first thing they ask the new host is what it is and who they are on it.
 
 The service side confirms it independently:
 
@@ -118,7 +118,7 @@ index=win (EventCode=7045 OR EventCode=4697)
 #   03:59:06   THM-SQL-SRV   PSEXESVC   %SystemRoot%\PSEXESVC.exe
 ```
 
-`PSEXESVC` is the default service name, which makes this trivially detectable — and is exactly why real operators rename it. The challenge in Task 7 does precisely that.
+`PSEXESVC` is the default service name, which makes this trivially detectable, and is exactly why real operators rename it. The challenge in Task 7 does precisely that.
 
 ## Task 6: the RDP hop chain
 
@@ -140,7 +140,7 @@ Three rows, and the last two are the intrusion:
 
 The RDP session that landed on the Domain Controller came from **10.5.30.120**, and tracing backward the chain began at **10.5.50.12**.
 
-This is the whole point of the task. Looking at the DC event alone, the story is "a domain admin RDP'd in from the SQL server" — which is unremarkable. It only becomes an incident when you notice that the SQL server was itself RDP'd into three minutes earlier from a marketing workstation. **Each hop launders the origin**, and the source IP of one hop is the destination of the previous one. You chain them by matching addresses to hosts, and the escalation is visible in the account column too: `luke.sullivan` into the SQL server, `adm-luke.sullivan` out of it into the DC.
+This is the whole point of the task. Looking at the DC event alone, the story is "a domain admin RDP'd in from the SQL server", which is unremarkable. It only becomes an incident when you notice that the SQL server was itself RDP'd into three minutes earlier from a marketing workstation. **Each hop launders the origin**, and the source IP of one hop is the destination of the previous one. You chain them by matching addresses to hosts, and the escalation is visible in the account column too: `luke.sullivan` into the SQL server, `adm-luke.sullivan` out of it into the DC.
 
 ## Task 7: the investigation challenge
 
@@ -168,18 +168,18 @@ Six rows, twenty-six seconds, and the full sequence:
 
 So the service binary is `%SystemRoot%\svcupdate.exe`, the account is **ryan.chen**, the source is **10.5.50.15**, and the first remote command is `"cmd" /c "hostname & whoami & ipconfig"`. Mapping that address against the machine accounts in the dataset puts the origin at **THM-HR-WS**.
 
-The lesson is in what changed and what did not. The service is called `svcupdate` instead of `PSEXESVC`, and the binary is `svcupdate.exe` instead of `PSEXESVC.exe` — a name-based detection rule catches nothing here. But **the behaviour is byte-for-byte identical**: ADMIN$ write, service create, service spawns `cmd /c`, one second apart, with the same `hostname & whoami & ipconfig` orientation command as the walkthrough. Detect the sequence, not the string.
+The lesson is in what changed and what did not. The service is called `svcupdate` instead of `PSEXESVC`, and the binary is `svcupdate.exe` instead of `PSEXESVC.exe`, a name-based detection rule catches nothing here. But **the behaviour is byte-for-byte identical**: ADMIN$ write, service create, service spawns `cmd /c`, one second apart, with the same `hostname & whoami & ipconfig` orientation command as the walkthrough. Detect the sequence, not the string.
 
-The double service install is also worth noting — `svcupdate` is registered twice, once per command, because PsExec-style tools install, execute, and remove the service for each invocation. A service that appears and disappears repeatedly in minutes is a stronger signal than any single install.
+The double service install is also worth noting, `svcupdate` is registered twice, once per command, because PsExec-style tools install, execute, and remove the service for each invocation. A service that appears and disappears repeatedly in minutes is a stronger signal than any single install.
 
 ## Task 8: what carries over
 
-![TryHackMe Detecting AD Lateral Movement completed — 8 tasks, 120 points](/img/thm-adlateral/04-room-complete.png)
+![TryHackMe Detecting AD Lateral Movement completed, 8 tasks, 120 points](/img/thm-adlateral/04-room-complete.png)
 
-The three techniques share one structure: **authenticate to a remote host, drop or invoke something, execute**. SMB gives you the authentication and the file drop, PsExec adds the service, RDP replaces all of it with an interactive session. The event IDs differ but the questions do not — who authenticated, from where, using whose credentials, and what ran afterwards.
+The three techniques share one structure: **authenticate to a remote host, drop or invoke something, execute**. SMB gives you the authentication and the file drop, PsExec adds the service, RDP replaces all of it with an interactive session. The event IDs differ but the questions do not, who authenticated, from where, using whose credentials, and what ran afterwards.
 
-Two things I would keep. **Source-side and destination-side logs answer different questions**, and the room hammers this: 5140 and 7045 tell you what happened on the target, but only 4648 on the source reveals that michelle.smith was driving luke.sullivan's account. Neither side alone gets you there — the same lesson the [Initial Access room](/post/thm-room-detectingadinitialaccess/) taught with IIS and Security logs.
+Two things I would keep. **Source-side and destination-side logs answer different questions**, and the room hammers this: 5140 and 7045 tell you what happened on the target, but only 4648 on the source reveals that michelle.smith was driving luke.sullivan's account. Neither side alone gets you there, the same lesson the [Initial Access room](/post/thm-room-detectingadinitialaccess/) taught with IIS and Security logs.
 
-And **hop chains have to be read backwards**. The alert fires on the last hop, which is always the most innocuous-looking one, because by then the attacker is using a legitimate admin account from a legitimate server. The interesting question is never "where did this session come from" but "and where did *that* come from" — repeated until you reach a workstation that has no business being in the chain at all.
+And **hop chains have to be read backwards**. The alert fires on the last hop, which is always the most innocuous-looking one, because by then the attacker is using a legitimate admin account from a legitimate server. The interesting question is never "where did this session come from" but "and where did *that* come from", repeated until you reach a workstation that has no business being in the chain at all.
 
-Room solved 100% — eight tasks, sixteen answers, 120 points.
+Room solved 100%: eight tasks, sixteen answers, 120 points.

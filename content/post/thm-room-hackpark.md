@@ -16,7 +16,7 @@ tags:
   - HackPark
 
 draft: false
-description: "TryHackMe Room Hackpark walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Hackpark challenge room."
+description: "TryHackMe Room Hackpark walkthrough with step-by-step solutions, enumeration, exploitation, and privilege escalation on the Room Hackpark challenge room."
 ---
 ## HackPark
 

@@ -15,7 +15,7 @@ tags:
   - rooms
   
 draft: false
-description: "TryHackMe Room Osquery walkthrough — learn endpoint monitoring with osquery SQL-based queries for process, network, and file system analysis."
+description: "TryHackMe Room Osquery walkthrough, learn endpoint monitoring with osquery SQL-based queries for process, network, and file system analysis."
 ---
 
 
@@ -35,9 +35,9 @@ Many well-known companies, besides Facebook, either use Osquery, utilize osquery
 As of today (March 2021), Github and AT&T seek individuals who have experience with Osquery. 
 
 Github:
-![Try Hack Me Room Osquery — Introduction](https://assets.tryhackme.com/additional/osquery/github-posting.png)   
+![Try Hack Me Room Osquery, Introduction](https://assets.tryhackme.com/additional/osquery/github-posting.png)   
 AT&T:   
-![Try Hack Me Room Osquery — Introduction (2)](https://assets.tryhackme.com/additional/osquery/att-posting.png)
+![Try Hack Me Room Osquery, Introduction (2)](https://assets.tryhackme.com/additional/osquery/att-posting.png)
 
 Some of the tools (open-source and commercial) that utilize Osquery are listed below.
 
@@ -64,17 +64,17 @@ To interact with the Osquery interactive console/shell, open CMD (or PowerShell)
 As per the documentation, osqueryi is a modified version of the SQLite shell. 
 
 You'll know that you've successfully entered into the interactive shell by the new command prompt.
-![Try Hack Me Room Osquery — Interacting with the Osquery Shell](https://assets.tryhackme.com/additional/osquery/osquery_prompt.png)   
+![Try Hack Me Room Osquery, Interacting with the Osquery Shell](https://assets.tryhackme.com/additional/osquery/osquery_prompt.png)   
 One way to familiarize yourself with the Osquery interactive shell, as with any new tool, is to check its help menu. 
 
 In Osquery, the help command (or meta-command) is `.help`.    
-![Try Hack Me Room Osquery — Interacting with the Osquery Shell (2)](https://assets.tryhackme.com/additional/osquery/osquery_help.png)    
+![Try Hack Me Room Osquery, Interacting with the Osquery Shell (2)](https://assets.tryhackme.com/additional/osquery/osquery_help.png)    
 Note: As per the documentation, meta-commands are prefixed with a `'.'`.
 
 To list all the available tables that can be queried, use the .`tables` meta-command. 
 
 For example, if you wish to check what tables are associated with processes, you can use `.tables` process.   
-![Try Hack Me Room Osquery — Interacting with the Osquery Shell (3)](https://assets.tryhackme.com/additional/osquery/osquery_tables.png)   
+![Try Hack Me Room Osquery, Interacting with the Osquery Shell (3)](https://assets.tryhackme.com/additional/osquery/osquery_tables.png)   
 In the above image, 3 tables are returned that contain the word 'process.' 
 
 Note: Depending on the operating system, different tables will be returned when the .tables meta-command is executed.  
@@ -84,7 +84,7 @@ Table names are not enough to know exactly what information is contained in any 
 Knowing what columns and types, known as a schema, for each table are also useful. 
 
 You can list a table's schema with the following meta-command: `.schema table_name`
-![Try Hack Me Room Osquery — Interacting with the Osquery Shell (4)](https://assets.tryhackme.com/additional/osquery/osquery_schema.png)    
+![Try Hack Me Room Osquery, Interacting with the Osquery Shell (4)](https://assets.tryhackme.com/additional/osquery/osquery_schema.png)    
 Looking at the above image, **pid** is the __column__, and **BIGINT** is the type. 
 
 **Note**: Any user on a system can run and interact with osqueryi, but some tables might return limited results compared to running osqueryi from an elevated shell. 
@@ -105,26 +105,26 @@ For that, the schema API online documentation can be used to view a complete lis
 
 run `.version` to get the flag  
 
-![Try Hack Me Room Osquery — What is the Osquery version](https://i.imgur.com/IEJciiE.png)
+![Try Hack Me Room Osquery, What is the Osquery version](https://i.imgur.com/IEJciiE.png)
 
 ### Flag 3.2
 #### What is the SQLite version? 
 run `.version` to get the flag  
 
-![Try Hack Me Room Osquery — What is the SQLite version?](https://i.imgur.com/IEJciiE.png)
+![Try Hack Me Room Osquery, What is the SQLite version?](https://i.imgur.com/IEJciiE.png)
 
 
 ### Flag 3.3
 #### What is the default output mode?   
 run the `.show` command to get the answer
 
-![Try Hack Me Room Osquery — What is the default output mode?](https://i.imgur.com/dAlkh6g.png)
+![Try Hack Me Room Osquery, What is the default output mode?](https://i.imgur.com/dAlkh6g.png)
 
 ### Flag 3.4
 #### What is the meta-command to set the output to show one value per line?
 run `.help` command to find out the `.mode` args. 
 
-![Try Hack Me Room Osquery — What is the meta-command to set the output to show one value per line?](https://i.imgur.com/9aPv10t.png)
+![Try Hack Me Room Osquery, What is the meta-command to set the output to show one value per line?](https://i.imgur.com/9aPv10t.png)
 
 ### Flag 3.5
 #### What are the 2 meta-commands to exit osqueryi?
@@ -136,7 +136,7 @@ not a rocket science, figure it out by yourself.
 ---
 ## TASK 4 : Schema Documentation
 Head over to the schema documentation [here](https://osquery.io/schema/4.7.0/).    
-![Try Hack Me Room Osquery — Schema Documentation](https://assets.tryhackme.com/additional/osquery/osquery_apischema-1.png)
+![Try Hack Me Room Osquery, Schema Documentation](https://assets.tryhackme.com/additional/osquery/osquery_apischema-1.png)
 
 The above image is a resemblance to what you'll see when you navigate to the page.
 
@@ -165,15 +165,15 @@ just open the website [here](https://osquery.io/schema/4.6.0/) you'll see it in 
 ### Flag 4.3
 ####  How many of the tables for this version are compatible with Windows?
 just open the website [here](https://osquery.io/schema/4.6.0/) filter for windows. 
-![Try Hack Me Room Osquery — How many of the tables for this version are compatible with Windows?](https://i.imgur.com/a9NrNKv.png)
+![Try Hack Me Room Osquery, How many of the tables for this version are compatible with Windows?](https://i.imgur.com/a9NrNKv.png)
 ### Flag 4.4
 ####  How many tables is compatible with Linux?
 just open the website [here](https://osquery.io/schema/4.6.0/) filter for Linux. 
-![Try Hack Me Room Osquery — How many tables is compatible with Linux?](https://i.imgur.com/AJtMIKt.png)
+![Try Hack Me Room Osquery, How many tables is compatible with Linux?](https://i.imgur.com/AJtMIKt.png)
 ### Flag 4.5
 ####  What is the first table listed that is compatible with both Linux and Windows?
 just open the website [here](https://osquery.io/schema/4.6.0/) filter for windows & Linux type the first table name. 
-![Try Hack Me Room Osquery — What is the first table listed that is compatible with both Linux and Windows?](https://i.imgur.com/AJtMIKt.png)
+![Try Hack Me Room Osquery, What is the first table listed that is compatible with both Linux and Windows?](https://i.imgur.com/AJtMIKt.png)
 
 ---
 ## TASK 5 : Creating queries
@@ -186,14 +186,14 @@ The exception to the rule: The use of other SQL statements, such as UPDATE and D
 Your queries will also include a FROM clause and end with a semicolon. 
 
 If you wish to retrieve all the information about the running processes on the endpoint: `SELECT * FROM processes;`     
-![Try Hack Me Room Osquery — Creating queries](https://assets.tryhackme.com/additional/osquery/osquery_selectall.png)   
+![Try Hack Me Room Osquery, Creating queries](https://assets.tryhackme.com/additional/osquery/osquery_selectall.png)   
 
 **Note**: The results for you will be different if you run this query in the attached VM or your local machine (if Osquery is installed).
 
 The number of columns returned might be more than what you need. You can select specific columns rather than retrieving every column in the table. 
 
 Query: `SELECT pid, name, path FROM processes;`   
-![Try Hack Me Room Osquery — Creating queries (2)](https://assets.tryhackme.com/additional/osquery/osquery_notselectall.png)   
+![Try Hack Me Room Osquery, Creating queries (2)](https://assets.tryhackme.com/additional/osquery/osquery_notselectall.png)   
 The above query will list the process id, the process's name, and the path for all running processes on the endpoint. 
 
 This will still return a large number of results, depending on how busy the endpoint is. 
@@ -201,13 +201,13 @@ This will still return a large number of results, depending on how busy the endp
 The count() function can be used to get exactly how many.
 
 Query: `SELECT count(*) from processes;`
-![Try Hack Me Room Osquery — Creating queries (3)](https://assets.tryhackme.com/additional/osquery/osquery_count.png)   
+![Try Hack Me Room Osquery, Creating queries (3)](https://assets.tryhackme.com/additional/osquery/osquery_count.png)   
 The output can be limited to the first 3 in ascending order by process name, as shown below.
-![Try Hack Me Room Osquery — Creating queries (4)](https://assets.tryhackme.com/additional/osquery/osquery_orderby_limit.png)   
+![Try Hack Me Room Osquery, Creating queries (4)](https://assets.tryhackme.com/additional/osquery/osquery_orderby_limit.png)   
 Optionally, you can use a WHERE clause to narrow down the list of results returned based on specified criteria. 
 
 Query: `SELECT pid, name, path FROM processes WHERE name='lsass.exe';` <br>
-![Try Hack Me Room Osquery — Creating queries (5)](https://assets.tryhackme.com/additional/osquery/osquery_where.png)
+![Try Hack Me Room Osquery, Creating queries (5)](https://assets.tryhackme.com/additional/osquery/osquery_where.png)
 
 The equal sign is not the only filtering option available in a WHERE clause. 
 
@@ -223,19 +223,19 @@ Below are filtering operators that can be used in a WHERE clause:
   * `_` [wildcard, one character]
 
 Below is a screenshot from the Osquery [documentation](https://osquery.readthedocs.io/en/stable/deployment/file-integrity-monitoring/) showing examples of using wildcards when used in folder structures.    
-![Try Hack Me Room Osquery — Creating queries (6)](https://assets.tryhackme.com/additional/osquery/osquery_wildcard.png)   
+![Try Hack Me Room Osquery, Creating queries (6)](https://assets.tryhackme.com/additional/osquery/osquery_wildcard.png)   
 
 Some tables will require a WHERE clause, such as the file table, to return a value. If the required WHERE clause is not included in the query, then you will get an error. 
-![Try Hack Me Room Osquery — Creating queries (7)](https://assets.tryhackme.com/additional/osquery/osquery_fileerror.png)   
+![Try Hack Me Room Osquery, Creating queries (7)](https://assets.tryhackme.com/additional/osquery/osquery_fileerror.png)   
 
 The last concept to cover is JOIN. To join 2 or more tables, each table needs to share a column in common. 
 
 Let's look at 2 tables to demonstrate this further. Below is the schema for the **osquery_info** table and the **processes** table.   
-![Try Hack Me Room Osquery — Creating queries (8)](https://assets.tryhackme.com/additional/osquery/osquery_join_example.png)   
+![Try Hack Me Room Osquery, Creating queries (8)](https://assets.tryhackme.com/additional/osquery/osquery_join_example.png)   
 The common column in both tables is pid. A query can be constructed to use the JOIN clause to join these 2 tables USING the PID column. 
 
 Query: `SELECT pid, name, path FROM osquery_info JOIN processes USING (pid);`
-![Try Hack Me Room Osquery — Creating queries (9)](https://assets.tryhackme.com/additional/osquery/osquery_join.png)
+![Try Hack Me Room Osquery, Creating queries (9)](https://assets.tryhackme.com/additional/osquery/osquery_join.png)
 
 
 
@@ -262,12 +262,12 @@ Feel free to explore Query Packs at your own leisure. You can read more about th
 ### Flags 6.1
 #### What is the Osquery Enroll Secret?
 When you click on add host you can copy the secret from there   
-![Try Hack Me Room Osquery — What is the Osquery Enroll Secret?](https://i.imgur.com/N8w9xqd.png)
+![Try Hack Me Room Osquery, What is the Osquery Enroll Secret?](https://i.imgur.com/N8w9xqd.png)
 
 ### Flags 6.2
 #### What is the Osquery version?
 read it on added host, it's in details   
-![Try Hack Me Room Osquery — What is the Osquery version?](https://i.imgur.com/PwnlQ4h.png)
+![Try Hack Me Room Osquery, What is the Osquery version?](https://i.imgur.com/PwnlQ4h.png)
 
 ### Flags 6.3
 #### What is the path for the running osqueryd.exe process?
@@ -312,14 +312,14 @@ I found the ans by running this: `select * from shell_history;` and looking into
 ### Flags 8.4
 #### What is the hash value for this file?
 Exit from OSQuery, find the file name, run md5sum
-![Try Hack Me Room Osquery — What is the hash value for this file?](https://i.imgur.com/0ZSrZxW.png)
+![Try Hack Me Room Osquery, What is the hash value for this file?](https://i.imgur.com/0ZSrZxW.png)
 
 ### Flags 8.5
 #### Check all file hashes in the home directory for each user. One file will not show any hashes. Which file is that?
 it;s the zip. I just bruteforeced it.    
  I guess my way isn't intended. correct me [here](mailto:classroom@anir0y.in). 
 
-![Try Hack Me Room Osquery — Check all file hashes in the home directory for each user. One file will not show any](https://i.imgur.com/6dlQi2d.png)
+![Try Hack Me Room Osquery, Check all file hashes in the home directory for each user. One file will not show any](https://i.imgur.com/6dlQi2d.png)
 
 #### solution provided by **Georg**
 
@@ -331,15 +331,15 @@ it;s the zip. I just bruteforeced it.
 being a lame person I ran yara directly. 
 query: ```yara /var/osquery/yara/scanner.yara /home/charlie/```
 
-![Try Hack Me Room Osquery — There is a file that is categorized as malicious in one of the home directories. Query the](https://i.imgur.com/TJI9YbY.png)  
+![Try Hack Me Room Osquery, There is a file that is categorized as malicious in one of the home directories. Query the](https://i.imgur.com/TJI9YbY.png)  
 
 query: `osquery> SELECT * FROM yara WHERE path="/path/filename" and sigfile="/var/osquery/yara/scanner.yara";`
-![Try Hack Me Room Osquery — There is a file that is categorized as malicious in one of the home directories. Query the (2)](https://i.imgur.com/rvVBDwa.png)
+![Try Hack Me Room Osquery, There is a file that is categorized as malicious in one of the home directories. Query the (2)](https://i.imgur.com/rvVBDwa.png)
 
 ### Flags 8.7
 #### What were the 'matches'?
 ans is on same query run
-![Try Hack Me Room Osquery — What were the 'matches'?](https://i.imgur.com/TJI9YbY.png)
+![Try Hack Me Room Osquery, What were the 'matches'?](https://i.imgur.com/TJI9YbY.png)
 
 ### Flags 8.8
 #### Scan the file from Q#3 with the same Yara file. What is the entry for 'strings'?
@@ -348,7 +348,7 @@ run the same command by changing the file name get the strings.
 
 **Query**: `osquery> SELECT * FROM yara WHERE path="/home/tryhackme/filename" and sigfile="/var/osquery/yara/scanner.yara";`
 
-![Try Hack Me Room Osquery — Scan the file from Q#3 with the same Yara file. What is the entry for 'strings'?](https://i.imgur.com/G6Yy6Ks.png)
+![Try Hack Me Room Osquery, Scan the file from Q#3 with the same Yara file. What is the entry for 'strings'?](https://i.imgur.com/G6Yy6Ks.png)
 
 ---
 
@@ -371,12 +371,12 @@ Resources for Polylogx osq-ext-bin:
 ### Flags 9.1
 #### What is the description for the Windows Defender Service?
 Query: `select name,description from services where name like "WinD%";`   
-![Try Hack Me Room Osquery — What is the description for the Windows Defender Service?](https://i.imgur.com/kYRGFD3.png)
+![Try Hack Me Room Osquery, What is the description for the Windows Defender Service?](https://i.imgur.com/kYRGFD3.png)
 
 ### Flags 9.2
 #### There is another security agent on the Windows endpoint. What is the name of this agent?
 **Query:**: `select name,publisher from programs;`        
-![Try Hack Me Room Osquery — There is another security agent on the Windows endpoint. What is the name of this agent?](https://i.imgur.com/VBAQZ9C.png)
+![Try Hack Me Room Osquery, There is another security agent on the Windows endpoint. What is the name of this agent?](https://i.imgur.com/VBAQZ9C.png)
 
 ### Flags 9.3
 #### What is required with win_event_log_data?
@@ -385,17 +385,17 @@ Well the 'Origin' from where you get the data (hint: S****E )
 ### Flags 9.4
 #### How many sources are returned for win_event_log_channels?
 **Query:**: `osquery> select count (*) from win_event_log_channels;`   <br>
-![Try Hack Me Room Osquery — How many sources are returned for win event log channels?](https://i.imgur.com/nP2cI5j.png)
+![Try Hack Me Room Osquery, How many sources are returned for win event log channels?](https://i.imgur.com/nP2cI5j.png)
 
 ### Flags 9.5
 #### What is the schema for win_event_log_data?
 **Query:**: `osquery> .schema win_event_log_data`   
-![Try Hack Me Room Osquery — What is the schema for win event log data?](https://i.imgur.com/3b25Pxn.png)
+![Try Hack Me Room Osquery, What is the schema for win event log data?](https://i.imgur.com/3b25Pxn.png)
 
 ### Flags 9.6
 #### previous file scanned on the Linux endpoint with Yara is on the Windows endpoint.  What date/time was this file first detected? (Answer format: YYYY-MM-DD HH:MM:SS)
 Query: `osquery> select eventid,datetime from win_event_log_data where source = "Microsoft-Windows-Windows Defender/Operational" and eventid like '1116' ;`    
-![Try Hack Me Room Osquery — previous file scanned on the Linux endpoint with Yara is on the Windows endpoint. What](https://i.imgur.com/oz9YRJ8.png)
+![Try Hack Me Room Osquery, previous file scanned on the Linux endpoint with Yara is on the Windows endpoint. What](https://i.imgur.com/oz9YRJ8.png)
 
 ### Flags 9.7
 #### What is the query to find the first Sysmon event? Select only the event id, order by date/time, and limit the output to only 1 entry.      
@@ -404,13 +404,13 @@ Query 1: find the sysmon Source
 
 Query 2: `select eventid from win_event_log_data where source="Microsoft-Windows-Sysmon/Operational" order by datetime limit 1;`   
 
-![Try Hack Me Room Osquery — What is the query to find the first Sysmon event? Select only the event id, order by](https://i.imgur.com/hmBZb7L.png)
+![Try Hack Me Room Osquery, What is the query to find the first Sysmon event? Select only the event id, order by](https://i.imgur.com/hmBZb7L.png)
 
 
 ### Flags 9.8
 #### What is the Sysmon event id?
 
-![Try Hack Me Room Osquery — What is the Sysmon event id?](https://i.imgur.com/hmBZb7L.png)
+![Try Hack Me Room Osquery, What is the Sysmon event id?](https://i.imgur.com/hmBZb7L.png)
 
 
 ---

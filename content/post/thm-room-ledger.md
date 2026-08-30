@@ -26,13 +26,13 @@ description: "Walkthrough of TryHackMe Ledger: anonymous LDAP enumeration, a pas
 
 ## Ledger
 
-A change of pace from the [Active Directory for SOC](/post/thm-room-detectingadpostexploitation/) module — same directory, opposite chair. Ledger is a **Hard** offensive challenge: one task, two flags, no guidance. The DC is called **LABYRINTH** and the domain is `thm.local`.
+A change of pace from the [Active Directory for SOC](/post/thm-room-detectingadpostexploitation/) module, same directory, opposite chair. Ledger is a **Hard** offensive challenge: one task, two flags, no guidance. The DC is called **LABYRINTH** and the domain is `thm.local`.
 
 The whole box turns on three findings that chain into each other, and the flag names give the game away once you have them: `THM{ENUMERATION_IS_THE_KEY}` for user and `THM{THE_BYPASS_IS_CERTIFIED!}` for root. Enumeration gets the foothold, a certificate gets the domain.
 
-![Ledger — TryHackMe hard Active Directory challenge, completed](/img/thm-ledger/00-thumbnail.png)
+![Ledger, TryHackMe hard Active Directory challenge, completed](/img/thm-ledger/00-thumbnail.png)
 
-Everything below ran from a TryHackMe AttackBox over SSH. One standing note: this box's RPC certificate endpoint is flaky and several `certipy` calls fail on the first attempt — retry rather than assume you got the syntax wrong.
+Everything below ran from a TryHackMe AttackBox over SSH. One standing note: this box's RPC certificate endpoint is flaky and several `certipy` calls fail on the first attempt, retry rather than assume you got the syntax wrong.
 
 ## Recon
 
@@ -50,7 +50,7 @@ Everything below ran from a TryHackMe AttackBox over SSH. One standing note: thi
 3389/tcp open  ms-wbt-server
 ```
 
-A domain controller that also runs IIS. The `http-title` is just *IIS Windows Server* — the default page, no application — so the web ports are a decoy. The genuinely interesting detail is buried in the LDAPS certificate:
+A domain controller that also runs IIS. The `http-title` is just *IIS Windows Server*, the default page, no application, so the web ports are a decoy. The genuinely interesting detail is buried in the LDAPS certificate:
 
 ```
 ssl-cert: Subject: commonName=labyrinth.thm.local
@@ -67,7 +67,7 @@ Before touching credentials, check whether the DC will talk to nobody in particu
 ldapsearch -x -H ldap://10.49.181.117 -s base -b "" namingContexts
 ```
 
-That returns `DC=thm,DC=local` and friends, which only proves the rootDSE is readable — normal enough. The real question is whether anonymous bind extends to *objects*:
+That returns `DC=thm,DC=local` and friends, which only proves the rootDSE is readable, normal enough. The real question is whether anonymous bind extends to *objects*:
 
 ```bash
 ldapsearch -x -H ldap://10.49.181.117 -b "dc=thm,dc=local" "(objectClass=user)" sAMAccountName
@@ -95,13 +95,13 @@ description: Tier 1 User
 description: Please change it: CHANGEME2023!
 ```
 
-Two accounts carry it — **IVY_WILLIS** and **SUSANNA_MCKNIGHT**. Pulling them out of the LDIF needs entry-aware parsing rather than a plain grep, because `description` and `sAMAccountName` sit on different lines of the same record:
+Two accounts carry it, **IVY_WILLIS** and **SUSANNA_MCKNIGHT**. Pulling them out of the LDIF needs entry-aware parsing rather than a plain grep, because `description` and `sAMAccountName` sit on different lines of the same record:
 
 ```bash
 awk 'BEGIN{RS="";FS="\n"} /CHANGEME2023/ {for(i=1;i<=NF;i++) if($i ~ /^sAMAccountName:/) print $i}' ldap_users.txt
 ```
 
-Now validate it — and validate it properly. Listing shares is *not* a credential test on this box, because a null session lists the same five shares. Use something that requires a real logon, and run a wrong password alongside it as a control:
+Now validate it, and validate it properly. Listing shares is *not* a credential test on this box, because a null session lists the same five shares. Use something that requires a real logon, and run a wrong password alongside it as a control:
 
 ![rpcclient confirming both accounts authenticate, with a wrong-password control returning LOGON_FAILURE](/img/thm-ledger/03-cred-validation.png)
 
@@ -127,7 +127,7 @@ GetNPUsers -dc-ip $T -usersfile users.txt -format hashcat thm.local/
 # 5 hashes: ISIAH_WALKER, MAXINE_FREEMAN, PHYLLIS_MCCOY, QUEEN_GARNER, SHELLEY_BEARD
 ```
 
-No SPNs at all, so Kerberoasting is a non-starter. AS-REP roasting *does* yield five hashes from accounts with preauthentication disabled — a real finding, and in a report it belongs there — but none of them crack against rockyou, and none are needed. They are the box's decoy for anyone who skips the CA.
+No SPNs at all, so Kerberoasting is a non-starter. AS-REP roasting *does* yield five hashes from accounts with preauthentication disabled, a real finding, and in a report it belongs there, but none of them crack against rockyou, and none are needed. They are the box's decoy for anyone who skips the CA.
 
 ## ESC1: the certificate template that hands over the domain
 
@@ -151,7 +151,7 @@ The `ServerAuth` template is the whole ballgame:
 
 Three conditions have to line up for ESC1, and here all three do. The template **allows client authentication**, so a certificate minted from it can be used to log in rather than just to encrypt. The **enrollee supplies the subject**, so I get to say who the certificate is for instead of the CA deciding. And **Authenticated Users can enroll**, which after the description-field slip means anybody.
 
-The `Enrollment Rights: Domain Admins` line is a trap for the eye — it looks restrictive, but the ESC1 finding underneath is what actually governs enrolment, and it says Authenticated Users.
+The `Enrollment Rights: Domain Admins` line is a trap for the eye, it looks restrictive, but the ESC1 finding underneath is what actually governs enrolment, and it says Authenticated Users.
 
 So: ask the CA for a certificate that claims to be the domain administrator, then use it.
 
@@ -174,7 +174,7 @@ certipy auth -pfx administrator.pfx -dc-ip $T -username administrator -domain th
 
 Domain Admin, from a password that was written in a comment field.
 
-Two practical notes on that command, because both cost me time. Certipy first died with `Failed to resolve: labyrinth.thm.local` — the AttackBox has no DNS for the domain, so add `10.49.x.x labyrinth.thm.local thm.local LABYRINTH` to `/etc/hosts`. Then it died with `The NETBIOS connection with the remote host timed out`, which is fixed by passing **`-target-ip`** alongside `-target`. Even with both, the RPC call fails intermittently — I wrapped it in a retry loop in the end.
+Two practical notes on that command, because both cost me time. Certipy first died with `Failed to resolve: labyrinth.thm.local`, the AttackBox has no DNS for the domain, so add `10.49.x.x labyrinth.thm.local thm.local LABYRINTH` to `/etc/hosts`. Then it died with `The NETBIOS connection with the remote host timed out`, which is fixed by passing **`-target-ip`** alongside `-target`. Even with both, the RPC call fails intermittently, I wrapped it in a retry loop in the end.
 
 ## Flags, and one last obstacle
 
@@ -211,10 +211,10 @@ One quirk when driving `wmiexec` through nested quoting: backslashes get eaten, 
 
 ## What the box is actually teaching
 
-Every step here is a configuration decision rather than a software vulnerability. Nothing was exploited in the memory-corruption sense — no CVE, no payload, no shell dropped on disk. Anonymous bind was left on, a password was typed into a description field, and a certificate template was published with enrollee-supplied subjects to Authenticated Users. Each is defensible in isolation and catastrophic in sequence.
+Every step here is a configuration decision rather than a software vulnerability. Nothing was exploited in the memory-corruption sense, no CVE, no payload, no shell dropped on disk. Anonymous bind was left on, a password was typed into a description field, and a certificate template was published with enrollee-supplied subjects to Authenticated Users. Each is defensible in isolation and catastrophic in sequence.
 
-The lesson I would carry into a real environment is about **which finding you chase**. This box deliberately offers two roads that go nowhere — no SPNs to Kerberoast, and five AS-REP hashes that do not crack — and one that goes straight to Domain Admin. The tell was in the nmap output the entire time: an issuer field naming a CA. AD CS is infrastructure that rarely shows up in a port list directly, and if you only look at ports you will miss it and spend the hour on hashes instead.
+The lesson I would carry into a real environment is about **which finding you chase**. This box deliberately offers two roads that go nowhere, no SPNs to Kerberoast, and five AS-REP hashes that do not crack, and one that goes straight to Domain Admin. The tell was in the nmap output the entire time: an issuer field naming a CA. AD CS is infrastructure that rarely shows up in a port list directly, and if you only look at ports you will miss it and spend the hour on hashes instead.
 
 For defenders, the detection story maps cleanly onto the [AD for SOC module](/post/thm-room-detectingadcredentialattacks/): certificate enrolment is logged, and a certificate issued with a UPN that does not match the requesting account is about as clean an indicator as this kind of abuse produces.
 
-Room solved 100% — user and root, 60 points.
+Room solved 100%: user and root, 60 points.

@@ -94,7 +94,7 @@ Rules consume decoded fields. The room's own pattern is a level-0 base rule that
 </rule>
 ```
 
-The first question asks which rule description applied to the third tested web event. The third event is a plain `GET /contact.php` returning 200, so it never reaches the admin-login rule and stops at the base rule: **Custom - THM Web Request**. Level 0 does not mean "no match", it means "matched, do not alert" — the rule still fires, still labels the event, and is still what the Ruleset Test reports.
+The first question asks which rule description applied to the third tested web event. The third event is a plain `GET /contact.php` returning 200, so it never reaches the admin-login rule and stops at the base rule: **Custom - THM Web Request**. Level 0 does not mean "no match", it means "matched, do not alert": the rule still fires, still labels the event, and is still what the Ruleset Test reports.
 
 The second question sends you into the prebuilt ruleset for the PSEXEC detection. The answer is **(?i)PSEXESVC\.exe**, and the two details that matter are both easy to drop: the `(?i)` case-insensitivity prefix, and the escaped dot. The answer mask (`************\.***`) settles both before you submit, because it renders the backslash literally while masking everything else.
 
@@ -161,7 +161,7 @@ The accepted answer is **18**. Be aware that two different readings both land on
 
 The interleaving in that view is the frequency rule working in real time: runs of level-5 failures with a level-12 correlation alert dropped in whenever the counter trips.
 
-**Q2: the hidden flag.** The Rules panel renders rules, not files, so the flag is invisible there — it sits in an XML comment after the last `</rule>`. Fetching the file raw is one call:
+**Q2: the hidden flag.** The Rules panel renders rules, not files, so the flag is invisible there. It sits in an XML comment after the last `</rule>`. Fetching the file raw is one call:
 
 ```javascript
 const r = await __wz('/rules/files/task_5.xml?raw=true');
@@ -169,7 +169,7 @@ r.t.match(/THM\{[^}]*\}/)[0];
 // THM{wazuh_detection_engineer}
 ```
 
-**THM{wazuh_detection_engineer}**, sitting in `<!-- Your flag: ... -->` at the very end of the file. Worth noting for its own sake: `?raw=true` on `/rules/files/<name>` is the difference between reading a parsed rule and reading what an author actually wrote, comments included. Anything a colleague left in a comment — a ticket number, a tuning rationale, a "temporary" exclusion from two years ago — only exists in the raw view.
+**THM{wazuh_detection_engineer}**, sitting in `<!-- Your flag: ... -->` at the very end of the file. Worth noting for its own sake: `?raw=true` on `/rules/files/<name>` is the difference between reading a parsed rule and reading what an author actually wrote, comments included. Anything a colleague left in a comment (a ticket number, a tuning rationale, a "temporary" exclusion from two years ago) only exists in the raw view.
 
 **Q3 and Q4: the CDB hit.** Rule 150002 is the CDB rule in this file, matching `win.eventdata.destinationIp` against the same `malicious-ip` list. It fired exactly twice:
 
@@ -200,7 +200,7 @@ Wazuh has no `NOT` clause you bolt onto a rule. A false positive is suppressed b
 
 So `shell-checker-thm.sh` matches 100005 on the `shell` keyword, then matches the more specific child, and the rule that ends up on the event is **100006** at level 0. A file named `malware.elf` matches 100005 and nothing narrower, so its alert level stays **12**.
 
-Two things follow from this that are easy to miss. The exclusion still *fires* — it is a real rule with a real ID, so you can search for it and see how often your "false positive" is actually happening, which a filter would have thrown away silently. And the description field is doing documentation work: "used by our red team for testing" is the only record of why the exclusion exists, sitting where the next analyst will actually find it.
+Two things follow from this that are easy to miss. The exclusion still *fires*: it is a real rule with a real ID, so you can search for it and see how often your "false positive" is actually happening, which a filter would have thrown away silently. And the description field is doing documentation work: "used by our red team for testing" is the only record of why the exclusion exists, sitting where the next analyst will actually find it.
 
 The task also covers `overwrite="yes"`, which is how you extend a shipped rule without editing files that a Wazuh upgrade will replace. Copy the rule into `overwrite_rules.xml`, keep the ID, add your keywords. The caveat the room raises is the real one: after you widen a rule, every exclusion hanging off it needs re-checking, because a broader parent means the children are now suppressing more than they were written to suppress.
 
@@ -210,4 +210,4 @@ The task also covers `overwrite="yes"`, which is how you extend a shipped rule w
 
 **Read the file, not the rendering.** The Rules panel is a good index and a bad source of truth. It showed me three custom rules and their levels instantly, and it silently dropped the XML comment holding Task 5's flag, along with any `<!-- -->` rationale an author left behind. `GET /rules/files/<file>?raw=true` costs one request and returns what was actually written. The same gap shows up everywhere a SIEM parses config for display: the parsed view answers "what does this do", and only the raw view answers "what did someone mean".
 
-Room solved 100% — 7 tasks, 12 answers.
+Room solved 100%: 7 tasks, 12 answers.

@@ -153,9 +153,9 @@ Download the provided report from a vulnerable machine to get familiar with the 
 ### Breaking Down the Report
 
 The automated report from OpenVAS begins with some basic host and task information including Host, Start, End, and Vulnerability categories. It will also check for host authentications and an overall summary of open ports on the host
-![Try Hack Me Room Room Openvas — Breaking Down the Report](https://i.imgur.com/V4VXU3t.png)
+![Try Hack Me Room Room Openvas, Breaking Down the Report](https://i.imgur.com/V4VXU3t.png)
 After the basic host and task information OpenVAS will report on each of the vulnerabilities found.
-![Try Hack Me Room Room Openvas — Breaking Down the Report (2)](https://i.imgur.com/CUeOtgJ.png)
+![Try Hack Me Room Room Openvas, Breaking Down the Report (2)](https://i.imgur.com/CUeOtgJ.png)
 In the above image, the vulnerability breakdown can give a lot of information. We can gather a summary of the vulnerability, detection details, mitigation details, and method of detection.
 
 ### Continuous Monitoring Overview
@@ -166,17 +166,17 @@ OpenVAS offers many options for continuous and scheduled monitoring/vulnerabilit
 
 To begin creating a schedule navigate to Configuration > Schedules and as always click on the blue star icon in the upper left-hand corner. You should see a pop-up similar to the one below.
 
-![Try Hack Me Room Room Openvas — Creating Schedules](https://i.imgur.com/bcNbfYj.png)
+![Try Hack Me Room Room Openvas, Creating Schedules](https://i.imgur.com/bcNbfYj.png)
 Fill out the basic information like Name, First Start Time, Period, etc. Once you have the schedule created you can now create a new Task/Scan with this created schedule attached. You can see this option below.
-![Try Hack Me Room Room Openvas — Creating Schedules (2)](https://i.imgur.com/nitrmkz.png)
+![Try Hack Me Room Room Openvas, Creating Schedules (2)](https://i.imgur.com/nitrmkz.png)
 
 ### Crafting Alerts
 
 The process for creating alerts is very similar to creating a schedule, navigate to Configuration > Alerts and click on the blue star icon in the upper left-hand corner. You should see a pop-up similar to the one below.
 
-![Try Hack Me Room Room Openvas — Crafting Alerts](https://i.imgur.com/y3RNl1Y.png)
+![Try Hack Me Room Room Openvas, Crafting Alerts](https://i.imgur.com/y3RNl1Y.png)
 You will notice that there are a lot more options than the schedule menu, don't let this intimidate you, the process is very similar and straightforward. The main options you will need to worry about are Name, Event, Condition, and To Address. The event can be configured to alert based on the status of the scan or when a new NVT/vulnerability is detected. The condition option will make sure that your inbox isn't flooded with alerts, this can be changed based on severity or filters. The To Address is fairly self-explanatory and will send an email of the alert to the specified mail address. Once created you will again need to connect the alert to a new Task/Scan. You can see the specific option below.
-![Try Hack Me Room Room Openvas — Crafting Alerts (2)](https://i.imgur.com/Hqo9W71.png)
+![Try Hack Me Room Room Openvas, Crafting Alerts (2)](https://i.imgur.com/Hqo9W71.png)
 
 ---
 

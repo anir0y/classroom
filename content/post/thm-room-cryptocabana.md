@@ -1,5 +1,5 @@
 ---
-title: TryHackMe CryptoCabana — A SAS Token and a Vault That Remembers
+title: TryHackMe CryptoCabana, A SAS Token and a Vault That Remembers
 date: 2026-08-05T12:00:00+05:30
 lastmod: 2026-08-05T14:30:00+05:30
 author: Animesh Roy
@@ -21,7 +21,7 @@ tags:
   - Secret Rotation
 
 draft: false
-description: "Walkthrough of TryHackMe CryptoCabana — an over-scoped Azure SAS token in client-side JS, a hidden container, and a Key Vault secret that outlived rotation."
+description: "Walkthrough of TryHackMe CryptoCabana, an over-scoped Azure SAS token in client-side JS, a hidden container, and a Key Vault secret that outlived rotation."
 ---
 
 ## CryptoCabana
@@ -30,7 +30,7 @@ description: "Walkthrough of TryHackMe CryptoCabana — an over-scoped Azure SAS
 
 > By the time he made it back from the breakfast buffet, his wallet had already moved on without him. The transaction was signed, properly signed, just not by him.
 >
-> He'd backed his seed phrase up weeks ago, into the CryptoCabana kiosk's vault — the one whose landing page promised, in exactly four words, "Backed up. Sleep easy."
+> He'd backed his seed phrase up weeks ago, into the CryptoCabana kiosk's vault, the one whose landing page promised, in exactly four words, "Backed up. Sleep easy."
 
 The objective is unusually well-phrased, and worth reading twice:
 
@@ -40,9 +40,9 @@ And `@0xMia` drops the hint that matters at the end:
 
 > "the backup kiosk is SO confident. 'sleep easy' it says 💀 reader, do not sleep easy. also: **if a value looks freshly rotated, ask yourself what it looked like five minutes before that** 👀"
 
-Category is **Cloud**, difficulty Medium, 90 points, tagged Azure / Storage / Key Vault. The target is a single URL — `https://cryptocabanaf5scjagc.z13.web.core.windows.net/` — and `z13.web.core.windows.net` tells you before you click anything that this is an **Azure Storage static website**, i.e. a blob container called `$web` served over HTTP.
+Category is **Cloud**, difficulty Medium, 90 points, tagged Azure / Storage / Key Vault. The target is a single URL, `https://cryptocabanaf5scjagc.z13.web.core.windows.net/`, and `z13.web.core.windows.net` tells you before you click anything that this is an **Azure Storage static website**, i.e. a blob container called `$web` served over HTTP.
 
-A note on tooling: the room's Task 1 sets you up with the Azure CLI, or portal credentials and Cloud Shell. **I didn't need either.** Everything below is `curl` and a little Python against the Azure REST APIs, which I think makes the chain clearer — you can see exactly which HTTP request grants what.
+A note on tooling: the room's Task 1 sets you up with the Azure CLI, or portal credentials and Cloud Shell. **I didn't need either.** Everything below is `curl` and a little Python against the Azure REST APIs, which I think makes the chain clearer, you can see exactly which HTTP request grants what.
 
 ## Step 1: Read what the kiosk hands out for free
 
@@ -61,9 +61,9 @@ const BACKUP_SAS = "?sv=2022-11-02&ss=b&srt=sco&sp=rl&se=2099-12-31T23:59:59Z"
 fetch(url, { method: "PUT", headers: {"x-ms-blob-type":"BlockBlob"}, body: phrase });
 ```
 
-That's a **Shared Access Signature** shipped to every visitor's browser. This is the thing the kiosk is "quietly trusting to reach into storage on its own" — there's no backend, the page talks to Azure Storage directly, so the credential has to be on the client.
+That's a **Shared Access Signature** shipped to every visitor's browser. This is the thing the kiosk is "quietly trusting to reach into storage on its own", there's no backend, the page talks to Azure Storage directly, so the credential has to be on the client.
 
-*A SAS in client-side JS is public.* Not "obscure", not "minified away" — public. Anyone who opens DevTools has it.
+*A SAS in client-side JS is public.* Not "obscure", not "minified away", public. Anyone who opens DevTools has it.
 
 ## Step 2: Read the SAS before you use it
 
@@ -80,11 +80,11 @@ This is the step people skip, and it's the whole lesson. A SAS is not opaque: ev
 | `st` / `se` | `2024-01-01` → **`2099-12-31`** | valid for ~74 years |
 | `spr` | `https` | HTTPS only |
 
-Because it carries `ss` and `srt`, this is an **account SAS**, not a service SAS — it is scoped to the storage account, not to a container.
+Because it carries `ss` and `srt`, this is an **account SAS**, not a service SAS, it is scoped to the storage account, not to a container.
 
 Now compare that with what the application actually does. `app.js` performs one operation: `PUT` a single blob into the `backups` container. The minimum credential for that is write access to one container. What it was given instead is **read and list across every container in the account, until 2099**.
 
-The `s` in `srt=sco` is the expensive one. Service-level access means you may call account-wide operations — including "list all containers":
+The `s` in `srt=sco` is the expensive one. Service-level access means you may call account-wide operations, including "list all containers":
 
 ```bash
 curl -s "https://cryptocabanaf5scjagc.blob.core.windows.net/?comp=list&$SAS"
@@ -96,9 +96,9 @@ Name> backups
 Name> vault
 ```
 
-Three containers. `$web` is the website you're looking at. `backups` is the one the app writes to. And `vault` is not referenced anywhere on the site — that's "somewhere the kiosk's own page never once points you."
+Three containers. `$web` is the website you're looking at. `backups` is the one the app writes to. And `vault` is not referenced anywhere on the site, that's "somewhere the kiosk's own page never once points you."
 
-There's a nice irony here too: the permissions are `rl`, **read and list — not write**. The kiosk's own "Backed up. Sleep easy." promise can't actually work; a `PUT` with this token gets rejected. The token is simultaneously too weak to do its job and far too strong to hand out.
+There's a nice irony here too: the permissions are `rl`, **read and list, not write**. The kiosk's own "Backed up. Sleep easy." promise can't actually work; a `PUT` with this token gets rejected. The token is simultaneously too weak to do its job and far too strong to hand out.
 
 {{< ad >}}
 
@@ -120,9 +120,9 @@ curl -s "https://$ACCT.blob.core.windows.net/vault?restype=container&comp=list&$
 velvet cabana rebuild scatter obvious wallet drift lagoon punchline receipt orbit shrimp
 ```
 
-That's the story resolved — this is how his wallet "moved on without him." A seed phrase *is* the wallet; whoever reads it can sign transactions as the owner, which is exactly what the briefing describes. But it isn't the flag.
+That's the story resolved, this is how his wallet "moved on without him." A seed phrase *is* the wallet; whoever reads it can sign transactions as the owner, which is exactly what the briefing describes. But it isn't the flag.
 
-The flag path is the other file — the "second, more valuable set of keys":
+The flag path is the other file, the "second, more valuable set of keys":
 
 ```json
 {
@@ -135,13 +135,13 @@ The flag path is the other file — the "second, more valuable set of keys":
 }
 ```
 
-An Azure AD **service principal** — the cloud equivalent of finding a service account's password file. The `note` is the room being funny at IT's expense: *"rotate this if it ever leaves the vault"*, in a file that is currently leaving the vault.
+An Azure AD **service principal**, the cloud equivalent of finding a service account's password file. The `note` is the room being funny at IT's expense: *"rotate this if it ever leaves the vault"*, in a file that is currently leaving the vault.
 
 Note the escalation in credential *type*, not just in access. The SAS was scoped to one storage account. A service principal is an **identity in Azure AD**, and it can hold role assignments on anything in the subscription. That's what "see how much further that trust actually extends" means.
 
 ## Step 4: Service principal to Key Vault
 
-A service principal authenticates with the OAuth2 client-credentials grant. No `az login` needed — it's one POST:
+A service principal authenticates with the OAuth2 client-credentials grant. No `az login` needed, it's one POST:
 
 ```bash
 TOK=$(curl -s -X POST "https://login.microsoftonline.com/$TENANT/oauth2/v2.0/token" \
@@ -162,7 +162,7 @@ curl -s -H "Authorization: Bearer $TOK" \
 secrets: ['key-shard-1', 'key-shard-2', 'key-shard-3', 'master-key']
 ```
 
-Four secrets. The flag is **split into shards** — and `master-key` returns `403 Forbidden`, because the service principal's role assignment doesn't cover it. A well-placed red herring: the most enticingly named secret is the one you can't have, and it doesn't matter.
+Four secrets. The flag is **split into shards**, and `master-key` returns `403 Forbidden`, because the service principal's role assignment doesn't cover it. A well-placed red herring: the most enticingly named secret is the one you can't have, and it doesn't matter.
 
 ## Step 5: The rotation that rotated nothing away
 
@@ -170,7 +170,7 @@ Reading the current value of each shard gives you two thirds of a flag and a tau
 
 - `key-shard-1` → `THM{n0t_ur`
 - `key-shard-3` → `ur_c01ns!}`
-- `key-shard-2` → *"Rotated this after IT flagged it — old value should still be recoverable if you know where to look."*
+- `key-shard-2` → *"Rotated this after IT flagged it, old value should still be recoverable if you know where to look."*
 
 This is `@0xMia`'s hint made literal. **Azure Key Vault is versioned.** Updating a secret does not overwrite it; it creates a new version and keeps the old ones, each addressable by its own version ID, all readable with the same `secrets/get` permission. Rotation without purging is not deletion.
 
@@ -179,7 +179,7 @@ GET /secrets/{name}/versions?api-version=7.4     <- every version
 GET /secrets/{name}/{version}?api-version=7.4    <- a specific old value
 ```
 
-Here's the script — it walks every secret, lists its versions oldest-first, and prints each value ([`kv_dump.py` on GitHub Gist](https://gist.github.com/anir0y/93461a3eada4a33b6524cae8988f3cab)):
+Here's the script, it walks every secret, lists its versions oldest-first, and prints each value ([`kv_dump.py` on GitHub Gist](https://gist.github.com/anir0y/93461a3eada4a33b6524cae8988f3cab)):
 
 ```python
 #!/usr/bin/env python3
@@ -241,7 +241,7 @@ THM{n0t_ur  +  _k3ys_n0t_  +  ur_c01ns!}
 
 > `THM{n0t_ur_k3ys_n0t_ur_c01ns!}`
 
-*Not your keys, not your coins* — the oldest saying in self-custody, and the entire moral of a room where a guest handed his seed phrase to someone else's kiosk.
+*Not your keys, not your coins*, the oldest saying in self-custody, and the entire moral of a room where a guest handed his seed phrase to someone else's kiosk.
 
 ## What this room is really teaching
 
@@ -251,9 +251,9 @@ Four distinct failures, and each one is common in real Azure estates.
 
 **`srt=sco` is almost never what you want.** The `s` (Service) resource type exists for account-wide operations like enumerating containers, and it turned a token scoped to "the backups feature" into a map of the whole storage account. Grant `o` alone when the app touches objects. Better still, use a *service* SAS scoped to one container rather than an account SAS.
 
-**Expiry dates are a control, and `2099` disables it.** A SAS cannot be revoked individually — the only ways to kill one are to let it expire, rotate the account key that signed it, or use a stored access policy. A 74-year expiry means this credential is effectively permanent and effectively unrevokable. Short lifetimes exist so that leaks decay on their own.
+**Expiry dates are a control, and `2099` disables it.** A SAS cannot be revoked individually, the only ways to kill one are to let it expire, rotate the account key that signed it, or use a stored access policy. A 74-year expiry means this credential is effectively permanent and effectively unrevokable. Short lifetimes exist so that leaks decay on their own.
 
-**Rotation is not deletion, and Key Vault versioning proves it.** This is the subtlest one and worth internalising. Somebody noticed a secret was exposed and did what you're supposed to do — they rotated it. But `secrets/get` reads *any version*, so the compromised value remained available to exactly the identity they were trying to lock out. Rotation limits **future** use of a credential; it does nothing about a value an attacker has already read, and in Key Vault it doesn't even remove it from the service. To actually remove it you must delete and **purge** that version, and purge protection can block even that.
+**Rotation is not deletion, and Key Vault versioning proves it.** This is the subtlest one and worth internalising. Somebody noticed a secret was exposed and did what you're supposed to do, they rotated it. But `secrets/get` reads *any version*, so the compromised value remained available to exactly the identity they were trying to lock out. Rotation limits **future** use of a credential; it does nothing about a value an attacker has already read, and in Key Vault it doesn't even remove it from the service. To actually remove it you must delete and **purge** that version, and purge protection can block even that.
 
 It rhymes with the Room 404 lesson from Day 2: deleting a secret from the latest commit doesn't remove it from git history. Same shape, different system. **Anything that was ever stored must be treated as burned, not fixed.**
 
@@ -265,7 +265,7 @@ It rhymes with the Room 404 lesson from Day 2: deleting a secret from the latest
 
 **Use stored access policies** so a leaked SAS can be revoked without rotating the account key and breaking everything else.
 
-**Give the service principal a scoped role.** `Key Vault Secrets User` on the specific secrets it needs, not blanket read on the vault. The `403` on `master-key` shows scoping was partially done — it just wasn't done for the shards.
+**Give the service principal a scoped role.** `Key Vault Secrets User` on the specific secrets it needs, not blanket read on the vault. The `403` on `master-key` shows scoping was partially done, it just wasn't done for the shards.
 
 **Purge, don't just rotate.** After a leak, delete and purge the exposed version, and audit `secrets/get` in Key Vault diagnostic logs for reads of old versions.
 
@@ -276,15 +276,15 @@ It rhymes with the Room 404 lesson from Day 2: deleting a secret from the latest
 | | |
 |---|---|
 | Room | CryptoCabana |
-| Event | Hacker Holidays 2026 — Day 9 |
+| Event | Hacker Holidays 2026, Day 9 |
 | Category | Cloud (Azure) · Medium · 90 points |
 | Target | `https://cryptocabanaf5scjagc.z13.web.core.windows.net/` |
 | Entry | Account SAS hardcoded in `app.js` |
-| SAS flaw | `srt=sco` + `sp=rl` + `se=2099-12-31` — account-wide read/list for 74 years |
+| SAS flaw | `srt=sco` + `sp=rl` + `se=2099-12-31`, account-wide read/list for 74 years |
 | Pivot 1 | `?comp=list` → unlisted `vault` container |
 | Loot | `seed_phrase.txt`, `backup-service-account.json` (service principal) |
 | Pivot 2 | Client-credentials grant → token for `https://vault.azure.net/.default` |
-| Vault | `ccabana-kv-f5scjagc` — `key-shard-1/2/3`, `master-key` (403, red herring) |
+| Vault | `ccabana-kv-f5scjagc`, `key-shard-1/2/3`, `master-key` (403, red herring) |
 | Key trick | `key-shard-2` rotated; the **previous version** holds the real value |
 | Flag | `THM{n0t_ur_k3ys_n0t_ur_c01ns!}` |
 
@@ -299,8 +299,8 @@ curl -s "$B/vault/backup-service-account.json?$SAS"             # service princi
 python3 kv_dump.py                                              # every secret, every version
 ```
 
-No exploit, no payload, no CVE. Every request was well-formed and every one was authorised — by a token the application published itself. That's what cloud exploitation usually looks like: you don't break in, you **read the permissions you were given and use all of them**.
+No exploit, no payload, no CVE. Every request was well-formed and every one was authorised, by a token the application published itself. That's what cloud exploitation usually looks like: you don't break in, you **read the permissions you were given and use all of them**.
 
-The habit worth taking away is Step 2. When you find a SAS, a JWT, a signed URL, or an IAM policy, don't just try it — *decode it first* and write down what it permits versus what the feature needs. The gap between those two is the finding, and here it was 74 years wide.
+The habit worth taking away is Step 2. When you find a SAS, a JWT, a signed URL, or an IAM policy, don't just try it, *decode it first* and write down what it permits versus what the feature needs. The gap between those two is the finding, and here it was 74 years wide.
 
 One responsible-disclosure note on this writeup: the live SAS signature and the service principal's `client_secret` are truncated in the screenshots and text above. This room points every player at one shared Azure tenant rather than a per-user deployment, so those values are real, working credentials for infrastructure that isn't mine. The flag is the spoiler; the keys aren't mine to hand out. 🪷

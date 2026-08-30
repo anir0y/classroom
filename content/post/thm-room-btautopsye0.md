@@ -16,7 +16,7 @@ tags:
   - autopsy
 
 draft: false
-description: "TryHackMe Thm Room Autopsy walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Thm Room Autopsy challenge room."
+description: "TryHackMe Thm Room Autopsy walkthrough with step-by-step solutions, enumeration, exploitation, and privilege escalation on the Thm Room Autopsy challenge room."
 ---
 # Autopsy
 Learn how to use Autopsy to investigate artifacts from a disk image. Use your knowledge to investigate an employee who is being accused of leaking private company data.

@@ -16,7 +16,7 @@ tags:
   - kenobi
 
 draft: false
-description: "TryHackMe Room Kenobi walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Kenobi challenge room."
+description: "TryHackMe Room Kenobi walkthrough with step-by-step solutions, enumeration, exploitation, and privilege escalation on the Room Kenobi challenge room."
 ---
 ## kenobi
 
@@ -75,7 +75,7 @@ anonymous auth is enbled, just hit enter when it askes for password.
 
 ## Task 04: Gain initial access with ProFtpd
 
-![TryHackME Room Kenobi — Gain initial access with ProFtpd](https://i.imgur.com/L54MBzX.png)
+![TryHackME Room Kenobi, Gain initial access with ProFtpd](https://i.imgur.com/L54MBzX.png)
 
 |Flag-ID|question|
 |:--|---|

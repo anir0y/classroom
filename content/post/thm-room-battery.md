@@ -161,7 +161,7 @@ if($_SESSION['favcolor']==="admin@bank.a") {
 
 Two real users: **cyber** and **yash**.
 
-Two practical notes that cost me time. The reflected value is `<search>`, not `<name>` — putting the entity in the wrong element returns the literal placeholder. And `file://` only works for files that are not themselves XML-ish: any file containing `<`, `>` or `&` breaks the parse and returns nothing. For those you need the base64 filter:
+Two practical notes that cost me time. The reflected value is `<search>`, not `<name>`, and putting the entity in the wrong element returns the literal placeholder. And `file://` only works for files that are not themselves XML-ish: any file containing `<`, `>` or `&` breaks the parse and returns nothing. For those you need the base64 filter:
 
 ```bash
 php://filter/convert.base64-encode/resource=/var/www/html/acc.php
@@ -183,7 +183,7 @@ That is SSH:
 
 ```bash
 sshpass -p 'super#secure&password!' ssh cyber@TARGET 'id; cat ~/flag1.txt'
-  # uid=1000(cyber) gid=1000(cyber) groups=1000(cyber),4(adm),...
+  # uid=1000(cyber) gid=1000(cyber) groups=1000(cyber),4(adm)...
   # THM{6f7e4dd134e19af144c88e4fe46c67ea}
 ```
 
@@ -219,7 +219,7 @@ User cyber may run the following commands on ubuntu:
 -rwx------ 1 root root 349 Nov 15  2020 /home/cyber/run.py
 ```
 
-The script is mode 700 and owned by root, so `cyber` cannot read or edit it. But it lives in `/home/cyber`, which `cyber` owns — and on Linux, permission to unlink a file comes from the **directory**, not the file. So the file's own permissions are irrelevant:
+The script is mode 700 and owned by root, so `cyber` cannot read or edit it. But it lives in `/home/cyber`, which `cyber` owns, and on Linux, permission to unlink a file comes from the **directory**, not the file. So the file's own permissions are irrelevant:
 
 ```bash
 mv ~/run.py ~/run.py.orig          # preserve the original
@@ -243,6 +243,6 @@ rm -f ~/run.py && mv ~/run.py.orig ~/run.py
 
 **A "file not found" from a read primitive is often a parse failure.** My XXE returned empty for `/etc/crontab`, for every PHP file, and for a long list of guessed flag paths, and I read all of that as "does not exist". In reality `file://` was choking on any content containing XML metacharacters, and the fix was one wrapper: `php://filter/convert.base64-encode/resource=`. When a read primitive returns nothing, prove it can read a file you *know* exists and is plain text before concluding anything about the ones that came back empty. `/etc/hosts` and `/etc/issue` made good controls.
 
-**Directory ownership beats file permissions.** `run.py` was `-rwx------ root root` and it made no difference at all, because `cyber` owned the directory containing it. Any `sudo` rule pointing at a path inside a user-writable directory is equivalent to giving that user the target's privileges outright, no matter how the file itself is locked down. The same logic applies to cron jobs, systemd units and anything else that executes a path rather than an inode — if the user controls the directory, they control what runs.
+**Directory ownership beats file permissions.** `run.py` was `-rwx------ root root` and it made no difference at all, because `cyber` owned the directory containing it. Any `sudo` rule pointing at a path inside a user-writable directory is equivalent to giving that user the target's privileges outright, no matter how the file itself is locked down. The same logic applies to cron jobs, systemd units and anything else that executes a path rather than an inode. If the user controls the directory, they control what runs.
 
-Room solved 100% — 1 task, 3 flags.
+Room solved 100%: 1 task, 3 flags.

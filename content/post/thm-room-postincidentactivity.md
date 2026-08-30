@@ -25,7 +25,7 @@ description: "Walkthrough of TryHackMe Post-Incident Activity: reconstructing th
 
 ## Post-Incident Activity
 
-This is room 4 of 4 in the **Incident Response Lifecycle** module on SOC Level 2, and it closes the NIST loop. The module runs one continuous incident at Nexus Financial: *Preparation* reviewed the posture, [Detection and Analysis](/post/thm-room-detectionandanalysis/) confirmed the compromise and scoped it, *Response and Recovery* contained and eradicated, and this room asks the question that most SOCs never get around to — what did we actually learn, and what detection do we now have that we did not have on 30 March?
+This is room 4 of 4 in the **Incident Response Lifecycle** module on SOC Level 2, and it closes the NIST loop. The module runs one continuous incident at Nexus Financial: *Preparation* reviewed the posture, [Detection and Analysis](/post/thm-room-detectionandanalysis/) confirmed the compromise and scoped it, *Response and Recovery* contained and eradicated, and this room asks the question that most SOCs never get around to, what did we actually learn, and what detection do we now have that we did not have on 30 March?
 
 The room is half conceptual and half Splunk. The conceptual half is the reporting and lessons-learned vocabulary. The Splunk half is the interesting part: reconstructing the entire attack as a single ordered table across three different sourcetypes, computing dwell time from that table, and writing the two detection rules the incident hands you for free. The data is the same `index=ir` dataset used in Detection and Analysis, so the [Entra ID Monitoring](/post/thm-room-entraidmonitoring/) and [Exchange Online Monitoring](/post/thm-room-exchangeonlinemonitoring/) field names apply throughout.
 
@@ -35,7 +35,7 @@ The room is half conceptual and half Splunk. The conceptual half is the reportin
 
 The structured discussion held after an incident is resolved is the **Lessons Learned Meeting**. It brings the IR team, IT and management together to answer a fixed set of questions: what happened, what was the root cause, how did the attacker get in, when was it detected, could it have been detected earlier, what went well, and what changes to people, process or technology stop a repeat.
 
-NIST SP 800-61r2 wires the output of that meeting back into **Preparation**. That is the whole point of the framework being a cycle rather than a line — new detection rules, updated policies and better visibility are Preparation artefacts produced by the last phase, which is why an organisation that skips this phase stays exactly as vulnerable as it was.
+NIST SP 800-61r2 wires the output of that meeting back into **Preparation**. That is the whole point of the framework being a cycle rather than a line, new detection rules, updated policies and better visibility are Preparation artefacts produced by the last phase, which is why an organisation that skips this phase stays exactly as vulnerable as it was.
 
 The room is honest about why it gets skipped: after an incident the team is exhausted, leadership wants to move on, and the alert queue never stopped filling. That is a scheduling problem, not a technical one, and it is why the same gaps stay open.
 
@@ -43,11 +43,11 @@ The room is honest about why it gets skipped: after an incident the team is exha
 
 Post-incident reporting splits into two documents that must not be merged.
 
-The **Executive Summary** targets a non-technical audience — CIO, CEO, legal counsel, board. It covers what happened in plain language, the business impact, a high-level account of discovery and resolution, and the remediation being put in place. What it must *not* contain is IP addresses, domains, MITRE technique IDs or SPL. Those details do not inform a board decision; they dilute the message.
+The **Executive Summary** targets a non-technical audience, CIO, CEO, legal counsel, board. It covers what happened in plain language, the business impact, a high-level account of discovery and resolution, and the remediation being put in place. What it must *not* contain is IP addresses, domains, MITRE technique IDs or SPL. Those details do not inform a board decision; they dilute the message.
 
 The **Technical Summary** is the one that carries every IOC, MITRE technique ID and exact timestamp. Full attack timeline, log evidence with the actual queries, root causes, and the detection gaps that produced new rules.
 
-The room makes a point here that is worth repeating outside of a lab. Writing `T1564.008` in a report communicates almost nothing. A useful technique entry names what was created, what it looked like in the logs, when it happened, and the exact indicators. For this incident, documenting T1564.008 means writing down the inbox rule name, the keywords it filtered on, the action it took, the account, and the UAL timestamp — because that is the level of detail a detection rule can actually be written from six months later.
+The room makes a point here that is worth repeating outside of a lab. Writing `T1564.008` in a report communicates almost nothing. A useful technique entry names what was created, what it looked like in the logs, when it happened, and the exact indicators. For this incident, documenting T1564.008 means writing down the inbox rule name, the keywords it filtered on, the action it took, the account, and the UAL timestamp, because that is the level of detail a detection rule can actually be written from six months later.
 
 ## Task 4: why a naive rule is worse than no rule
 
@@ -61,7 +61,7 @@ The other answer in this task is a tool name: **Microsoft Secure Score**, which 
 
 ## Task 6: reconstructing the timeline
 
-This is the practical, and the first job is turning three sourcetypes with three different schemas into one ordered narrative. The trick is `coalesce` — normalise the actor and the detail into common field names, label the action, then sort:
+This is the practical, and the first job is turning three sourcetypes with three different schemas into one ordered narrative. The trick is `coalesce`, normalise the actor and the detail into common field names, label the action, then sort:
 
 ```spl
 index=ir (sourcetype=o365:reporting:messagetrace Subject="HR Policy Update*")
@@ -82,9 +82,9 @@ index=ir (sourcetype=o365:reporting:messagetrace Subject="HR Policy Update*")
 
 Two things in that query took a retry to get right, and both are worth knowing.
 
-`dedup` **drops events where any dedup field is null.** My first version had `detail=coalesce(SourceFileName,Name,RecipientAddress)` — none of which exists on a sign-in event — so `dedup actor action detail` silently deleted every sign-in row and produced a timeline where the attacker downloaded files without ever logging in. Adding `location.city` as the final `coalesce` fallback gave sign-ins a non-null detail and they reappeared. A pipeline stage that quietly removes rows is worse than one that errors.
+`dedup` **drops events where any dedup field is null.** My first version had `detail=coalesce(SourceFileName,Name,RecipientAddress)`, none of which exists on a sign-in event, so `dedup actor action detail` silently deleted every sign-in row and produced a timeline where the attacker downloaded files without ever logging in. Adding `location.city` as the final `coalesce` fallback gave sign-ins a non-null detail and they reappeared. A pipeline stage that quietly removes rows is worse than one that errors.
 
-`sort` **has a default result limit, and order matters against `dedup`.** Plain `| sort _time` returned the rows out of order; `sort 0 _time` (no limit) fixed it. And `dedup` keeps the *first* row it sees, so `sort 0 _time | dedup ...` keeps the earliest occurrence of each action — the other way round it kept 16:41:40 instead of the true first sign-in at 16:41:30.
+`sort` **has a default result limit, and order matters against `dedup`.** Plain `| sort _time` returned the rows out of order; `sort 0 _time` (no limit) fixed it. And `dedup` keeps the *first* row it sees, so `sort 0 _time | dedup ...` keeps the earliest occurrence of each action, the other way round it kept 16:41:40 instead of the true first sign-in at 16:41:30.
 
 The resulting fifteen rows are the whole incident:
 
@@ -104,9 +104,9 @@ The resulting fifteen rows are the whole incident:
 17:04:17  k.patel                      AddedToSharingLink           Full_Employee_PII_Data.xlsx
 ```
 
-From that, the documentation answers fall out. The initial attack vector was **Phishing** — a credential-harvesting email from a lookalike domain. The control that would have stopped the attacker even after Laura entered her password on the phishing page is **MFA**, absent on standard user accounts and flagged in the pentest report Nexus Financial never acted on. The internal phishing email sent onward from Laura's own mailbox at 16:57:09 reached **3** employees. The first log source that surfaced the activity was the **Entra ID Sign-in Logs** — the geo-anomaly rule that produced the original alert. And the file carrying employee PII is **Full_Employee_PII_Data.xlsx**, which is also the one shared externally three seconds after it was downloaded.
+From that, the documentation answers fall out. The initial attack vector was **Phishing**, a credential-harvesting email from a lookalike domain. The control that would have stopped the attacker even after Laura entered her password on the phishing page is **MFA**, absent on standard user accounts and flagged in the pentest report Nexus Financial never acted on. The internal phishing email sent onward from Laura's own mailbox at 16:57:09 reached **3** employees. The first log source that surfaced the activity was the **Entra ID Sign-in Logs**, the geo-anomaly rule that produced the original alert. And the file carrying employee PII is **Full_Employee_PII_Data.xlsx**, which is also the one shared externally three seconds after it was downloaded.
 
-One note on the room's own hint text. Task 5 tells you to find the external email address by searching for `SharingInvitationCreated`. That operation does not exist in this dataset — the exfiltration is recorded as `AddedToSharingLink` and `AddedToSecureLink`, both at 17:04:17, both with `TargetUserOrGroupName = X4K9MZ@PROTONMAIL.COM`. Searching for the operation the hint names returns nothing at all.
+One note on the room's own hint text. Task 5 tells you to find the external email address by searching for `SharingInvitationCreated`. That operation does not exist in this dataset, the exfiltration is recorded as `AddedToSharingLink` and `AddedToSecureLink`, both at 17:04:17, both with `TargetUserOrGroupName = X4K9MZ@PROTONMAIL.COM`. Searching for the operation the hint names returns nothing at all.
 
 ## Task 6, continued: dwell time
 
@@ -124,7 +124,7 @@ index=ir (sourcetype=o365:reporting:messagetrace SenderAddress="hr-support@nexus
 
 ![Splunk result showing first_malicious 16:20:01, detection_alert 16:41:30, dwell_time 00:21:28, last_attacker_action 17:04:31 and active_after_detection 00:23:01](/img/thm-postincident/02-dwell-time.png)
 
-Dwell time is **21 minutes 28 seconds**, which for a real intrusion is excellent — the industry talks about dwell in days and weeks. But the second number is the one that belongs in the lessons-learned deck: the attacker's last recorded action is at **17:04:31**, which is **23 minutes and 1 second after the alert fired**. Detection was fast; containment was not. Both inbox rules, both of k.patel's PII downloads, and the entire external share happened after Nexus Financial already knew it had an incident.
+Dwell time is **21 minutes 28 seconds**, which for a real intrusion is excellent, the industry talks about dwell in days and weeks. But the second number is the one that belongs in the lessons-learned deck: the attacker's last recorded action is at **17:04:31**, which is **23 minutes and 1 second after the alert fired**. Detection was fast; containment was not. Both inbox rules, both of k.patel's PII downloads, and the entire external share happened after Nexus Financial already knew it had an incident.
 
 That maps directly onto the gap the Preparation room flagged: the IR policy defines no maximum time between incident declaration and initial containment. The detection rule worked. The response clock had nobody watching it. No question in the room asks for this number, which is exactly why it is worth computing.
 
@@ -132,7 +132,7 @@ That maps directly onto the gap the Preparation room flagged: the IR policy defi
 
 The last two questions name the building blocks. The Operation to watch for suspicious mailbox persistence is **New-InboxRule**, and the Entra ID field that identifies authentication from unusual countries is **location.countryOrRegion**.
 
-The naive geo rule — everything outside the known corporate country — is worth running against the dataset just to see what it does:
+The naive geo rule, everything outside the known corporate country, is worth running against the dataset just to see what it does:
 
 ```spl
 index=ir sourcetype=azure:aad:signin status.errorCode=0
@@ -144,7 +144,7 @@ index=ir sourcetype=azure:aad:signin status.errorCode=0
 # l.chen@nexusfinancial.thm    NL   2026-03-30 16:41:30   17
 ```
 
-Two rows, both true positives, zero noise — but only because every Nexus Financial employee works from one London office and nobody in this dataset travels. In an organisation with a sales team that rule is the alert-fatigue example from Task 4, verbatim.
+Two rows, both true positives, zero noise, but only because every Nexus Financial employee works from one London office and nobody in this dataset travels. In an organisation with a sales team that rule is the alert-fatigue example from Task 4, verbatim.
 
 The correlated version is the one that survives contact with a real environment. Rather than alerting on inbox-rule creation alone, join it to the sign-in context for the same account and source:
 
@@ -162,9 +162,9 @@ index=ir (sourcetype=o365:management:activity Operation=New-InboxRule)
 
 ![Splunk table showing both compromised accounts, source 223.123.4.50, with 37 and 17 foreign sign-ins alongside the Security Updates and Junk Filter Update rules](/img/thm-postincident/03-correlated-detection.png)
 
-Note the `mvindex(split(src,":"),0)` — Exchange admin operations record `ClientIP` with a source port appended (`223.123.4.50:13651`) while sign-in logs record the bare address, so without stripping the port the two sourcetypes never group together and the correlation produces nothing. That is the same field quirk that hides `New-InboxRule` from an exact-match IOC pivot in the Detection and Analysis room, showing up again in a different disguise.
+Note the `mvindex(split(src,":"),0)`, Exchange admin operations record `ClientIP` with a source port appended (`223.123.4.50:13651`) while sign-in logs record the bare address, so without stripping the port the two sourcetypes never group together and the correlation produces nothing. That is the same field quirk that hides `New-InboxRule` from an exact-match IOC pivot in the Detection and Analysis room, showing up again in a different disguise.
 
-Honest limit on this rule: the dataset contains only two inbox-rule creations, both malicious, so this query cannot *demonstrate* noise reduction here — there is no benign rule for it to suppress. The argument for correlation is a design argument, not a measured one on this data.
+Honest limit on this rule: the dataset contains only two inbox-rule creations, both malicious, so this query cannot *demonstrate* noise reduction here, there is no benign rule for it to suppress. The argument for correlation is a design argument, not a measured one on this data.
 
 ## Every answer
 
@@ -188,8 +188,8 @@ Honest limit on this rule: the dataset contains only two inbox-rule creations, b
 
 Two things worth keeping from this room.
 
-**A pipeline stage that drops rows is more dangerous than one that fails.** `dedup` removing every event with a null field produced a timeline that looked complete and internally consistent while missing both attacker sign-ins entirely. Nothing errored, the row count looked plausible, and the resulting narrative was wrong in a way that would have gone straight into a technical summary. Any time a reconstruction spans sourcetypes with different schemas, check the row count against the raw searches before trusting the table — the normalising commands are exactly where evidence goes quietly missing.
+**A pipeline stage that drops rows is more dangerous than one that fails.** `dedup` removing every event with a null field produced a timeline that looked complete and internally consistent while missing both attacker sign-ins entirely. Nothing errored, the row count looked plausible, and the resulting narrative was wrong in a way that would have gone straight into a technical summary. Any time a reconstruction spans sourcetypes with different schemas, check the row count against the raw searches before trusting the table, the normalising commands are exactly where evidence goes quietly missing.
 
-**Detection speed and response speed are separate metrics, and only one of them was good here.** Dwell time came out at 21 minutes 28 seconds, which reads like a win, and the room's questions stop there. Extending the same query to the attacker's last action shows 23 minutes of unimpeded activity *after* the alert fired — the persistence rules, the PII downloads and the external share all landed post-detection. A lessons-learned meeting that only reports dwell time congratulates itself on the half of the timeline that worked. Report both, because the fix for each is different: better rules shorten the first number, a defined containment SLA shortens the second.
+**Detection speed and response speed are separate metrics, and only one of them was good here.** Dwell time came out at 21 minutes 28 seconds, which reads like a win, and the room's questions stop there. Extending the same query to the attacker's last action shows 23 minutes of unimpeded activity *after* the alert fired, the persistence rules, the PII downloads and the external share all landed post-detection. A lessons-learned meeting that only reports dwell time congratulates itself on the half of the timeline that worked. Report both, because the fix for each is different: better rules shorten the first number, a defined containment SLA shortens the second.
 
-Room solved 100% — 7 tasks, 16 answers, 104 points.
+Room solved 100%: 7 tasks, 16 answers, 104 points.

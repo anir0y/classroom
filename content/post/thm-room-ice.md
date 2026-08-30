@@ -15,7 +15,7 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Room Ice walkthrough with step-by-step solutions — enumeration, exploitation, and privilege escalation on the Room Ice challenge room."
+description: "TryHackMe Room Ice walkthrough with step-by-step solutions, enumeration, exploitation, and privilege escalation on the Room Ice challenge room."
 ---
 ## ICE
 

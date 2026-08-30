@@ -15,7 +15,7 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Attacktive Directory walkthrough — step-by-step Active Directory enumeration, exploitation, and privilege escalation, with task answers."
+description: "TryHackMe Attacktive Directory walkthrough, step-by-step Active Directory enumeration, exploitation, and privilege escalation, with task answers."
 ---
 # Attacktivedirectory
 
@@ -133,7 +133,7 @@ For this box, a modified User List and Password List will be used to cut down on
 read this : https://github.com/ropnop/kerbrute
 or just check the Help.
 
-![Try Hack Me Room Attacktivedirectory — Explanation](https://i.imgur.com/YhbjhFc.png)
+![Try Hack Me Room Attacktivedirectory, Explanation](https://i.imgur.com/YhbjhFc.png)
 
 ### Flag 4.2 
 ### Flag 4.3
@@ -162,7 +162,7 @@ After the enumeration of user accounts is finished, we can attempt to abuse a fe
 |We have two user accounts that we could potentially query a ticket from. Which user account can you query a ticket from with no password?|`svc-admin`|
 
 #### Explanation
-![Try Hack Me Room Attacktivedirectory — Explanation (2)](https://i.imgur.com/x0kxxqs.png)
+![Try Hack Me Room Attacktivedirectory, Explanation (2)](https://i.imgur.com/x0kxxqs.png)
 
 ### Flags 5.2 / 5.3
 |||
@@ -173,7 +173,7 @@ After the enumeration of user accounts is finished, we can attempt to abuse a fe
 #### Explanation
 Check out the site: https://hashcat.net/wiki/doku.php?id=example_hashes
 
-![Try Hack Me Room Attacktivedirectory — Explanation (3)](https://i.imgur.com/oG5Vju3.png)
+![Try Hack Me Room Attacktivedirectory, Explanation (3)](https://i.imgur.com/oG5Vju3.png)
 
 
 
@@ -184,7 +184,7 @@ Check out the site: https://hashcat.net/wiki/doku.php?id=example_hashes
 
 #### Explanation
 
-![Try Hack Me Room Attacktivedirectory — Explanation (4)](https://i.imgur.com/mgACreG.png)
+![Try Hack Me Room Attacktivedirectory, Explanation (4)](https://i.imgur.com/mgACreG.png)
 
 ---
 
@@ -210,7 +210,7 @@ With a user's account credentials we now have significantly more access within t
 > `6` 
 
 #### Explanation
-![Try Hack Me Room Attacktivedirectory — Explanation (5)](https://i.imgur.com/c6iFnzO.png)
+![Try Hack Me Room Attacktivedirectory, Explanation (5)](https://i.imgur.com/c6iFnzO.png)
 
 ### Flag 6.4
 #### There is one particular share that we have access to that contains a text file. Which share is it?
@@ -262,7 +262,7 @@ Now that we have new user account credentials, we may have more privileges on th
 
 Well, it is the backup account for the Domain Controller. This account has a unique permission that allows all Active Directory changes to be synced with this user account. This includes password hashes
 
-![Try Hack Me Room Attacktivedirectory — Let's Sync Up!](https://blog.spookysec.net/img/dcsync.png)
+![Try Hack Me Room Attacktivedirectory, Let's Sync Up!](https://blog.spookysec.net/img/dcsync.png)
 
 Knowing this, we can use another tool within Impacket called "secretsdump.py". This will allow us to retrieve all of the password hashes that this user account (that is synced with the domain controller) has to offer. Exploiting this, we will effectively have full control over the AD Domain.
 
@@ -275,13 +275,13 @@ Knowing this, we can use another tool within Impacket called "secretsdump.py". T
 > `DRSUAPI`
 
 #### Explanation
-![Try Hack Me Room Attacktivedirectory — Explanation (6)](https://i.imgur.com/bD5Z10P.png)
+![Try Hack Me Room Attacktivedirectory, Explanation (6)](https://i.imgur.com/bD5Z10P.png)
 
 ### Flag 7.2
 #### What is the Administrators NTLM hash?
 > `0e0363213e37b94221497260erbcb4fc`
 #### Explanation
-![Try Hack Me Room Attacktivedirectory — Explanation (7)](https://i.imgur.com/bD5Z10P.png)
+![Try Hack Me Room Attacktivedirectory, Explanation (7)](https://i.imgur.com/bD5Z10P.png)
 
 ### Flag 7.3
 #### What method of attack could allow us to authenticate as the user without the password?
@@ -293,7 +293,7 @@ Knowing this, we can use another tool within Impacket called "secretsdump.py". T
 > `-H`
 
 #### Explanation
-![Try Hack Me Room Attacktivedirectory — Explanation (8)](https://i.imgur.com/ctRxPeL.png)
+![Try Hack Me Room Attacktivedirectory, Explanation (8)](https://i.imgur.com/ctRxPeL.png)
 
 
 ---

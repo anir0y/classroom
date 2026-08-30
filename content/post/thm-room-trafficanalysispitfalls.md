@@ -30,13 +30,13 @@ Part of the **Advanced Traffic Analysis** module on SOC Level 2, and the one roo
 
 The alert is deliberately unhelpful:
 
-> Alert: Large Outbound Transfer — Source 10.10.15.44 (WKST-FINANCE-04), Destination 172.67.153.42:443, Protocol UDP, Bytes Out 847 MB, Duration 4h 12m, Time 2026-04-02 02:47 UTC. IP reputation: clean.
+> Alert: Large Outbound Transfer, Source 10.10.15.44 (WKST-FINANCE-04), Destination 172.67.153.42:443, Protocol UDP, Bytes Out 847 MB, Duration 4h 12m, Time 2026-04-02 02:47 UTC. IP reputation: clean.
 
-Everything runs in Splunk against `index=lab`, with the time picker on **All Time** — the data is backdated to March and April 2026, so the default *Last 24 hours* returns an empty result set that looks exactly like a broken lab.
+Everything runs in Splunk against `index=lab`, with the time picker on **All Time**, the data is backdated to March and April 2026, so the default *Last 24 hours* returns an empty result set that looks exactly like a broken lab.
 
 Two things worth stating up front, because this writeup is not a clean 100%.
 
-**The lab machine shipped with an empty index.** On boot, `index=lab` had zero events. I recovered it, and the recovery is documented below — it is the most transferable thing in the room.
+**The lab machine shipped with an empty index.** On boot, `index=lab` had zero events. I recovered it, and the recovery is documented below, it is the most transferable thing in the room.
 
 **Two of the fourteen answers cannot be derived from the shipped dataset.** The room's prose describes numbers the current data generator provably cannot produce. That is also documented below, with the arithmetic.
 
@@ -60,7 +60,7 @@ The monitor inputs are all present and pointed at the right place:
 /home/ubuntu/splunk_lab_logs/zeek/        index=lab  sourcetype=zeek_conn
 ```
 
-`_internal` shows `TailingProcessor` adding watches on all four directories at boot, and then nothing. No `per_index_thruput` series for `lab` at all. That signature means the files were already read once — during image build — and the fishbucket still says so, while the index buckets did not survive into the shipped image. The monitor is doing exactly what it is told: skipping files it believes it has already consumed.
+`_internal` shows `TailingProcessor` adding watches on all four directories at boot, and then nothing. No `per_index_thruput` series for `lab` at all. That signature means the files were already read once, during image build, and the fishbucket still says so, while the index buckets did not survive into the shipped image. The monitor is doing exactly what it is told: skipping files it believes it has already consumed.
 
 The fix is a one-shot ingest, which uses a different fishbucket key. Splunk Web's REST proxy is reachable from the page's own JavaScript context, and the session is `admin`:
 
@@ -80,7 +80,7 @@ sysmon                 8220
 zeek_conn             35789
 ```
 
-Finding the filenames without a shell is its own small trick. `oneshot` returns two distinguishable errors — `unable to open file ... No such file or directory` versus `invalid file ... Not a regular file` — so posting candidate paths at a deliberately non-existent index turns the endpoint into a file-existence oracle. Four guesses per directory found all four files.
+Finding the filenames without a shell is its own small trick. `oneshot` returns two distinguishable errors, `unable to open file ... No such file or directory` versus `invalid file ... Not a regular file`, so posting candidate paths at a deliberately non-existent index turns the endpoint into a file-existence oracle. Four guesses per directory found all four files.
 
 One caveat to carry into the rest of the room: the `zeek` directory contains only `conn.log`. There is no `dns.log`, so `sourcetype=zeek_dns` returns nothing. That happens to be fine, because the one place the room queries it (Task 7, Step 6) is *expecting* zero results.
 
@@ -136,7 +136,7 @@ HTTPS (TCP/443)      10496
 QUIC (UDP/443)        6946
 ```
 
-**6,946** sessions on port 443 that an `alert TCP any any -> any 443` rule will never match, and that the proxy never terminated. That is 40% of port-443 traffic in this dataset. (The room's prose says "approximately 22%", which is the QUIC share of *all* Zeek traffic — 6,946 of 35,789 — rather than of port 443. The question asks for the count, so the discrepancy does not bite, but it is worth noticing that the two framings differ by nearly a factor of two.)
+**6,946** sessions on port 443 that an `alert TCP any any -> any 443` rule will never match, and that the proxy never terminated. That is 40% of port-443 traffic in this dataset. (The room's prose says "approximately 22%", which is the QUIC share of *all* Zeek traffic, 6,946 of 35,789, rather than of port 443. The question asks for the count, so the discrepancy does not bite, but it is worth noticing that the two framings differ by nearly a factor of two.)
 
 Filtering QUIC to sessions no browser would produce surfaces the alert on its own:
 
@@ -158,7 +158,7 @@ Exactly one row: **15180** seconds, 847 MB out against 2 MB in. The asymmetry is
 
 ## Task 4: the host that went quiet
 
-DoH does not announce itself. What it leaves behind is an absence — a workstation that generated a couple of hundred DNS queries a day and then generates none.
+DoH does not announce itself. What it leaves behind is an absence, a workstation that generated a couple of hundred DNS queries a day and then generates none.
 
 ```
 index=lab sourcetype=zeek_conn "id.orig_h"="10.10.12.23" "id.resp_p"=53 proto=udp
@@ -174,7 +174,7 @@ index=lab sourcetype=zeek_conn "id.orig_h"="10.10.12.23" "id.resp_p"=53 proto=ud
 
 The last day with UDP/53 traffic from WKST-MKTG-07 is March 26, so the first day it appears with zero is **2026-03-27**. Answer format is `YYYY-MM-DD`, and the underscore mask (ten characters) confirms it before you submit.
 
-The confirmation is the other half of the pair — the traffic that replaced it:
+The confirmation is the other half of the pair, the traffic that replaced it:
 
 ```
 index=lab sourcetype=zeek_conn "id.orig_h"="10.10.12.23" "id.resp_p"=443
@@ -206,7 +206,7 @@ C:\Program Files\Mozilla Firefox\firefox.exe                        74
 C:\Program Files\Google\Chrome\Application\chrome.exe               69
 ```
 
-The answer is the full path — **`C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE`** — not the bare image name. The mask settles it without a wasted attempt: it reads `_:\_______ _____\_________ ______\____\________\_____.___`, which is a drive letter, then 7, 5, 9, 6, 4, 8, 5 and a three-character extension. `Program Files\Microsoft Office\root\Office16\EXCEL.EXE` fits every segment.
+The answer is the full path, **`C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE`**, not the bare image name. The mask settles it without a wasted attempt: it reads `_:\_______ _____\_________ ______\____\________\_____.___`, which is a drive letter, then 7, 5, 9, 6, 4, 8, 5 and a three-character extension. `Program Files\Microsoft Office\root\Office16\EXCEL.EXE` fits every segment.
 
 The signal is the ratio, not the number. Browsers hitting a Cloudflare address incidentally show tens of connections spread across many short-lived PIDs. Excel shows three thousand from a single PID that never restarts. Excel is not a QUIC client.
 
@@ -238,7 +238,7 @@ service="HTTPS" app="HTTPS.BROWSER" appcat="Web.Client" apprisk="high"
 duration=39 sentbyte=16374 rcvdbyte=31438
 ```
 
-Adding `srcname` to a `stats ... by` clause silently drops every row, because `stats by` discards events where a grouping field is null — which is why the taught query appears to return nothing. There is no `host_lookup` in the app either; `asn_lookup.csv` is the only lookup table installed.
+Adding `srcname` to a `stats ... by` clause silently drops every row, because `stats by` discards events where a grouping field is null, which is why the taught query appears to return nothing. There is no `host_lookup` in the app either; `asn_lookup.csv` is the only lookup table installed.
 
 The hostname does exist, just in the sourcetype that carries endpoint identity:
 
@@ -290,7 +290,7 @@ DOH_SWITCH_DAY   = 20      # 2026-03-27
 
 ```python
 def gen_beacon(day_dt, day_offset, fg, zk, sm, nf):
-    """WKST-FINANCE-04: C2 beacon every 4 minutes over QUIC (excel.exe) — from day 10"""
+    """WKST-FINANCE-04: C2 beacon every 4 minutes over QUIC (excel.exe), from day 10"""
     cur = day_dt.replace(hour=8,  minute=0, second=0)
     end = day_dt.replace(hour=22, minute=0, second=0)
     while cur < end:
@@ -302,7 +302,7 @@ def gen_beacon(day_dt, day_offset, fg, zk, sm, nf):
         cur += timedelta(minutes=4)
 ```
 
-Fourteen hours at one beacon every four minutes is 210 beacons a day — a hard ceiling. The Sysmon write is gated at 70%, giving ~147 a day, which is exactly what the index shows. **A daily count of 270-310 is arithmetically impossible with this generator**, and so is a total above 4,410. The prose and the answer key were written against an earlier version of the generator; the shipped data is a later one. Every other constant in the script matches the accepted answers precisely — `se = random.randint(800, 1200)` is the 800-byte keepalive from Task 2, `sent = 847823104` is the exfil, `dur = 15180` is the duration, and the three day offsets produce March 17, March 27 and April 2.
+Fourteen hours at one beacon every four minutes is 210 beacons a day, a hard ceiling. The Sysmon write is gated at 70%, giving ~147 a day, which is exactly what the index shows. **A daily count of 270-310 is arithmetically impossible with this generator**, and so is a total above 4,410. The prose and the answer key were written against an earlier version of the generator; the shipped data is a later one. Every other constant in the script matches the accepted answers precisely, `se = random.randint(800, 1200)` is the 800-byte keepalive from Task 2, `sent = 847823104` is the exfil, `dur = 15180` is the duration, and the three day offsets produce March 17, March 27 and April 2.
 
 Rejected attempts, for the record: `3060` and `6120` for the connection count, `2026-04-06 21:56:30` and `2026-04-02 02:47:00` for the timestamp. I stopped rather than brute-force a four-digit field.
 
@@ -324,12 +324,12 @@ index=lab sourcetype=zeek_dns "id.orig_h"="10.10.15.44"
 | search answers="172.67.153.42" OR query="172.67.153.42"
 ```
 
-Zero results — against a host that makes 60-120 DNS queries a day. The C2 address is hardcoded, so there was never a hostname to resolve.
+Zero results, against a host that makes 60-120 DNS queries a day. The C2 address is hardcoded, so there was never a hostname to resolve.
 
 ## What actually generalises here
 
-**Absence is a detection, but only against a baseline.** WKST-MKTG-07 going silent on UDP/53 is invisible unless you know it used to make 200 queries a day, and it is ambiguous until you find the TCP/443 traffic to 1.1.1.1 that replaced it. Neither query is interesting alone; the pair is conclusive. The same shape applies to the QUIC count — 6,946 sessions is only alarming once you know your IDS rules are scoped to TCP.
+**Absence is a detection, but only against a baseline.** WKST-MKTG-07 going silent on UDP/53 is invisible unless you know it used to make 200 queries a day, and it is ambiguous until you find the TCP/443 traffic to 1.1.1.1 that replaced it. Neither query is interesting alone; the pair is conclusive. The same shape applies to the QUIC count, 6,946 sessions is only alarming once you know your IDS rules are scoped to TCP.
 
-**Read the data before you trust the walkthrough.** Two of this room's own queries do not survive contact with its own dataset: `srcname` does not exist in the FortiGate logs, and `stats by` on a null field silently returns nothing rather than erroring. Then the Sysmon figures in the prose turn out to exceed what the generator can emit. In a real investigation the equivalent failure is quieter and more expensive — a runbook written against last quarter's log schema, producing an empty result that reads as "no findings" instead of "wrong field name".
+**Read the data before you trust the walkthrough.** Two of this room's own queries do not survive contact with its own dataset: `srcname` does not exist in the FortiGate logs, and `stats by` on a null field silently returns nothing rather than erroring. Then the Sysmon figures in the prose turn out to exceed what the generator can emit. In a real investigation the equivalent failure is quieter and more expensive, a runbook written against last quarter's log schema, producing an empty result that reads as "no findings" instead of "wrong field name".
 
-Room progress 85% — 8 tasks, 12 of 14 answers accepted. The two outstanding answers (Task 7, questions 2 and 3) are not derivable from the dataset the lab currently ships; the arithmetic is above, and I would rather leave them open than dress up a guess.
+Room progress 85%, 8 tasks, 12 of 14 answers accepted. The two outstanding answers (Task 7, questions 2 and 3) are not derivable from the dataset the lab currently ships; the arithmetic is above, and I would rather leave them open than dress up a guess.

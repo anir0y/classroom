@@ -15,7 +15,7 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Room Malware Introductory walkthrough — analyze malware samples using static and dynamic analysis techniques to understand malicious behavior."
+description: "TryHackMe Room Malware Introductory walkthrough, analyze malware samples using static and dynamic analysis techniques to understand malicious behavior."
 ---
 # MAL: Malware Introductory
 
@@ -221,7 +221,7 @@ Identify the MD5 Checksums of the three files provided in "Task 7" (You can use 
 
 I used certutil.exe to complete the task:
 
-![Try Hack ME Room Malware Introductory — Flags 7](https://i.imgur.com/oS5CK6Q.png)
+![Try Hack ME Room Malware Introductory, Flags 7](https://i.imgur.com/oS5CK6Q.png)
 
 ---
 
@@ -230,7 +230,7 @@ I used certutil.exe to complete the task:
 Outside of the Remote Windows Environment  i.e. Kali or your Windows PC, look up those MD5 "Checksums" on Virustotal to solve this task:
 
 ### flg 8
-![Try Hack ME Room Malware Introductory — flg 8](https://i.imgur.com/kx8gxmf.png)
+![Try Hack ME Room Malware Introductory, flg 8](https://i.imgur.com/kx8gxmf.png)
 
 ---
 
@@ -245,7 +245,7 @@ E.g. The hex value for an executable is always "4D 5A". So if a file with a ".jp
 **Provided Tools: PeID**
 
 Now using "PeID", identify the compiler / packer of the following two files in the Directory "Tasks/Task 9"  to answer the questions.   
-![Try Hack ME Room Malware Introductory — Identifying if the Executables are obfuscated / packed](https://i.imgur.com/tkj30Rv.png)
+![Try Hack ME Room Malware Introductory, Identifying if the Executables are obfuscated / packed](https://i.imgur.com/tkj30Rv.png)
 An example of using PEiD to identify the packer of a file. In this case, it is reported as "Microsoft Visual C++ 6.0"
 
 ### Flags-9
@@ -256,10 +256,10 @@ An example of using PEiD to identify the packer of a file. In this case, it is r
 
 
 #### Flag-9.1
-![Try Hack ME Room Malware Introductory — Flag-9.1](https://i.imgur.com/tkj30Rv.png)
+![Try Hack ME Room Malware Introductory, Flag-9.1](https://i.imgur.com/tkj30Rv.png)
 
 #### Flag-9.2
-![Try Hack ME Room Malware Introductory — Flag-9.2](https://i.imgur.com/6nir5bY.png)
+![Try Hack ME Room Malware Introductory, Flag-9.2](https://i.imgur.com/6nir5bY.png)
 
 ---
 
@@ -287,7 +287,7 @@ Your task is to identify whether or not the file "6F431F46547DB2628" located in 
 |1|What packer does PeID report file "6F431F46547DB2628" to be packed with?|`FSG 1.0 -> dulek/xt`|
 
 #### Flag-10.1
-![Try Hack ME Room Malware Introductory — Flag-10.1](https://i.imgur.com/DJFAKEd.png)
+![Try Hack ME Room Malware Introductory, Flag-10.1](https://i.imgur.com/DJFAKEd.png)
 
 ---
 
@@ -300,7 +300,7 @@ Whilst this tool has a huge database, it doesn't have every packer out there! Es
 ### Practical:
 
 You can try this yourself by navigating to directory "Tasks/Task 11" and dragging and dropping that file into PeID. What does it tell us?    
-![Try Hack ME Room Malware Introductory — Practical](https://i.imgur.com/JVOrgcz.png)
+![Try Hack ME Room Malware Introductory, Practical](https://i.imgur.com/JVOrgcz.png)
 
 In this instance, PeID is able to detect what packer has been used to obfuscate the code.  Whilst PeID is capable of detecting the possibility of packers being used, it is not able to automatically de-obfuscate them. This is a process we will have to do manually - at a later stage.
 
@@ -308,21 +308,21 @@ After confirming that this file is indeed packed, let's open it up with a tool c
 
 When opening the file, a few dialogue boxes may appear - its just IDA Freeware processing the file, it'll take a couple of seconds
 
-![Try Hack ME Room Malware Introductory — Practical (2)](https://i.imgur.com/GJZPTRK.png)
+![Try Hack ME Room Malware Introductory, Practical (2)](https://i.imgur.com/GJZPTRK.png)
 
-![Try Hack ME Room Malware Introductory — Practical (3)](https://i.imgur.com/q8MknAs.png)
+![Try Hack ME Room Malware Introductory, Practical (3)](https://i.imgur.com/q8MknAs.png)
 
 We can see there are only two "Imports" in this program! That's a bit bizarre...
 
 ...The use of "IDA Free" will be developed upon as it is an advanced bit of kit. But essentially, we can see the flow of how the program executes - indicated by the arrows. The problem? There's very little here! There are a few more characteristics that indicate its packed, but this is also beyond the scope for this room. 
 
-![Try Hack ME Room Malware Introductory — Practical (4)](https://i.imgur.com/YtCCrw1.png)
+![Try Hack ME Room Malware Introductory, Practical (4)](https://i.imgur.com/YtCCrw1.png)
 
 Whereas, if we were to open a file that isn't obfuscated, we should expect to see a much larger import count and graph/flowchart, like this:
 
-![Try Hack ME Room Malware Introductory — Practical (5)](https://i.imgur.com/yOyFwrJ.png)
+![Try Hack ME Room Malware Introductory, Practical (5)](https://i.imgur.com/yOyFwrJ.png)
 
-![Try Hack ME Room Malware Introductory — Practical (6)](https://i.imgur.com/XM6eSBr.png)
+![Try Hack ME Room Malware Introductory, Practical (6)](https://i.imgur.com/XM6eSBr.png)
 
 See how there's so much more information here? Obfuscated code is much harder to analyze at least at the static level, as we're presented with very little information!
 
@@ -350,7 +350,7 @@ We're going to use Microsoft's Sysinternals "Strings" program to output the reta
 
 You will receive a whole load of text, most of it looks like nonsense...But there is some text in there that is valuable. Scroll up!
 
-![Try Hack ME Room Malware Introductory — Task](https://i.imgur.com/PZBczF7.png)
+![Try Hack ME Room Malware Introductory, Task](https://i.imgur.com/PZBczF7.png)
 
 Proceed to answering Question 1.
 
@@ -360,17 +360,17 @@ You'll find that programs often contain large amount of strings and using the "s
 
 Launch the application within "Tools/Static/PE Tools/PE Explorer" and drag and drop the same file "67844C01" from the previous question into the application.
 
-![Try Hack ME Room Malware Introductory — Task (2)](https://i.imgur.com/XDmSuSX.png)
+![Try Hack ME Room Malware Introductory, Task (2)](https://i.imgur.com/XDmSuSX.png)
 
 Where you will be presented with the following, indicating that it has successfully imported:
 
-![Try Hack ME Room Malware Introductory — Task (3)](https://i.imgur.com/822wO58.png)
+![Try Hack ME Room Malware Introductory, Task (3)](https://i.imgur.com/822wO58.png)
 
 After import. Navigate to "View -> Imports"
 
-![Try Hack ME Room Malware Introductory — Task (4)](https://i.imgur.com/jQr7zsI.png)
+![Try Hack ME Room Malware Introductory, Task (4)](https://i.imgur.com/jQr7zsI.png)
 
-![Try Hack ME Room Malware Introductory — Task (5)](https://i.imgur.com/YFI42EL.png)
+![Try Hack ME Room Malware Introductory, Task (5)](https://i.imgur.com/YFI42EL.png)
 
 You can now answer Question #2!
 
@@ -410,19 +410,19 @@ For this room, we will be using IDA Freeware within the context of statistical a
 
 1. Lets launch "IDA Freeware" and select the file to import, in this case we'll be using "uninstall.exe"
 
-![Try Hack ME Room Malware Introductory — Practical (7)](https://i.imgur.com/vmv9Xsc.png)
+![Try Hack ME Room Malware Introductory, Practical (7)](https://i.imgur.com/vmv9Xsc.png)
 
 And navigate to the file...
 
-![Try Hack ME Room Malware Introductory — Practical (8)](https://i.imgur.com/G3VAJc1.png)
+![Try Hack ME Room Malware Introductory, Practical (8)](https://i.imgur.com/G3VAJc1.png)
 
 2. Since we know it is an executable file, we select "Portable executable for 80386 (PE) [pe64.dll]"
 
-![Try Hack ME Room Malware Introductory — Practical (9)](https://i.imgur.com/I9TUxXi.png)
+![Try Hack ME Room Malware Introductory, Practical (9)](https://i.imgur.com/I9TUxXi.png)
 
 3. After pressing "OK" the application will load. Allow a few minutes for the executable to be decompiled.
 
-![Try Hack ME Room Malware Introductory — Practical (10)](https://i.imgur.com/wbQGqxH.png)
+![Try Hack ME Room Malware Introductory, Practical (10)](https://i.imgur.com/wbQGqxH.png)
 
 There are various tabs, similar to what we saw in "PE Explorer" i.e. "Imports" and "Exports".
 

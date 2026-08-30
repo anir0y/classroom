@@ -27,13 +27,13 @@ description: "Walkthrough of TryHackMe AI & Automation in Detection Engineering:
 
 Room: [AI & Automation in Detection Engineering](https://tryhackme.com/room/aiautomationdetectioneng) on TryHackMe.
 
-Room five of six in the **Detection Engineering for SOC** module, after [Intro to Detection Engineering](/post/thm-room-introtodetectioneng/), Detection Rules Development, [Sigma Language](/post/thm-room-sigma/), and [SigHunt](/post/thm-room-sighunt/). Only DetectMare remains after this one — the Task 6 question literally reads "Ready for DetectMare!", which is a nice way of confirming where you are in the arc.
+Room five of six in the **Detection Engineering for SOC** module, after [Intro to Detection Engineering](/post/thm-room-introtodetectioneng/), Detection Rules Development, [Sigma Language](/post/thm-room-sigma/), and [SigHunt](/post/thm-room-sighunt/). Only DetectMare remains after this one, the Task 6 question literally reads "Ready for DetectMare!", which is a nice way of confirming where you are in the arc.
 
 The previous rooms taught you to *write* a detection. This one is about everything that happens to the detection after you write it: who reviews it, what tests it, what ships it, and what happens when you let an LLM draft it for you.
 
 ![TryHackMe AI & Automation in Detection Engineering at 100%, all six tasks complete](/img/thm-aidetectioneng/01-room-complete.png)
 
-Six tasks, ten answers, 72 points. No AttackBox and no SIEM — the practical work is a browser-based Git clone in Task 3 and a live LLM agent in Task 5.
+Six tasks, ten answers, 72 points. No AttackBox and no SIEM, the practical work is a browser-based Git clone in Task 3 and a live LLM agent in Task 5.
 
 ## Task 2: automation, and why DaC lives outside the SIEM
 
@@ -47,13 +47,13 @@ Three answers here, all straight from the prose:
 - Sigma rules are stored as **YAML**.
 - The company type that leans hardest on DaC is an **MSSP SOC**.
 
-That last one is worth dwelling on. The reasoning in the task is that the moment you run more than one detection technology, no single vendor console governs them all — an MSSP engineer would otherwise have to run the whole life cycle separately per technology per client. The structure has to live in the repo and the pipeline, not in any one SIEM.
+That last one is worth dwelling on. The reasoning in the task is that the moment you run more than one detection technology, no single vendor console governs them all, an MSSP engineer would otherwise have to run the whole life cycle separately per technology per client. The structure has to live in the repo and the pipeline, not in any one SIEM.
 
-**Answer-format note:** the third box is masked `____ ___`, two words. I submitted "MSSP" first and the box visibly kept a trailing ` ___`, which is how I knew a second word was expected. As on every THM room, reading the underscore mask before submitting is free information — it told me the answer was two tokens, 4 and 3 characters, long before I would have guessed at it.
+**Answer-format note:** the third box is masked `____ ___`, two words. I submitted "MSSP" first and the box visibly kept a trailing ` ___`, which is how I knew a second word was expected. As on every THM room, reading the underscore mask before submitting is free information, it told me the answer was two tokens, 4 and 3 characters, long before I would have guessed at it.
 
 ## Task 3: reviewing a real pull request in TryGitMe
 
-This is the best part of the room. TryGitMe is a GitHub clone with a repo, issues, pull requests, an Actions tab, and a detection-health dashboard. Your teammate `analyst-1` has opened PR #1 adding a Sigma rule for `print.exe` abused to copy credential files (T1003.002 / T1003.003) — a LOLBin whose `/D` flag names a destination file, so it can quietly copy `ntds.dit` or the SAM hive instead of sending a print job.
+This is the best part of the room. TryGitMe is a GitHub clone with a repo, issues, pull requests, an Actions tab, and a detection-health dashboard. Your teammate `analyst-1` has opened PR #1 adding a Sigma rule for `print.exe` abused to copy credential files (T1003.002 / T1003.003), a LOLBin whose `/D` flag names a destination file, so it can quietly copy `ntds.dit` or the SAM hive instead of sending a print job.
 
 The PR opens with a red check.
 
@@ -66,7 +66,7 @@ CI pipeline - CI (initial run) - 1 check failing - TP 0/6
   Run detection tests   FAIL   TP 0/6 - FP 0/250   8s
 ```
 
-Syntax passes. Lint passes. The rule is *valid* — and it matches nothing. That gap between "well-formed" and "correct" is the whole lesson.
+Syntax passes. Lint passes. The rule is *valid*, and it matches nothing. That gap between "well-formed" and "correct" is the whole lesson.
 
 Over to Files changed. The pipeline gives you three review slots, and the rule has exactly three bugs.
 
@@ -74,11 +74,11 @@ Over to Files changed. The pipeline gives you three review slots, and the rule h
 
 Walking it against the threat intel and the environment docs in the repo:
 
-**Line 12 — `service: security`.** This is the one the task hands you. The Security event log carries authentication events like 4624; process starts are Sysmon EID 1 / Windows EID 4688, which in Sigma is `category: process_creation`. The rule is compiled against a log source that will never contain a `print.exe` execution. This alone explains TP 0/6.
+**Line 12, `service: security`.** This is the one the task hands you. The Security event log carries authentication events like 4624; process starts are Sysmon EID 1 / Windows EID 4688, which in Sigma is `category: process_creation`. The rule is compiled against a log source that will never contain a `print.exe` execution. This alone explains TP 0/6.
 
-**Line 23 — `'\\windows\\ntds\\ntds.db'`.** The Active Directory database is `ntds.dit` — *Directory Information Tree*. A one-character typo, and it silently drops the single highest-value target in the whole detection. `.db` looks plausible enough that syntax and lint both wave it through.
+**Line 23, `'\\windows\\ntds\\ntds.db'`.** The Active Directory database is `ntds.dit`, *Directory Information Tree*. A one-character typo, and it silently drops the single highest-value target in the whole detection. `.db` looks plausible enough that syntax and lint both wave it through.
 
-**Line 24 — `condition: selection_cli`.** The rule defines `selection_img` (the process is `print.exe`) and `selection_cli` (the command line contains `/D` and a sensitive path), then conditions on `selection_cli` alone. As written, *any* process whose command line mentions `\config\SAM` fires the rule — backup agents and SCCM jobs included. It needs `all of selection_*` so `print.exe` is actually required.
+**Line 24, `condition: selection_cli`.** The rule defines `selection_img` (the process is `print.exe`) and `selection_cli` (the command line contains `/D` and a sensitive path), then conditions on `selection_cli` alone. As written, *any* process whose command line mentions `\config\SAM` fires the rule, backup agents and SCCM jobs included. It needs `all of selection_*` so `print.exe` is actually required.
 
 Flag each line with the flag icon in the gutter, and the review counter fills up.
 
@@ -98,7 +98,7 @@ Six for six on the known-bad set, zero false positives across 250 benign events.
 
 ### Where the flag actually is
 
-The in-app toast says *"Open the Deploy job logs below to retrieve the flag"*. That is misleading — I opened the Deploy job and its log is four lines of `Connecting to SIEM... Converted Sigma → SIEM query`, with no flag anywhere.
+The in-app toast says *"Open the Deploy job logs below to retrieve the flag"*. That is misleading, I opened the Deploy job and its log is four lines of `Connecting to SIEM... Converted Sigma → SIEM query`, with no flag anywhere.
 
 The task text is the accurate one: click into the **CI re-run** execution, not the deploy, and expand its *Run detection tests* step. The flag is on the last verbose line, dressed up as a pipeline token so it reads like log noise.
 
@@ -115,7 +115,7 @@ verbose pipeline=sysmon-4688 backend=splunk review_token=THM{pr0c_cr34t10n_l0gs0
 
 > Flag: `THM{pr0c_cr34t10n_l0gs0urc3_fix3d}`
 
-The flag names the first bug — the log source fix — which is a fair summary of why the rule was dead on arrival.
+The flag names the first bug, the log source fix, which is a fair summary of why the rule was dead on arrival.
 
 ### The maintenance question
 
@@ -130,17 +130,17 @@ The second Task 3 answer comes from the Detection Health tab, which is the Step 
 | 1033 Suspicious PowerShell Encoded Cmd | T1059.001 | **Noisy** | 65% | 35% |
 | 1042 Sensitive File Dump Via Print.EXE | T1003.002/003 | Healthy | 100% | 0% |
 
-The one to prioritise for tuning is **Suspicious PowerShell Encoded Cmd** — 35% false positives, the only row flagged Noisy. The dashboard footer makes the process point explicitly: you do not patch a noisy rule in the SIEM console. You open another pull request, let the pipeline re-test, and redeploy through the same rails.
+The one to prioritise for tuning is **Suspicious PowerShell Encoded Cmd**, 35% false positives, the only row flagged Noisy. The dashboard footer makes the process point explicitly: you do not patch a noisy rule in the SIEM console. You open another pull request, let the pipeline re-test, and redeploy through the same rails.
 
 ## Task 4: what AI is good for, and where it lies to you
 
-The useful applications are unsurprising — drafting rules, converting a query between languages, suggesting exclusions from a sample of alerts, writing documentation to your team's standard. The risks are the interesting half, and three of the room's questions come from a single diagram:
+The useful applications are unsurprising, drafting rules, converting a query between languages, suggesting exclusions from a sample of alerts, writing documentation to your team's standard. The risks are the interesting half, and three of the room's questions come from a single diagram:
 
-- **Missing Environment Context** — a rule can be semantically perfect and still useless, because the model does not know what "normal" looks like in your estate.
-- **Hallucinations** — invented field names, log sources, and query functions that produce a rule which looks valid and matches nothing.
-- **False Confidence** — output that reads authoritatively enough that you deploy a detection which misses the technique, with a false sense of coverage.
-- **Sensitive Data Exposure** — pasting internal logs or rules into a public LLM.
-- **Indirect Prompt Injection** — you hand an agent external content such as a threat report, and that content carries text crafted to hijack the agent's behaviour.
+- **Missing Environment Context**, a rule can be semantically perfect and still useless, because the model does not know what "normal" looks like in your estate.
+- **Hallucinations**, invented field names, log sources, and query functions that produce a rule which looks valid and matches nothing.
+- **False Confidence**, output that reads authoritatively enough that you deploy a detection which misses the technique, with a false sense of coverage.
+- **Sensitive Data Exposure**, pasting internal logs or rules into a public LLM.
+- **Indirect Prompt Injection**, you hand an agent external content such as a threat report, and that content carries text crafted to hijack the agent's behaviour.
 
 So: the risk from feeding an agent external documentation carrying hijack instructions is **Indirect Prompt Injection**, and the technically-wrong-but-100%-certain answer is **False Confidence**.
 
@@ -150,7 +150,7 @@ One line in this task deserves to survive the room: the agentic pipeline's own "
 
 ## Task 5: the AI copilot writes a perfect rule for the wrong company
 
-This task attaches a live LLM agent — the DE-Copilot — and the scenario is DCSync against Aurora's hybrid AD / Entra ID estate. Prompt one is the obvious one:
+This task attaches a live LLM agent, the DE-Copilot, and the scenario is DCSync against Aurora's hybrid AD / Entra ID estate. Prompt one is the obvious one:
 
 > "Create a Sigma rule to detect DCSync attacks in an Active Directory environment."
 
@@ -193,7 +193,7 @@ Matched events:
   and occurred on the domain controllers DC01 and DC02.
 ```
 
-Eight alerts, one account, and it is not an attacker. `MSOL_` is the Azure AD Connect directory synchronisation account — Entra ID Connect creates it precisely so it can hold DS-Replication-Get-Changes and DS-Replication-Get-Changes-All and replicate password hashes to the cloud. That is the entire job of the account. Its behaviour is byte-for-byte identical to DCSync, because it *is* DCSync, performed legitimately.
+Eight alerts, one account, and it is not an attacker. `MSOL_` is the Azure AD Connect directory synchronisation account, Entra ID Connect creates it precisely so it can hold DS-Replication-Get-Changes and DS-Replication-Get-Changes-All and replicate password hashes to the cloud. That is the entire job of the account. Its behaviour is byte-for-byte identical to DCSync, because it *is* DCSync, performed legitimately.
 
 The model could not have known this. `MSOL_` accounts do not end in `$` and do not live under `NT AUTHORITY`, so the two filters it wrote by general knowledge slide right past. This is the **Missing Environment Context** risk from Task 4 arriving on cue: a detection is only meaningful against a baseline of normal activity, and the AI has never seen yours.
 
@@ -219,7 +219,7 @@ Before vs After comparison:
 
 > Flag: `THM{A1_D3T3CT1ON_ENG}`
 
-Worth flagging one thing about how this played out: I did not need three separate turns. Naming the account, stating *why* it was benign, and specifying the exact filter I wanted in a single message got the tuned rule and the validation run in one response. Vague instructions to "reduce false positives" would likely have produced a broader exclusion than I wanted — and an over-broad exclusion on a DCSync rule is how you end up blind to the real thing.
+Worth flagging one thing about how this played out: I did not need three separate turns. Naming the account, stating *why* it was benign, and specifying the exact filter I wanted in a single message got the tuned rule and the validation run in one response. Vague instructions to "reduce false positives" would likely have produced a broader exclusion than I wanted, and an over-broad exclusion on a DCSync rule is how you end up blind to the real thing.
 
 Which raises the honest caveat about this tuning: `startswith: 'MSOL_'` excludes *any* account beginning with those five characters. In a real environment an attacker who can create or rename an account has just been handed the exclusion. The tighter version pins the specific sAMAccountName, or better, pins the sync account *and* the expected source host. The lab accepts the loose filter; production should not.
 
@@ -227,8 +227,8 @@ Which raises the honest caveat about this tuning: `startswith: 'MSOL_'` excludes
 
 Two things.
 
-**Passing the tests you wrote is not the same as being correct.** The print.exe rule cleared syntax validation and lint on the first run and still matched nothing, because a valid `service: security` is a perfectly well-formed way of pointing at the wrong log. The DCSync rule was better than most humans would write on a first pass and still generated eight false positives, because correctness is defined relative to an environment the author never saw. Every gate in a DaC pipeline that only checks the rule against *itself* — syntax, lint, schema — can pass while the detection is worthless. Only the gate that runs it against real data tells you anything, and that is why "Run detection tests" is the check that failed and the check that carried the flag.
+**Passing the tests you wrote is not the same as being correct.** The print.exe rule cleared syntax validation and lint on the first run and still matched nothing, because a valid `service: security` is a perfectly well-formed way of pointing at the wrong log. The DCSync rule was better than most humans would write on a first pass and still generated eight false positives, because correctness is defined relative to an environment the author never saw. Every gate in a DaC pipeline that only checks the rule against *itself*, syntax, lint, schema, can pass while the detection is worthless. Only the gate that runs it against real data tells you anything, and that is why "Run detection tests" is the check that failed and the check that carried the flag.
 
-**AI moves you up the pipeline, not out of it.** The copilot did the parts that are tedious and well-documented: it knew Event ID 4662, both replication GUIDs, and the standard machine-account exclusions, and it produced them faster than I could have looked them up. What it could not supply was the one input that made the rule deployable — that `MSOL_182b3c4d5e6f` is Aurora's sync account and not an intruder. That knowledge does not live in any training corpus; it lives in `docs/environment-routines.md` and in the heads of the people who run the estate. The room's own framing is the right one: AI is what makes the speed possible, judgment is what keeps it safe. The reviewer agent is a pre-check, and the human still signs off.
+**AI moves you up the pipeline, not out of it.** The copilot did the parts that are tedious and well-documented: it knew Event ID 4662, both replication GUIDs, and the standard machine-account exclusions, and it produced them faster than I could have looked them up. What it could not supply was the one input that made the rule deployable, that `MSOL_182b3c4d5e6f` is Aurora's sync account and not an intruder. That knowledge does not live in any training corpus; it lives in `docs/environment-routines.md` and in the heads of the people who run the estate. The room's own framing is the right one: AI is what makes the speed possible, judgment is what keeps it safe. The reviewer agent is a pre-check, and the human still signs off.
 
-Room solved 100% — six tasks, ten answers, 72 points, room five of six in Detection Engineering for SOC.
+Room solved 100%: six tasks, ten answers, 72 points, room five of six in Detection Engineering for SOC.

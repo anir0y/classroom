@@ -1,5 +1,5 @@
 ---
-title: TryHackMe Room 404 — Dumping Source From an Exposed .git
+title: TryHackMe Room 404, Dumping Source From an Exposed .git
 date: 2026-07-31T14:30:00+05:30
 lastmod: 2026-07-31T14:30:00+05:30
 author: Animesh Roy
@@ -19,7 +19,7 @@ tags:
   - git
 
 draft: false
-description: "Walkthrough of the TryHackMe room Room 404 — finding an exposed .git directory on a staging server, mirroring it, and rebuilding the source to recover the flag."
+description: "Walkthrough of the TryHackMe room Room 404, finding an exposed .git directory on a staging server, mirroring it, and rebuilding the source to recover the flag."
 ---
 
 ## Room 404
@@ -38,7 +38,7 @@ Two objectives: **dump the exposed source code**, and **find the flag**. Categor
 
 ## Setup
 
-The room gives you a lab machine on the THM network. I had the OpenVPN connection up on my own machine, so I worked straight from a local terminal rather than the AttackBox — the target answered in about 90 ms, which is plenty comfortable.
+The room gives you a lab machine on the THM network. I had the OpenVPN connection up on my own machine, so I worked straight from a local terminal rather than the AttackBox, the target answered in about 90 ms, which is plenty comfortable.
 
 ```bash
 TARGET=http://10.48.175.16:8080
@@ -46,7 +46,7 @@ curl -s -o /dev/null -w "%{http_code}\n" $TARGET/
 # 200
 ```
 
-Your IP will differ — the room hands you a fresh one on each deploy, so substitute yours everywhere below.
+Your IP will differ, the room hands you a fresh one on each deploy, so substitute yours everywhere below.
 
 ## Step 1: What am I actually talking to?
 
@@ -56,15 +56,15 @@ Before fuzzing anything, spend ten seconds on the response headers. They are usu
 
 Two things jump out.
 
-**`Server: Werkzeug/3.0.1 Python/3.12.3`** — this is Flask running on its **development** server. Werkzeug is what you get from `app.run()`; it is explicitly not meant for production, and its presence on a public port is already a smell. Real deployments sit behind gunicorn/uWSGI with nginx in front.
+**`Server: Werkzeug/3.0.1 Python/3.12.3`**, this is Flask running on its **development** server. Werkzeug is what you get from `app.run()`; it is explicitly not meant for production, and its presence on a public port is already a smell. Real deployments sit behind gunicorn/uWSGI with nginx in front.
 
-**The footer says `guest experience platform · build staging`.** The app is telling you it's a staging build. Staging environments are where good hygiene goes to die: debug flags left on, test credentials, and — as we're about to see — the developer's whole working directory.
+**The footer says `guest experience platform · build staging`.** The app is telling you it's a staging build. Staging environments are where good hygiene goes to die: debug flags left on, test credentials, and, as we're about to see, the developer's whole working directory.
 
 The page itself is a pretty brochure with a `/booking` link that goes nowhere. Nothing to attack in the HTML.
 
 ## Step 2: Ask for the things that shouldn't be there
 
-"Dump the exposed source code" narrows this a lot. I'm not looking for a login bypass; I'm looking for **files the web root should never serve**. That's a short, high-value list — version control folders, environment files, backups, editor droppings.
+"Dump the exposed source code" narrows this a lot. I'm not looking for a login bypass; I'm looking for **files the web root should never serve**. That's a short, high-value list, version control folders, environment files, backups, editor droppings.
 
 You could point ffuf or gobuster at it with a wordlist, and on a real engagement you would. But for a handful of specific candidates, a `for` loop and `curl` is faster than spinning up a fuzzer:
 
@@ -84,7 +84,7 @@ Everything returns `404` except two:
 /.git/config     200
 ```
 
-That's the whole game. The `.git` directory — the repository's complete metadata and object store — is being served over HTTP.
+That's the whole game. The `.git` directory, the repository's complete metadata and object store, is being served over HTTP.
 
 **Why does this happen?** Almost always because someone deployed by running `git clone` or `git pull` directly into the web root, or copied their project folder with `cp -r` / `scp -r` / `rsync` without excluding dotfiles. The application works perfectly, so nobody notices that `.git/` came along for the ride.
 
@@ -108,9 +108,9 @@ night-shift <dev@byte-lotus.internal> 1762049640 +0000
 	commit (initial): initial Byte Lotus guest platform
 ```
 
-One commit, `0f13550`, authored by **night-shift &lt;dev@byte-lotus.internal&gt;** — the developer from the briefing. The all-zeroes hash on the left means this is the first commit; there's no earlier history to hunt through.
+One commit, `0f13550`, authored by **night-shift &lt;dev@byte-lotus.internal&gt;**, the developer from the briefing. The all-zeroes hash on the left means this is the first commit; there's no earlier history to hunt through.
 
-That reflog is worth knowing about on its own. Even when you can't list the directory, `.git/logs/HEAD` is a single fixed path that often hands you every commit hash the branch has ever pointed at — including commits that were later amended or force-pushed away.
+That reflog is worth knowing about on its own. Even when you can't list the directory, `.git/logs/HEAD` is a single fixed path that often hands you every commit hash the branch has ever pointed at, including commits that were later amended or force-pushed away.
 
 ## Step 4: Mirror it, then let git do the work
 
@@ -123,7 +123,7 @@ wget -r -np -nH --reject "index.html*" $TARGET/.git/
 - `-r` recursive, `-np` don't climb above `/.git/`, `-nH` skip the hostname directory
 - `--reject "index.html*"` throws away the generated listing pages so they don't pollute the mirror
 
-Then the satisfying part. You don't need to parse anything by hand — you have a real `.git` folder, so **git itself will rebuild the working tree**:
+Then the satisfying part. You don't need to parse anything by hand, you have a real `.git` folder, so **git itself will rebuild the working tree**:
 
 ```bash
 git checkout .
@@ -131,24 +131,24 @@ git checkout .
 
 ![wget mirroring 31 files, git checkout restoring 3 paths, and git log showing the night-shift commit with README.md app.js and index.html](/img/thm-room404/04-dump.png)
 
-Thirty-one files mirrored, and `git checkout .` restores three: `README.md`, `app.js`, and `index.html`. Objective one done — we have the source.
+Thirty-one files mirrored, and `git checkout .` restores three: `README.md`, `app.js`, and `index.html`. Objective one done, we have the source.
 
 Two habits worth building here:
 
 **Run `git fsck` first.** If the mirror is incomplete (missing objects are common when directory listing is *off*), fsck tells you immediately rather than letting you draw conclusions from a partial tree.
 
-**When listing is off, use a proper dumper.** [git-dumper](https://github.com/arthaud/git-dumper) walks the object graph the hard way: fetch `HEAD` → resolve `refs/heads/main` → fetch that commit object → parse its tree → fetch every blob, recursing. Each object lives at a predictable path (`.git/objects/ab/cdef…`), so no listing is required — it just takes many more requests. `git-dumper $TARGET/.git/ out/` would have solved this room too.
+**When listing is off, use a proper dumper.** [git-dumper](https://github.com/arthaud/git-dumper) walks the object graph the hard way: fetch `HEAD` → resolve `refs/heads/main` → fetch that commit object → parse its tree → fetch every blob, recursing. Each object lives at a predictable path (`.git/objects/ab/cdef…`), so no listing is required, it just takes many more requests. `git-dumper $TARGET/.git/ out/` would have solved this room too.
 
 ## Step 5: The flag
 
-`app.js` is a stub — a `const API = "/api/guest"` and a `TODO: wire to live endpoint before launch` (that endpoint 404s; it was never built). `index.html` is byte-identical to the live homepage, which confirms we really are looking at the deployed code.
+`app.js` is a stub, a `const API = "/api/guest"` and a `TODO: wire to live endpoint before launch` (that endpoint 404s; it was never built). `index.html` is byte-identical to the live homepage, which confirms we really are looking at the deployed code.
 
 The interesting file is `README.md`:
 
 ![cat README.md showing the internal staging repository notice and the line Staging flag remove before launch THM byt3 l0tus n3v3r f0rg3ts](/img/thm-room404/05-flag.png)
 
 ```
-# Byte Lotus — Guest Experience Platform
+# Byte Lotus, Guest Experience Platform
 
 Internal staging repository for the guest app and concierge personalization
 service. Do not deploy this folder to production.
@@ -158,13 +158,13 @@ Staging flag (remove before launch): THM{byt3_l0tus_n3v3r_f0rg3ts}
 
 > `THM{byt3_l0tus_n3v3r_f0rg3ts}`
 
-Two comments in that file are doing a lot of ironic work: *"Do not deploy this folder to production"* on a folder that is currently in production, and *"remove before launch"* on a secret that launched. The flag itself — **Byte Lotus never forgets** — is on-theme for a hotel that has been quietly profiling its guests all week.
+Two comments in that file are doing a lot of ironic work: *"Do not deploy this folder to production"* on a folder that is currently in production, and *"remove before launch"* on a secret that launched. The flag itself, **Byte Lotus never forgets**, is on-theme for a hotel that has been quietly profiling its guests all week.
 
 ## Why an exposed .git is so much worse than it looks
 
 It's tempting to file this as "leaked a README." The real impact is bigger, and it's worth being precise about why.
 
-**A repo is not a snapshot, it's a history.** The working tree shows the *current* state. The object store holds *every* committed state. The classic pattern is a developer committing a `.env`, realising the mistake, deleting the file, and committing again — the working tree is clean, and the credential is still sitting in an earlier blob. Once you have `.git`, `git log -p` reads all of it.
+**A repo is not a snapshot, it's a history.** The working tree shows the *current* state. The object store holds *every* committed state. The classic pattern is a developer committing a `.env`, realising the mistake, deleting the file, and committing again, the working tree is clean, and the credential is still sitting in an earlier blob. Once you have `.git`, `git log -p` reads all of it.
 
 This is why "remove before launch" is not a remediation. **Deleting a secret from the current commit does not remove it from history.** Anything that was ever committed must be treated as burned and rotated, not deleted.
 
@@ -178,7 +178,7 @@ If you run web infrastructure, in rough order of how much they help:
 
 **Don't deploy from a working copy.** Build an artifact in CI and ship only the files the app needs. `git clone` into a web root is the root cause almost every time.
 
-**Block dotfile paths at the edge**, as defence in depth — nginx `location ~ /\. { deny all; }` or the Apache equivalent. Belt and braces, because the next deploy method might reintroduce the folder.
+**Block dotfile paths at the edge**, as defence in depth, nginx `location ~ /\. { deny all; }` or the Apache equivalent. Belt and braces, because the next deploy method might reintroduce the folder.
 
 **Don't serve the app from its project directory.** Point the document root at a `dist/` or `static/` subfolder so there's no parent-directory metadata to expose.
 
@@ -193,12 +193,12 @@ If you run web infrastructure, in rough order of how much they help:
 | | |
 |---|---|
 | Room | Room 404 |
-| Event | Hacker Holidays 2026 — Day 2 |
+| Event | Hacker Holidays 2026, Day 2 |
 | Difficulty | Very Easy · 30 points · Web |
 | Target | `http://<lab-ip>:8080` |
 | Stack | Flask / Werkzeug 3.0.1 on Python 3.12.3 |
 | Finding | `.git` exposed in web root, directory listing enabled |
-| Commit | `0f13550` — *initial Byte Lotus guest platform*, by `night-shift` |
+| Commit | `0f13550`, *initial Byte Lotus guest platform*, by `night-shift` |
 | Flag | `THM{byt3_l0tus_n3v3r_f0rg3ts}` |
 
 ## Wrap-up
@@ -207,11 +207,11 @@ The whole solve, four commands:
 
 ```bash
 curl -sI $TARGET/                                    # Werkzeug + "build staging"
-curl -s -o /dev/null -w "%{http_code}" $TARGET/.git/HEAD   # 200 — jackpot
+curl -s -o /dev/null -w "%{http_code}" $TARGET/.git/HEAD   # 200, jackpot
 wget -r -np -nH --reject "index.html*" $TARGET/.git/ # mirror the repo
 git checkout . && cat README.md                      # rebuild, read the flag
 ```
 
-The lesson that outlives the room: **the most valuable thing on a web server is often not part of the website.** The brochure page was flawless — no injection, no broken auth, nothing to attack. The vulnerability was a folder sitting *next to* the application, published by accident, that quietly carried the developer's entire history along with it.
+The lesson that outlives the room: **the most valuable thing on a web server is often not part of the website.** The brochure page was flawless, no injection, no broken auth, nothing to attack. The vulnerability was a folder sitting *next to* the application, published by accident, that quietly carried the developer's entire history along with it.
 
 When a target looks clean, stop testing the app and start asking what else is in that directory. 🪷

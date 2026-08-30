@@ -34,7 +34,7 @@ The lab is a REMnux box reached over noVNC, with `pdfid`, `pdf-parser`, `box-js`
 
 ## Task 3: Where maldocs sit in ATT&CK
 
-Two questions straight from the task text. **Locky** is a **Ransomware** family, spread through Word attachments, and **Spearphishing Attachment** is sub-technique **T1566.001** under Phishing (T1566). Worth internalising the tree: T1566.001 is the attachment, .002 is the link, .003 is via service. Most maldoc work is .001.
+Two questions straight from the task text. **Locky** is a **Ransomware** family, spread through Word attachments, and **Spearphishing Attachment** is sub-technique **T1566.001** under Phishing (T1566). Worth internalising the tree: T1566.001 is the attachment.002 is the link.003 is via service. Most maldoc work is .001.
 
 ## Task 5: Metadata before tooling
 

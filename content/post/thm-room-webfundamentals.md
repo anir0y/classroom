@@ -15,7 +15,7 @@ tags:
   - thm
 
 draft: false
-description: "TryHackMe Thm Room Web Fundamentals walkthrough — exploit web application vulnerabilities and practice common web attack techniques."
+description: "TryHackMe Thm Room Web Fundamentals walkthrough, exploit web application vulnerabilities and practice common web attack techniques."
 ---
 ## Web Fundamentals
 
@@ -39,11 +39,11 @@ description: "TryHackMe Thm Room Web Fundamentals walkthrough — exploit web ap
 
 HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
 
-- Informational responses (100–199)
-- Successful responses (200–299)
-- Redirects (300–399)
-- Client errors (400–499)
-- Server errors (500–599)
+- Informational responses (100-199)
+- Successful responses (200-299)
+- Redirects (300-399)
+- Client errors (400-499)
+- Server errors (500-599)
 
 source: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
