@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Aug 2026 17:44:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 19:46:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Guided Pentest Infrastructure: UnrealIRCd to Root</title>
+      <link>https://classroom.anir0y.in/post/thm-room-guidedpentestinfrastructure/</link>
+      <pubDate>Sun, 30 Aug 2026 19:46:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-guidedpentestinfrastructure/</guid>
+      <description>TryHackMe Guided Pentest Infrastructure walkthrough: fingerprint UnrealIRCd 3.2.8.1, trigger the AB backdoor for a shell, escalate with looted root creds.</description>
+    </item>
     <item>
       <title>TryHackMe Guided Pentest Web: Chaining Four Bugs to RCE</title>
       <link>https://classroom.anir0y.in/post/thm-room-guidedpentestweb/</link>
