@@ -1,0 +1,26 @@
+{{/* Related posts: internal-linking block to spread crawl equity to the backlog.
+     Uses Hugo's related engine (config [related]); relates on shared taxonomies. */}}
+{{- $related := site.RegularPages.Related . | first 6 -}}
+{{- with $related }}
+<nav class="related-posts" aria-label="Related walkthroughs">
+  <h3 class="related-title">Related walkthroughs</h3>
+  <ul class="related-list">
+    {{- range . }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- with .Description }}<span class="related-desc">{{ . | truncate 90 }}</span>{{ end }}
+    </li>
+    {{- end }}
+  </ul>
+</nav>
+<style>
+.related-posts{margin:2.4rem 0 0;padding-top:1.4rem;border-top:1px solid var(--border)}
+.related-title{font-size:1.05rem;margin:0 0 .8rem}
+.related-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.4rem}
+.related-list li{margin:0;line-height:1.35}
+.related-list a{font-weight:600;text-decoration:none}
+.related-list a:hover{text-decoration:underline}
+.related-desc{display:block;font-size:.8rem;color:var(--secondary);margin-top:.15rem}
+@media (max-width:680px){.related-list{grid-template-columns:1fr}}
+</style>
+{{- end }}

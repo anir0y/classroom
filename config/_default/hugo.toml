@@ -50,3 +50,24 @@ buildExpired = false
   robotsNoIndex = true
   [cascade._target]
     kind = "{taxonomy,term}"
+
+# Related content: builds internal links between posts, weighted by shared
+# taxonomies. includeNewer = true is the point: older posts link FORWARD to
+# newer ones, so the recent backlog stuck in "Crawled - currently not indexed"
+# (the Aug 2026 batch) receives inbound internal links and crawl equity.
+# Substantive tags (SOC Level 2, Splunk, module names) outweigh the generic
+# tryhackme/thm scaffolding tags, so same-module writeups surface first.
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+  [[related.indices]]
+    name = "title"
+    weight = 10
