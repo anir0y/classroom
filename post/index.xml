@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Aug 2026 15:29:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 15:59:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Conti: ProxyShell to Ransomware in Splunk</title>
+      <link>https://classroom.anir0y.in/post/thm-room-conti/</link>
+      <pubDate>Sun, 30 Aug 2026 15:59:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-conti/</guid>
+      <description>TryHackMe Conti walkthrough: tracing a ProxyShell Exchange compromise to ransomware in Splunk, from an attrib.exe web shell to process migration and 18 ransom notes.</description>
+    </item>
     <item>
       <title>TryHackMe Monday Monitor: Reading Sysmon in Wazuh</title>
       <link>https://classroom.anir0y.in/post/thm-room-mondaymonitor/</link>
