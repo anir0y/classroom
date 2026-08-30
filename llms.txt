@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Guided Pentest Web: Chaining Four Bugs to RCE](https://classroom.anir0y.in/post/thm-room-guidedpentestweb/): TryHackMe Guided Pentest Web walkthrough: an IDOR user dump, a reset token printed in the response, an admin panel, and a .phtml upload bypass chained into RCE.
 - [TryHackMe battery: Null Byte to XXE to Root](https://classroom.anir0y.in/post/thm-room-battery/): TryHackMe battery walkthrough: an ELF user oracle, a null-byte registration bypass, XXE source disclosure, and a swappable root-owned sudo script.
 - [TryHackMe Conti: ProxyShell to Ransomware in Splunk](https://classroom.anir0y.in/post/thm-room-conti/): TryHackMe Conti walkthrough: tracing a ProxyShell Exchange compromise to ransomware in Splunk, from an attrib.exe web shell to process migration and 18 ransom notes.
 - [TryHackMe Monday Monitor: Reading Sysmon in Wazuh](https://classroom.anir0y.in/post/thm-room-mondaymonitor/): TryHackMe Monday Monitor walkthrough: tracing an Atomic Red Team chain through Sysmon in Wazuh, from a renamed .xlsm download to mimikatz disguised as memotech.exe.

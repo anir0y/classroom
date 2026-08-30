@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Aug 2026 17:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 17:44:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Guided Pentest Web: Chaining Four Bugs to RCE</title>
+      <link>https://classroom.anir0y.in/post/thm-room-guidedpentestweb/</link>
+      <pubDate>Sun, 30 Aug 2026 17:44:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-guidedpentestweb/</guid>
+      <description>TryHackMe Guided Pentest Web walkthrough: an IDOR user dump, a reset token printed in the response, an admin panel, and a .phtml upload bypass chained into RCE.</description>
+    </item>
     <item>
       <title>TryHackMe battery: Null Byte to XXE to Root</title>
       <link>https://classroom.anir0y.in/post/thm-room-battery/</link>
