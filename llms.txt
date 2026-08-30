@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe battery: Null Byte to XXE to Root](https://classroom.anir0y.in/post/thm-room-battery/): TryHackMe battery walkthrough: an ELF user oracle, a null-byte registration bypass, XXE source disclosure, and a swappable root-owned sudo script.
 - [TryHackMe Conti: ProxyShell to Ransomware in Splunk](https://classroom.anir0y.in/post/thm-room-conti/): TryHackMe Conti walkthrough: tracing a ProxyShell Exchange compromise to ransomware in Splunk, from an attrib.exe web shell to process migration and 18 ransom notes.
 - [TryHackMe Monday Monitor: Reading Sysmon in Wazuh](https://classroom.anir0y.in/post/thm-room-mondaymonitor/): TryHackMe Monday Monitor walkthrough: tracing an Atomic Red Team chain through Sysmon in Wazuh, from a renamed .xlsm download to mimikatz disguised as memotech.exe.
 - [TryHackMe Building Wazuh Rules: Decoders and CDB Alerts](https://classroom.anir0y.in/post/thm-room-buildingwazuhrules/): TryHackMe Building Wazuh Rules walkthrough: writing decoders and rules, matching a CDB threat-intel list, and reading frequency alerts against live Wazuh data.
