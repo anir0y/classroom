@@ -2,6 +2,9 @@
    Scoped with :has(> .post-entry) so single posts and the archives
    page (no .post-entry children) keep their own layout. */
 main.main:has(> .post-entry){
+  /* Widen to the nav width so the grid fills the page like the header,
+     instead of being trapped in the narrow reading column. */
+  max-width:calc(var(--nav-width) + var(--gap) * 2);
   display:grid;
   grid-template-columns:repeat(3, minmax(0,1fr));
   gap:1.5rem;
