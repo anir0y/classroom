@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Modern Web Stacks: Four Stacks, Four CVEs](https://classroom.anir0y.in/post/thm-room-modernwebstacks/): TryHackMe Modern Web Stacks walkthrough: fingerprint four stacks, then exploit prototype pollution, CVE-2025-29927, CVE-2021-35042 and CVE-2021-41773.
 - [TryHackMe Content Discovery: Gobuster and Framework Docs](https://classroom.anir0y.in/post/thm-room-contentdiscoveryx/): TryHackMe Content Discovery walkthrough: robots.txt, sitemap.xml, HTTP headers, framework docs and Gobuster dir, dns and vhost enumeration.
 - [TryHackMe Walking An Application: Browser Dev Tools](https://classroom.anir0y.in/post/thm-room-walkinganapp/): TryHackMe Walking An Application walkthrough: finding every flag with only the browser developer tools, view source, inspector, debugger, network and storage.
 - [TryHackMe Penetration Testing Frameworks: Pick the Right One](https://classroom.anir0y.in/post/thm-room-penetrationtestingframeworks/): TryHackMe Penetration Testing Frameworks walkthrough: OSSTMM, WSTG, NIST 800-115, PTES, ISSAF and MITRE ATT&CK, which to pick, and the flag from the static site.
