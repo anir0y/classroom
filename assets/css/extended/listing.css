@@ -1,0 +1,32 @@
+/* Listing pages: lay posts out 3-up instead of one full-width column.
+   Scoped with :has(> .post-entry) so single posts and the archives
+   page (no .post-entry children) keep their own layout. */
+main.main:has(> .post-entry){
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:1.6rem;
+  align-items:start;
+}
+/* Full-width rows: the home intro, page headers, the first-entry hero,
+   and the pagination footer span every column. */
+main.main:has(> .post-entry) > .home-info,
+main.main:has(> .post-entry) > .page-header,
+main.main:has(> .post-entry) > .first-entry,
+main.main:has(> .post-entry) > footer.page-footer{
+  grid-column:1 / -1;
+}
+/* Grid gap owns the spacing; drop each card's own bottom margin. */
+main.main:has(> .post-entry) > .post-entry{
+  margin:0;
+}
+/* Keep cover images proportional inside the narrower cards. */
+main.main:has(> .post-entry) > .post-entry .entry-cover img{
+  max-height:220px;
+  object-fit:cover;
+}
+@media (max-width:900px){
+  main.main:has(> .post-entry){grid-template-columns:repeat(2, minmax(0,1fr))}
+}
+@media (max-width:600px){
+  main.main:has(> .post-entry){grid-template-columns:1fr}
+}
