@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Penetration Testing Frameworks: Pick the Right One](https://classroom.anir0y.in/post/thm-room-penetrationtestingframeworks/): TryHackMe Penetration Testing Frameworks walkthrough: OSSTMM, WSTG, NIST 800-115, PTES, ISSAF and MITRE ATT&CK, which to pick, and the flag from the static site.
 - [TryHackMe Cyber Kill Chain: The Seven Phases Explained](https://classroom.anir0y.in/post/thm-room-cyberkillchain/): TryHackMe Cyber Kill Chain walkthrough: the Lockheed Martin seven phases from reconnaissance to actions on objectives, plus reading the flag from the JS bundle.
 - [TryHackMe Dive Into Pentesting: Concepts, Ethics, Mindset](https://classroom.anir0y.in/post/thm-room-diveintopentesting/): TryHackMe Dive Into Pentesting walkthrough: the concepts, ethics, and mindset of a professional pentest, plus lifting the flag from the activity JS bundle.
 - [TryHackMe Guided Pentest Infrastructure: UnrealIRCd to Root](https://classroom.anir0y.in/post/thm-room-guidedpentestinfrastructure/): TryHackMe Guided Pentest Infrastructure walkthrough: fingerprint UnrealIRCd 3.2.8.1, trigger the AB backdoor for a shell, escalate with looted root creds.

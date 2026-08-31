@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 31 Aug 2026 10:14:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 10:53:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Penetration Testing Frameworks: Pick the Right One</title>
+      <link>https://classroom.anir0y.in/post/thm-room-penetrationtestingframeworks/</link>
+      <pubDate>Mon, 31 Aug 2026 10:53:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-penetrationtestingframeworks/</guid>
+      <description>TryHackMe Penetration Testing Frameworks walkthrough: OSSTMM, WSTG, NIST 800-115, PTES, ISSAF and MITRE ATT&amp;amp;CK, which to pick, and the flag from the static site.</description>
+    </item>
     <item>
       <title>TryHackMe Cyber Kill Chain: The Seven Phases Explained</title>
       <link>https://classroom.anir0y.in/post/thm-room-cyberkillchain/</link>
