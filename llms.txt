@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Web Server Attacks I: Four Servers, One Host](https://classroom.anir0y.in/post/thm-room-webserverattacks/): TryHackMe Web Server Attacks I walkthrough: fingerprint Apache, Nginx, Node.js and Python http.server on one host, then loot every misconfiguration.
 - [TryHackMe Modern Web Stacks: Four Stacks, Four CVEs](https://classroom.anir0y.in/post/thm-room-modernwebstacks/): TryHackMe Modern Web Stacks walkthrough: fingerprint four stacks, then exploit prototype pollution, CVE-2025-29927, CVE-2021-35042 and CVE-2021-41773.
 - [TryHackMe Content Discovery: Gobuster and Framework Docs](https://classroom.anir0y.in/post/thm-room-contentdiscoveryx/): TryHackMe Content Discovery walkthrough: robots.txt, sitemap.xml, HTTP headers, framework docs and Gobuster dir, dns and vhost enumeration.
 - [TryHackMe Walking An Application: Browser Dev Tools](https://classroom.anir0y.in/post/thm-room-walkinganapp/): TryHackMe Walking An Application walkthrough: finding every flag with only the browser developer tools, view source, inspector, debugger, network and storage.
