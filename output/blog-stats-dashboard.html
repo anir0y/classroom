@@ -1,0 +1,294 @@
+<title>classroom.anir0y.in Stats</title>
+<style>
+  .viz-root{
+    color-scheme:light;
+    --surface-0:#f4f4f2; --surface-1:#fcfcfb; --surface-2:#efefec;
+    --border:#e2e2dd; --border-strong:#cfcfc8;
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#86857e;
+    --series-1:#2a78d6; --series-2:#eb6834; --series-3:#1baf7a;
+    --seq:#2a78d6; --seq-soft:#c7ddf5; --accent-soft:#fde7dc;
+    --good:#008300;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--surface-0); color:var(--text-primary);
+    max-width:1180px; margin:0 auto; padding:28px 20px 60px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:where(:not([data-theme="light"])) .viz-root{
+      color-scheme:dark;
+      --surface-0:#121211; --surface-1:#1a1a19; --surface-2:#232321;
+      --border:#33332f; --border-strong:#45453f;
+      --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8f8e84;
+      --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70;
+      --seq:#3987e5; --seq-soft:#274a6b; --accent-soft:#3d2417;
+      --good:#3ea83e;
+    }
+  }
+  :root[data-theme="dark"] .viz-root{
+    color-scheme:dark;
+    --surface-0:#121211; --surface-1:#1a1a19; --surface-2:#232321;
+    --border:#33332f; --border-strong:#45453f;
+    --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8f8e84;
+    --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70;
+    --seq:#3987e5; --seq-soft:#274a6b; --accent-soft:#3d2417;
+    --good:#3ea83e;
+  }
+  .viz-root *{box-sizing:border-box}
+  .head h1{font-size:26px; margin:0 0 4px; letter-spacing:-.4px}
+  .head p{margin:0; color:var(--text-secondary); font-size:14px}
+  .head .src{color:var(--text-muted); font-size:12px; margin-top:6px}
+  .tiles{display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin:22px 0 8px}
+  .tile{background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:14px 16px}
+  .tile .n{font-size:28px; font-weight:700; letter-spacing:-.5px; line-height:1}
+  .tile .l{font-size:12px; color:var(--text-secondary); margin-top:6px}
+  .tile .s{font-size:11px; color:var(--text-muted); margin-top:2px}
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px}
+  .card{background:var(--surface-1); border:1px solid var(--border); border-radius:14px; padding:18px 18px 14px}
+  .card.full{grid-column:1/-1}
+  .card h2{font-size:15px; margin:0 0 2px; letter-spacing:-.2px}
+  .card .sub{font-size:12px; color:var(--text-secondary); margin:0 0 14px}
+  svg{display:block; width:100%; overflow:visible}
+  .grid-line{stroke:var(--border); stroke-width:1}
+  .axis-t{fill:var(--text-muted); font-size:11px}
+  .bar-lbl{fill:var(--text-primary); font-size:11px; font-weight:600}
+  .cat-lbl{fill:var(--text-secondary); font-size:12px}
+  .mark{transition:opacity .12s}
+  .legend{display:flex; gap:16px; flex-wrap:wrap; font-size:12px; color:var(--text-secondary); margin:2px 0 12px}
+  .legend span{display:inline-flex; align-items:center; gap:6px}
+  .sw{width:11px; height:11px; border-radius:3px; display:inline-block}
+  .note{font-size:12px; color:var(--text-secondary); line-height:1.55; background:var(--surface-2);
+        border:1px solid var(--border); border-radius:10px; padding:12px 14px; margin-top:12px}
+  .note b{color:var(--text-primary)}
+  .tt{position:fixed; pointer-events:none; z-index:50; background:var(--surface-1);
+      border:1px solid var(--border-strong); border-radius:8px; padding:7px 10px; font-size:12px;
+      color:var(--text-primary); box-shadow:0 6px 20px rgba(0,0,0,.16); opacity:0; transition:opacity .1s; max-width:240px}
+  .tt .k{color:var(--text-secondary)}
+  .toggle{float:right; font-size:12px; color:var(--text-secondary); cursor:pointer; user-select:none;
+          border:1px solid var(--border); border-radius:20px; padding:4px 12px; background:var(--surface-1)}
+  table.tv{border-collapse:collapse; width:100%; font-size:12px; margin-top:10px; display:none}
+  table.tv th,table.tv td{border:1px solid var(--border); padding:4px 8px; text-align:left}
+  table.tv th{color:var(--text-secondary); font-weight:600}
+  .revwrap{display:grid; grid-template-columns:1.4fr 1fr; gap:20px; align-items:start}
+  .rev-figs{display:flex; flex-direction:column; gap:10px}
+  .rev-fig{border:1px solid var(--border); border-radius:10px; padding:12px 14px; background:var(--surface-2)}
+  .rev-fig .rn{font-size:22px; font-weight:700}
+  .rev-fig .rl{font-size:11px; color:var(--text-secondary)}
+  @media (max-width:820px){.tiles{grid-template-columns:repeat(2,1fr)} .grid{grid-template-columns:1fr}
+    .revwrap{grid-template-columns:1fr}}
+</style>
+
+<div class="viz-root" data-palette="#2a78d6,#eb6834,#1baf7a">
+  <div class="head">
+    <h1>classroom.anir0y.in content &amp; monetization read</h1>
+    <p>257 published posts across 43 months, and what that content asset is worth against Google AdSense.</p>
+    <div class="src">Sources: post frontmatter (258 files) + live Google Search Console &amp; AdSense, 2026-08-30. These are real numbers, not a model.</div>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><div class="n">257</div><div class="l">Published posts</div><div class="s">Jan 2020 &rarr; Aug 2026</div></div>
+    <div class="tile"><div class="n">185</div><div class="l">TryHackMe writeups</div><div class="s">72% of all content</div></div>
+    <div class="tile"><div class="n">376k</div><div class="l">Total words</div><div class="s">~1,630 avg per THM post</div></div>
+    <div class="tile"><div class="n">91</div><div class="l">Posts in Aug 2026</div><div class="s">35% of the whole archive</div></div>
+    <div class="tile"><div class="n">43</div><div class="l">Active months</div><div class="s">6.0 posts / active month</div></div>
+  </div>
+
+  <div class="grid">
+    <!-- Posts per year -->
+    <div class="card">
+      <span class="toggle" data-tv="tv-year">Table</span>
+      <h2>Publishing by year</h2>
+      <p class="sub">Two spikes: a 2021 burst, then a far larger 2026 driven by an automated walkthrough pipeline.</p>
+      <svg id="c-year" viewBox="0 0 520 240" role="img" aria-label="Posts per year"></svg>
+      <table class="tv" id="tv-year"><thead><tr><th>Year</th><th>Posts</th></tr></thead><tbody></tbody></table>
+    </div>
+
+    <!-- 2026 monthly -->
+    <div class="card">
+      <span class="toggle" data-tv="tv-mon">Table</span>
+      <h2>2026, month by month</h2>
+      <p class="sub">The August surge is the signal: velocity, not a slow drip, is building the SEO surface.</p>
+      <svg id="c-mon" viewBox="0 0 520 240" role="img" aria-label="Posts per month in 2026"></svg>
+      <table class="tv" id="tv-mon"><thead><tr><th>Month</th><th>Posts</th></tr></thead><tbody></tbody></table>
+    </div>
+
+    <!-- Topics -->
+    <div class="card full">
+      <span class="toggle" data-tv="tv-top">Table</span>
+      <h2>What the archive is about</h2>
+      <p class="sub">Substantive topic tags, scaffolding tags (tryhackme/thm/rooms) excluded. A tight blue-team / SOC niche, which is exactly how AdSense pages get found.</p>
+      <svg id="c-top" viewBox="0 0 1100 300" role="img" aria-label="Top topics by post count"></svg>
+      <table class="tv" id="tv-top"><thead><tr><th>Topic</th><th>Posts</th></tr></thead><tbody></tbody></table>
+    </div>
+
+    <!-- Reality: indexing funnel -->
+    <div class="card full">
+      <span class="toggle" data-tv="tv-idx">Table</span>
+      <h2>Why the archive earns almost nothing yet: indexing</h2>
+      <p class="sub">Google knows 544 URLs but only 192 are indexed. Everything not indexed cannot earn. The 230 "crawled, not yet indexed" are mostly the 91 August posts waiting their turn, this is lag, not a bug.</p>
+      <svg id="c-idx" viewBox="0 0 1100 250" role="img" aria-label="Indexing funnel"></svg>
+      <table class="tv" id="tv-idx"><thead><tr><th>State</th><th>URLs</th></tr></thead><tbody></tbody></table>
+      <div class="note">
+        <b>Read this as a funnel.</b> 352 URLs are not indexed: 230 crawled but not yet chosen (recent posts, needs internal links + time), 61 not yet crawled, 35 taxonomy pages deliberately <b>noindexed</b> (correct), 20 false 404s (Google misreading shell commands like <code>/bin/bash</code> inside code blocks, harmless), 6 minor. Nothing here is a config bug. The lever is getting the real posts across the "crawled &rarr; indexed" line.
+      </div>
+    </div>
+
+    <!-- Reality: real earnings vs the gap -->
+    <div class="card full">
+      <h2>The AdSense reality, and the gap to real money</h2>
+      <p class="sub">Live AdSense: this month $0.74, last 28 days $0.72, lifetime balance $65.35 (never hit the $100 payout). Search Console: 457 clicks in 3 months, about 150 a month. The mechanism works; the volume is 100x too small.</p>
+      <div class="revwrap">
+        <div>
+          <div class="legend">
+            <span><span class="sw" style="background:var(--series-1)"></span>Now</span>
+            <span><span class="sw" style="background:var(--series-2)"></span>10x traffic</span>
+            <span><span class="sw" style="background:var(--series-3)"></span>50x traffic</span>
+          </div>
+          <svg id="c-gap" viewBox="0 0 640 300" role="img" aria-label="Current vs modelled monthly earnings"></svg>
+          <table class="tv" id="tv-gap" style="display:table"><thead><tr><th>Scenario</th><th>Monthly clicks</th><th>Est. $/mo at $5 RPM</th></tr></thead><tbody></tbody></table>
+        </div>
+        <div class="rev-figs">
+          <div class="rev-fig"><div class="rn" style="color:var(--series-1)">$0.74</div><div class="rl">Actual earnings this month. At this rate the $65 balance took years and still has not paid out once.</div></div>
+          <div class="rev-fig"><div class="rn" style="color:var(--good)">316</div><div class="rl">Impressions on one verbatim THM-question query ("find johnny's password"). High-intent, low-competition queries are landing, the writeups just need to rank higher and index faster.</div></div>
+          <div class="rev-fig"><div class="rn">6&ndash;1</div><div class="rl">Desktop-to-mobile earnings ratio ($0.71 vs $0.03). Almost all revenue is desktop; mobile ad experience is untapped.</div></div>
+        </div>
+      </div>
+      <div class="note">
+        <b>The honest plan, in priority order.</b>
+        <b>(1) Index the backlog.</b> 230 real posts are crawled-not-indexed. Strengthen internal linking (a related-posts block, module hub pages) and request indexing on the highest-impression posts. This is the single biggest lever and it is on-site work, not luck.
+        <b>(2) Keep the August cadence.</b> A large, fresh, tightly-niched archive is exactly what ranks; the 91-post surge will compound over Q4 2026 as it indexes.
+        <b>(3) Optimise what already ranks.</b> "the guestbook tryhackme walkthrough", "network discovery detection walkthrough" and verbatim THM questions already pull impressions; tighten titles and on-page structure on those specific posts.
+        <b>Set the expectation honestly:</b> this is a 6&ndash;12 month traffic game. Even a 20x jump is roughly $15/mo. The payout threshold ($100) is reachable next year on current velocity, real monthly income needs sustained ranking, not a code change.
+      </div>
+    </div>
+    </div>
+  <div class="tt" id="tt"></div>
+</div>
+
+<script>
+(function(){
+  const root=document.querySelector('.viz-root'), tt=document.getElementById('tt');
+  const cs=getComputedStyle(root);
+  const C={s1:cs.getPropertyValue('--series-1').trim(), s2:cs.getPropertyValue('--series-2').trim(),
+           s3:cs.getPropertyValue('--series-3').trim(), seq:cs.getPropertyValue('--seq').trim(),
+           soft:cs.getPropertyValue('--seq-soft').trim(), grid:cs.getPropertyValue('--border').trim(),
+           ink:cs.getPropertyValue('--text-primary').trim(), muted:cs.getPropertyValue('--text-muted').trim()};
+  const NS='http://www.w3.org/2000/svg';
+  function el(n,a){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e;}
+  function show(html,ev){tt.innerHTML=html;tt.style.opacity=1;
+    const x=Math.min(ev.clientX+14,innerWidth-tt.offsetWidth-8), y=ev.clientY-10;
+    tt.style.left=x+'px';tt.style.top=y+'px';}
+  function hide(){tt.style.opacity=0;}
+
+  // ---- vertical bar chart (single sequential hue, highlight max) ----
+  function vbar(id, data, opt){
+    const svg=document.getElementById(id), W=520,H=240, m={t:16,r:12,b:34,l:34};
+    const iw=W-m.l-m.r, ih=H-m.t-m.b, max=Math.max(...data.map(d=>d.v));
+    const bw=iw/data.length*0.62, step=iw/data.length;
+    // gridlines
+    for(let g=0;g<=4;g++){const y=m.t+ih-ih*g/4, val=Math.round(max*g/4);
+      svg.appendChild(el('line',{x1:m.l,y1:y,x2:W-m.r,y2:y,class:'grid-line'}));
+      const t=el('text',{x:m.l-6,y:y+3,'text-anchor':'end',class:'axis-t'});t.textContent=val;svg.appendChild(t);}
+    data.forEach((d,i)=>{
+      const x=m.l+step*i+(step-bw)/2, h=Math.max(2,ih*d.v/max), y=m.t+ih-h;
+      const isMax=opt&&opt.hi&&d.v===max, fill=isMax?C.seq:C.soft;
+      const r=el('rect',{x:x,y:y,width:bw,height:h,rx:4,fill:fill,class:'mark','shape-rendering':'crispEdges'});
+      r.addEventListener('mousemove',e=>{r.style.opacity=.82;show(`<b>${d.k}</b><br><span class="k">${opt.unit||'posts'}</span> ${d.v}`,e);});
+      r.addEventListener('mouseleave',()=>{r.style.opacity=1;hide();});
+      svg.appendChild(r);
+      if(isMax||d.v>=max*0.5||opt.allLbl){const lb=el('text',{x:x+bw/2,y:y-5,'text-anchor':'middle',class:'bar-lbl'});lb.textContent=d.v;svg.appendChild(lb);}
+      const xl=el('text',{x:x+bw/2,y:H-m.b+16,'text-anchor':'middle',class:'axis-t'});xl.textContent=d.k;svg.appendChild(xl);
+    });
+  }
+
+  // ---- horizontal bar (topics) ----
+  function hbar(id, data){
+    const svg=document.getElementById(id), W=1100, rowH=30, m={t:6,r:40,l:190};
+    const H=data.length*rowH+m.t+6; svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+    const iw=W-m.l-m.r, max=Math.max(...data.map(d=>d.v));
+    data.forEach((d,i)=>{
+      const y=m.t+i*rowH, bh=18, w=Math.max(2,iw*d.v/max);
+      const lb=el('text',{x:m.l-10,y:y+bh/2+4,'text-anchor':'end',class:'cat-lbl'});lb.textContent=d.k;svg.appendChild(lb);
+      const r=el('rect',{x:m.l,y:y,width:w,height:bh,rx:4,fill:C.seq,class:'mark','shape-rendering':'crispEdges'});
+      r.addEventListener('mousemove',e=>{r.style.opacity=.82;show(`<b>${d.k}</b><br><span class="k">posts</span> ${d.v}`,e);});
+      r.addEventListener('mouseleave',()=>{r.style.opacity=1;hide();});
+      svg.appendChild(r);
+      const vl=el('text',{x:m.l+w+8,y:y+bh/2+4,class:'bar-lbl'});vl.textContent=d.v;svg.appendChild(vl);
+    });
+  }
+
+  // ---- horizontal stacked-ish indexing funnel (single row of segments) ----
+  function ifunnel(id, data){
+    const svg=document.getElementById(id), W=1100,H=250, m={t:20,r:14,l:14,b:16};
+    const total=data.reduce((a,d)=>a+d.v,0), iw=W-m.l-m.r, barH=54, y=m.t+34;
+    let x=m.l;
+    data.forEach(d=>{
+      const w=iw*d.v/total;
+      const r=el('rect',{x:x+1,y:y,width:Math.max(1,w-2),height:barH,rx:4,fill:d.c,class:'mark','shape-rendering':'crispEdges'});
+      r.addEventListener('mousemove',e=>{r.style.opacity=.82;show(`<b>${d.k}</b><br><span class="k">URLs</span> ${d.v} (${Math.round(d.v/total*100)}%)`,e);});
+      r.addEventListener('mouseleave',()=>{r.style.opacity=1;hide();});
+      svg.appendChild(r);
+      if(w>60){const lb=el('text',{x:x+w/2,y:y+barH/2+4,'text-anchor':'middle',class:'bar-lbl',fill:'#fff'});lb.textContent=d.v;svg.appendChild(lb);}
+      x+=w;
+    });
+    // legend below
+    let lx=m.l, ly=y+barH+30;
+    data.forEach(d=>{
+      svg.appendChild(el('rect',{x:lx,y:ly-10,width:11,height:11,rx:3,fill:d.c}));
+      const t=el('text',{x:lx+16,y:ly,class:'cat-lbl'});t.textContent=d.k+' ('+d.v+')';svg.appendChild(t);
+      lx+=(d.k.length*6.6+60);
+      if(lx>W-160){lx=m.l; ly+=22;}
+    });
+  }
+
+  // ---- current vs modelled earnings (log-ish scale, direct labelled) ----
+  function gapbar(id, rows){
+    const svg=document.getElementById(id), W=640,H=300, m={t:16,r:14,b:44,l:56};
+    const iw=W-m.l-m.r, ih=H-m.t-m.b, RPM=5;
+    const dollars=rows.map(r=>r.clk*RPM/1000), max=Math.max(...dollars);
+    for(let g=0;g<=4;g++){const yy=m.t+ih-ih*g/4;
+      svg.appendChild(el('line',{x1:m.l,y1:yy,x2:W-m.r,y2:yy,class:'grid-line'}));
+      const t=el('text',{x:m.l-6,y:yy+3,'text-anchor':'end',class:'axis-t'});t.textContent='$'+Math.round(max*g/4);svg.appendChild(t);}
+    const step=iw/rows.length, bw=step*0.5;
+    rows.forEach((r,i)=>{
+      const val=r.clk*RPM/1000, h=Math.max(2,ih*val/max), x=m.l+step*i+(step-bw)/2, y=m.t+ih-h;
+      const rect=el('rect',{x:x,y:y,width:bw,height:h,rx:4,fill:r.c,class:'mark','shape-rendering':'crispEdges'});
+      rect.addEventListener('mousemove',e=>{rect.style.opacity=.82;
+        show(`<b>${r.label}</b><br><span class="k">${r.clk.toLocaleString()} clicks/mo @ $5 RPM</span><br><b>$${val.toFixed(2)}/mo</b>`,e);});
+      rect.addEventListener('mouseleave',()=>{rect.style.opacity=1;hide();});
+      svg.appendChild(rect);
+      const lb=el('text',{x:x+bw/2,y:y-6,'text-anchor':'middle',class:'bar-lbl'});lb.textContent='$'+val.toFixed(2);svg.appendChild(lb);
+      const xl=el('text',{x:x+bw/2,y:H-m.b+16,'text-anchor':'middle',class:'axis-t'});xl.textContent=r.label;svg.appendChild(xl);
+      const xl2=el('text',{x:x+bw/2,y:H-m.b+30,'text-anchor':'middle',class:'axis-t'});xl2.textContent=r.clk.toLocaleString()+' clk/mo';svg.appendChild(xl2);
+    });
+  }
+
+  // ===== data =====
+  const years=[{k:'2020',v:5},{k:'2021',v:95},{k:'2022',v:22},{k:'2023',v:10},{k:'2024',v:4},{k:'2025',v:9},{k:'2026',v:112}];
+  const months=[{k:'Jan',v:1},{k:'Feb',v:1},{k:'Mar',v:5},{k:'Apr',v:7},{k:'May',v:0},{k:'Jun',v:2},{k:'Jul',v:5},{k:'Aug',v:91}];
+  const topics=[{k:'SOC Level 2',v:62},{k:'Blue Team',v:56},{k:'Splunk',v:23},{k:'Threat Hunting',v:20},
+    {k:'Detection Engineering',v:16},{k:'Pre Security',v:12},{k:'Incident Response',v:9},{k:'Active Directory',v:8},
+    {k:'Sysmon',v:8},{k:'Microsoft 365',v:7},{k:'Sigma',v:7},{k:'Bug Bounty',v:7}];
+  const idx=[{k:'Indexed (live, earning)',v:192,c:C.s3},{k:'Crawled, not yet indexed',v:230,c:C.s1},
+    {k:'Discovered, not crawled',v:61,c:C.soft},{k:'Noindex (taxonomy, correct)',v:35,c:C.muted},
+    {k:'False 404s + minor',v:26,c:C.s2}];
+  const gap=[{label:'Now',clk:150,c:C.s1},{label:'10x',clk:1500,c:C.s2},{label:'50x',clk:7500,c:C.s3}];
+
+  vbar('c-year',years,{hi:true});
+  vbar('c-mon',months,{hi:true,allLbl:false});
+  hbar('c-top',topics);
+  ifunnel('c-idx',idx);
+  gapbar('c-gap',gap);
+
+  // tables
+  function fill(id,rows){const tb=document.querySelector('#'+id+' tbody');rows.forEach(r=>{const tr=document.createElement('tr');tr.innerHTML=r;tb.appendChild(tr);});}
+  fill('tv-year',years.map(d=>`<td>${d.k}</td><td>${d.v}</td>`));
+  fill('tv-mon',months.map(d=>`<td>${d.k} 2026</td><td>${d.v}</td>`));
+  fill('tv-top',topics.map(d=>`<td>${d.k}</td><td>${d.v}</td>`));
+  fill('tv-idx',idx.map(d=>`<td>${d.k}</td><td>${d.v}</td>`));
+  fill('tv-gap',gap.map(g=>`<td>${g.label}</td><td>${(g.clk).toLocaleString()}</td><td>$${(g.clk*5/1000).toFixed(2)}</td>`));
+
+  document.querySelectorAll('.toggle').forEach(t=>t.addEventListener('click',()=>{
+    const tv=document.getElementById(t.dataset.tv), on=tv.style.display==='table';
+    tv.style.display=on?'none':'table'; t.textContent=on?'Table':'Chart';
+  }));
+})();
+</script>

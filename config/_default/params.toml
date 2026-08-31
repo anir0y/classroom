@@ -2,7 +2,7 @@
 # https://github.com/adityatelange/hugo-PaperMod/wiki/Features
 
 env = "production"
-description = "Cybersecurity blog by Animesh Roy -- CTF walkthroughs, malware analysis, penetration testing, and security research."
+description = "Cybersecurity blog by Animesh Roy, CTF walkthroughs, malware analysis, penetration testing, and security research."
 author = "Animesh Roy"
 defaultTheme = "auto"
 ShowReadingTime = true
@@ -34,7 +34,7 @@ tocopen = false
 [profileMode]
   enabled = false
   title = "Classroom"
-  subtitle = "Cybersecurity blog by Animesh Roy -- CTF walkthroughs, malware analysis, penetration testing, and security research."
+  subtitle = "Cybersecurity blog by Animesh Roy, CTF walkthroughs, malware analysis, penetration testing, and security research."
 
 [homeInfoParams]
   Title = "Classroom"

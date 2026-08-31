@@ -76,3 +76,56 @@ main.main:has(> .post-entry) > .post-entry .entry-footer{
 @media (max-width:600px){
   main.main:has(> .post-entry){grid-template-columns:1fr}
 }
+
+/* --- Audit fixes --- */
+
+/* Reclaim the hero: the intro no longer reserves a 320px tall flex box,
+   so posts sit near the top of the page instead of below the fold. */
+.home-info.first-entry{
+  min-height:unset;
+  margin:1.5rem 0 2rem;
+  justify-content:flex-start;
+}
+
+/* Topic chip on each card: small uppercase pill above the title. */
+main.main:has(> .post-entry) > .post-entry .entry-header{
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+}
+.card-chip{
+  align-self:flex-start;
+  font-size:.66rem;
+  font-weight:700;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  color:var(--primary);
+  background:var(--tertiary);
+  border:1px solid var(--border);
+  padding:.2rem .5rem;
+  border-radius:999px;
+  line-height:1;
+}
+
+/* Neutral placeholder behind covers so lazy images don't flash white. */
+main.main:has(> .post-entry) > .post-entry .entry-cover{
+  background:var(--tertiary);
+  aspect-ratio:16 / 9;
+}
+
+/* Active nav item gets a clear underline instead of blending in. */
+.nav .active{
+  font-weight:600;
+  border-bottom:2px solid var(--primary);
+}
+
+/* Footer social row: small, centered, above the copyright line. */
+.footer .social-icons{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-bottom:.6rem;
+}
+.footer .social-icons a{color:var(--secondary)}
+.footer .social-icons a:hover{color:var(--primary)}
+.footer .social-icons svg{height:20px;width:20px}

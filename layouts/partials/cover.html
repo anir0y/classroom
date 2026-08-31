@@ -2,7 +2,7 @@
 {{- $coverImage := .Params.cover.image | default .Params.featureimage }}
 {{- if (and $coverImage (not $.isHidden)) }}
 <figure class="entry-cover">
-    {{- $loading := cond $.IsSingle "eager" "lazy" }}
+    {{- $loading := cond (or $.IsSingle $.eager) "eager" "lazy" }}
     {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
     {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
     {{- $alt := (.Params.cover.alt | default .Params.cover.caption | default .Title | plainify) }}
