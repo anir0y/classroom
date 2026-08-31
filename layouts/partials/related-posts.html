@@ -1,6 +1,6 @@
 {{/* Related posts: internal-linking block to spread crawl equity to the backlog.
      Uses Hugo's related engine (config [related]); relates on shared taxonomies. */}}
-{{- $related := site.RegularPages.Related . | first 4 -}}
+{{- $related := site.RegularPages.Related . | first 3 -}}
 {{- with $related }}
 <nav class="related-posts" aria-label="Related walkthroughs">
   <h3 class="related-title">Related walkthroughs</h3>
@@ -8,22 +8,20 @@
     {{- range . }}
     <a class="related-card" href="{{ .RelPermalink }}">
       <span class="related-card-title">{{ .Title }}</span>
-      {{- with .Description }}<span class="related-card-desc">{{ . | truncate 110 }}</span>{{ end }}
-      <span class="related-card-cue">Read walkthrough &rarr;</span>
+      {{- with .Description }}<span class="related-card-desc">{{ . | truncate 100 }}</span>{{ end }}
     </a>
     {{- end }}
   </div>
 </nav>
 <style>
-.related-posts{margin:3rem 0 0;padding-top:1.6rem;border-top:1px solid var(--border)}
-.related-title{font-size:.95rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--secondary);margin:0 0 1.1rem}
-.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-.related-card{display:flex;flex-direction:column;gap:.45rem;padding:1.1rem 1.2rem;background:var(--entry);border:1px solid var(--border);border-radius:10px;text-decoration:none;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
-.related-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
-.related-card-title{font-size:1rem;font-weight:600;line-height:1.35;color:var(--primary)}
-.related-card-desc{font-size:.82rem;line-height:1.5;color:var(--secondary);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.related-card-cue{margin-top:.2rem;font-size:.78rem;font-weight:600;color:var(--tertiary);opacity:0;transform:translateX(-4px);transition:opacity .18s ease,transform .18s ease}
-.related-card:hover .related-card-cue{opacity:1;transform:translateX(0);color:var(--primary)}
-@media (max-width:680px){.related-grid{grid-template-columns:1fr}.related-card-cue{opacity:1;transform:none}}
+.related-posts{margin:2.6rem 0 2.4rem;padding-top:1.6rem;border-top:1px solid var(--border)}
+.related-title{font-size:.95rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--secondary);margin:0 0 1rem}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem}
+.related-card{display:flex;flex-direction:column;gap:.4rem;padding:.9rem 1rem;background:var(--entry);border:1px solid var(--border);border-radius:10px;text-decoration:none;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+.related-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.related-card-title{font-size:.95rem;font-weight:600;line-height:1.35;color:var(--primary)}
+.related-card-desc{font-size:.8rem;line-height:1.5;color:var(--secondary);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:900px){.related-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.related-grid{grid-template-columns:1fr}}
 </style>
 {{- end }}
