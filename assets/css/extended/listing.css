@@ -129,3 +129,33 @@ main.main:has(> .post-entry) > .post-entry .entry-cover{
 .footer .social-icons a{color:var(--secondary)}
 .footer .social-icons a:hover{color:var(--primary)}
 .footer .social-icons svg{height:20px;width:20px}
+
+/* Custom 404 page with the cataas cat. */
+.not-found-404{
+  min-height:60vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  gap:.6rem;
+  padding:2rem 1rem;
+}
+.not-found-404 .cat-404{
+  max-width:min(480px,90vw);
+  height:auto;
+  border-radius:12px;
+  border:1px solid var(--border);
+}
+.not-found-404 h1{margin:.6rem 0 0;font-size:1.6rem}
+.not-found-404 p{margin:0;color:var(--secondary)}
+.not-found-404 .cat-404-home{
+  margin-top:.6rem;
+  font-weight:600;
+  color:var(--primary);
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:.45rem 1.1rem;
+  text-decoration:none;
+}
+.not-found-404 .cat-404-home:hover{border-color:var(--primary)}
