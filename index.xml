@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Aug 2026 19:46:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 09:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Dive Into Pentesting: Concepts, Ethics, Mindset</title>
+      <link>https://classroom.anir0y.in/post/thm-room-diveintopentesting/</link>
+      <pubDate>Mon, 31 Aug 2026 09:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-diveintopentesting/</guid>
+      <description>TryHackMe Dive Into Pentesting walkthrough: the concepts, ethics, and mindset of a professional pentest, plus lifting the flag from the activity JS bundle.</description>
+    </item>
     <item>
       <title>TryHackMe Guided Pentest Infrastructure: UnrealIRCd to Root</title>
       <link>https://classroom.anir0y.in/post/thm-room-guidedpentestinfrastructure/</link>
