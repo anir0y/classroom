@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Walking An Application: Browser Dev Tools](https://classroom.anir0y.in/post/thm-room-walkinganapp/): TryHackMe Walking An Application walkthrough: finding every flag with only the browser developer tools, view source, inspector, debugger, network and storage.
 - [TryHackMe Penetration Testing Frameworks: Pick the Right One](https://classroom.anir0y.in/post/thm-room-penetrationtestingframeworks/): TryHackMe Penetration Testing Frameworks walkthrough: OSSTMM, WSTG, NIST 800-115, PTES, ISSAF and MITRE ATT&CK, which to pick, and the flag from the static site.
 - [TryHackMe Cyber Kill Chain: The Seven Phases Explained](https://classroom.anir0y.in/post/thm-room-cyberkillchain/): TryHackMe Cyber Kill Chain walkthrough: the Lockheed Martin seven phases from reconnaissance to actions on objectives, plus reading the flag from the JS bundle.
 - [TryHackMe Dive Into Pentesting: Concepts, Ethics, Mindset](https://classroom.anir0y.in/post/thm-room-diveintopentesting/): TryHackMe Dive Into Pentesting walkthrough: the concepts, ethics, and mindset of a professional pentest, plus lifting the flag from the activity JS bundle.
