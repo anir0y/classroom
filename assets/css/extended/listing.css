@@ -1,29 +1,72 @@
-/* Listing pages: lay posts out 3-up instead of one full-width column.
+/* Listing pages: 3-up card grid instead of one full-width column.
    Scoped with :has(> .post-entry) so single posts and the archives
    page (no .post-entry children) keep their own layout. */
 main.main:has(> .post-entry){
   display:grid;
   grid-template-columns:repeat(3, minmax(0,1fr));
-  gap:1.6rem;
-  align-items:start;
+  gap:1.5rem;
+  align-items:stretch;
 }
-/* Full-width rows: the home intro, page headers, the first-entry hero,
-   and the pagination footer span every column. */
+
+/* Full-width rows: home intro, page headers, first-entry hero, pagination. */
 main.main:has(> .post-entry) > .home-info,
 main.main:has(> .post-entry) > .page-header,
 main.main:has(> .post-entry) > .first-entry,
 main.main:has(> .post-entry) > footer.page-footer{
   grid-column:1 / -1;
 }
-/* Grid gap owns the spacing; drop each card's own bottom margin. */
+
+/* Card: flex column, equal height across the row, cover flush to the edges. */
 main.main:has(> .post-entry) > .post-entry{
   margin:0;
+  padding:0;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
 }
-/* Keep cover images proportional inside the narrower cards. */
+
+/* Cover: consistent 16:9 banner, no oversized thumbnails. */
+main.main:has(> .post-entry) > .post-entry .entry-cover{
+  margin:0;
+  width:100%;
+}
 main.main:has(> .post-entry) > .post-entry .entry-cover img{
-  max-height:220px;
+  display:block;
+  width:100%;
+  aspect-ratio:16 / 9;
   object-fit:cover;
+  max-height:none;
+  border-radius:0;
 }
+
+/* Title: card-sized, not article-sized; clamp to 3 lines for even cards. */
+main.main:has(> .post-entry) > .post-entry .entry-header{
+  padding:1rem 1.1rem 0;
+}
+main.main:has(> .post-entry) > .post-entry .entry-header h2{
+  font-size:1.1rem;
+  line-height:1.32;
+  margin:0;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+/* Drop the empty "..." summary; title + cover + meta carry the card. */
+main.main:has(> .post-entry) > .post-entry .entry-content{
+  display:none;
+}
+
+/* Meta pinned to the bottom so every card's baseline lines up. */
+main.main:has(> .post-entry) > .post-entry .entry-footer{
+  margin-top:auto;
+  padding:.75rem 1.1rem 1.1rem;
+  font-size:.75rem;
+  line-height:1.5;
+}
+
 @media (max-width:900px){
   main.main:has(> .post-entry){grid-template-columns:repeat(2, minmax(0,1fr))}
 }
