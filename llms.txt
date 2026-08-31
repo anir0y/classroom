@@ -1,6 +1,6 @@
 # Classroom
 
-> Cybersecurity blog by Animesh Roy -- CTF walkthroughs, malware analysis, penetration testing, and security research.
+> Cybersecurity blog by Animesh Roy, CTF walkthroughs, malware analysis, penetration testing, and security research.
 
 CTF walkthroughs, malware analysis, penetration testing, and security research by Animesh Roy.
 
