@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 31 Aug 2026 22:10:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 14:25:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe SQL Injection Introduction: Four Lab Levels</title>
+      <link>https://classroom.anir0y.in/post/thm-room-sqlinjectionintroduction/</link>
+      <pubDate>Tue, 01 Sep 2026 14:25:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-sqlinjectionintroduction/</guid>
+      <description>Walkthrough of the TryHackMe SQL Injection Introduction room: four lab levels covering UNION extraction, login bypass, boolean-blind and time-based blind SQLi.</description>
+    </item>
     <item>
       <title>TryHackMe Web Server Attacks II: IIS Tilde and WebDAV</title>
       <link>https://classroom.anir0y.in/post/thm-room-webserverattacks2/</link>

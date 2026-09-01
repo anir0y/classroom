@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe SQL Injection Introduction: Four Lab Levels](https://classroom.anir0y.in/post/thm-room-sqlinjectionintroduction/): Walkthrough of the TryHackMe SQL Injection Introduction room: four lab levels covering UNION extraction, login bypass, boolean-blind and time-based blind SQLi.
 - [TryHackMe Web Server Attacks II: IIS Tilde and WebDAV](https://classroom.anir0y.in/post/thm-room-webserverattacks2/): TryHackMe Web Server Attacks II walkthrough: IIS fingerprinting, 8.3 tilde short name enumeration, WebDAV NTLM upload and ASP.NET misconfigurations.
 - [TryHackMe Web Server Attacks I: Four Servers, One Host](https://classroom.anir0y.in/post/thm-room-webserverattacks/): TryHackMe Web Server Attacks I walkthrough: fingerprint Apache, Nginx, Node.js and Python http.server on one host, then loot every misconfiguration.
 - [TryHackMe Modern Web Stacks: Four Stacks, Four CVEs](https://classroom.anir0y.in/post/thm-room-modernwebstacks/): TryHackMe Modern Web Stacks walkthrough: fingerprint four stacks, then exploit prototype pollution, CVE-2025-29927, CVE-2021-35042 and CVE-2021-41773.
