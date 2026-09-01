@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 14:52:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 16:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe XSS Introduction: Six Payload Contexts</title>
+      <link>https://classroom.anir0y.in/post/thm-room-xssintroduction/</link>
+      <pubDate>Tue, 01 Sep 2026 16:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-xssintroduction/</guid>
+      <description>Walkthrough of the TryHackMe XSS Introduction room: reflected, stored and DOM sinks, a blind XSS exfil over netcat, and six payload contexts to escape.</description>
+    </item>
     <item>
       <title>TryHackMe CSRF Introduction: Forging a Weak Token</title>
       <link>https://classroom.anir0y.in/post/thm-room-csrfintroduction/</link>
