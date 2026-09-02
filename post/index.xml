@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 17:05:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 18:02:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Broken Authentication: Four Ways Past a Login</title>
+      <link>https://classroom.anir0y.in/post/thm-room-brokenauthentication/</link>
+      <pubDate>Wed, 02 Sep 2026 18:02:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-brokenauthentication/</guid>
+      <description>Walkthrough of the TryHackMe Broken Authentication room: ffuf username enumeration, login brute force, a reset parameter pollution flaw and cookie tampering.</description>
+    </item>
     <item>
       <title>TryHackMe Recruit: File Read to SQLi to Admin</title>
       <link>https://classroom.anir0y.in/post/thm-room-recruitwebchallenge/</link>
