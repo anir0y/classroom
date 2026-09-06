@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe API Pentesting: BOLA to Admin in Four Requests](https://classroom.anir0y.in/post/thm-room-apitesting/): Walkthrough of the TryHackMe API Pentesting room: JWT decoding, BOLA object id swapping, an unrated login endpoint and mass assignment to admin.
 - [TryHackMe Broken Authentication: Four Ways Past a Login](https://classroom.anir0y.in/post/thm-room-brokenauthentication/): Walkthrough of the TryHackMe Broken Authentication room: ffuf username enumeration, login brute force, a reset parameter pollution flaw and cookie tampering.
 - [TryHackMe Recruit: File Read to SQLi to Admin](https://classroom.anir0y.in/post/thm-room-recruitwebchallenge/): Walkthrough of the TryHackMe Recruit web challenge: a scoped file read leaks the HR password, then SQLi in the dashboard search escalates to admin.
 - [TryHackMe XSS Introduction: Six Payload Contexts](https://classroom.anir0y.in/post/thm-room-xssintroduction/): Walkthrough of the TryHackMe XSS Introduction room: reflected, stored and DOM sinks, a blind XSS exfil over netcat, and six payload contexts to escape.
