@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Sep 2026 13:20:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 19:00:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Support: Five Weak Trust Boundaries to RCE</title>
+      <link>https://classroom.anir0y.in/post/thm-room-support/</link>
+      <pubDate>Sun, 06 Sep 2026 19:00:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-support/</guid>
+      <description>Walkthrough of the TryHackMe Support challenge: a weak login, an md5 cookie flip, IDOR, readfile traversal for source disclosure and command injection to RCE.</description>
+    </item>
     <item>
       <title>TryHackMe API Pentesting: BOLA to Admin in Four Requests</title>
       <link>https://classroom.anir0y.in/post/thm-room-apitesting/</link>
