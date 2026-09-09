@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Sep 2026 11:31:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 18:48:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Basic Vulnerability Identification Techniques</title>
+      <link>https://classroom.anir0y.in/post/thm-room-basicvulnerabilityidentificationtechniques/</link>
+      <pubDate>Wed, 09 Sep 2026 18:48:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-basicvulnerabilityidentificationtechniques/</guid>
+      <description>Walkthrough of the TryHackMe Basic Vulnerability Identification Techniques room: nmap enumeration, IDOR, anonymous FTP and SMB, then triaging findings by impact.</description>
+    </item>
     <item>
       <title>TryHackMe Vulnerability Scanning Tools: Nmap, Nikto, OpenVAS</title>
       <link>https://classroom.anir0y.in/post/thm-room-vulnerabilityscanningtools/</link>

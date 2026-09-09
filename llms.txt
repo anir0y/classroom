@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Basic Vulnerability Identification Techniques](https://classroom.anir0y.in/post/thm-room-basicvulnerabilityidentificationtechniques/): Walkthrough of the TryHackMe Basic Vulnerability Identification Techniques room: nmap enumeration, IDOR, anonymous FTP and SMB, then triaging findings by impact.
 - [TryHackMe Vulnerability Scanning Tools: Nmap, Nikto, OpenVAS](https://classroom.anir0y.in/post/thm-room-vulnerabilityscanningtools/): Walkthrough of the TryHackMe Vulnerability Scanning Tools room: Nmap service scans, a Nikto web check and an OpenVAS report that maps CVEs and the target OS.
 - [TryHackMe Support: Five Weak Trust Boundaries to RCE](https://classroom.anir0y.in/post/thm-room-support/): Walkthrough of the TryHackMe Support challenge: a weak login, an md5 cookie flip, IDOR, readfile traversal for source disclosure and command injection to RCE.
 - [TryHackMe API Pentesting: BOLA to Admin in Four Requests](https://classroom.anir0y.in/post/thm-room-apitesting/): Walkthrough of the TryHackMe API Pentesting room: JWT decoding, BOLA object id swapping, an unrated login endpoint and mass assignment to admin.
