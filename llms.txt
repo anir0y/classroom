@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe n8n CVE-2025-68613: Expression Injection to RCE](https://classroom.anir0y.in/post/thm-room-n8ncve202568613/): Walkthrough of the TryHackMe n8n CVE-2025-68613 room: an authenticated expression injection in n8n workflow evaluation escalates to RCE through child_process.
 - [TryHackMe NoScope: Alf.io returnClass Sandbox Escape to RCE](https://classroom.anir0y.in/post/thm-room-noscoperce/): Walkthrough of TryHackMe NoScope: Finding RCE. Exploit the Alf.io returnClass Rhino sandbox escape (CVE-2026-35482) and read the flag by RCE on the box.
 - [TryHackMe Basic Vulnerability Identification Techniques](https://classroom.anir0y.in/post/thm-room-basicvulnerabilityidentificationtechniques/): Walkthrough of the TryHackMe Basic Vulnerability Identification Techniques room: nmap enumeration, IDOR, anonymous FTP and SMB, then triaging findings by impact.
 - [TryHackMe Vulnerability Scanning Tools: Nmap, Nikto, OpenVAS](https://classroom.anir0y.in/post/thm-room-vulnerabilityscanningtools/): Walkthrough of the TryHackMe Vulnerability Scanning Tools room: Nmap service scans, a Nikto web check and an OpenVAS report that maps CVEs and the target OS.
