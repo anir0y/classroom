@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Sep 2026 10:33:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 19:13:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe AD BadSuccessor: dMSA Abuse to Domain Admin</title>
+      <link>https://classroom.anir0y.in/post/thm-room-adbadsuccessor/</link>
+      <pubDate>Fri, 11 Sep 2026 19:13:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-adbadsuccessor/</guid>
+      <description>Walkthrough of TryHackMe AD BadSuccessor: finding OU write rights, forging a dMSA with SharpSuccessor and Rubeus, and reading the Domain Admin flag off the DC.</description>
+    </item>
     <item>
       <title>TryHackMe n8n CVE-2025-68613: Expression Injection to RCE</title>
       <link>https://classroom.anir0y.in/post/thm-room-n8ncve202568613/</link>
