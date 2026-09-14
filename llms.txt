@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Phishing Basics: SET Credential Harvesting and Spoofing](https://classroom.anir0y.in/post/thm-room-phishingbasics/): Walkthrough of the TryHackMe Phishing Basics room: social engineering psychology, email spoofing defences, and SET credential harvesting to phish Bob.
 - [TryHackMe CVE-2026-42945 Nginx Rift: Heap Overflow to RCE](https://classroom.anir0y.in/post/thm-room-cve202642945/): Walkthrough of the TryHackMe CVE-2026-42945 Nginx Rift room: the is_args two-pass state mismatch that turns a rewrite/set heap overflow into unauthenticated RCE.
 - [TryHackMe Fragnesia CVE-2026-46300: Page-Cache LPE to Root](https://classroom.anir0y.in/post/thm-room-cve202646300/): Walkthrough of TryHackMe Fragnesia, CVE-2026-46300. A Linux page-cache write LPE created by the Dirty Frag patch, taken from user karen to root via a corrupted su.
 - [TryHackMe AD BadSuccessor: dMSA Abuse to Domain Admin](https://classroom.anir0y.in/post/thm-room-adbadsuccessor/): Walkthrough of TryHackMe AD BadSuccessor: finding OU write rights, forging a dMSA with SharpSuccessor and Rubeus, and reading the Domain Admin flag off the DC.
