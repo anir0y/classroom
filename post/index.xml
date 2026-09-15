@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Sep 2026 23:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 13:23:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Checkmate: CUPP, SHA256, and SSH Password Cracking</title>
+      <link>https://classroom.anir0y.in/post/thm-room-checkmate/</link>
+      <pubDate>Tue, 15 Sep 2026 13:23:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-checkmate/</guid>
+      <description>TryHackMe Checkmate walkthrough: default creds, a company keyword, CUPP to crack Marco&amp;#39;s social password, a SHA256 filename, and a pattern-based SSH brute-force.</description>
+    </item>
     <item>
       <title>TryHackMe Password Cracking: Hashcat, John, and rockyou</title>
       <link>https://classroom.anir0y.in/post/thm-room-passwordcracking/</link>
