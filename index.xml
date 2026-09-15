@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2026 13:23:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 15:01:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Metasploit: The Basics, msfconsole and EternalBlue</title>
+      <link>https://classroom.anir0y.in/post/thm-room-metasploitthebasics/</link>
+      <pubDate>Tue, 15 Sep 2026 15:01:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-metasploitthebasics/</guid>
+      <description>TryHackMe Metasploit: The Basics walkthrough: exploits and payloads, msfconsole search, set and setg, running modules, sessions, and the EternalBlue example.</description>
+    </item>
     <item>
       <title>TryHackMe Checkmate: CUPP, SHA256, and SSH Password Cracking</title>
       <link>https://classroom.anir0y.in/post/thm-room-checkmate/</link>

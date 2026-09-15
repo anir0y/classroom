@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Metasploit: The Basics, msfconsole and EternalBlue](https://classroom.anir0y.in/post/thm-room-metasploitthebasics/): TryHackMe Metasploit: The Basics walkthrough: exploits and payloads, msfconsole search, set and setg, running modules, sessions, and the EternalBlue example.
 - [TryHackMe Checkmate: CUPP, SHA256, and SSH Password Cracking](https://classroom.anir0y.in/post/thm-room-checkmate/): TryHackMe Checkmate walkthrough: default creds, a company keyword, CUPP to crack Marco's social password, a SHA256 filename, and a pattern-based SSH brute-force.
 - [TryHackMe Password Cracking: Hashcat, John, and rockyou](https://classroom.anir0y.in/post/thm-room-passwordcracking/): TryHackMe Password Cracking walkthrough: identify MD5, SHA-256, NTLM, and bcrypt hashes, then crack all four with Hashcat, John, and rockyou.txt.
 - [TryHackMe Introduction to Wordlists: CeWL, crunch, ffuf, Hydra](https://classroom.anir0y.in/post/thm-room-introductiontowordlists/): TryHackMe Introduction to Wordlists walkthrough: scrape with CeWL, build usernames, crunch passwords, then find helios/ with ffuf and crack the login with Hydra.
