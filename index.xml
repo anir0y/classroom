@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Sep 2026 12:41:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 14:56:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe The Great Disappearing Act: HTTP Parameter Pollution to Root</title>
+      <link>https://classroom.anir0y.in/post/thm-room-thegreatdisappearingact/</link>
+      <pubDate>Wed, 16 Sep 2026 14:56:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-thegreatdisappearingact/</guid>
+      <description>TryHackMe The Great Disappearing Act walkthrough: Fakebook OSINT, HTTP parameter pollution on a JWT tier check, and a Docker SUID privesc chain to root.</description>
+    </item>
     <item>
       <title>TryHackMe Exploitation and Weaponisation: Proving Real Impact</title>
       <link>https://classroom.anir0y.in/post/thm-room-exploitationandweaponisation/</link>
