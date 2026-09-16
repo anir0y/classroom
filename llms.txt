@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Exploitation and Weaponisation: Proving Real Impact](https://classroom.anir0y.in/post/thm-room-exploitationandweaponisation/): TryHackMe Exploitation and Weaponisation walkthrough: controlled exploitation, chaining vulnerabilities, and proving real business impact.
 - [TryHackMe Metasploit: Post-Exploitation, Meterpreter Loot](https://classroom.anir0y.in/post/thm-room-metasploitpostexploitation/): TryHackMe Metasploit: Post-Exploitation walkthrough: psexec foothold, Meterpreter commands, a SAM hashdump for jchambers, hashcat cracking, and the room flags.
 - [TryHackMe Metasploit: The Basics, msfconsole and EternalBlue](https://classroom.anir0y.in/post/thm-room-metasploitthebasics/): TryHackMe Metasploit: The Basics walkthrough: exploits and payloads, msfconsole search, set and setg, running modules, sessions, and the EternalBlue example.
 - [TryHackMe Checkmate: CUPP, SHA256, and SSH Password Cracking](https://classroom.anir0y.in/post/thm-room-checkmate/): TryHackMe Checkmate walkthrough: default creds, a company keyword, CUPP to crack Marco's social password, a SHA256 filename, and a pattern-based SSH brute-force.

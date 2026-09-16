@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2026 22:23:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 12:41:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Exploitation and Weaponisation: Proving Real Impact</title>
+      <link>https://classroom.anir0y.in/post/thm-room-exploitationandweaponisation/</link>
+      <pubDate>Wed, 16 Sep 2026 12:41:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-exploitationandweaponisation/</guid>
+      <description>TryHackMe Exploitation and Weaponisation walkthrough: controlled exploitation, chaining vulnerabilities, and proving real business impact.</description>
+    </item>
     <item>
       <title>TryHackMe Metasploit: Post-Exploitation, Meterpreter Loot</title>
       <link>https://classroom.anir0y.in/post/thm-room-metasploitpostexploitation/</link>
