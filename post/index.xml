@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Sep 2026 14:56:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 19:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Shells &amp; Listeners Fundamentals: Netcat, Socat, TTY Shells</title>
+      <link>https://classroom.anir0y.in/post/thm-room-shellsfundamentals/</link>
+      <pubDate>Fri, 18 Sep 2026 19:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-shellsfundamentals/</guid>
+      <description>TryHackMe Shells &amp;amp; Listeners Fundamentals: catching netcat and socat reverse or bind shells, stabilising a full TTY, and wrapping shells in TLS with OpenSSL.</description>
+    </item>
     <item>
       <title>TryHackMe The Great Disappearing Act: HTTP Parameter Pollution to Root</title>
       <link>https://classroom.anir0y.in/post/thm-room-thegreatdisappearingact/</link>
