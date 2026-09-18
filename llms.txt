@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe BankGPT: Prompt-Leaking a Bank Chatbot's Secret Key](https://classroom.anir0y.in/post/thm-room-bankgpt/): Walkthrough of TryHackMe BankGPT: prompt-leaking a bank support chatbot's system prompt to extract its hardcoded secret API key.
 - [TryHackMe Shells & Listeners Fundamentals: Netcat, Socat, TTY Shells](https://classroom.anir0y.in/post/thm-room-shellsfundamentals/): TryHackMe Shells & Listeners Fundamentals: catching netcat and socat reverse or bind shells, stabilising a full TTY, and wrapping shells in TLS with OpenSSL.
 - [TryHackMe The Great Disappearing Act: HTTP Parameter Pollution to Root](https://classroom.anir0y.in/post/thm-room-thegreatdisappearingact/): TryHackMe The Great Disappearing Act walkthrough: Fakebook OSINT, HTTP parameter pollution on a JWT tier check, and a Docker SUID privesc chain to root.
 - [TryHackMe Exploitation and Weaponisation: Proving Real Impact](https://classroom.anir0y.in/post/thm-room-exploitationandweaponisation/): TryHackMe Exploitation and Weaponisation walkthrough: controlled exploitation, chaining vulnerabilities, and proving real business impact.
