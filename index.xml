@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 18 Sep 2026 23:01:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 01:23:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Metasploit Payload Generation: SMB Share to Meterpreter</title>
+      <link>https://classroom.anir0y.in/post/thm-room-metasploitpayloadgeneration/</link>
+      <pubDate>Sat, 19 Sep 2026 01:23:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-metasploitpayloadgeneration/</guid>
+      <description>Walkthrough of TryHackMe Metasploit Payload Generation: msfvenom, multi/handler, and a capstone chaining an SMB upload to a Meterpreter flag.</description>
+    </item>
     <item>
       <title>TryHackMe Shell Payload Generation &amp; Delivery: msfvenom to Webshells</title>
       <link>https://classroom.anir0y.in/post/thm-room-shellgenerationdelivery/</link>
