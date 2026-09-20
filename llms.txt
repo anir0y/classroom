@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Linux Privilege Escalation: Enumeration Walkthrough](https://classroom.anir0y.in/post/thm-room-linprivenum/): TryHackMe Linux Privilege Escalation Enumeration walkthrough: manual OS, user, network and file enumeration on Ubuntu 24.04, answers explained.
 - [TryHackMe The Clean Exit: Tracing Insider Exfiltration with KAPE](https://classroom.anir0y.in/post/thm-room-thecleanexit/): Walkthrough of TryHackMe The Clean Exit: using KAPE and Eric Zimmerman's tools to trace an insider's USB exfiltration and anti-forensic cleanup.
 - [TryHackMe Host-Server Configuration Reviews: CIS Audit Walkthrough](https://classroom.anir0y.in/post/thm-room-hostserverconfigurationreviews/): Walk through TryHackMe Host-Server Configuration Reviews: CIS Benchmarks, DISA STIGs, and a SUID privilege escalation chain from a CIS audit report.
 - [TryHackMe Metasploit Payload Generation: SMB Share to Meterpreter](https://classroom.anir0y.in/post/thm-room-metasploitpayloadgeneration/): Walkthrough of TryHackMe Metasploit Payload Generation: msfvenom, multi/handler, and a capstone chaining an SMB upload to a Meterpreter flag.
