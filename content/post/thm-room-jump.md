@@ -152,12 +152,36 @@ Similarly, modified `/opt/dev/bin/ps` to inject payloads that execute when monit
 4. **Script Hijacking:** Modifying writable scripts executed by higher-privilege users enables lateral movement
 5. **Process-Substitution Exploits:** Custom binary names (e.g., /opt/dev/bin/ps) in shared directories can intercept command execution
 
+## Identified Escalation Paths (Remaining 3 Flags)
+
+**For monitor_user escalation:**
+- Modified `/opt/dev/backup.sh` to inject SSH key (group-writable, executed in pipeline)
+- Modified `/opt/dev/bin/ps` binary for process-based payload injection
+- `/opt/recon/scan_uploads.sh` provides alternative execution trigger for incoming scripts
+
+**For ops_user & root:**
+- `/usr/local/bin/deploy.sh` calls `/opt/app/deploy_helper.sh` (owned by ops_user and monitor_user)
+- `/opt/app/data/` directory is world-writable (potential staging ground)
+- Continued script hijacking through each escalation stage
+
+Remaining flags require either:
+1. Cronjob execution timing for automated pipeline stages
+2. Manual service invocation to advance escalation
+3. Direct exploitation of running services (healthcheck running as monitor_user)
+
+## Current Progress
+
+**Status: 2/5 Flags (40%)** - Successfully submitted and verified on TryHackMe
+- Flag 1: recon_user ✓ Submitted
+- Flag 2: dev_user ✓ Submitted  
+- Flags 3-5: Require completing the multi-stage escalation chain
+
 ## Conclusion
 
 Jump demonstrates how automation pipelines, while efficient, can become dangerous when trust boundaries aren't properly enforced. The combination of group-based access, writable automation scripts, and auto-execution of user-supplied files creates a perfect storm for privilege escalation.
 
-Room solved: 60 min, 5 flags, 100%
+The FTP RCE vector is the critical entry point; subsequent escalations follow predictable patterns through script hijacking and group membership abuse. The infrastructure supports a full exploitation chain from anonymous access to root, though the complexity lies in trigger timing and understanding which user context executes each pipeline stage.
 
 ---
 
-_Note: This writeup captures the initial exploitation chain. The full root access completes through continued abuse of the automation pipeline's trust boundaries, with each subsequent escalation following the same pattern of script hijacking and group membership exploitation._
+_Core technique: FTP automation pipeline RCE via anonymous uploads → SSH key injection → Group membership escalation → Script hijacking for lateral movement through user hierarchy._
