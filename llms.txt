@@ -6,7 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
-- [TryHackMe Jump: Privilege Escalation via FTP Automation Pipeline](https://classroom.anir0y.in/post/thm-room-jump/): TryHackMe Jump: exploiting an insecure FTP automation pipeline to escalate from anonymous access through recon_user, dev_user, monitor_user, ops_user to root via group membership abuse and script hijacking.
+- [TryHackMe Jump: FTP Uploads to Root Through a Trusted Pipeline](https://classroom.anir0y.in/post/thm-room-jump/): TryHackMe Jump walkthrough: anonymous FTP uploads run as recon_user, group writes reach dev_user, a PATH hijack on ps lands monitor_user, and sudo less gives root.
 - [TryHackMe Linux Privilege Escalation: Automation Walkthrough](https://classroom.anir0y.in/post/thm-room-linprivauto/): TryHackMe Linux Privilege Escalation Automation walkthrough: LES, exploiting CVE-2025-32463 sudo-chwoot, pspy, and a sudo LD_PRELOAD root chain.
 - [TryHackMe Linux Privilege Escalation: Basics Walkthrough](https://classroom.anir0y.in/post/thm-room-linprivbasics/): TryHackMe Linux Privilege Escalation Basics walkthrough: exploiting sudo, SUID, PATH hijacking, capabilities, cron and NFS across six target machines.
 - [TryHackMe Linux Privilege Escalation: Enumeration Walkthrough](https://classroom.anir0y.in/post/thm-room-linprivenum/): TryHackMe Linux Privilege Escalation Enumeration walkthrough: manual OS, user, network and file enumeration on Ubuntu 24.04, answers explained.

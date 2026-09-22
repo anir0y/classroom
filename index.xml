@@ -6,14 +6,14 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Sep 2026 20:15:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 20:55:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TryHackMe Jump: Privilege Escalation via FTP Automation Pipeline</title>
+      <title>TryHackMe Jump: FTP Uploads to Root Through a Trusted Pipeline</title>
       <link>https://classroom.anir0y.in/post/thm-room-jump/</link>
-      <pubDate>Tue, 22 Sep 2026 20:15:00 +0530</pubDate>
+      <pubDate>Tue, 22 Sep 2026 20:55:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/post/thm-room-jump/</guid>
-      <description>TryHackMe Jump: exploiting an insecure FTP automation pipeline to escalate from anonymous access through recon_user, dev_user, monitor_user, ops_user to root via group membership abuse and script hijacking.</description>
+      <description>TryHackMe Jump walkthrough: anonymous FTP uploads run as recon_user, group writes reach dev_user, a PATH hijack on ps lands monitor_user, and sudo less gives root.</description>
     </item>
     <item>
       <title>TryHackMe Linux Privilege Escalation: Automation Walkthrough</title>
