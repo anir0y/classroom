@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Windows Jump: Guest to SYSTEM in Four Hops](https://classroom.anir0y.in/post/thm-room-windowsjump/): TryHackMe Windows Jump walkthrough: guest SMB share creds, an AutoLogon registry password, a weak service binary, and a writable SYSTEM task chain guest to SYSTEM.
 - [TryHackMe Jump: FTP Uploads to Root Through a Trusted Pipeline](https://classroom.anir0y.in/post/thm-room-jump/): TryHackMe Jump walkthrough: anonymous FTP uploads run as recon_user, group writes reach dev_user, a PATH hijack on ps lands monitor_user, and sudo less gives root.
 - [TryHackMe Linux Privilege Escalation: Automation Walkthrough](https://classroom.anir0y.in/post/thm-room-linprivauto/): TryHackMe Linux Privilege Escalation Automation walkthrough: LES, exploiting CVE-2025-32463 sudo-chwoot, pspy, and a sudo LD_PRELOAD root chain.
 - [TryHackMe Linux Privilege Escalation: Basics Walkthrough](https://classroom.anir0y.in/post/thm-room-linprivbasics/): TryHackMe Linux Privilege Escalation Basics walkthrough: exploiting sudo, SUID, PATH hijacking, capabilities, cron and NFS across six target machines.
