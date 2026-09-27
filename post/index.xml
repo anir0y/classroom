@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Sep 2026 14:40:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 22:15:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Intro to AD Authentication: NetNTLM to Golden Ticket</title>
+      <link>https://classroom.anir0y.in/post/thm-room-introtoactivedirectoryauthentication/</link>
+      <pubDate>Sun, 27 Sep 2026 22:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-introtoactivedirectoryauthentication/</guid>
+      <description>TryHackMe Intro to AD Authentication walkthrough: NetNTLM challenge response, Kerberos tickets, NTLM cracking, Pass-the-Hash, Kerberoasting and a Golden Ticket.</description>
+    </item>
     <item>
       <title>TryHackMe Active Directory Basics: Build a Forest</title>
       <link>https://classroom.anir0y.in/post/thm-room-winadbasicsrevamp/</link>
