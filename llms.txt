@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Intro to AD Breaching: Kerbrute to LDAP Passback](https://classroom.anir0y.in/post/thm-room-introductiontoactivedirectorybreaching/): TryHackMe Intro to AD Breaching walkthrough: Kerbrute enumeration, Git and Jenkins credential leaks, NetExec spraying, LDAP passback and NTLMv2 coercion.
 - [TryHackMe Intro to AD Authentication: NetNTLM to Golden Ticket](https://classroom.anir0y.in/post/thm-room-introtoactivedirectoryauthentication/): TryHackMe Intro to AD Authentication walkthrough: NetNTLM challenge response, Kerberos tickets, NTLM cracking, Pass-the-Hash, Kerberoasting and a Golden Ticket.
 - [TryHackMe Active Directory Basics: Build a Forest](https://classroom.anir0y.in/post/thm-room-winadbasicsrevamp/): TryHackMe Active Directory Basics walkthrough: promote a child domain controller, join a server, push a Restricted Groups GPO, and build a two-way forest trust.
 - [TryHackMe Windows Jump: Guest to SYSTEM in Four Hops](https://classroom.anir0y.in/post/thm-room-windowsjump/): TryHackMe Windows Jump walkthrough: guest SMB share creds, an AutoLogon registry password, a weak service binary, and a writable SYSTEM task chain guest to SYSTEM.

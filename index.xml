@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Sep 2026 22:15:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 22:10:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Intro to AD Breaching: Kerbrute to LDAP Passback</title>
+      <link>https://classroom.anir0y.in/post/thm-room-introductiontoactivedirectorybreaching/</link>
+      <pubDate>Mon, 28 Sep 2026 22:10:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-introductiontoactivedirectorybreaching/</guid>
+      <description>TryHackMe Intro to AD Breaching walkthrough: Kerbrute enumeration, Git and Jenkins credential leaks, NetExec spraying, LDAP passback and NTLMv2 coercion.</description>
+    </item>
     <item>
       <title>TryHackMe Intro to AD Authentication: NetNTLM to Golden Ticket</title>
       <link>https://classroom.anir0y.in/post/thm-room-introtoactivedirectoryauthentication/</link>
