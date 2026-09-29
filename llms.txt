@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Intro to AD Lateral Movement: PsExec to Pivot](https://classroom.anir0y.in/post/thm-room-introductiontoadlateralmovement/): TryHackMe Intro to AD Lateral Movement walkthrough: PsExec and Evil-WinRM remote execution, Pass-the-Hash credential reuse, and an SSH SOCKS pivot onto the DC.
 - [TryHackMe Intro to Credential Harvesting: SAM to DCSync](https://classroom.anir0y.in/post/thm-room-introtocredentialharvesting/): TryHackMe Intro to Credential Harvesting walkthrough: SAM and LSA dumps with secretsdump, DPAPI vault looting, DCC2 cracking, DCSync and Pass-the-Hash to the DC.
 - [TryHackMe AD Authenticated Enumeration: AS-REP to Graph](https://classroom.anir0y.in/post/thm-room-adauthenticatedenumeration/): TryHackMe AD Authenticated Enumeration walkthrough: AS-REP roasting with GetNPUsers and hashcat, net user enumeration, and BloodHound CE plus PowerView graphs.
 - [TryHackMe AD Basic Enumeration: Null Sessions to First Creds](https://classroom.anir0y.in/post/thm-room-adbasicenumeration/): TryHackMe AD Basic Enumeration walkthrough: fping and nmap host discovery, anonymous SMB shares, LDAP and RPC null sessions, and CrackMapExec password spraying.
