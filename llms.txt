@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe AD Authenticated Enumeration: AS-REP to Graph](https://classroom.anir0y.in/post/thm-room-adauthenticatedenumeration/): TryHackMe AD Authenticated Enumeration walkthrough: AS-REP roasting with GetNPUsers and hashcat, net user enumeration, and BloodHound CE plus PowerView graphs.
 - [TryHackMe AD Basic Enumeration: Null Sessions to First Creds](https://classroom.anir0y.in/post/thm-room-adbasicenumeration/): TryHackMe AD Basic Enumeration walkthrough: fping and nmap host discovery, anonymous SMB shares, LDAP and RPC null sessions, and CrackMapExec password spraying.
 - [TryHackMe Intro to AD Breaching: Kerbrute to LDAP Passback](https://classroom.anir0y.in/post/thm-room-introductiontoactivedirectorybreaching/): TryHackMe Intro to AD Breaching walkthrough: Kerbrute enumeration, Git and Jenkins credential leaks, NetExec spraying, LDAP passback and NTLMv2 coercion.
 - [TryHackMe Intro to AD Authentication: NetNTLM to Golden Ticket](https://classroom.anir0y.in/post/thm-room-introtoactivedirectoryauthentication/): TryHackMe Intro to AD Authentication walkthrough: NetNTLM challenge response, Kerberos tickets, NTLM cracking, Pass-the-Hash, Kerberoasting and a Golden Ticket.
