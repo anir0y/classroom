@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Sep 2026 10:16:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 12:52:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Forward: Kerberoast Red Herring to RBCD</title>
+      <link>https://classroom.anir0y.in/post/thm-room-forwardchallenge/</link>
+      <pubDate>Wed, 30 Sep 2026 12:52:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-forwardchallenge/</guid>
+      <description>TryHackMe Forward walkthrough: a Kerberoastable red herring, a KeePass credential reused across accounts, and resource-based constrained delegation to Administrator.</description>
+    </item>
     <item>
       <title>TryHackMe Proxy: Coerced Hash to Constrained Delegation</title>
       <link>https://classroom.anir0y.in/post/thm-room-proxychallenge/</link>

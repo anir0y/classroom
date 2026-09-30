@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Forward: Kerberoast Red Herring to RBCD](https://classroom.anir0y.in/post/thm-room-forwardchallenge/): TryHackMe Forward walkthrough: a Kerberoastable red herring, a KeePass credential reused across accounts, and resource-based constrained delegation to Administrator.
 - [TryHackMe Proxy: Coerced Hash to Constrained Delegation](https://classroom.anir0y.in/post/thm-room-proxychallenge/): TryHackMe Proxy walkthrough: a writable SMB share that executes PowerShell, a coerced NetNTLMv2 hash, and Kerberos constrained delegation to Administrator on the DC.
 - [TryHackMe Intro to AD Lateral Movement: PsExec to Pivot](https://classroom.anir0y.in/post/thm-room-introductiontoadlateralmovement/): TryHackMe Intro to AD Lateral Movement walkthrough: PsExec and Evil-WinRM remote execution, Pass-the-Hash credential reuse, and an SSH SOCKS pivot onto the DC.
 - [TryHackMe Intro to Credential Harvesting: SAM to DCSync](https://classroom.anir0y.in/post/thm-room-introtocredentialharvesting/): TryHackMe Intro to Credential Harvesting walkthrough: SAM and LSA dumps with secretsdump, DPAPI vault looting, DCC2 cracking, DCSync and Pass-the-Hash to the DC.
