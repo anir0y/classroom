@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe LLM Pentesting: Fingerprint and Exploit an AI Assistant](https://classroom.anir0y.in/post/thm-room-llmpentesting/): Walkthrough of the TryHackMe LLM Pentesting room: fingerprint Ollama, extract the system prompt, and exploit the AIDEN assistant to recover the flag.
 - [TryHackMe Cloud Security Fundamentals: SSRF to IMDS Chain](https://classroom.anir0y.in/post/thm-room-cloudsecurityfundamentals/): TryHackMe Cloud Security Fundamentals walkthrough: a guided chain from port scan to public bucket, SSRF to the IMDS, stolen creds and a wildcard IAM policy.
 - [TryHackMe Mobile Application Security: MobSF Static Analysis](https://classroom.anir0y.in/post/thm-room-mobilesecurity/): Walkthrough of TryHackMe Mobile Application Security: MobSF static analysis of the Leaky Package APK and IPA, mapped to the OWASP Mobile Top 10.
 - [TryHackMe Forward: Kerberoast Red Herring to RBCD](https://classroom.anir0y.in/post/thm-room-forwardchallenge/): TryHackMe Forward walkthrough: a Kerberoastable red herring, a KeePass credential reused across accounts, and resource-based constrained delegation to Administrator.
