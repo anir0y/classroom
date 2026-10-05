@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Cloud Security Fundamentals: SSRF to IMDS Chain](https://classroom.anir0y.in/post/thm-room-cloudsecurityfundamentals/): TryHackMe Cloud Security Fundamentals walkthrough: a guided chain from port scan to public bucket, SSRF to the IMDS, stolen creds and a wildcard IAM policy.
 - [TryHackMe Mobile Application Security: MobSF Static Analysis](https://classroom.anir0y.in/post/thm-room-mobilesecurity/): Walkthrough of TryHackMe Mobile Application Security: MobSF static analysis of the Leaky Package APK and IPA, mapped to the OWASP Mobile Top 10.
 - [TryHackMe Forward: Kerberoast Red Herring to RBCD](https://classroom.anir0y.in/post/thm-room-forwardchallenge/): TryHackMe Forward walkthrough: a Kerberoastable red herring, a KeePass credential reused across accounts, and resource-based constrained delegation to Administrator.
 - [TryHackMe Proxy: Coerced Hash to Constrained Delegation](https://classroom.anir0y.in/post/thm-room-proxychallenge/): TryHackMe Proxy walkthrough: a writable SMB share that executes PowerShell, a coerced NetNTLMv2 hash, and Kerberos constrained delegation to Administrator on the DC.
