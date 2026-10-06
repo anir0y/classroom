@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 15:09:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 08:35:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe The Blue Team Perspective: Splunk BOTSv1 Triage</title>
+      <link>https://classroom.anir0y.in/post/thm-room-blueteamperspective/</link>
+      <pubDate>Tue, 06 Oct 2026 08:35:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-blueteamperspective/</guid>
+      <description>Walkthrough of TryHackMe The Blue Team Perspective: triage the Wayne Corp breach in Splunk over the BOTSv1 dataset, mapped to NIST, MITRE, and the Pyramid of Pain.</description>
+    </item>
     <item>
       <title>TryHackMe LLM Pentesting: Fingerprint and Exploit an AI Assistant</title>
       <link>https://classroom.anir0y.in/post/thm-room-llmpentesting/</link>
