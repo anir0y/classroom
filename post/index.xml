@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 08:35:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 14:16:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe DevSecOps Basics: Shifting Security Left</title>
+      <link>https://classroom.anir0y.in/post/thm-room-devsecopsbasics/</link>
+      <pubDate>Tue, 06 Oct 2026 14:16:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-devsecopsbasics/</guid>
+      <description>Walkthrough of TryHackMe DevSecOps Basics: the story from Waterfall to Agile to DevOps, shifting security left, DevSecOps culture, and the Fuel Trouble flag.</description>
+    </item>
     <item>
       <title>TryHackMe The Blue Team Perspective: Splunk BOTSv1 Triage</title>
       <link>https://classroom.anir0y.in/post/thm-room-blueteamperspective/</link>

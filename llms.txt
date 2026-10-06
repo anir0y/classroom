@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe DevSecOps Basics: Shifting Security Left](https://classroom.anir0y.in/post/thm-room-devsecopsbasics/): Walkthrough of TryHackMe DevSecOps Basics: the story from Waterfall to Agile to DevOps, shifting security left, DevSecOps culture, and the Fuel Trouble flag.
 - [TryHackMe The Blue Team Perspective: Splunk BOTSv1 Triage](https://classroom.anir0y.in/post/thm-room-blueteamperspective/): Walkthrough of TryHackMe The Blue Team Perspective: triage the Wayne Corp breach in Splunk over the BOTSv1 dataset, mapped to NIST, MITRE, and the Pyramid of Pain.
 - [TryHackMe LLM Pentesting: Fingerprint and Exploit an AI Assistant](https://classroom.anir0y.in/post/thm-room-llmpentesting/): Walkthrough of the TryHackMe LLM Pentesting room: fingerprint Ollama, extract the system prompt, and exploit the AIDEN assistant to recover the flag.
 - [TryHackMe Cloud Security Fundamentals: SSRF to IMDS Chain](https://classroom.anir0y.in/post/thm-room-cloudsecurityfundamentals/): TryHackMe Cloud Security Fundamentals walkthrough: a guided chain from port scan to public bucket, SSRF to the IMDS, stolen creds and a wildcard IAM policy.
