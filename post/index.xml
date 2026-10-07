@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 19:17:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 20:39:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Python Building Scripts: Functions to a Checker</title>
+      <link>https://classroom.anir0y.in/post/thm-room-pythonbuildingscripts/</link>
+      <pubDate>Wed, 07 Oct 2026 20:39:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-pythonbuildingscripts/</guid>
+      <description>Walkthrough of TryHackMe Python Building Scripts: functions with return and defaults, try except error handling, file I/O, pip libraries, and a password checker.</description>
+    </item>
     <item>
       <title>TryHackMe Python Core Concepts: Types, Lists, Loops</title>
       <link>https://classroom.anir0y.in/post/thm-room-pythoncoreconcepts/</link>

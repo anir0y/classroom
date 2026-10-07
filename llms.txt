@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Python Building Scripts: Functions to a Checker](https://classroom.anir0y.in/post/thm-room-pythonbuildingscripts/): Walkthrough of TryHackMe Python Building Scripts: functions with return and defaults, try except error handling, file I/O, pip libraries, and a password checker.
 - [TryHackMe Python Core Concepts: Types, Lists, Loops](https://classroom.anir0y.in/post/thm-room-pythoncoreconcepts/): Walkthrough of TryHackMe Python Core Concepts: data types, strings, lists and dictionaries, operators, and for and while loops, answer masks decoded.
 - [TryHackMe DevSecOps Basics: Shifting Security Left](https://classroom.anir0y.in/post/thm-room-devsecopsbasics/): Walkthrough of TryHackMe DevSecOps Basics: the story from Waterfall to Agile to DevOps, shifting security left, DevSecOps culture, and the Fuel Trouble flag.
 - [TryHackMe The Blue Team Perspective: Splunk BOTSv1 Triage](https://classroom.anir0y.in/post/thm-room-blueteamperspective/): Walkthrough of TryHackMe The Blue Team Perspective: triage the Wayne Corp breach in Splunk over the BOTSv1 dataset, mapped to NIST, MITRE, and the Pyramid of Pain.
