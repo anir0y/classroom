@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Threat Modeling for Pentesters: STRIDE to ATT&CK](https://classroom.anir0y.in/post/thm-room-threatmodelingforpentesters/): Walkthrough of TryHackMe Threat Modeling for Pentesters: STRIDE threat categories, DREAD scoring, PASTA stages, MITRE ATT&CK mapping, and Stratford capstone flag.
 - [TryHackMe Python Pentesting Scripts: Recon Toolkit](https://classroom.anir0y.in/post/thm-room-pythonpentestingscripts/): Walkthrough of TryHackMe Python Pentesting Scripts: web directory enumeration, Scapy ARP and socket port scanning, hashlib cracking, and Paramiko SSH brute-forcing.
 - [TryHackMe Python Building Scripts: Functions to a Checker](https://classroom.anir0y.in/post/thm-room-pythonbuildingscripts/): Walkthrough of TryHackMe Python Building Scripts: functions with return and defaults, try except error handling, file I/O, pip libraries, and a password checker.
 - [TryHackMe Python Core Concepts: Types, Lists, Loops](https://classroom.anir0y.in/post/thm-room-pythoncoreconcepts/): Walkthrough of TryHackMe Python Core Concepts: data types, strings, lists and dictionaries, operators, and for and while loops, answer masks decoded.
