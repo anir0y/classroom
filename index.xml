@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Oct 2026 20:47:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 14:55:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Planning and Scoping: Scope, RoE, Compliance</title>
+      <link>https://classroom.anir0y.in/post/thm-room-planningandscoping/</link>
+      <pubDate>Sat, 10 Oct 2026 14:55:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-planningandscoping/</guid>
+      <description>Walkthrough of TryHackMe Planning and Scoping: PTES, known and unknown environments, allowlist scope, Rules of Engagement, PCI DSS, GDPR, and BrightCart flag.</description>
+    </item>
     <item>
       <title>TryHackMe Threat Modeling for Pentesters: STRIDE to ATT&amp;CK</title>
       <link>https://classroom.anir0y.in/post/thm-room-threatmodelingforpentesters/</link>
