@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Re-Testing: Verify Fixes, Catch Patches](https://classroom.anir0y.in/post/thm-room-retesting/): Walkthrough of TryHackMe Re-Testing: re-test vs reassessment, pass/fail/risk-accepted outcomes, variant SQLi payloads, incomplete patches, and the re-test report.
 - [TryHackMe Writing Pentest Reports: Structure and QA](https://classroom.anir0y.in/post/thm-room-writingpentestreports/): Walkthrough of TryHackMe Writing Pentest Reports: structure, technical vs business audience, vulnerability write-ups, appendices, QA, and static-app flags.
 - [TryHackMe Planning and Scoping: Scope, RoE, Compliance](https://classroom.anir0y.in/post/thm-room-planningandscoping/): Walkthrough of TryHackMe Planning and Scoping: PTES, known and unknown environments, allowlist scope, Rules of Engagement, PCI DSS, GDPR, and BrightCart flag.
 - [TryHackMe Threat Modeling for Pentesters: STRIDE to ATT&CK](https://classroom.anir0y.in/post/thm-room-threatmodelingforpentesters/): Walkthrough of TryHackMe Threat Modeling for Pentesters: STRIDE threat categories, DREAD scoring, PASTA stages, MITRE ATT&CK mapping, and Stratford capstone flag.
