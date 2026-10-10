@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Oct 2026 16:26:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 19:44:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Domino: IDOR to Forged JWT to RCE to Root</title>
+      <link>https://classroom.anir0y.in/post/thm-room-domino/</link>
+      <pubDate>Sat, 10 Oct 2026 19:44:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-domino/</guid>
+      <description>Walkthrough of TryHackMe Domino: weak creds, IDOR, forged session cookie and JWT, an RFI eval sink for RCE, SSH credential reuse, and a cron root privesc.</description>
+    </item>
     <item>
       <title>TryHackMe Re-Testing: Verify Fixes, Catch Patches</title>
       <link>https://classroom.anir0y.in/post/thm-room-retesting/</link>

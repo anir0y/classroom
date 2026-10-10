@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Domino: IDOR to Forged JWT to RCE to Root](https://classroom.anir0y.in/post/thm-room-domino/): Walkthrough of TryHackMe Domino: weak creds, IDOR, forged session cookie and JWT, an RFI eval sink for RCE, SSH credential reuse, and a cron root privesc.
 - [TryHackMe Re-Testing: Verify Fixes, Catch Patches](https://classroom.anir0y.in/post/thm-room-retesting/): Walkthrough of TryHackMe Re-Testing: re-test vs reassessment, pass/fail/risk-accepted outcomes, variant SQLi payloads, incomplete patches, and the re-test report.
 - [TryHackMe Writing Pentest Reports: Structure and QA](https://classroom.anir0y.in/post/thm-room-writingpentestreports/): Walkthrough of TryHackMe Writing Pentest Reports: structure, technical vs business audience, vulnerability write-ups, appendices, QA, and static-app flags.
 - [TryHackMe Planning and Scoping: Scope, RoE, Compliance](https://classroom.anir0y.in/post/thm-room-planningandscoping/): Walkthrough of TryHackMe Planning and Scoping: PTES, known and unknown environments, allowlist scope, Rules of Engagement, PCI DSS, GDPR, and BrightCart flag.
