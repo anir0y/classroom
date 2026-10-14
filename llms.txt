@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Operation Promotion: SQLi, Command Injection, sudo find](https://classroom.anir0y.in/post/thm-room-operation-promotion/): Walkthrough of TryHackMe Operation Promotion: a SQLi admin login bypass, IDOR, command injection to www-data, a cracked jford password, and a sudo find root.
 - [TryHackMe Dead Drop: SQLi, require() RCE, and AddSelf to Domain Admin](https://classroom.anir0y.in/post/thm-room-dead-drop/): Walkthrough of TryHackMe Dead Drop: SQLi login bypass, a Node require() RCE, an APK credential leak, and an AddSelf ACL abuse that pivots to Domain Admin.
 - [TryHackMe Disgruntled: Linux Forensics of an Insider Logic Bomb](https://classroom.anir0y.in/post/thm-room-disgruntled/): Walkthrough of TryHackMe Disgruntled: a Linux forensics case tracing an insider through auth.log sudo history, bash history, and a cron logic bomb.
 - [TryHackMe Silent Monitor: SQLi, Command Injection, KeePass to Root](https://classroom.anir0y.in/post/thm-room-silent-monitor/): Walkthrough of TryHackMe Silent Monitor: SQLi login bypass, newline command injection in a ping tool, a leaked service password, and a cracked KeePass vault to root.
