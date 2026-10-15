@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 17:20:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 20:01:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe XXE Injection: File Read, SSRF, and Exfiltration</title>
+      <link>https://classroom.anir0y.in/post/thm-room-xxeinjection/</link>
+      <pubDate>Thu, 15 Oct 2026 20:01:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-xxeinjection/</guid>
+      <description>Walkthrough of TryHackMe XXE Injection: in-band XML External Entity file read, SSRF port scanning through the parser, and out-of-band DTD exfiltration.</description>
+    </item>
     <item>
       <title>TryHackMe NoSQL Injection: MongoDB Operator and Syntax</title>
       <link>https://classroom.anir0y.in/post/thm-room-nosqlinjectiontutorial/</link>
