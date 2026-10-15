@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 11:40:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 14:05:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Advanced SQL Injection: Five Evasion Techniques</title>
+      <link>https://classroom.anir0y.in/post/thm-room-advancedsqlinjection/</link>
+      <pubDate>Thu, 15 Oct 2026 14:05:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-advancedsqlinjection/</guid>
+      <description>Walkthrough of TryHackMe Advanced SQL Injection: second-order SQLi, keyword and space filter evasion, UNION out-of-band extraction, and header injection techniques.</description>
+    </item>
     <item>
       <title>TryHackMe Hammer: OTP Rate-Limit Bypass to JWT kid RCE</title>
       <link>https://classroom.anir0y.in/post/thm-room-hammer/</link>
