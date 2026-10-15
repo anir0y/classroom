@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Oct 2026 22:23:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 11:40:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Hammer: OTP Rate-Limit Bypass to JWT kid RCE</title>
+      <link>https://classroom.anir0y.in/post/thm-room-hammer/</link>
+      <pubDate>Thu, 15 Oct 2026 11:40:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-hammer/</guid>
+      <description>Walkthrough of TryHackMe Hammer: leak a reset email from a log, bypass the OTP rate limit via X-Forwarded-For, forge a JWT from its kid key file, and get RCE.</description>
+    </item>
     <item>
       <title>TryHackMe Operation Promotion: SQLi, Command Injection, sudo find</title>
       <link>https://classroom.anir0y.in/post/thm-room-operation-promotion/</link>
