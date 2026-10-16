@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 20:01:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 13:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe ORM Injection: whereRaw and ORDER BY Injection</title>
+      <link>https://classroom.anir0y.in/post/thm-room-orminjection/</link>
+      <pubDate>Fri, 16 Oct 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-orminjection/</guid>
+      <description>Walkthrough of TryHackMe ORM Injection: Laravel whereRaw raw query injection to dump admins and an ORDER BY json_extract break-out that leaks every user.</description>
+    </item>
     <item>
       <title>TryHackMe XXE Injection: File Read, SSRF, and Exfiltration</title>
       <link>https://classroom.anir0y.in/post/thm-room-xxeinjection/</link>
