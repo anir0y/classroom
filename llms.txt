@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Server-side Template Injection: SSTI to RCE](https://classroom.anir0y.in/post/thm-room-serversidetemplateinjection/): Walkthrough of TryHackMe Server-side Template Injection: confirming SSTI in Smarty, Pug, and Jinja2, then escaping each to RCE plus a Form Tools Smarty chain.
 - [TryHackMe Injectics: SQLi Filter Bypass to Twig RCE](https://classroom.anir0y.in/post/thm-room-injectics/): Walkthrough of TryHackMe Injectics: bypassing the login SQLi keyword filter, stacked query injection, and a Twig sandbox escape via the sort filter for RCE.
 - [TryHackMe ORM Injection: whereRaw and ORDER BY Injection](https://classroom.anir0y.in/post/thm-room-orminjection/): Walkthrough of TryHackMe ORM Injection: Laravel whereRaw raw query injection to dump admins and an ORDER BY json_extract break-out that leaks every user.
 - [TryHackMe XXE Injection: File Read, SSRF, and Exfiltration](https://classroom.anir0y.in/post/thm-room-xxeinjection/): Walkthrough of TryHackMe XXE Injection: in-band XML External Entity file read, SSRF port scanning through the parser, and out-of-band DTD exfiltration.

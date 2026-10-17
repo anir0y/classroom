@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2026 15:51:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 21:31:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Server-side Template Injection: SSTI to RCE</title>
+      <link>https://classroom.anir0y.in/post/thm-room-serversidetemplateinjection/</link>
+      <pubDate>Sat, 17 Oct 2026 21:31:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-serversidetemplateinjection/</guid>
+      <description>Walkthrough of TryHackMe Server-side Template Injection: confirming SSTI in Smarty, Pug, and Jinja2, then escaping each to RCE plus a Form Tools Smarty chain.</description>
+    </item>
     <item>
       <title>TryHackMe Injectics: SQLi Filter Bypass to Twig RCE</title>
       <link>https://classroom.anir0y.in/post/thm-room-injectics/</link>
