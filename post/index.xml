@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Oct 2026 10:53:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 02:15:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Whats Your Name: XSS, CSRF and SQLi chain</title>
+      <link>https://classroom.anir0y.in/post/thm-room-whatsyourname/</link>
+      <pubDate>Mon, 19 Oct 2026 02:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-whatsyourname/</guid>
+      <description>TryHackMe Whats Your Name walkthrough: stored XSS cookie theft, CSRF password reset via admin bot, UPDATEXML SQLi, and cross-subdomain session abuse.</description>
+    </item>
     <item>
       <title>TryHackMe Insecure Deserialisation: PHP Object Injection to RCE</title>
       <link>https://classroom.anir0y.in/post/thm-room-insecuredeserialisation/</link>
