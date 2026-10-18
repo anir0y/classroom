@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Insecure Deserialisation: PHP Object Injection to RCE](https://classroom.anir0y.in/post/thm-room-insecuredeserialisation/): Walkthrough of TryHackMe Insecure Deserialisation: PHP cookie property tampering, object injection via __wakeup to a reverse shell, and PHPGGC gadget chains.
 - [TryHackMe LDAP Injection: Auth Bypass to Blind Exfiltration](https://classroom.anir0y.in/post/thm-room-ldapinjection/): Walkthrough of TryHackMe LDAP Injection: tautology authentication bypass, enumerating every directory entry, and blind boolean injection to reach the dashboard flag.
 - [TryHackMe Server-side Template Injection: SSTI to RCE](https://classroom.anir0y.in/post/thm-room-serversidetemplateinjection/): Walkthrough of TryHackMe Server-side Template Injection: confirming SSTI in Smarty, Pug, and Jinja2, then escaping each to RCE plus a Form Tools Smarty chain.
 - [TryHackMe Injectics: SQLi Filter Bypass to Twig RCE](https://classroom.anir0y.in/post/thm-room-injectics/): Walkthrough of TryHackMe Injectics: bypassing the login SQLi keyword filter, stacked query injection, and a Twig sandbox escape via the sort filter for RCE.

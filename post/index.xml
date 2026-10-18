@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2026 22:16:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 10:53:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Insecure Deserialisation: PHP Object Injection to RCE</title>
+      <link>https://classroom.anir0y.in/post/thm-room-insecuredeserialisation/</link>
+      <pubDate>Sun, 18 Oct 2026 10:53:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-insecuredeserialisation/</guid>
+      <description>Walkthrough of TryHackMe Insecure Deserialisation: PHP cookie property tampering, object injection via __wakeup to a reverse shell, and PHPGGC gadget chains.</description>
+    </item>
     <item>
       <title>TryHackMe LDAP Injection: Auth Bypass to Blind Exfiltration</title>
       <link>https://classroom.anir0y.in/post/thm-room-ldapinjection/</link>
