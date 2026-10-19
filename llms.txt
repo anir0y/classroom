@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe SSRF: forging requests from the server side](https://classroom.anir0y.in/post/thm-room-ssrfhr/): TryHackMe SSRF walkthrough: local config theft via file_get_contents, internal admin pivot, blind OOB phpinfo exfiltration, and memory crash DoS.
 - [TryHackMe Whats Your Name: XSS, CSRF and SQLi chain](https://classroom.anir0y.in/post/thm-room-whatsyourname/): TryHackMe Whats Your Name walkthrough: stored XSS cookie theft, CSRF password reset via admin bot, UPDATEXML SQLi, and cross-subdomain session abuse.
 - [TryHackMe Insecure Deserialisation: PHP Object Injection to RCE](https://classroom.anir0y.in/post/thm-room-insecuredeserialisation/): Walkthrough of TryHackMe Insecure Deserialisation: PHP cookie property tampering, object injection via __wakeup to a reverse shell, and PHPGGC gadget chains.
 - [TryHackMe LDAP Injection: Auth Bypass to Blind Exfiltration](https://classroom.anir0y.in/post/thm-room-ldapinjection/): Walkthrough of TryHackMe LDAP Injection: tautology authentication bypass, enumerating every directory entry, and blind boolean injection to reach the dashboard flag.
