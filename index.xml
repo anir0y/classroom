@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Oct 2026 17:39:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 18:52:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Include: from property injection to log poisoning RCE</title>
+      <link>https://classroom.anir0y.in/post/thm-room-include/</link>
+      <pubDate>Mon, 19 Oct 2026 18:52:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-include/</guid>
+      <description>TryHackMe Include walkthrough: property injection to admin, SSRF credential theft, nested traversal LFI bypass, and SMTP log poisoning to RCE.</description>
+    </item>
     <item>
       <title>TryHackMe Prototype Pollution: injecting properties through the chain</title>
       <link>https://classroom.anir0y.in/post/thm-room-prototypepollution/</link>
