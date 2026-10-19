@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe XSS: reflected, stored, and DOM-based scripting attacks](https://classroom.anir0y.in/post/thm-room-axss/): TryHackMe XSS walkthrough: reflected injection via copyparty CRLF, stored XSS sanitization in JavaScript and ASP.NET, and DOM-based client-side exploitation.
 - [TryHackMe Include: from property injection to log poisoning RCE](https://classroom.anir0y.in/post/thm-room-include/): TryHackMe Include walkthrough: property injection to admin, SSRF credential theft, nested traversal LFI bypass, and SMTP log poisoning to RCE.
 - [TryHackMe Prototype Pollution: injecting properties through the chain](https://classroom.anir0y.in/post/thm-room-prototypepollution/): TryHackMe Prototype Pollution walkthrough: JavaScript prototype chain exploitation for property injection, denial of service via toString override, and lodash abuse.
 - [TryHackMe File Inclusion: from path traversal to code execution](https://classroom.anir0y.in/post/thm-room-filepathtraversal/): TryHackMe File Inclusion walkthrough: relative and absolute path traversal, PHP wrapper code execution via base64 decode, and log poisoning to RCE.
