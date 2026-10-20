@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Oct 2026 20:40:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 16:09:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe CSRF: token bypass and SameSite cookie exploitation</title>
+      <link>https://classroom.anir0y.in/post/thm-room-csrfv2/</link>
+      <pubDate>Tue, 20 Oct 2026 16:09:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-csrfv2/</guid>
+      <description>TryHackMe CSRF walkthrough: GET-based transfer exploit, double submit cookie token prediction, SameSite Lax bypass for logout and isBanned cookie attacks.</description>
+    </item>
     <item>
       <title>TryHackMe XSS: reflected, stored, and DOM-based scripting attacks</title>
       <link>https://classroom.anir0y.in/post/thm-room-axss/</link>

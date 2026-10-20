@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe CSRF: token bypass and SameSite cookie exploitation](https://classroom.anir0y.in/post/thm-room-csrfv2/): TryHackMe CSRF walkthrough: GET-based transfer exploit, double submit cookie token prediction, SameSite Lax bypass for logout and isBanned cookie attacks.
 - [TryHackMe XSS: reflected, stored, and DOM-based scripting attacks](https://classroom.anir0y.in/post/thm-room-axss/): TryHackMe XSS walkthrough: reflected injection via copyparty CRLF, stored XSS sanitization in JavaScript and ASP.NET, and DOM-based client-side exploitation.
 - [TryHackMe Include: from property injection to log poisoning RCE](https://classroom.anir0y.in/post/thm-room-include/): TryHackMe Include walkthrough: property injection to admin, SSRF credential theft, nested traversal LFI bypass, and SMTP log poisoning to RCE.
 - [TryHackMe Prototype Pollution: injecting properties through the chain](https://classroom.anir0y.in/post/thm-room-prototypepollution/): TryHackMe Prototype Pollution walkthrough: JavaScript prototype chain exploitation for property injection, denial of service via toString override, and lodash abuse.
