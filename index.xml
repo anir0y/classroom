@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Oct 2026 16:09:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 17:38:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe DOM-Based Attacks: stored XSS via Vue v-html exploitation</title>
+      <link>https://classroom.anir0y.in/post/thm-room-dombasedattacks/</link>
+      <pubDate>Tue, 20 Oct 2026 17:38:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-dombasedattacks/</guid>
+      <description>TryHackMe DOM-Based Attacks walkthrough: DOM tree fundamentals, source and sink analysis, stored XSS through Vue v-html, and weaponised birthday list exploitation.</description>
+    </item>
     <item>
       <title>TryHackMe CSRF: token bypass and SameSite cookie exploitation</title>
       <link>https://classroom.anir0y.in/post/thm-room-csrfv2/</link>
