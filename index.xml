@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Oct 2026 17:38:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 11:17:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe CORS and SOP: cross-origin data exfiltration</title>
+      <link>https://classroom.anir0y.in/post/thm-room-corsandsop/</link>
+      <pubDate>Wed, 21 Oct 2026 11:17:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-corsandsop/</guid>
+      <description>TryHackMe CORS and SOP walkthrough: arbitrary origin reflection, bad regex bypass via subdomain, and null origin exploitation through sandboxed iframes.</description>
+    </item>
     <item>
       <title>TryHackMe DOM-Based Attacks: stored XSS via Vue v-html exploitation</title>
       <link>https://classroom.anir0y.in/post/thm-room-dombasedattacks/</link>

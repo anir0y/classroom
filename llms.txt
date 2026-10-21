@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe CORS and SOP: cross-origin data exfiltration](https://classroom.anir0y.in/post/thm-room-corsandsop/): TryHackMe CORS and SOP walkthrough: arbitrary origin reflection, bad regex bypass via subdomain, and null origin exploitation through sandboxed iframes.
 - [TryHackMe DOM-Based Attacks: stored XSS via Vue v-html exploitation](https://classroom.anir0y.in/post/thm-room-dombasedattacks/): TryHackMe DOM-Based Attacks walkthrough: DOM tree fundamentals, source and sink analysis, stored XSS through Vue v-html, and weaponised birthday list exploitation.
 - [TryHackMe CSRF: token bypass and SameSite cookie exploitation](https://classroom.anir0y.in/post/thm-room-csrfv2/): TryHackMe CSRF walkthrough: GET-based transfer exploit, double submit cookie token prediction, SameSite Lax bypass for logout and isBanned cookie attacks.
 - [TryHackMe XSS: reflected, stored, and DOM-based scripting attacks](https://classroom.anir0y.in/post/thm-room-axss/): TryHackMe XSS walkthrough: reflected injection via copyparty CRLF, stored XSS sanitization in JavaScript and ASP.NET, and DOM-based client-side exploitation.
