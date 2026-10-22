@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Oct 2026 23:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 15:56:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe HTTP/2 Request Smuggling: CRLF injection and cache poisoning</title>
+      <link>https://classroom.anir0y.in/post/thm-room-http2requestsmuggling/</link>
+      <pubDate>Thu, 22 Oct 2026 15:56:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-http2requestsmuggling/</guid>
+      <description>TryHackMe HTTP/2 Request Smuggling walkthrough: H2.CL desync, CVE-2019-19330 CRLF injection via literal HPACK encoding, web cache poisoning, and h2c smuggling.</description>
+    </item>
     <item>
       <title>TryHackMe HTTP Request Smuggling: CL.TE desync exploitation</title>
       <link>https://classroom.anir0y.in/post/thm-room-httprequestsmuggling/</link>

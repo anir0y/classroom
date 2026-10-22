@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe HTTP/2 Request Smuggling: CRLF injection and cache poisoning](https://classroom.anir0y.in/post/thm-room-http2requestsmuggling/): TryHackMe HTTP/2 Request Smuggling walkthrough: H2.CL desync, CVE-2019-19330 CRLF injection via literal HPACK encoding, web cache poisoning, and h2c smuggling.
 - [TryHackMe HTTP Request Smuggling: CL.TE desync exploitation](https://classroom.anir0y.in/post/thm-room-httprequestsmuggling/): TryHackMe HTTP Request Smuggling walkthrough: CL.TE desync between ATS and Nginx to capture authenticated dashboard credentials via smuggled POST.
 - [TryHackMe CORS and SOP: cross-origin data exfiltration](https://classroom.anir0y.in/post/thm-room-corsandsop/): TryHackMe CORS and SOP walkthrough: arbitrary origin reflection, bad regex bypass via subdomain, and null origin exploitation through sandboxed iframes.
 - [TryHackMe DOM-Based Attacks: stored XSS via Vue v-html exploitation](https://classroom.anir0y.in/post/thm-room-dombasedattacks/): TryHackMe DOM-Based Attacks walkthrough: DOM tree fundamentals, source and sink analysis, stored XSS through Vue v-html, and weaponised birthday list exploitation.
