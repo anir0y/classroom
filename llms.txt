@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe El Bandito: H2.CL desync to steal bot credentials](https://classroom.anir0y.in/post/thm-room-elbandito/): TryHackMe El Bandito walkthrough: Spring Boot heapdump extraction and H2.CL desync via raw HTTP/2 frames to capture the bot's flag cookie.
 - [TryHackMe HTTP Browser Desync: client-side smuggling via Werkzeug](https://classroom.anir0y.in/post/thm-room-requestsmugglingbrowserdesync/): TryHackMe HTTP Browser Desync walkthrough: Werkzeug CVE-2022-29361 keep-alive desync, form-based client-side smuggling, and XSS chaining to steal session cookies.
 - [TryHackMe WebSocket Request Smuggling: proxy bypass via fake upgrades](https://classroom.anir0y.in/post/thm-room-wsrequestsmuggling/): TryHackMe WebSocket Request Smuggling walkthrough: broken WebSocket tunnel through Varnish, SSRF-based fake 101 injection to defeat Nginx proxy.
 - [TryHackMe HTTP/2 Request Smuggling: CRLF injection and cache poisoning](https://classroom.anir0y.in/post/thm-room-http2requestsmuggling/): TryHackMe HTTP/2 Request Smuggling walkthrough: H2.CL desync, CVE-2019-19330 CRLF injection via literal HPACK encoding, web cache poisoning, and h2c smuggling.
