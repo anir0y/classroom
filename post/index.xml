@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 14:44:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 16:11:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Web Frameworks Python: Django leak to Flask session forgery</title>
+      <link>https://classroom.anir0y.in/post/thm-room-webframeworkspython/</link>
+      <pubDate>Fri, 23 Oct 2026 16:11:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-webframeworkspython/</guid>
+      <description>TryHackMe Web Frameworks Python walkthrough: Django DEBUG SECRET_KEY leak, ORM extra() SQLi, Flask session forgery with flask-unsign, and Jinja2 SSTI to RCE.</description>
+    </item>
     <item>
       <title>TryHackMe Web Frameworks Java: Spring actuator to deserialization RCE</title>
       <link>https://classroom.anir0y.in/post/thm-room-webframeworksjava/</link>
