@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Web Frameworks .NET: ViewState RCE to Json.NET deser chain](https://classroom.anir0y.in/post/thm-room-webframeworksnet/): TryHackMe Web Frameworks .NET walkthrough: ViewState RCE via leaked machineKey, EF Core FromSqlRaw SQLi, mass assignment, and Json.NET deser.
 - [TryHackMe Web Frameworks Python: Django leak to Flask session forgery](https://classroom.anir0y.in/post/thm-room-webframeworkspython/): TryHackMe Web Frameworks Python walkthrough: Django DEBUG SECRET_KEY leak, ORM extra() SQLi, Flask session forgery with flask-unsign, and Jinja2 SSTI to RCE.
 - [TryHackMe Web Frameworks Java: Spring actuator to deserialization RCE](https://classroom.anir0y.in/post/thm-room-webframeworksjava/): TryHackMe Web Frameworks Java walkthrough: Spring actuator leak, UNION SQLi via JdbcTemplate, mass assignment overpost, and ysoserial deserialization RCE.
 - [TryHackMe Web Frameworks Code Review: source-to-sink Flask audit](https://classroom.anir0y.in/post/thm-room-webframeworkscodereview/): TryHackMe Web Frameworks Code Review walkthrough: source-to-sink Flask audit with grep and Semgrep triage, then SQLi, SSTI, and path traversal exploitation.

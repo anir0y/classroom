@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 16:11:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 17:38:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Web Frameworks .NET: ViewState RCE to Json.NET deser chain</title>
+      <link>https://classroom.anir0y.in/post/thm-room-webframeworksnet/</link>
+      <pubDate>Fri, 23 Oct 2026 17:38:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-webframeworksnet/</guid>
+      <description>TryHackMe Web Frameworks .NET walkthrough: ViewState RCE via leaked machineKey, EF Core FromSqlRaw SQLi, mass assignment, and Json.NET deser.</description>
+    </item>
     <item>
       <title>TryHackMe Web Frameworks Python: Django leak to Flask session forgery</title>
       <link>https://classroom.anir0y.in/post/thm-room-webframeworkspython/</link>
