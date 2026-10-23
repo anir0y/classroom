@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 13:09:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 14:44:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Web Frameworks Java: Spring actuator to deserialization RCE</title>
+      <link>https://classroom.anir0y.in/post/thm-room-webframeworksjava/</link>
+      <pubDate>Fri, 23 Oct 2026 14:44:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-webframeworksjava/</guid>
+      <description>TryHackMe Web Frameworks Java walkthrough: Spring actuator leak, UNION SQLi via JdbcTemplate, mass assignment overpost, and ysoserial deserialization RCE.</description>
+    </item>
     <item>
       <title>TryHackMe Web Frameworks Code Review: source-to-sink Flask audit</title>
       <link>https://classroom.anir0y.in/post/thm-room-webframeworkscodereview/</link>
