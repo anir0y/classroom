@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Mayhem: Havoc C2 PCAP forensics with AES-256-CTR decryption](https://classroom.anir0y.in/post/thm-room-mayhemroom/): TryHackMe Mayhem walkthrough: decrypt Havoc C2 Demon agent traffic with AES-256-CTR, recover attacker commands, exfiltrated credentials, and persistence.
 - [TryHackMe Source Code Review PHP: XXE to deserialization RCE](https://classroom.anir0y.in/post/thm-room-sourcecodereviewsphp/): TryHackMe Source Code Review PHP walkthrough: XXE via LIBXML_NOENT, unserialize Monolog/RCE1, magic hash bypass, and Laravel framework review.
 - [TryHackMe Web Frameworks .NET: ViewState RCE to Json.NET deser chain](https://classroom.anir0y.in/post/thm-room-webframeworksnet/): TryHackMe Web Frameworks .NET walkthrough: ViewState RCE via leaked machineKey, EF Core FromSqlRaw SQLi, mass assignment, and Json.NET deser.
 - [TryHackMe Web Frameworks Python: Django leak to Flask session forgery](https://classroom.anir0y.in/post/thm-room-webframeworkspython/): TryHackMe Web Frameworks Python walkthrough: Django DEBUG SECRET_KEY leak, ORM extra() SQLi, Flask session forgery with flask-unsign, and Jinja2 SSTI to RCE.
