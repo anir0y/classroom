@@ -1,5 +1,5 @@
 ---
-title: "TryHackMe Length Extension Attacks: SHA-256 forging and cookie escalation"
+title: "TryHackMe Length Extension Attacks: SHA-256 forging and escalation"
 date: 2026-10-25T12:08:00+05:30
 lastmod: 2026-10-25T12:08:00+05:30
 author: Animesh Roy
