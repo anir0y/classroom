@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Attacking ECB Oracles: chosen-plaintext secret recovery](https://classroom.anir0y.in/post/thm-room-attackingecboracles/): TryHackMe Attacking ECB Oracles walkthrough: AES-ECB chosen-plaintext attack, block size and offset determination, byte-by-byte secret recovery from an oracle.
 - [TryHackMe Length Extension Attacks: SHA-256 forging and escalation](https://classroom.anir0y.in/post/thm-room-lengthextensionattacks/): TryHackMe Length Extension Attacks walkthrough: SHA-256 internal state recovery, forged file signatures, cookie role escalation, and HMAC as the fix.
 - [TryHackMe Breaking Crypto the Simple Way: RSA to AES bit-flip](https://classroom.anir0y.in/post/thm-room-breakingcryptothesimpleway/): TryHackMe Breaking Crypto the Simple Way walkthrough: RSA weak key factoring, HMAC dictionary attack, AES-CBC brute force, and bit-flip role escalation.
 - [TryHackMe Mayhem: Havoc C2 PCAP forensics with AES-256-CTR decryption](https://classroom.anir0y.in/post/thm-room-mayhemroom/): TryHackMe Mayhem walkthrough: decrypt Havoc C2 Demon agent traffic with AES-256-CTR, recover attacker commands, exfiltrated credentials, and persistence.
