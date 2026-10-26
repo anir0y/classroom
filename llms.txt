@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe CAPTCHApocalypse: automated CAPTCHA brute-force](https://classroom.anir0y.in/post/thm-room-captchapocalypse/): TryHackMe CAPTCHApocalypse walkthrough: RSA-encrypted login brute-force with automated Tesseract OCR CAPTCHA solving, per-request CSRF rotation handling.
 - [TryHackMe Padding Oracles: AES-CBC byte-by-byte decryption](https://classroom.anir0y.in/post/thm-room-paddingoracles/): TryHackMe Padding Oracles walkthrough: PKCS7 padding, AES-CBC encryption and decryption, padding oracle attack theory, and PadBuster automation.
 - [TryHackMe Attacking ECB Oracles: chosen-plaintext secret recovery](https://classroom.anir0y.in/post/thm-room-attackingecboracles/): TryHackMe Attacking ECB Oracles walkthrough: AES-ECB chosen-plaintext attack, block size and offset determination, byte-by-byte secret recovery from an oracle.
 - [TryHackMe Length Extension Attacks: SHA-256 forging and escalation](https://classroom.anir0y.in/post/thm-room-lengthextensionattacks/): TryHackMe Length Extension Attacks walkthrough: SHA-256 internal state recovery, forged file signatures, cookie role escalation, and HMAC as the fix.
