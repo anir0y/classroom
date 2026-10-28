@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Tooling via Browser Automation: Selenium and Playwright](https://classroom.anir0y.in/post/thm-room-customtoolingviabrowserautomation/): TryHackMe Tooling via Browser Automation walkthrough: Selenium CSRF bypass, Tesseract CAPTCHA solving, Playwright with OWASP ZAP vulnerability scanning.
 - [TryHackMe Custom Tooling using Burp: AES-CBC brute-force](https://classroom.anir0y.in/post/thm-room-customtoolingviaburp/): TryHackMe Custom Tooling using Burp walkthrough: building Burp extensions for AES-CBC brute-force, ROT13 encoding, and RSA-signed password changes.
 - [TryHackMe Custom Tooling Using Python: brute-force to RCE](https://classroom.anir0y.in/post/thm-room-customtoolingpython/): TryHackMe Custom Tooling Using Python walkthrough: brute-force login, vulnerability scanning, RCE exploit, and task automation with Python requests.
 - [TryHackMe CAPTCHApocalypse: automated CAPTCHA brute-force](https://classroom.anir0y.in/post/thm-room-captchapocalypse/): TryHackMe CAPTCHApocalypse walkthrough: RSA-encrypted login brute-force with automated Tesseract OCR CAPTCHA solving, per-request CSRF rotation handling.
