@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Extract: gopher SSRF to middleware bypass](https://classroom.anir0y.in/post/thm-room-extract/): TryHackMe Extract walkthrough: gopher SSRF through preview.php, CVE-2025-29927 Next.js middleware bypass, PHP serialized cookie 2FA bypass.
 - [TryHackMe Chaining Vulnerabilities: XSS to admin takeover](https://classroom.anir0y.in/post/thm-room-chainingvulnerabilitieszp/): TryHackMe Chaining Vulnerabilities walkthrough: combining default credentials, stored XSS, and CSRF to chain a full admin account takeover.
 - [TryHackMe Tooling via Browser Automation: Selenium and Playwright](https://classroom.anir0y.in/post/thm-room-customtoolingviabrowserautomation/): TryHackMe Tooling via Browser Automation walkthrough: Selenium CSRF bypass, Tesseract CAPTCHA solving, Playwright with OWASP ZAP vulnerability scanning.
 - [TryHackMe Custom Tooling using Burp: AES-CBC brute-force](https://classroom.anir0y.in/post/thm-room-customtoolingviaburp/): TryHackMe Custom Tooling using Burp walkthrough: building Burp extensions for AES-CBC brute-force, ROT13 encoding, and RSA-signed password changes.
