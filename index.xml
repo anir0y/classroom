@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Oct 2026 21:50:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 12:35:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Custom Tooling using Burp: AES-CBC brute-force</title>
+      <link>https://classroom.anir0y.in/post/thm-room-customtoolingviaburp/</link>
+      <pubDate>Wed, 28 Oct 2026 12:35:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-customtoolingviaburp/</guid>
+      <description>TryHackMe Custom Tooling using Burp walkthrough: building Burp extensions for AES-CBC brute-force, ROT13 encoding, and RSA-signed password changes.</description>
+    </item>
     <item>
       <title>TryHackMe Custom Tooling Using Python: brute-force to RCE</title>
       <link>https://classroom.anir0y.in/post/thm-room-customtoolingpython/</link>
