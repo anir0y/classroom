@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2026 04:35:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 20:24:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Jailbreaking: LLM Prompt Bypass Techniques</title>
+      <link>https://classroom.anir0y.in/post/thm-room-jailbreaking/</link>
+      <pubDate>Tue, 03 Nov 2026 20:24:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-jailbreaking/</guid>
+      <description>TryHackMe Jailbreaking room walkthrough covering LLM jailbreaking techniques like DAN prompts, grandma exploit, instruction sandwiching, and multi-turn conditioning.</description>
+    </item>
     <item>
       <title>TryHackMe Extract: gopher SSRF to middleware bypass</title>
       <link>https://classroom.anir0y.in/post/thm-room-extract/</link>
