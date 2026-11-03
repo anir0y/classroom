@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Prompt Defence: LLM guardrails and deployment security](https://classroom.anir0y.in/post/thm-room-promptdefence/): TryHackMe Prompt Defence walkthrough covering system prompt hardening, guardrails, deployment least privilege, and guardrail bypass.
 - [TryHackMe Jailbreaking: LLM Prompt Bypass Techniques](https://classroom.anir0y.in/post/thm-room-jailbreaking/): TryHackMe Jailbreaking room walkthrough covering LLM jailbreaking techniques like DAN prompts, grandma exploit, instruction sandwiching, and multi-turn conditioning.
 - [TryHackMe Extract: gopher SSRF to middleware bypass](https://classroom.anir0y.in/post/thm-room-extract/): TryHackMe Extract walkthrough: gopher SSRF through preview.php, CVE-2025-29927 Next.js middleware bypass, PHP serialized cookie 2FA bypass.
 - [TryHackMe Chaining Vulnerabilities: XSS to admin takeover](https://classroom.anir0y.in/post/thm-room-chainingvulnerabilitieszp/): TryHackMe Chaining Vulnerabilities walkthrough: combining default credentials, stored XSS, and CSRF to chain a full admin account takeover.
