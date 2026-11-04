@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Padelify: blind XSS cookie theft to LFI admin takeover](https://classroom.anir0y.in/post/thm-room-padelify/): TryHackMe Padelify walkthrough: blind XSS with base64 WAF bypass to steal moderator cookie, URL-encoded LFI to read admin credentials from app.conf.
 - [TryHackMe Sequence: stored XSS to Docker socket escape](https://classroom.anir0y.in/post/thm-room-sequence/): TryHackMe Sequence walkthrough: stored XSS for admin password change, SSRF to internal Docker container, PHP webshell upload, and Docker socket escape to host root.
 - [TryHackMe Voyage: container escape via kernel module](https://classroom.anir0y.in/post/thm-room-voyage/): TryHackMe Voyage walkthrough: Joomla CVE-2023-23752 info leak, pickle deserialization RCE, and Docker container escape via CAP_SYS_MODULE.
 - [TryHackMe Prompt Defence: LLM guardrails and deployment security](https://classroom.anir0y.in/post/thm-room-promptdefence/): TryHackMe Prompt Defence walkthrough covering system prompt hardening, guardrails, deployment least privilege, and guardrail bypass.

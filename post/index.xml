@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Nov 2026 18:38:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 21:16:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Padelify: blind XSS cookie theft to LFI admin takeover</title>
+      <link>https://classroom.anir0y.in/post/thm-room-padelify/</link>
+      <pubDate>Wed, 04 Nov 2026 21:16:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-padelify/</guid>
+      <description>TryHackMe Padelify walkthrough: blind XSS with base64 WAF bypass to steal moderator cookie, URL-encoded LFI to read admin credentials from app.conf.</description>
+    </item>
     <item>
       <title>TryHackMe Sequence: stored XSS to Docker socket escape</title>
       <link>https://classroom.anir0y.in/post/thm-room-sequence/</link>
