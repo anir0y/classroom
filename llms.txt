@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Mr. Phisher: VBA macro XOR flag extraction](https://classroom.anir0y.in/post/thm-room-mrphisher/): TryHackMe Mr. Phisher walkthrough: extracting and deobfuscating a VBA macro from a malicious Word document using OLE analysis.
 - [TryHackMe WAF Exploitation Techniques: encoding and evasion](https://classroom.anir0y.in/post/thm-room-wafexploitationtechniques/): TryHackMe WAF Exploitation Techniques walkthrough: XSS via CRS 3.3.5 bypass, SSTI hex encoding, SQLi comment whitespace, rate-limit spoofing.
 - [TryHackMe WAF Introduction: from packet filters to OWASP CRS rules](https://classroom.anir0y.in/post/thm-room-wafintroduction/): TryHackMe WAF Introduction walkthrough: firewall evolution from stateless to Layer 7, WAF fingerprinting, OWASP CRS rule analysis, and WAF limitations.
 - [TryHackMe Farewell: WAF rate-limit bypass to XSS cookie theft](https://classroom.anir0y.in/post/thm-room-farewell/): TryHackMe Farewell walkthrough: bypass WAF rate-limiting with X-Forwarded-For to brute-force credentials, stored XSS with string concat to steal admin cookie.
