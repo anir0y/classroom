@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Bricks Heist: CVE-2024-25600 RCE to cryptominer forensics](https://classroom.anir0y.in/post/thm-room-tryhack3mbricksheist/): TryHackMe Bricks Heist walkthrough: exploiting CVE-2024-25600 in WordPress Bricks Builder for RCE, tracing a disguised cryptominer and its LockBit-linked wallet.
 - [TryHackMe Mr. Phisher: VBA macro XOR flag extraction](https://classroom.anir0y.in/post/thm-room-mrphisher/): TryHackMe Mr. Phisher walkthrough: extracting and deobfuscating a VBA macro from a malicious Word document using OLE analysis.
 - [TryHackMe WAF Exploitation Techniques: encoding and evasion](https://classroom.anir0y.in/post/thm-room-wafexploitationtechniques/): TryHackMe WAF Exploitation Techniques walkthrough: XSS via CRS 3.3.5 bypass, SSTI hex encoding, SQLi comment whitespace, rate-limit spoofing.
 - [TryHackMe WAF Introduction: from packet filters to OWASP CRS rules](https://classroom.anir0y.in/post/thm-room-wafintroduction/): TryHackMe WAF Introduction walkthrough: firewall evolution from stateless to Layer 7, WAF fingerprinting, OWASP CRS rule analysis, and WAF limitations.
