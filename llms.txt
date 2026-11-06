@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe IronShade: Linux honeypot compromise investigation](https://classroom.anir0y.in/post/thm-room-ironshade/): TryHackMe IronShade walkthrough: investigating a compromised Linux honeypot for backdoor accounts, hidden processes, cron and systemd persistence.
 - [TryHackMe TShark Challenge II: PCAP analysis and VirusTotal triage](https://classroom.anir0y.in/post/thm-room-tsharkchallengestwo/): TryHackMe TShark Challenge II walkthrough: DNS query investigation, HTTP object export, SHA256 hash lookup on VirusTotal for PEiD and sandbox classification.
 - [TryHackMe Bricks Heist: CVE-2024-25600 RCE to cryptominer forensics](https://classroom.anir0y.in/post/thm-room-tryhack3mbricksheist/): TryHackMe Bricks Heist walkthrough: exploiting CVE-2024-25600 in WordPress Bricks Builder for RCE, tracing a disguised cryptominer and its LockBit-linked wallet.
 - [TryHackMe Mr. Phisher: VBA macro XOR flag extraction](https://classroom.anir0y.in/post/thm-room-mrphisher/): TryHackMe Mr. Phisher walkthrough: extracting and deobfuscating a VBA macro from a malicious Word document using OLE analysis.
