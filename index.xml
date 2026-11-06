@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Nov 2026 08:17:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 21:36:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe TShark Challenge II: PCAP analysis and VirusTotal triage</title>
+      <link>https://classroom.anir0y.in/post/thm-room-tsharkchallengestwo/</link>
+      <pubDate>Fri, 06 Nov 2026 21:36:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-tsharkchallengestwo/</guid>
+      <description>TryHackMe TShark Challenge II walkthrough: DNS query investigation, HTTP object export, SHA256 hash lookup on VirusTotal for PEiD and sandbox classification.</description>
+    </item>
     <item>
       <title>TryHackMe Bricks Heist: CVE-2024-25600 RCE to cryptominer forensics</title>
       <link>https://classroom.anir0y.in/post/thm-room-tryhack3mbricksheist/</link>

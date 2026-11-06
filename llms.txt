@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe TShark Challenge II: PCAP analysis and VirusTotal triage](https://classroom.anir0y.in/post/thm-room-tsharkchallengestwo/): TryHackMe TShark Challenge II walkthrough: DNS query investigation, HTTP object export, SHA256 hash lookup on VirusTotal for PEiD and sandbox classification.
 - [TryHackMe Bricks Heist: CVE-2024-25600 RCE to cryptominer forensics](https://classroom.anir0y.in/post/thm-room-tryhack3mbricksheist/): TryHackMe Bricks Heist walkthrough: exploiting CVE-2024-25600 in WordPress Bricks Builder for RCE, tracing a disguised cryptominer and its LockBit-linked wallet.
 - [TryHackMe Mr. Phisher: VBA macro XOR flag extraction](https://classroom.anir0y.in/post/thm-room-mrphisher/): TryHackMe Mr. Phisher walkthrough: extracting and deobfuscating a VBA macro from a malicious Word document using OLE analysis.
 - [TryHackMe WAF Exploitation Techniques: encoding and evasion](https://classroom.anir0y.in/post/thm-room-wafexploitationtechniques/): TryHackMe WAF Exploitation Techniques walkthrough: XSS via CRS 3.3.5 bypass, SSTI hex encoding, SQLi comment whitespace, rate-limit spoofing.
