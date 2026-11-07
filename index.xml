@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:28:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 09:09:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Ninja Skills: Linux file inspection with find and stat</title>
+      <link>https://classroom.anir0y.in/post/thm-room-ninjaskills/</link>
+      <pubDate>Sat, 07 Nov 2026 09:09:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-ninjaskills/</guid>
+      <description>TryHackMe Ninja Skills walkthrough: locating hidden files across the Linux filesystem with find, inspecting ownership, permissions, hashes and line counts.</description>
+    </item>
     <item>
       <title>TryHackMe IronShade: Linux honeypot compromise investigation</title>
       <link>https://classroom.anir0y.in/post/thm-room-ironshade/</link>
