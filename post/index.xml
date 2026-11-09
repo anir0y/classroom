@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Nov 2026 10:56:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 20:26:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Juicy: XSS to SSRF via unsanitised LLM output</title>
+      <link>https://classroom.anir0y.in/post/thm-room-juicy/</link>
+      <pubDate>Mon, 09 Nov 2026 20:26:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-juicy/</guid>
+      <description>TryHackMe Juicy walkthrough covering prompt injection, system prompt leakage, and XSS through unsanitised LLM output to pivot into localhost-only endpoints.</description>
+    </item>
     <item>
       <title>TryHackMe Model Poisoning: supply chain and training data attacks</title>
       <link>https://classroom.anir0y.in/post/thm-room-modelpoisoning/</link>
