@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Model Poisoning: supply chain and training data attacks](https://classroom.anir0y.in/post/thm-room-modelpoisoning/): TryHackMe Data Integrity and Model Poisoning walkthrough covering OWASP LLM03 supply chain attacks, model poisoning via training data, and mitigation measures.
 - [TryHackMe LLM Output Handling: XSS and RCE via model output](https://classroom.anir0y.in/post/thm-room-outputhandlingandprivacyrisks/): TryHackMe LLM Output Handling walkthrough covering OWASP LLM05, LLM02, XSS via innerHTML, and command execution through unsanitised model output.
 - [TryHackMe Ninja Skills: Linux file inspection with find and stat](https://classroom.anir0y.in/post/thm-room-ninjaskills/): TryHackMe Ninja Skills walkthrough: locating hidden files across the Linux filesystem with find, inspecting ownership, permissions, hashes and line counts.
 - [TryHackMe IronShade: Linux honeypot compromise investigation](https://classroom.anir0y.in/post/thm-room-ironshade/): TryHackMe IronShade walkthrough: investigating a compromised Linux honeypot for backdoor accounts, hidden processes, cron and systemd persistence.
