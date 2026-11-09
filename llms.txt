@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe LLM Output Handling: XSS and RCE via model output](https://classroom.anir0y.in/post/thm-room-outputhandlingandprivacyrisks/): TryHackMe LLM Output Handling walkthrough covering OWASP LLM05, LLM02, XSS via innerHTML, and command execution through unsanitised model output.
 - [TryHackMe Ninja Skills: Linux file inspection with find and stat](https://classroom.anir0y.in/post/thm-room-ninjaskills/): TryHackMe Ninja Skills walkthrough: locating hidden files across the Linux filesystem with find, inspecting ownership, permissions, hashes and line counts.
 - [TryHackMe IronShade: Linux honeypot compromise investigation](https://classroom.anir0y.in/post/thm-room-ironshade/): TryHackMe IronShade walkthrough: investigating a compromised Linux honeypot for backdoor accounts, hidden processes, cron and systemd persistence.
 - [TryHackMe TShark Challenge II: PCAP analysis and VirusTotal triage](https://classroom.anir0y.in/post/thm-room-tsharkchallengestwo/): TryHackMe TShark Challenge II walkthrough: DNS query investigation, HTTP object export, SHA256 hash lookup on VirusTotal for PEiD and sandbox classification.

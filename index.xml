@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Nov 2026 09:09:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 10:14:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe LLM Output Handling: XSS and RCE via model output</title>
+      <link>https://classroom.anir0y.in/post/thm-room-outputhandlingandprivacyrisks/</link>
+      <pubDate>Mon, 09 Nov 2026 10:14:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-outputhandlingandprivacyrisks/</guid>
+      <description>TryHackMe LLM Output Handling walkthrough covering OWASP LLM05, LLM02, XSS via innerHTML, and command execution through unsanitised model output.</description>
+    </item>
     <item>
       <title>TryHackMe Ninja Skills: Linux file inspection with find and stat</title>
       <link>https://classroom.anir0y.in/post/thm-room-ninjaskills/</link>
