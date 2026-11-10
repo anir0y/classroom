@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Profiles: Linux memory forensics with Volatility 3](https://classroom.anir0y.in/post/thm-room-profilesroom/): TryHackMe Profiles walkthrough: Linux memory forensics with Volatility 3, recovering bash history, network sockets, page cache files and ext4 inodes from a LiME dump
 - [TryHackMe Overflow The Jackpot CTF: full chain walkthrough](https://classroom.anir0y.in/post/thm-room-thm-ctf-jackpot-overflow/): TryHackMe Overflow The Jackpot CTF walkthrough: XOR crypto, PHP wrapper LFI, PCAP forensics, detection engineering, and boot2root from WordPress RCE to root.
 - [TryHackMe Juicy: XSS to SSRF via unsanitised LLM output](https://classroom.anir0y.in/post/thm-room-juicy/): TryHackMe Juicy walkthrough covering prompt injection, system prompt leakage, and XSS through unsanitised LLM output to pivot into localhost-only endpoints.
 - [TryHackMe Model Poisoning: supply chain and training data attacks](https://classroom.anir0y.in/post/thm-room-modelpoisoning/): TryHackMe Data Integrity and Model Poisoning walkthrough covering OWASP LLM03 supply chain attacks, model poisoning via training data, and mitigation measures.

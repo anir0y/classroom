@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Nov 2026 23:42:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 12:39:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Profiles: Linux memory forensics with Volatility 3</title>
+      <link>https://classroom.anir0y.in/post/thm-room-profilesroom/</link>
+      <pubDate>Tue, 10 Nov 2026 12:39:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-profilesroom/</guid>
+      <description>TryHackMe Profiles walkthrough: Linux memory forensics with Volatility 3, recovering bash history, network sockets, page cache files and ext4 inodes from a LiME dump</description>
+    </item>
     <item>
       <title>TryHackMe Overflow The Jackpot CTF: full chain walkthrough</title>
       <link>https://classroom.anir0y.in/post/thm-room-thm-ctf-jackpot-overflow/</link>
