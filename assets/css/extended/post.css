@@ -1,0 +1,218 @@
+/* Post page: learning-path navigation, sticky table of contents,
+   end-of-post blocks, image zoom. Uses PaperMod's theme variables only,
+   so light and dark themes follow automatically. */
+
+/* ---------- Learning-path strip under the post meta ---------- */
+.path-strip{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:.4rem .9rem;
+  margin-top:1rem;
+  padding:.6rem .9rem;
+  font-size:.85rem;
+  background:var(--entry);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+}
+.path-strip-name{font-weight:700;color:var(--primary);text-decoration:none}
+.path-strip-name:hover{text-decoration:underline}
+.path-strip-pos{color:var(--secondary)}
+.path-strip-bar{
+  flex:1 1 80px;
+  height:4px;
+  min-width:60px;
+  background:var(--tertiary);
+  border-radius:999px;
+  overflow:hidden;
+}
+.path-strip-bar > span{display:block;height:100%;background:var(--primary);border-radius:999px}
+.path-strip-next{font-weight:600;color:var(--primary);text-decoration:none;white-space:nowrap}
+.path-strip-next:hover{text-decoration:underline}
+
+/* ---------- Table of contents: sticky sidebar on wide screens ---------- */
+.toc-rail .toc{margin-bottom:var(--content-gap)}
+.toc-rail .toc a.active{color:var(--primary);font-weight:600}
+
+@media (min-width:1320px){
+  .post-single{position:relative}
+  /* The rail spans the full article height so the box inside it can stick. */
+  .toc-rail{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:calc(100% + 2.5rem);
+    width:min(280px, calc((100vw - var(--main-width)) / 2 - 4rem));
+  }
+  .toc-rail .toc{
+    position:sticky;
+    top:1.5rem;
+    max-height:calc(100vh - 3rem);
+    overflow-y:auto;
+    margin:0;
+    font-size:.85rem;
+    /* !important: the theme sets the box background per colour scheme with higher specificity. */
+    background:none !important;
+    border:0;
+    border-left:1px solid var(--border);
+    border-radius:0;
+  }
+  .toc-rail .toc summary{cursor:default;pointer-events:none;list-style:none}
+  .toc-rail .toc summary::-webkit-details-marker{display:none}
+  .toc-rail .toc summary .title{
+    font-size:.72rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--secondary);
+  }
+  .toc-rail .toc .inner{margin:0 0 0 1rem;padding:.4rem 0 .6rem}
+  .toc-rail .toc li{margin:0;padding:.18rem 0;line-height:1.4}
+  .toc-rail .toc a{color:var(--secondary);text-decoration:none}
+  .toc-rail .toc a:hover{color:var(--primary)}
+}
+
+/* ---------- Legacy "Follow" badge table that opens older posts ----------
+   The follow link now lives in the author box at the end of the post,
+   so the reader's first screen starts with the write-up itself. */
+.post-content > table:has(.twitter-follow-button){display:none}
+
+/* ---------- Code blocks: copy button visible without hover (touch has no hover) ---------- */
+.post-content .copy-code{display:block;opacity:.75}
+.post-content .copy-code:hover,
+.post-content .copy-code:focus-visible{opacity:1}
+
+/* ---------- Images: click to zoom ---------- */
+.post-content img.zoomable{cursor:zoom-in}
+.img-zoom{
+  position:fixed;
+  inset:0;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1rem;
+  background:rgba(0,0,0,.88);
+  cursor:zoom-out;
+}
+.img-zoom img{max-width:100%;max-height:100%;object-fit:contain;border-radius:4px;margin:0}
+
+/* ---------- End of post: continue the path ---------- */
+.post-footer{margin-top:2.5rem}
+.path-continue{
+  margin-bottom:2rem;
+  padding:1rem 1.1rem 1.1rem;
+  background:var(--entry);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+}
+.path-continue-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:.3rem 1rem;
+  margin-bottom:.8rem;
+  font-size:.9rem;
+  color:var(--secondary);
+}
+.path-continue-head strong{color:var(--primary)}
+.path-continue-head a{font-weight:600;color:var(--primary)}
+.path-continue-links{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.path-continue-links a{
+  display:flex;
+  flex-direction:column;
+  gap:.25rem;
+  padding:.8rem .9rem;
+  background:var(--theme);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  text-decoration:none;
+  transition:border-color .15s ease;
+}
+.path-continue-links a:hover{border-color:var(--primary)}
+.path-continue-next{text-align:right}
+/* The next room is the action we want, so it gets the stronger treatment. */
+.path-continue-links a.path-continue-next{background:var(--primary);border-color:var(--primary)}
+.path-continue-next .path-continue-label,
+.path-continue-next .path-continue-title{color:var(--theme)}
+.path-continue-label{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--secondary)}
+.path-continue-title{font-size:.98rem;font-weight:600;line-height:1.35;color:var(--primary)}
+
+/* ---------- End of post: related walkthroughs ---------- */
+.related-posts{margin:0 0 2rem}
+.related-title{
+  margin:0 0 .9rem;
+  font-size:.8rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--secondary);
+}
+.related-grid{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:.9rem}
+.related-card{
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  background:var(--entry);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  text-decoration:none;
+  transition:border-color .15s ease;
+}
+.related-card:hover{border-color:var(--primary)}
+.related-card-img{
+  display:block;
+  width:100%;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  margin:0;
+  border-radius:0;
+  background:var(--tertiary);
+}
+.related-card-title{
+  padding:.75rem .85rem 0;
+  font-size:.92rem;
+  font-weight:600;
+  line-height:1.35;
+  color:var(--primary);
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.related-card-meta{margin-top:auto;padding:.5rem .85rem .8rem;font-size:.75rem;color:var(--secondary)}
+
+/* ---------- End of post: author ---------- */
+.author-box{
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+  margin-bottom:1.6rem;
+  padding:1rem 1.1rem;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+}
+.author-box-avatar{width:56px;height:56px;border-radius:50%;flex:none;margin:0}
+.author-box p{margin:0}
+.author-box-name{font-weight:700;color:var(--primary)}
+.author-box-bio{margin-top:.2rem !important;font-size:.9rem;line-height:1.5;color:var(--secondary)}
+.author-box-links{display:flex;flex-wrap:wrap;gap:.3rem 1rem;margin-top:.5rem !important;font-size:.85rem}
+.author-box-links a{font-weight:600;color:var(--primary);text-decoration:underline;text-underline-offset:.2rem}
+
+/* ---------- Small screens ---------- */
+@media (max-width:600px){
+  /* The title took most of the first screen at 40px. */
+  .post-title{font-size:1.75rem;line-height:1.2}
+  .post-description{font-size:1rem}
+  .related-grid{grid-template-columns:1fr}
+  .related-card{flex-direction:row;align-items:center}
+  .related-card-img{width:112px;flex:none}
+  .related-card-title{padding:.6rem .8rem 0}
+  .related-card-meta{display:none}
+  .path-continue-links{grid-template-columns:1fr}
+  .path-continue-next{text-align:left;order:-1}
+  /* Seven menu items do not fit; these two stay reachable from the footer and Posts. */
+  #menu li:has(a[href$="/categories/"]),
+  #menu li:has(a[href$="/archives/"]){display:none}
+  #menu a{font-size:15px}
+}

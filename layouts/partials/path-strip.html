@@ -1,0 +1,12 @@
+{{- /* Top-of-post strip: which learning path this room belongs to and how far along it is.
+     Context: the dict returned by path-context.html. */ -}}
+{{- with .path }}
+<nav class="path-strip" aria-label="Learning path">
+  <a class="path-strip-name" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <span class="path-strip-pos">Room {{ $.position }} of {{ $.total }}</span>
+  <span class="path-strip-bar" aria-hidden="true"><span style="width:{{ div (mul $.position 100) $.total }}%"></span></span>
+  {{- with $.next }}
+  <a class="path-strip-next" href="{{ .RelPermalink }}">Next room &rarr;</a>
+  {{- end }}
+</nav>
+{{- end }}

@@ -1,0 +1,24 @@
+{{- /* End-of-post block: previous and next room in the same learning path.
+     Context: the dict returned by path-context.html. */ -}}
+{{- with .path }}
+<nav class="path-continue" aria-label="Continue this learning path">
+  <div class="path-continue-head">
+    <span>Continue with <strong>{{ .Title }}</strong></span>
+    <a href="{{ .RelPermalink }}">All {{ $.total }} rooms</a>
+  </div>
+  <div class="path-continue-links">
+    {{- with $.prev }}
+    <a class="path-continue-prev" href="{{ .RelPermalink }}">
+      <span class="path-continue-label">&larr; Previous room</span>
+      <span class="path-continue-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
+    </a>
+    {{- else }}<span></span>{{ end }}
+    {{- with $.next }}
+    <a class="path-continue-next" href="{{ .RelPermalink }}">
+      <span class="path-continue-label">Next room &rarr;</span>
+      <span class="path-continue-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
+    </a>
+    {{- end }}
+  </div>
+</nav>
+{{- end }}

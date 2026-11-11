@@ -1,0 +1,73 @@
+{{- /* Post-page behaviour: open the table of contents when it is shown as a
+     sidebar, highlight the section being read, and zoom images on click.
+     No dependencies; runs after the article is in the DOM. */ -}}
+<script>
+(function () {
+  var toc = document.querySelector('.toc-rail details.toc');
+  if (toc) {
+    // As a sidebar the list must be visible; inline (small screens) it stays collapsed.
+    var wide = window.matchMedia('(min-width: 1320px)');
+    var wasOpen = toc.open;
+    var sync = function () { toc.open = wide.matches || wasOpen; };
+    sync();
+    wide.addEventListener('change', sync);
+
+    var links = {};
+    toc.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      links[decodeURIComponent(a.getAttribute('href').slice(1))] = a;
+    });
+    var headings = Array.prototype.filter.call(
+      // Older posts use several h1 headings, so match every level the contents list links to.
+      document.querySelectorAll('.post-content :is(h1, h2, h3, h4)[id]'),
+      function (h) { return links[h.id]; }
+    );
+    if (headings.length) {
+      var current = null;
+      var ticking = false;
+      // The section being read is the last heading above the top third of the viewport.
+      var update = function () {
+        ticking = false;
+        var line = window.innerHeight / 3;
+        var id = null;
+        for (var i = 0; i < headings.length; i++) {
+          if (headings[i].getBoundingClientRect().top > line) break;
+          id = headings[i].id;
+        }
+        var next = id ? links[id] : null;
+        if (next === current) return;
+        if (current) current.classList.remove('active');
+        if (next) next.classList.add('active');
+        current = next;
+      };
+      window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      update();
+    }
+  }
+
+  // Click a screenshot to view it full size; click or press Escape to close.
+  document.querySelectorAll('.post-content img').forEach(function (img) {
+    if (img.closest('a')) return;
+    img.classList.add('zoomable');
+    img.addEventListener('click', function () {
+      var overlay = document.createElement('div');
+      overlay.className = 'img-zoom';
+      overlay.setAttribute('role', 'dialog');
+      overlay.setAttribute('aria-label', img.alt || 'Image');
+      var big = document.createElement('img');
+      big.src = img.currentSrc || img.src;
+      big.alt = img.alt;
+      overlay.appendChild(big);
+      var close = function () {
+        overlay.remove();
+        document.removeEventListener('keydown', onKey);
+      };
+      var onKey = function (e) { if (e.key === 'Escape') close(); };
+      overlay.addEventListener('click', close);
+      document.addEventListener('keydown', onKey);
+      document.body.appendChild(overlay);
+    });
+  });
+})();
+</script>

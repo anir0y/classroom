@@ -1,0 +1,8 @@
+{{- /* Returns the posts of one learning path, oldest first.
+     Context: a page under content/paths/ whose `path_tag` names a tag.
+     Order is publish date, which is the order the rooms were worked through. */ -}}
+{{- $pages := slice -}}
+{{- with site.GetPage (printf "/tags/%s" (urlize .Params.path_tag)) -}}
+  {{- $pages = .RegularPages.ByDate -}}
+{{- end -}}
+{{- return $pages -}}

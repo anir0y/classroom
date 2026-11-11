@@ -1,5 +1,6 @@
 {{/* Related posts: internal-linking block to spread crawl equity to the backlog.
-     Uses Hugo's related engine (config [related]); relates on shared taxonomies. */}}
+     Uses Hugo's related engine (config [related]); relates on shared taxonomies.
+     Styles live in assets/css/extended/post.css. */}}
 {{- $related := site.RegularPages.Related . | first 3 -}}
 {{- with $related }}
 <nav class="related-posts" aria-label="Related walkthroughs">
@@ -7,21 +8,13 @@
   <div class="related-grid">
     {{- range . }}
     <a class="related-card" href="{{ .RelPermalink }}">
-      <span class="related-card-title">{{ .Title }}</span>
-      {{- with .Description }}<span class="related-card-desc">{{ . | truncate 100 }}</span>{{ end }}
+      {{- with partial "social-image.html" . }}
+      <img class="related-card-img" src="{{ . }}" alt="" loading="lazy" decoding="async">
+      {{- end }}
+      <span class="related-card-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
+      <span class="related-card-meta">{{ .ReadingTime }} min read</span>
     </a>
     {{- end }}
   </div>
 </nav>
-<style>
-.related-posts{margin:2.6rem 0 2.4rem;padding-top:1.6rem;border-top:1px solid var(--border)}
-.related-title{font-size:.95rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--secondary);margin:0 0 1rem}
-.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem}
-.related-card{display:flex;flex-direction:column;gap:.4rem;padding:.9rem 1rem;background:var(--entry);border:1px solid var(--border);border-radius:10px;text-decoration:none;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
-.related-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
-.related-card-title{font-size:.95rem;font-weight:600;line-height:1.35;color:var(--primary)}
-.related-card-desc{font-size:.8rem;line-height:1.5;color:var(--secondary);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-@media (max-width:900px){.related-grid{grid-template-columns:1fr 1fr}}
-@media (max-width:600px){.related-grid{grid-template-columns:1fr}}
-</style>
 {{- end }}

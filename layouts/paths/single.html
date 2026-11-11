@@ -1,0 +1,37 @@
+{{- /* One learning path: every room in it, numbered, oldest first. */ -}}
+{{- define "main" }}
+{{- $pages := partialCached "path-pages.html" . .Params.path_tag }}
+{{- $minutes := 0 }}
+{{- range $pages }}{{ $minutes = add $minutes .ReadingTime }}{{ end }}
+<article class="path-page">
+  <header class="page-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description">{{ . }}</div>
+    {{- end }}
+    <p class="path-page-meta">{{ len $pages }} rooms &middot; about {{ $minutes }} min of reading</p>
+  </header>
+
+  {{- with .Content }}
+  <div class="post-content md-content">{{ . }}</div>
+  {{- end }}
+
+  <ol class="path-rooms">
+    {{- range $i, $p := $pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <span class="path-rooms-num">{{ add $i 1 }}</span>
+        <span class="path-rooms-body">
+          <span class="path-rooms-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
+          {{- with .Description }}
+          <span class="path-rooms-desc">{{ . | truncate 140 }}</span>
+          {{- end }}
+        </span>
+        <span class="path-rooms-time">{{ .ReadingTime }} min</span>
+      </a>
+    </li>
+    {{- end }}
+  </ol>
+</article>
+{{- end }}

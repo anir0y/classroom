@@ -1,6 +1,11 @@
 # -- Main Menu --
 
 [[main]]
+  name = "Paths"
+  url = "/paths/"
+  weight = 5
+
+[[main]]
   name = "Posts"
   url = "/post/"
   weight = 10

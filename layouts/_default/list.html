@@ -49,6 +49,19 @@
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
+{{- /* Path index above the feed: a first-time visitor gets a place to start,
+     not only the newest post. Styles in assets/css/extended/paths.css. */}}
+<section class="home-paths" aria-label="Learning paths">
+  <div class="home-section-head">
+    <h2>Learning paths</h2>
+    <a href="{{ "paths/" | relURL }}">All paths</a>
+  </div>
+  {{- partial "path-cards.html" . }}
+  <div class="home-section-head">
+    <h2>Latest walkthroughs</h2>
+    <a href="{{ "post/" | relURL }}">All posts</a>
+  </div>
+</section>
 {{- end }}
 
 {{- $term := .Data.Term }}

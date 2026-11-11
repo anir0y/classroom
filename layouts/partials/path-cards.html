@@ -1,0 +1,16 @@
+{{- /* Grid of learning-path cards. Used on /paths/ and at the top of the home page. */ -}}
+{{- with site.GetPage "/paths" }}
+<div class="path-cards">
+  {{- range .RegularPages.ByWeight }}
+  {{- $pages := partialCached "path-pages.html" . .Params.path_tag }}
+  {{- if $pages }}
+  <a class="path-card" href="{{ .RelPermalink }}">
+    <span class="path-card-count">{{ len $pages }} rooms</span>
+    <span class="path-card-title">{{ .Title }}</span>
+    <span class="path-card-desc">{{ .Description }}</span>
+    <span class="path-card-cta">Start the path &rarr;</span>
+  </a>
+  {{- end }}
+  {{- end }}
+</div>
+{{- end }}

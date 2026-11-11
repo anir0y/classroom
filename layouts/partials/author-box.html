@@ -1,0 +1,16 @@
+{{- /* End-of-post author box. Replaces the "Follow" badge table that used to open each post. */ -}}
+<aside class="author-box" aria-label="About the author">
+  <img class="author-box-avatar" src="{{ "img/avatar.jpeg" | relURL }}" alt="" width="56" height="56" loading="lazy">
+  <div class="author-box-body">
+    <p class="author-box-name">Written by {{ site.Params.author }}</p>
+    <p class="author-box-bio">Security researcher. I write up every room and lab I work through so the reasoning is on record, not only the result.</p>
+    <p class="author-box-links">
+      {{- range site.Params.socialIcons }}
+      <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>
+        {{- if eq .name "twitter" }}Follow on X{{ else if eq .name "github" }}GitHub{{ else if eq .name "rss" }}RSS feed{{ else }}{{ .name | title }}{{ end -}}
+      </a>
+      {{- end }}
+      <a href="{{ "paths/" | relURL }}">All learning paths</a>
+    </p>
+  </div>
+</aside>

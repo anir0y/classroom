@@ -1,4 +1,6 @@
 {{- define "main" }}
+{{- $path := dict }}
+{{- if eq .Type "post" }}{{ $path = partial "path-context.html" . }}{{ end }}
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -14,13 +16,18 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
+    {{- with $path }}{{ partial "path-strip.html" . }}{{ end }}
   </header>
 
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
   {{- if (.Param "ShowToc") }}
+  {{- /* The rail is an in-flow collapsed box on small screens and a sticky
+       sidebar beside the text on wide ones (assets/css/extended/post.css). */}}
+  <div class="toc-rail">
   {{- partial "toc.html" . }}
+  </div>
   {{- end }}
 
   {{- if .Content }}
@@ -32,18 +39,25 @@
   {{- end }}
 
   <footer class="post-footer">
+    {{- if eq .Type "post" }}
+    {{- with $path }}
+    {{- partial "path-continue.html" . }}
+    {{- else }}
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- end }}
+    {{- partial "related-posts.html" . }}
+    {{- partial "author-box.html" . }}
+    {{- else if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
       {{- range ($.GetTerms $tags) }}
       <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
       {{- end }}
     </ul>
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
-    {{- if eq .Type "post" }}
-    {{- partial "related-posts.html" . }}
-    {{- end }}
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
@@ -53,4 +67,7 @@
   {{- partial "comments.html" . }}
   {{- end }}
 </article>
+{{- if eq .Type "post" }}
+{{- partial "post-enhance.html" . }}
+{{- end }}
 {{- end }}

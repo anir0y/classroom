@@ -1,0 +1,26 @@
+{{- /* Returns where a post sits in its learning path, or an empty dict.
+     Keys: path (the content/paths page), total, position (1-based), prev, next.
+     A post belongs to the first path (by weight) whose `path_tag` is among its tags. */ -}}
+{{- $post := . -}}
+{{- $result := dict -}}
+{{- $tags := slice -}}
+{{- range .Params.tags }}{{ $tags = $tags | append (lower .) }}{{ end -}}
+{{- with site.GetPage "/paths" -}}
+  {{- range .RegularPages.ByWeight -}}
+    {{- if and (not $result) (in $tags (lower .Params.path_tag)) -}}
+      {{- $pages := partialCached "path-pages.html" . .Params.path_tag -}}
+      {{- $idx := -1 -}}
+      {{- range $i, $p := $pages }}{{ if eq $p $post }}{{ $idx = $i }}{{ end }}{{ end -}}
+      {{- if ge $idx 0 -}}
+        {{- $result = dict "path" . "total" (len $pages) "position" (add $idx 1) -}}
+        {{- if gt $idx 0 -}}
+          {{- $result = merge $result (dict "prev" (index $pages (sub $idx 1))) -}}
+        {{- end -}}
+        {{- if lt (add $idx 1) (len $pages) -}}
+          {{- $result = merge $result (dict "next" (index $pages (add $idx 1))) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $result -}}
