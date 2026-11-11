@@ -49,8 +49,8 @@
         "url": "{{ .Site.BaseURL }}img/avatar.jpeg"
       }
     },
-    {{- with .Params.featureimage }}
-    "image": "{{ $.Site.BaseURL }}{{ . }}",
+    {{- with partial "social-image.html" . }}
+    "image": "{{ . }}",
     {{- else }}
     "image": "{{ $.Site.BaseURL }}img/avatar.jpeg",
     {{- end }}

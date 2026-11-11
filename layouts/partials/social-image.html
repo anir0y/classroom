@@ -1,0 +1,21 @@
+{{- /* Returns the absolute URL of a page's social preview image, or "".
+     Posts on this site set the Blowfish-era `featureimage` key, which PaperMod's
+     Open Graph and Twitter templates never read, so they shipped without og:image.
+     Resolution order: cover.image, then featureimage. */ -}}
+{{- $url := "" -}}
+{{- $image := .Params.cover.image | default .Params.featureimage -}}
+{{- with $image -}}
+  {{- if and $.Params.cover.image (eq $.Params.cover.relative true) -}}
+    {{- $url = (path.Join $.RelPermalink .) | absURL -}}
+  {{- else if (urls.Parse .).Scheme -}}
+    {{- $url = . -}}
+  {{- else -}}
+    {{- /* Covers such as img/thm.png live in assets/, so publish them the way cover.html does. */ -}}
+    {{- with (resources.ByType "image").GetMatch (printf "*%s*" .) -}}
+      {{- $url = .Permalink -}}
+    {{- else -}}
+      {{- $url = . | absURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $url -}}

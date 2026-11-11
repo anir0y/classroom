@@ -1,0 +1,17 @@
+/* In-article ad slot (layouts/partials/ads-mid.html).
+   No height is reserved up front: until an ad request is answered the slot stays
+   at zero height, so a blocked or unanswered request never leaves a blank gap. */
+.ad-container {
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* AdSense marks a slot it could not fill; drop the wrapper and its margin too. */
+.ad-container:has(ins.adsbygoogle[data-ad-status="unfilled"]) {
+  display: none;
+}
+
+ins.adsbygoogle[data-ad-status="unfilled"] {
+  display: none !important;
+}
