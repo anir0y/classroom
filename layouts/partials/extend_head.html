@@ -1,5 +1,7 @@
-{{/* Google AdSense — deferred until user interaction to reduce unused JS on initial load.
-     Loads on first scroll, click, or touch event, then removes the listener. */}}
+{{/* Google AdSense — deferred to reduce unused JS on initial load.
+     Loads on first scroll, click, or touch event, or 2.5s after window load,
+     whichever comes first. The timer matters: with interaction as the only
+     trigger, visits that never scrolled never loaded the ad library at all. */}}
 <script>
 (function() {
   var loaded = false;
@@ -18,6 +20,12 @@
   ['scroll','click','touchstart'].forEach(function(e) {
     window.addEventListener(e, loadAdsense, {capture: true, passive: true, once: true});
   });
+  function loadAfterDelay() { setTimeout(loadAdsense, 2500); }
+  if (document.readyState === 'complete') {
+    loadAfterDelay();
+  } else {
+    window.addEventListener('load', loadAfterDelay, {once: true});
+  }
 })();
 </script>
 
