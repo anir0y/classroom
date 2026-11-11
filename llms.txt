@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Plant Photographer: SSRF to RCE via Werkzeug](https://classroom.anir0y.in/post/thm-room-plantphotographer/): TryHackMe Plant Photographer walkthrough: exploiting pycurl SSRF with file:// protocol, Werkzeug debugger PIN bypass, and localhost admin access.
 - [TryHackMe Warzone 1: MirrorBlast C2 traffic analysis](https://classroom.anir0y.in/post/thm-room-warzoneone/): TryHackMe Warzone 1 walkthrough: triaging a MirrorBlast C2 alert with Brim, Suricata, tshark, VirusTotal OSINT, and MSI payload inspection.
 - [TryHackMe BreachBlocker Unlocker: timing attacks and 2FA bypass](https://classroom.anir0y.in/post/thm-room-sq4-aoc2025-32loz4zepk/): TryHackMe BreachBlocker Unlocker walkthrough: source code exposure, timing side channels, password reuse, 2FA brute force via session replay.
 - [TryHackMe Profiles: Linux memory forensics with Volatility 3](https://classroom.anir0y.in/post/thm-room-profilesroom/): TryHackMe Profiles walkthrough: Linux memory forensics with Volatility 3, recovering bash history, network sockets, page cache files and ext4 inodes from a LiME dump
