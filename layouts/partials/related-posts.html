@@ -1,7 +1,13 @@
 {{/* Related posts: internal-linking block to spread crawl equity to the backlog.
      Uses Hugo's related engine (config [related]); relates on shared taxonomies.
+     The previous and next room of the post's learning path are left out, because
+     the block above this one already links them.
      Styles live in assets/css/extended/post.css. */}}
-{{- $related := site.RegularPages.Related . | first 3 -}}
+{{- $path := partial "path-context.html" . -}}
+{{- $skip := slice -}}
+{{- with $path.prev }}{{ $skip = $skip | append . }}{{ end -}}
+{{- with $path.next }}{{ $skip = $skip | append . }}{{ end -}}
+{{- $related := site.RegularPages.Related . | complement $skip | first 3 -}}
 {{- with $related }}
 <nav class="related-posts" aria-label="Related walkthroughs">
   <h3 class="related-title">Related walkthroughs</h3>

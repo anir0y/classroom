@@ -56,7 +56,13 @@
     <h2>Learning paths</h2>
     <a href="{{ "paths/" | relURL }}">All paths</a>
   </div>
-  {{- partial "path-cards.html" . }}
+  {{- /* Shown by path-progress.html once this reader has finished a room. */}}
+  <a class="home-resume path-tint" href="{{ "paths/" | relURL }}" hidden>
+    <span class="home-resume-label"></span>
+    <span class="home-resume-title"></span>
+  </a>
+  {{- partial "path-lines.html" . }}
+  {{- partial "path-progress.html" . }}
   <div class="home-section-head">
     <h2>Latest walkthroughs</h2>
     <a href="{{ "post/" | relURL }}">All posts</a>

@@ -1,0 +1,72 @@
+{{- /* Shows this reader's own progress on the home page, /paths/ and a path page.
+     Progress is written by post-enhance.html when a room is read to the end.
+     It lives in this browser's localStorage only; nothing is sent anywhere. */ -}}
+<script>
+(function () {
+  var store = {};
+  try { store = JSON.parse(localStorage.getItem('classroom-paths') || '{}'); } catch (e) { return; }
+
+  // Home and /paths/: how many rooms of each line are read, with a marker on the line.
+  document.querySelectorAll('.path-line[data-path-key]').forEach(function (row) {
+    var entry = store[row.dataset.pathKey];
+    var total = Number(row.dataset.total);
+    var read = entry && entry.read ? Math.min(entry.read.length, total) : 0;
+    if (!read) return;
+    row.classList.add('has-progress');
+    row.style.setProperty('--read', Math.round(read * 100 / total) + '%');
+    row.querySelector('.path-line-state').textContent = read + ' of ' + total + ' read';
+  });
+
+  // Home: offer the room after the one most recently finished.
+  var resume = document.querySelector('.home-resume');
+  if (resume) {
+    var latest = null;
+    Object.keys(store).forEach(function (key) {
+      var e = store[key];
+      if (e && e.next && (!latest || e.at > latest.at)) latest = e;
+    });
+    if (latest) {
+      var row = document.querySelector('.path-line[data-path-key="' + latest.key + '"]');
+      if (row) resume.style.setProperty('--path', row.style.getPropertyValue('--path'));
+      resume.href = latest.next.url;
+      resume.querySelector('.home-resume-label').textContent =
+        'Continue ' + latest.name + ' at room ' + latest.next.num;
+      resume.querySelector('.home-resume-title').textContent = latest.next.title;
+      resume.hidden = false;
+    }
+  }
+
+  // A path page: tick the finished stops and point the button at the first unread one.
+  var page = document.querySelector('.path-page[data-path-key]');
+  if (page) {
+    var mine = store[page.dataset.pathKey];
+    var done = mine && mine.read ? mine.read : [];
+    if (!done.length) return;
+    var stops = page.querySelectorAll('.path-stops li[data-room]');
+    var firstUnread = null;
+    var count = 0;
+    stops.forEach(function (li, i) {
+      if (done.indexOf(li.dataset.room) !== -1) {
+        li.classList.add('is-read');
+        li.querySelector('.path-stop-num').setAttribute('aria-label', 'Room ' + (i + 1) + ', read');
+        count++;
+      } else if (!firstUnread) {
+        firstUnread = { li: li, num: i + 1 };
+      }
+    });
+    if (!count) return;
+    var readNote = page.querySelector('.path-page-read');
+    readNote.textContent = ', ' + count + ' read';
+    readNote.hidden = false;
+    var start = page.querySelector('.path-start');
+    if (start && firstUnread) {
+      start.href = firstUnread.li.querySelector('a').href;
+      start.querySelector('.path-start-label').textContent = 'Continue at room ' + firstUnread.num;
+      start.querySelector('.path-start-title').textContent =
+        firstUnread.li.querySelector('.path-stop-title').textContent;
+    } else if (start) {
+      start.querySelector('.path-start-label').textContent = 'You have read every room. Start again at room 1';
+    }
+  }
+})();
+</script>

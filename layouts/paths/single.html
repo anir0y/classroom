@@ -1,37 +1,49 @@
-{{- /* One learning path: every room in it, numbered, oldest first. */ -}}
+{{- /* One learning path: its rooms as numbered stops on a line, oldest first.
+     path-progress.html marks the stops this reader has finished. */ -}}
 {{- define "main" }}
 {{- $pages := partialCached "path-pages.html" . .Params.path_tag }}
 {{- $minutes := 0 }}
 {{- range $pages }}{{ $minutes = add $minutes .ReadingTime }}{{ end }}
-<article class="path-page">
+<article class="path-page path-tint"{{ with .Params.color }} style="{{ printf "--path:%s" . | safeCSS }}"{{ end }} data-path-key="{{ .File.ContentBaseName }}">
   <header class="page-header">
     {{ partial "breadcrumbs.html" . }}
-    <h1>{{ .Title }}</h1>
+    <h1><span class="line-dot" aria-hidden="true"></span>{{ .Title }}</h1>
     {{- with .Description }}
     <div class="post-description">{{ . }}</div>
     {{- end }}
-    <p class="path-page-meta">{{ len $pages }} rooms &middot; about {{ $minutes }} min of reading</p>
+    <p class="path-page-meta">
+      {{- len $pages }} rooms, about {{ if ge $minutes 90 }}{{ div (add $minutes 30) 60 }} hours{{ else }}{{ $minutes }} minutes{{ end }} of reading
+      {{- /* Filled in from this browser's saved progress. */ -}}
+      <span class="path-page-read" hidden></span>
+    </p>
+    {{- with index $pages 0 }}
+    <a class="path-start" href="{{ .RelPermalink }}">
+      <span class="path-start-label">Start at room 1</span>
+      <span class="path-start-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
+    </a>
+    {{- end }}
   </header>
 
   {{- with .Content }}
   <div class="post-content md-content">{{ . }}</div>
   {{- end }}
 
-  <ol class="path-rooms">
+  <ol class="path-stops">
     {{- range $i, $p := $pages }}
-    <li>
+    <li data-room="{{ .RelPermalink }}">
       <a href="{{ .RelPermalink }}">
-        <span class="path-rooms-num">{{ add $i 1 }}</span>
-        <span class="path-rooms-body">
-          <span class="path-rooms-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
+        <span class="path-stop-num">{{ add $i 1 }}</span>
+        <span class="path-stop-body">
+          <span class="path-stop-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
           {{- with .Description }}
-          <span class="path-rooms-desc">{{ . | truncate 140 }}</span>
+          <span class="path-stop-desc">{{ . | truncate 130 }}</span>
           {{- end }}
         </span>
-        <span class="path-rooms-time">{{ .ReadingTime }} min</span>
+        <span class="path-stop-time">{{ .ReadingTime }} min</span>
       </a>
     </li>
     {{- end }}
   </ol>
 </article>
+{{ partial "path-progress.html" . }}
 {{- end }}

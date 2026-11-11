@@ -2,37 +2,72 @@
    end-of-post blocks, image zoom. Uses PaperMod's theme variables only,
    so light and dark themes follow automatically. */
 
-/* ---------- Learning-path strip under the post meta ---------- */
+/* ---------- Learning-path strip under the post meta ----------
+   --line is the path's colour (set up in paths.css). */
 .path-strip{
   display:flex;
   align-items:center;
   flex-wrap:wrap;
-  gap:.4rem .9rem;
-  margin-top:1rem;
-  padding:.6rem .9rem;
-  font-size:.85rem;
-  background:var(--entry);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
+  gap:.4rem 1rem;
+  margin-top:1.1rem;
+  font-size:.9rem;
 }
-.path-strip-name{font-weight:700;color:var(--primary);text-decoration:none}
+.path-strip-name{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--primary);text-decoration:none}
 .path-strip-name:hover{text-decoration:underline}
 .path-strip-pos{color:var(--secondary)}
-.path-strip-bar{
-  flex:1 1 80px;
+/* The line, coloured up to this room, with a stop marker where the reader is. */
+.path-strip-track{
+  flex:1 1 90px;
+  min-width:70px;
   height:4px;
-  min-width:60px;
-  background:var(--tertiary);
+  background:color-mix(in srgb, var(--line) 22%, transparent);
   border-radius:999px;
-  overflow:hidden;
 }
-.path-strip-bar > span{display:block;height:100%;background:var(--primary);border-radius:999px}
-.path-strip-next{font-weight:600;color:var(--primary);text-decoration:none;white-space:nowrap}
-.path-strip-next:hover{text-decoration:underline}
+.path-strip-track > span{
+  position:relative;
+  display:block;
+  height:100%;
+  min-width:6px;
+  background:var(--line);
+  border-radius:999px;
+}
+.path-strip-track > span::after{
+  content:"";
+  position:absolute;
+  right:-6px;
+  top:50%;
+  width:12px;
+  height:12px;
+  margin-top:-6px;
+  background:var(--theme);
+  border:3px solid var(--line);
+  border-radius:50%;
+  box-sizing:border-box;
+}
+.path-strip-next{
+  padding:.3rem .8rem;
+  font-weight:600;
+  color:var(--on-fill);
+  background:var(--fill);
+  border-radius:999px;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.path-strip-next:hover{filter:brightness(1.1)}
+
+/* ---------- Reading progress: thin bar pinned to the top of the window ---------- */
+.read-bar{position:fixed;inset:0 0 auto 0;z-index:900;height:3px;pointer-events:none}
+.read-bar > span{
+  display:block;
+  height:100%;
+  background:var(--line, var(--primary));
+  transform:scaleX(0);
+  transform-origin:left;
+}
 
 /* ---------- Table of contents: sticky sidebar on wide screens ---------- */
 .toc-rail .toc{margin-bottom:var(--content-gap)}
-.toc-rail .toc a.active{color:var(--primary);font-weight:600}
+.toc-rail .toc a.active{color:var(--line);font-weight:600}
 
 @media (min-width:1320px){
   .post-single{position:relative}
@@ -50,25 +85,32 @@
     max-height:calc(100vh - 3rem);
     overflow-y:auto;
     margin:0;
-    font-size:.85rem;
+    font-size:.86rem;
     /* !important: the theme sets the box background per colour scheme with higher specificity. */
     background:none !important;
     border:0;
-    border-left:1px solid var(--border);
     border-radius:0;
   }
   .toc-rail .toc summary{cursor:default;pointer-events:none;list-style:none}
   .toc-rail .toc summary::-webkit-details-marker{display:none}
-  .toc-rail .toc summary .title{
-    font-size:.72rem;
-    letter-spacing:.06em;
-    text-transform:uppercase;
+  .toc-rail .toc summary .title{font-size:.86rem;font-weight:700;color:var(--primary)}
+  .toc-rail .toc .inner{margin:.5rem 0 0;padding:0;border-left:1px solid var(--border)}
+  .toc-rail .toc ul{list-style:none;margin:0;padding:0}
+  .toc-rail .toc li{margin:0;padding:0}
+  /* Each link carries its own slice of the rule, so the current section can light it up. */
+  .toc-rail .toc a{
+    display:block;
+    margin-left:-1px;
+    padding:.26rem 0 .26rem .9rem;
+    line-height:1.4;
     color:var(--secondary);
+    text-decoration:none;
+    border-left:2px solid transparent;
   }
-  .toc-rail .toc .inner{margin:0 0 0 1rem;padding:.4rem 0 .6rem}
-  .toc-rail .toc li{margin:0;padding:.18rem 0;line-height:1.4}
-  .toc-rail .toc a{color:var(--secondary);text-decoration:none}
+  .toc-rail .toc ul ul a{padding-left:1.7rem}
+  .toc-rail .toc ul ul ul a{padding-left:2.5rem}
   .toc-rail .toc a:hover{color:var(--primary)}
+  .toc-rail .toc a.active{border-left-color:var(--line)}
 }
 
 /* ---------- Legacy "Follow" badge table that opens older posts ----------
@@ -98,56 +140,37 @@
 
 /* ---------- End of post: continue the path ---------- */
 .post-footer{margin-top:2.5rem}
-.path-continue{
-  margin-bottom:2rem;
-  padding:1rem 1.1rem 1.1rem;
-  background:var(--entry);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-}
-.path-continue-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:baseline;
-  flex-wrap:wrap;
-  gap:.3rem 1rem;
-  margin-bottom:.8rem;
-  font-size:.9rem;
-  color:var(--secondary);
-}
-.path-continue-head strong{color:var(--primary)}
-.path-continue-head a{font-weight:600;color:var(--primary)}
-.path-continue-links{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
-.path-continue-links a{
+.path-continue{margin-bottom:2.2rem}
+/* The next room is the one action offered here, so it carries the path colour. */
+.path-next{
   display:flex;
   flex-direction:column;
-  gap:.25rem;
-  padding:.8rem .9rem;
-  background:var(--theme);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
+  gap:.3rem;
+  padding:1.2rem 1.4rem 1.3rem;
+  color:var(--on-fill);
+  background:var(--fill);
+  border-radius:calc(var(--radius) + 4px);
   text-decoration:none;
-  transition:border-color .15s ease;
 }
-.path-continue-links a:hover{border-color:var(--primary)}
-.path-continue-next{text-align:right}
-/* The next room is the action we want, so it gets the stronger treatment. */
-.path-continue-links a.path-continue-next{background:var(--primary);border-color:var(--primary)}
-.path-continue-next .path-continue-label,
-.path-continue-next .path-continue-title{color:var(--theme)}
-.path-continue-label{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--secondary)}
-.path-continue-title{font-size:.98rem;font-weight:600;line-height:1.35;color:var(--primary)}
+.path-next:hover{filter:brightness(1.08)}
+.path-next-label{font-size:.85rem;font-weight:600;opacity:.85}
+.path-next-title{font-size:1.4rem;font-weight:700;line-height:1.25;text-wrap:balance}
+.path-next-meta{font-size:.82rem;opacity:.85}
+.path-continue-foot{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:.3rem 1.5rem;
+  margin:.7rem .2rem 0;
+  font-size:.86rem;
+}
+.path-continue-foot a{color:var(--secondary);text-decoration:underline;text-underline-offset:.2rem}
+.path-continue-foot a:hover{color:var(--primary)}
+.path-continue-foot a:last-child{margin-left:auto}
 
 /* ---------- End of post: related walkthroughs ---------- */
 .related-posts{margin:0 0 2rem}
-.related-title{
-  margin:0 0 .9rem;
-  font-size:.8rem;
-  font-weight:700;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  color:var(--secondary);
-}
+.related-title{margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary)}
 .related-grid{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:.9rem}
 .related-card{
   display:flex;
@@ -199,6 +222,10 @@
 .author-box-links{display:flex;flex-wrap:wrap;gap:.3rem 1rem;margin-top:.5rem !important;font-size:.85rem}
 .author-box-links a{font-weight:600;color:var(--primary);text-decoration:underline;text-underline-offset:.2rem}
 
+/* Keyboard focus in the path colour. */
+.path-next:focus-visible,
+.path-strip a:focus-visible{outline:2px solid var(--line);outline-offset:3px}
+
 /* ---------- Small screens ---------- */
 @media (max-width:600px){
   /* The title took most of the first screen at 40px. */
@@ -209,8 +236,8 @@
   .related-card-img{width:112px;flex:none}
   .related-card-title{padding:.6rem .8rem 0}
   .related-card-meta{display:none}
-  .path-continue-links{grid-template-columns:1fr}
-  .path-continue-next{text-align:left;order:-1}
+  .path-next-title{font-size:1.2rem}
+  .path-strip-track{order:3;flex-basis:100%}
   /* Seven menu items do not fit; these two stay reachable from the footer and Posts. */
   #menu li:has(a[href$="/categories/"]),
   #menu li:has(a[href$="/archives/"]){display:none}

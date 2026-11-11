@@ -1,7 +1,9 @@
 {{- define "main" }}
 {{- $path := dict }}
 {{- if eq .Type "post" }}{{ $path = partial "path-context.html" . }}{{ end }}
-<article class="post-single">
+{{- /* --path is the colour of the post's learning path; posts outside a path fall back to the text colour. */}}
+<article class="post-single path-tint"
+  {{- with $path }}{{ with .path.Params.color }} style="{{ printf "--path:%s" . | safeCSS }}"{{ end }} data-path-key="{{ .path.File.ContentBaseName }}" data-path-name="{{ .path.Title }}" data-room="{{ $.RelPermalink }}"{{ end }}>
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>

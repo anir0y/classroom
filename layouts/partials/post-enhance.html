@@ -1,9 +1,23 @@
-{{- /* Post-page behaviour: open the table of contents when it is shown as a
-     sidebar, highlight the section being read, and zoom images on click.
+{{- /* Post-page behaviour: reading-progress bar, table of contents (open as a
+     sidebar, highlight the section being read), remembering finished rooms of a
+     learning path, and zooming images on click.
      No dependencies; runs after the article is in the DOM. */ -}}
+<div class="read-bar" aria-hidden="true"><span></span></div>
 <script>
 (function () {
+  var article = document.querySelector('.post-single');
+  var content = document.querySelector('.post-content');
+  var bar = document.querySelector('.read-bar');
+  // Colour the bar with the post's learning-path colour.
+  if (bar && article && article.style.getPropertyValue('--path')) {
+    bar.style.setProperty('--path', article.style.getPropertyValue('--path'));
+    bar.classList.add('path-tint');
+  }
+  var barFill = bar ? bar.firstElementChild : null;
+
   var toc = document.querySelector('.toc-rail details.toc');
+  var links = {};
+  var headings = [];
   if (toc) {
     // As a sidebar the list must be visible; inline (small screens) it stays collapsed.
     var wide = window.matchMedia('(min-width: 1320px)');
@@ -12,38 +26,74 @@
     sync();
     wide.addEventListener('change', sync);
 
-    var links = {};
     toc.querySelectorAll('a[href^="#"]').forEach(function (a) {
       links[decodeURIComponent(a.getAttribute('href').slice(1))] = a;
     });
-    var headings = Array.prototype.filter.call(
+    headings = Array.prototype.filter.call(
       // Older posts use several h1 headings, so match every level the contents list links to.
       document.querySelectorAll('.post-content :is(h1, h2, h3, h4)[id]'),
       function (h) { return links[h.id]; }
     );
+  }
+
+  var current = null;
+  var ticking = false;
+  var update = function () {
+    ticking = false;
+    if (barFill && content) {
+      // 0 when the text starts at the top of the window, 1 when its end reaches the bottom.
+      var box = content.getBoundingClientRect();
+      var span = box.height - window.innerHeight;
+      var done = span > 0 ? Math.min(1, Math.max(0, -box.top / span)) : 1;
+      barFill.style.transform = 'scaleX(' + done + ')';
+    }
     if (headings.length) {
-      var current = null;
-      var ticking = false;
       // The section being read is the last heading above the top third of the viewport.
-      var update = function () {
-        ticking = false;
-        var line = window.innerHeight / 3;
-        var id = null;
-        for (var i = 0; i < headings.length; i++) {
-          if (headings[i].getBoundingClientRect().top > line) break;
-          id = headings[i].id;
-        }
-        var next = id ? links[id] : null;
-        if (next === current) return;
+      var line = window.innerHeight / 3;
+      var id = null;
+      for (var i = 0; i < headings.length; i++) {
+        if (headings[i].getBoundingClientRect().top > line) break;
+        id = headings[i].id;
+      }
+      var next = id ? links[id] : null;
+      if (next !== current) {
         if (current) current.classList.remove('active');
         if (next) next.classList.add('active');
         current = next;
-      };
-      window.addEventListener('scroll', function () {
-        if (!ticking) { ticking = true; requestAnimationFrame(update); }
-      }, { passive: true });
-      update();
+      }
     }
+  };
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+
+  // Remember a finished room so the path page and home page can show progress.
+  // Stored in this browser only (localStorage); nothing is sent anywhere.
+  var footer = document.querySelector('.post-footer');
+  if (article && article.dataset.pathKey && footer && 'IntersectionObserver' in window) {
+    var seen = new IntersectionObserver(function (entries) {
+      if (!entries.some(function (e) { return e.isIntersecting; })) return;
+      seen.disconnect();
+      try {
+        var store = JSON.parse(localStorage.getItem('classroom-paths') || '{}');
+        var key = article.dataset.pathKey;
+        var entry = store[key] || { read: [] };
+        if (entry.read.indexOf(article.dataset.room) === -1) entry.read.push(article.dataset.room);
+        entry.key = key;
+        entry.name = article.dataset.pathName;
+        entry.at = Date.now();
+        var nextLink = document.querySelector('.path-next[data-room-num]');
+        entry.next = nextLink ? {
+          url: nextLink.getAttribute('href'),
+          num: nextLink.dataset.roomNum,
+          title: nextLink.querySelector('.path-next-title').textContent
+        } : null;
+        store[key] = entry;
+        localStorage.setItem('classroom-paths', JSON.stringify(store));
+      } catch (e) { /* storage blocked or full: progress is a nicety, skip it */ }
+    });
+    seen.observe(footer);
   }
 
   // Click a screenshot to view it full size; click or press Escape to close.

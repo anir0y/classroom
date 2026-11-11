@@ -1,0 +1,27 @@
+{{- /* The learning paths drawn as route lines: one row per path, line length
+     proportional to its number of rooms. Used on /paths/ and on the home page.
+     path-progress.html fills in how far this reader has got. */ -}}
+{{- with site.GetPage "/paths" }}
+{{- $max := 1 }}
+{{- range .RegularPages }}
+  {{- $n := len (partialCached "path-pages.html" . .Params.path_tag) }}
+  {{- if gt $n $max }}{{ $max = $n }}{{ end }}
+{{- end }}
+<ul class="path-lines">
+  {{- range .RegularPages.ByWeight }}
+  {{- $pages := partialCached "path-pages.html" . .Params.path_tag }}
+  {{- if $pages }}
+  {{- $style := printf "--share:%d%%" (div (mul (len $pages) 100) $max) }}
+  {{- with .Params.color }}{{ $style = printf "--path:%s;%s" . $style }}{{ end }}
+  <li>
+    <a class="path-line path-tint" href="{{ .RelPermalink }}" style="{{ $style | safeCSS }}" data-path-key="{{ .File.ContentBaseName }}" data-total="{{ len $pages }}">
+      <span class="path-line-name"><span class="line-dot" aria-hidden="true"></span>{{ .Title }}</span>
+      <span class="path-line-desc">{{ .Description }}</span>
+      <span class="path-line-track" aria-hidden="true"><span></span></span>
+      <span class="path-line-state">{{ len $pages }} rooms</span>
+    </a>
+  </li>
+  {{- end }}
+  {{- end }}
+</ul>
+{{- end }}
