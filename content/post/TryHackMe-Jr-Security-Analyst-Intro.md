@@ -21,11 +21,7 @@ description: "TryHackMe Jr Security Analyst Intro walkthrough — introduction t
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Jr Security Analyst Intro|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/9caa407b3413a4cee19f1365acaa0195.png)|
-| <b> Jr Security Analyst Intro [FREE ROOM] </b>| [Jr Security Analyst Intro](https://tryhackme.com/room/jrsecanalystintrouxo)|
+Room: [Jr Security Analyst Intro](https://tryhackme.com/room/jrsecanalystintrouxo) on TryHackMe.
 
 ## A career as a Junior (Associate) Security Analyst 
 

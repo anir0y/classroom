@@ -19,10 +19,6 @@ description: "TryHackMe Room Malstrings walkthrough with step-by-step solutions,
 ---
 # MAL: Strings
 
-|Profile|
-|:-----|
-|<script src="https://tryhackme.com/badge/434937"></script>|
-
 ---
 
 ## Task 01: What are "strings"?

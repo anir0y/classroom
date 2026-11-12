@@ -20,11 +20,7 @@ description: "TryHackMe Mobile Malware Analysis walkthrough — analyze malware 
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Mobile Malware Analysis|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/1a8af49f6135843b36f1378812034155.png)|
-| <b> Room [FREE ROOM] </b>| [Mobile Malware Analysis](https://tryhackme.com/room/mma)|
+Room: [Mobile Malware Analysis](https://tryhackme.com/room/mma) on TryHackMe.
 
 ## task 01: Introduction
 

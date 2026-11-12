@@ -22,11 +22,6 @@ description: "TryHackMe Healthgpt walkthrough — A safety-compliant AI assistan
 ## OverView
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Healthgpt |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/645b19f5d5848d004ab9c9e2-1763995774132)|
-
-
 
 ## Task 01:
 

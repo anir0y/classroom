@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Padding Oracles walkthrough: PKCS7 padding, AES-CBC encryption and decryption, padding oracle attack theory, and PadBuster automation."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Padding Oracles |![Padding Oracles room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1734329183684)|
-
 This medium-difficulty room in the Cryptographic Failures module of the Web Application Red Teaming path teaches how AES-CBC padding oracles work and how to exploit them. Tasks 2 and 3 cover PKCS7 padding mechanics and CBC mode's XOR chaining. Task 4 walks through CBC decryption with the formula Pi = Dk(Ci) XOR Ci-1. Task 5 explains the padding oracle attack: modifying the IV byte by byte until the server reports valid padding, then recovering the intermediate decryption value and XORing it with a known IV to extract plaintext. Task 6 automates the attack with PadBuster. This room follows [Attacking ECB Oracles](/post/thm-room-attackingecboracles/) in the same module, and its predecessor [Breaking Crypto the Simple Way](/post/thm-room-breakingcryptothesimpleway/) introduced AES-CBC bit-flipping.
 
 ## Task 1: Introduction

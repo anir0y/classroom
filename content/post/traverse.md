@@ -24,11 +24,6 @@ Challenge your secure coding skills to restore a compromised website.
 ## OverView
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Traverse |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/d2c1e819d8409b3bee8e15c688a3f088.png)|
-
-
 
 ## Task 01: Introduction
 

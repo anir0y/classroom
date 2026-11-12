@@ -24,10 +24,6 @@ Learn how SIEM solutions can be used to detect and analyse malicious behaviour.
 
 ## OverView
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Log Analysis With SIEM |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/674d9727a22822c1eb46cb31-1755722165142)|
-
 
 # Task 01: Introduction 
 

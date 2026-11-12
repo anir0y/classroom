@@ -19,11 +19,7 @@ description: "TryHackMe Net Sec Challenge walkthrough — step-by-step enumerati
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Net Sec Challenge|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/5a1f33f79fce3569a2bc247468713c93.png)|
-| <b> Net Sec Challenge [Subscription Required] </b>| [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge)|
+Room: [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) on TryHackMe.
 
 ---
 

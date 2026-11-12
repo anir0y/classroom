@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Data Integrity and Model Poisoning walkthrough covering OWASP LLM03 supply chain attacks, model poisoning via training data, and mitigation measures."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Data Integrity & Model Poisoning |![Data Integrity and Model Poisoning room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1759310564695)|
-
 This room is part of the **Attacking LLMs** module within the Web Application Red Teaming path. It follows the [LLM Output Handling](../thm-room-outputhandlingandprivacyrisks/) room and covers two related threats: **Supply Chain Attacks (LLM03)** and **Model Poisoning** from the OWASP Top 10 for LLM Applications. The room pairs theory with a hands-on lab where you poison a live model and observe its corrupted output.
 
 ## Task 1: Introduction

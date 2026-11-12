@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe HTTP/2 Request Smuggling walkthrough: H2.CL desync, CVE-2019-19330 CRLF injection via literal HPACK encoding, web cache poisoning, and h2c smuggling."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|HTTP/2 Request Smuggling |![HTTP/2 Request Smuggling room icon](https://cdn-images.tryhackme.com/room-icons/0e5ada0b18268959026e492c74b9f9b0.svg)|
-
 This medium-difficulty room covers HTTP request smuggling in HTTP/2 environments: how HTTP/2 downgrading reintroduces desync conditions, how CVE-2019-19330 enables CRLF injection through literal HPACK encoding in HAProxy, and how h2c upgrades bypass proxy restrictions entirely. It builds on the [HTTP/1.1 Request Smuggling walkthrough](/post/thm-room-httprequestsmuggling/) and completes the smuggling track before the WebSockets smuggling room.
 
 ## Task 1: Introduction

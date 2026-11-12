@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Custom Tooling Using Python walkthrough: brute-force login, vulnerability scanning, RCE exploit, and task automation with Python requests."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Custom Tooling Using Python |![Custom Tooling Using Python room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1743656880330)|
-
 This easy-difficulty room in the Custom Tooling module of the Web Application Red Teaming path walks through building four categories of Python tooling against a deliberately vulnerable PHP application: a brute-force login script, a vulnerability scanner, a command injection exploit, and a multi-stage task automation script combining authentication with post-exploitation. The room sits alongside [CAPTCHApocalypse](/post/thm-room-captchapocalypse/) in the same module, and the next room in the path is Custom Tooling using Burp.
 
 ## Task 1: Introduction

@@ -19,9 +19,7 @@ description: "TryHackMe writeup | Osquery The Basics walkthrough — learn endpo
 ## OverView
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Osquery The Basics solved[**Subscriber only**](https://tryhackme.com/room/osqueryf8) |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/2d1116d536a64d634647d6efa1f2acf0.png)|
+Room: [**Subscriber only**](https://tryhackme.com/room/osqueryf8) on TryHackMe.
 
 
 

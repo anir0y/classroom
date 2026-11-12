@@ -27,10 +27,6 @@ draft: false
 description: "TryHackMe Farewell walkthrough: bypass WAF rate-limiting with X-Forwarded-For to brute-force credentials, stored XSS with string concat to steal admin cookie."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Farewell |![Farewell room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1762953208527)|
-
 This medium-difficulty room is the final challenge in the Bypassing WAF module of the Web Application Red Teaming path. It combines two WAF bypass techniques into one attack chain: rate-limit evasion for brute-forcing a user password, and string concatenation to bypass keyword filters for a stored XSS cookie steal. The room follows [Padelify](/post/thm-room-padelify/) in the module.
 
 ## Task 1: Farewell

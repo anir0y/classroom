@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Bricks Heist walkthrough: exploiting CVE-2024-25600 in WordPress Bricks Builder for RCE, tracing a disguised cryptominer and its LockBit-linked wallet."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|TryHack3M: Bricks Heist |![TryHack3M: Bricks Heist room icon](https://cdn-images.tryhackme.com/room-icons/0a46e92e8a9255f7dde294569e05dae1.png)|
-
 This easy challenge from the TryHack3M series drops you onto a compromised WordPress server running Bricks Builder 1.9.5. Your job is to exploit CVE-2024-25600 (unauthenticated RCE), identify the cryptominer hiding as a NetworkManager component, decode its triple-encoded wallet address, and attribute the wallet to a known threat group.
 
 ## Task 1: Challenge

@@ -21,11 +21,7 @@ description: "TryHackMe Relevant walkthrough with step-by-step solutions — enu
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Relevant|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/10524728b2b462e8d164efe4e67ed087.jpeg)|
-| <b> Room [Subscription Required] </b>| [Relevant](https://tryhackme.com/room/relevant)|
+Room: [Relevant](https://tryhackme.com/room/relevant) on TryHackMe.
 
 ## task 01: Pre-Engagement Briefing
 

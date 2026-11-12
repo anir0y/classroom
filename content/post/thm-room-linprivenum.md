@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Linux Privilege Escalation Enumeration walkthrough: manual OS, user, network and file enumeration on Ubuntu 24.04, answers explained."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Linux Privilege Escalation: Enumeration |![Linux Privilege Escalation: Enumeration room icon](https://cdn-images.tryhackme.com/room-icons/6989b1062386d3517f652edd-1772788398210)|
-
 Linux Privilege Escalation: Enumeration is the first stop in TryHackMe's Privilege Escalation
 module on the Jr Penetration Tester path. There is no exploitation here, no flag chase across
 services. It is a single Ubuntu 24.04 box and thirteen questions that force you through the same

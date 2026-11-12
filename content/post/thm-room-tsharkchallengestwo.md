@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe TShark Challenge II walkthrough: DNS query investigation, HTTP object export, SHA256 hash lookup on VirusTotal for PEiD and sandbox classification."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|TShark Challenge II: Directory |![TShark Challenge II: Directory room icon](https://cdn-images.tryhackme.com/room-icons/6131132af49360005df01ae3-1717742122282)|
-
 This easy challenge is the second in the TShark Challenges series, following [TShark Challenge I](/post/thm-room-tsharkchallengesone/). It hands you a PCAP file from a user who stumbled onto a suspicious file directory listing online. Your job is to trace the DNS queries, identify the malicious domain, inspect the HTTP traffic, export the downloaded executable, and run it through VirusTotal for final classification.
 
 ## Task 1: Introduction

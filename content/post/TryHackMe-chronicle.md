@@ -20,11 +20,7 @@ description: "TryHackMe Chronicle walkthrough with step-by-step solutions — en
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Chronicle|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/333346fd705f9b7faadeff8e10862d0a.jpeg)|
-| <b> Room [Subscription Required] </b>| [Chronicle](https://tryhackme.com/room/chronicle)|
+Room: [Chronicle](https://tryhackme.com/room/chronicle) on TryHackMe.
 
 ## Recon
 

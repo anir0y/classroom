@@ -23,11 +23,7 @@ description: "TryHackMe Vulnerabilities 101 walkthrough — step-by-step enumera
 
 Understand the flaws of an application and apply your researching skills on some vulnerability databases.
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Vulnerabilities 101|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/d30e917f1945d3e25592ee34805bb900.png)|
-| <b> Vulnerabilities 101 [FREE ROOM] </b>| [Vulnerabilities 101](https://tryhackme.com/room/vulnerabilities101)|
+Room: [Vulnerabilities 101](https://tryhackme.com/room/vulnerabilities101) on TryHackMe.
 
 ## Task 01: Introduction
 

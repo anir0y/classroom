@@ -25,10 +25,6 @@ draft: false
 description: "Walkthrough of TryHackMe XXE Injection: in-band XML External Entity file read, SSRF port scanning through the parser, and out-of-band DTD exfiltration."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|XXE Injection |![XXE Injection room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1718412174374)|
-
 XXE Injection sits in the Injection Attacks module of the Web Application Pentesting path, one room over from the SQL and NoSQL work. If you have been through [NoSQL Injection](/post/thm-room-nosqlinjectiontutorial/) and [Advanced SQL Injection](/post/thm-room-advancedsqlinjection/), the shape is familiar: untrusted input reaches a parser that does more than you want. Here the parser is an XML parser, and the extra power is the external entity, which turns a contact form into a file-read, a port scanner, and an exfiltration channel.
 
 The target is a file-sharing app called EasyShare. It was reachable directly over the TryHackMe VPN, so I solved the room with `curl` from my own machine, no AttackBox and no Burp. The lab IP was `10.49.172.204` for my session; substitute your own.

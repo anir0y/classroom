@@ -21,11 +21,7 @@ description: "TryHackMe Road walkthrough with step-by-step solutions — enumera
 
 Inspired by a real-world pentesting engagement
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Road|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/86d73ce54a3f392bd56336da012a8270.png)|
-| <b> Road [FREE ROOM] </b>| [Road](https://tryhackme.com/room/road)|
+Room: [Road](https://tryhackme.com/room/road) on TryHackMe.
 
 ## As usual, obtain the user and root flag
 

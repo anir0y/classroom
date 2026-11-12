@@ -20,11 +20,7 @@ description: "TryHackMe Linux Strength Training walkthrough — Guided room for 
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Linux Strength Training|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/b4f28a92c7d33f8460d896653cf5d428.png)|
-| <b> Room [Subscription Required] </b>| [Linux Strength Training](https://tryhackme.com/room/linuxstrengthtraining)|
+Room: [Linux Strength Training](https://tryhackme.com/room/linuxstrengthtraining) on TryHackMe.
 
 ## Task 01:  Intro
 

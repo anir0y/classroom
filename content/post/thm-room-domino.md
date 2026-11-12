@@ -26,10 +26,6 @@ draft: false
 description: "Walkthrough of TryHackMe Domino: weak creds, IDOR, forged session cookie and JWT, an RFI eval sink for RCE, SSH credential reuse, and a cron root privesc."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Domino |![Domino room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1779111847303)|
-
 Domino is a medium challenge in the Jr Pentester Challenges module, the capstone of the Jr Penetration Tester path where the guided walkthroughs stop and you chain bugs yourself. It is the same muscle the earlier [Guided Pentest Web](/post/thm-room-guidedpentestweb/) room drilled, four bugs into a shell, and the same file-read-feeds-SQLi pattern from [Recruit](/post/thm-room-recruitwebchallenge/). The target is the NexusCorp Employee Portal, and the name is the whole hint: each small weakness knocks over the next, from an unprivileged login all the way to root.
 
 This is a single "Challenge" task with five flags. The box was reachable directly from my Mac over the TryHackMe VPN (`utun13`), so most of the work is curl and ssh with one detour through the AttackBox for the remote-file-inclusion callback. Every flag below was verified correct by the TryHackMe answer checker.

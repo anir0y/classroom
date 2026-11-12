@@ -22,11 +22,6 @@ description: "TryHackMe ItsyBitsy walkthrough with step-by-step solutions — en
 # OverView
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|ItsyBitsy |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/be84f26c22e5a051fc003dba5ed3dcd4.png)|
-
-
 
 ## Task 01: Introduction
 

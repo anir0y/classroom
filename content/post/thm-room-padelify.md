@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Padelify walkthrough: blind XSS with base64 WAF bypass to steal moderator cookie, URL-encoded LFI to read admin credentials from app.conf."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Padelify |![Padelify room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1763562372000)|
-
 This medium-difficulty room in the Bypassing WAF module of the Web Application Red Teaming path combines two classic WAF bypass techniques into one attack chain: blind XSS with payload obfuscation for the moderator flag, and URL-encoded LFI for the admin flag. The room follows [WAF: Exploitation Techniques](/post/thm-room-wafexploitationtechniques/) in the module and precedes [Farewell](/post/thm-room-farewell/).
 
 ## Task 1: Padelify

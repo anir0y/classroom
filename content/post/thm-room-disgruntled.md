@@ -25,10 +25,6 @@ draft: false
 description: "Walkthrough of TryHackMe Disgruntled: a Linux forensics case tracing an insider through auth.log sudo history, bash history, and a cron logic bomb."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Disgruntled |![Disgruntled room icon](https://cdn-images.tryhackme.com/room-icons/03de138b8dfa8f5b003298c17b73fbd8.png)|
-
 Disgruntled is a Linux forensics room built on top of the techniques from the Linux Forensics room, and it reads like a real incident ticket rather than a CTF. An IT employee at a client called CyberT was arrested for running a phishing side gig, and the client wants to know whether that person left anything nasty behind on the machine they last worked on. The whole room is a log-reading exercise: no exploit, no privilege escalation, just reconstructing what happened from the artifacts a Linux box keeps by default. It is the same timeline-rebuilding muscle the [Conti](/post/thm-room-conti/) ransomware investigation and [After Hours](/post/thm-room-after-hours/) persistence hunt drill, only here the evidence lives in `auth.log`, a shell history file, and `/etc/crontab`.
 
 The room hands you root over SSH straight away (`root` / `password` against the machine IP), so there is no access to win. The box was reachable directly from my Mac over the TryHackMe VPN (`utun13`), so the whole solve is a single SSH session with `grep`, `cat`, and `stat`. Every answer below was confirmed by the TryHackMe checker.

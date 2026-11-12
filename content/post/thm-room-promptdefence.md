@@ -23,10 +23,6 @@ draft: false
 description: "TryHackMe Prompt Defence walkthrough covering system prompt hardening, guardrails, deployment least privilege, and guardrail bypass."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Prompt Defence |![Prompt Defence room icon](https://cdn-images.tryhackme.com/room-icons/6228f0d4ca8e57005149c3e3-1775757172892)|
-
 This is the third room in the **AI Security > Prompt Security** path, following [Prompt Injection](/post/thm-room-promptinjection/) and [Jailbreaking](/post/thm-room-jailbreaking/). Where those rooms taught you to attack, this one teaches you to defend: system prompt hardening, input and output guardrails, deployment controls, and monitoring. The room ends with a hands-on challenge that puts all the defensive layers to the test.
 
 ## Task 1: Introduction

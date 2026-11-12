@@ -23,12 +23,6 @@ description: "A deep dive into Meterpreter and how in-memory payloads enable pos
 
 Take a deep dive into Meterpreter, and see how in-memory payloads can be used for post-exploitation.
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Metasploit: Meterpreter|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/7774a96fb05b63b3abfed628f267f2a9.png)|
-| <b> Metasploit: Meterpreter [Subscription Required] </b>| [Metasploit: Meterpreter]()|
-
 ## Task 01: Introduction to Meterpreter
 
 Meterpreter is a Metasploit payload that supports the penetration testing process with many valuable components. Meterpreter will run on the target system and act as an agent within a command and control architecture. You will interact with the target operating system and files and use Meterpreter's specialized commands.

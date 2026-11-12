@@ -26,10 +26,6 @@ draft: false
 description: "Walkthrough of TryHackMe Insecure Deserialisation: PHP cookie property tampering, object injection via __wakeup to a reverse shell, and PHPGGC gadget chains."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Insecure Deserialisation |![Insecure Deserialisation room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1718463423804)|
-
 Insecure Deserialisation sits in the Advanced Server-Side Attacks module of the Web Application Pentesting path. Serialisation turns an object into a byte stream or string so it can be stored or sent, and deserialisation rebuilds it. The vulnerability is what happens when an application rebuilds an object from data an attacker controls: at best you flip a property, at worst the rebuild itself runs code. This room walks both ends of that range in PHP, and it pairs well with the template work in [Server-side Template Injection](/post/thm-room-serversidetemplateinjection/), where untrusted input also reaches a server-side interpreter.
 
 The target hosts several small PHP apps plus a Python notes app, all reachable directly over the TryHackMe VPN, so every command below is a plain `curl` from my own machine. The lab IP was `10.48.155.159`; substitute your own.

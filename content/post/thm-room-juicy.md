@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Juicy walkthrough covering prompt injection, system prompt leakage, and XSS through unsanitised LLM output to pivot into localhost-only endpoints."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Juicy |![Juicy room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1763554721305)|
-
 This room is part of the **Attacking LLMs** module within the Web Application Red Teaming path. It follows the [Data Integrity and Model Poisoning](../thm-room-modelpoisoning/) and [LLM Output Handling](../thm-room-outputhandlingandprivacyrisks/) rooms and pulls all three attack categories together: prompt injection, system prompt leakage, and XSS via unsanitised model output, chained into a full SSRF pivot against localhost-only endpoints.
 
 ## The Application

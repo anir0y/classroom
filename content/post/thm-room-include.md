@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Include walkthrough: property injection to admin, SSRF credential theft, nested traversal LFI bypass, and SMTP log poisoning to RCE."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Include |![Include room icon](https://cdn-images.tryhackme.com/room-icons/5f9c7574e201fe31dad228fc-1718365394351)|
-
 This medium-difficulty room chains four distinct techniques across two web applications running on the same box: a Node.js Express app on port 4000 and a PHP System Monitoring Portal (SysMon) on port 50000. It sits in the Advanced Server-Side Attacks module alongside the [SSRF walkthrough](/post/thm-room-ssrfhr/), the [File Inclusion walkthrough](/post/thm-room-filepathtraversal/), and the [Prototype Pollution walkthrough](/post/thm-room-prototypepollution/). The attack path moves from object property injection to SSRF to credential theft to LFI bypass to SMTP log poisoning for code execution.
 
 ## Task 1: Include

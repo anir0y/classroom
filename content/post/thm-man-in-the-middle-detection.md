@@ -23,10 +23,6 @@ description: "TryHackMe Man in the Middle Detection walkthrough — This is a wa
 > My View: Lab is well designed and informative; I loved it while solving the challenge.
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-
-
 
 
 ## Task 01: Introduction

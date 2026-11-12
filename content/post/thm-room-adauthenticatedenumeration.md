@@ -30,10 +30,6 @@ draft: false
 description: "TryHackMe AD Authenticated Enumeration walkthrough: AS-REP roasting with GetNPUsers and hashcat, net user enumeration, and BloodHound CE plus PowerView graphs."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|AD: Authenticated Enumeration |![AD: Authenticated Enumeration room icon](https://cdn-images.tryhackme.com/room-icons/5f04259cf9bf5b57aed2c476-1747260887550)|
-
 **AD: Authenticated Enumeration** is the follow-on to [AD Basic Enumeration](/post/thm-room-adbasicenumeration/) in the AD Security Testing Basics module. The previous room stopped at the moment you get one working credential. This one starts there: it hands you a Kerberos weakness to turn into a password, then walks the same domain again from the inside, where `net`, LDAP, PowerView and BloodHound all see things a null session never could.
 
 The room network is `10.211.12.0/24`: a domain controller at `10.211.12.10`, a workstation named WRK at `10.211.12.20`, and a BloodHound Community Edition server at `10.211.12.100`. The domain is `tryhackme.loc`.

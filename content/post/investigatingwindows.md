@@ -22,12 +22,6 @@ A windows machine has been hacked, its your job to go investigate this windows m
 
 
 
-|Profile|
-|:-----|
-|<script src="https://tryhackme.com/badge/434937"></script>|
-
-
-
 ---
 
 ## Task 01: Investigating Windows

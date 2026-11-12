@@ -28,10 +28,6 @@ draft: false
 description: "Walkthrough of TryHackMe Python Building Scripts: functions with return and defaults, try except error handling, file I/O, pip libraries, and a password checker."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Python: Building Scripts |![Python Building Scripts room icon](https://cdn-images.tryhackme.com/room-icons/5f04259cf9bf5b57aed2c476-1778051771699)|
-
 Python: Building Scripts is the companion room to [Python: Core Concepts](/post/thm-room-pythoncoreconcepts/) in the Python Scripting Basics module of the Jr Penetration Tester path. Core Concepts taught the notes: data types, strings, lists, dictionaries, operators, and loops. This room plays the song, assembling those pieces into real scripts with functions, error handling, file I/O, and third-party libraries. It builds on the same scenario that [Python: Simple Demo](/post/thm-room-python-simple-demo/) opened, and it finishes with a working Password Strength Checker.
 
 The room ships an in-browser VS Code machine. The example scripts live in `/home/ubuntu/Building-Scripts/`, and five of the fifteen questions ask you to run one of them and read the output. The rest are concept questions where the only real trap is the answer mask: a method name like `.strip()` is counted to the character, parentheses included.

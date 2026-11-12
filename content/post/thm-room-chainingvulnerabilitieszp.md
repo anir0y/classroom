@@ -27,10 +27,6 @@ draft: false
 description: "TryHackMe Chaining Vulnerabilities walkthrough: combining default credentials, stored XSS, and CSRF to chain a full admin account takeover."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Chaining Vulnerabilities |![Chaining Vulnerabilities room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1752206689409)|
-
 This easy-difficulty room in the Chaining Vulnerabilities module of the Web Application Red Teaming path teaches how individually low-risk vulnerabilities combine into a full compromise chain. A default test credential, an unsanitized display name field, and a missing CSRF token are each medium or low severity in isolation. Chained together, they give an attacker complete admin access. The room sits after the Custom Tooling module ([Tooling via Browser Automation](/post/thm-room-customtoolingviabrowserautomation/), [Custom Tooling using Burp](/post/thm-room-customtoolingviaburp/), [Custom Tooling Using Python](/post/thm-room-customtoolingpython/)), and the next room in the path is Extract.
 
 ## Task 1: Introduction

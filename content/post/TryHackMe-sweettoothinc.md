@@ -21,12 +21,7 @@ description: "TryHackMe Sweettooth Inc. walkthrough — Sweettooth Inc. needs yo
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Sweettooth Inc|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/33632296aaf0a3545edaf9a386aade62.jpeg)|
-| <b> Room [Subscription Required] </b>| [Sweettooth Inc](https://tryhackme.com/room/sweettoothinc)|
-|tools (additional) | Docker CE|
+Room: [Sweettooth Inc](https://tryhackme.com/room/sweettoothinc) on TryHackMe.
 ---
 
 ## Task 01:  Deploy the machine

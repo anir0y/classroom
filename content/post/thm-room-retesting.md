@@ -26,10 +26,6 @@ draft: false
 description: "Walkthrough of TryHackMe Re-Testing: re-test vs reassessment, pass/fail/risk-accepted outcomes, variant SQLi payloads, incomplete patches, and the re-test report."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Re-Testing |![Re-Testing room icon](https://cdn-images.tryhackme.com/room-icons/691e303c8bb7e99b93a58132-1778754503304)|
-
 Re-Testing closes the loop on the Pentesting Methodologies and Reporting module in the Jr Penetration Tester path. After [Planning and Scoping](/post/thm-room-planningandscoping/) set the boundaries and [Writing Pentest Reports](/post/thm-room-writingpentestreports/) delivered the findings, this room answers the question every client asks next: are we actually fixed? The opener cites research from Netlas that 15.5% of security patches are unreliable in some way, so roughly one in six findings a client believes is closed will not survive a competent re-test.
 
 This room has a lab machine for the hands-on part (Task 6), a vulnerable login form you test with Burp Suite. On my setup a corporate VPN held the route and the TryHackMe VPN was not connected, so the lab target was not reachable from my Mac. I solved the two lab answers from the room's own walkthrough screenshots and the TryHackMe answer checker, and I have flagged that honestly below rather than claiming a Burp session I did not run.

@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe DOM-Based Attacks walkthrough: DOM tree fundamentals, source and sink analysis, stored XSS through Vue v-html, and weaponised birthday list exploitation."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|DOM-Based Attacks |![DOM-Based Attacks room icon](https://cdn-images.tryhackme.com/room-icons/8839242bd1155a4e9b4b9bd7f0355f99.png)|
-
 This easy-difficulty room in the Web Application Pentesting path covers DOM-based attacks from the ground up: what the Document Object Model is, how modern frontend frameworks interact with it, and how unsanitized user input flowing from a source to a sink creates exploitable vulnerabilities. It sits in the Advanced Client-Side Attacks module alongside the [XSS walkthrough](/post/thm-room-axss/) and the [CSRF walkthrough](/post/thm-room-csrfv2/). The final task deploys a Vue 3 birthday list application with a stored DOM-based XSS vulnerability in the `v-html` directive.
 
 ## Task 1: Introduction

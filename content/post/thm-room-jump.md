@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Jump walkthrough: anonymous FTP uploads run as recon_user, group writes reach dev_user, a PATH hijack on ps lands monitor_user, and sudo less gives root."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Jump |![Jump room icon](https://cdn-images.tryhackme.com/room-icons/691e303c8bb7e99b93a58132-1776454165107)|
-
 **Jump** is an easy box in the Privilege Escalation module of the Jr Penetration Tester path, and it is the practical payoff for the theory rooms that come before it. If you worked through [Linux Privilege Escalation Basics](/post/thm-room-linprivbasics/) and [Linux Privilege Escalation: Automation](/post/thm-room-linprivauto/), every primitive here will look familiar: writable scripts, group membership, PATH, and a sudo rule. What makes Jump worth writing up is that it stacks five of them in a row, and each link only works because the previous user was trusted a little too much.
 
 The stated objective is a single chain:

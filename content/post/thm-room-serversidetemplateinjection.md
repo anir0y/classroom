@@ -27,10 +27,6 @@ draft: false
 description: "Walkthrough of TryHackMe Server-side Template Injection: confirming SSTI in Smarty, Pug, and Jinja2, then escaping each to RCE plus a Form Tools Smarty chain."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Server-side Template Injection |![Server-side Template Injection room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1716690622951)|
-
 Server-side Template Injection sits in the Injection Attacks module of the Web Application Pentesting path, a few rooms along from the SQL and NoSQL work. Where [Injectics](/post/thm-room-injectics/) buried one Twig SSTI at the end of a long chain, this room is the opposite: it lines up four separate apps, one per template engine, so you drill the same idea (confirm the engine, then turn rendering into code execution) against Smarty, Pug, and Jinja2 in turn, with a Form Tools challenge at the end. If you have done [ORM Injection](/post/thm-room-orminjection/) or [NoSQL Injection](/post/thm-room-nosqlinjectiontutorial/), the root cause is familiar: untrusted input reaching an interpreter, only here the interpreter is the template engine.
 
 The target exposes several small apps on one host under the vhost `ssti.thm`: a PHP/Smarty app on port 8000, a NodeJS/Pug app on 8001, a Python/Jinja2 app on 8002, and a Form Tools admin panel on 8080. Everything was reachable directly over the TryHackMe VPN for my session, so each command below is a plain `curl` from my own machine. The lab IP was `10.49.149.122`; substitute your own, or add `ssti.thm` to your hosts file. The three teaching apps all take the payload in a `page` parameter and reflect the rendered result.

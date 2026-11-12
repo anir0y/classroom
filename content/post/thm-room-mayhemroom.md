@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Mayhem walkthrough: decrypt Havoc C2 Demon agent traffic with AES-256-CTR, recover attacker commands, exfiltrated credentials, and persistence."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Mayhem |![Mayhem room icon](https://cdn-images.tryhackme.com/room-icons/618b3fa52f0acc0061fb0172-1721060635062)|
-
 This medium-difficulty room is a pure DFIR challenge: no VM to exploit, just a PCAP to dissect. The evidence file contains traffic from a Havoc C2 Demon agent running on a Windows Server 2019 domain controller. The room asks six questions that require identifying the compromised user's SID, the server's IPv6 address, a flag the attacker printed, the persistence account credentials, the path to the exfiltrated file, and the flag inside that file. Answering them means reverse-engineering the Havoc protocol, extracting the AES-256 key and IV from the agent's registration packet, determining the encryption mode (CTR), and decrypting both the operator's commands and the agent's output. Every answer lives inside the encrypted traffic.
 
 ## Task 1: Uncover the Secrets

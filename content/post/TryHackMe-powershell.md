@@ -20,11 +20,7 @@ description: "TryHackMe Hacking with PowerShell walkthrough — step-by-step enu
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Hacking with PowerShell|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/ca3da5aa8e312b0316f06a25a03028a5.png)|
-| <b> Room [Subscription Required] </b>| [Hacking with PowerShell](https://tryhackme.com/room/powershell)|
+Room: [Hacking with PowerShell](https://tryhackme.com/room/powershell) on TryHackMe.
 
 Learn the basics of PowerShell and PowerShell Scripting
 

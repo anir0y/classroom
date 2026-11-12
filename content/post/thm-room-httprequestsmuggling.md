@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe HTTP Request Smuggling walkthrough: CL.TE desync between ATS and Nginx to capture authenticated dashboard credentials via smuggled POST."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|HTTP Request Smuggling |![HTTP Request Smuggling room icon](https://cdn-images.tryhackme.com/room-icons/02c75078a8759443f0b565ce48b89589.png)|
-
 This easy-difficulty room in the Web Application Pentesting path covers HTTP request smuggling from the ground up: how modern multi-tier architectures create desync conditions, the three smuggling variants (CL.TE, TE.CL, TE.TE), and a hands-on CL.TE exploit against Apache Traffic Server and Nginx. It sits in the Advanced Client-Side Attacks module alongside the [CORS and SOP walkthrough](/post/thm-room-corsandsop/), the [XSS walkthrough](/post/thm-room-axss/), and the [CSRF walkthrough](/post/thm-room-csrfv2/).
 
 ## Task 1: Introduction

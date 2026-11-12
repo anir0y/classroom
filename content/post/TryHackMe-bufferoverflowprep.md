@@ -20,11 +20,7 @@ description: "TryHackMe Buffer Overflow Prep walkthrough — practice stack-base
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Buffer Overflow Prep|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/1948e2c67f072993904cec82f39653c0.png)|
-| <b> Room [Subscription Required] </b>| [Buffer Overflow Prep](https://tryhackme.com/room/bufferoverflowprep)|
+Room: [Buffer Overflow Prep](https://tryhackme.com/room/bufferoverflowprep) on TryHackMe.
 
 ## Task 01: Deploy VM
 

@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Attacking ECB Oracles walkthrough: AES-ECB chosen-plaintext attack, block size and offset determination, byte-by-byte secret recovery from an oracle."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Attacking ECB Oracles |![Attacking ECB Oracles room icon](https://cdn-images.tryhackme.com/room-icons/6093e17fa004d20049b6933e-1743186246407)|
-
 This hard-difficulty room in the Cryptographic Failures module of the Web Application Red Teaming path teaches AES-ECB's fundamental weakness: identical plaintext blocks produce identical ciphertext blocks, and that determinism lets an attacker with oracle access recover appended secrets byte by byte. Tasks 2 and 3 cover symmetric encryption fundamentals and ECB's block/padding mechanics. Task 4 demonstrates the "ECB Penguin" pattern leakage on image data. Task 5 walks through the full chosen-plaintext attack on a live Flask oracle, from block-size determination through offset calculation to complete secret extraction. This room sits alongside [Breaking Crypto the Simple Way](/post/thm-room-breakingcryptothesimpleway/) in the same module, and the next room in the path is Padding Oracles.
 
 ## Task 1: Introduction

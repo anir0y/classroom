@@ -22,10 +22,7 @@ description: "TryHackMe Red Team Threat Intel walkthrough — step-by-step enume
 ## OverView
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Operating System Security|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/81642a6b52cd6596b8c09ccc219becfe.png)|
-| <b> Operating System Security [Subscription Required] </b>| [Operating System Security](https://tryhackme.com/room/operatingsystemsecurity)|
+Room: [Operating System Security](https://tryhackme.com/room/operatingsystemsecurity) on TryHackMe.
 
 
 ## Task 01:  Introduction

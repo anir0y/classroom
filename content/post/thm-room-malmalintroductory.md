@@ -19,10 +19,6 @@ description: "TryHackMe Room Malware Introductory walkthrough, analyze malware s
 ---
 # MAL: Malware Introductory
 
-|Profile|
-|:-----|
-|<script src="https://tryhackme.com/badge/434937"></script>|
-
 ---
 
 ## Task 01: What is the Purpose of Malware Analysis?

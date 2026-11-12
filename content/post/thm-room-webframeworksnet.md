@@ -27,10 +27,6 @@ draft: false
 description: "TryHackMe Web Frameworks .NET walkthrough: ViewState RCE via leaked machineKey, EF Core FromSqlRaw SQLi, mass assignment, and Json.NET deser."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Web Frameworks: .NET |![Web Frameworks .NET room icon](https://cdn-images.tryhackme.com/room-icons/6808d44047ac5684351c94da-1783914803370)|
-
 This medium-difficulty room in the Web Application Pentesting path teaches white-box review of two .NET applications running side by side: a legacy ASP.NET Framework 4.8 Web Forms application (the LegacyPortal on port 8080) and a modern ASP.NET Core MVC application (the AdminPanel on port 5000). The first five tasks cover individual vulnerability classes: ViewState deserialization via a leaked `machineKey`, SQL injection through Entity Framework Core's `FromSqlRaw`, mass assignment through model binding, and insecure deserialization through Json.NET's `TypeNameHandling.All`. Task 6 is a practical exercise that chains them together, and Task 7 wraps up with the review methodology. This room sits alongside the [Web Frameworks: Python walkthrough](/post/thm-room-webframeworkspython/), the [Web Frameworks: Java walkthrough](/post/thm-room-webframeworksjava/), and the [Web Frameworks: Code Review walkthrough](/post/thm-room-webframeworkscodereview/) in the same module.
 
 ## Task 1: Introduction

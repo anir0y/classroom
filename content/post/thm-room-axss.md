@@ -28,10 +28,6 @@ draft: false
 description: "TryHackMe XSS walkthrough: reflected injection via copyparty CRLF, stored XSS sanitization in JavaScript and ASP.NET, and DOM-based client-side exploitation."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|XSS |![XSS room icon](https://cdn-images.tryhackme.com/room-icons/5f04259cf9bf5b57aed2c476-1718366341885)|
-
 This easy-difficulty room in the Web Application Pentesting path covers all three types of cross-site scripting: reflected, stored, and DOM-based. It sits in the Advanced Client-Side Attacks module alongside the [CSRF walkthrough](/post/thm-room-csrfv2/). The room walks through the root causes, the encoding and sanitization defences, and two real CVEs exploited against live lab applications. For a room that chains XSS with CSRF and SQL injection in a single attack path, see the [Whats Your Name walkthrough](/post/thm-room-whatsyourname/).
 
 ## Task 1: Introduction

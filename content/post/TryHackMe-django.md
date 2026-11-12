@@ -21,11 +21,7 @@ description: "TryHackMe Introduction to Django walkthrough — learn Django web 
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Django|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/c11fb449f10add8bc11a137fef9e979c.png)|
-| <b> Room [Subscription Required] </b>| [Django](https://tryhackme.com/room/django)|
+Room: [Django](https://tryhackme.com/room/django) on TryHackMe.
 
 ## 01: Introduction
 

@@ -22,10 +22,6 @@ Understand how attackers discover assets in a network, and how to detect that ac
 
 # OverView
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="x-follow-button" href="https://x.com/anir0y" data-size="large"> x/@anir0y<a>|
-|---|---|
-|Network Discovery Detection |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/61306d87a330ed00419e22e7-1757355846285)|
-
 
 
 # Task 01: Introduction

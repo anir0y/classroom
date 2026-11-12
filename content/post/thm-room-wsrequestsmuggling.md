@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe WebSocket Request Smuggling walkthrough: broken WebSocket tunnel through Varnish, SSRF-based fake 101 injection to defeat Nginx proxy."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Request Smuggling: WebSockets |![Request Smuggling: WebSockets room icon](https://cdn-images.tryhackme.com/room-icons/ecd888ccf0ddab5e8cce758a82c170a2.svg)|
-
 This medium-difficulty room in the Web Application Pentesting path covers HTTP request smuggling through WebSocket upgrade abuse. It sits in the HTTP Request Smuggling module alongside the [HTTP Request Smuggling walkthrough](/post/thm-room-httprequestsmuggling/) and the [HTTP/2 Request Smuggling walkthrough](/post/thm-room-http2requestsmuggling/). The room deploys two scenarios: a Varnish proxy that blindly tunnels after any upgrade attempt, and an Nginx proxy that validates the 101 response but can be defeated through SSRF-based response injection.
 
 ## Task 1: Introduction

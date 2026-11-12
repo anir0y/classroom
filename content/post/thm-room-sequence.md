@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Sequence walkthrough: stored XSS for admin password change, SSRF to internal Docker container, PHP webshell upload, and Docker socket escape to host root."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Sequence |![Sequence room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1749644537852)|
-
 This medium-difficulty room in the Chaining Vulnerabilities module of the Web Application Red Teaming path teaches a full attack chain: from unauthenticated stored XSS all the way to host root through Docker socket abuse. The room follows [Chaining Vulnerabilities](/post/thm-room-chainingvulnerabilitieszp/), [Extract](/post/thm-room-extract/), and [Voyage](/post/thm-room-voyage/) in the module path. Where Voyage escaped containers through kernel modules, Sequence escapes through the Docker API itself.
 
 ## Task 1: Sequence

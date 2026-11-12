@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe SSRF walkthrough: local config theft via file_get_contents, internal admin pivot, blind OOB phpinfo exfiltration, and memory crash DoS."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|SSRF |![SSRF room icon](https://cdn-images.tryhackme.com/room-icons/2c96a7dbf8b1499dfbfc7d6518c1d49d.png)|
-
 This medium-difficulty room in the Web Application Pentesting path walks through all four flavours of Server-Side Request Forgery against an HRMS application: basic local reads, basic internal pivots, blind out-of-band exfiltration, and denial of service through resource exhaustion. It sits in the Advanced Server-Side Attacks module alongside the [SSTI walkthrough](/post/thm-room-ssti/) and the [Injectics walkthrough](/post/thm-room-injectics/).
 
 ## Task 1: Introduction

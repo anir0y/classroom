@@ -20,11 +20,7 @@ description: "TryHackMe WordPress CVE-2021-29447 walkthrough — step-by-step en
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Wordpress CVE-2021-29447|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/e9417007c4398491c2db96c52ef3106a.png)|
-| <b> Room [Subscription Required] </b>| [Wordpress CVE-2021-29447](https://tryhackme.com/room/wordpresscve202129447)|
+Room: [Wordpress CVE-2021-29447](https://tryhackme.com/room/wordpresscve202129447) on TryHackMe.
 
 > Vulnerability allow a authenticated user whith low privilages upload a malicious WAV file that could lead to remote arbitrary file disclosure and server-side request forgery (SSRF).
 

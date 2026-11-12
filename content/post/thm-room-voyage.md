@@ -29,10 +29,6 @@ draft: false
 description: "TryHackMe Voyage walkthrough: Joomla CVE-2023-23752 info leak, pickle deserialization RCE, and Docker container escape via CAP_SYS_MODULE."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Voyage |![Voyage room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1751032179203)|
-
 This medium-difficulty room in the Chaining Vulnerabilities module of the Web Application Red Teaming path asks a pointed question: when you pop root in seconds, is it real root or a container? The answer requires pivoting through two containers, exploiting three distinct vulnerability classes, and finally escaping to the host through the Linux kernel itself. The room follows [Chaining Vulnerabilities](/post/thm-room-chainingvulnerabilitieszp/) and [Extract](/post/thm-room-extract/) in the module path.
 
 ## Task 1: Voyage

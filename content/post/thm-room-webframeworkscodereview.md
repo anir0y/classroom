@@ -28,10 +28,6 @@ draft: false
 description: "TryHackMe Web Frameworks Code Review walkthrough: source-to-sink Flask audit with grep and Semgrep triage, then SQLi, SSTI, and path traversal exploitation."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Web Frameworks: Code Review |![Web Frameworks Code Review room icon](https://cdn-images.tryhackme.com/room-icons/6808d44047ac5684351c94da-1783914551193)|
-
 This medium-difficulty room in the Web Application Pentesting path teaches white-box code review by walking through a Flask application called Vaultkeeper. The first six tasks cover the methodology: reading order (config, routes, handlers), source-to-sink tracing, grepping for dangerous patterns, and recognising injection, access control, path, and secret flaws in Python code. Task 7 is a practical lab where you apply the method to find and exploit three vulnerabilities in Vaultkeeper: SQL injection via an f-string in `cursor.execute`, server-side template injection via `render_template_string`, and path traversal via `os.path.join` with `send_file`.
 
 ## Task 1: Introduction

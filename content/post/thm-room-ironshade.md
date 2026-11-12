@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe IronShade walkthrough: investigating a compromised Linux honeypot for backdoor accounts, hidden processes, cron and systemd persistence."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|IronShade |![IronShade room icon](https://cdn-images.tryhackme.com/room-icons/5e8dd9a4a45e18443162feab-1722907649226)|
-
 This medium-difficulty challenge from the Defensive Security path drops you onto a compromised Linux honeypot attacked by the "IronShade" APT group. The investigation covers 12 questions across a single task: identifying the backdoor account, enumerating persistence mechanisms (cron, systemd services, hidden processes), analyzing SSH logs for attacker activity, and inspecting a malicious Debian package for an embedded secret.
 
 ## Task 1: Challenge

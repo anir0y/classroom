@@ -176,11 +176,6 @@
 /* A very short window (or a large default font): the contents list needs the room more. */
 @media (min-width:1200px) and (max-height:34rem){.rail-next{display:none}}
 
-/* ---------- Legacy "Follow" badge table that opens older posts ----------
-   The follow link now lives in the author box at the end of the post,
-   so the reader's first screen starts with the write-up itself. */
-.post-content > table:has(.twitter-follow-button){display:none}
-
 /* ---------- Code blocks: copy button visible without hover (touch has no hover) ---------- */
 .post-content .copy-code{display:block;opacity:.75}
 .post-content .copy-code:hover,

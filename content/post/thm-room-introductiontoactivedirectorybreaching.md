@@ -31,10 +31,6 @@ draft: false
 description: "TryHackMe Intro to AD Breaching walkthrough: Kerbrute enumeration, Git and Jenkins credential leaks, NetExec spraying, LDAP passback and NTLMv2 coercion."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Intro to AD Breaching |![Intro to AD Breaching room icon](https://cdn-images.tryhackme.com/room-icons/6989b1062386d3517f652edd-1778584965219)|
-
 **Intro to AD Breaching** sits in the AD Security Testing Basics module alongside [Active Directory Basics](/post/thm-room-winadbasicsrevamp/) and [Intro to AD Authentication](/post/thm-room-introtoactivedirectoryauthentication/). Those two rooms hand you credentials. This one does not. You start with network access and nothing else, and the whole room is about the step before every other AD attack: getting that first valid username and password.
 
 The lab is a five-host network with three web applications riding on one Linux box:

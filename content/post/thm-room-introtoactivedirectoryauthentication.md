@@ -30,10 +30,6 @@ draft: false
 description: "TryHackMe Intro to AD Authentication walkthrough: NetNTLM challenge response, Kerberos tickets, NTLM cracking, Pass-the-Hash, Kerberoasting and a Golden Ticket."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Intro to AD Authentication |![Intro to AD Authentication room icon](https://cdn-images.tryhackme.com/room-icons/6808d44047ac5684351c94da-1777562424344)|
-
 **Intro to AD Authentication** follows [Active Directory Basics](/post/thm-room-winadbasicsrevamp/) in the AD Security Testing Basics module. Where that room had you build a forest, this one explains how the forest decides who you are, and then hands you six SMB shares that each require a different way of proving it. You collect one flag per share, and the share you can reach is a direct function of the authentication material you hold: a password, a ticket, a hash, or a forged ticket.
 
 That structure is the good part of the room. Nothing is hidden. The task text gives you the credentials and the commands, so the difficulty is not discovery, it is understanding why `smbclient.py` with a password, with `-k -no-pass`, and with `-hashes` are three genuinely different things happening on the wire.

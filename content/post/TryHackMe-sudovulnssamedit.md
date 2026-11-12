@@ -20,11 +20,7 @@ description: "TryHackMe Baron Samedit walkthrough — A tutorial room exploring 
 ---
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>|
-|Baron Samedit|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/b64a68fc8025073fc1cc1ba972380ebd.png)|
-|room| [Baron Samedit](https://tryhackme.com/room/sudovulnssamedit)|
+Room: [Baron Samedit](https://tryhackme.com/room/sudovulnssamedit) on TryHackMe.
 
 ---
 

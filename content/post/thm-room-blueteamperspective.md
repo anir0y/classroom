@@ -29,10 +29,6 @@ draft: false
 description: "Walkthrough of TryHackMe The Blue Team Perspective: triage the Wayne Corp breach in Splunk over the BOTSv1 dataset, mapped to NIST, MITRE, and the Pyramid of Pain."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|The Blue Team Perspective |![The Blue Team Perspective room icon](https://cdn-images.tryhackme.com/room-icons/5f04259cf9bf5b57aed2c476-1779221268877)|
-
 The Blue Team Perspective sits in the Specialized Domains module of the Jr Penetration Tester path, the same module that holds [LLM Pentesting](/post/thm-room-llmpentesting/), [Cloud Security Fundamentals](/post/thm-room-cloudsecurityfundamentals/), and [Mobile Application Security](/post/thm-room-mobilesecurity/). After twelve modules on the attacker's side, this room flips the chair around: you read a real breach from the SOC, learn a SIEM, and tie every alert back to a framework. The hands-on half runs against a Splunk instance loaded with the BOTSv1 dataset (the Boss of the SOC capture-the-flag data, the imreallynotbatman.com attack against Wayne Enterprises). I drove the Splunk queries through the search REST API from the browser, so every answer below is a real query result, not a guess.
 
 ## Task 1: Introduction

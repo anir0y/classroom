@@ -21,11 +21,7 @@ description: "TryHackMe Rocket walkthrough — Get ready for blast off!."
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Rocket|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/5fde7f214fbcd710f5fadb13f81ebdd5.png)|
-|room [Subscription Required]| [Rocket](https://tryhackme.com/room/rocket)|
+Room: [Rocket](https://tryhackme.com/room/rocket) on TryHackMe.
 
 ---
 

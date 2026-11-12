@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Windows Jump walkthrough: guest SMB share creds, an AutoLogon registry password, a weak service binary, and a writable SYSTEM task chain guest to SYSTEM."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Windows Jump |![Windows Jump room icon](https://cdn-images.tryhackme.com/room-icons/6989b1062386d3517f652edd-1778836251352)|
-
 **Windows Jump** is a medium challenge room that asks for one thing: escalate from guest access all the way to SYSTEM on a single Windows workstation. The backstory is the kind of thing every internal pentest turns up, a machine left behind after layoffs that IT never cleaned up. If you have already worked through [Windows Fundamentals](/post/thm-room-windows-basics/) for the theory and want the Linux equivalent of this stacked-primitive style, [Jump](/post/thm-room-jump/) is the same idea on the other operating system. What makes Windows Jump worth writing up is that it chains four distinct Windows privilege escalation classes back to back, and each one only works because the last account was trusted a little too much.
 
 The stated objective is a single chain:

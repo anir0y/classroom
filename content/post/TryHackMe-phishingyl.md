@@ -22,11 +22,7 @@ description: "TryHackMe Phishing walkthrough — analyze phishing emails, identi
 
 Learn what phishing is and why it's important to a red team engagement. You will set up phishing infrastructure, write a convincing phishing email and try to trick your target into opening your email in a real-world simulation.
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Phishing|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/91fc6ef91a824bf0c1d830fbdfab96be.png)|
-| <b> Phishing [Subscription Required] </b>| [Phishing](https://tryhackme.com/room/phishingyl)|
+Room: [Phishing](https://tryhackme.com/room/phishingyl) on TryHackMe.
 
 ## Task 01: Brief
 

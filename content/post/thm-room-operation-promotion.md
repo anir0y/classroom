@@ -26,10 +26,6 @@ draft: false
 description: "Walkthrough of TryHackMe Operation Promotion: a SQLi admin login bypass, IDOR, command injection to www-data, a cracked jford password, and a sudo find root."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Operation Promotion |![Operation Promotion room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1779217862269)|
-
 Operation Promotion is an easy-rated Linux challenge room. The brief casts you as a tester up for the Penetration Tester title at Hadron Security, handed a solo engagement against RecruitCorp and its public-facing careers portal. It is a single box with two flags, and the intended path is a clean offensive chain: break the web app, loot a credential, log in, then escalate. It plays like a compact version of the single-host Linux boxes in the Jr Pentester Challenges module, so if you enjoyed [Silent Monitor](/post/thm-room-silent-monitor/) or [Dead Drop](/post/thm-room-dead-drop/) this will feel familiar.
 
 The whole room is one task with two questions, `user.txt` and `flag.txt`. Both answers below were verified correct by the TryHackMe checker. The target was reachable straight from my machine over the TryHackMe VPN, so I ran everything locally rather than from the AttackBox.

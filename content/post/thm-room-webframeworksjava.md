@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Web Frameworks Java walkthrough: Spring actuator leak, UNION SQLi via JdbcTemplate, mass assignment overpost, and ysoserial deserialization RCE."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Web Frameworks: Java |![Web Frameworks Java room icon](https://cdn-images.tryhackme.com/room-icons/6808d44047ac5684351c94da-1783914767216)|
-
 This medium-difficulty walkthrough room in the Web Application Pentesting path teaches white-box review of a Spring Boot application called VulnBank. The first five tasks cover the theory: actuator misconfiguration, SQL injection below Spring Data's parameterised layer, mass assignment via `@ModelAttribute` binding, and Java deserialization to RCE through `ObjectInputStream.readObject`. Task 6 is a practical exercise that chains the deserialization foothold to read a host-only flag, tying the entire kill chain together. This room sits alongside the [Web Frameworks: Code Review walkthrough](/post/thm-room-webframeworkscodereview/) in the same module; that post covers the Flask equivalent.
 
 ## Task 1: Introduction

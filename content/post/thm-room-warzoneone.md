@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Warzone 1 walkthrough: triaging a MirrorBlast C2 alert with Brim, Suricata, tshark, VirusTotal OSINT, and MSI payload inspection."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Warzone 1 |![Warzone 1 room icon](https://cdn-images.tryhackme.com/room-icons/3d6033aa286ac42fdb793c605ebbf3f0.png)|
-
 Warzone 1 is a Medium defensive room that puts you in the role of a Tier 1 SOC analyst triaging an IDS alert for "Malware Command and Control Activity Detected." The PCAP contains a full MirrorBlast infection chain: a phishing redirect, two MSI payload downloads, and REBOL-based C2 beaconing to a TA505 domain. This post walks through the full investigation using tshark, Suricata, and VirusTotal. If you are working through SOC Level 1, the [Brim room](/post/thm-room-brim/) covers the tool foundations.
 
 ## Task 1: Your shift just started and your first network alert comes in

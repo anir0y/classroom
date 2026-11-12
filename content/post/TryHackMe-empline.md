@@ -21,11 +21,7 @@ description: "TryHackMe Empline walkthrough with step-by-step solutions — enum
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Empline|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/189112ffef41c0fa813d7d5b394a58b5.png)|
-| <b> Empline [Subscription Required] </b>| [Empline](https://tryhackme.com/room/empline)|
+Room: [Empline](https://tryhackme.com/room/empline) on TryHackMe.
 
 Are you good enough to apply for this job?
 

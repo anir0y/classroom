@@ -21,10 +21,6 @@ description: Try Hack Me Room rintNightmare, again solved by Animesh Roy. this i
 
 Search the artifacts on the endpoint to determine if the employee used any of the Windows Printer Spooler vulnerabilities to elevate their privileges.
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|[**FREE ROOM**] PrintNightmare, again |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/80976dc5f46f5d2f78a99c2c8e2bc4a9.png)|
-
 
 ## Detection
 

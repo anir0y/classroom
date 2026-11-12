@@ -27,10 +27,6 @@ draft: false
 description: "Walkthrough of TryHackMe Advanced SQL Injection: second-order SQLi, keyword and space filter evasion, UNION out-of-band extraction, and header injection techniques."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Advanced SQL Injection |![Advanced SQL Injection room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1718463358022)|
-
 Advanced SQL Injection sits in the Injection Attacks module of the Web Application Pentesting path. It takes you past the textbook `' OR 1=1 --` and into the techniques that matter against a hardened target: a payload that lies dormant until a second query runs it, filters that strip keywords and spaces, extraction over a side channel, and injection through an HTTP header rather than a form field. If you want the grammar first, the sibling [Database SQL Basics](/post/thm-room-database-sql-basics/) room covers SELECT, FROM and WHERE, and [Guided Pentest Web](/post/thm-room-guidedpentestweb/) shows a full four-bug chain.
 
 The whole room is a single book review application backed by MariaDB 10.4 on Windows (XAMPP). Each task exposes one deliberately broken endpoint. I solved it entirely from my own machine with `curl`, since the target was reachable directly over the TryHackMe VPN, so every command below is copy-paste reproducible. The lab IP was `10.48.167.82` for my session; substitute your own.

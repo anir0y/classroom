@@ -26,10 +26,6 @@ draft: false
 description: "Walkthrough of TryHackMe Silent Monitor: SQLi login bypass, newline command injection in a ping tool, a leaked service password, and a cracked KeePass vault to root."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Silent Monitor |![Silent Monitor room icon](https://cdn-images.tryhackme.com/room-icons/69d514a8a643762d5700ec6f-1779219421762)|
-
 Silent Monitor is a challenge in the Jr Pentester Challenges module, the capstone of the Jr Penetration Tester path where the guided walkthroughs stop and you chain the bugs yourself. It is the same muscle the [Domino](/post/thm-room-domino/) room drilled, several small weaknesses knocking each other over, and it reuses the leaked-credential-to-lateral-move pattern that runs through most of these challenges. The target is CorpNet's internal Network Operations Centre portal, and the brief is blunt: get in, move through the system, and find what is really running behind the secret dashboard.
 
 This is a single "Introduction" task with two flags, `user.txt` and `root.txt`. The box was reachable directly from my Mac over the TryHackMe VPN (`utun13`), so the whole solve is nmap, curl, and ssh with no AttackBox. Both flags below were verified correct by the TryHackMe answer checker.

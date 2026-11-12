@@ -23,10 +23,6 @@ draft: false
 description: "TryHackMe Mr. Phisher walkthrough: extracting and deobfuscating a VBA macro from a malicious Word document using OLE analysis."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Mr. Phisher |![Mr. Phisher room icon](https://cdn-images.tryhackme.com/room-icons/5de2b57caa0e6e1fd6309c84fc20f5fa.png)|
-
 This easy room from the [Phishing](https://tryhackme.com/module/phishing) module puts you face to face with a suspicious Word document that asks you to "enable macros." The challenge is to extract the obfuscated VBA macro, understand its XOR deobfuscation logic, and recover the hidden flag without executing the macro.
 
 ## Task 1: Mr. Phisher

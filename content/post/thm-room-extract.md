@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe Extract walkthrough: gopher SSRF through preview.php, CVE-2025-29927 Next.js middleware bypass, PHP serialized cookie 2FA bypass."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Extract |![Extract room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1750729396083)|
-
 This hard-difficulty room in the Chaining Vulnerabilities module of the Web Application Red Teaming path chains three distinct vulnerabilities into a full secret extraction: an SSRF in preview.php, CVE-2025-29927 (Next.js middleware authentication bypass), and a PHP serialized cookie manipulation to defeat 2FA. The room sits after [Chaining Vulnerabilities](/post/thm-room-chainingvulnerabilitieszp/) in the path, and the next room is Voyage.
 
 ## Task 1: Extract the Secrets

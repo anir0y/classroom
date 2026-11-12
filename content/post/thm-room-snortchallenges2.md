@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Snort Challenge walkthrough: writing Snort IPS rules and running inline mode with afpacket DAQ to block SSH brute-force and reverse shell attacks."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Snort Challenge - Live Attacks |![Snort Challenge room icon](https://cdn-images.tryhackme.com/room-icons/b8d2e128ff2921095e5a779e0981e6e7.png)|
-
 Snort Challenge is a Medium room that puts you in the seat of a SOC analyst using Snort as an inline IPS to block two live attacks: an SSH brute-force and a Metasploit reverse shell. Each scenario runs on a dedicated VM with two network interfaces, and the goal is to identify the attack traffic, write a `drop` rule, then run Snort in IPS mode long enough for the system to confirm the block and produce a flag. This post walks through both scenarios. If you are working through the Snort module, the [Snort room](/post/thm-room-snort/) covers the rule syntax and modes.
 
 ## Task 1: Introduction

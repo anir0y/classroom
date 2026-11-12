@@ -21,11 +21,6 @@ description: "TryHackMe Thm Room Autopsy walkthrough with step-by-step solutions
 # Autopsy
 Learn how to use Autopsy to investigate artifacts from a disk image. Use your knowledge to investigate an employee who is being accused of leaking private company data.
 
-
-|Profile|
-|:-----|
-|<script src="https://tryhackme.com/badge/434937"></script>|
-
 ---
 
 ## Task 01: Introduction

@@ -27,10 +27,6 @@ draft: false
 description: "TryHackMe Tooling via Browser Automation walkthrough: Selenium CSRF bypass, Tesseract CAPTCHA solving, Playwright with OWASP ZAP vulnerability scanning."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Tooling via Browser Automation |![Tooling via Browser Automation room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1743754227992)|
-
 This easy-difficulty room in the Custom Tooling module of the Web Application Red Teaming path covers browser automation for security testing using Selenium and Playwright. Where the sibling rooms ([Custom Tooling Using Python](/post/thm-room-customtoolingpython/) and [Custom Tooling using Burp](/post/thm-room-customtoolingviaburp/)) intercept and replicate cryptographic logic, this room lets the browser handle it: Selenium drives a real browser through login forms, CSRF tokens, and CAPTCHAs, while Playwright integrates with OWASP ZAP for automated vulnerability scanning and reporting.
 
 ## Task 1: Introduction

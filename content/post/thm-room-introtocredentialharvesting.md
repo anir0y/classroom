@@ -30,10 +30,6 @@ draft: false
 description: "TryHackMe Intro to Credential Harvesting walkthrough: SAM and LSA dumps with secretsdump, DPAPI vault looting, DCC2 cracking, DCSync and Pass-the-Hash to the DC."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Intro to Credential Harvesting |![Intro to Credential Harvesting room icon](https://cdn-images.tryhackme.com/room-icons/62ff64c3c859dc0042b2b9f6-1754296637198)|
-
 **Intro to Credential Harvesting** sits in the Active Directory Security Testing Basics module, after [AD Basic Enumeration](/post/thm-room-adbasicenumeration/) and [AD Authenticated Enumeration](/post/thm-room-adauthenticatedenumeration/). Those two rooms are about seeing the domain. This one is about emptying it: you start with local Administrator on a workstation and you finish as SYSTEM on the domain controller, without a single exploit. Every step is Windows handing over something it was already storing.
 
 The room network is small. A workstation called WRK at `10.220.10.20`, a domain controller at `10.220.10.10`, and the domain is `tryhackme.loc`. The task text gives you WRK's local Administrator password up front, which is the whole starting position.

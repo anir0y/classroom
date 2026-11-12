@@ -26,10 +26,6 @@ draft: false
 description: "Walkthrough of TryHackMe Dead Drop: SQLi login bypass, a Node require() RCE, an APK credential leak, and an AddSelf ACL abuse that pivots to Domain Admin."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Dead Drop |![Dead Drop room icon](https://cdn-images.tryhackme.com/room-icons/6808d44047ac5684351c94da-1786020004209)|
-
 Dead Drop is a medium challenge in the Jr Pentester Challenges module, the capstone of the Jr Penetration Tester path where you stop following guided steps and chain the bugs yourself. It goes further than its siblings: where [Silent Monitor](/post/thm-room-silent-monitor/) and [Domino](/post/thm-room-domino/) stayed on a single Linux host, Dead Drop makes you break into a DMZ web app, loot credentials, and then pivot into an internal Windows domain to compromise the domain controller. The brief is blunt: the web server is your only entry point, the corporate LAN (192.168.11.0/24) is not directly reachable, and the goal is the flag on the Administrator's desktop of the DC.
 
 This room is two tasks: an Introduction that just starts the network, and a Dead Drop task with five questions that each mark a milestone in the attack chain. Every answer below was verified correct by the TryHackMe checker.

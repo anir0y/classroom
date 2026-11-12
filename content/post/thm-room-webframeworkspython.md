@@ -27,10 +27,6 @@ draft: false
 description: "TryHackMe Web Frameworks Python walkthrough: Django DEBUG SECRET_KEY leak, ORM extra() SQLi, Flask session forgery with flask-unsign, and Jinja2 SSTI to RCE."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Web Frameworks: Python |![Web Frameworks Python room icon](https://cdn-images.tryhackme.com/room-icons/6808d44047ac5684351c94da-1783914491132)|
-
 This medium-difficulty room in the Web Application Pentesting path teaches white-box review of two Python frameworks running side by side: a Django application and a Flask application sharing the same secret key. The first five tasks cover individual vulnerability classes: DEBUG mode leaking the secret key, SQL injection through Django's ORM `extra()` escape hatch, Flask session forgery with `flask-unsign`, and Jinja2 SSTI through `render_template_string`. Task 6 is a practical exercise that chains them together, starting from the Django debug leak and ending with a forged superadmin session on the Flask side. This room sits alongside the [Web Frameworks: Java walkthrough](/post/thm-room-webframeworksjava/) and the [Web Frameworks: Code Review walkthrough](/post/thm-room-webframeworkscodereview/) in the same module.
 
 ## Task 1: Introduction

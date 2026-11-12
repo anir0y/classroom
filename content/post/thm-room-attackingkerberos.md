@@ -19,10 +19,6 @@ description: "TryHackMe Room Attacking Kerberos walkthrough, Learn how to abuse 
 ---
 # Attacking Kerberos
 
-|Profile|
-|:-----|
-|<script src="https://tryhackme.com/badge/434937"></script>|
-
 
 ---
 

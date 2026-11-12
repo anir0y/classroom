@@ -20,11 +20,7 @@ description: "TryHackMe Internal walkthrough with step-by-step solutions — enu
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|internal|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/8f245ccd549148ce6c6f76a583b842d6.jpeg)|
-| <b> Room [Subscription Required] </b>| [internal]()https://tryhackme.com/room/internal|
+Room: [internal](https://tryhackme.com/room/internal) on TryHackMe.
 
 ## Task 01: Pre-engagement Briefing
 

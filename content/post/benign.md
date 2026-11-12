@@ -22,11 +22,6 @@ description: "TryHackMe Benign walkthrough with step-by-step solutions — enume
 ## OverView
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Benign |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/43027f83fddeab1e7b9d5642fc876390.png)|
-
-
 
 ## Task 01: Introduction
 We will investigate host-centric logs in this challenge room to find suspicious process execution. To learn more about Splunk and how to investigate the logs, look at the rooms splunk101 and splunk201.

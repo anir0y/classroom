@@ -27,10 +27,6 @@ draft: false
 description: "Walkthrough of TryHackMe Python Core Concepts: data types, strings, lists and dictionaries, operators, and for and while loops, answer masks decoded."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Python: Core Concepts |![Python Core Concepts room icon](https://cdn-images.tryhackme.com/room-icons/5f04259cf9bf5b57aed2c476-1778051760462)|
-
 Python: Core Concepts sits in the Python Scripting Basics module of the Jr Penetration Tester path, right after [Python: Simple Demo](/post/thm-room-python-simple-demo/) and before its companion room, Python: Building Scripts. It is an easy, mostly-conceptual room that reviews Python data types, strings, lists, dictionaries, operators, and loops, framed around a junior pentester who needs to check 10,000 harvested usernames against a password list. There is one question that needs the attached VM (running a demo script), and the real catch across the room is the answer mask: several answers are "right" in meaning but rejected until you match the exact characters, dots and parentheses included.
 
 ## Task 1: Introduction

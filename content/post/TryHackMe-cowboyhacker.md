@@ -20,11 +20,7 @@ description: "TryHackMe Bounty Hacker walkthrough with step-by-step solutions â€
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Bounty Hacker|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/9ad38a2cc31d6ae0030c888aca7fe646.jpeg)|
-| <b> Room [Subscription Required] </b>| [Bounty Hacker](https://tryhackme.com/room/cowboyhacker)|
+Room: [Bounty Hacker](https://tryhackme.com/room/cowboyhacker) on TryHackMe.
 
 You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! Prove your status is more than just a few glasses at the bar. I sense bell peppers & beef in your future!
 

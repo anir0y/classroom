@@ -27,10 +27,6 @@ draft: false
 description: "Walkthrough of TryHackMe Planning and Scoping: PTES, known and unknown environments, allowlist scope, Rules of Engagement, PCI DSS, GDPR, and BrightCart flag."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Planning and Scoping |![Planning and Scoping room icon](https://cdn-images.tryhackme.com/room-icons/5f04259cf9bf5b57aed2c476-1779119215235)|
-
 Planning and Scoping is the second room in the Pentesting Methodologies and Reporting module of the Jr Penetration Tester path, and it picks up right where [Threat Modeling for Pentesters](/post/thm-room-threatmodelingforpentesters/) left off. Threat modeling tells you what to test and in what order. This room covers the paperwork and boundaries that make that test legal: the penetration testing lifecycle, scope, Rules of Engagement, and the regulations that mandate or shape the work. It also ties back to the [Cyber Kill Chain](/post/thm-room-cyberkillchain/) framing of how an engagement progresses.
 
 This is a reading room with no VM. Eight content tasks follow a fictional client, BrightCart, from engagement kickoff to a drafted plan, and Task 8 is a guided static-site capstone that ends in a flag. Every answer comes from the task text, so the only friction is the answer mask deciding exact wording. One mask caught me out, and I have kept that note in.

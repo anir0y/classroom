@@ -30,10 +30,6 @@ draft: false
 description: "TryHackMe Forward walkthrough: a Kerberoastable red herring, a KeePass credential reused across accounts, and resource-based constrained delegation to Administrator."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y|
-|---|---|
-|Forward |![Forward room icon](https://cdn-images.tryhackme.com/room-icons/25835056d9d51fa07b52746e12805d751526267a80170bea31216cc90967a423.63c131e50a24c3005eb34678-1779248462763)|
-
 **Forward** is the second challenge box in the Active Directory Security Testing Basics module, alongside [Proxy](/post/thm-room-proxychallenge/). One task, one question, and an assumed breach: the room hands you `ctf.local\j.smith : JSmith@IT2024` and asks for the Administrator flag.
 
 The honest summary first: I found the wrong path, followed it a long way, and needed a public writeup to get unstuck. That wrong path is deliberate, and it is the most instructive part of the room, so it stays in.

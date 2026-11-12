@@ -25,10 +25,6 @@ draft: false
 description: "Walkthrough of TryHackMe NoSQL Injection: MongoDB operator injection to bypass login, blind regex password extraction, and where-clause syntax injection."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|NoSQL Injection |![NoSQL Injection room icon](https://cdn-images.tryhackme.com/room-icons/6093e17fa004d20049b6933e-1720003412048)|
-
 NoSQL Injection sits in the Injection Attacks module of the Web Application Pentesting path, right beside the classic SQL rooms. If you have already worked through [SQL Injection](/post/thm-room-sqlinjectionintroduction/) and [Advanced SQL Injection](/post/thm-room-advancedsqlinjection/), this room shows how the same root cause (untrusted input concatenated into a query) plays out against MongoDB, where the attack surface shifts from quotes and UNIONs to query operators and JavaScript `$where` clauses.
 
 The target is a single book-review style login app backed by MongoDB, with a second Python service for the syntax-injection example. The target was reachable directly over the TryHackMe VPN, so I solved it entirely with `curl` and `ssh` from my own machine. The lab IP was `10.48.190.97` for my session; substitute your own.

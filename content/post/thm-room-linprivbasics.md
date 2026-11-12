@@ -28,10 +28,6 @@ draft: false
 description: "TryHackMe Linux Privilege Escalation Basics walkthrough: exploiting sudo, SUID, PATH hijacking, capabilities, cron and NFS across six target machines."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Linux Privilege Escalation: Basics |![Linux Privilege Escalation: Basics room icon](https://cdn-images.tryhackme.com/room-icons/6989b1062386d3517f652edd-1772788431176)|
-
 Linux Privilege Escalation: Basics is the exploitation half of TryHackMe's Privilege Escalation
 module, picking up exactly where [Linux Privilege Escalation: Enumeration](/post/thm-room-linprivenum/)
 left off. That room taught you to spot the misconfiguration; this one makes you exploit it. Six

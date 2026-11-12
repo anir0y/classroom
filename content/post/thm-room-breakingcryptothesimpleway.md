@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Breaking Crypto the Simple Way walkthrough: RSA weak key factoring, HMAC dictionary attack, AES-CBC brute force, and bit-flip role escalation."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Breaking Crypto the Simple Way |![Breaking Crypto the Simple Way room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1739180133439)|
-
 This easy-difficulty room in the Web Application Red Teaming path teaches four classes of cryptographic failure through hands-on labs running on a single PHP application. Task 2 factors a weak RSA modulus to decrypt ciphertext. Task 3 cracks an HMAC-SHA1 secret key with a dictionary attack. Task 4 exploits a hardcoded AES key exposed in client-side JavaScript. Task 5 performs a bit-flipping attack on an AES-CBC encrypted cookie to escalate from user to admin. Each task pairs the theory with a live exercise on `bcts.thm`. This room sits in the Cryptographic Failures module alongside [Length Extension Attacks](/post/thm-room-lengthextensionattacks/) in the same path.
 
 ## Task 1: Introduction

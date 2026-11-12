@@ -19,10 +19,6 @@ description: "TryHackMe REMnux: The Redux walkthrough, step-by-step enumeration,
 ---
 # REMnux - The Redux
 
-|Profile|
-|:-----|
-|<script src="https://tryhackme.com/badge/434937"></script>|
-
 ---
 
 ## Task 01: introduction

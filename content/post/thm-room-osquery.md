@@ -21,10 +21,6 @@ description: "TryHackMe Room Osquery walkthrough, learn endpoint monitoring with
 
 ## Osquery
 
-|Profile|
-|:-----|
-|<script src="https://tryhackme.com/badge/434937"></script>|
-
 ---
 
 ## TASK 1 : Introduction

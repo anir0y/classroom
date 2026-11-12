@@ -19,10 +19,6 @@ description: "TryHackMe Attacktive Directory walkthrough, step-by-step Active Di
 ---
 # Attacktivedirectory
 
-|Profile|
-|:-----|
-|<script src="https://tryhackme.com/badge/434937"></script>|
-
 
 ## Task 01: Deploy The Machine
 

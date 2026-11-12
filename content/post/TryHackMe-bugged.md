@@ -25,9 +25,7 @@ description: "TryHackMe Bugged walkthrough — John likes to live in a very Inte
 John was working on his smart home appliances when he noticed weird traffic going across the network. Can you help him figure out what these weird network communications are?
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|[Bugged](https://tryhackme.com/room/bugged) |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/adcc4fe6db75bd8f327a51ea55a770aa.png)|
+Room: [Bugged](https://tryhackme.com/room/bugged) on TryHackMe.
 
 
 

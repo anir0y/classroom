@@ -21,11 +21,7 @@ description: "TryHackMe REvil Corp walkthrough with step-by-step solutions — e
 
 You are involved in an incident response engagement and need to analyze an infected host using Redline.
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|REvil Corp|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/b2802c4d2bc81aa4f095d1c0d9e55ab1.png)|
-| <b> REvil Corp [FREE ROOM] </b>| [REvil Corp](https://tryhackme.com/room/revilcorp)|
+Room: [REvil Corp](https://tryhackme.com/room/revilcorp) on TryHackMe.
 
 ## Task 01:  Investigating the Compromised Endpoint
 

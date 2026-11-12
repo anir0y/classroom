@@ -23,10 +23,6 @@ draft: false
 description: "TryHackMe Jailbreaking room walkthrough covering LLM jailbreaking techniques like DAN prompts, grandma exploit, instruction sandwiching, and multi-turn conditioning."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Jailbreaking |![Jailbreaking room icon](https://cdn-images.tryhackme.com/room-icons/6228f0d4ca8e57005149c3e3-1775757147457)|
-
 This room is part of the **AI Security > Prompt Security** path on TryHackMe. It walks through the theory and practice of bypassing an LLM's safety filters, covering both well-known jailbreak patterns and the defences that make them harder. The final task is a live chatbot challenge where you put these techniques to use.
 
 ## Task 1: Introduction

@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Plant Photographer walkthrough: exploiting pycurl SSRF with file:// protocol, Werkzeug debugger PIN bypass, and localhost admin access."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Plant Photographer |![Plant Photographer room icon](https://cdn-images.tryhackme.com/room-icons/63c131e50a24c3005eb34678-1774380725426)|
-
 Plant Photographer is a Hard room that presents a Flask portfolio site with a pycurl-backed download endpoint. The download function accepts a user-controlled `server` parameter, creating a full SSRF primitive. Combined with pycurl's support for the `file://` protocol, this escalates to arbitrary file read, then to Werkzeug debugger PIN computation and remote code execution. This post walks through the complete chain.
 
 ## Task 1: Exploiting the portfolio site

@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe WAF Introduction walkthrough: firewall evolution from stateless to Layer 7, WAF fingerprinting, OWASP CRS rule analysis, and WAF limitations."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|WAF: Introduction |![WAF Introduction room icon](https://cdn-images.tryhackme.com/room-icons/5f04259cf9bf5b57aed2c476-1763367396646)|
-
 This easy room is the first in the Bypassing WAF module of the Web Application Red Teaming path. It covers WAF theory end to end: the evolution of firewalls from stateless packet filters to application-layer inspection, techniques for fingerprinting WAFs in the wild, a deep dive into a real OWASP CRS rule, and the practical limitations every pentester should keep in mind. The room precedes [WAF: Exploitation Techniques](/post/thm-room-wafexploitationtechniques/) in the module.
 
 ## Task 1: Introduction

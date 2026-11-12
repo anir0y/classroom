@@ -29,10 +29,6 @@ draft: false
 description: "TryHackMe Active Directory Basics walkthrough: promote a child domain controller, join a server, push a Restricted Groups GPO, and build a two-way forest trust."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Active Directory Basics |![Active Directory Basics room icon](https://cdn-images.tryhackme.com/room-icons/5c90e7db83f08eb27fc6f878f284b27601b3196c43e993a7c0ea666ca3837a66.66704dd0e54a1f39bff7b1a1-1735574588674)|
-
 **Active Directory Basics** is the theory-plus-lab room in the AD Security Testing Basics module, and the revamped version is a lot more hands on than the name suggests. Instead of reading about domains, you are handed a five-machine network and told to build one: promote a server into a child domain controller, join another server to it, organise the directory, push a Group Policy Object, then wire up a trust to a completely separate forest. If you have already done [Attacktive Directory](/post/thm-room-attacktivedirectory/) and want to know why those attacks work, this is the room that explains the plumbing. It pairs well with [Windows Fundamentals](/post/thm-room-windows-basics/) for the operating system side.
 
 Five of the answers are flags that cannot be guessed. A verification web app sits at `192.168.10.250:5000` and checks your configuration server-side, and only writes the flag to disk if the check passes. That design is the point of the room: you have to actually build the thing.

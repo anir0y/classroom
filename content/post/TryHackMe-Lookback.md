@@ -22,9 +22,7 @@ description: "TryHackMe Lookback walkthrough with step-by-step solutions — enu
 
 You’ve been asked to run a vulnerability test on a production environment.
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|[Lookback](https://tryhackme.com/room/lookback) |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/d8877bf37d4015f1b78d243078dece09.png)|
+Room: [Lookback](https://tryhackme.com/room/lookback) on TryHackMe.
 
 
 

@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe CORS and SOP walkthrough: arbitrary origin reflection, bad regex bypass via subdomain, and null origin exploitation through sandboxed iframes."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|CORS & SOP |![CORS & SOP room icon](https://cdn-images.tryhackme.com/room-icons/849545245a951c2487387940e3638033.png)|
-
 This easy-difficulty room in the Web Application Pentesting path covers the Same-Origin Policy and Cross-Origin Resource Sharing from fundamentals through hands-on exploitation. It sits in the Advanced Client-Side Attacks module alongside the [XSS walkthrough](/post/thm-room-axss/), the [CSRF walkthrough](/post/thm-room-csrfv2/), and the [DOM-Based Attacks walkthrough](/post/thm-room-dombasedattacks/). The lab deploys three CORS-misconfigured PHP endpoints and an exploit server, and each practical task escalates the bypass technique: reflected arbitrary origin, bad regex validation, and null origin via sandboxed iframes.
 
 ## Task 1: Introduction

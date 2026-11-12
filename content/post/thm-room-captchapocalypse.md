@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe CAPTCHApocalypse walkthrough: RSA-encrypted login brute-force with automated Tesseract OCR CAPTCHA solving, per-request CSRF rotation handling."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|CAPTCHApocalypse |![CAPTCHApocalypse room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1744630842770)|
-
 This medium-difficulty room in the Custom Tooling module of the Web Application Red Teaming path is a single-task challenge: brute-force an admin login protected by a CAPTCHA using the first 100 entries from rockyou.txt. The login mechanism is non-trivial, using RSA encryption on both the request and response, and the CAPTCHA plus CSRF token both rotate per attempt, so a naive replay loop fails silently. The room sits alongside [Padding Oracles](/post/thm-room-paddingoracles/) and [Attacking ECB Oracles](/post/thm-room-attackingecboracles/) in the same path.
 
 ## Task 1: Challenge

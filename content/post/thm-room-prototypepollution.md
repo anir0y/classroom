@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe Prototype Pollution walkthrough: JavaScript prototype chain exploitation for property injection, denial of service via toString override, and lodash abuse."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Prototype Pollution |![Prototype Pollution room icon](https://cdn-images.tryhackme.com/room-icons/671b4a330d8f749a90b0d79aaf07a9ac.png)|
-
 This medium-difficulty room in the Web Application Pentesting path walks through JavaScript prototype pollution from first principles to full exploitation. It sits in the Advanced Server-Side Attacks module alongside the [SSRF walkthrough](/post/thm-room-ssrfhr/), the [File Inclusion walkthrough](/post/thm-room-filepathtraversal/), and the [SSTI walkthrough](/post/thm-room-ssti/). The room covers how JavaScript's prototype-based inheritance works, how an attacker can inject arbitrary properties through `__proto__`, and how that injection escalates to denial of service by overriding built-in methods.
 
 ## Task 1: Introduction

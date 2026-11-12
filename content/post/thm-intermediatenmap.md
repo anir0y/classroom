@@ -23,9 +23,7 @@ description: "TryHackMe Intermediate Nmap walkthrough — master Nmap network sc
 # OverView
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|[Intermediate Nmap](https://tryhackme.com/room/intermediatenmap) {FREE ROOM}|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/01aff3c76024f34b0582ad59e2138bfd.png)|
+Room: [Intermediate Nmap](https://tryhackme.com/room/intermediatenmap) on TryHackMe.
 
 
 

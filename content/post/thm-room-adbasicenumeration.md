@@ -32,10 +32,6 @@ draft: false
 description: "TryHackMe AD Basic Enumeration walkthrough: fping and nmap host discovery, anonymous SMB shares, LDAP and RPC null sessions, and CrackMapExec password spraying."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|AD: Basic Enumeration |![AD: Basic Enumeration room icon](https://cdn-images.tryhackme.com/room-icons/899ee7ac465626c3ebaa8bb73db4d329178d4d453afd52c6c6d9d971019cb4b5.5f04259cf9bf5b57aed2c476-1746607282956)|
-
 **AD: Basic Enumeration** sits in the AD Security Testing Basics module next to [Active Directory Basics](/post/thm-room-winadbasicsrevamp/) and [Intro to AD Authentication](/post/thm-room-introtoactivedirectoryauthentication/). Like [Intro to AD Breaching](/post/thm-room-introductiontoactivedirectorybreaching/), it starts you with nothing: VPN access to a subnet, no username, no password. The whole room is the part of an internal engagement that happens before any attack, turning a bare IP range into a domain name, a user list, a password policy, and finally one working credential.
 
 The scoped range is `10.211.11.0/24`. The room diagram shows three boxes: the attacker, a workstation, and a domain controller.

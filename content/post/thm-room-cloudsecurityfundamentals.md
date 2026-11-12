@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe Cloud Security Fundamentals walkthrough: a guided chain from port scan to public bucket, SSRF to the IMDS, stolen creds and a wildcard IAM policy."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Cloud Security Fundamentals |![Cloud Security Fundamentals room icon](https://cdn-images.tryhackme.com/room-icons/68baea2454c82afe90fd7020-1778826826406)|
-
 Cloud Security Fundamentals sits in the Specialized Domains section of the Jr Penetration Tester path, and it is the room that finally ties the theory together. Where [Cloud Computing Fundamentals](/post/thm-room-cloud-computing-fundamentals/) explains what the cloud is and [Cloud Security Pitfalls](/post/thm-room-cloudsecuritypitfalls/) catalogues the common mistakes, this room hands you a deliberately broken staging environment and walks you through the full kill chain against it. Six teaching tasks cover service models, IAM, storage, networking and metadata, then one practical task makes you chain all five ideas with nothing but `nmap` and `curl`.
 
 The whole point is that the attack is provider agnostic. Nothing here needs the AWS or Azure CLI. If you can read a JSON policy and send an HTTP request, you can walk the chain. This writeup covers every task, with the conceptual answers up front and the practical attack in full.

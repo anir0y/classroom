@@ -30,10 +30,6 @@ draft: false
 description: "TryHackMe Overflow The Jackpot CTF walkthrough: XOR crypto, PHP wrapper LFI, PCAP forensics, detection engineering, and boot2root from WordPress RCE to root."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Overflow The Jackpot CTF |![Overflow The Jackpot CTF room icon](https://cdn-images.tryhackme.com/room-icons/69d514a8a643762d5700ec6f-1785923258675)|
-
 A six-task CTF covering crypto, web, forensics, detection engineering, and a hard boot2root chain. The final task is a full privilege escalation from an unauthenticated WordPress exploit through a restricted pickle sandbox escape to forging authenticated commands against a custom C2 implant running as root.
 
 ## Task 1: Introduction and Rules

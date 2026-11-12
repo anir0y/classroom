@@ -31,10 +31,6 @@ draft: false
 description: "TryHackMe Proxy walkthrough: a writable SMB share that executes PowerShell, a coerced NetNTLMv2 hash, and Kerberos constrained delegation to Administrator on the DC."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Proxy |![Proxy room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1779364439801)|
-
 **Proxy** is the challenge box that closes out the Active Directory Security Testing Basics module, after the guided rooms [Intro to Credential Harvesting](/post/thm-room-introtocredentialharvesting/) and [Intro to AD Lateral Movement](/post/thm-room-introductiontoadlateralmovement/). No tasks, no hints, one question: what is the Administrator flag. The blurb is the only steer you get, and in hindsight it is an accurate one: "Every request has to go through someone... but what if that someone is you?"
 
 Up front, the honest part: I burned two full lab sessions on this and did not get it on my own. I had the right shape of the attack and the wrong mechanism, and I only unstuck it by reading public writeups. That mistake is the most useful thing in this post, so it stays in.

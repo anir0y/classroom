@@ -32,10 +32,6 @@ draft: false
 description: "TryHackMe Intro to AD Lateral Movement walkthrough: PsExec and Evil-WinRM remote execution, Pass-the-Hash credential reuse, and an SSH SOCKS pivot onto the DC."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Intro to AD Lateral Movement |![Intro to AD Lateral Movement room icon](https://cdn-images.tryhackme.com/room-icons/6989b1062386d3517f652edd-1779283444495)|
-
 **Intro to AD Lateral Movement** is the room that follows [Intro to Credential Harvesting](/post/thm-room-introtocredentialharvesting/) in the Active Directory Security Testing Basics module. The previous room ended with a pile of harvested secrets. This one is about spending them: one plaintext credential turns into a SYSTEM shell, that shell yields a hash, the hash unlocks a second host, and a tunnel through a fourth machine gets you onto the domain controller. Nothing here is an exploit.
 
 The lab is four hosts on `192.168.13.0/24`: the DC `ROOTDC` at `.100`, `SERVER1` at `.51`, `WRK` at `.61`, and a Linux `WebServer` running Gitea at `.71`. The domain is `thm.loc` and the starting credential is `jdoe:Summer2026!`. Only WRK, SERVER1 and the WebServer answer from the AttackBox; the DC and Gitea's web port do not, which is the whole point of Task 5.

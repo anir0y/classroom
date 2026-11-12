@@ -27,10 +27,6 @@ draft: false
 description: "Walkthrough of the TryHackMe Trusted By Default room: correlating IIS, Windows and Zeek logs in Splunk to trace service-account abuse from a web request to RDP."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Trusted By Default |![Trusted By Default room icon](https://cdn-images.tryhackme.com/room-icons/5e8dd9a4a45e18443162feab-1787897717352)|
-
 Trusted By Default is a premium DFIR room built around a single Splunk instance holding five log
 sources. The brief is short: investigate suspected abuse of a trusted service account at Aurora
 Retail Group. There is no exploitation to do. The whole room is one long correlation exercise where

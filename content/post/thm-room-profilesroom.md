@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe Profiles walkthrough: Linux memory forensics with Volatility 3, recovering bash history, network sockets, page cache files and ext4 inodes from a LiME dump"
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Profiles |![Profiles room icon](https://cdn-images.tryhackme.com/room-icons/a91c8ed49a13a2c162836a41c9db036c.png)|
-
 A medium-difficulty DFIR challenge: a database server was compromised, and the incident response team captured a LiME memory dump before the attacker could finish cleaning up. The task is to reconstruct the attack timeline from that single 4 GB memory image. If you enjoyed the log-based rooms in the SOC Level 2 path, this one is a step up because the evidence lives in volatile memory, not in a SIEM index.
 
 ## Task 1: The Incident

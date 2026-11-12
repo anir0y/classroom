@@ -19,11 +19,7 @@ description: "TryHackMe The Cod Caper walkthrough with step-by-step solutions â€
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|The Cod Caper|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/282c55307eada4ad18a0b06e4d65ff34.jpeg)|
-| <b> The Cod Caper [FREE] </b>| [The Cod Caper](https://tryhackme.com/room/thecodcaper)|
+Room: [The Cod Caper](https://tryhackme.com/room/thecodcaper) on TryHackMe.
 
 ## 1: Intro
 

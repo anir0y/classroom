@@ -25,10 +25,6 @@ draft: false
 description: "Walkthrough of TryHackMe Hammer: leak a reset email from a log, bypass the OTP rate limit via X-Forwarded-For, forge a JWT from its kid key file, and get RCE."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Hammer |![Hammer room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1723567516578)|
-
 Hammer is a medium room in the Authentication module of the Web Application Pentesting path, and the whole room lives up to its one-line brief: bypass the authentication mechanisms and get RCE. It is the same JWT-forging muscle the [Domino](/post/thm-room-domino/) capstone drilled, and a close cousin of the broken-reset logic in [Broken Authentication](/post/thm-room-brokenauthentication/). Three bugs chain here: a leaked account in a world-readable log, a password-reset OTP whose rate limit is keyed on a spoofable header, and a JWT whose signing key is read from a file path you control through the token itself.
 
 The box was reachable directly from my Mac over the TryHackMe VPN (`utun10`), so the entire solve is curl, Python and hashcat, no AttackBox needed. Both flags were verified correct by the TryHackMe answer checker.

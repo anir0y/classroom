@@ -25,10 +25,6 @@ draft: false
 description: "Walkthrough of TryHackMe LDAP Injection: tautology authentication bypass, enumerating every directory entry, and blind boolean injection to reach the dashboard flag."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|LDAP Injection |![LDAP Injection room icon](https://cdn-images.tryhackme.com/room-icons/1673da2794045c46bfd27b0e0fc8f123.png)|
-
 LDAP Injection sits in the Injection Attacks module of the Web Application Pentesting path, right after the template work in [Server-side Template Injection](/post/thm-room-serversidetemplateinjection/) and the ORM and SQL rooms. The root cause is the same as every other room in the module, untrusted input reaching a query language, but the query language here is the LDAP search filter, with its own prefix-notation grammar of `&`, `|`, `!`, and the `*` wildcard. This room has two flags: a tautology authentication bypass in a visible login, and a blind boolean extraction against a login that only tells you yes or no.
 
 The target is a small PHP app on Apache (Ubuntu) backed by OpenLDAP, reachable directly over the TryHackMe VPN, so every command below is a plain `curl` from my own machine. The lab IP was `10.49.177.56`; substitute your own. The app has three playgrounds: `normal.php` (reflects results), `blind.php` (boolean only), and a `login.php` plus `dashboard.php` pair.

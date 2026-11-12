@@ -20,11 +20,7 @@ description: "TryHackMe Phishing Emails 1 walkthrough — analyze phishing email
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Phishing Emails 1|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/f9eb29940c6bb7bacd2f414475b4059e.png)|
-| <b> Phishing Emails 1 [FREE ROOM] </b>| [Phishing Emails 1](https://www.tryhackme.com/room/phishingemails1tryoe)|
+Room: [Phishing Emails 1](https://www.tryhackme.com/room/phishingemails1tryoe) on TryHackMe.
 
 ## Task 01:  Introduction
 

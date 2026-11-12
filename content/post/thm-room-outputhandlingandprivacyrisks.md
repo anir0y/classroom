@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe LLM Output Handling walkthrough covering OWASP LLM05, LLM02, XSS via innerHTML, and command execution through unsanitised model output."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|LLM Output Handling and Privacy Risks |![LLM Output Handling and Privacy Risks room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1759929001815)|
-
 This room is part of the **Attacking LLMs** module within the Web Application Red Teaming path. It covers two of the most overlooked risks when working with LLMs: **Improper Output Handling (LLM05)** and **Sensitive Information Disclosure (LLM02)** from the OWASP Top 10 for LLM Applications 2025. The room pairs theory with a live lab where you exploit an LLM-powered chatbot to achieve remote code execution.
 
 ## Task 1: Introduction

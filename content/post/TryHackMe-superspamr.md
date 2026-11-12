@@ -21,11 +21,7 @@ description: "TryHackMe Super-Spam walkthrough with step-by-step solutions — e
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Super-Spam|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/f8f1345b6e420c2f12ab1cd9f1e2ede9.png)|
-| <b> Room [Subscription Required] </b>| [Super-Spam](https://tryhackme.com/room/superspamr)|
+Room: [Super-Spam](https://tryhackme.com/room/superspamr) on TryHackMe.
 
 ## Task 01: Defeat Super-Spam
 

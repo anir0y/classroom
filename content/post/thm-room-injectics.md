@@ -26,10 +26,6 @@ draft: false
 description: "Walkthrough of TryHackMe Injectics: bypassing the login SQLi keyword filter, stacked query injection, and a Twig sandbox escape via the sort filter for RCE."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Injectics |![Injectics room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1721317107138)|
-
 Injectics is the capstone challenge of the Injection Attacks module in the Web Application Pentesting path, and it earns the name. Where [NoSQL Injection](/post/thm-room-nosqlinjectiontutorial/) and [ORM Injection](/post/thm-room-orminjection/) each drill one idea, Injectics makes you chain several: a login SQL injection behind a keyword filter, a second injection in the admin area that happens to allow stacked queries as database root, and a Twig template injection that is locked inside a sandbox. Neither flag sits in the database or on a page, so the whole room comes down to turning those injections into code execution.
 
 The target is a single PHP leaderboard app on Apache 2.4.41 (Ubuntu) backed by MySQL 8. Port 80 was reachable directly over the TryHackMe VPN for my session, so every command below is a plain `curl` from my own machine. The lab IP was `10.49.169.238`; substitute your own. Looted account passwords are lab generated and short lived, and I have redacted them in the output. I never handle my own credentials.

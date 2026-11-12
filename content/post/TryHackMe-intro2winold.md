@@ -20,11 +20,7 @@ description: "TryHackMe Intro to Windows walkthrough — explore Windows operati
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Intro to Windows|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/d95c60aba81ab78c7716e23360eec377.png)|
-| <b> Room [Subscription Required] </b>| [Intro to Windows](https://tryhackme.com/room/intro2winold)|
+Room: [Intro to Windows](https://tryhackme.com/room/intro2winold) on TryHackMe.
 
 ## Task 01: Windows history
 

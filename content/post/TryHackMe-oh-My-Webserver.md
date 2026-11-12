@@ -23,11 +23,7 @@ description: "TryHackMe Oh My Webserver walkthrough — exploit web application 
 
 This is a free room, which means anyone can deploy virtual machines in the room (without being subscribed)! 1682 users are in here and this room is 152 days old.
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|oh-My-Webserver|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/c1833021c98fa6c74fc125f4b34741ca.png)|
-| <b> oh-My-Webserver [FREE] </b>| [oh-My-Webserver](https://tryhackme.com/room/ohmyweb)|
+Room: [oh-My-Webserver](https://tryhackme.com/room/ohmyweb) on TryHackMe.
 
 ## recon
 

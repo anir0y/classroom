@@ -23,11 +23,7 @@ description: "TryHackMe PalsForLife walkthrough with step-by-step solutions — 
 
 Abuse a misconfigured Kubernetes cluster
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|PalsForLife|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/4e0a48a3c9d2d998b6011f67bfdc9bb6.png)|
-| <b> PalsForLife [FREE] </b>| [PalsForLife](https://tryhackme.com/room/palsforlife)|
+Room: [PalsForLife](https://tryhackme.com/room/palsforlife) on TryHackMe.
 
 ## Task 01: Deploy the VM
 

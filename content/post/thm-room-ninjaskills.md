@@ -23,10 +23,6 @@ draft: false
 description: "TryHackMe Ninja Skills walkthrough: locating hidden files across the Linux filesystem with find, inspecting ownership, permissions, hashes and line counts."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Ninja Skills |![Ninja Skills room icon](https://cdn-images.tryhackme.com/room-icons/debd97fb93bffb8eb23d0687aa382bb0.png)|
-
 This easy room from the Linux Fundamentals path gives you a list of twelve randomly named files scattered across the filesystem and asks six questions about their properties: group ownership, IP content, SHA1 hash, line count, owner UID, and execute permissions. The challenge is about efficiency, not difficulty. SSH in (credentials `new-user` / `new-user`) and answer everything with `find`, `stat`, `grep`, `sha1sum`, and `wc`.
 
 ## Task 1: Ninja Skills

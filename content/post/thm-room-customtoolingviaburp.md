@@ -27,10 +27,6 @@ draft: false
 description: "TryHackMe Custom Tooling using Burp walkthrough: building Burp extensions for AES-CBC brute-force, ROT13 encoding, and RSA-signed password changes."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Custom Tooling using Burp |![Custom Tooling using Burp room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1743754283057)|
-
 This easy-difficulty room in the Custom Tooling module of the Web Application Red Teaming path walks through building Java-based Burp Suite extensions that handle custom cryptography. The application encrypts every login request with AES-CBC using a random key and a fixed IV, then layers ROT13 and RSA signing on top for the authentication and password-change endpoints. Off-the-shelf Burp tools (Intruder, Repeater) cannot handle this, so you write extensions that encrypt, decrypt, and sign automatically. The room sits alongside [Custom Tooling Using Python](/post/thm-room-customtoolingpython/) in the same module, and the next room in the path is Tooling via Browser Automation.
 
 ## Task 1: Introduction

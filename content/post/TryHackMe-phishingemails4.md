@@ -22,10 +22,7 @@ description: "TryHackMe Phishing Emails 4 walkthrough — analyze phishing email
 ## OverView
 
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Phishing Email 4|![logo](https://i.imgur.com/TYr2wgy.png)|
-| <b> Phishing Email 4 [Subscription Required] </b>| [Phishing Email 4](https://tryhackme.com/room/phishingemails4gkxh)|
+Room: [Phishing Email 4](https://tryhackme.com/room/phishingemails4gkxh) on TryHackMe.
 
 
 ## Task 01:  Introduction

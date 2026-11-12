@@ -27,10 +27,6 @@ draft: false
 description: "TryHackMe HTTP Browser Desync walkthrough: Werkzeug CVE-2022-29361 keep-alive desync, form-based client-side smuggling, and XSS chaining to steal session cookies."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|HTTP Browser Desync |![HTTP Browser Desync room icon](https://cdn-images.tryhackme.com/room-icons/d28eeb115d0cc7cf43776e8b4dc84153.png)|
-
 This medium-difficulty room in the Web Application Pentesting path covers HTTP Browser Desync (Client-Side Desync), a variant of request smuggling where the attacker desyncs the victim's browser connection to a vulnerable front-end server. It sits in the HTTP Request Smuggling module alongside the [HTTP Request Smuggling walkthrough](/post/thm-room-httprequestsmuggling/), the [HTTP/2 Request Smuggling walkthrough](/post/thm-room-http2requestsmuggling/), and the [WebSocket Request Smuggling walkthrough](/post/thm-room-wsrequestsmuggling/). The room builds from HTTP fundamentals through CSD identification to a full exploit chain: a stored XSS gadget that triggers a form-based browser desync, exploiting Werkzeug's CVE-2022-29361 keep-alive flaw to redirect the victim's sub-resource load to an attacker-controlled server and exfiltrate their session cookie.
 
 ## Task 1: Introduction

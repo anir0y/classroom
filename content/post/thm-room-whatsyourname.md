@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe Whats Your Name walkthrough: stored XSS cookie theft, CSRF password reset via admin bot, UPDATEXML SQLi, and cross-subdomain session abuse."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Whats Your Name? |![Whats Your Name room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1718463471016)|
-
 This medium-difficulty room tests client-side exploitation from end to end: inspecting JavaScript to find innerHTML sinks, stealing cookies via stored XSS, forging cross-site requests through a chat bot, and chaining SQL injection to extract credentials. Two web applications share a session cookie across subdomains, and that shared trust is the pivot for both flags.
 
 ## Task 1: Challenge

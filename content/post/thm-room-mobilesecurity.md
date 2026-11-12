@@ -30,10 +30,7 @@ draft: false
 description: "Walkthrough of TryHackMe Mobile Application Security: MobSF static analysis of the Leaky Package APK and IPA, mapped to the OWASP Mobile Top 10."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Mobile Application Security |![Mobile Application Security room icon](https://cdn-images.tryhackme.com/room-icons/6808d44047ac5684351c94da-1778731226221)|
-| <b> Room [Subscription Required] </b>| [Mobile Application Security](https://tryhackme.com/room/mobilesecurity)|
+Room: [Mobile Application Security](https://tryhackme.com/room/mobilesecurity) on TryHackMe.
 
 Mobile Application Security sits in the Specialized Domains module of the Jr Penetration Tester path. It is a concept-first room: six reading tasks build up the mobile pentest methodology and the OWASP Mobile Top 10, then one hands-on challenge, Leaky Package, asks you to pull a real Android APK and iOS IPA apart with static analysis. If you have worked through web-side rooms like [Walking An Application](/post/thm-room-walkinganapp/) and [API Pentesting](/post/thm-room-apitesting/), the mindset carries over: the vulnerability classes rhyme, only the package format changes.
 

@@ -20,11 +20,7 @@ description: "TryHackMe Overpass 2 - Hacked walkthrough — investigate a compro
 ---
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>||
-|Overpass 2 |![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/96141387d9d4a22658f8db0ada67d62d.png)|
-|room| [Overpass 2 ](https://tryhackme.com/room/overpass2hacked)|
+Room: [Overpass 2](https://tryhackme.com/room/overpass2hacked) on TryHackMe.
 
 ---
 

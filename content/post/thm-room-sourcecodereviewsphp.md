@@ -29,10 +29,6 @@ draft: false
 description: "TryHackMe Source Code Review PHP walkthrough: XXE via LIBXML_NOENT, unserialize Monolog/RCE1, magic hash bypass, and Laravel framework review."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Source Code Review: PHP |![Source Code Review PHP room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1783063813381)|
-
 This easy-difficulty room in the Web Application Pentesting path teaches white-box PHP code review against a Laravel 8 application called Stockpile. The first nine tasks walk through the methodology: mapping the codebase, source-to-sink tracing, PHP-specific pitfalls (loose comparison and magic hashes), injection flaws, XSS, file inclusion, insecure deserialization, SSRF, and XXE. Task 10 covers framework-aware review (Laravel route groups, mass assignment, and dependency auditing with `composer audit`). Task 11 introduces static analysis tooling and triage discipline. Task 12 is the practical capstone that chains deserialization or XXE to read the flag. This room sits alongside the [Web Frameworks: Code Review walkthrough](/post/thm-room-webframeworkscodereview/), the [Web Frameworks: Python walkthrough](/post/thm-room-webframeworkspython/), the [Web Frameworks: Java walkthrough](/post/thm-room-webframeworksjava/), and the [Web Frameworks: .NET walkthrough](/post/thm-room-webframeworksnet/) in the same module.
 
 ## Task 1: Introduction

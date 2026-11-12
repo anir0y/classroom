@@ -22,11 +22,7 @@ description: "TryHackMe CyberCrafted walkthrough with step-by-step solutions —
 
 Pwn this pay-to-win Minecraft server!
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|CyberCrafted|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/dd06737472c79a806e2049ddeb3af354.png)|
-| <b> CyberCrafted [Free Room] </b>| [CyberCrafted](https://tryhackme.com/room/cybercrafted)|
+Room: [CyberCrafted](https://tryhackme.com/room/cybercrafted) on TryHackMe.
 
 ## Task 01: Deploy the machine
 

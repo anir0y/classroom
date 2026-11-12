@@ -26,10 +26,6 @@ draft: false
 description: "Walkthrough of TryHackMe ORM Injection: Laravel whereRaw raw query injection to dump admins and an ORDER BY json_extract break-out that leaks every user."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|ORM Injection |![ORM Injection room icon](https://cdn-images.tryhackme.com/room-icons/62a7685ca6e7ce005d3f3afe-1718463270604)|
-
 ORM Injection sits in the Injection Attacks module of the Web Application Pentesting path, one room along from the classic SQL work. An ORM (object relational mapper) is supposed to kill SQL injection by turning object calls into parameterised queries, so this room is about the places where that promise leaks: a developer who reaches for a raw query method, and an ORM library with a known injection bug. If you have worked through [NoSQL Injection](/post/thm-room-nosqlinjectiontutorial/) and [Advanced SQL Injection](/post/thm-room-advancedsqlinjection/), the mental model is the same (untrusted input reaching a query), only here it happens one abstraction layer up, inside Laravel's Eloquent.
 
 The target is a single Laravel app backed by MariaDB on a Windows XAMPP host. One detail shaped the whole solve: the app listens on port 80, which is firewalled off from the VPN, while the box only exposes the XAMPP dashboard on 443 and 8080. The THM AttackBox sits inside the lab network and can reach port 80, so I used it purely as a pivot: one SSH local forward from my Mac to `AttackBox:22`, forwarding `127.0.0.1:8081` to `target:80`, and every command below is a plain `curl` against that tunnel. Looted values are shown, lab-generated and short lived; I never handle my own credentials.

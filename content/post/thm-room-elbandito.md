@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe El Bandito walkthrough: Spring Boot heapdump extraction and H2.CL desync via raw HTTP/2 frames to capture the bot's flag cookie."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|El Bandito |![El Bandito room icon](https://cdn-images.tryhackme.com/room-icons/a183d2d10f868ab17143370c5834086e.svg)|
-
 This hard-difficulty room in the Web Application Pentesting path is a challenge box with no guided tasks, just two flags to find. It sits in the HTTP Request Smuggling module alongside the [HTTP Request Smuggling walkthrough](/post/thm-room-httprequestsmuggling/), the [HTTP/2 Request Smuggling walkthrough](/post/thm-room-http2requestsmuggling/), the [WebSocket Request Smuggling walkthrough](/post/thm-room-wsrequestsmuggling/), and the [HTTP Browser Desync walkthrough](/post/thm-room-requestsmugglingbrowserdesync/). The target runs HTTP/2 over TLS on port 80 (behind "El Bandito Server") and a Spring Boot application on port 8080 behind Nginx. The first flag is in a Java heapdump, and the second requires an H2.CL request smuggling exploit to capture a bot's cookie.
 
 ## Task 1: Find the flags

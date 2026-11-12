@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe Length Extension Attacks walkthrough: SHA-256 internal state recovery, forged file signatures, cookie role escalation, and HMAC as the fix."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Length Extension Attacks |![Length Extension Attacks room icon](https://cdn-images.tryhackme.com/room-icons/645b19f5d5848d004ab9c9e2-1730384887772)|
-
 This medium-difficulty room in the Cryptographic Failures module of the Web Application Red Teaming path teaches SHA-256 length extension attacks through two practical labs. Task 5 forges a file signature to access a hidden product image, and Task 6 extends an authentication cookie to escalate from user to admin. The theory tasks cover Merkle-Damgard internals, padding rules, and why HMAC defeats the attack. This room sits alongside [Breaking Crypto the Simple Way](/post/thm-room-breakingcryptothesimpleway/) in the same module.
 
 ## Task 1: Introduction

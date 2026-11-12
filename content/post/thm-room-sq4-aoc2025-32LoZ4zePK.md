@@ -25,10 +25,6 @@ draft: false
 description: "TryHackMe BreachBlocker Unlocker walkthrough: source code exposure, timing side channels, password reuse, 2FA brute force via session replay."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|BreachBlocker Unlocker |![BreachBlocker Unlocker room icon](https://cdn-images.tryhackme.com/room-icons/5ed5961c6276df568891c3ea-1764600321178)|
-
 BreachBlocker Unlocker is AoC 2025 Side Quest 4, a Hard room that chains three web application vulnerabilities into a complete bank account compromise: exposed server source code, a timing side channel on a custom hash function, password reuse across services, and a 2FA bypass through session cookie replay. This post walks through the full solve. If you are working through the AoC 2025 side quests, check out the [Advent of Cyber 2025 walkthrough](/post/thm-room-adventofcyber2025/) for the main path.
 
 ## Task 1: Hopper the Detective

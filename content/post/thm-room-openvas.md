@@ -20,7 +20,6 @@ description: Try Hack ME Room OpenVas walkthrough
 ![openvas logo](/img/openvas.png)
 
 ## OpenVas
-<script src="https://tryhackme.com/badge/434937"></script> 
  > **Room** [Subscription Only](https://tryhackme.com/room/openvas) 
 
 ## Task 1: Introduction

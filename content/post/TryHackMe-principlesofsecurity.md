@@ -17,11 +17,7 @@ description: "TryHackMe Principles of Security walkthrough — step-by-step enum
 
 ## OverView
 
-|||
-|---|---|
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|Principles of Security|![logo](https://tryhackme-images.s3.amazonaws.com/room-icons/6c678e92fe6d0da58f691d94c4cacbe5.png)|
-| <b> Room [Free] </b>| [Principles of Security](https://tryhackme.com/room/principlesofsecurity)|
+Room: [Principles of Security](https://tryhackme.com/room/principlesofsecurity) on TryHackMe.
 
 ## Introduction
 

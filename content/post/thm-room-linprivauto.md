@@ -27,10 +27,6 @@ draft: false
 description: "TryHackMe Linux Privilege Escalation Automation walkthrough: LES, exploiting CVE-2025-32463 sudo-chwoot, pspy, and a sudo LD_PRELOAD root chain."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|Linux Privilege Escalation: Automation |![Linux Privilege Escalation: Automation room icon](https://cdn-images.tryhackme.com/room-icons/6989b1062386d3517f652edd-1772788469674)|
-
 Linux Privilege Escalation: Automation is the fourth room in TryHackMe's Privilege Escalation
 module, after [Enumeration](/post/thm-room-linprivenum/) and
 [Basics](/post/thm-room-linprivbasics/). Where Basics made you exploit six manually-found vectors

@@ -24,10 +24,6 @@ draft: false
 description: "TryHackMe CSRF walkthrough: GET-based transfer exploit, double submit cookie token prediction, SameSite Lax bypass for logout and isBanned cookie attacks."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|CSRF |![CSRF room icon](https://cdn-images.tryhackme.com/room-icons/862c9666786e7d2c3cb9fe893fe3acd5.png)|
-
 This medium-difficulty room in the Web Application Pentesting path walks through cross-site request forgery from basic GET-based exploits to advanced SameSite cookie bypasses. It sits in the Advanced Client-Side Attacks module alongside the [XSS walkthrough](/post/thm-room-axss/). The lab deploys a banking application (MyBank) with a mailbox component, and each task escalates the attack surface: unprotected transfers, predictable CSRF tokens via double submit cookies, and SameSite Lax timing windows. For a room that chains XSS with CSRF in a single attack path, see the [Whats Your Name walkthrough](/post/thm-room-whatsyourname/).
 
 ## Task 1: Introduction

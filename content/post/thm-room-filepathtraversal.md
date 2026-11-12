@@ -26,10 +26,6 @@ draft: false
 description: "TryHackMe File Inclusion walkthrough: relative and absolute path traversal, PHP wrapper code execution via base64 decode, and log poisoning to RCE."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|File Inclusion, Path Traversal |![File Inclusion room icon](https://cdn-images.tryhackme.com/room-icons/fa8d519b76b29da0c7abb5afa1e7185f.png)|
-
 This medium-difficulty room in the Web Application Pentesting path covers all three flavours of file inclusion: local file inclusion with path traversal, remote file inclusion, and the escalation from file reads to code execution through PHP wrappers and log poisoning. It sits in the Advanced Server-Side Attacks module alongside the [SSRF walkthrough](/post/thm-room-ssrfhr/) and the [SSTI walkthrough](/post/thm-room-ssti/).
 
 ## Task 1: Introduction

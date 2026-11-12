@@ -21,7 +21,6 @@ description: Try Hack ME Room Zerologon walkthrough
 ---
 ## Zero Logon - The Zero Day Angle
 
-<script src="https://tryhackme.com/badge/434937"></script>  
 
 ## Room [Subscription Only](https://tryhackme.com/room/zer0logon)
 ---

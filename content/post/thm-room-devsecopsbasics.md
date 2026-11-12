@@ -28,10 +28,6 @@ draft: false
 description: "Walkthrough of TryHackMe DevSecOps Basics: the story from Waterfall to Agile to DevOps, shifting security left, DevSecOps culture, and the Fuel Trouble flag."
 ---
 
-| <script src="https://tryhackme.com/badge/434937"></script>| <a class="twitter-follow-button" href="https://twitter.com/anir0y" data-size="large"> Follow @anir0y<a>|
-|---|---|
-|DevSecOps Basics |![DevSecOps Basics room icon](https://cdn-images.tryhackme.com/room-icons/6228f0d4ca8e57005149c3e3-1779362633141)|
-
 DevSecOps Basics sits in the Specialized Domains module of the Jr Penetration Tester path, and it is the room [The Blue Team Perspective](/post/thm-room-blueteamperspective/) points you at next when it talks about shifting from reactive defense to proactive security. It is a theory room, no VM, no shell, just the story of how software development evolved and where security fits into it. Every answer comes straight out of the task text, but the input masks make the exact wording matter, so this walkthrough is as much about reading the mask as knowing the concept. If you want the hands-on counterpart in the same module, see the [Cloud Security Fundamentals](/post/thm-room-cloudsecurityfundamentals/) and [Mobile Application Security](/post/thm-room-mobilesecurity/) writeups.
 
 ## Task 1: Introduction
