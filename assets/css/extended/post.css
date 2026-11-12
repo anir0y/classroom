@@ -215,7 +215,7 @@
   border:1px solid var(--border);
   border-radius:var(--radius);
 }
-.author-box-avatar{width:56px;height:56px;border-radius:50%;flex:none;margin:0}
+.author-box-avatar{width:56px;height:56px;border-radius:0;flex:none;margin:0}
 .author-box p{margin:0}
 .author-box-name{font-weight:700;color:var(--primary)}
 .author-box-name a{color:inherit;text-decoration:underline;text-underline-offset:.2rem}

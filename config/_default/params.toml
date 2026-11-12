@@ -45,7 +45,7 @@ tocopen = false
 
 # Round "AR" mark beside the site name in the header.
 [label]
-  icon = "/img/avatar.jpeg"
+  icon = "/img/anir0y-logo.svg"
   iconHeight = 30
 
 [[socialIcons]]
