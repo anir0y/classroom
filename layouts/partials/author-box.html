@@ -2,8 +2,8 @@
 <aside class="author-box" aria-label="About the author">
   <img class="author-box-avatar" src="{{ "img/avatar.jpeg" | relURL }}" alt="" width="56" height="56" loading="lazy">
   <div class="author-box-body">
-    <p class="author-box-name">Written by {{ site.Params.author }}</p>
-    <p class="author-box-bio">Security researcher. I write up every room and lab I work through so the reasoning is on record, not only the result.</p>
+    <p class="author-box-name">Written by <a href="{{ "about/me/" | relURL }}">{{ site.Params.author }}</a></p>
+    <p class="author-box-bio">Offensive security consultant with more than 13 years in InfoSec. These write-ups go task by task so you can reuse the method, not only the answer.</p>
     <p class="author-box-links">
       {{- range site.Params.socialIcons }}
       <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>

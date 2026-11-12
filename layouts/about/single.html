@@ -1,0 +1,68 @@
+{{- /* The About page: who writes the site, the learning paths, and work outside it.
+     Text and facts come from content/about/me.md. Styles in assets/css/extended/about.css. */ -}}
+{{- define "main" }}
+{{- $name := .Params.name | default site.Params.author }}
+{{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+<article class="about-page">
+  <header class="about-head">
+    <img class="about-avatar" src="{{ "img/avatar.jpeg" | relURL }}" alt="" width="120" height="120">
+    <div class="about-head-body">
+      <h1>{{ $name }}</h1>
+      <p class="about-role">
+        {{- .Params.role }}{{ with .Params.handle }}<span class="about-handle">@{{ . }}</span>{{ end -}}
+      </p>
+      {{- with .Params.links }}
+      <ul class="about-links">
+        {{- range . }}
+        <li><a{{ if .primary }} class="about-link-primary"{{ end }} href="{{ .url }}" target="_blank" rel="noopener me">{{ .name }}</a></li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+  </header>
+
+  <div class="about-body">
+    <div class="post-content md-content">{{ .Content }}</div>
+    <dl class="about-facts">
+      {{- range .Params.facts }}
+      <div><dt>{{ .value }}</dt><dd>{{ .label }}</dd></div>
+      {{- end }}
+      <div><dt>{{ len $posts }}</dt><dd>write-ups on this site</dd></div>
+    </dl>
+  </div>
+
+  <section class="about-section" aria-labelledby="about-paths">
+    <div class="home-section-head">
+      <h2 id="about-paths">Learning paths</h2>
+      <a href="{{ "post/" | relURL }}">All {{ len $posts }} write-ups</a>
+    </div>
+    {{ partial "path-lines.html" . }}
+  </section>
+
+  {{- with .Params.work }}
+  <section class="about-section" aria-labelledby="about-work">
+    <div class="home-section-head">
+      <h2 id="about-work">Outside Classroom</h2>
+    </div>
+    <ul class="about-work">
+      {{- range . }}
+      <li>
+        <a href="{{ .url }}" target="_blank" rel="noopener">
+          <span class="about-work-kind">{{ .kind }}</span>
+          <span class="about-work-title">{{ .title }}</span>
+          <span class="about-work-text">{{ .text }}</span>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</article>
+{{ partial "path-progress.html" . }}
+
+{{- /* Tells search engines and AI assistants that this page is the author's profile, and which accounts are his. */}}
+{{- $sameAs := slice }}
+{{- range .Params.links }}{{ $sameAs = $sameAs | append .url }}{{ end }}
+{{- $person := dict "@type" "Person" "name" $name "alternateName" .Params.handle "jobTitle" .Params.role "description" .Description "url" .Permalink "image" ("img/avatar.jpeg" | absURL) "sameAs" $sameAs }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ProfilePage" "url" .Permalink "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00") "mainEntity" $person | jsonify | safeJS }}</script>
+{{- end }}

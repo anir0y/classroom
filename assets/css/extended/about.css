@@ -1,0 +1,101 @@
+/* About page (layouts/about/single.html). Uses the brand colours from home.css
+   and the path rows from paths.css. */
+
+main.main:has(> .about-page){max-width:calc(var(--nav-width) + var(--gap) * 2)}
+
+/* ---------- Header: the same dark banner as the home page ---------- */
+.about-head{
+  display:flex;
+  align-items:center;
+  gap:2.2rem;
+  margin:1rem 0 2.8rem;
+  padding:2.6rem 3rem;
+  color:#e9edf5;
+  background:var(--brand-navy);
+  border-radius:20px;
+}
+:root[data-theme="dark"] .about-head{box-shadow:inset 0 0 0 1px rgba(255,255,255,.07)}
+/* The mark has the banner's own navy behind it, so only its ring and letters show. */
+.about-avatar{flex:none;width:120px;height:120px;margin:0;border-radius:50%}
+.about-head h1{
+  margin:0;
+  font-size:clamp(2rem, 4vw, 2.8rem);
+  font-weight:800;
+  line-height:1.1;
+  letter-spacing:-.015em;
+  color:#fff;
+}
+.about-role{margin:.5rem 0 0;font-size:1.1rem;color:#b9c3d6}
+.about-handle{margin-left:.7rem;color:var(--brand-green)}
+.about-links{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.6rem 1.3rem;
+  margin:1.4rem 0 0;
+  padding:0;
+  list-style:none;
+  font-size:.95rem;
+}
+.about-links a{color:#e9edf5;text-decoration:underline;text-decoration-color:rgba(255,255,255,.35);text-underline-offset:.25rem}
+.about-links a:hover{text-decoration-color:var(--brand-green)}
+.about-links a.about-link-primary{
+  display:inline-block;
+  padding:.6rem 1.2rem;
+  font-weight:700;
+  color:var(--brand-navy);
+  background:var(--brand-green);
+  border-radius:10px;
+  text-decoration:none;
+}
+.about-links a.about-link-primary:hover{background:#35c990}
+.about-links a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+
+/* ---------- Bio beside the facts ---------- */
+.about-body{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 15rem;
+  gap:3.5rem;
+  align-items:start;
+  margin-bottom:3rem;
+}
+.about-body .post-content{max-width:40rem}
+.about-body .post-content > :first-child{margin-top:0}
+.about-body .post-content h2{margin:2rem 0 .6rem;font-size:1.35rem}
+.about-facts{margin:.3rem 0 0;padding:0;border-top:1px solid var(--border)}
+.about-facts > div{padding:.85rem 0;border-bottom:1px solid var(--border)}
+.about-facts dt{font-size:1.5rem;font-weight:800;line-height:1.15;color:var(--primary)}
+.about-facts dd{margin:.15rem 0 0;font-size:.88rem;color:var(--secondary)}
+
+/* ---------- Sections ---------- */
+.about-section{margin-bottom:3rem}
+.about-section .path-lines{margin-bottom:0}
+
+.about-work{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:0 3rem;
+  margin:0;
+  padding:0;
+  list-style:none;
+  border-top:1px solid var(--border);
+}
+.about-work li{border-bottom:1px solid var(--border)}
+.about-work a{display:flex;flex-direction:column;gap:.2rem;padding:1rem .2rem 1.1rem;text-decoration:none}
+.about-work-kind{font-size:.8rem;color:var(--brand-ink)}
+.about-work-title{font-size:1.08rem;font-weight:700;line-height:1.3;color:var(--primary)}
+.about-work a:hover .about-work-title{text-decoration:underline;text-underline-offset:.22rem}
+.about-work-text{font-size:.9rem;line-height:1.5;color:var(--secondary)}
+.about-work a:focus-visible{outline:2px solid var(--brand-ink);outline-offset:2px}
+
+@media (max-width:800px){
+  .about-body{grid-template-columns:1fr;gap:2rem}
+  /* Facts become a compact two-column block under the bio. */
+  .about-facts{display:grid;grid-template-columns:1fr 1fr;gap:0 1.5rem}
+  .about-work{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .about-head{flex-direction:column;align-items:flex-start;gap:1.2rem;margin-top:.4rem;padding:1.8rem 1.3rem;border-radius:16px}
+  .about-avatar{width:84px;height:84px}
+  .about-handle{display:block;margin:.2rem 0 0}
+}

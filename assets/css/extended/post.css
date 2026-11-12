@@ -218,6 +218,7 @@
 .author-box-avatar{width:56px;height:56px;border-radius:50%;flex:none;margin:0}
 .author-box p{margin:0}
 .author-box-name{font-weight:700;color:var(--primary)}
+.author-box-name a{color:inherit;text-decoration:underline;text-underline-offset:.2rem}
 .author-box-bio{margin-top:.2rem !important;font-size:.9rem;line-height:1.5;color:var(--secondary)}
 .author-box-links{display:flex;flex-wrap:wrap;gap:.3rem 1rem;margin-top:.5rem !important;font-size:.85rem}
 .author-box-links a{font-weight:600;color:var(--primary);text-decoration:underline;text-underline-offset:.2rem}
