@@ -159,3 +159,6 @@ main.main:has(> .post-entry) > .post-entry .entry-cover{
   text-decoration:none;
 }
 .not-found-404 .cat-404-home:hover{border-color:var(--primary)}
+
+/* Search page: status line for a search handed over from the home banner. */
+.search-note{margin:1rem 0 0;font-size:.95rem;color:var(--secondary)}

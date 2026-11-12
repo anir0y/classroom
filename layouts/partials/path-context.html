@@ -1,13 +1,14 @@
 {{- /* Returns where a post sits in its learning path, or an empty dict.
-     Keys: path (the content/paths page), total, position (1-based), prev, next.
+     Keys: path (the content/paths page), total, position (1-based, by publish date), prev, next.
      A post belongs to the first path (by weight) whose `path_tag` is among its tags. */ -}}
 {{- $post := . -}}
 {{- $result := dict -}}
 {{- $tags := slice -}}
-{{- range .Params.tags }}{{ $tags = $tags | append (lower .) }}{{ end -}}
+{{- /* Compared as URL slugs, the way path-pages.html looks the tag up, so "Web Application Pentesting" and "web-application-pentesting" are the same tag. */ -}}
+{{- range .Params.tags }}{{ $tags = $tags | append (urlize (lower .)) }}{{ end -}}
 {{- with site.GetPage "/paths" -}}
   {{- range .RegularPages.ByWeight -}}
-    {{- if and (not $result) (in $tags (lower .Params.path_tag)) -}}
+    {{- if and (not $result) (in $tags (urlize (lower .Params.path_tag))) -}}
       {{- $pages := partialCached "path-pages.html" . .Params.path_tag -}}
       {{- $idx := -1 -}}
       {{- range $i, $p := $pages }}{{ if eq $p $post }}{{ $idx = $i }}{{ end }}{{ end -}}

@@ -71,7 +71,7 @@ I'm Animesh Roy, known online as anir0y. I work as an offensive security consult
 
 Classroom is where I publish my lab write-ups. Each one goes through a room or challenge task by task: the commands, the output, and the reasoning behind each step. The point is that you can take the method to a different target, which a bare list of answers does not let you do.
 
-Most of the write-ups are TryHackMe rooms, grouped into the learning paths below. If you are working through one of those paths, start at room 1 and the site will keep track of where you got to.
+Most of the write-ups are TryHackMe rooms, grouped into the learning paths below. If you are working through one of those paths, the site keeps track of the rooms you have read, in your own browser.
 
 ## Get in touch
 

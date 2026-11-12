@@ -1,20 +1,40 @@
 <script src="{{ "js/webmcp.js" | absURL }}" defer></script>
 {{- if eq .Layout "search" }}
 {{- /* The home page banner sends its search here as /search/?q=term. The theme's
-     search only reacts to typing, so fill the box and replay a key event until
-     its index has loaded and results appear. */}}
+     search only reacts to typing, so fill the box and replay a key event once
+     its index has loaded. */}}
 <script>
 (function () {
   var term = new URLSearchParams(location.search).get('q');
   var input = document.getElementById('searchInput');
-  if (!term || !input) return;
+  var results = document.getElementById('searchResults');
+  if (!term || !input || !results) return;
   input.value = term;
-  var tries = 0;
-  var timer = setInterval(function () {
+  var note = document.createElement('p');
+  note.className = 'search-note';
+  note.textContent = 'Searching...';
+  results.parentNode.insertBefore(note, results.nextSibling);
+  input.addEventListener('input', function () { note.remove(); });
+  // The theme builds its index from index.json after the page has loaded and gives
+  // no signal when it is ready. Wait for the same file, then replay the key event a
+  // few times, spaced out, until results appear.
+  var waits = [400, 800, 1500, 3000, 3000];
+  var attempt = function (i) {
     input.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
-    var results = document.getElementById('searchResults');
-    if ((results && results.children.length) || ++tries > 40) clearInterval(timer);
-  }, 150);
+    if (results.children.length) { note.remove(); return; }
+    if (i >= waits.length) {
+      note.textContent = 'No walkthrough matches "' + term + '". Try a shorter word, or a room name.';
+      return;
+    }
+    setTimeout(function () { attempt(i + 1); }, waits[i]);
+  };
+  var start = function () {
+    fetch(new URL('../index.json', location.href))
+      .then(function (r) { return r.text(); })
+      .catch(function () { /* the theme's own request decides what is shown */ })
+      .then(function () { attempt(0); });
+  };
+  if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
 })();
 </script>
 {{- end }}

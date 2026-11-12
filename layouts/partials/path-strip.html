@@ -1,12 +1,14 @@
-{{- /* Top-of-post strip: which learning path this room belongs to and where it sits on the line.
+{{- /* Top-of-post strip: which learning path this room belongs to, and the next room by name.
+     No room number: rooms are listed by publish date, which is not always the order
+     the path teaches them in.
      Context: the dict returned by path-context.html. */ -}}
 {{- with .path }}
 <nav class="path-strip" aria-label="Learning path">
   <a class="path-strip-name" href="{{ .RelPermalink }}"><span class="line-dot" aria-hidden="true"></span>{{ .Title }}</a>
-  <span class="path-strip-pos">Room {{ $.position }} of {{ $.total }}</span>
-  <span class="path-strip-track" aria-hidden="true"><span style="width:{{ div (mul $.position 100) $.total }}%"></span></span>
+  <span class="path-strip-pos">{{ $.total }} walkthroughs</span>
   {{- with $.next }}
-  <a class="path-strip-next" href="{{ .RelPermalink }}">Next room</a>
+  {{- $title := strings.TrimPrefix "TryHackMe " .Title }}
+  <a class="path-strip-next" href="{{ .RelPermalink }}" title="{{ $title }}">Next: {{ $title | truncate 38 }}</a>
   {{- end }}
 </nav>
 {{- end }}

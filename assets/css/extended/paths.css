@@ -118,7 +118,7 @@ main.main:has(> .post-entry) > .home-paths{grid-column:1 / -1}
 }
 .home-resume[hidden]{display:none}
 .home-resume:hover{filter:brightness(1.08)}
-.home-resume-label{font-size:.88rem;font-weight:600;opacity:.88}
+.home-resume-label{font-size:.88rem;font-weight:600}
 .home-resume-title{font-size:1.05rem;font-weight:700}
 
 /* ---------- One path: its rooms as stops on the line ---------- */
@@ -140,7 +140,7 @@ main.main:has(> .post-entry) > .home-paths{grid-column:1 / -1}
 }
 .path-start:hover{filter:brightness(1.08)}
 .path-start:focus-visible{outline:2px solid var(--line);outline-offset:3px}
-.path-start-label{font-size:.82rem;font-weight:600;opacity:.88}
+.path-start-label{font-size:.82rem;font-weight:600}
 .path-start-title{font-size:1.05rem;font-weight:700;line-height:1.3}
 
 .path-stops{list-style:none;margin:2.2rem 0 0;padding:0}

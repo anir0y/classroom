@@ -1,9 +1,7 @@
-{{- /* One learning path: its rooms as numbered stops on a line, oldest first.
+{{- /* One learning path: its rooms as numbered stops on a line, in the order they were published.
      path-progress.html marks the stops this reader has finished. */ -}}
 {{- define "main" }}
 {{- $pages := partialCached "path-pages.html" . .Params.path_tag }}
-{{- $minutes := 0 }}
-{{- range $pages }}{{ $minutes = add $minutes .ReadingTime }}{{ end }}
 <article class="path-page path-tint"{{ with .Params.color }} style="{{ printf "--path:%s" . | safeCSS }}"{{ end }} data-path-key="{{ .File.ContentBaseName }}">
   <header class="page-header">
     {{ partial "breadcrumbs.html" . }}
@@ -12,13 +10,13 @@
     <div class="post-description">{{ . }}</div>
     {{- end }}
     <p class="path-page-meta">
-      {{- len $pages }} rooms, about {{ if ge $minutes 90 }}{{ div (add $minutes 30) 60 }} hours{{ else }}{{ $minutes }} minutes{{ end }} of reading
+      {{- len $pages }} walkthroughs, listed in the order they were published
       {{- /* Filled in from this browser's saved progress. */ -}}
       <span class="path-page-read" hidden></span>
     </p>
     {{- with index $pages 0 }}
     <a class="path-start" href="{{ .RelPermalink }}">
-      <span class="path-start-label">Start at room 1</span>
+      <span class="path-start-label">Start with</span>
       <span class="path-start-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
     </a>
     {{- end }}

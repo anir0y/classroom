@@ -4,8 +4,8 @@
 {{- with .path }}
 <nav class="path-continue" aria-label="Continue this learning path">
   {{- with $.next }}
-  <a class="path-next" href="{{ .RelPermalink }}" data-room-num="{{ add $.position 1 }}">
-    <span class="path-next-label">Next in {{ $.path.Title }}, room {{ add $.position 1 }} of {{ $.total }}</span>
+  <a class="path-next" href="{{ .RelPermalink }}" data-next-room>
+    <span class="path-next-label">Next in {{ $.path.Title }}</span>
     <span class="path-next-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
     <span class="path-next-meta">{{ .ReadingTime }} min read</span>
   </a>
