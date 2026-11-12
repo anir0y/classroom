@@ -1,0 +1,30 @@
+{{- /* Where to go next, kept beside the text under the contents list (wide screens
+     only), so the next step is on screen for the whole read and not only at the
+     end of the post. Context: dict "page" (the post) "path" (path-context.html). */ -}}
+{{- $page := .page -}}
+{{- $path := .path -}}
+{{- $skip := slice -}}
+{{- with $path.prev }}{{ $skip = $skip | append . }}{{ end -}}
+{{- with $path.next }}{{ $skip = $skip | append . }}{{ end -}}
+{{- /* Posts tagged only with the tags every post carries have nothing topical to relate on. */ -}}
+{{- $generic := slice "tryhackme" "thm" "rooms" "notes" "tools" -}}
+{{- $topical := false -}}
+{{- range $page.Params.tags }}{{ if not (in $generic (lower .)) }}{{ $topical = true }}{{ end }}{{ end -}}
+{{- $related := slice -}}
+{{- if $topical }}{{ $related = site.RegularPages.Related $page | complement $skip | first (cond (isset $path "next") 2 3) }}{{ end -}}
+{{- if or $path.next $related }}
+<aside class="rail-next" aria-label="Where to go next">
+  {{- with $path.next }}
+  <p class="rail-next-head">Next in {{ $path.path.Title }}</p>
+  <a class="rail-next-room" href="{{ .RelPermalink }}">{{ strings.TrimPrefix "TryHackMe " .Title }} <span>{{ .ReadingTime }} min</span></a>
+  {{- end }}
+  {{- with $related }}
+  <p class="rail-next-head">{{ if $path.next }}More on this topic{{ else }}Related walkthroughs{{ end }}</p>
+  <ul class="rail-next-list">
+    {{- range . }}
+    <li><a href="{{ .RelPermalink }}">{{ strings.TrimPrefix "TryHackMe " .Title }}</a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
+</aside>
+{{- end }}

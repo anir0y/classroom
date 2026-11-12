@@ -1,0 +1,14 @@
+{{- /* Posts in a learning path get path navigation in place of the theme's
+     older/newer links. A post outside every path can have those date links as
+     its only links from other posts, so a path post keeps a plain link to a date
+     neighbour that is in no path. Context: the post. */ -}}
+{{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+{{- $out := slice -}}
+{{- range (slice ($posts.Next .) ($posts.Prev .)) -}}
+  {{- with . }}{{ if not (partial "path-context.html" .) }}{{ $out = $out | append . }}{{ end }}{{ end -}}
+{{- end -}}
+{{- with $out }}
+<p class="date-neighbours">Published around the same time:
+  {{- range $i, $p := . }}{{ if $i }},{{ end }} <a href="{{ .RelPermalink }}">{{ strings.TrimPrefix "TryHackMe " .Title }}</a>{{ end -}}
+</p>
+{{- end }}

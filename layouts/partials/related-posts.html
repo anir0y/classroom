@@ -14,9 +14,10 @@
   <div class="related-grid">
     {{- range . }}
     <a class="related-card" href="{{ .RelPermalink }}">
-      {{- with partial "social-image.html" . }}
-      <img class="related-card-img" src="{{ . }}" alt="" loading="lazy" decoding="async">
-      {{- end }}
+      {{- /* No animated covers here: one is 2.3 MB for a 228px slot. */}}
+      {{- with partial "social-image.html" . }}{{ if not (strings.HasSuffix (lower .) ".gif") }}
+      <img class="related-card-img" src="{{ . }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+      {{- end }}{{ end }}
       <span class="related-card-title">{{ strings.TrimPrefix "TryHackMe " .Title }}</span>
       <span class="related-card-meta">{{ .ReadingTime }} min read</span>
     </a>

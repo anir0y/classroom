@@ -19,6 +19,7 @@
     </div>
     {{- end }}
     {{- with $path }}{{ partial "path-strip.html" . }}{{ end }}
+    {{- if eq .Type "post" }}{{ partial "post-jump.html" . }}{{ end }}
   </header>
 
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
@@ -26,9 +27,19 @@
 
   {{- if (.Param "ShowToc") }}
   {{- /* The rail is an in-flow collapsed box on small screens and a sticky
-       sidebar beside the text on wide ones (assets/css/extended/post.css). */}}
+       sidebar beside the text on wide ones (assets/css/extended/post.css).
+       The list is open in the HTML (TocOpen in params.toml) so the sidebar never
+       waits for a script; the script below only closes it on small screens.
+       data-cfasync="false" keeps Cloudflare Rocket Loader from delaying it. */}}
   <div class="toc-rail">
-  {{- partial "toc.html" . }}
+    <div class="rail-stick" id="toc">
+    {{- partial "toc.html" . }}
+    <script data-cfasync="false">(function(s){var t=s.previousElementSibling;if(t&&t.tagName==='DETAILS'&&!window.matchMedia('(min-width:1200px)').matches)t.open=false})(document.currentScript)</script>
+    {{- if eq .Type "post" }}
+    {{- partial "rail-next.html" (dict "page" . "path" $path) }}
+    <a class="rail-top" href="#top">Back to top</a>
+    {{- end }}
+    </div>
   </div>
   {{- end }}
 
@@ -50,6 +61,7 @@
     {{- end }}
     {{- end }}
     {{- partial "related-posts.html" . }}
+    {{- with $path }}{{ partial "date-neighbours.html" $ }}{{ end }}
     {{- partial "author-box.html" . }}
     {{- else if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}

@@ -1,0 +1,48 @@
+{{- /* One row of links to the post's main sections, under the title, so a reader
+     who came for one task reaches it in one click at any screen width.
+     A heading that starts "Task 4" is shown as "4"; other headings are cut short.
+     The row is kept to one line: once the labels would no longer fit, the rest
+     are reached through the "All" link, which opens the full contents list. */ -}}
+{{- $tops := slice -}}
+{{- range .Fragments.Headings -}}
+  {{- if eq .Level 2 }}{{ $tops = $tops | append . }}{{ end -}}
+  {{- range .Headings }}{{ if eq .Level 2 }}{{ $tops = $tops | append . }}{{ end }}{{ end -}}
+{{- end -}}
+{{- if ge (len $tops) 3 -}}
+{{- $nums := slice -}}
+{{- range $tops }}{{ with findRE `(?i)^task\s*\d+` (.Title | plainify | htmlUnescape) 1 }}{{ $nums = $nums | append (index (findRE `\d+` (index . 0) 1) 0 | strings.TrimLeft "0" | default "0") }}{{ end }}{{ end -}}
+{{- /* A post that splits one task over all its headings: the number says nothing, use the words. */ -}}
+{{- $oneTask := and (gt (len $nums) 1) (eq (len (uniq $nums)) 1) -}}
+{{- $budget := 78 -}}
+{{- $cut := false -}}
+{{- $seen := slice -}}
+{{- $links := slice -}}
+{{- $numbered := 0 -}}
+{{- $pageTitle := lower $.Title -}}
+{{- range $i, $h := $tops -}}
+  {{- $full := .Title | plainify | htmlUnescape -}}
+  {{- $label := $full | truncate 20 -}}
+  {{- $n := "" -}}
+  {{- with findRE `(?i)^task\s*\d+` $full 1 }}{{ $n = index (findRE `\d+` (index . 0) 1) 0 | strings.TrimLeft "0" | default "0" }}{{ end -}}
+  {{- if and $n $oneTask }}{{ $label = replaceRE `(?i)^task\s*\d+\s*(\([^)]*\))?[\s:,.-]*` "" $full | truncate 20 | default $n }}{{ $n = "" }}{{ else if $n }}{{ $label = $n }}{{ end -}}
+  {{- $cost := add (strings.RuneCount $label) 4 -}}
+  {{- /* An opening heading that only repeats the room name is the top of the page: no link needed.
+       A task number is linked once, at its first heading; later parts are reached through "All". */ -}}
+  {{- if and (eq $i 0) (in $pageTitle (lower $full)) -}}
+  {{- else if and $n (in $seen $n) }}{{ $cut = true -}}
+  {{- else if and (ge $budget $cost) .ID -}}
+    {{- $budget = sub $budget $cost -}}
+    {{- if $n }}{{ $seen = $seen | append $n }}{{ $numbered = add $numbered 1 }}{{ end -}}
+    {{- $links = $links | append (dict "id" .ID "title" $full "label" $label) -}}
+  {{- else }}{{ $cut = true }}{{ $budget = 0 }}{{ end -}}
+{{- end -}}
+<nav class="post-jump" aria-label="Sections of this walkthrough">
+  <span class="post-jump-label">{{ if gt $numbered 0 }}Jump to task{{ else }}Jump to{{ end }}</span>
+  {{- range $links }}
+  <a href="#{{ .id }}" title="{{ .title }}">{{ .label }}</a>
+  {{- end -}}
+  {{- if $cut }}
+  <a class="post-jump-all" href="#toc">All</a>
+  {{- end }}
+</nav>
+{{- end -}}
