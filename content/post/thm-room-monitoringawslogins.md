@@ -25,8 +25,6 @@ draft: false
 description: "Walkthrough of TryHackMe Monitoring AWS Logins: console logins and MFAUsed, AKIA vs ASIA access keys, an S3 data-extortion attack, AssumeRole session names, and a Splunk integration authenticating as root."
 ---
 
-## Monitoring AWS Logins
-
 Third room in the **Cloud Security for SOC** module, after [Cloud Security Pitfalls](/post/thm-room-cloudsecuritypitfalls/) and [AWS Security Logging](/post/thm-room-awssecuritylogging/). This is the **control plane** layer that [Cloud Security Pitfalls](/post/thm-room-cloudsecuritypitfalls/) named, who logs into AWS, with what credential, and what they do once they are in.
 
 Seven tasks, sixteen answers, all solved 100%. The structure is the cleanest in the module so far, **one index per task**, so each scenario is a self-contained dataset:

@@ -23,8 +23,6 @@ draft: false
 description: "Walkthrough of TryHackMe AI & Automation in Detection Engineering: a full Detection-as-Code pull request review in TryGitMe, the three bugs that kept a print.exe rule at TP 0/6, and an AI copilot that writes a flawless DCSync rule for someone else's environment."
 ---
 
-## AI & Automation in Detection Engineering
-
 Room: [AI & Automation in Detection Engineering](https://tryhackme.com/room/aiautomationdetectioneng) on TryHackMe.
 
 Room five of six in the **Detection Engineering for SOC** module, after [Intro to Detection Engineering](/post/thm-room-introtodetectioneng/), Detection Rules Development, [Sigma Language](/post/thm-room-sigma/), and [SigHunt](/post/thm-room-sighunt/). Only DetectMare remains after this one, the Task 6 question literally reads "Ready for DetectMare!", which is a nice way of confirming where you are in the arc.

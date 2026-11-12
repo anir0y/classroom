@@ -23,8 +23,6 @@ draft: false
 description: "Walkthrough of TryHackMe Operating Systems Introduction: kernel vs user space, reading a MATE desktop's specs and filesystems, and a flag in a user's note."
 ---
 
-## Operating Systems: Introduction
-
 After a run of boot2roots and an AI security detour, this one is a deliberate step back to fundamentals. Operating Systems Introduction sits in TryHackMe's Pre Security path, and it does something the harder rooms skip over: it makes you look at the machine you are already sitting on and name the parts. Four tasks, mostly reading, and a live Ubuntu MATE desktop you poke at through the browser to answer the questions and find one flag. There is no exploit here. The value is in the vocabulary, because every privilege escalation and every forensic pull later on assumes you already know what kernel space, a filesystem, and a user directory actually are.
 
 ![The Operating Systems Introduction room on TryHackMe at 100 percent, showing the four tasks Introduction, The Invisible Manager, OS Interaction and Landscape, and Conclusion](/img/thm-osintro/01-room.png)

@@ -23,8 +23,6 @@ draft: false
 description: "Walkthrough of TryHackMe Advanced Packet Analysis: triaging a SYN scan with TShark, decoding base64 C2 tasking, pulling cleartext FTP credentials, exporting and hashing malware from a PCAP, and reading JA4 fingerprints."
 ---
 
-## Advanced Packet Analysis
-
 Room 5 of 6 in the **Advanced Traffic Analysis** module on SOC Level 2, and the payoff for everything before it. [Network Monitoring with Zeek](/post/thm-room-networkmonitoringwithzeek/) reduced this same Nexus Financial intrusion to structured logs that told us *what connections existed and how much data moved*. This room opens the actual capture and answers the question logs cannot: **what was inside**.
 
 One PCAP at `/home/ubuntu/captures/investigation.pcap` covers 02:30 to 04:00 UTC on the Finance subnet. Wireshark is on the desktop; I worked almost entirely in TShark, since every question here reduces to a display filter plus a field extraction. Same cast as before: `10.14.22.88` (WKST-FINANCE-04), C2 at `194.165.16.56`, exfil drop at `185.213.154.201`.
