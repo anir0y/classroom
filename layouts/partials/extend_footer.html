@@ -1,1 +1,20 @@
 <script src="{{ "js/webmcp.js" | absURL }}" defer></script>
+{{- if eq .Layout "search" }}
+{{- /* The home page banner sends its search here as /search/?q=term. The theme's
+     search only reacts to typing, so fill the box and replay a key event until
+     its index has loaded and results appear. */}}
+<script>
+(function () {
+  var term = new URLSearchParams(location.search).get('q');
+  var input = document.getElementById('searchInput');
+  if (!term || !input) return;
+  input.value = term;
+  var tries = 0;
+  var timer = setInterval(function () {
+    input.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
+    var results = document.getElementById('searchResults');
+    if ((results && results.children.length) || ++tries > 40) clearInterval(timer);
+  }, 150);
+})();
+</script>
+{{- end }}

@@ -116,7 +116,7 @@ main.main:has(> .post-entry) > .post-entry .entry-cover{
 /* Active nav item gets a clear underline instead of blending in. */
 .nav .active{
   font-weight:600;
-  border-bottom:2px solid var(--primary);
+  border-bottom:2px solid var(--brand-ink, var(--primary));
 }
 
 /* Footer social row: small, centered, above the copyright line. */

@@ -1,0 +1,162 @@
+/* Site identity and the home page banner.
+   The colours come from the "AR" mark (static/img/avatar.jpeg): a dark navy
+   disc with a green ring. The banner is that mark at page scale, and it stays
+   dark in both themes, like the post cover images below it. */
+
+:root{
+  --brand-navy:#0f1623;
+  --brand-green:#1fb57f;
+  /* Green that is readable as text on the page background. */
+  --brand-ink:#0b7a57;
+}
+:root[data-theme="dark"]{--brand-ink:#4ad3a2}
+/* On the dark page the banner needs an edge to sit on. */
+:root[data-theme="dark"] .home-info.home-hero{box-shadow:inset 0 0 0 1px rgba(255,255,255,.07)}
+
+/* ---------- Header: round mark beside the site name, brand underline on the current page ---------- */
+.logo a img{border-radius:50%;margin-inline-end:10px}
+::selection{background:color-mix(in srgb, var(--brand-green) 35%, transparent)}
+
+/* ---------- Banner ---------- */
+/* Two classes so this wins over the theme's .first-entry / .home-info rules. */
+.home-info.home-hero{
+  position:relative;
+  overflow:hidden;
+  display:block;
+  min-height:0;
+  margin:1rem 0 2.6rem;
+  padding:3.2rem 3.4rem 2.8rem;
+  color:#e9edf5;
+  background:var(--brand-navy);
+  border-radius:20px;
+}
+/* The ring of the mark, cropped by the right edge. */
+.home-info.home-hero::before,
+.home-info.home-hero::after{
+  content:"";
+  position:absolute;
+  right:-170px;
+  top:50%;
+  width:520px;
+  height:520px;
+  margin-top:-260px;
+  border:3px solid var(--brand-green);
+  border-radius:50%;
+  pointer-events:none;
+}
+.home-info.home-hero::after{
+  right:-90px;
+  width:360px;
+  height:360px;
+  margin-top:-180px;
+  border-width:1px;
+  opacity:.45;
+}
+.home-hero > *{position:relative;z-index:1}
+.home-hero h1{
+  max-width:17ch;
+  margin:0;
+  font-size:clamp(2rem, 4.2vw, 3.1rem);
+  font-weight:800;
+  line-height:1.06;
+  letter-spacing:-.015em;
+  color:#fff;
+  text-wrap:balance;
+}
+.home-hero-lede{
+  max-width:34rem;
+  margin:1.1rem 0 0;
+  font-size:1.08rem;
+  line-height:1.55;
+  color:#b9c3d6;
+}
+
+/* Search */
+.home-search{max-width:36rem;margin-top:1.9rem}
+.home-search label{display:block;margin-bottom:.45rem;font-size:.86rem;font-weight:600;color:#e9edf5}
+.home-search-row{display:flex;gap:.5rem}
+.home-search input{
+  flex:1;
+  min-width:0;
+  height:3.2rem;
+  padding:0 1.1rem;
+  font:inherit;
+  font-size:1rem;
+  color:#10151f;
+  background:#fff;
+  border:2px solid transparent;
+  border-radius:12px;
+  outline:0;
+}
+.home-search input::placeholder{color:#6b7385}
+.home-search input:focus{border-color:var(--brand-green)}
+.home-search button{
+  flex:none;
+  height:3.2rem;
+  padding:0 1.5rem;
+  font:inherit;
+  font-size:1rem;
+  font-weight:700;
+  color:var(--brand-navy);
+  background:var(--brand-green);
+  border:0;
+  border-radius:12px;
+  cursor:pointer;
+}
+.home-search button:hover{background:#35c990}
+.home-search button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+
+/* Popular topics */
+.home-topics{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  max-width:36rem;
+  margin:1.4rem 0 0;
+  padding:0;
+  list-style:none;
+}
+.home-topics a{
+  display:inline-flex;
+  align-items:baseline;
+  gap:.4rem;
+  padding:.32rem .75rem;
+  font-size:.86rem;
+  line-height:1.3;
+  color:#d6dcea;
+  background:var(--brand-navy);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;
+  text-decoration:none;
+}
+.home-topics a span{font-size:.76rem;font-variant-numeric:tabular-nums;color:#8f9ab0}
+.home-topics a:hover{color:#fff;border-color:var(--brand-green)}
+.home-topics a:focus-visible{outline:2px solid var(--brand-green);outline-offset:2px}
+
+/* ---------- Footer: site links above the copyright line ---------- */
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.3rem 1.3rem;
+  margin:0 0 .8rem;
+  padding:0;
+  list-style:none;
+  font-size:.86rem;
+}
+.footer-links a{color:var(--secondary);border-bottom:0}
+.footer-links a:hover{color:var(--primary)}
+
+@media (max-width:1000px){
+  /* Not enough width for the ring beside the text. */
+  .home-info.home-hero::before,
+  .home-info.home-hero::after{display:none}
+}
+@media (max-width:600px){
+  .home-info.home-hero{margin-top:.4rem;padding:1.9rem 1.3rem 1.6rem;border-radius:16px}
+  .home-hero-lede{font-size:1rem}
+  .home-search{margin-top:1.4rem}
+  .home-search button{padding:0 1.1rem}
+  /* Six topics are enough on a phone. */
+  .home-topics li:nth-child(n+7){display:none}
+}

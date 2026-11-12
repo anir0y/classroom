@@ -238,8 +238,5 @@
   .related-card-meta{display:none}
   .path-next-title{font-size:1.2rem}
   .path-strip-track{order:3;flex-basis:100%}
-  /* Seven menu items do not fit; these two stay reachable from the footer and Posts. */
-  #menu li:has(a[href$="/categories/"]),
-  #menu li:has(a[href$="/archives/"]){display:none}
   #menu a{font-size:15px}
 }

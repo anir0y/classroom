@@ -1,0 +1,38 @@
+{{- /* Home page banner: what the site is, a search box, and the most-used topics.
+     Overrides the theme's home_info.html. Text comes from [homeInfoParams] in
+     config/_default/params.toml. Styles in assets/css/extended/home.css. */ -}}
+{{- with site.Params.homeInfoParams }}
+{{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+<section class="home-info home-hero">
+  <h1>{{ .Headline | default .Title }}</h1>
+  <p class="home-hero-lede">{{ .Lede | default .Content }}</p>
+
+  {{- /* Plain GET form: /search/?q=... is picked up by extend_footer.html. */}}
+  <form class="home-search" action="{{ "search/" | relURL }}" method="get" role="search">
+    <label for="home-q">Search {{ len $posts }} walkthroughs</label>
+    <div class="home-search-row">
+      <input id="home-q" name="q" type="search" placeholder="Try Splunk or SSRF" autocomplete="off" required>
+      <button type="submit">Search</button>
+    </div>
+  </form>
+
+  {{- /* Most-used tags, leaving out the ones every post carries and the path names (those have their own section). */}}
+  {{- $skip := slice "tryhackme" "thm" "rooms" "notes" "tools" }}
+  {{- with site.GetPage "/paths" }}
+    {{- range .RegularPages }}{{ $skip = $skip | append (lower .Params.path_tag) }}{{ end }}
+  {{- end }}
+  {{- $acronyms := slice "ssrf" "xss" "rce" "idor" "csrf" "ssti" "dfir" "xxe" "sqli" "ctf" "osint" }}
+  {{- $shown := 0 }}
+  <ul class="home-topics" aria-label="Popular topics">
+    {{- range site.Taxonomies.tags.ByCount }}
+    {{- if and (lt $shown 8) (not (in $skip (lower .Page.Title))) }}
+    {{- $shown = add $shown 1 }}
+    {{- /* Term titles are title-cased, which turns acronyms into "Ssrf". */}}
+    {{- $name := .Page.Title }}
+    {{- if in $acronyms (lower $name) }}{{ $name = upper $name }}{{ end }}
+    <li><a href="{{ .Page.RelPermalink }}">{{ $name }} <span>{{ .Count }}</span></a></li>
+    {{- end }}
+    {{- end }}
+  </ul>
+</section>
+{{- end -}}

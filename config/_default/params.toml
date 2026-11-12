@@ -39,6 +39,14 @@ tocopen = false
 [homeInfoParams]
   Title = "Classroom"
   Content = "CTF walkthroughs, malware analysis, penetration testing, and security research by Animesh Roy."
+  # Home page banner (layouts/partials/home_info.html). Title and Content above stay as the fallback and feed llms.txt.
+  Headline = "Security lab walkthroughs, explained step by step"
+  Lede = "Rooms and labs solved and written up by Animesh Roy. Search for the one you are working on, or follow a learning path from room 1."
+
+# Round "AR" mark beside the site name in the header.
+[label]
+  icon = "/img/avatar.jpeg"
+  iconHeight = 30
 
 [[socialIcons]]
   name = "twitter"

@@ -33,7 +33,7 @@
   grid-template-areas:"name track state" "desc desc desc";
   align-items:center;
   gap:.25rem 1.5rem;
-  padding:.95rem .25rem 1rem;
+  padding:.95rem .6rem 1rem;
   text-decoration:none;
 }
 .path-line-name{
@@ -85,6 +85,7 @@
 }
 .path-line.has-progress .path-line-state{font-weight:600;color:var(--primary)}
 .path-line:focus-visible{outline:2px solid var(--line);outline-offset:2px}
+.path-line:hover{background:color-mix(in srgb, var(--line) 7%, transparent)}
 
 /* /paths/ index page uses the wide layout so the lines have room. */
 main.main:has(> .path-lines){max-width:calc(var(--nav-width) + var(--gap) * 2)}
@@ -92,8 +93,6 @@ main.main > .path-lines{margin-top:1.8rem}
 
 /* ---------- Home: the path section is one full-width row of the listing grid ---------- */
 main.main:has(> .post-entry) > .home-paths{grid-column:1 / -1}
-/* The theme leaves a tall gap under the intro; the paths belong to it. */
-main.main:has(> .post-entry) > .home-info{min-height:0;margin-bottom:0}
 .home-section-head{
   display:flex;
   justify-content:space-between;
@@ -104,10 +103,6 @@ main.main:has(> .post-entry) > .home-info{min-height:0;margin-bottom:0}
 .home-section-head a{font-size:.88rem;font-weight:600;color:var(--secondary)}
 .home-section-head a:hover{color:var(--primary)}
 .home-paths > .home-section-head:last-child{margin-bottom:0}
-/* On the home page the rows are names and lines only, to keep the latest posts near the top. */
-.home-paths .path-line{padding:.7rem .25rem .75rem}
-.home-paths .path-line-desc{display:none}
-
 /* Returning reader: the room after the one they last finished. */
 .home-resume{
   display:flex;

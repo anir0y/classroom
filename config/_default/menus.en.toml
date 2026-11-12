@@ -11,19 +11,9 @@
   weight = 10
 
 [[main]]
-  name = "Categories"
-  url = "/categories/"
-  weight = 20
-
-[[main]]
   name = "Tags"
   url = "/tags/"
   weight = 30
-
-[[main]]
-  name = "Archives"
-  url = "/archives/"
-  weight = 40
 
 [[main]]
   name = "Search"

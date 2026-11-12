@@ -2,6 +2,16 @@
 <footer class="footer">
     {{- /* Reach socials/RSS from any page, not just the home hero. */}}
     {{- partial "social_icons.html" (dict "align" site.Params.socialIconsAlign) }}
+    {{- /* Every section stays one click away now that the header menu is short. */}}
+    <ul class="footer-links">
+        <li><a href="{{ "paths/" | relURL }}">Learning paths</a></li>
+        <li><a href="{{ "post/" | relURL }}">All posts</a></li>
+        <li><a href="{{ "categories/" | relURL }}">Categories</a></li>
+        <li><a href="{{ "tags/" | relURL }}">Tags</a></li>
+        <li><a href="{{ "archives/" | relURL }}">Archives</a></li>
+        <li><a href="{{ "search/" | relURL }}">Search</a></li>
+        <li><a href="{{ "about/me/" | relURL }}">About</a></li>
+    </ul>
     <div class="footer-meta">
     {{- if not site.Params.footer.hideCopyright }}
         {{- if site.Copyright }}
