@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Learning paths on Classroom</title>
+    <link>https://classroom.anir0y.in/paths/</link>
+    <description>Recent content in Learning paths on Classroom</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://classroom.anir0y.in/paths/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOC Level 2</title>
+      <link>https://classroom.anir0y.in/paths/soc-level-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/soc-level-2/</guid>
+      <description>Detection engineering, threat hunting, log analysis and incident response for analysts moving past triage.</description>
+    </item>
+    <item>
+      <title>Jr Penetration Tester</title>
+      <link>https://classroom.anir0y.in/paths/jr-penetration-tester/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/jr-penetration-tester/</guid>
+      <description>Web hacking, network security, Metasploit and privilege escalation: the core skills for a first pentesting role.</description>
+    </item>
+    <item>
+      <title>Web Application Pentesting</title>
+      <link>https://classroom.anir0y.in/paths/web-application-pentesting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/web-application-pentesting/</guid>
+      <description>Authentication, injection and server-side attacks against web applications, with the reasoning behind each exploit.</description>
+    </item>
+    <item>
+      <title>Web Application Red Teaming</title>
+      <link>https://classroom.anir0y.in/paths/web-application-red-teaming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/web-application-red-teaming/</guid>
+      <description>Advanced web attack chains: SSTI, SSRF, deserialisation and other server-side techniques used on real engagements.</description>
+    </item>
+    <item>
+      <title>Pre Security</title>
+      <link>https://classroom.anir0y.in/paths/pre-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/pre-security/</guid>
+      <description>Networking, operating system and web fundamentals for people starting from zero.</description>
+    </item>
+  </channel>
+</rss>

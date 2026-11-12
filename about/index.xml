@@ -6,14 +6,14 @@
     <description>Recent content in Abouts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Mar 2021 20:59:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 10:00:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Me</title>
+      <title>About Animesh Roy</title>
       <link>https://classroom.anir0y.in/about/me/</link>
       <pubDate>Sun, 21 Mar 2021 20:59:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/about/me/</guid>
-      <description></description>
+      <description>Animesh Roy (anir0y) is an offensive security consultant with more than 13 years in InfoSec. Classroom is where he publishes step-by-step security lab walkthroughs.</description>
     </item>
   </channel>
 </rss>

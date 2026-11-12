@@ -3,12 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://classroom.anir0y.in/paths/soc-level-2/</loc>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/paths/jr-penetration-tester/</loc>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/paths/web-application-pentesting/</loc>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/paths/web-application-red-teaming/</loc>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/paths/pre-security/</loc>
+  </url>
+  <url>
     <loc>https://classroom.anir0y.in/</loc>
-    <lastmod>2026-11-11T17:49:00+05:30</lastmod>
+    <lastmod>2026-11-12T11:34:00+05:30</lastmod>
   </url>
   <url>
     <loc>https://classroom.anir0y.in/post/</loc>
-    <lastmod>2026-11-11T17:49:00+05:30</lastmod>
+    <lastmod>2026-11-12T11:34:00+05:30</lastmod>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/post/thm-room-snortchallenges2/</loc>
+    <lastmod>2026-11-12T11:34:00+05:30</lastmod>
   </url>
   <url>
     <loc>https://classroom.anir0y.in/post/thm-room-plantphotographer/</loc>
@@ -1479,12 +1498,12 @@
     <lastmod>2021-03-21T21:23:22+05:30</lastmod>
   </url>
   <url>
-    <loc>https://classroom.anir0y.in/about/</loc>
-    <lastmod>2021-03-21T20:59:00+05:30</lastmod>
+    <loc>https://classroom.anir0y.in/about/me/</loc>
+    <lastmod>2026-11-12T10:00:00+05:30</lastmod>
   </url>
   <url>
-    <loc>https://classroom.anir0y.in/about/me/</loc>
-    <lastmod>2021-03-21T20:59:00+05:30</lastmod>
+    <loc>https://classroom.anir0y.in/about/</loc>
+    <lastmod>2026-11-12T10:00:00+05:30</lastmod>
   </url>
   <url>
     <loc>https://classroom.anir0y.in/post/vol2-installation/</loc>
@@ -1540,6 +1559,9 @@
   </url>
   <url>
     <loc>https://classroom.anir0y.in/archives/</loc>
+  </url>
+  <url>
+    <loc>https://classroom.anir0y.in/paths/</loc>
   </url>
   <url>
     <loc>https://classroom.anir0y.in/search/</loc>

@@ -6,8 +6,50 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Nov 2026 17:49:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 11:34:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOC Level 2</title>
+      <link>https://classroom.anir0y.in/paths/soc-level-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/soc-level-2/</guid>
+      <description>Detection engineering, threat hunting, log analysis and incident response for analysts moving past triage.</description>
+    </item>
+    <item>
+      <title>Jr Penetration Tester</title>
+      <link>https://classroom.anir0y.in/paths/jr-penetration-tester/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/jr-penetration-tester/</guid>
+      <description>Web hacking, network security, Metasploit and privilege escalation: the core skills for a first pentesting role.</description>
+    </item>
+    <item>
+      <title>Web Application Pentesting</title>
+      <link>https://classroom.anir0y.in/paths/web-application-pentesting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/web-application-pentesting/</guid>
+      <description>Authentication, injection and server-side attacks against web applications, with the reasoning behind each exploit.</description>
+    </item>
+    <item>
+      <title>Web Application Red Teaming</title>
+      <link>https://classroom.anir0y.in/paths/web-application-red-teaming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/web-application-red-teaming/</guid>
+      <description>Advanced web attack chains: SSTI, SSRF, deserialisation and other server-side techniques used on real engagements.</description>
+    </item>
+    <item>
+      <title>Pre Security</title>
+      <link>https://classroom.anir0y.in/paths/pre-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://classroom.anir0y.in/paths/pre-security/</guid>
+      <description>Networking, operating system and web fundamentals for people starting from zero.</description>
+    </item>
+    <item>
+      <title>TryHackMe Snort Challenge: blocking live attacks with IPS inline mode</title>
+      <link>https://classroom.anir0y.in/post/thm-room-snortchallenges2/</link>
+      <pubDate>Thu, 12 Nov 2026 11:34:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-snortchallenges2/</guid>
+      <description>TryHackMe Snort Challenge walkthrough: writing Snort IPS rules and running inline mode with afpacket DAQ to block SSH brute-force and reverse shell attacks.</description>
+    </item>
     <item>
       <title>TryHackMe Plant Photographer: SSRF to RCE via Werkzeug</title>
       <link>https://classroom.anir0y.in/post/thm-room-plantphotographer/</link>
@@ -2578,11 +2620,11 @@
       <description>Curated list of vulnerable apps, servers, and websites for practicing cybersecurity skills — VulnHub, HackTheBox, TryHackMe, and more.</description>
     </item>
     <item>
-      <title>Me</title>
+      <title>About Animesh Roy</title>
       <link>https://classroom.anir0y.in/about/me/</link>
       <pubDate>Sun, 21 Mar 2021 20:59:00 +0530</pubDate>
       <guid>https://classroom.anir0y.in/about/me/</guid>
-      <description></description>
+      <description>Animesh Roy (anir0y) is an offensive security consultant with more than 13 years in InfoSec. Classroom is where he publishes step-by-step security lab walkthroughs.</description>
     </item>
     <item>
       <title>Volatility Installation in Linux</title>
