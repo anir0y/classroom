@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 11:34:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 09:15:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Event Horizon: Covenant C2 traffic decryption</title>
+      <link>https://classroom.anir0y.in/post/thm-room-eventhorizonroom/</link>
+      <pubDate>Fri, 13 Nov 2026 09:15:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-eventhorizonroom/</guid>
+      <description>TryHackMe Event Horizon walkthrough: POP3 brute-force recovery, Covenant C2 protocol decryption with RSA key extraction from memory, and Mimikatz SAM dump analysis.</description>
+    </item>
     <item>
       <title>TryHackMe Snort Challenge: blocking live attacks with IPS inline mode</title>
       <link>https://classroom.anir0y.in/post/thm-room-snortchallenges2/</link>
