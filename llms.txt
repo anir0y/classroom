@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Zeek Exercises: DNS Tunnel, Phishing and Log4Shell](https://classroom.anir0y.in/post/thm-room-zeekbroexercises/): TryHackMe Zeek Exercises walkthrough: zeek-cut one-liners that confirm a DNS tunnel, a phishing download of NetWire and a Log4Shell exploit across three pcaps.
 - [TryHackMe PS Eclipse: Hunting BlackSun Ransomware in Splunk](https://classroom.anir0y.in/post/thm-room-posheclipse/): TryHackMe PS Eclipse walkthrough: hunting a BlackSun ransomware intrusion in Splunk with Sysmon, from an encoded PowerShell download to SYSTEM persistence.
 - [TryHackMe Anonymous: Writable FTP Cron to SUID env Root](https://classroom.anir0y.in/post/thm-room-anonymous/): TryHackMe Anonymous walkthrough: anonymous FTP enumeration, a writable clean.sh cron for a bash reverse shell, and SUID /usr/bin/env privilege escalation to root.
 - [TryHackMe Event Horizon: Covenant C2 traffic decryption](https://classroom.anir0y.in/post/thm-room-eventhorizonroom/): TryHackMe Event Horizon walkthrough: POP3 brute-force recovery, Covenant C2 protocol decryption with RSA key extraction from memory, and Mimikatz SAM dump analysis.

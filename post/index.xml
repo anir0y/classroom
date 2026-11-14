@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Nov 2026 10:21:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:30:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Zeek Exercises: DNS Tunnel, Phishing and Log4Shell</title>
+      <link>https://classroom.anir0y.in/post/thm-room-zeekbroexercises/</link>
+      <pubDate>Sat, 14 Nov 2026 13:30:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-zeekbroexercises/</guid>
+      <description>TryHackMe Zeek Exercises walkthrough: zeek-cut one-liners that confirm a DNS tunnel, a phishing download of NetWire and a Log4Shell exploit across three pcaps.</description>
+    </item>
     <item>
       <title>TryHackMe PS Eclipse: Hunting BlackSun Ransomware in Splunk</title>
       <link>https://classroom.anir0y.in/post/thm-room-posheclipse/</link>
