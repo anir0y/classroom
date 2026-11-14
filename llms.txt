@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe PS Eclipse: Hunting BlackSun Ransomware in Splunk](https://classroom.anir0y.in/post/thm-room-posheclipse/): TryHackMe PS Eclipse walkthrough: hunting a BlackSun ransomware intrusion in Splunk with Sysmon, from an encoded PowerShell download to SYSTEM persistence.
 - [TryHackMe Anonymous: Writable FTP Cron to SUID env Root](https://classroom.anir0y.in/post/thm-room-anonymous/): TryHackMe Anonymous walkthrough: anonymous FTP enumeration, a writable clean.sh cron for a bash reverse shell, and SUID /usr/bin/env privilege escalation to root.
 - [TryHackMe Event Horizon: Covenant C2 traffic decryption](https://classroom.anir0y.in/post/thm-room-eventhorizonroom/): TryHackMe Event Horizon walkthrough: POP3 brute-force recovery, Covenant C2 protocol decryption with RSA key extraction from memory, and Mimikatz SAM dump analysis.
 - [TryHackMe Snort Challenge: blocking live attacks with IPS inline mode](https://classroom.anir0y.in/post/thm-room-snortchallenges2/): TryHackMe Snort Challenge walkthrough: writing Snort IPS rules and running inline mode with afpacket DAQ to block SSH brute-force and reverse shell attacks.
