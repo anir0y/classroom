@@ -88,6 +88,8 @@ The dashboard header prints the first flag:
 
 The first flag is **THM{CryptographyPwn007}**.
 
+![Forged mt_rand invite code logging in as hello@fake.thm and the dashboard printing flag 1](/img/thm-decryptify/01-flag1-login.png)
+
 {{< ad >}}
 
 ## The date field: a padding oracle hiding in the footer
@@ -131,6 +133,8 @@ Padre's fingerprint output is the detail that unwound my earlier wrong turn:
   [!] mode: encrypt
 ```
 
+![Padre detecting the padding oracle, reporting block length 8, and returning the forged ciphertext](/img/thm-decryptify/02-padre-forge.png)
+
 Block length **8**, not 16. This is an 8-byte block cipher in CBC mode (DES or 3DES family), not AES-ECB. In encrypt mode Padre walks backward through the blocks, using the oracle to choose each preceding ciphertext block so the whole thing decrypts to my chosen plaintext. It returns a forged token:
 
 ```text
@@ -150,6 +154,8 @@ Put that token in the `date` parameter and the server decrypts it to `cat /home/
     <p>&copy; <strong>THM{GOT_COMMAND_EXECUTION001}</strong> Decryptify</p>
   </footer>
 ```
+
+![Submitting the forged token so the server runs cat /home/ubuntu/flag.txt and prints flag 2 in the footer](/img/thm-decryptify/03-flag2-rce.png)
 
 The second flag is **THM{GOT_COMMAND_EXECUTION001}**. Swap the plaintext passed to `-enc` for any other command and you have a general RCE primitive.
 
