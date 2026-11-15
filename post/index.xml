@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Nov 2026 17:16:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 10:22:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Decryptify: Padding Oracle Encryption to RCE</title>
+      <link>https://classroom.anir0y.in/post/thm-room-decryptify/</link>
+      <pubDate>Sun, 15 Nov 2026 10:22:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-decryptify/</guid>
+      <description>TryHackMe Decryptify walkthrough: forge a weak mt_rand invite code to log in, then abuse a CBC padding oracle with Padre to encrypt a command and get RCE.</description>
+    </item>
     <item>
       <title>TryHackMe Kitty: SQLi WAF Bypass to Root Cron Injection</title>
       <link>https://classroom.anir0y.in/post/thm-room-kitty/</link>

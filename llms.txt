@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Decryptify: Padding Oracle Encryption to RCE](https://classroom.anir0y.in/post/thm-room-decryptify/): TryHackMe Decryptify walkthrough: forge a weak mt_rand invite code to log in, then abuse a CBC padding oracle with Padre to encrypt a command and get RCE.
 - [TryHackMe Kitty: SQLi WAF Bypass to Root Cron Injection](https://classroom.anir0y.in/post/thm-room-kitty/): TryHackMe Kitty walkthrough: bypass a PHP SQLi WAF with UNION injection, dump creds blind, SSH in, then hit root through an X-Forwarded-For cron command injection.
 - [TryHackMe Zeek Exercises: DNS Tunnel, Phishing and Log4Shell](https://classroom.anir0y.in/post/thm-room-zeekbroexercises/): TryHackMe Zeek Exercises walkthrough: zeek-cut one-liners that confirm a DNS tunnel, a phishing download of NetWire and a Log4Shell exploit across three pcaps.
 - [TryHackMe PS Eclipse: Hunting BlackSun Ransomware in Splunk](https://classroom.anir0y.in/post/thm-room-posheclipse/): TryHackMe PS Eclipse walkthrough: hunting a BlackSun ransomware intrusion in Splunk with Sysmon, from an encoded PowerShell download to SYSTEM persistence.
