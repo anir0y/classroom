@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Block: Decrypt SMB3 Traffic from a PCAP and LSASS](https://classroom.anir0y.in/post/thm-room-blockroom/): TryHackMe Block walkthrough: pull NTLM hashes from an LSASS dump with pypykatz, derive the SMB3 AES-GCM session keys, and decrypt the SMB traffic to read the files.
 - [TryHackMe Directory: Decrypt an AD Attack from a PCAP](https://classroom.anir0y.in/post/thm-room-directory/): TryHackMe Directory walkthrough: read an AD attack from one PCAP, crack the AS-REP roast hash, then decrypt the NTLM-sealed Evil-WinRM traffic to recover commands.
 - [TryHackMe Decryptify: Padding Oracle Encryption to RCE](https://classroom.anir0y.in/post/thm-room-decryptify/): TryHackMe Decryptify walkthrough: forge a weak mt_rand invite code to log in, then abuse a CBC padding oracle with Padre to encrypt a command and get RCE.
 - [TryHackMe Kitty: SQLi WAF Bypass to Root Cron Injection](https://classroom.anir0y.in/post/thm-room-kitty/): TryHackMe Kitty walkthrough: bypass a PHP SQLi WAF with UNION injection, dump creds blind, SSH in, then hit root through an X-Forwarded-For cron command injection.
