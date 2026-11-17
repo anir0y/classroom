@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 18:33:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 20:06:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe LLMborghini: Jailbreak CalBot for the Report</title>
+      <link>https://classroom.anir0y.in/post/thm-room-llmborghini/</link>
+      <pubDate>Tue, 17 Nov 2026 20:06:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-llmborghini/</guid>
+      <description>TryHackMe LLMborghini walkthrough: jailbreak CalBot, a guarded calendar assistant, with context extraction to leak the confidential Singapore sales report.</description>
+    </item>
     <item>
       <title>TryHackMe Phantom Fob: Forge a CAN Bus Rolling Code</title>
       <link>https://classroom.anir0y.in/post/thm-room-phantomfob/</link>
