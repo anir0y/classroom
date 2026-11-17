@@ -29,4 +29,19 @@
 })();
 </script>
 
+{{/* Google Reader Revenue Manager (Subscribe with Google, swgjs Basic).
+     Open-access NewsArticle config; renders newsletter / contribute CTAs to
+     grow the audience. Async, so no blocking cost on first paint. */}}
+<script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
+<script>
+  (self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {
+    basicSubscriptions.init({
+      type: "NewsArticle",
+      isPartOfType: ["Product"],
+      isPartOfProductId: "CAow9-mjDA:openaccess",
+      clientOptions: { theme: "light", lang: "en" },
+    });
+  });
+</script>
+
 {{ partial "schema.html" . }}
