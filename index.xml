@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2026 20:41:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 10:41:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Extracted: Recover a KeePass Master Key from a PCAP</title>
+      <link>https://classroom.anir0y.in/post/thm-room-extractedroom/</link>
+      <pubDate>Tue, 17 Nov 2026 10:41:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-extractedroom/</guid>
+      <description>TryHackMe Extracted walkthrough: carve a KeePass process dump from a PCAP, recover the master key from memory with CVE-2023-32784, then unlock the kdbx for the flag.</description>
+    </item>
     <item>
       <title>TryHackMe Block: Decrypt SMB3 Traffic from a PCAP and LSASS</title>
       <link>https://classroom.anir0y.in/post/thm-room-blockroom/</link>
