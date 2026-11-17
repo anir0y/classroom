@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Phantom Fob: Forge a CAN Bus Rolling Code](https://classroom.anir0y.in/post/thm-room-phantomfob/): TryHackMe Phantom Fob walkthrough: watch the CAN bus over socketcand, reverse the fob rolling-code scheme, and forge the Unlock frame to release the flag.
 - [TryHackMe Extracted: Recover a KeePass Master Key from a PCAP](https://classroom.anir0y.in/post/thm-room-extractedroom/): TryHackMe Extracted walkthrough: carve a KeePass process dump from a PCAP, recover the master key from memory with CVE-2023-32784, then unlock the kdbx for the flag.
 - [TryHackMe Block: Decrypt SMB3 Traffic from a PCAP and LSASS](https://classroom.anir0y.in/post/thm-room-blockroom/): TryHackMe Block walkthrough: pull NTLM hashes from an LSASS dump with pypykatz, derive the SMB3 AES-GCM session keys, and decrypt the SMB traffic to read the files.
 - [TryHackMe Directory: Decrypt an AD Attack from a PCAP](https://classroom.anir0y.in/post/thm-room-directory/): TryHackMe Directory walkthrough: read an AD attack from one PCAP, crack the AS-REP roast hash, then decrypt the NTLM-sealed Evil-WinRM traffic to recover commands.

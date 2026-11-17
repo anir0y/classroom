@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 10:41:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 18:33:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Phantom Fob: Forge a CAN Bus Rolling Code</title>
+      <link>https://classroom.anir0y.in/post/thm-room-phantomfob/</link>
+      <pubDate>Tue, 17 Nov 2026 18:33:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-phantomfob/</guid>
+      <description>TryHackMe Phantom Fob walkthrough: watch the CAN bus over socketcand, reverse the fob rolling-code scheme, and forge the Unlock frame to release the flag.</description>
+    </item>
     <item>
       <title>TryHackMe Extracted: Recover a KeePass Master Key from a PCAP</title>
       <link>https://classroom.anir0y.in/post/thm-room-extractedroom/</link>
