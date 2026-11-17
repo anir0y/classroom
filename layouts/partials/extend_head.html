@@ -1,3 +1,14 @@
+{{/* Google Discover / News reach. max-image-preview:large lets articles surface
+     as large image cards in the Chrome Discover feed; max-snippet / max-video-
+     preview:-1 lift snippet limits. Targeted at name="googlebot" so it layers
+     onto (does not duplicate) PaperMod's generic robots tag, and so Google still
+     gets the directive even though the theme's generic robots tag is not
+     reaching production. Emitted only on indexable pages: taxonomy and term
+     pages carry robotsNoIndex and are left to PaperMod's noindex tag. */}}
+{{- if and (or hugo.IsProduction (eq site.Params.env "production")) (ne .Params.robotsNoIndex true) }}
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{{- end }}
+
 {{/* Google AdSense — deferred to reduce unused JS on initial load.
      Loads on first scroll, click, or touch event, or 2.5s after window load,
      whichever comes first. The timer matters: with interaction as the only
