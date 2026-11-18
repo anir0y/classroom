@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 11:01:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 17:14:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Blog: WordPress Crop-Image RCE to Root</title>
+      <link>https://classroom.anir0y.in/post/thm-room-blog/</link>
+      <pubDate>Wed, 18 Nov 2026 17:14:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-blog/</guid>
+      <description>TryHackMe Blog walkthrough: enumerate WordPress 5.0, brute an author login, chain the crop-image RCE to a webshell, then escalate to root via a SUID checker binary.</description>
+    </item>
     <item>
       <title>TryHackMe Zero Tolerance: Trace a Full Attack Chain in Splunk</title>
       <link>https://classroom.anir0y.in/post/thm-room-zerotolerance/</link>
