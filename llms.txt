@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Zero Tolerance: Trace a Full Attack Chain in Splunk](https://classroom.anir0y.in/post/thm-room-zerotolerance/): TryHackMe Zero Tolerance walkthrough: trace a full intrusion in Splunk, from a phishing LNK and mshta C2 to mimikatz, PsExec lateral movement, and data staging.
 - [TryHackMe LLMborghini: Jailbreak CalBot for the Report](https://classroom.anir0y.in/post/thm-room-llmborghini/): TryHackMe LLMborghini walkthrough: jailbreak CalBot, a guarded calendar assistant, with context extraction to leak the confidential Singapore sales report.
 - [TryHackMe Phantom Fob: Forge a CAN Bus Rolling Code](https://classroom.anir0y.in/post/thm-room-phantomfob/): TryHackMe Phantom Fob walkthrough: watch the CAN bus over socketcand, reverse the fob rolling-code scheme, and forge the Unlock frame to release the flag.
 - [TryHackMe Extracted: Recover a KeePass Master Key from a PCAP](https://classroom.anir0y.in/post/thm-room-extractedroom/): TryHackMe Extracted walkthrough: carve a KeePass process dump from a PCAP, recover the master key from memory with CVE-2023-32784, then unlock the kdbx for the flag.
