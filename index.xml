@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 17:14:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 18:59:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe SDLC: Phases, CALMS, and a Hidden Flag</title>
+      <link>https://classroom.anir0y.in/post/thm-room-sdlc/</link>
+      <pubDate>Wed, 18 Nov 2026 18:59:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-sdlc/</guid>
+      <description>TryHackMe SDLC walkthrough: the 6-8 software development lifecycle phases, DevOps CALMS and metrics, plus pulling the hidden flag out of a static-site JS bundle.</description>
+    </item>
     <item>
       <title>TryHackMe Blog: WordPress Crop-Image RCE to Root</title>
       <link>https://classroom.anir0y.in/post/thm-room-blog/</link>
