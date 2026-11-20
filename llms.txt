@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe W1seGuy: Breaking XOR With a Known Flag Prefix](https://classroom.anir0y.in/post/thm-room-w1seguy/): TryHackMe W1seGuy walkthrough: breaking a 5-byte repeating XOR key with the known THM{ flag prefix, decoding flag 1 and trading the key for flag 2.
 - [TryHackMe Intro to Pipeline Automation: DevOps Pipeline Security](https://classroom.anir0y.in/post/thm-room-introtopipelineautomation/): TryHackMe Intro to Pipeline Automation walkthrough: DevOps pipeline security from source control and dependencies to CI/CD, testing, and environments.
 - [TryHackMe SDLC: Phases, CALMS, and a Hidden Flag](https://classroom.anir0y.in/post/thm-room-sdlc/): TryHackMe SDLC walkthrough: the 6-8 software development lifecycle phases, DevOps CALMS and metrics, plus pulling the hidden flag out of a static-site JS bundle.
 - [TryHackMe Blog: WordPress Crop-Image RCE to Root](https://classroom.anir0y.in/post/thm-room-blog/): TryHackMe Blog walkthrough: enumerate WordPress 5.0, brute an author login, chain the crop-image RCE to a webshell, then escalate to root via a SUID checker binary.
