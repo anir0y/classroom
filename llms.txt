@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Source Code Security: Secrets in Git and GitLab CI](https://classroom.anir0y.in/post/thm-room-sourcecodesecurity/): TryHackMe Source Code Security walkthrough: hard-coded secrets in Git history, GitLab CI/CD variables via the API, and moving credentials to os.Getenv.
 - [TryHackMe CCT2019: USB PCAP, .NET Lock, Enigma and Crypto](https://classroom.anir0y.in/post/thm-room-cct2019/): TryHackMe CCT2019 walkthrough: carving a USB MTP PCAP, replaying cryptcat, a .NET slider lock, steghide and Enigma M4 forensics, and three crypto puzzles.
 - [TryHackMe W1seGuy: Breaking XOR With a Known Flag Prefix](https://classroom.anir0y.in/post/thm-room-w1seguy/): TryHackMe W1seGuy walkthrough: breaking a 5-byte repeating XOR key with the known THM{ flag prefix, decoding flag 1 and trading the key for flag 2.
 - [TryHackMe Intro to Pipeline Automation: DevOps Pipeline Security](https://classroom.anir0y.in/post/thm-room-introtopipelineautomation/): TryHackMe Intro to Pipeline Automation walkthrough: DevOps pipeline security from source control and dependencies to CI/CD, testing, and environments.
