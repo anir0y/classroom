@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 12:25:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 14:20:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe CI/CD and Build Security: Jenkins RCE to PROD Pivot</title>
+      <link>https://classroom.anir0y.in/post/thm-room-cicdandbuildsecurity/</link>
+      <pubDate>Sat, 21 Nov 2026 14:20:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-cicdandbuildsecurity/</guid>
+      <description>TryHackMe CI/CD and Build Security walkthrough: Jenkins jenkins:jenkins script console RCE, GitLab CI job poisoning, and a shared runner key pivot from DEV to PROD.</description>
+    </item>
     <item>
       <title>TryHackMe TriCipher Summit: S3 Supply Chain to Smart Contract</title>
       <link>https://classroom.anir0y.in/post/thm-room-tricipher-summit/</link>

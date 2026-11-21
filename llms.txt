@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe CI/CD and Build Security: Jenkins RCE to PROD Pivot](https://classroom.anir0y.in/post/thm-room-cicdandbuildsecurity/): TryHackMe CI/CD and Build Security walkthrough: Jenkins jenkins:jenkins script console RCE, GitLab CI job poisoning, and a shared runner key pivot from DEV to PROD.
 - [TryHackMe TriCipher Summit: S3 Supply Chain to Smart Contract](https://classroom.anir0y.in/post/thm-room-tricipher-summit/): TryHackMe TriCipher Summit walkthrough: poison an S3 Ninja bucket for a supply chain attack, abuse exposed RSA and AES-CBC crypto, and drain a smart contract.
 - [TryHackMe Source Code Security: Secrets in Git and GitLab CI](https://classroom.anir0y.in/post/thm-room-sourcecodesecurity/): TryHackMe Source Code Security walkthrough: hard-coded secrets in Git history, GitLab CI/CD variables via the API, and moving credentials to os.Getenv.
 - [TryHackMe CCT2019: USB PCAP, .NET Lock, Enigma and Crypto](https://classroom.anir0y.in/post/thm-room-cct2019/): TryHackMe CCT2019 walkthrough: carving a USB MTP PCAP, replaying cryptcat, a .NET slider lock, steghide and Enigma M4 forensics, and three crypto puzzles.
