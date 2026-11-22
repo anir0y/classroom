@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 14:20:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 19:06:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Brains: TeamCity CVE-2024-27198 RCE and Splunk DFIR</title>
+      <link>https://classroom.anir0y.in/post/thm-room-brains/</link>
+      <pubDate>Sun, 22 Nov 2026 19:06:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-brains/</guid>
+      <description>TryHackMe Brains walkthrough: JetBrains TeamCity CVE-2024-27198 auth bypass to a plugin webshell RCE for the user flag, then Splunk forensics on the attack.</description>
+    </item>
     <item>
       <title>TryHackMe CI/CD and Build Security: Jenkins RCE to PROD Pivot</title>
       <link>https://classroom.anir0y.in/post/thm-room-cicdandbuildsecurity/</link>
