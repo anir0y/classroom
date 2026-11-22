@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Light: SQLite Injection Past a Keyword Filter](https://classroom.anir0y.in/post/thm-room-lightroom/): TryHackMe Light walkthrough: SQLite injection over a raw netcat service, bypassing a keyword filter and a comment ban to dump the admin table and flag.
 - [TryHackMe Brains: TeamCity CVE-2024-27198 RCE and Splunk DFIR](https://classroom.anir0y.in/post/thm-room-brains/): TryHackMe Brains walkthrough: JetBrains TeamCity CVE-2024-27198 auth bypass to a plugin webshell RCE for the user flag, then Splunk forensics on the attack.
 - [TryHackMe CI/CD and Build Security: Jenkins RCE to PROD Pivot](https://classroom.anir0y.in/post/thm-room-cicdandbuildsecurity/): TryHackMe CI/CD and Build Security walkthrough: Jenkins jenkins:jenkins script console RCE, GitLab CI job poisoning, and a shared runner key pivot from DEV to PROD.
 - [TryHackMe TriCipher Summit: S3 Supply Chain to Smart Contract](https://classroom.anir0y.in/post/thm-room-tricipher-summit/): TryHackMe TriCipher Summit walkthrough: poison an S3 Ninja bucket for a supply chain attack, abuse exposed RSA and AES-CBC crypto, and drain a smart contract.
