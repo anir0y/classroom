@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 22:03:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 14:07:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Intro to Docker: Pull, Run, Build and Compose</title>
+      <link>https://classroom.anir0y.in/post/thm-room-introtodockerk8pdqk/</link>
+      <pubDate>Mon, 23 Nov 2026 14:07:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-introtodockerk8pdqk/</guid>
+      <description>TryHackMe Intro to Docker walkthrough: pull and run images, build with a Dockerfile, run Docker Compose, and serve the flag from a webserver container.</description>
+    </item>
     <item>
       <title>TryHackMe Light: SQLite Injection Past a Keyword Filter</title>
       <link>https://classroom.anir0y.in/post/thm-room-lightroom/</link>
