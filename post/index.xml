@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 20:47:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 21:51:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Intro to IaC: Declarative, Imperative and the IaC Lifecycle</title>
+      <link>https://classroom.anir0y.in/post/thm-room-introtoiac/</link>
+      <pubDate>Tue, 24 Nov 2026 21:51:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-introtoiac/</guid>
+      <description>TryHackMe Intro to IaC walkthrough: declarative vs imperative tools, the IaC lifecycle, virtualisation, cloud vs on-prem, and two flags read from the game bundle.</description>
+    </item>
     <item>
       <title>TryHackMe Container Hardening: Caps, Cgroups and Grype</title>
       <link>https://classroom.anir0y.in/post/thm-room-containerhardening/</link>
