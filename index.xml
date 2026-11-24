@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2026 14:07:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 12:28:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Intro to Kubernetes: kubectl, Secrets and RBAC</title>
+      <link>https://classroom.anir0y.in/post/thm-room-introtok8s/</link>
+      <pubDate>Tue, 24 Nov 2026 12:28:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-introtok8s/</guid>
+      <description>TryHackMe Intro to Kubernetes walkthrough: cluster architecture, kubectl basics, decoding a Kubernetes Secret for the flag, and locking it down with RBAC.</description>
+    </item>
     <item>
       <title>TryHackMe Intro to Docker: Pull, Run, Build and Compose</title>
       <link>https://classroom.anir0y.in/post/thm-room-introtodockerk8pdqk/</link>
