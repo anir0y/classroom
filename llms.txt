@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Container Vulnerabilities: 4 Docker Escapes](https://classroom.anir0y.in/post/thm-room-containervulnerabilitiesdg/): TryHackMe Container Vulnerabilities walkthrough: four Docker escapes via privileged caps, a mounted docker.sock, the exposed 2375 daemon, and namespaces.
 - [TryHackMe Intro to Kubernetes: kubectl, Secrets and RBAC](https://classroom.anir0y.in/post/thm-room-introtok8s/): TryHackMe Intro to Kubernetes walkthrough: cluster architecture, kubectl basics, decoding a Kubernetes Secret for the flag, and locking it down with RBAC.
 - [TryHackMe Intro to Docker: Pull, Run, Build and Compose](https://classroom.anir0y.in/post/thm-room-introtodockerk8pdqk/): TryHackMe Intro to Docker walkthrough: pull and run images, build with a Dockerfile, run Docker Compose, and serve the flag from a webserver container.
 - [TryHackMe Light: SQLite Injection Past a Keyword Filter](https://classroom.anir0y.in/post/thm-room-lightroom/): TryHackMe Light walkthrough: SQLite injection over a raw netcat service, bypassing a keyword filter and a comment ban to dump the admin table and flag.
