@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Cloud-based IaC: Terraform and CloudFormation](https://classroom.anir0y.in/post/thm-room-cloudbasediac/): TryHackMe Cloud-based IaC walkthrough: Terraform core and workflow, AWS CloudFormation stacks and change sets, secure IaC, and the static-site flag.
 - [TryHackMe On-Premises IaC: Attacking a Vagrant and Ansible Pipeline](https://classroom.anir0y.in/post/thm-room-onpremisesiac/): TryHackMe On-Premises IaC walkthrough: Vagrant and Ansible basics, then a dev test-DB command injection to root, a left-behind deployment key and NOPASSWD sudo.
 - [TryHackMe Intro to IaC: Declarative, Imperative and the IaC Lifecycle](https://classroom.anir0y.in/post/thm-room-introtoiac/): TryHackMe Intro to IaC walkthrough: declarative vs imperative tools, the IaC lifecycle, virtualisation, cloud vs on-prem, and two flags read from the game bundle.
 - [TryHackMe Container Hardening: Caps, Cgroups and Grype](https://classroom.anir0y.in/post/thm-room-containerhardening/): TryHackMe Container Hardening walkthrough: Docker daemon contexts and TLS, cgroups limits, dropping Linux caps, Seccomp vs AppArmor, and Grype image scans.
