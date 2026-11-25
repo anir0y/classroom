@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 13:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 13:45:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Understanding AI Supply Chains: Four Attack Layers</title>
+      <link>https://classroom.anir0y.in/post/thm-room-understanding-ai-supplychains/</link>
+      <pubDate>Wed, 25 Nov 2026 13:45:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-understanding-ai-supplychains/</guid>
+      <description>TryHackMe Understanding AI Supply Chains walkthrough: the four components, the four attack layers, pickle risks, dependency confusion, and a HuggingFace trust check.</description>
+    </item>
     <item>
       <title>TryHackMe Lo-Fi: LFI Path Traversal to the Root Flag</title>
       <link>https://classroom.anir0y.in/post/thm-room-lofi/</link>
