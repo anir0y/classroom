@@ -6,8 +6,15 @@
     <description>Recent content on Classroom</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 13:45:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 22:59:00 +0530</lastBuildDate>
     <atom:link href="https://classroom.anir0y.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe White Rabbit: Jailbreaking Agent Smith to Escape the Matrix</title>
+      <link>https://classroom.anir0y.in/post/thm-room-whiterabbit/</link>
+      <pubDate>Wed, 25 Nov 2026 22:59:00 +0530</pubDate>
+      <guid>https://classroom.anir0y.in/post/thm-room-whiterabbit/</guid>
+      <description>TryHackMe White Rabbit walkthrough: indirect prompt injection against Agent Smith, dialing the resistance, and the door-code escape to leave the Matrix.</description>
+    </item>
     <item>
       <title>TryHackMe Understanding AI Supply Chains: Four Attack Layers</title>
       <link>https://classroom.anir0y.in/post/thm-room-understanding-ai-supplychains/</link>
