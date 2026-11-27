@@ -6,6 +6,7 @@ CTF walkthroughs, malware analysis, penetration testing, and security research b
 
 ## Posts
 
+- [TryHackMe Expose: SQLi Login Bypass Chains to Root](https://classroom.anir0y.in/post/thm-room-expose/): TryHackMe Expose walkthrough: error-based SQL injection bypasses a login form, chains to a hidden admin panel, a file upload RCE, and a SUID find binary for root.
 - [TryHackMe Flip: A CBC Bit-Flip to Forge the Admin Login](https://classroom.anir0y.in/post/thm-room-flip/): TryHackMe Flip walkthrough: an AES-CBC bit-flipping attack that corrupts one leaked ciphertext byte to forge the admin login string and capture the flag.
 - [TryHackMe White Rabbit: Jailbreaking Agent Smith to Escape the Matrix](https://classroom.anir0y.in/post/thm-room-whiterabbit/): TryHackMe White Rabbit walkthrough: indirect prompt injection against Agent Smith, dialing the resistance, and the door-code escape to leave the Matrix.
 - [TryHackMe Understanding AI Supply Chains: Four Attack Layers](https://classroom.anir0y.in/post/thm-room-understanding-ai-supplychains/): TryHackMe Understanding AI Supply Chains walkthrough: the four components, the four attack layers, pickle risks, dependency confusion, and a HuggingFace trust check.
